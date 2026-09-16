@@ -382,7 +382,410 @@ MAPPING_NOTE = ("What was asked and what was said back, in order and in full whe
                 "record allows. Nothing is labelled answered or unanswered &mdash; "
                 "we map the exchange and leave the judgement to you.")
 
-QA_PREVIEW = 4          # mappings shown before the expand control
+# ---------------------------------------------------------------------------
+# Client-side behaviour.
+#
+# Kept as a plain (non-f) string so JS braces don't need escaping, and written
+# defensively: every feature degrades to "content is visible" if storage or
+# IntersectionObserver is unavailable. Nothing on this page may depend on JS to
+# be readable.
+#
+# Three jobs:
+#   1. Scrollspy on the sticky section bar, so a long page stays navigable.
+#   2. Per-card open/closed state persisted per sitting, so a repeat visitor
+#      gets back what they had.
+#   3. Scroll position persisted per sitting, with an opt-in "resume" rather
+#      than a forced jump -- forcing a jump fights the browser's own
+#      back/forward restore, which users rely on.
+# ---------------------------------------------------------------------------
+SCRIPT = r"""
+(function () {
+  var PAGE = document.body.getAttribute('data-page') || 'unknown';
+  var K_CARDS = 'parsnips:cards:' + PAGE;
+  var K_SCROLL = 'parsnips:scroll:' + PAGE;
+
+  function store(key, val) {
+    try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {}
+  }
+  function load(key) {
+    try { return JSON.parse(localStorage.getItem(key)); } catch (e) { return null; }
+  }
+  function reduced() {
+    return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+
+  /* ---------- sticky offset (header + section bar) ---------- */
+  function stickyH() {
+    var t = document.querySelector('.top');
+    return t ? t.offsetHeight : 0;
+  }
+  function syncStickyVar() {
+    document.documentElement.style.setProperty('--sticky-h', stickyH() + 'px');
+  }
+
+  /* ---------- 1. per-card open/closed state ---------- */
+  var cards = [].slice.call(document.querySelectorAll('details[data-card]'));
+  var savedCards = load(K_CARDS) || {};
+
+  cards.forEach(function (d) {
+    var id = d.getAttribute('data-card');
+    // Restore BEFORE first paint where possible to avoid a flash of open
+    // content collapsing. Cards default to open on the server, so only an
+    // explicit saved "closed" needs applying.
+    if (savedCards[id] === false) { d.open = false; }
+    d.addEventListener('toggle', function () {
+      var m = load(K_CARDS) || {};
+      m[id] = d.open;
+      store(K_CARDS, m);
+    });
+  });
+
+  /* ---------- 2. scroll memory + resume ---------- */
+  function writeScroll() {
+    store(K_SCROLL, { y: Math.round(window.scrollY), t: Date.now() });
+  }
+  var saveTimer = null;
+  function saveScroll() {
+    if (saveTimer) return;
+    saveTimer = setTimeout(function () { saveTimer = null; writeScroll(); }, 250);
+  }
+  window.addEventListener('scroll', saveScroll, { passive: true });
+  // Belt and braces: the debounced scroll handler is the normal path, but
+  // neither 'pagehide' nor 'visibilitychange' can be missed when the reader
+  // actually leaves, and those are precisely the moments we care about. Without
+  // these, a reader who scrolls and immediately closes the tab saves nothing.
+  window.addEventListener('pagehide', writeScroll);
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'hidden') { writeScroll(); }
+  });
+
+  function navType() {
+    try {
+      var e = performance.getEntriesByType('navigation')[0];
+      return e ? e.type : 'navigate';
+    } catch (err) { return 'navigate'; }
+  }
+
+  function offerResume() {
+    var s = load(K_SCROLL);
+    if (!s || !s.y || s.y < 1200) return;                 // not worth offering
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (s.y > max - 400) return;                          // was already at the end
+    // Do not fight the browser's own restoration on back/forward.
+    if (navType() === 'back_forward') return;
+
+    var pct = Math.min(99, Math.round((s.y / Math.max(max, 1)) * 100));
+    var el = document.createElement('div');
+    el.className = 'resume';
+    el.innerHTML = '<span>You were ' + pct + '% through this sitting</span>' +
+                   '<button type="button" class="rgo">Resume</button>' +
+                   '<button type="button" class="rno" aria-label="Dismiss">&times;</button>';
+    document.body.appendChild(el);
+    el.querySelector('.rgo').addEventListener('click', function () {
+      window.scrollTo({ top: s.y, behavior: reduced() ? 'auto' : 'smooth' });
+      el.remove();
+    });
+    el.querySelector('.rno').addEventListener('click', function () { el.remove(); });
+    setTimeout(function () { if (el.parentNode) el.remove(); }, 12000);
+  }
+
+  /* ---------- 3. section rail (mobile only) ----------
+     Ported from the owner's sgfamily.life rail (src/section-rail.ts), because
+     the pattern is proven and he asked for that, not a fresh invention.
+
+     Differences from the original, and why:
+       * Ticks come from h2/h3 headings on the sitting page, not from tab panels
+         (there are no tabs here), so the MutationObserver on [data-area-panel]
+         is dropped as irrelevant.
+       * STICKY_OFFSET is derived from this page's real sticky header height
+         rather than hard-coded, because Parsnips' header is 61px, not 88/96.
+       * The palette is the site's own green; the original's warm accent is not
+         imported.
+       * A "dormant" state replaces the original's view-toggle rule: the rail
+         hides while the lede is on screen and there is nothing below to map. */
+  var RAIL_MQ = '(max-width: 760px)';
+  var LONG_PRESS_MS = 350;
+  var rail = null, railFill = null, railPill = null, railEntries = [], railActive = -1;
+  var railPillTimer = null, railResizeTimer = null;
+
+  function railIsMobile() {
+    return window.matchMedia && window.matchMedia(RAIL_MQ).matches;
+  }
+  function truncate(text, max) {
+    max = max || 42;
+    return text.length <= max ? text : text.slice(0, max).replace(/\s+$/, '') + '…';
+  }
+
+  function railCollect() {
+    var seen = {};
+    var out = [];
+    [].slice.call(document.querySelectorAll('main h2, main h3')).forEach(function (h, i) {
+      var label = (h.textContent || '').replace(/\s+/g, ' ').trim();
+      if (!label) return;
+      // The section h2s already carry ids we control; heading-level content
+      // (oral-answer h3s, group headings) gets a generated one.
+      if (!h.id) {
+        h.id = 'sec-' + i + '-' + label.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 40);
+      }
+      if (seen[h.id]) return;
+      seen[h.id] = 1;
+      h.classList.add('has-section-anchor');
+      // Level 2 for the section headings, level 3 for everything nested under
+      // one, so the tick column is scannable by size.
+      var level = h.tagName === 'H2' ? 2 : 3;
+      out.push({ el: h, id: h.id, label: label, level: level });
+    });
+    return out;
+  }
+
+  function railEnsure() {
+    if (rail && document.body.contains(rail)) return;
+    rail = document.createElement('nav');
+    rail.className = 'section-rail';
+    rail.setAttribute('aria-label', 'Sections on this page');
+
+    railFill = document.createElement('span');
+    railFill.className = 'section-rail-fill';
+    railFill.setAttribute('aria-hidden', 'true');
+    rail.appendChild(railFill);
+
+    var track = document.createElement('div');
+    track.className = 'section-rail-track';
+    rail.appendChild(track);
+
+    railPill = document.createElement('div');
+    railPill.className = 'section-rail-pill';
+    railPill.setAttribute('aria-live', 'polite');
+    rail.appendChild(railPill);
+
+    document.body.appendChild(rail);
+  }
+
+  function railBuild() {
+    if (!rail) return;
+    var track = rail.querySelector('.section-rail-track');
+    if (!track) return;
+    track.replaceChildren();
+    railEntries.forEach(function (entry, index) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'section-rail-tick level-' + entry.level;
+      b.setAttribute('aria-label', 'Go to ' + entry.label);
+
+      var mark = document.createElement('span');
+      mark.className = 'section-rail-tick-mark';
+      mark.setAttribute('aria-hidden', 'true');
+      b.appendChild(mark);
+
+      var bubble = document.createElement('span');
+      bubble.className = 'section-rail-bubble';
+      bubble.setAttribute('aria-hidden', 'true');
+      bubble.textContent = truncate(entry.label);
+      b.appendChild(bubble);
+
+      var pressTimer;
+      function clearPress() {
+        if (pressTimer !== undefined) window.clearTimeout(pressTimer);
+        pressTimer = undefined;
+      }
+      b.addEventListener('pointerdown', function () {
+        clearPress();
+        pressTimer = window.setTimeout(function () {
+          b.classList.add('is-peeking');
+        }, LONG_PRESS_MS);
+      });
+      ['pointerup', 'pointerleave', 'pointercancel'].forEach(function (ev) {
+        b.addEventListener(ev, clearPress);
+      });
+      b.addEventListener('click', function () {
+        // A long-press is a preview gesture, not a navigation gesture.
+        var wasPeeking = b.classList.contains('is-peeking');
+        b.classList.remove('is-peeking');
+        if (wasPeeking) return;
+        railGo(index);
+      });
+      b.addEventListener('focus', function () { b.classList.add('is-peeking'); });
+      b.addEventListener('blur', function () { b.classList.remove('is-peeking'); });
+
+      entry.button = b;
+      track.appendChild(b);
+    });
+  }
+
+  function railGo(index) {
+    var e = railEntries[index];
+    if (!e) return;
+    e.el.scrollIntoView({ behavior: reduced() ? 'auto' : 'smooth', block: 'start' });
+    railSetActive(index, true);
+  }
+
+  function railSetActive(index, force) {
+    if (!force && index === railActive) return;
+    railActive = index;
+    railEntries.forEach(function (e, i) {
+      var on = i === index;
+      if (e.button) {
+        e.button.classList.toggle('is-active', on);
+        if (on) e.button.setAttribute('aria-current', 'true');
+        else e.button.removeAttribute('aria-current');
+      }
+    });
+    if (railPill) {
+      var label = (railEntries[index] || {}).label || '';
+      railPill.textContent = label;
+      if (label) {
+        railPill.classList.add('is-visible');
+        if (railPillTimer !== undefined) window.clearTimeout(railPillTimer);
+        // Fade it so a small screen never has the label permanently on top.
+        railPillTimer = window.setTimeout(function () {
+          railPill.classList.remove('is-visible');
+        }, 2200);
+      } else {
+        railPill.classList.remove('is-visible');
+      }
+    }
+    if (railFill && railEntries.length > 1 && index >= 0) {
+      railFill.style.setProperty('--rail-progress', (index / (railEntries.length - 1)).toFixed(4));
+    }
+  }
+
+  /* The section whose heading most recently crossed under the sticky header.
+     Offset is 8px more than the scroll-margin so a just-jumped section reads
+     active immediately instead of lagging one behind. */
+  function railActiveIndex() {
+    if (!railEntries.length) return -1;
+    var off = stickyH() + 8;
+    var cur = 0;
+    railEntries.forEach(function (e, i) {
+      if (e.el.getBoundingClientRect().top - off <= 1) cur = i;
+    });
+    var nearBottom = window.innerHeight + window.scrollY >=
+                     document.documentElement.scrollHeight - 4;
+    return nearBottom ? railEntries.length - 1 : cur;
+  }
+
+  /* The rail maps what is BELOW the fold. While the lede fills the screen there
+     is nothing to map, and a centred rail would sit on top of it. */
+  function railVisibility() {
+    if (!rail) return;
+    var lede = document.querySelector('.lede');
+    var dormant = false;
+    if (lede) {
+      var r = lede.getBoundingClientRect();
+      dormant = r.bottom > window.innerHeight * 0.5;
+    }
+    rail.classList.toggle('is-dormant', dormant);
+  }
+
+  function railSync() {
+    var next = railActiveIndex();
+    if (next !== railActive) railSetActive(next);
+    railVisibility();
+    var tt = document.querySelector('.totop');
+    if (tt) tt.classList.toggle('on', window.scrollY > 900);
+  }
+
+  /* Size ticks to fit the viewport. The 5 Aug page has 21 headings; at a full
+     44px touch target that is 924px of ticks, taller than a phone screen, so
+     the rail would overflow. Compute the largest height that fits (gap included)
+     and cap at 44px, the touch minimum. The visible dot is unchanged, so the
+     rail still looks like the original. */
+  function railSizeTicks() {
+    if (!rail) return;
+    var n = railEntries.length;
+    if (!n) return;
+    var available = window.innerHeight - 140;              // leave breathing room
+    // Gap tightens as ticks multiply, so a long page keeps a useful target size
+    // rather than collapsing every tick to a sliver.
+    var gap = n > 16 ? 6 : (n > 10 ? 10 : 14);
+    var h = Math.floor(available / n) - gap;
+    h = Math.max(12, Math.min(44, h));
+    rail.style.setProperty('--rail-tick-h', h + 'px');
+    rail.style.setProperty('--rail-gap', gap + 'px');
+    rail.setAttribute('data-ticks', String(n));
+    var track = rail.querySelector('.section-rail-track');
+    if (track) {
+      track.style.maxHeight = Math.max(140, window.innerHeight - 120) + 'px';
+      track.style.overflowY = (n * (h + gap)) > available ? 'auto' : 'visible';
+      track.style.scrollbarWidth = 'none';
+    }
+  }
+
+  function railRebuild() {
+    if (!railIsMobile()) {
+      if (rail) rail.remove();
+      rail = null; railFill = null; railPill = null;
+      railEntries = []; railActive = -1;
+      return;
+    }
+    railEnsure();
+    railEntries = railCollect();
+    railBuild();
+    railSizeTicks();
+    railActive = -1;
+    railSync();
+  }
+
+  window.addEventListener('scroll', railSync, { passive: true });
+  window.addEventListener('resize', function () {
+    if (!railIsMobile()) { railRebuild(); return; }
+    railSizeTicks();
+    if (railResizeTimer !== undefined) window.clearTimeout(railResizeTimer);
+    railResizeTimer = window.setTimeout(railRebuild, 150);
+  });
+  if (window.matchMedia) {
+    var railMq = window.matchMedia(RAIL_MQ);
+    var railOnChange = function () { railRebuild(); };
+    if (railMq.addEventListener) railMq.addEventListener('change', railOnChange);
+    else if (railMq.addListener) railMq.addListener(railOnChange);
+  }
+
+  /* ---------- jump list: closed on mobile, open on desktop ---------- */
+
+  /* ---------- back to top ---------- */
+  var tt = document.querySelector('.totop');
+  if (tt) {
+    tt.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: reduced() ? 'auto' : 'smooth' });
+    });
+  }
+
+  /* ---------- keep jump links clear of the sticky bar ---------- */
+  document.addEventListener('click', function (ev) {
+    var a = ev.target.closest && ev.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) return;
+    var t = document.getElementById(id);
+    if (!t) return;
+    ev.preventDefault();
+    // Open the card being targeted, otherwise the jump lands on a closed header.
+    var card = t.closest('details[data-card]') || (t.tagName === 'DETAILS' ? t : null);
+    if (card && !card.open) { card.open = true; }
+    var y = t.getBoundingClientRect().top + window.scrollY - stickyH() - 12;
+    window.scrollTo({ top: y, behavior: reduced() ? 'auto' : 'smooth' });
+    history.replaceState(null, '', '#' + id);
+  }, false);
+
+  /* ---------- jump list: closed on mobile, open on desktop ---------- */
+  var qj = document.querySelector('details.qajump');
+  if (qj && window.matchMedia) {
+    var wide = window.matchMedia('(min-width: 761px)');
+    if (wide.matches) { qj.open = true; }
+    var onWide = function (e) { qj.open = e.matches; };
+    if (wide.addEventListener) { wide.addEventListener('change', onWide); }
+    else if (wide.addListener) { wide.addListener(onWide); }
+  }
+
+  syncStickyVar();
+  railRebuild();
+  window.addEventListener('load', function () {
+    syncStickyVar(); railRebuild(); offerResume();
+  });
+})();
+"""
+
+QA_PREVIEW = 4          # unused placeholder (oral answers render in full)
 SPEAKER_PREVIEW = 4     # speaker groups shown per brief before the expand control
 
 
@@ -414,8 +817,13 @@ def render_mapping(q):
                      f'({len(supp)} further turns)</summary>{"".join(rows)}</details>')
 
     return f"""
-      <li class="map" id="{esc(q['report_id'])}">
-        <a class="mapt" href="{esc(hansard_url(q))}" target="_blank" rel="noopener">{esc(q['title'])}</a>
+      <li class="mapwrap" id="{esc(q['report_id'])}">
+        <details class="map" data-card="{esc(q['report_id'])}" open>
+        <summary class="mapsum">
+          <h3 class="mapt">{esc(q['title'])}</h3>
+          <span class="maphint">{esc(q['asker'])} &rarr; {esc(q['answerer'])}</span>
+        </summary>
+        <div class="qabody">
         <div class="qa-pair">
           <div class="qa-side ask">
             <span class="qa-role">Asked</span>
@@ -431,6 +839,8 @@ def render_mapping(q):
         </div>
         {supp_html}
         <a class="srclink" href="{esc(hansard_url(q))}" target="_blank" rel="noopener">Full exchange in Hansard &rarr;</a>
+        </div>
+        </details>
       </li>"""
 
 
@@ -552,18 +962,23 @@ def render_brief(brief, sitting_dates=None):
     why_html = (f'<p class="why">{esc(why)}</p>' if why else "")
 
     return f"""
-      <article class="brief" id="{esc(meta.get('report_ids', [''])[0])}">
-        <header class="bhead">
-          <h3>{esc(title)}</h3>
-          <div class="bmeta">{stage_html}<span class="bdate">{dates_txt}</span>
+      <article class="briefwrap" id="{esc(meta.get('report_ids', [''])[0])}">
+      <details class="brief" data-card="{esc(meta.get('report_ids', [''])[0])}" open>
+        <summary class="briefsum">
+          <span class="btitle">{esc(title)}</span>
+          <span class="bhint">{stage_html}<span class="bdate">{dates_txt}</span>
             <span class="bsrc">{', '.join(esc(x) for x in (meta.get('report_ids') or [])[:4])}</span>
-          </div>
-        </header>
+          </span>
+          <span class="bcaret" aria-hidden="true"></span>
+        </summary>
+        <div class="bbody">
         <p class="whatis">{esc(brief.get('what_it_is', ''))}</p>
         {why_html}
         {points_html}
         {next_html}
         {ns_html}
+        </div>
+      </details>
       </article>"""
 
 
@@ -691,6 +1106,15 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
         out = items if limit is None else items[:limit]
         return "".join(render_brief(b) for b in out)
 
+    # The section rail builds ticks from h2/h3 headings, so the briefs need real
+    # headings rather than being a run of <article>s. Without these the rail
+    # would only ever show the four section titles.
+    def brief_block(items, heading):
+        if not items:
+            return ""
+        return (f'<h2 class="railhead">{esc(heading)}</h2>'
+                + "".join(render_brief(b) for b in items))
+
     lead = reports[0] if reports else {}
     if substantive:
         lede_words = (f"{len(substantive)} polic{'y' if len(substantive) == 1 else 'ies'} "
@@ -707,13 +1131,14 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
 <meta name="description" content="{esc(pretty_date(d))}: what Singapore's Parliament decided and what it means, in a page.">
 <link rel="stylesheet" href="{esc(css_href)}">
 </head>
-<body>
+<body data-page="{esc(d)}">
 <header class="top">
   <div class="wrap">
     <a class="logo" href="{esc(home_href)}"><span class="veg">🌱</span> Parsnips</a>
     {nav(home_href, archive_href)}
   </div>
 </header>
+<button class="totop" type="button" aria-label="Back to top">&uarr;</button>
 
 <main class="wrap">
 
@@ -724,35 +1149,38 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
   </section>
 
   {f'''
-  <section class="substance">
-    <div class="sec-head"><h2>What the Government is doing</h2>
-      <p class="sub">What was decided or announced, who said it, and where it goes next.
-      Every point carries the words it was taken from.</p></div>
-    {brief_list(bills) if bills else ''}
-    {brief_list(others) if others else ''}
+  <section class="substance" id="sec-briefs">
+    <h2>What the Government is doing</h2>
+    <p class="sub">What was decided or announced, who said it, and where it goes next.
+    Every point carries the words it was taken from.</p>
+    {brief_block(bills, "Bills")}
+    {brief_block(others, "Debates and other business")}
     {proc_html}
   </section>''' if substantive else f'''
-  <section class="substance">
-    <div class="sec-head"><h2>What the Government is doing</h2></div>
+  <section class="substance" id="sec-briefs">
+    <h2>What the Government is doing</h2>
     <p class="empty">This sitting's business was entirely procedural.</p>
     {proc_html}
   </section>'''}
 
   {f'''
-  <section class="oral">
-    <div class="sec-head"><h2>Oral answers</h2>
-      <p class="sub">{len(qa_rows)} questions put to Ministers, each paired with the
-      response given. {MAPPING_NOTE}</p></div>
-    <nav class="qajump" aria-label="Jump to an oral answer">
-      <ol>{''.join(f'<li><a href="#{esc(q["report_id"])}">{esc(q["title"])}</a>'
-                   f'<span class="qw">{esc(q["asker"])}</span></li>' for q in qa_rows)}</ol>
-    </nav>
+  <section class="oral" id="sec-oral">
+    <h2>Oral answers</h2>
+    <p class="sub">{len(qa_rows)} questions put to Ministers, each paired with the
+    response given. {MAPPING_NOTE}</p>
+    <details class="qajump">
+      <summary>Jump to a question ({len(qa_rows)})</summary>
+      <nav class="qjbody" aria-label="Jump to an oral answer">
+        <ol>{''.join(f'<li><a href="#{esc(q["report_id"])}">{esc(q["title"])}</a>'
+                     f'<span class="qw">{esc(q["asker"])}</span></li>' for q in qa_rows)}</ol>
+      </nav>
+    </details>
     <ul class="maplist">{qa_html}</ul>
   </section>''' if qa_rows else ''}
 
-  <section class="everything">
-    <div class="sec-head"><h2>Everything else</h2>
-      <p class="sub">The rest of the sitting, grouped. {len(reports)} items.</p></div>
+  <section class="everything" id="sec-rest">
+    <h2>Everything else</h2>
+    <p class="sub">The rest of the sitting, grouped. {len(reports)} items.</p>
     {''.join(groups_html)}
   </section>
 
@@ -773,7 +1201,7 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     </details>
   </section>
 
-  <section class="method">
+  <section class="method" id="sec-method">
     <h2>How this page was made</h2>
     <p>Built from the official Hansard record (Parliament of Singapore Official Reports).
     No news reporting was used. Briefs are written by software from the transcript and
@@ -793,17 +1221,7 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
   Hansard is a public record; the full text is at sprs.parl.gov.sg.</p></footer>
 </main>
 <script>
-var maps = document.querySelector('.reveal-maps');
-if (maps) {{
-  maps.addEventListener('click', function () {{
-    var more = document.querySelector('.qa-more');
-    if (more) {{
-      more.classList.remove('hidden');
-      more.classList.remove('qa-more');
-      maps.remove();
-    }}
-  }});
-}}
+{SCRIPT}
 </script>
 </body>
 </html>
@@ -956,6 +1374,20 @@ h1,h2,h3{line-height:1.2;margin:0}
 .qajump .qw{font:500 11.5px var(--mono);color:var(--faint);margin-left:auto;
   white-space:nowrap;flex:none}
 .maplist{list-style:none;margin:0;padding:0}
+/* Oral answer cards are disclosures too -- default open. */
+.mapwrap{border-bottom:1px solid var(--line)}
+.mapwrap:last-child{border-bottom:0}
+details.map{padding:0}
+.mapsum{list-style:none;cursor:pointer;padding:16px 0;position:relative;
+  padding-right:34px}
+.mapsum::-webkit-details-marker{display:none}
+.mapsum:hover .mapt{color:var(--accent)}
+.mapsum::after{content:"▾";position:absolute;right:6px;top:20px;color:var(--faint);
+  font-size:12px}
+details.map:not([open])>.mapsum::after{content:"▸"}
+.mapsum .mapt{margin-bottom:0}
+.maphint{display:block;font:600 11.5px var(--mono);color:var(--faint);margin-top:7px}
+.qabody{padding-bottom:20px}
 .map{padding:20px 0;border-bottom:1px solid var(--line)}
 .map:last-child{border-bottom:0}
 .map.hidden{display:none}
@@ -1018,9 +1450,29 @@ h1,h2,h3{line-height:1.2;margin:0}
 
 /* ---- substance layer: policy briefs ---- */
 .substance{padding:34px 0 10px}
-.brief{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-  padding:26px 28px 22px;margin-bottom:18px;box-shadow:0 1px 2px rgba(20,24,29,.03)}
-.bhead{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}
+/* Cards are now disclosures so a repeat visitor can collapse what they have
+   already read. Default open: the page must be readable without JS. */
+.briefwrap{margin-bottom:18px}
+details.brief{background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);box-shadow:0 1px 2px rgba(20,24,29,.03);overflow:hidden}
+.briefsum{list-style:none;cursor:pointer;padding:20px 24px;position:relative;
+  padding-right:52px}
+.briefsum::-webkit-details-marker{display:none}
+.briefsum:hover{background:#f8faf9}
+/* Caret sized to the TITLE line only. A caret positioned against the summary's
+   box lands halfway down a wrapped multi-line title, which reads as broken on
+   mobile where titles wrap 3-4 lines. */
+.bcaret{position:absolute;right:22px;top:24px;color:var(--faint);font-size:12px;
+  line-height:1}
+.bcaret::before{content:"▾"}
+details.brief:not([open])>.briefsum .bcaret::before{content:"▸"}
+.btitle{display:block;font-size:23px;letter-spacing:-.022em;font-weight:750;
+  margin-bottom:8px;padding-right:8px}
+.bhint{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;
+  font:600 11.5px var(--mono);color:var(--faint)}
+.bbody{padding:0 28px 22px}
+details.brief[open]>.briefsum{border-bottom:1px solid var(--line)}
+.bhead{padding-bottom:14px;margin-bottom:16px}
 .brief h3{font-size:23px;letter-spacing:-.022em;font-weight:750;margin-bottom:10px}
 .bmeta{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;
   font:600 11.5px var(--mono);color:var(--faint)}
@@ -1181,6 +1633,147 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   .supp{grid-template-columns:1fr;gap:4px}
   .srow a{grid-template-columns:1fr;gap:6px}
   .sstats{grid-column:1}
+}
+
+/* ===================== mobile-first navigation ===================== */
+
+/* In-page jumps must clear the sticky header, or the target lands hidden
+   underneath it. Kept 8px less than the rail's active-offset so a just-jumped
+   heading reads active immediately. */
+[id],.has-section-anchor{scroll-margin-top:calc(var(--sticky-h, 61px) + 12px)}
+
+/* ---- section rail (ported from sgfamily.life, re-coloured to Parsnips) ----
+   A "you are here" map for a page that is 26,000px tall on a phone. Mobile
+   only: on a wide screen the page is short enough and a right-edge rail would
+   simply cover content.
+
+   Tick sizing is a computed trade-off, not a style choice. The 5 Aug page has
+   21 headings; the original rail's 14-20px ticks would be a 20px touch target,
+   under the 44px minimum. 21 ticks at the full 44px is 924px -- taller than the
+   phone viewport -- so the rail would overflow. The JS below therefore sets
+   --rail-tick-h to whatever fits the viewport (capped at 44px), keeping the
+   VISIBLE dot small while the BUTTON stays as close to 44px as geometry allows.
+   The dots' visible size is unchanged, so the rail looks the same. */
+.section-rail{display:none}
+@media (max-width:760px){
+  .section-rail{
+    display:block;position:fixed;top:50%;right:6px;transform:translateY(-50%);
+    z-index:70;padding:10px 0;pointer-events:none}
+  .section-rail.is-dormant{display:none}
+  .section-rail-track{position:relative;display:flex;flex-direction:column;
+    align-items:center;gap:var(--rail-gap,14px);padding:2px 8px;pointer-events:auto}
+  /* Ticks must not shrink. They are flex items in a fixed-height column, so the
+     default flex-shrink:1 silently squeezed every computed height (a 40px
+     request rendered at 25px). The JS sizes them to fit, so shrinking is not
+     wanted. */
+  .section-rail-tick{flex:none}
+  /* progress fill runs behind the ticks */
+  .section-rail-fill{position:absolute;top:12px;bottom:12px;left:50%;width:2px;
+    margin-left:-1px;border-radius:2px;background:#e2e8e3;overflow:hidden}
+  .section-rail-fill::after{content:'';position:absolute;inset:0 0 auto 0;
+    height:calc(var(--rail-progress,0) * 100%);
+    background:linear-gradient(180deg,var(--accent),#2f8f66);
+    transition:height .25s ease}
+  .section-rail-tick{position:relative;appearance:none;border:0;background:transparent;
+    padding:0;width:30px;height:var(--rail-tick-h,22px);display:grid;
+    place-items:center;cursor:pointer}
+  .section-rail-tick-mark{display:block;width:6px;height:6px;border-radius:50%;
+    background:#c4cfc7;box-shadow:0 0 0 3px rgba(251,251,250,.9);
+    transition:width .2s ease,height .2s ease,background .2s ease,transform .2s ease}
+  .section-rail-tick.level-2 .section-rail-tick-mark{width:8px;height:8px}
+  .section-rail-tick.is-active .section-rail-tick-mark{background:var(--accent);
+    transform:scale(1.35)}
+  /* always-visible label for the section currently on screen */
+  .section-rail-pill{position:absolute;top:50%;right:34px;
+    transform:translateY(-50%) translateX(6px);max-width:min(190px,62vw);
+    padding:6px 11px;border-radius:999px;background:rgba(20,24,29,.94);color:#fff;
+    font-size:11px;font-weight:700;line-height:1.25;white-space:nowrap;
+    overflow:hidden;text-overflow:ellipsis;opacity:0;
+    transition:opacity .2s ease,transform .2s ease;pointer-events:none}
+  .section-rail-pill.is-visible{opacity:1;transform:translateY(-50%) translateX(0)}
+  /* long-press / focus preview for off-screen headings */
+  .section-rail-bubble{position:absolute;top:50%;right:30px;
+    transform:translateY(-50%) scale(.94);max-width:180px;padding:6px 11px;
+    border-radius:10px;background:rgba(255,255,255,.98);color:var(--ink);
+    border:1px solid var(--line);box-shadow:0 12px 24px -18px rgba(20,24,29,.55);
+    font-size:11px;font-weight:700;line-height:1.3;white-space:nowrap;
+    overflow:hidden;text-overflow:ellipsis;opacity:0;pointer-events:none;
+    transition:opacity .18s ease,transform .18s ease}
+  .section-rail-tick.is-peeking .section-rail-bubble{opacity:1;
+    transform:translateY(-50%) scale(1)}
+}
+@media (prefers-reduced-motion:reduce){
+  .section-rail-fill::after,.section-rail-tick-mark,.section-rail-pill,
+  .section-rail-bubble{transition:none}
+}
+
+/* Back to top: a long page needs one, and it doubles as "you are deep in". */
+.totop{position:fixed;right:16px;bottom:16px;z-index:40;width:44px;height:44px;
+  border-radius:50%;border:1px solid var(--line);background:var(--card);
+  color:var(--accent);font-size:17px;line-height:1;cursor:pointer;
+  box-shadow:0 2px 10px rgba(20,24,29,.12);opacity:0;visibility:hidden;
+  transition:opacity .2s,visibility .2s}
+.totop.on{opacity:1;visibility:visible}
+@media (prefers-reduced-motion:reduce){.totop{transition:none}}
+/* keep the rail and the back-to-top button from crowding each other */
+@media (max-width:760px){.totop{bottom:16px;right:14px}}
+
+/* "Resume where you left off" -- offered, never forced. Auto-dismisses. */
+.resume{position:fixed;left:16px;right:16px;bottom:16px;z-index:45;
+  display:flex;align-items:center;gap:10px;padding:12px 14px;
+  background:var(--ink);color:#fff;border-radius:12px;font-size:13.5px;
+  box-shadow:0 8px 26px rgba(20,24,29,.28)}
+.resume span{flex:1;line-height:1.35}
+.resume button{font:600 13px inherit;border-radius:8px;cursor:pointer;
+  min-height:44px;padding:0 14px}
+.resume .rgo{background:var(--accent);color:#fff;border:0}
+.resume .rno{background:none;border:0;color:#aeb8c2;font-size:18px;padding:0 6px}
+@media (min-width:761px){.resume{left:auto;right:16px;max-width:380px}}
+
+/* Touch targets: text stays compact, the tappable box grows to >=44px. */
+.qsum>summary,.supp-wrap>summary,.ns>summary,.morepts>summary,.proc>summary,
+.stats-note>details>summary,.top a,.top nav a{
+  min-height:44px;display:inline-flex;align-items:center;padding-left:6px;
+  padding-right:6px;margin-left:-6px}
+.stats-note>details>summary,.top nav a{margin-left:0;padding-left:0}
+.srclink{display:inline-flex;align-items:center;min-height:44px}
+
+/* Jump list: a disclosure on mobile, open on desktop. On mobile it was 2,905px
+   of links sitting above the content they index. */
+.qajump>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;
+  list-style:none;font-weight:700;font-size:15px}
+.qajump>summary::-webkit-details-marker{display:none}
+.qajump>summary::before{content:"▸ ";color:var(--faint);margin-right:6px}
+.qajump[open]>summary::before{content:"▾ "}
+
+/* Long pages on small screens: tighten vertical rhythm so there is less to
+   scroll. */
+@media (max-width:760px){
+  .lede{padding:34px 0 22px}
+  .substance,.oral{padding-top:34px;margin-top:26px}
+  .brief{padding:20px 17px 17px;border-radius:12px}
+  .brief h3{font-size:19px}
+  .whatis{font-size:15.5px}
+  .why{font-size:14.5px;padding:12px 14px}
+  .pt{padding:12px 0}
+  .pttext{font-size:15px}
+  .spk{padding:12px 0 2px}
+  .spk .points .pt{padding:8px 0 8px 13px}
+  .map{padding:16px 0}
+  .mapt{font-size:15px;margin-bottom:12px}
+  .qa-side{padding:12px 13px}
+  .qa-side p{font-size:14.5px}
+  .everything{padding-top:34px;margin-top:26px}
+  details.grp>summary{padding:14px 40px 14px 16px;flex-wrap:wrap;gap:4px 12px}
+  .glist a{padding:13px 16px}
+  .qajump{padding:14px 16px}
+  .qajump li{font-size:14px;flex-wrap:wrap}
+  .qajump .qw{margin-left:30px;width:100%;white-space:normal}
+  .method{padding:22px 18px;margin-top:34px}
+  footer{padding-bottom:88px}
+  /* keep the first screen short: the lede is the only thing above the fold */
+  .lede h1{font-size:clamp(32px,10vw,44px)}
+  .dek{font-size:16px}
 }
 """
 

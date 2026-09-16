@@ -74,6 +74,20 @@ h1,h2,h3{line-height:1.2;margin:0}
 .qajump .qw{font:500 11.5px var(--mono);color:var(--faint);margin-left:auto;
   white-space:nowrap;flex:none}
 .maplist{list-style:none;margin:0;padding:0}
+/* Oral answer cards are disclosures too -- default open. */
+.mapwrap{border-bottom:1px solid var(--line)}
+.mapwrap:last-child{border-bottom:0}
+details.map{padding:0}
+.mapsum{list-style:none;cursor:pointer;padding:16px 0;position:relative;
+  padding-right:34px}
+.mapsum::-webkit-details-marker{display:none}
+.mapsum:hover .mapt{color:var(--accent)}
+.mapsum::after{content:"▾";position:absolute;right:6px;top:20px;color:var(--faint);
+  font-size:12px}
+details.map:not([open])>.mapsum::after{content:"▸"}
+.mapsum .mapt{margin-bottom:0}
+.maphint{display:block;font:600 11.5px var(--mono);color:var(--faint);margin-top:7px}
+.qabody{padding-bottom:20px}
 .map{padding:20px 0;border-bottom:1px solid var(--line)}
 .map:last-child{border-bottom:0}
 .map.hidden{display:none}
@@ -136,9 +150,29 @@ h1,h2,h3{line-height:1.2;margin:0}
 
 /* ---- substance layer: policy briefs ---- */
 .substance{padding:34px 0 10px}
-.brief{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-  padding:26px 28px 22px;margin-bottom:18px;box-shadow:0 1px 2px rgba(20,24,29,.03)}
-.bhead{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}
+/* Cards are now disclosures so a repeat visitor can collapse what they have
+   already read. Default open: the page must be readable without JS. */
+.briefwrap{margin-bottom:18px}
+details.brief{background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);box-shadow:0 1px 2px rgba(20,24,29,.03);overflow:hidden}
+.briefsum{list-style:none;cursor:pointer;padding:20px 24px;position:relative;
+  padding-right:52px}
+.briefsum::-webkit-details-marker{display:none}
+.briefsum:hover{background:#f8faf9}
+/* Caret sized to the TITLE line only. A caret positioned against the summary's
+   box lands halfway down a wrapped multi-line title, which reads as broken on
+   mobile where titles wrap 3-4 lines. */
+.bcaret{position:absolute;right:22px;top:24px;color:var(--faint);font-size:12px;
+  line-height:1}
+.bcaret::before{content:"▾"}
+details.brief:not([open])>.briefsum .bcaret::before{content:"▸"}
+.btitle{display:block;font-size:23px;letter-spacing:-.022em;font-weight:750;
+  margin-bottom:8px;padding-right:8px}
+.bhint{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;
+  font:600 11.5px var(--mono);color:var(--faint)}
+.bbody{padding:0 28px 22px}
+details.brief[open]>.briefsum{border-bottom:1px solid var(--line)}
+.bhead{padding-bottom:14px;margin-bottom:16px}
 .brief h3{font-size:23px;letter-spacing:-.022em;font-weight:750;margin-bottom:10px}
 .bmeta{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;
   font:600 11.5px var(--mono);color:var(--faint)}
@@ -299,4 +333,145 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   .supp{grid-template-columns:1fr;gap:4px}
   .srow a{grid-template-columns:1fr;gap:6px}
   .sstats{grid-column:1}
+}
+
+/* ===================== mobile-first navigation ===================== */
+
+/* In-page jumps must clear the sticky header, or the target lands hidden
+   underneath it. Kept 8px less than the rail's active-offset so a just-jumped
+   heading reads active immediately. */
+[id],.has-section-anchor{scroll-margin-top:calc(var(--sticky-h, 61px) + 12px)}
+
+/* ---- section rail (ported from sgfamily.life, re-coloured to Parsnips) ----
+   A "you are here" map for a page that is 26,000px tall on a phone. Mobile
+   only: on a wide screen the page is short enough and a right-edge rail would
+   simply cover content.
+
+   Tick sizing is a computed trade-off, not a style choice. The 5 Aug page has
+   21 headings; the original rail's 14-20px ticks would be a 20px touch target,
+   under the 44px minimum. 21 ticks at the full 44px is 924px -- taller than the
+   phone viewport -- so the rail would overflow. The JS below therefore sets
+   --rail-tick-h to whatever fits the viewport (capped at 44px), keeping the
+   VISIBLE dot small while the BUTTON stays as close to 44px as geometry allows.
+   The dots' visible size is unchanged, so the rail looks the same. */
+.section-rail{display:none}
+@media (max-width:760px){
+  .section-rail{
+    display:block;position:fixed;top:50%;right:6px;transform:translateY(-50%);
+    z-index:70;padding:10px 0;pointer-events:none}
+  .section-rail.is-dormant{display:none}
+  .section-rail-track{position:relative;display:flex;flex-direction:column;
+    align-items:center;gap:var(--rail-gap,14px);padding:2px 8px;pointer-events:auto}
+  /* Ticks must not shrink. They are flex items in a fixed-height column, so the
+     default flex-shrink:1 silently squeezed every computed height (a 40px
+     request rendered at 25px). The JS sizes them to fit, so shrinking is not
+     wanted. */
+  .section-rail-tick{flex:none}
+  /* progress fill runs behind the ticks */
+  .section-rail-fill{position:absolute;top:12px;bottom:12px;left:50%;width:2px;
+    margin-left:-1px;border-radius:2px;background:#e2e8e3;overflow:hidden}
+  .section-rail-fill::after{content:'';position:absolute;inset:0 0 auto 0;
+    height:calc(var(--rail-progress,0) * 100%);
+    background:linear-gradient(180deg,var(--accent),#2f8f66);
+    transition:height .25s ease}
+  .section-rail-tick{position:relative;appearance:none;border:0;background:transparent;
+    padding:0;width:30px;height:var(--rail-tick-h,22px);display:grid;
+    place-items:center;cursor:pointer}
+  .section-rail-tick-mark{display:block;width:6px;height:6px;border-radius:50%;
+    background:#c4cfc7;box-shadow:0 0 0 3px rgba(251,251,250,.9);
+    transition:width .2s ease,height .2s ease,background .2s ease,transform .2s ease}
+  .section-rail-tick.level-2 .section-rail-tick-mark{width:8px;height:8px}
+  .section-rail-tick.is-active .section-rail-tick-mark{background:var(--accent);
+    transform:scale(1.35)}
+  /* always-visible label for the section currently on screen */
+  .section-rail-pill{position:absolute;top:50%;right:34px;
+    transform:translateY(-50%) translateX(6px);max-width:min(190px,62vw);
+    padding:6px 11px;border-radius:999px;background:rgba(20,24,29,.94);color:#fff;
+    font-size:11px;font-weight:700;line-height:1.25;white-space:nowrap;
+    overflow:hidden;text-overflow:ellipsis;opacity:0;
+    transition:opacity .2s ease,transform .2s ease;pointer-events:none}
+  .section-rail-pill.is-visible{opacity:1;transform:translateY(-50%) translateX(0)}
+  /* long-press / focus preview for off-screen headings */
+  .section-rail-bubble{position:absolute;top:50%;right:30px;
+    transform:translateY(-50%) scale(.94);max-width:180px;padding:6px 11px;
+    border-radius:10px;background:rgba(255,255,255,.98);color:var(--ink);
+    border:1px solid var(--line);box-shadow:0 12px 24px -18px rgba(20,24,29,.55);
+    font-size:11px;font-weight:700;line-height:1.3;white-space:nowrap;
+    overflow:hidden;text-overflow:ellipsis;opacity:0;pointer-events:none;
+    transition:opacity .18s ease,transform .18s ease}
+  .section-rail-tick.is-peeking .section-rail-bubble{opacity:1;
+    transform:translateY(-50%) scale(1)}
+}
+@media (prefers-reduced-motion:reduce){
+  .section-rail-fill::after,.section-rail-tick-mark,.section-rail-pill,
+  .section-rail-bubble{transition:none}
+}
+
+/* Back to top: a long page needs one, and it doubles as "you are deep in". */
+.totop{position:fixed;right:16px;bottom:16px;z-index:40;width:44px;height:44px;
+  border-radius:50%;border:1px solid var(--line);background:var(--card);
+  color:var(--accent);font-size:17px;line-height:1;cursor:pointer;
+  box-shadow:0 2px 10px rgba(20,24,29,.12);opacity:0;visibility:hidden;
+  transition:opacity .2s,visibility .2s}
+.totop.on{opacity:1;visibility:visible}
+@media (prefers-reduced-motion:reduce){.totop{transition:none}}
+/* keep the rail and the back-to-top button from crowding each other */
+@media (max-width:760px){.totop{bottom:16px;right:14px}}
+
+/* "Resume where you left off" -- offered, never forced. Auto-dismisses. */
+.resume{position:fixed;left:16px;right:16px;bottom:16px;z-index:45;
+  display:flex;align-items:center;gap:10px;padding:12px 14px;
+  background:var(--ink);color:#fff;border-radius:12px;font-size:13.5px;
+  box-shadow:0 8px 26px rgba(20,24,29,.28)}
+.resume span{flex:1;line-height:1.35}
+.resume button{font:600 13px inherit;border-radius:8px;cursor:pointer;
+  min-height:44px;padding:0 14px}
+.resume .rgo{background:var(--accent);color:#fff;border:0}
+.resume .rno{background:none;border:0;color:#aeb8c2;font-size:18px;padding:0 6px}
+@media (min-width:761px){.resume{left:auto;right:16px;max-width:380px}}
+
+/* Touch targets: text stays compact, the tappable box grows to >=44px. */
+.qsum>summary,.supp-wrap>summary,.ns>summary,.morepts>summary,.proc>summary,
+.stats-note>details>summary,.top a,.top nav a{
+  min-height:44px;display:inline-flex;align-items:center;padding-left:6px;
+  padding-right:6px;margin-left:-6px}
+.stats-note>details>summary,.top nav a{margin-left:0;padding-left:0}
+.srclink{display:inline-flex;align-items:center;min-height:44px}
+
+/* Jump list: a disclosure on mobile, open on desktop. On mobile it was 2,905px
+   of links sitting above the content they index. */
+.qajump>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;
+  list-style:none;font-weight:700;font-size:15px}
+.qajump>summary::-webkit-details-marker{display:none}
+.qajump>summary::before{content:"▸ ";color:var(--faint);margin-right:6px}
+.qajump[open]>summary::before{content:"▾ "}
+
+/* Long pages on small screens: tighten vertical rhythm so there is less to
+   scroll. */
+@media (max-width:760px){
+  .lede{padding:34px 0 22px}
+  .substance,.oral{padding-top:34px;margin-top:26px}
+  .brief{padding:20px 17px 17px;border-radius:12px}
+  .brief h3{font-size:19px}
+  .whatis{font-size:15.5px}
+  .why{font-size:14.5px;padding:12px 14px}
+  .pt{padding:12px 0}
+  .pttext{font-size:15px}
+  .spk{padding:12px 0 2px}
+  .spk .points .pt{padding:8px 0 8px 13px}
+  .map{padding:16px 0}
+  .mapt{font-size:15px;margin-bottom:12px}
+  .qa-side{padding:12px 13px}
+  .qa-side p{font-size:14.5px}
+  .everything{padding-top:34px;margin-top:26px}
+  details.grp>summary{padding:14px 40px 14px 16px;flex-wrap:wrap;gap:4px 12px}
+  .glist a{padding:13px 16px}
+  .qajump{padding:14px 16px}
+  .qajump li{font-size:14px;flex-wrap:wrap}
+  .qajump .qw{margin-left:30px;width:100%;white-space:normal}
+  .method{padding:22px 18px;margin-top:34px}
+  footer{padding-bottom:88px}
+  /* keep the first screen short: the lede is the only thing above the fold */
+  .lede h1{font-size:clamp(32px,10vw,44px)}
+  .dek{font-size:16px}
 }
