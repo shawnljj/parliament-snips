@@ -1,0 +1,850 @@
+{
+ "generated": "2026-09-16T16:26:54",
+ "sittings": [
+  {
+   "date": "2026-01-12",
+   "collected": 124,
+   "max_result": 139,
+   "ratio": 0.892,
+   "words": 87364,
+   "turns": 415,
+   "speaker_attribution": 0.957,
+   "groups": {
+    "bill": {
+     "n": 5,
+     "words": 47742
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 4445
+    },
+    "oral": {
+     "n": 6,
+     "words": 13209
+    },
+    "written": {
+     "n": 104,
+     "words": 21398
+    },
+    "other": {
+     "n": 6,
+     "words": 389
+    },
+    "motion": {
+     "n": 2,
+     "words": 181
+    }
+   }
+  },
+  {
+   "date": "2026-01-13",
+   "collected": 126,
+   "max_result": 124,
+   "ratio": 1.016,
+   "words": 75915,
+   "turns": 427,
+   "speaker_attribution": 0.948,
+   "groups": {
+    "bill": {
+     "n": 3,
+     "words": 38214
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 4249
+    },
+    "oral": {
+     "n": 13,
+     "words": 13739
+    },
+    "written": {
+     "n": 104,
+     "words": 19429
+    },
+    "correction": {
+     "n": 1,
+     "words": 216
+    },
+    "motion": {
+     "n": 2,
+     "words": 68
+    },
+    "other": {
+     "n": 2,
+     "words": 0
+    }
+   }
+  },
+  {
+   "date": "2026-01-14",
+   "collected": 107,
+   "max_result": 108,
+   "ratio": 0.991,
+   "words": 67889,
+   "turns": 450,
+   "speaker_attribution": 0.96,
+   "groups": {
+    "motion": {
+     "n": 6,
+     "words": 25253
+    },
+    "bill": {
+     "n": 1,
+     "words": 10277
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 4515
+    },
+    "oral": {
+     "n": 18,
+     "words": 12726
+    },
+    "written": {
+     "n": 76,
+     "words": 14430
+    },
+    "correction": {
+     "n": 2,
+     "words": 552
+    },
+    "other": {
+     "n": 3,
+     "words": 136
+    }
+   }
+  },
+  {
+   "date": "2026-02-03",
+   "collected": 164,
+   "max_result": 168,
+   "ratio": 0.976,
+   "words": 81193,
+   "turns": 511,
+   "speaker_attribution": 0.967,
+   "groups": {
+    "bill": {
+     "n": 2,
+     "words": 30167
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 4579
+    },
+    "oral": {
+     "n": 9,
+     "words": 15354
+    },
+    "written": {
+     "n": 145,
+     "words": 30065
+    },
+    "motion": {
+     "n": 2,
+     "words": 502
+    },
+    "correction": {
+     "n": 1,
+     "words": 272
+    },
+    "other": {
+     "n": 4,
+     "words": 254
+    }
+   }
+  },
+  {
+   "date": "2026-02-04",
+   "collected": 143,
+   "max_result": 149,
+   "ratio": 0.96,
+   "words": 62688,
+   "turns": 416,
+   "speaker_attribution": 0.976,
+   "groups": {
+    "bill": {
+     "n": 1,
+     "words": 13685
+    },
+    "motion": {
+     "n": 3,
+     "words": 9159
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 3473
+    },
+    "oral": {
+     "n": 16,
+     "words": 13630
+    },
+    "written": {
+     "n": 118,
+     "words": 22265
+    },
+    "correction": {
+     "n": 1,
+     "words": 326
+    },
+    "other": {
+     "n": 3,
+     "words": 150
+    }
+   }
+  },
+  {
+   "date": "2026-02-12",
+   "collected": 88,
+   "max_result": 86,
+   "ratio": 1.023,
+   "words": 41680,
+   "turns": 254,
+   "speaker_attribution": 0.972,
+   "groups": {
+    "budget": {
+     "n": 1,
+     "words": 11818
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 4263
+    },
+    "oral": {
+     "n": 15,
+     "words": 12399
+    },
+    "written": {
+     "n": 65,
+     "words": 12288
+    },
+    "correction": {
+     "n": 2,
+     "words": 715
+    },
+    "bill": {
+     "n": 1,
+     "words": 175
+    },
+    "motion": {
+     "n": 1,
+     "words": 22
+    },
+    "other": {
+     "n": 2,
+     "words": 0
+    }
+   }
+  },
+  {
+   "date": "2026-02-24",
+   "collected": 70,
+   "max_result": 75,
+   "ratio": 0.933,
+   "words": 70650,
+   "turns": 236,
+   "speaker_attribution": 0.953,
+   "groups": {
+    "budget": {
+     "n": 3,
+     "words": 56788
+    },
+    "oral": {
+     "n": 6,
+     "words": 4560
+    },
+    "written": {
+     "n": 52,
+     "words": 9001
+    },
+    "bill": {
+     "n": 2,
+     "words": 148
+    },
+    "motion": {
+     "n": 3,
+     "words": 114
+    },
+    "other": {
+     "n": 4,
+     "words": 39
+    }
+   }
+  },
+  {
+   "date": "2026-02-25",
+   "collected": 70,
+   "max_result": 68,
+   "ratio": 1.029,
+   "words": 75170,
+   "turns": 243,
+   "speaker_attribution": 0.975,
+   "groups": {
+    "budget": {
+     "n": 1,
+     "words": 58241
+    },
+    "oral": {
+     "n": 3,
+     "words": 4427
+    },
+    "written": {
+     "n": 60,
+     "words": 11949
+    },
+    "correction": {
+     "n": 1,
+     "words": 309
+    },
+    "other": {
+     "n": 3,
+     "words": 157
+    },
+    "motion": {
+     "n": 2,
+     "words": 87
+    }
+   }
+  },
+  {
+   "date": "2026-02-26",
+   "collected": 75,
+   "max_result": 73,
+   "ratio": 1.027,
+   "words": 90541,
+   "turns": 365,
+   "speaker_attribution": 0.984,
+   "groups": {
+    "budget": {
+     "n": 8,
+     "words": 75022
+    },
+    "oral": {
+     "n": 6,
+     "words": 4142
+    },
+    "written": {
+     "n": 56,
+     "words": 10661
+    },
+    "other": {
+     "n": 3,
+     "words": 315
+    },
+    "correction": {
+     "n": 2,
+     "words": 401
+    }
+   }
+  },
+  {
+   "date": "2026-02-27",
+   "collected": 71,
+   "max_result": 69,
+   "ratio": 1.029,
+   "words": 92971,
+   "turns": 366,
+   "speaker_attribution": 0.978,
+   "groups": {
+    "budget": {
+     "n": 9,
+     "words": 78421
+    },
+    "oral": {
+     "n": 6,
+     "words": 4864
+    },
+    "written": {
+     "n": 49,
+     "words": 8946
+    },
+    "correction": {
+     "n": 3,
+     "words": 692
+    },
+    "motion": {
+     "n": 2,
+     "words": 48
+    },
+    "other": {
+     "n": 2,
+     "words": 0
+    }
+   }
+  },
+  {
+   "date": "2026-03-02",
+   "collected": 65,
+   "max_result": 63,
+   "ratio": 1.032,
+   "words": 90745,
+   "turns": 352,
+   "speaker_attribution": 0.98,
+   "groups": {
+    "budget": {
+     "n": 6,
+     "words": 75820
+    },
+    "oral": {
+     "n": 4,
+     "words": 5069
+    },
+    "written": {
+     "n": 52,
+     "words": 9837
+    },
+    "motion": {
+     "n": 1,
+     "words": 19
+    },
+    "other": {
+     "n": 2,
+     "words": 0
+    }
+   }
+  },
+  {
+   "date": "2026-03-03",
+   "collected": 68,
+   "max_result": 73,
+   "ratio": 0.932,
+   "words": 96933,
+   "turns": 325,
+   "speaker_attribution": 0.978,
+   "groups": {
+    "budget": {
+     "n": 6,
+     "words": 77721
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 4180
+    },
+    "oral": {
+     "n": 7,
+     "words": 4284
+    },
+    "correction": {
+     "n": 2,
+     "words": 1105
+    },
+    "written": {
+     "n": 49,
+     "words": 9616
+    },
+    "motion": {
+     "n": 1,
+     "words": 27
+    },
+    "other": {
+     "n": 2,
+     "words": 0
+    }
+   }
+  },
+  {
+   "date": "2026-03-04",
+   "collected": 70,
+   "max_result": 70,
+   "ratio": 1.0,
+   "words": 98028,
+   "turns": 419,
+   "speaker_attribution": 0.981,
+   "groups": {
+    "budget": {
+     "n": 7,
+     "words": 83119
+    },
+    "oral": {
+     "n": 9,
+     "words": 4992
+    },
+    "written": {
+     "n": 51,
+     "words": 9673
+    },
+    "correction": {
+     "n": 1,
+     "words": 201
+    },
+    "motion": {
+     "n": 2,
+     "words": 43
+    }
+   }
+  },
+  {
+   "date": "2026-03-05",
+   "collected": 52,
+   "max_result": 50,
+   "ratio": 1.04,
+   "words": 84647,
+   "turns": 327,
+   "speaker_attribution": 0.991,
+   "groups": {
+    "budget": {
+     "n": 5,
+     "words": 72415
+    },
+    "oral": {
+     "n": 6,
+     "words": 4951
+    },
+    "written": {
+     "n": 38,
+     "words": 7262
+    },
+    "motion": {
+     "n": 1,
+     "words": 19
+    },
+    "other": {
+     "n": 2,
+     "words": 0
+    }
+   }
+  },
+  {
+   "date": "2026-03-06",
+   "collected": 59,
+   "max_result": 58,
+   "ratio": 1.017,
+   "words": 58798,
+   "turns": 241,
+   "speaker_attribution": 0.942,
+   "groups": {
+    "bill": {
+     "n": 6,
+     "words": 30205
+    },
+    "budget": {
+     "n": 5,
+     "words": 16672
+    },
+    "oral": {
+     "n": 7,
+     "words": 4498
+    },
+    "motion": {
+     "n": 2,
+     "words": 530
+    },
+    "written": {
+     "n": 37,
+     "words": 6651
+    },
+    "correction": {
+     "n": 1,
+     "words": 242
+    },
+    "other": {
+     "n": 1,
+     "words": 0
+    }
+   }
+  },
+  {
+   "date": "2026-04-07",
+   "collected": 139,
+   "max_result": 143,
+   "ratio": 0.972,
+   "words": 82944,
+   "turns": 657,
+   "speaker_attribution": 0.959,
+   "groups": {
+    "statement": {
+     "n": 1,
+     "words": 27619
+    },
+    "bill": {
+     "n": 7,
+     "words": 13569
+    },
+    "oral": {
+     "n": 15,
+     "words": 16254
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 2821
+    },
+    "written": {
+     "n": 107,
+     "words": 21410
+    },
+    "correction": {
+     "n": 3,
+     "words": 1187
+    },
+    "motion": {
+     "n": 2,
+     "words": 84
+    },
+    "other": {
+     "n": 3,
+     "words": 0
+    }
+   }
+  },
+  {
+   "date": "2026-04-08",
+   "collected": 141,
+   "max_result": 141,
+   "ratio": 1.0,
+   "words": 70440,
+   "turns": 474,
+   "speaker_attribution": 0.968,
+   "groups": {
+    "bill": {
+     "n": 3,
+     "words": 30016
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 4010
+    },
+    "oral": {
+     "n": 19,
+     "words": 13008
+    },
+    "written": {
+     "n": 112,
+     "words": 22798
+    },
+    "correction": {
+     "n": 1,
+     "words": 279
+    },
+    "other": {
+     "n": 4,
+     "words": 305
+    },
+    "motion": {
+     "n": 1,
+     "words": 24
+    }
+   }
+  },
+  {
+   "date": "2026-05-05",
+   "collected": 162,
+   "max_result": 161,
+   "ratio": 1.006,
+   "words": 113310,
+   "turns": 542,
+   "speaker_attribution": 0.969,
+   "groups": {
+    "bill": {
+     "n": 4,
+     "words": 56172
+    },
+    "oral": {
+     "n": 5,
+     "words": 14974
+    },
+    "motion": {
+     "n": 5,
+     "words": 4519
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 3996
+    },
+    "written": {
+     "n": 142,
+     "words": 31328
+    },
+    "other": {
+     "n": 5,
+     "words": 2321
+    }
+   }
+  },
+  {
+   "date": "2026-05-06",
+   "collected": 138,
+   "max_result": 144,
+   "ratio": 0.958,
+   "words": 107628,
+   "turns": 470,
+   "speaker_attribution": 0.964,
+   "groups": {
+    "motion": {
+     "n": 4,
+     "words": 53436
+    },
+    "bill": {
+     "n": 1,
+     "words": 11733
+    },
+    "oral": {
+     "n": 12,
+     "words": 13744
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 3719
+    },
+    "written": {
+     "n": 115,
+     "words": 24469
+    },
+    "correction": {
+     "n": 2,
+     "words": 379
+    },
+    "other": {
+     "n": 3,
+     "words": 148
+    }
+   }
+  },
+  {
+   "date": "2026-05-07",
+   "collected": 113,
+   "max_result": 115,
+   "ratio": 0.983,
+   "words": 89610,
+   "turns": 466,
+   "speaker_attribution": 0.953,
+   "groups": {
+    "bill": {
+     "n": 4,
+     "words": 55334
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 4585
+    },
+    "oral": {
+     "n": 16,
+     "words": 12731
+    },
+    "written": {
+     "n": 86,
+     "words": 16368
+    },
+    "correction": {
+     "n": 2,
+     "words": 531
+    },
+    "motion": {
+     "n": 2,
+     "words": 61
+    },
+    "other": {
+     "n": 2,
+     "words": 0
+    }
+   }
+  },
+  {
+   "date": "2026-07-07",
+   "collected": 160,
+   "max_result": 164,
+   "ratio": 0.976,
+   "words": 100936,
+   "turns": 501,
+   "speaker_attribution": 0.972,
+   "groups": {
+    "motion": {
+     "n": 4,
+     "words": 50121
+    },
+    "oral": {
+     "n": 7,
+     "words": 13510
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 3972
+    },
+    "written": {
+     "n": 142,
+     "words": 31411
+    },
+    "statement": {
+     "n": 1,
+     "words": 1652
+    },
+    "other": {
+     "n": 4,
+     "words": 197
+    },
+    "bill": {
+     "n": 1,
+     "words": 73
+    }
+   }
+  },
+  {
+   "date": "2026-08-04",
+   "collected": 200,
+   "max_result": 198,
+   "ratio": 1.01,
+   "words": 101508,
+   "turns": 578,
+   "speaker_attribution": 0.983,
+   "groups": {
+    "bill": {
+     "n": 7,
+     "words": 42527
+    },
+    "oral": {
+     "n": 2,
+     "words": 16092
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 4892
+    },
+    "motion": {
+     "n": 2,
+     "words": 2495
+    },
+    "written": {
+     "n": 184,
+     "words": 35129
+    },
+    "other": {
+     "n": 4,
+     "words": 373
+    }
+   }
+  },
+  {
+   "date": "2026-08-05",
+   "collected": 159,
+   "max_result": 167,
+   "ratio": 0.952,
+   "words": 118363,
+   "turns": 560,
+   "speaker_attribution": 0.971,
+   "groups": {
+    "motion": {
+     "n": 4,
+     "words": 72684
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 4028
+    },
+    "oral": {
+     "n": 16,
+     "words": 13161
+    },
+    "written": {
+     "n": 135,
+     "words": 28267
+    },
+    "correction": {
+     "n": 1,
+     "words": 223
+    },
+    "other": {
+     "n": 2,
+     "words": 0
+    }
+   }
+  }
+ ]
+}

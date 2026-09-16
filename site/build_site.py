@@ -1,0 +1,1126 @@
+"""
+Parsnips — site generator.
+
+Builds the whole static site from data/sitting_*.json:
+
+    site/dist/index.html              the latest sitting (what most people want)
+    site/dist/sittings/index.html     the archive, newest first
+    site/dist/sittings/<date>.html    one page per sitting, permanent URL
+    site/dist/theme.css               shared stylesheet
+
+Design notes:
+  * All infographic panels are COMPUTED from parsed data, never hard-coded.
+  * The infographic is the hero and sits above the fold.
+  * Every figure links back to the report it came from.
+  * Coverage, attribution and the method are printed on the page. Trust is a
+    feature; we publish our own error bars.
+  * Output paths are relative so the site works from file:// in development and
+    from a web root in production.
+
+Product decisions baked in (agreed with the owner):
+  * Audience: the general public who read the news.
+  * Tone: bite-sized, neutral, factual. No side-taking, no framing.
+  * Questions are MAPPED to responses, never scored or labelled unanswered.
+"""
+import datetime
+import html
+import json
+import os
+import re
+import sys
+from collections import defaultdict
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+DATA = os.path.join(ROOT, "data")
+
+# ---------------------------------------------------------------- presentation
+GROUP_LABEL = {
+    "oral": "Oral answers", "written": "Written answers", "budget": "Committee of Supply",
+    "motion": "Motions", "bill": "Bills", "statement": "Ministerial statements",
+    "adjournment": "Adjournment", "correction": "Corrections", "tribute": "Tributes",
+    "petition": "Petitions", "other": "Other business",
+}
+GROUP_ORDER = ["motion", "budget", "bill", "statement", "oral", "written",
+               "adjournment", "correction", "tribute", "petition", "other"]
+
+# Figures worth surfacing. Deliberately conservative: a currency, a unit, or a
+# percentage. A bare 4-digit year (2026) or a small integer is noise, not a figure.
+NUM = re.compile(
+    r"(\$[\d.,]+\s?(?:billion|million|bil|mil|bn)\b"
+    r"|S\$[\d.,]+\s?(?:billion|million|bil|mil|bn)\b"
+    r"|\$[\d.,]{3,}"
+    r"|\b\d[\d.,]*\s?(?:billion|million)\b"
+    r"|\b\d[\d.,]*\s?(?:per cent|%)\b)", re.I)
+
+TITLE = r"(?:Mr|Ms|Mrs|Mdm|Dr|Prof|Assoc\s+Prof|Associate\s+Prof|Encik|Haji|Puan|Datuk)"
+TITLE_IN_PAREN = re.compile(rf"^({TITLE})\b", re.I)
+PROCEDURAL_SPEAKER = re.compile(r"^\[.*\]$")
+CHAIR = re.compile(r"^(Mr\s+)?Speaker\b|^(The\s+)?(Deputy\s+)?Speaker\b|^Chairman\b", re.I)
+
+
+def esc(s):
+    return html.escape(s or "", quote=True)
+
+
+def short_speaker(raw):
+    """Reduce a Hansard speaker string to the person a reader scans for.
+
+    The trap: the FIRST parenthetical is often a portfolio or an actor, not the
+    name. e.g.
+      'The Minister for Trade and Industry (Energy and Industry) (Dr Tan See Leng)'
+    Taking the first paren yields 'Energy and Industry' -- wrong. Hansard also
+    uses trailing parens for constituency:
+      'Ms Hany Soh (Marsiling-Yew Tee)'
+      'Mr Low Wu Yang Andre (Non-Constituency Member)'
+    where there is no name in parens at all and the parens must be dropped.
+
+    So: prefer the LAST parenthetical that opens with a personal title; if none
+    does, strip parentheticals entirely and keep the leading name.
+    """
+    if not raw:
+        return None
+    groups = re.findall(r"\(([^()]*)\)", raw)
+    titled = [g.strip() for g in groups if TITLE_IN_PAREN.match(g.strip())]
+    if titled:
+        return titled[-1]
+    stripped = re.sub(r"\s*\([^()]*\)", "", raw).strip()
+    return stripped or raw.strip()
+
+
+def is_procedural(speaker):
+    """Chair/administrative noise, excluded from people-facing stats."""
+    if not speaker:
+        return False
+    s = speaker.strip().rstrip(":")
+    return bool(PROCEDURAL_SPEAKER.match(s)) or bool(CHAIR.match(s))
+
+
+MONEY_UNIT = {"billion": 1e9, "bil": 1e9, "b": 1e9,
+              "million": 1e6, "mil": 1e6, "m": 1e6}
+
+
+def magnitude(value):
+    """Rough numeric magnitude of a matched figure, for ordering the panel."""
+    s = value.replace("$", "").replace(",", "").replace(" ", "").strip().lower()
+    m = re.match(r"^([\d.]+)([a-z%]*)$", s)
+    if not m:
+        return 0.0
+    try:
+        n = float(m.group(1))
+    except ValueError:
+        return 0.0
+    unit = m.group(2)
+    if unit == "%":
+        return n * 1e3
+    return n * MONEY_UNIT.get(unit, 1.0)
+
+
+def word_snap(text, idx, length, pad=95):
+    """Expand a [idx, idx+length) span to whole words with context padding."""
+    start = max(0, idx - pad)
+    end = min(len(text), idx + length + pad)
+    if start > 0:
+        nxt = text.find(" ", start)
+        start = nxt + 1 if 0 <= nxt < idx else start
+    if end < len(text):
+        prv = text.rfind(" ", idx + length, end)
+        end = prv if prv > idx + length else end
+    snippet = text[start:end].strip()
+    prefix = "…" if start > 0 else ""
+    suffix = "…" if end < len(text) else ""
+    return f"{prefix}{snippet}{suffix}"
+
+
+def pretty_date(iso):
+    """'2026-08-05' -> '5 August 2026' (Singapore reads dates day-first)."""
+    try:
+        dt = datetime.date.fromisoformat(iso)
+    except (ValueError, TypeError):
+        return iso or ""
+    return f"{dt.day} {dt.strftime('%B %Y')}"
+
+
+def hansard_url(r):
+    """Official Hansard lookup for a report.
+
+    The portal is an Angular SPA with no per-report permalink we can rely on, so
+    we link to the search home rather than inventing a URL that may 404.
+    Do NOT fabricate a report permalink here.
+    """
+    return "https://sprs.parl.gov.sg/search/#/home"
+
+
+# ---------------------------------------------------------------- computation
+def compute_panels(sitting):
+    reports = sitting["reports"]
+
+    budget, counts = defaultdict(int), defaultdict(int)
+    for r in reports:
+        budget[r["group"]] += r["words"]
+        counts[r["group"]] += 1
+
+    speaker_words, speaker_report = defaultdict(int), {}
+    for r in reports:
+        for t in r["turns"]:
+            if not t["speaker"] or is_procedural(t["speaker"]):
+                continue
+            name = short_speaker(t["speaker"])
+            if not name:
+                continue
+            speaker_words[name] += t["words"]
+            speaker_report.setdefault(name, r["report_id"])
+
+    # Figures cited in the debate.
+    #
+    # Dedupe GLOBALLY by value: the same figure restated in a second record of a
+    # split debate should not fill the panel twice.
+    #
+    # DELIBERATELY NOT CLASSIFYING "commitment" vs "statistic".
+    # A regex for it was tried and produced false authority: it tagged "$39,000"
+    # (a GST Assessable Income threshold being described) as money the Government
+    # promised to spend. Telling a promise from a cited statistic is reading
+    # comprehension, not pattern-matching. It belongs in the summarisation pass,
+    # where a model reasons over the whole turn and is held to a citation.
+    seen, numbers = set(), []
+    for r in reports:
+        for t in r["turns"]:
+            if t["lang"] != "English" or t["words"] < 8:
+                continue
+            for m in NUM.finditer(t["text"]):
+                # strip trailing punctuation the pattern greedily swallowed
+                value = re.sub(r"\s+", " ", m.group(0).strip()).rstrip(",.;:")
+                key = value.lower().replace(" ", "")
+                if key in seen:
+                    continue
+                if not re.search(r"[$%]|million|billion|per cent", value, re.I):
+                    if len(re.sub(r"[^\d]", "", value)) < 3:
+                        continue
+                seen.add(key)
+                numbers.append({
+                    "value": value,
+                    "mag": magnitude(value),
+                    "context": word_snap(t["text"], m.start(), len(value)),
+                    "report_id": r["report_id"],
+                    "speaker": short_speaker(t["speaker"]) or "Unattributed",
+                    "title": r["title"],
+                })
+    numbers.sort(key=lambda n: -n["mag"])
+
+    # Question -> response mapping for oral answers.
+    #
+    # PRODUCT DECISION: this is a MAPPING, not a scorecard. We do NOT compute an
+    # answer/question word ratio and we do NOT label anything "unanswered". Both
+    # are judgements, and this site does not take sides or frame. We show what
+    # was asked and what was said back, in order, with participants named.
+    #
+    # Structure of an oral answer record, verified against 2026-08-05:
+    #   * one or more "asked the Minister for X ..." turns  -> the question(s)
+    #   * the Minister's main reply                        -> the response
+    #   * then supplementary questioners and replies, interleaved with
+    #     "Mr Speaker" turns that just call the next speaker by name.
+    #
+    # Vernacular turns are NOT in the English Hansard: they read
+    # "[Please refer to Vernacular Speech.]" with the words in a separate
+    # document. We flag these rather than inventing text.
+    PORTFOLIO = re.compile(
+        r"^(?:The\s+)?(?:Acting\s+|Senior\s+|Second\s+|Deputy\s+|Associate\s+)*"
+        r"(?:Minister|Parliamentary\s+Secretary|Prime\s+Minister|Speaker)\b", re.I)
+    DELEGATION = re.compile(r"\(for\s+the\s+", re.I)
+    VERNACULAR = re.compile(r"refer to Vernacular Speech|Vernacular Speech", re.I)
+    FORMAL_Q = re.compile(r"^\s*asked\s+the\s+", re.I)
+    PERMISSION = re.compile(
+        r"may I (?:please )?(?:have|seek) (?:your )?permission|"
+        r"address oral Question|answer Question Nos?|may I please address", re.I)
+
+    def is_role_turn(speaker):
+        s = (speaker or "").strip()
+        return bool(PORTFOLIO.match(s)) or bool(DELEGATION.search(s))
+
+    def not_transcribed(text):
+        return bool(VERNACULAR.search(text or ""))
+
+    def trim(text, limit=340):
+        text = (text or "").strip()
+        if len(text) <= limit:
+            return text
+        return text[:limit].rsplit(" ", 1)[0].rstrip(",;:") + " …"
+
+    qa = []
+    for r in reports:
+        if r["group"] != "oral":
+            continue
+
+        # resolve the respondent's name from role-marked turns
+        role_names = set()
+        for t in r["turns"]:
+            if not is_procedural(t["speaker"]) and is_role_turn(t["speaker"]):
+                nm = short_speaker(t["speaker"])
+                if nm:
+                    role_names.add(nm)
+        if len(role_names) != 1:
+            continue
+        answerer = next(iter(role_names))
+
+        # the formal question (first "asked the ..." turn, else the lead turn)
+        question, asker, q_lang = None, None, "English"
+        for t in r["turns"]:
+            if is_procedural(t["speaker"]):
+                continue
+            if FORMAL_Q.match(t["text"] or ""):
+                question = re.sub(r"^\s*asked\s+the\s+", "", t["text"].strip(), flags=re.I)
+                asker = short_speaker(t["speaker"]) or "Unknown"
+                q_lang = t["lang"]
+                break
+        if question is None:
+            for t in r["turns"]:
+                if t["speaker"] and not is_role_turn(t["speaker"]) \
+                        and not is_procedural(t["speaker"]) and t["words"] > 25:
+                    question, asker, q_lang = t["text"], short_speaker(t["speaker"]), t["lang"]
+                    break
+        if not question or not asker:
+            continue
+
+        # the response: first substantive turn by the respondent, skipping a bare
+        # "may I address Question Nos 1 to 3" (that is a request, not the answer)
+        response, r_lang, r_nt = None, "English", False
+        for t in r["turns"]:
+            if is_procedural(t["speaker"]):
+                continue
+            nm = short_speaker(t["speaker"])
+            if nm != answerer and not is_role_turn(t["speaker"]):
+                continue
+            if t["words"] < 20 and PERMISSION.search(t["text"] or ""):
+                continue
+            if t["words"] < 8:
+                continue
+            response, r_lang, r_nt = t["text"], t["lang"], not_transcribed(t["text"])
+            break
+        if not response:
+            continue
+
+        # supplementary exchange, kept in order so nothing is out of context
+        supp, started = [], False
+        for t in r["turns"]:
+            if is_procedural(t["speaker"]) or not t["speaker"]:
+                continue
+            if t["text"] is response or t["text"] is question:
+                started = True
+                continue
+            if not started:
+                continue
+            nm = short_speaker(t["speaker"])
+            if nm == "Mr Speaker":
+                continue
+            who, role = (answerer, "response") if (nm == answerer or is_role_turn(t["speaker"])) \
+                else (nm, "question")
+            if t["words"] < 8:
+                continue
+            supp.append({"who": who, "role": role, "text": trim(t["text"]),
+                         "not_transcribed": not_transcribed(t["text"])})
+
+        qa.append({
+            "title": r["title"], "report_id": r["report_id"],
+            "asker": asker, "answerer": answerer,
+            "question": trim(question, 420),
+            "question_not_transcribed": not_transcribed(question),
+            "question_lang": q_lang,
+            "response": trim(response, 520),
+            "response_not_transcribed": r_nt,
+            "response_lang": r_lang,
+            "supplementary": supp,
+            "supplementary_askers": sorted({s["who"] for s in supp if s["role"] == "question"}),
+            "total_turns": len(r["turns"]),
+        })
+    qa.sort(key=lambda x: -x["total_turns"])
+
+    return {
+        "budget": sorted(budget.items(), key=lambda kv: -kv[1]),
+        "counts": counts,
+        "speakers": sorted(speaker_words.items(), key=lambda kv: -kv[1])[:12],
+        "numbers": numbers[:14],
+        "qa": qa,
+    }
+
+
+def bar_rows(pairs, total, label_map=None):
+    out = []
+    for key, val in pairs:
+        pct = (val / total * 100) if total else 0
+        label = (label_map or {}).get(key, key)
+        out.append(
+            f'<div class="row"><span class="rk">{esc(label)}</span>'
+            f'<span class="rb"><i style="width:{pct:.1f}%"></i></span>'
+            f'<span class="rv">{val:,}</span></div>')
+    return "\n".join(out)
+
+
+MAPPING_NOTE = ("What was asked and what was said back, in order and in full where the "
+                "record allows. Nothing is labelled answered or unanswered &mdash; "
+                "we map the exchange and leave the judgement to you.")
+
+QA_PREVIEW = 4          # mappings shown before the expand control
+DEBATE_TURNS = 14       # turns shown in the debate of the day
+
+
+def render_mapping(q):
+    """One question -> response mapping card."""
+    def lang_tag(lang):
+        return "" if (lang or "English") == "English" else \
+            f'<span class="lt">{esc(lang)}</span>'
+
+    def nt_flag(flag):
+        return ('<span class="nt" title="The words are in a separate vernacular '
+                'document, not the English Hansard">not transcribed here</span>'
+                if flag else "")
+
+    supp = q.get("supplementary") or []
+    supp_html = ""
+    if supp:
+        rows = []
+        for s in supp:
+            cls = "sresp" if s["role"] == "response" else "sq"
+            rows.append(f'<div class="supp {cls}">'
+                        f'<span class="sw">{esc(s["who"])}</span>'
+                        f'<span class="st">{esc(s["text"])}{nt_flag(s["not_transcribed"])}</span>'
+                        f'</div>')
+        extra = q.get("supplementary_askers") or []
+        who_txt = ("Supplementary questions from " + ", ".join(esc(x) for x in extra)
+                   if extra else "Further exchange")
+        supp_html = (f'<details class="supp-wrap"><summary>{who_txt} '
+                     f'({len(supp)} further turns)</summary>{"".join(rows)}</details>')
+
+    return f"""
+      <li class="map" id="{esc(q['report_id'])}">
+        <a class="mapt" href="{esc(hansard_url(q))}" target="_blank" rel="noopener">{esc(q['title'])}</a>
+        <div class="qa-pair">
+          <div class="qa-side ask">
+            <span class="qa-role">Asked</span>
+            <span class="qa-who">{esc(q['asker'])}{lang_tag(q['question_lang'])}</span>
+            <p>{esc(q['question'])}{nt_flag(q['question_not_transcribed'])}</p>
+          </div>
+          <div class="qa-link" aria-hidden="true"></div>
+          <div class="qa-side resp">
+            <span class="qa-role">Response</span>
+            <span class="qa-who">{esc(q['answerer'])}{lang_tag(q['response_lang'])}</span>
+            <p>{esc(q['response'])}{nt_flag(q['response_not_transcribed'])}</p>
+          </div>
+        </div>
+        {supp_html}
+        <a class="srclink" href="{esc(hansard_url(q))}" target="_blank" rel="noopener">Full exchange in Hansard &rarr;</a>
+      </li>"""
+
+
+def nav(home, archive, current=""):
+    def cls(name):
+        return ' class="on"' if name == current else ""
+    return (f'<nav><a href="{esc(home)}">Latest</a>'
+            f'<a href="{esc(archive)}"{cls("archive")}>Sittings</a></nav>')
+
+
+def coverage_text(cov):
+    """Human-readable coverage.
+
+    Never print "126 of 124": maxResult is load-balanced and under-reports, so a
+    bare ratio above 1 reads like a bug to a general reader. When we have
+    everything, say so plainly; when we are short, give the shortfall.
+    """
+    n, mx = cov.get("collected"), cov.get("max_result")
+    if not n:
+        return "—"
+    if not mx or n >= mx:
+        return f"{n} (complete)"
+    return f"{n} of about {mx} ({n / mx * 100:.0f}%)"
+
+
+def render_brief(brief, sitting_dates=None):
+    """Render one summarised policy item as a neutral brief.
+
+    Each key point shows the verbatim quote it was verified against, so a reader
+    can check us. Points whose quote failed verification were dropped upstream
+    and never reach here.
+    """
+    meta = brief.get("_meta", {})
+    title = brief.get("title") or "Untitled"
+    stage = (brief.get("stage") or "").strip()
+    stage_html = ""
+    if stage and stage.lower() not in ("not stated", "n/a", ""):
+        stage_html = f'<span class="stage">{esc(stage)}</span>'
+
+    dates = meta.get("sitting_dates") or ([sitting_dates] if sitting_dates else [])
+    dates_txt = ""
+    if dates:
+        if len(dates) == 1:
+            dates_txt = pretty_date(dates[0])
+        else:
+            dates_txt = f"{pretty_date(dates[0])} &ndash; {pretty_date(dates[-1])}"
+
+    pts = []
+    for p in brief.get("key_points", []) or []:
+        quote = (p.get("quote") or "").strip()
+        quote_html = (f'<blockquote>{esc(quote)}</blockquote>' if quote else "")
+        pts.append(f'<li class="pt">'
+                   f'<p class="pttext">{esc(p.get("point", ""))}</p>'
+                   f'{quote_html}'
+                   f'<span class="ptwho">{esc(p.get("speaker") or "Unattributed")}</span>'
+                   f'</li>')
+
+    not_said = brief.get("not_said") or []
+    ns_html = ""
+    if not_said:
+        items = "".join(f"<li>{esc(x)}</li>" for x in not_said)
+        ns_html = (f'<details class="ns"><summary>Open questions from this debate '
+                   f'({len(not_said)})</summary>'
+                   f'<p class="nnote">Questions the debate raises that the record does '
+                   f'not resolve. Listed as open questions, not as findings.</p>'
+                   f'<ul>{items}</ul></details>')
+
+    next_txt = (brief.get("what_happens_next") or "").strip()
+    next_html = ""
+    if next_txt and next_txt.lower() not in ("not stated", ""):
+        next_html = f'<p class="next"><b>What happens next</b> {esc(next_txt)}</p>'
+
+    why = (brief.get("why_it_matters") or "").strip()
+    why_html = (f'<p class="why">{esc(why)}</p>' if why else "")
+
+    return f"""
+      <article class="brief" id="{esc(meta.get('report_ids', [''])[0])}">
+        <header class="bhead">
+          <h3>{esc(title)}</h3>
+          <div class="bmeta">{stage_html}<span class="bdate">{dates_txt}</span>
+            <span class="bsrc">{', '.join(esc(x) for x in (meta.get('report_ids') or [])[:4])}</span>
+          </div>
+        </header>
+        <p class="whatis">{esc(brief.get('what_it_is', ''))}</p>
+        {why_html}
+        <ul class="points">{''.join(pts)}</ul>
+        {next_html}
+        {ns_html}
+      </article>"""
+
+
+def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None):
+    d = sitting["date"]
+    cov = sitting["coverage"]
+    reports = sitting["reports"]
+    panels = compute_panels(sitting)
+    total_words = cov.get("words", 0)
+
+    # Debate of the day.
+    #
+    # Hansard sometimes splits ONE debate across records that share a title: the
+    # 5 Aug 2026 motion "An Economy of the Future that Works for All" is
+    # motion-3008 (54,276 words) AND motion-3010 (18,347 words). Taking only the
+    # largest record understated the debate by 18k words and left dangling
+    # anchors. So group by normalised title and merge.
+    def norm_title(t):
+        return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()
+
+    by_title = defaultdict(list)
+    for r in reports:
+        by_title[norm_title(r["title"])].append(r)
+    largest = max(reports, key=lambda r: r["words"]) if reports else None
+    debate_group = (sorted(by_title[norm_title(largest["title"])], key=lambda r: -r["words"])
+                    if largest else [])
+    debate_ids = {r["report_id"] for r in debate_group}
+    debate_words = sum(r["words"] for r in debate_group)
+
+    grouped = defaultdict(list)
+    for r in reports:
+        if r["report_id"] not in debate_ids:
+            grouped[r["group"]].append(r)
+    order = [g for g in GROUP_ORDER if g in grouped]
+
+    def report_card(r):
+        # the id makes in-page anchors resolve; the numbers panel and debate
+        # footer link here to show provenance
+        return (f'<li class="item" id="{esc(r["report_id"])}">'
+                f'<a href="{esc(hansard_url(r))}" target="_blank" rel="noopener">'
+                f'<span class="it">{esc(r["title"]) or "(untitled)"}</span>'
+                f'<span class="iw">{r["words"]:,}w</span></a></li>')
+
+    groups_html = []
+    for g in order:
+        items = sorted(grouped[g], key=lambda r: -r["words"])
+        shown = "\n".join(report_card(r) for r in items[:8])
+        if len(items) > 8:
+            shown += (f'\n<li class="item more"><button class="reveal">'
+                      f'+ {len(items) - 8} more {esc(GROUP_LABEL.get(g, g).lower())}'
+                      f'</button></li>')
+            shown += "\n" + "\n".join(report_card(r) for r in items[8:])
+        groups_html.append(f'<section class="grp"><h3>{esc(GROUP_LABEL.get(g, g))}'
+                           f'<span class="cnt">{len(items)}</span></h3><ul>{shown}</ul></section>')
+
+    debate_html = ""
+    if debate_group:
+        merged = []
+        for r in debate_group:
+            merged.extend(r["turns"])
+        turns = [t for t in merged if not is_procedural(t["speaker"])]
+        blocks = []
+        for t in turns[:DEBATE_TURNS]:
+            who = short_speaker(t["speaker"]) if t["speaker"] else "Unattributed"
+            body = t["text"]
+            body = body if len(body) <= 620 else body[:617].rsplit(" ", 1)[0] + " …"
+            blocks.append(f'<div class="turn"><div class="who">{esc(who)}'
+                          f'<span class="tw">{t["words"]:,}w</span></div>'
+                          f'<p>{esc(body)}</p></div>')
+        srcs = " &middot; ".join(
+            f'<span id="{esc(r["report_id"])}"><a href="{esc(hansard_url(r))}" '
+            f'target="_blank" rel="noopener">{esc(r["report_id"])}</a></span>'
+            for r in debate_group)
+        parts = f"merged from {len(debate_group)} records" if len(debate_group) > 1 else ""
+        debate_html = f"""
+      <section class="debate" id="debate-of-the-day">
+        <div class="sec-head"><h2>The debate of the day</h2>
+          <p class="sub">{debate_words:,} words across {len(merged)} turns
+          {f"&mdash; {parts}" if parts else ""}. Speaker order preserved.</p></div>
+        <h3 class="dtitle">{esc(largest['title'])}</h3>
+        {''.join(blocks)}
+        <p class="foot">Source: {srcs}</p>
+      </section>"""
+
+    numbers_html = "\n".join(
+        f'<li class="num"><b>{esc(n["value"])}</b><span>{esc(n["context"])}</span>'
+        f'<a class="sig" href="#{esc(n["report_id"])}">{esc(n["speaker"])} '
+        f'&middot; {esc(n["title"][:44])}</a></li>'
+        for n in panels["numbers"])
+
+    qa_rows = panels["qa"]
+    qa_html = "\n".join(render_mapping(q) for q in qa_rows[:QA_PREVIEW])
+    if len(qa_rows) > QA_PREVIEW:
+        # wrapper carries no "map" class: nesting .map inside .map broke the
+        # per-card styling and inflated any count of mappings on the page
+        qa_html += ('<li class="qa-more hidden">'
+                    + "\n".join(render_mapping(q) for q in qa_rows[QA_PREVIEW:]) + "</li>")
+    qa_more_btn = (f'<button class="reveal-maps">Show all {len(qa_rows)} '
+                   f'question&ndash;response mappings</button>'
+                   if len(qa_rows) > QA_PREVIEW else "")
+
+    attr = cov.get("speaker_attribution")
+    attr_txt = f"{attr*100:.0f}%" if attr else "n/a"
+    # maxResult is load-balanced and has been observed UNDER-reporting (13 Jan
+    # 2026: 126 reports collected against a claimed 124). So a ratio above 1 is
+    # normal, not an error -- only warn when we actually came up short.
+    ratio = cov.get("ratio")
+    short = ratio is not None and ratio < 0.99
+    coverage_warn = ("" if not short else
+                     '<li class="warn">Coverage is below 100%. Some items from this '
+                     'sitting may be missing, so read the totals as a floor rather '
+                     'than a final count.</li>')
+
+    # ---- substance layer: pick the briefs relevant to this sitting ----
+    briefs = []
+    for b in (summaries or []):
+        meta = b.get("_meta", {})
+        if d in (meta.get("sitting_dates") or []):
+            briefs.append(b)
+    # order by what a citizen most needs to know
+    ORDER = {"bill": 0, "statement": 1, "budget": 2, "motion": 3, "adjournment": 4}
+    briefs.sort(key=lambda b: (ORDER.get(b.get("_meta", {}).get("group"), 9),
+                               -len(b.get("key_points", []))))
+    bills = [b for b in briefs if b.get("_meta", {}).get("group") == "bill"]
+    others = [b for b in briefs if b.get("_meta", {}).get("group") != "bill"]
+
+    def brief_list(items, limit=None):
+        out = items if limit is None else items[:limit]
+        return "".join(render_brief(b) for b in out)
+
+    lead = reports[0] if reports else {}
+    lede_words = ""
+    if briefs:
+        lede_words = (f"{len(briefs)} polic{'y' if len(briefs) == 1 else 'ies'} and "
+                      f"{len(reports)} items of business")
+    else:
+        lede_words = f"{len(reports)} items of business"
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parsnips — Parliament, {esc(pretty_date(d))}</title>
+<meta name="description" content="{esc(pretty_date(d))}: what Singapore's Parliament decided and what it means, in a page.">
+<link rel="stylesheet" href="{esc(css_href)}">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="{esc(home_href)}"><span class="veg">🌱</span> Parsnips</a>
+    {nav(home_href, archive_href)}
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="lede">
+    <p class="kicker">Singapore Parliament &middot; Sitting No. {esc(str(lead.get("sitting_no") or ""))}</p>
+    <h1><time datetime="{esc(d)}">{esc(pretty_date(d))}</time></h1>
+    <p class="dek">{lede_words}, read so you don't have to.</p>
+  </section>
+
+  {f'''
+  <section class="substance">
+    <div class="sec-head"><h2>What the Government is doing</h2>
+      <p class="sub">What was decided or announced, who said it, and where it goes next.
+      Every point carries the words it was taken from.</p></div>
+    {brief_list(bills) if bills else ''}
+    {brief_list(others) if others else ''}
+  </section>''' if briefs else f'''
+  <section class="substance">
+    <div class="sec-head"><h2>What the Government is doing</h2></div>
+    <p class="empty">This sitting has not been summarised yet.</p>
+  </section>'''}
+
+  {debate_html}
+
+  <section class="everything">
+    <div class="sec-head"><h2>Everything else</h2>
+      <p class="sub">The rest of the sitting, grouped. {len(reports) - len(debate_ids)} items.</p></div>
+    {''.join(groups_html)}
+  </section>
+
+  <section class="stats-note">
+    <details>
+      <summary>How much was said (sitting statistics)</summary>
+      <div class="statgrid">
+        <div class="bars people">
+          <h4>Words by section</h4>
+          {bar_rows(panels["budget"], total_words, GROUP_LABEL)}
+        </div>
+        <div class="bars people">
+          <h4>Who spoke most</h4>
+          {bar_rows(panels["speakers"][:10], panels["speakers"][0][1] if panels["speakers"] else 1)}
+        </div>
+      </div>
+      <p class="statnote">Volume, not substance. Kept for reference.</p>
+    </details>
+  </section>
+
+  <section class="method">
+    <h2>How this page was made</h2>
+    <p>Built from the official Hansard record (Parliament of Singapore Official Reports).
+    No news reporting was used. Briefs are written by software from the transcript and
+    every key point carries the verbatim words it was drawn from.</p>
+    <ul>
+      <li>Reports collected: <b>{coverage_text(cov)}</b></li>
+      <li>Briefs on this page: <b>{len(briefs)}</b>
+        {f'({sum(len(b.get("key_points", [])) for b in briefs)} verified points)' if briefs else ''}</li>
+      <li>Speaker attribution: <b>{attr_txt}</b> of turns carry an explicit speaker tag</li>
+      <li>Any point whose quote could not be found in the transcript was discarded
+        rather than shown.</li>
+      {coverage_warn}
+    </ul>
+  </section>
+
+  <footer><p>Parsnips &middot; an unofficial reader for the Official Report.
+  Hansard is a public record; the full text is at sprs.parl.gov.sg.</p></footer>
+</main>
+<script>
+document.querySelectorAll('.reveal').forEach(function (b) {{
+  b.addEventListener('click', function () {{
+    var grp = b.closest('.grp');
+    grp.querySelectorAll('.item').forEach(function (i) {{ i.classList.remove('hidden'); }});
+    grp.querySelectorAll('.more').forEach(function (i) {{ i.remove(); }});
+  }});
+}});
+var maps = document.querySelector('.reveal-maps');
+if (maps) {{
+  maps.addEventListener('click', function () {{
+    var more = document.querySelector('.qa-more');
+    if (more) {{
+      more.classList.remove('hidden');
+      more.classList.remove('qa-more');
+      maps.remove();
+    }}
+  }});
+}}
+</script>
+</body>
+</html>
+"""
+
+
+def render_archive(sittings, *, css_href, home_href, archive_href, summaries=None):
+    """Archive: every sitting, newest first, with the leading policy item."""
+    by_date = {}
+    for b in (summaries or []):
+        for dt in (b.get("_meta", {}).get("sitting_dates") or []):
+            by_date.setdefault(dt, []).append(b)
+
+    rows = []
+    for s in reversed(sittings):
+        d = s["date"]
+        cov = s.get("coverage", {})
+        dt = datetime.date.fromisoformat(d)
+        briefs = by_date.get(d) or []
+        if briefs:
+            lead = briefs[0]
+            headline = esc(lead.get("title") or "")
+            lead_line = headline
+            detail = f"{len(briefs)} brief{'s' if len(briefs) != 1 else ''}"
+        else:
+            r = max(s["reports"], key=lambda x: x["words"]) if s["reports"] else None
+            lead_line = esc(((r or {}).get("title") or "(no business)")[:98])
+            detail = "not yet summarised"
+        rows.append(f"""
+      <li class="srow">
+        <a href="{esc(d)}.html">
+          <span class="sdate">{esc(pretty_date(d))}
+            <span class="sdow">{esc(dt.strftime('%A'))}</span></span>
+          <span class="slead">{lead_line}</span>
+          <span class="sstats">{esc(detail)} &middot; {len(s['reports'])} items
+            &middot; {coverage_text(cov)}</span>
+        </a>
+      </li>""")
+
+    total_items = sum(len(s["reports"]) for s in sittings)
+    dates = [s["date"] for s in sittings]
+    span = f"{pretty_date(dates[0])} &ndash; {pretty_date(dates[-1])}" if dates else "—"
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parsnips — every sitting</title>
+<meta name="description" content="Every Singapore Parliament sitting in the Parsnips archive, newest first.">
+<link rel="stylesheet" href="{esc(css_href)}">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="{esc(home_href)}"><span class="veg">🌱</span> Parsnips</a>
+  {nav(home_href, archive_href, current="archive")}
+</div></header>
+<main class="wrap">
+  <section class="lede">
+    <p class="kicker">The archive</p>
+    <h1>Every sitting</h1>
+    <p class="dek">{len(sittings)} sitting{'' if len(sittings) == 1 else 's'} and
+    {total_items:,} items of business, read so you don't have to.</p>
+    <p class="span-note">{span}</p>
+  </section>
+  <section class="arch">
+    <ul class="slist">{''.join(rows) or '<li class="empty">No sittings yet.</li>'}</ul>
+  </section>
+  <footer><p>Parsnips &middot; an unofficial reader for the Official Report.
+  Hansard is a public record; the full text is at sprs.parl.gov.sg.</p></footer>
+</main>
+</body>
+</html>
+"""
+
+
+STYLE = """
+:root{
+  --ink:#14181d; --dim:#5c6773; --faint:#8b95a1; --line:#e3e7ec;
+  --bg:#fbfbfa; --card:#ffffff; --accent:#1c6b4a; --accent-soft:#e8f2ec;
+  --warm:#b4622a; --radius:14px;
+  --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{line-height:1.2;margin:0}
+
+/* top bar */
+.top{border-bottom:1px solid var(--line);background:rgba(251,251,250,.86);
+  backdrop-filter:blur(10px);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:700;font-size:18px;letter-spacing:-.01em;display:flex;gap:8px;align-items:center}
+.veg{font-size:19px}
+.top nav{display:flex;gap:22px;font-size:14px;color:var(--dim)}
+.top nav a:hover,.top nav a.on{color:var(--ink)}
+.top nav a.on{font-weight:650}
+
+/* lede */
+.lede{padding:56px 0 34px;border-bottom:1px solid var(--line)}
+.kicker{font:600 12px/1 var(--mono);letter-spacing:.11em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+.lede h1{font-size:clamp(40px,7.5vw,76px);letter-spacing:-.032em;font-weight:800}
+.dek{font-size:19px;color:var(--dim);margin:18px 0 0;max-width:56ch}
+.dek b{color:var(--ink)}
+.span-note{font:500 12.5px var(--mono);color:var(--faint);margin:14px 0 0}
+
+/* infographic grid */
+.info{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:26px 0 8px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 26px 22px;box-shadow:0 1px 2px rgba(20,24,29,.03)}
+.span2{grid-column:span 2}
+.panel h2{font-size:15px;font-weight:700;letter-spacing:-.005em;
+  padding-bottom:14px;margin-bottom:18px;border-bottom:1px solid var(--line)}
+.pnote{font-size:13.5px;color:var(--faint);margin:-8px 0 18px;max-width:70ch}
+
+/* bars */
+.bars .row{display:grid;grid-template-columns:132px 1fr 72px;align-items:center;
+  gap:14px;margin-bottom:13px;font-size:14px}
+/* Speaker list fills a full-width panel, so lay it out in two columns.
+   Otherwise the names truncate ("Mr Kenneth Tiong Boon K...") and leave a
+   large empty gap beside a half-width panel. */
+.bars.people{display:grid;grid-template-columns:1fr 1fr;gap:0 30px}
+.bars.people .row{grid-template-columns:1fr 92px 62px}
+.rk{color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rb{background:#f0f3f6;height:9px;border-radius:5px;overflow:hidden}
+.rb i{display:block;height:100%;background:var(--accent);border-radius:5px}
+.bars.people .rb i{background:var(--warm)}
+.rv{text-align:right;font:600 12.5px var(--mono);color:var(--faint)}
+
+/* question -> response mapping */
+.maplist{list-style:none;margin:0;padding:0}
+.map{padding:20px 0;border-bottom:1px solid var(--line)}
+.map:last-child{border-bottom:0}
+.map.hidden{display:none}
+.qa-more{list-style:none}
+.qa-more.hidden{display:none}
+.mapt{display:block;font-size:16px;font-weight:700;letter-spacing:-.012em;
+  margin-bottom:16px;color:var(--ink)}
+.mapt:hover{color:var(--accent)}
+.qa-pair{display:grid;grid-template-columns:1fr 26px 1fr;gap:0;align-items:stretch}
+.qa-side{background:#f8faf9;border:1px solid var(--line);border-radius:11px;
+  padding:14px 16px}
+.qa-side.resp{background:var(--accent-soft);border-color:#cfe3d8}
+.qa-role{display:block;font:700 9.5px var(--mono);letter-spacing:.1em;
+  text-transform:uppercase;color:var(--faint);margin-bottom:5px}
+.qa-side.resp .qa-role{color:var(--accent)}
+.qa-who{display:block;font:700 12.5px var(--mono);color:var(--dim);
+  margin-bottom:9px;letter-spacing:.01em}
+.qa-side p{margin:0;font-size:14.5px;line-height:1.55;color:#232a31}
+/* the connector between the two sides */
+.qa-link{position:relative}
+.qa-link::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;
+  background:var(--line)}
+.qa-link::after{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;
+  margin:-4px 0 0 -4px;border-radius:50%;background:var(--accent)}
+.lt{display:inline-block;margin-left:7px;font:700 9px var(--mono);letter-spacing:.07em;
+  text-transform:uppercase;background:#eef1f4;color:var(--dim);
+  padding:2px 5px;border-radius:4px;vertical-align:middle}
+.nt{display:inline-block;margin-left:7px;font:600 10.5px var(--mono);
+  color:var(--warm);background:#fdf1e8;padding:2px 6px;border-radius:4px}
+/* supplementary exchange */
+.supp-wrap{margin-top:14px;border-top:1px dashed var(--line);padding-top:12px}
+.supp-wrap summary{cursor:pointer;font:600 12.5px var(--mono);color:var(--accent);
+  list-style:none}
+.supp-wrap summary::-webkit-details-marker{display:none}
+.supp-wrap summary::before{content:"▸ ";display:inline-block}
+.supp-wrap[open] summary::before{content:"▾ "}
+.supp{display:grid;grid-template-columns:132px 1fr;gap:14px;padding:9px 0 9px 10px;
+  border-left:2px solid var(--line);margin-top:9px}
+.supp.sq{border-left-color:var(--warm)}
+.supp.sresp{border-left-color:var(--accent)}
+.sw{font:700 11.5px var(--mono);color:var(--dim)}
+.st{font-size:13.5px;color:#2c343b;line-height:1.5}
+.srclink{display:inline-block;margin-top:12px;font:600 12px var(--mono);color:var(--faint)}
+.srclink:hover{color:var(--accent)}
+.reveal-maps{display:block;width:100%;margin-top:18px;padding:12px;
+  background:none;border:1px dashed var(--line);border-radius:10px;
+  color:var(--accent);font:600 13px inherit;cursor:pointer}
+.reveal-maps:hover{background:var(--card)}
+
+/* numbers */
+.nums{list-style:none;margin:0;padding:0;display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:14px}
+.num{border:1px solid var(--line);border-radius:11px;padding:15px 16px;background:#fdfefd}
+.num b{display:block;font-size:26px;letter-spacing:-.03em;color:var(--accent);
+  margin-bottom:7px}
+.num span{display:block;font-size:12.8px;color:var(--dim);line-height:1.5}
+.sig{display:inline-block;margin-top:11px;font:600 11px var(--mono);
+  color:var(--faint);border-top:1px solid var(--line);padding-top:8px}
+.empty{color:var(--faint);font-size:14px}
+
+/* ---- substance layer: policy briefs ---- */
+.substance{padding:34px 0 10px}
+.brief{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 28px 22px;margin-bottom:18px;box-shadow:0 1px 2px rgba(20,24,29,.03)}
+.bhead{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}
+.brief h3{font-size:23px;letter-spacing:-.022em;font-weight:750;margin-bottom:10px}
+.bmeta{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;
+  font:600 11.5px var(--mono);color:var(--faint)}
+.stage{background:var(--accent);color:#fff;padding:3px 8px;border-radius:5px;
+  letter-spacing:.05em;text-transform:uppercase;font-size:10px}
+.bdate{color:var(--dim)}
+.bsrc{color:var(--faint)}
+.whatis{font-size:16.5px;line-height:1.6;margin:0 0 12px;color:#232a31}
+.why{font-size:15px;line-height:1.62;margin:0 0 20px;padding:14px 16px;
+  background:var(--accent-soft);border-radius:10px;color:#1e3a2c}
+.points{list-style:none;margin:0;padding:0}
+.pt{padding:14px 0;border-top:1px solid var(--line)}
+.pt:first-child{border-top:0}
+.pttext{margin:0 0 8px;font-size:15.5px;line-height:1.58}
+.pt blockquote{margin:0 0 8px;padding-left:14px;border-left:2px solid var(--line);
+  font-size:14px;line-height:1.55;color:var(--dim);font-style:italic}
+.ptwho{display:block;font:600 11.5px var(--mono);color:var(--faint);
+  letter-spacing:.02em}
+.next{margin:18px 0 0;padding:14px 16px;background:#f8faf9;border:1px solid var(--line);
+  border-radius:10px;font-size:14.5px;line-height:1.55}
+.next b{display:block;font:700 10px var(--mono);letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.ns{margin-top:16px;border-top:1px dashed var(--line);padding-top:12px}
+.ns summary{cursor:pointer;font:600 13px inherit;color:var(--accent);list-style:none}
+.ns summary::-webkit-details-marker{display:none}
+.ns summary::before{content:"▸ ";}
+.ns[open] summary::before{content:"▾ "}
+.nnote{font-size:12.5px;color:var(--faint);margin:10px 0 8px;max-width:70ch}
+.ns ul{margin:0;padding-left:20px}
+.ns li{font-size:14px;color:var(--dim);margin-bottom:7px;line-height:1.5}
+
+/* sitting statistics, demoted to an appendix */
+.stats-note{margin:44px 0 0;border-top:1px solid var(--line);padding-top:22px}
+.stats-note summary{cursor:pointer;font:600 13px var(--mono);color:var(--faint);
+  list-style:none}
+.stats-note summary::-webkit-details-marker{display:none}
+.stats-note summary::before{content:"▸ ";}
+.stats-note[open] summary::before{content:"▾ "}
+.statgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:20px}
+.statgrid h4{font-size:13px;font-weight:700;margin-bottom:14px;color:var(--dim)}
+.statnote{font:500 12px var(--mono);color:var(--faint);margin-top:18px}
+
+/* sections */
+.sec-head{margin:0 0 22px}
+.sec-head h2{font-size:26px;letter-spacing:-.022em;font-weight:750}
+.sub{color:var(--faint);font-size:14px;margin:9px 0 0}
+
+/* debate */
+.debate{padding:56px 0 20px;border-top:1px solid var(--line);margin-top:36px}
+.dtitle{font-size:20px;letter-spacing:-.015em;margin-bottom:26px;color:var(--accent)}
+.turn{padding:15px 0 15px 20px;border-left:2px solid var(--line);margin-bottom:4px}
+.turn:hover{border-left-color:var(--accent)}
+.who{font:700 12.5px var(--mono);letter-spacing:.02em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:8px;display:flex;gap:10px;align-items:baseline}
+.tw{font-weight:500;color:var(--faint);text-transform:none;letter-spacing:0}
+.turn p{margin:0;font-size:16px;color:#232a31}
+.foot{font:12px var(--mono);color:var(--faint);margin-top:22px}
+
+/* everything else */
+.everything{padding:56px 0 10px;border-top:1px solid var(--line);margin-top:36px}
+.grp{margin-bottom:34px}
+.grp h3{font-size:15px;display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.cnt{font:600 11px var(--mono);background:var(--accent-soft);color:var(--accent);
+  padding:3px 8px;border-radius:20px}
+.grp ul{list-style:none;margin:0;padding:0}
+.item.hidden{display:none}
+.item a{display:flex;justify-content:space-between;gap:18px;padding:11px 14px;
+  border-bottom:1px solid var(--line);font-size:14.5px;align-items:baseline}
+.item a:hover{background:var(--card)}
+.it{padding-right:12px}
+.iw{font:600 11.5px var(--mono);color:var(--faint);white-space:nowrap}
+.more button{background:none;border:0;color:var(--accent);font:600 13px inherit;
+  cursor:pointer;padding:11px 14px;text-align:left}
+
+/* method + footer */
+.method{margin:56px 0 0;padding:28px 30px;background:var(--accent-soft);
+  border-radius:var(--radius);border:1px solid #cfe3d8}
+.method h2{font-size:17px;margin-bottom:14px}
+.method p{font-size:14px;color:var(--dim);margin:0 0 12px}
+.method ul{margin:0;padding-left:20px;font-size:13.5px;color:var(--dim)}
+.method li{margin-bottom:6px}
+.method b{color:var(--ink)}
+.method .warn{color:var(--warm)}
+footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
+  font-size:12.5px;color:var(--faint)}
+
+/* archive */
+.arch{padding:34px 0 10px}
+.slist{list-style:none;margin:0;padding:0}
+.srow{border-bottom:1px solid var(--line)}
+.srow a{display:grid;grid-template-columns:190px 1fr;gap:8px 22px;
+  padding:20px 4px;align-items:baseline}
+.srow a:hover{background:var(--card)}
+.sdate{font-weight:700;font-size:15px;display:flex;flex-direction:column;gap:3px}
+.sdow{font:500 11px var(--mono);color:var(--faint);text-transform:uppercase;
+  letter-spacing:.08em}
+.slead{font-size:15.5px;color:var(--ink);line-height:1.4}
+.sstats{grid-column:2;font:500 11.5px var(--mono);color:var(--faint)}
+
+@media (max-width:760px){
+  .info{grid-template-columns:1fr}
+  .span2{grid-column:span 1}
+  .bars .row{grid-template-columns:104px 1fr 58px}
+  .bars.people{grid-template-columns:1fr}
+  .bars.people .row{grid-template-columns:1fr 72px 52px}
+  /* the question/response connector only reads left-to-right; stack on mobile */
+  .qa-pair{grid-template-columns:1fr;gap:10px}
+  .qa-link{display:none}
+  .supp{grid-template-columns:1fr;gap:4px}
+  .srow a{grid-template-columns:1fr;gap:6px}
+  .sstats{grid-column:1}
+}
+"""
+
+
+def load_summaries():
+    """Every summarised policy brief, or [] if none exist yet."""
+    sdir = os.path.join(ROOT, "summaries")
+    out = []
+    if not os.path.isdir(sdir):
+        return out
+    for fn in sorted(os.listdir(sdir)):
+        if not fn.endswith(".json") or fn == "index.json":
+            continue
+        try:
+            with open(os.path.join(sdir, fn), encoding="utf-8") as fh:
+                out.append(json.load(fh))
+        except (OSError, ValueError) as exc:
+            print(f"  warning: skipping summary {fn}: {exc}", file=sys.stderr)
+    return out
+
+
+def load_sittings():
+    out = []
+    for fn in sorted(os.listdir(DATA)):
+        if not (fn.startswith("sitting_") and fn.endswith(".json")):
+            continue
+        try:
+            with open(os.path.join(DATA, fn), encoding="utf-8") as fh:
+                out.append(json.load(fh))
+        except (OSError, ValueError) as exc:
+            print(f"  warning: skipping {fn}: {exc}", file=sys.stderr)
+    out.sort(key=lambda s: s["date"])
+    return out
+
+
+def build_all(out_dir):
+    sittings = load_sittings()
+    if not sittings:
+        print("no sittings in data/ -- nothing to build", file=sys.stderr)
+        return 0
+    summaries = load_summaries()
+    os.makedirs(out_dir, exist_ok=True)
+    sdir = os.path.join(out_dir, "sittings")
+    os.makedirs(sdir, exist_ok=True)
+
+    with open(os.path.join(out_dir, "theme.css"), "w", encoding="utf-8") as fh:
+        fh.write(STYLE)
+
+    for s in sittings:
+        page = render_sitting(s, css_href="../theme.css", home_href="../index.html",
+                              archive_href="index.html", summaries=summaries)
+        with open(os.path.join(sdir, f"{s['date']}.html"), "w", encoding="utf-8") as fh:
+            fh.write(page)
+
+    with open(os.path.join(sdir, "index.html"), "w", encoding="utf-8") as fh:
+        fh.write(render_archive(sittings, css_href="../theme.css",
+                                home_href="../index.html", archive_href="index.html",
+                                summaries=summaries))
+
+    latest = sittings[-1]
+    with open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8") as fh:
+        fh.write(render_sitting(latest, css_href="theme.css", home_href="index.html",
+                                archive_href="sittings/index.html", summaries=summaries))
+
+    printed = sum(len(s.get("key_points", [])) for s in summaries)
+    print(f"built {len(sittings)} sitting page(s) + archive; latest = {latest['date']}; "
+          f"{len(summaries)} briefs ({printed} verified points)")
+    return len(sittings)
+
+
+def main(argv):
+    out_dir = argv[1] if len(argv) > 1 else os.path.join(HERE, "dist")
+    os.makedirs(out_dir, exist_ok=True)
+    return 0 if build_all(out_dir) else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main(sys.argv))
