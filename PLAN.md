@@ -350,8 +350,13 @@ A 57k-word sitting does **not** fit one context window with good results, and na
 | **3. Summarise** | 291 briefs / 4,614 verified points across 2026, every point quote-checked | ✅ **Done** |
 | **4. Site v2** | Mobile-first sitting pages, section rail, scroll memory, collapsible cards | ✅ **Done** |
 | **5. Depth** | 2016–2025 backfill, one batch per year, modern-first | **Next** |
+| **5b. Model choice** | Pick a smaller LOCAL model for bulk summarisation — see §6b. Deliberately deferred until the fetch finishes | **Blocked on 5** |
 | **6. Automate** | GH Actions cron → auto-detect, fetch, summarise, deploy | Then |
 | **7. Polish** | Topic threads across sittings, MP pages, RSS, OG images | Later |
+
+> **Phase 5b is deferred on purpose, not forgotten.** No model benchmarking or
+> summarisation runs until the 2016–2025 download is complete. The rationale and the
+> measured figures are in **§6b — Choosing a model for the full corpus** below.
 
 ### What already runs
 ```bash
@@ -388,6 +393,102 @@ years land first.
 
 ---
 
+## 6b. Choosing a model for the full corpus — DEFERRED until the fetch finishes
+
+**Status: not started, on purpose. Do not act on this until the 2016–2025 download is
+complete.** Recorded here because the next person to touch this repo may be a session
+with no memory of the night this was decided.
+
+### The problem
+
+The full 2016-onward corpus is a very large amount of summarisation. Running it all
+through cloud inference is the expensive path, so the target is a **smaller model
+running locally**. That decision is not made yet — this section records what has been
+measured so the choice can be made deliberately later.
+
+### Hardware (measured on this machine)
+
+| | |
+|---|---|
+| Chip | Apple M1 Max |
+| Unified memory | 32 GB |
+| GPU cores | 32 |
+| Ollama | 0.34.1 |
+
+A 4B–8B model at 4–5 bit quantisation is roughly 3–6 GB and runs entirely in GPU
+memory here — the configuration where small models actually perform well. A usefully
+quantised 27B wants ~16–20 GB and competes with everything else on the machine, which
+is the likely reason **~27B models were tried previously and "didn't work that well"**.
+So 8B is a reasonable target and 4B is worth benchmarking.
+
+### The real constraint is input size, not parameter count
+
+Measured across the 291 existing 2026 briefs (`_meta.source_words`):
+
+| | |
+|---|---|
+| median | **845 words** |
+| p90 | 17,404 words |
+| max | 151,476 words |
+| over 30k words | 13 of 291 |
+| over 60k words | 2 of 291 |
+
+Most items are tiny. The summariser builds a **120,000-character** transcript
+(**90,000** for merged multi-day items, where several reports are concatenated) and
+truncates beyond that with a head+tail policy — roughly 30k input tokens. So a small
+model must survive a long context for the heavy items, while the bulk of the work is
+small inputs.
+
+### Option that fits the data (to evaluate, not yet decided)
+
+- a **small model (4B–8B)** for the long tail — the ~845-word median briefs, which is
+  most items
+- keep a **more capable model** for the ~13 heavy debates (Bills, Budget, Committee of
+  Supply)
+- **benchmark on a fixed sample of ~10 briefs** spanning median and heavy before
+  committing to anything
+
+### Two correctness constraints that must not be traded for speed
+
+1. **The verbatim-quote gate is what makes the site trustworthy.** Every key point
+   must carry a quote that actually appears in the transcript; unverifiable points are
+   dropped. A smaller model is *more* likely to lightly reword a quotation. The gate
+   will catch that, and dropping is the safe direction — but **benchmark the drop
+   rate**. It was 4 dropped points on the 2016 run. A much higher rate means the model
+   is unsuitable no matter how fast it is.
+2. **The quality bar is the neutral, cited, outcome-focused brief.** A cheaper model
+   that produces mush is worse than no summaries, because the page asserts that every
+   point is backed by the transcript.
+
+Measure three things on the sample: **points surviving the gate**, **wall-clock per
+brief**, and **whether the prose still reads as neutral reporting**.
+
+### Switching model is a variable, not a code change
+
+The summariser already reads its configuration from the environment:
+
+```bash
+PARSNIPS_LLM_URL    # default http://127.0.0.1:11434/v1/chat/completions
+PARSNIPS_LLM_MODEL  # default deepseek-v4.1-flash:cloud
+```
+
+### ⚠️ Nothing genuinely local is installed yet
+
+All three models currently reachable on the local endpoint are **cloud-proxied**,
+despite living on localhost:
+
+| name | params | quant |
+|---|---|---|
+| `nemotron-3-nano:30b-cloud` | 32B | FP8 |
+| `gpt-oss:20b-cloud` | 20.9B | MXFP4 |
+| `deepseek-v4.1-flash:cloud` | 763B | FP8 |
+
+The `-cloud` suffix means they proxy out to a provider. **An actual local model must be
+pulled before any of this can be benchmarked** — until then "local" is a misnomer and
+the cost argument does not hold.
+
+---
+
 ## 7. Decisions (settled 16 Sep 2026)
 
 | Question | Decision |
@@ -410,11 +511,19 @@ was also wrong on the facts (it tagged a GST income threshold as a spending prom
 not ship.**
 
 ### Still open
+- **Model choice for bulk summarisation — DEFERRED, see §6b.** No benchmarking until the
+  2016–2025 fetch finishes. A genuinely local 4B–8B model must be pulled first; nothing
+  on the local endpoint is actually local today.
 - Domain/branding: `parsnips.sg`, `.com`, or a Cloudflare subdomain to start?
 - How prominently to disclose AI generation (recommendation: prominently, on every page
   — it is a trust asset, not a liability).
-- Whether to backfill history before 2026 for trend context (the architecture supports it;
-  `--discover` already works for any date range).
+- **2014–2015 are unexplained.** A boundary probe found no sitting on any of six probed
+  days in either year. Either those dates were genuinely non-sitting, or those years
+  enumerate differently. Not blocking 2017+ — the floor is 2016 — but if a 2017+ fetch
+  returns an unexpectedly empty year, treat it as the same class of problem and
+  investigate rather than assuming an empty year is real.
+
+*(Backfilling before 2026 is no longer open: settled as a 2016 floor, in progress.)*
 
 ---
 
