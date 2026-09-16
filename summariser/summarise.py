@@ -413,10 +413,15 @@ def load_sittings(dates=None):
 
 
 def write_atomic(path, obj):
-    tmp = f"{path}.tmp"
-    with open(tmp, "w", encoding="utf-8") as fh:
-        json.dump(obj, fh, indent=1, ensure_ascii=False)
-    os.replace(tmp, path)
+    """Atomic JSON write, creating the year shard directory if needed.
+
+    Delegates to storage.write_json_atomic so there is ONE atomic writer in the
+    project. The local copy here did not create its parent directory, so the first
+    write into a new year shard (summaries/2016/) raised FileNotFoundError and
+    killed the run -- the directory exists for 2026 only because it was created by
+    an earlier code path.
+    """
+    storage.write_json_atomic(path, obj)
 
 
 def rebuild_site():

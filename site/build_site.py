@@ -35,6 +35,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, "data")
 SUMMARIES = os.path.join(ROOT, "summaries")
+sys.path.insert(0, os.path.join(ROOT, "scraper"))
+import storage  # noqa: E402  (the project's single atomic-write implementation)
 
 # ---------------------------------------------------------------- presentation
 GROUP_LABEL = {
@@ -2270,10 +2272,8 @@ def write_text_atomic(path, text):
     scraper/backfill.py and write_atomic in summariser/summarise.py, which already
     did this -- the site writer just did not follow the convention.
     """
-    tmp = f"{path}.tmp"
-    with open(tmp, "w", encoding="utf-8") as fh:
-        fh.write(text)
-    os.replace(tmp, path)
+    storage.write_text_atomic(path, text)
+    return path
 
 
 def load_summaries():

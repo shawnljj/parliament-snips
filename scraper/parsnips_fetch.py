@@ -62,6 +62,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 # The repo's data directory, used only for the discovery calendar cache.
 DATA_DIR = os.path.join(os.path.dirname(HERE), "data")
 
+sys.path.insert(0, HERE)
+import storage  # noqa: E402  (the project's single atomic-write implementation)
+
 BASE = "https://sprs.parl.gov.sg/search"
 _UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
        "(KHTML, like Gecko) Chrome/120.0 Safari/537.36")
@@ -504,11 +507,10 @@ def main(argv):
         print(f"   {r['words']:7,d}w  {r['group']:11s} {r['title'][:64]}")
 
     # Atomic: the sitting JSON is read by the site builder, so a truncated write
-    # could be consumed mid-build. Same pattern as write_json_atomic in backfill.py.
-    tmp = f"{out}.tmp"
-    with open(tmp, "w", encoding="utf-8") as fh:
-        json.dump(sitting, fh, indent=1, ensure_ascii=False)
-    os.replace(tmp, out)
+    # could be consumed mid-build. Delegates to storage so there is one atomic
+    # writer in the project and the parent directory is always created -- a local
+    # copy is what allowed summaries/2016/ to be missing and kill a run.
+    storage.write_json_atomic(out, sitting)
     print(f"saved {out}")
     return 0
 

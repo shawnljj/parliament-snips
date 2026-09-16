@@ -4,6 +4,7 @@ import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from parsnips_fetch import group_for
+import storage  # noqa: E402  (the project's single atomic-write implementation)
 
 
 def normalise(raw):
@@ -54,10 +55,9 @@ if __name__ == "__main__":
     out = normalise(raw)
     dest = sys.argv[2]
     # Atomic: a truncated sitting JSON would be consumed by the site builder.
-    tmp = f"{dest}.tmp"
-    with open(tmp, "w", encoding="utf-8") as fh:
-        json.dump(out, fh, indent=1, ensure_ascii=False)
-    os.replace(tmp, dest)
+    # Delegates to storage so the parent directory is always created and there is
+    # one atomic writer in the project.
+    storage.write_json_atomic(dest, out)
     c = out["coverage"]
     print(f"{dest}: {c['collected']}/{c['max_result']} reports, {c['words']:,} words, "
           f"{c['turns']} turns, attribution {c['speaker_attribution']}")
