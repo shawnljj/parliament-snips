@@ -10,10 +10,14 @@ backfill_status.json
 
 # In-flight writes from the atomic writers (tmp + os.replace). A .tmp on disk
 # means a build was interrupted mid-write; it is never a real artifact.
+# Now covers the year shards too (data/2026/, summaries/2026/).
 *.tmp
-data/*.tmp
-summaries/*.tmp
+data/**/*.tmp
+summaries/**/*.tmp
 site/dist/**/*.tmp
+
+# A mis-passed CLI flag once created a literal "--out/" build directory here.
+--out/
 
 # OS
 .DS_Store

@@ -35,11 +35,20 @@ from parsnips_fetch import (  # noqa: E402
     parse_turns,
 )
 from concurrent.futures import ThreadPoolExecutor  # noqa: E402
+import storage  # noqa: E402  (shared layout: year shards, keys, manifest)
 
 DATA = os.path.join(ROOT, "data")
 INDEX = os.path.join(DATA, "sittings.json")
 STATUS = os.path.join(ROOT, "backfill_status.json")
 LOG = os.path.join(ROOT, "backfill.log")
+
+# Backfill floor. 2016 is the first year that is cleanly in the modern era: every
+# sampled 2016-03-01 row is sprs3 with null `reportContent`, and getHansardTopic
+# returns real content. Before that the API serves the legacy sprs2 shape, which is
+# deliberately out of scope -- legacy reports answer HTTP 400 from getHansardTopic
+# and carry their full text in `reportContent` on the listing instead. So from 2016
+# onward ONE code path works and no era branching is needed.
+FLOOR_YEAR = 2016
 
 # Verified sitting dates for 2026 (day-probe sweep, 16 Sep 2026).
 SITTINGS_2026 = [
@@ -72,14 +81,25 @@ def log(msg):
 
 def write_json_atomic(path, obj):
     """Write via temp + rename so a crash cannot leave a partial file behind."""
-    tmp = f"{path}.tmp"
-    with open(tmp, "w", encoding="utf-8") as fh:
-        json.dump(obj, fh, indent=1, ensure_ascii=False)
-    os.replace(tmp, path)
+    storage.write_json_atomic(path, obj)
 
 
 def sitting_path(date):
-    return os.path.join(DATA, f"sitting_{date}.json")
+    """Year-sharded: data/<year>/sitting_<date>.json.
+
+    Sharding by year (not by parliament) because a batch operates on a year, so
+    year is the grain that makes "which files belong to this batch" a directory
+    listing. Parliament number is recorded per report and in the manifest.
+    """
+    return storage.sitting_path(date)
+
+
+def fetched_dates():
+    """Every sitting already on disk, from the sharded layout."""
+    out = []
+    for p in sorted(__import__("glob").glob(os.path.join(DATA, "20*", "sitting_*.json"))):
+        out.append(os.path.basename(p)[len("sitting_"):-len(".json")])
+    return out
 
 
 def fetch_one(date):
@@ -113,6 +133,10 @@ def fetch_one(date):
             "parliament_no": meta.get("parlNo"),
             "sitting_no": meta.get("sittingNo"),
             "volume_no": meta.get("volumeNo"),
+            # Which Hansard format this record came from. Recorded in the data
+            # rather than inferred from the id, so a source link or a validation
+            # pass does not have to guess the era. Always sprs3 for 2016+.
+            "report_version": "sprs3",
             "mp_names": meta.get("mpNames"),
             "words": sum(t["words"] for t in turns),
             "turns": turns,
@@ -134,60 +158,82 @@ def fetch_one(date):
     return {"date": date, "coverage": coverage, "reports": items}
 
 
+def summarised_ids():
+    """Report ids that already have a brief, read from the summary index."""
+    idx = storage.read_json(os.path.join(ROOT, "summaries", "index.json")) or {}
+    ids = set()
+    for entry in idx.values():
+        if not isinstance(entry, dict):
+            continue
+        for rid in (entry.get("report_ids")
+                    or (entry.get("_meta") or {}).get("report_ids") or []):
+            ids.add(rid)
+    return ids
+
+
 def rebuild_index():
-    """Summarise every sitting on disk into data/sittings.json."""
+    """Rebuild data/manifest.json and data/sittings.json from what is on disk.
+
+    The manifest is what makes a batched backfill resumable and makes "what is
+    missing" a query instead of a directory glob. It records, per sitting: date,
+    year, parliament, coverage ratio, report count, words, the per-group split, a
+    content hash of the source payload, and how much of it is summarised.
+    """
+    done = summarised_ids()
+    manifest = storage.load_manifest()
     entries = []
-    for fn in sorted(os.listdir(DATA)):
-        if not (fn.startswith("sitting_") and fn.endswith(".json")):
+    for p in sorted(__import__("glob").glob(os.path.join(DATA, "20*", "sitting_*.json"))):
+        sit = storage.read_json(p)
+        if not sit:
+            log(f"  index: skipping {p}")
             continue
-        try:
-            with open(os.path.join(DATA, fn), encoding="utf-8") as fh:
-                sit = json.load(fh)
-        except (OSError, ValueError) as exc:
-            log(f"  index: skipping {fn} ({exc})")
-            continue
-        cov = sit.get("coverage", {})
-        groups = {}
-        for r in sit["reports"]:
-            g = groups.setdefault(r["group"], {"n": 0, "words": 0})
-            g["n"] += 1
-            g["words"] += r["words"]
-        entries.append({
-            "date": sit["date"],
-            "collected": cov.get("collected"),
-            "max_result": cov.get("max_result"),
-            "ratio": cov.get("ratio"),
-            "words": cov.get("words"),
-            "turns": cov.get("turns"),
-            "speaker_attribution": cov.get("speaker_attribution"),
-            "groups": groups,
-        })
+        entry = storage.describe_sitting(sit, summarised_groups=done)
+        manifest["sittings"][sit["date"]] = entry
+        entries.append(entry)
+
+    manifest["generated"] = datetime.datetime.now().isoformat(timespec="seconds")
+    manifest["floor_year"] = FLOOR_YEAR
+    manifest["schema"] = 2
+    storage.save_manifest(manifest)
+
+    # data/sittings.json stays as the flat, site-facing view it always was.
     entries.sort(key=lambda e: e["date"])
-    write_json_atomic(INDEX, {"generated": datetime.datetime.now().isoformat(timespec="seconds"),
-                             "sittings": entries})
+    write_json_atomic(INDEX, {"generated": manifest["generated"],
+                              "floor_year": FLOOR_YEAR,
+                              "sittings": entries})
     return entries
 
 
-def main(argv=None):
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--dates", nargs="*", default=None)
-    ap.add_argument("--force", action="store_true")
-    ap.add_argument("--discover", action="store_true",
-                    help="re-derive sitting dates from the API before running")
-    args = ap.parse_args(argv)
+def batch(year, *, discover=False, force=False, limit=None):
+    """Fetch every sitting of one year. Independently resumable.
 
-    os.makedirs(DATA, exist_ok=True)
-    dates = list(args.dates) if args.dates else list(SITTINGS_2026)
+    One batch = one year. Run modern-first from 2016 upward. An interrupted batch
+    costs only the sittings in flight, because each sitting is written atomically
+    and the manifest is rebuilt as we go.
+    """
+    if year < FLOOR_YEAR:
+        log(f"refusing {year}: the backfill floor is {FLOOR_YEAR} "
+            f"(earlier years are the legacy sprs2 era, out of scope)")
+        return 1
 
-    if args.discover:
-        log("discovering sittings 2026-01-01 .. today ...")
-        found = discover_sittings("2026-01-01",
-                                 datetime.date.today().isoformat())
+    start, end = f"{year}-01-01", f"{year}-12-31"
+    if discover:
+        log(f"discovering sittings {start} .. {end} ...")
+        found = discover_sittings(start, end)
         dates = [d for d, _ in found]
-        log(f"  discovered {len(dates)} sittings: {', '.join(dates)}")
+        log(f"  discovered {len(dates)} sitting day(s)")
+    else:
+        log(f"no sitting list supplied for {year}; run with --discover")
+        return 1
+    if limit:
+        dates = dates[:limit]
+    return run_dates(dates, force=force)
 
-    todo = [d for d in dates
-            if args.force or not os.path.exists(sitting_path(d))]
+
+def run_dates(dates, *, force=False):
+    os.makedirs(DATA, exist_ok=True)
+    on_disk = set(fetched_dates())
+    todo = [d for d in dates if force or d not in on_disk]
     log(f"backfill start: {len(todo)} to fetch, {len(dates) - len(todo)} already on disk")
 
     status = {"started": datetime.datetime.now().isoformat(timespec="seconds"),
@@ -230,10 +276,61 @@ def main(argv=None):
     entries = rebuild_index()
     log(f"backfill done in {status['elapsed_secs']}s: "
         f"{len(status['done'])} fetched, {len(status['failed'])} failed")
-    log(f"index now has {len(entries)} sitting(s)")
+    log(f"manifest now has {len(entries)} sitting(s)")
     if status["failed"]:
         log("failed dates: " + ", ".join(f["date"] for f in status["failed"]))
     return 0
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description="Batch backfill of Hansard sittings.")
+    ap.add_argument("--year", type=int, help="fetch one year (the batch unit)")
+    ap.add_argument("--years", type=int, nargs="*",
+                    help=f"fetch several years; refuses anything below {FLOOR_YEAR}")
+    ap.add_argument("--dates", nargs="*", default=None, help="explicit sitting dates")
+    ap.add_argument("--discover", action="store_true",
+                    help="re-derive sitting dates from the API before running")
+    ap.add_argument("--force", action="store_true", help="re-fetch what is on disk")
+    ap.add_argument("--limit", type=int, help="cap sittings per year (for testing)")
+    ap.add_argument("--status", action="store_true",
+                    help="report what is fetched and what is summarised, then exit")
+    args = ap.parse_args(argv)
+
+    if args.status:
+        manifest = storage.load_manifest()
+        sits = manifest.get("sittings", {})
+        if not sits:
+            log("manifest empty; run a batch first")
+            return 0
+        by_year = {}
+        for e in sits.values():
+            y = by_year.setdefault(e["year"], {"n": 0, "words": 0, "sum": 0, "summ": 0})
+            y["n"] += 1
+            y["words"] += e.get("words") or 0
+            s = e.get("summarisation") or {}
+            y["sum"] += s.get("summarisable") or 0
+            y["summ"] += s.get("summarised") or 0
+        log(f"manifest: {len(sits)} sitting(s), floor {manifest.get('floor_year')}")
+        for y in sorted(by_year):
+            v = by_year[y]
+            log(f"  {y}: {v['n']:>3} sittings  {v['words']:>10,}w  "
+                f"summarised {v['summ']}/{v['sum']}")
+        return 0
+
+    if args.dates:
+        return run_dates(args.dates, force=args.force)
+
+    years = args.years or ([args.year] if args.year else [])
+    if not years:
+        # Default: the verified 2026 list, preserving the original behaviour.
+        return run_dates(SITTINGS_2026, force=args.force)
+
+    rc = 0
+    # Modern-first: ascending from the floor, so the most-read years land first.
+    for y in sorted(years):
+        log(f"=== batch {y} ===")
+        rc |= batch(y, discover=args.discover, force=args.force, limit=args.limit)
+    return rc
 
 
 if __name__ == "__main__":

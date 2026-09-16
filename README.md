@@ -33,10 +33,11 @@ Coverage, speaker-attribution rate and method are printed on every page.
 |---|---|
 | Live API | ✅ verified 2026-09-16 against the Parliament portal |
 | Scraper | ✅ `scraper/parsnips_fetch.py`, stdlib only, no `pip install` |
-| Backfill | ✅ `scraper/backfill.py`, resumable, ~90s per sitting |
+| Backfill | ✅ `scraper/backfill.py`, year-batched, resumable, ~90s per sitting |
+| Storage | ✅ year-sharded + manifest — see **Storage** below |
 | Site | ✅ `site/build_site.py` → index + archive + one page per sitting |
-| 2026 backfill | 🔄 running — see `backfill.log` for progress |
-| Summarisation (LLM) | ⬜ next — current panels are computed, not written by a model |
+| 2026 backfill | ✅ 23 sittings, 291 briefs, 4,614 verified points |
+| Backfill floor | **2016** (2017–2025 pending, one batch per year) |
 | Automation | ⬜ next — GitHub Actions cron |
 
 See **[PLAN.md](PLAN.md)** for the design, phases, product decisions, and the hard-won
@@ -52,10 +53,17 @@ Python 3.9+, standard library only.
 # 1. Which days did Parliament sit?
 python3 scraper/parsnips_fetch.py --discover 2026-01-01 2026-09-16
 
-# 2. Fetch every sitting of 2026 (~90s each, resumable — safe to Ctrl-C and rerun)
-python3 scraper/backfill.py
+# 2. Fetch one year — the batch unit. Resumable: safe to Ctrl-C and rerun.
+python3 scraper/backfill.py --year 2016 --discover
+python3 scraper/backfill.py --years 2017 2018 2019 --discover
 
-# 3. Build the whole site
+# 3. What do I have, and what is summarised?
+python3 scraper/backfill.py --status
+
+# 4. Summarise (separate pass, resumable)
+python3 summariser/summarise.py --all --workers 3
+
+# 5. Build the whole site
 python3 site/build_site.py            # -> site/dist/
 ```
 
@@ -64,10 +72,60 @@ Then open `site/dist/index.html`.
 Handy while iterating:
 
 ```bash
-python3 scraper/parsnips_fetch.py 2026-08-05 data/x.json            # one sitting
-python3 scraper/digest.py data/sitting_2026-08-05.json oral 700 4   # read it as text
-python3 site/build_site.py /tmp/out                                 # build elsewhere
+python3 scraper/parsnips_fetch.py 2026-08-05 data/x.json             # one sitting
+python3 scraper/digest.py data/2026/sitting_2026-08-05.json oral 700 4  # read it as text
+python3 site/build_site.py /tmp/out                                  # build elsewhere
 ```
+
+---
+
+## Storage
+
+Sharded by **year**, keyed by **report identity**, with a **manifest**. The original
+layout was one flat directory of `sitting_*.json` plus one flat `summaries/` whose
+filenames came from brief *titles*. That was fine for 23 sittings and would not
+survive a backfill to 2016 (~400 sittings, tens of thousands of reports).
+
+```
+data/2016/sitting_2016-03-01.json          one sitting
+data/manifest.json                         what exists, what is summarised, what is stale
+summaries/2016/motion-3008+3010.json       one brief, keyed by report ids
+summaries/index.json                       flat index for the site
+```
+
+`scraper/storage.py` is the single source of truth for paths and keys, imported by the
+fetcher, the summariser and the site builder so they cannot drift.
+
+**Why keys are not filenames from titles.** Titles are not unique — two Hansard records
+can share one (that is why `motion-3008` and `motion-3010` are merged into a single
+brief) — and they change, which orphans the old file. Long titles also produce filenames
+that break Vercel's git unpack with `GIT_REPO_FILENAME_TOO_LONG`. The report ids are the
+real identity:
+
+| | |
+|---|---|
+| one report | `oral-answer-4213.json` |
+| a merged debate | `motion-3008+3010.json` |
+| a six-record Budget debate | `budget-2857+2859+2861+2867+2871+2873.json` |
+
+Longest key in the corpus is 41 characters including the year and extension; under the
+old scheme the longest filename was 105.
+
+**The manifest** (`data/manifest.json`) records per sitting: date, year, parliament,
+volume, sitting number, report format, report count, words, turns, coverage ratio,
+speaker-attribution rate, the per-group split, a content hash of the source payload, and
+how much of it is summarised. That is what makes "what is missing" a query rather than a
+directory glob, and what makes a batch resumable.
+
+**Reports carry `report_version`.** Every report records the Hansard format it came from
+(`sprs3`), plus `parliament_no`, `sitting_no` and `volume_no`, so a source link or a
+validation pass never has to infer the era from the id.
+
+**JSON stays the source of truth.** 14 MB now; ~400 sittings at this density is roughly
+240 MB, and year-sharding keeps each directory small. Git handles that, and it preserves
+the property that every sitting is a reviewable, citable commit. A database would query
+faster but turns the archive into a binary blob. Add a derived index only if page-level
+queries across years ever need it.
 
 ---
 
@@ -120,17 +178,24 @@ parsnips/
 ├── PLAN.md                        design, phases, decisions, API gotchas
 ├── README.md
 ├── scraper/
+│   ├── storage.py                 paths, stable keys, manifest (single source of truth)
 │   ├── parsnips_fetch.py          API client + HTML -> speaker-turns parser
-│   ├── backfill.py                resumable multi-sitting fetch
+│   ├── backfill.py                year-batched resumable fetch (--year / --status)
 │   ├── normalise.py               raw parse -> canonical schema
+│   ├── migrate_storage.py         flat layout -> year shards (re-runnable)
 │   └── digest.py                  print a sitting for editorial review
+├── summariser/
+│   └── summarise.py               sitting JSON -> verified briefs (LLM, resumable)
 ├── site/
 │   ├── build_site.py              sitting JSON -> whole static site
 │   └── dist/                      generated output (index, archive, per-sitting)
 ├── data/
-│   ├── sittings.json              index of every sitting with its stats
-│   └── sitting_YYYY-MM-DD.json    the archive (this is the database)
-└── backfill.log / .json           progress + resumable status
+│   ├── manifest.json              what exists, what is summarised, what is stale
+│   ├── sittings.json              flat site-facing index
+│   └── <year>/sitting_<date>.json the archive (this is the database)
+└── summaries/
+    ├── index.json                 flat index for the site
+    └── <year>/<stable-key>.json   one brief per policy item
 ```
 
 ---

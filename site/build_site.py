@@ -23,6 +23,7 @@ Product decisions baked in (agreed with the owner):
   * Questions are MAPPED to responses, never scored or labelled unanswered.
 """
 import datetime
+import glob
 import html
 import json
 import os
@@ -33,6 +34,7 @@ from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, "data")
+SUMMARIES = os.path.join(ROOT, "summaries")
 
 # ---------------------------------------------------------------- presentation
 GROUP_LABEL = {
@@ -2243,32 +2245,34 @@ def write_text_atomic(path, text):
 
 
 def load_summaries():
-    """Every summarised policy brief, or [] if none exist yet."""
-    sdir = os.path.join(ROOT, "summaries")
+    """Every summarised policy brief, sharded by year, or [] if none exist yet."""
     out = []
-    if not os.path.isdir(sdir):
+    if not os.path.isdir(SUMMARIES):
         return out
-    for fn in sorted(os.listdir(sdir)):
-        if not fn.endswith(".json") or fn == "index.json":
+    paths = sorted(glob.glob(os.path.join(SUMMARIES, "**", "*.json"), recursive=True))
+    for path in paths:
+        if os.path.basename(path) == "index.json":
             continue
         try:
-            with open(os.path.join(sdir, fn), encoding="utf-8") as fh:
+            with open(path, encoding="utf-8") as fh:
                 out.append(json.load(fh))
         except (OSError, ValueError) as exc:
-            print(f"  warning: skipping summary {fn}: {exc}", file=sys.stderr)
+            print(f"  warning: skipping summary {path}: {exc}", file=sys.stderr)
     return out
 
 
 def load_sittings():
+    """Every sitting on disk, sharded by year, oldest first."""
     out = []
-    for fn in sorted(os.listdir(DATA)):
-        if not (fn.startswith("sitting_") and fn.endswith(".json")):
-            continue
+    paths = sorted(glob.glob(os.path.join(DATA, "20*", "sitting_*.json")))
+    if not paths:
+        paths = sorted(glob.glob(os.path.join(DATA, "sitting_*.json")))
+    for path in paths:
         try:
-            with open(os.path.join(DATA, fn), encoding="utf-8") as fh:
+            with open(path, encoding="utf-8") as fh:
                 out.append(json.load(fh))
         except (OSError, ValueError) as exc:
-            print(f"  warning: skipping {fn}: {exc}", file=sys.stderr)
+            print(f"  warning: skipping {path}: {exc}", file=sys.stderr)
     out.sort(key=lambda s: s["date"])
     return out
 

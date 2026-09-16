@@ -35,6 +35,7 @@ Usage:
     python3 summariser/summarise.py --all --groups bill,statement,motion
 """
 import argparse
+import glob
 import html as htmlmod
 import json
 import os
@@ -47,6 +48,9 @@ from concurrent.futures import ThreadPoolExecutor
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
+sys.path.insert(0, os.path.join(ROOT, "scraper"))
+import storage  # noqa: E402  (shared storage layout: shards, keys, atomic writes)
+
 DATA = os.path.join(ROOT, "data")
 OUT = os.path.join(ROOT, "summaries")
 
@@ -338,17 +342,20 @@ def summarise_item(item):
 
 # ------------------------------------------------------------------------ CLI
 def load_sittings(dates=None):
+    """Every sitting on disk, sharded by year. Tolerates a flat legacy layout."""
+    paths = sorted(glob.glob(os.path.join(DATA, "20*", "sitting_*.json")))
+    if not paths:
+        paths = sorted(glob.glob(os.path.join(DATA, "sitting_*.json")))
     out = []
-    for fn in sorted(os.listdir(DATA)):
-        if not (fn.startswith("sitting_") and fn.endswith(".json")):
-            continue
-        if dates and fn[len("sitting_"):-len(".json")] not in dates:
+    for path in paths:
+        date = os.path.basename(path)[len("sitting_"):-len(".json")]
+        if dates and date not in dates:
             continue
         try:
-            with open(os.path.join(DATA, fn), encoding="utf-8") as fh:
+            with open(path, encoding="utf-8") as fh:
                 out.append(json.load(fh))
         except (OSError, ValueError) as exc:
-            print(f"  warning: skipping {fn}: {exc}", file=sys.stderr)
+            print(f"  warning: skipping {path}: {exc}", file=sys.stderr)
     out.sort(key=lambda s: s["date"])
     return out
 
@@ -413,32 +420,60 @@ def main(argv=None):
             index = {}
 
     def key_for(item):
-        return re.sub(r"[^a-z0-9]+", "-", item["title"].lower()).strip("-")[:90]
+        """Stable, title-free key from report identity.
+
+        Titles are not unique (two Hansard records can share one) and they change,
+        so a title-slugged filename collides, orphans itself on an edit, and can
+        exceed filesystem limits. The report ids are the real identity.
+        """
+        return storage.stable_key(item["report_ids"])
+
+    # Existing keys: accept the new stable keys and the old title slugs, so a run
+    # over a partially migrated corpus does not re-summarise everything.
+    done_ids = set()
+    for k, entry in index.items():
+        meta = entry if entry.get("report_ids") is not None else entry.get("_meta", {})
+        for rid in (meta.get("report_ids") or []):
+            done_ids.add((rid, entry.get("year") or storage.year_of(
+                min(meta.get("sitting_dates") or ["9999"]))))
 
     todo = []
     for it in items:
         k = key_for(it)
-        if not args.force and k in index and index[k].get("_meta", {}).get("report_ids") == it["report_ids"]:
+        year = storage.year_of(min(it["sitting_dates"]))
+        already = all((r, year) in done_ids for r in it["report_ids"])
+        if not args.force and already and os.path.exists(
+                storage.summary_path(k, year, OUT)):
             continue
-        todo.append((k, it))
+        if not args.force and k in index and \
+                (index[k].get("report_ids") == it["report_ids"]):
+            continue
+        todo.append((k, year, it))
 
     print(f"{len(todo)} to do, {len(items) - len(todo)} already done")
     done = failed = 0
     t0 = time.time()
 
     def work(pair):
-        return pair[0], pair[1], summarise_item(pair[1])
+        return pair[0], pair[1], pair[2], summarise_item(pair[2])
 
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        for k, item, data in pool.map(work, todo):
+        for k, year, item, data in pool.map(work, todo):
             if not data:
                 print(f"  FAILED  {item['title'][:66]}")
                 failed += 1
                 continue
-            write_atomic(os.path.join(OUT, f"{k}.json"), data)
+            data["_meta"]["key"] = k
+            data["_meta"]["schema"] = 2
+            data["_meta"]["year"] = year
+            write_atomic(storage.summary_path(k, year, OUT), data)
             index[k] = {
                 "title": data.get("title") or item["title"],
-                "_meta": data["_meta"],
+                "key": k,
+                "year": year,
+                "sitting_dates": data["_meta"].get("sitting_dates") or [],
+                "group": data["_meta"].get("group"),
+                "report_ids": data["_meta"].get("report_ids") or [],
                 "what_it_is": data.get("what_it_is", ""),
                 "stage": data.get("stage", ""),
                 "why_it_matters": data.get("why_it_matters", ""),
