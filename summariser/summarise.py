@@ -35,6 +35,7 @@ Usage:
     python3 summariser/summarise.py --all --groups bill,statement,motion
 """
 import argparse
+import datetime
 import glob
 import html as htmlmod
 import json
@@ -69,6 +70,19 @@ RETRIES = 3
 # between the two cases this comment describes. They now have their own prompt
 # below, sized for a 267-3,363 word exchange rather than a 70,000 word debate.
 SUMMARISABLE = ("bill", "statement", "motion", "budget", "adjournment", "oral")
+
+# How far apart two reports sharing a title may sit and still be one policy item.
+#
+# Measured on the real corpus (52 sittings, 2016 + 2026): genuine same-item gaps
+# cluster at 0-3 days, with two real outliers -- a Bill introduced 22 days before
+# its Second Reading, and a "rearrangement of business" recurring 84 days apart.
+# True cross-year collisions sit at ~3,611-3,720 days. So anything between 84 and
+# 3,600 days separates cleanly; 120 sits comfortably in that gap and is generous
+# enough to keep a bill's introduction and Second Reading in one brief.
+#
+# Without this bound, "Debate on Annual Budget Statement" from 2016 and from 2026
+# merged into a single 271,095-word item covering two different Budgets.
+CLUSTER_GAP_DAYS = 120
 
 SYSTEM = """You are a neutral parliamentary reporter for a civic-education site read by
 young adults who follow the news but have never read Hansard.
@@ -271,16 +285,34 @@ def verify_quotes(summary, transcript_norm):
 
 # ------------------------------------------------------------------ selection
 def summarisable_items(sittings, groups=SUMMARISABLE, min_words=150):
-    """Group summarisable business across sittings by title.
+    """Group summarisable business into policy items.
 
     Bills are debated over consecutive sitting days under the same title, so the
-    same bill appears as several reports. Merging by normalised title gives one
-    brief per policy item instead of one per day.
+    same bill appears as several reports; merging them gives one brief per policy
+    item instead of one per day.
+
+    The merge is bounded by TIME, not just by title. Titles repeat across years --
+    "Debate on Annual Budget Statement" and "Committee of Supply - Head K (Ministry
+    of Education)" appear in both 2016 and 2026 -- so a bare title key welds a
+    decade-apart pair into one item. That produced a 271,095-word "item" spanning
+    2016-04-04 to 2026-02-26 (Budget 2016 + Budget 2026 in a single brief).
+
+    So: group by title, then split each group into clusters whose consecutive
+    sitting days are within CLUSTER_GAP_DAYS. A debate running across consecutive
+    or near-consecutive days stays one item; the same title a year or more later
+    becomes its own. Measured on the real corpus this splits exactly the 22
+    cross-year collisions and leaves every same-year merge intact.
     """
     def key(t):
         return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()
 
-    grouped = {}
+    def days_between(a, b):
+        d1 = datetime.date.fromisoformat(a)
+        d2 = datetime.date.fromisoformat(b)
+        return abs((d2 - d1).days)
+
+    # Collect every qualifying report under its normalised title.
+    by_title = {}
     for s in sittings:
         for r in s["reports"]:
             if r["group"] not in groups or r["words"] < min_words:
@@ -288,18 +320,38 @@ def summarisable_items(sittings, groups=SUMMARISABLE, min_words=150):
             k = key(r["title"])
             if not k:
                 continue
-            g = grouped.setdefault(k, {
-                "title": r["title"], "group": r["group"], "reports": [],
-                "sitting_dates": [], "words": 0, "report_ids": [],
-            })
-            g["reports"].append(r)
-            g["report_ids"].append(r["report_id"])
-            g["sitting_dates"].append(s["date"])
-            g["words"] += r["words"]
-    for g in grouped.values():
-        g["sitting_dates"] = sorted(set(g["sitting_dates"]))
-        g["reports"].sort(key=lambda r: (r.get("sitting_date") or "", r["report_id"]))
-    return sorted(grouped.values(), key=lambda g: -g["words"])
+            by_title.setdefault(k, []).append((s["date"], r))
+
+    items = []
+    for k, pairs in by_title.items():
+        # Sort by sitting date so clustering only has to look at neighbours.
+        pairs.sort(key=lambda p: (p[0], p[1]["report_id"]))
+        cluster, prev = [], None
+        for date, r in pairs:
+            if prev is not None and days_between(prev, date) > CLUSTER_GAP_DAYS:
+                items.append(_to_item(cluster))
+                cluster = []
+            cluster.append((date, r))
+            prev = date
+        if cluster:
+            items.append(_to_item(cluster))
+
+    return sorted(items, key=lambda g: -g["words"])
+
+
+def _to_item(cluster):
+    """One policy item from a cluster of (date, report) pairs."""
+    reports = [r for _, r in cluster]
+    item = {
+        "title": reports[0]["title"],
+        "group": reports[0]["group"],
+        "reports": reports,
+        "sitting_dates": sorted({d for d, _ in cluster}),
+        "words": sum(r["words"] for r in reports),
+        "report_ids": [r["report_id"] for r in reports],
+    }
+    reports.sort(key=lambda r: (r.get("sitting_date") or "", r["report_id"]))
+    return item
 
 
 def merge_transcript(item):
