@@ -959,8 +959,19 @@ QA_PREVIEW = 4          # unused placeholder (oral answers render in full)
 SPEAKER_PREVIEW = 4     # speaker groups shown per brief before the expand control
 
 
-def render_mapping(q):
-    """One question -> response mapping card."""
+def render_mapping(q, brief=None):
+    """One oral answer: the summarised exchange, with the transcript as evidence.
+
+    Structure, and why:
+      * The SUMMARY is the message and sits on top -- what was asked, what was
+        said back, the concrete points. This is what makes 16 answers scannable.
+      * The VERBATIM transcript is the evidence and is collapsed behind a
+        disclosure. Before it rendered open at up to 4,000 characters per answer,
+        which is why the section was 23,654px of verbatim text with no summary at
+        all. Both belong on the page; the transcript just should not lead.
+      * If no brief exists yet for this answer, fall back to the old verbatim
+        layout so the page is never worse than it was.
+    """
     def lang_tag(lang):
         return "" if (lang or "English") == "English" else \
             f'<span class="lt">{esc(lang)}</span>'
@@ -986,13 +997,38 @@ def render_mapping(q):
         supp_html = (f'<details class="supp-wrap"><summary>{who_txt} '
                      f'({len(supp)} further turns)</summary>{"".join(rows)}</details>')
 
-    return f"""
-      <li class="mapwrap" id="{esc(q['report_id'])}">
-        <details class="map" data-card="{esc(q['report_id'])}" open>
+    transcript_html = f"""
+        <details class="transcript">
+          <summary>Read the transcript ({len(supp) + 2} turns)</summary>
+          <div class="qa-pair">
+            <div class="qa-side ask">
+              <span class="qa-role">Asked</span>
+              <span class="qa-who">{esc(q['asker'])}{lang_tag(q['question_lang'])}</span>
+              <p>{esc(q['question'])}{nt_flag(q['question_not_transcribed'])}</p>
+            </div>
+            <div class="qa-link" aria-hidden="true"></div>
+            <div class="qa-side resp">
+              <span class="qa-role">Response</span>
+              <span class="qa-who">{esc(q['answerer'])}{lang_tag(q['response_lang'])}</span>
+              <p>{esc(q['response'])}{nt_flag(q['response_not_transcribed'])}</p>
+            </div>
+          </div>
+          {supp_html}
+          <a class="srclink" href="{esc(hansard_url(q))}" target="_blank" rel="noopener">Full exchange in Hansard &rarr;</a>
+        </details>"""
+
+    head = f"""
         <summary class="mapsum">
           <h3 class="mapt">{esc(q['title'])}</h3>
           <span class="maphint">{esc(q['asker'])} &rarr; {esc(q['answerer'])}</span>
-        </summary>
+        </summary>"""
+
+    if not brief:
+        # No summary yet: keep the original verbatim-first layout.
+        return f"""
+      <li class="mapwrap" id="{esc(q['report_id'])}">
+        <details class="map" data-card="{esc(q['report_id'])}" open>
+        {head}
         <div class="qabody">
         <div class="qa-pair">
           <div class="qa-side ask">
@@ -1009,6 +1045,53 @@ def render_mapping(q):
         </div>
         {supp_html}
         <a class="srclink" href="{esc(hansard_url(q))}" target="_blank" rel="noopener">Full exchange in Hansard &rarr;</a>
+        </div>
+        </details>
+      </li>"""
+
+    asked = brief.get("asked") or ""
+    resp = brief.get("response") or ""
+    kp = brief.get("key_points") or []
+    kp_html = ""
+    if kp:
+        rows = "".join(
+            f'<li><span class="pt">{esc(p.get("point", ""))}</span>'
+            f'<span class="pw">{esc(p.get("speaker") or "")}</span></li>' for p in kp)
+        kp_html = f'<ul class="oralkp">{rows}</ul>'
+    lo = brief.get("left_open") or []
+    lo_html = ""
+    if lo:
+        rows = "".join(f"<li>{esc(x)}</li>" for x in lo)
+        lo_html = (f'<details class="ns"><summary>Left open in this exchange '
+                   f'({len(lo)})</summary>'
+                   f'<p class="nnote">Raised by the question and not addressed in the '
+                   f'response. Recorded as open points, not as findings.</p>'
+                   f'<ul>{rows}</ul></details>')
+    supp_note = (brief.get("supplementary") or "").strip()
+    supp_note_html = ""
+    if supp_note and supp_note.lower() not in ("not stated", "none", ""):
+        supp_note_html = (f'<p class="oralsupp"><b>Supplementary questions</b> '
+                          f'{esc(supp_note)}</p>')
+
+    return f"""
+      <li class="mapwrap" id="{esc(q['report_id'])}">
+        <details class="map" data-card="{esc(q['report_id'])}" open>
+        {head}
+        <div class="qabody">
+          <div class="oral-sum">
+            <div class="orow">
+              <span class="olabel">Asked</span>
+              <p>{esc(asked)}</p>
+            </div>
+            <div class="orow resp">
+              <span class="olabel">Said back</span>
+              <p>{esc(resp)}</p>
+            </div>
+          </div>
+          {kp_html}
+          {supp_note_html}
+          {lo_html}
+          {transcript_html}
         </div>
         </details>
       </li>"""
@@ -1220,12 +1303,16 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
         for n in panels["numbers"])
 
     qa_rows = panels["qa"]
-    # Oral answers are rendered IN FULL on the page -- no disclosure, no expand
-    # control. They are the most readable business Parliament transacts (a
-    # question and its answer), and hiding them behind a collapsed group card
-    # meant a sitting page showed 16 title-only rows. Content stays on the page;
-    # only the verbatim quote chips and the "Everything else" groups collapse.
-    qa_html = "\n".join(render_mapping(q) for q in qa_rows)
+    # Index the oral briefs by report id so each mapping can render its summary.
+    oral_briefs = {}
+    for b in (summaries or []):
+        if b.get("_meta", {}).get("group") != "oral":
+            continue
+        for rid in (b.get("_meta", {}).get("report_ids") or []):
+            oral_briefs[rid] = b
+    qa_html = "\n".join(
+        render_mapping(q, oral_briefs.get(q["report_id"])) for q in qa_rows)
+    n_summarised = sum(1 for q in qa_rows if q["report_id"] in oral_briefs)
 
     attr = cov.get("speaker_attribution")
     attr_txt = f"{attr*100:.0f}%" if attr else "n/a"
@@ -1337,7 +1424,8 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
   <section class="oral" id="sec-oral">
     <h2>Oral answers</h2>
     <p class="sub">{len(qa_rows)} questions put to Ministers, each paired with the
-    response given. {MAPPING_NOTE}</p>
+    response given. {MAPPING_NOTE}
+    {f'<b>{n_summarised} of {len(qa_rows)} summarised so far</b> — the rest show the transcript.' if n_summarised else ''}</p>
     <details class="qajump">
       <summary>Jump to a question ({len(qa_rows)})</summary>
       <nav class="qjbody" aria-label="Jump to an oral answer">
@@ -1558,6 +1646,32 @@ details.map:not([open])>.mapsum::after{content:"▸"}
 .mapsum .mapt{margin-bottom:0}
 .maphint{display:block;font:600 11.5px var(--mono);color:var(--faint);margin-top:7px}
 .qabody{padding-bottom:20px}
+/* ---- oral answer: summary first, transcript as evidence ---- */
+.oral-sum{margin-bottom:12px}
+.orow{display:grid;grid-template-columns:74px 1fr;gap:10px;padding:9px 0;
+  border-top:1px solid var(--line)}
+.orow:first-child{border-top:0;padding-top:2px}
+.olabel{font:700 9.5px var(--mono);letter-spacing:.09em;text-transform:uppercase;
+  color:var(--faint);padding-top:2px}
+.orow.resp .olabel{color:var(--accent)}
+.orow p{margin:0;font-size:15px;line-height:1.55;color:#232a31}
+.oralkp{list-style:none;margin:6px 0 0;padding:0}
+.oralkp li{display:grid;grid-template-columns:74px 1fr;gap:10px;padding:6px 0;
+  border-top:1px dashed var(--line)}
+.oralkp .pt{grid-column:2;grid-row:1;font-size:14px;line-height:1.5;color:#2c343b}
+.oralkp .pw{grid-column:1;grid-row:1;font:600 10.5px var(--mono);color:var(--faint);
+  line-height:1.4;padding-top:1px}
+.oralsupp{margin:14px 0 0;padding:11px 13px;background:#f8faf9;border:1px solid var(--line);
+  border-radius:9px;font-size:13.5px;line-height:1.5;color:var(--dim)}
+.oralsupp b{display:block;font:700 9.5px var(--mono);letter-spacing:.09em;
+  text-transform:uppercase;color:var(--faint);margin-bottom:5px}
+details.transcript{margin-top:14px;border-top:1px dashed var(--line);padding-top:11px}
+details.transcript>summary{cursor:pointer;font:600 12.5px var(--mono);color:var(--accent);
+  list-style:none;min-height:44px;display:flex;align-items:center}
+details.transcript>summary::-webkit-details-marker{display:none}
+details.transcript>summary::before{content:"▸ ";}
+details.transcript[open]>summary::before{content:"▾ "}
+details.transcript[open]>summary{border-bottom:1px solid var(--line);margin-bottom:14px}
 .map{padding:20px 0;border-bottom:1px solid var(--line)}
 .map:last-child{border-bottom:0}
 .map.hidden{display:none}
@@ -1927,8 +2041,7 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
     font-size:12px;font-weight:700;line-height:1.3;white-space:normal;
     opacity:0;pointer-events:none;z-index:90;
     transition:opacity .15s ease,transform .15s ease}
-  .section-rail-tick.is-pending .section-rail-bubble,
-  .section-rail-tick.is-peeking .section-rail-bubble{opacity:1;
+  .section-rail-tick.is-pending .section-rail-bubble{opacity:1;
     transform:translateY(-50%) scale(1)}
   /* The explicit confirm affordance, visible while pending. */
   .section-rail-go{position:fixed;top:0;left:auto;right:10px;

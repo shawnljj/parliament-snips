@@ -88,6 +88,32 @@ details.map:not([open])>.mapsum::after{content:"▸"}
 .mapsum .mapt{margin-bottom:0}
 .maphint{display:block;font:600 11.5px var(--mono);color:var(--faint);margin-top:7px}
 .qabody{padding-bottom:20px}
+/* ---- oral answer: summary first, transcript as evidence ---- */
+.oral-sum{margin-bottom:12px}
+.orow{display:grid;grid-template-columns:74px 1fr;gap:10px;padding:9px 0;
+  border-top:1px solid var(--line)}
+.orow:first-child{border-top:0;padding-top:2px}
+.olabel{font:700 9.5px var(--mono);letter-spacing:.09em;text-transform:uppercase;
+  color:var(--faint);padding-top:2px}
+.orow.resp .olabel{color:var(--accent)}
+.orow p{margin:0;font-size:15px;line-height:1.55;color:#232a31}
+.oralkp{list-style:none;margin:6px 0 0;padding:0}
+.oralkp li{display:grid;grid-template-columns:74px 1fr;gap:10px;padding:6px 0;
+  border-top:1px dashed var(--line)}
+.oralkp .pt{grid-column:2;grid-row:1;font-size:14px;line-height:1.5;color:#2c343b}
+.oralkp .pw{grid-column:1;grid-row:1;font:600 10.5px var(--mono);color:var(--faint);
+  line-height:1.4;padding-top:1px}
+.oralsupp{margin:14px 0 0;padding:11px 13px;background:#f8faf9;border:1px solid var(--line);
+  border-radius:9px;font-size:13.5px;line-height:1.5;color:var(--dim)}
+.oralsupp b{display:block;font:700 9.5px var(--mono);letter-spacing:.09em;
+  text-transform:uppercase;color:var(--faint);margin-bottom:5px}
+details.transcript{margin-top:14px;border-top:1px dashed var(--line);padding-top:11px}
+details.transcript>summary{cursor:pointer;font:600 12.5px var(--mono);color:var(--accent);
+  list-style:none;min-height:44px;display:flex;align-items:center}
+details.transcript>summary::-webkit-details-marker{display:none}
+details.transcript>summary::before{content:"▸ ";}
+details.transcript[open]>summary::before{content:"▾ "}
+details.transcript[open]>summary{border-bottom:1px solid var(--line);margin-bottom:14px}
 .map{padding:20px 0;border-bottom:1px solid var(--line)}
 .map:last-child{border-bottom:0}
 .map.hidden{display:none}
@@ -457,8 +483,7 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
     font-size:12px;font-weight:700;line-height:1.3;white-space:normal;
     opacity:0;pointer-events:none;z-index:90;
     transition:opacity .15s ease,transform .15s ease}
-  .section-rail-tick.is-pending .section-rail-bubble,
-  .section-rail-tick.is-peeking .section-rail-bubble{opacity:1;
+  .section-rail-tick.is-pending .section-rail-bubble{opacity:1;
     transform:translateY(-50%) scale(1)}
   /* The explicit confirm affordance, visible while pending. */
   .section-rail-go{position:fixed;top:0;left:auto;right:10px;

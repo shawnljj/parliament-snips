@@ -58,7 +58,13 @@ RETRIES = 3
 # Which sections carry "messages delivered". These are the deliberate acts of
 # government; written answers are also actionable but are handled separately
 # because there are ~135 of them per sitting and each is tiny.
-SUMMARISABLE = ("bill", "statement", "motion", "budget", "adjournment")
+#
+# `oral` was missing here and that was a real gap, not a decision: 223 oral
+# answers / 236,318 words across 2026 -- 12% of the corpus, and the section
+# readers most want. Oral answers are neither "written" nor tiny, so they fell
+# between the two cases this comment describes. They now have their own prompt
+# below, sized for a 267-3,363 word exchange rather than a 70,000 word debate.
+SUMMARISABLE = ("bill", "statement", "motion", "budget", "adjournment", "oral")
 
 SYSTEM = """You are a neutral parliamentary reporter for a civic-education site read by
 young adults who follow the news but have never read Hansard.
@@ -93,6 +99,57 @@ USER_TMPL = """Read this Singapore Parliament business and return JSON:
   ],
   "what_happens_next": "the next step if stated (e.g. referred to a Select Committee, will come into force on a date), else \\"not stated\\"",
   "not_said": ["questions the debate raises that the transcript does not resolve, phrased as neutral open questions with no implication of fault"]
+}}
+
+Transcript follows. Speakers are shown as [Name]: text.
+
+{transcript}"""
+
+
+# Oral answers are a different shape from a bill debate: one MP asks, a Minister
+# answers, then a few supplementary exchanges. The reader wants to scan 16 of
+# these without reading 13,000 words, so the output is deliberately short.
+#
+# The neutrality rule is load-bearing here and was an explicit product decision:
+# this is a MAPPING of question to response, never a verdict on whether the
+# response was adequate. No "the Minister did not answer", no "declined to
+# commit" -- state what was asked and what was said, and let the reader judge.
+ORAL_SYSTEM = """You are a neutral parliamentary reporter for a civic-education site read by
+young adults who follow the news but have never read Hansard.
+
+Your job, for ONE parliamentary question: state plainly WHAT WAS ASKED and WHAT WAS SAID
+BACK, so the reader can understand the exchange without reading the transcript.
+
+Hard rules:
+- Only state things explicitly present in the transcript. If it is not there, omit it.
+- Every point MUST include a "quote": a SHORT verbatim sentence (or clause) copied exactly,
+  character for character, from the transcript. This is checked automatically and any point
+  whose quote cannot be found will be discarded. Do not paraphrase inside "quote".
+- Attribute each point to the person who said it, using the name as given.
+- This is a MAPPING, not a scorecard. NEVER judge whether the question was answered, whether
+  the response was adequate, or anyone's motive. Banned framings: "did not answer",
+  "evaded", "declined to commit", "failed to address", "only said", "no commitment was made".
+  If the response does not cover something the question raised, put it in "left_open" as a
+  neutral open point, not as a criticism.
+- Prefer concrete substance: figures, schemes, dates, eligibility, what the ministry will do.
+- Do not use filler like "highlighted the importance of", "reiterated", "underscored".
+- Be brief. This must be scannable in a few seconds.
+
+Output STRICT JSON only. No markdown fences, no commentary."""
+
+ORAL_TMPL = """Read this Singapore Parliament oral answer and return JSON:
+
+{{
+  "title": "plain-English title, one line, no trailing full stop",
+  "asked": "1-2 sentences: what the MP asked for, in plain English",
+  "asked_by": "the MP's name as given in the transcript",
+  "answered_by": "the Minister's name as given in the transcript",
+  "response": "2-4 sentences: what was actually said back. The substance, not a description of the speech.",
+  "key_points": [
+    {{"point": "a concrete factual point from the answer", "speaker": "who said it", "quote": "verbatim words from the transcript"}}
+  ],
+  "left_open": ["something the question raised that the response does not address, phrased neutrally, with no implication of fault"],
+  "supplementary": "ONE short sentence (max ~25 words) naming the theme of the supplementary questions, or \"not stated\" if there were none. Do NOT list each questioner or each question."
 }}
 
 Transcript follows. Speakers are shown as [Name]: text.
@@ -257,8 +314,12 @@ def merge_transcript(item):
 def summarise_item(item):
     transcript, truncated = merge_transcript(item)
     t_norm = norm(strip_speaker_labels(transcript))
-    prompt = USER_TMPL.format(transcript=transcript)
-    raw = ask(prompt)
+    is_oral = item["group"] == "oral"
+    # Oral answers get their own prompt: shorter, question-to-response shaped, and
+    # it reports what was left open instead of a "not_said" list. Same pipeline,
+    # same quote gate.
+    prompt = (ORAL_TMPL if is_oral else USER_TMPL).format(transcript=transcript)
+    raw = ask(prompt, system=ORAL_SYSTEM if is_oral else SYSTEM)
     data = parse_json(raw)
     if not data:
         return None
