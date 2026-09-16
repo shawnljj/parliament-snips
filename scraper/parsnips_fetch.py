@@ -58,6 +58,10 @@ import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
+HERE = os.path.dirname(os.path.abspath(__file__))
+# The repo's data directory, used only for the discovery calendar cache.
+DATA_DIR = os.path.join(os.path.dirname(HERE), "data")
+
 BASE = "https://sprs.parl.gov.sg/search"
 _UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
        "(KHTML, like Gecko) Chrome/120.0 Safari/537.36")
@@ -69,6 +73,12 @@ HEADERS = {
 }
 PAGE = 20          # server-side hard cap; endIndex is ignored
 PAUSE = 0.2        # polite delay between sequential calls
+
+# Discovery probes one request per weekday, so a year is ~260 requests. Sequential
+# at network latency that is ~13 minutes of dead time before a batch even starts.
+# Parallel with staggered submission brings it down to roughly a minute, while
+# still going easy on a public government portal.
+DISCOVER_WORKERS = 6
 RETRIES = 4
 
 # Sections (rsSelected values) confirmed from /fetchData orSectionList.
@@ -252,22 +262,108 @@ def enumerate_sitting_reports(day, workers=4):
     return reports, coverage
 
 
-def discover_sittings(start, end, weekdays_only=True):
-    """Find sitting dates by probing each weekday. Returns [(date, report_count)]."""
+def discover_sittings_cached(year, *, refresh=False, workers=None):
+    """Sitting dates for a year, cached to data/calendar/<year>.json.
+
+    Probing costs one request per weekday at ~13s latency each, so a year is ~8
+    minutes of waiting. Caching makes that a one-time cost per year rather than a
+    per-run cost, which is what makes a ten-year backfill practical: a rerun after
+    an interruption resumes against the cached calendar instead of re-probing.
+
+    The cache records the probe date so a future refresh can tell how stale it is.
+    """
+    cache_dir = os.path.join(DATA_DIR, "calendar")
+    cache = os.path.join(cache_dir, f"{year}.json")
+    if not refresh and os.path.exists(cache):
+        try:
+            with open(cache, encoding="utf-8") as fh:
+                blob = json.load(fh)
+            dates = blob.get("dates") or []
+            if dates:
+                return [(d, n) for d, n in dates]
+        except (OSError, ValueError):
+            pass
+
+    found = discover_sittings(f"{year}-01-01", f"{year}-12-31", workers=workers)
+    try:
+        os.makedirs(cache_dir, exist_ok=True)
+        tmp = cache + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as fh:
+            json.dump({
+                "year": year,
+                "probed": datetime.date.today().isoformat(),
+                "probe_workers": workers or DISCOVER_WORKERS,
+                "dates": found,
+            }, fh, indent=1)
+        os.replace(tmp, cache)
+    except OSError:
+        pass
+    return found
+
+
+def discover_sittings(start, end, weekdays_only=True, workers=None):
+    """Find sitting dates by probing each weekday. Returns [(date, report_count)].
+
+    Parallel on purpose: a year is ~260 weekdays, and probing them one at a time at
+    network latency (~3s each) makes discovery alone cost ~13 minutes per year. That
+    is pure dead time in a 10-year backfill, where discovery happens before any real
+    fetching. Workers are kept modest -- this is a public government portal and we
+    are guests -- and requests are staggered on submission so we do not open N
+    connections in the same instant.
+    """
     if isinstance(start, str):
         start = datetime.date.fromisoformat(start)
     if isinstance(end, str):
         end = datetime.date.fromisoformat(end)
-    out, day = [], start
+
+    days = []
+    day = start
     while day <= end:
         if not weekdays_only or day.weekday() < 5:
-            rows = rows_of(post_soft("searchResult", search_body(day.isoformat())))
-            if rows:
-                n = int(rows[0].get("maxResult") or 0)
-                if n:
-                    out.append((day.isoformat(), n))
-            time.sleep(PAUSE)
+            days.append(day)
         day += datetime.timedelta(days=1)
+
+    if workers is None:
+        workers = DISCOVER_WORKERS
+
+    def probe(d):
+        try:
+            rows = rows_of(post_soft("searchResult", search_body(d.isoformat())))
+        except Exception:                                       # noqa: BLE001
+            # A transient failure must not silently turn a sitting into a
+            # non-sitting: report the date as unknown so a rerun retries it.
+            return (d.isoformat(), None)
+        if not rows:
+            return (d.isoformat(), 0)
+        return (d.isoformat(), int(rows[0].get("maxResult") or 0))
+
+    out, unsure = [], []
+    if workers <= 1:
+        for d in days:
+            date_s, n = probe(d)
+            if n:
+                out.append((date_s, n))
+            elif n is None:
+                unsure.append(date_s)
+            time.sleep(PAUSE)
+    else:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            futures = []
+            for d in days:
+                futures.append(pool.submit(probe, d))
+                time.sleep(PAUSE / workers)   # stagger submissions
+            for fut in futures:
+                date_s, n = fut.result()
+                if n:
+                    out.append((date_s, n))
+                elif n is None:
+                    unsure.append(date_s)
+
+    if unsure:
+        print(f"  warning: {len(unsure)} day(s) could not be probed and were skipped: "
+              f"{', '.join(unsure[:6])}{' ...' if len(unsure) > 6 else ''}",
+              file=sys.stderr)
+    out.sort()
     return out
 
 

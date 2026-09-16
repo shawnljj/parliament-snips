@@ -31,8 +31,8 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 
 from parsnips_fetch import (  # noqa: E402
-    discover_sittings, enumerate_sitting_reports, fetch_report, group_for,
-    parse_turns,
+    discover_sittings, discover_sittings_cached, enumerate_sitting_reports,
+    fetch_report, group_for, parse_turns,
 )
 from concurrent.futures import ThreadPoolExecutor  # noqa: E402
 import storage  # noqa: E402  (shared layout: year shards, keys, manifest)
@@ -204,27 +204,38 @@ def rebuild_index():
     return entries
 
 
-def batch(year, *, discover=False, force=False, limit=None):
+def batch(year, *, discover=False, force=False, limit=None, refresh_calendar=False):
     """Fetch every sitting of one year. Independently resumable.
 
     One batch = one year. Run modern-first from 2016 upward. An interrupted batch
     costs only the sittings in flight, because each sitting is written atomically
     and the manifest is rebuilt as we go.
+
+    Discovery is cached per year (data/calendar/<year>.json). Probing a year costs
+    ~8 minutes of pure waiting at ~13s per weekday request, so paying it once per
+    year rather than once per run is what makes a ten-year backfill practical.
     """
     if year < FLOOR_YEAR:
         log(f"refusing {year}: the backfill floor is {FLOOR_YEAR} "
             f"(earlier years are the legacy sprs2 era, out of scope)")
         return 1
 
-    start, end = f"{year}-01-01", f"{year}-12-31"
-    if discover:
-        log(f"discovering sittings {start} .. {end} ...")
-        found = discover_sittings(start, end)
+    if discover or refresh_calendar:
+        cached = os.path.exists(os.path.join(DATA, "calendar", f"{year}.json"))
+        log(f"discovering sittings for {year} ..."
+            + ("  (re-probing; cache ignored)" if refresh_calendar and cached else "")
+            + ("" if refresh_calendar else "  (cached if previously probed)"))
+        found = discover_sittings_cached(year, refresh=refresh_calendar)
         dates = [d for d, _ in found]
-        log(f"  discovered {len(dates)} sitting day(s)")
+        log(f"  {len(dates)} sitting day(s)")
     else:
-        log(f"no sitting list supplied for {year}; run with --discover")
-        return 1
+        # No --discover: use the cached calendar if we have one, else say so.
+        found = discover_sittings_cached(year)
+        dates = [d for d, _ in found]
+        if not dates:
+            log(f"no sitting list for {year}; run with --discover")
+            return 1
+        log(f"  {len(dates)} sitting day(s) from the calendar cache")
     if limit:
         dates = dates[:limit]
     return run_dates(dates, force=force)
@@ -292,6 +303,8 @@ def main(argv=None):
                     help="re-derive sitting dates from the API before running")
     ap.add_argument("--force", action="store_true", help="re-fetch what is on disk")
     ap.add_argument("--limit", type=int, help="cap sittings per year (for testing)")
+    ap.add_argument("--refresh-calendar", action="store_true",
+                    help="re-probe the sitting calendar even if one is cached")
     ap.add_argument("--status", action="store_true",
                     help="report what is fetched and what is summarised, then exit")
     args = ap.parse_args(argv)
@@ -329,7 +342,8 @@ def main(argv=None):
     # Modern-first: ascending from the floor, so the most-read years land first.
     for y in sorted(years):
         log(f"=== batch {y} ===")
-        rc |= batch(y, discover=args.discover, force=args.force, limit=args.limit)
+        rc |= batch(y, discover=args.discover, force=args.force, limit=args.limit,
+                    refresh_calendar=args.refresh_calendar)
     return rc
 
 
