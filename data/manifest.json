@@ -1,7 +1,303 @@
 {
  "version": 1,
- "generated": "2026-09-16T21:51:06",
+ "generated": "2026-09-16T22:54:59",
  "sittings": {
+  "2016-01-15": {
+   "date": "2016-01-15",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "1",
+   "report_version": "sprs3",
+   "reports": 26,
+   "words": 25717,
+   "turns": 32,
+   "collected": 26,
+   "max_result": 26,
+   "ratio": 1.0,
+   "speaker_attribution": 0.75,
+   "enumeration": "linear",
+   "groups": {
+    "budget": {
+     "n": 23,
+     "words": 22399
+    },
+    "tribute": {
+     "n": 1,
+     "words": 2162
+    },
+    "other": {
+     "n": 2,
+     "words": 1156
+    }
+   },
+   "source_hash": "d08b437fea025f51",
+   "summarisation": {
+    "summarisable": 23,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-01-25": {
+   "date": "2016-01-25",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "2",
+   "report_version": "sprs3",
+   "reports": 8,
+   "words": 33888,
+   "turns": 32,
+   "collected": 8,
+   "max_result": 8,
+   "ratio": 1.0,
+   "speaker_attribution": 0.875,
+   "enumeration": "linear",
+   "groups": {
+    "budget": {
+     "n": 1,
+     "words": 33156
+    },
+    "motion": {
+     "n": 4,
+     "words": 526
+    },
+    "bill": {
+     "n": 3,
+     "words": 206
+    }
+   },
+   "source_hash": "b5d79b856cf71fb1",
+   "summarisation": {
+    "summarisable": 3,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-01-26": {
+   "date": "2016-01-26",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "3",
+   "report_version": "sprs3",
+   "reports": 7,
+   "words": 35449,
+   "turns": 46,
+   "collected": 7,
+   "max_result": 7,
+   "ratio": 1.0,
+   "speaker_attribution": 0.87,
+   "enumeration": "linear",
+   "groups": {
+    "budget": {
+     "n": 1,
+     "words": 35145
+    },
+    "bill": {
+     "n": 3,
+     "words": 176
+    },
+    "motion": {
+     "n": 2,
+     "words": 77
+    },
+    "other": {
+     "n": 1,
+     "words": 51
+    }
+   },
+   "source_hash": "d6fca31f54a6d47c",
+   "summarisation": {
+    "summarisable": 1,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-01-27": {
+   "date": "2016-01-27",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "4",
+   "report_version": "sprs3",
+   "reports": 18,
+   "words": 40325,
+   "turns": 92,
+   "collected": 18,
+   "max_result": 18,
+   "ratio": 1.0,
+   "speaker_attribution": 0.967,
+   "enumeration": "linear",
+   "groups": {
+    "budget": {
+     "n": 2,
+     "words": 31323
+    },
+    "oral": {
+     "n": 8,
+     "words": 7892
+    },
+    "written": {
+     "n": 4,
+     "words": 788
+    },
+    "motion": {
+     "n": 3,
+     "words": 283
+    },
+    "other": {
+     "n": 1,
+     "words": 39
+    }
+   },
+   "source_hash": "18d687d0862b1098",
+   "summarisation": {
+    "summarisable": 9,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-01-28": {
+   "date": "2016-01-28",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "5",
+   "report_version": "sprs3",
+   "reports": 34,
+   "words": 48699,
+   "turns": 135,
+   "collected": 34,
+   "max_result": 32,
+   "ratio": 1.062,
+   "speaker_attribution": 0.933,
+   "enumeration": "linear+sections",
+   "groups": {
+    "budget": {
+     "n": 2,
+     "words": 32963
+    },
+    "oral": {
+     "n": 18,
+     "words": 13062
+    },
+    "written": {
+     "n": 8,
+     "words": 2511
+    },
+    "bill": {
+     "n": 1,
+     "words": 67
+    },
+    "motion": {
+     "n": 3,
+     "words": 96
+    },
+    "other": {
+     "n": 2,
+     "words": 0
+    }
+   },
+   "source_hash": "6967c625eff57486",
+   "summarisation": {
+    "summarisable": 20,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-01-29": {
+   "date": "2016-01-29",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "6",
+   "report_version": "sprs3",
+   "reports": 30,
+   "words": 43743,
+   "turns": 165,
+   "collected": 30,
+   "max_result": 30,
+   "ratio": 1.0,
+   "speaker_attribution": 0.958,
+   "enumeration": "linear",
+   "groups": {
+    "budget": {
+     "n": 1,
+     "words": 18455
+    },
+    "motion": {
+     "n": 4,
+     "words": 12729
+    },
+    "oral": {
+     "n": 13,
+     "words": 10614
+    },
+    "written": {
+     "n": 11,
+     "words": 1897
+    },
+    "bill": {
+     "n": 1,
+     "words": 48
+    }
+   },
+   "source_hash": "16e38fc9ec13975e",
+   "summarisation": {
+    "summarisable": 16,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-02-29": {
+   "date": "2016-02-29",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "7",
+   "report_version": "sprs3",
+   "reports": 87,
+   "words": 73518,
+   "turns": 342,
+   "collected": 87,
+   "max_result": 85,
+   "ratio": 1.024,
+   "speaker_attribution": 0.974,
+   "enumeration": "linear+sections",
+   "groups": {
+    "bill": {
+     "n": 9,
+     "words": 42567
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 3668
+    },
+    "oral": {
+     "n": 12,
+     "words": 12899
+    },
+    "written": {
+     "n": 59,
+     "words": 14048
+    },
+    "other": {
+     "n": 4,
+     "words": 209
+    },
+    "motion": {
+     "n": 2,
+     "words": 127
+    }
+   },
+   "source_hash": "4f56f1a554ade8c4",
+   "summarisation": {
+    "summarisable": 19,
+    "summarised": 0,
+    "complete": false
+   }
+  },
   "2016-03-01": {
    "date": "2016-03-01",
    "year": "2016",
@@ -46,6 +342,906 @@
    "source_hash": "e345dbaea019f694",
    "summarisation": {
     "summarisable": 20,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-03-14": {
+   "date": "2016-03-14",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "9",
+   "report_version": "sprs3",
+   "reports": 61,
+   "words": 54909,
+   "turns": 210,
+   "collected": 61,
+   "max_result": 59,
+   "ratio": 1.034,
+   "speaker_attribution": 0.981,
+   "enumeration": "linear+sections",
+   "groups": {
+    "bill": {
+     "n": 3,
+     "words": 30553
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 3919
+    },
+    "oral": {
+     "n": 21,
+     "words": 12748
+    },
+    "written": {
+     "n": 32,
+     "words": 7588
+    },
+    "other": {
+     "n": 3,
+     "words": 76
+    },
+    "motion": {
+     "n": 1,
+     "words": 25
+    }
+   },
+   "source_hash": "6c906d387d53a74c",
+   "summarisation": {
+    "summarisable": 25,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-03-24": {
+   "date": "2016-03-24",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "10",
+   "report_version": "sprs3",
+   "reports": 42,
+   "words": 29898,
+   "turns": 141,
+   "collected": 42,
+   "max_result": 40,
+   "ratio": 1.05,
+   "speaker_attribution": 0.979,
+   "enumeration": "linear+sections",
+   "groups": {
+    "budget": {
+     "n": 1,
+     "words": 13604
+    },
+    "oral": {
+     "n": 16,
+     "words": 11321
+    },
+    "written": {
+     "n": 19,
+     "words": 4672
+    },
+    "other": {
+     "n": 5,
+     "words": 275
+    },
+    "motion": {
+     "n": 1,
+     "words": 26
+    }
+   },
+   "source_hash": "b35c59718adf4868",
+   "summarisation": {
+    "summarisable": 17,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-04-04": {
+   "date": "2016-04-04",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "11",
+   "report_version": "sprs3",
+   "reports": 30,
+   "words": 56910,
+   "turns": 126,
+   "collected": 30,
+   "max_result": 28,
+   "ratio": 1.071,
+   "speaker_attribution": 0.929,
+   "enumeration": "linear+sections",
+   "groups": {
+    "budget": {
+     "n": 2,
+     "words": 49516
+    },
+    "oral": {
+     "n": 6,
+     "words": 4438
+    },
+    "written": {
+     "n": 13,
+     "words": 2613
+    },
+    "bill": {
+     "n": 3,
+     "words": 231
+    },
+    "motion": {
+     "n": 2,
+     "words": 71
+    },
+    "other": {
+     "n": 4,
+     "words": 41
+    }
+   },
+   "source_hash": "4dd13141671c0224",
+   "summarisation": {
+    "summarisable": 8,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-04-05": {
+   "date": "2016-04-05",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "12",
+   "report_version": "sprs3",
+   "reports": 16,
+   "words": 56650,
+   "turns": 90,
+   "collected": 16,
+   "max_result": 16,
+   "ratio": 1.0,
+   "speaker_attribution": 0.978,
+   "enumeration": "linear",
+   "groups": {
+    "budget": {
+     "n": 1,
+     "words": 50930
+    },
+    "oral": {
+     "n": 8,
+     "words": 4430
+    },
+    "written": {
+     "n": 4,
+     "words": 1097
+    },
+    "other": {
+     "n": 1,
+     "words": 127
+    },
+    "motion": {
+     "n": 2,
+     "words": 66
+    }
+   },
+   "source_hash": "3f3a4c388bc33c27",
+   "summarisation": {
+    "summarisable": 9,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-04-06": {
+   "date": "2016-04-06",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "13",
+   "report_version": "sprs3",
+   "reports": 13,
+   "words": 58758,
+   "turns": 172,
+   "collected": 13,
+   "max_result": 13,
+   "ratio": 1.0,
+   "speaker_attribution": 0.971,
+   "enumeration": "linear",
+   "groups": {
+    "budget": {
+     "n": 7,
+     "words": 57121
+    },
+    "oral": {
+     "n": 4,
+     "words": 1534
+    },
+    "other": {
+     "n": 1,
+     "words": 76
+    },
+    "motion": {
+     "n": 1,
+     "words": 27
+    }
+   },
+   "source_hash": "5a7b81efcec7717b",
+   "summarisation": {
+    "summarisable": 9,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-04-07": {
+   "date": "2016-04-07",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "14",
+   "report_version": "sprs3",
+   "reports": 7,
+   "words": 60405,
+   "turns": 150,
+   "collected": 7,
+   "max_result": 7,
+   "ratio": 1.0,
+   "speaker_attribution": 0.967,
+   "enumeration": "linear",
+   "groups": {
+    "budget": {
+     "n": 6,
+     "words": 60384
+    },
+    "motion": {
+     "n": 1,
+     "words": 21
+    }
+   },
+   "source_hash": "7e0987df8b383d98",
+   "summarisation": {
+    "summarisable": 4,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-04-08": {
+   "date": "2016-04-08",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "15",
+   "report_version": "sprs3",
+   "reports": 8,
+   "words": 67778,
+   "turns": 175,
+   "collected": 8,
+   "max_result": 8,
+   "ratio": 1.0,
+   "speaker_attribution": 0.977,
+   "enumeration": "linear",
+   "groups": {
+    "budget": {
+     "n": 5,
+     "words": 67612
+    },
+    "written": {
+     "n": 1,
+     "words": 114
+    },
+    "motion": {
+     "n": 2,
+     "words": 52
+    }
+   },
+   "source_hash": "5bab31fabca41b2e",
+   "summarisation": {
+    "summarisable": 3,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-04-11": {
+   "date": "2016-04-11",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "16",
+   "report_version": "sprs3",
+   "reports": 8,
+   "words": 70223,
+   "turns": 205,
+   "collected": 8,
+   "max_result": 8,
+   "ratio": 1.0,
+   "speaker_attribution": 0.99,
+   "enumeration": "linear",
+   "groups": {
+    "budget": {
+     "n": 6,
+     "words": 70014
+    },
+    "written": {
+     "n": 1,
+     "words": 192
+    },
+    "motion": {
+     "n": 1,
+     "words": 17
+    }
+   },
+   "source_hash": "7f1f49f9bad35cc8",
+   "summarisation": {
+    "summarisable": 4,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-04-12": {
+   "date": "2016-04-12",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "17",
+   "report_version": "sprs3",
+   "reports": 7,
+   "words": 67529,
+   "turns": 185,
+   "collected": 7,
+   "max_result": 7,
+   "ratio": 1.0,
+   "speaker_attribution": 0.978,
+   "enumeration": "linear",
+   "groups": {
+    "budget": {
+     "n": 6,
+     "words": 67508
+    },
+    "motion": {
+     "n": 1,
+     "words": 21
+    }
+   },
+   "source_hash": "d803b4634b8c805a",
+   "summarisation": {
+    "summarisable": 4,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-04-13": {
+   "date": "2016-04-13",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "18",
+   "report_version": "sprs3",
+   "reports": 10,
+   "words": 68577,
+   "turns": 221,
+   "collected": 10,
+   "max_result": 10,
+   "ratio": 1.0,
+   "speaker_attribution": 0.968,
+   "enumeration": "linear",
+   "groups": {
+    "budget": {
+     "n": 7,
+     "words": 68485
+    },
+    "other": {
+     "n": 1,
+     "words": 39
+    },
+    "motion": {
+     "n": 2,
+     "words": 53
+    }
+   },
+   "source_hash": "aef0e7c82d9e1f50",
+   "summarisation": {
+    "summarisable": 5,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-04-14": {
+   "date": "2016-04-14",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "19",
+   "report_version": "sprs3",
+   "reports": 13,
+   "words": 34457,
+   "turns": 86,
+   "collected": 13,
+   "max_result": 13,
+   "ratio": 1.0,
+   "speaker_attribution": 0.884,
+   "enumeration": "linear",
+   "groups": {
+    "budget": {
+     "n": 5,
+     "words": 28603
+    },
+    "bill": {
+     "n": 6,
+     "words": 5825
+    },
+    "motion": {
+     "n": 1,
+     "words": 29
+    },
+    "other": {
+     "n": 1,
+     "words": 0
+    }
+   },
+   "source_hash": "c79f1ba22527ce8c",
+   "summarisation": {
+    "summarisable": 6,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-05-09": {
+   "date": "2016-05-09",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "20",
+   "report_version": "sprs3",
+   "reports": 56,
+   "words": 34326,
+   "turns": 228,
+   "collected": 56,
+   "max_result": 56,
+   "ratio": 1.0,
+   "speaker_attribution": 0.969,
+   "enumeration": "linear",
+   "groups": {
+    "bill": {
+     "n": 4,
+     "words": 16940
+    },
+    "oral": {
+     "n": 23,
+     "words": 12210
+    },
+    "written": {
+     "n": 27,
+     "words": 5100
+    },
+    "other": {
+     "n": 1,
+     "words": 49
+    },
+    "motion": {
+     "n": 1,
+     "words": 27
+    }
+   },
+   "source_hash": "0632a39bbd015ca0",
+   "summarisation": {
+    "summarisable": 26,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-07-11": {
+   "date": "2016-07-11",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "21",
+   "report_version": "sprs3",
+   "reports": 117,
+   "words": 54653,
+   "turns": 333,
+   "collected": 117,
+   "max_result": 115,
+   "ratio": 1.017,
+   "speaker_attribution": 0.973,
+   "enumeration": "linear+sections",
+   "groups": {
+    "bill": {
+     "n": 7,
+     "words": 6847
+    },
+    "oral": {
+     "n": 17,
+     "words": 21933
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 4084
+    },
+    "written": {
+     "n": 86,
+     "words": 21605
+    },
+    "motion": {
+     "n": 3,
+     "words": 184
+    },
+    "other": {
+     "n": 3,
+     "words": 0
+    }
+   },
+   "source_hash": "264f1754ae929313",
+   "summarisation": {
+    "summarisable": 19,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-08-15": {
+   "date": "2016-08-15",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "22",
+   "report_version": "sprs3",
+   "reports": 113,
+   "words": 96580,
+   "turns": 403,
+   "collected": 113,
+   "max_result": 112,
+   "ratio": 1.009,
+   "speaker_attribution": 0.983,
+   "enumeration": "linear+sections",
+   "groups": {
+    "bill": {
+     "n": 3,
+     "words": 56196
+    },
+    "motion": {
+     "n": 7,
+     "words": 3950
+    },
+    "oral": {
+     "n": 8,
+     "words": 11794
+    },
+    "written": {
+     "n": 91,
+     "words": 24174
+    },
+    "petition": {
+     "n": 1,
+     "words": 392
+    },
+    "other": {
+     "n": 3,
+     "words": 74
+    }
+   },
+   "source_hash": "407edb06f1f2175d",
+   "summarisation": {
+    "summarisable": 14,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-08-16": {
+   "date": "2016-08-16",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "23",
+   "report_version": "sprs3",
+   "reports": 61,
+   "words": 90111,
+   "turns": 310,
+   "collected": 61,
+   "max_result": 59,
+   "ratio": 1.034,
+   "speaker_attribution": 0.965,
+   "enumeration": "linear+sections",
+   "groups": {
+    "bill": {
+     "n": 6,
+     "words": 64999
+    },
+    "oral": {
+     "n": 9,
+     "words": 12444
+    },
+    "written": {
+     "n": 42,
+     "words": 12602
+    },
+    "motion": {
+     "n": 2,
+     "words": 66
+    },
+    "other": {
+     "n": 2,
+     "words": 0
+    }
+   },
+   "source_hash": "c961e6cbaec71e20",
+   "summarisation": {
+    "summarisable": 14,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-09-13": {
+   "date": "2016-09-13",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "24",
+   "report_version": "sprs3",
+   "reports": 99,
+   "words": 76369,
+   "turns": 393,
+   "collected": 99,
+   "max_result": 97,
+   "ratio": 1.021,
+   "speaker_attribution": 0.98,
+   "enumeration": "linear+sections",
+   "groups": {
+    "bill": {
+     "n": 3,
+     "words": 22038
+    },
+    "statement": {
+     "n": 1,
+     "words": 9784
+    },
+    "tribute": {
+     "n": 1,
+     "words": 8069
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 3354
+    },
+    "oral": {
+     "n": 17,
+     "words": 13684
+    },
+    "written": {
+     "n": 71,
+     "words": 19227
+    },
+    "motion": {
+     "n": 3,
+     "words": 213
+    },
+    "other": {
+     "n": 2,
+     "words": 0
+    }
+   },
+   "source_hash": "ad83d7483f8b3de7",
+   "summarisation": {
+    "summarisable": 22,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-10-10": {
+   "date": "2016-10-10",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "25",
+   "report_version": "sprs3",
+   "reports": 98,
+   "words": 54860,
+   "turns": 284,
+   "collected": 98,
+   "max_result": 98,
+   "ratio": 1.0,
+   "speaker_attribution": 0.951,
+   "enumeration": "linear+sections",
+   "groups": {
+    "bill": {
+     "n": 9,
+     "words": 9483
+    },
+    "oral": {
+     "n": 7,
+     "words": 21757
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 4363
+    },
+    "written": {
+     "n": 76,
+     "words": 19115
+    },
+    "motion": {
+     "n": 2,
+     "words": 142
+    },
+    "other": {
+     "n": 3,
+     "words": 0
+    }
+   },
+   "source_hash": "84f85afdb142d4a6",
+   "summarisation": {
+    "summarisable": 9,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-11-07": {
+   "date": "2016-11-07",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "26",
+   "report_version": "sprs3",
+   "reports": 100,
+   "words": 65493,
+   "turns": 342,
+   "collected": 100,
+   "max_result": 98,
+   "ratio": 1.02,
+   "speaker_attribution": 0.977,
+   "enumeration": "linear+sections",
+   "groups": {
+    "bill": {
+     "n": 7,
+     "words": 19387
+    },
+    "motion": {
+     "n": 8,
+     "words": 9161
+    },
+    "adjournment": {
+     "n": 1,
+     "words": 5014
+    },
+    "oral": {
+     "n": 15,
+     "words": 12753
+    },
+    "written": {
+     "n": 65,
+     "words": 18943
+    },
+    "other": {
+     "n": 4,
+     "words": 235
+    }
+   },
+   "source_hash": "89ebb8b040349166",
+   "summarisation": {
+    "summarisable": 21,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-11-08": {
+   "date": "2016-11-08",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "27",
+   "report_version": "sprs3",
+   "reports": 39,
+   "words": 72717,
+   "turns": 378,
+   "collected": 39,
+   "max_result": 39,
+   "ratio": 1.0,
+   "speaker_attribution": 0.984,
+   "enumeration": "linear",
+   "groups": {
+    "bill": {
+     "n": 3,
+     "words": 53786
+    },
+    "oral": {
+     "n": 13,
+     "words": 12838
+    },
+    "written": {
+     "n": 18,
+     "words": 5772
+    },
+    "motion": {
+     "n": 4,
+     "words": 243
+    },
+    "other": {
+     "n": 1,
+     "words": 78
+    }
+   },
+   "source_hash": "d8bf6499b742a6a7",
+   "summarisation": {
+    "summarisable": 16,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-11-09": {
+   "date": "2016-11-09",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "28",
+   "report_version": "sprs3",
+   "reports": 33,
+   "words": 66925,
+   "turns": 304,
+   "collected": 33,
+   "max_result": 31,
+   "ratio": 1.065,
+   "speaker_attribution": 0.974,
+   "enumeration": "linear+sections",
+   "groups": {
+    "bill": {
+     "n": 5,
+     "words": 51357
+    },
+    "oral": {
+     "n": 15,
+     "words": 12813
+    },
+    "written": {
+     "n": 8,
+     "words": 2565
+    },
+    "motion": {
+     "n": 3,
+     "words": 190
+    },
+    "other": {
+     "n": 2,
+     "words": 0
+    }
+   },
+   "source_hash": "94bc425a4858dea9",
+   "summarisation": {
+    "summarisable": 19,
+    "summarised": 0,
+    "complete": false
+   }
+  },
+  "2016-11-10": {
+   "date": "2016-11-10",
+   "year": "2016",
+   "parliament_no": "13",
+   "volume_no": "94",
+   "sitting_no": "29",
+   "report_version": "sprs3",
+   "reports": 21,
+   "words": 44109,
+   "turns": 107,
+   "collected": 21,
+   "max_result": 21,
+   "ratio": 1.0,
+   "speaker_attribution": 0.935,
+   "enumeration": "linear",
+   "groups": {
+    "bill": {
+     "n": 6,
+     "words": 36536
+    },
+    "oral": {
+     "n": 7,
+     "words": 4155
+    },
+    "motion": {
+     "n": 6,
+     "words": 2600
+    },
+    "written": {
+     "n": 2,
+     "words": 818
+    }
+   },
+   "source_hash": "25a0434910638d21",
+   "summarisation": {
+    "summarisable": 17,
     "summarised": 0,
     "complete": false
    }
