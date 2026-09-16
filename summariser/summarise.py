@@ -544,8 +544,35 @@ def main(argv=None):
                   f"(dropped {data['_meta']['points_dropped']:>2})  "
                   f"{str(data.get('stage'))[:18]:18s} {item['title'][:52]}")
 
+            # Keep the manifest's summarisation progress honest as we go. Without
+            # this the manifest only refreshed on a backfill run, so during a long
+            # summarisation it reported "0 of 382" while briefs were landing on
+            # disk. Recomputed from ids already in the manifest, so it is cheap.
+            if done % 10 == 0:
+                try:
+                    manifest = storage.load_manifest()
+                    n_sum = set()
+                    for entry in index.values():
+                        n_sum.update(entry.get("report_ids") or [])
+                    storage.refresh_summarisation(manifest, n_sum)
+                    storage.save_manifest(manifest)
+                except Exception as exc:                        # noqa: BLE001
+                    print(f"  (manifest refresh skipped: {exc})")
+
     if done:
         rebuild_site()
+
+    # Final refresh so the manifest is accurate even if the run ended mid-batch
+    # (done % 10 never hit 0) or every item failed.
+    try:
+        manifest = storage.load_manifest()
+        n_sum = set()
+        for entry in index.values():
+            n_sum.update(entry.get("report_ids") or [])
+        storage.refresh_summarisation(manifest, n_sum)
+        storage.save_manifest(manifest)
+    except Exception as exc:                                    # noqa: BLE001
+        print(f"  (final manifest refresh skipped: {exc})")
 
     print(f"\ndone in {time.time() - t0:.0f}s: {done} summarised, {failed} failed")
     print(f"index: {index_path} ({len(index)} items)")

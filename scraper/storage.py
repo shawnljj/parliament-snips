@@ -232,13 +232,46 @@ def describe_sitting(sitting, summarised_groups=None):
         # Denominator is only what SHOULD have a brief: the summarisable groups,
         # above the word floor. Counting every report would report a permanent
         # 12% forever because ~135 written answers per sitting are never briefed.
-        want = [r.get("report_id") for r in reports
-                if (r.get("group") in SUMMARISABLE_GROUPS
-                    and int(r.get("words") or 0) >= MIN_SUMMARISABLE_WORDS)]
+        want = sorted(r.get("report_id") for r in reports
+                      if (r.get("group") in SUMMARISABLE_GROUPS
+                          and int(r.get("words") or 0) >= MIN_SUMMARISABLE_WORDS))
         done = len(set(want) & set(summarised_groups))
         entry["summarisation"] = {
             "summarisable": len(want),
             "summarised": done,
             "complete": done == len(want),
         }
+        # The ids themselves, so progress can be recomputed WITHOUT re-reading the
+        # sitting. The summariser writes briefs continuously over days; without
+        # this, updating its progress means re-reading every sitting file each time.
+        entry["summarisable_ids"] = want
     return entry
+
+
+def refresh_summarisation(manifest, summarised_ids):
+    """Recompute each sitting's summarisation progress from stored ids.
+
+    Cheap by design: needs only the manifest, not the sitting files. This exists
+    because the summariser writes briefs but the manifest was only ever refreshed
+    by a backfill run -- so during a long summarisation the manifest claimed
+    "0 of 382" while 22 briefs sat on disk. Progress tracking has to be honest
+    across a multi-day run.
+
+    Sittings whose entry predates `summarisable_ids` are left alone and counted in
+    the return value, so a caller can tell it needs a full rebuild_index().
+    """
+    done = set(summarised_ids)
+    updated = stale = 0
+    for entry in manifest.get("sittings", {}).values():
+        want = entry.get("summarisable_ids")
+        if want is None:
+            stale += 1
+            continue
+        n = len(set(want) & done)
+        entry["summarisation"] = {
+            "summarisable": len(want),
+            "summarised": n,
+            "complete": n == len(want),
+        }
+        updated += 1
+    return updated, stale
