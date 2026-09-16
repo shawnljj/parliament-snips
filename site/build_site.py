@@ -504,9 +504,11 @@ SCRIPT = r"""
        * A "dormant" state replaces the original's view-toggle rule: the rail
          hides while the lede is on screen and there is nothing below to map. */
   var RAIL_MQ = '(max-width: 760px)';
-  var LONG_PRESS_MS = 350;
+  // Numbering for the level-3 ticks, so a dot has a stable identity that can be
+  // matched against the numbered jump list in the Oral answers section.
+  var railOrdinal = 0;
   var rail = null, railFill = null, railPill = null, railEntries = [], railActive = -1;
-  var railPillTimer = null, railResizeTimer = null;
+  var railPillTimer = null, railResizeTimer = null, pendingIndex = -1;
 
   function railIsMobile() {
     return window.matchMedia && window.matchMedia(RAIL_MQ).matches;
@@ -519,6 +521,7 @@ SCRIPT = r"""
   function railCollect() {
     var seen = {};
     var out = [];
+    railOrdinal = 0;
     [].slice.call(document.querySelectorAll('main h2, main h3')).forEach(function (h, i) {
       var label = (h.textContent || '').replace(/\s+/g, ' ').trim();
       if (!label) return;
@@ -533,7 +536,11 @@ SCRIPT = r"""
       // Level 2 for the section headings, level 3 for everything nested under
       // one, so the tick column is scannable by size.
       var level = h.tagName === 'H2' ? 2 : 3;
-      out.push({ el: h, id: h.id, label: label, level: level });
+      // Ordinal numbers the level-3 ticks in reading order, matching the
+      // numbered list the reader can open in the Oral answers section.
+      if (level === 3) railOrdinal += 1;
+      out.push({ el: h, id: h.id, label: label, level: level,
+                 ordinal: level === 3 ? railOrdinal : 0 });
     });
     return out;
   }
@@ -570,42 +577,60 @@ SCRIPT = r"""
       var b = document.createElement('button');
       b.type = 'button';
       b.className = 'section-rail-tick level-' + entry.level;
+      // The label is announced to AT and used as the tooltip; the visible name
+      // comes from the always-on label below for section-level ticks.
       b.setAttribute('aria-label', 'Go to ' + entry.label);
+      b.title = entry.label;
 
       var mark = document.createElement('span');
       mark.className = 'section-rail-tick-mark';
       mark.setAttribute('aria-hidden', 'true');
       b.appendChild(mark);
 
+      // Identity at rest, at no cost in width. Always-on name labels were tried
+      // and made the rail 107px wide -- 27% of a 390px screen, with the names
+      // truncated to uselessness ("What the G..."). Instead: section ticks keep
+      // their names in the pill (active section) and the drag bubble (on demand),
+      // and the 16 oral-answer ticks carry a NUMBER matching the numbered jump
+      // list in the Oral answers section, so a dot can be looked up without
+      // touching it.
+      if (entry.level === 3) {
+        var num = document.createElement('span');
+        num.className = 'section-rail-num';
+        num.textContent = String(entry.ordinal);
+        b.appendChild(num);
+      }
+
       var bubble = document.createElement('span');
       bubble.className = 'section-rail-bubble';
-      bubble.setAttribute('aria-hidden', 'true');
+      // NOT aria-hidden any more: once the preview becomes the primary way to
+      // identify a dot, hiding it from AT would hide information rather than
+      // decoration. Its text is also in the button's aria-label.
       bubble.textContent = truncate(entry.label);
       b.appendChild(bubble);
 
-      var pressTimer;
-      function clearPress() {
-        if (pressTimer !== undefined) window.clearTimeout(pressTimer);
-        pressTimer = undefined;
-      }
-      b.addEventListener('pointerdown', function () {
-        clearPress();
-        pressTimer = window.setTimeout(function () {
-          b.classList.add('is-peeking');
-        }, LONG_PRESS_MS);
-      });
-      ['pointerup', 'pointerleave', 'pointercancel'].forEach(function (ev) {
-        b.addEventListener(ev, clearPress);
-      });
-      b.addEventListener('click', function () {
-        // A long-press is a preview gesture, not a navigation gesture.
-        var wasPeeking = b.classList.contains('is-peeking');
-        b.classList.remove('is-peeking');
-        if (wasPeeking) return;
+      // A confirm affordance inside the preview, so the intended gesture is
+      // explicit rather than something the reader has to discover.
+      var go = document.createElement('span');
+      go.className = 'section-rail-go';
+      go.textContent = 'Go';
+      b.appendChild(go);
+
+      b.addEventListener('click', function (ev) {
+        // Two-step: the first tap PREVIEWS, the second commits. Previously every
+        // tap navigated (the peek needed a 350ms hold that a drifting thumb
+        // could not achieve), so the only way to learn what a dot was, was to
+        // be teleported to it. Tapping must never move the reader by surprise.
+        if (pendingIndex !== index) {
+          ev.preventDefault();
+          railPreview(index);
+          return;
+        }
+        railClearPending();
         railGo(index);
       });
-      b.addEventListener('focus', function () { b.classList.add('is-peeking'); });
-      b.addEventListener('blur', function () { b.classList.remove('is-peeking'); });
+      b.addEventListener('focus', function () { railPreview(index); });
+      b.addEventListener('blur', function () { railClearPending(); });
 
       entry.button = b;
       track.appendChild(b);
@@ -617,6 +642,103 @@ SCRIPT = r"""
     if (!e) return;
     e.el.scrollIntoView({ behavior: reduced() ? 'auto' : 'smooth', block: 'start' });
     railSetActive(index, true);
+  }
+
+  /* Preview: name the target without moving the reader. Tapping a dot must never
+     navigate by surprise -- that was the reported failure, where the only way to
+     learn what a dot was, was to be taken to it. */
+  function railPreview(index) {
+    var e = railEntries[index];
+    if (!e) return;
+    railClearPending();
+    pendingIndex = index;
+    if (e.button) {
+      e.button.classList.add('is-pending');
+      railPlacePreview(e.button);
+    }
+  }
+
+  /* The bubble and Go chip are position:fixed so they escape the rail's narrow
+     column and paint above page content; that means JS has to say where. Centre
+     them on the tick and keep them above the fold. */
+  function railPlacePreview(btn) {
+    var r = btn.getBoundingClientRect();
+    var cy = Math.round(r.top + r.height / 2);
+    var bubble = btn.querySelector('.section-rail-bubble');
+    var go = btn.querySelector('.section-rail-go');
+    var maxY = window.innerHeight - 8;
+    if (bubble) {
+      bubble.style.top = cy + 'px';
+      // Nudge clear of the Go chip sitting just below it.
+      go.style.top = Math.min(maxY - 24, cy + Math.round(r.height / 2) + 4) + 'px';
+    }
+  }
+
+  function railClearPending() {
+    if (pendingIndex >= 0) {
+      var prev = railEntries[pendingIndex];
+      if (prev && prev.button) prev.button.classList.remove('is-pending');
+    }
+    pendingIndex = -1;
+  }
+
+  /* ---------- drag-along-the-rail scrubbing ----------
+     The primary touch gesture. A drag that starts on the track moves a highlight
+     along the rail and shows each section's name live as the finger travels, so
+     the reader can read the dots before committing; releasing jumps to whatever
+     is under the finger.
+
+     A drag rather than a hold, deliberately: the finger is expected to move, so
+     the browser claiming vertical movement as a scroll is no longer a conflict.
+     `touch-action:none` on the track plus pointer capture is what makes the rail
+     own the gesture. */
+  var scrubIndex = -1, scrubActive = false;
+
+  function railIndexAtY(clientY) {
+    // Nearest tick centre to the finger, so scrubbing feels continuous rather
+    // than requiring the finger to land inside a 27px box.
+    var best = -1, bestDist = Infinity;
+    railEntries.forEach(function (e, i) {
+      if (!e.button) return;
+      var r = e.button.getBoundingClientRect();
+      var d = Math.abs((r.top + r.height / 2) - clientY);
+      if (d < bestDist) { bestDist = d; best = i; }
+    });
+    return best;
+  }
+
+  function railScrubTo(index) {
+    if (index < 0 || index === scrubIndex) return;
+    scrubIndex = index;
+    railPreview(index);            // reuses the pending highlight + bubble
+  }
+
+  function railScrubStart(ev) {
+    if (!rail) return;
+    scrubActive = true;
+    rail.classList.add('is-scrubbing');
+    // Capture so the drag keeps reporting even when the finger leaves the track.
+    try { rail.querySelector('.section-rail-track').setPointerCapture(ev.pointerId); } catch (e) {}
+    railScrubTo(railIndexAtY(ev.clientY));
+  }
+
+  function railScrubMove(ev) {
+    if (!scrubActive) return;
+    ev.preventDefault();
+    railScrubTo(railIndexAtY(ev.clientY));
+  }
+
+  function railScrubEnd(ev) {
+    if (!scrubActive) return;
+    scrubActive = false;
+    if (rail) rail.classList.remove('is-scrubbing');
+    try { rail.querySelector('.section-rail-track').releasePointerCapture(ev.pointerId); } catch (e) {}
+    var target = scrubIndex;
+    scrubIndex = -1;
+    if (target >= 0) {
+      railClearPending();
+      railGo(target);              // release commits the jump
+    }
   }
 
   function railSetActive(index, force) {
@@ -725,11 +847,17 @@ SCRIPT = r"""
     railEntries = railCollect();
     railBuild();
     railSizeTicks();
+    railWireScrub();
     railActive = -1;
     railSync();
   }
 
-  window.addEventListener('scroll', railSync, { passive: true });
+  window.addEventListener('scroll', function () {
+    // Scrolling dismisses a pending preview: the reader has moved on, and a
+    // stale "tap again to go" would be misleading.
+    if (pendingIndex >= 0) railClearPending();
+    railSync();
+  }, { passive: true });
   window.addEventListener('resize', function () {
     if (!railIsMobile()) { railRebuild(); return; }
     railSizeTicks();
@@ -779,6 +907,45 @@ SCRIPT = r"""
     if (wide.addEventListener) { wide.addEventListener('change', onWide); }
     else if (wide.addListener) { wide.addListener(onWide); }
   }
+
+  /* Scrub wiring lives on the TRACK, so a drag anywhere in the rail's column is
+     captured (including the gaps between dots). A tap still works: a pointerdown
+     with no meaningful movement falls through to the tick's own click handler. */
+  function railWireScrub() {
+    if (!rail) return;
+    var track = rail.querySelector('.section-rail-track');
+    if (!track || track.__scrubWired) return;
+    track.__scrubWired = true;
+
+    var downY = null;
+    track.addEventListener('pointerdown', function (ev) {
+      downY = ev.clientY;
+      // Don't preventDefault here: a plain tap must still reach the tick's click.
+    });
+
+    track.addEventListener('pointermove', function (ev) {
+      if (downY === null) return;
+      if (!scrubActive) {
+        // 6px of vertical travel means this is a drag, not a tap. Below that we
+        // stay out of the way so tap-to-preview keeps working.
+        if (Math.abs(ev.clientY - downY) < 6) return;
+        railScrubStart(ev);
+      }
+      railScrubMove(ev);
+    });
+
+    ['pointerup', 'pointercancel'].forEach(function (evName) {
+      track.addEventListener(evName, function (ev) {
+        if (scrubActive) railScrubEnd(ev);
+        downY = null;
+      });
+    });
+  }
+
+  document.addEventListener('click', function (ev) {
+    // A tap outside the rail dismisses the preview.
+    if (pendingIndex >= 0 && rail && !rail.contains(ev.target)) railClearPending();
+  }, true);
 
   syncStickyVar();
   railRebuild();
@@ -1646,17 +1813,19 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
 [id],.has-section-anchor{scroll-margin-top:calc(var(--sticky-h, 61px) + 12px)}
 
 /* ---- section rail (ported from sgfamily.life, re-coloured to Parsnips) ----
-   A "you are here" map for a page that is 26,000px tall on a phone. Mobile
-   only: on a wide screen the page is short enough and a right-edge rail would
-   simply cover content.
+ A "you are here" map for a page that is 26,000px tall on a phone. Mobile
+ only: on a wide screen the page is short enough and a right-edge rail would
+ simply cover content.
 
-   Tick sizing is a computed trade-off, not a style choice. The 5 Aug page has
-   21 headings; the original rail's 14-20px ticks would be a 20px touch target,
-   under the 44px minimum. 21 ticks at the full 44px is 924px -- taller than the
-   phone viewport -- so the rail would overflow. The JS below therefore sets
-   --rail-tick-h to whatever fits the viewport (capped at 44px), keeping the
-   VISIBLE dot small while the BUTTON stays as close to 44px as geometry allows.
-   The dots' visible size is unchanged, so the rail looks the same. */
+ The rail stays permanently visible and the right gutter below reserves room
+ for it. That is deliberate: an always-present position indicator was chosen
+ over a collapsible drawer precisely because the indicator is the point.
+
+ Tick sizing is a computed trade-off. The 5 Aug page has 21 headings; at a full
+ 44px touch target that is 924px of ticks, taller than a phone screen, so the
+ rail would overflow. JS sizes ticks and gap to the largest that fits, and
+ enlarges the HIT AREA independently of the visible dot, so the target does not
+ have to be sacrificed to fit the column. */
 .section-rail{display:none}
 @media (max-width:760px){
   .section-rail{display:block;position:fixed;top:50%;right:6px;transform:translateY(-50%);
@@ -1669,6 +1838,25 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
      request rendered at 25px). The JS sizes them to fit, so shrinking is not
      wanted. */
   .section-rail-tick{flex:none}
+  /* Gesture blockers. Without these a long press could not complete: the tick
+     inherits touch-action:auto, so the browser claims a vertical thumb drift as
+     a scroll and fires pointercancel, and iOS would raise its text-selection
+     callout on the label inside the button. Both competed with the gesture.
+     touch-action:none is applied to the TRACK only, so a drag that starts on the
+     rail is owned by the rail (scrubbing) while the rest of the page keeps
+     scrolling normally. This deliberately makes the rail strip a dead zone for
+     page scrolling -- acceptable, and in fact intended, because that strip is
+     already reserved as the rail gutter. */
+  .section-rail-track{touch-action:none}
+  .section-rail,.section-rail-tick,.section-rail-bubble,.section-rail-go{
+    touch-action:manipulation}
+  .section-rail-tick{-webkit-touch-callout:none;user-select:none;
+    -webkit-user-select:none;-webkit-tap-highlight-color:transparent}
+  .section-rail-tick *{user-select:none;-webkit-user-select:none}
+  /* While scrubbing, the finger owns the rail: suppress tick hover states so the
+     highlight reflects the drag position, not a stray hover. */
+  .section-rail.is-scrubbing{cursor:ns-resize}
+  .section-rail.is-scrubbing .section-rail-tick{transition:none}
   /* progress fill runs behind the ticks */
   .section-rail-fill{position:absolute;top:12px;bottom:12px;left:50%;width:2px;
     margin-left:-1px;border-radius:2px;background:#e2e8e3;overflow:hidden}
@@ -1676,15 +1864,41 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
     height:calc(var(--rail-progress,0) * 100%);
     background:linear-gradient(180deg,var(--accent),#2f8f66);
     transition:height .25s ease}
+  /* Ticks are laid out as a row: the dot, then its identity (a name for the
+     section-level ticks, a number for the oral-answer ones). The rail answers
+     "which section is this?" at rest rather than only after a gesture. */
   .section-rail-tick{position:relative;appearance:none;border:0;background:transparent;
-    padding:0;width:24px;height:var(--rail-tick-h,22px);display:grid;
-    place-items:center;cursor:pointer}
+    padding:0 2px;width:auto;min-width:24px;height:var(--rail-tick-h,22px);
+    display:flex;align-items:center;justify-content:flex-end;gap:5px;cursor:pointer}
   .section-rail-tick-mark{display:block;width:6px;height:6px;border-radius:50%;
     background:#c4cfc7;box-shadow:0 0 0 3px rgba(251,251,250,.9);
     transition:width .2s ease,height .2s ease,background .2s ease,transform .2s ease}
+  /* Expand the HIT AREA independently of the visible dot. The column can only be
+     ~27px tall per tick or 21 ticks overflow the screen, but the tappable box can
+     still be widened horizontally and padded vertically via a pseudo-element, so
+     the target approaches 44px without changing what is drawn. */
+  .section-rail-tick::before{content:'';position:absolute;left:-8px;right:-8px;
+    top:-8px;bottom:-8px}
   .section-rail-tick.level-2 .section-rail-tick-mark{width:8px;height:8px}
+  /* Always-visible name for section ticks, and the number for oral-answer ticks.
+     Both sit to the LEFT of the dot so the dot column stays aligned. */
+  .section-rail-name{order:-1;font:600 9.5px/1.15 var(--mono);color:var(--dim);
+    text-align:right;max-width:74px;white-space:nowrap;overflow:hidden;
+    text-overflow:ellipsis;background:rgba(251,251,250,.82);border-radius:5px;
+    padding:2px 4px}
+  .section-rail-num{order:-1;font:600 9px/1 var(--mono);color:var(--faint);
+    min-width:11px;text-align:right}
+  .section-rail-tick.level-2 .section-rail-name{color:var(--ink)}
+  .section-rail-tick.is-active .section-rail-name{color:var(--accent)}
+  .section-rail-tick.is-pending .section-rail-name,
+  .section-rail-tick.is-pending .section-rail-num{color:var(--accent)}
   .section-rail-tick.is-active .section-rail-tick-mark{background:var(--accent);
     transform:scale(1.35)}
+  /* A tick waiting to confirm: first tap names the section, second tap jumps. */
+  .section-rail-tick.is-pending .section-rail-tick-mark{background:var(--accent);
+    transform:scale(1.25)}
+  .section-rail-tick.is-pending .section-rail-bubble{opacity:1;
+    transform:translateY(-50%) scale(1)}
   /* always-visible label for the section currently on screen.
      No fixed position can avoid ALL content on a page where every pixel between
      the header and footer scrolls: centred on the rail it landed on the heading
@@ -1698,16 +1912,31 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
     overflow:hidden;text-overflow:ellipsis;opacity:0;
     transition:opacity .2s ease,transform .2s ease;pointer-events:none;z-index:2}
   .section-rail-pill.is-visible{opacity:1;transform:translateY(-50%) translateX(0)}
-  /* long-press / focus preview for off-screen headings */
-  .section-rail-bubble{position:absolute;top:50%;right:30px;
-    transform:translateY(-50%) scale(.94);max-width:180px;padding:6px 11px;
-    border-radius:10px;background:rgba(255,255,255,.98);color:var(--ink);
-    border:1px solid var(--line);box-shadow:0 12px 24px -18px rgba(20,24,29,.55);
-    font-size:11px;font-weight:700;line-height:1.3;white-space:nowrap;
-    overflow:hidden;text-overflow:ellipsis;opacity:0;pointer-events:none;
-    transition:opacity .18s ease,transform .18s ease}
+  /* Preview bubble: the full name, shown while scrubbing or pending.
+     It must be WIDER than the rail column: constrained to the track it collapsed
+     to 58px and wrapped into a tall sliver, and because the track is the only
+     part of the rail with pointer-events, the bubble was painted behind page
+     content. Fixed to the viewport's right edge instead, above everything. */
+  .section-rail-bubble{position:fixed;top:0;left:auto;right:10px;
+    transform:translateY(-50%) scale(.96);
+    max-width:min(300px,78vw);width:max-content;
+    padding:7px 11px;border-radius:10px;
+    background:rgba(20,24,29,.97);color:#fff;
+    border:1px solid rgba(255,255,255,.14);
+    box-shadow:0 12px 24px -14px rgba(20,24,29,.7);
+    font-size:12px;font-weight:700;line-height:1.3;white-space:normal;
+    opacity:0;pointer-events:none;z-index:90;
+    transition:opacity .15s ease,transform .15s ease}
+  .section-rail-tick.is-pending .section-rail-bubble,
   .section-rail-tick.is-peeking .section-rail-bubble{opacity:1;
     transform:translateY(-50%) scale(1)}
+  /* The explicit confirm affordance, visible while pending. */
+  .section-rail-go{position:fixed;top:0;left:auto;right:10px;
+    font:700 10px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;
+    color:#fff;background:var(--accent);border-radius:6px;padding:6px 9px;
+    opacity:0;pointer-events:none;z-index:91;
+    transition:opacity .15s ease}
+  .section-rail-tick.is-pending .section-rail-go{opacity:1}
 }
 @media (prefers-reduced-motion:reduce){
   .section-rail-fill::after,.section-rail-tick-mark,.section-rail-pill,
@@ -1832,12 +2061,12 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   .statgrid{grid-template-columns:1fr;gap:16px}
   footer{margin-top:24px;padding:18px 0 84px;font-size:12px}
   /* Reserve room for the rail so no heading (or body text) runs underneath it.
-     Measured: the rail's box is 36px wide (24px tick + 12px track padding) at
-     right:6px, so its left edge sits 42px in from the viewport edge. A 34px
-     gutter still left every h2 18px behind it; 46px gives ~4px clearance.
-     Horizontal room is the price of a fixed right-edge rail; the alternative is
-     a rail that overlaps the text it exists to index. */
-  .wrap{padding-left:16px;padding-right:46px}
+     Measured: the rail's box is 24px wide (tick) + 2px padding at right:6px, so
+     its left edge sits 42px in from the viewport edge. 46px left a 2px sliver of
+     every line still under it; 50px clears it with margin to spare. Horizontal
+     room is the price of a fixed right-edge rail; the alternative is a rail that
+     overlaps the text it exists to index. */
+  .wrap{padding-left:16px;padding-right:50px}
   .top .wrap{padding-left:14px;padding-right:14px}
 }
 """

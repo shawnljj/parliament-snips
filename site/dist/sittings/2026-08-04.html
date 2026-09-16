@@ -290,9 +290,11 @@
        * A "dormant" state replaces the original's view-toggle rule: the rail
          hides while the lede is on screen and there is nothing below to map. */
   var RAIL_MQ = '(max-width: 760px)';
-  var LONG_PRESS_MS = 350;
+  // Numbering for the level-3 ticks, so a dot has a stable identity that can be
+  // matched against the numbered jump list in the Oral answers section.
+  var railOrdinal = 0;
   var rail = null, railFill = null, railPill = null, railEntries = [], railActive = -1;
-  var railPillTimer = null, railResizeTimer = null;
+  var railPillTimer = null, railResizeTimer = null, pendingIndex = -1;
 
   function railIsMobile() {
     return window.matchMedia && window.matchMedia(RAIL_MQ).matches;
@@ -305,6 +307,7 @@
   function railCollect() {
     var seen = {};
     var out = [];
+    railOrdinal = 0;
     [].slice.call(document.querySelectorAll('main h2, main h3')).forEach(function (h, i) {
       var label = (h.textContent || '').replace(/\s+/g, ' ').trim();
       if (!label) return;
@@ -319,7 +322,11 @@
       // Level 2 for the section headings, level 3 for everything nested under
       // one, so the tick column is scannable by size.
       var level = h.tagName === 'H2' ? 2 : 3;
-      out.push({ el: h, id: h.id, label: label, level: level });
+      // Ordinal numbers the level-3 ticks in reading order, matching the
+      // numbered list the reader can open in the Oral answers section.
+      if (level === 3) railOrdinal += 1;
+      out.push({ el: h, id: h.id, label: label, level: level,
+                 ordinal: level === 3 ? railOrdinal : 0 });
     });
     return out;
   }
@@ -356,42 +363,60 @@
       var b = document.createElement('button');
       b.type = 'button';
       b.className = 'section-rail-tick level-' + entry.level;
+      // The label is announced to AT and used as the tooltip; the visible name
+      // comes from the always-on label below for section-level ticks.
       b.setAttribute('aria-label', 'Go to ' + entry.label);
+      b.title = entry.label;
 
       var mark = document.createElement('span');
       mark.className = 'section-rail-tick-mark';
       mark.setAttribute('aria-hidden', 'true');
       b.appendChild(mark);
 
+      // Identity at rest, at no cost in width. Always-on name labels were tried
+      // and made the rail 107px wide -- 27% of a 390px screen, with the names
+      // truncated to uselessness ("What the G..."). Instead: section ticks keep
+      // their names in the pill (active section) and the drag bubble (on demand),
+      // and the 16 oral-answer ticks carry a NUMBER matching the numbered jump
+      // list in the Oral answers section, so a dot can be looked up without
+      // touching it.
+      if (entry.level === 3) {
+        var num = document.createElement('span');
+        num.className = 'section-rail-num';
+        num.textContent = String(entry.ordinal);
+        b.appendChild(num);
+      }
+
       var bubble = document.createElement('span');
       bubble.className = 'section-rail-bubble';
-      bubble.setAttribute('aria-hidden', 'true');
+      // NOT aria-hidden any more: once the preview becomes the primary way to
+      // identify a dot, hiding it from AT would hide information rather than
+      // decoration. Its text is also in the button's aria-label.
       bubble.textContent = truncate(entry.label);
       b.appendChild(bubble);
 
-      var pressTimer;
-      function clearPress() {
-        if (pressTimer !== undefined) window.clearTimeout(pressTimer);
-        pressTimer = undefined;
-      }
-      b.addEventListener('pointerdown', function () {
-        clearPress();
-        pressTimer = window.setTimeout(function () {
-          b.classList.add('is-peeking');
-        }, LONG_PRESS_MS);
-      });
-      ['pointerup', 'pointerleave', 'pointercancel'].forEach(function (ev) {
-        b.addEventListener(ev, clearPress);
-      });
-      b.addEventListener('click', function () {
-        // A long-press is a preview gesture, not a navigation gesture.
-        var wasPeeking = b.classList.contains('is-peeking');
-        b.classList.remove('is-peeking');
-        if (wasPeeking) return;
+      // A confirm affordance inside the preview, so the intended gesture is
+      // explicit rather than something the reader has to discover.
+      var go = document.createElement('span');
+      go.className = 'section-rail-go';
+      go.textContent = 'Go';
+      b.appendChild(go);
+
+      b.addEventListener('click', function (ev) {
+        // Two-step: the first tap PREVIEWS, the second commits. Previously every
+        // tap navigated (the peek needed a 350ms hold that a drifting thumb
+        // could not achieve), so the only way to learn what a dot was, was to
+        // be teleported to it. Tapping must never move the reader by surprise.
+        if (pendingIndex !== index) {
+          ev.preventDefault();
+          railPreview(index);
+          return;
+        }
+        railClearPending();
         railGo(index);
       });
-      b.addEventListener('focus', function () { b.classList.add('is-peeking'); });
-      b.addEventListener('blur', function () { b.classList.remove('is-peeking'); });
+      b.addEventListener('focus', function () { railPreview(index); });
+      b.addEventListener('blur', function () { railClearPending(); });
 
       entry.button = b;
       track.appendChild(b);
@@ -403,6 +428,103 @@
     if (!e) return;
     e.el.scrollIntoView({ behavior: reduced() ? 'auto' : 'smooth', block: 'start' });
     railSetActive(index, true);
+  }
+
+  /* Preview: name the target without moving the reader. Tapping a dot must never
+     navigate by surprise -- that was the reported failure, where the only way to
+     learn what a dot was, was to be taken to it. */
+  function railPreview(index) {
+    var e = railEntries[index];
+    if (!e) return;
+    railClearPending();
+    pendingIndex = index;
+    if (e.button) {
+      e.button.classList.add('is-pending');
+      railPlacePreview(e.button);
+    }
+  }
+
+  /* The bubble and Go chip are position:fixed so they escape the rail's narrow
+     column and paint above page content; that means JS has to say where. Centre
+     them on the tick and keep them above the fold. */
+  function railPlacePreview(btn) {
+    var r = btn.getBoundingClientRect();
+    var cy = Math.round(r.top + r.height / 2);
+    var bubble = btn.querySelector('.section-rail-bubble');
+    var go = btn.querySelector('.section-rail-go');
+    var maxY = window.innerHeight - 8;
+    if (bubble) {
+      bubble.style.top = cy + 'px';
+      // Nudge clear of the Go chip sitting just below it.
+      go.style.top = Math.min(maxY - 24, cy + Math.round(r.height / 2) + 4) + 'px';
+    }
+  }
+
+  function railClearPending() {
+    if (pendingIndex >= 0) {
+      var prev = railEntries[pendingIndex];
+      if (prev && prev.button) prev.button.classList.remove('is-pending');
+    }
+    pendingIndex = -1;
+  }
+
+  /* ---------- drag-along-the-rail scrubbing ----------
+     The primary touch gesture. A drag that starts on the track moves a highlight
+     along the rail and shows each section's name live as the finger travels, so
+     the reader can read the dots before committing; releasing jumps to whatever
+     is under the finger.
+
+     A drag rather than a hold, deliberately: the finger is expected to move, so
+     the browser claiming vertical movement as a scroll is no longer a conflict.
+     `touch-action:none` on the track plus pointer capture is what makes the rail
+     own the gesture. */
+  var scrubIndex = -1, scrubActive = false;
+
+  function railIndexAtY(clientY) {
+    // Nearest tick centre to the finger, so scrubbing feels continuous rather
+    // than requiring the finger to land inside a 27px box.
+    var best = -1, bestDist = Infinity;
+    railEntries.forEach(function (e, i) {
+      if (!e.button) return;
+      var r = e.button.getBoundingClientRect();
+      var d = Math.abs((r.top + r.height / 2) - clientY);
+      if (d < bestDist) { bestDist = d; best = i; }
+    });
+    return best;
+  }
+
+  function railScrubTo(index) {
+    if (index < 0 || index === scrubIndex) return;
+    scrubIndex = index;
+    railPreview(index);            // reuses the pending highlight + bubble
+  }
+
+  function railScrubStart(ev) {
+    if (!rail) return;
+    scrubActive = true;
+    rail.classList.add('is-scrubbing');
+    // Capture so the drag keeps reporting even when the finger leaves the track.
+    try { rail.querySelector('.section-rail-track').setPointerCapture(ev.pointerId); } catch (e) {}
+    railScrubTo(railIndexAtY(ev.clientY));
+  }
+
+  function railScrubMove(ev) {
+    if (!scrubActive) return;
+    ev.preventDefault();
+    railScrubTo(railIndexAtY(ev.clientY));
+  }
+
+  function railScrubEnd(ev) {
+    if (!scrubActive) return;
+    scrubActive = false;
+    if (rail) rail.classList.remove('is-scrubbing');
+    try { rail.querySelector('.section-rail-track').releasePointerCapture(ev.pointerId); } catch (e) {}
+    var target = scrubIndex;
+    scrubIndex = -1;
+    if (target >= 0) {
+      railClearPending();
+      railGo(target);              // release commits the jump
+    }
   }
 
   function railSetActive(index, force) {
@@ -511,11 +633,17 @@
     railEntries = railCollect();
     railBuild();
     railSizeTicks();
+    railWireScrub();
     railActive = -1;
     railSync();
   }
 
-  window.addEventListener('scroll', railSync, { passive: true });
+  window.addEventListener('scroll', function () {
+    // Scrolling dismisses a pending preview: the reader has moved on, and a
+    // stale "tap again to go" would be misleading.
+    if (pendingIndex >= 0) railClearPending();
+    railSync();
+  }, { passive: true });
   window.addEventListener('resize', function () {
     if (!railIsMobile()) { railRebuild(); return; }
     railSizeTicks();
@@ -565,6 +693,45 @@
     if (wide.addEventListener) { wide.addEventListener('change', onWide); }
     else if (wide.addListener) { wide.addListener(onWide); }
   }
+
+  /* Scrub wiring lives on the TRACK, so a drag anywhere in the rail's column is
+     captured (including the gaps between dots). A tap still works: a pointerdown
+     with no meaningful movement falls through to the tick's own click handler. */
+  function railWireScrub() {
+    if (!rail) return;
+    var track = rail.querySelector('.section-rail-track');
+    if (!track || track.__scrubWired) return;
+    track.__scrubWired = true;
+
+    var downY = null;
+    track.addEventListener('pointerdown', function (ev) {
+      downY = ev.clientY;
+      // Don't preventDefault here: a plain tap must still reach the tick's click.
+    });
+
+    track.addEventListener('pointermove', function (ev) {
+      if (downY === null) return;
+      if (!scrubActive) {
+        // 6px of vertical travel means this is a drag, not a tap. Below that we
+        // stay out of the way so tap-to-preview keeps working.
+        if (Math.abs(ev.clientY - downY) < 6) return;
+        railScrubStart(ev);
+      }
+      railScrubMove(ev);
+    });
+
+    ['pointerup', 'pointercancel'].forEach(function (evName) {
+      track.addEventListener(evName, function (ev) {
+        if (scrubActive) railScrubEnd(ev);
+        downY = null;
+      });
+    });
+  }
+
+  document.addEventListener('click', function (ev) {
+    // A tap outside the rail dismisses the preview.
+    if (pendingIndex >= 0 && rail && !rail.contains(ev.target)) railClearPending();
+  }, true);
 
   syncStickyVar();
   railRebuild();
