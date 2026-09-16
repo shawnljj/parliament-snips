@@ -648,20 +648,39 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     ORDER = {"bill": 0, "statement": 1, "budget": 2, "motion": 3, "adjournment": 4}
     briefs.sort(key=lambda b: (ORDER.get(b.get("_meta", {}).get("group"), 9),
                                -len(b.get("key_points", []))))
-    bills = [b for b in briefs if b.get("_meta", {}).get("group") == "bill"]
-    others = [b for b in briefs if b.get("_meta", {}).get("group") != "bill"]
+    # A brief with no verified points is procedural business -- the summariser
+    # correctly reports "no policy substance". Rendering it as a full card would
+    # pad the page with headings that say nothing, so list those compactly and
+    # keep the cards for things that actually decided or announced something.
+    substantive = [b for b in briefs if b.get("key_points")]
+    procedural = [b for b in briefs if not b.get("key_points")]
+    bills = [b for b in substantive if b.get("_meta", {}).get("group") == "bill"]
+    others = [b for b in substantive if b.get("_meta", {}).get("group") != "bill"]
+
+    proc_html = ""
+    if procedural:
+        items = "".join(
+            f'<li><span class="pstage">{esc((b.get("stage") or "").strip() or "procedural")}</span>'
+            f'<span class="pttl">{esc(b.get("title") or "")}</span>'
+            f'<span class="pnote2">{esc((b.get("what_it_is") or "")[:150])}</span></li>'
+            for b in procedural)
+        proc_html = (f'<details class="proc"><summary>Procedural business with no '
+                     f'policy content ({len(procedural)})</summary>'
+                     f'<p class="nnote">These items are recorded in Hansard as formal '
+                     f'steps &mdash; openings, acknowledgements, sum approvals &mdash; '
+                     f'with no policy content in the transcript. Listed for completeness.</p>'
+                     f'<ul>{items}</ul></details>')
 
     def brief_list(items, limit=None):
         out = items if limit is None else items[:limit]
         return "".join(render_brief(b) for b in out)
 
     lead = reports[0] if reports else {}
-    lede_words = ""
-    if briefs:
-        lede_words = (f"{len(briefs)} polic{'y' if len(briefs) == 1 else 'ies'} and "
-                      f"{len(reports)} items of business")
+    if substantive:
+        lede_words = (f"{len(substantive)} polic{'y' if len(substantive) == 1 else 'ies'} "
+                      f"and {len(reports):,} items of business")
     else:
-        lede_words = f"{len(reports)} items of business"
+        lede_words = f"{len(reports):,} items of business"
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -695,10 +714,12 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
       Every point carries the words it was taken from.</p></div>
     {brief_list(bills) if bills else ''}
     {brief_list(others) if others else ''}
-  </section>''' if briefs else f'''
+    {proc_html}
+  </section>''' if substantive else f'''
   <section class="substance">
     <div class="sec-head"><h2>What the Government is doing</h2></div>
-    <p class="empty">This sitting has not been summarised yet.</p>
+    <p class="empty">This sitting's business was entirely procedural.</p>
+    {proc_html}
   </section>'''}
 
   {debate_html}
@@ -733,8 +754,8 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     every key point carries the verbatim words it was drawn from.</p>
     <ul>
       <li>Reports collected: <b>{coverage_text(cov)}</b></li>
-      <li>Briefs on this page: <b>{len(briefs)}</b>
-        {f'({sum(len(b.get("key_points", [])) for b in briefs)} verified points)' if briefs else ''}</li>
+      <li>Briefs on this page: <b>{len(substantive)}</b>
+        {f'({sum(len(b.get("key_points", [])) for b in substantive)} verified points)' if substantive else ''}</li>
       <li>Speaker attribution: <b>{attr_txt}</b> of turns carry an explicit speaker tag</li>
       <li>Any point whose quote could not be found in the transcript was discarded
         rather than shown.</li>
@@ -1022,6 +1043,21 @@ h1,h2,h3{line-height:1.2;margin:0}
 .nnote{font-size:12.5px;color:var(--faint);margin:10px 0 8px;max-width:70ch}
 .ns ul{margin:0;padding-left:20px}
 .ns li{font-size:14px;color:var(--dim);margin-bottom:7px;line-height:1.5}
+
+/* procedural business, compactly listed rather than carded */
+.proc{margin-top:20px;border-top:1px dashed var(--line);padding-top:14px}
+.proc summary{cursor:pointer;font:600 13px inherit;color:var(--faint);list-style:none}
+.proc summary::-webkit-details-marker{display:none}
+.proc summary::before{content:"▸ ";}
+.proc[open] summary::before{content:"▾ "}
+.proc ul{list-style:none;margin:12px 0 0;padding:0}
+.proc li{padding:9px 0;border-bottom:1px solid var(--line);display:grid;
+  grid-template-columns:104px 1fr;gap:3px 14px;align-items:baseline}
+.proc li:last-child{border-bottom:0}
+.pstage{font:700 10px var(--mono);letter-spacing:.05em;text-transform:uppercase;
+  color:var(--faint)}
+.pttl{font-size:14.5px;font-weight:600}
+.pnote2{grid-column:2;font-size:13px;color:var(--dim);line-height:1.5}
 
 /* sitting statistics, demoted to an appendix */
 .stats-note{margin:44px 0 0;border-top:1px solid var(--line);padding-top:22px}
