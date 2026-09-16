@@ -374,7 +374,7 @@ MAPPING_NOTE = ("What was asked and what was said back, in order and in full whe
                 "we map the exchange and leave the judgement to you.")
 
 QA_PREVIEW = 4          # mappings shown before the expand control
-DEBATE_TURNS = 14       # unused; kept only if a raw-debate view returns
+SPEAKER_PREVIEW = 4     # speaker groups shown per brief before the expand control
 
 
 def render_mapping(q):
@@ -477,12 +477,10 @@ def render_brief(brief, sitting_dates=None):
         quote = (p.get("quote") or "").strip()
         quote_html = ""
         if quote:
-            nw = len(quote.split())
             quote_html = (
                 f'<details class="qsum">'
                 f'<summary title="Show the verbatim line from Hansard">'
                 f'<span class="qlabel">Verbatim</span>'
-                f'<span class="qw">{nw} words</span>'
                 f'</summary>'
                 f'<blockquote>{esc(quote)}</blockquote>'
                 f'</details>')
@@ -507,6 +505,24 @@ def render_brief(brief, sitting_dates=None):
             f'<p class="spkwho">{esc(g["who"])}</p>'
             f'<ul class="points">{inner}</ul>'
             f'</li>')
+
+    # A busy brief can carry 60+ verified points (~25k characters of prose and
+    # quotes). Showing them all by default reproduced the debate we exist to
+    # summarise -- across 2026 the corpus came to ~116k words of briefs, which is
+    # roughly the size of Hansard itself. So: always show the first few speakers
+    # (they are usually the mover and the respondent), and put the rest behind
+    # one disclosure. Nothing is dropped; the full record stays one click away.
+    head, tail = pts[:SPEAKER_PREVIEW], pts[SPEAKER_PREVIEW:]
+    if tail:
+        hidden_pts = sum(len(g["pts"]) for g in groups[SPEAKER_PREVIEW:])
+        more_pts_html = (
+            f'<details class="morepts"><summary>Show the remaining '
+            f'{len(tail)} speaker{"s" if len(tail) != 1 else ""} and '
+            f'{hidden_pts} point{"s" if hidden_pts != 1 else ""} from this debate'
+            f'</summary><ul class="points">{"".join(tail)}</ul></details>')
+    else:
+        more_pts_html = ""
+    points_html = f'<ul class="points">{"".join(head)}</ul>{more_pts_html}'
 
     not_said = brief.get("not_said") or []
     ns_html = ""
@@ -536,7 +552,7 @@ def render_brief(brief, sitting_dates=None):
         </header>
         <p class="whatis">{esc(brief.get('what_it_is', ''))}</p>
         {why_html}
-        <ul class="points">{''.join(pts)}</ul>
+        {points_html}
         {next_html}
         {ns_html}
       </article>"""
@@ -554,25 +570,43 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
         grouped[r["group"]].append(r)
     order = [g for g in GROUP_ORDER if g in grouped]
 
-    def report_card(r):
-        # the id makes in-page anchors resolve; the numbers panel and debate
-        # footer link here to show provenance
-        return (f'<li class="item" id="{esc(r["report_id"])}">'
+    # "Everything else" -- the long tail.
+    #
+    # Previously a flat list per group with a "+N more" button. Two problems:
+    # the button was a no-op (the JS removed a `hidden` class that was never
+    # added, so nothing was ever concealed), and a Budget sitting carries 200+
+    # items, which is an unscrollable wall.
+    #
+    # Now each section group is a native <details> card, collapsed by default,
+    # so the page opens showing only group headings and a count. Native details
+    # means it works with no JS, survives the page being saved, and is
+    # keyboard/AT accessible for free.
+    def report_row(r):
+        return (f'<li id="{esc(r["report_id"])}">'
                 f'<a href="{esc(hansard_url(r))}" target="_blank" rel="noopener">'
                 f'<span class="it">{esc(r["title"]) or "(untitled)"}</span>'
-                f'<span class="iw">{r["words"]:,}w</span></a></li>')
+                f'</a></li>')
 
     groups_html = []
     for g in order:
         items = sorted(grouped[g], key=lambda r: -r["words"])
-        shown = "\n".join(report_card(r) for r in items[:8])
-        if len(items) > 8:
-            shown += (f'\n<li class="item more"><button class="reveal">'
-                      f'+ {len(items) - 8} more {esc(GROUP_LABEL.get(g, g).lower())}'
-                      f'</button></li>')
-            shown += "\n" + "\n".join(report_card(r) for r in items[8:])
-        groups_html.append(f'<section class="grp"><h3>{esc(GROUP_LABEL.get(g, g))}'
-                           f'<span class="cnt">{len(items)}</span></h3><ul>{shown}</ul></section>')
+        if not items:
+            continue
+        label = GROUP_LABEL.get(g, g)
+        # a short flavour line so a collapsed card still tells you something.
+        # NOTE: build this from escaped parts, never esc() a string that already
+        # contains an HTML entity -- escaping turns "&middot;" into "&amp;middot;"
+        # which renders literally on the page.
+        with_debate = sum(1 for r in items if r["turns"])
+        n_items = len(items)
+        summary_note = (f"{n_items} item{'s' if n_items != 1 else ''}"
+                        f" &middot; {with_debate} with recorded debate")
+        groups_html.append(
+            f'<details class="grp" id="grp-{esc(g)}">'
+            f'<summary><span class="gtitle">{esc(label)}</span>'
+            f'<span class="gcount">{summary_note}</span></summary>'
+            f'<ul class="glist">{"".join(report_row(r) for r in items)}</ul>'
+            f'</details>')
 
     # NOTE: there used to be a "debate of the day" section here that dumped the
     # largest debate's first 14 turns as raw transcript (~10k words on 5 Aug
@@ -737,13 +771,6 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
   Hansard is a public record; the full text is at sprs.parl.gov.sg.</p></footer>
 </main>
 <script>
-document.querySelectorAll('.reveal').forEach(function (b) {{
-  b.addEventListener('click', function () {{
-    var grp = b.closest('.grp');
-    grp.querySelectorAll('.item').forEach(function (i) {{ i.classList.remove('hidden'); }});
-    grp.querySelectorAll('.more').forEach(function (i) {{ i.remove(); }});
-  }});
-}});
 var maps = document.querySelector('.reveal-maps');
 if (maps) {{
   maps.addEventListener('click', function () {{
@@ -993,6 +1020,14 @@ h1,h2,h3{line-height:1.2;margin:0}
 .qsum[open] summary{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
 .qsum .qlabel{color:inherit}
 .qsum .qw{color:var(--faint);font-weight:500}
+/* the rest of a long brief, one disclosure away */
+.morepts{margin-top:14px;border-top:1px dashed var(--line);padding-top:12px}
+.morepts>summary{cursor:pointer;font:600 12.5px var(--mono);color:var(--accent);
+  list-style:none}
+.morepts>summary::-webkit-details-marker{display:none}
+.morepts>summary::before{content:"▸ ";}
+.morepts[open]>summary::before{content:"▾ "}
+.morepts>.points{margin-top:12px}
 .qsum summary:hover .qw,.qsum[open] summary .qw{color:var(--accent);opacity:.75}
 .qsum blockquote{margin:9px 0 0;padding:10px 14px;border-left:2px solid var(--accent);
   background:#fafbfa;border-radius:0 8px 8px 0;
@@ -1045,21 +1080,27 @@ h1,h2,h3{line-height:1.2;margin:0}
 .sec-head h2{font-size:26px;letter-spacing:-.022em;font-weight:750}
 .sub{color:var(--faint);font-size:14px;margin:9px 0 0}
 
-/* everything else */
+/* everything else -- collapsible group cards */
 .everything{padding:56px 0 10px;border-top:1px solid var(--line);margin-top:36px}
-.grp{margin-bottom:34px}
-.grp h3{font-size:15px;display:flex;align-items:center;gap:10px;margin-bottom:14px}
-.cnt{font:600 11px var(--mono);background:var(--accent-soft);color:var(--accent);
-  padding:3px 8px;border-radius:20px}
-.grp ul{list-style:none;margin:0;padding:0}
-.item.hidden{display:none}
-.item a{display:flex;justify-content:space-between;gap:18px;padding:11px 14px;
-  border-bottom:1px solid var(--line);font-size:14.5px;align-items:baseline}
-.item a:hover{background:var(--card)}
-.it{padding-right:12px}
-.iw{font:600 11.5px var(--mono);color:var(--faint);white-space:nowrap}
-.more button{background:none;border:0;color:var(--accent);font:600 13px inherit;
-  cursor:pointer;padding:11px 14px;text-align:left}
+/* A Budget sitting carries 200+ items. Collapsed by default so the page opens
+   as a handful of group headings instead of a wall of text. */
+details.grp{background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);margin-bottom:10px;overflow:hidden}
+details.grp>summary{display:flex;align-items:baseline;gap:14px;padding:16px 44px 16px 20px;
+  cursor:pointer;list-style:none;position:relative}
+details.grp>summary::-webkit-details-marker{display:none}
+details.grp>summary:hover{background:#f8faf9}
+details.grp>summary::after{content:"▸";position:absolute;right:18px;top:50%;
+  transform:translateY(-50%);color:var(--faint);font-size:12px}
+details.grp[open]>summary::after{content:"▾"}
+details.grp[open]>summary{border-bottom:1px solid var(--line)}
+.gtitle{font-size:15.5px;font-weight:700;letter-spacing:-.01em}
+.gcount{font:500 11.5px var(--mono);color:var(--faint)}
+.glist{list-style:none;margin:0;padding:6px 0}
+.glist li{border-bottom:1px solid var(--line)}
+.glist li:last-child{border-bottom:0}
+.glist a{display:block;padding:11px 20px;font-size:14.5px;line-height:1.45}
+.glist a:hover{background:#f8faf9;color:var(--accent)}
 
 /* method + footer */
 .method{margin:56px 0 0;padding:28px 30px;background:var(--accent-soft);

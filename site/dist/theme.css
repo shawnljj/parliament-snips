@@ -160,6 +160,14 @@ h1,h2,h3{line-height:1.2;margin:0}
 .qsum[open] summary{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
 .qsum .qlabel{color:inherit}
 .qsum .qw{color:var(--faint);font-weight:500}
+/* the rest of a long brief, one disclosure away */
+.morepts{margin-top:14px;border-top:1px dashed var(--line);padding-top:12px}
+.morepts>summary{cursor:pointer;font:600 12.5px var(--mono);color:var(--accent);
+  list-style:none}
+.morepts>summary::-webkit-details-marker{display:none}
+.morepts>summary::before{content:"▸ ";}
+.morepts[open]>summary::before{content:"▾ "}
+.morepts>.points{margin-top:12px}
 .qsum summary:hover .qw,.qsum[open] summary .qw{color:var(--accent);opacity:.75}
 .qsum blockquote{margin:9px 0 0;padding:10px 14px;border-left:2px solid var(--accent);
   background:#fafbfa;border-radius:0 8px 8px 0;
@@ -212,21 +220,27 @@ h1,h2,h3{line-height:1.2;margin:0}
 .sec-head h2{font-size:26px;letter-spacing:-.022em;font-weight:750}
 .sub{color:var(--faint);font-size:14px;margin:9px 0 0}
 
-/* everything else */
+/* everything else -- collapsible group cards */
 .everything{padding:56px 0 10px;border-top:1px solid var(--line);margin-top:36px}
-.grp{margin-bottom:34px}
-.grp h3{font-size:15px;display:flex;align-items:center;gap:10px;margin-bottom:14px}
-.cnt{font:600 11px var(--mono);background:var(--accent-soft);color:var(--accent);
-  padding:3px 8px;border-radius:20px}
-.grp ul{list-style:none;margin:0;padding:0}
-.item.hidden{display:none}
-.item a{display:flex;justify-content:space-between;gap:18px;padding:11px 14px;
-  border-bottom:1px solid var(--line);font-size:14.5px;align-items:baseline}
-.item a:hover{background:var(--card)}
-.it{padding-right:12px}
-.iw{font:600 11.5px var(--mono);color:var(--faint);white-space:nowrap}
-.more button{background:none;border:0;color:var(--accent);font:600 13px inherit;
-  cursor:pointer;padding:11px 14px;text-align:left}
+/* A Budget sitting carries 200+ items. Collapsed by default so the page opens
+   as a handful of group headings instead of a wall of text. */
+details.grp{background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);margin-bottom:10px;overflow:hidden}
+details.grp>summary{display:flex;align-items:baseline;gap:14px;padding:16px 44px 16px 20px;
+  cursor:pointer;list-style:none;position:relative}
+details.grp>summary::-webkit-details-marker{display:none}
+details.grp>summary:hover{background:#f8faf9}
+details.grp>summary::after{content:"▸";position:absolute;right:18px;top:50%;
+  transform:translateY(-50%);color:var(--faint);font-size:12px}
+details.grp[open]>summary::after{content:"▾"}
+details.grp[open]>summary{border-bottom:1px solid var(--line)}
+.gtitle{font-size:15.5px;font-weight:700;letter-spacing:-.01em}
+.gcount{font:500 11.5px var(--mono);color:var(--faint)}
+.glist{list-style:none;margin:0;padding:6px 0}
+.glist li{border-bottom:1px solid var(--line)}
+.glist li:last-child{border-bottom:0}
+.glist a{display:block;padding:11px 20px;font-size:14.5px;line-height:1.45}
+.glist a:hover{background:#f8faf9;color:var(--accent)}
 
 /* method + footer */
 .method{margin:56px 0 0;padding:28px 30px;background:var(--accent-soft);
