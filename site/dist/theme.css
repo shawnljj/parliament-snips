@@ -133,8 +133,15 @@ h1,h2,h3{line-height:1.2;margin:0}
 .why{font-size:15px;line-height:1.62;margin:0 0 20px;padding:14px 16px;
   background:var(--accent-soft);border-radius:10px;color:#1e3a2c}
 .points{list-style:none;margin:0;padding:0}
-.pt{padding:14px 0;border-top:1px solid var(--line)}
-.pt:first-child{border-top:0}
+/* A speaker turn: the name appears once, its points hang beneath it. */
+.spk{list-style:none;border-top:1px solid var(--line);padding:14px 0 2px}
+.spk:first-child{border-top:0;padding-top:4px}
+.spkwho{margin:0 0 9px;font:700 12px var(--mono);color:var(--accent);
+  letter-spacing:.02em;line-height:1.35}
+.spk .points{margin:0}
+.spk .points .pt{padding:9px 0 9px 15px;border-top:1px dashed var(--line);
+  border-left:2px solid var(--accent-soft);margin-left:1px}
+.spk .points .pt:first-child{border-top:0;padding-top:2px}
 .pttext{margin:0 0 8px;font-size:15.5px;line-height:1.58}
 .pt blockquote{margin:0 0 8px;padding-left:14px;border-left:2px solid var(--line);
   font-size:14px;line-height:1.55;color:var(--dim);font-style:italic}
@@ -251,6 +258,9 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   /* the question/response connector only reads left-to-right; stack on mobile */
   .qa-pair{grid-template-columns:1fr;gap:10px}
   .qa-link{display:none}
+  /* keep the speaker indent shallow on narrow screens */
+  .spk .points .pt{padding-left:11px}
+  .spkwho{font-size:11.5px}
   .supp{grid-template-columns:1fr;gap:4px}
   .srow a{grid-template-columns:1fr;gap:6px}
   .sstats{grid-column:1}

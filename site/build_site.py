@@ -455,8 +455,11 @@ def render_brief(brief, sitting_dates=None):
         else:
             dates_txt = f"{pretty_date(dates[0])} &ndash; {pretty_date(dates[-1])}"
 
-    pts = []
-    for p in brief.get("key_points", []) or []:
+    # Points are grouped by speaker turn: the name is printed once, and the
+    # points that follow under the same speaker are nested beneath it. Without
+    # this a debate reads "Mr X / Mr X / Mr X / Assoc Prof Y / Assoc Prof Y",
+    # which is ~70% redundant attribution lines on the page.
+    def build_point(p, first_under_speaker):
         quote = (p.get("quote") or "").strip()
         quote_html = ""
         if quote:
@@ -469,11 +472,27 @@ def render_brief(brief, sitting_dates=None):
                 f'</summary>'
                 f'<blockquote>{esc(quote)}</blockquote>'
                 f'</details>')
-        pts.append(f'<li class="pt">'
-                   f'<p class="pttext">{esc(p.get("point", ""))}</p>'
-                   f'{quote_html}'
-                   f'<span class="ptwho">{esc(p.get("speaker") or "Unattributed")}</span>'
-                   f'</li>')
+        return (f'<li class="pt">'
+                f'<p class="pttext">{esc(p.get("point", ""))}</p>'
+                f'{quote_html}'
+                f'</li>')
+
+    groups, cur = [], None
+    for p in brief.get("key_points", []) or []:
+        who = (p.get("speaker") or "Unattributed").strip() or "Unattributed"
+        if cur is None or who != cur["who"]:
+            cur = {"who": who, "pts": []}
+            groups.append(cur)
+        cur["pts"].append(p)
+
+    pts = []
+    for g in groups:
+        inner = "".join(build_point(p, i == 0) for i, p in enumerate(g["pts"]))
+        pts.append(
+            f'<li class="spk">'
+            f'<p class="spkwho">{esc(g["who"])}</p>'
+            f'<ul class="points">{inner}</ul>'
+            f'</li>')
 
     not_said = brief.get("not_said") or []
     ns_html = ""
@@ -956,8 +975,15 @@ h1,h2,h3{line-height:1.2;margin:0}
 .why{font-size:15px;line-height:1.62;margin:0 0 20px;padding:14px 16px;
   background:var(--accent-soft);border-radius:10px;color:#1e3a2c}
 .points{list-style:none;margin:0;padding:0}
-.pt{padding:14px 0;border-top:1px solid var(--line)}
-.pt:first-child{border-top:0}
+/* A speaker turn: the name appears once, its points hang beneath it. */
+.spk{list-style:none;border-top:1px solid var(--line);padding:14px 0 2px}
+.spk:first-child{border-top:0;padding-top:4px}
+.spkwho{margin:0 0 9px;font:700 12px var(--mono);color:var(--accent);
+  letter-spacing:.02em;line-height:1.35}
+.spk .points{margin:0}
+.spk .points .pt{padding:9px 0 9px 15px;border-top:1px dashed var(--line);
+  border-left:2px solid var(--accent-soft);margin-left:1px}
+.spk .points .pt:first-child{border-top:0;padding-top:2px}
 .pttext{margin:0 0 8px;font-size:15.5px;line-height:1.58}
 .pt blockquote{margin:0 0 8px;padding-left:14px;border-left:2px solid var(--line);
   font-size:14px;line-height:1.55;color:var(--dim);font-style:italic}
@@ -1074,6 +1100,9 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   /* the question/response connector only reads left-to-right; stack on mobile */
   .qa-pair{grid-template-columns:1fr;gap:10px}
   .qa-link{display:none}
+  /* keep the speaker indent shallow on narrow screens */
+  .spk .points .pt{padding-left:11px}
+  .spkwho{font-size:11.5px}
   .supp{grid-template-columns:1fr;gap:4px}
   .srow a{grid-template-columns:1fr;gap:6px}
   .sstats{grid-column:1}
