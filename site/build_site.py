@@ -2072,6 +2072,32 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
 """
 
 
+def write_text_atomic(path, text):
+    """Write text to `path` atomically.
+
+    `open(path, "w")` truncates the target to zero bytes immediately, then writes
+    the content. index.html is ~204KB, so every rebuild leaves a real window where
+    the file on disk is empty or partial -- and `python -m http.server` serves
+    whatever is on disk at request time, with no locking. A request landing in
+    that window got a blank white page; a partial theme.css rendered as an
+    unstyled wall even when the HTML arrived intact.
+
+    It also failed unsafely: a build interrupted mid-write (Ctrl-C, timeout, an
+    exception) left a permanently truncated page on disk instead of aborting with
+    the previous good one intact.
+
+    Writing to a temp file in the same directory and then os.replace() makes the
+    swap atomic on the same filesystem: a reader sees either the complete old file
+    or the complete new one, never a partial. Matches write_json_atomic in
+    scraper/backfill.py and write_atomic in summariser/summarise.py, which already
+    did this -- the site writer just did not follow the convention.
+    """
+    tmp = f"{path}.tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
+        fh.write(text)
+    os.replace(tmp, path)
+
+
 def load_summaries():
     """Every summarised policy brief, or [] if none exist yet."""
     sdir = os.path.join(ROOT, "summaries")
@@ -2113,24 +2139,23 @@ def build_all(out_dir):
     sdir = os.path.join(out_dir, "sittings")
     os.makedirs(sdir, exist_ok=True)
 
-    with open(os.path.join(out_dir, "theme.css"), "w", encoding="utf-8") as fh:
-        fh.write(STYLE)
+    write_text_atomic(os.path.join(out_dir, "theme.css"), STYLE)
 
     for s in sittings:
         page = render_sitting(s, css_href="../theme.css", home_href="../index.html",
                               archive_href="index.html", summaries=summaries)
-        with open(os.path.join(sdir, f"{s['date']}.html"), "w", encoding="utf-8") as fh:
-            fh.write(page)
+        write_text_atomic(os.path.join(sdir, f"{s['date']}.html"), page)
 
-    with open(os.path.join(sdir, "index.html"), "w", encoding="utf-8") as fh:
-        fh.write(render_archive(sittings, css_href="../theme.css",
-                                home_href="../index.html", archive_href="index.html",
-                                summaries=summaries))
+    write_text_atomic(os.path.join(sdir, "index.html"),
+                      render_archive(sittings, css_href="../theme.css",
+                                     home_href="../index.html", archive_href="index.html",
+                                     summaries=summaries))
 
     latest = sittings[-1]
-    with open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8") as fh:
-        fh.write(render_sitting(latest, css_href="theme.css", home_href="index.html",
-                                archive_href="sittings/index.html", summaries=summaries))
+    write_text_atomic(os.path.join(out_dir, "index.html"),
+                      render_sitting(latest, css_href="theme.css", home_href="index.html",
+                                     archive_href="sittings/index.html",
+                                     summaries=summaries))
 
     printed = sum(len(s.get("key_points", [])) for s in summaries)
     print(f"built {len(sittings)} sitting page(s) + archive; latest = {latest['date']}; "

@@ -53,8 +53,11 @@ if __name__ == "__main__":
     raw = json.load(open(sys.argv[1]))
     out = normalise(raw)
     dest = sys.argv[2]
-    with open(dest, "w", encoding="utf-8") as fh:
+    # Atomic: a truncated sitting JSON would be consumed by the site builder.
+    tmp = f"{dest}.tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
         json.dump(out, fh, indent=1, ensure_ascii=False)
+    os.replace(tmp, dest)
     c = out["coverage"]
     print(f"{dest}: {c['collected']}/{c['max_result']} reports, {c['words']:,} words, "
           f"{c['turns']} turns, attribution {c['speaker_attribution']}")

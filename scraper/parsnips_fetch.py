@@ -50,6 +50,7 @@ Inline language switches appear as ``(<em>In English</em>)`` / Chinese / Malay.
 import datetime
 import html as htmlmod
 import json
+import os
 import re
 import sys
 import time
@@ -406,8 +407,12 @@ def main(argv):
     for r in sitting["reports"][:10]:
         print(f"   {r['words']:7,d}w  {r['group']:11s} {r['title'][:64]}")
 
-    with open(out, "w", encoding="utf-8") as fh:
+    # Atomic: the sitting JSON is read by the site builder, so a truncated write
+    # could be consumed mid-build. Same pattern as write_json_atomic in backfill.py.
+    tmp = f"{out}.tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
         json.dump(sitting, fh, indent=1, ensure_ascii=False)
+    os.replace(tmp, out)
     print(f"saved {out}")
     return 0
 

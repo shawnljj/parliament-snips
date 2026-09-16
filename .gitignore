@@ -7,8 +7,13 @@ venv/
 # Transient backfill state (regenerated on each run)
 backfill.log
 backfill_status.json
+
+# In-flight writes from the atomic writers (tmp + os.replace). A .tmp on disk
+# means a build was interrupted mid-write; it is never a real artifact.
+*.tmp
 data/*.tmp
 summaries/*.tmp
+site/dist/**/*.tmp
 
 # OS
 .DS_Store
