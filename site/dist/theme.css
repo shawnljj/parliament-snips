@@ -138,6 +138,27 @@ h1,h2,h3{line-height:1.2;margin:0}
 .pttext{margin:0 0 8px;font-size:15.5px;line-height:1.58}
 .pt blockquote{margin:0 0 8px;padding-left:14px;border-left:2px solid var(--line);
   font-size:14px;line-height:1.55;color:var(--dim);font-style:italic}
+/* Verbatim source is collapsed by default: the point is the summary, the quote is
+   the receipt. Expanding shows the exact Hansard line for that claim. */
+.qsum{margin:0 0 9px}
+.qsum summary{display:inline-flex;align-items:center;gap:7px;cursor:pointer;
+  list-style:none;padding:4px 10px 4px 8px;border:1px solid var(--line);
+  border-radius:999px;background:#fff;color:var(--faint);
+  font:600 11px var(--mono);letter-spacing:.03em;transition:.12s}
+.qsum summary::-webkit-details-marker{display:none}
+.qsum summary::before{content:"▸";font-size:10px;line-height:1;color:var(--faint)}
+.qsum[open] summary::before{content:"▾"}
+.qsum summary:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.qsum summary:hover::before{color:var(--accent)}
+.qsum[open] summary{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.qsum .qlabel{color:inherit}
+.qsum .qw{color:var(--faint);font-weight:500}
+.qsum summary:hover .qw,.qsum[open] summary .qw{color:var(--accent);opacity:.75}
+.qsum blockquote{margin:9px 0 0;padding:10px 14px;border-left:2px solid var(--accent);
+  background:#fafbfa;border-radius:0 8px 8px 0;
+  font-size:14px;line-height:1.6;color:var(--dim);font-style:italic}
+@media print{.qsum blockquote{display:block}}
+@media (prefers-reduced-motion:reduce){.qsum summary{transition:none}}
 .ptwho{display:block;font:600 11.5px var(--mono);color:var(--faint);
   letter-spacing:.02em}
 .next{margin:18px 0 0;padding:14px 16px;background:#f8faf9;border:1px solid var(--line);
