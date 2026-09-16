@@ -299,6 +299,25 @@ def write_atomic(path, obj):
     os.replace(tmp, path)
 
 
+def rebuild_site():
+    """Regenerate the static site from the current data + summaries.
+
+    Called after each brief so the served site is never stale while the
+    summariser is still working through a backfill. Cheap: one page per sitting.
+    Imported lazily so the summariser still runs if the site builder is absent.
+    """
+    try:
+        sys.path.insert(0, os.path.join(ROOT, "site"))
+        import importlib
+        import build_site
+        importlib.reload(build_site)
+        build_site.build_all(os.path.join(ROOT, "site", "dist"))
+        return True
+    except Exception as exc:                           # noqa: BLE001
+        print(f"  (site rebuild skipped: {exc})")
+        return False
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--sitting", action="append", default=None,
@@ -371,6 +390,9 @@ def main(argv=None):
                   f"{len(data.get('key_points', [])):>2} pts "
                   f"(dropped {data['_meta']['points_dropped']:>2})  "
                   f"{str(data.get('stage'))[:18]:18s} {item['title'][:52]}")
+
+    if done:
+        rebuild_site()
 
     print(f"\ndone in {time.time() - t0:.0f}s: {done} summarised, {failed} failed")
     print(f"index: {index_path} ({len(index)} items)")
