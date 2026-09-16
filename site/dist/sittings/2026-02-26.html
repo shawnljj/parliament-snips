@@ -549,12 +549,15 @@
       var label = (railEntries[index] || {}).label || '';
       railPill.textContent = label;
       if (label) {
+        // Show while the reader is moving between sections, then fade. Gating on
+        // activity rather than a timeout alone is what keeps it off content: on a
+        // phone every pixel scrolls, so a resting position always covers
+        // something. 700ms is long enough to read a two-word label mid-scroll.
         railPill.classList.add('is-visible');
         if (railPillTimer !== undefined) window.clearTimeout(railPillTimer);
-        // Fade it so a small screen never has the label permanently on top.
         railPillTimer = window.setTimeout(function () {
           railPill.classList.remove('is-visible');
-        }, 2200);
+        }, 700);
       } else {
         railPill.classList.remove('is-visible');
       }

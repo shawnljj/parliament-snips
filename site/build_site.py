@@ -634,12 +634,15 @@ SCRIPT = r"""
       var label = (railEntries[index] || {}).label || '';
       railPill.textContent = label;
       if (label) {
+        // Show while the reader is moving between sections, then fade. Gating on
+        // activity rather than a timeout alone is what keeps it off content: on a
+        // phone every pixel scrolls, so a resting position always covers
+        // something. 700ms is long enough to read a two-word label mid-scroll.
         railPill.classList.add('is-visible');
         if (railPillTimer !== undefined) window.clearTimeout(railPillTimer);
-        // Fade it so a small screen never has the label permanently on top.
         railPillTimer = window.setTimeout(function () {
           railPill.classList.remove('is-visible');
-        }, 2200);
+        }, 700);
       } else {
         railPill.classList.remove('is-visible');
       }
@@ -1656,9 +1659,8 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
    The dots' visible size is unchanged, so the rail looks the same. */
 .section-rail{display:none}
 @media (max-width:760px){
-  .section-rail{
-    display:block;position:fixed;top:50%;right:6px;transform:translateY(-50%);
-    z-index:70;padding:10px 0;pointer-events:none}
+  .section-rail{display:block;position:fixed;top:50%;right:6px;transform:translateY(-50%);
+    z-index:70;padding:10px 0;pointer-events:none;max-width:calc(100vw - 12px)}
   .section-rail.is-dormant{display:none}
   .section-rail-track{position:relative;display:flex;flex-direction:column;
     align-items:center;gap:var(--rail-gap,14px);padding:2px 8px;pointer-events:auto}
@@ -1675,7 +1677,7 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
     background:linear-gradient(180deg,var(--accent),#2f8f66);
     transition:height .25s ease}
   .section-rail-tick{position:relative;appearance:none;border:0;background:transparent;
-    padding:0;width:30px;height:var(--rail-tick-h,22px);display:grid;
+    padding:0;width:24px;height:var(--rail-tick-h,22px);display:grid;
     place-items:center;cursor:pointer}
   .section-rail-tick-mark{display:block;width:6px;height:6px;border-radius:50%;
     background:#c4cfc7;box-shadow:0 0 0 3px rgba(251,251,250,.9);
@@ -1683,13 +1685,18 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   .section-rail-tick.level-2 .section-rail-tick-mark{width:8px;height:8px}
   .section-rail-tick.is-active .section-rail-tick-mark{background:var(--accent);
     transform:scale(1.35)}
-  /* always-visible label for the section currently on screen */
-  .section-rail-pill{position:absolute;top:50%;right:34px;
-    transform:translateY(-50%) translateX(6px);max-width:min(190px,62vw);
-    padding:6px 11px;border-radius:999px;background:rgba(20,24,29,.94);color:#fff;
-    font-size:11px;font-weight:700;line-height:1.25;white-space:nowrap;
+  /* always-visible label for the section currently on screen.
+     No fixed position can avoid ALL content on a page where every pixel between
+     the header and footer scrolls: centred on the rail it landed on the heading
+     it named, above the rail it landed on the header nav. So it is gated on
+     active scrolling instead (see the JS) -- present while the reader is moving
+     between sections, gone ~700ms after they stop, when they are reading. */
+  .section-rail-pill{position:absolute;top:50%;right:0;
+    transform:translateY(-50%) translateX(6px);max-width:min(190px,52vw);
+    padding:5px 10px;border-radius:999px;background:rgba(20,24,29,.94);color:#fff;
+    font-size:10.5px;font-weight:700;line-height:1.25;white-space:nowrap;
     overflow:hidden;text-overflow:ellipsis;opacity:0;
-    transition:opacity .2s ease,transform .2s ease;pointer-events:none}
+    transition:opacity .2s ease,transform .2s ease;pointer-events:none;z-index:2}
   .section-rail-pill.is-visible{opacity:1;transform:translateY(-50%) translateX(0)}
   /* long-press / focus preview for off-screen headings */
   .section-rail-bubble{position:absolute;top:50%;right:30px;
@@ -1746,34 +1753,92 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
 .qajump>summary::before{content:"▸ ";color:var(--faint);margin-right:6px}
 .qajump[open]>summary::before{content:"▾ "}
 
-/* Long pages on small screens: tighten vertical rhythm so there is less to
-   scroll. */
+/* Long pages on small screens.
+   Two distinct problems, in order of size:
+     1. TYPE SCALE. The brief title was 23px/37.26px line-height, so the 5 Aug
+        motion title wrapped to FIVE lines = 186px of card height for one
+        heading. That was the single largest waste on the page, and it is type,
+        not padding.
+     2. PADDING. Every one of 79 points, 17 speaker groups, 32 Q/A sides and 79
+        quote chips carried a full-size pad; trimmed together they recover over
+        a thousand pixels with no content loss.
+   Horizontal: headings must stop short of the rail, see the .wrap rule below. */
 @media (max-width:760px){
-  .lede{padding:34px 0 22px}
-  .substance,.oral{padding-top:34px;margin-top:26px}
-  .brief{padding:20px 17px 17px;border-radius:12px}
-  .brief h3{font-size:19px}
-  .whatis{font-size:15.5px}
-  .why{font-size:14.5px;padding:12px 14px}
-  .pt{padding:12px 0}
-  .pttext{font-size:15px}
-  .spk{padding:12px 0 2px}
-  .spk .points .pt{padding:8px 0 8px 13px}
-  .map{padding:16px 0}
-  .mapt{font-size:15px;margin-bottom:12px}
-  .qa-side{padding:12px 13px}
-  .qa-side p{font-size:14.5px}
-  .everything{padding-top:34px;margin-top:26px}
-  details.grp>summary{padding:14px 40px 14px 16px;flex-wrap:wrap;gap:4px 12px}
-  .glist a{padding:13px 16px}
-  .qajump{padding:14px 16px}
-  .qajump li{font-size:14px;flex-wrap:wrap}
-  .qajump .qw{margin-left:30px;width:100%;white-space:normal}
-  .method{padding:22px 18px;margin-top:34px}
-  footer{padding-bottom:88px}
-  /* keep the first screen short: the lede is the only thing above the fold */
-  .lede h1{font-size:clamp(32px,10vw,44px)}
-  .dek{font-size:16px}
+  /* ---- type scale ---- */
+  .lede h1{font-size:clamp(28px,8.4vw,34px);letter-spacing:-.03em}
+  .dek{font-size:15px;line-height:1.5}
+  .kicker{font-size:11px;margin-bottom:12px}
+  main h2{font-size:19px;line-height:1.22;letter-spacing:-.02em}
+  .sub{font-size:13px;line-height:1.45;margin-top:6px}
+  /* The brief title. 23px/1.62 wrapped to five lines; 17.5px/1.25 takes the
+     same title to two or three. */
+  .btitle{font-size:17.5px;line-height:1.26;letter-spacing:-.015em;margin-bottom:6px}
+  .brief h3{font-size:17px;line-height:1.26}
+  .bhint{font-size:10.5px;gap:5px 10px}
+  .stage{font-size:9.5px;padding:2px 6px}
+  .mapt{font-size:14.5px;line-height:1.3;margin-bottom:8px}
+  .maphint{font-size:10.5px;margin-top:5px}
+  .spkwho{font-size:10.5px;line-height:1.3;margin-bottom:6px}
+  .pttext{font-size:14.5px;line-height:1.5}
+  .whatis{font-size:14.5px;line-height:1.5}
+  .why{font-size:13.5px;line-height:1.5}
+  .qa-side p{font-size:14px;line-height:1.5}
+  .gtitle{font-size:14px}
+  .gcount{font-size:10.5px}
+
+  /* ---- padding ---- */
+  .lede{padding:26px 0 18px}
+  .substance,.oral,.everything{padding-top:22px;margin-top:18px}
+  .brief{padding:15px 14px 13px;border-radius:11px}
+  .briefsum{padding:14px 17px;padding-right:40px}
+  .bbody{padding:0 14px 13px}
+  .bhead{padding-bottom:8px;margin-bottom:11px}
+  .bcaret{right:15px;top:17px}
+  .briefwrap{margin-bottom:11px}
+  .pt{padding:9px 0}
+  .spk{padding:9px 0 1px}
+  .spk .points .pt{padding:7px 0 7px 11px}
+  details.map .mapsum{padding:12px 0;padding-right:26px}
+  .mapsum::after{right:2px;top:15px}
+  .qabody{padding-bottom:12px}
+  .mapwrap{margin:0}
+  .qa-side{padding:10px 11px}
+  .qa-pair{gap:8px}
+  .qsum{margin-bottom:5px}
+  .qsum>summary,.supp-wrap>summary,.ns>summary,.morepts>summary,.proc>summary{
+    padding-left:4px;padding-right:4px;margin-left:-4px}
+  .srclink{margin-top:6px}
+  .why{padding:10px 12px;margin-bottom:13px}
+  .next{padding:11px 13px;margin-top:12px}
+  .next b{font-size:9.5px;margin-bottom:4px}
+  .sup-wrap{margin-top:10px;padding-top:9px}
+  .supp{padding:7px 0 7px 9px;margin-top:6px}
+  .proc{margin-top:13px;padding-top:10px}
+  .proc li{padding:7px 0;grid-template-columns:88px 1fr;gap:2px 11px}
+  .spk .points .pt:first-child{padding-top:0}
+  .grp{margin-bottom:16px}
+  details.grp>summary{padding:12px 34px 12px 13px;flex-wrap:wrap;gap:3px 10px}
+  details.grp{margin-bottom:7px}
+  .glist{padding:4px 0}
+  .glist a{padding:11px 13px;min-height:44px;display:flex;align-items:center}
+  .qajump{padding:11px 13px}
+  .qajump li{font-size:13.5px;padding:6px 0;flex-wrap:wrap}
+  .qajump .qw{margin-left:26px;width:100%;white-space:normal}
+  .qajump>summary{font-size:14px}
+  .method{padding:18px 15px;margin-top:24px}
+  .method h2{font-size:16px;margin-bottom:11px}
+  .method p,.method ul,.method li{font-size:13px}
+  .stats-note{margin-top:26px;padding-top:15px}
+  .statgrid{grid-template-columns:1fr;gap:16px}
+  footer{margin-top:24px;padding:18px 0 84px;font-size:12px}
+  /* Reserve room for the rail so no heading (or body text) runs underneath it.
+     Measured: the rail's box is 36px wide (24px tick + 12px track padding) at
+     right:6px, so its left edge sits 42px in from the viewport edge. A 34px
+     gutter still left every h2 18px behind it; 46px gives ~4px clearance.
+     Horizontal room is the price of a fixed right-edge rail; the alternative is
+     a rail that overlaps the text it exists to index. */
+  .wrap{padding-left:16px;padding-right:46px}
+  .top .wrap{padding-left:14px;padding-right:14px}
 }
 """
 
