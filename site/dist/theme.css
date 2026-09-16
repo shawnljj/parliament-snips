@@ -212,17 +212,6 @@ h1,h2,h3{line-height:1.2;margin:0}
 .sec-head h2{font-size:26px;letter-spacing:-.022em;font-weight:750}
 .sub{color:var(--faint);font-size:14px;margin:9px 0 0}
 
-/* debate */
-.debate{padding:56px 0 20px;border-top:1px solid var(--line);margin-top:36px}
-.dtitle{font-size:20px;letter-spacing:-.015em;margin-bottom:26px;color:var(--accent)}
-.turn{padding:15px 0 15px 20px;border-left:2px solid var(--line);margin-bottom:4px}
-.turn:hover{border-left-color:var(--accent)}
-.who{font:700 12.5px var(--mono);letter-spacing:.02em;text-transform:uppercase;
-  color:var(--dim);margin-bottom:8px;display:flex;gap:10px;align-items:baseline}
-.tw{font-weight:500;color:var(--faint);text-transform:none;letter-spacing:0}
-.turn p{margin:0;font-size:16px;color:#232a31}
-.foot{font:12px var(--mono);color:var(--faint);margin-top:22px}
-
 /* everything else */
 .everything{padding:56px 0 10px;border-top:1px solid var(--line);margin-top:36px}
 .grp{margin-bottom:34px}

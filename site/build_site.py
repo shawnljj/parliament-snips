@@ -142,13 +142,27 @@ def pretty_date(iso):
 
 
 def hansard_url(r):
-    """Official Hansard lookup for a report.
+    """Deep link to one report in the official Hansard reader.
 
-    The portal is an Angular SPA with no per-report permalink we can rely on, so
-    we link to the search home rather than inventing a URL that may 404.
-    Do NOT fabricate a report permalink here.
+    VERIFIED 2026-09-16 against the live portal. The Angular app has a
+    ``sprs3topic`` route that takes the report id we already store, e.g.
+
+        https://sprs.parl.gov.sg/search/#/sprs3topic?reportid=motion-3008
+
+    which renders that single report (title, sitting metadata, MPs, full text).
+    Checked working for a motion, an oral answer, a matter on adjournment and a
+    written answer.
+
+    Do NOT send readers to ``#/home``: that is the search box, with the query
+    blank, so it looks like the link is broken. Do NOT invent a REST permalink
+    either -- ``/search/getHansardReport`` is dead (HTTP 500) and the older
+    ``sprs2topic`` route wants an ``htmlFileName`` that is null in the API
+    response for sprs3-era reports.
     """
-    return "https://sprs.parl.gov.sg/search/#/home"
+    rid = (r.get("report_id") or r.get("id") or "").rstrip("#")
+    if not rid:
+        return "https://sprs.parl.gov.sg/search/#/home"
+    return f"https://sprs.parl.gov.sg/search/#/sprs3topic?reportid={rid}"
 
 
 # ---------------------------------------------------------------- computation
@@ -360,7 +374,7 @@ MAPPING_NOTE = ("What was asked and what was said back, in order and in full whe
                 "we map the exchange and leave the judgement to you.")
 
 QA_PREVIEW = 4          # mappings shown before the expand control
-DEBATE_TURNS = 14       # turns shown in the debate of the day
+DEBATE_TURNS = 14       # unused; kept only if a raw-debate view returns
 
 
 def render_mapping(q):
@@ -535,29 +549,9 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     panels = compute_panels(sitting)
     total_words = cov.get("words", 0)
 
-    # Debate of the day.
-    #
-    # Hansard sometimes splits ONE debate across records that share a title: the
-    # 5 Aug 2026 motion "An Economy of the Future that Works for All" is
-    # motion-3008 (54,276 words) AND motion-3010 (18,347 words). Taking only the
-    # largest record understated the debate by 18k words and left dangling
-    # anchors. So group by normalised title and merge.
-    def norm_title(t):
-        return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()
-
-    by_title = defaultdict(list)
-    for r in reports:
-        by_title[norm_title(r["title"])].append(r)
-    largest = max(reports, key=lambda r: r["words"]) if reports else None
-    debate_group = (sorted(by_title[norm_title(largest["title"])], key=lambda r: -r["words"])
-                    if largest else [])
-    debate_ids = {r["report_id"] for r in debate_group}
-    debate_words = sum(r["words"] for r in debate_group)
-
     grouped = defaultdict(list)
     for r in reports:
-        if r["report_id"] not in debate_ids:
-            grouped[r["group"]].append(r)
+        grouped[r["group"]].append(r)
     order = [g for g in GROUP_ORDER if g in grouped]
 
     def report_card(r):
@@ -580,34 +574,12 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
         groups_html.append(f'<section class="grp"><h3>{esc(GROUP_LABEL.get(g, g))}'
                            f'<span class="cnt">{len(items)}</span></h3><ul>{shown}</ul></section>')
 
-    debate_html = ""
-    if debate_group:
-        merged = []
-        for r in debate_group:
-            merged.extend(r["turns"])
-        turns = [t for t in merged if not is_procedural(t["speaker"])]
-        blocks = []
-        for t in turns[:DEBATE_TURNS]:
-            who = short_speaker(t["speaker"]) if t["speaker"] else "Unattributed"
-            body = t["text"]
-            body = body if len(body) <= 620 else body[:617].rsplit(" ", 1)[0] + " …"
-            blocks.append(f'<div class="turn"><div class="who">{esc(who)}'
-                          f'<span class="tw">{t["words"]:,}w</span></div>'
-                          f'<p>{esc(body)}</p></div>')
-        srcs = " &middot; ".join(
-            f'<span id="{esc(r["report_id"])}"><a href="{esc(hansard_url(r))}" '
-            f'target="_blank" rel="noopener">{esc(r["report_id"])}</a></span>'
-            for r in debate_group)
-        parts = f"merged from {len(debate_group)} records" if len(debate_group) > 1 else ""
-        debate_html = f"""
-      <section class="debate" id="debate-of-the-day">
-        <div class="sec-head"><h2>The debate of the day</h2>
-          <p class="sub">{debate_words:,} words across {len(merged)} turns
-          {f"&mdash; {parts}" if parts else ""}. Speaker order preserved.</p></div>
-        <h3 class="dtitle">{esc(largest['title'])}</h3>
-        {''.join(blocks)}
-        <p class="foot">Source: {srcs}</p>
-      </section>"""
+    # NOTE: there used to be a "debate of the day" section here that dumped the
+    # largest debate's first 14 turns as raw transcript (~10k words on 5 Aug
+    # 2026). It duplicated the summarised brief above it -- same source records,
+    # same speakers, same order -- while reprinting word counts the product
+    # deliberately drops. Removed: the brief is the better version of the same
+    # thing, and the full text now sits one click away via hansard_url().
 
     numbers_html = "\n".join(
         f'<li class="num"><b>{esc(n["value"])}</b><span>{esc(n["context"])}</span>'
@@ -722,11 +694,9 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     {proc_html}
   </section>'''}
 
-  {debate_html}
-
   <section class="everything">
     <div class="sec-head"><h2>Everything else</h2>
-      <p class="sub">The rest of the sitting, grouped. {len(reports) - len(debate_ids)} items.</p></div>
+      <p class="sub">The rest of the sitting, grouped. {len(reports)} items.</p></div>
     {''.join(groups_html)}
   </section>
 
@@ -1074,17 +1044,6 @@ h1,h2,h3{line-height:1.2;margin:0}
 .sec-head{margin:0 0 22px}
 .sec-head h2{font-size:26px;letter-spacing:-.022em;font-weight:750}
 .sub{color:var(--faint);font-size:14px;margin:9px 0 0}
-
-/* debate */
-.debate{padding:56px 0 20px;border-top:1px solid var(--line);margin-top:36px}
-.dtitle{font-size:20px;letter-spacing:-.015em;margin-bottom:26px;color:var(--accent)}
-.turn{padding:15px 0 15px 20px;border-left:2px solid var(--line);margin-bottom:4px}
-.turn:hover{border-left-color:var(--accent)}
-.who{font:700 12.5px var(--mono);letter-spacing:.02em;text-transform:uppercase;
-  color:var(--dim);margin-bottom:8px;display:flex;gap:10px;align-items:baseline}
-.tw{font-weight:500;color:var(--faint);text-transform:none;letter-spacing:0}
-.turn p{margin:0;font-size:16px;color:#232a31}
-.foot{font:12px var(--mono);color:var(--faint);margin-top:22px}
 
 /* everything else */
 .everything{padding:56px 0 10px;border-top:1px solid var(--line);margin-top:36px}
