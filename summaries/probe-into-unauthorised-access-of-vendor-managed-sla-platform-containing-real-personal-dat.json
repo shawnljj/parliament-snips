@@ -1,0 +1,106 @@
+{
+ "title": "Unauthorised access to SLA test environment holding personal data",
+ "asked": "Mr Low Wu Yang Andre asked about unauthorised access to a vendor-managed SLA test environment holding real personal data of about 70,000 people: how the data got into and stayed in a dataset meant for mock or anonymised data, when the environment was last audited against Government data-security requirements, and what contractual action may follow investigations.",
+ "asked_by": "Mr Low Wu Yang Andre",
+ "answered_by": "Mr Murali Pillai",
+ "response": "Mr Murali Pillai said the incident involved unauthorised access to a dataset in an IBM-managed development and systems-integration testing cloud environment for STARS and ELS, separate from SLA's live systems. The dataset was created in 1998 for major system tests and updated periodically; it was meant to hold only mock and anonymised data, but SLA found it contained personal information that was not anonymised. STARS and ELS have regular audits, most recently in 2025, and contractual action will be decided after the full facts and responsibilities are established. In supplementary answers, he said SLA checked other systems and found no similar issues, and that the 2025 audit used risk-based scoping from late 2024; incomplete anonymisation was not identified, and audit reform can be considered after the investigation.",
+ "key_points": [
+  {
+   "point": "The incident involved unauthorised access to a dataset in an IBM-managed development and systems-integration testing cloud environment.",
+   "speaker": "Mr Murali Pillai",
+   "quote": "the data security incident involved unauthorised access to a data set in a development and systems-integration testing cloud environment managed by IBM.",
+   "verified": true
+  },
+  {
+   "point": "IBM was the vendor appointed to support and maintain STARS and ELS.",
+   "speaker": "Mr Murali Pillai",
+   "quote": "IBM was the vendor appointed to support and maintain the Singapore Land Authority's (SLA's) Singapore Titles Automated Registration System (STARS) and the eLodgment System (ELS).",
+   "verified": true
+  },
+  {
+   "point": "The affected environment was separate from SLA's live operational systems, which were not affected.",
+   "speaker": "Mr Murali Pillai",
+   "quote": "The affected environment was separate from SLA's live operational systems, which were not affected.",
+   "verified": true
+  },
+  {
+   "point": "The dataset was created in 1998 for major system tests and updated periodically over later years.",
+   "speaker": "Mr Murali Pillai",
+   "quote": "The data set was created in 1998 for major system tests and updated periodically over the subsequent years.",
+   "verified": true
+  },
+  {
+   "point": "SLA found that the dataset contained personal information which was not anonymised.",
+   "speaker": "Mr Murali Pillai",
+   "quote": "SLA subsequently uncovered that the data set contained personal information which was not anonymised.",
+   "verified": true
+  },
+  {
+   "point": "STARS and ELS are subject to regular audits, with the most recent audit in 2025.",
+   "speaker": "Mr Murali Pillai",
+   "quote": "STARS and ELS are subject to regular audits, with the most recent audit carried out in 2025.",
+   "verified": true
+  },
+  {
+   "point": "Contractual action will be determined after the full facts and respective responsibilities are established.",
+   "speaker": "Mr Murali Pillai",
+   "quote": "The appropriate contractual action will be determined after the full facts and respective responsibilities have been established.",
+   "verified": true
+  },
+  {
+   "point": "SLA is investigating the matter.",
+   "speaker": "Mr Murali Pillai",
+   "quote": "SLA is investigating the matter.",
+   "verified": true
+  },
+  {
+   "point": "SLA completed checks across its other systems and found no similar issues.",
+   "speaker": "Mr Murali Pillai",
+   "quote": "SLA has completed checks across its other systems and found no similar issues.",
+   "verified": true
+  },
+  {
+   "point": "The 2025 audit was determined through a risk-based scoping exercise conducted in late 2024.",
+   "speaker": "Mr Murali Pillai",
+   "quote": "the 2025 audit was determined through a risk-based scoping exercise that was conducted in late 2024.",
+   "verified": true
+  },
+  {
+   "point": "The audit prioritised broader ICT security and resilience controls, such as cloud security management, privileged access and third party management.",
+   "speaker": "Mr Murali Pillai",
+   "quote": "the audit prioritised broader information and communications technology (ICT) security and resilience controls, such as cloud security management, privileged access and third party management.",
+   "verified": true
+  },
+  {
+   "point": "The incomplete anonymisation was not identified during the audit.",
+   "speaker": "Mr Murali Pillai",
+   "quote": "The incomplete anonymisation was not identified during the audit.",
+   "verified": true
+  },
+  {
+   "point": "Audit reform can be considered once the investigation is complete.",
+   "speaker": "Mr Murali Pillai",
+   "quote": "This is something that we can consider once the investigation is complete.",
+   "verified": true
+  }
+ ],
+ "left_open": [
+  "How the personal data entered the dataset and remained there.",
+  "Whether SLA will reform its audit process to periodically audit actual data."
+ ],
+ "supplementary": "Supplementary questions asked whether other test environments had similar issues and whether audits would be reformed to check actual data.",
+ "_dropped": [],
+ "_meta": {
+  "report_ids": [
+   "oral-answer-4176"
+  ],
+  "sitting_dates": [
+   "2026-08-05"
+  ],
+  "group": "oral",
+  "source_words": 470,
+  "transcript_truncated": false,
+  "model": "deepseek-v4.1-flash:cloud",
+  "points_dropped": 0
+ }
+}

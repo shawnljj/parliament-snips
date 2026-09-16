@@ -589,6 +589,10 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   .qa-side{padding:10px 11px}
   .qa-pair{gap:8px}
   .qsum{margin-bottom:5px}
+  /* The point chips are inline-flex and can run past their column into the rail
+     gutter. Let them shrink and wrap instead of overhanging. */
+  .qsum,.qsum>summary{max-width:100%;min-width:0}
+  .qsum>summary{flex-wrap:wrap;white-space:normal}
   .qsum>summary,.supp-wrap>summary,.ns>summary,.morepts>summary,.proc>summary{
     padding-left:4px;padding-right:4px;margin-left:-4px}
   .srclink{margin-top:6px}
@@ -607,7 +611,10 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   .glist a{padding:11px 13px;min-height:44px;display:flex;align-items:center}
   .qajump{padding:11px 13px}
   .qajump li{font-size:13.5px;padding:6px 0;flex-wrap:wrap}
-  .qajump .qw{margin-left:26px;width:100%;white-space:normal}
+  /* The speaker name sits on its own line, indented 26px under the question
+     title. width:100% PLUS margin-left:26px overflowed the row by 26px and ran
+     into the rail gutter; subtract the indent so it stays inside the column. */
+  .qajump .qw{margin-left:26px;width:calc(100% - 26px);white-space:normal}
   .qajump>summary{font-size:14px}
   .method{padding:18px 15px;margin-top:24px}
   .method h2{font-size:16px;margin-bottom:11px}

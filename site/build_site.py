@@ -354,6 +354,9 @@ def compute_panels(sitting):
             "supplementary": supp,
             "supplementary_askers": sorted({s["who"] for s in supp if s["role"] == "question"}),
             "total_turns": len(r["turns"]),
+            # Carried so the page can tell an answer the summariser deliberately
+            # skipped (below its 150-word floor) from one still pending.
+            "total_words": r["words"],
         })
     qa.sort(key=lambda x: -x["total_turns"])
 
@@ -1313,6 +1316,22 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     qa_html = "\n".join(
         render_mapping(q, oral_briefs.get(q["report_id"])) for q in qa_rows)
     n_summarised = sum(1 for q in qa_rows if q["report_id"] in oral_briefs)
+    # Very short answers (under the summariser's 150-word floor) are skipped on
+    # purpose -- there is nothing to condense. Count them separately so the note
+    # does not imply work is still pending when it is finished.
+    n_too_short = sum(1 for q in qa_rows
+                      if q["report_id"] not in oral_briefs and q.get("total_words", 0) < 150)
+    # Built here rather than inline: nested f-strings with conditional plurals are
+    # unreadable and easy to break.
+    oral_note = ""
+    if n_summarised:
+        oral_note = f"<b>{n_summarised} of {len(qa_rows)} summarised</b>"
+        if n_too_short == 1:
+            oral_note += "; 1 answer was too short to condense and shows in full"
+        elif n_too_short:
+            oral_note += (f"; {n_too_short} answers were too short to condense "
+                          f"and show in full")
+        oral_note += "."
 
     attr = cov.get("speaker_attribution")
     attr_txt = f"{attr*100:.0f}%" if attr else "n/a"
@@ -1330,8 +1349,14 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     briefs = []
     for b in (summaries or []):
         meta = b.get("_meta", {})
-        if d in (meta.get("sitting_dates") or []):
-            briefs.append(b)
+        if d not in (meta.get("sitting_dates") or []):
+            continue
+        # Oral answers belong to the "Oral answers" section, where they render as
+        # question -> response pairs. Rendering them here as well duplicated all 16
+        # of them as substance cards and doubled the page height.
+        if meta.get("group") == "oral":
+            continue
+        briefs.append(b)
     # order by what a citizen most needs to know
     ORDER = {"bill": 0, "statement": 1, "budget": 2, "motion": 3, "adjournment": 4}
     briefs.sort(key=lambda b: (ORDER.get(b.get("_meta", {}).get("group"), 9),
@@ -1424,8 +1449,7 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
   <section class="oral" id="sec-oral">
     <h2>Oral answers</h2>
     <p class="sub">{len(qa_rows)} questions put to Ministers, each paired with the
-    response given. {MAPPING_NOTE}
-    {f'<b>{n_summarised} of {len(qa_rows)} summarised so far</b> — the rest show the transcript.' if n_summarised else ''}</p>
+    response given. {MAPPING_NOTE} {oral_note}</p>
     <details class="qajump">
       <summary>Jump to a question ({len(qa_rows)})</summary>
       <nav class="qjbody" aria-label="Jump to an oral answer">
@@ -2147,6 +2171,10 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   .qa-side{padding:10px 11px}
   .qa-pair{gap:8px}
   .qsum{margin-bottom:5px}
+  /* The point chips are inline-flex and can run past their column into the rail
+     gutter. Let them shrink and wrap instead of overhanging. */
+  .qsum,.qsum>summary{max-width:100%;min-width:0}
+  .qsum>summary{flex-wrap:wrap;white-space:normal}
   .qsum>summary,.supp-wrap>summary,.ns>summary,.morepts>summary,.proc>summary{
     padding-left:4px;padding-right:4px;margin-left:-4px}
   .srclink{margin-top:6px}
@@ -2165,7 +2193,10 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   .glist a{padding:11px 13px;min-height:44px;display:flex;align-items:center}
   .qajump{padding:11px 13px}
   .qajump li{font-size:13.5px;padding:6px 0;flex-wrap:wrap}
-  .qajump .qw{margin-left:26px;width:100%;white-space:normal}
+  /* The speaker name sits on its own line, indented 26px under the question
+     title. width:100% PLUS margin-left:26px overflowed the row by 26px and ran
+     into the rail gutter; subtract the indent so it stays inside the column. */
+  .qajump .qw{margin-left:26px;width:calc(100% - 26px);white-space:normal}
   .qajump>summary{font-size:14px}
   .method{padding:18px 15px;margin-top:24px}
   .method h2{font-size:16px;margin-bottom:11px}
