@@ -260,6 +260,15 @@ def compute_panels(sitting):
             return text
         return text[:limit].rsplit(" ", 1)[0].rstrip(",;:") + " …"
 
+    # Substance limits for oral answers.
+    #
+    # These were 420/520 characters, which truncated most Minister responses
+    # mid-answer -- a typical response runs 1,000-2,000 words, so the page was
+    # showing only the opening sentence or two and hiding the actual content.
+    # Raised so a reader gets the whole question and the substance of the reply,
+    # with any overflow cut on a word boundary and marked with an ellipsis.
+    Q_LIMIT, R_LIMIT, S_LIMIT = 1400, 4000, 1200
+
     qa = []
     for r in reports:
         if r["group"] != "oral":
@@ -330,16 +339,16 @@ def compute_panels(sitting):
                 else (nm, "question")
             if t["words"] < 8:
                 continue
-            supp.append({"who": who, "role": role, "text": trim(t["text"]),
+            supp.append({"who": who, "role": role, "text": trim(t["text"], S_LIMIT),
                          "not_transcribed": not_transcribed(t["text"])})
 
         qa.append({
             "title": r["title"], "report_id": r["report_id"],
             "asker": asker, "answerer": answerer,
-            "question": trim(question, 420),
+            "question": trim(question, Q_LIMIT),
             "question_not_transcribed": not_transcribed(question),
             "question_lang": q_lang,
-            "response": trim(response, 520),
+            "response": trim(response, R_LIMIT),
             "response_not_transcribed": r_nt,
             "response_lang": r_lang,
             "supplementary": supp,
@@ -589,6 +598,10 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
 
     groups_html = []
     for g in order:
+        # Oral answers have their own full section above; listing them again here
+        # as a collapsed card would duplicate every title on the page.
+        if g == "oral":
+            continue
         items = sorted(grouped[g], key=lambda r: -r["words"])
         if not items:
             continue
@@ -622,15 +635,12 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
         for n in panels["numbers"])
 
     qa_rows = panels["qa"]
-    qa_html = "\n".join(render_mapping(q) for q in qa_rows[:QA_PREVIEW])
-    if len(qa_rows) > QA_PREVIEW:
-        # wrapper carries no "map" class: nesting .map inside .map broke the
-        # per-card styling and inflated any count of mappings on the page
-        qa_html += ('<li class="qa-more hidden">'
-                    + "\n".join(render_mapping(q) for q in qa_rows[QA_PREVIEW:]) + "</li>")
-    qa_more_btn = (f'<button class="reveal-maps">Show all {len(qa_rows)} '
-                   f'question&ndash;response mappings</button>'
-                   if len(qa_rows) > QA_PREVIEW else "")
+    # Oral answers are rendered IN FULL on the page -- no disclosure, no expand
+    # control. They are the most readable business Parliament transacts (a
+    # question and its answer), and hiding them behind a collapsed group card
+    # meant a sitting page showed 16 title-only rows. Content stays on the page;
+    # only the verbatim quote chips and the "Everything else" groups collapse.
+    qa_html = "\n".join(render_mapping(q) for q in qa_rows)
 
     attr = cov.get("speaker_attribution")
     attr_txt = f"{attr*100:.0f}%" if attr else "n/a"
@@ -727,6 +737,18 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     <p class="empty">This sitting's business was entirely procedural.</p>
     {proc_html}
   </section>'''}
+
+  {f'''
+  <section class="oral">
+    <div class="sec-head"><h2>Oral answers</h2>
+      <p class="sub">{len(qa_rows)} questions put to Ministers, each paired with the
+      response given. {MAPPING_NOTE}</p></div>
+    <nav class="qajump" aria-label="Jump to an oral answer">
+      <ol>{''.join(f'<li><a href="#{esc(q["report_id"])}">{esc(q["title"])}</a>'
+                   f'<span class="qw">{esc(q["asker"])}</span></li>' for q in qa_rows)}</ol>
+    </nav>
+    <ul class="maplist">{qa_html}</ul>
+  </section>''' if qa_rows else ''}
 
   <section class="everything">
     <div class="sec-head"><h2>Everything else</h2>
@@ -916,6 +938,23 @@ h1,h2,h3{line-height:1.2;margin:0}
 .rv{text-align:right;font:600 12.5px var(--mono);color:var(--faint)}
 
 /* question -> response mapping */
+/* Oral answers get their own full-width section and render in full -- no
+   collapse, no expand control. Only the verbatim quote chips and the
+   "Everything else" group cards are collapsible. */
+.oral{padding:52px 0 10px;border-top:1px solid var(--line);margin-top:40px}
+/* A jump list, not a collapse: 16 full answers is a long scroll, and this keeps
+   them navigable without hiding a single word. */
+.qajump{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px 22px 16px;margin-bottom:26px}
+.qajump ol{list-style:none;margin:0;padding:0;counter-reset:q}
+.qajump li{counter-increment:q;display:flex;gap:12px;align-items:baseline;
+  padding:7px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.qajump li:last-child{border-bottom:0}
+.qajump li::before{content:counter(q);font:600 11px var(--mono);color:var(--faint);
+  min-width:18px;text-align:right;flex:none}
+.qajump a:hover{color:var(--accent)}
+.qajump .qw{font:500 11.5px var(--mono);color:var(--faint);margin-left:auto;
+  white-space:nowrap;flex:none}
 .maplist{list-style:none;margin:0;padding:0}
 .map{padding:20px 0;border-bottom:1px solid var(--line)}
 .map:last-child{border-bottom:0}
