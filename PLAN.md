@@ -242,16 +242,83 @@ Recorded so they don't get rebuilt:
 ```
 parliament-snips/
 ├── scraper/
+│   ├── storage.py            ← paths, stable keys, manifest (single source of truth)
 │   ├── parsnips_fetch.py     ← verified, works today
+│   ├── backfill.py           ← year-batched, resumable (--year / --status)
+│   ├── migrate_storage.py    ← flat layout -> year shards (re-runnable)
 │   └── digest.py             ← reading digest for editorial
+├── summariser/
+│   └── summarise.py          ← sitting JSON -> verified briefs (resumable)
 ├── data/
-│   ├── sittings.json         ← index: dates + coverage
-│   └── sitting_YYYY-MM-DD.json
+│   ├── manifest.json         ← what exists, what is summarised, what is stale
+│   ├── sittings.json         ← flat index for the site
+│   └── <year>/sitting_<date>.json
 ├── summaries/
-│   └── YYYY-MM-DD.json       ← LLM output, cited
+│   ├── index.json            ← flat index for the site
+│   └── <year>/<stable-key>.json
 ├── site/                     ← generator + templates
 └── PLAN.md
 ```
+
+### Storage design (settled 16 Sep 2026)
+
+Shard by **year**, key by **report identity**, keep a **manifest**.
+
+**Keys are report ids, never titles.** Titles are not unique (Hansard splits one
+debate across records sharing a title — that is why `motion-3008` and `motion-3010`
+are a single brief) and they change, so a title slug collides, orphans itself on an
+edit, and can exceed filesystem limits (Vercel git unpack fails with
+`GIT_REPO_FILENAME_TOO_LONG`). Ids sorted, so the key is deterministic:
+
+| | |
+|---|---|
+| one report | `oral-answer-4213.json` |
+| a merged debate | `motion-3008+3010.json` |
+| six-record Budget debate | `budget-2857+2859+2861+2867+2871+2873.json` |
+
+Longest key 41 chars including year and extension; the longest title-slug filename
+was 105. Verified: 291 briefs → 291 distinct keys, 0 collisions.
+
+**Shard by year, not parliament.** A batch operates on a year, so year is the grain
+that makes "which files belong to this batch" a directory listing. Parliament number
+is recorded per report and in the manifest. `data/<year>/`, `summaries/<year>/`.
+
+**Every report carries `report_version` ("sprs3")** plus `parliament_no`,
+`sitting_no`, `volume_no`. A source link or validation pass never infers the era
+from the id.
+
+**The manifest** records per sitting: date, year, parliament, volume, sitting no,
+format, report count, words, turns, coverage ratio, speaker-attribution rate,
+per-group split, a content hash of the source payload, and summarisation coverage.
+"What is missing" is a query (`--status`), not a glob. The summarisation denominator
+counts only summarisable groups above the 150-word floor — counting every report
+would report a permanent 12% because ~135 written answers per sitting are never
+briefed.
+
+**JSON stays the source of truth.** ~240 MB at 400 sittings, sharded so each
+directory stays small. A database queries faster but turns a reviewable, citable
+archive into a binary blob. Add a derived index only if cross-year page queries need
+it.
+
+### Batched backfill
+
+One batch = one year, modern-first, independently resumable. Each sitting is written
+atomically and the manifest is rebuilt as we go, so an interrupted batch costs only
+the sittings in flight.
+
+```bash
+python3 scraper/backfill.py --year 2016 --discover
+python3 scraper/backfill.py --years 2017 2018 --discover
+python3 scraper/backfill.py --status
+```
+
+**Floor is 2016 and is enforced.** 2016 is the first cleanly modern year: all
+sampled 2016-03-01 rows are `sprs3` with null `reportContent`, and
+`getHansardTopic` returns real content. So from 2016 onward ONE code path works and
+no era branching is needed. The legacy `sprs2` era is deliberately out of scope —
+those reports answer HTTP 400 from `getHansardTopic` and carry their text in
+`reportContent` on the search listing instead. Verified by probing the boundary:
+`2012-03-01` is sprs2; the `2013-02-04` and `2016-03-01` samples are sprs3.
 
 ---
 
@@ -278,36 +345,46 @@ A 57k-word sitting does **not** fit one context window with good results, and na
 | **0. De-risk** | Live API verified, dead endpoint documented, coverage trap solved, attribution measured | ✅ **Done** |
 | **1. Ingest** | `parsnips_fetch.py` + sitting-date discovery + section-union enumeration | ✅ **Done** |
 | **1b. First page** | 5 Aug 2026 fully parsed at 159/167 (95%) and rendered to a working sitting page | ✅ **Done** |
-| **2. Backfill** | All 23 sittings of 2026 in `data/`. Gives us a corpus and history on day one | Next |
-| **3. Summarise** | Structured extraction + synthesis, one sitting end-to-end, quoted & cited | Next |
-| **4. Site v1** | Harden the generated page: multi-sitting index, nav, OG images | Then |
-| **5. Automate** | GH Actions cron → auto-detect, fetch, summarise, deploy | Then |
-| **6. Depth** | Topic threads across sittings, MP pages, commitments tracker, search | Later |
-| **7. Polish** | OG image per sitting (screenshot-able = shareable), RSS, dark mode | Later |
+| **2. Backfill** | All 23 sittings of 2026: 1,959,951 words, 97% attribution | ✅ **Done** |
+| **2b. Storage** | Year shards + stable keys + manifest, ready for ~400 sittings | ✅ **Done** |
+| **3. Summarise** | 291 briefs / 4,614 verified points across 2026, every point quote-checked | ✅ **Done** |
+| **4. Site v2** | Mobile-first sitting pages, section rail, scroll memory, collapsible cards | ✅ **Done** |
+| **5. Depth** | 2016–2025 backfill, one batch per year, modern-first | **Next** |
+| **6. Automate** | GH Actions cron → auto-detect, fetch, summarise, deploy | Then |
+| **7. Polish** | Topic threads across sittings, MP pages, RSS, OG images | Later |
 
 ### What already runs
 ```bash
 # discover which days Parliament sat
 python3 scraper/parsnips_fetch.py --discover 2026-01-01 2026-09-16
 
-# fetch + parse a whole sitting
-python3 scraper/parsnips_fetch.py 2026-08-05 data/sitting_2026-08-05.json
+# fetch + parse one sitting
+python3 scraper/parsnips_fetch.py 2026-08-05 data/x.json
 
 # read it as a digest (group, chars-per-turn, max reports)
-python3 scraper/digest.py data/sitting_2026-08-05.json oral 700 4
+python3 scraper/digest.py data/2026/sitting_2026-08-05.json oral 700 4
 
-# render the sitting page
-python3 site/build_site.py data/sitting_2026-08-05.json site/index.html
+# fetch a whole year, then see what you have
+python3 scraper/backfill.py --year 2016 --discover
+python3 scraper/backfill.py --status
+
+# summarise, then build the site
+python3 summariser/summarise.py --all --workers 3
+python3 site/build_site.py
 ```
 All stdlib Python 3.9+. No `pip install` required — the system Python here has a broken
 `requests`/OpenSSL pairing, which is why the scraper uses `urllib`.
 
-**Known rough edge:** `fetch_sitting` currently does 21 sweeping passes and takes several
-minutes per sitting. Fine for a nightly cron, too slow for interactive use. Optimise by
-caching the enumeration and running section sweeps only when coverage < 100%.
+**Fixed since:** `fetch_sitting` used to do 21 sweeping passes (several minutes per
+sitting). Enumeration is now parallel (`ENUM_WORKERS = 4`) and unioned over one linear
+plus per-section sweep: **293s → ~90s**, measured. Kept modest on purpose — this is a
+public government portal and we are guests.
 
-### Phase 2 first, deliberately
-Backfilling 2026 before building any UI means: we have a corpus to tune summarisation on, we can compare a sitting against its predecessor, and the site has real depth on launch day rather than one lonely page.
+### Phase 5 first, deliberately
+Backfilling 2016–2025 before automation means the archive has decade-scale depth when
+the cron goes live, and summarisation has a varied corpus to be tuned against rather
+than one year's habits. Batches run modern-first from 2016 upward so the most-read
+years land first.
 
 ---
 
