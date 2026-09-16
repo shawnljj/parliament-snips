@@ -517,11 +517,16 @@ not ship.**
 - Domain/branding: `parsnips.sg`, `.com`, or a Cloudflare subdomain to start?
 - How prominently to disclose AI generation (recommendation: prominently, on every page
   — it is a trust asset, not a liability).
-- **2014–2015 are unexplained.** A boundary probe found no sitting on any of six probed
-  days in either year. Either those dates were genuinely non-sitting, or those years
-  enumerate differently. Not blocking 2017+ — the floor is 2016 — but if a 2017+ fetch
-  returns an unexpectedly empty year, treat it as the same class of problem and
-  investigate rather than assuming an empty year is real.
+- **2014–2015 were never actually empty — RESOLVED.** An earlier boundary probe found
+  no sitting on any of six sampled days in each year and they were recorded as
+  unexplained. That conclusion was wrong: the probe sampled calendar slots, and
+  Parliament does not sit on most weeks, so it could not tell "no sittings" from
+  "sampled the wrong weeks". Full-year sweeps found **33 sitting days in 2014 and 23 in
+  2015** — ordinary years, consistent with 2016-2017. Nothing is wrong with those
+  years and no special handling is needed; they sit below the 2016 floor by choice,
+  not because they are unreadable.
+  **Rule worth keeping: test an absence during Budget season (Feb–Mar) before believing
+  it.** A sparse probe of arbitrary dates cannot establish that a year has no sittings.
 
 *(Backfilling before 2026 is no longer open: settled as a 2016 floor, in progress.)*
 
