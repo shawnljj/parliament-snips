@@ -333,6 +333,20 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
 
 /* archive */
 .arch{padding:34px 0 10px}
+/* Year groups: a year is the unit we backfill in and the unit a reader scans by. */
+.yr{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
+  margin-bottom:14px;overflow:hidden}
+.yr>summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;
+  gap:12px;padding:14px 18px;min-height:44px;background:#f7f9f8}
+.yr>summary::-webkit-details-marker{display:none}
+.yr>summary::before{content:"▸";color:var(--accent);font-size:11px;flex:none}
+.yr[open]>summary::before{content:"▾"}
+.yr[open]>summary{border-bottom:1px solid var(--line)}
+.yr:hover>summary{background:var(--accent-soft)}
+.yrnum{font:750 17px var(--mono);letter-spacing:-.01em;color:var(--ink)}
+.yrmeta{font-size:12.5px;color:var(--faint)}
+.yr .slist{padding:0 18px}
+.yr .srow:last-child{border-bottom:0}
 .slist{list-style:none;margin:0;padding:0}
 .srow{border-bottom:1px solid var(--line)}
 .srow a{display:grid;grid-template-columns:190px 1fr;gap:8px 22px;

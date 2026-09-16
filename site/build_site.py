@@ -1534,7 +1534,7 @@ def render_archive(sittings, *, css_href, home_href, archive_href, summaries=Non
             r = max(s["reports"], key=lambda x: x["words"]) if s["reports"] else None
             lead_line = esc(((r or {}).get("title") or "(no business)")[:98])
             detail = "not yet summarised"
-        rows.append(f"""
+        rows.append((d[:4], f"""
       <li class="srow">
         <a href="{esc(d)}.html">
           <span class="sdate">{esc(pretty_date(d))}
@@ -1543,7 +1543,25 @@ def render_archive(sittings, *, css_href, home_href, archive_href, summaries=Non
           <span class="sstats">{esc(detail)} &middot; {len(s['reports'])} items
             &middot; {coverage_text(cov)}</span>
         </a>
-      </li>""")
+      </li>"""))
+
+    # Group by year, newest year first. A flat list of 400+ sittings is unusable,
+    # and a year is the unit we backfill in, so it is the unit a reader scans by.
+    years = {}
+    for yr, row in rows:
+        years.setdefault(yr, []).append(row)
+    blocks = []
+    for yr in sorted(years, reverse=True):
+        yr_rows = years[yr]
+        n = len(yr_rows)
+        words = sum(s.get("coverage", {}).get("words") or 0
+                    for s in sittings if s["date"][:4] == yr)
+        blocks.append(f"""
+  <details class="yr" {'open' if yr == str(datetime.date.today().year) or yr == max(years) else ''}>
+    <summary><span class="yrnum">{esc(yr)}</span>
+      <span class="yrmeta">{n} sitting{'' if n == 1 else 's'} &middot; {words:,} words</span></summary>
+    <ul class="slist">{''.join(yr_rows)}</ul>
+  </details>""")
 
     total_items = sum(len(s["reports"]) for s in sittings)
     dates = [s["date"] for s in sittings]
@@ -1572,7 +1590,7 @@ def render_archive(sittings, *, css_href, home_href, archive_href, summaries=Non
     <p class="span-note">{span}</p>
   </section>
   <section class="arch">
-    <ul class="slist">{''.join(rows) or '<li class="empty">No sittings yet.</li>'}</ul>
+    {''.join(blocks) or '<p class="empty">No sittings yet.</p>'}
   </section>
   <footer><p>Parsnips &middot; an unofficial reader for the Official Report.
   Hansard is a public record; the full text is at sprs.parl.gov.sg.</p></footer>
@@ -1917,6 +1935,20 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
 
 /* archive */
 .arch{padding:34px 0 10px}
+/* Year groups: a year is the unit we backfill in and the unit a reader scans by. */
+.yr{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
+  margin-bottom:14px;overflow:hidden}
+.yr>summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;
+  gap:12px;padding:14px 18px;min-height:44px;background:#f7f9f8}
+.yr>summary::-webkit-details-marker{display:none}
+.yr>summary::before{content:"▸";color:var(--accent);font-size:11px;flex:none}
+.yr[open]>summary::before{content:"▾"}
+.yr[open]>summary{border-bottom:1px solid var(--line)}
+.yr:hover>summary{background:var(--accent-soft)}
+.yrnum{font:750 17px var(--mono);letter-spacing:-.01em;color:var(--ink)}
+.yrmeta{font-size:12.5px;color:var(--faint)}
+.yr .slist{padding:0 18px}
+.yr .srow:last-child{border-bottom:0}
 .slist{list-style:none;margin:0;padding:0}
 .srow{border-bottom:1px solid var(--line)}
 .srow a{display:grid;grid-template-columns:190px 1fr;gap:8px 22px;
