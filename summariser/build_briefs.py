@@ -45,6 +45,14 @@ USAGE_LOG = os.path.join(ROOT, "pipeline", "usage.jsonl")
 ENDPOINT = os.environ.get("PARSNIPS_LLM_URL",
                           "http://127.0.0.1:11434/v1/chat/completions")
 DEFAULT_MODEL = os.environ.get("PARSNIPS_LLM_MODEL", "deepseek-v4.1-flash:cloud")
+# The fields the SITE renders, so a brief missing one is incomplete rather than
+# merely sparse. Derived by reading what build_site.py consumes, not from memory:
+#   title, what_it_is, why_it_matters, not_said, what_happens_next, stage, key_points
+# Every one is optional to the renderer, which is exactly why their absence needs a
+# gate here instead of a crash there.
+REQUIRED_BRIEF_FIELDS = ("title", "what_it_is", "why_it_matters",
+                         "what_happens_next", "not_said", "key_points")
+
 RETRIES = 3
 
 # A single completion may not take longer than this. Measured: a 50-sentence chunk
@@ -749,6 +757,11 @@ def stage4_verify(brief, item):
        emptied, because selecting nothing cannot fail a quote check. That happened
        for real in this project (44 Bills and Budget items), so coverage is not
        optional.
+    3. SCHEMA COMPLETENESS — every field the site renders is present. Checks 1 and 2
+       both passed on briefs that were missing why_it_matters, not_said,
+       what_happens_next and stage, because every field the renderer reads is
+       optional: the pages looked finished with four sections quietly absent. Gates
+       catch false statements; only a completeness check catches absence.
     """
     by_sid = {s["sid"]: s for s in (item.get("sentences") or [])}
     bad = []
@@ -771,6 +784,13 @@ def stage4_verify(brief, item):
             bad.append({"kind": "quote_mismatch", "sid": first})
     quoted = sum(1 for kp in (brief.get("key_points") or []) if kp.get("quote"))
 
+    # schema completeness: the fields the site reads, and nothing optional about them
+    missing = []
+    for field in REQUIRED_BRIEF_FIELDS:
+        v = brief.get(field)
+        if v is None or (isinstance(v, str) and not v.strip()):
+            missing.append(field)
+
     # coverage: turns represented, against turns that had eligible sentences
     turns_total = len({(s.get("report_id"), s.get("turn_index"))
                        for s in (item.get("sentences") or [])})
@@ -782,17 +802,21 @@ def stage4_verify(brief, item):
     verdict = {
         "quote_invariant": len(bad) == 0,
         "quote_failures": bad,
+        "schema_complete": not missing,
+        "missing_fields": missing,
         "points": len(brief.get("key_points") or []),
         "quoted_points": quoted,
         "turns_total": turns_total,
         "turns_cited": turns_cited,
         "coverage": round(turns_cited / turns_total, 3) if turns_total else 0.0,
     }
-    ok = verdict["quote_invariant"] and turns_cited >= min_turns and quoted > 0
+    ok = (verdict["quote_invariant"] and verdict["schema_complete"]
+          and turns_cited >= min_turns and quoted > 0)
     verdict["passed"] = ok
     # Fail closed (R-2.8 / D-3): an item that cannot be validated publishes nothing.
     if not ok:
         verdict["withheld_reason"] = ("quote invariant failed" if not verdict["quote_invariant"]
+                                      else f"incomplete brief: {', '.join(missing)}" if missing
                                       else "no cited turn" if turns_cited < min_turns
                                       else "no verified quotation")
     return verdict
