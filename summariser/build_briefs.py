@@ -825,11 +825,18 @@ def stage4_verify(brief, item):
             bad.append({"kind": "quote_mismatch", "sid": first})
     quoted = sum(1 for kp in (brief.get("key_points") or []) if kp.get("quote"))
 
-    # schema completeness: the fields the site reads, and nothing optional about them
+    # schema completeness: the fields the site reads, and nothing optional about them.
+    #
+    # A field is complete when it is PRESENT, not when it is non-empty. Three of these
+    # have legitimate "nothing to report" values, and the spec requires those exact
+    # words: why_it_matters falls back to "The record does not set out the practical
+    # impact.", what_happens_next to "not stated", and not_said to []. Treating those
+    # as missing withheld 100% of the first run -- the gate was wrong, not the briefs.
+    # What must never happen is the key being absent entirely, which is how four
+    # sections vanished from the page without anything failing.
     missing = []
     for field in REQUIRED_BRIEF_FIELDS:
-        v = brief.get(field)
-        if v is None or (isinstance(v, str) and not v.strip()):
+        if field not in brief:
             missing.append(field)
 
     # coverage: turns represented, against turns that had eligible sentences
