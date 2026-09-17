@@ -77,7 +77,7 @@ stage a hard length budget rather than a vague instruction to "be brief".
 reach a defensible stopping point, or skim at the section level, without losing the
 ability to see what they skipped.
 
-## 2. The pipeline, as specified by the owner
+### 1.6 The pipeline, as specified by the owner
 
 ```
   download (2016 → today)                     scheduled job, incremental
@@ -87,7 +87,7 @@ ability to see what they skipped.
   SECTION   motion | ministerial statement | oral question | bill | ...
         ↓  cut by speaker turn  (only one speaker speaks at a time)
   TURN
-        ↓  group within a debate (owner decision D-7)
+        ↓  group within a debate (owner decision D-5)
   GROUP
         ↓  summarise each turn
   TURN SUMMARY  (≈10s of reading)  +  verbatim transcript in a collapsible
@@ -344,7 +344,7 @@ excluding these would drop real content.
 - an inferred attribution must never be presented with the same confidence as a
   recorded one.
 
-### D-6 `why_it_matters` is removed
+### D-5 `why_it_matters` is removed
 
 **Decision.** The field is dropped. It is the one field the record frequently cannot
 support, making it the largest fabrication risk in the schema.
@@ -368,7 +368,7 @@ the presentation design need to absorb that.
 **Supersedes:** the 50 substantive `why_it_matters` values in existing briefs. They were
 written under the old schema; whether to migrate or discard them is a design question.
 
-### D-7 Navigation is FOUR levels: sitting → section → group → turn
+### D-6 Navigation is FOUR levels: sitting → section → group → turn
 
 **Decision.** A debate is not a flat list of turn summaries. Within a section, turns are
 grouped, and the group is a navigable level.
@@ -384,7 +384,7 @@ place in the pipeline where a heuristic is doing structural work, so it carries 
 risk class as the sentence-selection heuristics that have already produced four defects
 in this project. It must be validated, not assumed.
 
-### D-8 Short turns are folded into context, not summarised
+### D-7 Short turns are folded into context, not summarised
 
 **Decision.** Turns under ~15 words are not summarised. They are folded into the
 neighbouring turn as context.
@@ -399,7 +399,7 @@ than its own, so the attribution rule (R-2.4) must still hold: a folded turn's w
 not appear to be spoken by the summarised turn's speaker. This is an attribution-
 correctness risk introduced by the decision, and it needs a gate.
 
-### D-9 Long turns are sub-split at ~1,500 words
+### D-8 Long turns are sub-split at ~1,500 words
 
 **Decision.** A turn over ~1,500 words is split into sub-summaries at natural breaks.
 
@@ -412,7 +412,7 @@ fought with, but at a bounded scale: sub-splits are *within* a turn, so attribut
 unambiguous (one speaker). The verbatim must remain complete regardless — only the
 summary is split.
 
-### D-10 The floor stays at 2016
+### D-9 The floor stays at 2016
 
 **Decision.** Keep 2016 as the ingestion floor. The 2015 fetch works, but re-fetching is
 not worth the cost.
@@ -430,19 +430,19 @@ is a batch re-run, not an investigation.
 
 | ID | Change |
 |---|---|
-| R-2.4 | **Strengthened.** Attribution must record provenance (recorded vs inferred) and the inference method; the page must render the distinction (D-4). Also must survive **folding** short turns into a neighbour's context (D-8) |
+| R-2.4 | **Strengthened.** Attribution must record provenance (recorded vs inferred) and the inference method; the page must render the distinction (D-4). Also must survive **folding** short turns into a neighbour's context (D-5) |
 | R-2.8 | **New.** A gate must fail closed: unknown or unvalidated state results in non-publication (D-1, D-3) |
 | R-2.9 | **New.** Every gate must have a test that deliberately violates it and asserts the violation is caught. An untested gate is an assumption, not a control (D-1) |
-| R-3.6 | **Replaced.** Item-level fields must be derivable from the record; `why_it_matters` is removed (D-6) |
+| R-3.6 | **Replaced.** Item-level fields must be derivable from the record; `why_it_matters` is removed (D-5) |
 | R-3.7 | **New.** A turn summary must fit a **~10-second reading budget** (roughly 25–35 words), because the 30–60-minute sitting target depends on it (§1.4) |
-| R-3.8 | **New.** Long turns (>~1,500 words) are sub-split; the summary may be split but the **verbatim must remain complete** (D-9) |
+| R-3.8 | **New.** Long turns (>~1,500 words) are sub-split; the summary may be split but the **verbatim must remain complete** (D-5) |
 | R-4.6 | **Upgraded SHOULD → MUST.** Failures must be isolated per item and durably recorded; the failed set is the only artefact a human reviews (D-2) |
 | R-4.8 | **New.** Ingestion must be **incremental**: a scheduled job detects and fetches new sittings and runs them through the same pipeline, unattended (§2) |
-| R-5.4 | **Strengthened.** Navigation is **four levels**: sitting → section → group → turn. The group level is required, not optional (D-7) |
+| R-5.4 | **Strengthened.** Navigation is **four levels**: sitting → section → group → turn. The group level is required, not optional (D-5) |
 | R-5.5 | **Upgraded SHOULD → MUST.** Withheld items must be reported as withheld, with counts, so absence is never mistaken for silence in the record (D-3) |
 | R-5.6 | **New.** On a very long sitting a reader must be able to reach a defensible stopping point or skim at section level, while still seeing what they skipped (§1.4) |
 | R-6.7 | **New.** The schema must carry attribution provenance as a first-class field, not a convention (D-4) |
-| R-6.8 | **New.** The **group** is a derived entity with stable identity and recorded formation method, because it is the one heuristic doing structural work (D-7) |
+| R-6.8 | **New.** The **group** is a derived entity with stable identity and recorded formation method, because it is the one heuristic doing structural work (D-5) |
 
 ## 11. Open questions
 
@@ -454,7 +454,7 @@ Still unanswered, recorded rather than assumed:
    normalisation, or is whitespace-insensitive equality sufficient? The source uses
    curly quotes and non-breaking spaces.
 3. **Model choice** — cloud vs local; deferred pending benchmark. See SUMMARISATION.md.
-4. **How a group is formed (D-7)** — by speaker, by theme, by sub-motion, or by the
+4. **How a group is formed (D-5)** — by speaker, by theme, by sub-motion, or by the
    record's own structure? This is the highest-risk open question: it is a heuristic
    doing structural work, in a project where four heuristic defects have already
    shipped.
