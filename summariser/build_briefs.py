@@ -778,11 +778,22 @@ def stage3_assemble(item, extracted, model):
     for k in kept:
         k.pop("_chunk", None)
 
-    # Group by speaker at render time is the site's job; here we only need the
-    # schema it already reads.
+    # TITLE comes from the RECORD, not from the model. The model sees one chunk and
+    # describes what that chunk contains, so a 13-chunk Road Traffic Bill was titled
+    # "A procedural call by the Speaker inviting the Senior Minister..." -- the content
+    # of chunk 1, not of the item. The dataset index already carries the correct
+    # official title, and preferring the model's prose over it also meant the visible
+    # heading silently disagreed with the archive's own index.
+    title = (item.get("title") or "").strip()
+    what_it_is = (extracted.get("what_it_is") or "").strip()
+    if not title:
+        title = what_it_is
+    # If the model's one-line description is just the title repeated, don't show both.
+    if what_it_is.lower() == title.lower():
+        what_it_is = ""
     brief = {
-        "title": (extracted.get("what_it_is") or item.get("title") or "").strip(),
-        "what_it_is": (extracted.get("what_it_is") or "").strip(),
+        "title": title,
+        "what_it_is": what_it_is,
         # Item-level fields the site renders. Restored after omitting them produced
         # briefs that dropped four of the sections the product spec calls for
         # (SUMMARISATION.md Stage 2) -- the site degrades gracefully, so their absence
