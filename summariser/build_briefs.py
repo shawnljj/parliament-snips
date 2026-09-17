@@ -681,6 +681,27 @@ def stage3_assemble(item, extracted, model):
     if not kept:
         return None, dropped
 
+    # DEDUPLICATE. Measured on the first 18 briefs of 2026: 11.7% of all points were
+    # duplicates, affecting 44% of briefs, and oral-answer-4172 was made entirely of
+    # them (6 points, 6 duplicates). The model emits the same claim twice within one
+    # chunk and across chunks, and no gate caught it -- duplicates are perfectly
+    # truthful, correctly quoted, and each one raises coverage, so every check passed
+    # while the brief said less than it appeared to.
+    #
+    # Two points are the same if they cite the SAME EVIDENCE, regardless of wording.
+    # Deduplicating on the claim text instead would miss a reworded restatement, and
+    # the citation set is what a reader actually verifies against.
+    seen, uniq = set(), []
+    for k in kept:
+        key = tuple(sorted(k.get("cites") or []))
+        if key and key in seen:
+            dropped.append({"reason": "duplicate", "point": k.get("point", "")[:80]})
+            continue
+        seen.add(key)
+        uniq.append(k)
+    n_dupes = len(kept) - len(uniq)
+    kept = uniq
+
     # A 94-chunk debate yielded 259 points — every chunk contributed its maximum and
     # nothing ever consolidated. Some cap is still needed as a runaway guard, and it
     # must be applied by SPREAD, never by truncation: dropping the tail would silently
@@ -847,11 +868,17 @@ def stage4_verify(brief, item):
                        for s in cited if s in by_sid})
     min_turns = int(os.environ.get("PARSNIPS_MIN_TURNS_COVERED", "1"))
 
+    # duplicates: points citing the SAME evidence say one thing, not several. Assembly
+    # removes them, so this should always be 0 -- it exists to catch the day it is not.
+    cite_sets = [tuple(sorted(k.get("cites") or [])) for k in (brief.get("key_points") or [])]
+    dupes = len(cite_sets) - len({c for c in cite_sets if c})
+
     verdict = {
         "quote_invariant": len(bad) == 0,
         "quote_failures": bad,
         "schema_complete": not missing,
         "missing_fields": missing,
+        "duplicate_points": dupes,
         "points": len(brief.get("key_points") or []),
         "quoted_points": quoted,
         "turns_total": turns_total,
@@ -859,12 +886,13 @@ def stage4_verify(brief, item):
         "coverage": round(turns_cited / turns_total, 3) if turns_total else 0.0,
     }
     ok = (verdict["quote_invariant"] and verdict["schema_complete"]
-          and turns_cited >= min_turns and quoted > 0)
+          and not dupes and turns_cited >= min_turns and quoted > 0)
     verdict["passed"] = ok
     # Fail closed (R-2.8 / D-3): an item that cannot be validated publishes nothing.
     if not ok:
         verdict["withheld_reason"] = ("quote invariant failed" if not verdict["quote_invariant"]
                                       else f"incomplete brief: {', '.join(missing)}" if missing
+                                      else f"{dupes} duplicate point(s)" if dupes
                                       else "no cited turn" if turns_cited < min_turns
                                       else "no verified quotation")
     return verdict
@@ -973,6 +1001,14 @@ def run_item(meta, model, force=False):
                "estimated": usage["estimated"], "cost": cost,
                "outcome": "published" if verdict["passed"] else "withheld"})
     brief["_meta"]["gate"] = verdict
+    # R-2.5: every exclusion is recorded with its reason, so absence is auditable.
+    # Duplicates in particular must be visible -- otherwise the only trace of them is
+    # a point count that is lower than the model produced, with no explanation.
+    brief["_meta"]["points_dropped"] = len(dropped)
+    if dropped:
+        from collections import Counter as _Counter
+        brief["_meta"]["dropped_reasons"] = dict(
+            _Counter(d.get("reason", "?") for d in dropped))
     brief["_meta"]["usage"] = {"calls": usage["calls"],
                                "prompt_tokens": usage["prompt_tokens"],
                                "completion_tokens": usage["completion_tokens"],
