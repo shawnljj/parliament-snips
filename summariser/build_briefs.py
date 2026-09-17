@@ -107,7 +107,14 @@ Return JSON only, in this exact shape:
 
 {"points": [{"claim": "a short factual statement, in your own words",
              "cites": ["s00012"]}],
- "what_it_is": "one sentence naming the kind of business this is"}
+ "what_it_is": "one sentence naming the kind of business this is",
+ "why_it_matters": "2-3 sentences on what this changes for ordinary people, ONLY \
+where the record says so. If it does not say, write exactly: The record does not set \
+out the practical impact.",
+ "what_happens_next": "the next step if the record states one (e.g. referred to a \
+Select Committee, comes into force on a date). Otherwise write exactly: not stated",
+ "not_said": ["a question this debate raises that the record leaves unresolved, \
+phrased neutrally as an open question"]}
 
 Rules, all of which are enforced afterwards:
 - The "claim" is YOUR OWN wording. It must not be a quotation.
@@ -148,7 +155,14 @@ Return JSON only, in this exact shape:
 {"question": "what was asked, in your own words",
  "response": [{"claim": "a concrete factual point from the answer",
                "cites": ["s00012"]}],
- "what_it_is": "one sentence naming the ministry and subject"}
+ "what_it_is": "one sentence naming the ministry and subject",
+ "why_it_matters": "2-3 sentences on what this changes for ordinary people, ONLY \
+where the record says so. If it does not say, write exactly: The record does not set \
+out the practical impact.",
+ "what_happens_next": "the next step if the record states one. Otherwise write \
+exactly: not stated",
+ "not_said": ["a question this answer raises that the record leaves unresolved, \
+phrased neutrally as an open question"]}
 
 Rules, all of which are enforced afterwards:
 - The "question" and each "claim" are YOUR OWN wording. They must not be quotations.
@@ -542,6 +556,7 @@ def stage2_extract(item, model, is_oral):
 
     question = None
     what_it_is = None
+    item_fields = {}
     points = []
 
     for i, chunk in enumerate(chunks, 1):
@@ -573,6 +588,21 @@ def stage2_extract(item, model, is_oral):
                 # nothing; better to fall back to the record's own title.
                 if not wi.strip().lower().startswith("one sentence naming"):
                     what_it_is = wi
+            # Item-level fields. The FIRST non-empty answer wins, for the same reason
+            # the first point is preferred: these describe the whole item, and a later
+            # chunk only saw part of it.
+            for field, guard in (("why_it_matters", None),
+                                 ("what_happens_next", ("not stated", "n/a", "")),
+                                 ("stage", ("not stated", "n/a", ""))):
+                if not item_fields.get(field):
+                    v = (got.get(field) or "").strip()
+                    if v and not (guard and v.lower() in guard):
+                        item_fields[field] = v
+            if not item_fields.get("not_said"):
+                ns = [str(x).strip() for x in (got.get("not_said") or [])
+                      if str(x).strip()]
+                if ns:
+                    item_fields["not_said"] = ns
             for key in (("response", "points") if is_oral else ("points", "response")):
                 for p in (got.get(key) or []):
                     if isinstance(p, dict) and (p.get("claim") or p.get("point")):
@@ -586,7 +616,12 @@ def stage2_extract(item, model, is_oral):
     if not points:
         return None, usage_total
     return {"points": points, "question": question,
-            "what_it_is": what_it_is}, usage_total
+            "what_it_is": what_it_is,
+            "why_it_matters": item_fields.get("why_it_matters", ""),
+            "what_happens_next": item_fields.get("what_happens_next", ""),
+            "not_said": item_fields.get("not_said", []),
+            "stage": item_fields.get("stage", ""),
+        }, usage_total
 
 
 # ----------------------------------------------------------------------- Stage 3
@@ -672,6 +707,14 @@ def stage3_assemble(item, extracted, model):
     brief = {
         "title": (extracted.get("what_it_is") or item.get("title") or "").strip(),
         "what_it_is": (extracted.get("what_it_is") or "").strip(),
+        # Item-level fields the site renders. Restored after omitting them produced
+        # briefs that dropped four of the sections the product spec calls for
+        # (SUMMARISATION.md Stage 2) -- the site degrades gracefully, so their absence
+        # was invisible rather than loud.
+        "why_it_matters": (extracted.get("why_it_matters") or "").strip(),
+        "not_said": extracted.get("not_said") or [],
+        "what_happens_next": (extracted.get("what_happens_next") or "").strip(),
+        "stage": (extracted.get("stage") or "").strip(),
         "key_points": kept,
         "_meta": {
             "report_ids": item.get("report_ids") or [],
