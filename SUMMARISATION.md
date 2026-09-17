@@ -50,6 +50,34 @@ most important property in the design and it is established here, in Stage 1.
 window. The prompt budget is therefore a *measured constant*, not a guess — record the
 character budget actually used for each tier in the dataset manifest.
 
+#### Stage 1 result (built and verified)
+
+3,912 items, 0 failures, 70.7s.
+
+| tier | items | chunks | chars |
+|---|---|---|---|
+| small | 3,032 | 2,997 | 19,865,843 |
+| heavy | 880 | 5,418 | 117,819,573 |
+
+8,415 Stage-2 calls + 880 reduce calls.
+
+**Global invariants, re-verified across all 3,912 payloads** (754,082 sentences,
+40,945 turns): sid collisions **0**; sids duplicated across chunks **0**; sids missing
+from chunks **0**; chunk order ≠ document order **0**.
+
+**Cost, measured and explained.** Total prompt text 137,685,416 chars vs 19,071,090
+source words:
+
+| | |
+|---|---|
+| sentence text | 103,144,961 chars (≈ the 104.9M expected from source words) |
+| speaker labels | 28,507,799 chars |
+| formatting padding | 6,032,656 chars |
+| **ratio to raw source text** | **1.31×** |
+
+So there is **no duplication** — the excess over raw source text is speaker labels plus
+formatting, and 24% of it is recoverable (next section).
+
 ### Stage 2 — extract (LLM)
 
 Small items: one call over the full text. Heavy items: one call per chunk, then one
@@ -57,6 +85,31 @@ reduce call over the chunk outputs. In both cases the model returns, per point, 
 `sid` plus a short claim — **never a retyped quotation**, and never `key_points` text
 taken on trust. Item-level fields (title, what_it_is, why_it_matters, not_said) come
 from the reduce call for heavy items and the single call for small ones.
+
+**Prompt assembly MUST group by turn, not emit one labelled line per sentence.**
+Measured on the built dataset: 754,082 sentences across 40,945 turns = **18.4
+sentences per turn**. Storing the speaker on every sentence costs **34,540,455 chars**
+of labels; emitting the speaker once per turn costs **1,499,526** — a saving of
+**33,040,929 chars, 24.0% of all prompt text (~8.3M tokens)**.
+
+The dataset stores `speaker` per sentence deliberately, because a sentence must be
+self-describing when it is substituted back into a brief — the quote has to carry who
+said it. The waste is only in *how a prompt renders them*:
+
+```
+[Mr Lawrence Wong]                        <- once per turn
+s00012 But if the motor vehicle ...
+s00013 The purpose of the Customs Act ...
+```
+
+not
+
+```
+[Mr Lawrence Wong]: But if the motor vehicle ...      <- repeated 18 times
+[Mr Lawrence Wong]: The purpose of the Customs Act ...
+```
+
+`turn_index` plus `report_id` is already on every sentence, so grouping is free.
 
 Not yet built. Stage 1 must be reviewed first.
 
