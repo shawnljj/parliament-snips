@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parsnips — Architecture &amp; Schema</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'JetBrains Mono',monospace;background:#020617;min-height:100vh;
+    padding:2rem 1rem;color:white}
+  .container{max-width:1180px;margin:0 auto}
+  .header{margin-bottom:2rem}
+  .header-row{display:flex;align-items:center;gap:1rem;margin-bottom:.5rem}
+  .pulse-dot{width:12px;height:12px;background:#22d3ee;border-radius:50%;
+    animation:pulse 2s infinite;flex:none}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+  h1{font-size:1.4rem;font-weight:700;letter-spacing:-.025em}
+  .subtitle{color:#94a3b8;font-size:.8rem;margin-left:1.75rem;line-height:1.6}
+  h2{font-size:1rem;font-weight:700;margin:2.5rem 0 .4rem;color:#e2e8f0}
+  h2 .n{color:#22d3ee;margin-right:.5rem}
+  .lede{color:#94a3b8;font-size:.75rem;margin-bottom:1rem;line-height:1.65;max-width:78ch}
+  .lede b{color:#cbd5e1}
+  .diagram-container{background:rgba(15,23,42,.5);border-radius:1rem;
+    border:1px solid #1e293b;padding:1.25rem;overflow-x:auto}
+  svg{width:100%;min-width:900px;display:block}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:1rem;margin-top:2rem}
+  .card{background:rgba(15,23,42,.5);border-radius:.75rem;border:1px solid #1e293b;
+    padding:1.25rem}
+  .card-header{display:flex;align-items:center;gap:.5rem;margin-bottom:.75rem}
+  .card-dot{width:8px;height:8px;border-radius:50%;flex:none}
+  .card-dot.cyan{background:#22d3ee}.card-dot.emerald{background:#34d399}
+  .card-dot.violet{background:#a78bfa}.card-dot.amber{background:#fbbf24}
+  .card-dot.rose{background:#fb7185}
+  .card h3{font-size:.8rem;font-weight:600}
+  .card ul{list-style:none;color:#94a3b8;font-size:.7rem;line-height:1.7}
+  .card li{margin-bottom:.3rem}
+  .card code{color:#cbd5e1;font-size:.68rem}
+  table{width:100%;border-collapse:collapse;font-size:.7rem;
+    background:rgba(15,23,42,.5);border-radius:.5rem;overflow:hidden;
+    border:1px solid #1e293b}
+  caption{text-align:left;color:#e2e8f0;font-size:.8rem;font-weight:600;
+    padding:.9rem 0 .5rem}
+  caption .tag{color:#64748b;font-weight:400;font-size:.68rem;margin-left:.5rem}
+  th{text-align:left;color:#64748b;font-weight:600;font-size:.62rem;
+    letter-spacing:.08em;text-transform:uppercase;padding:.5rem .7rem;
+    border-bottom:1px solid #1e293b;background:rgba(30,41,59,.4)}
+  td{padding:.45rem .7rem;border-bottom:1px solid rgba(30,41,59,.6);
+    color:#94a3b8;vertical-align:top}
+  tr:last-child td{border-bottom:0}
+  td.k{color:#cbd5e1;font-weight:600}
+  td.t{color:#a78bfa}
+  .pk{color:#fbbf24;font-size:.6rem;font-weight:700}
+  .fk{color:#fb7185;font-size:.6rem;font-weight:700}
+  .nn{color:#34d399;font-size:.6rem;font-weight:700}
+  .tables{display:grid;gap:1.25rem;margin-top:1rem}
+  .note{background:rgba(76,29,149,.15);border:1px solid rgba(167,139,250,.3);
+    border-radius:.5rem;padding:.9rem 1.1rem;margin-top:1rem;font-size:.72rem;
+    color:#c4b5fd;line-height:1.7}
+  .note b{color:#ddd6fe}
+  .footer{text-align:center;margin-top:2rem;color:#475569;font-size:.72rem;
+    line-height:1.8}
+  @media (max-width:640px){
+    body{padding:1.25rem .75rem}
+    h1{font-size:1.1rem}
+    .subtitle{margin-left:0;margin-top:.75rem}
+    table{font-size:.62rem}
+    td,th{padding:.4rem .5rem}
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="header-row">
+      <div class="pulse-dot"></div>
+      <h1>Parsnips — Architecture &amp; Schema</h1>
+    </div>
+    <p class="subtitle">
+      Sitting → Section → Speaker → Content. Deterministic where possible, model only
+      where judgement is needed.<br>
+      Requirements: <b>REQUIREMENTS.md</b> &middot; Design decisions D-1 … D-10
+    </p>
+  </div>
+
+  <!-- ============================ ARCHITECTURE ============================ -->
+  <h2><span class="n">01</span>Pipeline architecture</h2>
+  <p class="lede">
+    Five stages. Three of them involve no model at all — the mechanical work is
+    deterministic and reproducible. The model appears once, in <b>Stage 2</b>, and it
+    returns <b>sentence ids rather than quotations</b>: the assembler substitutes the
+    stored text afterwards. That is what makes every published quote verbatim by
+    construction (R-2.1, R-2.2).
+  </p>
+
+  <div class="diagram-container">
+    <svg viewBox="0 0 1000 1010" role="img"
+         aria-label="Parsnips pipeline: source, ingestion, normalised store, four stages, verification gates, output">
+
+      <defs>
+        <marker id="ah" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+        </marker>
+        <marker id="ahv" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/>
+        </marker>
+        <marker id="ahr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#fb7185"/>
+        </marker>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+        </pattern>
+      </defs>
+
+      <rect width="100%" height="100%" fill="url(#grid)"/>
+
+      <!-- ---------- ARROWS (drawn early so boxes sit on top) ---------- -->
+      <line x1="500" y1="110" x2="500" y2="164" stroke="#64748b" stroke-width="1.5" marker-end="url(#ah)"/>
+      <line x1="240" y1="250" x2="240" y2="292" stroke="#34d399" stroke-width="1.5" marker-end="url(#ahv)"/>
+      <line x1="500" y1="250" x2="500" y2="292" stroke="#34d399" stroke-width="1.5" marker-end="url(#ahv)"/>
+      <line x1="760" y1="250" x2="760" y2="292" stroke="#34d399" stroke-width="1.5" marker-end="url(#ahv)"/>
+      <line x1="140" y1="458" x2="140" y2="492" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#ah)"/>
+      <line x1="248" y1="544" x2="270" y2="544" stroke="#64748b" stroke-width="1.5" marker-end="url(#ah)"/>
+      <line x1="488" y1="544" x2="510" y2="544" stroke="#64748b" stroke-width="1.5" marker-end="url(#ah)"/>
+      <line x1="728" y1="544" x2="750" y2="544" stroke="#64748b" stroke-width="1.5" marker-end="url(#ah)"/>
+      <line x1="860" y1="594" x2="860" y2="628" stroke="#fb7185" stroke-width="1.5" marker-end="url(#ahr)"/>
+      <line x1="330" y1="738" x2="330" y2="772" stroke="#64748b" stroke-width="1.5" marker-end="url(#ah)"/>
+      <line x1="670" y1="738" x2="670" y2="772" stroke="#fb7185" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#ahr)"/>
+
+      <!-- ---------- ROW A · source ---------- -->
+      <rect x="370" y="44" width="260" height="66" rx="6" fill="#0f172a"/>
+      <rect x="370" y="44" width="260" height="66" rx="6" fill="rgba(30,41,59,.5)" stroke="#94a3b8" stroke-width="1.5"/>
+      <text x="500" y="68" fill="white" font-size="12" font-weight="600" text-anchor="middle">Parliament Hansard API</text>
+      <text x="500" y="84" fill="#94a3b8" font-size="9" text-anchor="middle">sprs.parl.gov.sg · public record</text>
+      <text x="500" y="99" fill="#64748b" font-size="8" text-anchor="middle">331 sittings · 2016–2026 · 22.8M words</text>
+
+      <!-- ---------- ROW B · ingestion ---------- -->
+      <rect x="125" y="168" width="230" height="82" rx="6" fill="#0f172a"/>
+      <rect x="125" y="168" width="230" height="82" rx="6" fill="rgba(6,78,59,.4)" stroke="#34d399" stroke-width="1.5"/>
+      <text x="240" y="192" fill="white" font-size="11" font-weight="600" text-anchor="middle">Backfill</text>
+      <text x="240" y="208" fill="#94a3b8" font-size="9" text-anchor="middle">one year = one batch</text>
+      <text x="240" y="222" fill="#94a3b8" font-size="9" text-anchor="middle">resumable, atomic writes</text>
+      <text x="240" y="238" fill="#34d399" font-size="8" text-anchor="middle">no LLM</text>
+
+      <rect x="385" y="168" width="230" height="82" rx="6" fill="#0f172a"/>
+      <rect x="385" y="168" width="230" height="82" rx="6" fill="rgba(6,78,59,.4)" stroke="#34d399" stroke-width="1.5"/>
+      <text x="500" y="192" fill="white" font-size="11" font-weight="600" text-anchor="middle">Scheduled job</text>
+      <text x="500" y="208" fill="#94a3b8" font-size="9" text-anchor="middle">detect + fetch new sittings</text>
+      <text x="500" y="222" fill="#94a3b8" font-size="9" text-anchor="middle">same pipeline, unattended</text>
+      <text x="500" y="238" fill="#34d399" font-size="8" text-anchor="middle">no LLM · R-4.8</text>
+
+      <rect x="645" y="168" width="230" height="82" rx="6" fill="#0f172a"/>
+      <rect x="645" y="168" width="230" height="82" rx="6" fill="rgba(136,19,55,.4)" stroke="#fb7185" stroke-width="1.5"/>
+      <text x="760" y="192" fill="white" font-size="11" font-weight="600" text-anchor="middle">Coverage check</text>
+      <text x="760" y="208" fill="#94a3b8" font-size="9" text-anchor="middle">union enumeration</text>
+      <text x="760" y="222" fill="#94a3b8" font-size="9" text-anchor="middle">API under-reports its own count</text>
+      <text x="760" y="238" fill="#fb7185" font-size="8" text-anchor="middle">gate · R-1.3</text>
+
+      <!-- ---------- ROW C · normalised store ---------- -->
+      <rect x="48" y="296" width="904" height="162" rx="12" fill="rgba(76,29,149,.06)"
+            stroke="#a78bfa" stroke-width="1" stroke-dasharray="8,4"/>
+      <text x="62" y="316" fill="#a78bfa" font-size="10" font-weight="600">Normalised archive — the source of truth (R-6.1)</text>
+      <text x="62" y="330" fill="#64748b" font-size="8">every entity has a stable id; derived artifacts reference ids, never copied text (R-6.2)</text>
+
+      <rect x="71" y="342" width="128" height="76" rx="6" fill="#0f172a"/>
+      <rect x="71" y="342" width="128" height="76" rx="6" fill="rgba(76,29,149,.4)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="135" y="366" fill="white" font-size="10" font-weight="600" text-anchor="middle">sitting</text>
+      <text x="135" y="382" fill="#94a3b8" font-size="8" text-anchor="middle">date, parliament</text>
+      <text x="135" y="395" fill="#94a3b8" font-size="8" text-anchor="middle">coverage, hash</text>
+      <text x="135" y="410" fill="#a78bfa" font-size="7" text-anchor="middle">331 rows</text>
+
+      <rect x="217" y="342" width="128" height="76" rx="6" fill="#0f172a"/>
+      <rect x="217" y="342" width="128" height="76" rx="6" fill="rgba(76,29,149,.4)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="281" y="366" fill="white" font-size="10" font-weight="600" text-anchor="middle">report</text>
+      <text x="281" y="382" fill="#94a3b8" font-size="8" text-anchor="middle">type, title</text>
+      <text x="281" y="395" fill="#94a3b8" font-size="8" text-anchor="middle">volume, sitting no</text>
+      <text x="281" y="410" fill="#a78bfa" font-size="7" text-anchor="middle">20,962 rows</text>
+
+      <rect x="363" y="342" width="128" height="76" rx="6" fill="#0f172a"/>
+      <rect x="363" y="342" width="128" height="76" rx="6" fill="rgba(76,29,149,.4)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="427" y="366" fill="white" font-size="10" font-weight="600" text-anchor="middle">turn</text>
+      <text x="427" y="382" fill="#94a3b8" font-size="8" text-anchor="middle">one speaker</text>
+      <text x="427" y="395" fill="#94a3b8" font-size="8" text-anchor="middle">contiguous</text>
+      <text x="427" y="410" fill="#a78bfa" font-size="7" text-anchor="middle">94,272 rows</text>
+
+      <rect x="509" y="342" width="128" height="76" rx="6" fill="#0f172a"/>
+      <rect x="509" y="342" width="128" height="76" rx="6" fill="rgba(76,29,149,.4)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="573" y="366" fill="white" font-size="10" font-weight="600" text-anchor="middle">sentence</text>
+      <text x="573" y="382" fill="#94a3b8" font-size="8" text-anchor="middle">unit of citation</text>
+      <text x="573" y="395" fill="#94a3b8" font-size="8" text-anchor="middle">offsets + hash</text>
+      <text x="573" y="410" fill="#a78bfa" font-size="7" text-anchor="middle">754,082 rows</text>
+
+      <rect x="655" y="342" width="128" height="76" rx="6" fill="#0f172a"/>
+      <rect x="655" y="342" width="128" height="76" rx="6" fill="rgba(76,29,149,.4)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="719" y="366" fill="white" font-size="10" font-weight="600" text-anchor="middle">speaker_label</text>
+      <text x="719" y="382" fill="#94a3b8" font-size="8" text-anchor="middle">AS RECORDED</text>
+      <text x="719" y="395" fill="#94a3b8" font-size="8" text-anchor="middle">no identity merge</text>
+      <text x="719" y="410" fill="#a78bfa" font-size="7" text-anchor="middle">1,330 labels</text>
+
+      <rect x="801" y="342" width="128" height="76" rx="6" fill="#0f172a"/>
+      <rect x="801" y="342" width="128" height="76" rx="6" fill="rgba(76,29,149,.4)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="865" y="366" fill="white" font-size="10" font-weight="600" text-anchor="middle">section</text>
+      <text x="865" y="382" fill="#94a3b8" font-size="8" text-anchor="middle">reader-facing</text>
+      <text x="865" y="395" fill="#94a3b8" font-size="8" text-anchor="middle">top of the tree</text>
+      <text x="865" y="410" fill="#a78bfa" font-size="7" text-anchor="middle">D-6</text>
+
+      <!-- ---------- ROW D · stages ---------- -->
+      <rect x="34" y="496" width="212" height="98" rx="6" fill="#0f172a"/>
+      <rect x="34" y="496" width="212" height="98" rx="6" fill="rgba(6,78,59,.4)" stroke="#34d399" stroke-width="1.5"/>
+      <text x="46" y="518" fill="#64748b" font-size="8">STAGE 1</text>
+      <text x="140" y="538" fill="white" font-size="11" font-weight="600" text-anchor="middle">Build dataset</text>
+      <text x="140" y="555" fill="#94a3b8" font-size="9" text-anchor="middle">addressable by sid</text>
+      <text x="140" y="569" fill="#94a3b8" font-size="9" text-anchor="middle">chunks = id lists</text>
+      <text x="140" y="586" fill="#34d399" font-size="8" text-anchor="middle">no LLM · built</text>
+
+      <rect x="274" y="496" width="212" height="98" rx="6" fill="#0f172a"/>
+      <rect x="274" y="496" width="212" height="98" rx="6" fill="rgba(120,53,15,.3)" stroke="#fbbf24" stroke-width="1.5"/>
+      <text x="286" y="518" fill="#64748b" font-size="8">STAGE 2</text>
+      <text x="380" y="538" fill="white" font-size="11" font-weight="600" text-anchor="middle">Extract</text>
+      <text x="380" y="555" fill="#94a3b8" font-size="9" text-anchor="middle">returns sids + claims</text>
+      <text x="380" y="569" fill="#94a3b8" font-size="9" text-anchor="middle">never retypes a quote</text>
+      <text x="380" y="586" fill="#fbbf24" font-size="8" text-anchor="middle">THE ONLY LLM STAGE</text>
+
+      <rect x="514" y="496" width="212" height="98" rx="6" fill="#0f172a"/>
+      <rect x="514" y="496" width="212" height="98" rx="6" fill="rgba(6,78,59,.4)" stroke="#34d399" stroke-width="1.5"/>
+      <text x="526" y="518" fill="#64748b" font-size="8">STAGE 3</text>
+      <text x="620" y="538" fill="white" font-size="11" font-weight="600" text-anchor="middle">Assemble</text>
+      <text x="620" y="555" fill="#94a3b8" font-size="9" text-anchor="middle">sid → stored text</text>
+      <text x="620" y="569" fill="#94a3b8" font-size="9" text-anchor="middle">_meta from the record</text>
+      <text x="620" y="586" fill="#34d399" font-size="8" text-anchor="middle">no LLM</text>
+
+      <rect x="754" y="496" width="212" height="98" rx="6" fill="#0f172a"/>
+      <rect x="754" y="496" width="212" height="98" rx="6" fill="rgba(6,78,59,.4)" stroke="#34d399" stroke-width="1.5"/>
+      <text x="766" y="518" fill="#64748b" font-size="8">STAGE 4</text>
+      <text x="860" y="538" fill="white" font-size="11" font-weight="600" text-anchor="middle">Verify</text>
+      <text x="860" y="555" fill="#94a3b8" font-size="9" text-anchor="middle">gate or withhold</text>
+      <text x="860" y="569" fill="#94a3b8" font-size="9" text-anchor="middle">fails closed</text>
+      <text x="860" y="586" fill="#34d399" font-size="8" text-anchor="middle">no LLM · R-2.8</text>
+
+      <!-- ---------- ROW E · gates ---------- -->
+      <rect x="48" y="630" width="904" height="108" rx="12" fill="rgba(136,19,55,.08)"
+            stroke="#fb7185" stroke-width="1" stroke-dasharray="4,4"/>
+      <text x="62" y="650" fill="#fb7185" font-size="10" font-weight="600">The gates ARE the quality process — nothing publishes without passing (D-1)</text>
+      <text x="62" y="663" fill="#64748b" font-size="8">automated publication, no human in the loop · each gate must have a test that deliberately violates it (R-2.9)</text>
+
+      <rect x="70" y="672" width="200" height="52" rx="6" fill="#0f172a"/>
+      <rect x="70" y="672" width="200" height="52" rx="6" fill="rgba(136,19,55,.3)" stroke="#fb7185" stroke-width="1.2"/>
+      <text x="170" y="692" fill="white" font-size="10" font-weight="600" text-anchor="middle">Quote provenance</text>
+      <text x="170" y="708" fill="#94a3b8" font-size="8" text-anchor="middle">sid → source position</text>
+
+      <rect x="290" y="672" width="200" height="52" rx="6" fill="#0f172a"/>
+      <rect x="290" y="672" width="200" height="52" rx="6" fill="rgba(136,19,55,.3)" stroke="#fb7185" stroke-width="1.2"/>
+      <text x="390" y="692" fill="white" font-size="10" font-weight="600" text-anchor="middle">Coverage</text>
+      <text x="390" y="708" fill="#94a3b8" font-size="8" text-anchor="middle">nothing silently dropped</text>
+
+      <rect x="510" y="672" width="200" height="52" rx="6" fill="#0f172a"/>
+      <rect x="510" y="672" width="200" height="52" rx="6" fill="rgba(136,19,55,.3)" stroke="#fb7185" stroke-width="1.2"/>
+      <text x="610" y="692" fill="white" font-size="10" font-weight="600" text-anchor="middle">Attribution</text>
+      <text x="610" y="708" fill="#94a3b8" font-size="8" text-anchor="middle">recorded vs inferred</text>
+
+      <rect x="730" y="672" width="200" height="52" rx="6" fill="#0f172a"/>
+      <rect x="730" y="672" width="200" height="52" rx="6" fill="rgba(136,19,55,.3)" stroke="#fb7185" stroke-width="1.2"/>
+      <text x="830" y="692" fill="white" font-size="10" font-weight="600" text-anchor="middle">Completeness</text>
+      <text x="830" y="708" fill="#94a3b8" font-size="8" text-anchor="middle">summarised the whole item</text>
+
+      <!-- ---------- ROW F · output ---------- -->
+      <rect x="180" y="774" width="300" height="82" rx="8" fill="#0f172a"/>
+      <rect x="180" y="774" width="300" height="82" rx="8" fill="rgba(8,51,68,.4)" stroke="#22d3ee" stroke-width="1.5"/>
+      <text x="330" y="798" fill="white" font-size="11" font-weight="600" text-anchor="middle">Static site</text>
+      <text x="330" y="814" fill="#94a3b8" font-size="9" text-anchor="middle">sitting → section → speaker → content</text>
+      <text x="330" y="828" fill="#94a3b8" font-size="9" text-anchor="middle">turn summary + verbatim collapsible</text>
+      <text x="330" y="846" fill="#22d3ee" font-size="8" text-anchor="middle">mobile-first · R-5.1</text>
+
+      <rect x="520" y="774" width="300" height="82" rx="8" fill="#0f172a"/>
+      <rect x="520" y="774" width="300" height="82" rx="8" fill="rgba(8,51,68,.4)" stroke="#22d3ee" stroke-width="1.5"/>
+      <text x="670" y="798" fill="white" font-size="11" font-weight="600" text-anchor="middle">Operation views</text>
+      <text x="670" y="814" fill="#94a3b8" font-size="9" text-anchor="middle">pipeline dashboard (queued / done / failed)</text>
+      <text x="670" y="828" fill="#94a3b8" font-size="9" text-anchor="middle">withheld items shown AS withheld</text>
+      <text x="670" y="846" fill="#fb7185" font-size="8" text-anchor="middle">R-5.5 · absence is reported</text>
+
+      <!-- ---------- LEGEND ---------- -->
+      <text x="60" y="898" fill="white" font-size="10" font-weight="600">Legend</text>
+
+      <rect x="60" y="910" width="16" height="10" rx="2" fill="rgba(30,41,59,.5)" stroke="#94a3b8" stroke-width="1"/>
+      <text x="82" y="918" fill="#94a3b8" font-size="8">External source</text>
+
+      <rect x="200" y="910" width="16" height="10" rx="2" fill="rgba(6,78,59,.4)" stroke="#34d399" stroke-width="1"/>
+      <text x="222" y="918" fill="#94a3b8" font-size="8">Deterministic (no LLM)</text>
+
+      <rect x="380" y="910" width="16" height="10" rx="2" fill="rgba(120,53,15,.3)" stroke="#fbbf24" stroke-width="1"/>
+      <text x="402" y="918" fill="#94a3b8" font-size="8">Model stage</text>
+
+      <rect x="510" y="910" width="16" height="10" rx="2" fill="rgba(76,29,149,.4)" stroke="#a78bfa" stroke-width="1"/>
+      <text x="532" y="918" fill="#94a3b8" font-size="8">Normalised data</text>
+
+      <rect x="650" y="910" width="16" height="10" rx="2" fill="rgba(136,19,55,.3)" stroke="#fb7185" stroke-width="1"/>
+      <text x="672" y="918" fill="#94a3b8" font-size="8">Gate / control</text>
+
+      <rect x="770" y="910" width="16" height="10" rx="2" fill="rgba(8,51,68,.4)" stroke="#22d3ee" stroke-width="1"/>
+      <text x="792" y="918" fill="#94a3b8" font-size="8">Reader output</text>
+
+      <line x1="60" y1="938" x2="76" y2="938" stroke="#fb7185" stroke-width="1.5" stroke-dasharray="5,4"/>
+      <text x="82" y="941" fill="#94a3b8" font-size="8">Fails closed — unknown state does not publish</text>
+    </svg>
+  </div>
+
+  <!-- ============================== ERD ============================== -->
+  <h2><span class="n">02</span>Entity relationships</h2>
+  <p class="lede">
+    One chain gives provenance: <b>sitting → report → turn → sentence</b>. Everything
+    derived hangs off it and refers back by id. There is no entity called "brief" with
+    its own copy of the text — a claim points at the sentences it rests on.
+  </p>
+
+  <div class="diagram-container">
+    <svg viewBox="0 0 1000 620" role="img"
+         aria-label="Entity relationship diagram for the Parsnips data model">
+      <defs>
+        <marker id="er1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
+        </marker>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#grid)"/>
+
+      <!-- arrows -->
+      <line x1="160" y1="112" x2="160" y2="146" stroke="#475569" stroke-width="1.5" marker-end="url(#er1)"/>
+      <line x1="160" y1="232" x2="160" y2="266" stroke="#475569" stroke-width="1.5" marker-end="url(#er1)"/>
+      <line x1="160" y1="352" x2="160" y2="386" stroke="#475569" stroke-width="1.5" marker-end="url(#er1)"/>
+      <line x1="260" y1="310" x2="336" y2="310" stroke="#475569" stroke-width="1.5" marker-end="url(#er1)"/>
+      <line x1="260" y1="290" x2="614" y2="290" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#er1)"/>
+      <line x1="720" y1="352" x2="720" y2="386" stroke="#fb7185" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#er1)"/>
+      <line x1="620" y1="310" x2="540" y2="310" stroke="#475569" stroke-width="1.5" marker-end="url(#er1)"/>
+      <line x1="660" y1="112" x2="660" y2="146" stroke="#475569" stroke-width="1.5" marker-end="url(#er1)"/>
+
+      <!-- sitting -->
+      <rect x="60" y="42" width="200" height="70" rx="6" fill="#0f172a"/>
+      <rect x="60" y="42" width="200" height="70" rx="6" fill="rgba(76,29,149,.4)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="76" y="62" fill="white" font-size="10" font-weight="600">sitting</text>
+      <text x="76" y="78" fill="#94a3b8" font-size="8">id = date (PK)</text>
+      <text x="76" y="92" fill="#94a3b8" font-size="8">parliament_no · volume_no</text>
+      <text x="76" y="105" fill="#94a3b8" font-size="8">coverage · source_hash</text>
+
+      <!-- report -->
+      <rect x="60" y="150" width="200" height="82" rx="6" fill="#0f172a"/>
+      <rect x="60" y="150" width="200" height="82" rx="6" fill="rgba(76,29,149,.4)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="76" y="170" fill="white" font-size="10" font-weight="600">report</text>
+      <text x="76" y="186" fill="#94a3b8" font-size="8">id (PK) · sitting_id (FK)</text>
+      <text x="76" y="200" fill="#94a3b8" font-size="8">type · title · words</text>
+      <text x="76" y="214" fill="#94a3b8" font-size="8">report_version (era)</text>
+      <text x="76" y="227" fill="#94a3b8" font-size="8">sitting_no · volume_no</text>
+
+      <!-- turn -->
+      <rect x="60" y="270" width="200" height="82" rx="6" fill="#0f172a"/>
+      <rect x="60" y="270" width="200" height="82" rx="6" fill="rgba(76,29,149,.4)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="76" y="290" fill="white" font-size="10" font-weight="600">turn</text>
+      <text x="76" y="306" fill="#94a3b8" font-size="8">id (PK) · report_id (FK)</text>
+      <text x="76" y="320" fill="#94a3b8" font-size="8">speaker_label_id (FK)</text>
+      <text x="76" y="334" fill="#94a3b8" font-size="8">order_index · words</text>
+      <text x="76" y="347" fill="#94a3b8" font-size="8">attributed (bool)</text>
+
+      <!-- sentence -->
+      <rect x="60" y="390" width="200" height="100" rx="6" fill="#0f172a"/>
+      <rect x="60" y="390" width="200" height="100" rx="6" fill="rgba(76,29,149,.4)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="76" y="410" fill="white" font-size="10" font-weight="600">sentence</text>
+      <text x="76" y="426" fill="#94a3b8" font-size="8">sid (PK) · turn_id (FK)</text>
+      <text x="76" y="440" fill="#94a3b8" font-size="8">text · order_in_turn</text>
+      <text x="76" y="454" fill="#94a3b8" font-size="8">char_start · char_end</text>
+      <text x="76" y="468" fill="#fbbf24" font-size="8">sha256 — proves provenance</text>
+      <text x="76" y="481" fill="#94a3b8" font-size="8">excluded · exclude_reason</text>
+
+      <!-- speaker_label -->
+      <rect x="340" y="270" width="200" height="82" rx="6" fill="#0f172a"/>
+      <rect x="340" y="270" width="200" height="82" rx="6" fill="rgba(76,29,149,.4)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="356" y="290" fill="white" font-size="10" font-weight="600">speaker_label</text>
+      <text x="356" y="306" fill="#94a3b8" font-size="8">id (PK) · label AS RECORDED</text>
+      <text x="356" y="320" fill="#94a3b8" font-size="8">is_chair (bool)</text>
+      <text x="356" y="334" fill="#64748b" font-size="8">no identity resolution —</text>
+      <text x="356" y="347" fill="#64748b" font-size="8">R-6.9 preserves the record</text>
+
+      <!-- turn_summary -->
+      <rect x="620" y="270" width="200" height="82" rx="6" fill="#0f172a"/>
+      <rect x="620" y="270" width="200" height="82" rx="6" fill="rgba(120,53,15,.3)" stroke="#fbbf24" stroke-width="1.5"/>
+      <text x="636" y="290" fill="white" font-size="10" font-weight="600">turn_summary</text>
+      <text x="636" y="306" fill="#94a3b8" font-size="8">id (PK) · turn_id (FK)</text>
+      <text x="636" y="320" fill="#94a3b8" font-size="8">text · word_count</text>
+      <text x="636" y="334" fill="#94a3b8" font-size="8">sub_index (long-turn split)</text>
+      <text x="636" y="347" fill="#94a3b8" font-size="8">model · prompt_hash</text>
+
+      <!-- claim -->
+      <rect x="620" y="390" width="200" height="100" rx="6" fill="#0f172a"/>
+      <rect x="620" y="390" width="200" height="100" rx="6" fill="rgba(120,53,15,.3)" stroke="#fbbf24" stroke-width="1.5"/>
+      <text x="636" y="410" fill="white" font-size="10" font-weight="600">claim</text>
+      <text x="636" y="426" fill="#94a3b8" font-size="8">id (PK) · summary_id (FK)</text>
+      <text x="636" y="440" fill="#94a3b8" font-size="8">text (the assertion)</text>
+      <text x="636" y="454" fill="#fb7185" font-size="8">cites[] → sentence.sid</text>
+      <text x="636" y="468" fill="#94a3b8" font-size="8">quote (SUBSTITUTED)</text>
+      <text x="636" y="481" fill="#94a3b8" font-size="8">speaker · attribution_source</text>
+
+      <!-- gate_result -->
+      <rect x="620" y="150" width="200" height="82" rx="6" fill="#0f172a"/>
+      <rect x="620" y="150" width="200" height="82" rx="6" fill="rgba(136,19,55,.3)" stroke="#fb7185" stroke-width="1.5"/>
+      <text x="636" y="170" fill="white" font-size="10" font-weight="600">gate_result</text>
+      <text x="636" y="186" fill="#94a3b8" font-size="8">id (PK) · target_type+id</text>
+      <text x="636" y="200" fill="#94a3b8" font-size="8">gate_name · passed</text>
+      <text x="636" y="214" fill="#94a3b8" font-size="8">detail · checked_at</text>
+      <text x="636" y="227" fill="#fb7185" font-size="8">fails closed — R-2.8</text>
+
+      <!-- ingestion_run -->
+      <rect x="860" y="42" width="120" height="70" rx="6" fill="#0f172a"/>
+      <rect x="860" y="42" width="120" height="70" rx="6" fill="rgba(6,78,59,.4)" stroke="#34d399" stroke-width="1.5"/>
+      <text x="920" y="62" fill="white" font-size="10" font-weight="600" text-anchor="middle">run</text>
+      <text x="920" y="78" fill="#94a3b8" font-size="8" text-anchor="middle">id · kind</text>
+      <text x="920" y="92" fill="#94a3b8" font-size="8" text-anchor="middle">started_at</text>
+      <text x="920" y="105" fill="#94a3b8" font-size="8" text-anchor="middle">status</text>
+
+      <!-- cardinality notes -->
+      <text x="280" y="140" fill="#64748b" font-size="8">1 : N</text>
+      <text x="280" y="262" fill="#64748b" font-size="8">1 : N</text>
+      <text x="280" y="382" fill="#64748b" font-size="8">1 : N</text>
+      <text x="286" y="304" fill="#64748b" font-size="8">N : 1</text>
+      <text x="430" y="284" fill="#a78bfa" font-size="8">1 : 1 per turn (or N for long-turn splits)</text>
+      <text x="540" y="384" fill="#64748b" font-size="8">N : 1</text>
+      <text x="730" y="378" fill="#fb7185" font-size="8">verified by</text>
+
+      <!-- provenance callout -->
+      <rect x="60" y="530" width="880" height="66" rx="8" fill="rgba(251,191,36,.07)"
+            stroke="#fbbf24" stroke-width="1" stroke-dasharray="4,4"/>
+      <text x="76" y="552" fill="#fbbf24" font-size="10" font-weight="600">The provenance chain — what makes a published quote checkable</text>
+      <text x="76" y="570" fill="#94a3b8" font-size="8">claim.cites[] → sentence.sid → sentence.char_start / char_end → re-slice the source report → compare sha256.</text>
+      <text x="76" y="585" fill="#94a3b8" font-size="8">A quotation is never trusted because a model wrote it; it is proven because the text is byte-identical at a recorded position.</text>
+    </svg>
+  </div>
+
+  <div class="note">
+    <b>Why there is no “brief” entity holding its own text.</b> If a brief stored a copy
+    of the words, the copy could drift from the record and no check would catch it —
+    that is precisely how a reworded quotation would enter the system. Instead a
+    <code>claim</code> stores only an assertion plus the <b>ids of the sentences it rests
+    on</b>; the quotation is substituted from <code>sentence.text</code> at assembly time.
+    A model that mangles a quote in its head has no way to publish the mangled version.
+  </div>
+
+  <!-- ============================ TABLES ============================ -->
+  <h2><span class="n">03</span>Schema</h2>
+  <p class="lede">
+    Legend: <span class="pk">PK</span> primary key ·
+    <span class="fk">FK</span> foreign key ·
+    <span class="nn">NN</span> not null. Row counts are measured, not estimates.
+  </p>
+
+  <div class="tables">
+
+    <table>
+      <caption>sitting <span class="tag">331 rows · one calendar day Parliament sat</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">id <span class="pk">PK</span></td><td class="t">date</td><td>ISO date — the natural key</td></tr>
+        <tr><td class="k">parliament_no <span class="nn">NN</span></td><td class="t">int</td><td>13, 14 or 15 across the archive</td></tr>
+        <tr><td class="k">volume_no</td><td class="t">int</td><td>Hansard volume</td></tr>
+        <tr><td class="k">sitting_no</td><td class="t">int</td><td>sitting number within the volume</td></tr>
+        <tr><td class="k">collected / max_result</td><td class="t">int</td><td>reports fetched vs the API's own claim</td></tr>
+        <tr><td class="k">coverage_ratio</td><td class="t">float</td><td>declared enumeration coverage (R-1.3)</td></tr>
+        <tr><td class="k">source_hash</td><td class="t">string(16)</td><td>content fingerprint — detects a re-fetch that differs</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>report <span class="tag">20,962 rows · one Hansard API record</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">id <span class="pk">PK</span></td><td class="t">string</td><td>e.g. <code>bill-366</code> — the API's stable identity</td></tr>
+        <tr><td class="k">sitting_id <span class="fk">FK</span> <span class="nn">NN</span></td><td class="t">date</td><td>→ sitting.id</td></tr>
+        <tr><td class="k">type <span class="nn">NN</span></td><td class="t">enum</td><td>bill · statement · motion · budget · adjournment · oral · written · correction · tribute</td></tr>
+        <tr><td class="k">title</td><td class="t">text</td><td>as printed in Hansard — never used as a key</td></tr>
+        <tr><td class="k">report_version <span class="nn">NN</span></td><td class="t">string</td><td>format era (<code>sprs3</code>) — recorded, never inferred (R-6.3)</td></tr>
+        <tr><td class="k">words / turns_count</td><td class="t">int</td><td>denormalised counts for reporting</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>turn <span class="tag">94,272 rows · one speaker's contiguous contribution</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">id <span class="pk">PK</span></td><td class="t">string</td><td><code>&lt;report_id&gt;:t&lt;order_index&gt;</code></td></tr>
+        <tr><td class="k">report_id <span class="fk">FK</span> <span class="nn">NN</span></td><td class="t">string</td><td>→ report.id</td></tr>
+        <tr><td class="k">speaker_label_id <span class="fk">FK</span></td><td class="t">int</td><td>→ speaker_label.id; nullable when unattributed (D-4)</td></tr>
+        <tr><td class="k">order_index <span class="nn">NN</span></td><td class="t">int</td><td>position in the record — the debate's own order</td></tr>
+        <tr><td class="k">attributed <span class="nn">NN</span></td><td class="t">bool</td><td>true = label from the record; false = carried forward (4.0% of turns)</td></tr>
+        <tr><td class="k">words <span class="nn">NN</span></td><td class="t">int</td><td>median 67, p90 506, max 16,209</td></tr>
+        <tr><td class="k">is_procedural</td><td class="t">bool</td><td>chair business — retained, filterable at display</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>sentence <span class="tag">754,082 rows · the unit of citation</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">sid <span class="pk">PK</span></td><td class="t">string</td><td>stable id within a turn, e.g. <code>s00012</code></td></tr>
+        <tr><td class="k">turn_id <span class="fk">FK</span> <span class="nn">NN</span></td><td class="t">string</td><td>→ turn.id</td></tr>
+        <tr><td class="k">text <span class="nn">NN</span></td><td class="t">text</td><td>the sentence, verbatim from the record</td></tr>
+        <tr><td class="k">order_in_turn <span class="nn">NN</span></td><td class="t">int</td><td>preserves reading order</td></tr>
+        <tr><td class="k">char_start / char_end <span class="nn">NN</span></td><td class="t">int</td><td>offsets into the normalised report text — <b>proves position</b></td></tr>
+        <tr><td class="k">sha256 <span class="nn">NN</span></td><td class="t">string</td><td><b>proves content</b> — re-slice and compare</td></tr>
+        <tr><td class="k">excluded</td><td class="t">bool</td><td>excluded from prompts (procedural / courtesy / too short)</td></tr>
+        <tr><td class="k">exclude_reason</td><td class="t">enum</td><td>never silent — an unrecorded drop is indistinguishable from a bug (R-2.5)</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>speaker_label <span class="tag">1,330 rows · the label exactly as recorded</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">id <span class="pk">PK</span></td><td class="t">int</td></tr>
+        <tr><td class="k">label <span class="nn">NN</span></td><td class="t">text</td><td>e.g. <code>The Minister for Home Affairs (Mr K Shanmugam)</code></td></tr>
+        <tr><td class="k">is_chair <span class="nn">NN</span></td><td class="t">bool</td><td>Mr Speaker / Chairman — section furniture, not a person</td></tr>
+        <tr><td class="k">person_id</td><td class="t">int</td><td><b>NULL for now, deliberately.</b> Reserved for a later identity layer (R-6.9)</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>turn_summary <span class="tag">derived · one summary per turn, or per sub-split</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">id <span class="pk">PK</span></td><td class="t">string</td></tr>
+        <tr><td class="k">turn_id <span class="fk">FK</span> <span class="nn">NN</span></td><td class="t">string</td><td>→ turn.id</td></tr>
+        <tr><td class="k">sub_index <span class="nn">NN</span></td><td class="t">int</td><td>0 for a whole turn; 0..N when a &gt;1,500-word turn is split (D-9)</td></tr>
+        <tr><td class="k">text <span class="nn">NN</span></td><td class="t">text</td><td>~25–35 words — the 10-second reading budget (R-3.7)</td></tr>
+        <tr><td class="k">model</td><td class="t">string</td><td>which model produced it</td></tr>
+        <tr><td class="k">prompt_hash</td><td class="t">string</td><td>reproducibility: same input → same prompt</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>claim <span class="tag">derived · the citation-carrying unit</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">id <span class="pk">PK</span></td><td class="t">string</td></tr>
+        <tr><td class="k">summary_id <span class="fk">FK</span> <span class="nn">NN</span></td><td class="t">string</td><td>→ turn_summary.id</td></tr>
+        <tr><td class="k">text <span class="nn">NN</span></td><td class="t">text</td><td>the assertion, in plain language</td></tr>
+        <tr><td class="k">cites <span class="nn">NN</span></td><td class="t">string[]</td><td><b>sentence sids.</b> The only source of the quotation</td></tr>
+        <tr><td class="k">quote <span class="nn">NN</span></td><td class="t">text</td><td><b>substituted</b> from sentence.text at assembly — never model-written</td></tr>
+        <tr><td class="k">attribution_source <span class="nn">NN</span></td><td class="t">enum</td><td><code>record</code> | <code>inferred</code> — rendered differently on the page (D-4)</td></tr>
+        <tr><td class="k">verified</td><td class="t">bool</td><td>set by Stage 4; false means the claim is not published</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>gate_result <span class="tag">derived · every gate decision, recorded</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">id <span class="pk">PK</span></td><td class="t">int</td></tr>
+        <tr><td class="k">target_type / target_id <span class="nn">NN</span></td><td class="t">string</td><td>what was checked (item, claim, report, sitting)</td></tr>
+        <tr><td class="k">gate_name <span class="nn">NN</span></td><td class="t">enum</td><td>provenance · coverage · attribution · completeness</td></tr>
+        <tr><td class="k">passed <span class="nn">NN</span></td><td class="t">bool</td><td>false ⇒ withhold, never publish (D-1, D-3)</td></tr>
+        <tr><td class="k">detail</td><td class="t">text</td><td>why it failed — the only artefact a human reviews (D-2)</td></tr>
+        <tr><td class="k">checked_at <span class="nn">NN</span></td><td class="t">timestamp</td></tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-header"><div class="card-dot emerald"></div><h3>Stage 1 · what exists today</h3></div>
+      <ul>
+        <li>• 3,912 policy items built</li>
+        <li>• 754,082 sentences with stable sids</li>
+        <li>• 8,415 chunks, defined as id lists</li>
+        <li>• invariants verified corpus-wide</li>
+        <li>• <b>not yet</b>: char offsets, sha256, exclusion reasons</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="card-dot amber"></div><h3>Stage 2 · the only model stage</h3></div>
+      <ul>
+        <li>• returns sentence ids, not quotations</li>
+        <li>• ~10s reading budget per summary</li>
+        <li>• small items: one call whole</li>
+        <li>• heavy items: map → reduce</li>
+        <li>• model choice still open</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="card-dot rose"></div><h3>Gates · four, all failing closed</h3></div>
+      <ul>
+        <li>• provenance: sid resolves + hash matches</li>
+        <li>• coverage: nothing silently dropped</li>
+        <li>• attribution: recorded vs inferred</li>
+        <li>• completeness: whole item summarised</li>
+        <li>• each needs a test that breaks it (R-2.9)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="card-dot violet"></div><h3>The provenance chain</h3></div>
+      <ul>
+        <li>• claim → cites[] → sentence.sid</li>
+        <li>• sid → char_start/char_end</li>
+        <li>• re-slice source → compare sha256</li>
+        <li>• a quote is <b>proven</b>, not trusted</li>
+        <li>• re-verifiable after publication</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="footer">
+    Parsnips · architecture &amp; schema v0.1 · 17 Sep 2026<br>
+    Requirements phase — no implementation started. Row counts measured via
+    <code>tools/metrics.py</code>.
+  </p>
+</div>
+</body>
+</html>
