@@ -1,9 +1,49 @@
 # Model choice for Stage 2 extraction
 
-**Decision: `llama3.2:3b` locally, `deepseek-v4.1-flash:cloud` for the cloud path.**
+**Decision: `deepseek-v4.1-flash:cloud`. The local model was tried, measured, and
+rejected.**
 
-Measured, not assumed. The comparison below is the reason this file exists: three
-candidates were eliminated by numbers, and two of them looked reasonable on paper.
+Measured, not assumed. The comparison below is the reason this file exists: four
+candidates were eliminated by numbers, and the local one was eliminated by the last
+measurement rather than the first.
+
+## Why local was abandoned, having worked
+
+`llama3.2:3b` produced a whole sitting end to end -- 18/18 items, zero errors, $0.00 --
+and was the default for a day. Two measurements then disqualified it, and neither was
+about money:
+
+**1. It is not reproducible.** The same item, same prompt, repeated gave point counts
+of **[3, 1, 3, 8, 5]** on `oral-answer-4178` and 1 point on five consecutive runs of
+`oral-answer-4179` while the cloud model found 6-7 every time. So a published "1 point"
+said nothing about the item and everything about which sample came out. A corpus cannot
+be reproducible when its summariser is not, and re-running to fix an item would produce
+a different brief rather than a confirmed one -- which makes the whole verification
+story weaker, since the gate validates an output that will not recur.
+
+Setting temperature to 0.0 fixed the *variance* (3,3,3,3) but not the *under-selection*
+(1,1,1,1 on 4179 against cloud's 6-7). Determinism alone did not make it right; it made
+it consistently wrong.
+
+**2. It under-extracts badly on small items.** On identical text:
+
+| item | llama3.2:3b | deepseek-v4.1-flash:cloud |
+|---|---|---|
+| oral-answer-4178 | 3 | **8** |
+| oral-answer-4179 | 1 | **7** |
+| oral-answer-4168 | 5 | **8** |
+| (and repeat runs) | 1-8 | 6-8, spread 0-1 |
+
+That is the failure this project keeps meeting in new clothes: a brief with too few
+points is short, truthful, correctly quoted, schema-complete and passes every gate.
+Nothing flags it. The user's brief on noticing it was to stop optimising for cost --
+"if the cloud model is consistent then forget about using local and just use cloud" --
+and the measurements agree.
+
+## Cloud, measured
+
+Consistent across repeat runs: 8/7/7/7, 7/6/7/6, 8/8/8/8 -- spread 0-1 against local's
+1-8. Cost per item and the projection for the whole archive are in the table below.
 
 ## The task being measured
 
@@ -46,27 +86,17 @@ not a quality rejection in the absolute sense. It is that at corpus scale the ex
 size buys a *worse* yield per second, and coverage is the product (§1.2: summaries of
 every exchange, not highlights).
 
-## What was learned about model selection here
+## Cost, re-measured with the decision
 
-1. **Probe with a trivial task.** "Return this JSON" separates models that cannot
-   follow the format from models that can, and costs seconds. It also immediately
-   exposes a reasoning model: the token count is absurd relative to the answer.
-2. **Measure output tokens per item, not just quality.** The reasoning model was not
-   worse in *content* — its points were fine. It was worse in cost, by 6×.
-3. **Coverage is a better quality signal than prose quality** for this product,
-   because reading a fluent summary of the wrong subset is the failure mode the whole
-   architecture exists to prevent.
-4. **A smaller prompt makes a small model usable.** See
-   `build_briefs.py:PROMPT_CHAR_BUDGET` — at 24k chars llama3.2 emitted 84-citation
-   points and unparseable JSON on ~20% of chunks; at 6k chars it is clean. Model
-   choice and prompt size are not independent decisions.
+Cloud is the chosen path, so its cost is the one that matters. The local comparison is
+retained only as the reason it was rejected.
 
-## Cost
+Rates: `deepseek-v4.1-flash:cloud` at $0.14 / $0.28 per million tokens (in/out).
+Measured cost per item, and the projection for 2026 and for the full archive, are
+produced by `tools/cost_report.py` from `pipeline/usage.jsonl` rather than estimated
+here.
 
-Local inference is $0 at the margin — the machine is already on. Per item it consumes
-roughly **10,950 in / 1,475 out tokens**, which at `deepseek-v4.1-flash:cloud` rates
-($0.14 / $0.28 per M) is about **$0.002 per item**. So the whole 3,912-item archive is
-roughly **$8 on cloud** against **~20 hours of local wall-clock**.
-
-That is the real trade: cloud for a few dollars, or local for free and a night. The
-local path is the one that has been verified end to end.
+The decisive point is not the dollar figure -- it is a few dollars either way, which is
+why cost was the right thing to stop optimising on. It is that a free summariser which
+under-reports a 160-word ministerial answer as one point is not a cheaper version of
+the product. It is a different, worse product that costs nothing.

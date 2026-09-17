@@ -44,6 +44,12 @@ USAGE_LOG = os.path.join(ROOT, "pipeline", "usage.jsonl")
 
 ENDPOINT = os.environ.get("PARSNIPS_LLM_URL",
                           "http://127.0.0.1:11434/v1/chat/completions")
+# The default is CLOUD, and that is a measured decision rather than a budget one.
+# A local 3B model ran a whole sitting for $0 and was rejected anyway: it is not
+# reproducible (the same item gave 1-8 points across identical calls) and it
+# under-extracts on small items (1 point against the cloud model's 6-8 on the same
+# 160-word answer). Under-extraction is invisible -- the brief is short, truthful,
+# correctly quoted and passes every gate. See MODELS.md.
 DEFAULT_MODEL = os.environ.get("PARSNIPS_LLM_MODEL", "deepseek-v4.1-flash:cloud")
 # The fields the SITE renders, so a brief missing one is incomplete rather than
 # merely sparse. Derived by reading what build_site.py consumes, not from memory:
@@ -215,11 +221,11 @@ def ask(user, system, model, timeout=None):
     native = "/api/chat" in ENDPOINT
     if native:
         body = {"model": model, "stream": False, "think": False,
-                "options": {"temperature": 0.2, "num_predict": MAX_REPLY_TOKENS},
+                "options": {"temperature": 0, "num_predict": MAX_REPLY_TOKENS},
                 "messages": [{"role": "system", "content": system},
                              {"role": "user", "content": user}]}
     else:
-        body = {"model": model, "temperature": 0.2, "stream": False,
+        body = {"model": model, "temperature": 0, "stream": False,
                 "think": False, "reasoning_effort": "none",
                 "max_tokens": MAX_REPLY_TOKENS,
                 "messages": [{"role": "system", "content": system},
