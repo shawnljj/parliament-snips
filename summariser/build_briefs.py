@@ -56,6 +56,10 @@ DEFAULT_MODEL = os.environ.get("PARSNIPS_LLM_MODEL", "deepseek-v4.1-flash:cloud"
 #   title, what_it_is, why_it_matters, not_said, what_happens_next, stage, key_points
 # Every one is optional to the renderer, which is exactly why their absence needs a
 # gate here instead of a crash there.
+# Bump this whenever the brief shape changes. A resumed run re-does any brief whose
+# schema is behind, so a corpus is never a mixture of pipeline versions.
+SCHEMA = 3
+
 REQUIRED_BRIEF_FIELDS = ("title", "what_it_is", "why_it_matters",
                          "what_happens_next", "not_said", "key_points")
 
@@ -810,7 +814,7 @@ def stage3_assemble(item, extracted, model):
             "source_words": item.get("source_words"),
             "model": model,
             "key": item.get("id"),
-            "schema": 3,
+            "schema": SCHEMA,
             "quotes_by_reference": True,
             "points_dropped": len(dropped),
             "citations": sum(len(k["cites"]) for k in kept),
@@ -976,7 +980,22 @@ def run_item(meta, model, force=False):
     """One item, all stages. Returns a result dict; never raises for one bad item."""
     dest = brief_path(meta)
     if os.path.exists(dest) and not force:
-        return {"id": meta["id"], "skipped": True}
+        # Resume only over a COMPLETE brief from the CURRENT schema. Existence alone is
+        # not enough: every schema change in this build (item-level fields, the point
+        # cap, deduplication, titles) would otherwise leave a corpus that looks finished
+        # and is a mixture of pipeline versions -- and a resumed run would skip those
+        # files forever. Re-running an item costs a few cents; publishing a stale brief
+        # costs the archive's consistency.
+        try:
+            prev = storage.read_json(dest)
+        except Exception:                                           # noqa: BLE001
+            prev = None
+        meta_prev = (prev or {}).get("_meta") or {}
+        gate_prev = meta_prev.get("gate") or {}
+        if (meta_prev.get("schema") == SCHEMA
+                and gate_prev.get("passed")
+                and (prev or {}).get("key_points")):
+            return {"id": meta["id"], "skipped": True}
     item = load_item(os.path.join(str(meta["year"]), f"{meta['id']}.json"))
     if not item:
         return {"id": meta["id"], "error": "dataset payload missing"}
