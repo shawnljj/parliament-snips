@@ -307,6 +307,28 @@ def _raw_context(full, quote, i, end):
     return "", False
 
 
+def _lookup_sid(report_id, quote):
+    """Find the sentence id the dataset assigned to this quote, and the dataset's
+    own view of that sentence.
+
+    The page must cite the sid, because the sid is what the schema's `claim.cites[]`
+    holds. Deriving a turn number instead (as an earlier version did) produced a
+    citation the pipeline would never emit.
+    """
+    import glob as _glob
+    for path in _glob.glob(os.path.join(ROOT, "pipeline", "dataset", "*", "*.json")):
+        try:
+            d = storage.read_json(path)
+        except Exception:
+            continue
+        if not d or d.get("id") != report_id:
+            continue
+        for s in (d.get("sentences") or []):
+            if norm(s.get("text")) == norm(quote):
+                return s.get("sid"), s
+    return None, {}
+
+
 def build_provenance_demo():
     """Pick a REAL published claim and re-derive it from the archive, here, at
     build time. This is the page's signature object: the reader is not shown an
@@ -315,6 +337,12 @@ def build_provenance_demo():
     Selection is deterministic: the first claim, in key order, across all
     published briefs, whose quote is long enough to be worth displaying and whose
     speaker the record supplies. Rebuilds pick the same claim every time.
+
+    The citation shown is the SENTENCE ID (`s00001`), not a turn number. That
+    matters: `turn_index` in the dataset counts the item's turns that had text, so
+    it is neither the sitting's array index nor a per-report counter — for
+    motion-3008+3010 it runs 1..69 in the first report and 72..125 in the second.
+    The sid is the unit the schema actually cites, so the page shows the sid.
     """
     for path in sorted(glob.glob(os.path.join(SUMMARIES, "20*", "*.json"))):
         d = json.load(open(path))
@@ -353,6 +381,7 @@ def build_provenance_demo():
                     break
                 off += len(b) + 2
             end = i + len(norm(q))
+            sid, ds_sentence = _lookup_sid(rid, q)
             return {
                 "brief_file": os.path.relpath(path, ROOT),
                 "brief_title": d.get("title"),
@@ -369,6 +398,8 @@ def build_provenance_demo():
                 "parliament": sn.get("parliament_no"),
                 "volume": sn.get("volume_no"),
                 "turn_index": turn_index,
+                "sid": sid,
+                "ds_sentence": ds_sentence,
                 "normalised": nf,
                 "norm_len": len(nf),
                 "raw_len": len(full),
@@ -391,7 +422,6 @@ def build_provenance_demo():
                 "ctx_prefix_len": min(300, i),
                 "turn_words": len(strip_speaker_labels(
                     rep["turns"][turn_index]["text"]).split()) if turn_index is not None else 0,
-                "sid": "s%05d" % (turn_index if turn_index is not None else 0),
             }
     return None
 
@@ -564,6 +594,32 @@ section:first-of-type{border-top:0}
 .gap .g .st{font-size:15.5px;color:var(--dim)}
 .gap .g .st b{color:var(--ink);font-weight:600}
 
+/* ---- the data sample : real records, read from the archive ---- */
+.sample{margin:26px 0 0}
+.sstep{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;
+  padding-top:22px;margin-top:22px;border-top:1px solid var(--rule)}
+.sstep:first-child{padding-top:0;margin-top:0;border-top:0}
+.sl{font:700 11.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent)}
+.sf{font-size:14px;color:var(--meta)}
+.sf code{font-size:13px}
+/* A phone must not need a sideways swipe to read the records: shrink the mono
+   and let it wrap, since the sample IS the content here. Measured: with no wrap,
+   3 of the 5 sample blocks scrolled horizontally at 768px — a viewport with
+   plenty of room — because one long speaker label exceeds even 712px of column.
+   So the blocks wrap by default and only widen the font on roomy screens. */
+/* Wrapping: `anywhere` broke strings mid-word ("(Ms Jasmin Lau) (for the
+   Min…"), which makes a data sample look corrupt. `break-word` wraps at spaces
+   and only breaks a token when it genuinely cannot fit. */
+.code{font:400 12.5px/1.72 var(--mono);background:#191d22;color:#e6ebf0;
+  border-radius:9px;padding:15px;margin:13px 0 0;
+  white-space:pre-wrap;overflow-wrap:break-word;word-break:normal}
+.code .jk{color:#8fb8ff}
+.snote{font-size:14.5px;color:var(--dim);margin:.8em 0 0;max-width:64ch}
+@media (max-width:520px){
+  .code{font-size:10.5px;line-height:1.65;padding:13px 12px}
+}
+
 /* ---- lessons : the blog's "what went wrong" list ---- */
 .lessons{list-style:none;padding:0;margin:26px 0 0;counter-reset:les}
 .lessons > li{padding:22px 0;border-bottom:1px solid var(--rule);counter-increment:les}
@@ -650,6 +706,92 @@ def ledger(rows):
             f'</div>')
     out.append("</div>")
     return "\n".join(out)
+
+
+def build_data_sample(report_id, quote_prefix):
+    """A real sample of the sitting -> report -> turn -> sentence shape.
+
+    Every value is read from the archive at build time; nothing is typed. Three
+    deliberate choices:
+
+    * The turn shown is the one containing the quoted sentence, so the sample
+      explains the example above it instead of introducing a second story.
+    * The speaker is shown in full, because that is what the data holds — D-6 keeps
+      the recorded label rather than resolving identities.
+    * Long strings are shortened with a marker, and the marker is honest about it,
+      rather than showing a truncated string that looks complete.
+    """
+    sitting_path = os.path.join(DATA, "2026", "sitting_2026-01-12.json")
+    sn = json.load(open(sitting_path))
+    rep = next((r for r in sn["reports"] if r.get("report_id") == report_id), None)
+    if not rep:
+        return None
+    ds_path = os.path.join(ROOT, "pipeline", "dataset", "2026", f"{report_id}.json")
+    ds = storage.read_json(ds_path) if os.path.exists(ds_path) else {}
+
+    # the turn holding the quote — found by search, not by an assumed index
+    turn = next((t for t in rep["turns"] if quote_prefix in (t.get("text") or "")), {})
+
+    def clip(s, n):
+        s = s or ""
+        return s if len(s) <= n else s[:n].rstrip() + "…"
+
+    return {
+        "sitting_file": os.path.relpath(sitting_path, ROOT),
+        "sitting": [("date", "2026-01-12"),
+                    ("coverage", sn.get("coverage") or {}),
+                    ("reports", f"a list of {len(sn['reports'])}")],
+        "coverage": list((sn.get("coverage") or {}).items()),
+        "report": [
+            ("report_id", rep.get("report_id")),
+            ("report_type", rep.get("report_type")),
+            ("group", rep.get("group")),
+            ("title", rep.get("title")),
+            ("report_version", rep.get("report_version")),
+            ("parliament_no", rep.get("parliament_no")),
+            ("sitting_no", rep.get("sitting_no")),
+            ("volume_no", rep.get("volume_no")),
+            ("words", rep.get("words")),
+            ("turns", f"a list of {len(rep.get('turns') or [])}"),
+        ],
+        "turn": [("speaker", turn.get("speaker")),
+                 ("lang", turn.get("lang")),
+                 ("is_procedural", turn.get("is_procedural")),
+                 ("words", turn.get("words"))],
+        "item": [
+            ("id", ds.get("id")),
+            ("schema", ds.get("schema")),
+            ("tier", ds.get("tier")),
+            ("source_words", ds.get("source_words")),
+            ("sentence_count", ds.get("sentence_count")),
+            ("chunk_count", ds.get("chunk_count")),
+            ("excluded_counts", ds.get("excluded_counts") or {}),
+        ],
+        "sentence": [
+            ("sid", (ds.get("sentences") or [{}])[0].get("sid")),
+            ("text", (ds.get("sentences") or [{}])[0].get("text")),
+            ("speaker", clip((ds.get("sentences") or [{}])[0].get("speaker"), 96)),
+            ("turn_index", (ds.get("sentences") or [{}])[0].get("turn_index")),
+            ("attributed", (ds.get("sentences") or [{}])[0].get("attributed")),
+            ("words", (ds.get("sentences") or [{}])[0].get("words")),
+            ("score", (ds.get("sentences") or [{}])[0].get("score")),
+        ],
+        "chunk_sample": (ds.get("chunks") or [[]])[0][:5],
+        "chunk_len": len((ds.get("chunks") or [[]])[0]),
+        "turn_words": turn.get("words"),
+        "sentence_total": ds.get("sentence_count"),
+    }
+
+
+def json_block(pairs):
+    """A readable JSON-ish block: plain keys, real JSON values.
+
+    Keys are unquoted so the block stays legible at 390px; values are JSON, so
+    `null`, `false` and `0.892` appear exactly as the data holds them.
+    """
+    return "\n".join(
+        f'  <span class="jk">{esc(k)}</span>: {esc(json.dumps(v, ensure_ascii=False))}'
+        for k, v in pairs)
 
 
 def stage(name, what, model, detail):
@@ -818,8 +960,9 @@ def main():
         <div class="sh"><span class="sdot">1</span>
           <div><p class="st">The claim knows which sentence it rests on</p>
           <p class="sn">Not a copy of the sentence &mdash; a pointer to it.</p>
-          <div class="val">claim &rarr; <b>{esc(demo['report_id'])}:t{demo['turn_index']}</b>,
-            from the sitting on {esc(demo['sitting_date'])}</div></div></div>
+          <div class="val">claim &rarr; <b>{esc(demo['sid'] or 's?????')}</b>
+            in <b>{esc(demo['report_id'])}</b>, from the sitting on
+            {esc(demo['sitting_date'])}</div></div></div>
       </li>
       <li class="step" id="s2">
         <div class="sh"><span class="sdot">2</span>
@@ -897,6 +1040,80 @@ def main():
       added the second after the first one spent a while telling me everything was
       fine while it wasn't.
     </p>
+  </div>
+</section>""")
+
+    # -------------------------------------------------- the data structure
+    smp = build_data_sample(demo["report_id"], demo["quote"][:34])
+    if smp is None:
+        raise SystemExit("could not build the data sample — archive shape changed?")
+    A(f"""
+<section id="shape-sample">
+  <h2>What the data actually looks like</h2>
+  <div class="prose">
+    <p class="lede">
+      Everything above is the same idea at four different sizes. A sitting becomes
+      reports, a report becomes turns, a turn is cut into numbered sentences &mdash;
+      and it is the sentence that gets cited. Here is the real thing, taken from the
+      sitting behind the example you just checked.
+    </p>
+  </div>
+
+  <div class="sample">
+    <div class="sstep">
+      <span class="sl">1 &middot; sitting</span>
+      <span class="sf">{esc(smp['sitting_file'])}</span>
+    </div>
+    <pre class="code">{json_block(smp['sitting'])}</pre>
+    <p class="snote">Coverage is recorded per sitting, not assumed &mdash; the source
+      API under-reports its own result counts, so this is the number the pipeline
+      actually achieved rather than the one it was promised.</p>
+
+    <div class="sstep">
+      <span class="sl">2 &middot; report</span>
+      <span class="sf">one entry in <code>reports[]</code></span>
+    </div>
+    <pre class="code">{json_block(smp['report'])}</pre>
+    <p class="snote">The format era is recorded (<code>report_version</code>) so a
+      later link or check never has to guess it, and the title is stored but never
+      used as a key.</p>
+
+    <div class="sstep">
+      <span class="sl">3 &middot; turn</span>
+      <span class="sf">one entry in <code>turns[]</code> &mdash; one speaker</span>
+    </div>
+    <pre class="code">{json_block(smp['turn'])}</pre>
+    <p class="snote">This is the turn the quotation came from &mdash; a
+      {num(smp['turn_words'])}-word speech. The speaker label is the whole thing, in
+      full and unedited, because that is what the record holds: the pipeline keeps
+      the portfolio and the parenthetical and does not try to tidy it into a name.</p>
+
+    <div class="sstep">
+      <span class="sl">4 &middot; sentence</span>
+      <span class="sf">the unit that gets cited</span>
+    </div>
+    <pre class="code">{json_block(smp['sentence'])}</pre>
+    <p class="snote">This is the row the claim above points at. The
+      <code>sid</code> is what a published point stores instead of a quotation, and
+      on a real build it also carries the character offsets and a hash of the text
+      &mdash; the pair that lets the check you ran be repeated by anyone. (The
+      speaker here is shortened to fit; the record holds it in full.)</p>
+
+    <div class="sstep">
+      <span class="sl">5 &middot; the item the summariser reads</span>
+      <span class="sf">sentences plus chunk definitions</span>
+    </div>
+    <pre class="code">{json_block(smp['item'])}
+  sentences: a list of {num(smp['sentence_total'])} sentence records
+  chunks:    {num(smp['chunk_len'])} lists of sentence ids, e.g. {esc(json.dumps(smp['chunk_sample'], ensure_ascii=False))}</pre>
+    <p class="snote">Chunks are lists of <em>ids</em>, not slices of text, which is
+      what keeps the whole thing checkable. <code>excluded_counts</code> records what
+      was left out and why, so a silent drop is impossible. The
+      <code>turn_index</code> on each sentence counts the turns that survived
+      filtering, across the whole item &mdash; not the sitting's array positions
+      &mdash; which is exactly the kind of thing that has to be written down, because
+      I got it wrong the first time and cited a turn number the pipeline would never
+      produce.</p>
   </div>
 </section>""")
 

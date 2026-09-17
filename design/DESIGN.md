@@ -19,6 +19,10 @@ to be broken by a later edit, because the material invites over-writing. Rules:
   `shape`, `lessons`, `where`.
 - Failures are **"Things that went wrong"** — a short numbered list of three
   lessons with a takeaway each, not case studies with code blocks.
+- **"What the data actually looks like"** shows five real records (sitting →
+  report → turn → sentence → item) as JSON blocks, generated from the archive.
+  This is the one place code-shaped output belongs on the page, because the data
+  shape *is* the subject. It sits after the pipeline section, before the failures.
 - Every number must still be computed (see below), but a figure earns its place
   only if it supports a sentence. The hero ledger, one example claim, and the
   status list are enough.
@@ -121,6 +125,22 @@ from the archive), not a timer pretending to work. Its rules:
 - **Verify the built file, not the source.** Several times a CSS fix looked
   applied but the measurement was reading a stale build. Run the generator, then
   measure.
+
+## The data sample section
+
+`.sample` / `.sstep` / `.code` / `.snote` — five real records.
+
+- Values come from `build_data_sample()`, which reads the sitting JSON and the
+  stage-1 dataset at build time. Nothing is typed.
+- The turn shown is the one containing the quoted claim, so the sample explains
+  the example above rather than introducing a second story.
+- **Do not shorten a value without saying so.** The turn's speaker label is shown
+  in full on purpose — its verbosity is the point (D-6 keeps the recorded string).
+  The one clipped value (the sentence's speaker) is declared in its note.
+- **`.code` uses `overflow-wrap: break-word`, never `anywhere`.** `anywhere` split
+  strings mid-word, which makes real data look corrupt.
+- The blocks wrap rather than scroll at every width: measured, 3 of 5 scrolled at
+  768px because one unbroken speaker label exceeds the column.
 
 ## The recurring evidence device
 

@@ -173,6 +173,32 @@ section:first-of-type{border-top:0}
 .gap .g .st{font-size:15.5px;color:var(--dim)}
 .gap .g .st b{color:var(--ink);font-weight:600}
 
+/* ---- the data sample : real records, read from the archive ---- */
+.sample{margin:26px 0 0}
+.sstep{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;
+  padding-top:22px;margin-top:22px;border-top:1px solid var(--rule)}
+.sstep:first-child{padding-top:0;margin-top:0;border-top:0}
+.sl{font:700 11.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent)}
+.sf{font-size:14px;color:var(--meta)}
+.sf code{font-size:13px}
+/* A phone must not need a sideways swipe to read the records: shrink the mono
+   and let it wrap, since the sample IS the content here. Measured: with no wrap,
+   3 of the 5 sample blocks scrolled horizontally at 768px — a viewport with
+   plenty of room — because one long speaker label exceeds even 712px of column.
+   So the blocks wrap by default and only widen the font on roomy screens. */
+/* Wrapping: `anywhere` broke strings mid-word ("(Ms Jasmin Lau) (for the
+   Min…"), which makes a data sample look corrupt. `break-word` wraps at spaces
+   and only breaks a token when it genuinely cannot fit. */
+.code{font:400 12.5px/1.72 var(--mono);background:#191d22;color:#e6ebf0;
+  border-radius:9px;padding:15px;margin:13px 0 0;
+  white-space:pre-wrap;overflow-wrap:break-word;word-break:normal}
+.code .jk{color:#8fb8ff}
+.snote{font-size:14.5px;color:var(--dim);margin:.8em 0 0;max-width:64ch}
+@media (max-width:520px){
+  .code{font-size:10.5px;line-height:1.65;padding:13px 12px}
+}
+
 /* ---- lessons : the blog's "what went wrong" list ---- */
 .lessons{list-style:none;padding:0;margin:26px 0 0;counter-reset:les}
 .lessons > li{padding:22px 0;border-bottom:1px solid var(--rule);counter-increment:les}
@@ -343,8 +369,9 @@ footer b{color:var(--ink)}
         <div class="sh"><span class="sdot">1</span>
           <div><p class="st">The claim knows which sentence it rests on</p>
           <p class="sn">Not a copy of the sentence &mdash; a pointer to it.</p>
-          <div class="val">claim &rarr; <b>bill-772:t1</b>,
-            from the sitting on 2026-01-12</div></div></div>
+          <div class="val">claim &rarr; <b>s00001</b>
+            in <b>bill-772</b>, from the sitting on
+            2026-01-12</div></div></div>
       </li>
       <li class="step" id="s2">
         <div class="sh"><span class="sdot">2</span>
@@ -401,6 +428,101 @@ footer b{color:var(--ink)}
       added the second after the first one spent a while telling me everything was
       fine while it wasn't.
     </p>
+  </div>
+</section>
+
+<section id="shape-sample">
+  <h2>What the data actually looks like</h2>
+  <div class="prose">
+    <p class="lede">
+      Everything above is the same idea at four different sizes. A sitting becomes
+      reports, a report becomes turns, a turn is cut into numbered sentences &mdash;
+      and it is the sentence that gets cited. Here is the real thing, taken from the
+      sitting behind the example you just checked.
+    </p>
+  </div>
+
+  <div class="sample">
+    <div class="sstep">
+      <span class="sl">1 &middot; sitting</span>
+      <span class="sf">data/2026/sitting_2026-01-12.json</span>
+    </div>
+    <pre class="code">  <span class="jk">date</span>: &quot;2026-01-12&quot;
+  <span class="jk">coverage</span>: {&quot;date&quot;: &quot;2026-01-12&quot;, &quot;collected&quot;: 124, &quot;max_result&quot;: 139, &quot;ratio&quot;: 0.892, &quot;words&quot;: 87364, &quot;turns&quot;: 415, &quot;speaker_attribution&quot;: 0.957, &quot;empty_reports&quot;: 3}
+  <span class="jk">reports</span>: &quot;a list of 124&quot;</pre>
+    <p class="snote">Coverage is recorded per sitting, not assumed &mdash; the source
+      API under-reports its own result counts, so this is the number the pipeline
+      actually achieved rather than the one it was promised.</p>
+
+    <div class="sstep">
+      <span class="sl">2 &middot; report</span>
+      <span class="sf">one entry in <code>reports[]</code></span>
+    </div>
+    <pre class="code">  <span class="jk">report_id</span>: &quot;bill-772&quot;
+  <span class="jk">report_type</span>: &quot;Second Reading Bills&quot;
+  <span class="jk">group</span>: &quot;bill&quot;
+  <span class="jk">title</span>: &quot;Public Sector (Governance) (Amendment) Bill&quot;
+  <span class="jk">report_version</span>: &quot;sprs3&quot;
+  <span class="jk">parliament_no</span>: &quot;15&quot;
+  <span class="jk">sitting_no</span>: &quot;12&quot;
+  <span class="jk">volume_no</span>: &quot;96&quot;
+  <span class="jk">words</span>: 15384
+  <span class="jk">turns</span>: &quot;a list of 33&quot;</pre>
+    <p class="snote">The format era is recorded (<code>report_version</code>) so a
+      later link or check never has to guess it, and the title is stored but never
+      used as a key.</p>
+
+    <div class="sstep">
+      <span class="sl">3 &middot; turn</span>
+      <span class="sf">one entry in <code>turns[]</code> &mdash; one speaker</span>
+    </div>
+    <pre class="code">  <span class="jk">speaker</span>: &quot;The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister of State for Digital Development and Information)&quot;
+  <span class="jk">lang</span>: &quot;English&quot;
+  <span class="jk">is_procedural</span>: false
+  <span class="jk">words</span>: 2455</pre>
+    <p class="snote">This is the turn the quotation came from &mdash; a
+      2,455-word speech. The speaker label is the whole thing, in
+      full and unedited, because that is what the record holds: the pipeline keeps
+      the portfolio and the parenthetical and does not try to tidy it into a name.</p>
+
+    <div class="sstep">
+      <span class="sl">4 &middot; sentence</span>
+      <span class="sf">the unit that gets cited</span>
+    </div>
+    <pre class="code">  <span class="jk">sid</span>: &quot;s00001&quot;
+  <span class="jk">text</span>: &quot;It helped to enable, among other objectives, public agencies to share data safely and purposefully, so that we can serve Singaporeans better.&quot;
+  <span class="jk">speaker</span>: &quot;The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister…&quot;
+  <span class="jk">turn_index</span>: 0
+  <span class="jk">attributed</span>: true
+  <span class="jk">words</span>: 22
+  <span class="jk">score</span>: 3.0</pre>
+    <p class="snote">This is the row the claim above points at. The
+      <code>sid</code> is what a published point stores instead of a quotation, and
+      on a real build it also carries the character offsets and a hash of the text
+      &mdash; the pair that lets the check you ran be repeated by anyone. (The
+      speaker here is shortened to fit; the record holds it in full.)</p>
+
+    <div class="sstep">
+      <span class="sl">5 &middot; the item the summariser reads</span>
+      <span class="sf">sentences plus chunk definitions</span>
+    </div>
+    <pre class="code">  <span class="jk">id</span>: &quot;bill-772&quot;
+  <span class="jk">schema</span>: 1
+  <span class="jk">tier</span>: &quot;heavy&quot;
+  <span class="jk">source_words</span>: 15384
+  <span class="jk">sentence_count</span>: 674
+  <span class="jk">chunk_count</span>: 6
+  <span class="jk">excluded_counts</span>: {&quot;procedural&quot;: 2, &quot;courtesy&quot;: 61, &quot;too_short&quot;: 116, &quot;other_turn&quot;: 3}
+  sentences: a list of 674 sentence records
+  chunks:    87 lists of sentence ids, e.g. [&quot;s00001&quot;, &quot;s00002&quot;, &quot;s00003&quot;, &quot;s00004&quot;, &quot;s00005&quot;]</pre>
+    <p class="snote">Chunks are lists of <em>ids</em>, not slices of text, which is
+      what keeps the whole thing checkable. <code>excluded_counts</code> records what
+      was left out and why, so a silent drop is impossible. The
+      <code>turn_index</code> on each sentence counts the turns that survived
+      filtering, across the whole item &mdash; not the sitting's array positions
+      &mdash; which is exactly the kind of thing that has to be written down, because
+      I got it wrong the first time and cited a turn number the pipeline would never
+      produce.</p>
   </div>
 </section>
 
