@@ -63,6 +63,19 @@ PROCEDURAL_SPEAKER = re.compile(r"^\[.*\]$")
 CHAIR = re.compile(r"^(Mr\s+)?Speaker\b|^(The\s+)?(Deputy\s+)?Speaker\b|^Chairman\b", re.I)
 
 
+def read_text(path):
+    """Read a text file, or "" if it is absent/unreadable.
+
+    Deliberately forgiving: a missing optional asset (the pipeline dashboard, its
+    state file) must not fail a site build that is otherwise fine.
+    """
+    try:
+        with open(path, encoding="utf-8") as fh:
+            return fh.read()
+    except OSError:
+        return ""
+
+
 def esc(s):
     return html.escape(s or "", quote=True)
 
@@ -2320,6 +2333,23 @@ def build_all(out_dir):
     os.makedirs(sdir, exist_ok=True)
 
     write_text_atomic(os.path.join(out_dir, "theme.css"), STYLE)
+
+    # Pipeline dashboard: copy the template and the state it reads. The dashboard is
+    # a static page over pipeline/state.json, so it needs no server and no build step
+    # of its own -- but state.json must sit next to it to be fetchable.
+    try:
+        pipe_src = os.path.join(HERE, "pipeline", "index.html")
+        pdir = os.path.join(out_dir, "pipeline")
+        if os.path.exists(pipe_src):
+            os.makedirs(pdir, exist_ok=True)
+            write_text_atomic(os.path.join(pdir, "index.html"),
+                              read_text(pipe_src))
+            state_src = os.path.join(ROOT, "pipeline", "state.json")
+            if os.path.exists(state_src):
+                write_text_atomic(os.path.join(pdir, "state.json"),
+                                  read_text(state_src))
+    except Exception as exc:                                    # noqa: BLE001
+        print(f"  (pipeline dashboard skipped: {exc})", file=sys.stderr)
 
     for s in sittings:
         page = render_sitting(s, css_href="../theme.css", home_href="../index.html",

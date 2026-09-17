@@ -1,8 +1,117 @@
 # Efficient, correctness-first summarisation
 
-Status: DESIGN — not yet implemented. Replaces the single-call-per-item pipeline.
-Author's constraint: deterministic where possible, LLM only where necessary,
-minimise the possibility of incorrectness.
+**Status: DESIGN AGREED (17 Sep 2026). Algorithm = tiered hybrid, "approach C".**
+Supersedes both the single-call-per-item pipeline and the extract-first-only design.
+Author's constraint: deterministic where possible, LLM only where necessary, minimise
+the possibility of incorrectness.
+
+**DECIDED**
+- **Algorithm:** approach C — full-text LLM for small items, map-reduce for heavy
+  items, quotes **by reference so the model never retypes them**.
+- **Model for benchmarking:** `deepseek-v4.1-flash:cloud` (already proven on the
+  heavy 213k item at 39/39 verified points).
+- **Stop rule:** the pipeline is built one stage at a time, and work STOPS for review
+  after Stage 1 (the dataset) before Stage 2 begins. Do not run the whole pipeline
+  through.
+
+## The pipeline stages
+
+This is the authoritative stage list. Each stage is separately runnable and
+separately reviewable.
+
+| # | Stage | LLM? | Input | Output | Where |
+|---|---|---|---|---|---|
+| 0 | Structured facts | no | sitting JSON | counts, speakers, figures, Q→A maps, coverage | `site/build_site.py::compute_panels()` — exists |
+| 1 | **Dataset** | no | sitting JSON | per-item prompt payloads + verbatim sentence index | `summariser/build_dataset.py` — **CURRENT STAGE** |
+| 2 | Extract | LLM | Stage 1 payload | points + sentence ids, item fields | not built |
+| 3 | Assemble | no | Stage 2 output | summary JSON in the existing schema | not built |
+| 4 | Verify | no | Stage 3 + full transcript | gate verdict; invariant assertions | `verify_quotes()` exists, needs id-awareness |
+
+### Stage 1 — the dataset (current stage, no LLM)
+
+For every item, emit a self-contained payload containing everything a later stage
+needs, so Stages 2–4 never re-read the corpus:
+
+- `id`, `title`, `group`, `report_ids`, `sitting_dates`, `source_words`
+- `tier`: `small` (fits the prompt budget whole) or `heavy` (needs chunking)
+- `sentences[]`: every eligible sentence with a **stable `sid`**, its speaker, a
+  `turn_index`, an `attributed` flag, and its deterministic `score`
+- `chunks[]`: for heavy items, chunk definitions as **lists of sentence ids** — so
+  chunking is expressed in references, never re-sliced text
+- the deterministic pre-filter's view of procedural/noise sentences (excluded, but
+  recorded so the choice is auditable)
+
+**Why sentence ids matter.** They are what makes quotes verbatim by construction: the
+model returns `sid`s, the assembler substitutes the stored sentence text. A model that
+mangles a quote in its head cannot put a mangled quote on the page. This is the single
+most important property in the design and it is established here, in Stage 1.
+
+**Sizing rule for the tier split.** A prompt must leave room for output inside the
+window. The prompt budget is therefore a *measured constant*, not a guess — record the
+character budget actually used for each tier in the dataset manifest.
+
+### Stage 2 — extract (LLM)
+
+Small items: one call over the full text. Heavy items: one call per chunk, then one
+reduce call over the chunk outputs. In both cases the model returns, per point, an
+`sid` plus a short claim — **never a retyped quotation**, and never `key_points` text
+taken on trust. Item-level fields (title, what_it_is, why_it_matters, not_said) come
+from the reduce call for heavy items and the single call for small ones.
+
+Not yet built. Stage 1 must be reviewed first.
+
+### Stage 3 — assemble (no LLM)
+
+Substitute sentence text by `sid`, merge item fields, attach `_meta` from the item
+(never from the model). Emit the existing summary schema so the site needs no change.
+
+### Stage 4 — verify (no LLM)
+
+Two independent checks, because they catch different failures:
+
+1. **Quote invariant** — every referenced `sid` resolves, and its text appears in the
+   full transcript. A failure is a bug in extraction or the dataset, never "model
+   dishonesty".
+2. **Coverage check** — selection size, zero-selection count, thin-selection count,
+   and carried-speaker count. **This is not optional.** A previous bug emptied 44
+   Bills and Budget items while the quote invariant read 100%, because selecting
+   nothing passes a quote check trivially.
+
+## Why approach C rather than extract-first-only
+
+Extract-first-only makes the deterministic selector a **hard ceiling**: the model sees
+only pre-selected sentences, so a heuristic mistake cannot be recovered, and the model
+will write a confident brief about whatever it was handed. Four defects were found in
+that selector in a single session — most damagingly an unanchored `(proc text)` match
+that discarded whole ministerial speeches — which is evidence that hand-tuned heuristics
+over 22M words do not converge quickly.
+
+Approach C keeps the determinism where it is reliable (procedural filtering, figures,
+Q→A mapping, and the substitution that guarantees verbatim quotes) and lets the model
+do the salience judgement it is actually good at, over text it can actually see.
+
+Evidence the LLM path was never the weak link: on the heavy 213k item the cloud model
+scored **39/39 verified points** once given the text. The earlier failure was a
+truncated prompt, not a model limitation.
+
+## What was measured, to avoid re-deriving
+
+- qwen3:4b (2.5GB) and qwen3:8b (5.2GB) both run **100% on GPU** on the M1 Max.
+- On small items (150w, 924w) both were **clean**: JSON valid, gate 1.0, zero
+  banned framings, zero filler. Both **failed the 213k item** (prose, not JSON)
+  — context overflow, not instruction-following weakness.
+- `deepseek-v4.1-flash:cloud` passed all three including 39/39 verified points
+  on the heavy item, because its context swallows the oversized prompt. That is
+  why the bug went unnoticed.
+- Correcting an earlier error: a "100% coverage" figure was computed by
+  measuring `merge_transcript` against `build_transcript` — the same cap applied
+  twice. It proved nothing. For the 213k item the model sees ~14% of the prompt.
+- The three models on the local endpoint are ALL `-cloud` proxied, not actually
+  local. An actual local model must be pulled before any local benchmark is
+  meaningful.
+- Extractive selection, for reference: 86,816,397 chars of transcript →
+  9,318,893 selected (10.7%). Selection is verbatim against the complete transcript
+  on all 3,912 items. Useful as a *cheap* path; not the chosen algorithm.
 
 ## The two problems this solves
 

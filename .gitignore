@@ -19,5 +19,16 @@ site/dist/**/*.tmp
 # A mis-passed CLI flag once created a literal "--out/" build directory here.
 --out/
 
+# Stage 1 dataset payloads: ~270 MB and deterministically regenerated in ~70s by
+# `python3 summariser/build_dataset.py`. They are derived artifacts, not source, so
+# they are not versioned -- but the INDEX and STATE are, because those are small,
+# readable, and are exactly what a reviewer or the dashboard needs.
+pipeline/dataset/*/
+pipeline/dataset/*/*.json
+!pipeline/dataset/index.json
+
+# NOTE: site/dist/ IS tracked on purpose -- it is the built site that Vercel
+# deploys. Do not add it here.
+
 # OS
 .DS_Store

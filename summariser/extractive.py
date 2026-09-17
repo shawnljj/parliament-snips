@@ -21,6 +21,7 @@ WHAT IS MEASURED HERE (no LLM involved)
 
 Usage: python3 extractive.py
 """
+import collections
 import json
 import os
 import re
@@ -128,19 +129,30 @@ def is_procedural(text):
     return bool(PROCEDURAL_RE.search(text or ""))
 
 
-def sentences(text, min_words=8, max_words=60, allow_long=False):
+MIN_WORDS = 8
+MAX_WORDS = 60
+
+
+def re_split_sentences(text):
+    """Sentence split, no filtering. The caller decides what to drop.
+
+    Kept separate from sentences() so Stage 1 can RECORD every exclusion
+    (procedural, courtesy, too short) instead of having sentences() silently
+    swallow them. An exclusion that is not recorded is indistinguishable from a
+    bug -- exactly how an unanchored pattern once emptied whole items unnoticed.
+    """
+    return [p.strip() for p in re.split(r"(?<=[.!?])\s+(?=[A-Z\[(])", text or "") if p.strip()]
+
+
+def sentences(text, min_words=MIN_WORDS, max_words=MAX_WORDS, allow_long=False):
     """Split into sentences, dropping fragments and overlong runs.
 
     max_words guards against clause-heavy formalities, but a long sentence can still
     carry real substance (a Minister listing measures in one breath). Rather than
     discard it, callers that need coverage pass allow_long=True and keep it.
     """
-    parts = re.split(r"(?<=[.!?])\s+(?=[A-Z\[(])", text)
     out = []
-    for p in parts:
-        p = p.strip()
-        if not p:
-            continue
+    for p in re_split_sentences(text):
         n = len(p.split())
         if n < min_words or (n > max_words and not allow_long):
             continue
@@ -188,9 +200,23 @@ def select_turns(item, max_sentences=24):
     """
     picked = []
     turns = []
+    # Speaker attribution is incomplete in the source: measured across the corpus,
+    # 3,802 of 94,272 turns (4.0%) carry no speaker at all, yet many are substantive
+    # (a 438-word ministerial response with no name). Selecting from them without a
+    # speaker would produce a brief whose citation says "someone said this".
+    #
+    # So carry the last known speaker forward when a turn lacks one. This mirrors what
+    # the site already does for oral answers, where compute_panels() resolves the
+    # responder by ROLE (is_role_turn) rather than trusting the per-turn field. A
+    # carried-forward name is a best guess, not an assertion -- see the "attributed"
+    # flag below, which the pipeline can surface or suppress.
+    last_speaker = None
     for r in item["reports"]:
         for t in r.get("turns", []):
             txt = turn_text(t)
+            spk = (t.get("speaker") or "").strip() or None
+            if spk:
+                last_speaker = spk
             if not txt:
                 continue
             # The per-turn is_procedural flag is nearly useless (1 of 560 turns on a
@@ -199,10 +225,10 @@ def select_turns(item, max_sentences=24):
                 continue
             ss = sentences(txt, allow_long=True)
             if ss:
-                turns.append((t.get("speaker"), ss))
+                turns.append((spk or last_speaker, ss, bool(spk)))
 
     # pass 1: best sentence from each turn, in order (preserves the debate shape)
-    for ti, (spk, ss) in enumerate(turns):
+    for ti, (spk, ss, attributed) in enumerate(turns):
         best, bs = None, -1
         for i, s in enumerate(ss):
             sc = score(s, i / max(1, len(ss)), len(turns))
@@ -210,20 +236,22 @@ def select_turns(item, max_sentences=24):
                 best, bs = s, sc
         if best and bs > 2.0:
             picked.append({"speaker": spk, "sentence": best,
-                           "score": round(bs, 2), "turn_index": ti})
+                           "score": round(bs, 2), "turn_index": ti,
+                           "attributed": attributed})
 
     # pass 2: fill with remaining high scorers if we are short
     if len(picked) < max_sentences:
         seen = {p["sentence"] for p in picked}
         rest = []
-        for ti, (spk, ss) in enumerate(turns):
+        for ti, (spk, ss, attributed) in enumerate(turns):
             for i, s in enumerate(ss):
                 if s in seen:
                     continue
                 sc = score(s, i / max(1, len(ss)), len(turns))
                 if sc > 3.0:
                     rest.append({"speaker": spk, "sentence": s,
-                                 "score": round(sc, 2), "turn_index": ti})
+                                 "score": round(sc, 2), "turn_index": ti,
+                                 "attributed": attributed})
         rest.sort(key=lambda x: -x["score"])
         picked.extend(rest[: max_sentences - len(picked)])
 
@@ -317,6 +345,43 @@ def main():
     else:
         print(f"  INVARIANT HOLDS: every selected sentence is verbatim across all "
               f"{len(items):,} items.")
+
+    # COMPANION COVERAGE CHECK -- the invariant above cannot catch under-selection,
+    # because selecting NOTHING passes a quote check trivially. This is exactly how a
+    # bug that emptied 44 Bills and Budget items stayed invisible while the verbatim
+    # check read 100%. Both checks are required.
+    print()
+    sizes = collections.Counter()
+    zero, thin, unattributed, total_sel = [], [], 0, 0
+    for it in items:
+        sel = select_turns(it)
+        n = len(sel)
+        total_sel += n
+        sizes["0" if n == 0 else "1-2" if n < 3 else "3-9" if n < 10
+              else "10-23" if n < 24 else "24"] += 1
+        if n == 0:
+            zero.append(it)
+        elif n < 3:
+            thin.append((n, it))
+        unattributed += sum(1 for x in sel if not x.get("attributed"))
+    print(f"  COVERAGE: {total_sel:,} sentences selected across {len(items):,} items")
+    print(f"    selection size distribution: {dict(sizes)}")
+    print(f"    items selecting ZERO       : {len(zero)}  (procedural business -- "
+          f"these get no brief, by design)")
+    print(f"    items selecting only 1-2   : {len(thin)}  (thin evidence; a brief "
+          f"built from these would be close to a quotation)")
+    print(f"    sentences with a CARRIED speaker: {unattributed:,} "
+          f"({unattributed/max(1,total_sel)*100:.1f}%)")
+    if zero:
+        print("    zero-selection items:")
+        for it in sorted(zero, key=lambda x: -x.get("words", 0))[:6]:
+            print(f"      {it.get('words'):>6,d}w {it.get('group'):10s} "
+                  f"{str(it.get('title'))[:48]}")
+    if thin:
+        print("    thinnest non-empty items:")
+        for n, it in sorted(thin, key=lambda p: -p[1].get("words", 0))[:6]:
+            print(f"      {n} sent  {it.get('words'):>6,d}w {it.get('group'):10s} "
+                  f"{str(it.get('title'))[:44]}")
 
 
 if __name__ == "__main__":
