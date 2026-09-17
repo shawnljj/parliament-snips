@@ -22,6 +22,95 @@ value.
 
 ## 1. Problem statement
 
+### 1.1 The objective, in the owner's words
+
+> My objective of this app is that a user who is interested in SG Government moves and
+> has some faith that the government is indeed doing things for public good, is able to
+> get a bit more insight into government's moves through parliament proceedings. But, to
+> watch through parliament or read through entire transcript is tough for most
+> non-legal or non-political science individuals like myself, so i need a little bit of
+> summarization. but news outlets only focus on sound bites or short phrases. I would
+> like to have something in between. Summaries of every exchange, which is easy to
+> navigate, so that i could read through an entire parliamentary sitting maybe in a
+> matter of half an hour to an hour instead of 8 hours.
+
+### 1.2 What that commits us to
+
+| Requirement implied | Consequence |
+|---|---|
+| Reader is **interested but not expert** | No legal or procedural jargon without explanation. R-3.4. |
+| Reader arrives with **some faith in government** | The product must not be a gotcha machine, and must not be a press release either. Neutral reporting is the contract. R-3.1, R-3.2. |
+| **Summaries of every exchange**, not highlights | Coverage is the product. Not "the interesting bits" — every exchange gets a summary. R-3.3, R-5.5. |
+| **Easy to navigate** | Navigation is a primary feature, not chrome. R-5.4. |
+| **30–60 minutes for a sitting** | A hard, measurable budget. See 1.4. |
+| More than a sound bite, less than a transcript | The summary unit must be substantive but bounded. See 1.3. |
+
+### 1.3 The gap we fill, stated exactly
+
+| | Unit | Reader cost | Problem |
+|---|---|---|---|
+| Full Hansard | 68,861 words / sitting | ~8 hours | Correct, unreadable |
+| News coverage | A phrase or two | Seconds | Readable, incomplete, framed by news value |
+| **Parsnips** | One summary per turn | **30–60 minutes** | Must be both complete and neutral |
+
+### 1.4 The reading budget, measured
+
+This is the single most useful number in this document, because it turns a vague goal
+into a testable constraint.
+
+Measured across 331 sittings: **median 287 turns per sitting** (mean 285, range 23–706).
+Words per turn: median **67**, p90 506, p99 2,878, max 16,209.
+
+| Seconds per turn summary | Median sitting (287 turns) | Busiest (706 turns) | Quietest (23) |
+|---|---|---|---|
+| 5s | 24 min | 59 min | 2 min |
+| **10s** | **48 min** | **118 min** | **4 min** |
+| 15s | 72 min | 176 min | 6 min |
+| 20s | 96 min | 235 min | 8 min |
+
+**Conclusion: the target is met at ~10 seconds per turn summary.** That is roughly 25–35
+words of summary — short, but longer than a headline. This gives the summary-writing
+stage a hard length budget rather than a vague instruction to "be brief".
+
+**Except on the busiest days, which need an explicit answer.** A 706-turn sitting is
+~2 hours at that rate. Requirement R-5.6 (new) addresses this: a reader must be able to
+reach a defensible stopping point, or skim at the section level, without losing the
+ability to see what they skipped.
+
+## 2. The pipeline, as specified by the owner
+
+```
+  download (2016 → today)                     scheduled job, incremental
+        ↓
+  SITTING
+        ↓  cut into sections, following how Parliament is actually run
+  SECTION   motion | ministerial statement | oral question | bill | ...
+        ↓  cut by speaker turn  (only one speaker speaks at a time)
+  TURN
+        ↓  group within a debate (owner decision D-7)
+  GROUP
+        ↓  summarise each turn
+  TURN SUMMARY  (≈10s of reading)  +  verbatim transcript in a collapsible
+```
+
+**Why this is a better unit than the previous design.** The prior model grouped work by
+debate *title* and merged across sitting days. That produced a real bug: Budget 2016 and
+Budget 2026 were welded into one 271,095-word item, because titles repeat across years.
+Turns cannot do that — a turn belongs to exactly one report, is ordered by the record
+itself, and represents one speaker. The owner's unit is structurally safer, not just
+more readable.
+
+**Section boundaries.** The existing parser already classifies reports into groups
+(`bill`, `statement`, `motion`, `budget`, `adjournment`, `oral`, `written`, `correction`,
+`tribute`), so section division is mostly a matter of surfacing it. Refining this to
+match parliamentary procedure exactly is a design question.
+
+**Incremental ingestion.** A scheduled job must detect and fetch new sittings and run
+them through the same pipeline. This makes R-4.4 (resumability) and R-1.3 (declared
+coverage) daily operational concerns, not backfill concerns.
+
+### 1.5 Problem statement (original framing, retained)
+
 Reading Singapore's Hansard is impractical for the general public. A sitting averages
 **68,861 words** across **63 reports**; the archive now spans **331 sittings
 (2016–2026), 22,793,049 words**. Existing coverage is either the full transcript
@@ -255,7 +344,7 @@ excluding these would drop real content.
 - an inferred attribution must never be presented with the same confidence as a
   recorded one.
 
-### D-5 `why_it_matters` is removed
+### D-6 `why_it_matters` is removed
 
 **Decision.** The field is dropped. It is the one field the record frequently cannot
 support, making it the largest fabrication risk in the schema.
@@ -279,17 +368,81 @@ the presentation design need to absorb that.
 **Supersedes:** the 50 substantive `why_it_matters` values in existing briefs. They were
 written under the old schema; whether to migrate or discard them is a design question.
 
+### D-7 Navigation is FOUR levels: sitting → section → group → turn
+
+**Decision.** A debate is not a flat list of turn summaries. Within a section, turns are
+grouped, and the group is a navigable level.
+
+**Why it matters.** A Budget debate is 80 turns and 53,337 words. Individually accurate
+turn summaries do not reveal the shape of the argument — who proposed, who opposed, what
+the Minister conceded. The grouping level is where that becomes visible, and it is what
+makes "easy to navigate" true rather than aspirational.
+
+**Consequence.** The group is a derived entity with its own identity, and how it is
+formed is a design question (by speaker? by theme? by sub-motion?). This is the one
+place in the pipeline where a heuristic is doing structural work, so it carries the same
+risk class as the sentence-selection heuristics that have already produced four defects
+in this project. It must be validated, not assumed.
+
+### D-8 Short turns are folded into context, not summarised
+
+**Decision.** Turns under ~15 words are not summarised. They are folded into the
+neighbouring turn as context.
+
+**Evidence.** Measured: **22,584 of 94,272 turns (24%) are under 20 words**, and 39% are
+under 50. These are interjections, clarifications and procedural replies. Summarising
+each would burn reading budget on noise — and the reading budget is the product
+(§1.4).
+
+**Consequence.** Folding means a summary's context may include text from a turn other
+than its own, so the attribution rule (R-2.4) must still hold: a folded turn's words must
+not appear to be spoken by the summarised turn's speaker. This is an attribution-
+correctness risk introduced by the decision, and it needs a gate.
+
+### D-9 Long turns are sub-split at ~1,500 words
+
+**Decision.** A turn over ~1,500 words is split into sub-summaries at natural breaks.
+
+**Evidence.** The largest single turn is **16,209 words** — one ministerial speech, which
+would be ~27 minutes of reading as one unit and would blow the per-turn budget. At 1,500
+words the longest turn yields ~11 sub-summaries, each inside budget.
+
+**Consequence.** Sub-splitting reintroduces the chunking problem the previous design
+fought with, but at a bounded scale: sub-splits are *within* a turn, so attribution is
+unambiguous (one speaker). The verbatim must remain complete regardless — only the
+summary is split.
+
+### D-10 The floor stays at 2016
+
+**Decision.** Keep 2016 as the ingestion floor. The 2015 fetch works, but re-fetching is
+not worth the cost.
+
+**Evidence.** 2015-01-19 fetched cleanly: **86/85 reports, 55,270 words, 287 turns, 97.2%
+attribution**. Nothing is wrong with 2015.
+
+**Consequence — and a correction to the record.** The 2016 floor was originally set from
+a boundary probe, not an actual fetch. That probe concluded pre-2016 was unreadable; the
+fetch disproves it for 2015. So the floor is now a **deliberate scope choice, not a
+technical limit**, and the requirement is restated accordingly. Extending to 2015 later
+is a batch re-run, not an investigation.
+
 ## 10. Amended requirements
 
 | ID | Change |
 |---|---|
-| R-2.4 | **Strengthened.** Attribution must record provenance (recorded vs inferred) and the inference method; the page must render the distinction (D-4) |
+| R-2.4 | **Strengthened.** Attribution must record provenance (recorded vs inferred) and the inference method; the page must render the distinction (D-4). Also must survive **folding** short turns into a neighbour's context (D-8) |
 | R-2.8 | **New.** A gate must fail closed: unknown or unvalidated state results in non-publication (D-1, D-3) |
 | R-2.9 | **New.** Every gate must have a test that deliberately violates it and asserts the violation is caught. An untested gate is an assumption, not a control (D-1) |
-| R-3.6 | **Replaced.** Item-level fields must be derivable from the record; `why_it_matters` is removed (D-5) |
+| R-3.6 | **Replaced.** Item-level fields must be derivable from the record; `why_it_matters` is removed (D-6) |
+| R-3.7 | **New.** A turn summary must fit a **~10-second reading budget** (roughly 25–35 words), because the 30–60-minute sitting target depends on it (§1.4) |
+| R-3.8 | **New.** Long turns (>~1,500 words) are sub-split; the summary may be split but the **verbatim must remain complete** (D-9) |
 | R-4.6 | **Upgraded SHOULD → MUST.** Failures must be isolated per item and durably recorded; the failed set is the only artefact a human reviews (D-2) |
+| R-4.8 | **New.** Ingestion must be **incremental**: a scheduled job detects and fetches new sittings and runs them through the same pipeline, unattended (§2) |
+| R-5.4 | **Strengthened.** Navigation is **four levels**: sitting → section → group → turn. The group level is required, not optional (D-7) |
 | R-5.5 | **Upgraded SHOULD → MUST.** Withheld items must be reported as withheld, with counts, so absence is never mistaken for silence in the record (D-3) |
+| R-5.6 | **New.** On a very long sitting a reader must be able to reach a defensible stopping point or skim at section level, while still seeing what they skipped (§1.4) |
 | R-6.7 | **New.** The schema must carry attribution provenance as a first-class field, not a convention (D-4) |
+| R-6.8 | **New.** The **group** is a derived entity with stable identity and recorded formation method, because it is the one heuristic doing structural work (D-7) |
 
 ## 11. Open questions
 
@@ -301,11 +454,18 @@ Still unanswered, recorded rather than assumed:
    normalisation, or is whitespace-insensitive equality sufficient? The source uses
    curly quotes and non-breaking spaces.
 3. **Model choice** — cloud vs local; deferred pending benchmark. See SUMMARISATION.md.
-4. **Migration of the 50 substantive `why_it_matters` values** written under the old
+4. **How a group is formed (D-7)** — by speaker, by theme, by sub-motion, or by the
+   record's own structure? This is the highest-risk open question: it is a heuristic
+   doing structural work, in a project where four heuristic defects have already
+   shipped.
+5. **Section taxonomy** — how closely should sections mirror parliamentary procedure
+   (motions, ministerial statements, oral questions, Bills, Budget/Committee of Supply)?
+   The parser already groups reports; whether that grouping is the right *reader-facing*
+   taxonomy is undecided.
+6. **Migration of the 50 substantive `why_it_matters` values** written under the old
    schema — migrate into key points, or discard.
-5. **Where significance now lives.** With `why_it_matters` gone (D-5), does a brief need
-   a new deterministic field carrying "what changes", or does the key points list carry
-   it alone?
+7. **What happens to the 291 existing briefs** built under the old (item-level) schema,
+   given the pipeline is now turn-level. Re-derive, or keep as a legacy format?
 
 ## 12. Traceability
 
