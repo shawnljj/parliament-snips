@@ -122,6 +122,10 @@ inspector's deliberate step sequence.
   vs 674px at 768, so the widest viewport scrolled the most.
 - Code blocks wrap below 520px (`white-space: pre-wrap`). An evidence page that
   hides its evidence behind a sideways swipe defeats itself.
+- **Table identifier cells use `overflow-wrap: break-word`, never `anywhere`.**
+  `anywhere` breaks mid-token, which rendered `sentence` as `sentenc`/`e` and
+  `char_start / char_end` as `char_s`/`tart`/`char_e`/`nd` at 390px. Schema field
+  names are the one thing on the page that must stay legible as tokens.
 
 ## Textures / ambient
 

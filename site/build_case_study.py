@@ -571,7 +571,7 @@ section:first-of-type{border-top:0}
   color:var(--dim)}
 .tbl tr:last-child td{border-bottom:0}
 .tbl td.c{color:var(--ink);font-weight:600;font-family:var(--mono);
-  font-size:13px;overflow-wrap:anywhere}
+  font-size:13px;overflow-wrap:break-word;word-break:normal}
 .tbl .keymark{font:700 9.5px/1 var(--mono);padding:3px 5px;border-radius:3px;
   margin-left:5px;letter-spacing:.05em}
 .keymark.pk{background:#fbe6cf;color:#8a4614}
