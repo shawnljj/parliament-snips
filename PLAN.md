@@ -324,8 +324,15 @@ those reports answer HTTP 400 from `getHansardTopic` and carry their text in
 
 ## 5. The summary pipeline (the part that needs real care)
 
-A sitting is now ~1,100,000 words on average and the heaviest single item is
-213,325 words, so nothing fits one context window. Design:
+A sitting averages **68,861 words** across **63 reports**, and the heaviest single
+*item* is 213,325 words, so a heavy item does not fit one context window and small
+local models cannot read it whole. Design:
+
+> **Corrected 17 Sep 2026.** This section previously claimed "~1,100,000 words per
+> sitting". That figure was wrong by 16× — it appears to have been the corpus total
+> divided by nothing. The measured mean is 68,861 words/sitting (22,793,049 words
+> across 331 sittings). Requirement N-3 now forbids hand-written metrics; recompute
+> rather than transcribe.
 
 1. **Chunk on turn boundaries, never mid-sentence** — and cap the PROMPT, not each
    report. See "Map-reduce" below: this was got wrong once and it silently truncated
@@ -404,9 +411,10 @@ have small windows. It was always present in production; the cloud model's large
 context masked it.
 
 ### Cost sanity
-~1.1M words per sitting on average, chunked into ~40k-char prompts. At current prices
-that's cents per sitting, ~2×/week, so a few dollars a month for the ongoing feed. The
-full 2016-onward backfill is the expensive one — which is why §6b exists.
+A sitting averages 68,861 words (23M words across the 331-sitting archive), chunked
+into ~40k-char prompts. At current prices that's cents per sitting, ~2×/week, so a few
+dollars a month for the ongoing feed. The full 2016-onward backfill is the expensive
+one — which is why §6b exists.
 
 ---
 

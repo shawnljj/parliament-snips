@@ -69,12 +69,34 @@ def sid(n):
 
 
 def build_item(item, idx):
-    """One self-contained dataset payload for a policy item."""
-    sentences = []
+    """One self-contained dataset payload for a policy item.
+
+    LAYOUT: columnar, grouped by turn, with a speaker dictionary.
+
+    The first version stored one pretty-printed object per sentence with the speaker
+    name inlined. Measured on the real corpus that cost 268 MB to hold 100 MB of
+    text: 97 MB of repeated JSON field names (`"text"`, `"speaker"`, ...) x 754,082
+    sentences, 42 MB of indentation, and 29 MB of the same 592 speaker names rewritten
+    on every sentence. Only a third of the file was content.
+
+    So sentences are stored as parallel arrays, one entry per TURN (not per sentence),
+    with speakers held once in a dictionary. Measured result: 268 MB -> ~106 MB, and
+    no information is lost -- every sentence still carries a stable sid, its speaker,
+    its turn and its score.
+    """
+    speakers = []          # dictionary of distinct speaker names
+    speaker_ix = {}        # name -> index
+    turns = []
     excluded = {"procedural": 0, "courtesy": 0, "too_short": 0, "other_turn": 0}
     last_speaker = None
-    n = 0
     turn_index = 0
+    n = 0
+
+    def ix_for(name):
+        if name not in speaker_ix:
+            speaker_ix[name] = len(speakers)
+            speakers.append(name)
+        return speaker_ix[name]
 
     for r in item["reports"]:
         for t in r.get("turns", []):
@@ -88,8 +110,8 @@ def build_item(item, idx):
             # Whole-turn procedural screen (the per-turn flag is nearly useless:
             # 1 of 560 turns on a measured sitting carried it).
             turn_proc = bool(t.get("is_procedural")) or X.is_procedural(txt)
-            # Sentence split WITHOUT the length cap, then re-apply the cap as an
-            # explicit, recorded exclusion so nothing disappears silently.
+
+            sids, texts, words, scores = [], [], [], []
             for raw in X.re_split_sentences(txt):
                 n_local = len(raw.split())
                 if turn_proc or X.is_procedural(raw):
@@ -102,34 +124,50 @@ def build_item(item, idx):
                     excluded["too_short"] += 1
                     continue
                 n += 1
-                sentences.append({
-                    "sid": sid(n),
-                    "text": raw,
-                    "speaker": spk or last_speaker,
-                    "attributed": bool(spk),
-                    "turn_index": turn_index,
-                    "report_id": r["report_id"],
-                    "words": n_local,
-                    # deterministic salience, kept for ranking/audit; NOT used to
-                    # hide text from the model under approach C
-                    "score": round(X.score(raw, 0.0, 1), 2),
+                sids.append(sid(n))
+                texts.append(raw)
+                words.append(n_local)
+                scores.append(round(X.score(raw, 0.0, 1), 2))
+            # A turn whose sentences were all filtered out contributes nothing; skip
+            # it rather than emit an empty row.
+            if sids:
+                turns.append({
+                    "sid": sids,
+                    "text": texts,
+                    "spk": ix_for(spk or last_speaker or ""),
+                    # `attributed` is per TURN, not per sentence -- it says whether the
+                    # speaker name came from the record or was carried forward. One
+                    # value per turn is both cheaper and more honest than repeating it.
+                    "attr": bool(spk),
+                    "t": turn_index,
+                    "r": r["report_id"],
+                    "w": words,
+                    "score": scores,
                 })
             turn_index += 1
+
+    # Flatten for the sid-level views (chunks, index, verification).
+    flat = []
+    for turn in turns:
+        for i, s in enumerate(turn["sid"]):
+            flat.append((s, turn["text"][i], turn["spk"], turn["attr"],
+                         turn["t"], turn["r"]))
 
     # Chunk as ordered lists of sids. Never re-slice text: a chunk that shares no
     # sentence with its source cannot drift from it.
     chunks, cur, size = [], [], 0
-    for s in sentences:
-        w = len(s["text"]) + len(s["speaker"] or "") + 8
+    for s, text, spk, attr, ti, rid in flat:
+        w = len(text) + len(speakers[spk]) + 8
         if cur and size + w > CHUNK_CHARS:
             chunks.append(cur)
             cur, size = [], 0
-        cur.append(s["sid"])
+        cur.append(s)
         size += w
     if cur:
         chunks.append(cur)
 
-    total_chars = sum(len(s["text"]) + len(s["speaker"] or "") + 8 for s in sentences)
+    total_chars = sum(len(text) + len(speakers[spk]) + 8
+                      for _, text, spk, _, _, _ in flat)
     tier = "small" if len(chunks) <= 1 else "heavy"
 
     return {
@@ -142,12 +180,55 @@ def build_item(item, idx):
         "source_words": item["words"],
         "tier": tier,
         "prompt_chars": total_chars,
-        "sentence_count": len(sentences),
+        "sentence_count": len(flat),
         "chunk_count": len(chunks),
-        "sentences": sentences,
+        # speakers[ix] is the name; turns[].spk indexes it
+        "speakers": speakers,
+        "turns": turns,
         "chunks": chunks,
         "excluded_counts": excluded,
     }
+
+
+def load_item(path):
+    """Read a payload back into flat per-sentence dicts.
+
+    Stages 2-4 should never touch the columnar layout directly: it exists to save
+    disk, not to be worked with. This returns the natural shape --
+    [{sid, text, speaker, attributed, turn_index, report_id, words, score}, ...] --
+    so callers are written against sentences, as before.
+    """
+    d = storage.read_json(path)
+    if not d:
+        return None
+    speakers = d.get("speakers") or []
+    out = []
+    for turn in d.get("turns") or []:
+        spk = speakers[turn["spk"]] if turn["spk"] < len(speakers) else ""
+        for i, s in enumerate(turn["sid"]):
+            out.append({
+                "sid": s,
+                "text": turn["text"][i],
+                "speaker": spk,
+                "attributed": turn["attr"],
+                "turn_index": turn["t"],
+                "report_id": turn["r"],
+                "words": turn["w"][i],
+                "score": turn["score"][i],
+            })
+    return out
+
+
+def iter_turns(d):
+    """Yield (speaker, attributed, turn_index, report_id, [(sid, text), ...]).
+
+    This is the shape a PROMPT wants: the speaker named once per turn rather than
+    repeated on every sentence. Measured, that saves 24% of all prompt text.
+    """
+    speakers = d.get("speakers") or []
+    for turn in d.get("turns") or []:
+        spk = speakers[turn["spk"]] if turn["spk"] < len(speakers) else ""
+        yield spk, turn["attr"], turn["t"], turn["r"], list(zip(turn["sid"], turn["text"]))
 
 
 def pipeline_state(items_meta, built, t0):
@@ -239,8 +320,12 @@ def main():
             "sitting_dates": payload["sitting_dates"],
         })
         if not args.stats:
-            storage.write_json_atomic(
-                os.path.join(dset, year, f"{payload['id']}.json"), payload)
+            # Compact, not pretty: indent=1 cost 42 MB of whitespace across the
+            # corpus, and nothing reads these files by eye. The index and state stay
+            # pretty because a human does review those.
+            storage.write_text_atomic(
+                os.path.join(dset, year, f"{payload['id']}.json"),
+                json.dumps(payload, ensure_ascii=False, separators=(",", ":")))
         built += 1
         if i % 250 == 0:
             print(f"  {i}/{len(items)} ...")
