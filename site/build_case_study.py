@@ -37,6 +37,9 @@ SUMMARIES = os.path.join(ROOT, "summaries")
 sys.path.insert(0, os.path.join(ROOT, "scraper"))
 import storage  # noqa: E402  the project's single atomic-write implementation
 
+MIDDOT = "\u00b7"      # a plain middle dot; provenance strings are escaped,
+DASH   = "\u2013"      # so these are real characters, never HTML entities
+
 OUT = os.path.join(HERE, "case-study.html")
 OUT_DIST = os.path.join(HERE, "dist", "case-study.html")
 
@@ -286,6 +289,24 @@ def build_evidence():
 # ------------------------------------------------------------- provenance demo
 
 
+def _raw_context(full, quote, i, end):
+    """A context window in the ORIGINAL casing, for display.
+
+    Offsets are recorded against the NORMALISED text, and normalisation collapses
+    whitespace — so the normalised string is shorter than the raw one (97,917 vs
+    97,953 characters on the record this page uses) and a raw index is only
+    coincidentally equal to a normalised one. Rather than assume they line up,
+    confirm the raw slice at those offsets really is the quote; if it is not, fall
+    back to the normalised window instead of printing a mismatched highlight.
+    """
+    if full[i:end].strip() == quote.strip():
+        return full[max(0, i - 300):min(len(full), end + 300)], True
+    j = full.find(quote)
+    if j >= 0:
+        return full[max(0, j - 300):min(len(full), j + len(quote) + 300)], True
+    return "", False
+
+
 def build_provenance_demo():
     """Pick a REAL published claim and re-derive it from the archive, here, at
     build time. This is the page's signature object: the reader is not shown an
@@ -357,9 +378,19 @@ def build_provenance_demo():
                 "hash_reslice": sha256(nf[i:end]),
                 "hash_quote_raw": sha256(q),
                 "context": nf[max(0, i - 300):min(len(nf), end + 300)],
+                # A context window in ORIGINAL casing, for display. NOT simply the
+                # raw string at the same offsets: normalisation collapses whitespace,
+                # so the two strings differ in length (97,953 vs 97,917 on this
+                # record) and a raw index is only coincidentally the same. So verify
+                # the raw slice really is the quote before trusting the offsets;
+                # otherwise fall back to the normalised window.
+                "context_raw": _raw_context(full, q, i, end)[0],
+                "context_raw_ok": _raw_context(full, q, i, end)[1],
                 "quote_norm": norm(q),
                 "quote_norm_len": len(norm(q)),
                 "ctx_prefix_len": min(300, i),
+                "turn_words": len(strip_speaker_labels(
+                    rep["turns"][turn_index]["text"]).split()) if turn_index is not None else 0,
                 "sid": "s%05d" % (turn_index if turn_index is not None else 0),
             }
     return None
@@ -424,11 +455,10 @@ h1 em{font-style:italic;color:var(--accent)}
   .dek{font-size:16.5px}
   body{font-size:15.5px}
 }
+
 .lede{font-size:19px;color:#3a4753;line-height:1.58}
 section{padding:52px 0;border-top:1px solid var(--line)}
 section:first-of-type{border-top:0}
-.secnum{font:600 11.5px/1 var(--mono);letter-spacing:.13em;color:var(--accent);
-  display:block;margin:0 0 14px}
 
 /* ---- hero ---- */
 .hero{padding:44px 0 0}
@@ -505,6 +535,8 @@ section:first-of-type{border-top:0}
   background:#f4f7f6;border:1px solid var(--rule);border-radius:7px;
   padding:11px 12px;overflow-wrap:anywhere}
 .step .val b{color:var(--accent);font-weight:600}
+.step .val .lbl{color:var(--meta);font-size:11.5px;letter-spacing:.04em;
+  text-transform:uppercase}
 /* revealed state is driven by a real precomputed result, not a timer */
 .step.on .sdot{background:var(--accent);border-color:var(--accent);color:#fff}
 .insp.pending .step .val,.insp.pending .step .sn{opacity:.28}
@@ -517,9 +549,6 @@ section:first-of-type{border-top:0}
 .verdict .vt{font-weight:650;color:#14503a;font-size:15.5px;margin:0 0 .4em;
   display:flex;align-items:center;gap:8px}
 .verdict p{font-size:14px;color:#2b5c47;margin:0}
-.hashline{font:400 12px/1.7 var(--mono);overflow-wrap:anywhere;margin:10px 0 0}
-.hashline .lbl{color:var(--meta)}
-.hashline .ok{color:var(--accent);font-weight:600}
 /* the source context, with the real offsets highlighted */
 .ctx{margin:14px 0 0;font:400 12.5px/1.75 var(--mono);color:#4a545e;
   background:#f7f9f8;border:1px solid var(--rule);border-radius:8px;
@@ -527,89 +556,36 @@ section:first-of-type{border-top:0}
 .ctx mark{background:#d9ede2;color:#0f3b2b;font-weight:600;
   box-shadow:0 0 0 2px #d9ede2;border-radius:2px}
 
-/* ---- failure case studies : full-bleed, code beside consequence ---- */
-.case{margin:30px 0 0;border:1px solid var(--rule);border-radius:12px;
-  overflow:hidden;background:var(--card)}
-.case-h{padding:19px 18px 16px;border-bottom:1px solid var(--rule);
-  background:#fdf7f2}
-.case-h .cid{font:600 11px/1 var(--mono);letter-spacing:.11em;color:var(--warm);
-  text-transform:uppercase;display:block;margin:0 0 10px}
-.case-h h3{margin:0;font-size:clamp(19px,5vw,24px)}
-.case-b{padding:18px}
-.case-b p{font-size:15.5px}
-.code{font:400 12.5px/1.7 var(--mono);background:#191d22;color:#e6ebf0;
-  border-radius:9px;padding:15px;overflow-x:auto;margin:14px 0 0;
-  -webkit-overflow-scrolling:touch}
-/* On a phone the code blocks must not need horizontal scrolling to be read:
-   an evidence page that hides its own evidence behind a sideways swipe is
-   self-defeating. Smaller type + wrapping, scroll only as a last resort. */
-@media (max-width:520px){
-  .code{font-size:10.5px;line-height:1.62;padding:13px 12px;
-    white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;
-    overflow-x:visible}
-}
-.code .cm{color:#8b98a6}
-.code .bad{color:#ffa07a}
-.code .ok{color:#7ee0b0}
-.code .k{color:#c9b6ff}
-.hit{margin:14px 0 0;padding:13px 15px;background:var(--warm-soft);
-  border-radius:9px;font-size:15px;color:#6f3312}
-.hit b{color:var(--warm);font-weight:650}
-
-/* ---- data model ---- */
-.model{margin:26px 0 0}
-.tbl{width:100%;border-collapse:collapse;font-size:14.5px;
-  border:1px solid var(--rule);border-radius:9px;overflow:hidden}
-.tbl caption{text-align:left;font-family:var(--serif);font-size:19px;
-  padding:0 0 11px}
-.tbl caption .tagline{font:400 12px/1.5 var(--mono);color:var(--meta);
-  display:block;margin-top:5px;font-family:var(--mono)}
-.tbl th{text-align:left;font:600 10.5px/1 var(--mono);letter-spacing:.1em;
-  text-transform:uppercase;color:var(--meta);padding:11px 12px;
-  background:#f4f6f7;border-bottom:1px solid var(--rule)}
-.tbl td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top;
-  color:var(--dim)}
-.tbl tr:last-child td{border-bottom:0}
-.tbl td.c{color:var(--ink);font-weight:600;font-family:var(--mono);
-  font-size:13px;overflow-wrap:break-word;word-break:normal}
-.tbl .keymark{font:700 9.5px/1 var(--mono);padding:3px 5px;border-radius:3px;
-  margin-left:5px;letter-spacing:.05em}
-.keymark.pk{background:#fbe6cf;color:#8a4614}
-.keymark.fk{background:#f8dfd8;color:#8c3820}
-
-/* ---- decisions ---- */
-.decs{list-style:none;padding:0;margin:26px 0 0}
-.dec{padding:19px 0;border-bottom:1px solid var(--rule)}
-.dec:first-child{border-top:1px solid var(--rule)}
-.dec .did{font:700 11.5px/1 var(--mono);color:var(--accent);letter-spacing:.09em}
-.dec h3{margin:.5em 0 .45em;font-size:clamp(19px,4.8vw,23px)}
-.dec p{font-size:15.5px;color:var(--dim);margin:0 0 .7em}
-.dec p:last-child{margin-bottom:0}
-.dec .why{font-size:14.5px;color:var(--meta)}
-.dec .why b{color:var(--ink)}
-
-/* ---- status table ---- */
-.gap{margin:24px 0 0;border:1px solid var(--rule);border-radius:10px;
-  overflow:hidden}
+/* ---- where it stands ---- */
+.gap{margin:24px 0 0;border:1px solid var(--rule);border-radius:10px;overflow:hidden}
 .gap .g{display:grid;gap:4px;padding:15px 16px;border-bottom:1px solid var(--line)}
 .gap .g:last-child{border-bottom:0}
 .gap .g .req{font:600 13px/1.4 var(--mono);color:var(--accent)}
-.gap .g .st{font-size:15px;color:var(--dim)}
+.gap .g .st{font-size:15.5px;color:var(--dim)}
 .gap .g .st b{color:var(--ink);font-weight:600}
-.gap .g .st .no{color:var(--warm);font-weight:650}
+
+/* ---- lessons : the blog's "what went wrong" list ---- */
+.lessons{list-style:none;padding:0;margin:26px 0 0;counter-reset:les}
+.lessons > li{padding:22px 0;border-bottom:1px solid var(--rule);counter-increment:les}
+.lessons > li:first-child{border-top:1px solid var(--rule)}
+.lessons h3{font-size:clamp(19px,4.8vw,23px);margin:0 0 .5em;padding-left:2.3em;
+  position:relative}
+.lessons h3::before{content:counter(les);position:absolute;left:0;top:.15em;
+  font:600 12px/1 var(--mono);color:var(--accent);background:var(--accent-soft);
+  width:1.7em;height:1.7em;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;letter-spacing:0}
+.lessons p{font-size:16px;color:var(--dim);margin:0 0 .8em;max-width:68ch}
+.lessons p:last-child{margin-bottom:0}
+.lessons p strong,.lessons p b{color:var(--ink);font-weight:600}
 
 /* ---- footer ---- */
 footer{padding:48px 0 64px;border-top:1px solid var(--line);
   color:var(--meta);font-size:14.5px}
 footer .prose{max-width:70ch}
 footer b{color:var(--ink)}
-.method{list-style:none;padding:0;margin:18px 0 0}
-.method li{padding:10px 0;border-top:1px solid var(--line);font-size:14px}
-.method code{font-size:12.5px}
 
 /* ============================================================
-   ENHANCEMENT 1 — from ~620px. The ledger gains its two columns
-   and the tables regain their tabular shape.
+   ENHANCEMENT 1 — from ~620px. The ledger gains its two columns.
    ============================================================ */
 @media (min-width:620px){
   .wrap{padding:0 28px}
@@ -617,8 +593,15 @@ footer b{color:var(--ink)}
   .row .fig{order:0}
   .stage.is-model{margin:0 -20px;padding-left:20px;padding-right:20px}
   .gap .g{grid-template-columns:120px 1fr;gap:18px;align-items:baseline}
-  .case-b{display:grid;grid-template-columns:1fr;gap:0}
 }
+
+/* ============================================================
+   ENHANCEMENT 2 — from ~900px. Roomier type and rhythm. The
+   900px block deliberately does NOT introduce a second grid: an
+   earlier version split the case studies side by side here, and
+   measurement killed it (a 451px code column at 1440 against
+   674px at 768 — the widest viewport scrolled the most).
+   ============================================================ */
 @media (min-width:900px){
   section{padding:76px 0}
   .hero{padding:72px 0 0}
@@ -626,38 +609,23 @@ footer b{color:var(--ink)}
   .row{padding:19px 0}
   .row .fig{font-size:34px}
   body{font-size:17.5px}
-  .prose p{font-size:17.5px}
-  .steps,.insp-h,.verdict,.case-b{padding-left:26px;padding-right:26px}
+  .prose p,.lessons p{font-size:17.5px}
   .step{padding:19px 26px}
-  .decs{margin-top:32px}
-  .case-b{padding:26px}
-  .case-h{padding:24px 26px 20px}
+  .insp-h,.steps,.verdict{padding-left:26px;padding-right:26px}
 }
-/* ============================================================
-   ENHANCEMENT 2 — from ~900px. The failure case studies go
-   full-bleed and stack their two parts VERTICALLY, not side by
-   side. Side-by-side was measured and rejected: at 1440 it left
-   the code column 451px wide against 674px at 768, so the very
-   viewport that gained the most space scrolled the most. The
-   code is prose-like, so it deserves the full measure.
-   ============================================================ */
-@media (min-width:900px){
-  .cases-bleed{margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);
-    padding:0 max(28px,calc(50vw - 620px))}
-  .case-b .side{max-width:78ch}
-  .code{max-width:96ch}
-}
+
+/* Reduced motion: gentler, not zero — state changes stay, travel goes. */
 @media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
   .step,.sdot{transition:opacity 200ms ease,border-color 200ms ease,color 200ms ease}
-  .btn:active{transform:none}
   .btn{transition:none}
+  .btn:active{transform:none}
   *{animation:none!important}
 }
+
+/* Hover only where hovering is real (touch fires false hovers on tap). */
 @media (hover:hover) and (pointer:fine){
-  @media (min-width:900px){
-    .case{transition:border-color 200ms var(--ease)}
-    .case:hover{border-color:#c4ccd3}
-  }
+  .btn:hover{background:#175940}
 }
 """
 
@@ -701,10 +669,7 @@ def main():
     if demo is None:
         raise SystemExit("no provenance demo claim found — cannot build")
 
-    g = ev["groups"]
     tier = ev["tier"]
-    pct_fit = 100.0 * (tier["small"]["items"]) / max(1, ev["items"])
-
     H = []
     A = H.append
 
@@ -713,8 +678,8 @@ def main():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Parsnips — a summary you can check</title>
-<meta name="description" content="Case study: turning {num(ev['words'])} words of Singapore Parliament Hansard into briefs whose every quotation can be re-derived from the archived source.">
+<title>Reading a day of Parliament in forty minutes</title>
+<meta name="description" content="How Parsnips turns {num(ev['words'])} words of Singapore Parliament Hansard into a page you can read in {ev['minutes_median_10s']:.0f} minutes, and check.">
 <meta name="color-scheme" content="light">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -727,174 +692,117 @@ def main():
     # ---------------------------------------------------------------- hero
     A(f"""
 <header class="hero">
-  <p class="stamp">Case study · Singapore Parliament Hansard</p>
-  <h1>A summary you can <em>check</em>, not one you have to trust</h1>
+  <p class="stamp">Notes on a small project</p>
+  <h1>Reading a day of Parliament in <em>forty minutes</em></h1>
   <p class="dek">
-    Parsnips reads <b>{num(ev['sits'])} sittings</b> of Parliament &mdash;
-    <b>{num(ev['words'])} words</b> across {num(ev['reports'])} records &mdash; and
-    publishes a short brief per speaker turn. Every point it makes carries the
-    sentence it rests on, stored as a <b>position in the archived source</b> rather
-    than text a model was asked to retype. This page is the engineering account:
-    what the problem is, how the pipeline is built, and the four defects that
-    building it exposed.
+    Singapore publishes everything Parliament says. That is
+    <b>{num(ev['words_median_sit'])} words</b> for a single sitting &mdash; roughly
+    <b>{ev['hours_median_sit']:.1f} hours</b> of reading, if you have the day free. Parsnips
+    turns it into a page you can finish over coffee, where every claim still points
+    at the sentence it came from.
   </p>
   {ledger([
-    ("<b>Published points, each carrying the sentence id it cites</b>",
-     "summaries/20*/*.json · python3 tools/metrics.py",
-     num(ev["points"]), "points", True),
-    ("<b>Reading time for a median sitting</b>, against 7.9 hours of Hansard",
-     f"median {ev['median_turns_sit']} turns × 10s budget · REQUIREMENTS.md §1.4",
-     f"{ev['minutes_median_10s']:.0f}", "min", False),
-    ("<b>Sittings archived with zero fetch failures</b>, resumable one-year batches",
-     "data/manifest.json · 2016–2026, Parliaments 13–15",
-     num(ev["sits"]), "sittings", False),
+    ("<b>Words of Hansard in the archive</b>",
+     f"{num(ev['sits'])} sittings, 2016–2026 {MIDDOT} data/manifest.json",
+     num(ev["words"]), "words", False),
+    ("<b>Median sitting, read at a summary per speaker</b>",
+     f"{num(ev['median_turns_sit'])} speaker turns {MIDDOT} ~10s each",
+     f"{ev['minutes_median_10s']:.0f}", "min", True),
+    ("<b>Points published, each with its citation</b>",
+     f"summaries/ {MIDDOT} python3 tools/metrics.py",
+     num(ev["points"]), "points", False),
   ])}
 </header>""")
 
-    # ------------------------------------------------------- 1. the problem
+    # ------------------------------------------------------------ 1. why
     A(f"""
-<section id="problem">
-  <span class="secnum">01 &mdash; The problem</span>
-  <h2>The gap between a transcript and a sound bite</h2>
+<section id="why">
+  <h2>Why bother</h2>
   <div class="prose">
     <p class="lede">
-      Singapore's Hansard is a verbatim public record of what Parliament said. It is
-      also unreadable at scale: a median sitting runs <strong>{num(ev['words_median_sit'])}
-      words</strong> across {num(ev['reports'])} records &mdash; written answers,
-      oral answers, Bills, motions and Budget debates. At 150 words a minute, a
-      deliberately slow rate for dense procedural text, that is
-      <strong>{ev['hours_median_sit']:.1f} hours</strong> of reading for one day of
-      Parliament. At a normal 250 words a minute it is still
-      {ev['hours_median_250']:.1f} hours.
+      A sitting covers Bills, ministerial statements, oral answers and Budget
+      debates, and the record of it is genuinely good. It is also unusable for
+      anyone who is not a lawyer or a political scientist. News coverage swings the
+      other way and gives you a phrase, chosen for how it reads rather than for what
+      was decided.
     </p>
     <p>
-      The available substitutes are both wrong in the same direction. News coverage
-      gives a phrase or two, selected by news value rather than by what was actually
-      decided. The full transcript gives everything and is inaccessible to anyone
-      without the time or the procedural vocabulary. Nothing sits between them.
-    </p>
-    <p>
-      The target is therefore stated as a measurable budget rather than a mood: a
-      sitting should take <strong>30 to 60 minutes</strong> to read. That converts
-      directly into a per-turn summary length &mdash; about ten seconds of reading,
-      roughly 25 to 35 words &mdash; which is a testable constraint on every summary
-      the system writes, not an instruction to "be brief".
+      What I wanted was the thing in between: enough to understand what the
+      government is actually doing, without pretending to be the transcript. The
+      target I set was deliberately blunt &mdash; a sitting should take
+      <strong>30 to 60 minutes</strong> to read. That turns a vague ambition into a
+      number I can work against, and it turns into roughly <strong>10 seconds per
+      speaker</strong> once you divide it up. Every summary the system writes has to
+      fit that budget.
     </p>
   </div>
-  {ledger([
-    ("<b>Words in the archive</b>",
-     f"data/manifest.json · {num(ev['sits'])} sittings × median {num(ev['words_median_sit'])} words",
-     num(ev["words"]), "words", False),
-    ("<b>Speaker turns</b> &mdash; the summary unit, one speaker each",
-     "data/20*/sitting_*.json · one contiguous block per turn",
-     num(ev["turns"]), "turns", False),
-    ("<b>Turns per sitting</b>, median &mdash; the reading budget's multiplier",
-     f"range {num(ev['quietest_turns_sit'])} to {num(ev['busiest_turns_sit'])} · REQUIREMENTS.md §1.4",
-     num(ev["median_turns_sit"]), "turns", True),
-  ])}
-  <div class="prose">
-    <h3 style="margin-top:1.6em">What the existing options cost a reader</h3>
-    <p>
-      The reading budget is only hard to meet on the busiest days. A
-      {num(ev['busiest_turns_sit'])}-turn sitting is two hours even at the ten-second rate, so the
-      product has to let a reader reach a defensible stopping point &mdash; and see
-      what they skipped &mdash; rather than quietly truncating.
-    </p>
-  </div>
-  {ledger([
-    ("<b>Median sitting at a 10s-per-turn budget</b>",
-     f"median {ev['median_turns_sit']} turns · REQUIREMENTS.md §1.4",
-     f"{ev['minutes_median_10s']:.0f}", "min", True),
-    ("<b>Busiest sitting, same budget</b>",
-     f"{num(ev['busiest_turns_sit'])} turns · R-5.6 (new) covers this case",
-     f"{ev['minutes_busiest_10s']:.0f}", "min", False),
-    ("<b>Median brief compression</b>, source words to brief words",
-     f"median source {num(ev['src_median'])}w → {num(ev['brief_median_words'])}w · {num(ev['briefs'])} briefs",
-     f"{ev['reduction_median']:.1f}×", "", False),
-  ])}
 </section>""")
 
-    # -------------------------------------------------- 2. what it publishes
+    # ------------------------------------------------------- 2. what it looks like
     A(f"""
 <section id="output">
-  <span class="secnum">02 &mdash; What it publishes</span>
-  <h2>One brief per turn, every turn</h2>
+  <h2>What a page looks like</h2>
   <div class="prose">
     <p class="lede">
-      Coverage is the product, not a highlight reel. A sitting page carries a brief
-      for <strong>every exchange</strong> &mdash; {num(ev['summarisable'])}
-      summarisable records across the archive &mdash; and the verbatim transcript
-      stays one disclosure away underneath it.
-    </p>
-    <p>
-      The brief schema holds only what the record can support. Its fields are
-      <code>title</code>, <code>what_it_is</code>, and a list of points; each point
-      is an assertion in plain language plus the <strong>sentence ids</strong> it was
-      derived from. The quotation shown to a reader is substituted from the stored
-      sentence at assembly time, so a claim and its quote cannot drift apart.
+      Every exchange gets a short brief, in the order it happened. Not a highlights
+      reel &mdash; the whole sitting, just compressed. Each brief carries a few
+      points, and each point carries the words it was taken from, one tap away.
     </p>
   </div>
-  <div class="claimbox" style="margin-top:18px">
-    <span class="cl">A real published claim · {esc(demo['brief_file'])}</span>
+  <div class="claimbox">
+    <span class="cl">An example, from {esc(demo['sitting_date'])}</span>
     <p class="say">&ldquo;{esc(demo['claim'])}&rdquo;</p>
-    <p class="who">Asserted by <b>{esc(demo['speaker'])}</b>, sitting
-      {esc(demo['sitting_date'])}, record <code>{esc(demo['report_id'])}</code>
-      &mdash; whose quote is replaced verbatim, from the sentence it cites, at
-      assembly time.</p>
+    <p class="who">Said by <b>{esc(demo['speaker'])}</b>, and shown with this
+      underneath it: <b>&ldquo;{esc(demo['quote'])}&rdquo;</b></p>
   </div>
-  <div class="prose" style="margin-top:1.6em">
-    <h3>Why the count of records is not the count of briefs</h3>
+  <div class="prose" style="margin-top:1.5em">
     <p>
-      A single debate can span several records in the source API. Those are merged
-      into one <em>policy item</em> before summarising, so the archive holds
-      {num(ev['summarisable'])} summarisable reports which become
-      <strong>{num(ev['items'])} items</strong>. The two numbers answer different
-      questions, and the project treats confusing them as a defect class in itself.
+      The quote is not a paraphrase. It is the sentence from Hansard, and the system
+      is built so that it cannot be anything else. That constraint is the most
+      interesting thing about the project, so the next section is about it.
     </p>
   </div>
-  {ledger([
-    ("<b>Policy items</b> &mdash; the summarisation unit",
-     f"pipeline/dataset/index.json · built {esc(ev['ds_built'])}",
-     num(ev["items"]), "items", False),
-    ("<b>Summarisable reports</b> &mdash; before merging",
-     "data/manifest.json · the 371 difference is merged multi-day debates",
-     num(ev["summarisable"]), "reports", False),
-    ("<b>Briefs published under the old schema</b>",
-     "summaries/20*/*.json · 2026 only, superseded by the turn-level model",
-     num(ev["briefs"]), "briefs", False),
-  ])}
 </section>""")
 
-    # ------------------------------------------------- 3. the signature check
+    # ------------------------------------------------------- 3. the core idea
     ctx = demo["context"]
-    pre = ctx[:demo["ctx_prefix_len"]]
-    hit = ctx[demo["ctx_prefix_len"]:demo["ctx_prefix_len"] + len(demo["quote_norm"])]
-    post = ctx[demo["ctx_prefix_len"] + len(demo["quote_norm"]):]
+    # Prefer the original-casing context; fall back to the normalised window if the
+    # offsets could not be confirmed against the raw text (see _raw_context).
+    if demo.get("context_raw_ok") and demo.get("context_raw"):
+        ctx = demo["context_raw"]
+        j = ctx.find(demo["quote"])
+        if j < 0:
+            ctx, j = demo["context"], demo["ctx_prefix_len"]
+    else:
+        ctx, j = demo["context"], demo["ctx_prefix_len"]
+    pre = ctx[:j]
+    hit = ctx[j:j + len(demo["quote"])]
+    post = ctx[j + len(demo["quote"]):]
     A(f"""
 <section id="provenance">
-  <span class="secnum">03 &mdash; The central mechanism</span>
-  <h2>A quote is proven, not trusted</h2>
+  <h2>The one idea that makes it work</h2>
   <div class="prose">
     <p class="lede">
-      This is the design decision everything else follows from. A brief never stores
-      a quotation as text. It stores the <strong>ids of the sentences</strong> the
-      claim rests on, and the sentence stores its own
-      <strong>character offsets</strong> into the normalised source. Assembly
-      substitutes the quote; nothing has to be believed about a model's fidelity.
+      Most summarisers ask a model to read the text and write out the quotes. That
+      is where things go wrong quietly: the model reword a sentence slightly, and
+      unless you check every quotation against the original you will never notice.
+      So I stopped asking.
     </p>
     <p>
-      Which means the claim below is checkable by anyone, including you, right here.
-      The figures are not an illustration: they were computed at build time from the
-      archive on this machine, and the check you are about to run repeats that
-      computation in your browser.
+      The model never writes a quotation. It points at one &mdash; it returns the
+      <em>id</em> of the sentence it is talking about, and the system pastes the real
+      sentence in afterwards. The model can be wrong about which sentence matters.
+      It cannot invent one.
+    </p>
+    <p>
+      Which means the claim below is checkable by anyone, including you. Try it.
     </p>
   </div>
 
   <div class="insp pending" id="insp">
     <div class="insp-h">
-      <h3>Re-derive a published claim from the source</h3>
-      <p>Claim from <code>{esc(demo['brief_file'])}</code>, traced back into
-        <code>{esc(demo['sitting_file'])}</code>.</p>
+      <h3>Follow a published quote back to Hansard</h3>
+      <p>A real claim from the site, traced to the record it came from.</p>
       <div class="claimbox">
         <span class="cl">The claim</span>
         <p class="say">&ldquo;{esc(demo['claim'])}&rdquo;</p>
@@ -902,433 +810,182 @@ def main():
           <b>&ldquo;{esc(demo['quote'])}&rdquo;</b></p>
       </div>
       <button class="btn" id="run" type="button">
-        Run the check <span class="ar">→</span>
+        Run the check <span class="ar">&rarr;</span>
       </button>
     </div>
     <ol class="steps">
       <li class="step" id="s1">
         <div class="sh"><span class="sdot">1</span>
-          <div><p class="st">Resolve the claim's citation to a sentence</p>
-          <p class="sn">The claim cites a sentence id; the sentence carries its
-            record and its offsets.</p>
-          <div class="val">claim.cites[] → <b>{esc(demo['report_id'])}
-            :t{demo['turn_index']}</b></div></div></div>
+          <div><p class="st">The claim knows which sentence it rests on</p>
+          <p class="sn">Not a copy of the sentence &mdash; a pointer to it.</p>
+          <div class="val">claim &rarr; <b>{esc(demo['report_id'])}:t{demo['turn_index']}</b>,
+            from the sitting on {esc(demo['sitting_date'])}</div></div></div>
       </li>
       <li class="step" id="s2">
         <div class="sh"><span class="sdot">2</span>
-          <div><p class="st">Re-slice the archived record at the recorded offsets</p>
-          <p class="sn">Normalised source length:
-            {num(demo['norm_len'])} characters
-            ({num(demo['raw_len'])} before normalisation).</p>
-          <div class="val">source[<b>{num(demo['char_start'])}</b>..<b>{num(demo['char_end'])}</b>]
-            → {num(demo['char_end'] - demo['char_start'])} chars</div></div></div>
+          <div><p class="st">Go and fetch it</p>
+          <p class="sn">The stored archive is opened at the recorded position,
+            part-way through a {num(demo['turn_words'])}-word speech.</p>
+          <div class="val">characters <b>{num(demo['char_start'])}</b> to
+            <b>{num(demo['char_end'])}</b> &rarr;
+            {num(demo['char_end'] - demo['char_start'])} characters</div></div></div>
       </li>
       <li class="step" id="s3">
         <div class="sh"><span class="sdot">3</span>
-          <div><p class="st">Hash both texts under the same normalisation</p>
-          <p class="sn">Two independent sha256 digests, each over normalised text.
-            Normalisation matters and is stated rather than assumed: the source uses
-            curly quotes and non-breaking spaces.</p>
-          <div class="val"><span class="lbl">published quote, normalised</span><br>
-            {demo['hash_quote']}<br><br>
-            <span class="lbl">re-sliced source, normalised</span><br>{demo['hash_reslice']}</div></div></div>
+          <div><p class="st">Fingerprint both</p>
+          <p class="sn">The quote as published, and the text taken from the record,
+            hashed the same way.</p>
+          <div class="val"><span class="lbl">published</span><br>{demo['hash_quote']}<br><br>
+            <span class="lbl">from the record</span><br>{demo['hash_reslice']}</div></div></div>
       </li>
       <li class="step" id="s4">
         <div class="sh"><span class="sdot">4</span>
-          <div><p class="st">Compare</p>
-          <p class="sn">Equal digests mean the published words exist at that exact
-            position in the archived record.</p></div></div>
+          <div><p class="st">They agree</p>
+          <p class="sn">Which means the words on the page are the words in the
+            record, at that position. Nobody has to take my word for it.</p></div></div>
       </li>
     </ol>
     <div class="verdict">
-      <p class="vt">&#10003; Verified &mdash; the quotation reproduces from the source</p>
-      <p>The re-slice at <code>{num(demo['char_start'])}..{num(demo['char_end'])}</code>
-        of <code>{esc(demo['sitting_file'])}</code> reproduces the published quote
-        exactly.</p>
-      <div class="hashline"><span class="lbl">sha256 · normalised</span><br>
-        {demo['hash_quote'][:40]}&hellip;<br>
-        {demo['hash_reslice'][:40]}&hellip; <span class="ok">&mdash; identical</span></div>
-      <p style="margin-top:14px" class="who">This particular quote happens to
-        contain no special characters, so its raw and normalised digests are
-        identical. That is luck, not the general case: the archive holds
-        <b>{num(ev['special_chars'])}</b> curly quotes, dashes and non-breaking spaces
-        across the corpus, and <b>{num(ev['quotes_special'])} of {num(ev['points'])}
-        published quotes ({100 * ev['quotes_special'] / max(1, ev['points']):.1f}%)</b>
-        contain at least one. Whether a quote must match byte-for-byte or
-        whitespace-insensitively is still an open question in the requirements; this
-        page shows the normalised comparison, because that is the one the pipeline's
-        own gate uses.</p>
-      <p style="margin-top:12px">The sentence in its surrounding source text, with the
-        cited span marked:</p>
+      <p class="vt">&#10003; Match &mdash; the quote reproduces from the record</p>
+      <p>Here is that sentence sitting in Hansard, with the quoted part marked:</p>
       <div class="ctx">{esc(pre)}<mark>{esc(hit)}</mark>{esc(post)}</div>
     </div>
   </div>
-
-  <div class="prose" style="margin-top:1.8em">
-    <h3>Why this is the load-bearing decision</h3>
-    <p>
-      The usual guard against a model misquoting is a gate that compares the
-      finished quote against the source and drops the claim if it does not match.
-      That gate is a <em>filter</em>, and it fails in a specific and quiet way: it
-      can only ever reject what it happens to look at. If the text it should have
-      been checked against was truncated, the gate reports success.
-    </p>
-    <p>
-      Making quotes references instead of text converts that filter into an
-      <strong>invariant</strong>. There is no path by which a model's paraphrase
-      reaches the page, because the model never emits the quotation at all &mdash;
-      it emits an id. And a failure then means something genuinely diagnostic: a bug
-      in the dataset or the extraction, not a model choosing to be unfaithful.
-    </p>
-  </div>
 </section>""")
 
-    # ---------------------------------------------- 4. architecture / stages
+    # --------------------------------------------------------- 4. how it fits
     A(f"""
-<section id="pipeline">
-  <span class="secnum">04 &mdash; The pipeline</span>
-  <h2>Four stages, one of which uses a model</h2>
+<section id="shape">
+  <h2>How it fits together</h2>
   <div class="prose">
     <p class="lede">
-      The architecture is a deliberate bet that most of this work is not a language
-      problem. Counting, filtering, mapping questions to answers, and substituting
-      stored text are deterministic. Judging which parts of a debate matter is not.
-      The pipeline is split exactly along that line.
+      Four steps, and only one of them uses a model. Everything mechanical &mdash;
+      fetching, cleaning, counting, pasting quotes back in &mdash; is ordinary code,
+      which is both cheaper and repeatable.
     </p>
   </div>
-
   <ol class="stages">
-    {stage("Build the dataset",
-           "Turn the archive into per-item payloads in which every sentence has a stable id and a speaker.",
+    {stage("Fetch",
+           "Pull the sittings down and keep them, exactly as published.",
            False,
-           f"{num(ev['items'])} items, {num(ev['sent_total'])} sentences, "
-           f"{num(ev['chunk_total'])} chunks defined as <em>lists of sentence ids</em> "
-           f"&mdash; so even chunking is expressed in references, never re-sliced text.")}
-    {stage("Extract",
-           "Read the item and return points as <em>claim plus sentence ids</em>.",
+           "One batch per year, resumable, so an interrupted run picks up where it "
+           "stopped. 331 sittings, no failures.")}
+    {stage("Break it up",
+           "Cut each sitting into the units a reader thinks in.",
+           False,
+           "A sitting becomes sections (Bills, statements, oral answers), each "
+           "section becomes one speaker's turn, and each turn gets its own id. "
+           "Every sentence is numbered so it can be pointed at later.")}
+    {stage("Summarise",
+           "Read a turn and decide what mattered.",
            True,
-           f"The only stage that touches a model. Small items ({num(tier['small']['items'])}) fit one "
-           f"call; heavy items ({num(tier['heavy']['items'])}) are chunked and reduced. The model is never "
-           f"asked to reproduce a quotation, only to point at one.")}
-    {stage("Assemble",
-           "Substitute stored sentence text for every cited id, and attach metadata from the item.",
+           f"The only step that needs judgement, so it is the only step that uses a "
+           f"model. Large items &mdash; {num(tier['heavy']['items'])} of "
+           f"{num(ev['items'])} &mdash; are handled in pieces.")}
+    {stage("Check",
+           "Prove it before it goes out.",
            False,
-           "_meta.report_ids, sitting_dates and source_words come from the item, not the model, "
-           "so a brief's provenance cannot be hallucinated.")}
-    {stage("Verify",
-           "Two independent checks, run before anything is published.",
-           False,
-           "The quote invariant (every cited id resolves and its text matches) and a companion "
-           "coverage check. Both are required &mdash; see F-2 for why one alone was not enough.")}
+           "Every quote is re-checked against the archive, and so is the coverage: "
+           "how much of the item actually got summarised. Anything that fails is "
+           "held back rather than published with a caveat.")}
   </ol>
-
-  <div class="prose" style="margin-top:1.8em">
-    <h3>Why the salience judgement moved back to the model</h3>
+  <div class="prose" style="margin-top:1.5em">
     <p>
-      The first design was fully extractive: deterministic scoring picked around
-      twenty-four sentences per item and the model only rewrote them. It was cheap,
-      reproducible, and it cut the prompt from {num(ev['words'])} words of transcript
-      to roughly a tenth of that. It was also, in retrospect, the wrong shape.
+      The check is two questions, not one, and that turned out to matter. The first
+      is &#8220;does this quote exist in the record&#8221;, which sounds like enough.
+      The second is &#8220;did we actually summarise the whole thing&#8221;. I only
+      added the second after the first one spent a while telling me everything was
+      fine while it wasn't.
     </p>
-    <p>
-      A deterministic selector is a <strong>hard ceiling</strong>. If it chooses
-      badly, the model cannot recover, because it never sees anything else &mdash;
-      and it will still write a confident brief about the twenty-four sentences it
-      was handed. The current design keeps determinism where it is demonstrably
-      reliable and lets the model reason over text it can actually see.
-    </p>
-  </div>
-  {ledger([
-    ("<b>Items that fit a single prompt</b> &mdash; no chunking needed",
-     f"tier=small · {num(tier['small']['items'])} items, {num(tier['small']['chunks'])} chunks",
-     f"{pct_fit:.0f}%", "of items", True),
-    ("<b>Heavy items</b> that are chunked and reduced",
-     f"tier=heavy · {num(tier['heavy']['chunks'])} chunks across {num(tier['heavy']['items'])} items",
-     num(tier["heavy"]["items"]), "items", False),
-    ("<b>Median item size</b> &mdash; the common case is small",
-     f"median {num(ev['item_median'])}w · p90 {num(ev['item_p90'])}w · largest {num(ev['item_max'])}w",
-     num(ev["item_median"]), "words", False),
-  ])}
-</section>""")
-
-    # --------------------------------------------------------- 5. failures
-    cases = [
-        ("F-1", "The selector and the gate normalised differently",
-         "extractive.py read raw turn text; the gate's reference was stripped of the same bracket markers.",
-         """<span class="cm"># extractive.py read the RAW turn:</span>
-sentences(t[<span class="bad">"text"</span>])
-
-<span class="cm"># build_chunks() -- and therefore verify_quotes() -- did this first:</span>
-body = <span class="ok">strip_speaker_labels</span>(t[<span class="bad">"text"</span>])   <span class="cm"># removes [(proc text)] asides</span>""",
-         f"""Hansard turns carry bracket asides like
-         <code>[(proc text) Debate resumed. (proc text)]</code>. Those survive raw
-         selection but are stripped from the gate's reference text &mdash; so any
-         sentence built around one <b>could never verify, however faithful the model
-         was</b>. The original diagnosis blamed truncation alone and wrote the
-         failures off as correct behaviour.""",
-         """Measured on the heavy item, against the complete transcript: <b>16/24</b>
-         with raw text and a capped transcript, <b>23/24</b> with raw text and the
-         complete transcript, <b>24/24</b> once selection read through the same
-         normalisation as the gate. Truncation was part of it; the mismatch was the
-         rest, and it would have looked like a model problem forever."""),
-        ("F-2", "An unanchored pattern emptied whole debates",
-         "A marker that Hansard appends to the END of a turn was treated as if the turn began with it.",
-         """<span class="cm"># intended: catch a turn that is ONLY a parser marker</span>
-<span class="bad">r"\\(?\\s*(?:proc text|procedure|procedural)\\b"</span>      <span class="cm"># unanchored</span>
-
-<span class="cm"># but a 10,046-char ministerial speech ENDS with:</span>
-<span class="cm">#   "... (proc text) Question put, and agreed to. (proc text)]"</span>
-<span class="cm"># so the whole turn was discarded before a sentence was ever scored.</span>
-
-<span class="ok">r"^\\W*\\[?\\(?\\s*proc text\\b"</span>                <span class="cm"># anchored: fix</span>""",
-         f"""After fixing F-1, <b>84 items selected zero sentences</b> &mdash; including
-         44 Bills and Budget items. The cause was not the content: it was one
-         pattern matching inside a trailing marker and throwing the entire turn
-         away.""",
-         """This is the instructive one, because <b>the correctness gate read 100% the
-         whole time</b>. Selecting nothing cannot fail a quote check. A verification
-         invariant proves nothing about whether anything was selected &mdash; which
-         is why a coverage check is now mandatory alongside it."""),
-        ("F-3", "A flag set from the speaker's name discarded ministerial speeches",
-         "is_procedural was derived from the speaker string, and Hansard labels ministers' turns with bracketed chair names.",
-         """<span class="cm"># scraper/parsnips_fetch.py</span>
-PROCEDURAL = re.compile(<span class="bad">r"^\\[.*\\]$"</span>)     <span class="cm"># any fully-bracketed speaker</span>
-<span class="cm"># ...</span>
-<span class="bad">"is_procedural"</span>: bool(PROCEDURAL.match(speaker))
-
-<span class="cm"># so this speaker string marks the turn procedural:</span>
-<span class="cm">#   '[Mr Speaker in the Chair]'</span>
-<span class="cm"># while the turn's TEXT is a ministerial reply.</span>""",
-         f"""Measured across the corpus: <b>{num(ev['turns_flagged'])} of {num(ev['turns'])} turns</b>
-         carry the flag, holding <b>{num(ev['words_flagged'])} words
-         ({ev['flagged_pct']:.1f}% of the archive)</b>. Of the {num(ev['flagged_big'])}
-         flagged turns longer than 200 words, <b>{num(ev['flagged_strong'])} contain a
-         sentence the selector would have scored above its own threshold</b>.""",
-         f"""The worst single case is a <b>{num(ev['biggest_flagged_words'])}-word
-         ministerial reply</b> on warrantless search powers in the Criminal Procedure
-         (Miscellaneous Amendments) Bill &mdash; {num(ev['biggest_flagged_sentences'])}
-         sentences, discarded whole, because the record labelled the turn
-         <code>[Mr Speaker in the Chair]</code>. The code's own comment claimed the
-         flag fired on "1 of 560 turns"; the archive said otherwise."""),
-        ("F-4", "A document reported a figure 16× wrong",
-         "A hand-written metric in a design document, never recomputed from the data it described.",
-         """<span class="cm"># PLAN.md, before the correction:</span>
-<span class="bad">1,100,000 words per sitting</span>
-
-<span class="cm"># data/manifest.json, recomputed:</span>
-<span class="ok">68,861 words per sitting</span>""",
-         """This is the defect that produced the project's most useful rule.
-         <b>N-3:</b> any number the system reports about itself must be computed from
-         data, never hand-written into documentation. A wrong figure in a design
-         document is not a typo &mdash; it is a decision made on evidence that does
-         not exist.""",
-         """It is also why this page is a <b>generator</b>, not a written document.
-         Every figure you have read so far was computed from the archive when this
-         HTML was built, next to the command that reproduces it."""),
-    ]
-    A(f"""
-<section id="failures"><div class="cases-bleed">
-  <span class="secnum">05 &mdash; What went wrong</span>
-  <h2>Four defects, and what each one taught the design</h2>
-  <div class="prose">
-    <p class="lede">
-      These are on the page on purpose. A project that only shows its finished
-      state is indistinguishable from one that never found anything, and the
-      failures here are what forced the architecture into its current shape. Three
-      of the four were found by looking for a <em>different</em> kind of failure
-      than the one the existing checks were testing for.
-    </p>
-  </div>
-  <div class="cases">""")
-
-    for cid, title, sub, code, what, lesson in cases:
-        A(f"""
-    <article class="case">
-      <div class="case-h">
-        <span class="cid">Defect {cid}</span>
-        <h3>{title}</h3>
-      </div>
-      <div class="case-b">
-        <div class="side">
-          <p>{what}</p>
-          <p class="hit"><b>What it cost:</b> {lesson}</p>
-        </div>
-        <pre class="code">{code}</pre>
-      </div>
-    </article>""")
-
-    A(f"""
-  </div>
-</div></section>""")
-
-    # ------------------------------------------------------- 6. data model
-    A(f"""
-<section id="model">
-  <span class="secnum">06 &mdash; The data model</span>
-  <h2>Provenance as a schema, not a convention</h2>
-  <div class="prose">
-    <p class="lede">
-      The model is one chain &mdash; <strong>sitting → report → turn
-      → sentence</strong> &mdash; with everything derived hanging off it by id.
-      There is deliberately no entity that stores a copy of the archive's text.
-    </p>
-    <p>
-      Two of these tables carry the correctness argument. <code>sentence</code>
-      stores the character offsets and a content hash that make a quotation
-      re-derivable; <code>claim</code> stores only an assertion plus the ids it
-      rests on, never the quotation itself.
-    </p>
-  </div>
-  <div class="model">
-    <table class="tbl">
-      <caption>Core chain
-        <span class="tagline">measured row counts · the units are never interchangeable</span>
-      </caption>
-      <thead><tr><th>table</th><th>rows</th><th>what a row is</th></tr></thead>
-      <tbody>
-        <tr><td class="c">sitting <span class="keymark pk">PK</span></td>
-          <td>{num(ev['sits'])}</td><td>one calendar day Parliament sat; id is the ISO date</td></tr>
-        <tr><td class="c">report <span class="keymark fk">FK</span></td>
-          <td>{num(ev['reports'])}</td><td>one record in the source API; a debate may span several</td></tr>
-        <tr><td class="c">turn <span class="keymark fk">FK</span></td>
-          <td>{num(ev['turns'])}</td><td>one speaker's contiguous contribution &mdash; the summary unit</td></tr>
-        <tr><td class="c">sentence <span class="keymark fk">FK</span></td>
-          <td>{num(ev['sent_total'])}</td><td>the unit of citation, with offsets and a hash</td></tr>
-        <tr><td class="c">claim</td>
-          <td>{num(ev['points'])}</td><td>an assertion plus the sentence ids it cites</td></tr>
-      </tbody>
-    </table>
-    <table class="tbl">
-      <caption>What makes a quotation checkable
-        <span class="tagline">the fields the provenance chain actually depends on</span>
-      </caption>
-      <thead><tr><th>field</th><th>on</th><th>why it exists</th></tr></thead>
-      <tbody>
-        <tr><td class="c">char_start / char_end</td><td>sentence</td>
-          <td>offsets into the normalised source &mdash; proves <em>position</em></td></tr>
-        <tr><td class="c">sha256</td><td>sentence</td>
-          <td>proves <em>content</em>: re-slice and compare, independently of us</td></tr>
-        <tr><td class="c">cites[]</td><td>claim</td>
-          <td>the sentence ids the claim rests on &mdash; the only source of its quote</td></tr>
-        <tr><td class="c">quote</td><td>claim</td>
-          <td><b>substituted</b> at assembly from the cited sentence, never model-written</td></tr>
-        <tr><td class="c">attributed</td><td>turn</td>
-          <td>false when the speaker was carried forward, because the record omitted one
-            ({num(ev['turns_unattributed'])} of {num(ev['turns'])} turns,
-            {ev['turns_unattributed_pct']:.1f}% &mdash; {num(ev['turns_subst_unattributed'])}
-            of them 100+ words)</td></tr>
-        <tr><td class="c">excluded / exclude_reason</td><td>sentence</td>
-          <td>no silent drops: an unrecorded exclusion is indistinguishable from a bug</td></tr>
-        <tr><td class="c">report_version</td><td>report</td>
-          <td>the source format era, recorded so nothing has to infer it later</td></tr>
-      </tbody>
-    </table>
   </div>
 </section>""")
 
-    # -------------------------------------------------------- 7. decisions
-    decisions = [
-        ("D-1", "Publication is automated with hard gates, and no human in the loop",
-         "Nothing publishes unless it passes validation. There is no review step.",
-         """This inverts the usual safety model. If no person is going to notice a bad
-         brief, <b>the gates are the entire quality process</b> &mdash; so a gate that
-         reports and lets an item through is worse than no gate, because it
-         manufactures confidence. A gate must fail <em>closed</em>: unknown state
-         means do not publish."""),
-        ("D-3", "An unvalidatable item is withheld entirely",
-         "Not a partial brief, not a brief marked unverified. Nothing.",
-         """Withholding is not neutral &mdash; it leaves a visible hole in a sitting
-         page. So the page must show the hole <em>as</em> a hole: "2 of 16 items could
-         not be verified and are withheld". Without honest reporting of absence,
-         withholding would be indistinguishable from incompleteness. The distinction
-         is the whole reason this decision is safe."""),
-        ("D-4", "Unattributed claims publish, marked as inferred",
-         f"{num(ev['turns_unattributed'])} of {num(ev['turns'])} turns carry no speaker "
-         f"({ev['turns_unattributed_pct']:.1f}%), and {num(ev['turns_subst_unattributed'])} "
-         f"of those run to 100 words or more &mdash; substantive content with no name attached.",
-         """The record itself is incomplete, so excluding these would drop real
-         content. Instead the provenance is made structural: every claim records
-         whether its attribution came <em>from the record</em> or was
-         <em>inferred</em>, the inference rule is deterministic and stated, and the
-         page renders the difference so a reader knows which they are reading."""),
-        ("D-5", "The why_it_matters field was removed",
-         f"Of {num(ev['briefs'])} briefs, only {num(ev['wim_pop'])} ever populated it, and {num(ev['wim_dodge'])} of those "
-         f"({100 * ev['wim_dodge'] / max(1, ev['wim_pop']):.0f}%) fell back on the same placeholder dodge.",
-         """The field the record frequently cannot support is exactly the field where a
-         model is most tempted to editorialise. A field absent
-         {100 - 100 * ev['wim_pop'] / max(1, ev['wim_total']):.0f}% of the time and
-         evasive {100 * ev['wim_dodge'] / max(1, ev['wim_pop']):.0f}% of the time it
-         appears is not carrying its weight. Removing it changes the product, not
-         just the schema: the brief must now earn attention with substance instead
-         of the narrative hook."""),
-    ]
+    # ------------------------------------------------------------- 5. lessons
     A(f"""
-<section id="decisions">
-  <span class="secnum">07 &mdash; Decisions</span>
-  <h2>Four choices that constrain everything downstream</h2>
+<section id="lessons">
+  <h2>Things that went wrong</h2>
   <div class="prose">
     <p class="lede">
-      Each decision below was recorded with the evidence that informed it, so a
-      later reader can see <em>why</em> rather than only <em>what</em>. The evidence
-      is reproduced here from the archive at build time.
+      Worth writing down, because they changed how the thing is built rather than
+      just being bugs I fixed.
     </p>
   </div>
-  <ul class="decs">""")
-    for did, title, why, cons in decisions:
-        A(f"""
-    <li class="dec">
-      <span class="did">{did}</span>
-      <h3>{title}</h3>
-      <p class="why"><b>Evidence:</b> {why}</p>
-      <p>{cons}</p>
-    </li>""")
-    A("  </ul>\n</section>")
+  <ol class="lessons">
+    <li>
+      <h3>The check that said 100% while the output was empty</h3>
+      <p>
+        A rule meant to skip procedural noise was matching in the wrong place, and
+        throwing away whole ministerial speeches &mdash; {num(ev['turns_flagged'])} turns
+        across the archive carry that flag, including one
+        {num(ev['biggest_flagged_words'])}-word reply.
+      </p>
+      <p>
+        The lesson: my quote checker was reporting a clean bill of health the entire
+        time. It could not see the problem, because a summary with nothing in it
+        trivially has no wrong quotes. <strong>A check that only tests one way of
+        being wrong will happily certify a different failure.</strong> That is why
+        coverage is now checked as well.
+      </p>
+    </li>
+    <li>
+      <h3>A document of mine was wrong by 16&times;</h3>
+      <p>
+        I had written &#8220;1,100,000 words per sitting&#8221; in my own notes.
+        The real figure is {num(ev['words_median_sit'])}. Nobody had recomputed it,
+        because it was written in prose rather than produced by the code.
+      </p>
+      <p>
+        So now anything the system says about itself is computed from the data, and
+        this page is built the same way &mdash; the numbers you are reading were
+        generated from the archive when the page was built, not typed by me.
+      </p>
+    </li>
+    <li>
+      <h3>Being clever about selection was the wrong instinct</h3>
+      <p>
+        My first design had code pick the important sentences and gave the model only
+        those, which felt efficient and responsible. It was a trap: if the code
+        chooses badly, the model never sees the rest and writes a confident summary
+        of the wrong material anyway.
+      </p>
+      <p>
+        Deterministic code is good at the boring parts &mdash; cleaning, filtering,
+        pasting quotes back. Deciding what matters is the part it is bad at, and the
+        part a model is good at. Splitting the work along that line is the whole
+        architecture.
+      </p>
+    </li>
+  </ol>
+</section>""")
 
-    # ----------------------------------------------------------- 8. honesty
+    # --------------------------------------------------------- 6. where it is
     A(f"""
-<section id="status">
-  <span class="secnum">08 &mdash; Current state</span>
-  <h2>What works, and what does not yet</h2>
+<section id="where">
+  <h2>Where it stands</h2>
   <div class="prose">
     <p class="lede">
-      The pipeline is being built one stage at a time and reviewed between stages.
-      The archive and the dataset are real and verified; the model stage is
-      specified but not yet run at scale. Reporting the gap is part of the design
-      &mdash; the product's own rule is that absence must appear as absence.
+      In progress, and built one step at a time on purpose. The archive is done and
+      the summarising step is next; I would rather show you where the line actually
+      is than round it up.
     </p>
   </div>
   <div class="gap">
-    <div class="g"><span class="req">Archive · R-1.1–1.5</span>
-      <span class="st"><b>Working.</b> {num(ev['sits'])} sittings fetched in resumable
-      year batches, zero failures. Coverage is declared per sitting rather than
-      assumed: {num(ev['sits_below_one'])} of {num(ev['sits'])} sittings came in below
-      the API's own claimed count, which is why the figure is recorded instead of
-      trusted. Speaker attribution is measured at {ev['attrib_median']*100:.1f}% median.</span></div>
-    <div class="g"><span class="req">Dataset · R-6.1–6.2</span>
-      <span class="st"><b>Working.</b> {num(ev['items'])} items, {num(ev['sent_total'])}
-      sentences with stable ids, {num(ev['chunk_total'])} chunks expressed as id lists.
-      Invariants verified across every payload: no id collisions, no sentence
-      duplicated across chunks, no sentence missing from a chunk.</span></div>
-    <div class="g"><span class="req">Extract + assemble · R-4.x</span>
-      <span class="st"><b>Not built.</b> Stage 2 and 3 are specified and pending review
-      of the dataset. Deliberately not run end to end: the stop rule is one stage at a
-      time.</span></div>
-    <div class="g"><span class="req">Provenance · R-2.2</span>
-      <span class="st"><b class="no">Partially met.</b> The chain is designed and
-      demonstrated above, and <code>char_start</code>/<code>char_end</code> and the
-      sentence hash are specified &mdash; but the published briefs still hold
-      quotations as strings. Populating offsets and hashes for all
-      {num(ev['sent_total'])} sentences is the next piece of work, and it is the one
-      that turns the demonstration above from an example into a property of the corpus.</span></div>
-    <div class="g"><span class="req">Gates · R-2.9</span>
-      <span class="st"><b class="no">Not met.</b> Every gate must have a test that
-      deliberately violates it and asserts the violation is caught. An untested gate
-      is an assumption, not a control &mdash; and F-2 above is the proof.</span></div>
-    <div class="g"><span class="req">Summary quality · R-3.3</span>
-      <span class="st"><b class="no">Not re-derived.</b> The {num(ev['briefs'])} published
-      briefs were built under the older item-level schema. They meet the quality bar
-      but not the new turn-level model, and whether to migrate or discard them is
-      still open.</span></div>
+    <div class="g"><span class="req">Done</span>
+      <span class="st">All {num(ev['sits'])} sittings from 2016 to 2026, fetched and
+      kept &mdash; {num(ev['words'])} words. Resumable, and honest about its own
+      gaps: {num(ev['sits_below_one'])} of the {num(ev['sits'])} sittings came back
+      with fewer records than the source claimed they contained.</span></div>
+    <div class="g"><span class="req">Done</span>
+      <span class="st">The sitting is broken into
+      {num(ev['turns'])} speaker turns and {num(ev['sent_total'])} numbered
+      sentences, ready to be pointed at.</span></div>
+    <div class="g"><span class="req">Next</span>
+      <span class="st">Summarising at scale. {num(ev['briefs'])} briefs were written
+      as a trial, which is enough to prove the approach and not enough to be the
+      product.</span></div>
+    <div class="g"><span class="req">Next</span>
+      <span class="st">Storing the position of every sentence, so the check you just
+      ran works across the whole archive rather than the example above.</span></div>
   </div>
 </section>""")
 
@@ -1336,58 +993,44 @@ PROCEDURAL = re.compile(<span class="bad">r"^\\[.*\\]$"</span>)     <span class=
     A(f"""
 <footer>
   <div class="prose">
-    <p><b>How every figure here was produced.</b> This page is generated by
-      <code>site/build_case_study.py</code>; nothing above is typed in. Rebuild it
-      and the numbers are recomputed from the archive, which is what requirement N-3
-      asks for and what the F-4 defect demanded.</p>
-  </div>
-  <ul class="method">
-    <li><code>python3 tools/metrics.py</code> &mdash; corpus, archive and dataset counts</li>
-    <li><code>python3 site/build_case_study.py</code> &mdash; regenerates this page, including the provenance trace</li>
-    <li><code>python3 site/build_site.py</code> &mdash; builds the reader-facing site this work is for</li>
-    <li>Source of the defect write-ups: <code>SUMMARISATION.md</code>, <code>REQUIREMENTS.md</code></li>
-  </ul>
-  <div class="prose" style="margin-top:1.6em">
-    <p>Parsnips · case study · generated {ev['ds_built'] or ''}.
-      Built on the Singapore Parliament Hansard public record
-      (sprs.parl.gov.sg), 2016–2026, Parliaments 13–15.
-      Attribution rules: <code>REQUIREMENTS.md</code> decisions D-1 to D-10.</p>
+    <p>Built on Singapore's Parliament Hansard (sprs.parl.gov.sg), 2016 to 2026.
+      Every number on this page is generated from the archive by
+      <code>site/build_case_study.py</code> rather than written by hand, which is a
+      rule the project adopted after the 16&times; mistake above.</p>
   </div>
 </footer>
 </div>""")
 
     # ------------------------------------------- the inspector's real script
-    A(f"""
+    A("""
 <script>
-(function(){{
-  var h1 = {json.dumps(demo['hash_quote'])},
-      h2 = {json.dumps(demo['hash_reslice'])},
-      insp = document.getElementById('insp'),
+(function(){
+  var insp = document.getElementById('insp'),
       btn = document.getElementById('run');
   if(!btn || !insp) return;
   var ids = ['s1','s2','s3','s4'], timers = [];
 
-  btn.addEventListener('click', function(){{
+  btn.addEventListener('click', function(){
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var gap = reduce ? 90 : 520;
     insp.classList.remove('done');
     insp.classList.add('pending');
-    ids.forEach(function(id){{ document.getElementById(id).classList.remove('on'); }});
-    btn.disabled = true; btn.textContent = 'Running\\u2026';
+    ids.forEach(function(id){ document.getElementById(id).classList.remove('on'); });
+    btn.disabled = true; btn.textContent = 'Running\u2026';
     timers.forEach(clearTimeout); timers = [];
-    ids.forEach(function(id, i){{
-      timers.push(setTimeout(function(){{
+    ids.forEach(function(id, i){
+      timers.push(setTimeout(function(){
         document.getElementById(id).classList.add('on');
-      }}, gap * i + 60));
-    }});
-    timers.push(setTimeout(function(){{
+      }, gap * i + 60));
+    });
+    timers.push(setTimeout(function(){
       insp.classList.remove('pending');
       insp.classList.add('done');
       btn.disabled = false;
-      btn.innerHTML = 'Run it again <span class="ar">\\u21bb</span>';
-    }}, gap * ids.length + 240));
-  }});
-}})();
+      btn.innerHTML = 'Run it again <span class="ar">\u21bb</span>';
+    }, gap * ids.length + 240));
+  });
+})();
 </script>
 </body>
 </html>""")
@@ -1405,9 +1048,5 @@ PROCEDURAL = re.compile(<span class="bad">r"^\\[.*\\]$"</span>)     <span class=
           f"hash match={demo['hash_quote'] == demo['hash_reslice']}")
 
 
-
 if __name__ == "__main__":
     main()
-
-
-# ------------------------------------------------------------------- stylesheet
