@@ -8,6 +8,20 @@ token or a pattern here, change it in the generator, not the built HTML.
 
 **build**, not direct. One conventional surface.
 
+**POV: first person, as the technical product manager who specified it.** The author
+wrote the requirements and made the product decisions; implementation and defect
+discovery came from iterating with a model against those requirements. So:
+
+- "I specified", "I required", "I overruled" for decisions. "The build" or "Claude"
+  for what the implementation did — never "we" and never the passive voice.
+- The failures section is titled **"What the build got wrong, and what I changed"**
+  and each item names the assumption, what it cost, and the correction. Three items,
+  prose, no code.
+- Corrections are stated factually, not as wins: "the build recorded this as
+  high-risk; it is not inferred; the document was corrected to say so."
+- The closing footer attributes the split plainly, so the reader is never misled
+  about who did what.
+
 **Voice: a blog post, not a research paper.** This is the constraint most likely
 to be broken by a later edit, because the material invites over-writing. Rules:
 

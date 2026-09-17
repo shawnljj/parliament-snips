@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Reading a day of Parliament in forty minutes</title>
-<meta name="description" content="How Parsnips turns 22,793,049 words of Singapore Parliament Hansard into a page you can read in 48 minutes, and check.">
+<meta name="description" content="How I specified Parsnips: turning 22,793,049 words of Singapore Parliament Hansard into a page you can read in 48 minutes, and check.">
 <meta name="color-scheme" content="light">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -268,85 +268,105 @@ footer b{color:var(--ink)}
 <div class="wrap">
 
 <header class="hero">
-  <p class="stamp">Notes on a small project</p>
+  <p class="stamp">Product notes &middot; Parsnips</p>
   <h1>Reading a day of Parliament in <em>forty minutes</em></h1>
   <p class="dek">
-    Singapore publishes everything Parliament says. That is
-    <b>70,796 words</b> for a single sitting &mdash; roughly
-    <b>7.9 hours</b> of reading, if you have the day free. Parsnips
-    turns it into a page you can finish over coffee, where every claim still points
-    at the sentence it came from.
+    Singapore publishes everything Parliament says &mdash;
+    <b>70,796 words</b> for a single sitting, roughly
+    <b>7.9 hours</b> of reading. I specified Parsnips to close the
+    gap between that transcript and a news sound bite: a page you finish over
+    coffee, where every claim still points at the sentence it came from.
   </p>
   <div class="ledger">
-<div class="row"><span class="claim"><b>Words of Hansard in the archive</b><span class="prov">331 sittings, 2016–2026 · data/manifest.json</span></span><span class="fig">22,793,049<span class="u">words</span></span></div>
-<div class="row hi"><span class="claim"><b>Median sitting, read at a summary per speaker</b><span class="prov">287 speaker turns · ~10s each</span></span><span class="fig">48<span class="u">min</span></span></div>
-<div class="row"><span class="claim"><b>Points published, each with its citation</b><span class="prov">summaries/ · python3 tools/metrics.py</span></span><span class="fig">4,614<span class="u">points</span></span></div>
+<div class="row"><span class="claim"><b>Words of Hansard behind it</b><span class="prov">331 sittings, 2016–2026 · data/manifest.json</span></span><span class="fig">22,793,049<span class="u">words</span></span></div>
+<div class="row hi"><span class="claim"><b>Median sitting, at a summary per speaker</b><span class="prov">287 turns · the budget I set</span></span><span class="fig">48<span class="u">min</span></span></div>
+<div class="row"><span class="claim"><b>Points published, each with a citation</b><span class="prov">summaries/ · python3 tools/metrics.py</span></span><span class="fig">4,614<span class="u">points</span></span></div>
 </div>
 </header>
 
 <section id="why">
-  <h2>Why bother</h2>
+  <h2>The problem I set out to solve</h2>
   <div class="prose">
     <p class="lede">
-      A sitting covers Bills, ministerial statements, oral answers and Budget
-      debates, and the record of it is genuinely good. It is also unusable for
-      anyone who is not a lawyer or a political scientist. News coverage swings the
-      other way and gives you a phrase, chosen for how it reads rather than for what
-      was decided.
+      I am interested in what the Singapore government is doing. I am not a lawyer
+      or a political scientist, and I am not going to read Hansard. A single sitting
+      runs <strong>70,796 words</strong> across
+      20,962 records &mdash; Bills, ministerial statements, oral
+      answers, Budget debates. At 150 words a minute that is
+      <strong>7.9 hours</strong> for one day of Parliament.
     </p>
     <p>
-      What I wanted was the thing in between: enough to understand what the
-      government is actually doing, without pretending to be the transcript. The
-      target I set was deliberately blunt &mdash; a sitting should take
-      <strong>30 to 60 minutes</strong> to read. That turns a vague ambition into a
-      number I can work against, and it turns into roughly <strong>10 seconds per
-      speaker</strong> once you divide it up. Every summary the system writes has to
-      fit that budget.
+      The alternatives both fail, in opposite directions. News coverage gives you a
+      phrase chosen for how it reads. The transcript gives you everything and is
+      unusable. What I wanted was the middle: enough to understand what was decided,
+      in an hour or less, without it being someone else's selection.
+    </p>
+    <p>
+      So the first thing I did was turn that into a number I could hold the build
+      against. <strong>A sitting should take 30 to 60 minutes.</strong> Working
+      backwards through a median of 287 speaker turns per
+      sitting, that lands on about <strong>ten seconds of reading per speaker</strong>
+      &mdash; roughly 25 to 35 words of summary. That single constraint then decided
+      a surprising amount of the architecture, because a summary that short can
+      only work if it is reliably accurate.
     </p>
   </div>
 </section>
 
 <section id="output">
-  <h2>What a page looks like</h2>
+  <h2>What the product is</h2>
   <div class="prose">
     <p class="lede">
-      Every exchange gets a short brief, in the order it happened. Not a highlights
-      reel &mdash; the whole sitting, just compressed. Each brief carries a few
-      points, and each point carries the words it was taken from, one tap away.
+      Every exchange gets a brief, in the order it happened. Not the highlights
+      &mdash; the whole sitting, compressed. Each brief carries a few points, and
+      each point carries the words it came from, one tap away.
     </p>
   </div>
   <div class="claimbox">
-    <span class="cl">An example, from 2026-01-12</span>
+    <span class="cl">A real example, from 2026-01-12</span>
     <p class="say">&ldquo;The PSGA was introduced in 2018 to enable public agencies to share data safely and purposefully.&rdquo;</p>
-    <p class="who">Said by <b>Ms Jasmin Lau</b>, and shown with this
-      underneath it: <b>&ldquo;It helped to enable, among other objectives, public agencies to share data safely and purposefully, so that we can serve Singaporeans better.&rdquo;</b></p>
+    <p class="who">Said by <b>Ms Jasmin Lau</b>, shown with this underneath
+      it: <b>&ldquo;It helped to enable, among other objectives, public agencies to share data safely and purposefully, so that we can serve Singaporeans better.&rdquo;</b></p>
   </div>
   <div class="prose" style="margin-top:1.5em">
     <p>
-      The quote is not a paraphrase. It is the sentence from Hansard, and the system
-      is built so that it cannot be anything else. That constraint is the most
-      interesting thing about the project, so the next section is about it.
+      That second line is not a paraphrase. It is the sentence from Hansard. Getting
+      that guarantee &mdash; rather than asking a model nicely to quote accurately
+      &mdash; was the requirement I spent the longest on, and it is what the rest of
+      this page is about.
     </p>
   </div>
 </section>
 
 <section id="provenance">
-  <h2>The one idea that makes it work</h2>
+  <h2>The requirement that shaped everything</h2>
   <div class="prose">
     <p class="lede">
-      Most summarisers ask a model to read the text and write out the quotes. That
-      is where things go wrong quietly: the model reword a sentence slightly, and
-      unless you check every quotation against the original you will never notice.
-      So I stopped asking.
+      I wrote the correctness requirement before any of the code existed, because
+      the stakes are not a blog post's. These are parliamentary transcripts. One
+      misattributed quotation would undermine the credibility of the whole thing
+      &mdash; and the failure mode is quiet, because a summary that looks
+      well-written is exactly what you would not think to check.
     </p>
     <p>
-      The model never writes a quotation. It points at one &mdash; it returns the
-      <em>id</em> of the sentence it is talking about, and the system pastes the real
-      sentence in afterwards. The model can be wrong about which sentence matters.
-      It cannot invent one.
+      So I specified it structurally rather than editorially. <strong>Every claim
+      must cite a verbatim quotation, and the quotation must be verifiable against
+      the source at a known position.</strong> Not "the model should quote
+      accurately." Verifiable.
     </p>
     <p>
-      Which means the claim below is checkable by anyone, including you. Try it.
+      What I did not specify was how. That is where the approach came in &mdash;
+      and where the first design was wrong. It had the model read the transcript and
+      write out the quotes, then a checker verifying them afterwards. Which works
+      until it doesn't: the checker only sees what the model produced, so a
+      paraphrase that happens to be close gets waved through.
+    </p>
+    <p>
+      The correction was to stop the model writing quotations at all. It returns the
+      <em>id</em> of the sentence it is referring to, and the system substitutes the
+      real text afterwards. A model can be wrong about which sentence matters. It
+      cannot invent one, because it never types any. The claim below is checkable by
+      anyone, including you.
     </p>
   </div>
 
@@ -406,39 +426,57 @@ footer b{color:var(--ink)}
 </section>
 
 <section id="shape">
-  <h2>How it fits together</h2>
+  <h2>How I specified the pipeline</h2>
   <div class="prose">
     <p class="lede">
-      Four steps, and only one of them uses a model. Everything mechanical &mdash;
-      fetching, cleaning, counting, pasting quotes back in &mdash; is ordinary code,
-      which is both cheaper and repeatable.
+      Four stages, and I required that only one of them is allowed to use a model.
+      Everything mechanical &mdash; fetching, splitting, counting, pasting quotes
+      back in &mdash; has to be ordinary code, because it has to give the same answer
+      twice.
     </p>
   </div>
   <ol class="stages">
-    <li class="stage"><div class="sh"><span class="sname">Fetch</span><span class="tag det">no model</span></div><p class="swhat">Pull the sittings down and keep them, exactly as published.</p><p class="sdet">One batch per year, resumable, so an interrupted run picks up where it stopped. 331 sittings, no failures.</p></li>
-    <li class="stage"><div class="sh"><span class="sname">Break it up</span><span class="tag det">no model</span></div><p class="swhat">Cut each sitting into the units a reader thinks in.</p><p class="sdet">A sitting becomes sections (Bills, statements, oral answers), each section becomes one speaker's turn, and each turn gets its own id. Every sentence is numbered so it can be pointed at later.</p></li>
-    <li class="stage is-model"><div class="sh"><span class="sname">Summarise</span><span class="tag model">model</span></div><p class="swhat">Read a turn and decide what mattered.</p><p class="sdet">The only step that needs judgement, so it is the only step that uses a model. Large items &mdash; 880 of 3,912 &mdash; are handled in pieces.</p></li>
-    <li class="stage"><div class="sh"><span class="sname">Check</span><span class="tag det">no model</span></div><p class="swhat">Prove it before it goes out.</p><p class="sdet">Every quote is re-checked against the archive, and so is the coverage: how much of the item actually got summarised. Anything that fails is held back rather than published with a caveat.</p></li>
+    <li class="stage"><div class="sh"><span class="sname">Fetch</span><span class="tag det">no model</span></div><p class="swhat">Pull the sittings down and keep them exactly as published.</p><p class="sdet">One batch per year, resumable, so an interrupted run picks up where it stopped. 331 sittings, no failures.</p></li>
+    <li class="stage"><div class="sh"><span class="sname">Split</span><span class="tag det">no model</span></div><p class="swhat">Cut each sitting into the units a reader actually thinks in.</p><p class="sdet">A sitting becomes sections, each section becomes one speaker's turn, and each turn is cut into numbered sentences. Every sentence gets an id so it can be pointed at later.</p></li>
+    <li class="stage is-model"><div class="sh"><span class="sname">Summarise</span><span class="tag model">model</span></div><p class="swhat">Read a turn and decide what mattered.</p><p class="sdet">The only stage allowed judgement, so the only stage allowed a model. Large items &mdash; 880 of 3,912 &mdash; are handled in pieces.</p></li>
+    <li class="stage"><div class="sh"><span class="sname">Check</span><span class="tag det">no model</span></div><p class="swhat">Prove it before it goes out.</p><p class="sdet">Every quote is re-checked against the archive, and so is the coverage: how much of the item actually got summarised. Anything that fails is held back, never published with a caveat.</p></li>
   </ol>
   <div class="prose" style="margin-top:1.5em">
     <p>
-      The check is two questions, not one, and that turned out to matter. The first
-      is &#8220;does this quote exist in the record&#8221;, which sounds like enough.
-      The second is &#8220;did we actually summarise the whole thing&#8221;. I only
-      added the second after the first one spent a while telling me everything was
-      fine while it wasn't.
+      The splitting stage is where I overruled the build, and it is the decision I
+      would defend hardest. The first design grouped work by debate <em>title</em> and
+      merged across days, which produced a genuine bug: Budget 2016 and Budget 2026
+      got welded into one 271,095-word blob, because titles repeat across years.
+    </p>
+    <p>
+      The unit I specified instead is the <strong>speaker turn</strong>. A turn
+      belongs to exactly one record, sits in the record's own order, and represents
+      one speaker &mdash; so it cannot collapse across years, and attribution is
+      unambiguous by construction. That was a product decision about what the
+      smallest sensible unit of reading is, and it happened to eliminate a class of
+      data bug as a side effect.
+    </p>
+    <p>
+      I also specified that identity resolution was out of scope. One MP is recorded
+      under several labels depending on the portfolio they are speaking for, and
+      merging those is the step that could misattribute something to the wrong
+      person. I would rather show the same person twice than the wrong person once,
+      so the pipeline groups by the label exactly as recorded and leaves
+      de-duplication to a later layer built on preserved data.
     </p>
   </div>
 </section>
 
 <section id="shape-sample">
-  <h2>What the data actually looks like</h2>
+  <h2>The data model I specified</h2>
   <div class="prose">
     <p class="lede">
-      Everything above is the same idea at four different sizes. A sitting becomes
-      reports, a report becomes turns, a turn is cut into numbered sentences &mdash;
-      and it is the sentence that gets cited. Here is the real thing, taken from the
-      sitting behind the example you just checked.
+      I asked for a normalised schema rather than a pile of JSON files, because the
+      page should be a template and the content should be written once and stored
+      &mdash; which means the shape of the stored content matters more than usual.
+      It is the same idea at four sizes: a sitting becomes reports, a report becomes
+      turns, a turn is cut into numbered sentences, and it is the sentence that gets
+      cited.
     </p>
   </div>
 
@@ -450,9 +488,9 @@ footer b{color:var(--ink)}
     <pre class="code">  <span class="jk">date</span>: &quot;2026-01-12&quot;
   <span class="jk">coverage</span>: {&quot;date&quot;: &quot;2026-01-12&quot;, &quot;collected&quot;: 124, &quot;max_result&quot;: 139, &quot;ratio&quot;: 0.892, &quot;words&quot;: 87364, &quot;turns&quot;: 415, &quot;speaker_attribution&quot;: 0.957, &quot;empty_reports&quot;: 3}
   <span class="jk">reports</span>: &quot;a list of 124&quot;</pre>
-    <p class="snote">Coverage is recorded per sitting, not assumed &mdash; the source
-      API under-reports its own result counts, so this is the number the pipeline
-      actually achieved rather than the one it was promised.</p>
+    <p class="snote">Coverage is recorded per sitting rather than assumed, because
+      the source API under-reports its own result counts. This is what the pipeline
+      actually achieved, not what it was promised.</p>
 
     <div class="sstep">
       <span class="sl">2 &middot; report</span>
@@ -468,9 +506,9 @@ footer b{color:var(--ink)}
   <span class="jk">volume_no</span>: &quot;96&quot;
   <span class="jk">words</span>: 15384
   <span class="jk">turns</span>: &quot;a list of 33&quot;</pre>
-    <p class="snote">The format era is recorded (<code>report_version</code>) so a
-      later link or check never has to guess it, and the title is stored but never
-      used as a key.</p>
+    <p class="snote">The format era is recorded so a later link or validation pass
+      never has to infer it, and the title is stored but never used as a key &mdash;
+      titles are not unique, which is exactly what broke the earlier design.</p>
 
     <div class="sstep">
       <span class="sl">3 &middot; turn</span>
@@ -480,10 +518,10 @@ footer b{color:var(--ink)}
   <span class="jk">lang</span>: &quot;English&quot;
   <span class="jk">is_procedural</span>: false
   <span class="jk">words</span>: 2455</pre>
-    <p class="snote">This is the turn the quotation came from &mdash; a
-      2,455-word speech. The speaker label is the whole thing, in
-      full and unedited, because that is what the record holds: the pipeline keeps
-      the portfolio and the parenthetical and does not try to tidy it into a name.</p>
+    <p class="snote">The turn the quotation came from &mdash; a
+      2,455-word speech. The speaker label is kept in full and
+      unedited, portfolio and all, because that is what the record holds and
+      tidying it into a clean name is the identity resolution I ruled out.</p>
 
     <div class="sstep">
       <span class="sl">4 &middot; sentence</span>
@@ -498,12 +536,12 @@ footer b{color:var(--ink)}
   <span class="jk">score</span>: 3.0</pre>
     <p class="snote">This is the row the claim above points at. The
       <code>sid</code> is what a published point stores instead of a quotation, and
-      on a real build it also carries the character offsets and a hash of the text
-      &mdash; the pair that lets the check you ran be repeated by anyone. (The
-      speaker here is shortened to fit; the record holds it in full.)</p>
+      on a real build it carries the character offsets and a hash of the text &mdash;
+      the pair that lets the check you just ran be repeated by anyone. (The speaker
+      here is shortened to fit; the record holds it in full.)</p>
 
     <div class="sstep">
-      <span class="sl">5 &middot; the item the summariser reads</span>
+      <span class="sl">5 &middot; what the summariser reads</span>
       <span class="sf">sentences plus chunk definitions</span>
     </div>
     <pre class="code">  <span class="jk">id</span>: &quot;bill-772&quot;
@@ -517,66 +555,82 @@ footer b{color:var(--ink)}
   chunks:    87 lists of sentence ids, e.g. [&quot;s00001&quot;, &quot;s00002&quot;, &quot;s00003&quot;, &quot;s00004&quot;, &quot;s00005&quot;]</pre>
     <p class="snote">Chunks are lists of <em>ids</em>, not slices of text, which is
       what keeps the whole thing checkable. <code>excluded_counts</code> records what
-      was left out and why, so a silent drop is impossible. The
+      was left out and why, so a drop can never be silent. The
       <code>turn_index</code> on each sentence counts the turns that survived
       filtering, across the whole item &mdash; not the sitting's array positions
-      &mdash; which is exactly the kind of thing that has to be written down, because
-      I got it wrong the first time and cited a turn number the pipeline would never
-      produce.</p>
+      &mdash; the kind of detail that has to be written down, because the build got
+      it wrong once and cited a turn number the pipeline would never produce.</p>
   </div>
 </section>
 
 <section id="lessons">
-  <h2>Things that went wrong</h2>
+  <h2>What the build got wrong, and what I changed</h2>
   <div class="prose">
     <p class="lede">
-      Worth writing down, because they changed how the thing is built rather than
-      just being bugs I fixed.
+      I specified the requirements and built it with Claude doing the
+      implementation, iterating over a couple of days. Most of the interesting work
+      was not writing code &mdash; it was catching the places where the build had
+      quietly assumed something I had not asked for. Three are worth writing down.
     </p>
   </div>
   <ol class="lessons">
     <li>
-      <h3>The check that said 100% while the output was empty</h3>
+      <h3>It optimised for elegance where I had asked for correctness</h3>
       <p>
-        A rule meant to skip procedural noise was matching in the wrong place, and
-        throwing away whole ministerial speeches &mdash; 742 turns
-        across the archive carry that flag, including one
-        6,403-word reply.
+        Left to itself, the build produced a clever design: deterministic code would
+        pick the most important sentences, and the model would only ever see those.
+        Cheaper, reproducible, and a tenth of the prompt size.
       </p>
       <p>
-        The lesson: my quote checker was reporting a clean bill of health the entire
-        time. It could not see the problem, because a summary with nothing in it
-        trivially has no wrong quotes. <strong>A check that only tests one way of
-        being wrong will happily certify a different failure.</strong> That is why
-        coverage is now checked as well.
-      </p>
-    </li>
-    <li>
-      <h3>A document of mine was wrong by 16&times;</h3>
-      <p>
-        I had written &#8220;1,100,000 words per sitting&#8221; in my own notes.
-        The real figure is 70,796. Nobody had recomputed it,
-        because it was written in prose rather than produced by the code.
+        It is also a ceiling. If the selector chooses badly the model never sees the
+        rest and writes a confident summary of the wrong material anyway &mdash; and
+        in one session I watched four defects surface in that selector, including one
+        that discarded whole ministerial speeches while the verifier reported a clean
+        bill of health.
       </p>
       <p>
-        So now anything the system says about itself is computed from the data, and
-        this page is built the same way &mdash; the numbers you are reading were
-        generated from the archive when the page was built, not typed by me.
+        So I stopped it and asked for the balance in writing: deterministic where it
+        is reliable, a model where judgement is needed. The line I drew is that
+        <strong>code handles the boring parts and the substitution that guarantees
+        verbatim quotes; the model decides what matters</strong>, over text it can
+        actually see. My instruction to the build was to write that down as a
+        requirement rather than a preference, so it could not drift back.
       </p>
     </li>
     <li>
-      <h3>Being clever about selection was the wrong instinct</h3>
+      <h3>It called my navigation tree a risk. I disagreed</h3>
       <p>
-        My first design had code pick the important sentences and gave the model only
-        those, which felt efficient and responsible. It was a trap: if the code
-        chooses badly, the model never sees the rest and writes a confident summary
-        of the wrong material anyway.
+        I specified the reading structure as sitting &rarr; section &rarr; speaker
+        &rarr; content, derived from the record. The build recorded this as "the
+        highest-risk open question: a heuristic doing structural work."
       </p>
       <p>
-        Deterministic code is good at the boring parts &mdash; cleaning, filtering,
-        pasting quotes back. Deciding what matters is the part it is bad at, and the
-        part a model is good at. Splitting the work along that line is the whole
-        architecture.
+        It is not inferred. A turn is one contiguous block under one speaker label.
+        A section is the record's own type, which the parser already assigns. The
+        speaker level is the recorded label itself. My reply was that there is no
+        guessing here &mdash; it is a transformation of the record, not an
+        interpretation of it &mdash; and the document was corrected to say so.
+      </p>
+      <p>
+        The reason I pushed: calling a deterministic transformation "high risk"
+        invites someone to solve it with a model, which is how guesswork gets
+        introduced into a system whose whole value is that it does not guess.
+      </p>
+    </li>
+    <li>
+      <h3>It trusted a boundary probe. The fetch proved it wrong</h3>
+      <p>
+        The archive floor was set at 2016 on the strength of a probe that concluded
+        pre-2016 was unreadable. Then an actual fetch of 2015-01-19 came back clean:
+        86 reports, 55,270 words, 287 turns, 97.2% attribution.
+      </p>
+      <p>
+        Nothing was wrong with 2015. The floor is a deliberate scope choice, not a
+        technical limit, and I had the requirement restated that way. It is a small
+        thing, but it is the pattern I kept watching for all the way through:
+        <strong>a conclusion drawn from a cheap test is not the same as a fact about
+        the system</strong>, and the difference matters when the test is the thing
+        that decided the scope.
       </p>
     </li>
   </ol>
@@ -586,9 +640,10 @@ footer b{color:var(--ink)}
   <h2>Where it stands</h2>
   <div class="prose">
     <p class="lede">
-      In progress, and built one step at a time on purpose. The archive is done and
-      the summarising step is next; I would rather show you where the line actually
-      is than round it up.
+      In progress, and built one stage at a time deliberately &mdash; I asked for a
+      stop-and-review after each stage rather than running the pipeline end to end,
+      because a correctness problem found late is a correctness problem in the
+      archive.
     </p>
   </div>
   <div class="gap">
@@ -596,27 +651,29 @@ footer b{color:var(--ink)}
       <span class="st">All 331 sittings from 2016 to 2026, fetched and
       kept &mdash; 22,793,049 words. Resumable, and honest about its own
       gaps: 52 of the 331 sittings came back
-      with fewer records than the source claimed they contained.</span></div>
+      with fewer records than the source claimed to hold.</span></div>
     <div class="g"><span class="req">Done</span>
-      <span class="st">The sitting is broken into
-      94,272 speaker turns and 754,082 numbered
-      sentences, ready to be pointed at.</span></div>
+      <span class="st">The sitting is broken into 94,272 speaker turns
+      and 754,082 numbered sentences, ready to be pointed at.</span></div>
     <div class="g"><span class="req">Next</span>
       <span class="st">Summarising at scale. 291 briefs were written
-      as a trial, which is enough to prove the approach and not enough to be the
+      as a trial &mdash; enough to prove the approach, not enough to be the
       product.</span></div>
     <div class="g"><span class="req">Next</span>
-      <span class="st">Storing the position of every sentence, so the check you just
-      ran works across the whole archive rather than the example above.</span></div>
+      <span class="st">Storing the position of every sentence, so the check you ran
+      works across the whole archive rather than the one example above.</span></div>
   </div>
 </section>
 
 <footer>
   <div class="prose">
-    <p>Built on Singapore's Parliament Hansard (sprs.parl.gov.sg), 2016 to 2026.
-      Every number on this page is generated from the archive by
-      <code>site/build_case_study.py</code> rather than written by hand, which is a
-      rule the project adopted after the 16&times; mistake above.</p>
+    <p>Parsnips is built on Singapore's Parliament Hansard (sprs.parl.gov.sg),
+      2016 to 2026. I wrote the requirements and made the product decisions; the
+      implementation and the defects described above came out of iterating with a
+      model against those requirements. Every number on this page is generated from
+      the archive by <code>site/build_case_study.py</code> rather than typed in
+      &mdash; a rule I made after a figure in my own notes turned out to be wrong by
+      16&times;.</p>
   </div>
 </footer>
 </div>
