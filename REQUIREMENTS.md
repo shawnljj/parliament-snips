@@ -182,22 +182,132 @@ asserted:
 | Documentation drifts from data | Wrong decisions from wrong numbers | **Observed.** A doc claimed 1.1M words/sitting; real figure is 68,861 (N-3) |
 | Pre-2016 format differs | Scope creep | Declared out of scope (R-6.3) |
 
-## 9. Open questions
+## 9. Decisions taken (17 Sep 2026, owner)
 
-Recorded as unanswered rather than assumed:
+These were open questions; they are now requirements. Each is recorded with the
+evidence that informed it, so a future reader can see why rather than just what.
 
-1. **Atomic unit of provenance** — sentence, or turn? A sentence is the citation unit;
-   a turn is the attribution unit. Likely both, but not yet decided.
-2. **Failure policy** — if one item fails validation, does the whole batch fail, or
-   does the item fail and the rest proceed?
-3. **Verification strictness** — must a quotation match byte-for-byte after
-   normalisation, or is whitespace-insensitive equality sufficient? (Source uses curly
-   quotes and non-breaking spaces.)
-4. **Model choice** — cloud vs local; deferred, pending benchmark. See SUMMARISATION.md.
-5. **Publication policy for unverified items** — publish marked-unverified, or withhold
-   entirely?
+### D-1 Publication is fully automated with hard gates — no human in the loop
 
-## 10. Traceability
+**Decision.** Nothing publishes unless it passes validation. There is no manual review
+step.
+
+**Consequence, and it is the sharpest constraint in this document.** This inverts the
+usual safety model: we cannot rely on a person noticing a bad brief, so **the gates ARE
+the quality process**. A gate that merely reports is worthless here; a gate that
+reports and lets the item through is worse than no gate, because it manufactures
+confidence.
+
+It follows that:
+- Every MUST in §5.2 must be **enforced**, not monitored.
+- A gate must fail *closed*. Unknown state = do not publish.
+- The gates must be testable, because an untested gate is an assumption. Each needs a
+  test that deliberately violates it and asserts the failure is caught. A gate that has
+  never been observed failing has not been shown to work.
+
+**Risk this creates, stated plainly.** Automated publication of a document about
+legislative proceedings means a gate bug becomes a published inaccuracy that nobody
+catches. The mitigating requirement is R-2.2 (recorded provenance): provenance can be
+*re-verified independently* after publication, whereas a judgement cannot.
+
+### D-2 Item-level failure isolation
+
+**Decision.** An item that fails validation fails alone. It is recorded for review; the
+remaining items proceed.
+
+**Consequence.** Publishing becomes per-item, not per-batch. Two states only: **verified
+and published**, or **failed and recorded**. There must be no third "probably fine"
+state, because D-1 removes the human who would resolve it.
+
+The failed set must be durable and inspectable — it is the only artefact a human ever
+sees, so it is the one thing that must not be lossy. Requirement R-4.6 upgraded from
+SHOULD to MUST.
+
+### D-3 An unvalidatable item is withheld entirely
+
+**Decision.** If an item's dataset cannot be fully validated, publish nothing for it.
+Not a partial brief, not a marked-unverified brief.
+
+**Consequence, and this one costs something visible.** Withholding is not neutral — it
+leaves a hole in a sitting page. So R-5.5 becomes load-bearing: the page must show the
+hole *as* a hole ("2 of 16 items could not be verified and are withheld"), never as
+silent absence. A reader must never mistake "we could not verify this" for "nothing
+happened here."
+
+That distinction is the whole reason D-3 is safe. Without honest reporting of absence,
+withholding would be indistinguishable from incompleteness.
+
+### D-4 Unattributed claims are published, marked as inferred
+
+**Decision.** Where the source carries no speaker, the claim is published with its
+speaker marked as inferred from context.
+
+**Evidence.** Measured: 3,802 of 94,272 turns (4.0%) carry no speaker, and some are
+substantive (a 438-word response with no name). The record itself is incomplete, so
+excluding these would drop real content.
+
+**Consequence.** R-2.4 must be enforced structurally, not by convention:
+- every claim records whether its attribution came **from the record** or was
+  **inferred**;
+- the inference method must be deterministic and stated (currently: carry the last
+  known speaker forward within the same report);
+- the published page must render the distinction, so a reader knows which is which;
+- an inferred attribution must never be presented with the same confidence as a
+  recorded one.
+
+### D-5 `why_it_matters` is removed
+
+**Decision.** The field is dropped. It is the one field the record frequently cannot
+support, making it the largest fabrication risk in the schema.
+
+**Evidence, which supports the decision beyond the principle.** Of 291 existing briefs,
+only 70 ever populated it — and of those, **20 (29%) contain the placeholder dodge**
+("The record does not set out the practical impact."). A field that is absent 76% of the
+time and evasive 29% of the time it appears is not carrying its weight, and the field
+that remains is precisely the one where a model would be tempted to editorialise.
+
+**Consequence — this changes the product, not just the schema.** `why_it_matters` is
+the narrative hook: it was the answer to "why should I care?" Removing it means a brief
+must earn a reader's attention with the substance itself — what was decided, who pushed
+for what, what the figures were. That is a harder editorial bar, and it is the right one
+for a document that must not editorialise.
+
+It also means the page hierarchy loses its middle layer: `what_it_is` states the
+business, and the key points must now carry the significance. R-5.4 (navigability) and
+the presentation design need to absorb that.
+
+**Supersedes:** the 50 substantive `why_it_matters` values in existing briefs. They were
+written under the old schema; whether to migrate or discard them is a design question.
+
+## 10. Amended requirements
+
+| ID | Change |
+|---|---|
+| R-2.4 | **Strengthened.** Attribution must record provenance (recorded vs inferred) and the inference method; the page must render the distinction (D-4) |
+| R-2.8 | **New.** A gate must fail closed: unknown or unvalidated state results in non-publication (D-1, D-3) |
+| R-2.9 | **New.** Every gate must have a test that deliberately violates it and asserts the violation is caught. An untested gate is an assumption, not a control (D-1) |
+| R-3.6 | **Replaced.** Item-level fields must be derivable from the record; `why_it_matters` is removed (D-5) |
+| R-4.6 | **Upgraded SHOULD → MUST.** Failures must be isolated per item and durably recorded; the failed set is the only artefact a human reviews (D-2) |
+| R-5.5 | **Upgraded SHOULD → MUST.** Withheld items must be reported as withheld, with counts, so absence is never mistaken for silence in the record (D-3) |
+| R-6.7 | **New.** The schema must carry attribution provenance as a first-class field, not a convention (D-4) |
+
+## 11. Open questions
+
+Still unanswered, recorded rather than assumed:
+
+1. **Atomic unit of provenance** — sentence or turn? A sentence is the citation unit; a
+   turn is the attribution unit. Likely both, not yet decided.
+2. **Verification strictness** — must a quotation match byte-for-byte after
+   normalisation, or is whitespace-insensitive equality sufficient? The source uses
+   curly quotes and non-breaking spaces.
+3. **Model choice** — cloud vs local; deferred pending benchmark. See SUMMARISATION.md.
+4. **Migration of the 50 substantive `why_it_matters` values** written under the old
+   schema — migrate into key points, or discard.
+5. **Where significance now lives.** With `why_it_matters` gone (D-5), does a brief need
+   a new deterministic field carrying "what changes", or does the key points list carry
+   it alone?
+
+## 12. Traceability
 
 | Requirement | Current state |
 |---|---|
