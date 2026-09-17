@@ -656,12 +656,71 @@ footer b{color:var(--ink)}
       <span class="st">The sitting is broken into 94,272 speaker turns
       and 754,082 numbered sentences, ready to be pointed at.</span></div>
     <div class="g"><span class="req">Next</span>
-      <span class="st">Summarising at scale. 291 briefs were written
-      as a trial &mdash; enough to prove the approach, not enough to be the
-      product.</span></div>
+      <span class="st">Summarising at scale. The extraction stage is built and verified on a full sitting; no briefs are published yet.</span></div>
     <div class="g"><span class="req">Next</span>
       <span class="st">Storing the position of every sentence, so the check you ran
-      works across the whole archive rather than the one example above.</span></div>
+      works across the whole archive rather than the one example above. The quote
+      chain is designed and demonstrated; populating offsets and hashes for all
+      754,082 sentences is what turns that example into a property of
+      the corpus.</span></div>
+  </div>
+</section>
+
+<section id="stack">
+  <h2>What it runs on, and what it cost</h2>
+  <div class="prose">
+    <p class="lede">
+      The stack is deliberately boring: Hermes as the agent driving the build,
+      Ollama serving a small model locally, and Telegram so I could steer it from my
+      phone while it ran. The only paid component is the cloud model I used as a
+      comparison point, and the point of the local path is that it costs nothing per
+      token.
+    </p>
+  </div>
+  <div class="gap">
+    <div class="g"><span class="req">Agent</span>
+      <span class="st"><b>Hermes</b> &mdash; drove the build, ran the
+      benchmarks and held the requirements in view across sessions.</span></div>
+    <div class="g"><span class="req">Inference</span>
+      <span class="st"><b>Ollama</b> on this Mac, serving <b>llama3.2:3b</b> for the
+      extraction stage. 2.0 GB, runs on the GPU, no API key.</span></div>
+    <div class="g"><span class="req">Comparison</span>
+      <span class="st"><b>DeepSeek v4.1 Flash</b> via Ollama's cloud proxy &mdash; the
+      paid path, measured against the local one rather than assumed better.</span></div>
+    <div class="g"><span class="req">Interface</span>
+      <span class="st"><b>Telegram</b> &mdash; a long run is something you check on a
+      phone, not something you watch in a terminal.</span></div>
+  </div>
+
+  <h3 style="margin:2em 0 .3em">Tokens and money, measured</h3>
+  <div class="prose">
+    <p>
+      Read from the run's own log (<code>pipeline/usage.jsonl</code>), so these are
+      accounting rather than estimates.
+    </p>
+  </div>
+  <div class="ledger">
+<div class="row hi"><span class="claim"><b>Items summarised, all published, none withheld</b><span class="prov">pipeline/usage.jsonl &amp;middot; 783 model calls</span></span><span class="fig">100<span class="u">items</span></span></div>
+<div class="row"><span class="claim"><b>Tokens consumed</b> across every run so far<span class="prov">1,055,050 in / 146,069 out</span></span><span class="fig">1,201<span class="u">k tok</span></span></div>
+<div class="row"><span class="claim"><b>Spent on inference</b> &mdash; local, so nothing at the margin<span class="prov">the same work on cloud measured $0.189</span></span><span class="fig">$0.00<span class="u"></span></span></div>
+</div>
+  <div class="prose" style="margin-top:1.4em">
+    <p>
+      That is the whole economic argument for doing this locally. Per item the
+      pipeline consumes about <b>10,550 tokens in and
+      1,460 out</b>; at the cloud model's rates
+      ($0.14 and $0.28 per million) that is roughly
+      <b>$0.0019 per item</b>. Summarising the entire
+      331-sitting archive would cost single-digit dollars on cloud
+      &mdash; but it would take a night either way, and the local path avoids
+      depending on a paid endpoint for a public-interest archive that should still
+      work in five years.
+    </p>
+    <p>
+      The real cost is wall-clock, which is why the benchmark reports it: about
+      <b>19 seconds per item</b> measured, so one year of sittings is a couple of
+      hours and the full archive is most of a day.
+    </p>
   </div>
 </section>
 

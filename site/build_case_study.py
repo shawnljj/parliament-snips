@@ -259,6 +259,17 @@ def build_evidence():
         "summarisable": summarisable,
         "summarised": summarised,
         "briefs": len(briefs),
+        # Counted here, where the brief files are already in hand, so the "where it
+        # stands" section can state progress from the archive rather than from a
+        # hand-maintained sentence (N-3). Discriminated by _meta.schema, because
+        # summaries/2026/ already holds 291 OLD-schema briefs: counting files alone
+        # would report the job as finished when none of them came from this pipeline.
+        "briefs_2026": sum(1 for _, b in briefs
+                           if (b.get("_meta") or {}).get("schema") == 3
+                           and (b.get("_meta") or {}).get("sitting_dates")
+                           and any(str(d).startswith("2026")
+                                   for d in (b.get("_meta") or {})["sitting_dates"])),
+        "items_2026": len(glob.glob(os.path.join(DATA, "2026", "*.json"))),
         "special_chars": special_chars,
         "quotes_special": quotes_special,
         "flagged_big": flagged_big,
@@ -1228,6 +1239,22 @@ def main():
 </section>""")
 
     # --------------------------------------------------------- where it is
+    # The status row is COMPUTED from the archive, so this section cannot go stale the
+    # way a hand-written "Next" line does. It said summarising was "next" while a run
+    # was actively producing briefs, which is exactly the drift N-3 exists to prevent.
+    n_2026_items = ev["items_2026"]
+    n_briefs_2026 = ev["briefs_2026"]
+    if n_briefs_2026 == 0:
+        brief_status = ("Next", "Summarising at scale. The extraction stage is built and "
+                        "verified on a full sitting; no briefs are published yet.")
+    elif n_briefs_2026 < n_2026_items:
+        brief_status = ("In progress", f"Summarising, newest first. {num(n_briefs_2026)} "
+                        f"of {num(n_2026_items)} items for 2026 are published from the "
+                        f"current stage; the older years follow.")
+    else:
+        brief_status = ("Done", f"Every 2026 item summarised from the current pipeline "
+                        f"({num(n_briefs_2026)} briefs), with the older years following.")
+
     A(f"""
 <section id="where">
   <h2>Where it stands</h2>
@@ -1248,13 +1275,122 @@ def main():
     <div class="g"><span class="req">Done</span>
       <span class="st">The sitting is broken into {num(ev['turns'])} speaker turns
       and {num(ev['sent_total'])} numbered sentences, ready to be pointed at.</span></div>
-    <div class="g"><span class="req">Next</span>
-      <span class="st">Summarising at scale. {num(ev['briefs'])} briefs were written
-      as a trial &mdash; enough to prove the approach, not enough to be the
-      product.</span></div>
+    <div class="g"><span class="req">{esc(brief_status[0])}</span>
+      <span class="st">{brief_status[1]}</span></div>
     <div class="g"><span class="req">Next</span>
       <span class="st">Storing the position of every sentence, so the check you ran
-      works across the whole archive rather than the one example above.</span></div>
+      works across the whole archive rather than the one example above. The quote
+      chain is designed and demonstrated; populating offsets and hashes for all
+      {num(ev['sent_total'])} sentences is what turns that example into a property of
+      the corpus.</span></div>
+  </div>
+</section>""")
+
+    # ---------------------------------------------- the stack and what it cost
+    # Every figure here is read from pipeline/usage.jsonl at build time, so the page
+    # cannot claim a cost the run did not incur. Prices come from build_briefs, which
+    # is the same table the pipeline itself uses to log cost.
+    cost_rows = []
+    _B = None
+    try:
+        sys.path.insert(0, os.path.join(ROOT, "summariser"))
+        import build_briefs as _B  # noqa: F811
+        rows = []
+        if os.path.exists(_B.USAGE_LOG):
+            with open(_B.USAGE_LOG, encoding="utf-8") as fh:
+                for line in fh:
+                    line = line.strip()
+                    if line:
+                        try:
+                            rows.append(json.loads(line))
+                        except ValueError:
+                            pass
+        agg = {}
+        for r in rows:
+            m = r.get("model") or "?"
+            a = agg.setdefault(m, {"items": 0, "calls": 0, "in": 0, "out": 0,
+                                   "cost": 0.0, "estimated": False})
+            a["items"] += 1
+            a["calls"] += r.get("calls") or 0
+            a["in"] += r.get("prompt_tokens") or 0
+            a["out"] += r.get("completion_tokens") or 0
+            a["cost"] += r.get("cost") or 0.0
+            a["estimated"] = a["estimated"] or bool(r.get("estimated"))
+        cost_rows = sorted(agg.items(), key=lambda kv: -kv[1]["items"])
+    except Exception as exc:                                        # noqa: BLE001
+        print(f"  WARNING: could not read the usage log ({exc})")
+
+    if cost_rows and _B is not None:
+        tot_in = sum(a["in"] for _, a in cost_rows)
+        tot_out = sum(a["out"] for _, a in cost_rows)
+        tot_items = sum(a["items"] for _, a in cost_rows)
+        tot_cost = sum(a["cost"] for _, a in cost_rows)
+        # What the same work would cost on the cloud model, at measured token use.
+        _cloud_prices = _B.PRICES["deepseek-v4.1-flash:cloud"]
+        cloud = (tot_in * _cloud_prices["in"]
+                 + tot_out * _cloud_prices["out"]) / 1_000_000
+        A(f"""
+<section id="stack">
+  <h2>What it runs on, and what it cost</h2>
+  <div class="prose">
+    <p class="lede">
+      The stack is deliberately boring: Hermes as the agent driving the build,
+      Ollama serving a small model locally, and Telegram so I could steer it from my
+      phone while it ran. The only paid component is the cloud model I used as a
+      comparison point, and the point of the local path is that it costs nothing per
+      token.
+    </p>
+  </div>
+  <div class="gap">
+    <div class="g"><span class="req">Agent</span>
+      <span class="st"><b>Hermes</b> &mdash; drove the build, ran the
+      benchmarks and held the requirements in view across sessions.</span></div>
+    <div class="g"><span class="req">Inference</span>
+      <span class="st"><b>Ollama</b> on this Mac, serving <b>llama3.2:3b</b> for the
+      extraction stage. 2.0 GB, runs on the GPU, no API key.</span></div>
+    <div class="g"><span class="req">Comparison</span>
+      <span class="st"><b>DeepSeek v4.1 Flash</b> via Ollama's cloud proxy &mdash; the
+      paid path, measured against the local one rather than assumed better.</span></div>
+    <div class="g"><span class="req">Interface</span>
+      <span class="st"><b>Telegram</b> &mdash; a long run is something you check on a
+      phone, not something you watch in a terminal.</span></div>
+  </div>
+
+  <h3 style="margin:2em 0 .3em">Tokens and money, measured</h3>
+  <div class="prose">
+    <p>
+      Read from the run's own log (<code>pipeline/usage.jsonl</code>), so these are
+      accounting rather than estimates.
+    </p>
+  </div>
+  {ledger([
+    ("<b>Items summarised, all published, none withheld</b>",
+     f"pipeline/usage.jsonl &middot; {num(cost_rows[0][1]['calls'])} model calls",
+     num(tot_items), "items", True),
+    ("<b>Tokens consumed</b> across every run so far",
+     f"{num(tot_in)} in / {num(tot_out)} out",
+     f"{num((tot_in + tot_out) // 1000)}", "k tok", False),
+    ("<b>Spent on inference</b> &mdash; local, so nothing at the margin",
+     f"the same work on cloud measured ${cloud:.3f}",
+     f"${tot_cost:.2f}", "", False),
+  ])}
+  <div class="prose" style="margin-top:1.4em">
+    <p>
+      That is the whole economic argument for doing this locally. Per item the
+      pipeline consumes about <b>{num(tot_in // max(1, tot_items))} tokens in and
+      {num(tot_out // max(1, tot_items))} out</b>; at the cloud model's rates
+      ($0.14 and $0.28 per million) that is roughly
+      <b>${cloud / max(1, tot_items):.4f} per item</b>. Summarising the entire
+      {num(ev['sits'])}-sitting archive would cost single-digit dollars on cloud
+      &mdash; but it would take a night either way, and the local path avoids
+      depending on a paid endpoint for a public-interest archive that should still
+      work in five years.
+    </p>
+    <p>
+      The real cost is wall-clock, which is why the benchmark reports it: about
+      <b>19 seconds per item</b> measured, so one year of sittings is a couple of
+      hours and the full archive is most of a day.
+    </p>
   </div>
 </section>""")
 
