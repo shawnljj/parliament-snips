@@ -368,23 +368,81 @@ the presentation design need to absorb that.
 **Supersedes:** the 50 substantive `why_it_matters` values in existing briefs. They were
 written under the old schema; whether to migrate or discard them is a design question.
 
-### D-6 Navigation is FOUR levels: sitting → section → group → turn
+### D-6 Navigation is a deterministic tree: sitting → section → speaker → content
 
-**Decision.** A debate is not a flat list of turn summaries. Within a section, turns are
-grouped, and the group is a navigable level.
+**Decision.** The navigation structure is a tree derived from the record's own structure:
 
-**Why it matters.** A Budget debate is 80 turns and 53,337 words. Individually accurate
-turn summaries do not reveal the shape of the argument — who proposed, who opposed, what
-the Minister conceded. The grouping level is where that becomes visible, and it is what
-makes "easy to navigate" true rather than aspirational.
+```
+SITTING
+  └── SECTION      motion | ministerial statement | oral question | bill | Budget …
+        └── SPEAKER      the speaker label AS RECORDED — no identity resolution
+              └── CONTENT      their turn — summarised, verbatim collapsible
+                    └── POINTS      (deferred — see D-7)
+```
 
-**Consequence.** The group is a derived entity with its own identity, and how it is
-formed is a design question (by speaker? by theme? by sub-motion?). This is the one
-place in the pipeline where a heuristic is doing structural work, so it carries the same
-risk class as the sentence-selection heuristics that have already produced four defects
-in this project. It must be validated, not assumed.
+**Correction to an earlier framing in this document.** This was previously recorded as
+"the highest-risk open question: a heuristic doing structural work". That was wrong, and
+the owner correctly pushed back. Nothing here requires inference:
 
-### D-7 Short turns are folded into context, not summarised
+- A **turn** is one contiguous block of text under one speaker label. Measured: 96.0% of
+  94,272 turns carry a speaker; structurally there is one speaker per turn by
+  construction. The unattributed 4% is handled by D-4.
+- A **section** is the report's own type, which the parser already assigns.
+- The **speaker** level is the recorded label itself.
+
+No theme inference, no clustering, no guessing. The tree is a transformation of the
+record, not an interpretation of it.
+
+**Do NOT resolve speaker identities at this stage.** The owner's decision, and it is the
+safer default: treat this as a data transformation first. Group by the speaker label
+exactly as recorded; deduplication, cross-sitting linking and MP-level analysis are a
+later concern, to be built on top of preserved data rather than folded into ingestion.
+
+This matters because identity resolution is the step that could introduce a *new* error —
+merging two different people would be misattribution, the serious failure. Grouping by
+the raw label is information-preserving: it cannot misattribute anybody.
+
+**Known consequence, accepted deliberately.** One person appears under several labels
+because Hansard introduces them with their portfolio. Measured per sitting: **89.6
+distinct speaker strings**, of which ~83 are distinct people; **325 of 331 sittings**
+contain at least one such collapse; worst case 157 strings → 139 people. Example, all one
+person:
+
+```
+'Mr Dinesh Vasu Dash'
+'The Minister of State for Culture, Community and Youth, and Manpower (Mr Dinesh Vasu Dash)'
+'The Minister of State for Manpower (Mr Dinesh Vasu Dash)'
+```
+
+So a reader may see the same person as more than one branch. That is a **display**
+imperfection, not a data defect — the label is verbatim from the record, and no
+information is lost or wrongly attributed. It is revisitable without re-ingesting
+anything, which is exactly why deferring it is cheap.
+
+**The role is information, not noise.** The portfolio in the label ("The Minister for
+Home Affairs") tells a reader what standing the speaker had. It is retained as recorded.
+
+**Procedural "speakers" are not people.** `Mr Speaker`, `[Mr Speaker in the Chair]`,
+`The Chairman`, `[Madam Deputy Speaker]` are chair roles — section furniture rather than
+branches of a speaker tree. Whether they are filtered for display is a presentation
+question, not a data one; they are retained in the data.
+
+### D-7 A fifth level (content → points) is deferred
+
+**Decision.** Do not attempt to split a turn's content into points yet. Summarise the
+whole turn. Revisit sub-structure later.
+
+**Rationale.** Correctness first. Turn-level summarisation is a well-understood unit:
+one speaker, one contiguous text, one summary, verbatim collapsible. Splitting content
+into points within a turn introduces a heuristic with no ground truth — exactly the class
+of thing that has already produced four defects in this project. Deferring it costs
+nothing, because the tree already gives a reader a place to stop reading.
+
+**Consequence.** The summary unit is the turn (or a sub-split of an over-long turn, D-9).
+The tree must be designed so a fifth level can be added without restructuring: a content
+node should be able to carry child point nodes later.
+
+### D-8 Short turns are folded into context, not summarised
 
 **Decision.** Turns under ~15 words are not summarised. They are folded into the
 neighbouring turn as context.
@@ -399,7 +457,7 @@ than its own, so the attribution rule (R-2.4) must still hold: a folded turn's w
 not appear to be spoken by the summarised turn's speaker. This is an attribution-
 correctness risk introduced by the decision, and it needs a gate.
 
-### D-8 Long turns are sub-split at ~1,500 words
+### D-9 Long turns are sub-split at ~1,500 words
 
 **Decision.** A turn over ~1,500 words is split into sub-summaries at natural breaks.
 
@@ -412,7 +470,7 @@ fought with, but at a bounded scale: sub-splits are *within* a turn, so attribut
 unambiguous (one speaker). The verbatim must remain complete regardless — only the
 summary is split.
 
-### D-9 The floor stays at 2016
+### D-10 The floor stays at 2016
 
 **Decision.** Keep 2016 as the ingestion floor. The 2015 fetch works, but re-fetching is
 not worth the cost.
@@ -430,19 +488,19 @@ is a batch re-run, not an investigation.
 
 | ID | Change |
 |---|---|
-| R-2.4 | **Strengthened.** Attribution must record provenance (recorded vs inferred) and the inference method; the page must render the distinction (D-4). Also must survive **folding** short turns into a neighbour's context (D-5) |
+| R-2.4 | **Strengthened.** Attribution must record provenance (recorded vs inferred) and the inference method; the page must render the distinction (D-4). Also must survive **folding** short turns into a neighbour's context (D-8) |
 | R-2.8 | **New.** A gate must fail closed: unknown or unvalidated state results in non-publication (D-1, D-3) |
 | R-2.9 | **New.** Every gate must have a test that deliberately violates it and asserts the violation is caught. An untested gate is an assumption, not a control (D-1) |
 | R-3.6 | **Replaced.** Item-level fields must be derivable from the record; `why_it_matters` is removed (D-5) |
 | R-3.7 | **New.** A turn summary must fit a **~10-second reading budget** (roughly 25–35 words), because the 30–60-minute sitting target depends on it (§1.4) |
-| R-3.8 | **New.** Long turns (>~1,500 words) are sub-split; the summary may be split but the **verbatim must remain complete** (D-5) |
+| R-3.8 | **New.** Long turns (>~1,500 words) are sub-split; the summary may be split but the **verbatim must remain complete** (D-9) |
 | R-4.6 | **Upgraded SHOULD → MUST.** Failures must be isolated per item and durably recorded; the failed set is the only artefact a human reviews (D-2) |
 | R-4.8 | **New.** Ingestion must be **incremental**: a scheduled job detects and fetches new sittings and runs them through the same pipeline, unattended (§2) |
-| R-5.4 | **Strengthened.** Navigation is **four levels**: sitting → section → group → turn. The group level is required, not optional (D-5) |
+| R-5.4 | **Strengthened.** Navigation is a **tree**: sitting → section → speaker → content, derived from the record rather than inferred (D-6) |
 | R-5.5 | **Upgraded SHOULD → MUST.** Withheld items must be reported as withheld, with counts, so absence is never mistaken for silence in the record (D-3) |
 | R-5.6 | **New.** On a very long sitting a reader must be able to reach a defensible stopping point or skim at section level, while still seeing what they skipped (§1.4) |
 | R-6.7 | **New.** The schema must carry attribution provenance as a first-class field, not a convention (D-4) |
-| R-6.8 | **New.** The **group** is a derived entity with stable identity and recorded formation method, because it is the one heuristic doing structural work (D-5) |
+| R-6.9 | **New.** Ingestion must be **information-preserving**: it must not resolve speaker identities or merge labels. Grouping is by the recorded label; identity resolution is a later concern built on preserved data (D-6) |
 
 ## 11. Open questions
 
@@ -454,18 +512,19 @@ Still unanswered, recorded rather than assumed:
    normalisation, or is whitespace-insensitive equality sufficient? The source uses
    curly quotes and non-breaking spaces.
 3. **Model choice** — cloud vs local; deferred pending benchmark. See SUMMARISATION.md.
-4. **How a group is formed (D-5)** — by speaker, by theme, by sub-motion, or by the
-   record's own structure? This is the highest-risk open question: it is a heuristic
-   doing structural work, in a project where four heuristic defects have already
-   shipped.
-5. **Section taxonomy** — how closely should sections mirror parliamentary procedure
+4. **Section taxonomy** — how closely should sections mirror parliamentary procedure
    (motions, ministerial statements, oral questions, Bills, Budget/Committee of Supply)?
-   The parser already groups reports; whether that grouping is the right *reader-facing*
-   taxonomy is undecided.
-6. **Migration of the 50 substantive `why_it_matters` values** written under the old
+   The parser already groups reports by type; whether that grouping is the right
+   *reader-facing* taxonomy is undecided.
+5. **Migration of the 50 substantive `why_it_matters` values** written under the old
    schema — migrate into key points, or discard.
-7. **What happens to the 291 existing briefs** built under the old (item-level) schema,
+6. **What happens to the 291 existing briefs** built under the old (item-level) schema,
    given the pipeline is now turn-level. Re-derive, or keep as a legacy format?
+
+**Resolved and removed from this list:** identity resolution of speakers. It was
+previously an open question; D-6 settles it — do not resolve identities during
+ingestion. Group by the recorded label, preserve everything, and leave deduplication
+and MP-level analysis to a later layer built on preserved data.
 
 ## 12. Traceability
 
