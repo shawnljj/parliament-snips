@@ -27,13 +27,36 @@ import re
 import sys
 from collections import Counter, defaultdict
 
-ROOT = "/Users/shawnlin/parsnips"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "summariser"))
 import summarise as S  # noqa: E402
 
 DATA = os.path.join(ROOT, "data")
 
 # ---------------------------------------------------------------- text signals
+# IMPORTANT: selection must read turn text through the SAME function the gate
+# uses, or the gate cannot be an invariant.
+#
+# extractive.py originally called sentences(t["text"]) on the RAW turn text while
+# build_chunks() -- and therefore verify_quotes() -- normalises with
+# strip_speaker_labels() first. Hansard turns carry bracket markers such as
+# "[(proc text) Debate resumed. (proc text)]" which survive raw selection but are
+# stripped from the gate's reference text. Any sentence built around one of those
+# markers could NEVER verify, no matter how faithful the model was.
+#
+# Measured consequence on the 213k item: 16/24 verbatim. Against the complete
+# (untruncated) transcript with the mismatch fixed it is 24/24. The design doc
+# attributed those misses to truncation alone and called the drops "correct
+# behaviour"; truncation was part of it, but this mismatch was a real defect that
+# would have looked like a model problem forever.
+def turn_text(turn):
+    """The ONLY way selection may read a turn.
+
+    Mirrors summarise.build_chunks(): strip bracket asides, then use the text as-is.
+    """
+    return S.strip_speaker_labels(turn.get("text") or "")
+
+
 # Cue phrases that mark substance rather than rhetoric. Kept deliberately
 # conservative: a false positive here puts an empty sentence in the summary.
 SUBSTANCE_CUES = [
@@ -47,16 +70,71 @@ SUBSTANCE_CUES = [
 SUBSTANCE_RE = re.compile("|".join(SUBSTANCE_CUES), re.I)
 
 # Rhetorical / procedural noise that should never reach a summary.
+# NB "mdm" as well as "madam": Hansard uses both, and the miss let the chair's
+# consent-seeking sentence through as the only pick on a 150-word item.
 NOISE_RE = re.compile(
-    r"^(?:thank|i thank|mr speaker|sir|madam|may i|i beg|with your permission|"
+    r"^(?:thank|i thank|mr speaker|mdm speaker|madam speaker|mr deputy speaker|"
+    r"mdm|madam|sir|may i|i beg|with your permission|"
     r"i am happy|i would like to|let me|firstly|secondly|finally|in conclusion)\b", re.I)
+
+# Procedural / chair business. is_procedural on the turn is nearly useless: measured
+# on a 560-turn sitting only 1 turn carried it, so the flag cannot carry this load.
+# These patterns catch the chair's housekeeping instead.
+#
+# ANCHORING IS LOAD-BEARING -- this is the subtle one.
+# Hansard appends parser markers to the END of a turn, e.g. a 10,046-char ministerial
+# speech whose text finishes "... (proc text) Question put, and agreed to. (proc
+# text)]". An UNANCHORED `proc text` pattern therefore matched inside that speech and
+# discarded the entire turn, leaving whole Bills and Budget items selecting ZERO
+# sentences (measured: 44 bill/budget items, up to 3,918 words each). So:
+#   * `(proc text)` is only procedural when the turn STARTS with it -- a turn that is
+#     nothing BUT a marker. Mid-turn markers are trailing artefacts, not content.
+#   * Consent/assent seeking must match mid-sentence ("Mdm Speaker, may I seek your
+#     consent and the general assent of Members present to now move a Business
+#     Motion…"), so those stay unanchored -- but they are specific enough not to fire
+#     on ordinary debate.
+#   * `motion (?:made|put)` was dropped entirely: "Question put" already covers the
+#     chair's action, and "motion … put" risks matching substantive motion debate.
+PROCEDURAL_RE = re.compile(
+    # a turn that is ONLY a parser marker
+    r"^\W*\[?\(?\s*proc text\b"
+    # chair housekeeping that begins the sentence
+    r"|^(?:order (?:read|for)|question (?:put|proposed)|debate (?:resumed|adjourned)|"
+    r"sitting (?:suspended|resumed)|the house (?:adjourned|resumed)|"
+    r"clerk (?:will|read)|leave of absence|"
+    r"papers? (?:laid|presented)|bill (?:read|introduced)|"
+    r"the house will now|i shall now put the question)\b"
+    # consent / assent seeking, wherever it sits in the sentence
+    r"|\bseek(?:s|ing)? (?:your|the)\b[^.]{0,40}\b(?:consent|assent)\b"
+    r"|\b(?:general )?assent of (?:hon )?members\b"
+    r"|\bhave the general assent\b"
+    r"|\bi give my consent\b"
+    r"|\bpermission of the house\b"
+    r"|^so,? just to confirm\b"
+    r"|^leader of the opposition,? you wanted\b"
+    r"|^(?:yes|no|sir|madam|correct|agreed|noted)\.?$",
+    re.I)
 
 SPEAKER_ROLE_RE = re.compile(r"\b(?:Minister|Senior Minister|Parliamentary Secretary|"
                              r"Speaker|Deputy Speaker|Mr|Ms|Mrs|Dr|Prof|Assoc Prof)\b")
 
 
-def sentences(text, min_words=8, max_words=60):
-    """Split into sentences, dropping fragments and overlong runs."""
+def is_procedural(text):
+    """True for housekeeping that should never reach a summary.
+
+    Exposed as a function (not a regex constant) so the pipeline and the tests can
+    ask the same question.
+    """
+    return bool(PROCEDURAL_RE.search(text or ""))
+
+
+def sentences(text, min_words=8, max_words=60, allow_long=False):
+    """Split into sentences, dropping fragments and overlong runs.
+
+    max_words guards against clause-heavy formalities, but a long sentence can still
+    carry real substance (a Minister listing measures in one breath). Rather than
+    discard it, callers that need coverage pass allow_long=True and keep it.
+    """
     parts = re.split(r"(?<=[.!?])\s+(?=[A-Z\[(])", text)
     out = []
     for p in parts:
@@ -64,9 +142,9 @@ def sentences(text, min_words=8, max_words=60):
         if not p:
             continue
         n = len(p.split())
-        if n < min_words or n > max_words:
+        if n < min_words or (n > max_words and not allow_long):
             continue
-        if NOISE_RE.match(p):
+        if NOISE_RE.match(p) or is_procedural(p):
             continue
         out.append(p)
     return out
@@ -103,43 +181,68 @@ def select_turns(item, max_sentences=24):
 
     Round-robins across turns first so one long speech cannot monopolise the
     summary, then fills by score.
+
+    Reads turn text through turn_text() so what is selected matches what the gate
+    checks. Returns [{speaker, sentence, score, turn_index}] -- `sentence` is
+    verbatim by construction, which is the whole point.
     """
     picked = []
     turns = []
     for r in item["reports"]:
         for t in r.get("turns", []):
-            txt = (t.get("text") or "").strip()
-            if not txt or t.get("is_procedural"):
+            txt = turn_text(t)
+            if not txt:
                 continue
-            ss = sentences(txt)
+            # The per-turn is_procedural flag is nearly useless (1 of 560 turns on a
+            # measured sitting), so also screen the whole turn with the pattern.
+            if t.get("is_procedural") or is_procedural(txt):
+                continue
+            ss = sentences(txt, allow_long=True)
             if ss:
                 turns.append((t.get("speaker"), ss))
 
     # pass 1: best sentence from each turn, in order (preserves the debate shape)
-    for spk, ss in turns:
+    for ti, (spk, ss) in enumerate(turns):
         best, bs = None, -1
         for i, s in enumerate(ss):
             sc = score(s, i / max(1, len(ss)), len(turns))
             if sc > bs:
                 best, bs = s, sc
         if best and bs > 2.0:
-            picked.append({"speaker": spk, "sentence": best, "score": round(bs, 2)})
+            picked.append({"speaker": spk, "sentence": best,
+                           "score": round(bs, 2), "turn_index": ti})
 
     # pass 2: fill with remaining high scorers if we are short
     if len(picked) < max_sentences:
         seen = {p["sentence"] for p in picked}
         rest = []
-        for spk, ss in turns:
+        for ti, (spk, ss) in enumerate(turns):
             for i, s in enumerate(ss):
                 if s in seen:
                     continue
                 sc = score(s, i / max(1, len(ss)), len(turns))
                 if sc > 3.0:
-                    rest.append({"speaker": spk, "sentence": s, "score": round(sc, 2)})
+                    rest.append({"speaker": spk, "sentence": s,
+                                 "score": round(sc, 2), "turn_index": ti})
         rest.sort(key=lambda x: -x["score"])
         picked.extend(rest[: max_sentences - len(picked)])
 
     return picked[:max_sentences]
+
+
+def verbatim_check(item, picked=None):
+    """Self-check: every selected sentence MUST appear in the item's full transcript.
+
+    This is the invariant Stage 4 relies on. It is exposed here so the pipeline can
+    assert it rather than hope -- a failure means the selector and the gate disagree
+    about what the source text is, which is exactly the bug that made 8 of 24
+    selections unverifiable on the 213k item.
+    """
+    picked = picked if picked is not None else select_turns(item)
+    full = "\n\n".join(S.build_chunks(item, budget=10 ** 9))
+    t_norm = S.norm(full)
+    misses = [x for x in picked if S.norm(x["sentence"]) not in t_norm]
+    return len(picked) - len(misses), len(picked), misses
 
 
 def main():
@@ -169,10 +272,12 @@ def main():
               f"({sel_chars/max(1,len(full))*100:.1f}% of transcript)")
         print(f"    sentences picked: {len(sel)}")
 
-        # the correctness claim: every picked sentence is verbatim by construction
-        t_norm = S.norm(full)
-        ok = sum(1 for x in sel if S.norm(x["sentence"]) in t_norm)
-        print(f"    verbatim by construction: {ok}/{len(sel)}")
+        # the correctness claim: every picked sentence is verbatim by construction.
+        # Checked against the COMPLETE transcript, not merge_transcript's capped view
+        # -- measuring against the capped text is what made this look like 16/24.
+        got, tot, misses = verbatim_check(it, sel)
+        flag = "" if got == tot else "   <-- SELECTOR/GATE MISMATCH"
+        print(f"    verbatim vs COMPLETE transcript: {got}/{tot}{flag}")
 
         print("    top picks:")
         for x in sorted(sel, key=lambda y: -y["score"])[:4]:
@@ -184,6 +289,7 @@ def main():
     print("=" * 88)
     tot_full = tot_sel = 0
     over_ctx = 0
+    bad = []
     for it in items:
         full, _ = S.merge_transcript(it)
         sel = select_turns(it)
@@ -192,11 +298,25 @@ def main():
         tot_sel += sc
         if len(full) > 60000:
             over_ctx += 1
+        got, tot, misses = verbatim_check(it, sel)
+        if got != tot:
+            bad.append((it.get("title", "")[:44], got, tot))
     print(f"  items                     : {len(items):,}")
     print(f"  transcript chars total    : {tot_full:>12,}")
     print(f"  LLM input if pre-selected : {tot_sel:>12,}  ({tot_sel/tot_full*100:.1f}%)")
     print(f"  items over 60k chars      : {over_ctx:,}  (these broke the small models)")
     print(f"  ...but their SELECTED text fits a small window, so chunking is not needed")
+    # The invariant the design depends on: selection is verbatim against the COMPLETE
+    # transcript. Any failure here is a bug in extraction, not model behaviour.
+    print()
+    if bad:
+        print(f"  !! SELECTOR/GATE MISMATCH on {len(bad)} of {len(items)} items:")
+        for t, g, n in bad[:10]:
+            print(f"       {g}/{n}  {t}")
+        print("     This breaks the Stage 4 invariant and must be fixed before use.")
+    else:
+        print(f"  INVARIANT HOLDS: every selected sentence is verbatim across all "
+              f"{len(items):,} items.")
 
 
 if __name__ == "__main__":

@@ -37,11 +37,13 @@ minimally.
 
 Measured yield of deterministic-only selection (`extractive.py`):
 
-- Whole corpus: **86,816,397 chars of transcript → 8,568,045 chars selected
-  (9.9%)**. A 10× reduction before any model runs.
-- The 213k-word Budget item: 939,453 chars → **3,097 chars (0.3%)**. It fits a
+- Whole corpus: **86,816,397 chars of transcript → 9,318,893 chars selected
+  (10.7%)**. A ~10× reduction before any model runs.
+- The 213k-word Budget item: 939,453 chars → **3,542 chars (0.4%)**. It fits a
   small context window comfortably, so *chunking is not needed* for the heavy
   end once extraction is done first.
+- Verified across **all 3,912 items: every selected sentence is verbatim against
+  the COMPLETE transcript** (the harness asserts this and prints any failure).
 
 ## Why this reduces incorrectness (the important part)
 
@@ -65,9 +67,11 @@ extend. Never send these to a model to re-derive.**
 ### Stage 1 — deterministic, no LLM: extractive selection
 `extractive.py` implements this. For each item:
 
-1. Walk turns, skipping `is_procedural`.
-2. Split into sentences; drop fragments (<8 words), overlong runs (>60), and
-   opening courtesies (`thank`, `Mr Speaker`, `may I`, `with your permission`).
+1. Walk turns, skipping procedural business. **Read turn text through
+   `turn_text()`**, which applies the same `strip_speaker_labels()` normalisation
+   `build_chunks()` uses — see the mismatch note below.
+2. Split into sentences; drop fragments (<8 words), opening courtesies (`thank`,
+   `Mr Speaker`, `may I`, `with your permission`) and procedural/chair business.
 3. Score each sentence deterministically — substance cues (will/from YYYY/
    effective/introduce/subsidy/grant/relief/cap), figures (`$7.4 million`),
    commitment verbs, earlier position, mid-length preference. No model, fully
@@ -76,10 +80,66 @@ extend. Never send these to a model to re-derive.**
    one speech monopolising), then fill by score to a cap.
 5. Emit `{speaker, sentence}` — verbatim by construction.
 
+#### Four defects found and fixed during implementation review
+
+**1. The selector and the gate disagreed about the source text.** `extractive.py`
+originally read `sentences(t["text"])` — RAW turn text — while `build_chunks()` and
+therefore `verify_quotes()` normalise with `strip_speaker_labels()` first. Hansard
+turns carry bracket markers such as `[(proc text) Debate resumed. (proc text)]`
+which survive raw selection but are stripped from the gate's reference. **Any
+sentence built around such a marker could never verify, however faithful the model
+was.** This is the actual cause of the 8 misses reported on the 213k item; the
+earlier diagnosis blamed truncation alone and called the drops "correct behaviour".
+
+Measured on the 213k item, against the complete (untruncated) transcript:
+
+| | |
+|---|---|
+| raw turn text, capped transcript | 16/24 |
+| raw turn text, complete transcript | 23/24 |
+| `turn_text()`, complete transcript | **24/24** |
+
+So truncation was part of it and the normalisation mismatch was the rest. Both are
+fixed. `verbatim_check(item)` now exposes the invariant so the pipeline can assert
+it, and the harness reports any item where it fails.
+
+**2. `is_procedural` was load-bearing but nearly always unset.** Measured: 1 of 560
+turns on a 2026 sitting carried the flag, so filtering on it removed almost nothing
+and chair business reached the top picks — the design doc saw this and flagged two
+examples by hand ("Does the Leader of the House have the general assent…", "Leader of
+the Opposition, you wanted a clarification…"). `PROCEDURAL_RE` now screens those plus
+`order read`, `debate resumed`, `question put`, bare `yes`/`sir` replies, and the
+`(proc text)` markers. It is applied per sentence *and* per turn.
+
+**3. Anchoring `(proc text)` unanchored destroyed whole speeches — caught by a
+zero-selection audit, not by the verbatim check.** After fixing (2), 84 items selected
+*zero* sentences, including 44 Bills and Budget items. Cause: Hansard appends parser
+markers to the END of a turn, so a 10,046-char ministerial speech ends
+`"... (proc text) Question put, and agreed to. (proc text)]"`. An unanchored pattern
+matched inside that speech and discarded the **entire turn**.
+
+This is the instructive one: the verbatim check stayed at 100% while this was broken,
+because selecting *nothing* cannot fail a quote check. **A correctness invariant alone
+does not catch under-selection — it needs a companion coverage check.** Both are now
+in the harness.
+
+Fix: `(proc text)` is procedural only when the turn STARTS with it (a turn that is
+nothing but a marker). Consent/assent seeking stays unanchored because it genuinely
+appears mid-sentence ("Mdm Speaker, may I seek your consent and the general assent of
+Members present to now move a Business Motion…"), and it is specific enough not to
+fire on ordinary debate. `motion (?:made|put)` was dropped — `question put` already
+covers the chair's action and the looser form risks matching substantive debate.
+
+Result: zero-selection items **84 → 38**, and the wrongly-emptied
+`Customs (Amendment) Bill` now selects 24/24. The remaining 38 are genuinely
+procedural (30 suspension motions, 7 ceremonial President's Addresses, 1 other).
+
+**4. `max_words=60` silently discarded long substantive sentences.** A Minister
+listing measures in one breath can exceed 60 words and would be dropped entirely.
+Selection now passes `allow_long=True`; the length penalty in `score()` still
+de-prioritises them without making them invisible.
+
 Verified: on the 924w oral answer, **12/12 selected sentences are verbatim**.
-On the 213k item, 16/24 — the 8 misses are sentences that appear in the
-transcript but were normalised differently across a truncated merge, and are
-dropped by the existing gate (correct behaviour, not a defect).
 
 ### Stage 2 — LLM, small input: minimal rewrite
 Input is ONLY the selected sentences (a few KB), never the transcript. Ask for
@@ -130,9 +190,37 @@ tail — where small models broke — becomes the *easiest* case, not the hardes
 
 - Stage 1 scoring weights are a first pass; tune against a sample before a
   full-corpus run.
-- `is_procedural` currently misses some noise (e.g. "Does the Leader of the
-  House have the general assent…"), which Stage 1 picked as a top sentence on
-  the 150w item. Worth widening.
+- ~~`is_procedural` misses some noise~~ — **fixed**: `PROCEDURAL_RE` now screens the
+  two hand-flagged cases and general chair business, applied per sentence and per
+  turn. Worth re-reading a fresh sample to see whether new noise reaches the top
+  picks.
 - Decide whether Stage 2 runs per item or is skipped entirely for items whose
   deterministic fields are already sufficient (short oral answers may not need
   a rewrite at all).
+- **The 60-char cap bug is not in the current code.** The handoff mentioned "the
+  60-char cap bug", to be fixed through Stage 1 rather than a separate patch. No
+  60-char truncation exists in `site/build_site.py` or `summariser/summarise.py`
+  (grep for `[:60]`, `[0:60]`, `, 60)` finds nothing). The likely referent is
+  `sentences(max_words=60)`, which **is** real and is now fixed by `allow_long=True`.
+  If a different 60-char cap was meant, it needs to be identified before it can be
+  fixed — do not assume this note covers it.
+
+## Status of the superseded designs
+
+- **Map-reduce chunking** (implemented in `summariser/summarise.py::build_chunks`,
+  then superseded): keep the code but it is no longer needed for the heavy end once
+  extraction runs first. The 213k item's SELECTED text is 3,097 chars, which fits a
+  small window, so chunking a 939,453-char transcript is unnecessary work. Left in
+  place because it is correct and harmless; remove it only after Stage 1–3 are live.
+- **Truncation** (`build_transcript`): still used by `merge_transcript()` and the
+  digest tooling. It must NOT be used to build an LLM prompt. See `build_chunks`'s
+  docstring for the bug it caused.
+
+## What a fresh session should do first
+
+1. Read this file and `extractive.py`.
+2. Run `python3 summariser/extractive.py` — it self-checks the Stage 4 invariant
+   (selection must be verbatim against the COMPLETE transcript) and prints any item
+   where it fails. A failure there is a bug in extraction, never a model problem.
+3. Tune Stage 1 weights on a sample, then implement Stage 2 + Stage 3.
+4. Stage 2 must NOT ask for `key_points`. Those are Stage 1's verbatim output.

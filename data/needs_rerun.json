@@ -1,0 +1,277 @@
+{
+ "generated": "2026-09-17",
+ "reason": "briefs built from head+tail truncated input (build_transcript capped each report at 90k chars). Re-run these after the map-reduce fix.",
+ "count": 30,
+ "briefs": [
+  {
+   "key": "budget-2857+2859+2861+2867+2871+2873",
+   "year": "2026",
+   "title": "Parliament debates Budget 2026",
+   "group": "budget",
+   "truncated_reports": 4,
+   "total_reports": 6,
+   "worst_seen": 0.247
+  },
+  {
+   "key": "motion-3008+3010",
+   "year": "2026",
+   "title": "Motion on Singapore's economic future, amended and agreed to",
+   "group": "motion",
+   "truncated_reports": 2,
+   "total_reports": 2,
+   "worst_seen": 0.262
+  },
+  {
+   "key": "motion-2970+2976+2978",
+   "year": "2026",
+   "title": "Motion on AI-enabled growth and support for workers and enterprises",
+   "group": "motion",
+   "truncated_reports": 1,
+   "total_reports": 3,
+   "worst_seen": 0.297
+  },
+  {
+   "key": "motion-2996+2998",
+   "year": "2026",
+   "title": "Motion on strengthening Singapore's economic competitiveness as a globally conne",
+   "group": "motion",
+   "truncated_reports": 1,
+   "total_reports": 2,
+   "worst_seen": 0.305
+  },
+  {
+   "key": "budget-2929",
+   "year": "2026",
+   "title": "Committee of Supply debate on MCCY and Muslim Affairs, ending with withdrawal of",
+   "group": "budget",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.347
+  },
+  {
+   "key": "budget-2903",
+   "year": "2026",
+   "title": "Committee of Supply debate on Manpower Ministry budget and labour policies",
+   "group": "budget",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.37
+  },
+  {
+   "key": "bill-802+803+804",
+   "year": "2026",
+   "title": "Second Reading of the Road Traffic (Miscellaneous Amendments) Bill",
+   "group": "bill",
+   "truncated_reports": 1,
+   "total_reports": 3,
+   "worst_seen": 0.412
+  },
+  {
+   "key": "budget-2914",
+   "year": "2026",
+   "title": "MND budget debate: housing, lift access, ageing estates and pest birds",
+   "group": "budget",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.424
+  },
+  {
+   "key": "bill-780+781",
+   "year": "2026",
+   "title": "Land Transport and Related Matters Bill, Second Reading debate",
+   "group": "bill",
+   "truncated_reports": 1,
+   "total_reports": 2,
+   "worst_seen": 0.479
+  },
+  {
+   "key": "budget-2876",
+   "year": "2026",
+   "title": "Committee of Supply debate on the Prime Minister's Office budget",
+   "group": "budget",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.485
+  },
+  {
+   "key": "budget-2894",
+   "year": "2026",
+   "title": "Committee of Supply debate on the Ministry of Trade and Industry budget",
+   "group": "budget",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.521
+  },
+  {
+   "key": "ministerial-statement-2952",
+   "year": "2026",
+   "title": "Ministerial statements on the Middle East conflict and support measures for Sing",
+   "group": "statement",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.535
+  },
+  {
+   "key": "budget-2915",
+   "year": "2026",
+   "title": "Committee of Supply debate on transport spending and policy",
+   "group": "budget",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.536
+  },
+  {
+   "key": "bill-794+795+796",
+   "year": "2026",
+   "title": "Bill to merge SkillsFuture Singapore and Workforce Singapore into a new Skills a",
+   "group": "bill",
+   "truncated_reports": 1,
+   "total_reports": 3,
+   "worst_seen": 0.537
+  },
+  {
+   "key": "budget-2896+2902",
+   "year": "2026",
+   "title": "Committee of Supply debate on the Ministry of Education budget",
+   "group": "budget",
+   "truncated_reports": 2,
+   "total_reports": 2,
+   "worst_seen": 0.553
+  },
+  {
+   "key": "bill-792",
+   "year": "2026",
+   "title": "Veterinary Practice Bill at Second Reading, creating a Veterinary Council to reg",
+   "group": "bill",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.565
+  },
+  {
+   "key": "budget-2883",
+   "year": "2026",
+   "title": "Committee of Supply debate on the Ministry of Foreign Affairs budget",
+   "group": "budget",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.593
+  },
+  {
+   "key": "budget-2884",
+   "year": "2026",
+   "title": "MINDEF budget debate and withdrawn $100 amendment",
+   "group": "budget",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.624
+  },
+  {
+   "key": "budget-2885",
+   "year": "2026",
+   "title": "Committee of Supply debate on Ministry of Home Affairs Head P",
+   "group": "budget",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.645
+  },
+  {
+   "key": "budget-2895",
+   "year": "2026",
+   "title": "Committee of Supply debate on MDDI Head Q: AI adoption, online safety and cybers",
+   "group": "budget",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.648
+  },
+  {
+   "key": "motion-2782+2784+2786",
+   "year": "2026",
+   "title": "Parliament debates and votes on motion on Pritam Singh's conduct and suitability",
+   "group": "motion",
+   "truncated_reports": 1,
+   "total_reports": 3,
+   "worst_seen": 0.707
+  },
+  {
+   "key": "bill-776",
+   "year": "2026",
+   "title": "Second Reading of the National Council of Social Service (Amendment) Bill",
+   "group": "bill",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.721
+  },
+  {
+   "key": "bill-773+774+775",
+   "year": "2026",
+   "title": "Health Information Bill Second Reading debate",
+   "group": "bill",
+   "truncated_reports": 1,
+   "total_reports": 3,
+   "worst_seen": 0.723
+  },
+  {
+   "key": "budget-2916+2918+2928",
+   "year": "2026",
+   "title": "Committee of Supply debate on the Ministry of Health budget",
+   "group": "budget",
+   "truncated_reports": 1,
+   "total_reports": 3,
+   "worst_seen": 0.772
+  },
+  {
+   "key": "bill-777+778+779",
+   "year": "2026",
+   "title": "Singapore Sports Council (Amendment) Bill at Second Reading",
+   "group": "bill",
+   "truncated_reports": 1,
+   "total_reports": 3,
+   "worst_seen": 0.809
+  },
+  {
+   "key": "bill-800",
+   "year": "2026",
+   "title": "Securities and Futures (Amendment) Bill at Second Reading: dual listings and the",
+   "group": "bill",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.811
+  },
+  {
+   "key": "bill-799",
+   "year": "2026",
+   "title": "Statutes (Miscellaneous Amendments) Bill debated and read a Third time",
+   "group": "bill",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.844
+  },
+  {
+   "key": "bill-786",
+   "year": "2026",
+   "title": "Coastal Protection and Other Amendments Bill at Second Reading",
+   "group": "bill",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.898
+  },
+  {
+   "key": "bill-772",
+   "year": "2026",
+   "title": "Public Sector (Governance) (Amendment) Bill at Second Reading",
+   "group": "bill",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.911
+  },
+  {
+   "key": "bill-793",
+   "year": "2026",
+   "title": "Cross-Border Railways (Border Control Co-location) Bill at Second Reading",
+   "group": "bill",
+   "truncated_reports": 1,
+   "total_reports": 1,
+   "worst_seen": 0.953
+  }
+ ]
+}
