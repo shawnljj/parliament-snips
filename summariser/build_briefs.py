@@ -681,34 +681,75 @@ def stage3_assemble(item, extracted, model):
     if not kept:
         return None, dropped
 
-    # A brief has to fit the reading budget it was specified against (§1.4: a sitting
-    # in 30-60 minutes, so ~10s per point). A 94-chunk debate yielded 259 points —
-    # every chunk contributed its maximum and nothing ever consolidated, which is a
-    # ~40-minute read for ONE item of business. So the points are capped and chosen
-    # by SPREAD rather than by truncation: dropping the tail would silently discard
-    # the end of a long debate, which is the same failure as head+tail truncation.
+    # A 94-chunk debate yielded 259 points — every chunk contributed its maximum and
+    # nothing ever consolidated. Some cap is still needed as a runaway guard, and it
+    # must be applied by SPREAD, never by truncation: dropping the tail would silently
+    # discard the end of a long debate, which is the same failure as the head+tail
+    # truncation this project already removed (R-2.6).
     #
-    # The spread is a true round-robin over the chunks the points came from, because
-    # each point records its chunk. Keeping every chunk represented is the property
-    # coverage exists to protect, so the cap must not quietly break it.
-    MAX_POINTS = int(os.environ.get("PARSNIPS_MAX_POINTS", "40"))
+    # THE CAP IS PROPORTIONAL TO THE ITEM, because §1.4 defines the reading budget as
+    # ~10 seconds PER TURN (287 turns = 48 min), not as a flat number of points.
+    #
+    # A flat 40 was wrong and measurably so. On the 2026-08-05 motion, 81 turns, the
+    # cap bounded achievable coverage at 40/81 = 0.49 no matter how good the
+    # extraction was, and the published brief reached 0.17 with a 227-sentence speech
+    # among the turns left uncited. The cap was scoring against the very metric the
+    # gate enforces, and the turns it discarded were the substantial ones.
+    #
+    # 1.5 per turn gives room for a meaty turn to carry two points while thin turns
+    # carry none, which is how the budget is actually spent. The cap still exists as a
+    # runaway guard (an 85-cite point is not a summary); what it must not be is a
+    # content budget, because discarding content to hit a length target is exactly the
+    # silent loss R-2.5 forbids. Length is the site's problem -- it collapses
+    # transcripts and offers section-level stops (R-5.4, R-5.6).
+    turns_total = len({(s.get("report_id"), s.get("turn_index"))
+                       for s in (item.get("sentences") or [])})
+    MAX_POINTS = int(os.environ.get("PARSNIPS_MAX_POINTS", "0")) or max(
+        40, round(1.5 * turns_total))
     if len(kept) > MAX_POINTS:
-        by_chunk = {}
         for k in kept:
-            by_chunk.setdefault(k.pop("_chunk", 0), []).append(k)
-        order = sorted(by_chunk)
+            k.setdefault("_chunk", 0)
+        # Round-robin alone is not enough on a large item, and the numbers show why:
+        # at 40 points over 81 turns, blind round-robin topped out at coverage 0.17
+        # against a median of 0.62 elsewhere. The cap was bounding the very metric the
+        # gate scores, so the brief could not reach the coverage the pipeline demands
+        # no matter how good the extraction was.
+        #
+        # So selection maximises NEW TURNS PER POINT: repeatedly take the point that
+        # cites the most not-yet-covered turns, preferring untouched chunks to break
+        # ties. That spends the budget on covering ground rather than on the first
+        # point of every chunk, and it degrades to round-robin when points are
+        # single-turn.
+        def _turns(k):
+            return {(by_sid[s].get("report_id"), by_sid[s].get("turn_index"))
+                    for s in (k.get("cites") or []) if s in by_sid}
+
+        remaining = list(kept)
         picked = []
-        while len(picked) < MAX_POINTS and any(by_chunk[c] for c in order):
-            for c in order:
-                if by_chunk[c] and len(picked) < MAX_POINTS:
-                    picked.append(by_chunk[c].pop(0))
+        seen_turns = set()
+        seen_chunks = set()
+        while remaining and len(picked) < MAX_POINTS:
+            def score(k):
+                new = len(_turns(k) - seen_turns)
+                fresh = 0 if k.get("_chunk") in seen_chunks else 1
+                return (new, fresh)
+            best = max(remaining, key=score)
+            gain = score(best)
+            if gain == (0, 0) and picked:
+                # Nothing left adds coverage; the remaining points are duplicates of
+                # turns already cited, so the budget is genuinely spent.
+                break
+            picked.append(best)
+            remaining.remove(best)
+            seen_turns |= _turns(best)
+            seen_chunks.add(best.get("_chunk"))
         dropped.append({"reason": "over reading budget",
-                        "detail": f"{len(kept)} points capped to {MAX_POINTS}, "
-                                  f"round-robin across {len(order)} chunk(s)"})
+                        "detail": f"{len(kept)} points capped to {len(picked)} by "
+                                  f"most-new-turns-per-point across "
+                                  f"{len({k.get('_chunk') for k in kept})} chunk(s)"})
         kept = picked
-    else:
-        for k in kept:
-            k.pop("_chunk", None)
+    for k in kept:
+        k.pop("_chunk", None)
 
     # Group by speaker at render time is the site's job; here we only need the
     # schema it already reads.
