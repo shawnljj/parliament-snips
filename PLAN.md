@@ -324,17 +324,89 @@ those reports answer HTTP 400 from `getHansardTopic` and carry their text in
 
 ## 5. The summary pipeline (the part that needs real care)
 
-A 57k-word sitting does **not** fit one context window with good results, and naive chunk-and-summarise produces mush. Design:
+A sitting is now ~1,100,000 words on average and the heaviest single item is
+213,325 words, so nothing fits one context window. Design:
 
-1. **Chunk by debate, not by token count.** A "debate" is one report. Never split an oral answer across chunks — the Q and the A must be reasoned over together.
-2. **Two-pass:** per-report extraction → cross-report synthesis. Pass 1 can run in parallel; only pass 2 sees the whole sitting.
-3. **Extract structured, not prose.** Per report, force the model to emit JSON: topic, headline, who-spoke, key numbers, commitments, points of friction, and a paragraph-level anchor for each. **Citations are produced at extraction time, not bolted on** — that's what makes them trustworthy.
-4. **Quotes verbatim.** Pull the quote string from source text, never let the model retype it. A reworded "quote" is the fastest way to lose credibility.
-5. **Editorial voice.** Less "the Minister highlighted the importance of", more "the Minister committed to X; Kenneth Tiong pressed on Y and got no commitment." The `humanizer` skill applies here. Ban the AI-isms.
-6. **Guardrails:** never infer a policy position from a written answer's silence; flag when a question went unanswered; label everything procedural (`[Mr Speaker in the Chair]`, PTBA) as noise and exclude from summaries.
+1. **Chunk on turn boundaries, never mid-sentence** — and cap the PROMPT, not each
+   report. See "Map-reduce" below: this was got wrong once and it silently truncated
+   the middle out of every large debate.
+2. **Map-reduce:** per-chunk extraction → one item-level reduce. Chunks run in
+   sequence over one item; items can run in parallel (the worker pool does this).
+3. **Extract structured, not prose.** Chunks emit JSON: key points, speaker, quote.
+   **Citations are produced at extraction time, not bolted on** — that's what makes
+   them trustworthy.
+4. **Quotes verbatim, gated.** Every quote is checked against the full transcript and
+   dropped if it does not appear character-for-character. A reworded "quote" is the
+   fastest way to lose credibility.
+5. **Editorial voice.** Less "the Minister highlighted the importance of", more "the
+   Minister committed to X; Kenneth Tiong pressed on Y and got no commitment." The
+   `humanizer` skill applies here. Ban the AI-isms.
+6. **Guardrails:** never infer a policy position from a written answer's silence; report
+   open ground neutrally rather than flagging a question as unanswered; exclude
+   procedural noise (`[Mr Speaker in the Chair]`, PTBA) from summaries.
+
+### Map-reduce, and the truncation bug it fixes
+
+**The bug (found 17 Sep 2026, during local-model benchmarking).**
+`build_transcript(report, char_budget=90000)` capped **each report**. Then
+`merge_transcript(item)` **concatenated every report in the item**. The cap was
+written as if one report = one prompt, which was true before items began merging
+across sitting days. After the merge it bounded nothing:
+
+| item | reports | merged prompt |
+|---|---|---|
+| President's Speech | 14 | 939,453 chars |
+| Debate on President's Address | 9 | 709,901 |
+| Constitution of the Republic of Singapore (Amendment) Bill | 8 | 483,248 |
+| Debate on Annual Budget Statement | 6 | 468,205 |
+
+939,453 chars is roughly 235,000 tokens. The cloud model's context absorbed it, which
+is why nobody noticed for months. On a smaller model the prompt exceeded the window
+and the response was **prose instead of JSON** — a silent, confusing failure that
+looked like the model ignoring the format.
+
+**Why truncation was the wrong fix.** Head+tail truncation silently drops the
+**middle of a debate**. For a site whose credibility rests on "every point carries
+the words it was taken from", summarising a debate from its first 70% and last 25% and
+calling it a summary of the debate is a correctness problem in its own right —
+independent of which model runs it.
+
+**The fix, as implemented.** Chunk at 40,000 chars, map, reduce, and gate at item
+level:
+
+1. **Chunk on turn boundaries.** The transcript is speaker-labelled, so a turn is the
+   natural unit. Splitting mid-turn would cut a sentence in half, which then fails the
+   quote gate for reasons that look like model error.
+2. **A turn that is itself oversized splits at SENTENCE boundaries.** This is not
+   optional: **57 single turns exceed 40,000 chars**, the longest being 100,940 (a
+   Finance Minister's Budget speech). Turn-boundary chunking alone would still
+   overflow. That speech has 862 sentences, longest 387 chars, so sentence splitting is
+   safe. A single sentence longer than the budget is emitted whole — measured as 30
+   chunks overshooting by at most 0.6% (worst: +241 chars).
+3. **Map:** each chunk emits `key_points` only. A chunk cannot know the item's title or
+   significance, so it is not asked for them — asking would invite invention.
+4. **Reduce:** one small call over the chunk notes produces the item-level fields
+   (title, what_it_is, stage, why_it_matters, what_happens_next, not_said). That is
+   where item-level judgement belongs.
+5. **Gate at item level, once.** `verify_quotes` runs against the FULL merged
+   transcript, not per chunk. Per-chunk quotes were copied from the transcript so they
+   verify at item level, and if a chunk invented anything the item-level gate still
+   catches it. One gate, one source of truth.
+
+**Cost, measured on the real corpus (3,912 items):** 6,256 chunks vs 3,912 items —
+**+59.9% calls**, with 569 items needing more than one chunk. The heavy end carries
+the extra calls (the 213,325-word President's Speech becomes 41 chunks). A single-chunk
+item takes the direct path, so the ~3,300 items that never needed chunking cost exactly
+what they did before. That is a fair price for not discarding most of a Budget debate.
+
+**Note the interaction with §6b:** this bug surfaced only because small local models
+have small windows. It was always present in production; the cloud model's large
+context masked it.
 
 ### Cost sanity
-~57k words ≈ 76k tokens in, plus synthesis. At current prices that's cents per sitting, ~2×/week. Even with a generous two-pass and retries, this is a **few dollars a month**. Run it on the heaviest Budget days to check before committing.
+~1.1M words per sitting on average, chunked into ~40k-char prompts. At current prices
+that's cents per sitting, ~2×/week, so a few dollars a month for the ongoing feed. The
+full 2016-onward backfill is the expensive one — which is why §6b exists.
 
 ---
 

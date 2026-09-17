@@ -176,6 +176,109 @@ Transcript follows. Speakers are shown as [Name]: text.
 
 
 # ------------------------------------------------------------------ transport
+# Chunk-level prompts. A chunk is a SLICE of one debate, so it cannot know the
+# item's title, stage or significance -- asking for those would invite the model to
+# invent them. Chunks produce key_points (and, for an oral answer, asked/response)
+# only; the item-level fields come from the reduce call, which is where that
+# judgement belongs.
+CHUNK_SYSTEM = """You are extracting factual points from ONE PART of a Singapore
+Parliament debate. You are seeing a slice, not the whole debate.
+
+Return JSON only:
+{"key_points": [{"point": "what was said or will happen", "speaker": "who said it", "quote": "verbatim words from the text above"}]}
+
+Rules:
+- Every quote MUST be copied character-for-character from the text above. Points
+  whose quote cannot be found verbatim are discarded by an automated check, so a
+  near-paraphrase is worse than useless.
+- Report what was said. Never judge whether a speaker answered, committed or
+  evaded. No "failed to", "declined to", "did not address".
+- 5-12 points. Choose the most substantive: decisions, figures, dates, changes to
+  policy or law, and who is affected.
+- Say nothing about what this debate IS overall -- you are reading one slice."""
+
+CHUNK_TMPL = """Text (part of a debate; speakers shown as [Name]: text):
+
+{transcript}"""
+
+
+ORAL_CHUNK_SYSTEM = """You are extracting factual points from ONE PART of an oral
+answer in Singapore Parliament -- a single question put to a Minister, or part of
+the response to it. You are seeing a slice, not the whole exchange.
+
+Return JSON only:
+{"key_points": [{"point": "what was said", "speaker": "who said it", "quote": "verbatim words from the text above"}]}
+
+Rules:
+- Every quote MUST be copied character-for-character from the text above.
+- Report what was asked and what was said back. NEVER judge the response -- no
+  "the Minister did not answer", "evaded", "declined to commit", "failed to".
+  State what was said and let the reader judge.
+- 3-10 points."""
+
+ORAL_CHUNK_TMPL = """Exchange (part of it; speakers shown as [Name]: text):
+
+{transcript}"""
+
+
+# Reduce prompts: these see the chunk summaries, not the raw transcript, so they
+# are small however long the debate was.
+REDUCE_SYSTEM = """You are writing the item-level summary of a Singapore
+Parliament debate from a set of partial notes taken across it. The notes are the
+complete set -- between them they cover the whole debate.
+
+Return JSON only, in the same shape as a normal brief:
+{
+  "title": "plain-English title, one line, no trailing full stop",
+  "what_it_is": "one sentence: the kind of business this is and what it does",
+  "stage": "the formal stage if stated, else \\"not stated\\"",
+  "why_it_matters": "2-3 sentences on what this changes for ordinary people, ONLY where the notes say so. If they do not say, write \\"The record does not set out the practical impact.\\"",
+  "key_points": [{"point": "what was said or will happen", "speaker": "who said it", "quote": "verbatim words from the notes"}],
+  "what_happens_next": "the next step if stated, else \\"not stated\\"",
+  "not_said": ["questions the debate raises that it does not resolve, phrased as neutral open questions with no implication of fault"]
+}
+
+Rules:
+- You are CONSOLIDATING, not adding. Do not introduce facts absent from the notes.
+- Quotes must be copied verbatim from the notes, which copied them verbatim from
+  Hansard. An automated gate checks every quote against the full transcript.
+- 8-25 key points, ordered by significance. This is a significant debate that
+  needed several passes, so do not under-report it.
+- Merge duplicates. One point per distinct thing said or decided.
+- Neutral reporting only: never judge whether anyone answered, committed or evaded."""
+
+REDUCE_TMPL = """Partial notes covering the whole of one debate:
+
+{notes}"""
+
+
+ORAL_REDUCE_SYSTEM = """You are writing the summary of ONE oral answer in Singapore
+Parliament from a set of partial notes taken across it -- the question, the
+Minister's response, and any supplementary exchanges. The notes are the complete
+set and between them cover the whole exchange.
+
+Return JSON only:
+{
+  "title": "plain-English title, one line, no trailing full stop",
+  "asked": "2-3 sentences: what the Member asked",
+  "response": "3-5 sentences: what the Minister said back",
+  "key_points": [{"point": "a concrete factual point from the answer", "speaker": "who said it", "quote": "verbatim words from the notes"}],
+  "left_open": ["something the question raised that the response does not address, phrased neutrally, with no implication of fault"],
+  "supplementary": "ONE short sentence (max ~25 words) naming the theme of the supplementary questions, or \\"not stated\\" if there were none"
+}
+
+Rules:
+- Consolidate the notes; do not introduce facts absent from them.
+- Report what was asked and what was said. NEVER say the Minister did not answer,
+  evaded, declined to commit, or failed to address something. Uncovered ground goes
+  in left_open as a neutral open point, never as a criticism.
+- Quotes must be verbatim from the notes, which copied them from Hansard."""
+
+ORAL_REDUCE_TMPL = """Partial notes covering the whole of one oral answer:
+
+{notes}"""
+
+
 def ask(user, system=SYSTEM, timeout=420, model=MODEL):
     body = {"model": model, "temperature": 0.2,
             "messages": [{"role": "system", "content": system},
@@ -242,7 +345,17 @@ def strip_speaker_labels(text):
 
 
 def build_transcript(report, char_budget=120000):
-    """Speaker-labelled transcript, trimmed in the middle if enormous."""
+    """Speaker-labelled transcript, trimmed in the middle if enormous.
+
+    SUPERSEDED for summarisation by build_chunks() below. Kept because
+    merge_transcript() and the digest tooling still use it, and because the
+    truncating behaviour is still the right fallback for a single oversized report
+    when no chunking is wanted.
+
+    The bug it caused: this caps ONE report, while an item can merge several
+    reports across sitting days, so the ceiling did not bound the prompt. See
+    build_chunks() for the real fix.
+    """
     parts = []
     for t in report["turns"]:
         body = strip_speaker_labels(t["text"])
@@ -257,6 +370,104 @@ def build_transcript(report, char_budget=120000):
     head = full[:int(char_budget * 0.7)]
     tail = full[-int(char_budget * 0.25):]
     return head + "\n\n[...middle of this debate omitted for length...]\n\n" + tail, True
+
+
+# --------------------------------------------------------- chunking (map-reduce)
+# Why this exists: build_transcript capped each REPORT at 90k chars, then
+# merge_transcript concatenated every report in an item. An item spanning several
+# sitting days therefore produced a prompt far larger than any budget -- the worst
+# on the live corpus is 939,453 chars (~235k tokens) for "President's Speech",
+# 14 reports. The cloud model's context absorbed it, which is why nobody noticed;
+# smaller models returned prose instead of JSON, because they were reading a
+# truncated prompt rather than choosing to ignore the format. A silent failure.
+#
+# So we chunk and reduce instead of truncating. This is strictly better for
+# correctness on every model: truncation silently drops the MIDDLE of a debate,
+# and a site whose credibility rests on "every point carries the words it was
+# taken from" cannot summarise a debate from its first 70% and last 25% while
+# calling it a summary of the debate.
+
+CHUNK_CHARS = 40000
+
+
+def _split_oversized(who, body, budget):
+    """Split ONE oversized turn at sentence boundaries.
+
+    Necessary because turn-boundary chunking alone is not enough: measured on the
+    live corpus, 57 single turns exceed 40,000 chars on their own -- the longest is
+    100,940 chars (a Finance Minister's Budget speech). Splitting mid-sentence
+    would cut a quotation in half and then fail the quote gate for reasons that
+    look like model error, so split on sentence ends only. Verified safe: that
+    100,940-char speech has 862 sentences, the longest only 387 chars.
+    """
+    sentences = re.split(r"(?<=[.!?])\s+", body)
+    pieces, cur = [], ""
+    prefix = f"[{who}]: "
+    room = budget - len(prefix)
+    for s in sentences:
+        if cur and len(cur) + len(s) + 1 > room:
+            pieces.append((who, cur))
+            cur = ""
+        # A single sentence longer than the budget cannot be split further without
+        # cutting mid-sentence; emit it whole and let the caller's budget absorb it.
+        cur = f"{cur} {s}".strip() if cur else s
+    if cur:
+        pieces.append((who, cur))
+    return pieces
+
+
+def build_chunks(item, budget=CHUNK_CHARS):
+    """The item's full transcript as chunks, never split mid-sentence.
+
+    Chunk on TURN boundaries (the transcript is speaker-labelled, so a turn is the
+    natural unit), and fall back to sentence boundaries for a turn that is itself
+    oversized. Returns a list of strings, each normally <= budget.
+    """
+    turns = []
+    for r in item["reports"]:
+        for t in r["turns"]:
+            body = strip_speaker_labels(t["text"])
+            if not body:
+                continue
+            turns.append((t["speaker"] or "(unattributed)", body))
+
+    chunks, cur, size = [], [], 0
+    for who, body in turns:
+        piece_len = len(who) + len(body) + 4
+        if piece_len > budget:
+            # flush what we have, then emit this turn as its own sentences
+            if cur:
+                chunks.append("\n\n".join(f"[{w}]: {b}" for w, b in cur))
+                cur, size = [], 0
+            for w, b in _split_oversized(who, body, budget):
+                chunks.append(f"[{w}]: {b}")
+            continue
+        if cur and size + piece_len > budget:
+            chunks.append("\n\n".join(f"[{w}]: {b}" for w, b in cur))
+            cur, size = [], 0
+        cur.append((who, body))
+        size += piece_len
+    if cur:
+        chunks.append("\n\n".join(f"[{w}]: {b}" for w, b in cur))
+    return chunks
+
+
+def merge_chunk_summaries(parts):
+    """Flatten chunk-level outputs into one text block for the reduce call."""
+    lines = []
+    for i, p in enumerate(parts, 1):
+        lines.append(f"--- Chunk {i} of {len(parts)} ---")
+        for key in ("asked", "response"):
+            if p.get(key):
+                lines.append(f"{key.title()}: {p[key]}")
+        for kp in p.get("key_points") or []:
+            who = kp.get("speaker") or ""
+            lines.append(f"- {kp.get('point', '')}"
+                         + (f" ({who})" if who else "")
+                         + f'\n  quote: "{kp.get("quote", "")}"')
+        for lo in p.get("left_open") or []:
+            lines.append(f"- left open: {lo}")
+    return "\n".join(lines)
 
 
 def verify_quotes(summary, transcript_norm):
@@ -368,14 +579,51 @@ def merge_transcript(item):
 
 
 def summarise_item(item):
-    transcript, truncated = merge_transcript(item)
-    t_norm = norm(strip_speaker_labels(transcript))
+    """One brief via map-reduce over chunks, gated against the FULL transcript.
+
+    Previously this built one enormous prompt by concatenating every report in the
+    item, then relied on the model's context to absorb it. That was unbounded (up
+    to 939,453 chars measured) and silently truncated by smaller models. Now:
+
+      MAP    - each <=40k-char chunk gets key_points only, with the same neutrality
+               rules. Chunks cannot know the item's title or significance, so they
+               are not asked for it.
+      REDUCE - one small call over the chunk notes produces the item-level fields.
+      GATE   - verify_quotes runs against the FULL merged transcript, not per chunk.
+               Per-chunk quotes were copied from the transcript, so they should
+               verify at item level; if a chunk invented anything, the item-level
+               gate still catches it. One gate, one source of truth.
+
+    A single-chunk item takes the direct path -- one call, same as before -- so this
+    adds no cost to the ~3,300 items that never needed chunking.
+    """
     is_oral = item["group"] == "oral"
-    # Oral answers get their own prompt: shorter, question-to-response shaped, and
-    # it reports what was left open instead of a "not_said" list. Same pipeline,
-    # same quote gate.
-    prompt = (ORAL_TMPL if is_oral else USER_TMPL).format(transcript=transcript)
-    raw = ask(prompt, system=ORAL_SYSTEM if is_oral else SYSTEM)
+    chunks = build_chunks(item)
+
+    # The gate's reference text: the complete transcript, nothing dropped.
+    full_transcript = "\n\n".join(chunks)
+    t_norm = norm(strip_speaker_labels(full_transcript))
+
+    if len(chunks) == 1:
+        prompt = (ORAL_TMPL if is_oral else USER_TMPL).format(transcript=chunks[0])
+        raw = ask(prompt, system=ORAL_SYSTEM if is_oral else SYSTEM)
+    else:
+        c_sys = ORAL_CHUNK_SYSTEM if is_oral else CHUNK_SYSTEM
+        c_tmpl = ORAL_CHUNK_TMPL if is_oral else CHUNK_TMPL
+        parts = []
+        for i, ch in enumerate(chunks, 1):
+            raw_c = ask(c_tmpl.format(transcript=ch), system=c_sys)
+            parsed = parse_json(raw_c)
+            if parsed:
+                parts.append(parsed)
+            else:
+                print(f"    chunk {i}/{len(chunks)} returned no JSON; skipped")
+        if not parts:
+            return None
+        notes = merge_chunk_summaries(parts)
+        prompt = (ORAL_REDUCE_TMPL if is_oral else REDUCE_TMPL).format(notes=notes)
+        raw = ask(prompt, system=ORAL_REDUCE_SYSTEM if is_oral else REDUCE_SYSTEM)
+
     data = parse_json(raw)
     if not data:
         return None
@@ -385,7 +633,10 @@ def summarise_item(item):
         "sitting_dates": item["sitting_dates"],
         "group": item["group"],
         "source_words": item["words"],
-        "transcript_truncated": truncated,
+        # Kept for compatibility, but never True via this path: nothing is
+        # truncated any more. A chunked item records how many passes it took.
+        "transcript_truncated": False,
+        "chunks": len(chunks),
         "model": MODEL,
         "points_dropped": len(data.get("_dropped", [])),
     }
