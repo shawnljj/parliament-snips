@@ -70,6 +70,13 @@ LABEL_TMPL = """These consecutive sentences from the record:
 
 Return the JSON described in your instructions."""
 
+# What share of an item's sentences are worth keeping. Measured: the small-item runs
+# kept 8-12 of 40 (20-30%), and 1.0 would mean "keep everything", which is not a
+# summary. 0.14 of a 444-sentence answer is ~62 sentences, still far more than anyone
+# reads -- the reading budget has to be reconsidered for verbatim text, and this spike
+# is how we find out what it should be.
+SELECT_SHARE = 0.14
+
 SELECT_TMPL = """Sentences from the record, each prefixed with its id:
 
 {excerpt}
@@ -117,13 +124,61 @@ def load_item(item_id, year=2026):
 
 
 def select(item, model):
+    """Select across the whole item, CHUNKING when it does not fit.
+
+    A 444-sentence oral answer is 68k characters against a 6k budget, so it needs 15
+    calls. The difficulty is that no chunk knows what the others kept, so the merge is
+    where this can go wrong in both directions: keep every chunk's output and a long
+    item is flooded (the original pipeline hit 259 points this way); keep too few and a
+    long item is starved.
+
+    So the per-chunk ask is PROPORTIONAL to the chunk's share of the item, and the merge
+    is a global cap applied round-robin across chunks. That way no single chunk can
+    dominate and no chunk is silently dropped -- the same shape the point cap already
+    uses, for the same reason.
+    """
     sents = item["sentences"]
-    excerpt = "\n".join(f"{s['sid']}: {s['text']}" for s in sents)
-    raw, usage = B.ask(SELECT_TMPL.format(excerpt=excerpt), SELECT_SYSTEM, model)
-    got = B.parse_json(raw) or {}
     by_sid = {s["sid"]: s for s in sents}
-    return ([str(x) for x in (got.get("keep") or []) if str(x) in by_sid],
-            got.get("what_it_is") or "", usage)
+    chunks = B.make_chunks(sents)
+    total = len(sents)
+    target = max(3, round(total * SELECT_SHARE))
+    per_chunk = max(1, round(target / max(1, len(chunks))))
+
+    picked, usage_total, what = [], {"completion_tokens": 0, "prompt_tokens": 0}, ""
+    for n, chunk in enumerate(chunks, 1):
+        excerpt = "\n".join(f"{s['sid']}: {s['text']}" for s in chunk)
+        sys_p = SELECT_SYSTEM + (
+            f"\n- This excerpt is part {n} of {len(chunks)} from a longer record. Keep "
+            f"AT MOST {per_chunk} sentence ids -- the most substantive in this excerpt.")
+        raw, usage = B.ask(SELECT_TMPL.format(excerpt=excerpt), sys_p, model)
+        usage_total["completion_tokens"] += usage.get("completion_tokens", 0) or 0
+        usage_total["prompt_tokens"] += usage.get("prompt_tokens", 0) or 0
+        got = B.parse_json(raw) or {}
+        if not what:
+            what = got.get("what_it_is") or ""
+        for x in (got.get("keep") or []):
+            x = str(x)
+            if x in by_sid and x not in picked:
+                picked.append(x)
+
+    # global cap, round-robin across chunks so coverage is spread not concentrated
+    if len(picked) > target:
+        rank = {s["sid"]: i for i, s in enumerate(sents)}
+        buckets = [[] for _ in chunks]
+        owner = {}
+        for ci, chunk in enumerate(chunks):
+            for s in chunk:
+                owner[s["sid"]] = ci
+        for sid in sorted(picked, key=lambda x: rank[x]):
+            buckets[owner[sid]].append(sid)
+        merged, i = [], 0
+        while len(merged) < target and any(buckets):
+            for b in buckets:
+                if b and len(merged) < target:
+                    merged.append(b.pop(0))
+            i += 1
+        picked = merged
+    return picked, what, usage_total
 
 
 def groups_of(sents, keep, gap=2):
@@ -200,10 +255,13 @@ def render(d):
     seen_sec = set()
     for i, s in enumerate(sents):
         sid = s["sid"]
-        if sid in d["keep"]:
+        # ORDER MATTERS: the walk-back repair adds predecessors into keep_set, so
+        # testing keep first would classify every grammar addition as selected and the
+        # distinct shade would never appear. The repair set is checked first.
+        if sid in d["repaired"]:
+            cls = "r-con"                     # present for grammar, not for content
+        elif sid in d["keep"]:
             cls = "r-sel"
-        elif sid in d["repaired"]:
-            cls = "r-con"                     # needed for grammar, not for content
         else:
             cls = "r-dim"
         sec = gsec.get(i)
@@ -232,9 +290,8 @@ def render(d):
             f'<div class="card-s">{esc(sec["summary"])}</div></a>')
 
     kept = len(d["keep"])
-    kept_w = sum(words(sents[i]["text"]) for i in d["sections"][0]["idx"]) if False else \
-        sum(words(sents[i]["text"]) for i in [i for i, s in enumerate(sents)
-                                              if s["sid"] in d["keep"]])
+    kept_w = sum(words(sents[i]["text"]) for i, s in enumerate(sents)
+                 if s["sid"] in d["keep"] and s["sid"] not in d["repaired"])
     total_w = sum(words(s["text"]) for s in sents)
     sum_w = sum(words(sec["summary"]) for sec in d["sections"])
     n_sec = len(d["sections"])

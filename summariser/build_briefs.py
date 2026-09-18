@@ -92,6 +92,16 @@ REQUEST_TIMEOUT = int(os.environ.get("PARSNIPS_TIMEOUT", "180"))
 # citations). A reply cut off at the cap is recovered by salvage_truncated().
 MAX_REPLY_TOKENS = int(os.environ.get("PARSNIPS_MAX_TOKENS", "900"))
 
+# THE RUNAWAY GUARD, not a content budget. It exists because one 94-chunk motion once
+# produced 259 points, which is not a summary of anything. It is deliberately set well
+# above what a faithful brief needs, because the cap's job is to catch a malfunction and
+# NOT to bound length: a ceiling on reading time is a ceiling on coverage, and coverage
+# is the product. At 0.25 points per sentence a 444-sentence oral answer may carry 111
+# points, and the largest record in the corpus is ~2,000 sentences, so the effective
+# ceiling is far above anything legitimate extraction produces.
+RUNAWAY_FLOOR = int(os.environ.get("PARSNIPS_RUNAWAY_FLOOR", "120"))
+RUNAWAY_PER_SENTENCE = float(os.environ.get("PARSNIPS_RUNAWAY_PER_SENTENCE", "0.25"))
+
 # Where briefs are written. Overridable so a test run never clobbers the 291
 # briefs built under the old item-level schema — replacing those is an owner
 # decision (REQUIREMENTS.md §11 open question 6), not a side effect of a test.
@@ -780,10 +790,22 @@ def stage3_assemble(item, extracted, model):
     # content budget, because discarding content to hit a length target is exactly the
     # silent loss R-2.5 forbids. Length is the site's problem -- it collapses
     # transcripts and offers section-level stops (R-5.4, R-5.6).
+    #
+    # REVISED after the owner clarified §1.4: the 30-60 minute figure ILLUSTRATES the
+    # order of magnitude and is NOT a ceiling, so the cap must not be derived from a
+    # reading-time target at all. A ceiling on reading time is a ceiling on coverage,
+    # and coverage is the product (§1.2: "summaries of every exchange, not highlights").
+    # Where the two conflict, coverage wins.
+    #
+    # So the cap is now a pure runaway guard with a much higher headroom, and it is set
+    # from the RECORD's size rather than from a reading target. The guard exists because
+    # the first full run produced 259 points for one 94-chunk motion, which is not a
+    # summary of anything; it does not exist to make output short.
     turns_total = len({(s.get("report_id"), s.get("turn_index"))
                        for s in (item.get("sentences") or [])})
+    sentences_total = len(item.get("sentences") or [])
     MAX_POINTS = int(os.environ.get("PARSNIPS_MAX_POINTS", "0")) or max(
-        40, round(1.5 * turns_total))
+        RUNAWAY_FLOOR, round(RUNAWAY_PER_SENTENCE * sentences_total))
     if len(kept) > MAX_POINTS:
         for k in kept:
             k.setdefault("_chunk", 0)

@@ -42,7 +42,8 @@ value.
 | Reader arrives with **some faith in government** | The product must not be a gotcha machine, and must not be a press release either. Neutral reporting is the contract. R-3.1, R-3.2. |
 | **Summaries of every exchange**, not highlights | Coverage is the product. Not "the interesting bits" — every exchange gets a summary. R-3.3, R-5.5. |
 | **Easy to navigate** | Navigation is a primary feature, not chrome. R-5.4. |
-| **30–60 minutes for a sitting** | A hard, measurable budget. See 1.4. |
+| **30–60 minutes for a sitting** | An ILLUSTRATION of the order of magnitude, not a
+ceiling. See 1.4. |
 | More than a sound bite, less than a transcript | The summary unit must be substantive but bounded. See 1.3. |
 
 ### 1.3 The gap we fill, stated exactly
@@ -55,8 +56,19 @@ value.
 
 ### 1.4 The reading budget, measured
 
-This is the single most useful number in this document, because it turns a vague goal
-into a testable constraint.
+**This section was originally read as a hard ceiling, and that was wrong.** The owner's
+clarification: 30–60 minutes is there to illustrate that a sitting reduces to *much less
+than its full length* — roughly 8 hours of transcript down to under an hour. It is not a
+budget that output must fit inside. If a faithful brief runs longer than 60 minutes, that
+is acceptable.
+
+The distinction matters because the pipeline derived a cap from the old reading and the
+cap bounded the very metric the gates score. A ceiling on reading time is a ceiling on
+coverage, and coverage is the product (§1.2: "summaries of every exchange, not
+highlights"). Where the two conflict, coverage wins.
+
+What survives from this section is the arithmetic, which is still how we judge whether a
+sitting's output is sane:
 
 Measured across 331 sittings: **median 287 turns per sitting** (mean 285, range 23–706).
 Words per turn: median **67**, p90 506, p99 2,878, max 16,209.
@@ -68,14 +80,20 @@ Words per turn: median **67**, p90 506, p99 2,878, max 16,209.
 | 15s | 72 min | 176 min | 6 min |
 | 20s | 96 min | 235 min | 8 min |
 
-**Conclusion: the target is met at ~10 seconds per turn summary.** That is roughly 25–35
-words of summary — short, but longer than a headline. This gives the summary-writing
-stage a hard length budget rather than a vague instruction to "be brief".
+**Conclusion: ~10 seconds per turn puts a median sitting at about 48 minutes**, which is
+where the 30–60 minute illustration came from. Treat it as a description of the expected
+size of the output, NOT as a limit on it.
 
-**Except on the busiest days, which need an explicit answer.** A 706-turn sitting is
-~2 hours at that rate. Requirement R-5.6 (new) addresses this: a reader must be able to
-reach a defensible stopping point, or skim at the section level, without losing the
-ability to see what they skipped.
+**What replaces the hard cap** is a navigation requirement, and it is the same thing the
+busiest days always needed: a reader must be able to reach a defensible stopping point, or
+skim at the section level, without losing the ability to see what they skipped (R-5.6).
+Length is handled by making the long items navigable, not by cutting them short.
+
+**Note on verbatim summaries (2026-09).** When the published text is selected from the
+record rather than written by a model, nothing compresses: a 12,000-word oral answer
+selects ~1,700 words, about 9 minutes. That is longer than the old target and is the
+correct outcome — the alternative was compressing away most of the record, which is
+exactly where the fabricated-specifics defect came from.
 
 ### 1.6 The pipeline, as specified by the owner
 
