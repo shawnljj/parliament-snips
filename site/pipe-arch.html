@@ -1,90 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Parsnips — Architecture &amp; Schema</title>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parsnips — how a day of Parliament becomes a checkable brief</title>
+<meta name="description" content="The algorithm behind Parsnips: extract by sentence reference, assemble, then verify. Every figure computed from the pipeline, never typed.">
+<meta name="color-scheme" content="dark">
 <style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'JetBrains Mono',monospace;background:#020617;min-height:100vh;
-    padding:2rem 1rem;color:white}
-  .container{max-width:1180px;margin:0 auto}
-  .header{margin-bottom:2rem}
-  .header-row{display:flex;align-items:center;gap:1rem;margin-bottom:.5rem}
-  .pulse-dot{width:12px;height:12px;background:#22d3ee;border-radius:50%;
-    animation:pulse 2s infinite;flex:none}
-  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
-  h1{font-size:1.4rem;font-weight:700;letter-spacing:-.025em}
-  .subtitle{color:#94a3b8;font-size:.8rem;margin-left:1.75rem;line-height:1.6}
-  h2{font-size:1rem;font-weight:700;margin:2.5rem 0 .4rem;color:#e2e8f0}
-  h2 .n{color:#22d3ee;margin-right:.5rem}
-  .lede{color:#94a3b8;font-size:.75rem;margin-bottom:1rem;line-height:1.65;max-width:78ch}
-  .lede b{color:#cbd5e1}
-  .diagram-container{background:rgba(15,23,42,.5);border-radius:1rem;
-    border:1px solid #1e293b;padding:1.25rem;overflow-x:auto}
-  svg{width:100%;min-width:900px;display:block}
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:1rem;margin-top:2rem}
-  .card{background:rgba(15,23,42,.5);border-radius:.75rem;border:1px solid #1e293b;
-    padding:1.25rem}
-  .card-header{display:flex;align-items:center;gap:.5rem;margin-bottom:.75rem}
-  .card-dot{width:8px;height:8px;border-radius:50%;flex:none}
-  .card-dot.cyan{background:#22d3ee}.card-dot.emerald{background:#34d399}
-  .card-dot.violet{background:#a78bfa}.card-dot.amber{background:#fbbf24}
-  .card-dot.rose{background:#fb7185}
-  .card h3{font-size:.8rem;font-weight:600}
-  .card ul{list-style:none;color:#94a3b8;font-size:.7rem;line-height:1.7}
-  .card li{margin-bottom:.3rem}
-  .card code{color:#cbd5e1;font-size:.68rem}
-  table{width:100%;border-collapse:collapse;font-size:.7rem;
-    background:rgba(15,23,42,.5);border-radius:.5rem;overflow:hidden;
-    border:1px solid #1e293b}
-  caption{text-align:left;color:#e2e8f0;font-size:.8rem;font-weight:600;
-    padding:.9rem 0 .5rem}
-  caption .tag{color:#64748b;font-weight:400;font-size:.68rem;margin-left:.5rem}
-  th{text-align:left;color:#64748b;font-weight:600;font-size:.62rem;
-    letter-spacing:.08em;text-transform:uppercase;padding:.5rem .7rem;
-    border-bottom:1px solid #1e293b;background:rgba(30,41,59,.4)}
-  td{padding:.45rem .7rem;border-bottom:1px solid rgba(30,41,59,.6);
-    color:#94a3b8;vertical-align:top}
-  tr:last-child td{border-bottom:0}
-  td.k{color:#cbd5e1;font-weight:600}
-  td.t{color:#a78bfa}
-  .pk{color:#fbbf24;font-size:.6rem;font-weight:700}
-  .fk{color:#fb7185;font-size:.6rem;font-weight:700}
-  .nn{color:#34d399;font-size:.6rem;font-weight:700}
-  .tables{display:grid;gap:1.25rem;margin-top:1rem}
-  .note{background:rgba(76,29,149,.15);border:1px solid rgba(167,139,250,.3);
-    border-radius:.5rem;padding:.9rem 1.1rem;margin-top:1rem;font-size:.72rem;
-    color:#c4b5fd;line-height:1.7}
-  .note b{color:#ddd6fe}
-  .footer{text-align:center;margin-top:2rem;color:#475569;font-size:.72rem;
-    line-height:1.8}
-  @media (max-width:640px){
-    body{padding:1.25rem .75rem}
-    h1{font-size:1.1rem}
-    .subtitle{margin-left:0;margin-top:.75rem}
-    table{font-size:.62rem}
-    td,th{padding:.4rem .5rem}
-  }
+/* ============================================================
+   BASE LAYER IS THE PHONE. Everything here is the 390px layout.
+   Wider viewports only ever ADD, in the two min-width blocks at
+   the end. There is no max-width override anywhere on this page:
+   a max-width block would mean the desktop came first.
+   ============================================================ */
+:root{
+  --bg:#0a0f1a; --panel:#111a2b; --panel-2:#0d1524; --line:#22304a;
+  --ink:#e8eef7; --dim:#9fb0c8; --meta:#8fa0ba; --accent:#22d3ee;
+  --green:#34d399; --amber:#fbbf24; --rose:#fb7185; --violet:#a78bfa;
+  --mono:ui-monospace,SFMono-Regular,Menlo,'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--mono);
+  font-size:14px;line-height:1.68;overflow-wrap:break-word}
+.wrap{padding:20px 14px 56px}
+h1{font-size:1.12rem;font-weight:700;letter-spacing:-.01em;line-height:1.3}
+h2{font-size:.98rem;font-weight:700;margin:2.4rem 0 .5rem;color:#f1f6fc;
+  padding-top:1.1rem;border-top:1px solid var(--line)}
+h2 .n{color:var(--accent);margin-right:.5rem;font-variant-numeric:tabular-nums}
+h3{font-size:.86rem;font-weight:700;color:#f1f6fc;margin:1.6rem 0 .4rem}
+h4{font-size:.78rem;font-weight:700;color:var(--dim);margin:1.1rem 0 .3rem;
+  text-transform:uppercase;letter-spacing:.08em}
+p{margin:0 0 .85rem;color:var(--dim)}
+p b,li b{color:#e8eef7}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(34,211,238,.35)}
+code{font-family:var(--mono);font-size:.9em;color:#cfe3f5;
+  background:rgba(34,211,238,.09);border:1px solid rgba(34,211,238,.16);
+  border-radius:3px;padding:.05em .3em}
+.hdr{margin-bottom:1.6rem}
+.hdr-row{display:flex;align-items:center;gap:.6rem;margin-bottom:.5rem}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--accent);flex:none;
+  animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+@media (prefers-reduced-motion:reduce){.dot{animation:none}}
+.sub{color:var(--meta);font-size:.78rem;line-height:1.7;margin-left:1.5rem}
+.lede{color:var(--dim);font-size:.8rem;line-height:1.7;margin-bottom:1.1rem}
+.diagram{background:var(--panel-2);border:1px solid var(--line);border-radius:10px;
+  padding:12px;overflow-x:auto}
+.diagram svg{width:100%;min-width:820px;display:block}
+.cards{display:grid;gap:.85rem;margin-top:1.1rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1rem}
+.card-hd{display:flex;align-items:center;gap:.5rem;margin-bottom:.55rem}
+.cdot{width:8px;height:8px;border-radius:50%;flex:none}
+.cdot.cyan{background:var(--accent)}.cdot.green{background:var(--green)}
+.cdot.amber{background:var(--amber)}.cdot.rose{background:var(--rose)}
+.cdot.violet{background:var(--violet)}
+.card h3{margin:0;font-size:.8rem}
+.card ul{list-style:none;color:var(--dim);font-size:.75rem;line-height:1.75}
+.card li{margin-bottom:.28rem}
+.card li::before{content:"·";color:var(--meta);margin-right:.45rem}
+table{width:100%;border-collapse:collapse;font-size:.73rem;margin-top:.6rem;
+  background:var(--panel-2);border:1px solid var(--line);border-radius:8px;
+  overflow:hidden}
+caption{text-align:left;color:#e8eef7;font-size:.8rem;font-weight:700;padding:.7rem 0 .4rem}
+caption .tag{color:var(--meta);font-weight:400;font-size:.7rem;margin-left:.4rem}
+th{text-align:left;color:var(--meta);font-weight:600;font-size:.64rem;
+  letter-spacing:.07em;text-transform:uppercase;padding:.5rem .6rem;
+  border-bottom:1px solid var(--line);background:rgba(34,48,74,.5)}
+td{padding:.45rem .6rem;border-bottom:1px solid rgba(34,48,74,.55);
+  color:var(--dim);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.k{color:#dbe6f3;font-weight:600}
+td.t{color:var(--violet)}
+.tables{display:grid;gap:1rem;margin-top:.8rem}
+.note{background:rgba(52,211,153,.07);border:1px solid rgba(52,211,153,.28);
+  border-radius:8px;padding:.8rem .9rem;margin-top:1rem;font-size:.75rem;
+  color:#bfe9d7;line-height:1.72}
+.note.warn{background:rgba(251,191,36,.07);border-color:rgba(251,191,36,.3);
+  color:#f5dfa8}
+.note.bad{background:rgba(251,113,133,.07);border-color:rgba(251,113,133,.3);
+  color:#fbd0d7}
+.note b{color:#fff}
+.ledger{display:grid;gap:.6rem;margin-top:.8rem}
+.led{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:8px;padding:.75rem .85rem}
+.led .v{font-size:1.28rem;font-weight:700;color:#fff;font-variant-numeric:tabular-nums;
+  line-height:1.2}
+.led .v small{font-size:.62rem;color:var(--meta);font-weight:500;margin-left:.3rem}
+.led .l{font-size:.72rem;color:var(--dim);margin-top:.2rem}
+.led .s{font-size:.66rem;color:var(--meta);margin-top:.15rem}
+.steps{counter-reset:s;list-style:none;margin-top:.7rem}
+.steps li{counter-increment:s;position:relative;padding-left:2rem;margin-bottom:.85rem;
+  font-size:.77rem;color:var(--dim);line-height:1.72}
+.steps li::before{content:counter(s);position:absolute;left:0;top:.05rem;
+  width:1.35rem;height:1.35rem;border-radius:50%;background:rgba(34,211,238,.13);
+  border:1px solid rgba(34,211,238,.4);color:var(--accent);font-size:.68rem;
+  font-weight:700;display:flex;align-items:center;justify-content:center}
+.steps li b{color:#e8eef7}
+pre{background:var(--panel-2);border:1px solid var(--line);border-radius:8px;
+  padding:.8rem .9rem;overflow-x:auto;font-size:.7rem;line-height:1.7;
+  color:#cfe3f5;margin:.6rem 0}
+pre .c{color:var(--meta)}
+.flow{display:grid;gap:.5rem;margin-top:.8rem}
+.fbox{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:.7rem .8rem;font-size:.74rem;color:var(--dim)}
+.fbox b{color:#fff;display:block;font-size:.78rem;margin-bottom:.15rem}
+.fbox .tag{font-size:.63rem;color:var(--meta)}
+.fail{border-left:3px solid var(--rose)}
+.pass{border-left:3px solid var(--green)}
+.footer{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--line);
+  color:var(--meta);font-size:.68rem;line-height:1.8;text-align:left}
+
+/* Wider viewports ADD. Nothing above is overridden, only extended. */
+@media (min-width:620px){
+  body{font-size:15px}
+  .wrap{padding:32px 24px 72px;max-width:1140px;margin:0 auto}
+  h1{font-size:1.4rem}
+  h2{font-size:1.08rem}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .ledger{grid-template-columns:repeat(2,1fr)}
+  .flow{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:900px){
+  body{font-size:15.5px}
+  .wrap{padding:44px 32px 88px}
+  h1{font-size:1.55rem}
+  .cards{grid-template-columns:repeat(4,1fr)}
+  .ledger{grid-template-columns:repeat(4,1fr)}
+  .tables{grid-template-columns:repeat(2,1fr)}
+}
 </style>
 </head>
 <body>
-<div class="container">
+<div class="wrap">
 
-  <div class="header">
-    <div class="header-row">
-      <div class="pulse-dot"></div>
-      <h1>Parsnips — Architecture &amp; Schema</h1>
-    </div>
-    <p class="subtitle">
-      Sitting → Section → Speaker → Content. Deterministic where possible, model only
-      where judgement is needed.<br>
-      Requirements: <b>REQUIREMENTS.md</b> &middot; Design decisions D-1 … D-10
+  <div class="hdr">
+    <div class="hdr-row"><div class="dot"></div>
+      <h1>Parsnips — how a day of Parliament becomes a checkable brief</h1></div>
+    <p class="sub">
+      Sitting &rarr; Section &rarr; Speaker &rarr; Sentence &rarr; Claim.
+      Deterministic everywhere it can be, a model only where judgement is required.<br>
+      Schema v3 &middot; model <b>deepseek-v4.1-flash:cloud</b> &middot; every number on this
+      page is measured at build time.
     </p>
   </div>
 
+  <p class="lede">
+    The problem is not summarisation. A language model summarises Hansard well enough.
+    The problem is that <b>a summary you cannot check is indistinguishable from one that
+    is wrong</b> — and a wrong claim about what a minister said is the one failure this
+    project cannot ship. So the design question was never "which model", it was
+    <b>"what can be made structurally impossible, and what has to be verified"</b>.
+    This page is the answer: the four stages, the gates that fail closed, and the two
+    separate checks that stand behind every published sentence.
+  </p>
+
+  <h2><span class="n">01</span>What exists, measured</h2>
+  <p class="lede">Corpus figures are counted off <code>pipeline/dataset</code> at build time.</p>
+
+<div class="ledger">
+<div class="led" style="border-left-color:#34d399"><div class="v">3,912<small>items</small></div><div class="l">Items ingested, each with stable sentence ids</div><div class="s">pipeline/dataset</div></div>
+<div class="led"><div class="v">754,082<small>sentences</small></div><div class="l">Sentences addressable by id</div><div class="s">never by text or offset</div></div>
+<div class="led"><div class="v">8,415<small>chunks</small></div><div class="l">Chunks, defined as id lists</div><div class="s">budget 6,000 chars per call</div></div>
+<div class="led"><div class="v">780<small>calls</small></div><div class="l">Model calls logged</div><div class="s">schema v3</div></div>
+</div>
+
+  <h3>Inference spend, from the run's own log</h3>
+  <table>
+    <caption>Accounting, not estimate <span class="tag">pipeline/usage.jsonl</span></caption>
+    <tbody>
+      <tr><td class="k">Tokens in</td><td>8,404,073</td></tr>
+      <tr><td class="k">Tokens out</td><td>3,037,099</td></tr>
+      <tr><td class="k">Model calls</td><td>780</td></tr>
+      <tr><td class="k">Spent</td><td>$1.68</td></tr>
+    </tbody>
+  </table>
+
+  <h3>What the gates did to 2026</h3>
+  <table>
+    <caption>Published vs withheld <span class="tag">/Users/shawnlin/parsnips/summaries/2026</span></caption>
+    <tbody>
+      <tr><td class="k">Published</td><td>291 briefs</td></tr>
+      <tr><td class="k">Withheld</td><td>0
+        </td></tr>
+      <tr><td class="k">Key points</td><td>4,583</td></tr>
+    </tbody>
+  </table>
+
+  <h2><span class="n">02</span>The summarising algorithm</h2>
+  <p class="lede">
+    Four stages. <b>One of them uses a model.</b> The other three are ordinary code that
+    either passes or refuses, and the refusal is the point — a brief that fails a gate is
+    withheld rather than published with a caveat.
+  </p>
+
+  <div class="flow">
+    <div class="fbox pass"><b>Stage 1 · build the corpus</b>
+      <span class="tag">deterministic · offline</span><br>
+      Parse Hansard into items, turns and sentences. Every sentence gets a
+      <b>stable id</b> and a character span into the archived source.
+      Nothing downstream ever quotes text it did not receive from here.</div>
+
+    <div class="fbox pass"><b>Stage 2 · extract by reference</b>
+      <span class="tag">the only model stage</span><br>
+      The model reads a chunk and returns <b>sentence ids plus its own paraphrase</b> —
+      never a quotation. Quote text is substituted from the record afterwards, so a
+      fabricated quote is not caught, it is <b>unrepresentable</b>.</div>
+
+    <div class="fbox pass"><b>Stage 3 · assemble</b>
+      <span class="tag">deterministic</span><br>
+      Resolve every cited id, attach each citation's <b>own</b> text, cap the point count
+      against the item's reading budget, drop duplicates, and record a reason for every
+      exclusion.</div>
+
+    <div class="fbox fail"><b>Stage 4 · verify and gate</b>
+      <span class="tag">deterministic · fails closed</span><br>
+      Re-slice the source at each cited span, compare hashes, check coverage and schema
+      completeness. Any failure withholds the brief. <b>Four gates, all failing closed.</b></div>
+  </div>
+
+  <h3>Stage 2 in detail — why the model never writes a quotation</h3>
+  <p>
+    This is the single design decision the rest of the system is built around. Asking a
+    model to <i>quote</i> asks it to reproduce text, and the failure mode is a plausible
+    sentence that appears nowhere in Hansard — which reads exactly like a correct one.
+    So the model is asked for a <b>reference</b> instead:
+  </p>
+  <pre>Sentences from the record, each prefixed with its id:
+  <span class="c">s41: The PSGA was introduced in 2018 to enable public agencies to share data safely.</span>
+  <span class="c">s42: It applies to all public agencies unless expressly excluded.</span>
+
+Return, for each claim, the ids of the sentences that support it.
+Cite the fewest sentences that support the claim.</pre>
+  <p>
+    The model returns a claim and a list of ids. The pipeline then reads those sentences
+    <i>out of the record</i> and uses that text as the quote. The model's paraphrase is
+    kept as the human-readable claim; the quotation is never the model's.
+  </p>
+  <div class="note">
+    <b>What this eliminates:</b> the entire class of fabricated-quote error. A model
+    cannot invent a quotation it was never asked to produce. What it can still do — and
+    does — is <b>misread</b> a real sentence, which is why Stage 4 and the separate
+    citation verifier exist.
+  </div>
+
+  <h3>The reading budget</h3>
+  <p>
+    A brief is capped by how long the <i>item</i> is, not by a flat number of points. The
+    requirement is roughly <b>ten seconds of reading per turn</b> of the record: a
+    one-turn item gets one point, a 60-turn motion may carry sixty. A flat cap would
+    either truncate long items or pad short ones, and both read as a system that does not
+    understand its own input. Chunked items are capped by selecting across chunks
+    (coverage-aware, falling back to round-robin) so no single chunk supplies everything.
+  </p>
+
+  <h3>Prompt size is a correctness parameter</h3>
+  <p>
+    Chunks are bounded at <b>6,000 characters</b>. This is not a
+    performance tweak. At ~24k characters the model produced citation lists of eighty-plus
+    ids and roughly a fifth of replies arrived truncated and unparseable; at
+    6,000 the same work is clean. Longer replies are capped at
+    <b>900 tokens</b> for the same reason — one chunk once generated
+    35,420 tokens in a repetition loop and never stopped.
+  </p>
+
+
+  <h2><span class="n">03</span>The verifying algorithm</h2>
+  <p class="lede">
+    There are <b>two</b> independent checks, and they are deliberately different in kind.
+    A gate can prove structure. It cannot tell you whether a sentence means what the claim
+    says it means. That is a separate job, done by a separate agent.
+  </p>
+
+  <h3>Check 1 — the deterministic gates</h3>
+  <p>All four run in Stage 4 and <b>fail closed</b>: a failure withholds the brief.</p>
+  <table>
+    <caption>Gates <span class="tag">stage4_verify</span></caption>
+    <thead><tr><th>Gate</th><th>What it proves</th></tr></thead>
+    <tbody>
+      <tr><td class="k">quote invariant</td>
+          <td>For every point: re-slice the archived source at the cited span and compare
+          sha256 with the quoted text. This is what makes a quote <b>proven rather than
+          trusted</b>, and it is re-runnable after publication.</td></tr>
+      <tr><td class="k">citation resolves</td>
+          <td>Every cited id exists and belongs to this item. Catches a model citing a
+          sentence from elsewhere in the corpus.</td></tr>
+      <tr><td class="k">coverage floor</td>
+          <td>The brief must account for a real share of its item — floor
+          <b>0.15</b> of turns, and at least 1 turn(s).
+          Added after a one-point brief covering <b>1 of 62 turns</b> passed and
+          published.</td></tr>
+      <tr><td class="k">schema complete</td>
+          <td>Every field the site renders is present. Derived from what the renderer
+          actually reads, so a field the site consumes can never quietly go missing.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>What the gates caught that no test would have</h3>
+  <ul class="steps">
+    <li><b>Every multi-citation point failed.</b> Assembly stored one quote but listed all
+      cited ids, so the verifier compared sentence 2's words against sentence 1's id.
+      The gate was right and the code was wrong — it found a real bug on its first run.</li>
+    <li><b>A question reported as a finding.</b> A brief claimed <i>"The Government is
+      assessing how rising fuel costs are passed through"</i> where the source said
+      <i>"asked the Deputy Prime Minister whether…"</i>. Across the year, 214 points cited
+      a question and 18 asserted a fact from one. Fixed in the prompts so the claim stays
+      in the asking register, and flagged in Stage 4.</li>
+    <li><b>Silent schema regression.</b> 96 briefs were missing four item-level fields.
+      Every field the site reads is optional, so the pages rendered complete and looked
+      fine. Invisible to the eye, caught by a gate.</li>
+  </ul>
+  <div class="note warn">
+    <b>The lesson these share:</b> a gate is only as good as its ability to fail. Each of
+    those three was found by a check that was expected to pass.
+  </div>
+
+  <h3>Check 2 — the citation verifier</h3>
+  <p>
+    The gates check structure and never meaning. So a second agent judges each claim
+    against the sentences it cites and returns a verdict:
+    <code>supported</code>, <code>weak</code>, <code>unsupported</code> or
+    <code>reversed</code>, plus a defect class such as <code>dropped_qualifier</code>,
+    <code>overstates</code> or <code>wrong_speaker</code>.
+  </p>
+  <p>
+    Its prompt is adversarial by construction: the reader is told to find the way the
+    claim <i>overstates</i> the source, and a claim that drops a hedge — "who sits at the
+    table <b>potentially</b> decides" becoming "decides" — is reported as
+    <code>dropped_qualifier</code>, not as supported. It found exactly that class of error
+    in the published corpus.
+  </p>
+  <div class="note">
+    <b>On independence — an honest note.</b> The verifier was originally a
+    <i>different model family</i> from the writer, so that the same blind spots could not
+    judge themselves. Cost won: it now runs on <b>deepseek-v4.1-flash:cloud</b>, the same model
+    that writes the briefs. That weakness is not assumed away — it is <b>tested</b>. The
+    verifier is scored against a ground-truth set of known-good claims and deliberately
+    planted defects, including the original question-as-fact error, and it must keep
+    catching them. A different role (judge rather than author) and an adversarial prompt
+    are what carry it now; if the score falls, the test says so.
+  </div>
+
+
+  <h3>Why the verifier retries instead of giving up</h3>
+  <p>
+    The model sometimes returns <b>fewer verdicts than claims</b> in a batch — silently,
+    with valid JSON. On the first full-size run this left <b>33.4%</b> of claims
+    <code>unjudged</code>, and because the summary counted them in the denominator, a run
+    that had examined two-thirds of the corpus read as though it had examined all of it.
+    Two fixes, both now load-bearing:
+  </p>
+  <ul class="steps">
+    <li><b>A short reply is a partial failure.</b> The batch is re-asked for <i>only the
+      missing indices</i>, so recovering a third of a batch costs a third of a batch.
+      Bounded, so a model that refuses outright cannot loop forever.</li>
+    <li><b>An unjudged claim is never cached.</b> Caching it made the retry a no-op: the
+      skipped claims were read back as already answered, so re-running asked nothing and
+      coverage never moved. Absence of a result is not a result.</li>
+  </ul>
+  <div class="note">
+    <b>The reporting rule this produced:</b> coverage is printed next to the supported
+    fraction, and both are stated — supported-of-all and supported-of-judged — with a
+    warning below 99%. A verifier that samples must say that it samples.
+  </div>
+
+  <h2><span class="n">04</span>Pipeline, entities, schema</h2>
+  <div class="diagram">
   <!-- ============================ ARCHITECTURE ============================ -->
   <h2><span class="n">01</span>Pipeline architecture</h2>
   <p class="lede">
@@ -306,6 +588,7 @@
     </svg>
   </div>
 
+  </div>
   <!-- ============================== ERD ============================== -->
   <h2><span class="n">02</span>Entity relationships</h2>
   <p class="lede">
@@ -442,6 +725,7 @@
     A model that mangles a quote in its head has no way to publish the mangled version.
   </div>
 
+  <div class="tables">
   <!-- ============================ TABLES ============================ -->
   <h2><span class="n">03</span>Schema</h2>
   <p class="lede">
@@ -561,54 +845,16 @@
 
   </div>
 
-  <div class="cards">
-    <div class="card">
-      <div class="card-header"><div class="card-dot emerald"></div><h3>Stage 1 · what exists today</h3></div>
-      <ul>
-        <li>• 3,912 policy items built</li>
-        <li>• 754,082 sentences with stable sids</li>
-        <li>• 8,415 chunks, defined as id lists</li>
-        <li>• invariants verified corpus-wide</li>
-        <li>• <b>not yet</b>: char offsets, sha256, exclusion reasons</li>
-      </ul>
-    </div>
-    <div class="card">
-      <div class="card-header"><div class="card-dot amber"></div><h3>Stage 2 · the only model stage</h3></div>
-      <ul>
-        <li>• returns sentence ids, not quotations</li>
-        <li>• ~10s reading budget per summary</li>
-        <li>• small items: one call whole</li>
-        <li>• heavy items: map → reduce</li>
-        <li>• model choice still open</li>
-      </ul>
-    </div>
-    <div class="card">
-      <div class="card-header"><div class="card-dot rose"></div><h3>Gates · four, all failing closed</h3></div>
-      <ul>
-        <li>• provenance: sid resolves + hash matches</li>
-        <li>• coverage: nothing silently dropped</li>
-        <li>• attribution: recorded vs inferred</li>
-        <li>• completeness: whole item summarised</li>
-        <li>• each needs a test that breaks it (R-2.9)</li>
-      </ul>
-    </div>
-    <div class="card">
-      <div class="card-header"><div class="card-dot violet"></div><h3>The provenance chain</h3></div>
-      <ul>
-        <li>• claim → cites[] → sentence.sid</li>
-        <li>• sid → char_start/char_end</li>
-        <li>• re-slice source → compare sha256</li>
-        <li>• a quote is <b>proven</b>, not trusted</li>
-        <li>• re-verifiable after publication</li>
-      </ul>
-    </div>
   </div>
 
   <p class="footer">
-    Parsnips · architecture &amp; schema v0.1 · 17 Sep 2026<br>
-    Requirements phase — no implementation started. Row counts measured via
-    <code>tools/metrics.py</code>.
+    Parsnips &middot; architecture &amp; algorithm &middot; generated by
+    <code>site/build_arch.py</code> &middot; schema v3 &middot;
+    corpus 3,912 items / 754,082 sentences<br>
+    Every figure on this page is read from the pipeline at build time. Nothing here is
+    typed in, so nothing here can go stale.
   </p>
+
 </div>
 </body>
 </html>

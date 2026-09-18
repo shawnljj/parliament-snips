@@ -1,0 +1,118 @@
+  <!-- ============================ TABLES ============================ -->
+  <h2><span class="n">03</span>Schema</h2>
+  <p class="lede">
+    Legend: <span class="pk">PK</span> primary key ·
+    <span class="fk">FK</span> foreign key ·
+    <span class="nn">NN</span> not null. Row counts are measured, not estimates.
+  </p>
+
+  <div class="tables">
+
+    <table>
+      <caption>sitting <span class="tag">331 rows · one calendar day Parliament sat</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">id <span class="pk">PK</span></td><td class="t">date</td><td>ISO date — the natural key</td></tr>
+        <tr><td class="k">parliament_no <span class="nn">NN</span></td><td class="t">int</td><td>13, 14 or 15 across the archive</td></tr>
+        <tr><td class="k">volume_no</td><td class="t">int</td><td>Hansard volume</td></tr>
+        <tr><td class="k">sitting_no</td><td class="t">int</td><td>sitting number within the volume</td></tr>
+        <tr><td class="k">collected / max_result</td><td class="t">int</td><td>reports fetched vs the API's own claim</td></tr>
+        <tr><td class="k">coverage_ratio</td><td class="t">float</td><td>declared enumeration coverage (R-1.3)</td></tr>
+        <tr><td class="k">source_hash</td><td class="t">string(16)</td><td>content fingerprint — detects a re-fetch that differs</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>report <span class="tag">20,962 rows · one Hansard API record</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">id <span class="pk">PK</span></td><td class="t">string</td><td>e.g. <code>bill-366</code> — the API's stable identity</td></tr>
+        <tr><td class="k">sitting_id <span class="fk">FK</span> <span class="nn">NN</span></td><td class="t">date</td><td>→ sitting.id</td></tr>
+        <tr><td class="k">type <span class="nn">NN</span></td><td class="t">enum</td><td>bill · statement · motion · budget · adjournment · oral · written · correction · tribute</td></tr>
+        <tr><td class="k">title</td><td class="t">text</td><td>as printed in Hansard — never used as a key</td></tr>
+        <tr><td class="k">report_version <span class="nn">NN</span></td><td class="t">string</td><td>format era (<code>sprs3</code>) — recorded, never inferred (R-6.3)</td></tr>
+        <tr><td class="k">words / turns_count</td><td class="t">int</td><td>denormalised counts for reporting</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>turn <span class="tag">94,272 rows · one speaker's contiguous contribution</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">id <span class="pk">PK</span></td><td class="t">string</td><td><code>&lt;report_id&gt;:t&lt;order_index&gt;</code></td></tr>
+        <tr><td class="k">report_id <span class="fk">FK</span> <span class="nn">NN</span></td><td class="t">string</td><td>→ report.id</td></tr>
+        <tr><td class="k">speaker_label_id <span class="fk">FK</span></td><td class="t">int</td><td>→ speaker_label.id; nullable when unattributed (D-4)</td></tr>
+        <tr><td class="k">order_index <span class="nn">NN</span></td><td class="t">int</td><td>position in the record — the debate's own order</td></tr>
+        <tr><td class="k">attributed <span class="nn">NN</span></td><td class="t">bool</td><td>true = label from the record; false = carried forward (4.0% of turns)</td></tr>
+        <tr><td class="k">words <span class="nn">NN</span></td><td class="t">int</td><td>median 67, p90 506, max 16,209</td></tr>
+        <tr><td class="k">is_procedural</td><td class="t">bool</td><td>chair business — retained, filterable at display</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>sentence <span class="tag">754,082 rows · the unit of citation</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">sid <span class="pk">PK</span></td><td class="t">string</td><td>stable id within a turn, e.g. <code>s00012</code></td></tr>
+        <tr><td class="k">turn_id <span class="fk">FK</span> <span class="nn">NN</span></td><td class="t">string</td><td>→ turn.id</td></tr>
+        <tr><td class="k">text <span class="nn">NN</span></td><td class="t">text</td><td>the sentence, verbatim from the record</td></tr>
+        <tr><td class="k">order_in_turn <span class="nn">NN</span></td><td class="t">int</td><td>preserves reading order</td></tr>
+        <tr><td class="k">char_start / char_end <span class="nn">NN</span></td><td class="t">int</td><td>offsets into the normalised report text — <b>proves position</b></td></tr>
+        <tr><td class="k">sha256 <span class="nn">NN</span></td><td class="t">string</td><td><b>proves content</b> — re-slice and compare</td></tr>
+        <tr><td class="k">excluded</td><td class="t">bool</td><td>excluded from prompts (procedural / courtesy / too short)</td></tr>
+        <tr><td class="k">exclude_reason</td><td class="t">enum</td><td>never silent — an unrecorded drop is indistinguishable from a bug (R-2.5)</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>speaker_label <span class="tag">1,330 rows · the label exactly as recorded</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">id <span class="pk">PK</span></td><td class="t">int</td></tr>
+        <tr><td class="k">label <span class="nn">NN</span></td><td class="t">text</td><td>e.g. <code>The Minister for Home Affairs (Mr K Shanmugam)</code></td></tr>
+        <tr><td class="k">is_chair <span class="nn">NN</span></td><td class="t">bool</td><td>Mr Speaker / Chairman — section furniture, not a person</td></tr>
+        <tr><td class="k">person_id</td><td class="t">int</td><td><b>NULL for now, deliberately.</b> Reserved for a later identity layer (R-6.9)</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>turn_summary <span class="tag">derived · one summary per turn, or per sub-split</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">id <span class="pk">PK</span></td><td class="t">string</td></tr>
+        <tr><td class="k">turn_id <span class="fk">FK</span> <span class="nn">NN</span></td><td class="t">string</td><td>→ turn.id</td></tr>
+        <tr><td class="k">sub_index <span class="nn">NN</span></td><td class="t">int</td><td>0 for a whole turn; 0..N when a &gt;1,500-word turn is split (D-9)</td></tr>
+        <tr><td class="k">text <span class="nn">NN</span></td><td class="t">text</td><td>~25–35 words — the 10-second reading budget (R-3.7)</td></tr>
+        <tr><td class="k">model</td><td class="t">string</td><td>which model produced it</td></tr>
+        <tr><td class="k">prompt_hash</td><td class="t">string</td><td>reproducibility: same input → same prompt</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>claim <span class="tag">derived · the citation-carrying unit</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">id <span class="pk">PK</span></td><td class="t">string</td></tr>
+        <tr><td class="k">summary_id <span class="fk">FK</span> <span class="nn">NN</span></td><td class="t">string</td><td>→ turn_summary.id</td></tr>
+        <tr><td class="k">text <span class="nn">NN</span></td><td class="t">text</td><td>the assertion, in plain language</td></tr>
+        <tr><td class="k">cites <span class="nn">NN</span></td><td class="t">string[]</td><td><b>sentence sids.</b> The only source of the quotation</td></tr>
+        <tr><td class="k">quote <span class="nn">NN</span></td><td class="t">text</td><td><b>substituted</b> from sentence.text at assembly — never model-written</td></tr>
+        <tr><td class="k">attribution_source <span class="nn">NN</span></td><td class="t">enum</td><td><code>record</code> | <code>inferred</code> — rendered differently on the page (D-4)</td></tr>
+        <tr><td class="k">verified</td><td class="t">bool</td><td>set by Stage 4; false means the claim is not published</td></tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>gate_result <span class="tag">derived · every gate decision, recorded</span></caption>
+      <thead><tr><th style="width:22%">column</th><th style="width:16%">type</th><th>notes</th></tr></thead>
+      <tbody>
+        <tr><td class="k">id <span class="pk">PK</span></td><td class="t">int</td></tr>
+        <tr><td class="k">target_type / target_id <span class="nn">NN</span></td><td class="t">string</td><td>what was checked (item, claim, report, sitting)</td></tr>
+        <tr><td class="k">gate_name <span class="nn">NN</span></td><td class="t">enum</td><td>provenance · coverage · attribution · completeness</td></tr>
+        <tr><td class="k">passed <span class="nn">NN</span></td><td class="t">bool</td><td>false ⇒ withhold, never publish (D-1, D-3)</td></tr>
+        <tr><td class="k">detail</td><td class="t">text</td><td>why it failed — the only artefact a human reviews (D-2)</td></tr>
+        <tr><td class="k">checked_at <span class="nn">NN</span></td><td class="t">timestamp</td></tr>
+      </tbody>
+    </table>
+
+  </div>
