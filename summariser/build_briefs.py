@@ -160,6 +160,21 @@ Rules, all of which are enforced afterwards:
   NEVER restate a question as a fact: a question asking whether the Government is
   assessing something does NOT mean the Government is assessing it. Getting this
   wrong publishes an answer the record never gave.
+- ADD NOTHING. The claim may reword the source, but it must not contain a single
+  specific that the cited sentences do not state. Verified failures from this corpus,
+  all of which were published and only caught later:
+    * adding items to a list -- source "no ... for their commercial benefit" became
+      "not for curiosity, convenience or commercial gain";
+    * replacing a pronoun with a name -- source "discussing with them" became
+      "discussed with GPs";
+    * adding a place or attachment -- source "the family sent ... for badminton
+      coaching" became "a family in the Member's constituency";
+    * DROPPING A HEDGE -- source "who sits at the table POTENTIALLY decides" became
+      "who sits at the table decides". A hedge removed turns a possibility into a
+      finding, and this is the easiest of all to miss. If the source says "could",
+      "may", "potentially" or "is considering", the claim must keep that word.
+  If a detail is not in the cited sentences, it does not go in the claim -- leave it
+  out, or cite the sentence that does state it.
 - Figures, dates, amounts and named programmes are the most valuable things to
   capture. Capture them where they appear.
 - Give 3 to 10 points for a substantial excerpt, 1 to 3 for a short one. A point
@@ -207,6 +222,21 @@ Rules, all of which are enforced afterwards:
   looked up from the record afterwards.
 - Report what was said. Do not say whether the question was answered well, or at
   all. Do not frame. Map the response to the question without judging it.
+- ADD NOTHING. The claim may reword the source, but it must not contain a single
+  specific that the cited sentences do not state. Verified failures from this corpus,
+  all of which were published and only caught later:
+    * adding items to a list -- source "no ... for their commercial benefit" became
+      "not for curiosity, convenience or commercial gain";
+    * replacing a pronoun with a name -- source "discussing with them" became
+      "discussed with GPs";
+    * adding a place or attachment -- source "the family sent ... for badminton
+      coaching" became "a family in the Member's constituency";
+    * DROPPING A HEDGE -- source "who sits at the table POTENTIALLY decides" became
+      "who sits at the table decides". A hedge removed turns a possibility into a
+      finding, and this is the easiest of all to miss. If the source says "could",
+      "may", "potentially" or "is considering", the claim must keep that word.
+  If a detail is not in the cited sentences, it does not go in the claim -- leave it
+  out, or cite the sentence that does state it.
 - Figures, dates, amounts and named schemes are the most valuable things to capture.
 - 2 to 8 response points."""
 

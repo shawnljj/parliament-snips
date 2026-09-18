@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Spike — transcript and summaries</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#14181d; --mid:#4a545e; --dim:#8b95a1; --faint:#c8cfd6; --ghost:#dde3e9;
+  --line:#e3e7ec; --bg:#fbfbfa; --card:#fff;
+  --sel:#1c6b4a; --sel-soft:#e8f2ec; --warm:#a4551f;
+  --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+body{background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;
+  font:15px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+  padding:30px 34px 120px}
+
+header{max-width:1080px}
+h1{font-size:1.34rem;letter-spacing:-.012em;line-height:1.28}
+.sub{color:var(--dim);font-size:.82rem;margin-top:.4rem;line-height:1.68;max-width:80ch}
+.sub b{color:var(--mid)}
+.stats{display:flex;gap:1.5rem;margin-top:1.1rem;flex-wrap:wrap}
+.stat{border-left:2px solid var(--line);padding-left:.72rem}
+.stat .v{font:700 1.04rem/1.2 var(--mono);font-variant-numeric:tabular-nums}
+.stat .l{font-size:.66rem;color:var(--dim);text-transform:uppercase;letter-spacing:.07em}
+
+.bar{display:flex;align-items:center;gap:.85rem;margin:1.5rem 0 0;
+  padding:.85rem 1rem;background:var(--card);border:1px solid var(--line);
+  border-radius:11px;max-width:1080px}
+.sw{position:relative;width:40px;height:23px;flex:none}
+.sw input{position:absolute;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;z-index:2}
+.sw i{position:absolute;inset:0;background:var(--ghost);border-radius:999px;
+  transition:background .18s ease}
+.sw i::after{content:"";position:absolute;top:2.5px;left:2.5px;width:18px;height:18px;
+  background:#fff;border-radius:50%;transition:transform .18s cubic-bezier(.3,1.4,.5,1);
+  box-shadow:0 1px 2px rgba(20,24,29,.22)}
+.sw input:checked + i{background:var(--sel)}
+.sw input:checked + i::after{transform:translateX(17px)}
+.sw input:focus-visible + i{outline:2.5px solid var(--sel);outline-offset:2px}
+.bar label{font-size:.82rem;cursor:pointer;user-select:none}
+.bar label b{color:var(--sel)}
+.bar .hint{margin-left:auto;font-size:.72rem;color:var(--faint)}
+
+.panels{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(300px,1fr);
+  gap:64px;margin-top:1.7rem;align-items:start}
+
+/* ---------------- LEFT: the transcript ---------------- */
+.doc{min-width:0}
+.r{display:grid;grid-template-columns:3.3rem minmax(0,1fr);gap:.55rem;
+  padding:.4rem .6rem .4rem .7rem;border-left:3px solid transparent;
+  border-radius:0 6px 6px 0}
+.r .sid{font:600 .58rem/1.5 var(--mono);color:var(--faint);padding-top:.2rem}
+.r .who{grid-column:2;font-size:.62rem;color:var(--faint);text-transform:uppercase;
+  letter-spacing:.055em;margin-bottom:.12rem}
+.r .tx{grid-column:2;font-size:.84rem;line-height:1.6;color:var(--faint)}
+
+/* selected: full ink, a green edge and a wash -- this is the emphasis */
+.r-sel{border-left-color:var(--sel);
+  background:linear-gradient(90deg,var(--sel-soft),rgba(232,242,236,0) 82%)}
+.r-sel .sid{color:var(--sel)}
+.r-sel .who{color:var(--dim)}
+.r-sel .tx{color:var(--ink);font-weight:500;font-size:.875rem}
+
+/* predecessor pulled in only so a sentence has its antecedent */
+.r-con{border-left-color:var(--ghost)}
+.r-con .tx{color:#7c8794}
+.r-con .who{color:var(--faint)}
+
+/* hidden when the switch is on */
+body.only-sel .r-dim{display:none}
+
+.sec{display:flex;align-items:baseline;gap:.6rem;margin:1.5rem 0 .35rem;
+  padding-top:.85rem;border-top:1px solid var(--line)}
+.r:first-child + .sec, .doc > .sec:first-child{margin-top:0;padding-top:0;border-top:0}
+.sec-n{font:700 .62rem/1 var(--mono);color:var(--sel);text-transform:uppercase;
+  letter-spacing:.09em;background:var(--sel-soft);border-radius:999px;padding:.25rem .55rem}
+.sec-l{font-size:.76rem;color:var(--dim)}
+
+/* ---------------- RIGHT: the sticky rail ---------------- */
+.rail{position:sticky;top:26px;display:grid;gap:.6rem}
+.rail-hd{font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);
+  margin-bottom:.15rem}
+.card{display:block;text-decoration:none;color:inherit;background:var(--card);
+  border:1px solid var(--line);border-left:3px solid var(--ghost);border-radius:10px;
+  padding:.7rem .85rem;transition:border-color .16s ease,opacity .16s ease,
+  box-shadow .16s ease,transform .16s ease;opacity:.55}
+.card:hover{opacity:.85}
+.card.on{border-left-color:var(--sel);opacity:1;
+  box-shadow:0 2px 10px rgba(20,24,29,.07);transform:translateX(-2px)}
+.card-n{font:600 .58rem/1.4 var(--mono);color:var(--dim);text-transform:uppercase;
+  letter-spacing:.08em}
+.card-m{float:right;font-weight:400;color:var(--faint);text-transform:none;letter-spacing:0}
+.card-l{font-size:.76rem;color:var(--mid);margin:.2rem 0 .3rem;font-weight:600}
+.card-s{font-size:.83rem;line-height:1.58;color:var(--ink)}
+.card.on .card-s{color:var(--ink)}
+.card:not(.on) .card-s{color:var(--mid)}
+
+.note{margin-top:3rem;border-top:1px solid var(--line);padding-top:1.2rem;
+  color:var(--mid);font-size:.8rem;line-height:1.72;max-width:74ch}
+.note b{color:var(--ink)}
+.warn{background:#fdf1e8;border:1px solid #f0d9c6;border-radius:10px;
+  padding:.9rem 1.1rem;margin-top:1.3rem;max-width:74ch;color:#7a4a1e;
+  font-size:.79rem;line-height:1.7}
+.warn b{color:#5e360f}
+</style></head><body>
+
+<header>
+  <h1>Transcript &amp; summaries</h1>
+  <p class="sub">
+    <b>oral-answer-3964</b> &middot; Effect on Retail Tenant Mix and Leasing Terms at The Clementi Mall Following Acquisition by Owner of Neighbouring Mall<br>
+    The model returned only sentence ids. <b>Every word on the left is copied from the
+    archived Hansard record by id</b> &mdash; the model never wrote any of it. The right
+    panel is model-written and sits alongside the record as a convenience; it does not
+    replace it.
+  </p>
+  <div class="stats">
+    <div class="stat"><div class="v">40</div><div class="l">sentences</div></div>
+    <div class="stat"><div class="v">8</div><div class="l">selected</div></div>
+    <div class="stat"><div class="v">1</div><div class="l">added for grammar</div></div>
+    <div class="stat"><div class="v">4</div><div class="l">sections</div></div>
+    <div class="stat"><div class="v">914</div><div class="l">words in record</div></div>
+    <div class="stat"><div class="v">188</div><div class="l">words selected</div></div>
+    <div class="stat"><div class="v">74</div><div class="l">words of summary</div></div>
+  </div>
+</header>
+
+<div class="bar">
+  <span class="sw"><input type="checkbox" id="onlysel"><i></i></span>
+  <label for="onlysel">Hide the sentences <b>not</b> selected &mdash; show only what the
+    model kept</label>
+  <span class="hint">31 sentences hidden</span>
+</div>
+
+<div class="panels">
+  <div class="doc">
+    <div class="r r-dim" data-sid="s00001"><span class="sid">s00001</span><span class="who">Mr David Hoe</span><span class="tx">asked the Deputy Prime Minister and Minister for Trade and Industry regarding the acquisition of The Clementi Mall by a property firm which owns Grantral Mall@Clementi, (a) whether the Competition and Consumer Commission of Singapore (CCS) has assessed the competition effects on retail tenant mix and leasing terms in the Clementi catchment; and (b) whether the Ministry will issue guidance on when such mall acquisitions shall be notified to CCS for competition review.</span></div><div class="r r-dim" data-sid="s00002"><span class="sid">s00002</span><span class="who">The Senior Minister of State for Trade and Industry </span><span class="tx">These decisions are influenced by market factors, such as consumer demand preferences and prevailing economic conditions.</span></div><div class="sec" data-sec="0" id="sec-0"><span class="sec-n">Section 1</span><span class="sec-l">Singapore voluntary merger notification regime</span></div><div class="r r-sel" data-sid="s00003" data-sec="0"><span class="sid">s00003</span><span class="who">The Senior Minister of State for Trade and Industry </span><span class="tx">With regard to competition concerns arising from mergers and acquisitions, Singapore adopts a voluntary merger notification regime to balance between effective regulatory oversight and keeping compliance costs low.</span></div><div class="r r-dim" data-sid="s00004"><span class="sid">s00004</span><span class="who">The Senior Minister of State for Trade and Industry </span><span class="tx">Merger parties are expected to self-assess whether their transaction may give rise to potential competition concerns.</span></div><div class="r r-dim" data-sid="s00005"><span class="sid">s00005</span><span class="who">The Senior Minister of State for Trade and Industry </span><span class="tx">Merger parties may approach the Competition and Consumer Commission (CCS) for pre-notification discussions or seek guidance on whether the merger may be anti-competitive.</span></div><div class="r r-dim" data-sid="s00006"><span class="sid">s00006</span><span class="who">The Senior Minister of State for Trade and Industry </span><span class="tx">To support businesses in this process, CCS has published detailed guidance on the circumstances under which mergers may raise competition concerns.</span></div><div class="sec" data-sec="1" id="sec-1"><span class="sec-n">Section 2</span><span class="sec-l">Clementi Mall acquisition merger assessment</span></div><div class="r r-sel" data-sid="s00007" data-sec="1"><span class="sid">s00007</span><span class="who">The Senior Minister of State for Trade and Industry </span><span class="tx">The parties to the acquisition of The Clementi Mall have not formally notified CCS for a merger assessment.</span></div><div class="r r-sel" data-sid="s00008" data-sec="1"><span class="sid">s00008</span><span class="who">The Senior Minister of State for Trade and Industry </span><span class="tx">CCS will continue to monitor market developments and is empowered to step in, if it obtains information suggesting that a merger may result in potential competition issues.</span></div><div class="r r-dim" data-sid="s00009"><span class="sid">s00009</span><span class="who">Mr David Hoe (Jurong East-Bukit Batok)</span><span class="tx">At the same time, I also want to thank the Minister for his written response to my two Parliamentary Questions yesterday on The Clementi Mall.</span></div><div class="r r-dim" data-sid="s00010"><span class="sid">s00010</span><span class="who">Mr David Hoe (Jurong East-Bukit Batok)</span><span class="tx">First, when CCS assessed the effects of competition beyond pricing, does it also consider non-pricing effects, for example, diversity of offerings and consumer choice, particularly in heartland malls?</span></div><div class="r r-dim" data-sid="s00011"><span class="sid">s00011</span><span class="who">Mr David Hoe (Jurong East-Bukit Batok)</span><span class="tx">Because these are places where our residents rely on for their daily needs.</span></div><div class="r r-dim" data-sid="s00012"><span class="sid">s00012</span><span class="who">Mr David Hoe (Jurong East-Bukit Batok)</span><span class="tx">I raise this because in Clementi today, a single owner controls two malls within the same catchment area.</span></div><div class="r r-dim" data-sid="s00013"><span class="sid">s00013</span><span class="who">Mr David Hoe (Jurong East-Bukit Batok)</span><span class="tx">And in my conversation with my Clementi residents, they shared with me their concerns: &quot;David, over time, will The Clementi Mall also have the same resemblance of tenant mix as Grantral Mall?&quot; My second question is on what basis would the effects of competition warrant intervention by CCS and what forms of intervention are available to CCS, particularly in situations when transaction of sale has already been made?</span></div><div class="r r-dim" data-sid="s00014"><span class="sid">s00014</span><span class="who">Mr David Hoe (Jurong East-Bukit Batok)</span><span class="tx">Third, I understand that CCS may step in when it receives information suggesting potential competition concerns.</span></div><div class="r r-dim" data-sid="s00015"><span class="sid">s00015</span><span class="who">Mr David Hoe (Jurong East-Bukit Batok)</span><span class="tx">Could the Ministry clarify what type of information this would look like?</span></div><div class="r r-dim" data-sid="s00016"><span class="sid">s00016</span><span class="who">Mr David Hoe (Jurong East-Bukit Batok)</span><span class="tx">And would feedback from residents and the general public serve as such information?</span></div><div class="r r-dim" data-sid="s00017"><span class="sid">s00017</span><span class="who">Mr David Hoe (Jurong East-Bukit Batok)</span><span class="tx">If so, how might they be able to convey such information to CCS?</span></div><div class="r r-dim" data-sid="s00018"><span class="sid">s00018</span><span class="who">Ms Low Yen Ling</span><span class="tx">I want to thank the Member, Mr David Hoe, for his three comprehensive supplementary questions.</span></div><div class="r r-dim" data-sid="s00019"><span class="sid">s00019</span><span class="who">Ms Low Yen Ling</span><span class="tx">I think it bears repeating, for commercial developments, the tenancy mix is primarily market driven and a result of commercial decisions that is made by mall owners, operators as well as tenants.</span></div><div class="r r-dim" data-sid="s00020"><span class="sid">s00020</span><span class="who">Ms Low Yen Ling</span><span class="tx">And over time, many Members who serve on the ground, you have heartland malls and so on, and Members will realise, over time, the tenant mix in a heartland mall often reflects the consumer demand driven by the needs, driven by the preferences of the residents.</span></div><div class="r r-dim" data-sid="s00021"><span class="sid">s00021</span><span class="who">Ms Low Yen Ling</span><span class="tx">We need to allow the market forces to be at work.</span></div><div class="r r-dim" data-sid="s00022"><span class="sid">s00022</span><span class="who">Ms Low Yen Ling</span><span class="tx">And I think, generally, we will all agree that it is in the mall operators&#x27; interest to provide differentiated products and services.</span></div><div class="r r-dim" data-sid="s00023"><span class="sid">s00023</span><span class="who">Ms Low Yen Ling</span><span class="tx">If the malls are within near proximity, it will be quite interesting to have the same brand shop operating in both malls, unless it is due to capacity issues.</span></div><div class="r r-dim" data-sid="s00024"><span class="sid">s00024</span><span class="who">Ms Low Yen Ling</span><span class="tx">But I also want to assure the Member that allowing market forces to be at work does not mean CCS is hands-off.</span></div><div class="r r-dim" data-sid="s00025"><span class="sid">s00025</span><span class="who">Ms Low Yen Ling</span><span class="tx">At the various platforms that we have shared, CCS has various levers, we have guidelines, very detailed guidelines.</span></div><div class="r r-dim" data-sid="s00026"><span class="sid">s00026</span><span class="who">Ms Low Yen Ling</span><span class="tx">With regard to this, it is the CCS Guidelines on the Substantive Assessment of Mergers.</span></div><div class="r r-dim" data-sid="s00027"><span class="sid">s00027</span><span class="who">Ms Low Yen Ling</span><span class="tx">We also have measures, and obviously we have law, the competition law or the Competition Act, to maintain a healthy competitive environment.</span></div><div class="r r-dim" data-sid="s00028"><span class="sid">s00028</span><span class="who">Ms Low Yen Ling</span><span class="tx">CCS will assess the degree to which competition may be affected or is affected, based on facts, based on circumstances.</span></div><div class="sec" data-sec="2" id="sec-2"><span class="sec-n">Section 3</span><span class="sec-l">CCS intervention and public feedback</span></div><div class="r r-sel" data-sid="s00029" data-sec="2"><span class="sid">s00029</span><span class="who">Ms Low Yen Ling</span><span class="tx">Certainly, not based on hearsay, uncertainty, projections and so on.</span></div><div class="r r-sel" data-sid="s00030" data-sec="2"><span class="sid">s00030</span><span class="who">Ms Low Yen Ling</span><span class="tx">I want to assure the Member that, for example, if any transaction results in substantially less competition that compromises the consumer welfare, CCS will step in.</span></div><div class="r r-dim" data-sid="s00031"><span class="sid">s00031</span><span class="who">Ms Low Yen Ling</span><span class="tx">And since the Member asked, price obviously is an important indicator.</span></div><div class="r r-sel" data-sid="s00032" data-sec="2"><span class="sid">s00032</span><span class="who">Ms Low Yen Ling</span><span class="tx">Another example is if CCS observes the behaviour of the organisations and if we pick up signals that they are coordinating the behaviour to raise prices, to reduce quality, to reduce output, to reduce innovation, CCS will step in.</span></div><div class="r r-sel" data-sid="s00033" data-sec="2"><span class="sid">s00033</span><span class="who">Ms Low Yen Ling</span><span class="tx">I want to assure the Member that members of the public, including his residents, can certainly provide feedback – qualitative as well as quantitative – to CCS directly.</span></div><div class="r r-dim" data-sid="s00034"><span class="sid">s00034</span><span class="who">Ms Low Yen Ling</span><span class="tx">And we will follow up accordingly and seriously.</span></div><div class="r r-dim" data-sid="s00035"><span class="sid">s00035</span><span class="who">Ms Low Yen Ling</span><span class="tx">I wish that the Member will now pick up a pen and note this down.</span></div><div class="sec" data-sec="3" id="sec-3"><span class="sec-n">Section 4</span><span class="sec-l">Residents call hotline 1800 325 8282</span></div><div class="r r-sel" data-sid="s00036" data-sec="3"><span class="sid">s00036</span><span class="who">Ms Low Yen Ling</span><span class="tx">Let the Member&#x27;s residents know to call us via the hotline – 1800 325 8282.</span></div><div class="r r-dim" data-sid="s00037"><span class="sid">s00037</span><span class="who">Ms Low Yen Ling</span><span class="tx">And well, if the Member prefers the web-based approach, we have a very succinct FormSG, where you can just use your handphone and go to www.ccs.gov.sg.</span></div><div class="r r-dim" data-sid="s00038"><span class="sid">s00038</span><span class="who">Ms Low Yen Ling</span><span class="tx">There is a module that says, &quot;Contact Us&quot;.</span></div><div class="r r-dim" data-sid="s00039"><span class="sid">s00039</span><span class="who">Ms Low Yen Ling</span><span class="tx">There is a link that tells you that if you want to report any anti-competitive behaviour, it points you there.</span></div><div class="r r-dim" data-sid="s00040"><span class="sid">s00040</span><span class="who">Ms Low Yen Ling</span><span class="tx">We welcome the Member&#x27;s residents to give us the feedback and I assure him that we will follow up accordingly.</span></div>
+  </div>
+
+  <div class="rail">
+    <div class="rail-hd">Summaries &middot; follow the section you are reading</div>
+    <a class="card" data-sec="0" href="#sec-0"><div class="card-n">Section 1<span class="card-m">1 sentences &middot; 28 words</span></div><div class="card-l">Singapore voluntary merger notification regime</div><div class="card-s">Singapore uses a voluntary merger notification regime to balance regulatory oversight with low compliance costs.</div></a><a class="card" data-sec="1" href="#sec-1"><div class="card-n">Section 2<span class="card-m">2 sentences &middot; 45 words</span></div><div class="card-l">Clementi Mall acquisition merger assessment</div><div class="card-s">CCS has not been formally notified of The Clementi Mall acquisition but will monitor developments and can step in if competition issues arise.</div></a><a class="card" data-sec="2" href="#sec-2"><div class="card-n">Section 3<span class="card-m">4 sentences &middot; 101 words</span></div><div class="card-l">CCS intervention and public feedback</div><div class="card-s">CCS will step in if transactions reduce competition or if organisations coordinate to raise prices, reduce quality, output or innovation, and the public can give feedback.</div></a><a class="card" data-sec="3" href="#sec-3"><div class="card-n">Section 4<span class="card-m">1 sentences &middot; 14 words</span></div><div class="card-l">Residents call hotline 1800 325 8282</div><div class="card-s">The Member&#x27;s residents should call the hotline 1800 325 8282.</div></a>
+  </div>
+</div>
+
+<p class="note">
+  <b>How to read it.</b> Left is the record itself: sentences the model kept are in full
+  ink with a green edge, sentences pulled in only so a kept sentence has its antecedent
+  are mid-grey, and everything the model passed over is faint. Flip the switch to drop
+  the faint ones and the record collapses to the selection &mdash; nothing is deleted,
+  it is just out of the way.
+</p>
+<p class="note">
+  <b>Why the summaries move.</b> An earlier version put the summaries in their own column
+  aligned to the passages they covered, with braces drawn across. It failed: with 40
+  sentences of record collapsing to 8 kept ones, no two things could be lined up, and the
+  braces crossed each other. Keeping the summaries in a rail that follows the reader
+  removes the alignment problem instead of solving it &mdash; the summary arrives when
+  its section does.
+</p>
+<div class="warn">
+  <b>The right panel is model-written, and that is the one place this page can be wrong.</b>
+  Three rounds of prompt rules did not reduce the rate at which the model adds a specific
+  the source does not state, so the summary is treated as a derived convenience rather
+  than evidence. Everything checkable is on the left, in the record's own words. If a
+  summary disagrees with the passage beside it, the passage is right.
+</div>
+
+<script>
+const doc = document.body;
+document.getElementById('onlysel').addEventListener('change', e => {
+  doc.classList.toggle('only-sel', e.target.checked);
+  // headings for hidden sections would otherwise float alone; hide them too
+  document.querySelectorAll('.sec').forEach(sec => {
+    const n = sec.dataset.sec;
+    const any = document.querySelector(`.r[data-sec="${n}"]:not(.r-dim)`);
+    sec.style.display = (e.target.checked && !any) ? 'none' : '';
+  });
+  sync();
+});
+
+const cards = [...document.querySelectorAll('.card')];
+function sync() {
+  // the active section is the last one whose heading has passed the reading line
+  const line = window.innerHeight * 0.28;
+  let active = 0;
+  document.querySelectorAll('.sec').forEach(sec => {
+    if (sec.style.display === 'none') return;
+    const r = sec.getBoundingClientRect();
+    if (r.top <= line) active = Math.max(active, +sec.dataset.sec);
+  });
+  cards.forEach(c => c.classList.toggle('on', +c.dataset.sec === active));
+  const on = cards.find(c => +c.dataset.sec === active);
+  if (on) {
+    const rail = document.querySelector('.rail');
+    const rr = rail.getBoundingClientRect(), or_ = on.getBoundingClientRect();
+    if (or_.top < rr.top || or_.bottom > rr.bottom) {
+      rail.scrollTop += or_.top - rr.top;
+    }
+  }
+}
+let raf = null;
+addEventListener('scroll', () => {
+  if (raf) return;
+  raf = requestAnimationFrame(() => { raf = null; sync(); });
+}, {passive: true});
+addEventListener('resize', sync);
+sync();
+</script>
+</body></html>
