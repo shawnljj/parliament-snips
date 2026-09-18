@@ -60,6 +60,14 @@ DEFAULT_MODEL = os.environ.get("PARSNIPS_LLM_MODEL", "deepseek-v4.1-flash:cloud"
 # schema is behind, so a corpus is never a mixture of pipeline versions.
 SCHEMA = 3
 
+# A sentence that is a QUESTION, not a statement. Singapore Hansard records the
+# questioner's turn as "asked the Minister ... (a) whether ...", so these prefixes are
+# the actual shape of the data rather than a guess.
+QUESTION_START = re.compile(
+    r"^\s*(to ask|asked|asking|whether|what|how|why|when|where|which|who|"
+    r"will|would|does|do|did|is|are|was|were|has|have|had|can|could|should|may|"
+    r"could the|could the hon|given|in light of|in view of)", re.I)
+
 REQUIRED_BRIEF_FIELDS = ("title", "what_it_is", "why_it_matters",
                          "what_happens_next", "not_said", "key_points")
 
@@ -146,6 +154,12 @@ Rules, all of which are enforced afterwards:
 - Report what was said or decided. Never judge whether a speaker answered
   adequately, committed in good faith, or evaded. Never write "failed to",
   "declined to", "did not address", "only said".
+- A QUESTION IS NOT A FINDING. Many turns are questions ("asked the Minister
+  whether ..."). If a cited sentence only ASKS something, your claim must stay in
+  the asking register -- write "The Member asked how X" or "It was asked whether Y".
+  NEVER restate a question as a fact: a question asking whether the Government is
+  assessing something does NOT mean the Government is assessing it. Getting this
+  wrong publishes an answer the record never gave.
 - Figures, dates, amounts and named programmes are the most valuable things to
   capture. Capture them where they appear.
 - Give 3 to 10 points for a substantial excerpt, 1 to 3 for a short one. A point
@@ -184,6 +198,9 @@ phrased neutrally as an open question"]}
 
 Rules, all of which are enforced afterwards:
 - The "question" and each "claim" are YOUR OWN wording. They must not be quotations.
+- The question is asked; the response is what was actually SAID. Do not restate the
+  question as if it were a finding. If the answer does not address part of the
+  question, leave it out of the response and let "not_said" record it.
 - The "cites" list holds sentence ids that SUPPORT the claim. Copy ids exactly. A
   point whose ids cannot be found is deleted, so a made-up id is wasted.
 - NEVER write out a quotation. You are only pointing at sentences; the words are
@@ -867,6 +884,44 @@ def stage4_verify(brief, item):
             bad.append({"kind": "quote_mismatch", "sid": first})
     quoted = sum(1 for kp in (brief.get("key_points") or []) if kp.get("quote"))
 
+    # ------------------------------------------------- claim-from-question check
+    # A claim that asserts a FACT must not rest on a sentence that only ASKS. Measured
+    # across the 288 briefs of 2026: 214 points cited a question, and the failure is
+    # real rather than theoretical -- oral-answer-4089 published "The Government IS
+    # ASSESSING how rising fuel costs are passed through" citing a sentence that reads
+    # "asked the Deputy Prime Minister ... whether ...". The record contains no such
+    # answer; that sitting's Hansard captured the questions and the Minister's reply
+    # was literally "Thank you, Sir."
+    #
+    # The item is not the bug -- a brief of questions is legitimate and the site has no
+    # business inventing answers. What is not legitimate is reporting a QUESTION as a
+    # FINDING, because it reads as a statement of what the Government is doing. So the
+    # check is about the CLAIM's framing, and claims that stay in the asking register
+    # ("The member asked how...") are correct and pass.
+    ASKING = re.compile(
+        r"\b(asks?|asked|asking|clarif\w*|enquir\w*|inquire[sd]?|wonder\w*|"
+        r"question(?:s|ed|ing)?|whether|quer(?:y|ies|ied)|probe[sd]?|"
+        r"seeks? (?:clarification|an answer)|wants? to know)\b", re.I)
+    ASSERTING = re.compile(
+        r"^\s*(?:the\s+)?(?:government|ministry|minister|bill|amendments?|scheme|board|"
+        r"council|agency|authority|company|it|they|he|she)\b[^.]{0,80}?"
+        r"\b(is|are|was|were|has|have|had|will|would|does|do|did|enables?|introduces?|"
+        r"provides?|requires?|allows?|sets?|ensures?|plans?|intends?|aims?|seeks)\b",
+        re.I)
+
+    question_claims = []
+    for kp in brief.get("key_points") or []:
+        first = (kp.get("cites") or [None])[0]
+        src = (by_sid.get(first) or {}).get("text", "")
+        if not src:
+            continue
+        src_is_question = bool(QUESTION_START.match(src.strip())) or src.strip().endswith("?")
+        claim = (kp.get("point") or "").strip()
+        if src_is_question and ASSERTING.match(claim) and not ASKING.search(claim):
+            question_claims.append({"sid": first,
+                                    "claim": claim[:110],
+                                    "source": src.strip()[:110]})
+
     # schema completeness: the fields the site reads, and nothing optional about them.
     #
     # A field is complete when it is PRESENT, not when it is non-empty. Three of these
@@ -900,6 +955,12 @@ def stage4_verify(brief, item):
         "schema_complete": not missing,
         "missing_fields": missing,
         "duplicate_points": dupes,
+        # Reported, not withheld: a point resting on a question is a defect in FRAMING,
+        # and the site can render the underlying question honestly. Withholding the
+        # whole item would be the wrong trade for a public-interest archive -- it would
+        # drop 85 of 288 briefs for a fixable wording issue.
+        "question_claims": len(question_claims),
+        "question_claim_examples": question_claims[:3],
         "points": len(brief.get("key_points") or []),
         "quoted_points": quoted,
         "turns_total": turns_total,
