@@ -58,9 +58,15 @@ sys.path.insert(0, os.path.join(ROOT, "summariser"))
 
 ENDPOINT = os.environ.get("PARSNIPS_LLM_URL",
                           "http://127.0.0.1:11434/v1/chat/completions")
-# A DIFFERENT FAMILY from the writer (deepseek writes the briefs). Independent checking
-# is the whole point of this agent, so the default is not the briefing model.
-DEFAULT_VERIFIER = os.environ.get("PARSNIPS_VERIFIER_MODEL", "gpt-oss:20b-cloud")
+# DeepSeek, for cost: it is the cheapest reliable model available and the owner asked for
+# it explicitly. NOTE THE TRADE: this is the SAME model that writes the briefs, so the
+# verifier is no longer an independent family checking the writer's blind spots -- which
+# was the original reason for a separate agent. That weakness is not assumed away; it is
+# tested. tools/test_verifier.py runs this model against known-good and known-bad cases
+# including the original question-as-fact defect, and the adversarial prompt plus a
+# different role (judge, not author) are what carry it. If it stops catching the planted
+# defects, the independence argument is gone and the test will say so.
+DEFAULT_VERIFIER = os.environ.get("PARSNIPS_VERIFIER_MODEL", "deepseek-v4.1-flash:cloud")
 CACHE = os.path.join(ROOT, "pipeline", "verifier_cache.jsonl")
 PROMPT_VERSION = "v1"
 
@@ -122,7 +128,7 @@ def _post(body, timeout):
         raise
 
 
-def ask(prompt, system, model, timeout=300, retries=3):
+def ask(prompt, system, model, timeout=180, retries=2):
     """One verifier call. Retries with backoff; raises rather than hanging forever."""
     native = "/api/chat" in ENDPOINT
     body = ({"model": model, "stream": False, "think": False,
