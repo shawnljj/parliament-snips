@@ -88,11 +88,13 @@ def build_item(item, idx):
     speaker_ix = {}        # name -> index
     turns = []
     excluded = {"procedural": 0, "courtesy": 0, "too_short": 0, "other_turn": 0}
-    last_speaker = None
     turn_index = 0
     n = 0
 
     def ix_for(name):
+        # "" is a LEGITIMATE entry: it means the record named no speaker for this turn.
+        # It is carried as a real index so the columnar layout needs no null handling,
+        # and it reads back out as an empty string, never as the string "None".
         if name not in speaker_ix:
             speaker_ix[name] = len(speakers)
             speakers.append(name)
@@ -101,9 +103,16 @@ def build_item(item, idx):
     for r in item["reports"]:
         for t in r.get("turns", []):
             txt = X.turn_text(t)
+            # NO CARRY-FORWARD. The previous speaker's name used to be inherited by a
+            # turn whose own speaker was missing, which published a Questioner's
+            # supplementary question under the Minister's name -- a wrong-speaker error
+            # that no downstream gate could see, because the value looked like every
+            # other speaker value. The name is now left EMPTY, and the reader can tell
+            # who is speaking from the text itself, which routinely names the speaker
+            # inline ("Assoc Prof Fatimah Lateef (Marine Parade): I thank the Minister
+            # ..."). Preserving the absence is honest; guessing is not. Measured: 2,480
+            # of 92,606 turns (2.7%) carry no speaker in the record.
             spk = (t.get("speaker") or "").strip() or None
-            if spk:
-                last_speaker = spk
             if not txt:
                 excluded["other_turn"] += 1
                 continue
@@ -134,10 +143,11 @@ def build_item(item, idx):
                 turns.append({
                     "sid": sids,
                     "text": texts,
-                    "spk": ix_for(spk or last_speaker or ""),
-                    # `attributed` is per TURN, not per sentence -- it says whether the
-                    # speaker name came from the record or was carried forward. One
-                    # value per turn is both cheaper and more honest than repeating it.
+                    "spk": ix_for(spk or ""),
+                    # `attr` is per TURN, not per sentence: whether the record named a
+                    # speaker for this turn. With carry-forward gone, false now means
+                    # exactly "the record is silent here" and the speaker is empty --
+                    # it no longer means "this might be the previous speaker's words".
                     "attr": bool(spk),
                     "t": turn_index,
                     "r": r["report_id"],

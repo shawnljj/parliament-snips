@@ -362,6 +362,10 @@ h1{{font-size:1.34rem;letter-spacing:-.012em;line-height:1.28}}
 .r-con .tx{{color:#7c8794}}
 .r-con .who{{color:var(--faint)}}
 
+/* A turn the record does not attribute keeps its line but prints nothing, so an
+   unattributed sentence does not shift the ones below it. */
+.r .who:empty{display:block;min-height:.62rem}
+
 /* hidden when the switch is on */
 body.only-sel .r-dim{{display:none}}
 
@@ -373,9 +377,18 @@ body.only-sel .r-dim{{display:none}}
 .sec-l{{font-size:.76rem;color:var(--dim)}}
 
 /* ---------------- RIGHT: the sticky rail ---------------- */
-.rail{{position:sticky;top:26px;display:grid;gap:.6rem}}
-.rail-hd{{font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);
-  margin-bottom:.15rem}}
+.rail{{position:sticky;top:26px;display:grid;gap:.6rem;
+  max-height:calc(100vh - 52px);overflow-y:auto;overscroll-behavior:contain;
+  scrollbar-width:thin;padding-right:6px}}
+.rail::-webkit-scrollbar{{width:7px}}
+.rail::-webkit-scrollbar-thumb{{background:#dfe4e9;border-radius:4px}}
+.rail::-webkit-scrollbar-track{{background:transparent}}
+/* a long rail is expected -- 35 cards is a legitimate brief for a 12,000-word record.
+   What it must do is carry the reader to the section they are on, so the active card
+   is always held inside the scroll viewport. */
+.rail-hd{{position:sticky;top:0;background:var(--bg);z-index:2;
+  font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);
+  padding:.25rem 0 .35rem}}
 .card{{display:block;text-decoration:none;color:inherit;background:var(--card);
   border:1px solid var(--line);border-left:3px solid var(--ghost);border-radius:10px;
   padding:.7rem .85rem;transition:border-color .16s ease,opacity .16s ease,
@@ -488,9 +501,13 @@ function sync() {{
   const on = cards.find(c => +c.dataset.sec === active);
   if (on) {{
     const rail = document.querySelector('.rail');
+    if (!rail) return;
     const rr = rail.getBoundingClientRect(), or_ = on.getBoundingClientRect();
-    if (or_.top < rr.top || or_.bottom > rr.bottom) {{
-      rail.scrollTop += or_.top - rr.top;
+    const pad = 12;                       // keep a little air above the active card
+    if (or_.top < rr.top + pad) {{
+      rail.scrollTop += (or_.top - rr.top) - pad;          // card is above the viewport
+    }} else if (or_.bottom > rr.bottom - pad) {{
+      rail.scrollTop += (or_.bottom - rr.bottom) + pad;    // card is below it
     }}
   }}
 }}
@@ -500,6 +517,13 @@ addEventListener('scroll', () => {{
   raf = requestAnimationFrame(() => {{ raf = null; sync(); }});
 }}, {{passive: true}});
 addEventListener('resize', sync);
+const railEl = document.querySelector('.rail');
+if (railEl) railEl.addEventListener('scroll', () => {{
+  // a manual scroll of the rail must not be fought by the tracker; release the next
+  // automatic nudge until the reader stops
+  clearTimeout(window.__railHold);
+  window.__railHold = setTimeout(sync, 900);
+}}, {{passive: true}});
 sync();
 </script>
 </body></html>"""
