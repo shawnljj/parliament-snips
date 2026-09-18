@@ -7,6 +7,10 @@ conservative on purpose:
 
   - only briefs that PASSED the gate are promoted. A withheld brief is not published;
     it is reported so the item can be looked at.
+  - only briefs from the CURRENT schema are promoted. Schema 3 (paraphrase) and schema 4
+    (selection) are different products; mixing them in one directory would show a reader
+    model-written claims and verbatim sentences side by side with no way to tell them
+    apart.
   - briefs from the current pipeline replace same-named older ones, and the older file
     is moved to a backup directory rather than deleted. The 291 schema-2 briefs took
     real money and time to produce, and this run's output should be reversible.
@@ -68,7 +72,11 @@ def main():
             withheld.append((os.path.basename(p), "unreadable"))
             continue
         meta = b.get("_meta") or {}
-        if meta.get("schema") != 3:
+        # SCHEMA 4 = the selection pipeline. A schema-3 brief is a paraphrase brief and
+        # is skipped rather than promoted: mixing the two in one directory would put a
+        # page of model-written claims beside a page of verbatim sentences with no way
+        # for a reader to tell which is which.
+        if meta.get("schema") != 4:
             stale.append((os.path.basename(p), f"schema {meta.get('schema')}"))
             continue
         gate = meta.get("gate") or {}
@@ -76,8 +84,8 @@ def main():
             withheld.append((os.path.basename(p),
                              gate.get("withheld_reason") or "gate did not pass"))
             continue
-        if not b.get("key_points"):
-            withheld.append((os.path.basename(p), "no key points"))
+        if not b.get("sections"):
+            withheld.append((os.path.basename(p), "no sections"))
             continue
         promote.append(p)
 

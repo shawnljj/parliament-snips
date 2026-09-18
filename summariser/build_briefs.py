@@ -842,6 +842,8 @@ def stage2b_select(item, model):
 
     picked, usage_total = [], {"calls": 0, "prompt_tokens": 0,
                                "completion_tokens": 0}
+    print(f"      select: {len(sentences)} sentences in {len(chunks)} chunk(s), "
+          f"target {target}", flush=True)
     for i, chunk in enumerate(chunks, 1):
         excerpt = render_excerpt(chunk)
         if len(chunks) > 4:
@@ -946,7 +948,11 @@ def stage2c_sections(item, selected, model):
         for start in range(0, len(groups), BATCH):
             yield start, groups[start:start + BATCH]
 
+    n_batches = (len(groups) + BATCH - 1) // BATCH
+    print(f"      sections: {len(groups)} group(s) in {n_batches} batch(es) of {BATCH}",
+          flush=True)
     for start, batch in _chunks():
+        print(f"      sections {start // BATCH + 1}/{n_batches}…", flush=True)
         blocks = []
         for k, g in enumerate(batch):
             body = " ".join(sentences[i]["text"] for i in g)

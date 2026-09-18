@@ -33,15 +33,15 @@
   "coverage": 0.129,
   "min_coverage_required": 0.15,
   "min_turns_required": 1,
-  "checked_at": "2026-09-19T02:02:53"
+  "checked_at": "2026-09-19T04:18:18"
  },
  "attempt": {
   "title": "Impact of War in Iran on Singaporeans and Singapore's Businesses, Trade, Supply Chains, LNG Stockpiles and Prices",
   "what_it_is": "Impact of War in Iran on Singaporeans and Singapore's Businesses, Trade, Supply Chains, LNG Stockpiles and Prices",
   "sections": [
    {
-    "label": "Electricity price increases and household safeguards",
-    "summary": "Asks about electricity price projections over six to 12 months and measures shielding households from sudden price spikes.",
+    "label": "Electricity price increases and safeguards",
+    "summary": "Asks about projected electricity price increases over six to 12 months and measures to shield households from sudden spikes.",
     "sentences": [
      {
       "sid": "s00002",
@@ -60,7 +60,7 @@
     ]
    },
    {
-    "label": "Qatar LNG damage and Singapore supply",
+    "label": "Qatar LNG damage and supply",
     "summary": "Asks whether damage to Qatar's Ras Laffan LNG facilities affects Singapore's supply, alternatives, and downstream industries.",
     "sentences": [
      {
@@ -73,7 +73,7 @@
     ]
    },
    {
-    "label": "Middle East conflict macroeconomic impact assessment",
+    "label": "Middle East conflict macroeconomic impact",
     "summary": "Asks for a holistic assessment of the Middle East conflict's macroeconomic impact on Singapore under baseline and adverse scenarios.",
     "sentences": [
      {
@@ -86,7 +86,7 @@
     ]
    },
    {
-    "label": "Oil and LNG imports through Strait of Hormuz",
+    "label": "Oil and LNG import reliance",
     "summary": "Asks what proportion of Singapore's crude oil and LNG imports transit the Strait of Hormuz and contingency plans.",
     "sentences": [
      {
@@ -99,7 +99,7 @@
     ]
    },
    {
-    "label": "Fuel prices affecting SMEs and drivers",
+    "label": "Fuel prices affecting drivers",
     "summary": "Asks how rising fuel prices affect SMEs and vehicle-dependent Singaporeans, and what support and safeguards exist.",
     "sentences": [
      {
@@ -112,8 +112,8 @@
     ]
    },
    {
-    "label": "Food reserves and urea sulphur transit",
-    "summary": "Asks whether strategic food reserves meet targets and whether urea and sulphur transit disruptions affect food import prices.",
+    "label": "Food reserves and urea transit",
+    "summary": "Asks whether strategic food reserves meet targets and whether urea and sulphur transit disruption affects food import prices.",
     "sentences": [
      {
       "sid": "s00055",
@@ -125,7 +125,7 @@
     ]
    },
    {
-    "label": "Transport rebates amid high energy prices",
+    "label": "Road tax and petrol duty rebates",
     "summary": "Asked whether the Ministry will announce road tax rebates for several vehicle types and petrol duty rebates for private hire and taxi drivers.",
     "sentences": [
      {
@@ -174,14 +174,14 @@
     "coverage": 0.129,
     "min_coverage_required": 0.15,
     "min_turns_required": 1,
-    "checked_at": "2026-09-19T02:02:53"
+    "checked_at": "2026-09-19T04:18:18"
    },
    "usage": {
     "calls": 6,
     "prompt_tokens": 6614,
-    "completion_tokens": 388,
+    "completion_tokens": 379,
     "estimated": false,
-    "cost_usd": 0.001035
+    "cost_usd": 0.001032
    }
   }
  }
