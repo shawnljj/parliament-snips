@@ -200,23 +200,38 @@ def key_of(claim, sources, model):
 
 
 def load_cache():
+    """Cached verdicts, EXCLUDING unjudged ones.
+
+    An unjudged claim is the ABSENCE of a result, not a result. Caching it made the retry
+    loop a no-op: the first run's 580 skipped claims were read back as "already answered",
+    so a re-run asked nothing and the coverage figure never improved. Only real verdicts
+    are cacheable, or the retry can never do its job.
+    """
     cache = {}
-    if os.path.exists(CACHE):
-        with open(CACHE, encoding="utf-8") as fh:
-            for line in fh:
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    rec = json.loads(line)
-                except ValueError:
-                    continue
-                if rec.get("k"):
-                    cache[rec["k"]] = rec
+    if not os.path.exists(CACHE):
+        return cache
+    with open(CACHE, encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rec = json.loads(line)
+            except ValueError:
+                continue
+            k = rec.get("k")
+            if not k:
+                continue
+            if (rec.get("verdict") or "unjudged").lower() == "unjudged":
+                continue                     # absence of a result -- never cache it
+            cache[k] = rec
     return cache
 
 
 def save_cache(new_records):
+    """Append real verdicts only; unjudged records are dropped on the way in."""
+    new_records = [r for r in new_records
+                   if (r.get("verdict") or "unjudged").lower() != "unjudged"]
     if not new_records:
         return
     os.makedirs(os.path.dirname(CACHE), exist_ok=True)
@@ -276,6 +291,8 @@ def main():
                     help="fail if the supported fraction is below this")
     ap.add_argument("--report", default=None, help="write the verdict JSONL here")
     ap.add_argument("--no-cache", action="store_true")
+    ap.add_argument("--retry-rounds", type=int, default=3,
+                    help="max re-asks for claims the model skipped (default 3)")
     args = ap.parse_args()
 
     paths = sorted(p for p in glob.glob(os.path.join(args.briefs, "*.json"))
@@ -306,21 +323,58 @@ def main():
             todo.append(it)
 
     tin = tout = 0
-    for start in range(0, len(todo), args.batch):
-        batch = todo[start:start + args.batch]
+    stats = {"requests": 0, "retried": 0, "recovered": 0, "still_unjudged": 0,
+             "batches_failed": 0}
+
+    def ask_batch(batch, label):
+        """One verifier request for a list of claims; returns {index: verdict}."""
+        nonlocal tin, tout
         prompt = VERIFY_TMPL.format(n=len(batch), blocks=build_blocks(batch))
-        try:
-            raw, usage = ask(prompt, VERIFIER_SYSTEM, args.verifier)
-        except Exception as exc:                                    # noqa: BLE001
-            print(f"  batch {start // args.batch + 1}: FAILED {exc}")
-            continue
+        raw, usage = ask(prompt, VERIFIER_SYSTEM, args.verifier)
         tin += usage["in"]
         tout += usage["out"]
+        stats["requests"] += 1
         got = parse_json(raw)
-        by_i = {v.get("i"): v for v in (got or {}).get("verdicts") or []
+        return {v.get("i"): v for v in (got or {}).get("verdicts") or []
                 if isinstance(v, dict)}
+
+    for start in range(0, len(todo), args.batch):
+        batch = todo[start:start + args.batch]
+        pending = list(enumerate(batch))          # (index, claim) still needing a verdict
+        judged = {}
+        # RETRY THE MISSING INDICES. Measured on the 2026 sample: the model silently returned
+        # FEWER verdicts than claims, in contiguous runs matching batch boundaries, leaving
+        # 33.4% of claims "unjudged". Accepting that made the coverage figure meaningless --
+        # a third of the corpus was never actually examined while the summary read as if it
+        # had been. So a short reply is treated as a partial failure and re-asked, and only
+        # the indices still missing, which keeps the retry cheap.
+        for attempt in range(args.retry_rounds):
+            if not pending:
+                break
+            try:
+                by_i = ask_batch([it for _, it in pending], None)
+            except Exception as exc:                                # noqa: BLE001
+                print(f"  batch {start // args.batch + 1} round {attempt + 1}: "
+                      f"FAILED {str(exc)[:80]}")
+                stats["batches_failed"] += 1
+                continue
+            still = []
+            for local_i, (orig_i, it) in enumerate(pending):
+                v = by_i.get(local_i)
+                if isinstance(v, dict) and v.get("verdict"):
+                    judged[orig_i] = v
+                else:
+                    still.append((orig_i, it))
+            if len(still) < len(pending):
+                stats["recovered"] += len(pending) - len(still)
+            if still and attempt + 1 < args.retry_rounds:
+                stats["retried"] += 1
+            pending = still
+
         for i, it in enumerate(batch):
-            v = by_i.get(i) or {}
+            v = judged.get(i) or {}
+            if not v.get("verdict"):
+                stats["still_unjudged"] += 1
             rec = {"k": it["_k"], "brief": it["brief"], "claim": it["claim"][:160],
                    "verdict": (v.get("verdict") or "unjudged").lower(),
                    "defect": (v.get("defect") or "unknown").lower(),
@@ -329,9 +383,16 @@ def main():
             verdicts.append(rec)
             new_cache.append(rec)
         done = min(start + args.batch, len(todo))
-        print(f"  verified {done}/{len(todo)}", flush=True)
+        print(f"  verified {done}/{len(todo)}"
+              + (f"  (recovered {stats['recovered']} on retry)" if stats["recovered"] else ""),
+              flush=True)
 
     save_cache(new_cache)
+    print(f"\n  requests {stats['requests']}"
+          + (f" after {stats['retried']} retry round(s)" if stats["retried"] else "")
+          + f" | recovered {stats['recovered']}"
+          + f" | still unjudged {stats['still_unjudged']}"
+          + (f" | failed batches {stats['batches_failed']}" if stats["batches_failed"] else ""))
 
     # ------------------------------------------------------------------ results
     from collections import Counter
@@ -370,8 +431,16 @@ def main():
                 fh.write(json.dumps(v, ensure_ascii=False) + "\n")
         print(f"\n  verdicts written to {args.report}")
 
+    judged = total - counts.get("unjudged", 0)
     frac = supported / total if total else 0.0
-    print(f"\n  supported fraction: {frac:.3f}")
+    frac_judged = supported / judged if judged else 0.0
+    print(f"\n  COVERAGE   judged {judged}/{total}"
+          + (f"  ({100 * judged / total:.1f}%)" if total else ""))
+    print(f"  supported  {frac:.3f} of all claims")
+    print(f"             {frac_judged:.3f} of JUDGED claims (the meaningful figure)")
+    if total and judged / total < 0.99:
+        print("\n  WARNING: coverage below 99% -- raise --retry-rounds or lower --batch, "
+              "or read the supported fraction as a sample rather than a verdict.")
     if args.min_supported and frac < args.min_supported:
         print(f"  FAIL below --min-supported {args.min_supported}")
         return 1
