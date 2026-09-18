@@ -944,6 +944,26 @@ def stage4_verify(brief, item):
                        for s in cited if s in by_sid})
     min_turns = int(os.environ.get("PARSNIPS_MIN_TURNS_COVERED", "1"))
 
+    # THE COVERAGE FLOOR IS THE REAL RULE, and it replaces a blunt "at least 2 turns"
+    # minimum I tried first. That version was wrong and the regression test caught it: it
+    # withheld 17 of 287 published briefs, including bill-783 and budget-2875 at coverage
+    # 1.000 (1 cited turn out of 1) -- which are COMPLETE summaries of single-turn items,
+    # not thin ones. The distinction is not how many turns are cited but whether the brief
+    # accounts for its item:
+    #
+    #   coverage 1.00 (1 of 1)    a complete summary           -> must publish
+    #   coverage 0.50 (1 of 2)    half the item               -> publishes
+    #   coverage 0.016 (1 of 62)  one turn of sixty-two        -> must NOT publish
+    #
+    # Coverage expresses that directly at any item size, so a turn-count minimum is both
+    # redundant and harmful. The floor is 0.15, chosen against the published corpus rather
+    # than guessed: across the 287 briefs of 2026 the lowest real coverage is 0.167 (with 8
+    # points), so a 0.15 floor withholds none of them and removes only the degenerate case
+    # that motivated it -- oral-answer-4089, which is 62 questions and no answers, whose
+    # 1-point brief at coverage 0.016 passed the old gate and published or was withheld
+    # depending on which sample the model returned.
+    min_coverage = float(os.environ.get("PARSNIPS_MIN_COVERAGE", "0.15"))
+
     # duplicates: points citing the SAME evidence say one thing, not several. Assembly
     # removes them, so this should always be 0 -- it exists to catch the day it is not.
     cite_sets = [tuple(sorted(k.get("cites") or [])) for k in (brief.get("key_points") or [])]
@@ -966,16 +986,22 @@ def stage4_verify(brief, item):
         "turns_total": turns_total,
         "turns_cited": turns_cited,
         "coverage": round(turns_cited / turns_total, 3) if turns_total else 0.0,
+        "min_turns_required": min_turns,
+        "min_coverage_required": min_coverage,
     }
+    cov = verdict["coverage"]
     ok = (verdict["quote_invariant"] and verdict["schema_complete"]
-          and not dupes and turns_cited >= min_turns and quoted > 0)
+          and not dupes and turns_cited >= min_turns
+          and cov >= min_coverage and quoted > 0)
     verdict["passed"] = ok
     # Fail closed (R-2.8 / D-3): an item that cannot be validated publishes nothing.
     if not ok:
         verdict["withheld_reason"] = ("quote invariant failed" if not verdict["quote_invariant"]
                                       else f"incomplete brief: {', '.join(missing)}" if missing
                                       else f"{dupes} duplicate point(s)" if dupes
-                                      else "no cited turn" if turns_cited < min_turns
+                                      else f"too thin: covers {turns_cited} of {turns_total} "
+                                           f"turns (coverage {cov:.3f}, need {min_coverage})"
+                                      if turns_cited < min_turns or cov < min_coverage
                                       else "no verified quotation")
     return verdict
 
