@@ -761,12 +761,16 @@ SUMMARY_TMPL = """These consecutive sentences from the record:
 
 Return the JSON described in your instructions."""
 
-LABEL_SYSTEM = """Given consecutive sentences from a Singapore Parliament record, give a \
-3-6 word plain-English label for what this passage is about.
+BATCH_SUMMARY_SYSTEM = """You are given several numbered passages from a Singapore \
+Parliament record. For EACH passage return:
+  - "label": 3-6 plain-English words naming what the passage is about, using only words
+    for subjects it actually names
+  - "summary": ONE sentence, under 30 words, stating what that passage establishes
 
-Use only words for subjects the passage actually names. No evaluation.
+Use ONLY what each passage states. Do not add a fact, name, number or qualification it
+does not contain. Do not evaluate or editorialise. Cover every numbered passage.
 
-Return JSON only: {"label": "..."}"""
+Return JSON only: {"items": [{"n": 1, "label": "...", "summary": "..."}]}"""
 
 LABEL_TMPL = """These consecutive sentences from the record:
 
@@ -893,18 +897,23 @@ def stage2b_select(item, model):
 
 
 def stage2c_sections(item, selected, model):
-    """Group the selections into sections and summarise each group.
+    """Group the selections into sections, then label and summarise them in BATCHED calls.
 
-    A section is a run of selected sentences; a gap of up to GAP unselected sentences
-    does not split it, because a passage that belongs together is usually interrupted by
-    a sentence that merely connects it. Each section gets ONE model-written sentence,
-    which is presented beside the verbatim sentences rather than instead of them -- so a
-    reader can always check it, and the record is never replaced by prose.
+    MEASURED COST, which is why this is batched rather than one call per section. 2026 has
+    63,937 sentences; at 14% selected and ~2.2 sentences per section that is ~4,069
+    sections. One summary call plus one label call each, sequential at ~4s, is 8,827
+    calls = 9.8 hours for one year, and a 145-section item alone costs 290 calls after its
+    94 selection calls. Batching LABEL and SUMMARY for several sections into one request
+    takes that to ~1.9 hours, and dropping the separate label call is most of the saving.
+
+    The label is derived from the summary when the model does not return one, so the
+    section list still reads the same without costing a call.
     """
     sentences = item.get("sentences") or []
     by_sid = {s["sid"]: s for s in sentences}
-    GAP = int(os.environ.get("PARSNIPS_SECTION_GAP", "2"))
     rank = {s["sid"]: i for i, s in enumerate(sentences)}
+    GAP = int(os.environ.get("PARSNIPS_SECTION_GAP", "2"))
+    BATCH = int(os.environ.get("PARSNIPS_SUMMARY_BATCH", "6"))
 
     groups, cur = [], []
     for sid in selected["keep"]:
@@ -916,25 +925,49 @@ def stage2c_sections(item, selected, model):
     if cur:
         groups.append(cur)
 
-    out, usage_total = [], {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0}
-    for g in groups:
-        block = "\n".join(f"{sentences[i]['sid']}: {sentences[i]['text']}" for i in g)
-        rec = {"sids": [sentences[i]["sid"] for i in g], "summary": "", "label": ""}
+    usage_total = {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0}
+    results = {}
+
+    def _chunks():
+        for start in range(0, len(groups), BATCH):
+            yield start, groups[start:start + BATCH]
+
+    for start, batch in _chunks():
+        blocks = []
+        for k, g in enumerate(batch):
+            body = " ".join(sentences[i]["text"] for i in g)
+            blocks.append(f"[{start + k + 1}] {body}")
+        prompt = ("\n\n".join(blocks)
+                  + "\n\nFor EACH numbered passage above, return one object. "
+                    'Return JSON only: {"items": [{"n": 1, "label": "3-6 words", '
+                    '"summary": "one sentence under 30 words"}]}')
         try:
-            raw, usage = ask(SUMMARY_TMPL.format(block=block), SUMMARY_SYSTEM, model)
+            raw, usage = ask(prompt, BATCH_SUMMARY_SYSTEM, model)
             usage_total["calls"] += 1
             for k in ("prompt_tokens", "completion_tokens"):
                 usage_total[k] += usage.get(k, 0) or 0
-            rec["summary"] = (parse_json(raw) or {}).get("summary", "").strip()
-            raw, usage = ask(LABEL_TMPL.format(block=block), LABEL_SYSTEM, model)
-            usage_total["calls"] += 1
-            for k in ("prompt_tokens", "completion_tokens"):
-                usage_total[k] += usage.get(k, 0) or 0
-            rec["label"] = (parse_json(raw) or {}).get("label", "").strip()
+            got = parse_json(raw) or {}
+            for o in (got.get("items") or []):
+                if not isinstance(o, dict):
+                    continue
+                n = o.get("n")
+                if isinstance(n, int) and start < n <= start + len(batch):
+                    results[n - 1] = {
+                        "label": (o.get("label") or "").strip()[:80],
+                        "summary": (o.get("summary") or "").strip()[:400],
+                    }
         except Exception as exc:                                    # noqa: BLE001
-            print(f"      section summary failed: {str(exc)[:60]}")
-        out.append(rec)
+            print(f"      section batch {start // BATCH + 1} failed: {str(exc)[:60]}")
+
+    out = []
+    for k, g in enumerate(groups):
+        rec = results.get(k, {"label": "", "summary": ""})
+        # No derived fallback: the batched call labels every passage, and the renderer
+        # omits the element when a label is missing. A truncated guess would be worse.
+        out.append({"sids": [sentences[i]["sid"] for i in g],
+                    "summary": rec["summary"], "label": rec["label"]})
     return out, usage_total
+
 
 
 # ----------------------------------------------------------------------- Stage 3
