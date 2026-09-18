@@ -1,0 +1,123 @@
+{
+ "item": {
+  "id": "oral-answer-4115",
+  "year": "2026",
+  "title": "Key Factors for Strong Labour Market Demand for Engineers and Technology Specialists, While PMETs Face Retrenchments",
+  "group": "oral",
+  "tier": "small",
+  "source_words": 553,
+  "prompt_chars": 3616,
+  "sentence_count": 18,
+  "chunk_count": 1,
+  "report_ids": [
+   "oral-answer-4115"
+  ],
+  "sitting_dates": [
+   "2026-04-08"
+  ]
+ },
+ "verdict": {
+  "passed": false,
+  "verbatim_invariant": true,
+  "text_failures": [],
+  "text_failures_count": 0,
+  "schema_complete": true,
+  "missing_fields": [],
+  "sections_total": 2,
+  "sections_without_summary": [],
+  "sections_without_sentences": [],
+  "sentences_published": 3,
+  "sentences_selected": 3,
+  "turns_cited": 1,
+  "turns_total": 7,
+  "coverage": 0.1429,
+  "min_coverage_required": 0.15,
+  "min_turns_required": 1,
+  "checked_at": "2026-09-19T01:58:02"
+ },
+ "attempt": {
+  "title": "Key Factors for Strong Labour Market Demand for Engineers and Technology Specialists, While PMETs Face Retrenchments",
+  "what_it_is": "Key Factors for Strong Labour Market Demand for Engineers and Technology Specialists, While PMETs Face Retrenchments",
+  "sections": [
+   {
+    "label": "PMET vacancies and retrenchments",
+    "summary": "As of December 2025, two sectors had 4,100 and 5,300 PMET vacancies, while the last quarter of 2025 had 960 PMET retrenchments across both.",
+    "sentences": [
+     {
+      "sid": "s00009",
+      "speaker": "Mr Shawn Huang Wei Zhong",
+      "attributed": true,
+      "text": "As of December 2025, these two sectors had PMET vacancies of 4,100 and 5,300 respectively.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00010",
+      "speaker": "Mr Shawn Huang Wei Zhong",
+      "attributed": true,
+      "text": "Comparatively, there were only 960 PMET retrenchments across both sectors for the last quarter of 2025.",
+      "added_for_context": false
+     }
+    ]
+   },
+   {
+    "label": "Career Conversion Programme job placements",
+    "summary": "Over the last three years, over 7,300 workers were placed into tech and engineering related jobs through these Career Conversion Programmes.",
+    "sentences": [
+     {
+      "sid": "s00014",
+      "speaker": "Mr Shawn Huang Wei Zhong",
+      "attributed": true,
+      "text": "Over the last three years we have placed over 7,300 workers into tech and engineering related jobs through these Career Conversion Programmes.",
+      "added_for_context": false
+     }
+    ]
+   }
+  ],
+  "_meta": {
+   "schema": 4,
+   "id": "oral-answer-4115",
+   "group": "oral",
+   "year": "2026",
+   "sitting_dates": [
+    "2026-04-08"
+   ],
+   "report_ids": [
+    "oral-answer-4115"
+   ],
+   "sentences_total": 18,
+   "sentences_selected": 3,
+   "sentences_in_sections": 3,
+   "sentences_skipped_within_selection": 0,
+   "sentences_added_for_context": 0,
+   "sections_total": 2,
+   "selection_share": 0.1667,
+   "generated_by": "stage2b_select + stage2c_sections",
+   "gate": {
+    "passed": false,
+    "verbatim_invariant": true,
+    "text_failures": [],
+    "text_failures_count": 0,
+    "schema_complete": true,
+    "missing_fields": [],
+    "sections_total": 2,
+    "sections_without_summary": [],
+    "sections_without_sentences": [],
+    "sentences_published": 3,
+    "sentences_selected": 3,
+    "turns_cited": 1,
+    "turns_total": 7,
+    "coverage": 0.1429,
+    "min_coverage_required": 0.15,
+    "min_turns_required": 1,
+    "checked_at": "2026-09-19T01:58:02"
+   },
+   "usage": {
+    "calls": 2,
+    "prompt_tokens": 1187,
+    "completion_tokens": 139,
+    "estimated": false,
+    "cost_usd": 0.000205
+   }
+  }
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "item": {
+  "id": "oral-answer-4067",
+  "year": "2026",
+  "title": "Impact of PARF Reduction on New Car Prices, Depreciation Rates and COE Renewal Behaviour",
+  "group": "oral",
+  "tier": "small",
+  "source_words": 700,
+  "prompt_chars": 4205,
+  "sentence_count": 23,
+  "chunk_count": 1,
+  "report_ids": [
+   "oral-answer-4067"
+  ],
+  "sitting_dates": [
+   "2026-03-04"
+  ]
+ },
+ "verdict": {
+  "passed": false,
+  "verbatim_invariant": true,
+  "text_failures": [],
+  "text_failures_count": 0,
+  "schema_complete": true,
+  "missing_fields": [],
+  "sections_total": 2,
+  "sections_without_summary": [],
+  "sections_without_sentences": [],
+  "sentences_published": 4,
+  "sentences_selected": 4,
+  "turns_cited": 1,
+  "turns_total": 7,
+  "coverage": 0.1429,
+  "min_coverage_required": 0.15,
+  "min_turns_required": 1,
+  "checked_at": "2026-09-19T02:18:38"
+ },
+ "attempt": {
+  "title": "Impact of PARF Reduction on New Car Prices, Depreciation Rates and COE Renewal Behaviour",
+  "what_it_is": "Impact of PARF Reduction on New Car Prices, Depreciation Rates and COE Renewal Behaviour",
+  "sections": [
+   {
+    "label": "PARF rebate lowered for EVs",
+    "summary": "Lowered PARF rebate and reduced rebate cap from $60,000 to $30,000 as EVs make early deregistration incentives less needed.",
+    "sentences": [
+     {
+      "sid": "s00005",
+      "speaker": "Mr Jeffrey Siow",
+      "attributed": true,
+      "text": "With electric vehicles (EVs) becoming more commonplace, there is now less of a need to encourage early deregistration through the PARF rebate.",
+      "added_for_context": true
+     },
+     {
+      "sid": "s00006",
+      "speaker": "Mr Jeffrey Siow",
+      "attributed": true,
+      "text": "This is why we lowered the PARF rebate and also reduced the rebate cap from $60,000 to $30,000.",
+      "added_for_context": false
+     }
+    ]
+   },
+   {
+    "label": "Affected car buyers estimated",
+    "summary": "Fewer than 2,000 car buyers with committed purchases are estimated to be affected, mostly higher-end internal combustion engine car buyers.",
+    "sentences": [
+     {
+      "sid": "s00012",
+      "speaker": "Mr Jeffrey Siow",
+      "attributed": true,
+      "text": "Fewer than 2,000 car buyers with committed purchases are estimated to be affected.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00013",
+      "speaker": "Mr Jeffrey Siow",
+      "attributed": true,
+      "text": "These include mostly buyers of higher-end internal combustion engine cars.",
+      "added_for_context": false
+     }
+    ]
+   }
+  ],
+  "_meta": {
+   "schema": 4,
+   "id": "oral-answer-4067",
+   "group": "oral",
+   "year": "2026",
+   "sitting_dates": [
+    "2026-03-04"
+   ],
+   "report_ids": [
+    "oral-answer-4067"
+   ],
+   "sentences_total": 23,
+   "sentences_selected": 4,
+   "sentences_in_sections": 4,
+   "sentences_skipped_within_selection": 0,
+   "sentences_added_for_context": 1,
+   "sections_total": 2,
+   "selection_share": 0.1739,
+   "generated_by": "stage2b_select + stage2c_sections",
+   "gate": {
+    "passed": false,
+    "verbatim_invariant": true,
+    "text_failures": [],
+    "text_failures_count": 0,
+    "schema_complete": true,
+    "missing_fields": [],
+    "sections_total": 2,
+    "sections_without_summary": [],
+    "sections_without_sentences": [],
+    "sentences_published": 4,
+    "sentences_selected": 4,
+    "turns_cited": 1,
+    "turns_total": 7,
+    "coverage": 0.1429,
+    "min_coverage_required": 0.15,
+    "min_turns_required": 1,
+    "checked_at": "2026-09-19T02:18:38"
+   },
+   "usage": {
+    "calls": 2,
+    "prompt_tokens": 1383,
+    "completion_tokens": 128,
+    "estimated": false,
+    "cost_usd": 0.000229
+   }
+  }
+ }
+}

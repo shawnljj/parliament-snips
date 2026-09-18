@@ -1,0 +1,116 @@
+{
+ "item": {
+  "id": "oral-answer-4066",
+  "year": "2026",
+  "title": "More Outcome-based Work Arrangements, Rather Than Time-based Models",
+  "group": "oral",
+  "tier": "small",
+  "source_words": 950,
+  "prompt_chars": 8072,
+  "sentence_count": 36,
+  "chunk_count": 1,
+  "report_ids": [
+   "oral-answer-4066"
+  ],
+  "sitting_dates": [
+   "2026-03-03"
+  ]
+ },
+ "verdict": {
+  "passed": false,
+  "verbatim_invariant": true,
+  "text_failures": [],
+  "text_failures_count": 0,
+  "schema_complete": true,
+  "missing_fields": [],
+  "sections_total": 2,
+  "sections_without_summary": [],
+  "sections_without_sentences": [],
+  "sentences_published": 2,
+  "sentences_selected": 2,
+  "turns_cited": 1,
+  "turns_total": 7,
+  "coverage": 0.1429,
+  "min_coverage_required": 0.15,
+  "min_turns_required": 1,
+  "checked_at": "2026-09-19T02:24:25"
+ },
+ "attempt": {
+  "title": "More Outcome-based Work Arrangements, Rather Than Time-based Models",
+  "what_it_is": "More Outcome-based Work Arrangements, Rather Than Time-based Models",
+  "sections": [
+   {
+    "label": "Flexible Work Arrangement Request Guidelines",
+    "summary": "The Tripartite Guidelines on Flexible Work Arrangement Requests sets out the process for workers to request flexible work arrangements and for employers to consider these requests on reasonable business grounds.",
+    "sentences": [
+     {
+      "sid": "s00006",
+      "speaker": "The Senior Parliamentary Secretary to the Minister for Manpower (Mr Shawn Huang Wei Zhong) (for the Minister for Manpower)",
+      "attributed": true,
+      "text": "The Tripartite Guidelines on Flexible Work Arrangement Requests sets out the process for workers to formally request for flexible work arrangements and for employers to consider these requests on reasonable business grounds.",
+      "added_for_context": false
+     }
+    ]
+   },
+   {
+    "label": "Mental Health Workplace Advisory",
+    "summary": "The Tripartite Advisory on Mental Health and Well-being at Workplaces sets out good practices for employers supporting worker well-being, including reasonable expectations of after-hours work communications.",
+    "sentences": [
+     {
+      "sid": "s00011",
+      "speaker": "The Senior Parliamentary Secretary to the Minister for Manpower (Mr Shawn Huang Wei Zhong) (for the Minister for Manpower)",
+      "attributed": true,
+      "text": "The Tripartite Advisory on Mental Health and Well-being at Workplaces sets out good practices for employers that support the well-being of their workers, including setting reasonable expectations of after-hours work communications and communicating them to employees.",
+      "added_for_context": false
+     }
+    ]
+   }
+  ],
+  "_meta": {
+   "schema": 4,
+   "id": "oral-answer-4066",
+   "group": "oral",
+   "year": "2026",
+   "sitting_dates": [
+    "2026-03-03"
+   ],
+   "report_ids": [
+    "oral-answer-4066"
+   ],
+   "sentences_total": 36,
+   "sentences_selected": 2,
+   "sentences_in_sections": 2,
+   "sentences_skipped_within_selection": 0,
+   "sentences_added_for_context": 0,
+   "sections_total": 2,
+   "selection_share": 0.0556,
+   "generated_by": "stage2b_select + stage2c_sections",
+   "gate": {
+    "passed": false,
+    "verbatim_invariant": true,
+    "text_failures": [],
+    "text_failures_count": 0,
+    "schema_complete": true,
+    "missing_fields": [],
+    "sections_total": 2,
+    "sections_without_summary": [],
+    "sections_without_sentences": [],
+    "sentences_published": 2,
+    "sentences_selected": 2,
+    "turns_cited": 1,
+    "turns_total": 7,
+    "coverage": 0.1429,
+    "min_coverage_required": 0.15,
+    "min_turns_required": 1,
+    "checked_at": "2026-09-19T02:24:25"
+   },
+   "usage": {
+    "calls": 3,
+    "prompt_tokens": 1990,
+    "completion_tokens": 138,
+    "estimated": false,
+    "cost_usd": 0.000317
+   }
+  }
+ }
+}

@@ -795,6 +795,19 @@ Return the JSON described in your instructions."""
 
 SELECT_SHARE = float(os.environ.get("PARSNIPS_SELECT_SHARE", "0.14"))
 
+# A SHARE ALONE IS THE WRONG INSTRUMENT FOR A SMALL ITEM. At 0.14 a 16-sentence oral
+# answer is asked for 3 sentences, which is far too thin for a 6-turn exchange: the
+# selection clusters in one turn and coverage lands at 0.167 or below, so the gate
+# withholds items that were summarised as well as they could be at that budget. Measured
+# on the first full run: 5 items withheld at exactly 0.1429 (1 turn of 7) and 8 published
+# at 0.167 (1 turn of 6). The share governs large items, where it keeps the output
+# proportional; a floor governs small ones, so a short exchange still gets enough
+# sentences to cover its turns.
+SELECT_MIN = int(os.environ.get("PARSNIPS_SELECT_MIN", "8"))
+# ...and never take most of a tiny item, or a 5-sentence record would be "summarised" by
+# keeping 8 of its sentences.
+SELECT_MAX_SHARE = float(os.environ.get("PARSNIPS_SELECT_MAX_SHARE", "0.6"))
+
 # How far to walk back for an antecedent. Measured over 8,176 selections: depth 0 leaves
 # 40.9% of sentences opening on a pronoun or connective; one step takes that to 18.6%,
 # two to 8.8%, and a recursive walk runs to a maximum depth of 15 with 0.15% of walks
@@ -823,7 +836,8 @@ def stage2b_select(item, model):
         return None, {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0}
     by_sid = {s["sid"]: s for s in sentences}
     chunks = make_chunks(sentences)
-    target = max(3, round(len(sentences) * SELECT_SHARE))
+    target = min(max(SELECT_MIN, round(len(sentences) * SELECT_SHARE)),
+                 max(1, round(len(sentences) * SELECT_MAX_SHARE)))
     per_chunk = max(1, round(target / max(1, len(chunks))))
 
     picked, usage_total = [], {"calls": 0, "prompt_tokens": 0,
@@ -1409,6 +1423,17 @@ def run_item(meta, model, force=False):
     item = load_item(os.path.join(str(meta["year"]), f"{meta['id']}.json"))
     if not item:
         return {"id": meta["id"], "error": "dataset payload missing"}
+    if not (item.get("sentences") or []):
+        # The dataset excluded the whole item -- e.g. budget-2936, a formal resolution of
+        # 292 words with no content sentences. Nothing to summarise and nothing went
+        # wrong, so this is a withhold with a reason, NOT an error. Counting it as an
+        # error puts a permanent false alarm in every year's run report.
+        log_usage({"id": meta["id"], "model": model, "calls": 0,
+                   "prompt_tokens": 0, "completion_tokens": 0,
+                   "estimated": False, "cost": 0.0, "outcome": "no content sentences"})
+        return {"id": meta["id"], "withheld": True,
+                "reason": "record has no content sentences (excluded at ingestion)",
+                "seconds": 0.0, "calls": 0, "model": model}
 
     t0 = time.time()
     usage = {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0, "estimated": False}
@@ -1574,6 +1599,23 @@ def main(argv=None):
         elif r.get("withheld"):
             wh += 1
             reason = r.get("reason") or (r.get("verdict") or {}).get("withheld_reason")
+            if not reason:
+                # Compose the reason from the gate fields rather than printing "None".
+                v = r.get("verdict") or {}
+                bits = []
+                if not v.get("verbatim_invariant"):
+                    bits.append(f"{v.get('text_failures_count', 0)} text failure(s)")
+                if not v.get("schema_complete"):
+                    bits.append(f"missing {v.get('missing_fields')}")
+                if v.get("sections_without_sentences"):
+                    bits.append(f"{len(v['sections_without_sentences'])} empty section(s)")
+                if not v.get("sentences_published"):
+                    bits.append("nothing published")
+                cov = v.get("coverage")
+                if cov is not None and cov < (v.get("min_coverage_required") or 0.15):
+                    bits.append(f"coverage {cov:.3f} < "
+                                f"{v.get('min_coverage_required')} (under-selected)")
+                reason = "; ".join(bits) or "gate failed"
             print(f"  [{n}/{len(sel)}] {meta['id']:26s} withheld — {reason}", flush=True)
         else:
             pub += 1
