@@ -34,17 +34,35 @@ sys.path.insert(0, os.path.join(ROOT, "summariser"))
 sys.path.insert(0, os.path.join(ROOT, "scraper"))
 
 
-def real_case(brief_name, point_index, expect, note=""):
-    """Pull a real claim+source pair out of the archive."""
+def real_case(brief_name, point_index, expect, note="", briefs_dir=None):
+    """Pull a real claim+source pair out of the archive.
+
+    Raises rather than skipping: an earlier version wrapped this in a try/except that
+    printed "(skipping real case ...)" and carried on, so when the run directory was
+    wiped THREE OF SEVEN cases silently disappeared and the harness still reported
+    "6/7 correct". A test that drops cases it cannot load and reports success is worse
+    than no test -- it is the same reads-as-complete failure this project keeps
+    producing, this time in the thing meant to catch it.
+    """
     import build_briefs as B
-    p = os.path.join("/tmp/briefs_2026/2026", f"{brief_name}.json")
+    base = briefs_dir or os.environ.get("PARSNIPS_BRIEFS") or "/tmp/briefs_2026/2026"
+    p = os.path.join(base, f"{brief_name}.json")
     if not os.path.exists(p):
-        p = os.path.join(ROOT, "summaries", "2026", f"{brief_name}.json")
+        raise FileNotFoundError(f"no brief for {brief_name} in {base}")
     brief = json.load(open(p, encoding="utf-8"))
-    kp = brief["key_points"][point_index]
+    kps = brief.get("key_points") or []
+    if point_index >= len(kps):
+        raise IndexError(f"{brief_name} has {len(kps)} points, wanted #{point_index}")
+    kp = kps[point_index]
+    # Schema 3 stores `cites`; schema 2 stored only `quote` and cannot be re-resolved.
+    if "cites" not in kp:
+        raise ValueError(f"{brief_name} is not schema 3 (no 'cites' key) -- pass "
+                         f"--briefs pointing at a current run")
     item = B.load_item(f"2026/{brief_name}.json")
     by = {s["sid"]: s for s in item["sentences"]}
     src = [f"[{s}] {by[s]['text'].strip()}" for s in kp["cites"] if s in by]
+    if not src:
+        raise ValueError(f"{brief_name} point #{point_index} resolves no source text")
     return {"brief": brief_name, "expected": expect, "note": note,
             "claim": kp["point"], "sources": src}
 
@@ -131,13 +149,11 @@ def main():
         "sources": ["[s00061] The Housing Board will launch 8,000 new flats in the "
                     "next exercise across five estates."]})
 
-    # ---- real archive points, expected good
+    # ---- real archive points, expected good. These MUST load: silently dropping them
+    # would leave a test that passes while covering less than it claims.
     for name, idx in (("bill-772", 0), ("motion-3008+3010", 3),
                       ("oral-answer-4165", 1)):
-        try:
-            cases.append(real_case(name, idx, "good", "real published point"))
-        except Exception as exc:                                    # noqa: BLE001
-            print(f"  (skipping real case {name}: {exc})")
+        cases.append(real_case(name, idx, "good", "real published point"))
 
     print(f"test cases: {len(cases)}  (good {sum(1 for c in cases if c['expected']=='good')}"
           f" / bad {sum(1 for c in cases if c['expected']=='bad')})")
