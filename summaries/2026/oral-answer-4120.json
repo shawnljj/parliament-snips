@@ -1,53 +1,79 @@
 {
- "title": "HDB rental shop vacancies and heartland retail diversity",
- "asked": "Ms Mariam Jaafar asked whether the Government has assessed how recent closures of small retail and F&B shops in the heartlands affect neighbourhood vibrancy, social cohesion and long-term community resilience, and what concrete measures are being taken to sustain local commercial diversity.",
- "asked_by": "Ms Mariam Jaafar",
- "answered_by": "Ms Sun Xueling",
- "response": "Ms Sun Xueling said HDB rental shop vacancy rates have remained low and stable over the past five years. She said some churn is healthy because it allows less competitive businesses to exit and new businesses to enter, providing products and services that can better meet residents' needs. HDB uses trade mix controls for HDB rental shops to ensure a good variety of shops, and when vacancies arise HDB assesses the trade designation and tenders them out as soon as possible.",
- "key_points": [
+ "title": "Effect of Closures of Small F&B Shops on Neighbourhood Vibrancy, Social Cohesion and Community Resilience",
+ "what_it_is": "Effect of Closures of Small F&B Shops on Neighbourhood Vibrancy, Social Cohesion and Community Resilience",
+ "sections": [
   {
-   "point": "HDB rental shop vacancy rates have been low and stable over the past five years.",
-   "speaker": "Ms Sun Xueling",
-   "quote": "Vacancy rates for Housing and Development Board (HDB) rental shops have remained low and stable over the past five years.",
-   "verified": true
-  },
-  {
-   "point": "Some churn is healthy because it allows less competitive businesses to exit and new businesses to enter.",
-   "speaker": "Ms Sun Xueling",
-   "quote": "Some amount of churn is healthy, as it allows less competitive businesses to exit and new businesses to enter",
-   "verified": true
-  },
-  {
-   "point": "HDB uses trade mix controls for HDB rental shops to ensure a good variety of shops for residents.",
-   "speaker": "Ms Sun Xueling",
-   "quote": "HDB uses trade mix controls for HDB rental shops to ensure a good variety of shops to serve residents.",
-   "verified": true
-  },
-  {
-   "point": "When there are vacancies, HDB assesses the trade designation and tenders them out as soon as possible.",
-   "speaker": "Ms Sun Xueling",
-   "quote": "When there are vacancies, HDB will assess the trade designation and tender them out as soon as possible.",
-   "verified": true
+   "label": "HDB rental shop vacancy rates",
+   "summary": "HDB rental shop vacancy rates have stayed low and stable over five years, with churn and trade mix controls ensuring a variety of shops for residents.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Vacancy rates for Housing and Development Board (HDB) rental shops have remained low and stable over the past five years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Some amount of churn is healthy, as it allows less competitive businesses to exit and new businesses to enter, which provide products and services that can better meet the needs of residents.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "HDB uses trade mix controls for HDB rental shops to ensure a good variety of shops to serve residents.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [
-  "Whether the Government has assessed how closures affect neighbourhood vibrancy, social cohesion and long-term community resilience."
- ],
- "supplementary": "not stated",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4120"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4120",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-04-08"
   ],
-  "group": "oral",
-  "source_words": 160,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-4120",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4120"
+  ],
+  "sentences_total": 5,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.6,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T04:14:03"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 762,
+   "completion_tokens": 78,
+   "estimated": false,
+   "cost_usd": 0.000129
+  }
  }
 }

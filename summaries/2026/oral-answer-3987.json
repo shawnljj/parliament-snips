@@ -1,66 +1,120 @@
 {
- "title": "Shorter COE renewal terms for existing car owners",
- "asked": "Ms Poh Li San asked whether the Acting Minister for Transport will reconsider allowing COE renewals for shorter durations, such as annually or two-yearly, so existing car owners have more affordable options to extend ownership beyond 10 years.",
- "asked_by": "Ms Poh Li San",
- "answered_by": "Mr Jeffrey Siow",
- "response": "Mr Jeffrey Siow said existing car owners are already allowed to renew COEs for five years as a concession, and that shorter renewals would likely amplify the peak and trough of COE cycles, with more owners renewing when prices are high and less supply of new COEs for prospective buyers. He said the ministry will not make this move. On commercial vehicles, he said owners can similarly renew for five years, up to the statutory life of their vehicles, and that the better approach is for them to bid in the same market so the COE is priced accordingly.",
- "key_points": [
+ "title": "Proposal for Shorter COE Renewal Durations As A More Affordable Option",
+ "what_it_is": "Proposal for Shorter COE Renewal Durations As A More Affordable Option",
+ "sections": [
   {
-   "point": "Existing car owners can already renew COEs for five years as a concession.",
-   "speaker": "Mr Jeffrey Siow",
-   "quote": "Today, we already allow existing car owners to renew COEs for five years as a concession.",
-   "verified": true
+   "label": "Five-year COE renewal concession",
+   "summary": "Existing car owners may renew COEs for five years, and shorter renewals would amplify COE cycles and cut new COE supply.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "Today, we already allow existing car owners to renew COEs for five years as a concession.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "If we allow for shorter renewals, this is likely to amplify the peak and the trough of the COE cycles further.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "It would mean that more car owners could renew their COEs when prices are high and this would reduce the supply of new COEs for prospective car owners.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Shorter renewals would likely amplify the peak and trough of COE cycles.",
-   "speaker": "Mr Jeffrey Siow",
-   "quote": "If we allow for shorter renewals, this is likely to amplify the peak and the trough of the COE cycles further.",
-   "verified": true
-  },
-  {
-   "point": "More renewals at high prices would reduce the supply of new COEs for prospective car owners.",
-   "speaker": "Mr Jeffrey Siow",
-   "quote": "this would reduce the supply of new COEs for prospective car owners",
-   "verified": true
-  },
-  {
-   "point": "The ministry will not allow shorter renewal durations.",
-   "speaker": "Mr Jeffrey Siow",
-   "quote": "So, we will not make this move.",
-   "verified": true
-  },
-  {
-   "point": "Commercial vehicle owners can also renew COEs for five years, up to the statutory life of their vehicles.",
-   "speaker": "Mr Jeffrey Siow",
-   "quote": "they can do it until the statutory life of their vehicles",
-   "verified": true
-  },
-  {
-   "point": "He said the better approach is for commercial vehicle owners to bid in the same market so the COE is priced accordingly.",
-   "speaker": "Mr Jeffrey Siow",
-   "quote": "the better approach is for them to be able to bid in the same market and therefore, for the COE to be priced accordingly",
-   "verified": true
+   "label": "Commercial vehicle COE renewals",
+   "summary": "Commercial vehicle owners may renew COEs for five years up to statutory life, and businesses should bid in the same market.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "I fully understand the concerns of small business owners who need to continue to have their vehicles to operate, especially in the environment of high COE prices.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "We already similarly allow commercial vehicle owners to renew their COEs for five years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "And in fact, they can do it until the statutory life of their vehicles.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "It is something that I think is fair, because you also want to allow for new businesses who wish to have access to vehicles to be able to compete for COEs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "I think the better approach is for them to be able to bid in the same market and therefore, for the COE to be priced accordingly.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [
-  "Any other form of support for small businesses and hawkers facing the lumpy cost of a COE.",
-  "Whether annual or two-yearly renewal durations would be considered for any vehicle category."
- ],
- "supplementary": "Whether shorter COE renewal terms could be allowed specifically for commercial vehicles used by small businesses and hawkers.",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-3987"
-  ],
+  "schema": 4,
+  "id": "oral-answer-3987",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-01-14"
   ],
-  "group": "oral",
-  "source_words": 383,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-3987",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-3987"
+  ],
+  "sentences_total": 14,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.5714,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T05:29:10"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1148,
+   "completion_tokens": 141,
+   "estimated": false,
+   "cost_usd": 0.0002
+  }
  }
 }

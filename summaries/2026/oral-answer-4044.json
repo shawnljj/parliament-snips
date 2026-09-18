@@ -1,79 +1,132 @@
 {
- "title": "Securing Singapore's satellite-dependent infrastructure and standards for satellite operators",
- "asked": "Dr Choo Pei Ling asked what measures secure Singapore's space-based critical information infrastructure, whether the Government has or plans cybersecurity and resilience standards for satellite operators, and what contingency plans exist for disruptions to satellite operators.",
- "asked_by": "Dr Choo Pei Ling",
- "answered_by": "Mr Tan Kiat How",
- "response": "Mr Tan Kiat How said over 99% of Internet traffic goes via submarine cables internationally and terrestrial cables and radio networks domestically, so satellites are a secondary channel for some enterprises and the impact of disruptions today is limited. Aviation and maritime operational systems primarily use terrestrial connectivity, with satellite as a secondary mode. The Government will work with industry to enhance the security and resilience of Singapore's space infrastructure. Singapore participates in international standards bodies, and satellite operators adopt standards relevant to their use cases, with encryption for sensitive data.",
- "key_points": [
+ "title": "Securing Singapore’s Critical Information Infrastructure Dependent on Satellite and Space Systems",
+ "what_it_is": "Securing Singapore’s Critical Information Infrastructure Dependent on Satellite and Space Systems",
+ "sections": [
   {
-   "point": "Over 99% of Singapore's Internet traffic goes via submarine cables internationally and terrestrial cables and radio networks domestically.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "over 99% of our Internet traffic is transmitted internationally via submarine cables, and domestically via terrestrial cables and radio networks",
-   "verified": true
+   "label": "Satellite use and cybersecurity",
+   "summary": "Some Singapore enterprises use satellites as a secondary channel, so disruption impact is limited, and the Government will work with industry on space infrastructure security.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How) (for the Minister for Digital Development and Information)",
+     "attributed": true,
+     "text": "In Singapore, specific enterprises may use satellites as a secondary channel for communications or environmental monitoring.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How) (for the Minister for Digital Development and Information)",
+     "attributed": true,
+     "text": "The impact of potential disruptions to satellite services today is therefore limited.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How) (for the Minister for Digital Development and Information)",
+     "attributed": true,
+     "text": "As cybersecurity threats to space systems are expected to evolve, the Government will work closely with the industry to enhance the security and resilience of Singapore’s space infrastructure.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Some enterprises use satellites as a secondary channel for communications or environmental monitoring.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "specific enterprises may use satellites as a secondary channel for communications or environmental monitoring",
-   "verified": true
+   "label": "Internet traffic and submarine cables",
+   "summary": "Over 99% of Singapore's Internet traffic uses non-satellite means, and Singapore is a hub for submarine cables.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "More than 99% of our Internet traffic is via non-satellite means.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Unlike other, perhaps, larger countries, Singapore is a hub for submarine cables.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The impact of potential disruptions to satellite services today is limited.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "The impact of potential disruptions to satellite services today is therefore limited.",
-   "verified": true
+   "label": "Nationwide standalone 5G rollout",
+   "summary": "About five years ago Singapore rolled out the 5G standalone network, likely one of the first countries with nationwide standalone 5G coverage.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "About five years ago, we rolled out the 5G standalone network, making us probably one of the first countries in the world to have nation-wide coverage of standalone 5G mobile coverage.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Aviation and maritime operational systems are primarily supported by terrestrial connectivity networks, with satellite as a secondary mode.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "operational systems in the aviation and maritime sectors are primarily supported by terrestrial connectivity networks, with satellite communications serving as a secondary mode of communications.",
-   "verified": true
-  },
-  {
-   "point": "The Government will work with industry to enhance the security and resilience of Singapore's space infrastructure.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "the Government will work closely with the industry to enhance the security and resilience of Singapore’s space infrastructure.",
-   "verified": true
-  },
-  {
-   "point": "Singapore participates in international bodies that set resilience and cybersecurity standards for the space industry.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "we participate actively in international bodies that set standards for resilience and cybersecurity for the space industry",
-   "verified": true
-  },
-  {
-   "point": "Satellite operators and partners adopt cybersecurity and resilience standards relevant to their specific use cases.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "Satellite operators and their partners adopt cybersecurity and resilience standards relevant to their specific use cases",
-   "verified": true
-  },
-  {
-   "point": "Users transmitting sensitive data adopt stringent encryption policies to protect data in transit.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "users that transmit sensitive data would also adopt stringent data encryption policies to protect the data in transit.",
-   "verified": true
+   "label": "International space cybersecurity standards",
+   "summary": "Singapore participates in international bodies setting space industry resilience and cybersecurity standards, and satellite operators adopt standards for their use cases.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "On top of that, we participate actively in international bodies that set standards for resilience and cybersecurity for the space industry, for example, international standards, such as those from the International Organization for Standardization, Institute of Electrical and Electronics Engineers, and the Consultative Committee for Space Data Systems.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Satellite operators and their partners adopt cybersecurity and resilience standards relevant to their specific use cases, such as for information technology, aerospace and telecommunications.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [
-  "Specific contingency plans for disruptions to satellite operators",
-  "Whether the Government has established or plans to establish cybersecurity and resilience standards required of satellite operators",
-  "Measures in place to secure space-based critical information infrastructure dependent on satellite and space systems"
- ],
- "supplementary": "Domestic satellite cybersecurity monitoring, threat detection and attribution, resilience risks of hard-to-repair or legacy satellite systems, and life-cycle mitigation.",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4044"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4044",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-02-26"
   ],
-  "group": "oral",
-  "source_words": 645,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-4044",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4044"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.3077,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T05:03:12"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1475,
+   "completion_tokens": 241,
+   "estimated": false,
+   "cost_usd": 0.000274
+  }
  }
 }

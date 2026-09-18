@@ -1,71 +1,86 @@
 {
- "title": "Police screening for massage establishment licences under the Massage Establishment Act",
- "asked": "Mr Foo Cexiang asked whether the Singapore Police Force will consider enhancing the screening process for Massage Establishment Act licence applicants, especially for association with persons who breached MEA licensing conditions or are facing ongoing investigations.",
- "asked_by": "Mr Foo Cexiang",
- "answered_by": "Ms Sim Ann",
- "response": "Ms Sim Ann said MHA amended the Massage Establishment Act in 2017 to expand Police consideration to responsible officers and persons with substantial interest, control or direction over the business. The Police can refuse a licence if these persons are not fit and proper, and assess criminal antecedents, past breaches of ME regulations, ongoing investigations, and law and order or social disamenity concerns. If association with others who previously breached ME licensing conditions could cause law and order concerns, the Police can also refuse a licence. In reply to a supplementary question, she said the plan is for these considerations to apply to a new category of MEs not currently licensed under the Act.",
- "key_points": [
+ "title": "Enhancing Screening Process for Those Applying for Licences under Massage Establishment Act",
+ "what_it_is": "Enhancing Screening Process for Those Applying for Licences under Massage Establishment Act",
+ "sections": [
   {
-   "point": "MHA amended the Massage Establishment Act in 2017 to expand Police consideration of licence applications.",
-   "speaker": "Ms Sim Ann",
-   "quote": "In 2017, the Ministry of Home Affairs (MHA) amended the Massage Establishment Act (MEA)",
-   "verified": true
-  },
-  {
-   "point": "The expanded consideration covers responsible officers and persons with substantial interest, control or direction over the business.",
-   "speaker": "Ms Sim Ann",
-   "quote": "to expand the Police's consideration when assessing massage establishment (ME) licence applications",
-   "verified": true
-  },
-  {
-   "point": "Responsible officers include business partners in a partnership, governing body members in an unincorporated association, and directors or similar officers in a corporate body.",
-   "speaker": "Ms Sim Ann",
-   "quote": "Responsible officers include business partners if the business entity is a partnership",
-   "verified": true
-  },
-  {
-   "point": "The Police can refuse an ME licence if these persons are not fit and proper.",
-   "speaker": "Ms Sim Ann",
-   "quote": "If these persons are not fit and proper, the Police can refuse to grant an ME licence.",
-   "verified": true
-  },
-  {
-   "point": "Fitness and propriety assessment includes criminal antecedents, past breaches of ME regulations, and ongoing investigations.",
-   "speaker": "Ms Sim Ann",
-   "quote": "the Police would consider, but is not limited to, criminal antecedents, past breaches of ME regulations, if the person is facing ongoing investigations",
-   "verified": true
-  },
-  {
-   "point": "Association with others who previously breached ME licensing conditions can also lead to refusal if it could cause law and order concerns.",
-   "speaker": "Ms Sim Ann",
-   "quote": "If the Police assess that a person's association with others who had previously breached ME licensing conditions could cause law and order concerns",
-   "verified": true
-  },
-  {
-   "point": "The considerations are planned to apply to a new category of MEs not currently licensed under the Act.",
-   "speaker": "Ms Sim Ann",
-   "quote": "Yes, that is the plan.",
-   "verified": true
+   "label": "ME licence responsible officers",
+   "summary": "The Police can refuse an ME licence if responsible officers, including business partners, governing body members or directors, are not fit and proper.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "",
+     "attributed": false,
+     "text": "Responsible officers include business partners if the business entity is a partnership, members of the governing body if it is an unincorporated association and directors or officers holding similar managerial executive positions if it is a corporate body.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "",
+     "attributed": false,
+     "text": "If these persons are not fit and proper, the Police can refuse to grant an ME licence.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "",
+     "attributed": false,
+     "text": "In assessing the fitness and propriety of a person to be granted a ME licence, the Police would consider, but is not limited to, criminal antecedents, past breaches of ME regulations, if the person is facing ongoing investigations and if granting the person a licence is likely to affect law and order or give rise to social disamenity.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "",
+     "attributed": false,
+     "text": "If the Police assess that a person's association with others who had previously breached ME licensing conditions could cause law and order concerns, the Police can also refuse to grant an ME licence.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [
-  "Whether any further enhancement of the screening process, beyond the 2017 amendments, is planned."
- ],
- "supplementary": "Whether the same Police screening considerations will apply to a new category of massage establishments not currently licensed under the Act.",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4146"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4146",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-05-07"
   ],
-  "group": "oral",
-  "source_words": 315,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-4146",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4146"
+  ],
+  "sentences_total": 6,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.6667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 1,
+   "turns_total": 3,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T03:57:17"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 924,
+   "completion_tokens": 78,
+   "estimated": false,
+   "cost_usd": 0.000151
+  }
  }
 }

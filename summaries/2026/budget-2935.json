@@ -1,31 +1,72 @@
 {
- "title": "Approval of remaining expenditure heads in the Main and Development Estimates",
- "what_it_is": "A procedural stage in the Committee of Supply's consideration of the 2026 Estimates, in which the remaining Heads of Expenditure with no amendments on the Order Paper Supplement were put to the Committee en bloc and agreed to without debate.",
- "stage": "not stated",
- "why_it_matters": "The record does not set out the practical impact.",
- "key_points": [],
- "what_happens_next": "not stated",
- "not_said": [
-  "What expenditure each of Heads B, C, D, E, G and Z of the Main Estimates covers?",
-  "What expenditure each of Heads B, C and E of the Development Estimates covers?",
-  "What the sums stated in the last column of the schedules for these Heads amount to?",
-  "Whether any Member sought to speak on any of these Heads?",
-  "When the sums agreed to take effect or how they will be spent?"
+ "title": "Committee of Supply – Heads B, C, D, E, G and Z",
+ "what_it_is": "Committee of Supply – Heads B, C, D, E, G and Z",
+ "sections": [
+  {
+   "label": "Main Estimates expenditure heads",
+   "summary": "The Main Estimates cover Heads B, C, D, E, G and Z, which are proposed to be taken en bloc.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Chairman",
+     "attributed": true,
+     "text": "In respect of the Main Estimates, they are Heads B, C, D, E, G and Z.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Chairman",
+     "attributed": true,
+     "text": "I propose to take those Heads of Expenditure en bloc.",
+     "added_for_context": false
+    }
+   ]
+  }
  ],
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "budget-2935"
-  ],
+  "schema": 4,
+  "id": "budget-2935",
+  "group": "budget",
+  "year": "2026",
   "sitting_dates": [
    "2026-03-06"
   ],
-  "group": "budget",
-  "source_words": 164,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "budget-2935",
-  "schema": 2
+  "report_ids": [
+   "budget-2935"
+  ],
+  "sentences_total": 4,
+  "sentences_selected": 2,
+  "sentences_in_sections": 2,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 2,
+   "sentences_selected": 2,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T04:22:32"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 574,
+   "completion_tokens": 67,
+   "estimated": false,
+   "cost_usd": 9.9e-05
+  }
  }
 }

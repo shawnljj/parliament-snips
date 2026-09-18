@@ -1,77 +1,79 @@
 {
- "title": "Gross monthly income percentiles for full-time employed PMEs in 2025",
- "asked": "Mr Patrick Tay Teck Guan asked for the 10th, 20th, 25th, 50th, 75th and 80th percentile of gross monthly income from work, excluding employer CPF, for full-time employed PMEs, excluding APTs.",
- "asked_by": "Mr Patrick Tay Teck Guan",
- "answered_by": "Mr Shawn Huang Wei Zhong",
- "response": "In 2025, the gross monthly income from employment, excluding employer CPF, of full-time employed resident PMEs was about $4,500 at the 10th percentile, $5,400 at the 20th percentile and $6,000 at the 25th percentile. The median income was $8,400. At the higher end, incomes were about $12,100 at the 75th percentile and $13,900 at the 80th percentile. In a supplementary reply, Mr Shawn Huang Wei Zhong said the ministry constantly monitors wage levels and makes sure laws and regulations are fit for purpose and relevant.",
- "key_points": [
+ "title": "Gross Monthly Income Data of Full-time PMETs in Different Percentiles",
+ "what_it_is": "Gross Monthly Income Data of Full-time PMETs in Different Percentiles",
+ "sections": [
   {
-   "point": "10th percentile gross monthly income was about $4,500",
-   "speaker": "Mr Shawn Huang Wei Zhong",
-   "quote": "about $4,500 at the 10th percentile",
-   "verified": true
-  },
-  {
-   "point": "20th percentile gross monthly income was $5,400",
-   "speaker": "Mr Shawn Huang Wei Zhong",
-   "quote": "$5,400 at the 20th percentile",
-   "verified": true
-  },
-  {
-   "point": "25th percentile gross monthly income was $6,000",
-   "speaker": "Mr Shawn Huang Wei Zhong",
-   "quote": "$6,000 at the 25th percentile",
-   "verified": true
-  },
-  {
-   "point": "Median gross monthly income was $8,400",
-   "speaker": "Mr Shawn Huang Wei Zhong",
-   "quote": "The median income was $8,400.",
-   "verified": true
-  },
-  {
-   "point": "75th percentile gross monthly income was about $12,100",
-   "speaker": "Mr Shawn Huang Wei Zhong",
-   "quote": "about $12,100 at the 75th percentile",
-   "verified": true
-  },
-  {
-   "point": "Ministry constantly monitors wage levels and operating environment",
-   "speaker": "Mr Shawn Huang Wei Zhong",
-   "quote": "we constantly monitor the wage levels",
-   "verified": true
-  },
-  {
-   "point": "Laws and regulations are kept fit for purpose and relevant",
-   "speaker": "Mr Shawn Huang Wei Zhong",
-   "quote": "our laws and regulations are fit for purpose and relevant",
-   "verified": true
-  }
- ],
- "left_open": [
-  "Which specific employment laws or regulations may be reviewed, and any timeline for such review."
- ],
- "supplementary": "Reviewing employment laws and regulations to ensure PMEs are adequately represented, protected and covered.",
- "_dropped": [
-  {
-   "reason": "quote not found in source",
-   "point": "80th percentile gross monthly income was about $13,900",
-   "quote": "about $13,900 at the 80th percentile"
+   "label": "PME income percentiles 2025",
+   "summary": "In 2025, full-time employed resident PMEs had gross monthly incomes of about $4,500 at the 10th percentile and $13,900 at the 80th percentile.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Manpower (Mr Shawn Huang Wei Zhong) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "In 2025, the gross monthly income from employment, excluding employer Central Provident Fund (CPF) contributions, of full-time employed resident professionals, managers and executives (PMEs) was about $4,500 at the 10th percentile, $5,400 at the 20th percentile and $6,000 at the 25th percentile.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Manpower (Mr Shawn Huang Wei Zhong) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "At the higher end, incomes were about $12,100 at the 75th percentile and $13,900 at the 80th percentile.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Shawn Huang Wei Zhong",
+     "attributed": true,
+     "text": "The short answer is yes, we constantly monitor the wage levels, including our operating environment and make sure that our laws and regulations are fit for purpose and relevant.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4101"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4101",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-04-07"
   ],
-  "group": "oral",
-  "source_words": 205,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 1,
-  "key": "oral-answer-4101",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4101"
+  ],
+  "sentences_total": 5,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.6,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T04:19:53"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 918,
+   "completion_tokens": 89,
+   "estimated": false,
+   "cost_usd": 0.000153
+  }
  }
 }

@@ -1,97 +1,134 @@
 {
- "title": "Safeguards for foreign AI and data analytics vendors handling citizen data",
- "asked": "Mr Low asked whether the whole-of-Government data architecture allows foreign-headquartered proprietary AI or data analytics platforms to process citizen data, and what legal and technical safeguards prevent foreign governments from compelling disclosure under their domestic laws.",
- "asked_by": "Mr Low Wu Yang Andre",
- "answered_by": "Ms Jasmin Lau",
- "response": "Ms Jasmin Lau said the Government uses international vendors and applies risk-based safeguards: access on a needs-basis, non-retention, encryption, access and identity management, possible data residency, and contractual and governance controls. These are intended to prevent vendors from accessing, using or disclosing government data where not permitted, including in response to foreign government demands. She added that some jurisdictions, such as the US, may have extraterritorial laws that override contracts, so the Government also relies on technical controls and governance frameworks.",
- "key_points": [
+ "title": "Safeguards to Ensure Citizen Data Is Not Disclosed to or Processed by Foreign-headquartered Vendors",
+ "what_it_is": "Safeguards to Ensure Citizen Data Is Not Disclosed to or Processed by Foreign-headquartered Vendors",
+ "sections": [
   {
-   "point": "The Government uses best-in-class technology solutions, including from international vendors.",
-   "speaker": "Ms Jasmin Lau",
-   "quote": "the Government uses best-in-class technology solutions, including those from international vendors",
-   "verified": true
+   "label": "Safeguards for citizen data vendors",
+   "summary": "The Government says safeguards protect citizen data when foreign-headquartered vendors process it, including needs-based access, technical controls, data residency and contracts.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Low Wu Yang Andre",
+     "attributed": true,
+     "text": "asked the Minister for Digital Development and Information (a) whether the whole-of-Government data architecture permits proprietary artificial intelligence (AI) or data analytics platforms from foreign-headquartered vendors to process citizen data; and (b) if so, what legal and technical safeguards ensure that such data cannot be compelled for disclosure by a foreign government under that government's domestic laws.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister for Digital Development and Information)",
+     "attributed": true,
+     "text": "We have established comprehensive safeguards to protect citizen data when working with any vendor.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister for Digital Development and Information)",
+     "attributed": true,
+     "text": "Our risk-based approach ensures that data access is granted strictly on a \"needs-basis\" following the principle of least privilege.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister for Digital Development and Information)",
+     "attributed": true,
+     "text": "Vendors are expected to implement robust technical safeguards such as non-retention of data, encryption as well as access and identity management.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister for Digital Development and Information)",
+     "attributed": true,
+     "text": "Data residency may also be required, depending on the sensitivity of the data.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister for Digital Development and Information)",
+     "attributed": true,
+     "text": "This is coupled with proper governance frameworks and contractual agreements on how the data can be accessed, used, stored and retained.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister for Digital Development and Information)",
+     "attributed": true,
+     "text": "These help to prevent vendors from accessing, using or disclosing government data where they are not permitted to do so, including in response to demands from foreign governments.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Data access is granted strictly on a needs-basis following the principle of least privilege.",
-   "speaker": "Ms Jasmin Lau",
-   "quote": "data access is granted strictly on a \"needs-basis\" following the principle of least privilege",
-   "verified": true
-  },
-  {
-   "point": "Vendors are expected to implement technical safeguards including non-retention of data, encryption, and access and identity management.",
-   "speaker": "Ms Jasmin Lau",
-   "quote": "Vendors are expected to implement robust technical safeguards such as non-retention of data, encryption as well as access and identity management.",
-   "verified": true
-  },
-  {
-   "point": "Data residency may be required depending on the sensitivity of the data.",
-   "speaker": "Ms Jasmin Lau",
-   "quote": "Data residency may also be required, depending on the sensitivity of the data.",
-   "verified": true
-  },
-  {
-   "point": "Governance frameworks and contractual agreements cover how data can be accessed, used, stored and retained.",
-   "speaker": "Ms Jasmin Lau",
-   "quote": "proper governance frameworks and contractual agreements on how the data can be accessed, used, stored and retained",
-   "verified": true
-  },
-  {
-   "point": "These measures help prevent vendors from accessing, using or disclosing government data where not permitted, including in response to foreign government demands.",
-   "speaker": "Ms Jasmin Lau",
-   "quote": "These help to prevent vendors from accessing, using or disclosing government data where they are not permitted to do so, including in response to demands from foreign governments.",
-   "verified": true
-  },
-  {
-   "point": "The Government continuously monitors vendor compliance, conducts regular security assessments and updates its frameworks.",
-   "speaker": "Ms Jasmin Lau",
-   "quote": "We continuously monitor vendor compliance, conduct regular security assessments and update our frameworks",
-   "verified": true
-  },
-  {
-   "point": "A separate Parliamentary Question on Palantir for the Ministry of Finance will be left for MOF to answer.",
-   "speaker": "Ms Jasmin Lau",
-   "quote": "the Member may have filed a separate Parliamentary Question on Palantir for the Ministry of Finance (MOF), which I will leave for MOF to answer",
-   "verified": true
-  },
-  {
-   "point": "Some jurisdictions, such as the US, may have legislation or regulations with extraterritorial reach that require companies to provide certain information.",
-   "speaker": "Ms Jasmin Lau",
-   "quote": "some jurisdictions like, as he mentioned, the US, may have legislation or regulations, including with extraterritorial reach, that empower government agencies to require companies or entities within their jurisdictions to provide certain information",
-   "verified": true
-  },
-  {
-   "point": "Such legislation or regulations can override contractual obligations.",
-   "speaker": "Ms Jasmin Lau",
-   "quote": "Such legislation or regulations can override contractual obligations.",
-   "verified": true
-  },
-  {
-   "point": "The Government relies not solely on contractual provisions but also on other risk mitigation measures such as technical controls, safeguards and governance frameworks.",
-   "speaker": "Ms Jasmin Lau",
-   "quote": "the Government's approach is to rely not solely on contractual provisions, but also on other risk mitigation measures",
-   "verified": true
+   "label": "Foreign laws overriding contracts",
+   "summary": "The Government says foreign laws with extraterritorial reach can override contracts, so it also relies on technical controls and governance frameworks.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Ms Jasmin Lau",
+     "attributed": true,
+     "text": "Legal and contractual agreements aside, the reality is that no matter what legal provisions the contracts may contain, some jurisdictions like, as he mentioned, the US, may have legislation or regulations, including with extraterritorial reach, that empower government agencies to require companies or entities within their jurisdictions to provide certain information.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Ms Jasmin Lau",
+     "attributed": true,
+     "text": "Such legislation or regulations can override contractual obligations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Ms Jasmin Lau",
+     "attributed": true,
+     "text": "This is why the Government's approach is to rely not solely on contractual provisions, but also on other risk mitigation measures, which I have mentioned, such as technical controls and safeguards as well as governance frameworks, which limit what use cases and categories of information may be used with non-government provided tools and platforms.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [
-  "Whether the whole-of-Government data architecture permits foreign-headquartered proprietary AI or data analytics platforms to process citizen data.",
-  "The specific legal safeguards that ensure data cannot be compelled for disclosure under a foreign government's domestic laws.",
-  "Whether there are ongoing contracts with Palantir Technologies."
- ],
- "supplementary": "Concerns about foreign vendor Palantir and US extraterritorial data disclosure laws such as the CLOUD Act.",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4100"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4100",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-04-07"
   ],
-  "group": "oral",
-  "source_words": 567,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-4100",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4100"
+  ],
+  "sentences_total": 16,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.625,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T04:19:37"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1433,
+   "completion_tokens": 148,
+   "estimated": false,
+   "cost_usd": 0.000242
+  }
  }
 }

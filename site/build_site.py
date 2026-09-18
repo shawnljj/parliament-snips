@@ -1139,6 +1139,20 @@ def coverage_text(cov):
     return f"{n} of about {mx} ({n / mx * 100:.0f}%)"
 
 
+def brief_substance(brief):
+    """The size of a brief's substance, whatever schema it is.
+
+    Schema 3 counted key_points; schema 4 replaced them with sections of verbatim
+    sentences. Five call sites tested `key_points` directly, so every schema-4 brief looked
+    EMPTY -- it was classified as procedural and listed compactly instead of rendered as a
+    card, and the page showed no briefs at all while reporting "17 verified points". One
+    helper, so the next schema change is a one-line edit instead of a hunt.
+    """
+    if brief.get("sections"):
+        return sum(len(s.get("sentences") or []) for s in brief["sections"])
+    return len(brief.get("key_points") or [])
+
+
 def render_brief(brief, sitting_dates=None):
     """Render one summarised policy item as a neutral brief.
 
@@ -1508,13 +1522,13 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     # order by what a citizen most needs to know
     ORDER = {"bill": 0, "statement": 1, "budget": 2, "motion": 3, "adjournment": 4}
     briefs.sort(key=lambda b: (ORDER.get(b.get("_meta", {}).get("group"), 9),
-                               -len(b.get("key_points", []))))
+                               -brief_substance(b)))
     # A brief with no verified points is procedural business -- the summariser
     # correctly reports "no policy substance". Rendering it as a full card would
     # pad the page with headings that say nothing, so list those compactly and
     # keep the cards for things that actually decided or announced something.
-    substantive = [b for b in briefs if b.get("key_points")]
-    procedural = [b for b in briefs if not b.get("key_points")]
+    substantive = [b for b in briefs if brief_substance(b)]
+    procedural = [b for b in briefs if not brief_substance(b)]
     bills = [b for b in substantive if b.get("_meta", {}).get("group") == "bill"]
     others = [b for b in substantive if b.get("_meta", {}).get("group") != "bill"]
 
@@ -1639,7 +1653,7 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     <ul>
       <li>Reports collected: <b>{coverage_text(cov)}</b></li>
       <li>Briefs on this page: <b>{len(substantive)}</b>
-        {f'({sum(len(b.get("key_points", [])) for b in substantive)} verified points)' if substantive else ''}</li>
+        {f'({sum(brief_substance(b) for b in substantive):,} sentences published)' if substantive else ''}</li>
       <li>Speaker attribution: <b>{attr_txt}</b> of turns carry an explicit speaker tag</li>
       <li>Any point whose quote could not be found in the transcript was discarded
         rather than shown.</li>
@@ -2548,9 +2562,9 @@ def build_all(out_dir):
                                      archive_href="sittings/index.html",
                                      summaries=summaries))
 
-    printed = sum(len(s.get("key_points", [])) for s in summaries)
+    printed = sum(brief_substance(s) for s in summaries)
     print(f"built {len(sittings)} sitting page(s) + archive; latest = {latest['date']}; "
-          f"{len(summaries)} briefs ({printed} verified points)")
+          f"{len(summaries)} briefs ({printed:,} sentences published)")
     return len(sittings)
 
 

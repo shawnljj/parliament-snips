@@ -1,60 +1,79 @@
 {
- "title": "Animal cruelty cases involving community animals and enforcement powers",
- "asked": "Ms Diana Pang Li Yen asked how many reports of cruelty to community animals the Animal and Veterinary Service received, investigated and referred for prosecution in the past three years, whether existing enforcement powers and penalties adequately deter such offences, and whether stronger protections, better reporting mechanisms or restrictions on animal ownership for repeat offenders are being considered.",
- "asked_by": "Ms Diana Pang Li Yen",
- "answered_by": "Mr Alvin Tan",
- "response": "Over the past three years, the National Parks Board received and investigated an average of 75 alleged animal cruelty cases involving community animals each year, and two cases were referred for prosecution. The Ministry is reviewing the Animals and Birds Act to enhance enforcement powers and strengthen the penalty framework for animal welfare offences, including imprisonment terms and disqualification orders for first-time and repeat offences. On reporting, AVS works with caregivers and feeders of community animals through the Cat Welfare Society, providing free sterilisation and micro-chipping.",
- "key_points": [
+ "title": "Reports of Cruelty to Community Animals and Measures to Safeguard Welfare of These Animals",
+ "what_it_is": "Reports of Cruelty to Community Animals and Measures to Safeguard Welfare of These Animals",
+ "sections": [
   {
-   "point": "The National Parks Board received and investigated an average of 75 alleged animal cruelty cases involving community animals each year over the past three years.",
-   "speaker": "Mr Alvin Tan",
-   "quote": "received and investigated an average of 75 alleged animal cruelty cases involving community animals each year",
-   "verified": true
-  },
-  {
-   "point": "Two cases were referred for prosecution during this period.",
-   "speaker": "Mr Alvin Tan",
-   "quote": "Two cases were referred for prosecution during this period.",
-   "verified": true
-  },
-  {
-   "point": "The Ministry is reviewing the Animals and Birds Act to enhance enforcement powers and strengthen the penalty framework for animal welfare offences.",
-   "speaker": "Mr Alvin Tan",
-   "quote": "we are reviewing the ABA to enhance enforcement powers and strengthen the penalty framework for animal welfare offences",
-   "verified": true
-  },
-  {
-   "point": "The review includes imprisonment terms and disqualification orders for both first-time and repeat offences.",
-   "speaker": "Mr Alvin Tan",
-   "quote": "This includes reviewing imprisonment terms and disqualification orders for both first-time and repeat offences.",
-   "verified": true
-  },
-  {
-   "point": "AVS works closely with caregivers and feeders of community animals through the Cat Welfare Society, providing free sterilisation and free micro-chipping.",
-   "speaker": "Mr Alvin Tan",
-   "quote": "AVS works very closely with them through our lead Trap-Neuter-Rehome/Release-Manage partner, the Cat Welfare Society, providing services such as free sterilisation and free micro-chipping.",
-   "verified": true
+   "label": "Review of Animals and Birds Act",
+   "summary": "Two cases were referred for prosecution, and the ABA is being reviewed to enhance enforcement powers and strengthen penalties for animal welfare offences.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for National Development (Mr Alvin Tan) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Two cases were referred for prosecution during this period.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for National Development (Mr Alvin Tan) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "To ensure that the Animals and Birds Act (ABA) remains effective in deterring animal cruelty and abuse, we are reviewing the ABA to enhance enforcement powers and strengthen the penalty framework for animal welfare offences.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for National Development (Mr Alvin Tan) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "This includes reviewing imprisonment terms and disqualification orders for both first-time and repeat offences.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [
-  "Whether the Ministry assesses that existing enforcement powers and penalties adequately deter offences.",
-  "Whether better reporting mechanisms for community animal cruelty cases are being considered."
- ],
- "supplementary": "Making it easier for community animal caregivers and feeders to report cruelty cases.",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4172"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4172",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-08-05"
   ],
-  "group": "oral",
-  "source_words": 290,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-4172",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4172"
+  ],
+  "sentences_total": 7,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.4286,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 1,
+   "turns_total": 5,
+   "coverage": 0.2,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T03:37:39"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 841,
+   "completion_tokens": 73,
+   "estimated": false,
+   "cost_usd": 0.000138
+  }
  }
 }

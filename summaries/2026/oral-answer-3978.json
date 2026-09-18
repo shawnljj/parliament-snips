@@ -1,73 +1,92 @@
 {
- "title": "Support for Job Redesign and platform workers returning to traditional employment",
- "asked": "Mr Gerald Giam asked whether the Support for Job Redesign programme is used to incentivise flexible work arrangements that mirror platform autonomy to attract platform workers back to traditional employment, and what results the programme has achieved.",
- "asked_by": "Mr Gerald Giam Yean Song",
- "answered_by": "Mr Shawn Huang Wei Zhong",
- "response": "Mr Shawn Huang Wei Zhong said the Support for Job Redesign programme helps employers redesign jobs to drive business objectives, including accommodating flexible work arrangements, improve workforce effectiveness and tap a broader pool of workers. He said it is not targeted at bringing platform workers back to traditional employment, because platform workers operate under different work arrangements from employees on FWAs, and Workforce Singapore does not track how many platform workers transition to traditional employment through the programme. In supplementary replies, he said platform workers may choose platform work for flexibility or control, and that for those who wish to transit out, the Government provides resources such as e2i career matching services, Career Conversion Programmes, the Mid-career Pathway Programme and SkillsFuture Transition Programmes.",
- "key_points": [
+ "title": "Reintegration of Platform Workers to Traditional Employment through Support for Job Redesign Programme",
+ "what_it_is": "Reintegration of Platform Workers to Traditional Employment through Support for Job Redesign Programme",
+ "sections": [
   {
-   "point": "The Support for Job Redesign programme helps employers redesign jobs to drive business objectives, including accommodating flexible work arrangements.",
-   "speaker": "Mr Shawn Huang Wei Zhong",
-   "quote": "the Support for Job Redesign programme aims to help employers redesign jobs to drive business objectives, including accommodating Flexible Work Arrangements (FWAs)",
-   "verified": true
+   "label": "Platform workers transition tracking",
+   "summary": "The programme does not target platform workers returning to traditional employment, and WSG does not track such transitions.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Manpower (Mr Shawn Huang Wei Zhong) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "The programme is not targeted at bringing platform workers back to traditional employment, as platform workers operate under different work arrangements from employees on FWAs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Manpower (Mr Shawn Huang Wei Zhong) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "Workforce Singapore (WSG) does not track the number of platform workers who transition to traditional employment through the programme.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The programme is not targeted at bringing platform workers back to traditional employment.",
-   "speaker": "Mr Shawn Huang Wei Zhong",
-   "quote": "The programme is not targeted at bringing platform workers back to traditional employment",
-   "verified": true
-  },
-  {
-   "point": "Platform workers operate under different work arrangements from employees on FWAs.",
-   "speaker": "Mr Shawn Huang Wei Zhong",
-   "quote": "platform workers operate under different work arrangements from employees on FWAs",
-   "verified": true
-  },
-  {
-   "point": "Workforce Singapore does not track the number of platform workers who transition to traditional employment through the programme.",
-   "speaker": "Mr Shawn Huang Wei Zhong",
-   "quote": "Workforce Singapore (WSG) does not track the number of platform workers who transition to traditional employment through the programme.",
-   "verified": true
-  },
-  {
-   "point": "Platform workers may choose platform work for greater flexibility or control over when and how their work is done.",
-   "speaker": "Mr Shawn Huang Wei Zhong",
-   "quote": "greater flexibility or control over when and how their work is being done",
-   "verified": true
-  },
-  {
-   "point": "For those who wish to transit out of platform work, the Government provides resources such as the Employment and Employability Institute's career matching services.",
-   "speaker": "Mr Shawn Huang Wei Zhong",
-   "quote": "the Government does provide much resources to help them plan their careers and strengthen their employability, such as the Employment and Employability Institute's career matching services",
-   "verified": true
-  },
-  {
-   "point": "Other schemes to improve employability include Career Conversion Programmes, the Mid-career Pathway Programme and SkillsFuture Transition Programmes.",
-   "speaker": "Mr Shawn Huang Wei Zhong",
-   "quote": "such as the Career Conversion Programmes as well as the Mid-career Pathway Programme, SkillsFuture Transition Programmes, to improve their employability",
-   "verified": true
+   "label": "Government resources for platform workers",
+   "summary": "The Government provides resources like e2i career matching and schemes such as Career Conversion Programmes to help platform workers who wish to transit out.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Mr Shawn Huang Wei Zhong",
+     "attributed": true,
+     "text": "In fact, for those who wish to transit out of platform work, the Government does provide much resources to help them plan their careers and strengthen their employability, such as the Employment and Employability Institute's career matching services.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mr Shawn Huang Wei Zhong",
+     "attributed": true,
+     "text": "There are also other schemes, such as the Career Conversion Programmes as well as the Mid-career Pathway Programme, SkillsFuture Transition Programmes, to improve their employability.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [
-  "Whether a target will be considered to track the number of platform workers who transition back into full-time traditional employment each year",
-  "How the Ministry of Manpower works with employers to make workplaces more attractive on pay and time flexibility",
-  "Measurable results achieved to date from initiatives to help platform workers transition"
- ],
- "supplementary": "Tracking platform-worker transitions and making traditional jobs more attractive on pay and flexibility",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-3978"
-  ],
+  "schema": 4,
+  "id": "oral-answer-3978",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-01-14"
   ],
-  "group": "oral",
-  "source_words": 353,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-3978",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-3978"
+  ],
+  "sentences_total": 10,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T05:29:21"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1012,
+   "completion_tokens": 121,
+   "estimated": false,
+   "cost_usd": 0.000176
+  }
  }
 }

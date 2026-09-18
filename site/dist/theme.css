@@ -1,4 +1,54 @@
 
+/* ============================================================
+   SELECTION BRIEF (schema v4). BASE LAYER IS THE PHONE.
+   Wider viewports only ever ADD, from the min-width block at
+   the end. There is no max-width override for these rules.
+   ============================================================ */
+.brief-v4{margin:0 0 34px}
+.brief-v4 .brief-hd{margin-bottom:14px}
+.brief-v4 .brief-hd h2{font-size:19px;line-height:1.32;margin:0 0 4px;letter-spacing:-.01em}
+.brief-v4 .brief-meta{margin:0;font-size:12.5px;color:var(--dim)}
+.brief-v4 .brief-what{margin:9px 0 0;font-size:14.5px;line-height:1.55;color:#2c343b}
+
+/* A section is the sticky card's containing block, so the card releases exactly when
+   the section ends -- no JavaScript, and the requirement is met by layout alone. */
+.dsec{margin:0 0 30px}
+.sumwrap{position:sticky;top:0;z-index:5}
+.sumcard{background:var(--accent-soft);border-left:3px solid var(--accent);
+  border-radius:0 8px 8px 0;padding:9px 12px 10px;margin:0 0 12px}
+.sumlabel{font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:3px}
+.sumtext{margin:0;font-size:14.5px;line-height:1.5;color:#17352a}
+
+.vslist{list-style:none;margin:0;padding:0}
+.vs{padding:11px 0 12px;border-top:1px solid var(--line)}
+.vs:first-child{border-top:0;padding-top:2px}
+.vs-meta{display:flex;align-items:baseline;gap:8px;margin-bottom:4px;flex-wrap:wrap}
+.sid{font:600 10.5px/1.5 var(--mono);color:var(--faint);letter-spacing:.03em}
+.vs-meta .who{font-size:11.5px;color:var(--dim);text-transform:uppercase;
+  letter-spacing:.045em}
+.vs-meta .who.none{display:block;min-height:.7rem}
+.ctxmark{font-size:10px;color:var(--warm);background:#fdf1e8;border-radius:4px;
+  padding:1px 5px;margin-left:auto}
+.vs-text{margin:0;font-size:15.5px;line-height:1.6;color:var(--ink)}
+
+.brief-ft{margin-top:20px;padding-top:12px;border-top:1px solid var(--line)}
+/* The gap count sits at the gap, between one section and the next. */
+.gapd{margin:0;padding:7px 0 0;font-size:12px;color:var(--faint);
+  text-align:center;letter-spacing:.02em;
+  border-top:1px dashed var(--line)}
+/* Portfolio shown once, then just the name -- a 49-char title on every sentence wraps. */
+.spkfull{display:block;text-transform:none;letter-spacing:0;font-size:11px;
+  color:var(--faint);margin-top:1px}
+.prov{margin:0;font-size:11.5px;line-height:1.6;color:var(--faint)}
+
+/* Wider viewports ADD only. */
+@media (min-width:700px){
+  .brief-v4 .brief-hd h2{font-size:22px}
+  .vs-text{font-size:16px}
+  .sumcard{padding:11px 15px 12px}
+}
+
 :root{
   --ink:#14181d; --dim:#5c6773; --faint:#8b95a1; --line:#e3e7ec;
   --bg:#fbfbfa; --card:#ffffff; --accent:#1c6b4a; --accent-soft:#e8f2ec;

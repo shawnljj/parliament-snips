@@ -1,249 +1,1991 @@
 {
- "title": "Health Information Bill Second Reading debate",
- "what_it_is": "A Second Reading debate on the Health Information Bill, which requires licensed healthcare providers and retail pharmacies to contribute key health information to the National Electronic Health Record and sets rules for access, sharing and safeguards.",
- "stage": "Second Reading",
- "why_it_matters": "The Bill requires all licensed healthcare providers and retail pharmacies to contribute key health information to NEHR, so a patient's records can follow them across providers. It allows patients to restrict access, while critical allergies and vaccination records remain visible, and prohibits access for employment or insurance purposes. The Minister says the Bill is intended to take effect from early 2027.",
- "key_points": [
+ "title": "Health Information Bill",
+ "what_it_is": "Health Information Bill",
+ "sections": [
   {
-   "point": "The Health Information Bill was moved for Second Reading.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "The Bill be now read a Second time.",
-   "verified": true
+   "label": "Ageing population and chronic diseases",
+   "summary": "By 2030, one in four Singaporeans will be 65 or above, bringing more chronic diseases and multiple co-morbidities.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "By 2030, one in four Singaporeans will be aged 65 and above.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "This substantial demographic shift brings with it a higher burden of chronic diseases and a higher proportion of patients with multiple co-morbidities.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Singapore is ageing rapidly, with one in four Singaporeans aged 65 and above by 2030.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "By 2030, one in four Singaporeans will be aged 65 and above.",
-   "verified": true
+   "label": "Health records not accessible across providers",
+   "summary": "Key health records are often not accessible when patients move between providers, risking medication errors, delayed treatment and duplicate tests.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "Currently, when patients move between healthcare providers, such as from private specialist clinics to their GPs, their key health records are often not accessible across providers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "Such gaps can risk medication errors, delayed treatment and duplicate tests and procedures.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Currently, key health records are often not accessible across providers, which can risk medication errors, delayed treatment and duplicate tests.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "Such gaps can risk medication errors, delayed treatment and duplicate tests and procedures.",
-   "verified": true
+   "label": "Public hospital beds and stays",
+   "summary": "Public hospitals contribute about 80% of total beds and account for approximately 90% of hospital stays in Singapore.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "Public hospitals contribute about 80% of total beds in Singapore and account for approximately 90% of hospital stays.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The Bill requires all licensed healthcare providers and retail pharmacies to contribute key health information to NEHR.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "The HIB will require all healthcare providers licensed under the Healthcare Services Act 2020 and retail pharmacies licensed under the Health Products Act 2007 to contribute key health information about patients into NEHR.",
-   "verified": true
+   "label": "HIB requires NEHR contribution and access",
+   "summary": "The HIB will close the remaining gap by requiring all licensed healthcare providers to contribute to and access the NEHR.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "First, the HIB will close the remaining gap by requiring all licensed healthcare providers to contribute to the NEHR and providing for their NEHR access.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Key health information includes allergies, vaccinations, diagnoses, medications, laboratory test results, radiological images and discharge summaries.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "allergies, vaccinations, diagnoses, medications, laboratory test results, radiological images and discharge summaries",
-   "verified": true
+   "label": "Sharing non-NEHR health information",
+   "summary": "The HIB will enable sharing of non-NEHR health information to facilitate community-based care.",
+   "sentences": [
+    {
+     "sid": "s00037",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Second, the HIB will enable the sharing of non-NEHR health information to facilitate community-based care.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "NEHR access for patient care is limited to licensed healthcare providers and their authorised individuals.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "NEHR access for patient care purposes will be limited to licensed healthcare providers and their authorised individuals.",
-   "verified": true
+   "label": "Providers required to contribute key information",
+   "summary": "The HIB requires licensed healthcare providers and retail pharmacies to contribute key health information such as allergies, vaccinations, diagnoses and medications to the NEHR.",
+   "sentences": [
+    {
+     "sid": "s00051",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "The HIB will require all healthcare providers licensed under the Healthcare Services Act 2020 and retail pharmacies licensed under the Health Products Act 2007 to contribute key health information about patients into NEHR.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00052",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "The key health information are those crucial for continuity of care such as allergies, vaccinations, diagnoses, medications, laboratory test results, radiological images and discharge summaries.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Accessing NEHR for employment or insurance purposes is strictly prohibited.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "Accessing NEHR for purposes relating to employment or insurance will be strictly prohibited.",
-   "verified": true
+   "label": "NEHR employment insurance access ban",
+   "summary": "Accessing the NEHR for employment or insurance purposes will be strictly prohibited.",
+   "sentences": [
+    {
+     "sid": "s00073",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Accessing NEHR for purposes relating to employment or insurance will be strictly prohibited.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "NEHR access is allowed for specified statutory medical examinations.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "NEHR access will therefore be allowed for these statutory medical examinations.",
-   "verified": true
+   "label": "NEHR statutory medical examinations",
+   "summary": "NEHR access will be allowed for statutory medical examinations.",
+   "sentences": [
+    {
+     "sid": "s00078",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "NEHR access will therefore be allowed for these statutory medical examinations.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Patients may restrict access to their NEHR information so that only select healthcare providers may have access.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "they may restrict access to their NEHR information so that only select healthcare providers may have this access.",
-   "verified": true
+   "label": "HealthHub app patient access",
+   "summary": "From the second half of this year, patients can do so through the HealthHub app.",
+   "sentences": [
+    {
+     "sid": "s00091",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "From the second half of this year, patients can do so through the HealthHub app.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "From the second half of this year, patients can place an Access Restriction through the HealthHub app.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "From the second half of this year, patients can do so through the HealthHub app.",
-   "verified": true
+   "label": "Doctors only break glass",
+   "summary": "Only doctors will be allowed to break glass.",
+   "sentences": [
+    {
+     "sid": "s00097",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "First, only doctors will be allowed to \"break glass\".",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "During medical emergencies, a patient's NEHR information may be accessed despite an Access Restriction, with only doctors allowed to 'break glass'.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "only doctors will be allowed to \"break glass\".",
-   "verified": true
+   "label": "HIB NEHR information sharing",
+   "summary": "The HIB will provide for sharing identifiable NEHR information for public health purposes and anonymised NEHR information for broader public interest purposes.",
+   "sentences": [
+    {
+     "sid": "s00107",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "The HIB will provide for the sharing of identifiable NEHR information for public health purposes and anonymised NEHR information for broader public interest purposes.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Non-NEHR health information may be shared without consent only if three key criteria are met.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "We will enable the scoped sharing of non-NEHR health information without an individual's consent only if three key criteria are met.",
-   "verified": true
+   "label": "Scoped sharing non-NEHR information",
+   "summary": "The HIB will provide an additional data sharing channel, enabling scoped sharing of non-NEHR health information without consent only if three key criteria are met.",
+   "sentences": [
+    {
+     "sid": "s00113",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "As mentioned earlier, the HIB will provide an additional channel for data sharing to support the goal of \"One Patient, One Health Summary, One Care Journey\".",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00114",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "We will enable the scoped sharing of non-NEHR health information without an individual's consent only if three key criteria are met.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "A first offence for unauthorised access of NEHR information under clause 38 carries a fine of up to $50,000, two years' imprisonment or both.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "a person convicted of an offence relating to unauthorised access of NEHR information under clause 38 faces a fine of up to $50,000, two years’ imprisonment or both, for a first offence.",
-   "verified": true
+   "label": "Sharing for specified use cases",
+   "summary": "Information must only be shared for specified use cases supporting continuity of care and population health outreach under national programmes like Healthier SG and Age Well SG.",
+   "sentences": [
+    {
+     "sid": "s00117",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Second, information must only be shared for specified use cases to support continuity of care and population health outreach under national programmes such as Healthier SG and Age Well SG.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Healthcare providers that fail to put in place required cybersecurity or data security measures may face a fine of up to $1 million.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "healthcare providers that fail to put in place the cybersecurity or data security measures required under the HIB may face a fine of up to $1 million",
-   "verified": true
+   "label": "Limited data shared",
+   "summary": "Shared data is generally limited to basic identification and contact information and, if necessary, broad health risk indicators, not actual medical conditions.",
+   "sentences": [
+    {
+     "sid": "s00120",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "The data shared will generally be limited to basic identification and contact information and if necessary, broad health risk indicators, such as the presence of frailty or chronic conditions, but not the actual medical conditions.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The Bill is intended to take effect from early 2027.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "we intend for the Bill to take effect from early 2027.",
-   "verified": true
+   "label": "Directions and penalties for non-compliance",
+   "summary": "Directions may be issued for deliberate or reckless non-compliance, and liability for an offence arises only when a provider fails to comply with a direction.",
+   "sentences": [
+    {
+     "sid": "s00149",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "However, in the event of deliberate or reckless non-compliance or breaches, directions may then be issued to the healthcare provider to comply.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00150",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "It is only when the healthcare provider fails to comply with a direction that the provider could be liable for an offence punishable by up to $20,000, one year’s imprisonment or both, upon conviction.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The Health Government Parliamentary Committee supports the Bill.",
-   "speaker": "Ms Mariam Jaafar",
-   "quote": "The Health Government Parliamentary Committee (GPC) supports this Bill.",
-   "verified": true
+   "label": "Penalties for unauthorised NEHR access",
+   "summary": "A person convicted of unauthorised access of NEHR information under clause 38 faces a fine of up to $50,000, two years' imprisonment or both for a first offence.",
+   "sentences": [
+    {
+     "sid": "s00153",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "For instance, a person convicted of an offence relating to unauthorised access of NEHR information under clause 38 faces a fine of up to $50,000, two years’ imprisonment or both, for a first offence.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00154",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "This maximum penalty is doubled for a repeat offence or if the unauthorised access was for employment or insurance purposes.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Dennis Tan supports the Bill but raises concerns about challenges for smaller healthcare operators such as single or dual-doctor clinics.",
-   "speaker": "Mr Dennis Tan Lip Fong",
-   "quote": "while I support the Bill, I wish to raise a few concerns posed by the HIB, and I will be speaking on the challenges for smaller healthcare operators, such as single or dual-doctor practitioner clinics that many of my residents rely on for their daily medical needs.",
-   "verified": true
+   "label": "Penalties for missing security measures",
+   "summary": "Healthcare providers that fail to put in place required cybersecurity or data security measures under the HIB may face a fine of up to $1 million.",
+   "sentences": [
+    {
+     "sid": "s00158",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "For instance, healthcare providers that fail to put in place the cybersecurity or data security measures required under the HIB may face a fine of up to $1 million, as the health information of many patients could be compromised.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Dennis Tan says the $1 million cap effectively puts a ceiling on the value of the collective privacy of the nation.",
-   "speaker": "Mr Dennis Tan Lip Fong",
-   "quote": "the $1 million cap effectively puts a ceiling on the value of the collective privacy of the nation",
-   "verified": true
+   "label": "Bill's statutory framework",
+   "summary": "The Bill establishes a statutory framework governing how selected health information is collected, accessed, used and shared for medical treatment, community health, preventive care and population well-being.",
+   "sentences": [
+    {
+     "sid": "s00170",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "As MOH puts it: “One Patient, One Health Summary, One Care Journey”.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00171",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "This Bill establishes a statutory framework governing how selected health information is collected, accessed, used and shared – not just for medical treatment but also for community health, preventive care and population well-being.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Dr Wan Rizal strongly supports the safeguard disallowing health data from being accessed or used for employment purposes.",
-   "speaker": "Dr Wan Rizal",
-   "quote": "I strongly support the safeguard in this Bill that disallows health data from being accessed or used for employment purposes.",
-   "verified": true
+   "label": "Health Information Bill and Woodlands project",
+   "summary": "The HIB lets essential health information follow patients and enables data sharing for programmes like Healthier SG and the Woodlands project.",
+   "sentences": [
+    {
+     "sid": "s00192",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "The HIB strengthens this foundation by ensuring that essential health information – medications, allergies, diagnoses – can follow the patient, not remain trapped in institutions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00193",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "It enables care teams across settings to work from a shared understanding and make better clinical decisions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00194",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "It also enables the sharing of health information outside the NEHR to support critical programmes, such as Healthier SG and Age Well SG.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00196",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "In Woodlands, the Health Promotion Board and the National Healthcare Group have embarked on the Improving Health in Woodlands Town Project, and it has my full support.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00197",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "It integrates health, social and community services using shared data dashboards to guide proactive care, from identifying at-risk residents or residents with chronic diseases and connecting them to health and social services to smoothening transitions from hospital to community and home care, to promoting healthy living and to partnering with grassroots organisations and communities to curate health-related activities and link up residents to relevant interventions, supported by Community Health Dashboards for local planning and progress monitoring.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Louis Chua says insurers cannot access NEHR directly, but asks whether transcription and audit clauses could let them access NEHR-derived information in clinical notes.",
-   "speaker": "Mr Chua Kheng Wee Louis",
-   "quote": "Today, insurers cannot access NEHR, but perhaps through transcription and audit clauses, they can access NEHR-derived information sitting in clinical notes.",
-   "verified": true
+   "label": "Authorised users accessing NEHR data",
+   "summary": "The Bill allows broad categories of authorised users to access NEHR data for healthcare and care coordination.",
+   "sentences": [
+    {
+     "sid": "s00211",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "The Bill allows broad categories of “authorised users” to access NEHR data for healthcare and care coordination.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Kenneth Tiong says a Bill that compels contribution must also come with robust ecosystem safeguards.",
-   "speaker": "Mr Kenneth Tiong Boon Kiat",
-   "quote": "a Bill that compels contribution must also come with robust ecosystem safeguards.",
-   "verified": true
+   "label": "Higher authorisation for sensitive records",
+   "summary": "Sensitive information such as mental health records should require higher-level authorisation or additional justification.",
+   "sentences": [
+    {
+     "sid": "s00215",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "Sensitive information, for instance, mental health records should require higher-level authorisation or additional justification.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Joan Pereira seeks comprehensive onboarding support for GPs, including shared staffing arrangements for small clinics.",
-   "speaker": "Ms Joan Pereira",
-   "quote": "comprehensive onboarding support for GPs, including innovative shared staffing arrangements for small clinics",
-   "verified": true
+   "label": "Prohibited uses of NEHR data",
+   "summary": "The Bill prohibits using NEHR data for employment and insurance eligibility, and indirect access or inference must be tightly controlled.",
+   "sentences": [
+    {
+     "sid": "s00218",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "The Bill rightly prohibits the use of NEHR data for employment and insurance eligibility.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00219",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "Indirect access or inference – for example, where doctors are asked for medical reports or insurers rely on clinical documentation – must be tightly controlled.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Kuah Boon Theng says the Workgroup she co-chaired completed its work and issued guidelines on national health records.",
-   "speaker": "Ms Kuah Boon Theng",
-   "quote": "The Workgroup, which I co-chaired, has since completed its work and issued a set of guidelines",
-   "verified": true
+   "label": "SingHealth patient data stolen",
+   "summary": "Personal particulars of 1.5 million SingHealth patients and outpatient dispensed medicine records of 160,000 patients were stolen.",
+   "sentences": [
+    {
+     "sid": "s00259",
+     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
+     "attributed": true,
+     "text": "The personal particulars of 1.5 million SingHealth patients, including the then Prime Minister Mr Lee Hsien Loong and the records of outpatient dispensed medicines belonging to 160,000 patients were stolen.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Dr Choo Pei Ling says allied health professionals play indispensable roles and should have access to relevant NEHR information.",
-   "speaker": "Dr Choo Pei Ling",
-   "quote": "AHPs – physiotherapists, radiographers, occupational therapists, speech and language therapists and radiation therapists – play indispensable roles in patient care and should have access to relevant NEHR information.",
-   "verified": true
+   "label": "Penalties under Part 2 Division 2",
+   "summary": "Failing to comply under Part 2, Division 2 brings a fine up to $20,000, imprisonment up to 12 months, or both, plus $1,000 daily for continuing offences.",
+   "sentences": [
+    {
+     "sid": "s00268",
+     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
+     "attributed": true,
+     "text": "Under Part 2, Division 2, failing to comply will lead to a fine not exceeding $20,000, or to imprisonment for a term not exceeding 12 months, or to both.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00269",
+     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
+     "attributed": true,
+     "text": "In the case of continuing offence after conviction, a daily fine of $1,000 applies.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Dr Haresh Singaraju says clause 99 protects those acting in good faith and with reasonable care but does not define what reasonable care looks like.",
-   "speaker": "Dr Haresh Singaraju",
-   "quote": "Clause 99 protects those who act in good faith and with reasonable care, but it does not define what reasonable care looks like.",
-   "verified": true
+   "label": "GP IT Enablement Grant limits",
+   "summary": "The GP IT Enablement Grant gives one-time subsidies for NEHR compatible systems but does not cover ongoing cyber security compliance maintenance costs.",
+   "sentences": [
+    {
+     "sid": "s00274",
+     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
+     "attributed": true,
+     "text": "Although the GP IT Enablement Grant offers one-time subsidies for adopting NEHR compatible system, as I understand, they do not cover the ongoing cost of maintaining cyber security compliance.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "David Hoe asks what assisted pathways will be available for residents who wish to understand and manage access restrictions.",
-   "speaker": "Mr David Hoe",
-   "quote": "I wonder what assisted pathways will be available for residents who wish to understand and also know how they can manage their access restrictions?",
-   "verified": true
+   "label": "Grant for small clinics",
+   "summary": "The Member asks whether the Minister will consider a grant for clinics with fewer than three full-time practitioners for ongoing HIB compliance.",
+   "sentences": [
+    {
+     "sid": "s00296",
+     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
+     "attributed": true,
+     "text": "Given the challenges I have highlighted above, will the Minister consider giving a grant for small clinics or practices with say, fewer than three full-time practitioners to assist the clinic or doctors in their ongoing compliance, with the HIB's cyber and data standards and practices?",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Dr Hamid Razak asks the Minister to confirm that NEHR is a supplementary clinical tool, not a mandatory step in every consultation.",
-   "speaker": "Dr Hamid Razak",
-   "quote": "Can the Minister confirm that the NEHR is positioned as a supplementary clinical tool, and not a mandatory step that must be accessed in every single consultation?",
-   "verified": true
+   "label": "SingHealth fines and HIB Section 66",
+   "summary": "PDPC fined SingHealth $250,000 and IHiS $750,000, totalling $1 million, and Section 66 of the HIB sets a fine not exceeding $1 million.",
+   "sentences": [
+    {
+     "sid": "s00312",
+     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
+     "attributed": true,
+     "text": "The Personal Data Protection Commission fined SingHealth $250,000 and its IT vendor, Integrated Health Information System (IHiS), $750,000, totalling $1 million for failing to protect 1.5 million patients' data.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00313",
+     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
+     "attributed": true,
+     "text": "Section 66 of the HIB states a fine not exceeding $1 million for organisations that fail in data security in handling of health and relevant information.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "In response, the Senior Minister of State says Synapxe is not a commercial entity.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "Synapxe is not a commercial entity.",
-   "verified": true
+   "label": "EU and California privacy penalties",
+   "summary": "The EU GDPR imposes fines up to 20 million euros or 4% of worldwide turnover, and the California Consumer Privacy Act allows class actions with statutory damages.",
+   "sentences": [
+    {
+     "sid": "s00322",
+     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
+     "attributed": true,
+     "text": "First, the European Union's (EU's) General Data Protection regulation imposes administrative fines of up to $20 million euros, or 4% of total worldwide annual turnover, whichever is higher.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00324",
+     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
+     "attributed": true,
+     "text": "For a tech giant or a global hospital chain, this could amount to hundreds of millions or billions of dollars.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00325",
+     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
+     "attributed": true,
+     "text": "This scales the penalty to the size of the entity, ensuring that the fine is never just a cost of doing business.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00326",
+     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
+     "attributed": true,
+     "text": "Another is the California Consumer Privacy Act, which allows for a private right of class action lawsuits with statutory damages between US$100 and US$750 per consumer per incident.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The Senior Minister of State says insurers and employers do not and will not have access to NEHR.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "insurers and employers do not and will not have access to NEHR.",
-   "verified": true
+   "label": "SingHealth case payout estimate",
+   "summary": "Applying California-style damages to the SingHealth case of 1.5 million victims would mean a payout of between $200 million and $1.5 billion.",
+   "sentences": [
+    {
+     "sid": "s00329",
+     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
+     "attributed": true,
+     "text": "If this is applied to the SingHealth case of 1.5 million victims, we will be looking at a payout of between $200 million and $1.5 billion.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The Senior Minister of State says there are no plans to expand the list of statutory medical examinations to employment-related screenings not necessary to protect the public and the individual.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "We have no plans to expand this list to include employment-related screenings that are not necessary to protect the public and the individual.",
-   "verified": true
+   "label": "Per person fine illustration",
+   "summary": "The Member suggests, for illustration, pegging a per person fine to BizFile charges of $33 or $50 per report or certificate.",
+   "sentences": [
+    {
+     "sid": "s00335",
+     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
+     "attributed": true,
+     "text": "By way of example, if you were to introduce say, a per person fine, similar to the approach in California – and of course, we must discuss this robustly before any decision is reached, how much this fine should be and the premises for arriving at the quantum – say, for illustrative purposes, we peg the fine per person's records to what we have to pay to acquire people's personal information from, say, the Accounting and Corporate Regulatory Authority's BizFile, where per report or certificate is charged at $33 or $50.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The Senior Minister of State says accessing patients' NEHR information is not compulsory under the Bill.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "Accessing patients' NEHR information is not compulsory under the HIB.",
-   "verified": true
+   "label": "Worker trust in health data",
+   "summary": "A labour Member focuses on worker trust and the safeguard disallowing health data use for employment purposes.",
+   "sentences": [
+    {
+     "sid": "s00346",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "As a labour Member, I rise today to focus on a pillar of this Bill that is essential to public confidence: worker trust, and in particular, the safeguard that disallows health data from being accessed or used for employment purposes.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The Senior Minister of State says support packages will defray costs of subscription to whitelisted HIB-compliant health information management systems.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "Our support package will include measures to defray costs of subscription to whitelisted HIB-compliant HIMS",
-   "verified": true
+   "label": "Support for employment safeguard",
+   "summary": "The Member states on record strong support for the Bill's safeguard disallowing health data access or use for employment purposes.",
+   "sentences": [
+    {
+     "sid": "s00351",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "And that is why legal safeguards matter, not just in theory, but in how workers experience the system.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00352",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "This is why I want to state clearly and on record that I strongly support the safeguard in this Bill that disallows health data from being accessed or used for employment purposes.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The Senior Minister of State says the Bill will commence in early 2027 to allow sufficient time for familiarisation.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "the Bill will commence in early 2027 to allow sufficient time for healthcare providers and professionals to familiarise themselves with the Bill's requirements.",
-   "verified": true
+   "label": "NEHR insurance employment prohibitions",
+   "summary": "The Bill's safeguards include specific prohibitions on NEHR access for insurance and employment purposes.",
+   "sentences": [
+    {
+     "sid": "s00366",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "The safeguards in this Bill include specific prohibitions on NEHR access for insurance and employment purposes.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The Senior Minister of State says guidance materials and dedicated support channels will be available from the second quarter of this year.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "guidance materials and dedicated support channels will be made available from the second quarter of this year",
-   "verified": true
+   "label": "Minister assurance on exceptions",
+   "summary": "The Member seeks the Minister's assurance that the exceptions list stays tightly scoped and is not expanded to general pre-employment screenings without oversight.",
+   "sentences": [
+    {
+     "sid": "s00373",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "These are strictly defined to prevent harm to the individual or to public interest.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00374",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "I seek the Minister's assurance that this list of exceptions will remain tightly scoped and will not be expanded to general pre-employment screenings without rigorous oversight.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "In a clarification, the Senior Minister of State says access to NEHR, even through EMR, will be logged as an access to NEHR.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "Access to NEHR, even through the EMR, will be logged as an access to NEHR.",
-   "verified": true
+   "label": "Health data and livelihoods",
+   "summary": "The Member says safeguards prohibiting health data use for employment purposes are important for workers, the self-employed and platform workers.",
+   "sentences": [
+    {
+     "sid": "s00390",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "Health data is intended to safeguard health, not to jeopardise livelihoods.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00391",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "Therefore, safeguards that prohibit the use of health data for employment purposes are extremely important, for workers, the self-employed, and platform workers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00392",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "No worker should fear that seeking medical care could be held against them at work.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Safeguard in trust framework",
+   "summary": "The Member calls the safeguard disallowing health data use for employment purposes a critical part of the trust framework.",
+   "sentences": [
+    {
+     "sid": "s00396",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "The safeguard disallowing the use of health data for employment purposes is a critical part of our trust framework.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00397",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "It reassures our workers that seeking care will not put their livelihoods at risk.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NEHR background data upload",
+   "summary": "Clause 30(7) shows patient information is uploaded to the NEHR in the background even when a restriction is in place, which MOH says ensures expeditious care.",
+   "sentences": [
+    {
+     "sid": "s00409",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "Notably, clause 30(7) reveals that even if a restriction is in place, a patient's information continues to be uploaded to the NEHR in the background.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00410",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "This, according to MOH, is in the interest of ensuring the expeditious provision of care should the patient wish to opt-in to the NEHR in the future or during an emergency situation.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Consent not required for sharing",
+   "summary": "Patient consent is not required for sharing such data between healthcare providers and public agencies under clause 50.",
+   "sentences": [
+    {
+     "sid": "s00421",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "Notably, patient consent is also not required for the sharing of such data between healthcare providers and public agencies as established under clause 50.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Access restriction and derived information",
+   "summary": "Clause 30(5)(a) states an access restriction does not preclude disclosure of NEHR records as derived information if the Minister grants approval.",
+   "sentences": [
+    {
+     "sid": "s00427",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "Type 1, which is information that is individually identifiable, as well as Type 2, data that is aggregated and anonymised.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00428",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "And it is worth noting that clause 30(5) paragraph (a) states that \"The imposition of an access restriction does not preclude one's NEHR records, be it individually identifiable or anonymised from being disclosed as derived information, if an approval is granted by the Minister.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Taiwan and EU patient restrictions",
+   "summary": "Taiwan and the EU have enacted regulations empowering patients to restrict use of their identifiable health data for secondary purposes.",
+   "sentences": [
+    {
+     "sid": "s00435",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "For instance, both Taiwan and the EU have enacted regulations empowering patients to restrict the use of their identifiable health data for secondary purposes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "DeepMind and Royal Free agreement",
+   "summary": "In 2015 the Royal Free and HS Foundation Trust signed an agreement with Google DeepMind allowing analysis of sensitive information on 1.6 million patients.",
+   "sentences": [
+    {
+     "sid": "s00440",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "Back in 2015, in the United Kingdom, the Royal Free and HS Foundation Trust in London signed an agreement with Google DeepMind.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00441",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "This allowed the British AI firm to analyse sensitive information on 1.6 million patients who uses the TRUST hospitals each year.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SMA survey on NEHR awareness",
+   "summary": "A 2018 Singapore Medical Association survey found only 50% of respondents had heard of the NEHR and 14.9% fully understood it.",
+   "sentences": [
+    {
+     "sid": "s00451",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "A 2018 Singapore Medical Association survey revealed that only 50% of respondents heard about the NEHR and 14.9% fully understood what the NEHR was back then.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public understanding of NEHR",
+   "summary": "A well-functioning healthcare system requires more than 15% of people fully understanding what the NEHR is.",
+   "sentences": [
+    {
+     "sid": "s00459",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "More importantly, we cannot have a well-functioning healthcare system if only 15% of people fully understood what the NEHR is.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bill access restriction clauses",
+   "summary": "The Bill introduces Access Restrictions under clause 29, exceptions in clause 30, and management process in clause 31.",
+   "sentences": [
+    {
+     "sid": "s00468",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "The Bill introduces Access Restrictions under clause 29, with exceptions in clause 30, and the process for managing them in clause 31.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Class 2 Access Restrictions",
+   "summary": "Clause 29 allows Class 2 Access Restrictions to be prescribed by information type, user class, purpose and time period.",
+   "sentences": [
+    {
+     "sid": "s00475",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "Clause 29 allows Class 2 Access Restrictions to be prescribed by information type, user class, purpose and time period.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Impact on solo GPs",
+   "summary": "The question asks whether MOH assessed the full financial and operational impact on solo GPs from onboarding to ongoing cybersecurity obligations.",
+   "sentences": [
+    {
+     "sid": "s00499",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "Has MOH assessed the full financial and operational impact on solo GPs, from onboarding to ongoing cybersecurity obligations?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Measurable usability improvements commitment",
+   "summary": "The question asks if MOH will commit to measurable usability improvements so less clutter becomes a performance obligation.",
+   "sentences": [
+    {
+     "sid": "s00502",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "Will MOH commit to measurable usability improvements, such as time-to-find critical information, structured clinical summaries and clinician user experience testing so that \"less clutter\" becomes a performance obligation rather than an aspiration?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Preventing vendor fearmongering",
+   "summary": "The question asks how MOH will prevent digital medical records vendors from fearmongering and profiteering to push small clinics into expensive contracts.",
+   "sentences": [
+    {
+     "sid": "s00511",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "How will MOH prevent digital medical records vendors from engaging in fearmongering and profiteering, pushing small clinics into expensive contracts out of fear of non-compliance?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tiered risk-based safeguards definition",
+   "summary": "Asks how reasonable safeguards under clause 68 will be defined in a tiered, risk-based way.",
+   "sentences": [
+    {
+     "sid": "s00522",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "How will reasonable safeguards under clause 68 be defined in a tiered, risk-based way?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Breach notification and resident support",
+   "summary": "Asks when residents will be notified of a breach, what information they receive and what practical support is provided.",
+   "sentences": [
+    {
+     "sid": "s00527",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "If a breach occurs, when will residents be notified, what information will they receive and what practical support will be provided to help them protect themselves and restore trust?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Trust and implementation commitments",
+   "summary": "Calls on the Government to anchor implementation in commitments on access controls, support for heartland clinics and shared cybersecurity.",
+   "sentences": [
+    {
+     "sid": "s00540",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "Trust is the infrastructure that makes every other system work.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00541",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "I call on the Government to ensure that as this Bill moves forward, implementation is anchored in three clear commitments: access controls that residents can understand and use; support that keeps heartland clinics viable and affordable; and cybersecurity that is strong, proportionate and shared across the system.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Statutory framework for medical data",
+   "summary": "The Bill establishes a statutory framework to consolidate key medical data into an integrated, longitudinal health record view.",
+   "sentences": [
+    {
+     "sid": "s00544",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "attributed": true,
+     "text": "The Bill establishes a statutory framework to consolidate key medical data into an integrated, longitudinal view of an individual's health record.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NEHR access and private provider contribution",
+   "summary": "A CGH doctor can view SGH medical summary information via the NEHR, and private healthcare providers will be mandated to contribute.",
+   "sentences": [
+    {
+     "sid": "s00548",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "attributed": true,
+     "text": "Following that, if you were to visit the Changi General Hospital (CGH), perhaps to see a specialist for a different medical issue, the CGH doctor will be able to use the NEHR to view the medical summary information of your SGH visit.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00549",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "attributed": true,
+     "text": "However, with this Bill, private healthcare providers will now also be mandated to contribute to the NEHR.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Thirteen health information types",
+   "summary": "There are 13 types of health information, but only acute hospital service providers must contribute to all 13.",
+   "sentences": [
+    {
+     "sid": "s00559",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "attributed": true,
+     "text": "Altogether, there are 13 different types of health information, though only the providers of acute hospital service need to contribute to all 13.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NEHR records and patient blocking",
+   "summary": "Healthcare information from every medical visit and treatment in Singapore will be recorded in the NEHR, but patients can block other providers' access.",
+   "sentences": [
+    {
+     "sid": "s00575",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "attributed": true,
+     "text": "In other words, healthcare information about every medical visit and treatment in Singapore will be recorded in the NEHR, but patients can block other healthcare providers from having access to that information.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Notifiable data breach definition",
+   "summary": "Clause 77 defines a notifiable data breach as one causing or likely to cause significant harm or being of significant scale.",
+   "sentences": [
+    {
+     "sid": "s00587",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "attributed": true,
+     "text": "Clause 77 identifies what is a \"notifiable data breach\", namely, a breach which \"(a) results in, or is likely to result in, significant harm to an affected individual; or (b) is, or is likely to be, of a significant scale\".",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00588",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "attributed": true,
+     "text": "Can I then ask the Minister to clarify how the Ministry intends to define \"significant harm\" and \"significant scale” and why it has settled on such a standard?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NEHR access and commercial research",
+   "summary": "The member asks whether NEHR healthcare information will be made available to private, academic or other sectors and whether the Bill regulates this.",
+   "sentences": [
+    {
+     "sid": "s00592",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "attributed": true,
+     "text": "Here, my question is whether the Government intends to make healthcare information in the NEHR available to the private, academic or any other sectors and whether the current Bill makes provisions to regulate such a possibility?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00594",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "attributed": true,
+     "text": "Moreover, if the data is used for commercial research, the Government should consider a \"Social Dividend\" which ensures that the benefits return to the people.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bill's NEHR framework purposes",
+   "summary": "The Bill will govern the NEHR framework to enable more effective clinical care, improve coordination and consolidate care across healthcare settings.",
+   "sentences": [
+    {
+     "sid": "s00601",
+     "speaker": "Mr Alex Yeo (Potong Pasir)",
+     "attributed": true,
+     "text": "I make this declaration, as I will be addressing certain points relating to the \"excluded purposes\" contained in clause 6 of the Bill.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00602",
+     "speaker": "Mr Alex Yeo (Potong Pasir)",
+     "attributed": true,
+     "text": "This Bill will govern the framework of our NEHR to: one, enable more effective clinical care; two, improve coordination; and three, consolidate care across different healthcare settings.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Compulsory NEHR upload without consent",
+   "summary": "The Bill does not require patient agreement to upload key health information onto the NEHR and makes it compulsory for healthcare providers.",
+   "sentences": [
+    {
+     "sid": "s00618",
+     "speaker": "Mr Alex Yeo (Potong Pasir)",
+     "attributed": true,
+     "text": "Set against this background, the Bill however, does not require patient agreement to upload the key health information onto the NEHR.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00619",
+     "speaker": "Mr Alex Yeo (Potong Pasir)",
+     "attributed": true,
+     "text": "In fact, it makes it compulsory for healthcare providers to do so.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NEHR access for employment and insurance",
+   "summary": "These are the situations when the NEHR is accessed for employment or insurance purposes, including hiring, promotion, termination, insuring and claims.",
+   "sentences": [
+    {
+     "sid": "s00627",
+     "speaker": "Mr Alex Yeo (Potong Pasir)",
+     "attributed": true,
+     "text": "As things stand, these are when accessing the NEHR for: one, employment; or two, insurance purposes which include when an employer decides to employ, promote or terminate an employee and when an insurer decides whether to insure, continue or renew a policy and during the processing of claims.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "No consent option for excluded purposes",
+   "summary": "The Bill as it stands gives no option for individuals to consent to healthcare providers accessing NEHR for excluded purposes.",
+   "sentences": [
+    {
+     "sid": "s00637",
+     "speaker": "Mr Alex Yeo (Potong Pasir)",
+     "attributed": true,
+     "text": "For example, this could be for medical histories of heart conditions or cancers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00638",
+     "speaker": "Mr Alex Yeo (Potong Pasir)",
+     "attributed": true,
+     "text": "However, as the Bill currently stands, there is no such option.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00639",
+     "speaker": "Mr Alex Yeo (Potong Pasir)",
+     "attributed": true,
+     "text": "Even if an individual wishes to consent, the healthcare provider is not permitted to access NEHR for the excluded purposes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Court-ordered NEHR access in disputes",
+   "summary": "In a legal dispute between insurer and insured, the Court can order access to a party's NEHR records during discovery.",
+   "sentences": [
+    {
+     "sid": "s00642",
+     "speaker": "Mr Alex Yeo (Potong Pasir)",
+     "attributed": true,
+     "text": "If a legal dispute arises in the Courts between an insurer and insured, say, on issues relating to the non-declaration of relevant medical history, the Court can order access to a party’s NEHR records as part of the discovery of evidence process.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Start current approach, review later",
+   "summary": "A suggestion is to start with the current approach and review it as the ecosystem takes shape after implementation.",
+   "sentences": [
+    {
+     "sid": "s00650",
+     "speaker": "Mr Alex Yeo (Potong Pasir)",
+     "attributed": true,
+     "text": "Perhaps we could start with the current approach and review this as the ecosystem takes shape after implementation.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Three sets of concerns raised",
+   "summary": "The speaker lists three concerns: cybersecurity burden on small providers, uploading sensitive data despite objections, and insurance loopholes.",
+   "sentences": [
+    {
+     "sid": "s00654",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "From my conversations with practitioners and from my reading of the Bill, I have three sets of concerns: (a) the disproportionate cybersecurity burden on small providers; (b) the uploading of sensitive medical information despite patient objections; and (c) possible insurance loopholes that may render our privacy protections ineffective.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Obligations and penalties for licensees",
+   "summary": "The Bill designates all Healthcare Services Act licensees as relevant persons facing the same obligations, with fines up to $1 million for entities.",
+   "sentences": [
+    {
+     "sid": "s00657",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "The Bill designates all Healthcare Services Act licensees – from tertiary hospitals employing thousands to single-doctor GP clinics in HDB heartlands – as \"relevant persons\" under section 64.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00658",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "All face the same statutory obligations: to implement reasonable controls for secure processing, reasonable safeguards against unauthorised access and cybersecurity protections under sections 66 and 68.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00659",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "The penalties for non-compliance are severe; fines up to $200,000 or two years' imprisonment for individuals, and up to $1 million for other entities.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Question on funding support scope",
+   "summary": "The speaker asks the Ministry to elaborate on the scope and quantum of funding support.",
+   "sentences": [
+    {
+     "sid": "s00672",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "First, would the Ministry elaborate on the scope and quantum of funding support?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Funding guidelines before Bill",
+   "summary": "Asks whether MOH would publish funding guidelines, eligibility criteria and application timeline before the Bill takes effect from early 2027.",
+   "sentences": [
+    {
+     "sid": "s00678",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "Would MOH publish clear funding guidelines, eligibility criteria and the application timeline before the Bill takes effect from early 2027?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Calibrated enforcement framework",
+   "summary": "Asks whether MOH would consider a calibrated enforcement framework accounting for clinic size and capacity.",
+   "sentences": [
+    {
+     "sid": "s00684",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "Third, would MOH consider a calibrated enforcement framework that accounts for clinic size and capacity?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Support beyond healthcare providers",
+   "summary": "Asks whether MOH would extend support packages to community partners, data systems, staff training and data security compliance.",
+   "sentences": [
+    {
+     "sid": "s00692",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "Would MOH extend support packages beyond healthcare providers to include community partners, funding secure data systems, staff training and compliance with data security requirements?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "National Electronic Health Record Guidelines Workgroup",
+   "summary": "MOH appointed the National Electronic Health Record Guidelines Workgroup, which issued guidelines on professional responsibilities for national health records.",
+   "sentences": [
+    {
+     "sid": "s00705",
+     "speaker": "Ms Kuah Boon Theng (Nominated Member)",
+     "attributed": true,
+     "text": "Through various stakeholder consultations, the Ministry came to realise that many medical practitioners had concerns about the potential increase in medico-legal liabilities arising from the mandatory contribution of health information and the wider accessibility of that information to other healthcare providers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00706",
+     "speaker": "Ms Kuah Boon Theng (Nominated Member)",
+     "attributed": true,
+     "text": "And so, in late 2022/early 2023, the Ministry appointed the National Electronic Health Record Guidelines Workgroup and tasked the Workgroup to come up with a set of guidelines that would provide clarity on the professional responsibilities and obligations of healthcare professionals in terms of their contribution to, access and use of our national health records.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00707",
+     "speaker": "Ms Kuah Boon Theng (Nominated Member)",
+     "attributed": true,
+     "text": "The Workgroup, which I co-chaired, has since completed its work and issued a set of guidelines setting out the core ethical principles relating to our national health records, and proposing reasonable professional standards to be observed by all contributors and users.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Patient autonomy and access restrictions",
+   "summary": "The Bill addresses patient autonomy and sensitivities, providing access restrictions and barring access for employment or insurance purposes.",
+   "sentences": [
+    {
+     "sid": "s00711",
+     "speaker": "Ms Kuah Boon Theng (Nominated Member)",
+     "attributed": true,
+     "text": "We also took into account the interests of patients, the need to respect their autonomy in terms of who they would grant access to their national health records and the sensitivities associated with certain types of health information, for example, conditions that are stigmatising or affect employment opportunities or one's insurability.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00712",
+     "speaker": "Ms Kuah Boon Theng (Nominated Member)",
+     "attributed": true,
+     "text": "I am heartened to see that these issues have been specifically addressed in the Bill, which provides for access restrictions and makes it clear that access to our national health records should not be for employment or insurance purposes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Flexibility for teething problems",
+   "summary": "Senior Ministry officers signalled flexibility and allowances for non-compliance due to teething problems during initial stages.",
+   "sentences": [
+    {
+     "sid": "s00720",
+     "speaker": "Ms Kuah Boon Theng (Nominated Member)",
+     "attributed": true,
+     "text": "I can attest to the fact that senior Ministry officers who were present to hear these concerns from the ground have been extremely understanding and reassuring.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00721",
+     "speaker": "Ms Kuah Boon Theng (Nominated Member)",
+     "attributed": true,
+     "text": "They have signalled that flexibility will be exercised and allowances given in the event of non-compliance due to teething problems during the initial stages, and these problems could include delays in implementing adequate systemic safeguards.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Health information sharing legal framework",
+   "summary": "The HIB establishes a legal framework for secure health information sharing across Singapore's healthcare ecosystem.",
+   "sentences": [
+    {
+     "sid": "s00725",
+     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
+     "attributed": true,
+     "text": "The HIB before us is a landmark piece of legislation.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00726",
+     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
+     "attributed": true,
+     "text": "It establishes a robust legal framework for secure health information sharing across our healthcare ecosystem and this will shape the way Singapore delivers care for decades to come.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bill effective date 2027",
+   "summary": "The Bill takes effect from 2027, giving healthcare providers time to adopt support measures and comply.",
+   "sentences": [
+    {
+     "sid": "s00739",
+     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
+     "attributed": true,
+     "text": "The Bill takes effect from 2027, providing healthcare providers time to adopt support measures and comply with requirements.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Private community healthcare organisations inclusion",
+   "summary": "Private community healthcare organisations should be progressively included in the Fourth Schedule as they mature.",
+   "sentences": [
+    {
+     "sid": "s00747",
+     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
+     "attributed": true,
+     "text": "Further, as private community healthcare organisations mature in governance and systems, they should be progressively included in the Fourth Schedule of the Bill.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Data breach reporting requirements",
+   "summary": "Healthcare providers must report data breaches to MOH and affected individuals if they cause significant harm.",
+   "sentences": [
+    {
+     "sid": "s00760",
+     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
+     "attributed": true,
+     "text": "Healthcare providers must report data breaches to MOH and affected individuals if the breaches result in significant harm.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bill benefits and patient privacy",
+   "summary": "The Bill can deliver benefits while protecting patient privacy and maintaining trust through support and safeguards.",
+   "sentences": [
+    {
+     "sid": "s00768",
+     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
+     "attributed": true,
+     "text": "With targeted support for community practitioners, robust data transition frameworks, enhanced support for AHPs and clear safeguards for smaller data breaches, this Bill can deliver genuine benefits while protecting patient privacy and maintaining trust.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Offence to access NEHR",
+   "summary": "Clause 38 makes it an offence to access the NEHR for these purposes.",
+   "sentences": [
+    {
+     "sid": "s00778",
+     "speaker": "Dr Haresh Singaraju (Nominated Member)",
+     "attributed": true,
+     "text": "Clause 38 makes it an offence to access the NEHR, for these purposes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Guidance on reasonable access",
+   "summary": "Asks the Minister to commit to developing guidance, with the profession, on what constitutes reasonable access and review.",
+   "sentences": [
+    {
+     "sid": "s00794",
+     "speaker": "Dr Haresh Singaraju (Nominated Member)",
+     "attributed": true,
+     "text": "Others will under-access, afraid of what they might find.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00795",
+     "speaker": "Dr Haresh Singaraju (Nominated Member)",
+     "attributed": true,
+     "text": "I ask the Minister: will the Ministry commit to facilitating and supporting the development of clear, practical guidance, in consultation with the profession, on what constitutes reasonable access and review?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Support for smaller practices",
+   "summary": "Asks the Minister whether there will be dedicated, sustained support for smaller practices.",
+   "sentences": [
+    {
+     "sid": "s00807",
+     "speaker": "Dr Haresh Singaraju (Nominated Member)",
+     "attributed": true,
+     "text": "If we expect doctor-patient relationships to last decades, the support must last too.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00808",
+     "speaker": "Dr Haresh Singaraju (Nominated Member)",
+     "attributed": true,
+     "text": "I ask the Minister: will there be dedicated, sustained support for smaller practices?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Portability and care relationships",
+   "summary": "Asks what measures will ensure portability reinforces, rather than weakens, the care relationships Healthier SG seeks to build.",
+   "sentences": [
+    {
+     "sid": "s00819",
+     "speaker": "Dr Haresh Singaraju (Nominated Member)",
+     "attributed": true,
+     "text": "Episodic care from whichever provider is nearest, cheapest or most convenient, leading to wasted resources.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00820",
+     "speaker": "Dr Haresh Singaraju (Nominated Member)",
+     "attributed": true,
+     "text": "I ask the Minister: what measures will ensure that portability reinforces, rather than weakens, the care relationships Healthier SG seeks to build?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NEHR legal footing",
+   "summary": "States the Bill puts the NEHR system on a clearer legal footing, including governance of access, use and safeguards.",
+   "sentences": [
+    {
+     "sid": "s00834",
+     "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
+     "attributed": true,
+     "text": "It also lowers the risk of missed allergies, drug interactions and also unnecessary repeated tests that cost time, money and anxiety.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00835",
+     "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
+     "attributed": true,
+     "text": "This Bill puts the NEHR system on a clearer legal footing, including governance of access, use and safeguards.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NEHR not for employers",
+   "summary": "Says it is important to reassure Singaporeans that MOH has stated NEHR information is for clinical care and not accessible by employers or insurers.",
+   "sentences": [
+    {
+     "sid": "s00848",
+     "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
+     "attributed": true,
+     "text": "In addition, it is important to reassure Singaporeans clearly by proactively communicating the following, that MOH has stated that NEHR's information is for clinical care and is not accessible by employers or insurers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Accesses outside NEHR history",
+   "summary": "Explains that accesses made to records in doctors' own EMR systems are not included in the NEHR Access History.",
+   "sentences": [
+    {
+     "sid": "s00857",
+     "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
+     "attributed": true,
+     "text": "Accesses made to your records in their own EMR systems are not included in the National Electronic Health Record Access History.\" In plain English, what it means is that sometimes doctors and nurses, they see your records through their own systems rather than the NEHR.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Encouraging compliance in core data",
+   "summary": "MOH is asked how it would encourage strong compliance in everyday operations for core data such as medication lists, vaccinations and dental notes.",
+   "sentences": [
+    {
+     "sid": "s00865",
+     "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
+     "attributed": true,
+     "text": "In our case, beyond reporting required by law, how would MOH encourage strong compliance in the everyday operations, that is required in the core data that is reflected in our Bill, such as medication list, vaccinations administered and also dental notes, and so on.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Support for smaller providers",
+   "summary": "A member asks that transition timelines consider smaller providers' capacity and that implementation support be sustained beyond the launch period.",
+   "sentences": [
+    {
+     "sid": "s00868",
+     "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
+     "attributed": true,
+     "text": "Cybersecurity audit and reporting obligations are necessary, but they are operationally demanding.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00869",
+     "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
+     "attributed": true,
+     "text": "Smaller clinics and some community providers may need more time and practical support to meet new requirements properly.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00870",
+     "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
+     "attributed": true,
+     "text": "From my own experience in procuring cyber security services in different roles, significant time and effort goes into spelling out the requirements, finding the right provider, implementing and ensuring user adoption, all that to say, it requires time.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00871",
+     "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
+     "attributed": true,
+     "text": "I therefore hope that the implementation of this Bill will be accompanied by the reassurance that: one, transition timelines will take into account of capacity of smaller providers; two, implementation support will be sustained and ongoing beyond simply the launch period.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Information generated overseas",
+   "summary": "The Ministry's view is sought on information generated overseas, which will not automatically be captured in the national health record system.",
+   "sentences": [
+    {
+     "sid": "s00875",
+     "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
+     "attributed": true,
+     "text": "For instance, with the initiative such as the Johor-Singapore Special Economic Zone and the MOU on Corporation in Health signed in December 2025, I think we are likely to see closer health linkages and maybe more Singaporeans might go up north for medical screening and treatments in the near future.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00876",
+     "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
+     "attributed": true,
+     "text": "However, information generated overseas will not automatically be captured in our national health record system, so I would like to seek the Ministry's view on information generated overseas.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NEHR as supplementary tool",
+   "summary": "The Minister is asked to confirm that the NEHR is a supplementary clinical tool and not a mandatory step in every consultation.",
+   "sentences": [
+    {
+     "sid": "s00889",
+     "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
+     "attributed": true,
+     "text": "Can the Minister confirm that the NEHR is positioned as a supplementary clinical tool, and not a mandatory step that must be accessed in every single consultation?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Prohibited employment and insurance access",
+   "summary": "The Bill explicitly prohibits access for employment and insurance purposes, except in narrowly defined statutory medical examinations.",
+   "sentences": [
+    {
+     "sid": "s00911",
+     "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
+     "attributed": true,
+     "text": "Crucially, the Bill explicitly prohibits access for employment and insurance purposes, except in narrowly defined statutory medical examinations.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Patient access visibility and restrictions",
+   "summary": "Patients can see who accessed their records, restrict access and flag misuse, while critical health information and emergency access remain available.",
+   "sentences": [
+    {
+     "sid": "s00914",
+     "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
+     "attributed": true,
+     "text": "Patients will be able to see who has accessed their records, restrict access where appropriate, and flag potential misuse.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00916",
+     "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
+     "attributed": true,
+     "text": "Even when patients apply restrictions, a core set of critical health information, and full access in genuine medical emergencies, will remain available.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Safeguards for patient trust",
+   "summary": "The passage states safeguards protect patient dignity and trust, and that providers and patients must trust the healthcare system.",
+   "sentences": [
+    {
+     "sid": "s00923",
+     "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
+     "attributed": true,
+     "text": "Such safeguards are critical in protecting dignity and sustaining trust, especially for patients who already feel vulnerable at the point of care.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00924",
+     "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
+     "attributed": true,
+     "text": "It is about ensuring that clinicians have the right information at the right time, that patients retain dignity, privacy and autonomy, and that trust remains the foundation of our healthcare system.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00926",
+     "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
+     "attributed": true,
+     "text": "For any healthcare system to function well, healthcare providers must trust the system, patients must trust the system and the healthcare system must be worthy of that trust.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00927",
+     "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
+     "attributed": true,
+     "text": "With the safeguards for patients, clarity for providers, and support for implementation, I support this Bill.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Penalties for unauthorised NEHR access",
+   "summary": "The HIB stiffens penalties for unauthorised NEHR access, with first-time offences fined up to $50,000 and/or two years' imprisonment, doubled for repeat offenders.",
+   "sentences": [
+    {
+     "sid": "s00953",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "With the HIB, we are enhancing the legislative safeguards and stiffening penalties for unauthorised access.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00954",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "First-time offences of unauthorised access of NEHR are punishable with a maximum fine of $50,000 and/or up to two years' imprisonment upon conviction.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00955",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "And the penalty is doubled for repeat offenders.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NEHR Access History feature",
+   "summary": "Patients will be told of instances when their NEHR information was accessed over the preceding 12 months through the HealthHub 'NEHR Access History' feature.",
+   "sentences": [
+    {
+     "sid": "s00968",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "In addition, instances when a patient's NEHR information is accessed over the preceding 12 months will be made known to him through the \"NEHR Access History\" feature in the HealthHub application.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Access Restrictions for patients",
+   "summary": "The HIB will allow patients to restrict healthcare providers from accessing their NEHR information, called 'Access Restrictions' in the Bill.",
+   "sentences": [
+    {
+     "sid": "s00985",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "To assuage the concerns of these patients, the HIB will allow patients to restrict healthcare providers from accessing their NEHR information or we call this \"Access Restrictions\" in the Bill.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Scope of Access Restrictions",
+   "summary": "Patients may restrict all providers, or from the second half of 2026 limit access to select providers, except essential allergy and vaccination records.",
+   "sentences": [
+    {
+     "sid": "s00998",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Patients may, however, restrict access to all healthcare providers, or from the second half of 2026, limit access so that only select healthcare providers, such as their own Healthier SG clinic, may access their NEHR information.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00999",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Whilst in place, restricted healthcare providers will not be able to, unless required by other written law, access the patient's NEHR information, except for the essential subset of records that cover allergies and vaccination records.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Insurers and employers excluded",
+   "summary": "The passage states that insurers and employers do not and will not have access to NEHR.",
+   "sentences": [
+    {
+     "sid": "s01007",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "First, insurers and employers do not and will not have access to NEHR.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Scope of statutory medical examinations",
+   "summary": "The Bill's list of statutory medical examinations is tightly scoped to those where NEHR access is necessary to protect the public and safeguard individual health.",
+   "sentences": [
+    {
+     "sid": "s01011",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "The list of statutory medical examinations that is in the Bill is tightly scoped to those where NEHR access is necessary to protect the public and safeguard the health of the individual.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NEHR insurance and employment checks",
+   "summary": "NEHR must not be accessed for insurance- and employment-related checks.",
+   "sentences": [
+    {
+     "sid": "s01017",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "NEHR must not be accessed for such insurance- and employment-related checks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Healthcare providers contribute health information",
+   "summary": "The Bill requires healthcare providers to contribute accurate and complete health information in a timely manner.",
+   "sentences": [
+    {
+     "sid": "s01028",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "The Bill requires healthcare providers to contribute accurate and complete health information in a timely manner.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Prison inmates health information contribution",
+   "summary": "All Singaporeans' key health information, including those under the care of the Singapore Prison Service, will be contributed to NEHR.",
+   "sentences": [
+    {
+     "sid": "s01036",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "To Dr Hamid's query on whether populations who receive care outside the conventional system, such as prison inmates, would benefit from the Bill, I would like to assure the Member that all Singaporeans key health information, including those under the care of the Singapore Prison Service, will be contributed to NEHR.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Consultation before changing NEHR access scope",
+   "summary": "Before changing the scope of providers that may access NEHR, relevant stakeholders will be consulted and changes publicly communicated through the MOH website.",
+   "sentences": [
+    {
+     "sid": "s01048",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Prior to changing the scope of providers that may access NEHR, we will consult relevant stakeholders and publicly communicate the changes through the MOH website.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "De-identified NEHR data for research",
+   "summary": "De-identified NEHR health information may be shared through established platforms such as TRUST under the National Research Foundation for research purposes.",
+   "sentences": [
+    {
+     "sid": "s01064",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "De-identified NEHR health information may be shared through established platforms such as TRUST under the National Research Foundation for research purposes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "",
+   "summary": "",
+   "sentences": [
+    {
+     "sid": "s01067",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Primarily, NEHR is for continuity of care and for public health purposes, not for commercial purposes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "",
+   "summary": "",
+   "sentences": [
+    {
+     "sid": "s01072",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "NEHR is subject to security and resilience audits, with vulnerability scans, penetration tests and exercises carried out regularly to ensure that systems are secure and backup systems are operational in the event of a downtime.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "",
+   "summary": "",
+   "sentences": [
+    {
+     "sid": "s01089",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Healthcare providers will be required to notify MOH and affected individuals of significant data breaches.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "",
+   "summary": "",
+   "sentences": [
+    {
+     "sid": "s01093",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "To Mr Fadli Fawzi's query on how significant harm will be defined, if a data breach causes or is likely to cause significant harm to an individual, for example, if it involves disclosure of health information that may be deemed more sensitive, healthcare providers must notify the affected individuals on or after notifying MOH.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "",
+   "summary": "",
+   "sentences": [
+    {
+     "sid": "s01100",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Our support package will include measures to defray costs of subscription to whitelisted HIB-compliant HIMS to digitalise their clinical records and to contribute data to NEHR more seamlessly.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "",
+   "summary": "",
+   "sentences": [
+    {
+     "sid": "s01114",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Today, about 1,100 Healthier SG clinics are onboard suitable Clinic Management Systems and contribute to NEHR.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bill commencement and transition support",
+   "summary": "The Bill commences in early 2027, with guidance materials and support channels from the second quarter of this year, and MOH will consider compliance challenges case by case.",
+   "sentences": [
+    {
+     "sid": "s01127",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "First, the Bill will commence in early 2027 to allow sufficient time for healthcare providers and professionals to familiarise themselves with the Bill's requirements.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01128",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Second, to support their transition, guidance materials and dedicated support channels will be made available from the second quarter of this year to help providers and professionals understand their options and navigate the process.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01129",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Third, should there be challenges complying with the Bill by the required timelines, MOH will consider the facts of each case carefully and assist where appropriate.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Guidelines for NEHR access",
+   "summary": "MOH will publish guidelines to support healthcare professionals' appropriate access and use of NEHR information.",
+   "sentences": [
+    {
+     "sid": "s01133",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "MOH will publish a set of guidelines to support healthcare professionals' appropriate access and use of NEHR information.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cybersecurity insurance and GP flexibility",
+   "summary": "MOH will consider cybersecurity insurance, intends funding support and whitelisting for senior or smaller GPs, but avoids different cybersecurity standards based on clinic size.",
+   "sentences": [
+    {
+     "sid": "s01177",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "In terms of cybersecurity insurance, this is something we certainly will consider, but today, unfortunately, there is not a very mature market for cybersecurity insurance, specifically for GPs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01179",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Second, about flexibility for senior GPs or smaller GPs.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01180",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "We do intend to provide for them, including funding support, whitelisting service providers and the different mentioned systems.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01181",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "But I think what we want to avoid is having different standards of cybersecurity and data security requirements for different clinics based on the size.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01182",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "I think that is not the sensible and practical way to do it, as mentioned by different Members earlier.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01183",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "It is about making sure that different clinics and different touch points to the NEHR system meet the appropriate level of cybersecurity and data security requirements and finding ways of uplifting the different GPs and we will certainly do so in the coming months and years.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NEHR use for insurance prohibited",
+   "summary": "MOH will work with MAS, and the HIB prohibits use and access of NEHR information for employment and insurance purposes.",
+   "sentences": [
+    {
+     "sid": "s01190",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "We will certainly work closely with MAS as the regulator for the insurance industry.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01191",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "But I think, it is quite clear, the principle and approach under the HIB is that we prohibit the use and access of NEHR information for employment and insurance purposes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NEHR access logging through EMR",
+   "summary": "Access to NEHR through the EMR will be logged as NEHR access, while accessing records on institutions' own EMR is separate.",
+   "sentences": [
+    {
+     "sid": "s01198",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Access to NEHR, even through the EMR, will be logged as an access to NEHR.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01199",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "But accessing a patient's records on the healthcare institutions' own EMR system is separate.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Citation year changed to 2026",
+   "summary": "The citation year \"2025\" will be changed to \"2026\" as indicated in the Order Paper Supplement.",
+   "sentences": [
+    {
+     "sid": "s01203",
+     "speaker": "The Chairman",
+     "attributed": true,
+     "text": "The citation year \"2025\" will be changed to \"2026\" as indicated in the Order Paper Supplement.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "what_happens_next": "The Bill is intended to commence from early 2027, and MOH will announce further implementation details soon.",
- "not_said": [
-  "Whether the maximum fine of $1 million is sufficient to deter large healthcare organisations.",
-  "How MOH will ensure insurers cannot obtain NEHR-derived information through clinical notes or audit clauses.",
-  "What the exact funding quantum and eligibility criteria will be for small GP clinics.",
-  "Whether cybersecurity insurance will be offered to small providers.",
-  "How patients who are not digitally confident will be assisted to place or manage Access Restrictions.",
-  "When and whether community health partners beyond public entities will be added to the Fourth Schedule.",
-  "How overseas medical records will be treated in the NEHR.",
-  "What constitutes 'reasonable access' to NEHR for clinicians in practice.",
-  "How data breach notification thresholds will apply to smaller breaches.",
-  "Whether the list of statutory medical examinations will remain tightly scoped over time."
- ],
- "_dropped": [],
  "_meta": {
+  "schema": 4,
+  "id": "bill-773+774+775",
+  "group": "bill",
+  "year": "2026",
+  "sitting_dates": [
+   "2026-01-12"
+  ],
   "report_ids": [
    "bill-773",
    "bill-774",
    "bill-775"
   ],
-  "sitting_dates": [
-   "2026-01-12"
-  ],
-  "group": "bill",
-  "source_words": 32274,
-  "transcript_truncated": true,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "bill-773+774+775",
-  "schema": 2
+  "sentences_total": 1203,
+  "sentences_selected": 178,
+  "sentences_in_sections": 178,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 30,
+  "sections_total": 114,
+  "selection_share": 0.148,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 114,
+   "sections_without_summary": [
+    102,
+    103,
+    104,
+    105,
+    106,
+    107
+   ],
+   "sections_without_sentences": [],
+   "sentences_published": 178,
+   "sentences_selected": 178,
+   "turns_cited": 21,
+   "turns_total": 28,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T05:37:28"
+  },
+  "usage": {
+   "calls": 58,
+   "prompt_tokens": 55159,
+   "completion_tokens": 6295,
+   "estimated": false,
+   "cost_usd": 0.009485
+  }
  }
 }

@@ -1,54 +1,85 @@
 {
- "title": "Mandatory water efficiency requirements for new water-intensive projects",
- "asked": "How many new water-intensive projects are subject to mandatory water efficiency requirements since 1 January 2024, how many are non-compliant, and what enforcement actions have been taken.",
- "asked_by": "Mr Abdul Muhaimin Abdul Malik",
- "answered_by": "Ms Goh Hanyan",
- "response": "Since 1 January 2024, seven new projects have been subject to and met the design requirements, and no enforcement action has been taken. Of the seven, most are in the construction phase and one is in the design phase. Once operations start, water users must submit water efficiency plans on a running basis so PUB can verify and identify further water-use reduction opportunities.",
- "key_points": [
+ "title": "Number of Water-intensive Projects Subjected to Mandatory Water Efficiency Requirements Since 1 January 2024",
+ "what_it_is": "Number of Water-intensive Projects Subjected to Mandatory Water Efficiency Requirements Since 1 January 2024",
+ "sections": [
   {
-   "point": "Seven new projects have been subject to and met the design requirements since 1 January 2024.",
-   "speaker": "Ms Goh Hanyan",
-   "quote": "seven new projects have been subjected to and met the design requirements",
-   "verified": true
+   "label": "Mandatory water efficiency requirements",
+   "summary": "Since 1 January 2024, seven new projects have been subject to and met the mandatory water efficiency design requirements.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Ms Goh Hanyan) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "Since the mandatory water efficiency requirements took effect on 1 January 2024, seven new projects have been subjected to and met the design requirements.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "No enforcement action has been taken.",
-   "speaker": "Ms Goh Hanyan",
-   "quote": "no enforcement action has been taken",
-   "verified": true
-  },
-  {
-   "point": "Of the seven projects, most are in the construction phase and one is in the design phase.",
-   "speaker": "Ms Goh Hanyan",
-   "quote": "most of them are in the construction phase and one is in the design phase",
-   "verified": true
-  },
-  {
-   "point": "Once operations start, water users must submit water efficiency plans on a running basis so PUB can verify and identify further water-use reduction opportunities.",
-   "speaker": "Ms Goh Hanyan",
-   "quote": "the water users are then required, once they start operations, to submit their water efficiency plans on a running basis",
-   "verified": true
+   "label": "Monitoring compliance and water efficiency plans",
+   "summary": "Of the seven covered projects, most are in construction and one in design; water users must submit water efficiency plans once operations start for PUB to verify.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "Ms Goh Hanyan",
+     "attributed": true,
+     "text": "To the first one, out of the seven that we said were covered, most of them are in the construction phase and one is in the design phase.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Ms Goh Hanyan",
+     "attributed": true,
+     "text": "To the second question on how we monitor the compliance, the water users are then required, once they start operations, to submit their water efficiency plans on a running basis, so that PUB can verify and identify opportunities for further reduction of water use and efficiency.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [
-  "The exact number of the seven projects that are in operation rather than design or construction.",
-  "Whether PUB uses metering or audit to independently verify recycling rates, rather than relying on company self-declaration."
- ],
- "supplementary": "Supplementary questions asked about projects' operational status and how PUB verifies reported recycling rates.",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4175"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4175",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-08-05"
   ],
-  "group": "oral",
-  "source_words": 267,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-4175",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4175"
+  ],
+  "sentences_total": 6,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T03:37:49"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 912,
+   "completion_tokens": 123,
+   "estimated": false,
+   "cost_usd": 0.000162
+  }
  }
 }

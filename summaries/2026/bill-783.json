@@ -1,67 +1,78 @@
 {
- "title": "Supply Bill gives legislative approval for government spending from April 2026 to March 2027",
- "what_it_is": "A Bill at Second Reading, and then Third Reading, that gives legislative approval for appropriations from the Consolidated Fund and the Development Fund to meet expenditure for the financial year 1 April 2026 to 31 March 2027.",
- "stage": "Third Reading",
- "why_it_matters": "The Bill gives legislative approval for appropriations from the Consolidated Fund and Development Fund for the year 1 April 2026 to 31 March 2027. Once approved, it empowers the Minister to issue warrants authorising expenditure up to the amount for each Head as shown in the Bill to be paid out from those funds.",
- "key_points": [
+ "title": "Supply Bill",
+ "what_it_is": "Supply Bill",
+ "sections": [
   {
-   "point": "Heads of Expenditure met from the Consolidated Fund and Development Fund, other than statutory expenditure, must be included in the Supply Bill under Article 148(1) of the Constitution.",
-   "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
-   "quote": "Heads of Expenditure to be met from the Consolidated Fund and the Development Fund, other than statutory expenditure, have to be included in the Bill to be known as the Supply Bill.",
-   "verified": true
+   "label": "Supply Bill appropriations purpose",
+   "summary": "The Supply Bill seeks legislative approval for appropriations from the Consolidated Fund and Development Fund for the 2026-2027 financial year.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The purpose of the Supply Bill before Members is to give legislative approval for the appropriations from the Consolidated Fund and Development Fund to meet the expenditure for the financial year 1 April 2026 to 31 March 2027.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The Bill's purpose is to give legislative approval for appropriations from the Consolidated Fund and Development Fund for the financial year 1 April 2026 to 31 March 2027.",
-   "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
-   "quote": "The purpose of the Supply Bill before Members is to give legislative approval for the appropriations from the Consolidated Fund and Development Fund to meet the expenditure for the financial year 1 April 2026 to 31 March 2027.",
-   "verified": true
-  },
-  {
-   "point": "The Heads of Expenditure and the sums for each Head are shown in the Schedule to the Bill and have been approved by the House in the Main and Development Estimates of Expenditure, as contained in Paper Cmd No 4 of 2026.",
-   "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
-   "quote": "These have been approved by the House in the Main and Development Estimates of Expenditure for the financial year 1 April 2026 to 31 March 2027, as contained in Paper Cmd No 4 of 2026.",
-   "verified": true
-  },
-  {
-   "point": "When approved, the Bill will empower the Minister to issue warrants authorising expenditure up to the amount for each Head to be paid out from the Consolidated Fund and the Development Fund.",
-   "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
-   "quote": "The Supply Bill, when approved, will empower the Minister to issue warrants, authorising expenditure up to the amount for each Head as shown in the Bill to be paid out from the Consolidated Fund and the Development Fund.",
-   "verified": true
-  },
-  {
-   "point": "The Speaker called the Third Reading.",
-   "speaker": "Mr Speaker",
-   "quote": "Third Reading.",
-   "verified": true
-  },
-  {
-   "point": "The Second Minister for Finance moved that the Bill be read a Third time.",
-   "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
-   "quote": "That the Bill be now read a Third time.",
-   "verified": true
+   "label": "Supply Bill ministerial warrant powers",
+   "summary": "Approval of the Supply Bill will empower the Minister to issue warrants authorising expenditure from the Consolidated Fund and Development Fund.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The Supply Bill, when approved, will empower the Minister to issue warrants, authorising expenditure up to the amount for each Head as shown in the Bill to be paid out from the Consolidated Fund and the Development Fund.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "what_happens_next": "not stated",
- "not_said": [
-  "What is the total amount appropriated under the Bill?",
-  "What is the breakdown of the sums for each Head of Expenditure in the Schedule?",
-  "When does the Bill come into force?",
-  "What is the difference between the amounts in the Bill and the Main and Development Estimates of Expenditure?"
- ],
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "bill-783"
-  ],
+  "schema": 4,
+  "id": "bill-783",
+  "group": "bill",
+  "year": "2026",
   "sitting_dates": [
    "2026-03-06"
   ],
-  "group": "bill",
-  "source_words": 262,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "bill-783",
-  "schema": 2
+  "report_ids": [
+   "bill-783"
+  ],
+  "sentences_total": 4,
+  "sentences_selected": 2,
+  "sentences_in_sections": 2,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 2,
+   "sentences_selected": 2,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T04:22:28"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 731,
+   "completion_tokens": 114,
+   "estimated": false,
+   "cost_usd": 0.000134
+  }
  }
 }

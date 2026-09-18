@@ -1,62 +1,65 @@
 {
- "title": "Bill for additional expenditure beyond the Supply Act 2025",
- "what_it_is": "A Bill at Second Reading and Third Reading that makes additional provision for expenditure in excess of sums authorised by the Supply Act 2025, using additional sums approved in the Supplementary Estimates of Expenditure for the financial year 1 April 2025 to 31 March 2026.",
- "stage": "Second Reading and Third Reading",
- "why_it_matters": "The Bill authorises additional government expenditure beyond the sums in the Supply Act 2025 for the financial year 1 April 2025 to 31 March 2026. The transcript does not set out the practical impact for ordinary people.",
- "key_points": [
+ "title": "Supplementary Supply (FY2025) Bill",
+ "what_it_is": "Supplementary Supply (FY2025) Bill",
+ "sections": [
   {
-   "point": "Ms Indranee Rajah moved that the Bill be now read a Second time.",
-   "speaker": "Ms Indranee Rajah",
-   "quote": "Mr Speaker, I move, \"That the Bill be now read a Second time.\"",
-   "verified": true
-  },
-  {
-   "point": "The Bill makes additional provision under Articles 148(2) and 148C of the Constitution for expenditure in excess of sums authorised by the Supply Act 2025.",
-   "speaker": "Ms Indranee Rajah",
-   "quote": "The purpose of this Bill is to make additional provision in accordance with Articles 148(2) and 148C of the Constitution for expenditure in excess of the sums authorised by the Supply Act 2025.",
-   "verified": true
-  },
-  {
-   "point": "The additional sums were approved by the House in the Supplementary Estimates of Expenditure for the financial year 1 April 2025 to 31 March 2026, as contained in Paper Cmd No 5 of 2026.",
-   "speaker": "Ms Indranee Rajah",
-   "quote": "The additional sums have been approved by the House in the Supplementary Estimates of Expenditure for the financial year 1 April 2025 to 31 March 2026, as contained in Paper Cmd No 5 of 2026.",
-   "verified": true
-  },
-  {
-   "point": "Mr Speaker put the question that the Bill be read a Second time.",
-   "speaker": "Mr Speaker",
-   "quote": "The question is that the Bill to be read a Second time.",
-   "verified": true
-  },
-  {
-   "point": "Ms Indranee Rajah moved that the Bill be now read a Third time.",
-   "speaker": "Ms Indranee Rajah",
-   "quote": "Mr Speaker, I move, \"That the Bill be now read a Third time.\"",
-   "verified": true
+   "label": "Supplementary Estimates expenditure approval",
+   "summary": "The House approved additional sums in the Supplementary Estimates of Expenditure for 1 April 2025 to 31 March 2026, in Paper Cmd No 5 of 2026.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The additional sums have been approved by the House in the Supplementary Estimates of Expenditure for the financial year 1 April 2025 to 31 March 2026, as contained in Paper Cmd No 5 of 2026.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "what_happens_next": "not stated",
- "not_said": [
-  "What is the total amount of the additional expenditure?",
-  "Which specific programmes or items will the additional sums fund?",
-  "When will the additional expenditure authorisation take effect?",
-  "What further parliamentary stages, if any, follow the Third Reading?",
-  "What is the legal effect of the references to Articles 148(2) and 148C of the Constitution?"
- ],
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "bill-784"
-  ],
+  "schema": 4,
+  "id": "bill-784",
+  "group": "bill",
+  "year": "2026",
   "sitting_dates": [
    "2026-03-06"
   ],
-  "group": "bill",
-  "source_words": 185,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "bill-784",
-  "schema": 2
+  "report_ids": [
+   "bill-784"
+  ],
+  "sentences_total": 3,
+  "sentences_selected": 1,
+  "sentences_in_sections": 1,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 1,
+   "sentences_selected": 1,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T04:22:30"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 599,
+   "completion_tokens": 75,
+   "estimated": false,
+   "cost_usd": 0.000105
+  }
  }
 }

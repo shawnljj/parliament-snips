@@ -1,79 +1,147 @@
 {
- "title": "Pedestrian wait times at signalised junctions",
- "asked": "Mr Gerald Giam Yean Song asked for the median and maximum programmed pedestrian wait times at signalised junctions, whether pedestrians are prioritised in traffic signal timing and whether LTA will consider prioritising them, and whether maximum wait times will be cut to under 60 seconds.",
- "asked_by": "Mr Gerald Giam Yean Song",
- "answered_by": "Mr Baey Yam Keng",
- "response": "The median pedestrian wait at signalised junctions is 120 seconds and the maximum is 140 seconds. Wait times vary with road type, junction size and traffic volume, and Friendly Streets junctions have waits under 60 seconds, with expansion to every town by 2030. Signal timing balances all junction users including buses, and LTA is working on cameras to track pedestrian volume for dynamic adjustment within a range. The green man button's effect depends on the junction.",
- "key_points": [
+ "title": "Wait Times for Pedestrians at Signalised Junctions",
+ "what_it_is": "Wait Times for Pedestrians at Signalised Junctions",
+ "sections": [
   {
-   "point": "Median and maximum pedestrian waiting times at signalised junctions are 120 seconds and 140 seconds respectively.",
-   "speaker": "Mr Baey Yam Keng",
-   "quote": "the median and maximum waiting time for pedestrians at signalised junctions are 120 seconds and 140 seconds respectively",
-   "verified": true
+   "label": "Pedestrian waiting times at junctions",
+   "summary": "Median and maximum pedestrian waiting times at signalised junctions are 120 and 140 seconds, with Friendly Streets junctions under 60 seconds.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Transport (Mr Baey Yam Keng) (for the Acting Minister for Transport)",
+     "attributed": true,
+     "text": "Speaker, the median and maximum waiting time for pedestrians at signalised junctions are 120 seconds and 140 seconds respectively.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Transport (Mr Baey Yam Keng) (for the Acting Minister for Transport)",
+     "attributed": true,
+     "text": "Wait times for pedestrians depend on the nature of road, junction size and configuration, as well as prevailing traffic volume.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Transport (Mr Baey Yam Keng) (for the Acting Minister for Transport)",
+     "attributed": true,
+     "text": "For example, waiting times at signalised junctions of Friendly Streets, which we are expanding to every town by 2030, are under 60 seconds.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Wait times depend on the nature of the road, junction size and configuration, and prevailing traffic volume.",
-   "speaker": "Mr Baey Yam Keng",
-   "quote": "Wait times for pedestrians depend on the nature of road, junction size and configuration, as well as prevailing traffic volume.",
-   "verified": true
+   "label": "Adjusting junction timings dynamically",
+   "summary": "Junctions are reviewed using configuration and traffic volume, and cameras at pedestrian waiting areas are being explored to adjust traffic light timings dynamically.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "Having said that, we do take a look at the junctions in question.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "So, we mentioned that there is a median time; it is not a fixed time for every junction.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "We look at the configuration, the volume of pedestrians and traffic, so that we are able to achieve an optimal situation to balance the different needs.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "We do have dynamic systems that are able to track traffic volume.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "We are working on a better system where at certain junctions we might want to install cameras at the pedestrian waiting area to track pedestrian volume and whether we are able to build that capability to also incorporate pedestrian data to adjust traffic lights timings dynamically.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Waiting times at Friendly Streets signalised junctions are under 60 seconds, and the scheme is being expanded to every town by 2030.",
-   "speaker": "Mr Baey Yam Keng",
-   "quote": "waiting times at signalised junctions of Friendly Streets, which we are expanding to every town by 2030, are under 60 seconds.",
-   "verified": true
-  },
-  {
-   "point": "Signal timing must balance all junction users, including vehicles and pedestrians.",
-   "speaker": "Mr Baey Yam Keng",
-   "quote": "the configuration for signal timing needs to strike a balance among all the users of the junction, whether vehicles on the roads or pedestrians.",
-   "verified": true
-  },
-  {
-   "point": "Traffic includes public buses that need to stick to a schedule to bring commuters to work on time.",
-   "speaker": "Mr Baey Yam Keng",
-   "quote": "Traffic is not just private vehicles. It also includes public buses, which need to stick to a schedule to make sure they bring commuters to work on time.",
-   "verified": true
-  },
-  {
-   "point": "Dynamic systems track traffic volume, and LTA is working on installing cameras at pedestrian waiting areas to track pedestrian volume and adjust traffic light timings dynamically within a range.",
-   "speaker": "Mr Baey Yam Keng",
-   "quote": "we might want to install cameras at the pedestrian waiting area to track pedestrian volume",
-   "verified": true
-  },
-  {
-   "point": "The effect of pressing the green man button depends on the junction; at some crossings the lights do not usually change unless someone presses it.",
-   "speaker": "Mr Baey Yam Keng",
-   "quote": "I think it depends on the junction.",
-   "verified": true
-  },
-  {
-   "point": "Technology data from the Electronic Road Pricing (ERP) 2.0 system is used to better assess different needs.",
-   "speaker": "Mr Baey Yam Keng",
-   "quote": "we use technology data from the Electronic Road Pricing (ERP) 2.0 system to allow us to better assess the different needs",
-   "verified": true
+   "label": "Customising crossings and using ERP data",
+   "summary": "Some crossings change faster or stay green for traffic until pressed, and ERP 2.0 data is used where possible to assess needs.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "For some, it does turn faster; and for some, there are some crossings where the lights do not usually change because it has a very low pedestrian crossing volume.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "And therefore, the lights are green in favour of the traffic, and unless someone presses it and then, it will turn red or have the green man turned on for the pedestrian.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "We will customise it for the need of the particular crossing and where possible, we use technology data from the Electronic Road Pricing (ERP) 2.0 system to allow us to better assess the different needs and then to achieve a more optimal situation for all.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [
-  "Whether pedestrians are currently prioritised in traffic signal timing logic, and whether LTA will consider prioritising them",
-  "Whether maximum wait times will be reduced to under 60 seconds at all signalised junctions",
-  "The proportion of signalised intersections that use fixed-time versus demand-responsive signals"
- ],
- "supplementary": "Pedestrian priority beyond Friendly Streets, cutting maximum waits to 60 seconds, fixed versus demand-responsive signals, and the green man button.",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4082"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4082",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-03-06"
   ],
-  "group": "oral",
-  "source_words": 697,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-4082",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4082"
+  ],
+  "sentences_total": 24,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 3,
+  "selection_share": 0.4583,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T04:21:52"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1615,
+   "completion_tokens": 199,
+   "estimated": false,
+   "cost_usd": 0.000282
+  }
  }
 }

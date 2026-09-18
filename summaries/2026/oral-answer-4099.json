@@ -1,66 +1,120 @@
 {
- "title": "Haze-related consultations and support for seniors at Community Health Posts",
- "asked": "Ms Hany Soh asked whether the Ministry has seen an increase in medical consultations due to haze-induced symptoms from year to date.",
- "asked_by": "Ms Hany Soh",
- "answered_by": "Ms Rahayu Mahzam",
- "response": "Ms Rahayu Mahzam said there has been no significant increase in attendances for haze-relevant conditions at public hospital Emergency Departments and polyclinics this year to date. She said vulnerable groups may be identified by age or existing medical conditions. She described Community Health Posts as a broader approach to healthcare for seniors, providing immediate access at Active Ageing Centres, with regular engagements including telemedicine, medical services and medication, and as additional touchpoints during crises.",
- "key_points": [
+ "title": "Medical Consultations due to Haze-induced Symptoms",
+ "what_it_is": "Medical Consultations due to Haze-induced Symptoms",
+ "sections": [
   {
-   "point": "No significant increase in attendances for haze-relevant conditions at public hospital Emergency Departments and polyclinics this year to date.",
-   "speaker": "Ms Rahayu Mahzam",
-   "quote": "there has been no significant increase in attendances for haze-relevant conditions at the public hospital Emergency Departments and polyclinics.",
-   "verified": true
+   "label": "Haze effects on seniors",
+   "summary": "An MP asks whether haze has increased medical consultations and worsened respiratory conditions among seniors, and how Community Health Posts can better support them.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Ms Hany Soh",
+     "attributed": true,
+     "text": "asked the Coordinating Minister for Social Policies and Minister for Health whether the Ministry has observed an increase in medical consultations due to haze-induced symptoms from year to date.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
+     "attributed": true,
+     "text": "I understand from a few seniors whom I have interacted with in Woodgrove recently that a number of their peers were unable to join them for their regular outdoor qigong and brisk walking activities due to respiratory-related health conditions lately.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
+     "attributed": true,
+     "text": "In this regard, I wish to ask, has the Ministry noticed that seniors have been particularly more prone to exacerbations of respiratory conditions during the haze period lately, given their higher vulnerability to air pollutants?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
+     "attributed": true,
+     "text": "Also, how can initiatives, such as the Community Health Posts, which are intended to bring healthcare closer to residents, especially our seniors, be further enhanced to better support them during the haze periods?",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Vulnerable groups may be identified by age or existing medical conditions.",
-   "speaker": "Ms Rahayu Mahzam",
-   "quote": "It may be because of their age; it may be because of their existing medical conditions.",
-   "verified": true
-  },
-  {
-   "point": "Community Health Posts are a broader approach to healthcare, especially for seniors.",
-   "speaker": "Ms Rahayu Mahzam",
-   "quote": "The Community Health Posts have been put in place for a broader approach to healthcare, especially for seniors",
-   "verified": true
-  },
-  {
-   "point": "Community Health Posts are an always-on setting.",
-   "speaker": "Ms Rahayu Mahzam",
-   "quote": "It is an \"always on\" sort of setting.",
-   "verified": true
-  },
-  {
-   "point": "Regular engagements include telemedicine, delivery of medical services and medication.",
-   "speaker": "Ms Rahayu Mahzam",
-   "quote": "this includes services, such as telemedicine, as well as the delivery of medical services and also perhaps medication.",
-   "verified": true
-  },
-  {
-   "point": "In crises, Community Health Posts can be additional touchpoints for seniors.",
-   "speaker": "Ms Rahayu Mahzam",
-   "quote": "they will definitely be meaningful platforms to be additional touchpoints for seniors.",
-   "verified": true
+   "label": "Community Health Posts for seniors",
+   "summary": "Community Health Posts provide seniors immediate community access to healthcare at Active Ageing Centres, with regular engagements, telemedicine, services and medication, serving as touchpoints in crises.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "The Community Health Posts have been put in place for a broader approach to healthcare, especially for seniors, so that they can have immediate access within the community at the Active Ageing Centres, for example.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "It is an \"always on\" sort of setting.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "We are intending to make sure that there are regular engagements, and this includes services, such as telemedicine, as well as the delivery of medical services and also perhaps medication.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "Indeed, in situations where there are more immediate or sudden crises or events, they will definitely be meaningful platforms to be additional touchpoints for seniors.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [
-  "Whether seniors have been observed to be more prone to exacerbations of respiratory conditions during haze periods",
-  "Specific enhancements such as proactive respiratory health monitoring, targeted education on haze precautions, expanded onsite support services, or frailty screenings at Community Health Posts"
- ],
- "supplementary": "Seniors' vulnerability to haze and enhancing Community Health Posts to support them.",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4099"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4099",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-04-07"
   ],
-  "group": "oral",
-  "source_words": 375,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-4099",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4099"
+  ],
+  "sentences_total": 12,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.6667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 3,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T04:19:47"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1166,
+   "completion_tokens": 149,
+   "estimated": false,
+   "cost_usd": 0.000205
+  }
  }
 }

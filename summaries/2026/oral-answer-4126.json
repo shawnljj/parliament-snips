@@ -1,87 +1,165 @@
 {
- "title": "AI-enabled cyber risks to Singapore's financial system and critical infrastructure",
- "asked": "Mr Saktiandi Supaat asked for the Government's assessment of risks from advanced AI models that could steal data or disrupt critical infrastructure, whether AI-enabled cyber risks are a new class of systemic financial risk, and what early-warning indicators or triggers are being developed; Mr Edward Chia Bing Hui also asked about frontier AI models such as Anthropic's Mythos and whether cybersecurity frameworks are being reviewed.",
- "asked_by": "Mr Saktiandi Supaat and Mr Edward Chia Bing Hui",
- "answered_by": "Mr Tan Kiat How",
- "response": "Mr Tan Kiat How said the Government does not have access to Mythos and treats AI-enabled cyber risk as an amplification of an existing systemic risk rather than a wholly new category. He said MAS has convened major financial institution CEOs on cyber resilience, and CSA will issue a letter to all CII owners setting expectations including a review of cyber risk posture. He set out five priorities: revisit risk assessments, know your assets, patch faster and monitor continuously, govern AI use, and use AI in defence. Early-warning work includes engaging technology partners, CSA monitoring exploitation patterns, and attack-surface monitoring.",
- "key_points": [
+ "title": "Response to Risks from Frontier AI Models with Potential to Steal Data, Disrupt Critical Infrastructure and Exploit Software Vulnerabilities",
+ "what_it_is": "Response to Risks from Frontier AI Models with Potential to Steal Data, Disrupt Critical Infrastructure and Exploit Software Vulnerabilities",
+ "sections": [
   {
-   "point": "The Government does not have access to Anthropic's Mythos model.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "The Government does not have access to Mythos.",
-   "verified": true
+   "label": "Frontier AI cybersecurity threats review",
+   "summary": "Asked what the Ministry assesses about cybersecurity threats from frontier AI models and whether Singapore's frameworks are being reviewed.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Mr Edward Chia Bing Hui",
+     "attributed": true,
+     "text": "asked the Minister for Digital Development and Information in light of recent reports on frontier AI models, such as Anthropic's Mythos with advanced capabilities to autonomously identify and exploit software vulnerabilities (a) what is the Ministry's assessment of the potential cybersecurity threats posed by such models; and (b) whether the Government is reviewing Singapore's current cybersecurity frameworks and safeguards to address these emerging risks.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Anthropic released Mythos only to a limited set of partners under a controlled preview, and no local bank is known to have access.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "Anthropic has released it only to a limited set of partners under a controlled preview, and we are not aware of any local bank that has been granted access.",
-   "verified": true
+   "label": "Monitoring AI threats with partners",
+   "summary": "The Ministry says the capability is not a sudden step jump and it monitors the space with international partners and agencies.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "It is not suddenly a step jump or a discontinuous capability that we are not prepared for.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "We have been monitoring this space for some time and are actively working with international partners, both technology companies developing those AI frontier models as well as governmental organisations, on these threats, including those from intelligence and security agencies.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "AI-enabled cyber risk is treated as an amplification of an existing systemic risk, not a wholly new category.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "we view AI-enabled cyber risk as an amplification of an existing systemic risk, rather than a wholly new category.",
-   "verified": true
+   "label": "Supporting SMEs on cybersecurity",
+   "summary": "Resources help SMEs do self-checks, follow CSA guidelines, and have cybersecurity hygiene baked into pre-approved SME Go Digital solutions.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Thirdly, we are mindful that SMEs may not have such capabilities and we deployed different resources supporting them to: firstly do a self-check, a hygiene check, on their own systems through the various cyber essential marks and trust marks – they can look at the guidelines published by CSA; secondly, even as SMEs digitalise and adopt AI technology in their organisations, you want to make sure they are safe and there are guidelines in place for them to think about how to deploy AI solutions in their organisations and in their businesses.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "And through programmes like SMEs Go Digital, where we work with our industry partners providing these technology solutions and pre-approve them for support, we make sure those basic cybersecurity hygiene practices are baked into those systems.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "MAS convened the CEOs of major financial institutions to discuss the threat landscape and drive collective action on technology and cyber resilience.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "the Monetary Authority of Singapore has convened the chief executive officers of major financial institutions to discuss the threat landscape and drive collective action on technology and cyber resilience.",
-   "verified": true
+   "label": "Monitoring AI trend over time",
+   "summary": "The trend has been monitored and acted on for some time, covering not just one model but open-source models too.",
+   "sentences": [
+    {
+     "sid": "s00045",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Because this is a trend that we have seen for some time, and we have been monitoring the trend and taking action for period of time.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00046",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "And it is not just about a single model but broadly, even open-source models, we have built up capabilities over time and within matter of months because of how fast AI technology is developing.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "CSA will issue a letter to boards and senior leadership of all critical information infrastructure owners today, setting expectations including a review of cyber risk posture.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "The Cyber Security Agency of Singapore (CSA) will issue a letter to the boards and senior leadership of all critical information infrastructure (CII) owners today.",
-   "verified": true
+   "label": "Visits to 11 CII sectors",
+   "summary": "The speaker says all 11 critical information infrastructure sectors have been visited over the past months and year.",
+   "sentences": [
+    {
+     "sid": "s00052",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "In this House, during the Budget and Committee of Supply speeches, I shared with the House that I have been visiting every of the CII sectors – 11 critical information infrastructure sectors – over the past months and year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00053",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "I am pleased to share with everyone that I have completed all 11.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The first of five priorities is to revisit cybersecurity risk assessments.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "First, revisit your cybersecurity risk assessment.",
-   "verified": true
-  },
-  {
-   "point": "CSA's addendum on Securing Agentic AI, launched in October last year, gives guidance on mapping workflows and applying controls across the life-cycle.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "CSA's addendum on Securing Agentic AI, launched in October last year, sets out practical guidance on mapping workflows and applying controls across the entire life-cycle.",
-   "verified": true
-  },
-  {
-   "point": "Early-warning work includes engaging technology partners for early visibility and insights into new capabilities.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "First, we closely engage technology partners for early visibility and insights into new capabilities as they emerge.",
-   "verified": true
-  },
-  {
-   "point": "Support for SMEs includes CISO-as-a-Service and Cyber Essentials and Cyber Trust Marks.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "This includes the CISO-as-a-Service and the Cyber Essentials and Cyber Trust Marks, which support organisations to assess and improve their security posture.",
-   "verified": true
-  },
-  {
-   "point": "CSA and other agencies have schemes and programmes to support Singaporeans pursuing cybersecurity careers.",
-   "speaker": "Mr Tan Kiat How",
-   "quote": "CSA, together with various Government agencies, including our security agencies, have been putting in place different schemes and programmes to support Singaporeans who wish to have a career in cybersecurity.",
-   "verified": true
+   "label": "Sharing threat intelligence with CII",
+   "summary": "Government and CSA will share selected threat intelligence with selected CII owners to help detect advanced persistent threat actors.",
+   "sentences": [
+    {
+     "sid": "s00061",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Lastly, I must also say that we have been working very closely with all of the CII sectors, I shared in this House during the Committee of Supply debates that the Government and CSA are leaning forward.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00062",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "We will share selected threat intelligence information with selected CII owners so that they can better monitor and detect threats against them, especially from advanced persistent threat actors.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [],
- "supplementary": "International cooperation, framework adequacy, SME support, talent, and access to frontier AI models.",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4126"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4126",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-05-05"
   ],
-  "group": "oral",
-  "source_words": 3255,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-4126",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4126"
+  ],
+  "sentences_total": 62,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 6,
+  "selection_share": 0.1774,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 3,
+   "turns_total": 10,
+   "coverage": 0.3,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T04:09:26"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 3465,
+   "completion_tokens": 320,
+   "estimated": false,
+   "cost_usd": 0.000575
+  }
  }
 }

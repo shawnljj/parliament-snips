@@ -1,150 +1,146 @@
 {
- "title": "AI chatbots for youth mental health: monitoring, referrals and safeguards",
- "asked": "Dr Charlene Chen asked how the Ministry monitors teenagers' and young adults' use of AI chatbots for counselling and mental health support, how users are guided to qualified services, and what safeguards protect vulnerable users.",
- "asked_by": "Dr Charlene Chen",
- "answered_by": "Dr Koh Poh Koon",
- "response": "Dr Koh Poh Koon said AI chatbots are now ubiquitous and it is not practical to track their use for counselling or mental health support. He said they are not appropriate replacements for qualified mental health care providers and may provide misinformation or inappropriate responses in serious crises. The Ministry encourages people to use First Stop services such as national mindline 1771, mindline.sg, Community Outreach Teams and CHAT, and points to safeguards including the Code of Practice for Online Safety, age assurance by app stores by 31 March, the Model AI Governance Framework for Generative AI, and IMDA's Digital Skills for Life framework.",
- "key_points": [
+ "title": "Use of AI Chatbots for Counselling and Mental Health Support by Teenagers and Young Adults",
+ "what_it_is": "Use of AI Chatbots for Counselling and Mental Health Support by Teenagers and Young Adults",
+ "sections": [
   {
-   "point": "AI chatbots are now so common that tracking their use for counselling or mental health support is not practical.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "it is no longer practical to track its use for counselling or mental health support",
-   "verified": true
+   "label": "GenAI chatbots and mental health",
+   "summary": "GenAI chatbots are not appropriate replacements for qualified mental health providers and may cause harm in crises.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "In general, it is not appropriate to use generative AI (GenAI) chatbots as a replacement for a qualified mental health care provider.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "AI chatbots are not designed to address mental health issues or provide treatment for mental health conditions and risk providing misinformation or inappropriate responses when dealing with serious mental health crises, and may cause harm instead.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "Our approach is to encourage individuals seeking qualified mental health services to approach our First Stop for Mental Health services such as national mindline 1771, mindline.sg, Community Outreach Teams and CHAT.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Generative AI chatbots are not appropriate as a replacement for a qualified mental health care provider.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "it is not appropriate to use generative AI (GenAI) chatbots as a replacement for a qualified mental health care provider",
-   "verified": true
+   "label": "App stores age assurance",
+   "summary": "Designated app stores must implement age assurance measures by 31 March this year.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "Designated app stores are also required to implement age assurance measures by 31 March this year.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "AI chatbots are not designed to address mental health issues or provide treatment for mental health conditions.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "AI chatbots are not designed to address mental health issues or provide treatment for mental health conditions",
-   "verified": true
+   "label": "Data privacy and informed consent",
+   "summary": "Online resources such as mindline.sg work on the basis of anonymity.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "On her first question on how can we assess data privacy and whether informed consent is needed, I think in the first instance, many of these resources we put online, such as mindline.sg, works on the basis of anonymity.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The Ministry encourages people seeking qualified mental health services to approach First Stop services including national mindline 1771, mindline.sg, Community Outreach Teams and CHAT.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "national mindline 1771, mindline.sg, Community Outreach Teams and CHAT",
-   "verified": true
-  },
-  {
-   "point": "Under the Code of Practice for Online Safety – App Distribution Services, users' exposure to harmful content on these services must be minimised.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "users’ exposure to harmful content on these services must be minimised",
-   "verified": true
-  },
-  {
-   "point": "Designated app stores are required to implement age assurance measures by 31 March this year.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "Designated app stores are also required to implement age assurance measures by 31 March this year.",
-   "verified": true
-  },
-  {
-   "point": "Digital content developers are expected to comply with the Model AI Governance Framework for Generative AI.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "Digital content developers are also expected to comply with the Model AI Governance Framework for Generative AI",
-   "verified": true
-  },
-  {
-   "point": "IMDA's Digital Skills for Life framework includes content on how to use GenAI and manage its potential risks.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "the Infocomm Media Development Authority's (IMDA's) Digital Skills for Life framework includes content on how to use GenAI and manage its potential risks",
-   "verified": true
-  },
-  {
-   "point": "Dr Chen asked how the Ministry assesses data privacy risks and whether safeguards or informed consent standards are being considered for vulnerable users.",
-   "speaker": "Dr Charlene Chen",
-   "quote": "how does the Ministry assess potential data privacy risks, and are there going to be safeguards or informed consent standards being considered to protect vulnerable users?",
-   "verified": true
-  },
-  {
-   "point": "Dr Chen asked whether the Ministry has assessed the risk that AI systems overly affirm users' views, reinforce harmful thinking, and reduce help-seeking behaviour through over-reliance.",
-   "speaker": "Dr Charlene Chen",
-   "quote": "given that AI systems may overly affirm users' views, which may actually reinforce harmful thinking, and also over reliance may reduce actual help seeking behaviours, has the Ministry assessed this risk?",
-   "verified": true
-  },
-  {
-   "point": "Dr Chen asked whether the Ministry will support studies on how AI counselling tools can be used better and their impact on mental health outcomes in Singapore.",
-   "speaker": "Dr Charlene Chen",
-   "quote": "Is the Ministry willing to support studies to understand how AI counselling tools can be used better and how their impact will be on mental health outcomes in Singapore?",
-   "verified": true
-  },
-  {
-   "point": "Resources such as mindline.sg work on the basis of anonymity.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "many of these resources we put online, such as mindline.sg, works on the basis of anonymity",
-   "verified": true
-  },
-  {
-   "point": "Informed consent cannot really be done when the service is anonymous.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "you cannot really do an informed consent when you want it to be anonymous",
-   "verified": true
-  },
-  {
-   "point": "Anonymity ensures that what users divulge to the counsellor online or to the chatbot cannot be traced back to the individual.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "the anonymity already ensures that none of these things that you actually divulge to the counsellor online or to the chatbot can be traced back to the individual",
-   "verified": true
-  },
-  {
-   "point": "mindline.sg uses a chatbot based on Wysa, described as a specialised mental health AI-enabled chatbot.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "It is a chatbot based on Wysa. It is a specialised mental health AI-enabled chatbot.",
-   "verified": true
-  },
-  {
-   "point": "The chatbot guides users through digital therapeutic exercises such as mindfulness, deep breathing and sleep hygiene inspired by cognitive behavioural therapy principles.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "guides users through digital therapeutic exercises such as mindfulness, deep breathing techniques, sleep hygiene practices that are inspired by cognitive behavioural therapy principles",
-   "verified": true
-  },
-  {
-   "point": "Unlike GenAI chatbots, Wysa delivers digital therapeutic exercises via a rule-based model.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "Wysa is designed to deliver such digital therapeutic exercises via a rule-based model",
-   "verified": true
-  },
-  {
-   "point": "The conversation follows a structured decision tree developed and continuously validated by clinicians.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "the conversation follows a structured decision tree, which is developed and continuously validated by clinicians",
-   "verified": true
-  },
-  {
-   "point": "The Wysa chatbot has been clinically evaluated for its efficacy, safety and impact.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "The Wysa chatbot has been clinically evaluated for its efficacy, safety and impact.",
-   "verified": true
-  },
-  {
-   "point": "The Ministry will collect data over time and analyse the impact of these interventions to improve them.",
-   "speaker": "Dr Koh Poh Koon",
-   "quote": "We will see over time how we can collect data and then, analyse the impact of some of these interventions we put in the public domain",
-   "verified": true
+   "label": "Wysa rule-based chatbot",
+   "summary": "Wysa supplements counselling as a 24/7 pocket therapist using a clinician-validated rule-based model, unlike GenAI chatbots.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "It aims to supplement our existing professional counselling and therapy services by serving as a 24/7 available pocket therapist that removes any barriers towards help seeking and signpost help seekers to local human-based resources.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00027",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "But just to reassure the Member, unlike GenAI chatbots, Wysa is designed to deliver such digital therapeutic exercises via a rule-based model.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "It is not something like the chatbot itself can be extremely creative and come up with a new suggestions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00029",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "There is a rule-based model in it, so the conversation follows a structured decision tree, which is developed and continuously validated by clinicians.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00030",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "The Wysa chatbot has been clinically evaluated for its efficacy, safety and impact.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [
-  "Any specific assessment of whether over-reliance on AI chatbots reduces help-seeking behaviour.",
-  "How data privacy risks are assessed for AI chatbots generally, beyond the anonymity of Ministry-backed services."
- ],
- "supplementary": "Supplementary questions covered data privacy and consent, risks of AI over-affirmation and over-reliance, and support for studies on mental health outcomes.",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4051"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4051",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-02-27"
   ],
-  "group": "oral",
-  "source_words": 1122,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-4051",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4051"
+  ],
+  "sentences_total": 34,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.2941,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T04:58:36"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2328,
+   "completion_tokens": 219,
+   "estimated": false,
+   "cost_usd": 0.000387
+  }
  }
 }

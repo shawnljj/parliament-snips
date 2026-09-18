@@ -1,67 +1,113 @@
 {
- "title": "HDB support for buyers whose BTO flats are completed earlier than expected",
- "asked": "Whether HDB will show flexibility to buyers affected by earlier-than-expected BTO completion, including flexibility on the second downpayment timeline, transitional support for young working adults, or other practical arrangements.",
- "asked_by": "Ms Poh Li San",
- "answered_by": "Ms Sun Xueling",
- "response": "In 2025, about 30% of BTO blocks were completed earlier than their estimated completion dates at booking, on average about two months earlier. HDB notifies buyers one year, six months and three months before expected completion, and the latest probable completion date is on the MyHDB Page. Buyers must collect keys and pay the balance flat price within a month of the flat being ready. Those facing difficulty from early completion can approach HDB, which may grant key collection deferrals to buyers needing more time to sell an existing flat or arrange financing.",
- "key_points": [
+ "title": "Flexibility Extended to Home Buyers Affected by Earlier-than-expected BTO Completion",
+ "what_it_is": "Flexibility Extended to Home Buyers Affected by Earlier-than-expected BTO Completion",
+ "sections": [
   {
-   "point": "About 30% of BTO blocks in 2025 were completed earlier than the estimated completion date given at flat booking, by about two months on average.",
-   "speaker": "Ms Sun Xueling",
-   "quote": "about 30% of Build-To-Order (BTO) blocks were completed earlier than their estimated completion dates at the point of flat booking",
-   "verified": true
+   "label": "BTO completion and key collection",
+   "summary": "In 2025 about 30% of BTO blocks completed early, HDB notifies buyers at three junctures, and key collection deferrals may be provided.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "In 2025, about 30% of Build-To-Order (BTO) blocks were completed earlier than their estimated completion dates at the point of flat booking.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "On average, these blocks were completed about two months earlier.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "To assist the buyers with their planning and housing arrangements, the Housing and Development Board (HDB) notifies them at three junctures: one year before, six months before and three months before the expected completion of their flat.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "When their flats are ready, buyers are required to collect their keys and pay the balance flat price within a month.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "HDB may provide key collection deferrals to buyers who need additional time to sell their existing flat or work out their financing arrangements.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "The latest probable completion date is available to buyers through their MyHDB Page account.",
-   "speaker": "Ms Sun Xueling",
-   "quote": "the latest probable completion date is also available to buyers when they log into their accounts on the MyHDB Page",
-   "verified": true
-  },
-  {
-   "point": "When the flat is ready, buyers must collect keys and pay the balance flat price within one month.",
-   "speaker": "Ms Sun Xueling",
-   "quote": "buyers are required to collect their keys and pay the balance flat price within a month",
-   "verified": true
-  },
-  {
-   "point": "HDB may defer key collection for buyers who need more time to sell an existing flat or work out financing.",
-   "speaker": "Ms Sun Xueling",
-   "quote": "HDB may provide key collection deferrals to buyers who need additional time to sell their existing flat or work out their financing arrangements",
-   "verified": true
-  },
-  {
-   "point": "For buyers in financial difficulty who cannot manage back-to-back arrangements, HDB will step in to facilitate an arrangement acceptable to both buyer and seller.",
-   "speaker": "Ms Sun Xueling",
-   "quote": "HDB will step in to see how they can facilitate the arrangements",
-   "verified": true
-  }
- ],
- "left_open": [
-  "Whether HDB will extend the deferral period beyond the usual six months for buyers needing a back-to-back sale of their existing flat",
-  "Flexibility on the timeline for the second downpayment",
-  "Transitional support for young working adults facing early completion"
- ],
- "supplementary": "Whether HDB will extend beyond the usual six months for buyers who need a back-to-back sale of their existing flat.",
- "_dropped": [
-  {
-   "reason": "quote not found in source",
-   "point": "HDB notifies buyers at three points: one year, six months and three months before expected",
-   "quote": "HDB notifies them at three junctures: one year before, six months before and three months "
+   "label": "HDB help for financial difficulty",
+   "summary": "HDB will step in to facilitate arrangements for buyers in financial difficulty who cannot match back-to-back arrangements.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "So, this is to give them adequate time to plan for what they should do with their previous flat, their existing flat, as the Member mentioned.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "But in situations where they are already in financial difficulty and are not able to match the back-to-back arrangements, HDB will step in to see how they can facilitate the arrangements so that both the buyers and the sellers, in this instance, can find an acceptable arrangement that works for the both of them.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4116"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4116",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-04-08"
   ],
-  "group": "oral",
-  "source_words": 436,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 1,
-  "key": "oral-answer-4116",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4116"
+  ],
+  "sentences_total": 16,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.4375,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T04:13:57"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1282,
+   "completion_tokens": 141,
+   "estimated": false,
+   "cost_usd": 0.000219
+  }
  }
 }

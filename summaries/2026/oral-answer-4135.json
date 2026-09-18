@@ -1,67 +1,112 @@
 {
- "title": "Fire safety measures for EV chargers in HDB car parks",
- "asked": "Ms Yeo Wan Ling asked what measures ensure HDB car parks meet safety standards for electric fires from EVs and EV chargers, given more charging points and EVs.",
- "asked_by": "Ms Yeo Wan Ling",
- "answered_by": "Mr Alvin Tan",
- "response": "Mr Alvin Tan said HDB car parks are built to the SCDF Fire Code, with hose reels, fire engine access and ventilation to disperse smoke and heat. EV chargers in HDB car parks must meet Technical Reference 25. He said SCDF works with the community, including first responders and PA's C2E, on fire safety awareness, and that LTA and SCDF regularly review fire safety requirements through a multi-agency EV Battery Safety Taskforce. He pointed to MHA replies for broader EV fire safety questions.",
- "key_points": [
+ "title": "Safety Standards in Case of EV or EV Charger Fires at HDB Car Parks",
+ "what_it_is": "Safety Standards in Case of EV or EV Charger Fires at HDB Car Parks",
+ "sections": [
   {
-   "point": "HDB car parks are designed and built to comply with the SCDF Fire Code.",
-   "speaker": "Mr Alvin Tan",
-   "quote": "all Housing and Development Board (HDB) car parks are designed and constructed in compliance with the prevailing Fire Code stipulated by the Singapore Civil Defence Force (SCDF).",
-   "verified": true
+   "label": "EV fire safety in HDB car parks",
+   "summary": "HDB car parks have fire safety provisions like hose reels, fire engine access and ventilation, and EV chargers must meet Technical Reference 25.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Ms Yeo Wan Ling",
+     "attributed": true,
+     "text": "asked the Minister for National Development with the roll-out of more electric vehicle (EV) charging points in HDB car parks and the proliferation of EVs, what measures are put in place to ensure that HDB car parks adhere to safety standards in the case of electric fires from EVs and EV chargers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for National Development (Mr Alvin Tan) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "This includes provisions such as hose reels, fire engine access and natural or mechanical ventilation to disperse smoke and heat.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for National Development (Mr Alvin Tan) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "These fire safety provisions safeguard against fire risks, including those that may arise from electric vehicles (EVs).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for National Development (Mr Alvin Tan) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "All EV chargers installed in HDB car parks must comply with the technical specifications and safety requirements under the Technical Reference 25, which is the nation-wide standard governing EV charging systems in Singapore.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Fire safety provisions include hose reels, fire engine access and natural or mechanical ventilation.",
-   "speaker": "Mr Alvin Tan",
-   "quote": "This includes provisions such as hose reels, fire engine access and natural or mechanical ventilation to disperse smoke and heat.",
-   "verified": true
+   "label": "Hose reels, access, ventilation compliance",
+   "summary": "Hose reels, fire engine access and ventilation help in a fire, and HDB car parks must comply with Technical Reference 25 specifications.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "Specifically, I think, with the provision of hose reels, fire engine access, natural and mechanical ventilations that will help in the event of a fire, and that the HDB carparks must comply with these technical specifications and safety requirements under Technical Reference 25.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "EV chargers in HDB car parks must meet Technical Reference 25.",
-   "speaker": "Mr Alvin Tan",
-   "quote": "All EV chargers installed in HDB car parks must comply with the technical specifications and safety requirements under the Technical Reference 25",
-   "verified": true
-  },
-  {
-   "point": "SCDF works with the community, including first responders and PA's C2E, on fire safety awareness.",
-   "speaker": "Mr Alvin Tan",
-   "quote": "SCDF works with the community to raise general awareness on fire safety. That includes working with first responders, People's Association's C2E and other community groups.",
-   "verified": true
-  },
-  {
-   "point": "LTA and SCDF regularly review fire safety requirements through a multi-agency EV Battery Safety Taskforce.",
-   "speaker": "Mr Alvin Tan",
-   "quote": "The Land Transport Authority and SCDF also regularly review these fire safety requirements to support the overall adoption of EV in Singapore through their multi-agency EV Battery Safety Taskforce.",
-   "verified": true
-  },
-  {
-   "point": "For broader EV fire safety questions, the Minister pointed to MHA replies in Parliament.",
-   "speaker": "Mr Alvin Tan",
-   "quote": "I would also like to point her, if she has further questions with regard to overall EV fire safety and fire safety as a whole, to the Ministry of Home Affairs' replies in Parliament on the matter.",
-   "verified": true
+   "label": "EV Battery Safety Taskforce reviews",
+   "summary": "The Land Transport Authority and SCDF regularly review fire safety requirements through their multi-agency EV Battery Safety Taskforce.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "The Land Transport Authority and SCDF also regularly review these fire safety requirements to support the overall adoption of EV in Singapore through their multi-agency EV Battery Safety Taskforce.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [
-  "Specific detection, suppression and evacuation protocols for HDB car parks with EV charging points",
-  "How EV charging safety standards are enforced",
-  "Whether emergency response teams, including grassroots C2E and SCDF First Responders, will receive enhanced capabilities or training for EV-related fire incidents"
- ],
- "supplementary": "Supplementary questions focused on fire safety protocols, review and enforcement of standards, and training for emergency responders for EV fires.",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4135"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4135",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-05-06"
   ],
-  "group": "oral",
-  "source_words": 423,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-4135",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4135"
+  ],
+  "sentences_total": 12,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T03:59:37"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1222,
+   "completion_tokens": 189,
+   "estimated": false,
+   "cost_usd": 0.000224
+  }
  }
 }

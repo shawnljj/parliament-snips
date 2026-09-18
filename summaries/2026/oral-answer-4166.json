@@ -1,97 +1,160 @@
 {
- "title": "SIMFONI AI model: rationale, access, privacy testing and safeguards",
- "asked": "Two MPs asked about the Singapore Medical Foundation AI Model (SIMFONI): its rationale and cost, clinician access including private practitioners, safeguards for patient identifiers, independent privacy testing before deployment, and publication of test standards and findings.",
- "asked_by": "Mr Yip Hon Weng and Mr Low Wu Yang Andre",
- "answered_by": "Mr Ong Ye Kung",
- "response": "Mr Ong Ye Kung said SIMFONI develops AI tools for clinical decision support in chronic conditions, prioritising high disease burden and feasibility. It starts in a couple of specialty areas and settings in public healthcare, with possible expansion to more specialities and private practitioners. Models are built on existing international models, adapted using local de-identified patient data on the TRUST platform established in 2022, and an independent safety and evaluation unit will test them before deployment. On supplementary questions, he said the approach is a careful use-case one, with deployment in accordance with clinical protocols and clinicians still making the judgement; on data, he said a balanced approach is needed, using data with anonymisation and de-identification, and that TRUST data has been used incident-free.",
- "key_points": [
+ "title": "Rationale and Cost of Developing AI Models for Healthcare Diagnostics, and Safeguards for Patient Data",
+ "what_it_is": "Rationale and Cost of Developing AI Models for Healthcare Diagnostics, and Safeguards for Patient Data",
+ "sections": [
   {
-   "point": "SIMFONI prioritises conditions with high disease burden in Singapore and feasibility of development.",
-   "speaker": "Mr Ong Ye Kung",
-   "quote": "prioritising conditions with high disease burden in Singapore and feasibility of development",
-   "verified": true
+   "label": "SIMFONI AI clinical decision support",
+   "summary": "SIMFONI develops AI tools for clinical decision support in managing chronic conditions, prioritising high disease burden and feasibility.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "The Singapore Medical Foundation AI Model (SIMFONI) develops artificial intelligence (AI) tools to provide clinical decision support for managing chronic conditions, prioritising conditions with high disease burden in Singapore and feasibility of development.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "It starts with a couple of specialty areas and settings in the public healthcare sector.",
-   "speaker": "Mr Ong Ye Kung",
-   "quote": "We are starting with a couple of specialty areas and settings in the public healthcare sector.",
-   "verified": true
+   "label": "SIMFONI model training and safeguards",
+   "summary": "SIMFONI models use international data adapted with local de-identified patient data, with an independent unit testing before deployment.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "SIMFONI's models are built on existing models trained using international data.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "They are adapted using local patient data, they are de-identified, in a secure national platform with well-established processes, expertise and safeguards.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "To further ensure the integrity of this process, an independent safety and evaluation unit will carry out rigorous testing of SIMFONI's models before actual deployment.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "If successful, coverage may expand to more specialities and possibly private practitioners.",
-   "speaker": "Mr Ong Ye Kung",
-   "quote": "If successful, we will expand its coverage to more specialities and also possibly, to the private practitioners.",
-   "verified": true
+   "label": "Using locally trained AI tools",
+   "summary": "The passage urges finding the right AI tool trained in the local context, considering security and de-identified patient data in Singapore.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Let us see what AI can do to solve some of these problems.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "And when you can find the right AI tool, make sure it is trained in the local context, taking into account security, de-identified data, patient data that is in Singapore.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Models are built on existing international models and adapted using local de-identified patient data.",
-   "speaker": "Mr Ong Ye Kung",
-   "quote": "They are adapted using local patient data, they are de-identified",
-   "verified": true
-  },
-  {
-   "point": "The secure national platform is called TRUST, established in 2022.",
-   "speaker": "Mr Ong Ye Kung",
-   "quote": "This platform is called TRUST, which was established in 2022",
-   "verified": true
-  },
-  {
-   "point": "An independent safety and evaluation unit will carry out rigorous testing before actual deployment.",
-   "speaker": "Mr Ong Ye Kung",
-   "quote": "an independent safety and evaluation unit will carry out rigorous testing of SIMFONI's models before actual deployment",
-   "verified": true
-  },
-  {
-   "point": "Deployment must follow clinical protocols, with clinicians still making the judgement.",
-   "speaker": "Mr Ong Ye Kung",
-   "quote": "with the clinicians still making the judgement",
-   "verified": true
-  },
-  {
-   "point": "The Minister said scoping down data and seeking everyone's consent before use would make the effort a non-starter.",
-   "speaker": "Mr Ong Ye Kung",
-   "quote": "then it is a non-starter",
-   "verified": true
-  },
-  {
-   "point": "TRUST data has been used in various contexts and has been incident-free so far.",
-   "speaker": "Mr Ong Ye Kung",
-   "quote": "TRUST data has been used in various contexts already – so far, incident-free.",
-   "verified": true
-  },
-  {
-   "point": "Data is anonymised and de-identified by international standards.",
-   "speaker": "Mr Ong Ye Kung",
-   "quote": "we make sure it is anonymised and de-identified by international standards",
-   "verified": true
+   "label": "Balanced approach to healthcare AI data",
+   "summary": "The passage argues for a balanced approach using data with precautions, noting TRUST data has been used incident-free.",
+   "sentences": [
+    {
+     "sid": "s00040",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "If we start off thinking that we distrust this system entirely and therefore, let us scope down the data to be used to train models – even though we know the data is essential to train models that can improve healthcare, save lives, operate everything better and maybe help us address some of our very stark challenges of an ageing population with rising patient load – and if we accept that, but yet at the same time distrust the system and say, \"Let's scope down the data, let's not believe that they can really be anonymised and de-dentified because there can be leaks and traceability\", and \"Let's seek everyone's consent before we can use\", then it is a non-starter.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "I think just take a balanced approach: recognise that this is a breakthrough technology that can do a lot of good, but to do so, we will need to use the data that we have and take the necessary precautions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "And we started this process some years ago.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00044",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "So, TRUST data has been used in various contexts already – so far, incident-free.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00046",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "I think let us proceed on that basis.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00047",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "But we must strike a balance between leveraging that technology, but putting in place the safeguards.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [
-  "Cost of developing SIMFONI models",
-  "Rationale for targeting conditions diagnosable by routine tests rather than rare diseases",
-  "How clinicians will access SIMFONI",
-  "Whether private practitioners will be included",
-  "Specific safeguards to detect and mitigate automation bias",
-  "Whether privacy testing will check if models can memorise or reproduce identifiable patient information",
-  "Publication of test standards, findings and response protocol for any disclosure",
-  "Scope of data to be used for training, including whether it includes all health data and the National Electronic Health Record database",
-  "Whether explicit consent will be sought before patient data is used for training"
- ],
- "supplementary": "Supplementary questions covered automation bias in clinical AI and data privacy, consent, scope and leak assurances.",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4166"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4166",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-08-05"
   ],
-  "group": "oral",
-  "source_words": 1198,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-4166",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4166"
+  ],
+  "sentences_total": 50,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 4,
+  "selection_share": 0.24,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 3,
+   "turns_total": 7,
+   "coverage": 0.4286,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T03:36:35"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2622,
+   "completion_tokens": 244,
+   "estimated": false,
+   "cost_usd": 0.000435
+  }
  }
 }

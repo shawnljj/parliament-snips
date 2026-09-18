@@ -1,72 +1,106 @@
 {
- "title": "Adoption leave: whether to raise it from 12 to 16 weeks",
- "asked": "Mr Foo Cexiang asked whether the Ministry will consider increasing adoption leave from 12 weeks to 16 weeks to align it with maternity leave, and if not, what policy considerations militate against such an enhancement.",
- "asked_by": "Mr Foo Cexiang",
- "answered_by": "Ms Indranee Rajah",
- "response": "Ms Indranee Rajah said biological mothers are entitled to 16 weeks of maternity leave while adoptive mothers are entitled to 12 weeks of adoption leave. The month-long difference is because biological mothers require more time to recuperate physically from childbirth. Adoptive parents receive the same parental and childcare leave benefits as biological parents, including the new 10-week Shared Parental Leave scheme introduced last year. She said the Ministry will look at need when considering leave duration and is not closed to fresh ideas, with the key consideration being what is needed and required.",
- "key_points": [
+ "title": "Increasing Adoption Leave from 12 Weeks to 16 Weeks",
+ "what_it_is": "Increasing Adoption Leave from 12 Weeks to 16 Weeks",
+ "sections": [
   {
-   "point": "Biological mothers get 16 weeks of maternity leave; adoptive mothers get 12 weeks of adoption leave.",
-   "speaker": "Ms Indranee Rajah",
-   "quote": "biological mothers are entitled to 16 weeks of maternity leave while adoptive mothers are entitled to 12 weeks of adoption leave.",
-   "verified": true
+   "label": "Maternity leave and adoptive parents",
+   "summary": "Maternity leave is a month longer as biological mothers need more physical recovery, while adoptive parents get the same parental and childcare leave benefits as biological parents.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The duration of maternity leave is longer, by a month, as biological mothers require more time to recuperate physically from childbirth.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Adoptive parents, otherwise, receive the same parental and childcare leave benefits as biological parents today.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "This includes the new 10-week Shared Parental Leave scheme, which was introduced last year to encourage shared parental responsibility and provide more time for parents to care for and bond with their newborns.",
+     "added_for_context": false
+    }
+   ]
   },
   {
-   "point": "Maternity leave is longer by a month because biological mothers need more time to recuperate physically from childbirth.",
-   "speaker": "Ms Indranee Rajah",
-   "quote": "biological mothers require more time to recuperate physically from childbirth.",
-   "verified": true
-  },
-  {
-   "point": "Adoptive parents receive the same parental and childcare leave benefits as biological parents.",
-   "speaker": "Ms Indranee Rajah",
-   "quote": "Adoptive parents, otherwise, receive the same parental and childcare leave benefits as biological parents today.",
-   "verified": true
-  },
-  {
-   "point": "The new 10-week Shared Parental Leave scheme was introduced last year to encourage shared parental responsibility.",
-   "speaker": "Ms Indranee Rajah",
-   "quote": "the new 10-week Shared Parental Leave scheme, which was introduced last year to encourage shared parental responsibility",
-   "verified": true
-  },
-  {
-   "point": "In considering leave duration, the Ministry will look at the need.",
-   "speaker": "Ms Indranee Rajah",
-   "quote": "In considering the duration of leave, we will look at the need.",
-   "verified": true
-  },
-  {
-   "point": "The Ministry is not closed to considering fresh ideas or initiatives.",
-   "speaker": "Ms Indranee Rajah",
-   "quote": "We are not closed to considering fresh ideas or initiatives",
-   "verified": true
-  },
-  {
-   "point": "The key consideration is what is the need, what we want to support, and what is actually required.",
-   "speaker": "Ms Indranee Rajah",
-   "quote": "the key consideration must always be what is the need and what we want to support, and what is actually required.",
-   "verified": true
+   "label": "Considering leave duration by need",
+   "summary": "Leave duration is considered by need, with a difference between those who give birth and those who adopt, and the key consideration is what is required.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "In considering the duration of leave, we will look at the need.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "In this case, as I have explained, there is a difference between those who give birth physically to a child and those who adopt.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "We are not closed to considering fresh ideas or initiatives, but I think the key consideration must always be what is the need and what we want to support, and what is actually required.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
- "left_open": [
-  "Whether adoption leave will be increased from 12 weeks to 16 weeks.",
-  "How the MSF nine-month gap policy for second adoptions relates to the duration of adoption leave."
- ],
- "supplementary": "Whether adoptive mothers should get more bonding time, referencing MSF's nine-month gap policy for second adoptions.",
- "_dropped": [],
  "_meta": {
-  "report_ids": [
-   "oral-answer-4151"
-  ],
+  "schema": 4,
+  "id": "oral-answer-4151",
+  "group": "oral",
+  "year": "2026",
   "sitting_dates": [
    "2026-05-07"
   ],
-  "group": "oral",
-  "source_words": 331,
-  "transcript_truncated": false,
-  "model": "deepseek-v4.1-flash:cloud",
-  "points_dropped": 0,
-  "key": "oral-answer-4151",
-  "schema": 2
+  "report_ids": [
+   "oral-answer-4151"
+  ],
+  "sentences_total": 10,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.6,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T03:57:14"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1020,
+   "completion_tokens": 143,
+   "estimated": false,
+   "cost_usd": 0.000183
+  }
  }
 }
