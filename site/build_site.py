@@ -1255,6 +1255,137 @@ def render_brief(brief, sitting_dates=None):
       </article>"""
 
 
+def render_brief_selected(brief, sitting_dates=None):
+    """Render a selection-schema (v4) brief: sections, verbatim sentences, sticky summary.
+
+    This is the shape that replaced paraphrasing. Every published sentence is copied from
+    the record by id, so the page cannot contain a sentence that Hansard does not. The
+    one model-written element per section is its summary, which sits immediately above the
+    sentences it claims to summarise so a reader can check it in one glance.
+    """
+    meta = brief.get("_meta", {}) or {}
+    title = brief.get("title") or meta.get("id") or "Untitled"
+    sections = brief.get("sections") or []
+    if not sections:
+        return ""
+
+    dates = meta.get("sitting_dates") or ([sitting_dates] if sitting_dates else [])
+    if dates:
+        if len(dates) == 1:
+            dates_txt = pretty_date(dates[0])
+        else:
+            dates_txt = f"{pretty_date(dates[0])} &ndash; {pretty_date(dates[-1])}"
+    else:
+        dates_txt = ""
+
+    grp = (meta.get("group") or "").strip()
+    total = meta.get("sentences_total") or 0
+    published = meta.get("sentences_in_sections") or 0
+    skipped = max(0, total - published)
+
+    def sid_num(x):
+        """Integer position of a sentence id. Ids are global and ordered within an item
+        (s00008, s00009, s00025...), so the number IS the position in the record -- which
+        makes the gap between two sections arithmetic rather than a lookup. A set built
+        from published sentences only would report every gap as zero, because the
+        unselected sentences in between are not in the set."""
+        m = re.match(r"s(\d+)$", str(x or "").strip())
+        return int(m.group(1)) if m else None
+
+    cards = []
+    seen_speakers = set()
+    for n, sec in enumerate(sections):
+        sents = sec.get("sentences") or []
+        if not sents:
+            continue
+        rows = []
+        for x in sents:
+            raw_spk = (x.get("speaker") or "").strip()
+            # Show the portfolio once, then just the name: repeating a 49-character title
+            # on every sentence wraps the attribution line and costs a line each time.
+            spk = esc(short_speaker(raw_spk)) if raw_spk else ""
+            if spk and spk != raw_spk and raw_spk not in seen_speakers:
+                seen_speakers.add(raw_spk)
+                spk = f'{spk} <span class="spkfull">{esc(raw_spk)}</span>'
+            # A turn the record does not attribute prints NOTHING rather than a
+            # placeholder: the text usually names the speaker inline, and inventing a
+            # name is the one thing this pipeline must not do.
+            # spk is pre-escaped (and may carry the first-mention span), so it is
+            # inserted raw here. Escaping twice renders the markup as visible text.
+            spk_html = (f'<span class="who">{spk}</span>' if spk
+                        else '<span class="who none"></span>')
+            ctx = ('<span class="ctxmark">context</span>'
+                   if x.get("added_for_context") else "")
+            rows.append(
+                f'<li class="vs">'
+                f'<div class="vs-meta"><span class="sid">{esc(x.get("sid", ""))}</span>'
+                f'{spk_html}{ctx}</div>'
+                f'<p class="vs-text">{esc(x.get("text", ""))}</p>'
+                f'</li>')
+
+        label = (sec.get("label") or "").strip()
+        summary = (sec.get("summary") or "").strip()
+        sum_html = ""
+        if summary or label:
+            sum_html = (
+                f'<div class="sumwrap"><div class="sumcard">'
+                + (f'<div class="sumlabel">{esc(label)}</div>' if label else "")
+                + (f'<p class="sumtext">{esc(summary)}</p>' if summary else "")
+                + '</div></div>')
+
+        # HOW MANY SENTENCES LIE BETWEEN THIS SECTION AND THE NEXT. A single global count
+        # in a page footer was tried and is useless on a long item: a 140-section brief
+        # puts that footer ~100,000px down the page, so no reader ever reaches it. A
+        # local count sits exactly at the gap and says what was passed over right there.
+        gap_html = ""
+        nxt = (sections[n + 1].get("sentences") or []) if n + 1 < len(sections) else []
+        if nxt:
+            a, b = sid_num(sents[-1].get("sid")), sid_num(nxt[0].get("sid"))
+            if a is not None and b is not None and b - a - 1 > 0:
+                between = b - a - 1
+                gap_html = (f'<p class="gapd">{between:,} '
+                            f'sentence{"s" if between != 1 else ""} not selected</p>')
+
+        cards.append(
+            f'<section class="dsec" id="sec-{n + 1}">'
+            f'{sum_html}'
+            f'<ol class="vslist">{"".join(rows)}</ol>'
+            f'{gap_html}'
+            f'</section>')
+
+    return f"""
+<article class="brief brief-v4">
+  <header class="brief-hd">
+    <h2>{esc(title)}</h2>
+    <p class="brief-meta">
+      {esc(grp + " · ") if grp else ""}{dates_txt}
+      {f' · {total:,} sentences in the record' if total else ''}
+    </p>
+    {f'<p class="brief-what">{esc(brief.get("what_it_is", ""))}</p>' if brief.get("what_it_is") else ''}
+  </header>
+  {''.join(cards)}
+  <footer class="brief-ft">
+    <p class="prov">
+      {published:,} of {total:,} sentences in this record are shown above; the rest were
+      not selected. Nothing was deleted \u2014 the brief simply does not emphasise them.
+    </p>
+    <p class="prov">
+      Every sentence above is copied from the Hansard record by id; the model returned
+      ids only and never wrote them. The summary in each section is machine-written and
+      sits beside the sentences it covers, so it can be checked.
+    </p>
+  </footer>
+</article>"""
+
+
+def render_brief_any(brief, sitting_dates=None):
+    """Dispatch on schema, so a mixed archive still renders coherently."""
+    meta = brief.get("_meta", {}) or {}
+    if brief.get("sections"):
+        return render_brief_selected(brief, sitting_dates)
+    return render_brief(brief, sitting_dates)
+
+
 def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None):
     d = sitting["date"]
     cov = sitting["coverage"]
@@ -1403,7 +1534,7 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
 
     def brief_list(items, limit=None):
         out = items if limit is None else items[:limit]
-        return "".join(render_brief(b) for b in out)
+        return "".join(render_brief_any(b) for b in out)
 
     # The section rail builds ticks from h2/h3 headings, so the briefs need real
     # headings rather than being a run of <article>s. Without these the rail
@@ -1412,7 +1543,7 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
         if not items:
             return ""
         return (f'<h2 class="railhead">{esc(heading)}</h2>'
-                + "".join(render_brief(b) for b in items))
+                + "".join(render_brief_any(b) for b in items))
 
     lead = reports[0] if reports else {}
     if substantive:
@@ -1616,6 +1747,56 @@ def render_archive(sittings, *, css_href, home_href, archive_href, summaries=Non
 
 
 STYLE = """
+/* ============================================================
+   SELECTION BRIEF (schema v4). BASE LAYER IS THE PHONE.
+   Wider viewports only ever ADD, from the min-width block at
+   the end. There is no max-width override for these rules.
+   ============================================================ */
+.brief-v4{margin:0 0 34px}
+.brief-v4 .brief-hd{margin-bottom:14px}
+.brief-v4 .brief-hd h2{font-size:19px;line-height:1.32;margin:0 0 4px;letter-spacing:-.01em}
+.brief-v4 .brief-meta{margin:0;font-size:12.5px;color:var(--dim)}
+.brief-v4 .brief-what{margin:9px 0 0;font-size:14.5px;line-height:1.55;color:#2c343b}
+
+/* A section is the sticky card's containing block, so the card releases exactly when
+   the section ends -- no JavaScript, and the requirement is met by layout alone. */
+.dsec{margin:0 0 30px}
+.sumwrap{position:sticky;top:0;z-index:5}
+.sumcard{background:var(--accent-soft);border-left:3px solid var(--accent);
+  border-radius:0 8px 8px 0;padding:9px 12px 10px;margin:0 0 12px}
+.sumlabel{font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:3px}
+.sumtext{margin:0;font-size:14.5px;line-height:1.5;color:#17352a}
+
+.vslist{list-style:none;margin:0;padding:0}
+.vs{padding:11px 0 12px;border-top:1px solid var(--line)}
+.vs:first-child{border-top:0;padding-top:2px}
+.vs-meta{display:flex;align-items:baseline;gap:8px;margin-bottom:4px;flex-wrap:wrap}
+.sid{font:600 10.5px/1.5 var(--mono);color:var(--faint);letter-spacing:.03em}
+.vs-meta .who{font-size:11.5px;color:var(--dim);text-transform:uppercase;
+  letter-spacing:.045em}
+.vs-meta .who.none{display:block;min-height:.7rem}
+.ctxmark{font-size:10px;color:var(--warm);background:#fdf1e8;border-radius:4px;
+  padding:1px 5px;margin-left:auto}
+.vs-text{margin:0;font-size:15.5px;line-height:1.6;color:var(--ink)}
+
+.brief-ft{margin-top:20px;padding-top:12px;border-top:1px solid var(--line)}
+/* The gap count sits at the gap, between one section and the next. */
+.gapd{margin:0;padding:7px 0 0;font-size:12px;color:var(--faint);
+  text-align:center;letter-spacing:.02em;
+  border-top:1px dashed var(--line)}
+/* Portfolio shown once, then just the name -- a 49-char title on every sentence wraps. */
+.spkfull{display:block;text-transform:none;letter-spacing:0;font-size:11px;
+  color:var(--faint);margin-top:1px}
+.prov{margin:0;font-size:11.5px;line-height:1.6;color:var(--faint)}
+
+/* Wider viewports ADD only. */
+@media (min-width:700px){
+  .brief-v4 .brief-hd h2{font-size:22px}
+  .vs-text{font-size:16px}
+  .sumcard{padding:11px 15px 12px}
+}
+
 :root{
   --ink:#14181d; --dim:#5c6773; --faint:#8b95a1; --line:#e3e7ec;
   --bg:#fbfbfa; --card:#ffffff; --accent:#1c6b4a; --accent-soft:#e8f2ec;

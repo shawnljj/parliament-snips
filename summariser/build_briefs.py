@@ -58,7 +58,7 @@ DEFAULT_MODEL = os.environ.get("PARSNIPS_LLM_MODEL", "deepseek-v4.1-flash:cloud"
 # gate here instead of a crash there.
 # Bump this whenever the brief shape changes. A resumed run re-does any brief whose
 # schema is behind, so a corpus is never a mixture of pipeline versions.
-SCHEMA = 3
+SCHEMA = 4
 
 # A sentence that is a QUESTION, not a statement. Singapore Hansard records the
 # questioner's turn as "asked the Minister ... (a) whether ...", so these prefixes are
@@ -68,8 +68,7 @@ QUESTION_START = re.compile(
     r"will|would|does|do|did|is|are|was|were|has|have|had|can|could|should|may|"
     r"could the|could the hon|given|in light of|in view of)", re.I)
 
-REQUIRED_BRIEF_FIELDS = ("title", "what_it_is", "why_it_matters",
-                         "what_happens_next", "not_said", "key_points")
+REQUIRED_BRIEF_FIELDS = ("title", "what_it_is", "sections")
 
 RETRIES = 3
 
@@ -499,11 +498,32 @@ def load_index():
 
 
 def load_item(path):
-    """An item payload as stored: sentences carry sid, speaker, turn_index."""
-    d = storage.read_json(os.path.join(DATASET, path))
-    if not d:
+    """An item payload, FLATTENED to per-sentence records.
+
+    The dataset on disk is columnar -- turns hold parallel sid/text/word lists plus a
+    turn-level speaker index -- because that saved ~160 MB across 754,082 sentences.
+    That layout is for storage, not for working with, so it is expanded here into
+    [{sid, text, speaker, attributed, turn_index, report_id, words, score}, ...] once,
+    at the boundary. Callers are written against sentences, as before.
+
+    Getting this wrong is silent: the raw dict has no "sentences" key, so an item
+    arrives with no text and every stage downstream reports "nothing found" rather than
+    an error. build_dataset.load_item is the single implementation of the expansion.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import build_dataset as _BD
+    full = os.path.join(DATASET, path)
+    if not os.path.exists(full):
         return None
-    return d
+    sents = _BD.load_item(full)
+    if not sents:
+        return None
+    # Return the raw dict WITH "sentences" added, rather than a new type: callers already
+    # read title / group / sitting_dates / report_ids off this same dict, and a wrapper
+    # object would change the shape everywhere for no benefit.
+    raw = storage.read_json(full) or {}
+    raw["sentences"] = sents
+    return raw
 
 
 def item_meta(path):
@@ -697,6 +717,224 @@ def stage2_extract(item, model, is_oral):
             "not_said": item_fields.get("not_said", []),
             "stage": item_fields.get("stage", ""),
         }, usage_total
+
+
+
+
+# ------------------------------------------------------------------ selection prompts
+
+SELECT_SYSTEM = """You are selecting the sentences that matter from a record of a \
+Singapore Parliament sitting.
+
+Return JSON only:
+
+{"keep": ["s00002", "s00003"], "what_it_is": "one sentence naming the kind of business"}
+
+Rules:
+- "keep" holds sentence ids ONLY, copied exactly. Never write, quote or reword a
+  sentence. Anything other than ids and "what_it_is" is discarded.
+- Choose the sentences a reader MUST see: what was decided, committed, answered or
+  quantified. Figures, dates, amounts and named schemes are the most valuable.
+- SKIP procedural text: thanks, welcomes, greetings, "I beg to move", points of order,
+  housekeeping such as hotline numbers, URLs and form links, and sentences that only
+  announce what comes next.
+- Keep 3 to 12 sentences for a substantial record, 1 to 4 for a short one."""
+
+SELECT_TMPL = """Sentences from the record, each prefixed with its id:
+
+{excerpt}
+
+Return the JSON described in your instructions."""
+
+SUMMARY_SYSTEM = """You summarise a set of consecutive sentences from a Singapore \
+Parliament record.
+
+Write ONE sentence, under 30 words, stating what this set establishes. Use ONLY what \
+these sentences state. Do not add a fact, name, number or qualification they do not \
+contain. Do not evaluate or editorialise.
+
+Return JSON only: {"summary": "..."}"""
+
+SUMMARY_TMPL = """These consecutive sentences from the record:
+
+{block}
+
+Return the JSON described in your instructions."""
+
+LABEL_SYSTEM = """Given consecutive sentences from a Singapore Parliament record, give a \
+3-6 word plain-English label for what this passage is about.
+
+Use only words for subjects the passage actually names. No evaluation.
+
+Return JSON only: {"label": "..."}"""
+
+LABEL_TMPL = """These consecutive sentences from the record:
+
+{block}
+
+Return the JSON described in your instructions."""
+
+# --------------------------------------------------------------- Stage 2b: select
+#
+# WHY THIS REPLACED PARAPHRASING. The paraphrase was the only place fabricated content
+# could enter, and three rounds of prompt rules did not reduce the rate at which the
+# model added a specific the source does not state (0.967 -> 0.970 supported of judged,
+# statistically identical). Verified failures: source "no ... for their commercial
+# benefit" became "not for curiosity, convenience or commercial gain"; "discussing with
+# them" became "discussed with GPs"; "who sits at the table POTENTIALLY decides" became
+# "who sits at the table decides". The model does not experience itself as adding things,
+# so no rule reaches it.
+#
+# Selection makes that class UNREPRESENTABLE rather than caught. The model returns ids;
+# every published word is copied from the dataset by id; the only remaining failure is
+# picking the wrong sentence, which the reader can see on the page.
+
+SELECT_SHARE = float(os.environ.get("PARSNIPS_SELECT_SHARE", "0.14"))
+
+# How far to walk back for an antecedent. Measured over 8,176 selections: depth 0 leaves
+# 40.9% of sentences opening on a pronoun or connective; one step takes that to 18.6%,
+# two to 8.8%, and a recursive walk runs to a maximum depth of 15 with 0.15% of walks
+# reaching the item's first sentence. One step is enough because unselected sentences are
+# NOT deleted -- they are collapsed behind a count and can be expanded -- so an
+# antecedent is always one tap away. "Unresolved" means "not emphasised", not
+# "unavailable".
+WALK_BACK = int(os.environ.get("PARSNIPS_WALK_BACK", "1"))
+
+DANGLING_START = re.compile(
+    r"^\s*(This|That|These|Those|It|They|He|She|We|I|There|Such|"
+    r"However|Therefore|Thus|Hence|So|And|But|Also|Then|Now|Certainly)\b", re.I)
+
+
+def stage2b_select(item, model):
+    """Select the sentences that matter. Returns ids only -- never words.
+
+    Chunked when the item does not fit one call, which is where this can fail in both
+    directions: keep every chunk's output and a long item floods (the paraphrase
+    pipeline once produced 259 points for one motion); keep too few and it starves. So
+    each chunk is asked for a share proportional to its size and a global cap is applied
+    round-robin across chunks, so no chunk dominates and none is dropped.
+    """
+    sentences = item.get("sentences") or []
+    if not sentences:
+        return None, {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0}
+    by_sid = {s["sid"]: s for s in sentences}
+    chunks = make_chunks(sentences)
+    target = max(3, round(len(sentences) * SELECT_SHARE))
+    per_chunk = max(1, round(target / max(1, len(chunks))))
+
+    picked, usage_total = [], {"calls": 0, "prompt_tokens": 0,
+                               "completion_tokens": 0}
+    for i, chunk in enumerate(chunks, 1):
+        excerpt = render_excerpt(chunk)
+        if len(chunks) > 4:
+            print(f"      select {i}/{len(chunks)} ({len(chunk)} sentences)…", flush=True)
+        extra = (f"\n- This excerpt is part {i} of {len(chunks)} from a longer record. "
+                 f"Keep AT MOST {per_chunk} sentence ids -- the most substantive in this "
+                 f"excerpt.")
+        # NEVER ask for a description of the whole item from one excerpt. A chunk of a
+        # 57-chunk Bill has seen ~1.7% of it, so the answer describes the opening
+        # pleasantries -- measured: "Introduction of a minister for a parliamentary
+        # speech". The item's own recorded title is used instead (see
+        # assemble_selected_brief), which is authoritative and already known, so this
+        # field costs nothing and cannot be wrong.
+        extra += ('\n- Do NOT include a "what_it_is" field. Return only {"keep": [...]}.')
+        sys_p = SELECT_SYSTEM + extra
+        try:
+            raw, usage = ask(SELECT_TMPL.format(excerpt=excerpt), sys_p, model)
+        except Exception as exc:                                    # noqa: BLE001
+            print(f"      select {i}/{len(chunks)} failed: {str(exc)[:70]}")
+            continue
+        usage_total["calls"] += 1
+        for k in ("prompt_tokens", "completion_tokens"):
+            usage_total[k] += usage.get(k, 0) or 0
+        got = parse_json(raw) or {}
+
+        for x in (got.get("keep") or []):
+            x = str(x).strip()
+            if x in by_sid and x not in picked:
+                picked.append(x)
+
+    if not picked:
+        return None, usage_total
+
+    # global cap, round-robin across chunks so coverage is spread not concentrated
+    rank = {s["sid"]: i for i, s in enumerate(sentences)}
+    if len(picked) > target:
+        buckets = [[] for _ in chunks]
+        owner = {s["sid"]: ci for ci, ch in enumerate(chunks) for s in ch}
+        for sid in sorted(picked, key=lambda x: rank[x]):
+            if sid in owner:
+                buckets[owner[sid]].append(sid)
+        merged = []
+        while len(merged) < target and any(buckets):
+            for b in buckets:
+                if b and len(merged) < target:
+                    merged.append(b.pop(0))
+        picked = merged
+
+    # deterministic antecedent repair, bounded
+    keep = set(picked)
+    repaired = set()
+    for sid in list(picked):
+        if not DANGLING_START.match(by_sid[sid]["text"]):
+            continue
+        j = rank[sid]
+        for _ in range(WALK_BACK):
+            if j == 0:
+                break
+            j -= 1
+            prev = sentences[j]["sid"]
+            if prev not in keep:
+                keep.add(prev)
+                repaired.add(prev)
+
+    return {"keep": sorted(keep, key=lambda x: rank[x]),
+            "repaired": sorted(repaired)}, usage_total
+
+
+def stage2c_sections(item, selected, model):
+    """Group the selections into sections and summarise each group.
+
+    A section is a run of selected sentences; a gap of up to GAP unselected sentences
+    does not split it, because a passage that belongs together is usually interrupted by
+    a sentence that merely connects it. Each section gets ONE model-written sentence,
+    which is presented beside the verbatim sentences rather than instead of them -- so a
+    reader can always check it, and the record is never replaced by prose.
+    """
+    sentences = item.get("sentences") or []
+    by_sid = {s["sid"]: s for s in sentences}
+    GAP = int(os.environ.get("PARSNIPS_SECTION_GAP", "2"))
+    rank = {s["sid"]: i for i, s in enumerate(sentences)}
+
+    groups, cur = [], []
+    for sid in selected["keep"]:
+        i = rank[sid]
+        if cur and i - cur[-1] > GAP:
+            groups.append(cur)
+            cur = []
+        cur.append(i)
+    if cur:
+        groups.append(cur)
+
+    out, usage_total = [], {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0}
+    for g in groups:
+        block = "\n".join(f"{sentences[i]['sid']}: {sentences[i]['text']}" for i in g)
+        rec = {"sids": [sentences[i]["sid"] for i in g], "summary": "", "label": ""}
+        try:
+            raw, usage = ask(SUMMARY_TMPL.format(block=block), SUMMARY_SYSTEM, model)
+            usage_total["calls"] += 1
+            for k in ("prompt_tokens", "completion_tokens"):
+                usage_total[k] += usage.get(k, 0) or 0
+            rec["summary"] = (parse_json(raw) or {}).get("summary", "").strip()
+            raw, usage = ask(LABEL_TMPL.format(block=block), LABEL_SYSTEM, model)
+            usage_total["calls"] += 1
+            for k in ("prompt_tokens", "completion_tokens"):
+                usage_total[k] += usage.get(k, 0) or 0
+            rec["label"] = (parse_json(raw) or {}).get("label", "").strip()
+        except Exception as exc:                                    # noqa: BLE001
+            print(f"      section summary failed: {str(exc)[:60]}")
+        out.append(rec)
+    return out, usage_total
 
 
 # ----------------------------------------------------------------------- Stage 3
@@ -897,165 +1135,158 @@ def stage3_assemble(item, extracted, model):
 # ----------------------------------------------------------------------- Stage 4
 
 
-def stage4_verify(brief, item):
-    """Two independent checks, because they catch different failures.
 
-    1. QUOTE INVARIANT — every cited sid resolves, and the published quote text is
-       byte-identical to the stored sentence. Because this pipeline never lets the
-       model write a quote, a failure here is a bug in assembly, not a dishonest
-       model: treat sub-100% as a signal to investigate.
-    2. COVERAGE — how many of the item's turns produced at least one point. A
-       verifier that only checks quotes reads 100% while an item has been silently
-       emptied, because selecting nothing cannot fail a quote check. That happened
-       for real in this project (44 Bills and Budget items), so coverage is not
-       optional.
-    3. SCHEMA COMPLETENESS — every field the site renders is present. Checks 1 and 2
-       both passed on briefs that were missing why_it_matters, not_said,
-       what_happens_next and stage, because every field the renderer reads is
-       optional: the pages looked finished with four sections quietly absent. Gates
-       catch false statements; only a completeness check catches absence.
+def assemble_selected_brief(item, meta, selected, sections):
+    """Build the self-contained brief: sections carrying their OWN verbatim sentences.
+
+    SELF-CONTAINED by design. The brief embeds the text of every sentence it publishes,
+    copied from the dataset by id, so:
+      * the site needs no access to the dataset to render it (portable, and a brief is
+        then a complete artifact -- which is what a reader page is);
+      * the text cannot drift from the record, because it was copied, not retyped;
+      * a withheld dataset is not a broken page.
+    The cost is duplication on disk: the same sentence appears in the brief and in the
+    dataset. That is the right trade -- the dataset is 106 MB of columnar optimisation,
+    and a brief is a few KB.
     """
-    by_sid = {s["sid"]: s for s in (item.get("sentences") or [])}
-    bad = []
-    for kp in brief.get("key_points") or []:
-        # Verify every citation against ITS OWN text. A point's primary `quote` is
-        # only the first citation, so checking all cited sids against it would fail
-        # any multi-cite point — which is a bug this check found in assembly.
-        for c in kp.get("citations") or []:
-            s = by_sid.get(c.get("sid"))
-            if s is None:
-                bad.append({"kind": "unresolved_sid", "sid": c.get("sid")})
-            elif s["text"].strip() != (c.get("text") or "").strip():
-                bad.append({"kind": "citation_text_mismatch", "sid": c.get("sid")})
-        for sid in kp.get("cites") or []:
-            if sid not in by_sid:
-                bad.append({"kind": "unresolved_sid", "sid": sid})
-        # The rendered quote must equal the dataset text of the first cited sid.
-        first = (kp.get("cites") or [None])[0]
-        if first and first in by_sid and kp.get("quote", "").strip() != by_sid[first]["text"].strip():
-            bad.append({"kind": "quote_mismatch", "sid": first})
-    quoted = sum(1 for kp in (brief.get("key_points") or []) if kp.get("quote"))
+    sentences = item.get("sentences") or []
+    by_sid = {s["sid"]: s for s in sentences}
+    rank = {s["sid"]: i for i, s in enumerate(sentences)}
+    keep = set(selected.get("keep") or [])
+    repaired = set(selected.get("repaired") or [])
 
-    # ------------------------------------------------- claim-from-question check
-    # A claim that asserts a FACT must not rest on a sentence that only ASKS. Measured
-    # across the 288 briefs of 2026: 214 points cited a question, and the failure is
-    # real rather than theoretical -- oral-answer-4089 published "The Government IS
-    # ASSESSING how rising fuel costs are passed through" citing a sentence that reads
-    # "asked the Deputy Prime Minister ... whether ...". The record contains no such
-    # answer; that sitting's Hansard captured the questions and the Minister's reply
-    # was literally "Thank you, Sir."
-    #
-    # The item is not the bug -- a brief of questions is legitimate and the site has no
-    # business inventing answers. What is not legitimate is reporting a QUESTION as a
-    # FINDING, because it reads as a statement of what the Government is doing. So the
-    # check is about the CLAIM's framing, and claims that stay in the asking register
-    # ("The member asked how...") are correct and pass.
-    ASKING = re.compile(
-        r"\b(asks?|asked|asking|clarif\w*|enquir\w*|inquire[sd]?|wonder\w*|"
-        r"question(?:s|ed|ing)?|whether|quer(?:y|ies|ied)|probe[sd]?|"
-        r"seeks? (?:clarification|an answer)|wants? to know)\b", re.I)
-    ASSERTING = re.compile(
-        r"^\s*(?:the\s+)?(?:government|ministry|minister|bill|amendments?|scheme|board|"
-        r"council|agency|authority|company|it|they|he|she)\b[^.]{0,80}?"
-        r"\b(is|are|was|were|has|have|had|will|would|does|do|did|enables?|introduces?|"
-        r"provides?|requires?|allows?|sets?|ensures?|plans?|intends?|aims?|seeks)\b",
-        re.I)
-
-    question_claims = []
-    for kp in brief.get("key_points") or []:
-        first = (kp.get("cites") or [None])[0]
-        src = (by_sid.get(first) or {}).get("text", "")
-        if not src:
+    out_sections, used = [], set()
+    for sec in sections:
+        sids = [x for x in (sec.get("sids") or []) if x in by_sid]
+        if not sids:
             continue
-        src_is_question = bool(QUESTION_START.match(src.strip())) or src.strip().endswith("?")
-        claim = (kp.get("point") or "").strip()
-        if src_is_question and ASSERTING.match(claim) and not ASKING.search(claim):
-            question_claims.append({"sid": first,
-                                    "claim": claim[:110],
-                                    "source": src.strip()[:110]})
+        used.update(sids)
+        out_sections.append({
+            "label": (sec.get("label") or "").strip(),
+            "summary": (sec.get("summary") or "").strip(),
+            "sentences": [{
+                "sid": sid,
+                "speaker": by_sid[sid].get("speaker") or "",
+                "attributed": bool(by_sid[sid].get("attributed")),
+                # text is COPIED here, never regenerated downstream
+                "text": by_sid[sid].get("text") or "",
+                "added_for_context": sid in repaired,
+            } for sid in sids],
+        })
+    if not out_sections:
+        return None
 
-    # schema completeness: the fields the site reads, and nothing optional about them.
-    #
-    # A field is complete when it is PRESENT, not when it is non-empty. Three of these
-    # have legitimate "nothing to report" values, and the spec requires those exact
-    # words: why_it_matters falls back to "The record does not set out the practical
-    # impact.", what_happens_next to "not stated", and not_said to []. Treating those
-    # as missing withheld 100% of the first run -- the gate was wrong, not the briefs.
-    # What must never happen is the key being absent entirely, which is how four
-    # sections vanished from the page without anything failing.
-    missing = []
-    for field in REQUIRED_BRIEF_FIELDS:
-        if field not in brief:
-            missing.append(field)
+    # The skipped sentences are carried as a COUNT plus the span, not as text: on a phone
+    # 374 inline sentences is ~14,000px of scrolling, and the count is more honest than
+    # faint text anyway (it states exactly how many were passed over). The site expands
+    # them on demand by re-reading the dataset when it is available.
+    skipped = sorted(keep - used, key=lambda x: rank.get(x, 0))
+    return {
+        "title": item.get("title") or meta.get("title") or meta["id"],
+        # The record's own title. See stage2b_select: a single chunk cannot describe the
+        # item, and a title is authoritative, so this costs nothing and cannot be wrong.
+        "what_it_is": (item.get("title") or meta.get("title") or "").strip(),
+        "sections": out_sections,
+        "_meta": {
+            "schema": SCHEMA,
+            "id": meta["id"],
+            "group": meta.get("group"),
+            "year": meta.get("year"),
+            "sitting_dates": item.get("sitting_dates") or [],
+            "report_ids": item.get("report_ids") or [],
+            "sentences_total": len(sentences),
+            "sentences_selected": len(keep),
+            "sentences_in_sections": len(used),
+            "sentences_skipped_within_selection": len(skipped),
+            "sentences_added_for_context": len(repaired),
+            "sections_total": len(out_sections),
+            "selection_share": round(len(keep) / max(1, len(sentences)), 4),
+            "generated_by": "stage2b_select + stage2c_sections",
+        },
+    }
 
-    # coverage: turns represented, against turns that had eligible sentences
-    turns_total = len({(s.get("report_id"), s.get("turn_index"))
-                       for s in (item.get("sentences") or [])})
-    cited = {sid for kp in (brief.get("key_points") or []) for sid in kp.get("cites") or []}
-    turns_cited = len({(by_sid[s].get("report_id"), by_sid[s].get("turn_index"))
-                       for s in cited if s in by_sid})
+
+def stage4_verify(brief, item):
+    """The gates. All of them fail closed: a failure withholds the brief.
+
+    1. VERBATIM INVARIANT — every sentence the brief publishes is byte-identical to the
+       record. This is now the central check, and it is a far stronger position than the
+       old quote check was. The model returns ids and never writes text, so a mismatch
+       is IMPOSSIBLE without a bug in assembly: there is no path by which a fabricated
+       sentence can reach a published brief. A failure here means the code is wrong, not
+       the model.
+    2. SELECTION IS NOT EMPTY — something was chosen. A verifier that only checks text
+       reads 100% while an item has been silently emptied, because publishing nothing
+       cannot fail a text check. That happened for real in this project.
+    3. SCHEMA COMPLETENESS — every field the site renders is present. Text and
+       emptiness checks both passed on briefs that were missing four item fields,
+       because every field the renderer reads is optional: the pages looked finished
+       with sections quietly absent. Only a completeness check catches absence.
+    4. COVERAGE — a brief must account for a real share of its item. Added after a
+       one-point brief covering 1 of 62 turns was published.
+    """
+    sentences = item.get("sentences") or []
+    by_sid = {s["sid"]: s for s in sentences}
+    n_turns = len({(s.get("report_id"), s.get("turn_index")) for s in sentences})
+
+    bad, published, missing_text = [], 0, []
+    for sec in brief.get("sections") or []:
+        for s in sec.get("sentences") or []:
+            published += 1
+            sid = s.get("sid")
+            rec = by_sid.get(sid)
+            if rec is None:
+                bad.append({"kind": "unresolved_sid", "sid": sid})
+            elif (rec.get("text") or "").strip() != (s.get("text") or "").strip():
+                # THE INVARIANT. Copied text that does not match the record.
+                bad.append({"kind": "text_mismatch", "sid": sid})
+            if s.get("attributed") and not (s.get("speaker") or "").strip():
+                # A name was not inferred, but a flagged one is blank: inconsistent.
+                bad.append({"kind": "attributed_but_nameless", "sid": sid})
+            if not (s.get("text") or "").strip():
+                missing_text.append(sid)
+
+    sections = brief.get("sections") or []
+    empty_summary = [i for i, sec in enumerate(sections)
+                     if not (sec.get("summary") or "").strip()]
+    empty_section = [i for i, sec in enumerate(sections) if not (sec.get("sentences") or [])]
+
+    # schema completeness, derived from what the renderer actually reads
+    missing_fields = [f for f in REQUIRED_BRIEF_FIELDS if not brief.get(f)]
+
+    # coverage: turns cited by any published sentence, over turns in the item
+    cited_turns = {(by_sid[s["sid"]].get("report_id"), by_sid[s["sid"]].get("turn_index"))
+                   for sec in sections for s in (sec.get("sentences") or [])
+                   if s.get("sid") in by_sid}
+    coverage = len(cited_turns) / max(1, n_turns)
+
+    min_coverage = float(os.environ.get("PARSNIPS_MIN_COVERAGE", "0.15"))
     min_turns = int(os.environ.get("PARSNIPS_MIN_TURNS_COVERED", "1"))
 
-    # THE COVERAGE FLOOR IS THE REAL RULE, and it replaces a blunt "at least 2 turns"
-    # minimum I tried first. That version was wrong and the regression test caught it: it
-    # withheld 17 of 287 published briefs, including bill-783 and budget-2875 at coverage
-    # 1.000 (1 cited turn out of 1) -- which are COMPLETE summaries of single-turn items,
-    # not thin ones. The distinction is not how many turns are cited but whether the brief
-    # accounts for its item:
-    #
-    #   coverage 1.00 (1 of 1)    a complete summary           -> must publish
-    #   coverage 0.50 (1 of 2)    half the item               -> publishes
-    #   coverage 0.016 (1 of 62)  one turn of sixty-two        -> must NOT publish
-    #
-    # Coverage expresses that directly at any item size, so a turn-count minimum is both
-    # redundant and harmful. The floor is 0.15, chosen against the published corpus rather
-    # than guessed: across the 287 briefs of 2026 the lowest real coverage is 0.167 (with 8
-    # points), so a 0.15 floor withholds none of them and removes only the degenerate case
-    # that motivated it -- oral-answer-4089, which is 62 questions and no answers, whose
-    # 1-point brief at coverage 0.016 passed the old gate and published or was withheld
-    # depending on which sample the model returned.
-    min_coverage = float(os.environ.get("PARSNIPS_MIN_COVERAGE", "0.15"))
+    passed = (not bad and not missing_fields and not empty_section
+              and published > 0
+              and (len(cited_turns) >= min_turns and coverage >= min_coverage
+                   or n_turns <= 1))
 
-    # duplicates: points citing the SAME evidence say one thing, not several. Assembly
-    # removes them, so this should always be 0 -- it exists to catch the day it is not.
-    cite_sets = [tuple(sorted(k.get("cites") or [])) for k in (brief.get("key_points") or [])]
-    dupes = len(cite_sets) - len({c for c in cite_sets if c})
-
-    verdict = {
-        "quote_invariant": len(bad) == 0,
-        "quote_failures": bad,
-        "schema_complete": not missing,
-        "missing_fields": missing,
-        "duplicate_points": dupes,
-        # Reported, not withheld: a point resting on a question is a defect in FRAMING,
-        # and the site can render the underlying question honestly. Withholding the
-        # whole item would be the wrong trade for a public-interest archive -- it would
-        # drop 85 of 288 briefs for a fixable wording issue.
-        "question_claims": len(question_claims),
-        "question_claim_examples": question_claims[:3],
-        "points": len(brief.get("key_points") or []),
-        "quoted_points": quoted,
-        "turns_total": turns_total,
-        "turns_cited": turns_cited,
-        "coverage": round(turns_cited / turns_total, 3) if turns_total else 0.0,
-        "min_turns_required": min_turns,
+    return {
+        "passed": bool(passed),
+        "verbatim_invariant": not bad,
+        "text_failures": bad[:20],
+        "text_failures_count": len(bad),
+        "schema_complete": not missing_fields,
+        "missing_fields": missing_fields,
+        "sections_total": len(sections),
+        "sections_without_summary": empty_summary,
+        "sections_without_sentences": empty_section,
+        "sentences_published": published,
+        "sentences_selected": (brief.get("_meta") or {}).get("sentences_selected"),
+        "turns_cited": len(cited_turns),
+        "turns_total": n_turns,
+        "coverage": round(coverage, 4),
         "min_coverage_required": min_coverage,
+        "min_turns_required": min_turns,
+        "checked_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
     }
-    cov = verdict["coverage"]
-    ok = (verdict["quote_invariant"] and verdict["schema_complete"]
-          and not dupes and turns_cited >= min_turns
-          and cov >= min_coverage and quoted > 0)
-    verdict["passed"] = ok
-    # Fail closed (R-2.8 / D-3): an item that cannot be validated publishes nothing.
-    if not ok:
-        verdict["withheld_reason"] = ("quote invariant failed" if not verdict["quote_invariant"]
-                                      else f"incomplete brief: {', '.join(missing)}" if missing
-                                      else f"{dupes} duplicate point(s)" if dupes
-                                      else f"too thin: covers {turns_cited} of {turns_total} "
-                                           f"turns (coverage {cov:.3f}, need {min_coverage})"
-                                      if turns_cited < min_turns or cov < min_coverage
-                                      else "no verified quotation")
-    return verdict
 
 
 # ------------------------------------------------------------------------ pricing
@@ -1116,15 +1347,21 @@ def brief_path(item_meta):
 
 
 def run_item(meta, model, force=False):
-    """One item, all stages. Returns a result dict; never raises for one bad item."""
+    """One item: select sentences, group them, summarise each group, verify.
+
+    THE SHAPE CHANGED HERE. This used to paraphrase: the model wrote a claim per point
+    and the pipeline substituted the sentence text as a quotation. The published words
+    were therefore the model's, and could add specifics the source does not state -- a
+    failure that survived three rounds of prompt rules. Now the model returns IDS ONLY
+    and every published word is copied from the dataset, so that failure is
+    unrepresentable rather than caught. Each section carries ONE model-written sentence
+    as a convenience beside the verbatim text, never instead of it.
+    """
     dest = brief_path(meta)
     if os.path.exists(dest) and not force:
-        # Resume only over a COMPLETE brief from the CURRENT schema. Existence alone is
-        # not enough: every schema change in this build (item-level fields, the point
-        # cap, deduplication, titles) would otherwise leave a corpus that looks finished
-        # and is a mixture of pipeline versions -- and a resumed run would skip those
-        # files forever. Re-running an item costs a few cents; publishing a stale brief
-        # costs the archive's consistency.
+        # Resume only over a COMPLETE brief from the CURRENT schema. Every schema change
+        # in this build would otherwise leave a corpus that looks finished and is a
+        # mixture of pipeline versions, and a resumed run would skip those files forever.
         try:
             prev = storage.read_json(dest)
         except Exception:                                           # noqa: BLE001
@@ -1133,40 +1370,51 @@ def run_item(meta, model, force=False):
         gate_prev = meta_prev.get("gate") or {}
         if (meta_prev.get("schema") == SCHEMA
                 and gate_prev.get("passed")
-                and (prev or {}).get("key_points")):
+                and (prev or {}).get("sections")):
             return {"id": meta["id"], "skipped": True}
+
     item = load_item(os.path.join(str(meta["year"]), f"{meta['id']}.json"))
     if not item:
         return {"id": meta["id"], "error": "dataset payload missing"}
 
-    is_oral = meta.get("group") == "oral"
     t0 = time.time()
+    usage = {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0, "estimated": False}
+
+    def _add(u):
+        for k in ("calls", "prompt_tokens", "completion_tokens"):
+            usage[k] += (u or {}).get(k, 0) or 0
+        usage["estimated"] = usage["estimated"] or bool((u or {}).get("estimated"))
+
     try:
-        extracted, usage = stage2_extract(item, model, is_oral)
+        selected, u = stage2b_select(item, model)
+        _add(u)
     except Exception as exc:                                        # noqa: BLE001
         log_usage({"id": meta["id"], "model": model, "error": str(exc)[:200]})
-        return {"id": meta["id"], "error": f"stage2: {exc}"[:160]}
-    if not extracted:
-        log_usage({"id": meta["id"], "model": model, "calls": usage["calls"],
-                   "prompt_tokens": usage["prompt_tokens"],
-                   "completion_tokens": usage["completion_tokens"],
-                   "estimated": usage["estimated"], "cost": 0.0,
-                   "outcome": "no points"})
-        return {"id": meta["id"], "withheld": True, "reason": "model returned no points",
-                "seconds": round(time.time() - t0, 1),
-                "calls": usage["calls"], "model": model}
+        return {"id": meta["id"], "error": f"select: {exc}"[:160]}
 
-    brief, dropped = stage3_assemble(item, extracted, model)
-    if not brief:
+    if not selected or not selected.get("keep"):
         log_usage({"id": meta["id"], "model": model, "calls": usage["calls"],
                    "prompt_tokens": usage["prompt_tokens"],
                    "completion_tokens": usage["completion_tokens"],
                    "estimated": usage["estimated"], "cost": 0.0,
-                   "outcome": "no citable points"})
+                   "outcome": "nothing selected"})
+        return {"id": meta["id"], "withheld": True, "reason": "model selected nothing",
+                "seconds": round(time.time() - t0, 1), "calls": usage["calls"],
+                "model": model}
+
+    try:
+        sections, u = stage2c_sections(item, selected, model)
+        _add(u)
+    except Exception as exc:                                        # noqa: BLE001
+        log_usage({"id": meta["id"], "model": model, "error": str(exc)[:200]})
+        return {"id": meta["id"], "error": f"sections: {exc}"[:160]}
+
+    brief = assemble_selected_brief(item, meta, selected, sections)
+    if not brief:
         return {"id": meta["id"], "withheld": True,
-                "reason": f"no point had a resolvable citation ({len(dropped)} dropped)",
-                "seconds": round(time.time() - t0, 1),
-                "calls": usage["calls"], "model": model}
+                "reason": "no selected sentence resolved to the record",
+                "seconds": round(time.time() - t0, 1), "calls": usage["calls"],
+                "model": model}
 
     verdict = stage4_verify(brief, item)
     cost = cost_of(model, usage["prompt_tokens"], usage["completion_tokens"])
@@ -1176,38 +1424,29 @@ def run_item(meta, model, force=False):
                "estimated": usage["estimated"], "cost": cost,
                "outcome": "published" if verdict["passed"] else "withheld"})
     brief["_meta"]["gate"] = verdict
-    # R-2.5: every exclusion is recorded with its reason, so absence is auditable.
-    # Duplicates in particular must be visible -- otherwise the only trace of them is
-    # a point count that is lower than the model produced, with no explanation.
-    brief["_meta"]["points_dropped"] = len(dropped)
-    if dropped:
-        from collections import Counter as _Counter
-        brief["_meta"]["dropped_reasons"] = dict(
-            _Counter(d.get("reason", "?") for d in dropped))
     brief["_meta"]["usage"] = {"calls": usage["calls"],
                                "prompt_tokens": usage["prompt_tokens"],
                                "completion_tokens": usage["completion_tokens"],
                                "estimated": usage["estimated"],
                                "cost_usd": round(cost, 6)}
+
     if not verdict["passed"]:
         # D-3: withhold entirely. Not a partial brief, not a flagged one.
         storage.write_json_atomic(os.path.join(ROOT, "pipeline", "withheld",
                                                f"{meta['id']}.json"),
-                                  {"item": meta, "verdict": verdict,
-                                   "attempt": brief})
+                                  {"item": meta, "verdict": verdict, "attempt": brief})
         return {"id": meta["id"], "withheld": True, "verdict": verdict,
                 "seconds": round(time.time() - t0, 1), "model": model,
                 "calls": usage["calls"], "cost": cost}
 
-    dest = brief_path(meta)
     os.makedirs(os.path.dirname(dest), exist_ok=True)
     storage.write_json_atomic(dest, brief)
     return {"id": meta["id"], "published": True, "verdict": verdict,
-            "points": verdict["points"], "coverage": verdict["coverage"],
+            "sentences": verdict.get("sentences_selected"),
+            "coverage": verdict.get("coverage"),
             "seconds": round(time.time() - t0, 1), "model": model,
             "calls": usage["calls"], "cost": cost,
             "in": usage["prompt_tokens"], "out": usage["completion_tokens"]}
-
 
 # ----------------------------------------------------------------------- CLI
 
@@ -1306,7 +1545,9 @@ def main(argv=None):
         else:
             pub += 1
             v = r["verdict"]
-            print(f"  [{n}/{len(sel)}] {meta['id']:26s} {r['points']:3d} pts  "
+            print(f"  [{n}/{len(sel)}] {meta['id']:26s} "
+                  f"{v.get('sections_total', 0):3d} sec  "
+                  f"{v.get('sentences_published', 0):4d} sents  "
                   f"cov {v['coverage']:.2f}  {r['seconds']:5.1f}s  "
                   f"{r['calls']} call(s)", flush=True)
     dt = time.time() - t_start
