@@ -815,6 +815,12 @@
          + '<p class="sk-text">' + skEsc(s.text) + '</p></div>';
   }
   function loadSkipped(brief) {
+    // Keyed by brief, so a host can only ever be filled from its own brief's payload.
+    // Necessary because sentence ids are numbered WITHIN an item: "s00003" is a different
+    // sentence in every brief on a sitting (on 2026-05-07, 92 of 320 numbers meant
+    // different text). Matching ids without the brief is what put a Johor summary above
+    // unrelated text and rendered sentences twice.
+    if (!brief) return Promise.reject(new Error('no brief'));
     if (SKIP_CACHE[brief] && !SKIP_CACHE[brief].then) {
       return Promise.resolve(SKIP_CACHE[brief]);
     }
@@ -840,15 +846,18 @@
 
   // Fill every inline run for a brief on first sight, so the page always ACCOUNTS for the
   // whole record without the reader having to ask.
-  function fillInline(brief, root) {
-    var hosts = (root || document).querySelectorAll(
-      '.ski[data-brief="' + brief + '"], .dsec[data-brief="' + brief + '"] .ski');
-    if (!hosts.length) return;
+  function fillInline(brief) {
+    // Scope by OWNING SECTION, not by a selector that could match another brief's hosts.
+    var secs = document.querySelectorAll('.dsec[data-brief="' + brief + '"]');
+    if (!secs.length) return;
     loadSkipped(brief).then(function (list) {
-      hosts.forEach(function (h) {
-        if (h.dataset.done) return;
-        h.dataset.done = '1';
-        fill(h, list, +h.dataset.from, +h.dataset.to);
+      secs.forEach(function (sec) {
+        sec.querySelectorAll('.ski, .gapbody').forEach(function (h) {
+          if (h.dataset.done) return;
+          if (!h.dataset.from) return;
+          h.dataset.done = '1';
+          fill(h, list, +h.dataset.from, +h.dataset.to);
+        });
       });
     }).catch(function () {});
   }

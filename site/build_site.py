@@ -997,6 +997,12 @@ SCRIPT = r"""
          + '<p class="sk-text">' + skEsc(s.text) + '</p></div>';
   }
   function loadSkipped(brief) {
+    // Keyed by brief, so a host can only ever be filled from its own brief's payload.
+    // Necessary because sentence ids are numbered WITHIN an item: "s00003" is a different
+    // sentence in every brief on a sitting (on 2026-05-07, 92 of 320 numbers meant
+    // different text). Matching ids without the brief is what put a Johor summary above
+    // unrelated text and rendered sentences twice.
+    if (!brief) return Promise.reject(new Error('no brief'));
     if (SKIP_CACHE[brief] && !SKIP_CACHE[brief].then) {
       return Promise.resolve(SKIP_CACHE[brief]);
     }
@@ -1022,15 +1028,18 @@ SCRIPT = r"""
 
   // Fill every inline run for a brief on first sight, so the page always ACCOUNTS for the
   // whole record without the reader having to ask.
-  function fillInline(brief, root) {
-    var hosts = (root || document).querySelectorAll(
-      '.ski[data-brief="' + brief + '"], .dsec[data-brief="' + brief + '"] .ski');
-    if (!hosts.length) return;
+  function fillInline(brief) {
+    // Scope by OWNING SECTION, not by a selector that could match another brief's hosts.
+    var secs = document.querySelectorAll('.dsec[data-brief="' + brief + '"]');
+    if (!secs.length) return;
     loadSkipped(brief).then(function (list) {
-      hosts.forEach(function (h) {
-        if (h.dataset.done) return;
-        h.dataset.done = '1';
-        fill(h, list, +h.dataset.from, +h.dataset.to);
+      secs.forEach(function (sec) {
+        sec.querySelectorAll('.ski, .gapbody').forEach(function (h) {
+          if (h.dataset.done) return;
+          if (!h.dataset.from) return;
+          h.dataset.done = '1';
+          fill(h, list, +h.dataset.from, +h.dataset.to);
+        });
       });
     }).catch(function () {});
   }
@@ -1433,7 +1442,7 @@ def render_brief_selected(brief, sitting_dates=None):
     # internal holes without any of them being a special case.
     #
     # Small runs are shown INLINE rather than collapsed: 26% of runs are one or two
-    # sentences, and a marker saying "1 sentence not selected" costs as much space as the
+    # sentences, and a marker saying "1 sentence hidden" costs as much space as the
     # sentence and reads as noise. The collapse is for material worth hiding.
     INLINE_MAX = 2
 
@@ -1471,6 +1480,7 @@ def render_brief_selected(brief, sitting_dates=None):
     for a, b in runs:
         run_before[b + 1] = (a, b)
     emitted = set()          # each run is rendered EXACTLY once
+    hidden_n = sum(b - a + 1 for a, b in runs)   # sentences behind the buttons
 
     def skipped_rows(a, b):
         """A collapsed run: a button stating the count, and a hidden body the script fills."""
@@ -1478,7 +1488,7 @@ def render_brief_selected(brief, sitting_dates=None):
         return (f'<button class="gapd" type="button" data-from="{a}" data-to="{b}" '
                 f'aria-expanded="false">'
                 f'<span class="gapn">{between:,} '
-                f'sentence{"s" if between != 1 else ""} not selected</span>'
+                f'sentence{"s" if between != 1 else ""} hidden</span>'
                 f'<span class="gapx">show</span></button>'
                 f'<div class="gapbody" hidden></div>')
 
@@ -1577,8 +1587,9 @@ def render_brief_selected(brief, sitting_dates=None):
   {''.join(cards)}
   <footer class="brief-ft">
     <p class="prov">
-      {published:,} of {total:,} sentences in this record are shown above; the rest were
-      not selected. Nothing was deleted \u2014 the brief simply does not emphasise them.
+      {published:,} of {total:,} sentences in this record are shown in full; the other
+      {hidden_n:,} are hidden behind the buttons, and can be shown by tapping one. Nothing
+      was deleted \u2014 the brief simply does not emphasise them.
     </p>
     <p class="prov">
       Every sentence above is copied from the Hansard record by id; the model returned
@@ -2018,7 +2029,7 @@ STYLE = """
 .sk-text{margin:0;font-size:14px;line-height:1.55;color:var(--dim)}
 .gapmsg{margin:6px 0 0;font-size:12px;color:var(--faint);text-align:center}
 /* Small unpublished runs render INLINE: 26% of runs are one or two sentences, and a
-   marker saying "1 sentence not selected" costs as much space as the sentence it hides.
+   marker saying "1 sentence hidden" costs as much space as the sentence it hides.
    They are visually quieter than published rows so the brief still reads as a brief. */
 .ski{margin:0}
 .ski .sk{padding:8px 0 9px;border-bottom:1px solid var(--line)}
