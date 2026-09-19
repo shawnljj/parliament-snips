@@ -2075,47 +2075,35 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     else:
         lede_words = f"{len(reports):,} items of business"
 
-    # HOW LONG THE SITTING RAN, AND HOW LONG THE BRIEF TAKES TO READ.
-    # Duration comes from pipeline/sitting_times.json, extracted from the Hansard's own
-    # <h6> clock stamps (see tools/extract_sitting_times.py). It is deliberately ROUGH --
-    # rounded to the half hour and prefixed with ~ -- because it is a derived bracket, not
-    # a published figure. Where no stamps could be read, say so plainly and give the
-    # typical range instead of inventing a number for this sitting.
-    dur_html = ""
-    st = sitting_times().get(d)
-    if st and st.get("status") == "ok" and st.get("minutes"):
-        h = st["minutes"] / 60.0
-        if h >= 1:
-            rough = round(h * 2) / 2.0                     # nearest half hour
-            hours = f"{rough:g}".replace(".0", "")
-            dur_txt = (f"about {hours} hour{'s' if rough != 1 else ''}")
-        else:
-            dur_txt = f"about {int(round(st['minutes'] / 5.0) * 5)} minutes"
-        dur_html = (f'<li><span class="lbl">Sitting ran</span> '
-                    f'<b title="Derived from the clock stamps in the Hansard record; '
-                    f'rounded to the nearest half hour.">{esc(dur_txt)}</b></li>')
-    else:
-        # No stamps readable for this sitting. Say so plainly and give the typical range --
-        # never a number for this sitting, because there is not one.
-        dur_html = ('<li><span class="lbl">Sitting ran</span> '
-                    '<b>not recorded '
-                    '<span class="hint">(typically 7&ndash;12 hours)</span></b></li>')
+    # THE SLOGAN. Owner's call: a fixed, round figure for Parliament with the read estimate
+    # computed per page. One line, no labels.
+    #
+    # NOTE ON THE 8 HOURS: it is a general statement about Parliament, NOT a measurement of
+    # this sitting, and it is deliberately the round figure the owner chose. The corpus
+    # median is 6.0h (p25 4.5, p75 7.8) -- measured in pipeline/sitting_times.json -- so a
+    # reader comparing this line against a specific sitting will find them differ. Kept as a
+    # named constant so the choice is visible in one place rather than buried in a format
+    # string.
+    SITTING_SLOGAN_HOURS = 8
 
-    read_html = ""
+    dur_part = (f"Parliament sitting <b>~{SITTING_SLOGAN_HOURS} hours</b>")
+
+    # The read estimate IS per page, computed from the words this page actually publishes at
+    # 200 words per minute, so two sittings of very different size get very different
+    # numbers (measured range across the corpus: 7 min to nearly 5 hours).
+    read_part = ""
     pw = published_words(briefs)
     if pw:
-        mins = max(1, int(round(pw / 200.0)))              # 200 wpm, a normal reading pace
+        mins = max(1, pw / 200.0)
         if mins >= 60:
-            rh = mins // 60
-            rm = mins % 60
-            rtxt = f"{rh}h{f' {rm}m' if rm else ''}"
+            rough = round(mins / 30.0) / 2.0                   # nearest half hour
+            tail = f"~{rough:g} hour{'s' if rough != 1 else ''}"
         else:
-            rtxt = f"{mins} min"
-        read_html = (f'<li><span class="lbl">Reading this</span> '
-                     f'<b title="{pw:,} words at 200 words per minute.">{esc(rtxt)}</b> '
-                     f'<span class="hint">({pw:,} words)</span></li>')
-
-    meta_html = f'<ul class="smeta">{dur_html}{read_html}</ul>' if (dur_html or read_html) else ""
+            rough = max(5, int(round(mins / 10.0) * 10))       # nearest ten minutes
+            tail = f"~{rough} min"
+        read_part = f"Parsnips <b>{tail}</b>"
+    meta_html = (f'<p class="slogan">{dur_part}, {read_part}.</p>'
+                 if read_part else f'<p class="slogan">{dur_part}.</p>')
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -2537,20 +2525,12 @@ h1,h2,h3{line-height:1.2;margin:0}
   color:var(--accent);margin:0 0 16px}
 .lede h1{font-size:clamp(40px,7.5vw,76px);letter-spacing:-.032em;font-weight:800}
 .dek{font-size:19px;color:var(--dim);margin:18px 0 0;max-width:56ch}
-/* How long the sitting ran, and how long this page takes to read. Sits under the dek in
-   the lede. Base stylesheet IS the 390px layout: one row per fact, label in a fixed
-   column so nothing wraps mid-label and the values line up. */
-.smeta{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;align-items:baseline;
-  list-style:none;margin:16px 0 0;padding:0}
-.smeta li{display:contents}
-.smeta .lbl{color:var(--meta,#6b7280);font-size:11.5px;text-transform:uppercase;
-  letter-spacing:.05em;white-space:nowrap}
-.smeta b{color:var(--ink);font-weight:600;font-size:14px}
-.smeta .hint{color:var(--meta,#6b7280);font-size:12.5px;font-weight:400}
-@media (min-width:761px){
-  .smeta{grid-auto-flow:column;grid-template-columns:none;gap:0 26px;align-items:baseline;
-    grid-auto-columns:max-content}
-}
+/* The slogan line: how long Parliament sat, how long this page takes. One line, no
+   labels -- the owner's ask. Base stylesheet IS the 390px layout. */
+.slogan{font-size:15px;color:var(--dim);margin:16px 0 0;line-height:1.5;
+  /* clear the rail's floating label, which is absolutely positioned over this column */
+  padding-right:var(--rail-gutter,0px)}
+.slogan b{color:var(--ink);font-weight:700}
 .dek b{color:var(--ink)}
 .span-note{font:500 12.5px var(--mono);color:var(--faint);margin:14px 0 0}
 
@@ -2984,10 +2964,10 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
        Width is capped to the gutter the rail actually has, so the label cannot reach back over
        the text; it ellipsizes instead. Measured: the gutter is 46px, so 40px of label plus its
        padding fits with nothing overlapping. */
-    visibility:hidden;position:absolute;right:20px;max-width:96px;
-    padding:3px 7px;background:#fff;border:1px solid var(--line);
-    box-shadow:0 1px 4px rgba(20,24,29,.10);z-index:2}
-.section-rail-tick.is-active .section-rail-name{visibility:visible}
+    /* HIDDEN on a phone: the rail's column is ~62px and a readable name needs ~96px, so an
+       always-on label overhangs the text column and paints over it. The transient pill
+       (below) names the active section on demand instead. */
+    display:none}
 .section-rail-num{order:-1;font:600 9px/1 var(--mono);color:var(--faint);
     min-width:11px;text-align:right}
 .section-rail-tick.level-2 .section-rail-name{color:var(--ink)}
@@ -3073,7 +3053,7 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
 @media (min-width:761px){
   .section-rail{right:10px;top:50%;transform:translateY(-50%);height:52vh}
   /* Desktop: the margin is empty, so EVERY tick keeps its name, laid out inline. */
-  .section-rail-name{position:static;visibility:visible;max-width:190px;font-size:10.5px}
+  .section-rail-name{display:inline-block;position:static;max-width:190px;font-size:10.5px}
   .section-rail-tick.level-2{height:8px}
   .section-rail-tick.level-3{height:6px}
 }
@@ -3206,6 +3186,9 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
      Without this the rail floated over the text and a reader could not tell where the page
      ended and the navigator began. */
   .wrap{padding-left:16px;padding-right:62px}
+  /* the rail's label overhangs into the content column, so text that can collide with it
+     reserves the same space. Raised on .lede only: body copy is already inside the wrap. */
+  :root{--rail-gutter:34px}
   .top .wrap{padding-left:14px;padding-right:14px}
 }
 """
