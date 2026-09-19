@@ -817,21 +817,62 @@
     host.innerHTML = picked.length ? picked.map(rowHtml).join('')
       : '<p class="gapmsg">No sentences to show here.</p>';
   }
+  // The desktop form of a run: the real sentences, faded, in place. Same payload, a quieter
+  // rendering, so a reader on a wide screen sees the whole record with the selection marked.
+  function ctxHtml(s) {
+    var who = (s.speaker || '').trim();
+    return '<div class="ctx">'
+      + '<span class="csid">' + skEsc(s.sid) + '</span>'
+      + '<span class="cwho">' + (who ? skEsc(who) : '') + '</span>'
+      + '<p class="ctx-text">' + skEsc(s.text) + '</p></div>';
+  }
+  function fillRun(host, list, from, to) {
+    var picked = list.filter(function (s) {
+      var v = skNum(s.sid);
+      return v >= from && v <= to;
+    });
+    host.innerHTML = picked.map(ctxHtml).join('');
+  }
 
   // Fill every inline run for a brief on first sight, so the page always ACCOUNTS for the
   // whole record without the reader having to ask.
+  // WHICH VIEW ARE WE IN? The two presentations are separate UIs and each fetches only what
+  // it shows. On desktop the faded full transcripts are filled up front, because seeing the
+  // whole record with the selection marked out is the point of that view. On mobile nothing
+  // is fetched until the reader taps: the payload is 5x the selected text and a phone should
+  // not pay for text it has not asked to see.
+  function isWide() {
+    return window.matchMedia && window.matchMedia('(min-width: 760px)').matches;
+  }
+
   function fillInline(brief) {
-    // Scope by OWNING SECTION, not by a selector that could match another brief's hosts.
     var secs = document.querySelectorAll('.dsec[data-brief="' + brief + '"]');
     if (!secs.length) return;
-    loadSkipped(brief).then(function (list) {
-      secs.forEach(function (sec) {
-        sec.querySelectorAll('.ski, .gapbody').forEach(function (h) {
-          if (h.dataset.done) return;
-          if (!h.dataset.from) return;
-          h.dataset.done = '1';
-          fill(h, list, +h.dataset.from, +h.dataset.to);
+    if (!isWide()) {
+      // mobile: only the small runs that are visible by default
+      loadSkipped(brief).then(function (list) {
+        secs.forEach(function (sec) {
+          sec.querySelectorAll('.ski').forEach(function (h) {
+            if (h.dataset.done || !h.dataset.from) return;
+            h.dataset.done = '1';
+            fill(h, list, +h.dataset.from, +h.dataset.to);
+          });
         });
+      }).catch(function () {});
+      return;
+    }
+    var hosts = [];
+    secs.forEach(function (sec) {
+      sec.querySelectorAll('.runfull').forEach(function (h) {
+        if (!h.dataset.done) hosts.push(h);
+      });
+    });
+    if (!hosts.length) return;
+    loadSkipped(brief).then(function (list) {
+      hosts.forEach(function (h) {
+        if (h.dataset.done) return;
+        h.dataset.done = '1';
+        fillRun(h, list, +h.dataset.from, +h.dataset.to);
       });
     }).catch(function () {});
   }

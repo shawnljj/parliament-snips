@@ -80,6 +80,41 @@ def esc(s):
     return html.escape(s or "", quote=True)
 
 
+# A constituency is the parenthetical a reader uses to place a Member. It is NOT a
+# portfolio ("for the Minister for Health"), NOT a membership class ("Nominated Member"),
+# and NOT the Member's own name, all of which also appear in parentheses in Hansard. The
+# three are told apart by a small set of exclusions plus the fact that a constituency is a
+# place-like phrase, so it never opens with a title or a preposition.
+NOT_CONSTITUENCY = re.compile(
+    r"^(for\s+the\b|for\s+Mr\b|for\s+Ms\b|for\s+Dr\b|In\b|To\b|on\b|as\b|and\b|"
+    r"the\b|"
+    + TITLE + r"\b)", re.I)
+
+# Membership classes read as a constituency to a reader even though they name no place, so
+# they are kept. Checked BEFORE the exclusions, which previously swallowed them.
+MEMBERSHIP = ("Nominated Member", "Non-Constituency Member")
+
+
+def constituency(raw):
+    """The constituency or membership class at the END of a Hansard speaker string.
+
+    Returns "" when the speaker has none, which is common: ministers are recorded by
+    portfolio and 28% of sentences carry no parenthetical at all. Measured over 2026, 4,454
+    of 11,173 speaker strings (40%) end in one.
+    """
+    groups = re.findall(r"\(([^()]*)\)", raw or "")
+    if not groups:
+        return ""
+    last = groups[-1].strip()
+    if not last:
+        return ""
+    if last.startswith("Nominated") or last.startswith("Non-Constituency"):
+        return last          # a membership class, kept before the exclusions run
+    if NOT_CONSTITUENCY.match(last):
+        return ""
+    return last if re.match(r"^[A-Z][A-Za-z'\- ]{2,40}$", last) else ""
+
+
 def short_speaker(raw):
     """Reduce a Hansard speaker string to the person a reader scans for.
 
@@ -1025,21 +1060,62 @@ SCRIPT = r"""
     host.innerHTML = picked.length ? picked.map(rowHtml).join('')
       : '<p class="gapmsg">No sentences to show here.</p>';
   }
+  // The desktop form of a run: the real sentences, faded, in place. Same payload, a quieter
+  // rendering, so a reader on a wide screen sees the whole record with the selection marked.
+  function ctxHtml(s) {
+    var who = (s.speaker || '').trim();
+    return '<div class="ctx">'
+      + '<span class="csid">' + skEsc(s.sid) + '</span>'
+      + '<span class="cwho">' + (who ? skEsc(who) : '') + '</span>'
+      + '<p class="ctx-text">' + skEsc(s.text) + '</p></div>';
+  }
+  function fillRun(host, list, from, to) {
+    var picked = list.filter(function (s) {
+      var v = skNum(s.sid);
+      return v >= from && v <= to;
+    });
+    host.innerHTML = picked.map(ctxHtml).join('');
+  }
 
   // Fill every inline run for a brief on first sight, so the page always ACCOUNTS for the
   // whole record without the reader having to ask.
+  // WHICH VIEW ARE WE IN? The two presentations are separate UIs and each fetches only what
+  // it shows. On desktop the faded full transcripts are filled up front, because seeing the
+  // whole record with the selection marked out is the point of that view. On mobile nothing
+  // is fetched until the reader taps: the payload is 5x the selected text and a phone should
+  // not pay for text it has not asked to see.
+  function isWide() {
+    return window.matchMedia && window.matchMedia('(min-width: 760px)').matches;
+  }
+
   function fillInline(brief) {
-    // Scope by OWNING SECTION, not by a selector that could match another brief's hosts.
     var secs = document.querySelectorAll('.dsec[data-brief="' + brief + '"]');
     if (!secs.length) return;
-    loadSkipped(brief).then(function (list) {
-      secs.forEach(function (sec) {
-        sec.querySelectorAll('.ski, .gapbody').forEach(function (h) {
-          if (h.dataset.done) return;
-          if (!h.dataset.from) return;
-          h.dataset.done = '1';
-          fill(h, list, +h.dataset.from, +h.dataset.to);
+    if (!isWide()) {
+      // mobile: only the small runs that are visible by default
+      loadSkipped(brief).then(function (list) {
+        secs.forEach(function (sec) {
+          sec.querySelectorAll('.ski').forEach(function (h) {
+            if (h.dataset.done || !h.dataset.from) return;
+            h.dataset.done = '1';
+            fill(h, list, +h.dataset.from, +h.dataset.to);
+          });
         });
+      }).catch(function () {});
+      return;
+    }
+    var hosts = [];
+    secs.forEach(function (sec) {
+      sec.querySelectorAll('.runfull').forEach(function (h) {
+        if (!h.dataset.done) hosts.push(h);
+      });
+    });
+    if (!hosts.length) return;
+    loadSkipped(brief).then(function (list) {
+      hosts.forEach(function (h) {
+        if (h.dataset.done) return;
+        h.dataset.done = '1';
+        fillRun(h, list, +h.dataset.from, +h.dataset.to);
       });
     }).catch(function () {});
   }
@@ -1535,19 +1611,34 @@ def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
     hidden_n = sum(b - a + 1 for a, b in runs)   # sentences behind the buttons
 
     def skipped_rows(a, b):
-        """A collapsed run: a button stating the count, and a hidden body the script fills."""
-        between = b - a + 1
-        return (f'<button class="gapd" type="button" data-from="{a}" data-to="{b}" '
-                f'aria-expanded="false">'
-                f'<span class="gapn">{between:,} '
-                f'sentence{"s" if between != 1 else ""} hidden</span>'
-                f'<span class="gapx">show</span></button>'
-                f'<div class="gapbody" hidden></div>')
+        """Same dual form as inline_rows: full text on desktop, a collapse control on mobile."""
+        return inline_rows(a, b)
 
     def inline_rows(a, b):
-        """Small runs render as quiet rows. Filled by script from the payload, because
-        embedding them would put every skipped sentence on every page."""
-        return ('<div class="ski" data-from="%d" data-to="%d"></div>' % (a, b))
+        """A run rendered as quiet rows.
+
+        ON DESKTOP the unselected sentences are part of the page: the spike showed the whole
+        record with the selection emphasised, and that is the honest form -- a reader sees
+        what was passed over, in place. ON MOBILE they are collapsed behind a count, because a
+        phone cannot afford the scroll and the full transcript is 5x the selected text.
+
+        So the markup carries BOTH: the real sentence rows (hidden on mobile by CSS) and the
+        collapse control (hidden on desktop). One payload, two presentations, no second
+        template.
+        """
+        between = b - a + 1
+        return (
+            f'<li class="gapi run" data-from="{a}" data-to="{b}">'
+            # desktop: filled in place by the script, faded
+            f'<span class="runfull" data-from="{a}" data-to="{b}"></span>'
+            # mobile: a button plus a body the script fills on demand
+            f'<button class="gapd" type="button" data-from="{a}" data-to="{b}" '
+            f'aria-expanded="false">'
+            f'<span class="gapn">{between:,} '
+            f'sentence{"s" if between != 1 else ""} hidden</span>'
+            f'<span class="gapx">show</span></button>'
+            f'<div class="gapbody" hidden></div>'
+            f'</li>')
 
     cards = []
     seen_speakers = set()
@@ -1596,15 +1687,16 @@ def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
             if not raw_spk:
                 spk_html = '<span class="who none"></span>'
             else:
+                # Name, then the CONSTITUENCY on every sentence. The owner's reason: the
+                # constituency is what places the speaker, so it carries the same credibility
+                # value as the name and must not be a first-mention-only detail. Inline after
+                # an em dash, so it costs a few characters rather than a line per sentence.
+                # Ministers have none -- the record gives them a portfolio instead, which is
+                # honest rather than a gap.
                 spk = esc(short_speaker(raw_spk))
-                if raw_spk not in seen_speakers:
-                    seen_speakers.add(raw_spk)
-                    # Only the part the short form OMITS, or the name prints twice.
-                    plain = short_speaker(raw_spk) or ""
-                    extra = (raw_spk[len(plain):].strip()
-                             if (plain and raw_spk.startswith(plain)) else raw_spk)
-                    if extra:
-                        spk = f'{spk} <span class="spkfull">{esc(extra)}</span>'
+                con = constituency(raw_spk)
+                if con:
+                    spk = f'{spk} <span class="spkcon">&mdash; {esc(con)}</span>'
                 spk_html = f'<span class="who">{spk}</span>'
             ctx = ('<span class="ctxmark">context</span>'
                    if x.get("added_for_context") else "")
@@ -1634,13 +1726,16 @@ def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
         raw_title = esc(" | ".join(sec_speakers)) if sec_speakers else ""
         sum_html = ""
         if summary or label or who_line:
+            # .sumcol is the grid column on desktop and display:contents on mobile, so the
+            # same markup gives "card above the sentences" on a phone and "card beside them"
+            # on a wide screen.
             sum_html = (
-                f'<div class="sumwrap"><div class="sumcard">'
+                f'<div class="sumcol"><div class="sumwrap"><div class="sumcard">'
                 + (f'<div class="sumwho" title="{raw_title}">{who_line}</div>'
                    if who_line else "")
                 + (f'<div class="sumlabel">{esc(label)}</div>' if label else "")
                 + (f'<p class="sumtext">{esc(summary)}</p>' if summary else "")
-                + '</div></div>')
+                + '</div></div></div>')
 
         # A run that starts after this section's last sentence belongs HERE, at the end of
         # this section: that is where the reader meets it. Emitting only the first such run
@@ -2096,6 +2191,7 @@ STYLE = """
 /* Pinned BELOW the sticky top bar: at top:0 the bar covered the card's first line for
    the entire time its section was in view. */
 .sumwrap{position:sticky;top:calc(var(--topbar-h) + var(--sticky-gap));z-index:5}
+.sumcol{display:contents}
 .sumcard{background:var(--accent-soft);border-left:3px solid var(--accent);
   border-radius:0 8px 8px 0;padding:9px 12px 10px;margin:0 0 12px}
 /* Who is speaking, in the card rather than on every sentence. 95.6% of sections have one
@@ -2109,6 +2205,9 @@ STYLE = """
 .sumtext{margin:0;font-size:14.5px;line-height:1.5;color:#17352a}
 
 .vslist{list-style:none;margin:0;padding:0}
+/* A list item that holds a marker or an inline run: no bullet, no indent, so it sits flush
+   with the sentence rows it belongs between. */
+.vslist .gapi{list-style:none;margin:0;padding:0}
 .vs{padding:11px 0 12px;border-top:1px solid var(--line)}
 .vs:first-child{border-top:0;padding-top:2px}
 .vs-meta{display:flex;align-items:baseline;gap:8px;margin-bottom:4px;flex-wrap:wrap}
@@ -2118,6 +2217,9 @@ STYLE = """
    it attributes. */
 .vs-meta .who{font-size:11px;color:var(--dim);text-transform:uppercase;
   letter-spacing:.045em;line-height:1.3}
+/* The constituency, on every sentence: it is what places the speaker, so it carries the
+   same credibility value as the name. Inline after an em dash, not on its own line. */
+.vs-meta .spkcon{color:var(--faint);text-transform:none;letter-spacing:.01em}
 .vs-meta .who.none{display:block;min-height:.7rem}
 /* Same speaker as the row above: nothing to show, and no line taken. Distinct from
    .who.none, which means the RECORD names no speaker -- that one keeps its line so an
@@ -2151,6 +2253,35 @@ STYLE = """
    the brief. Faint-but-readable, so a reader can still check what was passed over. */
 .sk-text{margin:0;font-size:14px;line-height:1.55;color:var(--dim)}
 .gapmsg{margin:6px 0 0;font-size:12px;color:var(--faint);text-align:center}
+/* ---- MOBILE: the record is collapsed behind a count ---- */
+.runfull{display:none}
+.gapd{display:flex}
+/* ---- DESKTOP: the whole record is shown, faded, with the selection emphasised ----
+   This is the spike's design and the honest form: a reader sees what was passed over, in
+   place. It costs 5x the selected text (median 549 KB per sitting), which a desktop
+   connection carries and a phone should not. */
+@media (min-width:760px){
+  .runfull{display:block}
+  .gapi.run > .gapd{display:none}
+  .runfull .ctx{display:grid;grid-template-columns:3.6rem minmax(0,1fr);gap:.5rem;
+    padding:7px 0 8px;border-top:1px solid rgba(227,231,236,.7)}
+  .runfull .ctx .csid{font:600 10.5px/1.6 var(--mono);color:#ccd3da}
+  .runfull .ctx .cwho{font-size:10.5px;color:#ccd3da;text-transform:uppercase;
+    letter-spacing:.045em}
+  .runfull .ctx .ctx-text{grid-column:2;margin:0;font-size:14.5px;line-height:1.55;
+    color:var(--faint)}
+  /* A sentence that needed its predecessor for grammar sits between the two shades: not
+     selected, but needed for the emphasis above it to make sense. */
+  .runfull .ctx.is-context .ctx-text{color:#7c8794}
+}
+/* the inline (short-run) container follows the same rule */
+.ski{display:none}
+.ski-inline{display:block}
+@media (min-width:760px){
+  .ski{display:block}
+  .ski-inline{display:none}
+}
+
 /* Small unpublished runs render INLINE: 26% of runs are one or two sentences, and a
    marker saying "1 sentence hidden" costs as much space as the sentence it hides.
    They are visually quieter than published rows so the brief still reads as a brief. */
@@ -2168,6 +2299,29 @@ STYLE = """
   .brief-v4 .brief-hd h2{font-size:22px}
   .vs-text{font-size:16px}
   .sumcard{padding:11px 15px 12px}
+}
+
+/* ============================================================
+   DESKTOP: TWO PANELS. Summary beside its evidence, not above it.
+   Arrives at 760px and only ever adds; the base layer above is
+   still the phone, so there is one source of truth.
+   ============================================================ */
+@media (min-width:760px){
+  .dsec{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,26rem);
+    gap:34px;align-items:start;
+    scroll-margin-top:calc(var(--topbar-h) + var(--sticky-gap) + 8px)}
+  /* the summary is the SECOND column visually but the FIRST in the DOM, so on mobile it
+     reads above the sentences and here it sits to their right. */
+  /* align-self:start keeps the cell its natural height instead of stretching it to the row,
+     which is what left a tall empty column beside a short summary. */
+  .sumcol{display:block;grid-column:2;grid-row:1;align-self:start;
+    position:sticky;top:calc(var(--topbar-h) + var(--sticky-gap));
+    height:fit-content;max-height:calc(100vh - var(--topbar-h) - var(--sticky-gap) - 20px);
+    overflow-y:auto;overscroll-behavior:contain}
+  .sumwrap{position:static;top:auto}
+  .dsec > .vslist,.dsec > .gapd,.dsec > .gapbody{grid-column:1;grid-row:1}
+  .vs-text{max-width:74ch}
+  .sumtext{font-size:14px}
 }
 
 :root{

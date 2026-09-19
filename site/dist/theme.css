@@ -17,6 +17,7 @@
 /* Pinned BELOW the sticky top bar: at top:0 the bar covered the card's first line for
    the entire time its section was in view. */
 .sumwrap{position:sticky;top:calc(var(--topbar-h) + var(--sticky-gap));z-index:5}
+.sumcol{display:contents}
 .sumcard{background:var(--accent-soft);border-left:3px solid var(--accent);
   border-radius:0 8px 8px 0;padding:9px 12px 10px;margin:0 0 12px}
 /* Who is speaking, in the card rather than on every sentence. 95.6% of sections have one
@@ -30,6 +31,9 @@
 .sumtext{margin:0;font-size:14.5px;line-height:1.5;color:#17352a}
 
 .vslist{list-style:none;margin:0;padding:0}
+/* A list item that holds a marker or an inline run: no bullet, no indent, so it sits flush
+   with the sentence rows it belongs between. */
+.vslist .gapi{list-style:none;margin:0;padding:0}
 .vs{padding:11px 0 12px;border-top:1px solid var(--line)}
 .vs:first-child{border-top:0;padding-top:2px}
 .vs-meta{display:flex;align-items:baseline;gap:8px;margin-bottom:4px;flex-wrap:wrap}
@@ -39,6 +43,9 @@
    it attributes. */
 .vs-meta .who{font-size:11px;color:var(--dim);text-transform:uppercase;
   letter-spacing:.045em;line-height:1.3}
+/* The constituency, on every sentence: it is what places the speaker, so it carries the
+   same credibility value as the name. Inline after an em dash, not on its own line. */
+.vs-meta .spkcon{color:var(--faint);text-transform:none;letter-spacing:.01em}
 .vs-meta .who.none{display:block;min-height:.7rem}
 /* Same speaker as the row above: nothing to show, and no line taken. Distinct from
    .who.none, which means the RECORD names no speaker -- that one keeps its line so an
@@ -72,6 +79,35 @@
    the brief. Faint-but-readable, so a reader can still check what was passed over. */
 .sk-text{margin:0;font-size:14px;line-height:1.55;color:var(--dim)}
 .gapmsg{margin:6px 0 0;font-size:12px;color:var(--faint);text-align:center}
+/* ---- MOBILE: the record is collapsed behind a count ---- */
+.runfull{display:none}
+.gapd{display:flex}
+/* ---- DESKTOP: the whole record is shown, faded, with the selection emphasised ----
+   This is the spike's design and the honest form: a reader sees what was passed over, in
+   place. It costs 5x the selected text (median 549 KB per sitting), which a desktop
+   connection carries and a phone should not. */
+@media (min-width:760px){
+  .runfull{display:block}
+  .gapi.run > .gapd{display:none}
+  .runfull .ctx{display:grid;grid-template-columns:3.6rem minmax(0,1fr);gap:.5rem;
+    padding:7px 0 8px;border-top:1px solid rgba(227,231,236,.7)}
+  .runfull .ctx .csid{font:600 10.5px/1.6 var(--mono);color:#ccd3da}
+  .runfull .ctx .cwho{font-size:10.5px;color:#ccd3da;text-transform:uppercase;
+    letter-spacing:.045em}
+  .runfull .ctx .ctx-text{grid-column:2;margin:0;font-size:14.5px;line-height:1.55;
+    color:var(--faint)}
+  /* A sentence that needed its predecessor for grammar sits between the two shades: not
+     selected, but needed for the emphasis above it to make sense. */
+  .runfull .ctx.is-context .ctx-text{color:#7c8794}
+}
+/* the inline (short-run) container follows the same rule */
+.ski{display:none}
+.ski-inline{display:block}
+@media (min-width:760px){
+  .ski{display:block}
+  .ski-inline{display:none}
+}
+
 /* Small unpublished runs render INLINE: 26% of runs are one or two sentences, and a
    marker saying "1 sentence hidden" costs as much space as the sentence it hides.
    They are visually quieter than published rows so the brief still reads as a brief. */
@@ -89,6 +125,29 @@
   .brief-v4 .brief-hd h2{font-size:22px}
   .vs-text{font-size:16px}
   .sumcard{padding:11px 15px 12px}
+}
+
+/* ============================================================
+   DESKTOP: TWO PANELS. Summary beside its evidence, not above it.
+   Arrives at 760px and only ever adds; the base layer above is
+   still the phone, so there is one source of truth.
+   ============================================================ */
+@media (min-width:760px){
+  .dsec{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,26rem);
+    gap:34px;align-items:start;
+    scroll-margin-top:calc(var(--topbar-h) + var(--sticky-gap) + 8px)}
+  /* the summary is the SECOND column visually but the FIRST in the DOM, so on mobile it
+     reads above the sentences and here it sits to their right. */
+  /* align-self:start keeps the cell its natural height instead of stretching it to the row,
+     which is what left a tall empty column beside a short summary. */
+  .sumcol{display:block;grid-column:2;grid-row:1;align-self:start;
+    position:sticky;top:calc(var(--topbar-h) + var(--sticky-gap));
+    height:fit-content;max-height:calc(100vh - var(--topbar-h) - var(--sticky-gap) - 20px);
+    overflow-y:auto;overscroll-behavior:contain}
+  .sumwrap{position:static;top:auto}
+  .dsec > .vslist,.dsec > .gapd,.dsec > .gapbody{grid-column:1;grid-row:1}
+  .vs-text{max-width:74ch}
+  .sumtext{font-size:14px}
 }
 
 :root{
