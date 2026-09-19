@@ -115,6 +115,25 @@ def one_sitting(day):
                 sus = v
             elif name == "res" and res_m is None:
                 res_m = v
+
+    # THE STAMPS ARE NOT ALWAYS A COMPLETE BRACKET, and claiming otherwise publishes a
+    # wrong number. Two measured failures: 2016-01-15 had its latest stamp 5 hours before
+    # the adjournment (mid-sitting stamps only), and 2016-03-24 had ONE stamp, giving a
+    # 0-minute sitting. Where an adjournment marker exists it is authoritative for the END,
+    # and a span that disagrees with it is reported as unusable rather than rounded into
+    # something confidently wrong.
+    if adj is not None:
+        if adj - first >= 60:
+            last = adj
+        else:
+            return {"date": day, "status": "stamps disagree with the adjournment time",
+                    "reports": len(rows), "stamps": len(stamps),
+                    "start_min": first, "end_min": last, "adjourned_min": adj}
+    if last - first < 60:
+        return {"date": day, "status": "span under an hour, unusable",
+                "reports": len(rows), "stamps": len(stamps),
+                "start_min": first, "end_min": last, "adjourned_min": adj}
+
     return {"date": day, "status": "ok", "reports": len(rows),
             "stamps": len(stamps),
             "start_min": first, "end_min": last,
