@@ -36,10 +36,28 @@
 .vs-text{margin:0;font-size:15.5px;line-height:1.6;color:var(--ink)}
 
 .brief-ft{margin-top:20px;padding-top:12px;border-top:1px solid var(--line)}
-/* The gap count sits at the gap, between one section and the next. */
-.gapd{margin:0;padding:7px 0 0;font-size:12px;color:var(--faint);
-  text-align:center;letter-spacing:.02em;
-  border-top:1px dashed var(--line)}
+/* The gap count sits at the gap, between one section and the next, and is a BUTTON: a
+   reader who wants the sentences that were passed over can open them in place. */
+.gapd{display:flex;justify-content:center;align-items:center;gap:8px;width:100%;
+  margin:0;padding:9px 0 0;font:inherit;font-size:12px;color:var(--faint);
+  background:none;border:0;border-top:1px dashed var(--line);cursor:pointer;
+  letter-spacing:.02em;-webkit-appearance:none}
+.gapd:hover{color:var(--accent)}
+.gapd:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px;border-radius:4px}
+/* .gapx is the affordance: without it the count reads as a static label and nobody taps */
+.gapd .gapx{color:var(--accent);border-bottom:1px solid rgba(28,107,74,.35)}
+.gapd[aria-expanded="true"] .gapx{border-bottom:0;color:var(--faint)}
+.gapbody{margin:6px 0 0;border-top:1px dashed var(--line)}
+.sk{padding:9px 0 10px;border-bottom:1px solid var(--line)}
+.sk:last-child{border-bottom:0}
+.sk-meta{display:flex;align-items:baseline;gap:8px;margin-bottom:3px;flex-wrap:wrap}
+.sk .sid{font:600 10.5px/1.5 var(--mono);color:var(--faint);letter-spacing:.03em}
+.sk .who{font-size:11.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.045em}
+.sk .who.none{display:block;min-height:.7rem}
+/* Skipped sentences are deliberately quieter than published ones: they are context, not
+   the brief. Faint-but-readable, so a reader can still check what was passed over. */
+.sk-text{margin:0;font-size:14px;line-height:1.55;color:var(--dim)}
+.gapmsg{margin:6px 0 0;font-size:12px;color:var(--faint);text-align:center}
 /* Portfolio shown once, then just the name -- a 49-char title on every sentence wraps. */
 .spkfull{display:block;text-transform:none;letter-spacing:0;font-size:11px;
   color:var(--faint);margin-top:1px}

@@ -969,6 +969,89 @@ SCRIPT = r"""
 
   syncStickyVar();
   railRebuild();
+
+  // ---------------------------------------------------------------- skipped sentences
+  // The count beside a gap is a button. The sentences behind it are NOT in the page --
+  // measured, they are 3.74x the published text, so embedding them would take a sitting
+  // from 465 KB to ~3 MB on a phone for material most readers never open. Fetched once per
+  // brief and cached, so a second tap in the same brief is instant.
+  var SKIP_CACHE = {};
+
+  function skEsc(t) {
+    return String(t == null ? '' : t)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+  function skNum(sid) {
+    var m = /^s0*(\d+)$/.exec(sid || '');
+    return m ? +m[1] : -1;
+  }
+  function loadSkipped(brief) {
+    if (SKIP_CACHE[brief] && SKIP_CACHE[brief].then) return SKIP_CACHE[brief];
+    if (SKIP_CACHE[brief]) return Promise.resolve(SKIP_CACHE[brief]);
+    var url = '../skipped/' + encodeURIComponent(brief) + '.json';
+    SKIP_CACHE[brief] = fetch(url).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).then(function (list) {
+      SKIP_CACHE[brief] = list;              // keep the data, not the promise
+      return list;
+    });
+    return SKIP_CACHE[brief];
+  }
+  function renderSkipped(host, list, from, to) {
+    // Only the sentences inside THIS gap's id range, so one brief's payload serves every
+    // gap on the page.
+    var picked = list.filter(function (s) {
+      var v = skNum(s.sid);
+      return v > from && v < to;
+    });
+    if (!picked.length) {
+      host.innerHTML = '<p class="gapmsg">No sentences to show here.</p>';
+      return;
+    }
+    host.innerHTML = picked.map(function (s) {
+      var who = (s.speaker || '').trim();
+      var meta = '<span class="sid">' + skEsc(s.sid) + '</span>'
+        + (who ? '<span class="who">' + skEsc(who) + '</span>'
+               : '<span class="who none"></span>');
+      return '<div class="sk"><div class="sk-meta">' + meta + '</div>'
+           + '<p class="sk-text">' + skEsc(s.text) + '</p></div>';
+    }).join('');
+  }
+
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    var btn = (t && t.closest) ? t.closest('.gapd') : null;
+    if (!btn) return;
+    var body = btn.nextElementSibling;
+    if (!body) return;
+    var x = btn.querySelector('.gapx');
+    if (btn.getAttribute('aria-expanded') === 'true') {
+      btn.setAttribute('aria-expanded', 'false');
+      body.hidden = true;
+      body.innerHTML = '';
+      if (x) x.textContent = 'show';
+      return;
+    }
+    var sec = btn.closest ? btn.closest('.dsec') : null;
+    var brief = sec ? sec.getAttribute('data-brief') : null;
+    if (!brief) return;
+    btn.setAttribute('aria-expanded', 'true');
+    if (x) x.textContent = 'hide';
+    body.hidden = false;
+    body.innerHTML = '<p class="gapmsg">Loading&hellip;</p>';
+    loadSkipped(brief).then(function (list) {
+      renderSkipped(body, list, +btn.getAttribute('data-from'),
+                    +btn.getAttribute('data-to'));
+    }).catch(function () {
+      // Say so rather than showing an empty box: a silent failure here reads as the
+      // record having nothing in the gap.
+      body.innerHTML = '<p class="gapmsg">Could not load these sentences. '
+        + 'The full record is at sprs.parl.gov.sg.</p>';
+    });
+  });
+
   window.addEventListener('load', function () {
     syncStickyVar(); railRebuild(); offerResume();
   });
@@ -1279,6 +1362,7 @@ def render_brief_selected(brief, sitting_dates=None):
     """
     meta = brief.get("_meta", {}) or {}
     title = brief.get("title") or meta.get("id") or "Untitled"
+    item_id = meta.get("id") or ""
     sections = brief.get("sections") or []
     if not sections:
         return ""
@@ -1357,11 +1441,16 @@ def render_brief_selected(brief, sitting_dates=None):
             a, b = sid_num(sents[-1].get("sid")), sid_num(nxt[0].get("sid"))
             if a is not None and b is not None and b - a - 1 > 0:
                 between = b - a - 1
-                gap_html = (f'<p class="gapd">{between:,} '
-                            f'sentence{"s" if between != 1 else ""} not selected</p>')
+                gap_html = (
+                    f'<button class="gapd" type="button" data-from="{a}" data-to="{b}" '
+                    f'aria-expanded="false">'
+                    f'<span class="gapn">{between:,} '
+                    f'sentence{"s" if between != 1 else ""} not selected</span>'
+                    f'<span class="gapx">show</span></button>'
+                    f'<div class="gapbody" hidden></div>')
 
         cards.append(
-            f'<section class="dsec" id="sec-{n + 1}">'
+            f'<section class="dsec" id="sec-{n + 1}" data-brief="{esc(item_id)}">'
             f'{sum_html}'
             f'<ol class="vslist">{"".join(rows)}</ol>'
             f'{gap_html}'
@@ -1798,10 +1887,28 @@ STYLE = """
 .vs-text{margin:0;font-size:15.5px;line-height:1.6;color:var(--ink)}
 
 .brief-ft{margin-top:20px;padding-top:12px;border-top:1px solid var(--line)}
-/* The gap count sits at the gap, between one section and the next. */
-.gapd{margin:0;padding:7px 0 0;font-size:12px;color:var(--faint);
-  text-align:center;letter-spacing:.02em;
-  border-top:1px dashed var(--line)}
+/* The gap count sits at the gap, between one section and the next, and is a BUTTON: a
+   reader who wants the sentences that were passed over can open them in place. */
+.gapd{display:flex;justify-content:center;align-items:center;gap:8px;width:100%;
+  margin:0;padding:9px 0 0;font:inherit;font-size:12px;color:var(--faint);
+  background:none;border:0;border-top:1px dashed var(--line);cursor:pointer;
+  letter-spacing:.02em;-webkit-appearance:none}
+.gapd:hover{color:var(--accent)}
+.gapd:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px;border-radius:4px}
+/* .gapx is the affordance: without it the count reads as a static label and nobody taps */
+.gapd .gapx{color:var(--accent);border-bottom:1px solid rgba(28,107,74,.35)}
+.gapd[aria-expanded="true"] .gapx{border-bottom:0;color:var(--faint)}
+.gapbody{margin:6px 0 0;border-top:1px dashed var(--line)}
+.sk{padding:9px 0 10px;border-bottom:1px solid var(--line)}
+.sk:last-child{border-bottom:0}
+.sk-meta{display:flex;align-items:baseline;gap:8px;margin-bottom:3px;flex-wrap:wrap}
+.sk .sid{font:600 10.5px/1.5 var(--mono);color:var(--faint);letter-spacing:.03em}
+.sk .who{font-size:11.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.045em}
+.sk .who.none{display:block;min-height:.7rem}
+/* Skipped sentences are deliberately quieter than published ones: they are context, not
+   the brief. Faint-but-readable, so a reader can still check what was passed over. */
+.sk-text{margin:0;font-size:14px;line-height:1.55;color:var(--dim)}
+.gapmsg{margin:6px 0 0;font-size:12px;color:var(--faint);text-align:center}
 /* Portfolio shown once, then just the name -- a 49-char title on every sentence wraps. */
 .spkfull{display:block;text-transform:none;letter-spacing:0;font-size:11px;
   color:var(--faint);margin-top:1px}
@@ -2526,6 +2633,57 @@ def load_sittings():
     return out
 
 
+
+def build_skipped_payloads(out_dir, summaries):
+    """Write the skipped sentences for each brief as a small JSON file, one per brief.
+
+    WHY NOT INLINE. Measured across 2026: the skipped sentences are 52,698 sentences and
+    6,691,507 characters against 11,239 published sentences and 1,789,397 characters -- the
+    material behind the expanders is 3.74x the text already on the page. Embedding it would
+    take a single sitting from 465 KB to roughly 3 MB, which is the wrong trade on a phone
+    for something most readers never open. So the count stays on the page and the text is
+    FETCHED when a reader actually asks for it.
+
+    One file per brief rather than one index per sitting: the expanders belong to a brief,
+    and a per-brief file keeps a tap cheap on a budget sitting holding six of them. A
+    reader without JavaScript still sees the count; only the expansion is unavailable.
+    """
+    # the dataset loader lives with the summariser, not the site
+    sys.path.insert(0, os.path.join(ROOT, "summariser"))
+    import build_dataset as BD
+    d = os.path.join(out_dir, "skipped")
+    os.makedirs(d, exist_ok=True)
+    written = 0
+    for b in summaries or []:
+        meta = b.get("_meta") or {}
+        if meta.get("schema") != 4:
+            continue
+        iid = meta.get("id")
+        year = str(meta.get("year") or "")
+        if not iid or not year:
+            continue
+        src = os.path.join(ROOT, "pipeline", "dataset", year, f"{iid}.json")
+        if not os.path.exists(src):
+            continue
+        rec = BD.load_item(src) or []
+        if not rec:
+            continue
+        pub = {x.get("sid") for sec in (b.get("sections") or [])
+               for x in (sec.get("sentences") or [])}
+        skipped = [{"sid": s["sid"], "speaker": s.get("speaker") or "",
+                    "attributed": bool(s.get("attributed")),
+                    "text": s.get("text") or ""}
+                   for s in rec if s["sid"] not in pub]
+        if not skipped:
+            continue
+        # Written as a list, not an object, so it can be fetched as a simple array and
+        # needs no schema negotiation on the client.
+        write_text_atomic(os.path.join(d, f"{iid}.json"),
+                          json.dumps(skipped, ensure_ascii=False, separators=(",", ":")))
+        written += 1
+    return written
+
+
 def build_all(out_dir):
     sittings = load_sittings()
     if not sittings:
@@ -2571,6 +2729,7 @@ def build_all(out_dir):
                                      archive_href="sittings/index.html",
                                      summaries=summaries))
 
+    n_skipped = build_skipped_payloads(out_dir, summaries)
     printed = sum(brief_substance(s) for s in summaries)
     print(f"built {len(sittings)} sitting page(s) + archive; latest = {latest['date']}; "
           f"{len(summaries)} briefs ({printed:,} sentences published)")

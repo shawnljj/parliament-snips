@@ -1056,6 +1056,89 @@
 
   syncStickyVar();
   railRebuild();
+
+  // ---------------------------------------------------------------- skipped sentences
+  // The count beside a gap is a button. The sentences behind it are NOT in the page --
+  // measured, they are 3.74x the published text, so embedding them would take a sitting
+  // from 465 KB to ~3 MB on a phone for material most readers never open. Fetched once per
+  // brief and cached, so a second tap in the same brief is instant.
+  var SKIP_CACHE = {};
+
+  function skEsc(t) {
+    return String(t == null ? '' : t)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+  function skNum(sid) {
+    var m = /^s0*(\d+)$/.exec(sid || '');
+    return m ? +m[1] : -1;
+  }
+  function loadSkipped(brief) {
+    if (SKIP_CACHE[brief] && SKIP_CACHE[brief].then) return SKIP_CACHE[brief];
+    if (SKIP_CACHE[brief]) return Promise.resolve(SKIP_CACHE[brief]);
+    var url = '../skipped/' + encodeURIComponent(brief) + '.json';
+    SKIP_CACHE[brief] = fetch(url).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).then(function (list) {
+      SKIP_CACHE[brief] = list;              // keep the data, not the promise
+      return list;
+    });
+    return SKIP_CACHE[brief];
+  }
+  function renderSkipped(host, list, from, to) {
+    // Only the sentences inside THIS gap's id range, so one brief's payload serves every
+    // gap on the page.
+    var picked = list.filter(function (s) {
+      var v = skNum(s.sid);
+      return v > from && v < to;
+    });
+    if (!picked.length) {
+      host.innerHTML = '<p class="gapmsg">No sentences to show here.</p>';
+      return;
+    }
+    host.innerHTML = picked.map(function (s) {
+      var who = (s.speaker || '').trim();
+      var meta = '<span class="sid">' + skEsc(s.sid) + '</span>'
+        + (who ? '<span class="who">' + skEsc(who) + '</span>'
+               : '<span class="who none"></span>');
+      return '<div class="sk"><div class="sk-meta">' + meta + '</div>'
+           + '<p class="sk-text">' + skEsc(s.text) + '</p></div>';
+    }).join('');
+  }
+
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    var btn = (t && t.closest) ? t.closest('.gapd') : null;
+    if (!btn) return;
+    var body = btn.nextElementSibling;
+    if (!body) return;
+    var x = btn.querySelector('.gapx');
+    if (btn.getAttribute('aria-expanded') === 'true') {
+      btn.setAttribute('aria-expanded', 'false');
+      body.hidden = true;
+      body.innerHTML = '';
+      if (x) x.textContent = 'show';
+      return;
+    }
+    var sec = btn.closest ? btn.closest('.dsec') : null;
+    var brief = sec ? sec.getAttribute('data-brief') : null;
+    if (!brief) return;
+    btn.setAttribute('aria-expanded', 'true');
+    if (x) x.textContent = 'hide';
+    body.hidden = false;
+    body.innerHTML = '<p class="gapmsg">Loading&hellip;</p>';
+    loadSkipped(brief).then(function (list) {
+      renderSkipped(body, list, +btn.getAttribute('data-from'),
+                    +btn.getAttribute('data-to'));
+    }).catch(function () {
+      // Say so rather than showing an empty box: a silent failure here reads as the
+      // record having nothing in the gap.
+      body.innerHTML = '<p class="gapmsg">Could not load these sentences. '
+        + 'The full record is at sprs.parl.gov.sg.</p>';
+    });
+  });
+
   window.addEventListener('load', function () {
     syncStickyVar(); railRebuild(); offerResume();
   });
