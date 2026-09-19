@@ -1422,6 +1422,14 @@ def short_brief(item_id, others=()):
     return out if len(out) >= 2 else i
 
 
+# How many silent rows before a speaker's name is shown again. Carrying it across a whole
+# brief hides 84% of repeats versus 46% if the name resets per section, but a reader must
+# never be left without a name to attribute a passage to -- so it reappears periodically.
+# Counted in ROWS, not pixels: the renderer has no layout information, and a row is roughly
+# 2-4 lines, so six rows is about one screen.
+RESHOW_AFTER = 6
+
+
 def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
     """Render a selection-schema (v4) brief: sections, verbatim sentences, sticky summary.
 
@@ -1543,11 +1551,18 @@ def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
 
     cards = []
     seen_speakers = set()
+    # Carried ACROSS sections, not reset per section: see the note above RESHOW_AFTER.
+    last_spk = None
+    silent = 0
     for n, sec in enumerate(sections):
         sents = sec.get("sentences") or []
         if not sents:
             continue
         rows = []
+        # The last speaker SHOWN anywhere in this brief, carried across sections: consecutive
+        # sections are often the same speaker, and resetting per section reprinted the name
+        # three times inside one continuous speech. Re-shown after RESHOW_AFTER silent rows
+        # so a long run cannot leave the reader without a name to attribute it to.
         for x in sents:
             k = sid_num(x.get("sid"))
             # The unpublished run immediately before this sentence, if this section is
@@ -1559,16 +1574,32 @@ def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
                 rows.append(inline_rows(a, b) if b - a + 1 <= INLINE_MAX
                             else skipped_rows(a, b))
             raw_spk = (x.get("speaker") or "").strip()
-            spk = esc(short_speaker(raw_spk)) if raw_spk else ""
-            if spk and spk != esc(raw_spk) and raw_spk not in seen_speakers:
-                seen_speakers.add(raw_spk)
-                spk = f'{spk} <span class="spkfull">{esc(raw_spk)}</span>'
-            spk_html = (f'<span class="who">{spk}</span>' if spk
-                        else '<span class="who none"></span>')
+            # Suppress the name only while it is still fresh: same speaker as the last SHOWN
+            # one, and fewer than RESHOW_AFTER rows ago. The name stays on data-speaker and in
+            # the brief JSON either way, so nothing becomes uncheckable.
+            repeat = (raw_spk == last_spk and silent < RESHOW_AFTER)
+            if repeat:
+                silent += 1
+                spk_html = '<span class="who rep"></span>'
+            else:
+                silent = 0
+                last_spk = raw_spk
+                spk = esc(short_speaker(raw_spk)) if raw_spk else ""
+                if spk and spk != esc(raw_spk) and raw_spk not in seen_speakers:
+                    seen_speakers.add(raw_spk)
+                    # Show only the part the short form OMITS. Printing the whole raw
+                    # string repeated the name in full directly beneath itself, which read
+                    # as the speaker being announced twice.
+                    plain = short_speaker(raw_spk) or ""
+                    extra = raw_spk[len(plain):].strip() if (plain and raw_spk.startswith(plain)) else raw_spk
+                    if extra:
+                        spk = f'{spk} <span class="spkfull">{esc(extra)}</span>'
+                spk_html = (f'<span class="who">{spk}</span>' if spk
+                            else '<span class="who none"></span>')
             ctx = ('<span class="ctxmark">context</span>'
                    if x.get("added_for_context") else "")
             rows.append(
-                f'<li class="vs">'
+                f'<li class="vs" data-speaker="{esc(raw_spk)}">'
                 f'<div class="vs-meta">'
                 f'<span class="sid" title="{esc(item_id)}">{sid_label(x.get("sid", ""))}'
                 f'</span>'
@@ -2054,6 +2085,11 @@ STYLE = """
 .vs-meta .who{font-size:11.5px;color:var(--dim);text-transform:uppercase;
   letter-spacing:.045em}
 .vs-meta .who.none{display:block;min-height:.7rem}
+/* Same speaker as the row above: nothing to show, and no line taken. Distinct from
+   .who.none, which means the RECORD names no speaker -- that one keeps its line so an
+   unattributed sentence does not shift the rows beneath it. */
+.vs-meta .who.rep{display:none}
+.sk-meta .who.rep{display:none}
 .ctxmark{font-size:10px;color:var(--warm);background:#fdf1e8;border-radius:4px;
   padding:1px 5px;margin-left:auto}
 .vs-text{margin:0;font-size:15.5px;line-height:1.6;color:var(--ink)}

@@ -1,0 +1,152 @@
+{
+ "item": {
+  "id": "oral-answer-3779",
+  "year": "2025",
+  "title": "Programmes to Raise Awareness for and Assess Healthy Family Boundaries Following Issuance of Guidelines",
+  "group": "oral",
+  "tier": "small",
+  "source_words": 604,
+  "prompt_chars": 4013,
+  "sentence_count": 20,
+  "chunk_count": 1,
+  "report_ids": [
+   "oral-answer-3779"
+  ],
+  "sitting_dates": [
+   "2025-02-05"
+  ]
+ },
+ "verdict": {
+  "passed": false,
+  "verbatim_invariant": true,
+  "text_failures": [],
+  "text_failures_count": 0,
+  "schema_complete": true,
+  "missing_fields": [],
+  "sections_total": 1,
+  "sections_without_summary": [],
+  "sections_without_sentences": [],
+  "sentences_published": 8,
+  "sentences_selected": 8,
+  "turns_cited": 1,
+  "turns_total": 8,
+  "coverage": 0.125,
+  "min_coverage_required": 0.15,
+  "min_turns_required": 1,
+  "checked_at": "2026-09-19T10:19:01"
+ },
+ "attempt": {
+  "title": "Programmes to Raise Awareness for and Assess Healthy Family Boundaries Following Issuance of Guidelines",
+  "what_it_is": "Programmes to Raise Awareness for and Assess Healthy Family Boundaries Following Issuance of Guidelines",
+  "sections": [
+   {
+    "label": "MSF Healthy Family Boundaries Guide",
+    "summary": "MSF developed a Practitioners' Resource Guide on Healthy Family Boundaries as general principles, not enforceable rules, and says parents decide discipline unless it becomes child abuse.",
+    "sentences": [
+     {
+      "sid": "s00013",
+      "speaker": "Ms Sun Xueling",
+      "attributed": true,
+      "text": "The Ministry of Social and Family Development (MSF) had initiated the development of the Practitioners' Resource Guide on the Guidelines on Healthy Family Boundaries.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00014",
+      "speaker": "Ms Sun Xueling",
+      "attributed": true,
+      "text": "And the background to this is that in the course of child protection work, MSF and professionals have come across parenting practices that, while not illegal, can place children in uncomfortable situations.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00015",
+      "speaker": "Ms Sun Xueling",
+      "attributed": true,
+      "text": "That said, MSF recognises that every family is unique and some may face special circumstances and therefore, the guidelines are thus not intended to be rules to be enforced or prescriptive in nature across all parenting contexts, but rather to serve as general principles to help professionals working with diverse family situations.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00016",
+      "speaker": "Ms Sun Xueling",
+      "attributed": true,
+      "text": "On the second question that she had, the guidelines currently do not include physical discipline elements.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00017",
+      "speaker": "Ms Sun Xueling",
+      "attributed": true,
+      "text": "There have been various surveys that show that many parents in Singapore still use certain methods of physical discipline on their children.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00018",
+      "speaker": "Ms Sun Xueling",
+      "attributed": true,
+      "text": "MSF recognises this and acknowledges that, ultimately, at the end of the day, parents have the right to decide on how they would want to discipline their children.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00019",
+      "speaker": "Ms Sun Xueling",
+      "attributed": true,
+      "text": "But that said, if the behaviour crosses the line and goes into child abuse – and we have professionals who will look into case-specific details to be able to come to a conclusion on that.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00020",
+      "speaker": "Ms Sun Xueling",
+      "attributed": true,
+      "text": "And if that is the case, then Child Protective Services will not hesitate to step in to protect the child.",
+      "added_for_context": false
+     }
+    ]
+   }
+  ],
+  "_meta": {
+   "schema": 4,
+   "id": "oral-answer-3779",
+   "group": "oral",
+   "year": "2025",
+   "sitting_dates": [
+    "2025-02-05"
+   ],
+   "report_ids": [
+    "oral-answer-3779"
+   ],
+   "sentences_total": 20,
+   "sentences_selected": 8,
+   "sentences_in_sections": 8,
+   "sentences_skipped_within_selection": 0,
+   "sentences_added_for_context": 0,
+   "sections_total": 1,
+   "selection_share": 0.4,
+   "generated_by": "stage2b_select + stage2c_sections",
+   "gate": {
+    "passed": false,
+    "verbatim_invariant": true,
+    "text_failures": [],
+    "text_failures_count": 0,
+    "schema_complete": true,
+    "missing_fields": [],
+    "sections_total": 1,
+    "sections_without_summary": [],
+    "sections_without_sentences": [],
+    "sentences_published": 8,
+    "sentences_selected": 8,
+    "turns_cited": 1,
+    "turns_total": 8,
+    "coverage": 0.125,
+    "min_coverage_required": 0.15,
+    "min_turns_required": 1,
+    "checked_at": "2026-09-19T10:19:01"
+   },
+   "usage": {
+    "calls": 2,
+    "prompt_tokens": 1435,
+    "completion_tokens": 105,
+    "estimated": false,
+    "cost_usd": 0.00023
+   }
+  }
+ }
+}
