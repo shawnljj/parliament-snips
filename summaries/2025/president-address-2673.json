@@ -1,0 +1,132 @@
+{
+ "title": "Ministry of Sustainability and the Environment",
+ "what_it_is": "Ministry of Sustainability and the Environment",
+ "sections": [
+  {
+   "label": "Climate adaptation and coastal protection",
+   "summary": "MSE will develop a National Adaptation Plan, a heat resilience strategy, and site-specific coastal protection studies.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "MSE will develop Singapore’s inaugural National Adaptation Plan (NAP) that articulates targeted strategies to address physical risks and other impacts of climate change.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "MSE will develop a whole-of-Government integrated strategy for heat resilience, in partnership with businesses, academia and community.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "To prepare for rising sea levels, MSE is undertaking site-specific studies across our coastline to identify and construct the most fit-for-purpose multi-functional coastal protection measures.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Food resilience and carbon tax",
+   "summary": "MSE will diversify food imports, build stockpiles, help local agri-food scale up, and administer the carbon tax for net zero 2050.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "MSE will enhance our food supply resilience by continuing to diversify our food import sources, build up our stockpile of essential food items and help our local agri-food industry scale up and become more productive and climate-resilient.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "Singapore is committed to achieving net zero emissions by 2050.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "To support our decarbonisation journey, MSE administers the carbon tax, a key enabler which complements other mitigation measures, by sending an economy-wide price signal to help businesses plan and internalise the cost of carbon emissions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Long-term water infrastructure investment",
+   "summary": "MSE will continue long-term planning and investment in water infrastructure as demand is expected to almost double by 2065.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "MSE will continue to plan long-term and invest in our water infrastructure, as water demand is expected to almost double by 2065, in line with our economic and population growth.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Hawker centre upgrading and building",
+   "summary": "The Government will invest up to $1 billion to upgrade existing hawker centres and build five new ones over 20 to 30 years.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "To support the provision of affordable food options, the Government will invest up to $1 billion to upgrade existing hawker centres and build five new ones over the next 20 to 30 years.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2673",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2673"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.3077,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:46:16"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1512,
+   "completion_tokens": 241,
+   "estimated": false,
+   "cost_usd": 0.000279
+  }
+ }
+}

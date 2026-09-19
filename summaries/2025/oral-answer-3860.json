@@ -1,0 +1,140 @@
+{
+ "title": "Review of Green Man Timings at Pedestrian Crossings",
+ "what_it_is": "Review of Green Man Timings at Pedestrian Crossings",
+ "sections": [
+  {
+   "label": "Green Man crossing times",
+   "summary": "Green Man crossing times are set by crossing distance and walking speed, and increased in Silver Zones, Friendly Streets and Green Man Plus crossings.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The Green Man crossing times at pedestrian crossings are determined based on the crossing distance and the walking speed of a pedestrian.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The crossing time at a pedestrian crossing is reviewed when there are changes that affect these factors.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Additionally, at pedestrian crossings within Silver Zones and Friendly Streets, where there are higher proportions of seniors and young families, the crossing times are increased, so that pedestrians will have additional time to cross at a more comfortable pace.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Pedestrian crossings that are frequently used by seniors or persons with disabilities, for example, near polyclinics and markets, also have the Green Man Plus scheme.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "When these pedestrians tap their concession cards on the reader, the crossing time will be increased for the next Green Man cycle.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Crossing time calculation",
+   "summary": "The remaining crossing time is calculated from the crossing distance using a typical walking speed of about one metre per second.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "And then, the remaining crossing time is calculated based on the distance of the pedestrian crossing.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "Then, we use a typical walking speed of about one metre per second to calculate the duration needed.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Balancing traffic and pedestrian time",
+   "summary": "Total pedestrian crossing time affects other traffic movements, so it balances vehicular traffic with pedestrian speed and comfort, and feedback will be reviewed.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "But we also take into account that the total time allocated for pedestrian crossing will also affect other traffic movements.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "So, it is a balance of vehicular traffic as well as pedestrian speed and comfort.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "We will take the feedback and re-look at that particular crossing that the Member has highlighted and see how we can increase the crossing time to ensure safety and comfort for his residents.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3860",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-04-08"
+  ],
+  "report_ids": [
+   "oral-answer-3860"
+  ],
+  "sentences_total": 17,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.5882,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:50:11"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1325,
+   "completion_tokens": 189,
+   "estimated": false,
+   "cost_usd": 0.000238
+  }
+ }
+}

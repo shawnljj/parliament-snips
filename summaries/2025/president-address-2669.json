@@ -1,0 +1,148 @@
+{
+ "title": "Ministry of Education",
+ "what_it_is": "Ministry of Education",
+ "sections": [
+  {
+   "label": "MOE student support and skills",
+   "summary": "MOE will partner parents to equip students with future-ready skills, reduce emphasis on academic results, and support well-being and diverse learners.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "MOE will partner parents to equip our students with future-ready skills and competencies so that they can thrive in school, work and life.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We have reduced the over-emphasis on academic results by revising the Primary School Leaving Examination scoring system and the junior college admission criteria.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We want our students to embrace learning beyond grades and have more time and opportunities to develop 21st Century Competencies and pursue other interests.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We will strengthen support for students’ social-emotional development and well-being, working with parents and stakeholders through Grow Well SG to encourage healthy habits and support mental wellness.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "MOE will support students of different strengths and interests, helping them develop to their fullest potential, regardless of background or starting point in life.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We have implemented Full Subject-Based Banding in secondary schools, which has allowed students to better customise their learning experiences.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We will provide more opportunities to stretch our students at different stages of their education.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "This includes refreshing our approach to support higher-ability learners with the review of the Gifted Education Programme and enabling more students to pursue Mother Tongue Language at a higher level in secondary school.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "Through additional resources in schools and stronger partnerships with the community, we will provide wraparound support for their learning and well-being, through initiatives like ComLink+.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "For students with Special Educational Needs (SEN), we have strengthened teacher capacity in both mainstream and Special Education (SPED) schools, and enhanced accessibility, affordability and quality in SPED schools.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "For example, the Institute of Technical Education and SG Enable will work with companies to enhance internship and employment support programmes for students with SEN.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SkillsFuture AI literacy",
+   "summary": "SkillsFuture Singapore will raise AI literacy broadly so that workforce members can become confident AI users.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "SkillsFuture Singapore will also raise AI literacy broadly, so that those already in the workforce can become confident AI users.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2669",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2669"
+  ],
+  "sentences_total": 28,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 2,
+  "selection_share": 0.4286,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:46:02"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1635,
+   "completion_tokens": 138,
+   "estimated": false,
+   "cost_usd": 0.000268
+  }
+ }
+}

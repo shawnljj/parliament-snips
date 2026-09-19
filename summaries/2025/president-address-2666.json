@@ -1,0 +1,153 @@
+{
+ "title": "Ministry of Trade and Industry",
+ "what_it_is": "Ministry of Trade and Industry",
+ "sections": [
+  {
+   "label": "Taskforce, Strategy Review, Advanced Manufacturing",
+   "summary": "The Singapore Economic Resilience Taskforce will support workers and businesses on tariff challenges, while MTI reviews economic strategy and strengthens advanced manufacturing.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "The tripartite Singapore Economic Resilience Taskforce will support workers and businesses to navigate and respond to immediate challenges arising from increased tariffs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "At the same time, MTI is undertaking an Economic Strategy Review to chart a forward-looking blueprint to better position our economy, businesses and workers in this new landscape.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "MTI will intensify efforts to capture opportunities in new growth areas.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We will strengthen advanced manufacturing by leveraging technologies, such as artificial intelligence (AI), robotics and biotechnology.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Global Enterprises, Low-Carbon Transition, Energy",
+   "summary": "MTI will help local enterprises internationalise, support firms' low-carbon transition, step up solar deployment, and develop nuclear and hydrogen capabilities.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "MTI will grow the pool of Singapore Global Enterprises by helping promising local enterprises internationalise and grow into regional or global leaders.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We will help firms transition to a low-carbon economy, while safeguarding energy security and maintaining competitiveness.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We will step up domestic solar deployment and advance cross-border electricity trading.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We will also develop capabilities in other potential low carbon pathways, such as nuclear energy and hydrogen.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Expanding Trade Links Emerging Markets",
+   "summary": "Beyond its 28 Free Trade Agreements, MTI will expand trade links with emerging markets including Latin America, South Asia, Middle East and Africa.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "Beyond our 28 Free Trade Agreements, MTI will expand trade links with emerging markets, such as Latin America, South Asia, Middle East and Africa.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Trading Frameworks and WTO Reforms",
+   "summary": "MTI will deepen engagement in CPTPP and RCEP and work with trade-dependent countries to support World Trade Organization reforms.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We will deepen engagement in existing trading frameworks, such as the Comprehensive and Progressive Agreement for Trans-Pacific Partnership and Regional Comprehensive Economic Partnership and with other economic regions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00030",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We will also work with other trade-dependent countries to support reforms at the World Trade Organization to uphold open, fair and effective global trade.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2666",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2666"
+  ],
+  "sentences_total": 34,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 4,
+  "selection_share": 0.3235,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:45:48"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1702,
+   "completion_tokens": 254,
+   "estimated": false,
+   "cost_usd": 0.000309
+  }
+ }
+}

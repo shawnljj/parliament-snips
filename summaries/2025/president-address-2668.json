@@ -1,0 +1,126 @@
+{
+ "title": "Prime Minister's Office (National Research Foundation)",
+ "what_it_is": "Prime Minister's Office (National Research Foundation)",
+ "sections": [
+  {
+   "label": "RIE investment and RIE 2030 plans",
+   "summary": "The Government invested about 1% of GDP in RIE, with $28 billion for RIE 2025, and RIE 2030 will launch RIE Flagships and Grand Challenges.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "The Government has consistently invested about 1% of gross domestic product (GDP) in RIE activities, with $28 billion allocated over five years for RIE 2025.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "The quality of our talent and research has continued to rise, as evidenced by our Field-Weighted Citation Impact, which grew from 1.47 in 2014 to 1.74 in 2024, 74% above the global average.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "There are over 20 corporate laboratories and Centres of Innovation and business expenditure on R&D increased from $5.5 billion in 2018 (1% of GDP) to $8.1 billion (1.2% of GDP) in 2022.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "Venture capital investments in early-stage deep tech deals have more than tripled from $478 million in 2020 to $1.56 billion in 2023.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "Building on RIE 2025, RIE 2030 will sharpen our focus on achieving transformative outcomes for the economy and national strategic priorities.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "RIE2030 will launch a new wave of large-scale, cross-cutting R&D programmes, in the form of RIE Flagships and RIE Grand Challenges.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NRF talent and AI research",
+   "summary": "NRF will continue investing in talent and basic research while strengthening Singapore's AI and compute research capabilities.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "In parallel, NRF will continue to invest in talent and basic research, while strengthening Singapore’s AI and compute research capabilities.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "RIE 2030 focus and capabilities",
+   "summary": "RIE 2030 will leverage research strengths for societal and economic impact while keeping basic research, talent and infrastructure cutting-edge.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "Building on RIE 2025’s achievements, RIE 2030 will focus on leveraging our research strengths to achieve greater societal and economic impact, while continuing to keep our basic research capabilities, talent and infrastructure at the cutting-edge.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2668",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2668"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.3478,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:46:30"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1576,
+   "completion_tokens": 208,
+   "estimated": false,
+   "cost_usd": 0.000279
+  }
+ }
+}

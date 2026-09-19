@@ -1,0 +1,126 @@
+{
+ "title": "Ministry of Finance",
+ "what_it_is": "Ministry of Finance",
+ "sections": [
+  {
+   "label": "Sound and sustainable finances",
+   "summary": "MOF will allocate resources judiciously, keep taxes and transfers fair and progressive, spend within its means, and steward reserves responsibly.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "The Ministry of Finance (MOF) will allocate resources judiciously and evaluate programmes rigorously, to maintain sound and sustainable finances.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Our system of taxes and transfers will remain fair and progressive: everyone contributes and the better off contribute more, and everyone benefits and those with greater needs receive more.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "With rising needs, Government spending in this term will increase as a share of gross domestic product.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "The Government will continue to spend within its means and maintain a balanced budget over the medium term.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "We will continue to steward our reserves responsibly.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Economic resilience and competitiveness",
+   "summary": "The Singapore Economic Resilience Taskforce and Economic Strategy Review will work with agencies and stakeholders to navigate uncertainties and keep Singapore competitive.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "The Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Through the Singapore Economic Resilience Taskforce and the Economic Strategy Review, we will work with agencies and stakeholders to navigate global uncertainties and keep Singapore competitive.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "The Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "We will continue to invest in our productive capacity – helping businesses, especially small and medium-sized enterprises, to innovate and harness AI and other technologies, and supporting Singaporeans to reskill and upskill through SkillsFuture.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Forward Singapore major moves",
+   "summary": "Forward Singapore introduced the Majulah Package, a new public housing framework, new SkillsFuture programmes, and initiatives for a family-friendly Singapore.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "The Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Under Forward Singapore, we introduced major moves – the Majulah Package to strengthen retirement adequacy, a new public housing framework to improve affordability, new SkillsFuture programmes to uplift workers and initiatives to encourage a family-friendly Singapore.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2678",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2678"
+  ],
+  "sentences_total": 40,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:45:40"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1662,
+   "completion_tokens": 189,
+   "estimated": false,
+   "cost_usd": 0.000286
+  }
+ }
+}

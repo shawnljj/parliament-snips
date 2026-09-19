@@ -1,0 +1,107 @@
+{
+ "title": "Proceedings on Ministerial Statements",
+ "what_it_is": "Proceedings on Ministerial Statements",
+ "sections": [
+  {
+   "label": "Ministerial Statements Sitting Order",
+   "summary": "Ministerial Statements on the Leader of the Opposition and the Middle East should be taken before the debate on the Address of Thanks.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "First, my Ministerial Statement on \"Duties and Privileges of the Leader of the Opposition\" sets out the Leader of the Opposition's duties and privileges for this term of Parliament.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "It would thus be apposite for my Ministerial Statement to be taken before the rest of the proceedings at this Sitting, including the debate on the Address of Thanks.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "I am also moving that my Ministerial Statement be taken before the business Motion on Speech Time, standing in my name as the two are closely related.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Second, the two Ministerial Statements on \"Situation in the Middle East\" and the Ministerial Statement on \"Singaporeans' Response to Situation in the Middle East\" are of current public interest.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Also, Minister Vivian Balakrishnan is due to deliver Singapore's statement at the 80th United Nations General Assembly and leaves for that tonight.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "It would be good for Singaporeans to hear the Government's position on this before he leaves.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "It would thus be best for these Ministerial Statements to be taken before the debate on the Address of Thanks.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-2693",
+  "group": "motion",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-22"
+  ],
+  "report_ids": [
+   "motion-2693"
+  ],
+  "sentences_total": 10,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 1,
+  "selection_share": 0.7,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:32:15"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 983,
+   "completion_tokens": 82,
+   "estimated": false,
+   "cost_usd": 0.000161
+  }
+ }
+}

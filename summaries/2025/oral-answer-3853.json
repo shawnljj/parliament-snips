@@ -1,0 +1,132 @@
+{
+ "title": "Number and Causes of Passenger Fatalities onboard Buses",
+ "what_it_is": "Number and Causes of Passenger Fatalities onboard Buses",
+ "sections": [
+  {
+   "label": "Bus fatalities involving elderly commuters",
+   "summary": "Four fatalities involved elderly commuters falling onboard, and the remaining case resulted from a serious collision.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Transport (Mr Murali Pillai) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Four of these fatalities involved elderly commuters falling onboard, while the remaining case was the result of a serious collision.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Government accepts Bus Safety Taskforce recommendations",
+   "summary": "The Government accepted Bus Safety Tripartite Taskforce recommendations, including audio reminders, more safety technology and bus modifications to reduce sharp acceleration.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister of State for Transport (Mr Murali Pillai) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "To further enhance bus safety, the Government has accepted the recommendations from the Bus Safety Tripartite Taskforce to improve the safety of commuters onboard buses.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister of State for Transport (Mr Murali Pillai) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "These include introducing audio reminders on our public buses to alert commuters that the bus is moving off, equipping our bus fleet with more safety technology to alert Bus Captains to potential safety risks and to modify our public buses to reduce sharp acceleration that could cause commuters to lose their balance when buses are moving off.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bus network trips and ageing population",
+   "summary": "The bus network serves around four million trips daily, almost all completed safely, with concern about falls affecting the ageing population.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Mr Murali Pillai",
+     "attributed": true,
+     "text": "The bus network serves around four million trips per day and almost all of these trips are completed safely.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Murali Pillai",
+     "attributed": true,
+     "text": "Of course, we are still concerned about the ageing population and the impact of falls on board could be more serious for them.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bus Captain training and implementation timeline",
+   "summary": "New technological tools and refresher training for Bus Captains are being looked into, with recommendations progressively implemented from the second half of 2025.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Mr Murali Pillai",
+     "attributed": true,
+     "text": "As part of the enhancements recommended by the Bus Safety Tripartite Task Force, we are also looking into new technological tools and regular refresher training for our Bus Captains in safe and defensive driving techniques.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr Murali Pillai",
+     "attributed": true,
+     "text": "We are working with the bus operators to progressively implement the recommendations of the task force from the second half of 2025.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Murali Pillai",
+     "attributed": true,
+     "text": "More details will be shared at a later date.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3853",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-04-08"
+  ],
+  "report_ids": [
+   "oral-answer-3853"
+  ],
+  "sentences_total": 21,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.381,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:49:44"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1499,
+   "completion_tokens": 239,
+   "estimated": false,
+   "cost_usd": 0.000277
+  }
+ }
+}

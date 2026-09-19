@@ -1,0 +1,81 @@
+{
+ "title": "Proceedings on Ministerial Statement",
+ "what_it_is": "Proceedings on Ministerial Statement",
+ "sections": [
+  {
+   "label": "Ministerial Statement before Supply debate",
+   "summary": "The Ministerial Statement is taken before the Supply debate resumes, and Members will have time to seek clarifications from Senior Minister Teo Chee Hean.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Supply business ordinarily takes precedence over Ministerial Statements.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "However, the Ministerial Statement is on a matter of some importance and it would be more efficient for the disposal of Parliamentary Business for the Ministerial Statement to be taken before the resumption of the debate on the Committee of Supply.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Members will have sufficient time to seek clarifications from Senior Minister Teo Chee Hean, who will deliver the Ministerial Statement.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-2608+2653",
+  "group": "motion",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-03-06",
+   "2025-04-08"
+  ],
+  "report_ids": [
+   "motion-2608",
+   "motion-2653"
+  ],
+  "sentences_total": 4,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.75,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T12:02:26"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 800,
+   "completion_tokens": 74,
+   "estimated": false,
+   "cost_usd": 0.000133
+  }
+ }
+}

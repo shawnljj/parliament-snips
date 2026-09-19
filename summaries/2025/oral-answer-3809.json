@@ -1,0 +1,126 @@
+{
+ "title": "Cause of Recent Oil Leak at Police Coast Guard's Brani Regional Base",
+ "what_it_is": "Cause of Recent Oil Leak at Police Coast Guard's Brani Regional Base",
+ "sections": [
+  {
+   "label": "Brani Base oil leak stopped",
+   "summary": "Police Coast Guard was alerted to a possible oil leak at Brani Base, and a contractor isolated the leaking hose, stopping the leak at about 3.40 pm.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "On 5 February 2025, at about 3.25 pm, the Police Coast Guard (PCG) was alerted by the Maritime Port Authority of Singapore (MPA) of a possible oil leak from Brani Base after MPA had detected oil sheens near Sentosa Gateway.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "While PCG was checking for the oil leak, a contractor who was performing unrelated works in the vicinity saw oil leaking from a fuel hose at one of the pontoons at Brani Base.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "The contractor isolated the main valve to the leaking hose and the leak was stopped at about 3.40 pm.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Leak source and first leak time",
+   "summary": "After confirming the leak source, PCG investigations and CCTV checks established the affected hose first leaked at about 11.40 am that morning.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "After PCG had confirmed the source of the leak on 5 February 2025, it carried out further investigations and CCTV checks, and established that the affected hose had first leaked at about 11.40 am that morning.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Leak cause and maintenance schedule",
+   "summary": "PCG found the leak stopped at about 12.20 pm and restarted at about 2.47 pm, caused by a damaged fuel hose with micro-cracks; last maintenance was 17 January 2025.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "Through PCG’s subsequent investigation and retrospective CCTV checks, PCG discovered that the leak had stopped on its own at about 12.20 pm but restarted at about 2.47 pm.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00026",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "Based on PCG’s investigations, the leak was caused by a damaged fuel hose connecting the wharf's fuel distribution network to the fuel dispenser on a pontoon.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00027",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "PCG’s preliminary assessment is that the fuel hose developed micro-cracks due to cyclical stresses during routine coiling and uncoiling, which eventually led to a tear that caused the fuel spillage.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00029",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "The last maintenance check was conducted on 17 January 2025 and the next inspection was scheduled for the week of 10 February 2025.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3809",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-02-27"
+  ],
+  "report_ids": [
+   "oral-answer-3809"
+  ],
+  "sentences_total": 34,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2353,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T12:19:19"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1994,
+   "completion_tokens": 225,
+   "estimated": false,
+   "cost_usd": 0.000342
+  }
+ }
+}

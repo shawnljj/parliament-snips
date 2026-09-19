@@ -1,0 +1,132 @@
+{
+ "title": "Ministry of Culture, Community and Youth",
+ "what_it_is": "Ministry of Culture, Community and Youth",
+ "sections": [
+  {
+   "label": "Arts, heritage, sports accessibility plans",
+   "summary": "MCCY will bring arts and heritage to Singaporeans and make sports more accessible, including hosting the 2029 SEA Games.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Acting Minister for Culture, Community and Youth (Mr David Neo)",
+     "attributed": true,
+     "text": "Through ArtsEverywhere@CDC, Heritage Activation Nodes and the Culture Pass, MCCY will bring arts and heritage to all Singaporeans, creating more ways for people to bond, celebrate our diversity and strengthen our national identity.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Acting Minister for Culture, Community and Youth (Mr David Neo)",
+     "attributed": true,
+     "text": "Our Sports Facilities Master Plan will make sports more accessible and affordable.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Acting Minister for Culture, Community and Youth (Mr David Neo)",
+     "attributed": true,
+     "text": "SportSG will introduce adaptive sports and strength training programmes to Active Ageing Centres.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Acting Minister for Culture, Community and Youth (Mr David Neo)",
+     "attributed": true,
+     "text": "The refreshed Disability Sports Master Plan will bring inclusive sports to all mainstream schools and encourage community-initiated disability sports initiatives through the Enabling Sports Fund.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Acting Minister for Culture, Community and Youth (Mr David Neo)",
+     "attributed": true,
+     "text": "We will also begin preparations to host the Southeast Asian Games (SEA Games) in 2029 and rally the nation to cheer for Team Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore Sports School relocation",
+   "summary": "MCCY will relocate the Singapore Sports School to Kallang and build a new Home of Team Singapore.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Acting Minister for Culture, Community and Youth (Mr David Neo)",
+     "attributed": true,
+     "text": "MCCY will relocate the Singapore Sports School to Kallang and build a new Home of Team Singapore where junior and senior athletes can train together.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SG Youth Plan co-creation",
+   "summary": "MCCY and NYC are engaging young Singaporeans to co-create the five-year SG Youth Plan.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "The Acting Minister for Culture, Community and Youth (Mr David Neo)",
+     "attributed": true,
+     "text": "MCCY and NYC are engaging young Singaporeans to co-create the SG Youth Plan, a five-year initiative to help youths to navigate adulting with confidence, explore career opportunities and access mentors.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Volunteerism promotion partnerships",
+   "summary": "MCCY will promote volunteerism through SG Cares Volunteer Centres and Youth Corps Singapore, partnering the Singapore Business Federation.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "The Acting Minister for Culture, Community and Youth (Mr David Neo)",
+     "attributed": true,
+     "text": "MCCY will promote volunteerism through the SG Cares Volunteer Centres and Youth Corps Singapore and partner the Singapore Business Federation to grow corporate volunteerism.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2675",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2675"
+  ],
+  "sentences_total": 30,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.2667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:46:05"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1563,
+   "completion_tokens": 230,
+   "estimated": false,
+   "cost_usd": 0.000283
+  }
+ }
+}

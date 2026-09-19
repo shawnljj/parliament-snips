@@ -1,0 +1,150 @@
+{
+ "title": "Ministry of Home Affairs",
+ "what_it_is": "Ministry of Home Affairs",
+ "sections": [
+  {
+   "label": "Geopolitical divisions and polarisation risks",
+   "summary": "Global power contestations and Middle East conflicts have deepened geopolitical divisions, raised racial and religious polarisation risks, and increased foreign interference threats.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "Contestations between global powers and ongoing conflicts, such as those in the Middle East, have deepened geopolitical divisions, heightened the risks of racial and religious polarisation, and raised the threat of foreign interference.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MHA response to threats",
+   "summary": "MHA will continue to strengthen laws, deepen partnerships and harness technology aggressively to respond to these threats.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "To respond to these threats, the Ministry of Home Affairs (MHA) will continue to strengthen our laws, deepen partnerships and harness technology aggressively.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Criminal, road traffic, foreign interference amendments",
+   "summary": "MHA will introduce a Criminal Law (Miscellaneous Amendments) Bill and plans to amend the Road Traffic Act and Foreign Interference (Countermeasures) Act.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "Later this year, we will introduce the Criminal Law (Miscellaneous Amendments) Bill, to further rationalise our criminal laws, better protect vulnerable victims and tackle emerging crime trends.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We plan to amend the Road Traffic Act to deal with the worsening road safety situation and the Foreign Interference (Countermeasures) Act to address evolving foreign interference tactics.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Etomidate-laced vapes threat",
+   "summary": "MHA will support the Ministry of Health in tackling the growing threat of etomidate-laced vapes.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "MHA will also support the Ministry of Health in tackling the growing threat of etomidate-laced vapes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "AI investment and HTxAI movement",
+   "summary": "MHA is investing heavily in artificial intelligence and has launched a dedicated HTxAI movement to ramp up capabilities.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "In particular, we are investing heavily in artificial intelligence (AI) and have launched a dedicated HTxAI movement to ramp up our capabilities.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SCDF TruCerts blockchain system",
+   "summary": "SCDF will launch TruCerts, a blockchain-based system enhancing tracking and verification of fire safety certificates for SCDF-regulated products and resolving compliance issues faster.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "The Singapore Civil Defence Force (SCDF) will be launching TruCerts, a blockchain-based system that enhances the tracking and verification of fire safety certificates for SCDF-regulated products and resolves compliance issues more quickly and accurately.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Home Team Public Perception Survey",
+   "summary": "In the 2024 Home Team Public Perception Survey, 93.1% of respondents personally trusted the Home Team and 94.3% had confidence in its ability to keep Singapore safe and secure.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "In the 2024 Home Team Public Perception Survey, 93.1% of respondents said they personally trusted the Home Team, while 94.3% said they had confidence in the Home Team’s ability to keep Singapore safe and secure.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2676",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2676"
+  ],
+  "sentences_total": 30,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 7,
+  "selection_share": 0.2667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 7,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:45:55"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 1918,
+   "completion_tokens": 415,
+   "estimated": false,
+   "cost_usd": 0.000385
+  }
+ }
+}

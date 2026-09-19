@@ -1,0 +1,140 @@
+{
+ "title": "Update on Generating Electricity for Pulau Ubin Residents Using Micro-grid",
+ "what_it_is": "Update on Generating Electricity for Pulau Ubin Residents Using Micro-grid",
+ "sections": [
+  {
+   "label": "Pulau Ubin micro-grid electricity",
+   "summary": "EMA has worked with developers since 2013 on a Pulau Ubin micro-grid run by EDP Renewables, serving over 30 consumers at rates below diesel generators.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Trade and Industry (Ms Gan Siow Huang) (the Deputy Prime Minister and Minister for Trade and Industry)",
+     "attributed": true,
+     "text": "At the moment, it is not cost effective to connect Pulau Ubin to the mainland grid.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Trade and Industry (Ms Gan Siow Huang) (the Deputy Prime Minister and Minister for Trade and Industry)",
+     "attributed": true,
+     "text": "Since 2013, the Energy Market Authority (EMA) has worked with developers to deploy a micro-grid on Pulau Ubin.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Trade and Industry (Ms Gan Siow Huang) (the Deputy Prime Minister and Minister for Trade and Industry)",
+     "attributed": true,
+     "text": "This micro-grid is currently run by EDP Renewables, and serves more than 30 residential and business consumers located at the main village.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Trade and Industry (Ms Gan Siow Huang) (the Deputy Prime Minister and Minister for Trade and Industry)",
+     "attributed": true,
+     "text": "Consumers purchase electricity from the micro-grid at a rate that is lower than the cost of using their own diesel generators.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Micro-grid electricity rates and relief",
+   "summary": "Micro-grid consumers pay 80 cents per kilowatt hour, EMA is reviewing this, and financial relief may be provided to vulnerable households.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "And it is also lower than most other non-micro-grid users on Pulau Ubin, who are relying on diesel generators.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "It is true that the micro-grid electricity consumers are paying 80 cents per kilowatt hour.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "This is largely determined based on the cost of generating electricity using the micro-grid.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "We are reviewing this and we do hope that there will be newer technologies to help generate electricity for the Pulau Ubin micro-grid at a lower cost.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "In the meantime, if there are households, especially those who are vulnerable or elderly who have difficulty paying the electricity bills, we will be very glad to work with Ms Valerie Lee, as well as the residents, to look at how we can provide some financial relief for them.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Pulau Ubin car and water costs",
+   "summary": "Car owners on Pulau Ubin do not pay the Certificate of Entitlement, and those drawing water from wells do not pay water bills.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "For example, car owners on Pulau Ubin, they do not pay the Certificate of Entitlement and also for those who are drawing water from the wells, they do not pay water bills.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3903",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-26"
+  ],
+  "report_ids": [
+   "oral-answer-3903"
+  ],
+  "sentences_total": 28,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.3571,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:27:01"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1739,
+   "completion_tokens": 213,
+   "estimated": false,
+   "cost_usd": 0.000303
+  }
+ }
+}

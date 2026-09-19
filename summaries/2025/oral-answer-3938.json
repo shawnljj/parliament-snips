@@ -1,0 +1,151 @@
+{
+ "title": "Publishing Detailed Findings of Nuclear Technology Study",
+ "what_it_is": "Publishing Detailed Findings of Nuclear Technology Study",
+ "sections": [
+  {
+   "label": "No decision on nuclear deployment",
+   "summary": "The Government has not made any decision on deploying nuclear energy in Singapore.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "The Government has not made any decision on deploying nuclear energy in Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "EMA study on nuclear technologies",
+   "summary": "The EMA-commissioned study helps Singapore understand safety and viability of advanced nuclear power plant technologies, not sites or timelines.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "The study commissioned by EMA is focused on helping Singapore understand the safety and the viability of various advanced nuclear power plant technologies.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "It will not focus on potential sites or deployment timelines.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Nuclear capability building background paper",
+   "summary": "On 27 October 2025, a Background Paper on Singapore's Nuclear Energy Capability Building Journey was published.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "On 27 October 2025, we published a “Background Paper on Singapore’s Nuclear Energy Capability Building Journey” to share more about the work we have done thus far.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Capability building under IAEA approach",
+   "summary": "The Government is building capabilities in line with the IAEA's Milestones Approach, supported by international partners studying potential deployment with high safety standards.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "Today, as I have shared over the last couple of minutes, the Government is in the process of building capabilities and this is in line with the International Atomic Energy Agency's (IAEA's) Milestones Approach, and we are supported by international partners to study this potential deployment with very high standards of safety, security and safeguards.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Training experts in reactor types",
+   "summary": "The question asks conditions for training experts in thorium or molten salt reactors; the reply notes slow, steady steps toward comparative analysis of technologies.",
+   "sentences": [
+    {
+     "sid": "s00048",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "Given the safety concerns around small modular reactors, which are light-water reactors, under what conditions would the Ministry consider training a cadre of experts in thorium or molten salt reactors, which have better safety characteristics like running near atmospheric temperature?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00049",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "I think it is important to note that today, we have embarked on a slow and steady series of steps for us to first gain understanding on a comparative analysis of the different types of technologies that is available.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Focus on newer reactor technologies",
+   "summary": "Focus is on newer technologies such as small modular reactors and new generation thermal high-pressure reactors, with Mott MacDonald committed to the study.",
+   "sentences": [
+    {
+     "sid": "s00052",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "Today, our focus is still on a number of the newer ones, the small modular reactors, the new generation thermal high-pressure reactors.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00053",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "We have committed Mott MacDonald to do that study for us.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3938",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-11-06"
+  ],
+  "report_ids": [
+   "oral-answer-3938"
+  ],
+  "sentences_total": 55,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 6,
+  "selection_share": 0.1636,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 4,
+   "turns_total": 12,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:03:34"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2873,
+   "completion_tokens": 327,
+   "estimated": false,
+   "cost_usd": 0.000494
+  }
+ }
+}

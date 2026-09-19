@@ -1,0 +1,166 @@
+{
+ "title": "Ministry of Manpower",
+ "what_it_is": "Ministry of Manpower",
+ "sections": [
+  {
+   "label": "AI literacy and career health",
+   "summary": "MOM will support AI literacy and adoption, drive the Career Health SG initiative, grow career guidance and employment facilitation, and launched an Alliance for Action.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "Through the Economic Strategy Review and National Artificial Intelligence (AI) Strategy, MOM will support broad-based AI literacy and AI adoption across the workforce.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "As part of the SkillsFuture movement, MOM will drive the Career Health SG initiative to help Singaporeans navigate the fast-changing job market with confidence.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "We will grow a more vibrant ecosystem of career guidance, training and employment facilitation to support a diverse workforce.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "We have also launched an Alliance for Action on Advancing Career and Employment Services to co-develop innovative solutions with the private sector.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Senior employment and CPF savings",
+   "summary": "The Tripartite Workgroup on Senior Employment will drive career longevity and age-friendly jobs, while MOM strengthens CPF and raises the Basic Retirement Sum.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "The Tripartite Workgroup on Senior Employment will reimagine ways to drive career longevity, engage Singaporeans on their aspirations, and partner forward-thinking employers to co-create innovative age-friendly jobs and multi-generational workplace solutions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "MOM will continue to strengthen the Central Provident Fund (CPF) system, so that those who contribute consistently to their CPF will be assured of meeting their basic needs in old age.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "We will raise the Basic Retirement Sum for future cohorts to help Singaporeans build up more savings for their retirement years.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Enterprise workforce transformation with AI",
+   "summary": "Through initiatives like the Enterprise Workforce Transformation Package, enterprises will transform with their workers rather than do without them.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "In an age of AI-driven automation, we will also help enterprises transform with their workers, rather than to do without them, through initiatives like the Enterprise Workforce Transformation Package.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Workplace fairness and safety standards",
+   "summary": "The Workplace Fairness Act raises standards for fair treatment, and workplace safety and health efforts target a fatal injury rate below 1.0 per 100,000 workers by 2028.",
+   "sentences": [
+    {
+     "sid": "s00028",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "We are raising standards through the Workplace Fairness Act, to assure employees and jobseekers of fair treatment.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00029",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "We will also reinforce workplace safety and health, and ensure we remain on track towards our 2028 goal of reducing fatal injury rate below 1.0 per 100,000 workers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Jobseeker support scheme",
+   "summary": "The SkillsFuture Jobseeker Support scheme helps those who have lost their jobs find their way back to employment.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "For those who face setbacks, we will help them bounce back with confidence.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00034",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "We have introduced the SkillsFuture Jobseeker Support scheme to help those who have lost their jobs find their way back to employment.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2665",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2665"
+  ],
+  "sentences_total": 38,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 5,
+  "selection_share": 0.3158,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:45:29"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1881,
+   "completion_tokens": 300,
+   "estimated": false,
+   "cost_usd": 0.000347
+  }
+ }
+}

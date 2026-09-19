@@ -1,0 +1,120 @@
+{
+ "title": "Ministry of Defence",
+ "what_it_is": "Ministry of Defence",
+ "sections": [
+  {
+   "label": "MINDEF and SAF defence plans",
+   "summary": "MINDEF and SAF will safeguard Singapore's sovereignty, deepen defence partnerships, and adopt new technologies and capabilities.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Coordinating Minister for Public Services and Minister for Defence (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "The Ministry of Defence (MINDEF) and the Singapore Armed Forces (SAF) will remain steadfast in safeguarding Singapore’s sovereignty, peace, and security in a world marked by growing uncertainty, increasingly transactional relationships and eroding shared norms.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Coordinating Minister for Public Services and Minister for Defence (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "New and emerging security threats present opportunities to work with like-minded countries to strengthen preparedness and collective resilience.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Coordinating Minister for Public Services and Minister for Defence (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "MINDEF will deepen our relevance to existing defence partners, while actively building and expanding collaborations with new ones.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Coordinating Minister for Public Services and Minister for Defence (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We will contribute to multilateral platforms and partnerships that uphold respect for international law and preserve a rules-based order, including the ASEAN Defence Ministers’ Meeting (ADMM), the ADMM-Plus, and the Five Power Defence Arrangements.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Coordinating Minister for Public Services and Minister for Defence (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "The SAF will continue to evolve its operational concepts, accelerate digital transformation, and adopt technologies that serve as force multipliers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Coordinating Minister for Public Services and Minister for Defence (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We will establish new structures to drive the development of new capabilities, especially in advanced cybersecurity and unmanned platforms.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "National Service refinements",
+   "summary": "The SAF will refine medical classification, redesign vocations and roles, and give Operationally Ready National Servicemen more chances to use civilian expertise.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Coordinating Minister for Public Services and Minister for Defence (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "National Service (NS) remains the cornerstone of our defence.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Coordinating Minister for Public Services and Minister for Defence (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "To enable our people to contribute to the best of their abilities, the SAF will refine our medical classification system, redesign vocations and roles, and provide more opportunities for Operationally Ready National Servicemen to apply their civilian expertise.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2662",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2662"
+  ],
+  "sentences_total": 18,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4444,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:46:33"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1256,
+   "completion_tokens": 145,
+   "estimated": false,
+   "cost_usd": 0.000216
+  }
+ }
+}

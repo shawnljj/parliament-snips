@@ -1,0 +1,113 @@
+{
+ "title": "Data on MDWs Seeking Treatment for Mental Health Conditions",
+ "what_it_is": "Data on MDWs Seeking Treatment for Mental Health Conditions",
+ "sections": [
+  {
+   "label": "MDW medical rights and employer penalties",
+   "summary": "MOM has not seen MDWs face legal issues seeking help; employers must cover medical expenses or face fines and imprisonment.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Manpower (Mr Shawn Huang Wei Zhong) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "The Ministry of Manpower (MOM) has not come across any cases of MDWs encountering legal issues when seeking such assistance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Manpower (Mr Shawn Huang Wei Zhong) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "MDWs' legal rights to access medical treatment, including for mental health conditions, are protected under the Employment of Foreign Manpower Act which requires employers to cover their MDW's medical expenses, including for mental health treatments.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Manpower (Mr Shawn Huang Wei Zhong) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "Employers who deny their MDWs of necessary medical treatment could be fined up to $10,000 and/or imprisoned for up to 12 months.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Manpower (Mr Shawn Huang Wei Zhong) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "The employer may also be barred from employing migrant workers in the future.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MDW mental health pre-employment declaration",
+   "summary": "MDWs declare mental health conditions in pre-employment medical exams; doctors may recommend further assessments at additional cost.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Mr Shawn Huang Wei Zhong",
+     "attributed": true,
+     "text": "Today, MDWs are required to declare whether they have mental health conditions, as part of their pre-employment medical examination.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Shawn Huang Wei Zhong",
+     "attributed": true,
+     "text": "So, where there is a positive declaration or any suspicion that they have mental health conditions, the attending doctor, at that time, may recommend further assessments, but with additional costs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mr Shawn Huang Wei Zhong",
+     "attributed": true,
+     "text": "This approach helps to keep medical tests and costs manageable for the employers in general, whilst ensuring that the individuals with healthcare conditions can be identified for further necessary follow-up.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3911",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-10-15"
+  ],
+  "report_ids": [
+   "oral-answer-3911"
+  ],
+  "sentences_total": 11,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.6364,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:22:21"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1163,
+   "completion_tokens": 139,
+   "estimated": false,
+   "cost_usd": 0.000202
+  }
+ }
+}

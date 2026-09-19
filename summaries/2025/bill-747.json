@@ -1,0 +1,113 @@
+{
+ "title": "Customs (Amendment) Bill",
+ "what_it_is": "Customs (Amendment) Bill",
+ "sections": [
+  {
+   "label": "Further amendments to Customs Act",
+   "summary": "A review proposes amendments to the Act in two areas: improving Singapore Customs' regulatory and enforcement operations, and introducing new offences and enhanced penalties.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Second Minister for Finance (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "Since then, we have carried out another review and propose further amendments to the Act in two areas.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Second Minister for Finance (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "The first set of amendments seeks to improve the effectiveness of Singapore Customs’ regulatory and enforcement operations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for Finance (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "The second will introduce new offence provisions and enhance the penalties for specified offences.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Customs offence penalties and investigations",
+   "summary": "The amendment lets Singapore Customs investigate the offence directly, raises the maximum fine to $10,000, allows imprisonment for specified offences, and changes the citation year to 2025.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "The Second Minister for Finance (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "The proposed amendment to include this offence under the Customs Act will allow Singapore Customs to investigate these cases directly and decide on the necessary follow-up actions without referring these cases to the SPF.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00036",
+     "speaker": "The Second Minister for Finance (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "For offences involving the evasion of duties, where the amount of duty cannot be ascertained, we will increase the maximum fine from $5,000 to $10,000.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00038",
+     "speaker": "The Second Minister for Finance (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "For specified offences under section 128 of the Customs Act, such as those related to fraudulent evasion and possession or storage of uncustomed or prohibited goods, we will provide for the option for the Courts to impose an imprisonment term in addition to the current penalty of a fine.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "The Chairman",
+     "attributed": true,
+     "text": "The citation year \"2024\" will be changed to \"2025\" as indicated in the Order Paper Supplement.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-747",
+  "group": "bill",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-01-08"
+  ],
+  "report_ids": [
+   "bill-747"
+  ],
+  "sentences_total": 40,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.175,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 2,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T12:46:19"
+  },
+  "usage": {
+   "calls": 4,
+   "prompt_tokens": 2578,
+   "completion_tokens": 163,
+   "estimated": false,
+   "cost_usd": 0.000407
+  }
+ }
+}

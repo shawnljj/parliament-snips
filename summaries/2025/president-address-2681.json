@@ -1,0 +1,139 @@
+{
+ "title": "Prime Minister's Office (Strategy Group)",
+ "what_it_is": "Prime Minister's Office (Strategy Group)",
+ "sections": [
+  {
+   "label": "Strategy Group strategic priorities",
+   "summary": "The Strategy Group developed five strategic priorities covering Singapore's place, economy, opportunities, unity and partnerships.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "The Strategy Group has developed a set of strategic priorities to: (a) secure Singapore’s place in a changed world; (b) transform our economy to keep it competitive; (c) expand opportunities and strengthen assurances for all; (d) unite Singaporeans; and (e) forge stronger partnerships with individuals, communities and businesses to shape Singapore’s future together.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fertility and ageing challenges",
+   "summary": "The Government addresses low fertility and ageing with marriage and parenthood support, including 30 weeks paid parental leave and the Large Families Scheme.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "The Government must deal with two demographic challenges – a declining fertility rate and a rapidly ageing population.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "To address Singapore’s low fertility rate, the Government will redouble our efforts to support marriage and parenthood, and build a Singapore Made For Families.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We have support measures spanning housing, healthcare and education, to financial and caregiving support, with recent enhancements to our parental leave schemes to provide parents with 30 weeks of paid leave in the child’s first year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "More support has also been extended to families with three or more children through the new Large Families Scheme.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Net zero emissions targets",
+   "summary": "Singapore remains committed to net zero emissions by 2050 and announced a 2035 target of 45 to 50 million tonnes of carbon dioxide equivalent.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "Singapore remains committed to our net zero emissions by 2050 target.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "This year, the Government announced our target to reduce emissions to between 45 and 50 million tonnes of carbon dioxide equivalent in 2035 as part of our 2035 Nationally Determined Contribution.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Carbon credits implementation agreements",
+   "summary": "The Government will advocate for global standards and has signed eight Article 6 carbon credits Implementation Agreements.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "As such, the Government will continue to advocate for global standards and regulations, while exploring international collaborations that support our mitigation efforts.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00030",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We have signed eight Article 6 carbon credits Implementation Agreements to grow our pipeline of high-quality credits.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2681",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2681"
+  ],
+  "sentences_total": 32,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.2812,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:45:35"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1743,
+   "completion_tokens": 225,
+   "estimated": false,
+   "cost_usd": 0.000307
+  }
+ }
+}

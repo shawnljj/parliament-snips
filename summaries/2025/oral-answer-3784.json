@@ -1,0 +1,146 @@
+{
+ "title": "Consolidation of Patient-facing Apps into One for All Public Sector Hospitals and Enhancement of App Functions Such As Appointments Management",
+ "what_it_is": "Consolidation of Patient-facing Apps into One for All Public Sector Hospitals and Enhancement of App Functions Such As Appointments Management",
+ "sections": [
+  {
+   "label": "HealthHub cross-cluster appointments",
+   "summary": "HealthHub lets users schedule cross-cluster appointments with public healthcare institutions, and this feature extends to participating Healthier SG GP clinics.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Through HealthHub, users can schedule cross-cluster appointments with the public healthcare institutions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "This feature is also extended to Healthier SG general practitioner (GP) clinics that have opted to participate in the functions of this app.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "HealthHub services and GP clinics",
+   "summary": "HealthHub offers services like viewing lab reports, screening results, prescription records and CHAS balances, extended to participating GP clinics except medication refills.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "HealthHub also provides a range of other services to patients such as viewing laboratory reports, health screening results, prescription records and Community Health Assist Scheme (CHAS) balances.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "These functions are also extended to participating GP clinics, except the medication refills which only apply to the public healthcare institutions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Seeing through patients' eyes",
+   "summary": "The speaker says we should see through our people's eyes, recognising that an ageing population with long-term health problems may need multiple care settings.",
+   "sentences": [
+    {
+     "sid": "s00035",
+     "speaker": "Dr Tan Wu Meng (Jurong)",
+     "attributed": true,
+     "text": "In short, Mr Speaker, seeing through the eyes of our people and not just the eyes of the engineers and coders.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00036",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We do recognise that as our population ages, as we have a growing number of people who have long-term health problems and multiple contacts with clinical providers, they may need multiple care settings to address their healthcare needs.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Studying digital infrastructure consolidation",
+   "summary": "The provision of digital infrastructure for clusters' individual apps is being studied for possible consolidation, distinct from user interface and user experience issues.",
+   "sentences": [
+    {
+     "sid": "s00044",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The matter of how we provide the digital infrastructure for the clusters to ride on and provide their individual apps at the moment is something that we are studying, as to whether or not there is a need to then consolidate and streamline.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00045",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "This is distinct from the issue of the user interface and the user experience that he mentioned.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00046",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We do indeed test with a variety of users from all backgrounds.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00047",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We do indeed want to make sure that the digital services that we offer are accessible to the population and easy to use, so that they can engage in these transactions.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3784",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-02-18"
+  ],
+  "report_ids": [
+   "oral-answer-3784"
+  ],
+  "sentences_total": 49,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.2041,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 8,
+   "coverage": 0.375,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T12:29:16"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2590,
+   "completion_tokens": 251,
+   "estimated": false,
+   "cost_usd": 0.000433
+  }
+ }
+}

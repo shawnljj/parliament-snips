@@ -1,0 +1,144 @@
+{
+ "title": "Ministry of Transport",
+ "what_it_is": "Ministry of Transport",
+ "sections": [
+  {
+   "label": "Changi T5 and air cargo",
+   "summary": "T5 will raise Changi's passenger capacity by over 50% and city links to over 200, while Changi East projects lift air cargo capacity 80%.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "When operational in the mid-2030s, T5 will increase Changi's annual passenger capacity by more than 50% to serve about 50 million more passengers and grow city links from around 170 today to over 200.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "Beyond T5, the Changi East Industrial Zone and the revamped Changi Airfreight Centre will increase Singapore’s air cargo handling capacity by 80% to 5.4 million tonnes per annum.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tuas Port capacity",
+   "summary": "Tuas Port will handle 65 million twenty-foot equivalent units annually when completed in the 2040s, with round-the-clock automated operations.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "When completed in the 2040s, Tuas Port will have a handling capacity of 65 million twenty-foot equivalent units annually, almost 60% more than today, with round-the-clock operations supported by automation and AI.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Johor Bahru-Singapore RTS Link",
+   "summary": "The RTS Link, expected to start service by December 2026, will connect Woodlands North to Bukit Chagar in five minutes.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "The Johor Bahru-Singapore Rapid Transit System (RTS) Link, expected to begin service by December 2026, will connect Woodlands North to Bukit Chagar in just five minutes, and carry up to 10,000 passengers per hour in each direction.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Households near train stations",
+   "summary": "By the early 2030s, eight in ten households will be within a ten-minute walk of a train station.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "By the early 2030s, eight in ten households will be within a ten-minute walk of a train station, making Singapore one of the most connected cities in the world.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bus connectivity and AV shuttles",
+   "summary": "Nearly $1 billion more goes to the Bus Connectivity Enhancement Programme, and MOT will pilot fixed-route AV shuttles in Punggol.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "Nearly $1 billion more will go into the Bus Connectivity Enhancement Programme to improve access and shorten public transport journey times for residents living in HDB estates further away from the city.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00026",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "MOT will pilot fixed-route AV shuttle services in Punggol and progressively expand this service to more towns, including estates farther from the city centre.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Friendly Streets in every town",
+   "summary": "By 2030, every town will have at least one Friendly Street with these features.",
+   "sentences": [
+    {
+     "sid": "s00031",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "By 2030, every town will have at least one Friendly Street with these features.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2674",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2674"
+  ],
+  "sentences_total": 32,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 6,
+  "selection_share": 0.25,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:45:25"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1893,
+   "completion_tokens": 350,
+   "estimated": false,
+   "cost_usd": 0.000363
+  }
+ }
+}

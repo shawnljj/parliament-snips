@@ -1,0 +1,152 @@
+{
+ "title": "Ministry of Digital Development and Information",
+ "what_it_is": "Ministry of Digital Development and Information",
+ "sections": [
+  {
+   "label": "Smart Nation 2.0 AI adoption",
+   "summary": "MDDI will refine Smart Nation 2.0 strategies, build capabilities, boost innovation and accelerate AI adoption in enterprises and workforce.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "The Ministry of Digital Development and Information (MDDI) will refine our Smart Nation 2.0 strategies to navigate rising geopolitical and economic uncertainties and build a thriving digital future for all Singaporeans.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "To seize growth opportunities, MDDI will build capabilities, boost innovation and accelerate AI adoption in our enterprises and workforce.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We will support enterprises ready to go further in embedding AI into their core business processes to generate greater value.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We will also anchor more AI Centres of Excellence to deepen their capabilities here.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Scams and online safety",
+   "summary": "The Government will tackle scams with technical detection and prevention, and set up an Online Safety Commission for victims of online harms.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "The Government will continue to tackle scams on multiple fronts, including by deploying technical solutions for detection and prevention.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We will set up the Online Safety Commission to support victims of online harms in seeking timely relief from perpetrators and platforms.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "National cybersecurity standards",
+   "summary": "MDDI will raise baseline cybersecurity standards, promote cyber hygiene, and strengthened incident reporting requirements for Critical Information Infrastructure owners.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "MDDI will raise our baseline cybersecurity standards nationally, including by promoting stronger cyber hygiene practices, particularly in entities that handle sensitive data or critical systems.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We have strengthened incident reporting requirements for Critical Information Infrastructure owners to detect malicious cyber activities early, enabling timely responses.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Core digital infrastructure investment",
+   "summary": "MDDI will invest in core digital infrastructure for connectivity and study 6G, non-terrestrial networks and quantum to futureproof networks.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "MDDI will continue to invest in core digital infrastructure to ensure robust connectivity, and study areas such as 6G, non-terrestrial networks and frontier technologies like quantum to futureproof our networks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Inclusive trusted Smart Nation",
+   "summary": "MDDI is committed to building an inclusive, trusted and forward-looking Smart Nation with people, enterprises and partners.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "MDDI is committed to building an inclusive, trusted and forward-looking Smart Nation, in close partnership with our people, enterprises and partners.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2677",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2677"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.3846,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:46:21"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1504,
+   "completion_tokens": 278,
+   "estimated": false,
+   "cost_usd": 0.000288
+  }
+ }
+}

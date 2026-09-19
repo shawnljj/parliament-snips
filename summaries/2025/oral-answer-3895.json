@@ -1,0 +1,86 @@
+{
+ "title": "Extending Use of Pro-family Leave to Provide Caregiving to Spouses",
+ "what_it_is": "Extending Use of Pro-family Leave to Provide Caregiving to Spouses",
+ "sections": [
+  {
+   "label": "Pro-family leave for spouses",
+   "summary": "Asked whether teachers' pro-family leave could cover spouses, since it currently covers parents and children only; spouse care would be no-pay leave.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Vikram Nair",
+     "attributed": true,
+     "text": "asked the Minister for Education whether the Ministry will consider including spouses in the category of people whom teachers are entitled to take pro-family leave to care for, as the current policy permits such leave to be taken to care for parents and children only.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Education (Mr David Neo) (for the Minister for Education)",
+     "attributed": true,
+     "text": "It is already part of the Civil Service provisions, as it stands.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Vikram Nair (Sembawang)",
+     "attributed": true,
+     "text": "From what I understand, there are around 14 days of leave, but it has to be pre-qualified, of which I think, three days for childcare, two days for parent care, one day is for Housing and Development Board registration.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Mr Vikram Nair (Sembawang)",
+     "attributed": true,
+     "text": "From what I understand, leave to take care of spouses would be considered no pay leave.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3895",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-26"
+  ],
+  "report_ids": [
+   "oral-answer-3895"
+  ],
+  "sentences_total": 5,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.8,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 3,
+   "turns_total": 3,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:27:19"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 780,
+   "completion_tokens": 76,
+   "estimated": false,
+   "cost_usd": 0.00013
+  }
+ }
+}

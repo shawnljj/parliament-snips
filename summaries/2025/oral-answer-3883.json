@@ -1,0 +1,134 @@
+{
+ "title": "Frequency of Maintenance Works and Audits for HDB Rental Flats",
+ "what_it_is": "Frequency of Maintenance Works and Audits for HDB Rental Flats",
+ "sections": [
+  {
+   "label": "HDB rental flat inspections",
+   "summary": "HDB visited occupied rental flats annually pre-COVID-19, switched to feedback-based inspections during COVID-19, and is resuming proactive inspection and maintenance more efficiently.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Pre-COVID-19, for occupied rental flats, the Housing and Development Board (HDB) visited these flats annually to identify those that require repairs or maintenance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "This practice was however disrupted when COVID-19 safe management measures were imposed and HDB conducted physical inspections in response to tenants’ feedback instead.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Post-COVID-19, HDB has been working to resume proactive inspection and maintenance but in a more efficient and sustainable way, such as by bundling and outsourcing inspection alongside other related works.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Tenants can continue to alert HDB should they require repair or maintenance assistance and HDB will attend to these requests.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "We will share more next year about audits and maintenance works for HDB rental flats.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Repairs and repainting of rental flats",
+   "summary": "HDB assists with functional defects like spalling concrete and ceiling leaks, will look into jammed doors and gates, but painting is aesthetic and manpower intensive.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "She mentioned that in her rounds, she has observed that there were instances where there were jammed gates and windows, and also some paint peeling issues.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "But that said, HDB often assists with repairs of functional defects, and this would include areas such as spalling concrete, ceiling leaks and cracks, water seepage, popping tiles.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "We can definitely look into the instances where she had mentioned about jammed doors and gates, because this would impede their functionality.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "When it comes to painting, however, this falls into the category of aesthetics in nature, and it could also be very manpower intensive.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "Where such situations arise, we will have to work with the tenant for the tenant to move out and for the belongings to be taken out, for us to undertake the full repainting works.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3883",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-25"
+  ],
+  "report_ids": [
+   "oral-answer-3883"
+  ],
+  "sentences_total": 17,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.5882,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:28:15"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1370,
+   "completion_tokens": 161,
+   "estimated": false,
+   "cost_usd": 0.000237
+  }
+ }
+}

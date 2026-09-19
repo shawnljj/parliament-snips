@@ -1,0 +1,113 @@
+{
+ "title": "Accessibility Features in Autonomous Shuttle Services",
+ "what_it_is": "Accessibility Features in Autonomous Shuttle Services",
+ "sections": [
+  {
+   "label": "AV pilot accessibility assistance",
+   "summary": "During the pilot, a safety operator and ambassadors assist passengers, and only larger AVs like the eight-seater Robobus can take folded wheelchairs and strollers.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Ms Sun Xueling) (for the Acting Minister for Transport)",
+     "attributed": true,
+     "text": "In the initial pilot phase of the deployment, a safety operator, who will be on board the autonomous vehicle (AV) shuttle, can assist passengers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Ms Sun Xueling) (for the Acting Minister for Transport)",
+     "attributed": true,
+     "text": "Ambassadors will also be on the ground to assist with boarding, alighting and journey planning.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Ms Sun Xueling) (for the Acting Minister for Transport)",
+     "attributed": true,
+     "text": "Only larger AVs like the eight-seater Robobus autonomous shuttle will be able to accommodate folded wheelchairs and strollers at the moment, but in time there will be more of such vehicles.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Transport (Ms Sun Xueling) (for the Acting Minister for Transport)",
+     "attributed": true,
+     "text": "We will work with the AV operators to consider the accessibility and inclusivity of AV rides for commuters with different mobility needs.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "AV design feedback and infrastructure",
+   "summary": "Most AVs are five-seaters, so feedback will go to manufacturers to incorporate design needs from the onset, and universal design will be adopted when scaling up.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "Most of them now are five-seaters and, as a result of that, these very small number of vehicles – there are about 10 of them right now in this pilot phase – do not fully include all the design parameters that we would like to have to be able to serve as diverse a spectrum of needs of commuters as possible.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "So, what we would like to do moving forward is that we will share this feedback that the Member has with the manufacturers of these AV shuttles and look at how to incorporate this right from the onset, rather than have to add on subsequently, which would add on cost, just as the Member has shared.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "Separately, where we are able to do so, in terms of the infrastructure on the ground, whether it is at the pick-up and drop-off points or the bus stops, when we scale up the AV shuttles to a larger scale, with more vehicles and more AV shuttles on the roads, we will definitely adopt a universal design philosophy so that we do not have to add on subsequently, which would incur costs in terms of infrastructure.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3916",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-10-15"
+  ],
+  "report_ids": [
+   "oral-answer-3916"
+  ],
+  "sentences_total": 14,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:22:12"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1502,
+   "completion_tokens": 153,
+   "estimated": false,
+   "cost_usd": 0.000253
+  }
+ }
+}

@@ -1,0 +1,154 @@
+{
+ "title": "Number of Singaporeans and PRs Overseen by Each Social Service Office",
+ "what_it_is": "Number of Singaporeans and PRs Overseen by Each Social Service Office",
+ "sections": [
+  {
+   "label": "SSO town household average",
+   "summary": "Each SSO town has an average of around 61,000 households.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Social and Family Development (Mr Eric Chua) (for the Minister for Social and Family Development)",
+     "attributed": true,
+     "text": "Each SSO town has an average of around 61,000 households.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SMTA household statistics tracking",
+   "summary": "Statistics on households that successfully applied for SMTA are tracked at the national level, not published, and not available at this moment.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Mr Pritam Singh (Aljunied)",
+     "attributed": true,
+     "text": "Can the Senior Parliamentary Secretary confirm what percentage of households, who have successfully applied for SMTA, what is that number even though they may have surpassed the $800 per capita income requirement?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "We track the statistics at the national level.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "As to why we do not publish that, I think that there are some variabilities across towns, for instance, based on the demographic growth profiles of each town's population, there might be some differences in terms of those who qualify for LTA vis-a-vis those who qualify for SMTA for instance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "But generally, we do not see a large standard deviation across towns with regard to those who qualify for SMTA and LTA.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "As to the second supplementary question, I would encourage the Member to file another Parliamentary Question, because I do not have the statistics with me at this moment.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SMTA disbursement data discrepancy",
+   "summary": "A discrepancy exists between SMTA data in the 2022 annual report and the trends report, to be clarified during Committee of Supply.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr Pritam Singh",
+     "attributed": true,
+     "text": "There is some discrepancy between the data of SMTA and the amount of money that has been extended to Singaporeans who apply for that, the SMTA, through the years.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Pritam Singh",
+     "attributed": true,
+     "text": "So, for example, the annual report in 2022, reported that number that was disbursed comes up to $119 million.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Pritam Singh",
+     "attributed": true,
+     "text": "It is at page six of the report.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Pritam Singh",
+     "attributed": true,
+     "text": "But in the trends report, that number comes down to $112 million, and the number of households increases for 2022.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Pritam Singh",
+     "attributed": true,
+     "text": "So, I hope the Senior Parliamentary Secretary can clarify that, perhaps if not at this session, but perhaps during the Committee of Supply.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "We will clarify during the Committee of Supply debates.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3821",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-03-03"
+  ],
+  "report_ids": [
+   "oral-answer-3821"
+  ],
+  "sentences_total": 19,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 3,
+  "selection_share": 0.6316,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 5,
+   "turns_total": 6,
+   "coverage": 0.8333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T12:15:33"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1469,
+   "completion_tokens": 183,
+   "estimated": false,
+   "cost_usd": 0.000257
+  }
+ }
+}

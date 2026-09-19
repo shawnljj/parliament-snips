@@ -1,0 +1,113 @@
+{
+ "title": "Prime Minister’s Office (National Security Coordination Secretariat)",
+ "what_it_is": "Prime Minister’s Office (National Security Coordination Secretariat)",
+ "sections": [
+  {
+   "label": "National security risks and NSCS",
+   "summary": "Singapore faces growing security risks, and the National Security Coordination Secretariat uses a whole-of-Government approach to identify, assess and mitigate them.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "In an increasingly fragmented and dangerous world, Singapore faces growing and new security risks that threaten our national security and sovereignty.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "Interactions between big power contestation, digital connectivity, economic weaponisation and technological advances will introduce complex risks to our infrastructure, economy, and supply chains.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "Misinformation and the resultant polarisation of views could deepen societal fault lines and threaten our cohesion and stability.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "The National Security Coordination Secretariat (NSCS) adopts a whole-of-Government (WOG) approach to organise inter-agency work to identify, assess and mitigate national security risks spanning different domains.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "NSCS works with Government agencies to identify key emerging, cross-cutting security risks, assess the security implications of these risks on various domains as well as on interdependencies across these domains, and develop solutions and coordinate responses to address such risks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public Service capability and coordination",
+   "summary": "NSCS supports strengthening the Public Service's capability to respond to risks proactively, agilely and in a well-coordinated manner.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "NSCS supports efforts to strengthen the Public Service’s capability to organise itself to respond to risks in a proactive, agile, and well-coordinated manner.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Coordinating Minister for National Security and Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "As we navigate an increasingly volatile and uncertain external environment, Singapore must remain proactive and well-coordinated in tackling cross-cutting and emerging risks to our national security.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2664",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2664"
+  ],
+  "sentences_total": 12,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.5833,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:46:38"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1073,
+   "completion_tokens": 142,
+   "estimated": false,
+   "cost_usd": 0.00019
+  }
+ }
+}

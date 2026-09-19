@@ -1,0 +1,127 @@
+{
+ "title": "Opening Tengah Link to General Traffic during Off-peak Hours to Improve Connectivity",
+ "what_it_is": "Opening Tengah Link to General Traffic during Off-peak Hours to Improve Connectivity",
+ "sections": [
+  {
+   "label": "Tengah Link bus corridor",
+   "summary": "Tengah Link stays a dedicated bus corridor as more bus services are introduced, with motorists using Tengah Drive and the PIE interchange.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "More buses will use Tengah Link as a dedicated bus corridor, as more bus services are introduced in tandem with Tengah's public transport-centric development.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "Opening up Tengah Link to cars is not possible, as it will lengthen travel time for bus commuters and will also result in long traffic queues for surrounding roads even during off-peak hours.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "This is because the single-lane road is designed as a bus lane and is not designed to accommodate general traffic.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "Motorists can use Tengah Drive and the Pan Island Expressway (PIE) interchange with Tengah Boulevard to get in and out of Tengah town quickly.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "The PIE interchange will also be upgraded by 2028, to provide motorists more options to access Tengah town.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tengah Link not open to cars",
+   "summary": "Tengah Link cannot open to private cars or be widened because more bus services, added bus stops and utilities on both sides make it busier.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "Try as we might, it is not possible for us to do so because we have the intention to introduce more bus services for Tengah town, and Tengah Link will become a lot busier.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "By keeping it as a dedicated bus corridor, we also have the intention of adding bus stops to facilitate transfers for residents on Tengah Link.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "And as a consequence, that road will become more crowded and it is not possible for us to then allow it to be open to private cars.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "We have also considered the option of widening the road, but because of infrastructure and utilities on either side of Tengah Link, that, too, is not possible.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3940",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-11-06"
+  ],
+  "report_ids": [
+   "oral-answer-3940"
+  ],
+  "sentences_total": 16,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.5625,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:04:03"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1374,
+   "completion_tokens": 152,
+   "estimated": false,
+   "cost_usd": 0.000235
+  }
+ }
+}

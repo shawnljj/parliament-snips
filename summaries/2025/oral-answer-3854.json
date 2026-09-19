@@ -1,0 +1,120 @@
+{
+ "title": "Common Causes for Fires in Indoor and Multi-storey Car Parks",
+ "what_it_is": "Common Causes for Fires in Indoor and Multi-storey Car Parks",
+ "sections": [
+  {
+   "label": "Car park fire incidents",
+   "summary": "Fire incidents at indoor and multi-storey car parks rose from 14 in 2020 to 36 in 2024, driven by vehicular fires, none involving EVs.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Between 2020 and 2024, the number of fire incidents at indoor and multi-storey car parks each year was 14, 12, 18, 27 and 36 respectively.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "The increase in incidents in 2024 was largely driven by an increase in vehicular fires, none of which involved electric vehicles (EVs).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "For example, indoor car parks are built with fire-rated walls and doors to contain the fire from spreading to other parts of the building.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "In addition, sprinklers are required for enclosed basement car parks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "EV charger safety rules",
+   "summary": "EV chargers follow TR 25, need safety distances and a power cut-off switch, and EV fires take hours to extinguish.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "Particularly for EV chargers, we have the Technical Reference 25 (TR 25), which is a nationwide standard.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "And we do not restrict EV chargers to any level of the car parks, but they need to comply with safety distances and also install the power cut-off switch within a certain distance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "Essentially, most EV fires resulting from thermal runaway will take longer to extinguish because the fire is self-generating.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "And as the thermal runaway produces heat and with oxygen that continues to fuel the fire, it would take several hours to extinguish, whereas for the internal combustion engine vehicles, it takes about 10 to 15 minutes.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3854",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-04-08"
+  ],
+  "report_ids": [
+   "oral-answer-3854"
+  ],
+  "sentences_total": 25,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.32,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:49:48"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1525,
+   "completion_tokens": 154,
+   "estimated": false,
+   "cost_usd": 0.000257
+  }
+ }
+}

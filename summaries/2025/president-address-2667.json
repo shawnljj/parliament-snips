@@ -1,0 +1,158 @@
+{
+ "title": "Prime Minister's Office (Monetary Authority of Singapore)",
+ "what_it_is": "Prime Minister's Office (Monetary Authority of Singapore)",
+ "sections": [
+  {
+   "label": "MAS monetary policy easing",
+   "summary": "MAS will work with partners to secure Singapore's position as a leading global financial centre, and eased monetary policy twice this year.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "MAS will work with partners to secure Singapore’s position as a leading and innovative global financial centre.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "This year, MAS eased monetary policy settings twice in response to the sustained decline in Singapore’s Core Inflation rate.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Timely monetary policy response",
+   "summary": "MAS will ensure a timely and appropriate monetary policy response if cyclical economic conditions weaken unexpectedly, considering other supportive measures.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "If cyclical economic conditions weaken unexpectedly during this period, MAS will ensure that the monetary policy response is timely and appropriate, while considering other supportive measures in conjunction with the financial sector.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Scam controls and Money Lock",
+   "summary": "Controls were tightened to make it harder for scammers to access accounts or validate unauthorised transactions, and Money Lock was introduced with banks.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We have tightened controls to make it harder for scammers to access customer accounts or validate unauthorised transactions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We have also worked with banks to introduce Money Lock, to limit potential losses should customers’ digital banking access be compromised.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Equities Market Review Group",
+   "summary": "The Equities Market Review Group recommended measures on listings, investor participation, market liquidity and regulatory structures, and will complete its report by end-2025.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "The Equities Market Review Group has recommended measures to encourage quality listings, enhance investor participation and broaden market liquidity and re-position regulatory structures and approach.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "The Review Group will consider additional proposals and complete its report by end-2025.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Financing Asia's Transition Partnership",
+   "summary": "Through FAST-P, up to US$5 billion is to be mobilised for decarbonisation and climate transition, with an office deploying up to US$500 million in concessional capital.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "Through the Financing Asia’s Transition Partnership (FAST-P), we aim to mobilise up to US$5 billion for decarbonisation and climate transition.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "A FAST-P office will facilitate the deployment of up to US$500 million of concessional capital from the Government, alongside capital from other partners.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MAS medium-term price stability",
+   "summary": "Amid global uncertainty, MAS remains committed to securing medium-term price stability.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "Amid global uncertainty, MAS remains committed to securing medium-term price stability.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2667",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2667"
+  ],
+  "sentences_total": 30,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:46:08"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1563,
+   "completion_tokens": 336,
+   "estimated": false,
+   "cost_usd": 0.000313
+  }
+ }
+}

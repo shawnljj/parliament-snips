@@ -1,0 +1,159 @@
+{
+ "title": "Coordination between Government Agencies to Verify and Review Fire Risk of Hoarding Cases in HDB Flats",
+ "what_it_is": "Coordination between Government Agencies to Verify and Review Fire Risk of Hoarding Cases in HDB Flats",
+ "sections": [
+  {
+   "label": "HDB and SCDF fire risk",
+   "summary": "Where fire risk is significant, HDB coordinates with SCDF to use its regulatory powers where needed.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "",
+     "attributed": false,
+     "text": "Where there is significant fire risk, HDB coordinates with the Singapore Civil Defence Force (SCDF) to use its regulatory powers where needed.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CDRA amendment and CRU",
+   "summary": "The CDRA was amended to let the CRU Director-General apply to the CDRT to declutter a hoarder's unit, with CRU operations aimed from Q2 2025.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "",
+     "attributed": false,
+     "text": "To address such situations, the Government recently amended the Community Disputes Resolution Act (CDRA) to allow the Director-General of the pilot Community Relations Unit (CRU) to apply to the Community Disputes Resolution Tribunals (CDRT) to declutter the hoarder's unit.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "",
+     "attributed": false,
+     "text": "The CRU aims to begin operations from the second quarter of 2025.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Alliance for Action NEAT",
+   "summary": "The public, people and private sector formed the New Environment Action Team to manage hoarding.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "",
+     "attributed": false,
+     "text": "A whole-of-society approach is needed to address hoarding in a more holistic and sustainable manner.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "",
+     "attributed": false,
+     "text": "This is why the public, people and private sector came together over the past year or so, to form an Alliance for Action to manage hoarding, termed the New Environment Action Team (NEAT).",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reporting and CDRA pathway",
+   "summary": "Neighbour reports help agencies get information, and the amended CDRA adds a pathway to compel decluttering when other levers fail.",
+   "sentences": [
+    {
+     "sid": "s00027",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "Sometimes, they can be quite elusive, and if neighbours observe something and report it, I think this helps to get the information to the agencies.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "I have also mentioned that with the amendments to the CDRA, we now would have an additional pathway to compel decluttering where other regulatory levers are not successful and where other efforts to persuade have failed.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fire Hazard Abatement Notice",
+   "summary": "HDB and SCDF assess hoarding cases and can issue a Fire Hazard Abatement Notice without waiting for the CRU.",
+   "sentences": [
+    {
+     "sid": "s00043",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "In hoarding cases where residents are worried about potential fire safety and when these cases are alerted to HDB, we will work together with our partner agencies, in this case, SCDF, to make an assessment to see whether, for instance, a Fire Hazard Abatement Notice can be issued.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00044",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "This is one of the regulatory levers that are already at the disposal of the agencies collectively and this is something that can be activated in cases that are warranted.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00045",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "We do not have to wait for the CRU to be set up for this.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00046",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "And I also thank Mr Dennis Tan for his support of the CRU and indeed, once it is in operation, we will seek to be as quick as possible in gaining experience from its operation and to scale up, because that is the eventual intention.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3807",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-02-27"
+  ],
+  "report_ids": [
+   "oral-answer-3807"
+  ],
+  "sentences_total": 46,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.2391,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T12:19:12"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2849,
+   "completion_tokens": 292,
+   "estimated": false,
+   "cost_usd": 0.000481
+  }
+ }
+}

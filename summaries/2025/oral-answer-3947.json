@@ -1,0 +1,107 @@
+{
+ "title": "Average Processing Time for Bus Travellers at Land Checkpoints",
+ "what_it_is": "Average Processing Time for Bus Travellers at Land Checkpoints",
+ "sections": [
+  {
+   "label": "Bus hall clearance times",
+   "summary": "QR code clearance at bus halls takes about 10 seconds and passport clearance about 13 seconds, with ICA encouraging QR code use.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Home Affairs (Mr Goh Pei Ming) (for the Coordinating Minister for National Security and Minister for Home Affairs)",
+     "attributed": true,
+     "text": "On average, QR code clearance and passport clearance at the bus halls of the land checkpoints take approximately 10 seconds and 13 seconds respectively.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Home Affairs (Mr Goh Pei Ming) (for the Coordinating Minister for National Security and Minister for Home Affairs)",
+     "attributed": true,
+     "text": "All Automated Border Clearance System lanes at the bus halls are enabled for both QR code and passport clearance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Home Affairs (Mr Goh Pei Ming) (for the Coordinating Minister for National Security and Minister for Home Affairs)",
+     "attributed": true,
+     "text": "The lanes will be designated to offer QR code clearance only if there is an operational need to do so.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "attributed": true,
+     "text": "And what steps is the ICA taking to encourage downloading of MyICA Mobile app for QR code clearance?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Goh Pei Ming",
+     "attributed": true,
+     "text": "We are still in the process of encouraging more members of public to use QR code, because QR code clearance is faster than passport clearance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Mr Goh Pei Ming",
+     "attributed": true,
+     "text": "We do find that having to designate, perhaps QR code only or passport only clearances is not the most practicable, because there are certain members of public who may not have gotten the QR code application done properly and actually, the process of going back to using only passport takes even longer.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Goh Pei Ming",
+     "attributed": true,
+     "text": "I reassure the Member of the House that the ICA is constantly reviewing our operational processes to ensure that checkpoint operations are smooth and that we will do as much as we can to enhance the traveller experience.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3947",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-11-06"
+  ],
+  "report_ids": [
+   "oral-answer-3947"
+  ],
+  "sentences_total": 10,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.7,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:04:21"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1118,
+   "completion_tokens": 87,
+   "estimated": false,
+   "cost_usd": 0.000181
+  }
+ }
+}

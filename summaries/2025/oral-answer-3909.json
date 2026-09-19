@@ -1,0 +1,132 @@
+{
+ "title": "Clinical Pathways Linking Schools and Primary Care to Emergency Departments for Adolescents at Risk of Self-harm",
+ "what_it_is": "Clinical Pathways Linking Schools and Primary Care to Emergency Departments for Adolescents at Risk of Self-harm",
+ "sections": [
+  {
+   "label": "Student risk referral pathways",
+   "summary": "Students at imminent risk go to hospital emergency departments, non-imminent risk to REACH teams, and MOH and MOE do not track school alert to first clinical contact data.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "Students at imminent risk are directed to hospital emergency departments, while those with non-imminent risk are referred to the Response, Early intervention and Assessment in Community mental Health (REACH) teams for further assessment and intervention.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "The Ministry of Health (MOH) and Ministry of Education (MOE) do not currently track the data from school alert to first clinical contact.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Frontliner training and suicide support",
+   "summary": "As of March 2025 about 140,000 frontliners were trained, and MOH will work with agencies on timely support for individuals with suicide risks.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "As of March 2025, about 140,000 frontliners have been trained.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "MOH will continue to work with relevant agencies to work on ensuring timely support of individuals with suicide risks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Upstream access and mindline 1771",
+   "summary": "Access to care is made readily available with no barrier to entry for youth seeking help, which is the value of national mindline 1771.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "What we have done is to make sure that at the very upstream, we want to make sure access to care is readily available and that there is no barrier to entry for any youth who is prepared to come forward and seek help.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "That is why this is the true value of our first stop for mental health, the national mindline 1771.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Practice guide assessment escalation flowchart",
+   "summary": "The practice guide grades interventions into four tiers and includes a flowchart to help care providers escalate and follow appropriate pathways with eligibility criteria.",
+   "sentences": [
+    {
+     "sid": "s00032",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "In terms of flowchart for assessment and escalation, in the practice guide, we actually graded our interventions into four different tiers, from tier one to tier four, from lower equity, those who are mentally well, that needed some education to tier four, where there is more of a crisis intervention at the acute care setting, for example, in the Institute of Mental Health (IMH).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00033",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "This entire practice guide also includes a flowchart, as the Member has asked for, that helps care providers, counsellors of different grades and across the whole spectrum of mental health interventions, to see at which point they need to escalate to the next level and to guide them on the appropriate pathway to take, including certain eligibility criteria, certain guides that they can follow so that there is some degree of standardisation and that also forms as a basis for communication across different care providers.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3909",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-10-14"
+  ],
+  "report_ids": [
+   "oral-answer-3909"
+  ],
+  "sentences_total": 35,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.2286,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:26:02"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2494,
+   "completion_tokens": 267,
+   "estimated": false,
+   "cost_usd": 0.000424
+  }
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "title": "Ministry of Foreign Affairs",
+ "what_it_is": "Ministry of Foreign Affairs",
+ "sections": [
+  {
+   "label": "MFA engagement and regional ties",
+   "summary": "MFA will engage all countries, reinforce its partner role, support Singaporeans overseas, and deepen ties with Malaysia, Indonesia and ASEAN.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "To remain relevant and trusted, the Ministry of Foreign Affairs (MFA) will: first, maintain consistent and pragmatic engagement with all countries, be it our immediate neighbours, the Association of Southeast Asian Nations (ASEAN), or major and middle powers; second, reinforce our role as a credible and reliable partner; and third, look after Singaporeans overseas and build domestic support for our foreign policy.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "With Malaysia, we will support the Johor-Singapore Special Economic Zone and the Johor Bahru-Singapore Rapid Transit System Link.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "With Indonesia, the Expanded Framework Agreements on airspace management, defence and law enforcement marked a milestone in our bilateral relations and provide a strong foundation for cooperation in new areas like renewable energy and human capital development.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "ASEAN holds tremendous potential to be unlocked through deeper regional integration.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "We will increase intra-ASEAN linkages and build a more sustainable future by upgrading and fully implementing our trade agreements, deepening cross-border digital frameworks, developing the ASEAN Power Grid and advancing green economy standards.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Expanding circles of friends",
+   "summary": "MFA will expand ties with middle powers in Africa, Central Asia, Latin America and the Middle East, build partnerships and open new missions.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "MFA will also expand our circles of friends, which include middle powers in emerging regions of growth such as Africa, Central Asia, Latin America and the Middle East.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "We will build on the Comprehensive Strategic Partnerships (CSPs) and Strategic Partnerships (SPs) we have with countries like France, Germany, the United Kingdom and Vietnam, and launch a CSP with New Zealand and a SP with the Republic of Korea.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "We will open new diplomatic missions in Africa and Latin America in the coming years.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore global norms participation",
+   "summary": "Singapore's UN cybersecurity chairmanship created a UN Global Mechanism, and it contributes to global norms and puts forward candidates.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Singapore’s recent Chairmanship of the UN Open-Ended Working Group on Cybersecurity established a new UN Global Mechanism on Cybersecurity.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00026",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Singapore contributes to the development of global norms through our participation in the Councils of the International Civil Aviation Organization and the International Maritime Organization.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00027",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "We have put forward Ambassador for International Law Rena Lee to serve as a Judge in the International Court of Justice and Mr Daren Tang for re-election as Director General of the World Intellectual Property Organization.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2663",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2663"
+  ],
+  "sentences_total": 31,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 3,
+  "selection_share": 0.3548,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:45:43"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1833,
+   "completion_tokens": 192,
+   "estimated": false,
+   "cost_usd": 0.00031
+  }
+ }
+}

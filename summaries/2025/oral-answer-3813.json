@@ -1,0 +1,132 @@
+{
+ "title": "Percentage of Financial Crime Cases with Confiscated Assets Returned to Victims and Forfeited by Government",
+ "what_it_is": "Percentage of Financial Crime Cases with Confiscated Assets Returned to Victims and Forfeited by Government",
+ "sections": [
+  {
+   "label": "Financial crime asset restitution questions",
+   "summary": "An MP asked about restitution percentages, forfeited scam proceeds, and measures ensuring victims receive restitution before funds go to the consolidated fund.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Gerald Giam Yean Song",
+     "attributed": true,
+     "text": "asked the Minister for Home Affairs (a) what percentage of financial crime cases that involve confiscated assets result in full or partial restitution to victims; (b) what proportion of seized scam proceeds in the past five years have been forfeited to the state rather than returned to victims; and (c) what measures are in place to ensure that all reasonably identifiable scam victims receive restitution before funds are transferred to the Government's consolidated fund.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Home Affairs (Ms Sun Xueling) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "When investigating financial crime cases, the Police would freeze bank accounts and seize any assets suspected to be proceeds of crime or which constitute evidence.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Gazette notice and forfeiture process",
+   "summary": "Police publish a Gazette notice giving six months to claim seized property, which is forfeited only if unclaimed; tracking scam proceeds is operationally challenging.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for Home Affairs (Ms Sun Xueling) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Where the persons entitled to the seized property cannot be ascertained or found, the Police would publish a notice in the Government Gazette to request for persons to establish their claim to the property within six months.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister of State for Home Affairs (Ms Sun Xueling) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "The seized property would only be forfeited to the state if no one establishes a claim after the six-month notice period.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister of State for Home Affairs (Ms Sun Xueling) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "It is operationally challenging to apportion and thus track the amount of scam proceeds returned to victims or forfeited to the state.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tracking amounts feasibility study",
+   "summary": "The Ministry of Home Affairs will explore the feasibility of tracking these amounts in the longer term.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister of State for Home Affairs (Ms Sun Xueling) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "The Ministry of Home Affairs will explore the feasibility of tracking these amounts in the longer term.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Scam losses and recovery figures",
+   "summary": "Total losses this year are $1.1 billion while monies recovered are $182 million, a fraction of the total lost.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "The next point I would like to add is that, as you can tell from the latest numbers, total losses are $1.1 billion this year; monies recovered this year are $182 million.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00026",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "It is a fraction of the total amounts of monies lost.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3813",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-02-28"
+  ],
+  "report_ids": [
+   "oral-answer-3813"
+  ],
+  "sentences_total": 31,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.2581,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T12:18:39"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1931,
+   "completion_tokens": 237,
+   "estimated": false,
+   "cost_usd": 0.000337
+  }
+ }
+}

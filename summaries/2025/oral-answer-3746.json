@@ -1,0 +1,140 @@
+{
+ "title": "Entry of New Ride-hailing Operations and Impact on Private Hire Car Availability, Ride Fares and COE Prices",
+ "what_it_is": "Entry of New Ride-hailing Operations and Impact on Private Hire Car Availability, Ride Fares and COE Prices",
+ "sections": [
+  {
+   "label": "Private hire demand and COE supply",
+   "summary": "Private hire car supply and ride-hail fares are driven by demand for point-to-point trips, and Categories A and B COE supply will keep increasing quarterly until its projected peak from 2026.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The supply of private hire cars and the fares for ride-hail services are driven primarily by changes in the underlying demand for point-to-point (P2P) trips.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The entry of two new ride-hail service operators will offer drivers and commuters more choices of which platforms to be matched for a trip based on their preferences.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "From 2022 to 2024, the bulk of the demand for Categories A and B Certificates of Entitlement (COEs) has been from local individual buyers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "As highlighted previously, the COE supply for Categories A and B will continue to increase every quarter before reaching the projected peak supply from 2026.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Point-to-point demand-driven transport mode",
+   "summary": "Point-to-point services offer commuters without cars an alternative, but supply depends on sufficient demand, and there are no plans to cap platform operators.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "They provide an alternative option for commuters who do not own cars but may need access to car-like services from time to time, and commuters do choose, say, a P2P option for various reasons.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "But P2P is fundamentally a demand-driven transport mode and the amount of supply is ultimately based on whether there is actually sufficient demand and not just because of the number of platform operators.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "In fact, we have no plans to cap the number of platform operators.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Competition, COE prices and matching",
+   "summary": "Increased competition would drive innovation and better demand-supply matching, but no causal link can be drawn between new operators and COE prices, which are multi-factorial.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "In fact, increased competition would drive innovation, as well as service improvements and help to improve the matching of demand and supply; and both commuters and drivers will benefit from this improved matching.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "As regard to the second question on COE prices, actually, there are many factors that affect COE prices, including, of course, macro-economic conditions and COE quota supply.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "So, based on our observations, we are not able to draw conclusions about a causal link between the entrance of new operators and impact on COE prices, simply because COE prices, as I have said, is really multi-factorial in its determination.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3746",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-01-07"
+  ],
+  "report_ids": [
+   "oral-answer-3746"
+  ],
+  "sentences_total": 19,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.5263,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T12:53:16"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1572,
+   "completion_tokens": 223,
+   "estimated": false,
+   "cost_usd": 0.000283
+  }
+ }
+}

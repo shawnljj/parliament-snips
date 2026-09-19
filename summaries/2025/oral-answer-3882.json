@@ -1,0 +1,92 @@
+{
+ "title": "Transfer of Patients between Hospitals Operated by Different Healthcare Groups Without Polyclinic Referral to Maintain Subsidies",
+ "what_it_is": "Transfer of Patients between Hospitals Operated by Different Healthcare Groups Without Polyclinic Referral to Maintain Subsidies",
+ "sections": [
+  {
+   "label": "Subsidy retention on transfer",
+   "summary": "Subsidised patients transferred to another public healthcare institution keep their subsidy status without a polyclinic referral, within or between clusters.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Subsidised patients who are transferred to another public healthcare institution to continue the care for their condition, can retain their subsidy status without the need for a polyclinic referral.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "This applies whether within the same cluster or between different clusters.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Practice and case details",
+   "summary": "The practice is followed as far as the speaker is aware, and the Member could be engaged for case details.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "As far as I am aware, it is practised.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "But perhaps I could engage the Member to get some specific details of the case to understand where the gap is and why that was not communicated to the patient.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3882",
+  "group": "oral",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-25"
+  ],
+  "report_ids": [
+   "oral-answer-3882"
+  ],
+  "sentences_total": 8,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:28:21"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 820,
+   "completion_tokens": 121,
+   "estimated": false,
+   "cost_usd": 0.000149
+  }
+ }
+}

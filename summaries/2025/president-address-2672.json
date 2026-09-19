@@ -1,0 +1,152 @@
+{
+ "title": "Ministry of National Development",
+ "what_it_is": "Ministry of National Development",
+ "sections": [
+  {
+   "label": "Draft Master Plan 2025 vision",
+   "summary": "The Draft Master Plan 2025 sets out land use plans for the next 10 to 15 years, including more homes and rejuvenated estates.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "The Draft Master Plan 2025, developed through the Urban Redevelopment Authority’s extensive public engagement exercise, showcases our shared vision for Singapore’s land use plans and strategies for the next 10 to 15 years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "We will build more homes that cater to different needs, rejuvenate older neighbourhoods and estates, and make them more liveable, vibrant and senior-friendly.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public housing affordability and supply",
+   "summary": "MND will keep public housing affordable and accessible through Build-To-Order supply and a review of the income ceiling.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "MND will keep public housing affordable and accessible, through a robust supply of Build-To-Order flats across different regions, including more with shorter waiting times.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "We will review the public housing income ceiling and study how to provide more housing options, including for singles, seniors and larger families.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Support for older estates",
+   "summary": "MND will upgrade older towns and homes, improve amenities, and develop the Voluntary Early Redevelopment Scheme framework.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "MND will enhance support for Singaporeans living in older estates, including by upgrading older towns and homes through programmes like the Home Improvement Programme and Neighbourhood Renewal Programme.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "We will improve infrastructure and amenities to make towns more senior-friendly.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "We will also develop and flesh out the framework for the Voluntary Early Redevelopment Scheme.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Recreation amenities and community hubs",
+   "summary": "MND will build more integrated community hubs, such as in Toa Payoh and Woodlands, combining sports, healthcare and community spaces.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "MND will ensure towns are well-served with recreation amenities.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "We will build more integrated community hubs, for example in Toa Payoh and Woodlands, bringing together sports facilities, healthcare and community spaces in one convenient location.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Pro-enterprise regulatory streamlining",
+   "summary": "MND will streamline regulatory processes through CORENET X and reduce regulatory burden and business costs.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "MND will advance a pro-enterprise agenda, by streamlining our regulatory processes through the implementation of CORENET X and reducing regulatory burden and business costs.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2672",
+  "group": "budget",
+  "year": "2025",
+  "sitting_dates": [
+   "2025-09-05"
+  ],
+  "report_ids": [
+   "president-address-2672"
+  ],
+  "sentences_total": 25,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.4,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T11:46:25"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1513,
+   "completion_tokens": 283,
+   "estimated": false,
+   "cost_usd": 0.000291
+  }
+ }
+}
