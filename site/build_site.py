@@ -1774,10 +1774,11 @@ STYLE = """
 
 /* A section is the sticky card's containing block, so the card releases exactly when
    the section ends -- no JavaScript, and the requirement is met by layout alone. */
-.dsec{margin:0 0 30px;scroll-margin-top:calc(var(--topbar-h) + 8px)}
+.dsec{margin:0 0 30px;
+  scroll-margin-top:calc(var(--topbar-h) + var(--sticky-gap) + 8px)}
 /* Pinned BELOW the sticky top bar: at top:0 the bar covered the card's first line for
    the entire time its section was in view. */
-.sumwrap{position:sticky;top:var(--topbar-h);z-index:5}
+.sumwrap{position:sticky;top:calc(var(--topbar-h) + var(--sticky-gap));z-index:5}
 .sumcard{background:var(--accent-soft);border-left:3px solid var(--accent);
   border-radius:0 8px 8px 0;padding:9px 12px 10px;margin:0 0 12px}
 .sumlabel{font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
@@ -1818,8 +1819,10 @@ STYLE = """
   --bg:#fbfbfa; --card:#ffffff; --accent:#1c6b4a; --accent-soft:#e8f2ec;
   --warm:#b4622a; --radius:14px;
   /* Height of the sticky top bar. Two sticky elements depend on it: the bar itself, and
-     the per-section summary card, which pins BELOW the bar rather than under it. */
-  --topbar-h:60px;
+     the per-section summary card, which pins BELOW the bar rather than under it.
+     --sticky-gap is the air between them: at zero the card butts against the bar and
+     reads as cramped, even though nothing is actually covered. */
+  --topbar-h:60px; --sticky-gap:14px;
   --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 *{box-sizing:border-box}
