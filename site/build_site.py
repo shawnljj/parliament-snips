@@ -1551,13 +1551,22 @@ def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
 
     cards = []
     seen_speakers = set()
-    # Carried ACROSS sections, not reset per section: see the note above RESHOW_AFTER.
-    last_spk = None
-    silent = 0
+    
     for n, sec in enumerate(sections):
         sents = sec.get("sentences") or []
         if not sents:
             continue
+        # Who speaks in this section. Named in the card when there is one speaker (95.6% of
+        # sections); when there are several the card lists them AND the sentences mark where
+        # the speaker changes, because otherwise a reader cannot attribute a sentence.
+        sec_speakers, _seen = [], set()
+        for x in sents:
+            sp = (x.get("speaker") or "").strip()
+            if sp and sp not in _seen:
+                _seen.add(sp)
+                sec_speakers.append(sp)
+        multi_speaker = len(sec_speakers) > 1
+        sec_last_spk = None       # only used when the section has several speakers
         rows = []
         # The last speaker SHOWN anywhere in this brief, carried across sections: consecutive
         # sections are often the same speaker, and resetting per section reprinted the name
@@ -1574,28 +1583,18 @@ def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
                 rows.append(inline_rows(a, b) if b - a + 1 <= INLINE_MAX
                             else skipped_rows(a, b))
             raw_spk = (x.get("speaker") or "").strip()
-            # Suppress the name only while it is still fresh: same speaker as the last SHOWN
-            # one, and fewer than RESHOW_AFTER rows ago. The name stays on data-speaker and in
-            # the brief JSON either way, so nothing becomes uncheckable.
-            repeat = (raw_spk == last_spk and silent < RESHOW_AFTER)
-            if repeat:
-                silent += 1
-                spk_html = '<span class="who rep"></span>'
+            # A name on a sentence is needed ONLY where the speaker changes inside a
+            # multi-speaker section. In the 95.6% of sections with one speaker the card
+            # carries the name and the rows carry none, which is cleaner and cannot be
+            # scrolled past. The raw name is always on data-speaker for provenance.
+            if not multi_speaker:
+                spk_html = ""
+            elif raw_spk != sec_last_spk:
+                sec_last_spk = raw_spk
+                spk_html = (f'<span class="who">{esc(short_speaker(raw_spk))}</span>'
+                            if raw_spk else "")
             else:
-                silent = 0
-                last_spk = raw_spk
-                spk = esc(short_speaker(raw_spk)) if raw_spk else ""
-                if spk and spk != esc(raw_spk) and raw_spk not in seen_speakers:
-                    seen_speakers.add(raw_spk)
-                    # Show only the part the short form OMITS. Printing the whole raw
-                    # string repeated the name in full directly beneath itself, which read
-                    # as the speaker being announced twice.
-                    plain = short_speaker(raw_spk) or ""
-                    extra = raw_spk[len(plain):].strip() if (plain and raw_spk.startswith(plain)) else raw_spk
-                    if extra:
-                        spk = f'{spk} <span class="spkfull">{esc(extra)}</span>'
-                spk_html = (f'<span class="who">{spk}</span>' if spk
-                            else '<span class="who none"></span>')
+                spk_html = ""
             ctx = ('<span class="ctxmark">context</span>'
                    if x.get("added_for_context") else "")
             rows.append(
@@ -1609,10 +1608,25 @@ def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
 
         label = (sec.get("label") or "").strip()
         summary = (sec.get("summary") or "").strip()
+        # Attribution line for the card. One speaker is the common case and reads as a plain
+        # name; several are listed so the reader knows whose exchange this is.
+        who_line = ""
+        if len(sec_speakers) == 1:
+            who_line = esc(short_speaker(sec_speakers[0]))
+        elif len(sec_speakers) > 1:
+            # Separator is HTML, the names are escaped -- escaping the whole joined string
+            # would print "&middot;" as literal text.
+            parts = [esc(short_speaker(x)) for x in sec_speakers[:4]]
+            if len(sec_speakers) > 4:
+                parts.append(f"+{len(sec_speakers) - 4} more")
+            who_line = ' <span class="sep">&middot;</span> '.join(parts)
+        raw_title = esc(" | ".join(sec_speakers)) if sec_speakers else ""
         sum_html = ""
-        if summary or label:
+        if summary or label or who_line:
             sum_html = (
                 f'<div class="sumwrap"><div class="sumcard">'
+                + (f'<div class="sumwho" title="{raw_title}">{who_line}</div>'
+                   if who_line else "")
                 + (f'<div class="sumlabel">{esc(label)}</div>' if label else "")
                 + (f'<p class="sumtext">{esc(summary)}</p>' if summary else "")
                 + '</div></div>')
@@ -2073,6 +2087,12 @@ STYLE = """
 .sumwrap{position:sticky;top:calc(var(--topbar-h) + var(--sticky-gap));z-index:5}
 .sumcard{background:var(--accent-soft);border-left:3px solid var(--accent);
   border-radius:0 8px 8px 0;padding:9px 12px 10px;margin:0 0 12px}
+/* Who is speaking, in the card rather than on every sentence. 95.6% of sections have one
+   speaker, so this removes the per-sentence name entirely for the vast majority -- and a
+   name in the card cannot be "missed" the way a suppressed name on a row can. */
+.sumwho .sep{color:var(--faint)}
+.sumwho{font-size:11.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;
+  margin-bottom:2px;line-height:1.35}
 .sumlabel{font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
   color:var(--accent);margin-bottom:3px}
 .sumtext{margin:0;font-size:14.5px;line-height:1.5;color:#17352a}

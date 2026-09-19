@@ -19,6 +19,12 @@
 .sumwrap{position:sticky;top:calc(var(--topbar-h) + var(--sticky-gap));z-index:5}
 .sumcard{background:var(--accent-soft);border-left:3px solid var(--accent);
   border-radius:0 8px 8px 0;padding:9px 12px 10px;margin:0 0 12px}
+/* Who is speaking, in the card rather than on every sentence. 95.6% of sections have one
+   speaker, so this removes the per-sentence name entirely for the vast majority -- and a
+   name in the card cannot be "missed" the way a suppressed name on a row can. */
+.sumwho .sep{color:var(--faint)}
+.sumwho{font-size:11.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;
+  margin-bottom:2px;line-height:1.35}
 .sumlabel{font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
   color:var(--accent);margin-bottom:3px}
 .sumtext{margin:0;font-size:14.5px;line-height:1.5;color:#17352a}
