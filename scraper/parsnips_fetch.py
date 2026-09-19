@@ -384,6 +384,20 @@ def parse_turns(content_html):
     A ``<p>`` opening with <strong> starts a new turn; other paragraphs append
     to the current turn (they are continuation or quoted speech). Paragraphs
     before any speaker tag become an unattributed lead turn.
+
+    TWO SOURCE-QUIRK HANDLINGS THAT MATTER, both found by chasing wrong speakers
+    published on the site:
+
+    1. ``&nbsp;`` is NOT matched by ``\\s``, so a paragraph opening
+       "&nbsp;&nbsp;<strong>Minister ..." failed the ^\\s* anchor and its text was
+       APPENDED to the previous speaker's turn. Measured: oral-answer-3621 s00008
+       published the Minister for Home Affairs' reply under the questioner's name.
+
+    2. The speaker can be split across CONSECUTIVE <strong> tags with styling
+       between them ("<strong>The Senior Parliamentary Secretary ... (for the&nbsp;
+       </strong><strong style=...>Minister for National Development)</strong>"). A
+       non-greedy single-tag match stopped at the first tag and TRUNCATED the name
+       mid-title, which then disagreed with the sentence text.
     """
     paragraphs = re.findall(r"<p\b[^>]*>(.*?)</p>", content_html or "", re.S | re.I)
     turns, current = [], None
@@ -392,6 +406,10 @@ def parse_turns(content_html):
         para = para.strip()
         if not para:
             continue
+
+        # (1) normalise HTML space entities BEFORE matching -- \s does not match &nbsp;
+        para = (para.replace("&nbsp;", " ").replace("&#160;", " ")
+                    .replace("&ensp;", " ").replace("&emsp;", " ").replace("&#8203;", " "))
 
         lang = None
         m_lang = LANG_MARK.match(para)
@@ -403,6 +421,27 @@ def parse_turns(content_html):
         if m:
             speaker = clean(m.group(2))
             body = clean(para[m.end():]).lstrip(":").strip()
+
+            # (2) a speaker name split across consecutive <strong> tags: keep pulling the
+            # next tag while the accumulated name still looks like an unfinished title
+            # (ends with a conjunction, bracket or preposition) and the tag has no prose.
+            rest = para[m.end():]
+            for _ in range(3):
+                mm = re.match(r"^\s*<strong[^>]*>(.*?)</strong>", rest, re.S | re.I)
+                if not mm:
+                    break
+                nxt = clean(mm.group(1)).strip()
+                if not nxt or len(nxt) > 120 or nxt.endswith(".") and " " in nxt[: -1]:
+                    break
+                joined = f"{speaker} {nxt}".strip()
+                if not re.search(r"(?:\bfor the|\band\b|\bof\b|\bthe|\(|,)\s*$",
+                                 speaker.strip(), re.I):
+                    break
+                speaker = joined
+                rest = rest[mm.end():]
+            body = clean(rest).lstrip(":").strip()
+            if not body:
+                body = clean(para[m.end():]).lstrip(":").strip()
             current = {
                 "speaker": speaker,
                 "lang": lang or "English",
