@@ -669,13 +669,11 @@
     var seen = {};
     var out = [];
     railOrdinal = 0;
-    // ONLY motions and questions. Including each in-brief section label as well produced 302
-    // ticks, which rendered as an unreadable wall of overlapping labels -- a rail is a
-    // scannable index, and 279 extra ticks cannot be scanned or labelled. Measured on this
-    // page: 23 real breakpoints versus 279 in-brief labels, and a rail carries one of those
-    // numbers usefully. The in-brief sections remain reachable by scrolling, which the
-    // progress bar measures.
-    [].slice.call(document.querySelectorAll('main h2, main h3')).forEach(function (h, i) {
+    // FIRST LEVEL ONLY -- the top-level sections. Questions inside the Oral answers section
+    // were tried as a second level and added 16 more ticks for little value: the reader
+    // arrives at "Oral answers" and reads down, rather than picking question 11 of 16. The
+    // rail is a coarse map; the progress bar carries fine position.
+    [].slice.call(document.querySelectorAll('main h2')).forEach(function (h, i) {
       var label = (h.textContent || '').replace(/\s+/g, ' ').trim();
       if (!label) return;
       // The section h2s already carry ids we control; heading-level content
@@ -686,10 +684,8 @@
       if (seen[h.id]) return;
       seen[h.id] = 1;
       h.classList.add('has-section-anchor');
-      // Size tells the reader what kind of stop it is: 2 = page section, 3 = a motion or
-      // question. Ticks must stay large enough to hit, so adding a third level would mean
-      // shrinking these below a usable target.
-      var level = h.tagName === 'H2' ? 2 : 3;
+      // One level, so one size: every tick is a top-level section.
+      var level = 2;
       // Ordinal numbers the level-3 ticks in reading order, matching the
       // numbered list the reader can open in the Oral answers section.
       if (level === 3) railOrdinal += 1;
