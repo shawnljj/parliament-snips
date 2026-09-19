@@ -83,7 +83,12 @@ def main():
                          ("empty section", empty_sec), ("no summary", no_summary)):
         for it in items[:5]:
             print(f"    {label}: {it}")
-    bad = len(mismatch) + len(unresolved) + len(inferred) + len(dups) + len(empty_sec)
+    # no_summary COUNTED AS A DEFECT. It was measured and printed and then left out of the
+    # total, so a brief with 72 sections carrying no summary at all still reported PASS.
+    # A measured failure that does not affect the verdict is worse than no check: it reads
+    # as a pass.
+    bad = (len(mismatch) + len(unresolved) + len(inferred) + len(dups)
+           + len(empty_sec) + len(no_summary))
     print(f"\n{'PASS' if not bad else 'FAIL'} — {bad} defect(s)")
     return 0 if not bad else 1
 
