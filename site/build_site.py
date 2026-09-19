@@ -1774,8 +1774,10 @@ STYLE = """
 
 /* A section is the sticky card's containing block, so the card releases exactly when
    the section ends -- no JavaScript, and the requirement is met by layout alone. */
-.dsec{margin:0 0 30px}
-.sumwrap{position:sticky;top:0;z-index:5}
+.dsec{margin:0 0 30px;scroll-margin-top:calc(var(--topbar-h) + 8px)}
+/* Pinned BELOW the sticky top bar: at top:0 the bar covered the card's first line for
+   the entire time its section was in view. */
+.sumwrap{position:sticky;top:var(--topbar-h);z-index:5}
 .sumcard{background:var(--accent-soft);border-left:3px solid var(--accent);
   border-radius:0 8px 8px 0;padding:9px 12px 10px;margin:0 0 12px}
 .sumlabel{font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
@@ -1815,6 +1817,9 @@ STYLE = """
   --ink:#14181d; --dim:#5c6773; --faint:#8b95a1; --line:#e3e7ec;
   --bg:#fbfbfa; --card:#ffffff; --accent:#1c6b4a; --accent-soft:#e8f2ec;
   --warm:#b4622a; --radius:14px;
+  /* Height of the sticky top bar. Two sticky elements depend on it: the bar itself, and
+     the per-section summary card, which pins BELOW the bar rather than under it. */
+  --topbar-h:60px;
   --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 *{box-sizing:border-box}
@@ -1828,7 +1833,8 @@ h1,h2,h3{line-height:1.2;margin:0}
 /* top bar */
 .top{border-bottom:1px solid var(--line);background:rgba(251,251,250,.86);
   backdrop-filter:blur(10px);position:sticky;top:0;z-index:20}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;
+  height:var(--topbar-h)}
 .logo{font-weight:700;font-size:18px;letter-spacing:-.01em;display:flex;gap:8px;align-items:center}
 .veg{font-size:19px}
 .top nav{display:flex;gap:22px;font-size:14px;color:var(--dim)}
