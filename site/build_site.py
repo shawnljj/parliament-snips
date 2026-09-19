@@ -2078,13 +2078,14 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     # THE SLOGAN. Owner's call: a fixed, round figure for Parliament with the read estimate
     # computed per page. One line, no labels.
     #
-    # NOTE ON THE 8 HOURS: it is a general statement about Parliament, NOT a measurement of
-    # this sitting, and it is deliberately the round figure the owner chose. The corpus
-    # median is 6.0h (p25 4.5, p75 7.8) -- measured in pipeline/sitting_times.json -- so a
-    # reader comparing this line against a specific sitting will find them differ. Kept as a
-    # named constant so the choice is visible in one place rather than buried in a format
-    # string.
-    SITTING_SLOGAN_HOURS = 8
+    # THE 6 HOURS NOW AGREES WITH THE MEASUREMENT, which is why the earlier caveat is gone.
+    # The corpus median from pipeline/sitting_times.json is 6.0h (p25 4.5, p75 7.8), so this
+    # figure matches what the record actually shows rather than being a round number chosen
+    # against it. It is still a GENERAL statement about Parliament, not this sitting's own
+    # length -- the per-sitting value is available and is deliberately not used, because the
+    # owner wanted one line rather than a fact table. Kept as a named constant so the choice
+    # lives in one place.
+    SITTING_SLOGAN_HOURS = 6
 
     dur_part = (f"Parliament sitting <b>~{SITTING_SLOGAN_HOURS} hours</b>")
 
