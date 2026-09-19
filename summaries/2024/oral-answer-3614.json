@@ -1,0 +1,309 @@
+{
+ "title": "Singapore's Preparedness for Global Technology Outages and Impact of Recent CrowdStrike Incident",
+ "what_it_is": "Singapore's Preparedness for Global Technology Outages and Impact of Recent CrowdStrike Incident",
+ "sections": [
+  {
+   "label": "Outage impact on Singapore services",
+   "summary": "Government and most essential services were unaffected by the outages, but some businesses using CrowdStrike's Falcon EDR solution were affected.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "Fortuitously, Government services and most essential services in Singapore were unaffected by the outages.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "However, some businesses that use CrowdStrike's Falcon EDR solution were affected.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Affected airlines and HDB carparks",
+   "summary": "Passenger check-in for some airlines at Changi Terminal 4 and gantry operations at some HDB carparks were affected.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "Prominent examples of these were the passenger check-in for some airlines at Changi Terminal 4 and gantry operations at some Housing and Development Board carparks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Recovery of affected systems",
+   "summary": "Most affected systems recovered within a day and services returned to normal.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "Most of the affected systems recovered within a day and services returned to normal.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Internal task force set up",
+   "summary": "The Ministry has set up an internal task force to engage partners, gain insights and assess further measures for Singapore's resilience.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "",
+     "attributed": false,
+     "text": "My Ministry has set up an internal task force to engage relevant partners to gain insights into the incident and assess if further measures should be taken to improve Singapore's resilience when such disruptions occur.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Requirements for critical infrastructures",
+   "summary": "CIIs, ES and Government services face stringent requirements and must have business continuity, disaster recovery and incident response plans.",
+   "sentences": [
+    {
+     "sid": "s00028",
+     "speaker": "",
+     "attributed": false,
+     "text": "Critical Information Infrastructures (CIIs), ES and Government services are all subject to stringent requirements and have to put in place robust business continuity plans, disaster recovery plans and incident response plans.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Risk-based approach to requirements",
+   "summary": "The Government adopts a risk-based approach, including being careful about imposing compulsory requirements.",
+   "sentences": [
+    {
+     "sid": "s00048",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "The Government has to adopt a risk-based approach and that would include being quite careful about the occasions when we impose compulsory requirements.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Mandated measures and systems owners",
+   "summary": "Measures will be mandated in certain instances, but systems owners are mostly required to take ownership and build resilience.",
+   "sentences": [
+    {
+     "sid": "s00054",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "So, I would say that we will, in certain instances, require measures to be mandated.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00055",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "But in the vast majority of the cases, it is important to allow the systems owners and, indeed, to require the systems owners to take ownership, to build up their systems' resilience.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Third-party software risk assessment",
+   "summary": "Third-party software saves time and resources, and Government agencies must undergo risk assessment and put mitigating measures in place.",
+   "sentences": [
+    {
+     "sid": "s00062",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "Third-party software can offer a wide range of functionalities to meet the requirements of various organisations, the Government included, and this saves time and resources from having to develop such software from scratch.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00063",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "When using third-party software in their ICT systems, Government agencies are required to undergo a thorough risk assessment and to put in place the mitigating measures.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Audits of software providers",
+   "summary": "Agencies with critical systems must review software providers' change management processes through regular independent audits.",
+   "sentences": [
+    {
+     "sid": "s00071",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "In addition, agencies with critical systems are required to review the change management processes of their software providers through regular independent audits.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CrowdStrike outage and supply chain failures",
+   "summary": "The CrowdStrike outage was a supply chain failure, a software update bug, and the question asks if legislation addresses such risks.",
+   "sentences": [
+    {
+     "sid": "s00077",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "Possibly, if they have a major impact on the system's usability as well as resilience, but there are so many vendors involved and it may not be possible to include all of them in the exercises.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00078",
+     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
+     "attributed": true,
+     "text": "However, as this major outage caused by CrowdStrike was not a cybersecurity attack but a supply chain failure, specifically, a bug in the software update from the vendor, does the current legislation adequately address the risks posed by supply chain failures in digital infrastructure?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Defence by Diversity principle",
+   "summary": "Under the Cybersecurity Code of Practice, CII owners must adopt the Defence by Diversity principle to the extent possible.",
+   "sentences": [
+    {
+     "sid": "s00085",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "For example, under the Cybersecurity Code of Practice, CII owners must adopt, to the extent possible, the Defence by Diversity principle.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CII Supply Chain Programme",
+   "summary": "CSA has introduced the CII Supply Chain Programme.",
+   "sentences": [
+    {
+     "sid": "s00096",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "Additionally, CSA has also introduced the CII Supply Chain Programme.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cyber supply chain risk toolkit",
+   "summary": "A toolkit helps system owners assess and rate cyber supply chain risk using a standardised vendor management methodology.",
+   "sentences": [
+    {
+     "sid": "s00100",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "So, a simple fact of inventorising what goes into your system is already no small feat because of the number of vendors involved along the whole supply chain.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00101",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "So, the toolkit helps the systems owners to also assess and rate their cyber supply chain risk using a standardised vendor management methodology.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Digital Infrastructure Act resilience",
+   "summary": "The Digital Infrastructure Act will seek to improve resilience over and above what is needed within the cyber system environment.",
+   "sentences": [
+    {
+     "sid": "s00107",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "The Digital Infrastructure Act that we had talked about will seek to improve resilience that are over and above what needs to be done within the cyber system environment.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Mandatory requirements and diversity",
+   "summary": "Mandatory requirements may be imposed if essential and foundational, but diversity means one-size-fits-all may not work.",
+   "sentences": [
+    {
+     "sid": "s00136",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "Mandatory requirements, if and when they have proven to be essential, foundational to all services, we are not averse to putting them in place.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00137",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "But we are still very mindful that there is such a great diversity in the systems and digital products and services that are being delivered to citizens, that a one-size-fits-all set of requirements may not really do the job but may, in fact, add to resources being diverted to meeting these compliance requirements without achieving the necessary resilience and usability that system owners should be striving for.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "gov.sg SMS channel security",
+   "summary": "Government SMSes to citizens go through gov.sg to secure the channel, with testing and phased roll-out.",
+   "sentences": [
+    {
+     "sid": "s00144",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "The whole reason for requiring all Government communications with citizens, with the public, on SMSes to go through gov.sg is so that we can secure this channel more robustly.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00145",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "And I can share very briefly that extensive testing was implemented before the roll-out and, indeed, the roll-out was also first to a smaller group and then to a bigger group.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3614",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-08-07"
+  ],
+  "report_ids": [
+   "oral-answer-3614"
+  ],
+  "sentences_total": 146,
+  "sentences_selected": 23,
+  "sentences_in_sections": 23,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 16,
+  "selection_share": 0.1575,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 16,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 23,
+   "sentences_selected": 23,
+   "turns_cited": 8,
+   "turns_total": 24,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:23:19"
+  },
+  "usage": {
+   "calls": 8,
+   "prompt_tokens": 7307,
+   "completion_tokens": 824,
+   "estimated": false,
+   "cost_usd": 0.001254
+  }
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "title": "Salary Data for Child Protection Officers",
+ "what_it_is": "Salary Data for Child Protection Officers",
+ "sections": [
+  {
+   "label": "Child protection officer allowance",
+   "summary": "Child protection officers receive an additional social work field allowance in recognition of the more demanding nature of their work.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Social and Family Development (Mr Eric Chua) (for the Minister for Social and Family Development)",
+     "attributed": true,
+     "text": "In recognition of the more demanding nature of child protection work, our CPOs also receive an additional social work field allowance.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Mean and median salaries",
+   "summary": "Exact salary points cannot be given because officers have different years of service and seniority levels in the Public Service.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "To his first question on the mean and median salaries, it is not quite possible for us to look at exact numbers, exact salary points, because we are talking about a range of officers with different years in service, with different seniority levels in the Public Service.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CPO training and wellness support",
+   "summary": "Child protection officers undergo a comprehensive training programme and receive professional support on mental wellness and development through supervisions, coaching and peer support.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "To support the growth and the wellness of our CPOs, I mentioned before that they undergo a comprehensive training programme.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "They also receive professional support on mental wellness and development, through structured supervisions, coaching as well as peer support.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Technology for CPO workload",
+   "summary": "Technology such as data analytics and robotic process automation has been implemented to optimise operations so officers focus on child protection rather than administration.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "To address the workload of our CPOs, to help them work more effectively and more efficiently, we have also tried our level best to implement solutions, including technology, such as data analytics, robotic process automation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "These tools are really meant to optimise our operations, so that they can focus on the core mission and, that is, child protection; and less so on the more mundane tasks of administration.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Caseload number 40 too high",
+   "summary": "In previous Sittings the question was whether 40 is the right number, and the speaker agreed with Mr Louis Ng that 40 is too high.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "In previous Sittings, we were talking about whether 40 is the right number and, 40 is too high.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "I remember agreeing with Mr Louis Ng that 40 is a number that is too high.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Average caseload per officer",
+   "summary": "The average caseload each officer handles is 40 or less, based on a check with CPS before the Sitting.",
+   "sentences": [
+    {
+     "sid": "s00037",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "I would be happy to share more details if I can.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00038",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "But I think off the top of my head, I had checked in with CPS before coming to this Sitting and the average caseload that each officer handles is 40 or less.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3430",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-02-07"
+  ],
+  "report_ids": [
+   "oral-answer-3430"
+  ],
+  "sentences_total": 40,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.25,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 7,
+   "coverage": 0.5714,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T15:13:45"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 2041,
+   "completion_tokens": 330,
+   "estimated": false,
+   "cost_usd": 0.000378
+  }
+ }
+}

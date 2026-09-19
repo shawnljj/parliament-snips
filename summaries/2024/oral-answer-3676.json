@@ -1,0 +1,113 @@
+{
+ "title": "Impact of Recent Recall of EVs on Singapore Car Owners",
+ "what_it_is": "Impact of Recent Recall of EVs on Singapore Car Owners",
+ "sections": [
+  {
+   "label": "BYD vehicles not affected",
+   "summary": "BYD Singapore told LTA that BYD vehicles sold in Singapore are not affected by a recall of about 97,000 BYD vehicles made in China.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Transport (Mr Murali Pillai) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "BYD Singapore Private Limited has informed LTA that BYD vehicles sold in Singapore, are not affected by the recent recall affecting about 97,000 BYD vehicles manufactured in China.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Transport (Mr Murali Pillai) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "LTA will continue to monitor the situation and will take appropriate action if any safety concerns are identified.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Vehicle safety standards and recalls",
+   "summary": "All vehicles must meet international safety standards and periodic inspections, and dealers must report safety recalls and notify affected owners.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Mr Murali Pillai",
+     "attributed": true,
+     "text": "All vehicles, including EVs, are required to meet internationally recognised vehicle safety standards, such as the United Nations regulations, before they can be used on our roads.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Murali Pillai",
+     "attributed": true,
+     "text": "All vehicles are also required to undergo periodic inspections, to ensure that they meet roadworthiness requirements.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Murali Pillai",
+     "attributed": true,
+     "text": "LTA does not conduct additional testing and inspection for vehicles affected in recalls, but requires motor dealers to promptly report any safety-related recalls initiated by vehicle manufacturers to LTA.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Murali Pillai",
+     "attributed": true,
+     "text": "Once reported, dealers are provided with the contact details of the affected vehicle owners.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Murali Pillai",
+     "attributed": true,
+     "text": "Motor dealers must then notify these owners and make arrangements to rectify the defects as soon as possible.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3676",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-10-16"
+  ],
+  "report_ids": [
+   "oral-answer-3676"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:11:15"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1153,
+   "completion_tokens": 142,
+   "estimated": false,
+   "cost_usd": 0.000201
+  }
+ }
+}

@@ -1,0 +1,113 @@
+{
+ "title": "Number of Telemedicine Service Providers and Take-up Rate for Their Services",
+ "what_it_is": "Number of Telemedicine Service Providers and Take-up Rate for Their Services",
+ "sections": [
+  {
+   "label": "MOH telemedicine tracking and facilitation",
+   "summary": "MOH does not track telemedicine take-up or definitive data on reduced Emergency Department attendances, but facilitates telemedicine in primary and specialist care.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The Ministry of Health (MOH) does not track the take-up rate of telemedicine services.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "There is also no definitive data on whether telemedicine has reduced non-emergency attendances at Emergency Departments, especially given an ageing population with rising demand for healthcare.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Telemedicine services have been facilitated by MOH in primary care for chronic disease management and in specialist outpatient settings for specific conditions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "MOH will continue to facilitate the application of telemedicine service in appropriate settings.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Removing barriers to telemedicine use",
+   "summary": "The speaker says obstacles should be removed where telemedicine is safe, efficacious, convenient and accessible, and work is ongoing on regulation and cost barriers.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "And where it is a suitable option for the clinical providers because is safe, efficacious, it provides better quality of care; or for the patient because it is convenient and provides better access, then, we want to remove the obstacles for the clinician or the patient from choosing this.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "So, we are working on standardising the regulatory approach across, as well as reducing some of the barriers in terms of cost and financials associated in terms of the choice that a patient might make.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "So, the short answer to both questions is that we would like to see progress for hospitals as well as primary care using telemedicine services appropriately, where it makes a difference to the clinical care, where it becomes more convenient and more acceptable to the patients.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3553",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-04-03"
+  ],
+  "report_ids": [
+   "oral-answer-3553"
+  ],
+  "sentences_total": 17,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.4118,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:33:45"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1322,
+   "completion_tokens": 146,
+   "estimated": false,
+   "cost_usd": 0.000226
+  }
+ }
+}

@@ -1,0 +1,140 @@
+{
+ "title": "Enforcement against Retailers and Distributors of Batteries for Non-original Active Mobility Devices",
+ "what_it_is": "Enforcement against Retailers and Distributors of Batteries for Non-original Active Mobility Devices",
+ "sections": [
+  {
+   "label": "Non-compliant device offences and penalties",
+   "summary": "LTA detected about 5,100 path offences and 100 retailer violations from 2020 to 2023, and states maximum penalties for offenders.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "From January 2020 to December 2023, LTA detected about 5,100 offences involving non-compliant devices on paths.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "In the same period, LTA detected about 100 violations from operations against retailers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "LTA does not track cases specifically involving non-original batteries.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "For first-time offenders, the maximum penalty for using a non-compliant device on a public path is a fine of up to $10,000 or imprisonment for up to six months or both; the maximum penalty for retailer companies displaying a non-compliant device for sale is a fine of up to $20,000; and the maximum penalty for individuals illegally modifying a device is a fine of up to $20,000 or imprisonment for up to 24 months or both.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Enforcement challenges with online imports",
+   "summary": "LTA can act against physical shops but faces enforcement challenges against overseas online sellers of illegal devices and batteries.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
+     "attributed": true,
+     "text": "And are there any new plans that LTA may have to deal with the continuing import of illegal batteries and devices?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "We can only conduct operations against retailers when they have a physical shop.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "But what we find is that a lot of people or riders purchase their devices online and some of these sources are overseas.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "That is where we will have challenges in enforcing against such online retailers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Online platform liability and takedowns",
+   "summary": "LTA says platform liability for unsafe products would create responsibility, and it asks Singapore-based platforms to remove non-compliant device listings.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "Dr Tan Wu Meng (Jurong)",
+     "attributed": true,
+     "text": "Because that way, the online platform, if they know they face some liability if they facilitate the sale of an unsafe product and someone is injured or dies, that is a very strong incentive for the platform to take some responsibility as well for what they are selling or intermediating.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00027",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "I need to add to my earlier reply that if the online retailer or platform is based in Singapore and we are able to reach those platforms, and we know of non-compliant devices being sold or being placed as an advertisement on the platforms, we will reach out to these online retailers and ask them to take down or stop the sale of such devices.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3517",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-03-05"
+  ],
+  "report_ids": [
+   "oral-answer-3517"
+  ],
+  "sentences_total": 28,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.3571,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 5,
+   "turns_total": 8,
+   "coverage": 0.625,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:45:54"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1938,
+   "completion_tokens": 199,
+   "estimated": false,
+   "cost_usd": 0.000327
+  }
+ }
+}

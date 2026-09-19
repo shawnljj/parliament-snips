@@ -1,0 +1,141 @@
+{
+ "title": "Number of Births from Women above 30 Years Old",
+ "what_it_is": "Number of Births from Women above 30 Years Old",
+ "sections": [
+  {
+   "label": "Live births by mother's age",
+   "summary": "In 2021 and 2022, about 33% of live births were to women aged 30 and below, 44% to those 31 to 35, and 23% to those 36 and above.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister, Prime Minister's Office (Ms Indranee Rajah) (for the Prime Minister)",
+     "attributed": true,
+     "text": "In 2021 and 2022, around 33% of total live births were from women aged 30 years old and below.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister, Prime Minister's Office (Ms Indranee Rajah) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Around 44% were from women between 31 and 35 years old, and around 23% were from those 36 years old and above.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister, Prime Minister's Office (Ms Indranee Rajah) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The information is published annually in the Immigration and Checkpoints Authority's (ICA's) Report on the Registration on Births and Deaths, which contains key demographic statistics, including total live births by age of mother.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fertility research and declining TFR",
+   "summary": "The Ministry was asked whether it will fund longitudinal studies on young Singaporean women's fertility attitudes, and it cited a global phenomenon of deferred marriage and childbirth.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Ms Ng Ling Ling (Ang Mo Kio)",
+     "attributed": true,
+     "text": "Given our low total fertility rate (TFR), will the Ministry consider investing in more longitudinal research and studies on young Singaporean women's awareness, attitudes and considerations towards fertility health and childbirth, so that we can proactively find interventions along the way to mitigate the declining TFR?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Ms Ng Ling Ling",
+     "attributed": true,
+     "text": "Yes, I wanted to check if the Ministry will consider investing in the longitudinal studies to understand young Singaporean women's awareness, attitudes and considerations towards fertility health and childbirth.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "We can certainly look at those studies, but what is happening at the moment is a global phenomenon where, across the world, women are either choosing not to get married or deferring having children after they get married.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "If you look deeper into this, a lot of it has to do with the opportunity cost as well as the sense of wanting to be able to achieve certain milestones.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "In the past, the first milestone was to get married and have children.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "Now, there is a sense of \"I need to achieve a career milestone\", \"I need to be able to travel and visit this country\", \"I want to be able to achieve other things\" and then, marriage and children come further down along the line.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "And that was the focus of my speech in the Committee of Supply, looking at all of the various factors which operate in people's minds before they decide to get married and have children.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "So, fundamentally, we have got to move towards a society that supports family formation and parenthood.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3508",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-03-01"
+  ],
+  "report_ids": [
+   "oral-answer-3508"
+  ],
+  "sentences_total": 20,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 2,
+  "selection_share": 0.55,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 4,
+   "turns_total": 6,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:52:35"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1598,
+   "completion_tokens": 175,
+   "estimated": false,
+   "cost_usd": 0.000273
+  }
+ }
+}

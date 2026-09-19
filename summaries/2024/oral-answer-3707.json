@@ -1,0 +1,146 @@
+{
+ "title": "Adjustments to Cooling-off Period for Digital Security Token Activation Based on High-risk Activities and Enhancing Fraud Surveillance Thresholds",
+ "what_it_is": "Adjustments to Cooling-off Period for Digital Security Token Activation Based on High-risk Activities and Enhancing Fraud Surveillance Thresholds",
+ "sections": [
+  {
+   "label": "12-hour cooling period digital token",
+   "summary": "A 12-hour minimum period applies to high-risk activities after a customer activates a digital security token, and SRF requires blocking or holding transactions above prescribed perimeters.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "I will first respond to the question on the 12-hour cooling period upon activation of a digital security token.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "This is a minimum period that financial institutions (FIs) must apply to specified high-risk activities once a customer has activated a digital security token on his or her mobile device.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "High-risk activities are typically performed by scammers during an account takeover to transfer funds without a customer's knowledge and this 12-hour minimum period thus gives customers sufficient time to act on abnormal activities on their account, while balancing inconvenience to customers from the undue friction to legitimate activities.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "SRF introduces a requirement to block or hold transactions above the prescribed perimeters.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Payouts for SRF duty breach",
+   "summary": "If the FI or telco breaches any SRF duty, it is expected to provide payouts to the customer.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "If there is a breach of any SRF duty by the FI or the telco, the FI or telco is expected to provide payouts to the customer.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Banks' $50,000 SRF threshold",
+   "summary": "Banks may go under the $50,000 threshold, which is prescribed for SRF fraud surveillance duties, and must compensate in phishing scams if they do not meet it.",
+   "sentences": [
+    {
+     "sid": "s00035",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "Banks also have their own internal surveillance systems and parameters, and they may choose to go under this $50,000.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00036",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "But this $50,000 threshold is prescribed for the purpose of, as I mentioned earlier, the SRF's fraud surveillance duties, which if they do not meet as a baseline in a phishing scam, then the banks will have to pay out.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00038",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "If they do not, if it is a part of phishing scam, they will have to compensate.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Protection from Scams Bill and MAS",
+   "summary": "The Protection from Scams Bill will let Police order banks to restrict potential scam victims' transactions, and MAS is studying stronger out-of-band authentication beyond the SRF.",
+   "sentences": [
+    {
+     "sid": "s00047",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "Yesterday, Minister of State Sun Xueling mentioned about the Protection from Scams Bill, which will allow the Police to order banks to restrict potential scam victims' banking transactions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00049",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "In fact, MAS is now studying stronger, out-of-band authentication solutions beyond the SRF to enhance defences against unauthorised phishing transactions.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3707",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-11-12"
+  ],
+  "report_ids": [
+   "oral-answer-3707"
+  ],
+  "sentences_total": 61,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.1639,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 8,
+   "coverage": 0.25,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:04:47"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 3043,
+   "completion_tokens": 276,
+   "estimated": false,
+   "cost_usd": 0.000503
+  }
+ }
+}

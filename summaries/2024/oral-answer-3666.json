@@ -1,0 +1,146 @@
+{
+ "title": "Inspections on Licensed Caterers Providing Food for Migrant Workers",
+ "what_it_is": "Inspections on Licensed Caterers Providing Food for Migrant Workers",
+ "sections": [
+  {
+   "label": "SFA caterer food timestamp inspections",
+   "summary": "SFA inspections ensure catered food bears a timestamp showing when it should be consumed, with around 3,600 inspections from January 2023 to September 2024.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Koh Poh Koon) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "As part of inspections, SFA will ensure that all catered food bear a timestamp that indicates the date and time by which the food should be consumed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Koh Poh Koon) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "From January 2023 to September 2024, SFA has conducted around 3,600 inspections on licensed food caterers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Workers eating beyond four-hour rule",
+   "summary": "The passage asks whether SFA can address workers eating food beyond the four-hour rule, describing it as a logistics and deployment problem.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "By working backwards, we will know that the reality on the ground is that many workers are every day eating food beyond this four-hour rule that we have.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "Could I ask whether SFA can look into this and address this problem on the ground?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "But I think what he is describing is a problem more of logistics and arrangements between perhaps the company and the deployment of workers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Coordination between companies and caterers",
+   "summary": "It states timely consumption is a coordination issue, urging companies to communicate delivery times with caterers and workers to approach ACE officers.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "They will just deliver the food as ordered.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "So, it is more of a coordination issue, not something that can be easily solved with a particular policy per se, because there are different archetypes of worksites, different company lunch timings and different staggered shifts for workers to eat.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "It is important that companies on the ground, for the welfare of the workers, communicate with the caterer on when they want the food delivered so that it will be consumed in a timely manner.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "But if there are specific instances of worksites or workers who feel that the arrangement has been inadequate, they could approach our Assurance, Care and Engagement, or ACE, officers so that we can perhaps facilitate the conversation, and more coordination can be done between the provider and the consumer.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NGOs and worker groups raising concerns",
+   "summary": "It states it is better for non-government organisations or worker groups to raise concerns so conversations with stakeholders can be coordinated.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "To minimise the effort that is needed and to be more targeted, it will be better if non-government organisations or perhaps particular worker groups that have such concerns, raise it so that we can take up the conversations with the particular stakeholders and coordinate the actions better.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3666",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-10-15"
+  ],
+  "report_ids": [
+   "oral-answer-3666"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.4348,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 6,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:13:29"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1628,
+   "completion_tokens": 253,
+   "estimated": false,
+   "cost_usd": 0.000299
+  }
+ }
+}

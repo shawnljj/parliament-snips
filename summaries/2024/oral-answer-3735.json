@@ -1,0 +1,99 @@
+{
+ "title": "Surveys to Assess Impact of Providing Digital Devices to Students on their Learning Abilities, Learning Habits, Academic Performance and Attention Span",
+ "what_it_is": "Surveys to Assess Impact of Providing Digital Devices to Students on their Learning Abilities, Learning Habits, Academic Performance and Attention Span",
+ "sections": [
+  {
+   "label": "Digital devices impact study question",
+   "summary": "Question asks whether Ministry studied digital devices' impact on learning, other KPIs, and how KPIs are measured.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Assoc Prof Jamus Jerome Lim",
+     "attributed": true,
+     "text": "asked the Minister for Education (a) whether the Ministry has conducted any post-implementation surveys or studies to assess the impact of providing digital devices on students’ learning abilities, learning habits, academic performance, and attention span; (b) besides digital literacy, what other key performance indicators (KPIs) are considered in evaluating the effectiveness of providing these devices to students; and (c) how will these KPIs be measured.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Second Minister for Education (Dr Mohamad Maliki Bin Osman)",
+     "attributed": true,
+     "text": "This question has been addressed in the Ministry of Education's (MOE's) published response to Question No 42 at the 11 November 2024 Sitting.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NIE study interim findings",
+   "summary": "MOE commissioned a two-year NIE study in September 2022, not yet completed, with interim findings suggesting devices benefited learning.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Dr Mohamad Maliki Bin Osman",
+     "attributed": true,
+     "text": "Just to assure the Member that MOE did commission a National Institute of Education study – it was a two-year study which was commissioned in September 2022, but it is not completed yet.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Mohamad Maliki Bin Osman",
+     "attributed": true,
+     "text": "Data is still being assessed and some interim findings suggest that students found the use of personal learning devices beneficial in their learning, including their communications with the teachers and collaboration with peers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Dr Mohamad Maliki Bin Osman",
+     "attributed": true,
+     "text": "But I assure the Member that once the study is completed early next year, we will share the findings with the Member.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3735",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-11-13"
+  ],
+  "report_ids": [
+   "oral-answer-3735"
+  ],
+  "sentences_total": 11,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.4545,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:00:07"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1233,
+   "completion_tokens": 123,
+   "estimated": false,
+   "cost_usd": 0.000207
+  }
+ }
+}

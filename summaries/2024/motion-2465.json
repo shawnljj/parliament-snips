@@ -1,0 +1,92 @@
+{
+ "title": "Adjournment",
+ "what_it_is": "Adjournment",
+ "sections": [
+  {
+   "label": "Question Time income report",
+   "summary": "A Member says he quoted a December 2023 Zero One report on incomes during Question Time, and notes a procedure is incomplete.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Ms He Ting Ru (Sengkang)",
+     "attributed": true,
+     "text": "During yesterday's Question Time, I quoted a December 2023 Zero One report, which stated that incomes reported —",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "I believe the procedure has not been completed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "The Member may wish to take a seat for the procedure to move the Adjournment Motion to begin.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Explanation at next Sitting",
+   "summary": "An explanation can be issued subsequently or at the next Sitting.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "You can issue an explanation subsequently or you can do it at the next Sitting.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-2465",
+  "group": "motion",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-08-07"
+  ],
+  "report_ids": [
+   "motion-2465"
+  ],
+  "sentences_total": 7,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.5714,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:23:47"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 693,
+   "completion_tokens": 109,
+   "estimated": false,
+   "cost_usd": 0.000128
+  }
+ }
+}

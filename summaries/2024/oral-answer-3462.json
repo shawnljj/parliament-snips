@@ -1,0 +1,134 @@
+{
+ "title": "Data on Non-emergency and Non-critical Admissions to Public Hospitals and Hospitalisation Insurance Claims Made",
+ "what_it_is": "Data on Non-emergency and Non-critical Admissions to Public Hospitals and Hospitalisation Insurance Claims Made",
+ "sections": [
+  {
+   "label": "Non-urgent but medically necessary admissions",
+   "summary": "About 20% of public hospital admissions are medically necessary though non-urgent, can tap MediSave and MediShield Life, and are managed through right pricing and post-discharge care.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Some patients have medical conditions that are non-urgent and yet inpatient care is medically necessary.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "They account for about 20% of all public hospital admissions, which has been a stable percentage over the past 10 years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "As these admissions are medically necessary, they can tap on MediSave and/or MediShield Life.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "To minimise such over-staying in hospitals, we try our best to right price and right site patients.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "This includes improving and expanding our Transitional Care Facilities and home care services to provide post-discharge care.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We need to be very careful about offering incentives to reward non-claims.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "It can discourage some, especially the lower-income, from seeking medically necessary care.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Ramping up Transitional Care Facilities",
+   "summary": "Transitional Care Facilities are being ramped up and expanded, and a suite of homecare services is being ensured to address post-discharge needs.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "Indeed, it is something that we have been looking into, as mentioned in my reply.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "I had said that we are already ramping up and looking into our Transitional Care Facilities – which are already in place, but we are ramping up and expanding.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "We are also making sure that there is a suite of homecare services that will help address some of the needs, post-discharge.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3462",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-02-16"
+  ],
+  "report_ids": [
+   "oral-answer-3462"
+  ],
+  "sentences_total": 22,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.4545,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T15:11:07"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1427,
+   "completion_tokens": 168,
+   "estimated": false,
+   "cost_usd": 0.000247
+  }
+ }
+}

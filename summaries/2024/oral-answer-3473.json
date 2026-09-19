@@ -1,0 +1,119 @@
+{
+ "title": "Profile of Patients Diagnosed with Attention Deficit Hyperactivity Disorder and Financial Support Available",
+ "what_it_is": "Profile of Patients Diagnosed with Attention Deficit Hyperactivity Disorder and Financial Support Available",
+ "sections": [
+  {
+   "label": "ADHD subsidies and school support",
+   "summary": "Children six and below can get subsidised ADHD consultations and therapy, school-going students get free school-based interventions, and eligible patients can get means-tested subsidies.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Children aged six years and below are eligible to receive subsidised consultations and therapy of up to 70% for ADHD under the Child Development Programme (CDP) at the KK Women's and Children's Hospital and National University Hospital (NUH), if referred to the programme from polyclinics or from Community Health Assist Scheme (CHAS) general practitioner (GP) clinics.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For school-going students aged seven years and above, school counsellors and special educational needs officers provide school-based interventions at no charge, in consultation with the Response, Early Intervention and Assessment in Community Mental Health (REACH) teams when necessary.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Eligible patients referred from polyclinics and CHAS GP clinics to public Specialist Outpatient Clinics (SOCs) for the management of ADHD can also receive means-tested subsidies of up to 70%.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "No ADHD diagnosis reporting required",
+   "summary": "Practitioners and parents are not required to report a suspicion or confirmation of an ADHD diagnosis, so data on treated proportions is unavailable.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We do not require the reporting of a diagnosis, such as ADHD.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "So, his first question on what proportion has been treated, we do not have the data because practitioners and parents are not required to report the suspicion of a diagnosis or the confirmation of a diagnosis.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Meeting on neurodevelopmental awareness",
+   "summary": "They have met with the group and will continue exploring how to raise awareness of ADHD and other neurodevelopmental conditions for earlier detection and support.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Indeed, the answer is yes, we have met with them.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00034",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "I have met with them as well and we will continue to explore how we can raise the awareness of not just ADHD, but a wide range of neurodevelopmental conditions, so that we can detect them earlier but also provide the right type of support to the families that are dealing with these challenges.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3473",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-02-16"
+  ],
+  "report_ids": [
+   "oral-answer-3473"
+  ],
+  "sentences_total": 34,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.2059,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 3,
+   "turns_total": 8,
+   "coverage": 0.375,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T15:10:53"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2371,
+   "completion_tokens": 195,
+   "estimated": false,
+   "cost_usd": 0.000387
+  }
+ }
+}

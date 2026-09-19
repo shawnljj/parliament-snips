@@ -1,0 +1,112 @@
+{
+ "title": "Review of Computation of Monthly CPF Interest Payment",
+ "what_it_is": "Review of Computation of Monthly CPF Interest Payment",
+ "sections": [
+  {
+   "label": "CPF SMRA interest rates",
+   "summary": "CPF members receive 4.08% per annum on SMRA savings in first quarter 2024, plus extra interest on combined balances.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "With the SMRA-pegged rate currently exceeding the 4% floor rate, Central Provident Fund (CPF) members will receive 4.08% per annum interest on their SMRA savings in the first quarter of 2024.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "In addition, the Government continues to pay 1% of extra interest on the first $60,000 of combined CPF balances for all members, as well as an additional 1% extra interest on the first $30,000 of combined CPF balances for members aged 55 and above.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CPF interest rate review",
+   "summary": "The Government will continue to review CPF interest rates periodically to ensure their relevance in the prevailing operating environment.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "The Government will continue to review CPF interest rates periodically to ensure their relevance in the prevailing operating environment.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CPF floor rates sustainability",
+   "summary": "The Government has paid 2.5% Ordinary Account minimum and 4% SMRA floor rate over two decades, a more sustainable computation method.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "First, the Government has paid 2.5% minimum interest on the Ordinary Account savings and 4% floor rate for the SMRA savings over the past two decades, in spite of the protracted low interest rate environment.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "If you do a like-for-like comparison, without the 4% floor rate, the SMRA interest rate would have been an average of 3.2% per annum or about 0.8% points lower.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "The reassurance that I want to give to the hon Member and also Members of the House is that this is a more sustainable method of computation over the longer haul, compared to investing in shorter-term, more volatile instruments.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3434",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-02-07"
+  ],
+  "report_ids": [
+   "oral-answer-3434"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2609,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T15:13:48"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1807,
+   "completion_tokens": 185,
+   "estimated": false,
+   "cost_usd": 0.000305
+  }
+ }
+}

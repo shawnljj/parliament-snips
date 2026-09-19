@@ -1,0 +1,120 @@
+{
+ "title": "Probe into Incident Where Private Military Conference Call at Singapore Hotel was Intercepted",
+ "what_it_is": "Probe into Incident Where Private Military Conference Call at Singapore Hotel was Intercepted",
+ "sections": [
+  {
+   "label": "Secured communications for foreign guests",
+   "summary": "Participants at international events do not expect host countries to provide secured communications; foreign guests arrange their own secured means, as MINDEF and SAF officials do overseas.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Defence (Mr Heng Chee How) (for the Minister for Defence)",
+     "attributed": true,
+     "text": "Participants to international events and conferences, including those attended by military personnel and government leaders and officials do not, as a rule, expect the host country to provide secured means of communications.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Defence (Mr Heng Chee How) (for the Minister for Defence)",
+     "attributed": true,
+     "text": "Foreign guests who need to transmit sensitive information will typically arrange their own secured means, such as encryption hardware or software, commercial secured or embassy lines and other security measures.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Defence (Mr Heng Chee How) (for the Minister for Defence)",
+     "attributed": true,
+     "text": "This is the practice of the Ministry of Defence (MINDEF) and the Singapore Armed Forces (SAF) officials when attending meetings overseas.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MINDEF cybersecurity at high signature events",
+   "summary": "MINDEF and SAF proactively address cybersecurity at high signature events with organisers, who remain accountable, but do not cover foreign militaries' internal virtual meetings.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr Heng Chee How",
+     "attributed": true,
+     "text": "For MINDEF and SAF, we take a proactive approach to cybersecurity when we are involved in high signature events, inclusive of those involving high level foreign dignitaries.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Heng Chee How",
+     "attributed": true,
+     "text": "And we work closely with event organisers, who remain accountable for the overall cybersecurity of these events.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Heng Chee How",
+     "attributed": true,
+     "text": "These proactive efforts would include identifying events' digital footprint and cybersecurity risk areas, scanning the event websites and checking the commercial systems and applications used for the event, and working out the cybersecurity incident escalation and reporting processes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Heng Chee How",
+     "attributed": true,
+     "text": "If vulnerabilities are uncovered through these checks, the event organisers would be required to resolve them, prior to the events.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Heng Chee How",
+     "attributed": true,
+     "text": "MINDEF and SAF, however, do not cover the cybersecurity of foreign militaries' internal, unilateral virtual meetings, which are outside the scope of these events.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3543",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-04-02"
+  ],
+  "report_ids": [
+   "oral-answer-3543"
+  ],
+  "sentences_total": 18,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4444,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:35:15"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1387,
+   "completion_tokens": 161,
+   "estimated": false,
+   "cost_usd": 0.000239
+  }
+ }
+}

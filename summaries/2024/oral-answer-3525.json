@@ -1,0 +1,133 @@
+{
+ "title": "Proportion of Resale HDB Flats Transacted with Cash-Over-Valuation (COV) and Quantum of COVs",
+ "what_it_is": "Proportion of Resale HDB Flats Transacted with Cash-Over-Valuation (COV) and Quantum of COVs",
+ "sections": [
+  {
+   "label": "CPF Housing Grant increases",
+   "summary": "Eligible First-Timer families and singles buying resale flats receive increased CPF Housing Grants, with higher amounts for 2-room to 4-room flats.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Eligible First-Timer families buying a 2-room to 4-room resale flat can receive $80,000 in CPF Housing Grant, up from $50,000 previously, while those buying a 5-room or larger resale flat can receive $50,000 in CPF Housing Grant, up from $40,000 previously.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Eligible First-Timer singles buying a 2-room to 4-room resale flat can similarly receive an increased CPF Housing Grant of $40,000, up from $25,000 previously; while those buying a 5-room resale flat can receive $25,000, up from $20,000 previously.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Resale flat COV trends",
+   "summary": "After the February 2023 CPF Housing Grant enhancement, about 18% of resale flat buyers paid COV, down from 29% in 2022 and 36% in 2021.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "After the CPF Housing Grant was enhanced in February 2023, about 18% resale flat buyers paid COV.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "This is a noticeable reduction from about 29% in 2022 and 36% in 2021.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "The majority of resale flat buyers did not have to pay any COV and the median COV across all buyers has remained at $0.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "COV restrictions would be challenging to enforce, as buyers and sellers could collude to circumvent the restrictions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "The Government will continue to keep a close watch on the affordability of flats on the resale market.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Residents choosing locations for caregiving",
+   "summary": "First-timer residents chose certain locations for needs such as caregiving to family members living in the same block or nearby.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "I have residents telling me, first-timer residents telling me they chose certain locations because of certain needs, for example, caregiving needs to family members living in the same block or nearby.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "I think it is sensible to not over-complicate the scheme and overly intervene in such decisions.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3525",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-03-06"
+  ],
+  "report_ids": [
+   "oral-answer-3525"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.3913,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:41:13"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1682,
+   "completion_tokens": 217,
+   "estimated": false,
+   "cost_usd": 0.000296
+  }
+ }
+}

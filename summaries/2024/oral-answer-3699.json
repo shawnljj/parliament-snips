@@ -1,0 +1,126 @@
+{
+ "title": "Inspection for Structural Integrity of Oil Pipelines, Measures to Prevent Oil Spills and Penalties for Recent Incidents",
+ "what_it_is": "Inspection for Structural Integrity of Oil Pipelines, Measures to Prevent Oil Spills and Penalties for Recent Incidents",
+ "sections": [
+  {
+   "label": "Clean-up done, investigations ongoing",
+   "summary": "Clean-up works are completed with no oil sightings at sea or ashore, while NEA and MPA investigations continue.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Amy Khor Lean Suan) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "Clean-up works have been completed and there have been no oil sightings, both at sea and ashore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Amy Khor Lean Suan) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "Investigations by the National Environment Agency (NEA) and the Maritime and Port Authority of Singapore (MPA) into the incident are ongoing.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Shell pipeline check and enforcement",
+   "summary": "NEA is reviewing Shell's measures, has directed a pipeline integrity check at Bukom, and may take enforcement action.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Amy Khor Lean Suan) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "As part of the investigation, NEA is reviewing the measures that Shell has put in place at their facility and whether additional measures are needed to minimise the risk of oil leaks further.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Amy Khor Lean Suan) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "As an interim measure, NEA has directed Shell to carry out a comprehensive pipeline integrity check across their Bukom plant.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Amy Khor Lean Suan) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "As investigations are still ongoing, it is premature to discuss whether and what enforcement measures will be taken.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Amy Khor Lean Suan) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "But NEA takes a serious view on the importance of businesses and individuals fulfilling their obligations to protect our environment and we will not hesitate to take enforcement action in accordance with the law against any party found responsible for negligence or wrongdoing.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NParks oil spill impact study",
+   "summary": "NParks monitors oil spill impacts on marine, coastal ecosystem and wildlife, finding no immediate impact for the October incident.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "With regard to the study on the impact of the oil spills, the National Parks Board (NParks) monitors the impact of any oil spill incidents on the marine and coastal ecosystem, as well as on the wildlife.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Thus far, for the October incident for instance, NParks has assessed that there has been no immediate impact on the marine and coastal ecosystem as well as the wildlife.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3699",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-11-11"
+  ],
+  "report_ids": [
+   "oral-answer-3699"
+  ],
+  "sentences_total": 25,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.32,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:07:53"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1602,
+   "completion_tokens": 183,
+   "estimated": false,
+   "cost_usd": 0.000276
+  }
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "title": "Assistance for Stallholders at Coffee Shops Faced with Increasing Rentals and Business Overheads",
+ "what_it_is": "Assistance for Stallholders at Coffee Shops Faced with Increasing Rentals and Business Overheads",
+ "sections": [
+  {
+   "label": "HDB rental coffee shop rents",
+   "summary": "HDB kept rents stable, did not raise rent for 97% of rental coffee shops at renewal, and offers a 5% one-year discount for budget meals.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "HDB is committed to ensuring that the rents payable by operators of HDB rental coffee shops remain stable.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Over the last five years, HDB did not increase the rent for 97% of HDB rental coffee shops at renewal.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "The increase in the median rent of HDB rental coffee shops was limited to 1.6% during this period.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Further, to help all HDB rental coffee shop operators transition to providing budget meals by 2026, HDB offers a rental discount of 5% for a period of one year, subject to verification that the new budget meals and drinks have been implemented.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Government and cooked food prices",
+   "summary": "Government does not directly provide cooked food or set prices, and safeguards against runaway prices by ensuring wide availability of F&B premises.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "Although Government is not in the business of directly providing cooked food or stipulating cooked food prices, ultimately, the best safeguard against runaway cooked-food prices is by ensuring wide availability.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00035",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "This, we do through ensuring that, in towns and across the island, there is a good spread of food and beverages (F&B) premises.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00036",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "This covers not just coffee shops in HDB estates, but other kinds of F&B outlets and also hawker centres.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00038",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "In terms of the strategy that Assoc Prof Jamus Lim has described, I think that is something that the Government would consider very carefully and it is not a step that we would take lightly.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3428",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-02-07"
+  ],
+  "report_ids": [
+   "oral-answer-3428"
+  ],
+  "sentences_total": 38,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.2105,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T15:13:42"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2318,
+   "completion_tokens": 158,
+   "estimated": false,
+   "cost_usd": 0.000369
+  }
+ }
+}

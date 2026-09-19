@@ -1,0 +1,72 @@
+{
+ "title": "Update on Number of Mpox Cases and Transmission Data",
+ "what_it_is": "Update on Number of Mpox Cases and Transmission Data",
+ "sections": [
+  {
+   "label": "Mpox cases rise and decline",
+   "summary": "Mpox cases rose in late 2023 with global and regional increases, and no new Singapore cases were reported in January 2024.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The increase in cases in the last quarter of 2023 corresponded with a rise in cases globally and regionally.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "No new mpox cases were reported in Singapore in January 2024.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3421",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-02-06"
+  ],
+  "report_ids": [
+   "oral-answer-3421"
+  ],
+  "sentences_total": 8,
+  "sentences_selected": 2,
+  "sentences_in_sections": 2,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.25,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 2,
+   "sentences_selected": 2,
+   "turns_cited": 1,
+   "turns_total": 3,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T15:20:26"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 877,
+   "completion_tokens": 71,
+   "estimated": false,
+   "cost_usd": 0.000143
+  }
+ }
+}

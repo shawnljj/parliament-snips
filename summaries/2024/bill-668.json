@@ -1,0 +1,107 @@
+{
+ "title": "Statutes (Miscellaneous Amendments) Bill",
+ "what_it_is": "Statutes (Miscellaneous Amendments) Bill",
+ "sections": [
+  {
+   "label": "Business names and property tax amendments",
+   "summary": "Clause 2(b) lets the Registrar restore cancelled business name registrations for Medisave non-compliance, while clauses 6(a) to (j) amend property tax objection and Valuation Review Board provisions.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "Clause 2(b) of the Bill amends section 24(1) of the Business Names Registration Act 2014 to allow the Registrar of Business Names to restore a registration that has been cancelled because the person failed to make Medisave contributions required under section 9A of the Central Provident Fund Act 1953.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "This will speed up the process for restoring business name registrations, for example, where the business owner has already rectified the non-compliance, without the need to lodge a statutory appeal to the Minister.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "First, clauses 6(a) and (b) of the Bill amend sections 20A(2) and 22(2) of the PTA, to confer the Chief Assessor and the Comptroller of Property Tax with the discretion to admit late objections to the valuation list and to property tax respectively.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "The second group of amendments in clauses 6(c) to (j) of the Bill amend the PTA to update and streamline provisions relating to the Valuation Review Board, or VRB, which is a tribunal under the PTA that hears and adjudicates property tax-related disputes between taxpayers and the Comptroller or the Chief Assessor.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "The amendments to the VRB provisions include removing outdated references, such as the requirement to lodge the notice of appeal in \"duplicate\", which is no longer relevant where documents are sent digitally.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "In addition, the amendments will confer a discretion on the Chairperson to convene a one-member coram to adjudicate VRB hearings, instead of the usual three-member coram.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "Taken together, these amendments will align the VRB provisions with other tax Boards of Review provisions to allow greater flexibility and ensure that tax appeals are resolved in a more timely and efficient manner.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-668",
+  "group": "bill",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-01-09"
+  ],
+  "report_ids": [
+   "bill-668"
+  ],
+  "sentences_total": 13,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.5385,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T15:28:44"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1398,
+   "completion_tokens": 110,
+   "estimated": false,
+   "cost_usd": 0.000227
+  }
+ }
+}

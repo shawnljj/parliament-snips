@@ -1,0 +1,120 @@
+{
+ "title": "Number of and Occupancy Rates at Homeless Shelters",
+ "what_it_is": "Number of and Occupancy Rates at Homeless Shelters",
+ "sections": [
+  {
+   "label": "Transitional shelters occupancy and housing",
+   "summary": "From 2021 to 2023 transitional shelters averaged about 60% occupancy, with stays averaging about nine months, and social workers help residents secure stable long-term housing.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Social and Family Development (Mr Eric Chua) (for the Minister for Social and Family Development)",
+     "attributed": true,
+     "text": "From 2021 to 2023, the transitional shelters had an average occupancy rate of about 60%.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Social and Family Development (Mr Eric Chua) (for the Minister for Social and Family Development)",
+     "attributed": true,
+     "text": "Individuals stay in a transitional shelter for an average of about nine months.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Social and Family Development (Mr Eric Chua) (for the Minister for Social and Family Development)",
+     "attributed": true,
+     "text": "To help residents transit to a more permanent place of residence, social workers at the TSS work closely to address the needs of these individuals and families and support them in securing stable long-term housing such as rental flats or purchase flats.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Homeless shelter placement process",
+   "summary": "A Member asks how quickly a homeless or rough-sleeping person can get a shelter place, noting complex interlocking difficulties and no single quick answer.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "Mr Darryl David (Ang Mo Kio)",
+     "attributed": true,
+     "text": "Could the Senior Parliamentary Secretary perhaps provide some insight into the process, that is, how easy it would be, how quickly it would be for a homeless person or someone sleeping rough to get a place in these shelters?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "Those of us who are involved in this piece of work would know that the situational factors and difficulties that each homeless or rough-sleeping person has to deal with are often complex and interlocking.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "It could be a mix of employment, family disputes, mental health – and a whole host of other issues.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "So, what we need to do then is to make sure that we can work with community groups, work with individual volunteers on the ground, Government agencies in the mix as well, to offer the most thoughtful as well as customised support to each of these cases.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "So, really, there is no one quick, textbook answer for all the cases.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3688",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-10-16"
+  ],
+  "report_ids": [
+   "oral-answer-3688"
+  ],
+  "sentences_total": 13,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.6154,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 5,
+   "coverage": 0.6,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:11:12"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1249,
+   "completion_tokens": 154,
+   "estimated": false,
+   "cost_usd": 0.000218
+  }
+ }
+}

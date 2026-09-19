@@ -1,0 +1,152 @@
+{
+ "title": "Proportion of Bankruptcies due to Credit Card Debts",
+ "what_it_is": "Proportion of Bankruptcies due to Credit Card Debts",
+ "sections": [
+  {
+   "label": "Bankruptcy orders and non-performing loans",
+   "summary": "Bankruptcy orders in the first half of 2024 were stable versus recent years and below pre-COVID-19 levels, with NPLs under 1% of individual loans.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Culture, Community and Youth and Trade and Industry (Mr Alvin Tan) (for the Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "The number of bankruptcy orders in the first half of 2024 has been stable compared to the same period in the last few years and remains below pre-COVID-19 levels.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Culture, Community and Youth and Trade and Industry (Mr Alvin Tan) (for the Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "Non-performing loans (NPLs) are less than 1% of all loans to individuals extended by financial institutions as of the second quarter of 2024.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bankruptcy orders from business failures",
+   "summary": "Slightly over two-fifths of bankruptcy orders in the first half of 2024 were due to business failures.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister of State for Culture, Community and Youth and Trade and Industry (Mr Alvin Tan) (for the Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "Slightly over two-fifths of bankruptcy orders were due to business failures in the first half of 2024.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "BNPL share of card payments",
+   "summary": "In Singapore, the BNPL sector remains relatively small, with transactions totalling about 1% of total credit and debit card payments in the first half of 2023.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "In fact, in Singapore, the BNPL sector is still relatively small and transactions now total about 1% of total credit and debit card payments in the first half of 2023.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bankruptcy applications versus orders",
+   "summary": "While bankruptcy applications picked up in the first half of 2024, not all applications result in bankruptcy orders.",
+   "sentences": [
+    {
+     "sid": "s00032",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "One, to reiterate the point that while bankruptcy applications have picked up in the first half of 2024, not all of these bankruptcy applications result in bankruptcy orders.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Mortgage stress tests and repayment risks",
+   "summary": "MAS stress tests suggest most households can service mortgage debt even with around 10% income losses and 5.5% mortgage rates, though a small segment of highly leveraged borrowers with below median incomes may be more vulnerable.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "I mentioned earlier on that bankruptcy orders have been stable despite elevated interest rates – and I know interest rates are now moderating – and also, economic uncertainties continue to persist.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00039",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "But our MAS stress tests suggest that even now, most households should still be able to service their mortgage debt, even under conservative scenarios of significant income losses of around 10% and even at elevated mortgage rates of 5.5%.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "And even in the above stress test scenarios, at elevated interest rates, households would still be able to service their mortgages from financial institutions, although a very small segment, the one that Mr Derrick Goh mentioned, of highly leveraged borrowers with below median household incomes, could be more vulnerable to repayment risks.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00042",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "But such borrowers also account for less than 5% of total mortgage loans by count and comprise mostly private housing loans.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "Looking ahead, given the expected decline in domestic interest rates, we think that it should ease debt repayment for borrowers.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3684",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-10-16"
+  ],
+  "report_ids": [
+   "oral-answer-3684"
+  ],
+  "sentences_total": 44,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.2273,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 7,
+   "coverage": 0.4286,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:10:39"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2582,
+   "completion_tokens": 329,
+   "estimated": false,
+   "cost_usd": 0.000454
+  }
+ }
+}

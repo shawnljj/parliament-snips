@@ -1,0 +1,140 @@
+{
+ "title": "Policy on Charging Patients who Choose Different Ward Classes for Different Hospital Stays",
+ "what_it_is": "Policy on Charging Patients who Choose Different Ward Classes for Different Hospital Stays",
+ "sections": [
+  {
+   "label": "Ward class subsidy adjustments",
+   "summary": "Subsidies follow the ward class used, with retroactive adjustment for upgrades to discourage subsidy-seeking ward switching.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "When patients stay in a higher ward class and then downgrade to a lower ward class towards the end of their stay, they will receive subsidies based on the respective ward class.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "In fact, where the request to downgrade is due to unaffordability because of complications or unexpected additional costs, public hospitals will find ways to support these patients financially.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "For upgrading of wards, there is a different consideration.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We have to discourage patients from selecting lower ward classes to secure more subsidies for more costly treatments, such as surgery and the Intensive Care Unit (ICU) at the beginning of their stay, and then switch to higher ward classes once these treatments are completed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Many of these patients are not of lower income and could have chosen the higher ward class from the outset.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "That is why if a patient upgrades, the level of subsidies will be adjusted retroactively.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Financial counselling at admission",
+   "summary": "Patients are counselled financially at the start of every hospital stay and make decisions with full information.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "At the beginning of every hospital stay, patients will be counselled financially and they will make those decisions with their eyes open.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Downgrade means testing and MediFund",
+   "summary": "Patients meeting means testing criteria can downgrade, and MediFund is a last safety net for affordability issues.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "As for those who come back later and wish to downgrade and are not allowed, actually there is a very established process of means testing.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "So long as they meet the means testing criteria, they can downgrade.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Having said that, for anyone with affordability issues, there is always MediFund as a last line of defence, a last safety net, so that they can always afford a hospital stay in the public health institutions.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3586",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-05-07"
+  ],
+  "report_ids": [
+   "oral-answer-3586"
+  ],
+  "sentences_total": 21,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.4762,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:32:34"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1532,
+   "completion_tokens": 178,
+   "estimated": false,
+   "cost_usd": 0.000264
+  }
+ }
+}

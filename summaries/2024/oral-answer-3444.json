@@ -1,0 +1,79 @@
+{
+ "title": "Statistics on Total Employment and Trade Income of Top 1,000 Earners",
+ "what_it_is": "Statistics on Total Employment and Trade Income of Top 1,000 Earners",
+ "sections": [
+  {
+   "label": "Top 1,000 earners income percentiles",
+   "summary": "For YA2023, YA2019 and YA2014, the 25th percentile, median and 75th percentile income of the top 1,000 Singapore Citizen earners are stated.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah) (for the Deputy Prime Minister and Minister for Finance):",
+     "attributed": true,
+     "text": "For YA2023, the 25th percentile, median and 75th percentile income of the top 1,000 earners who are Singapore Citizens are $2.4 million, $2.9 million and $4.5 million respectively.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah) (for the Deputy Prime Minister and Minister for Finance):",
+     "attributed": true,
+     "text": "For YA2019, the corresponding figures are $2 million, $2.5 million and $3.6 million.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah) (for the Deputy Prime Minister and Minister for Finance):",
+     "attributed": true,
+     "text": "For YA2014, the corresponding figures are $1.8 million, $2.2 million and $3 million.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3444",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-02-07"
+  ],
+  "report_ids": [
+   "oral-answer-3444"
+  ],
+  "sentences_total": 6,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T15:14:27"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 855,
+   "completion_tokens": 92,
+   "estimated": false,
+   "cost_usd": 0.000145
+  }
+ }
+}

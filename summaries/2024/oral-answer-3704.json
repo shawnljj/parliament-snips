@@ -1,0 +1,152 @@
+{
+ "title": "Health Issues Faced by Migrant Workers and Measures to Ensure Their Access to Proper Medical Treatment",
+ "what_it_is": "Health Issues Faced by Migrant Workers and Measures to Ensure Their Access to Proper Medical Treatment",
+ "sections": [
+  {
+   "label": "Enhanced medical insurance and Primary Care Plan",
+   "summary": "MOM raised the annual claim limit to $60,000 in 2023 and implemented the Primary Care Plan in April 2022.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "To better protect employers from large hospitalisation and surgical expenses, MOM enhanced the mandatory medical insurance for Work Permit and S Pass holders in 2023 by increasing the annual claim limit to $60,000, up from $15,000.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "In addition, to enhance accessibility and affordability of outpatient care for migrant workers, MOM implemented the Primary Care Plan (PCP) in April 2022.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Migrant worker co-payments and access study",
+   "summary": "Migrant workers pay $2 and $5 co-payments, and a 2024 NUS study found 96% accessed primary health services.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "Migrant workers pay a low co-payment fee of $2 and $5 per telehealth and in-person session respectively, so that they are not deterred from seeking medical care when they need it.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "A study conducted by the National University of Singapore (NUS) Saw Swee Hock School of Public Health, published in September 2024 in a peer-reviewed journal, found that 96% of migrant workers surveyed were able to access primary health services in Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Native language doctors in PCP",
+   "summary": "PCP providers are given dispensation to employ doctors who speak migrant workers' native languages to reduce language barriers.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "The design of our PCP programme is such that the primary care providers, the doctors and the clinics that are providing these services, are given a dispensation to employ doctors who are able to speak in the native languages of the migrant workers so that there are less language barriers when the migrant workers seek care, whether in person or via telemedicine.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Medical confidentiality of chronic conditions",
+   "summary": "Medical information is confidential to the individual, so chronic conditions cannot be reported to employers without consent.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "On the second question of whether there are ways to report back chronic medical conditions to employers, I think we have to be very careful here because medical information is very much confidential to the individual.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00030",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "And unless there is consent given by the individual, including migrant workers who have the right to their own medical confidentiality, it will not be reasonable for us to report some of these conditions back to the employers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Access through dormitory clinics and MOM app",
+   "summary": "PCP facilities are located in or near dormitories, and information is shared via dormitory operators, NGO partners and the MOM app.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "When I replied earlier in my main reply, I did say that this study, which surveyed migrant workers, found that 96% of them were able to access primary health services in Singapore, partly because we designed it in such a way that it is located either in the dormitory itself, where there is an in-dormitory clinic, or the PCP providers have a facility located around where migrant workers actually stay, where the dormitories are co-located.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00044",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "We also disseminate some of this information on how to get into telehealth through the dormitory operators and many of our NGO partners.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00045",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "So, migrant workers, as long as they use the MOM app, would be able to get information on the nearest PCP medical facility that is available to them.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3704",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-11-12"
+  ],
+  "report_ids": [
+   "oral-answer-3704"
+  ],
+  "sentences_total": 47,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.2128,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 7,
+   "coverage": 0.4286,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:03:47"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 3210,
+   "completion_tokens": 300,
+   "estimated": false,
+   "cost_usd": 0.000533
+  }
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "title": "Teachers' Non-response to Queries Outside of Office Hours",
+ "what_it_is": "Teachers' Non-response to Queries Outside of Office Hours",
+ "sections": [
+  {
+   "label": "Teacher appraisal outside office hours",
+   "summary": "Asked whether teachers who do not respond to students, parents or colleagues outside office hours are penalised in appraisal, and what teachers can do if contacted.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Louis Ng Kok Kwang",
+     "attributed": true,
+     "text": "asked the Minister for Education whether teachers who do not respond or are not able to respond to students, parents, or colleagues outside of office hours will be penalised during their appraisal.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "Could I then ask what can teachers do if a students and parents continue to contact them after office hours?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "We appreciate everybody to abide by the rules to respect the time for our teachers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Responding to after-hours contact",
+   "summary": "States a teacher will respond if a child thrown out of the house calls at night, but hopes parents and students avoid calling after office hours for minor things.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "For example, in a particular high-needs school, if a child has been thrown out of the house in the middle of the night and he calls his teacher, I am very sure his teacher will respond.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "But on the other hand as I have shared in this House, we also hope that parents or students will not call their teachers after office hours for minor trivial things which they can otherwise handle themselves.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3494",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-02-29"
+  ],
+  "report_ids": [
+   "oral-answer-3494"
+  ],
+  "sentences_total": 7,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.7143,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 3,
+   "turns_total": 3,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:58:16"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 834,
+   "completion_tokens": 135,
+   "estimated": false,
+   "cost_usd": 0.000155
+  }
+ }
+}

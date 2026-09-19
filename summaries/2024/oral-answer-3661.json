@@ -1,0 +1,158 @@
+{
+ "title": "Applicants with More Than One HDB Invitation to Book BTO Flats in Different Projects",
+ "what_it_is": "Applicants with More Than One HDB Invitation to Book BTO Flats in Different Projects",
+ "sections": [
+  {
+   "label": "HDB multiple booking invitations",
+   "summary": "Asks how many BTO and Sale of Balance applicants received more than one HDB invitation to book flats in different projects, and why HDB disallows selecting a later booking date.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Ms Sylvia Lim",
+     "attributed": true,
+     "text": "asked the Minister for National Development (a) in the last 12 months, how many applicants for Build-To-Order or Sale of Balance flats have received more than one HDB invitation to book flats in different projects; and (b) why does HDB disallow the applicants from selecting a flat in a project with a later booking date in such situations.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Appeals for affected applicants",
+   "summary": "Asks whether HDB could give special consideration to 116 applicants, noting about 40% of invited BTO applicants did not book flats in past years.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Ms Sylvia Lim (Aljunied)",
+     "attributed": true,
+     "text": "Does the Senior Minister of State recognise that there is frustration and disappointment?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Ms Sylvia Lim (Aljunied)",
+     "attributed": true,
+     "text": "It is only 2% of the total number of applicants, 116 people since October.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Ms Sylvia Lim (Aljunied)",
+     "attributed": true,
+     "text": "I am just wondering, since the number is small, could HDB give some special consideration to these people and perhaps let them choose which project they want, maybe on the same day, to recognise the fact that it is not their fault and they have been given these two letters of offer by HDB?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "The context of why we imposed some of these requirements is that, in the past years, about 40% of our BTO applicants who were invited to book a flat did not do so.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Queue number eligibility rule",
+   "summary": "Since October last year, applicants who received a queue number within 100% of flat supply at an earlier exercise are not eligible for subsequent sale exercises.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Since October last year, applicants in BTO and Sale of Balance Flats exercises who received a queue number within 100% of the flat supply at an earlier exercise are not eligible to apply for a flat in subsequent sale exercises.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Affected applicants number",
+   "summary": "States there were about 116 applicants, about 2% of the total applicants, the groups Ms Sylvia Lim pointed out.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "These are the groups of people that Ms Sylvia Lim pointed out.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00027",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "There were about 116 applicants, about 2% of the total applicants.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Ballot results timeline",
+   "summary": "States that applicants receive their ballot results about two months after the flat application period closes.",
+   "sentences": [
+    {
+     "sid": "s00048",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "First, in terms of timeline, applicants will receive their ballot results about two months after the flat application period closes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Appeals for non-selection waiver",
+   "summary": "States that of 116 applicants invited to book a flat in two sales exercises, 14 appealed to HDB for a non-selection count waiver.",
+   "sentences": [
+    {
+     "sid": "s00053",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "The second data point that may be of interest to Ms Lim will be that of the 116 applicants who had been invited to book a flat in two sales exercises, 14 applicants appealed to HDB for a non-selection count waiver, so that they can proceed to select a flat at their second flat booking appointment.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3661",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-10-15"
+  ],
+  "report_ids": [
+   "oral-answer-3661"
+  ],
+  "sentences_total": 58,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.1724,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 6,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:13:09"
+  },
+  "usage": {
+   "calls": 4,
+   "prompt_tokens": 3342,
+   "completion_tokens": 365,
+   "estimated": false,
+   "cost_usd": 0.00057
+  }
+ }
+}

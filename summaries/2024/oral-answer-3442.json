@@ -1,0 +1,140 @@
+{
+ "title": "Review of Teachers' Workloads",
+ "what_it_is": "Review of Teachers' Workloads",
+ "sections": [
+  {
+   "label": "Teachers' workload review results",
+   "summary": "The Ministry reviews teachers' workloads as an ongoing priority, and teachers' reported work hours have remained stable in recent years.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Louis Ng Kok Kwang",
+     "attributed": true,
+     "text": "asked the Minister for Education (a) what are the results on the Ministry's most recent review of teachers' workloads; and (b) if a review has not been done recently, when will one be carried out.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Second Minister for Education (Dr Mohamad Maliki Bin Osman) (for the Minister for Education)",
+     "attributed": true,
+     "text": "This is done as an ongoing priority, especially before introducing any new initiatives.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Second Minister for Education (Dr Mohamad Maliki Bin Osman) (for the Minister for Education)",
+     "attributed": true,
+     "text": "The work hours reported by our teachers have remained stable in the past few years.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cutting teachers' administrative workload",
+   "summary": "The Ministry says it has been cutting and spreading out teachers' administrative work, giving guidelines, and using technology to reduce administrative workload.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Dr Mohamad Maliki Bin Osman",
+     "attributed": true,
+     "text": "My records show that Mr Ng has asked this question many times: in February 2022, in March 2022, in July 2022 and September 2022.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Dr Mohamad Maliki Bin Osman",
+     "attributed": true,
+     "text": "I want to assure Mr Ng, as with the previous replies we have given, we have been cutting down the administrative work of our teachers, spreading them out; giving them guidelines; and giving the superintendent and schools guidelines in terms of the workload for teachers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Mohamad Maliki Bin Osman",
+     "attributed": true,
+     "text": "We use technology to reduce the administrative workload of teachers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Dr Mohamad Maliki Bin Osman",
+     "attributed": true,
+     "text": "Not all teachers are expected to do deep counselling work, although they are trained in basic counselling so that they can identify students with immediate indications of challenges that might need help.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Dr Mohamad Maliki Bin Osman",
+     "attributed": true,
+     "text": "The workload of teachers is spread out, based on the responsibilities that they hold at that particular points in time.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Counselling part of teaching",
+   "summary": "Counselling, befriending and mentoring are part of teaching, and teachers acting as basic counsellors are not doing counselling.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Dr Mohamad Maliki Bin Osman",
+     "attributed": true,
+     "text": "Counselling, befriending and mentoring are really part of teaching, because we want to teach life skills to our students.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Dr Mohamad Maliki Bin Osman",
+     "attributed": true,
+     "text": "The role that the teachers take on, when we say basic counsellors, it is not that they are doing counselling.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3442",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-02-07"
+  ],
+  "report_ids": [
+   "oral-answer-3442"
+  ],
+  "sentences_total": 22,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.4545,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 6,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T15:13:53"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1522,
+   "completion_tokens": 193,
+   "estimated": false,
+   "cost_usd": 0.000267
+  }
+ }
+}

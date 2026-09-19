@@ -1,0 +1,134 @@
+{
+ "title": "Enrolment at Polyclinics for Healthier SG",
+ "what_it_is": "Enrolment at Polyclinics for Healthier SG",
+ "sections": [
+  {
+   "label": "Polyclinic and GP enrolment capacity",
+   "summary": "Average polyclinic enrolment capacity is near 30,000, 19 of 25 polyclinics have spare capacity, and Healthier SG GP clinics can enrol over 700,000 residents.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The average enrolment capacity is close to 30,000 per polyclinic.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Of the 25 polyclinics, 19 polyclinics still have spare capacity to take in more enrolees; while six are reserving their capacities for their regular chronic patients to enrol, before deciding if they could take in non-regular or new residents.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "A key design feature of Healthier SG is to extend the benefits of fully-subsidised preventative check-ins, health screening and vaccinations and chronic drug subsidies to private clinics.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "There is currently capacity at Healthier SG GP clinics to enrol more than 700,000 residents.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Polyclinic versus GP enrolment demand",
+   "summary": "65% of enrolees are with Healthier SG GP clinics; among polyclinic enrolees, 81% are existing regular patients and 19% are non-regular or new.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "For the first one, in terms of the relative demand, for enrolment at polyclinic versus a GP, 65% of the total that have enrolled, are enrolled with a Healthier SG GP clinic.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Among the polyclinic enrolees, 81% are existing regular patients, while the remaining 19% are non-regular and new patients.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Of the regular polyclinic patients, about 26% have enrolled with a GP clinic.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "To Member's second question, the short answer would be, no.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "So, it depends on what it is they are a regular patient for: do they have a chronic disease that falls under the Healthier SG programme; are they regular for a short period of time or have they been a regular patient over a longer period of time?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "So, if you take it in the spirit that the polyclinics would like to continue to serve those patients who have chronic diseases; which they have been following up and which Healthier SG would be able to assist them, then the answer is, yes.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3431",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-02-07"
+  ],
+  "report_ids": [
+   "oral-answer-3431"
+  ],
+  "sentences_total": 19,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.5263,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T15:14:03"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1519,
+   "completion_tokens": 177,
+   "estimated": false,
+   "cost_usd": 0.000262
+  }
+ }
+}

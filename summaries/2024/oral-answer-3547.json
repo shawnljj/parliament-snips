@@ -1,0 +1,100 @@
+{
+ "title": "Employment and Deployment Restrictions on Healthcare Professionals Undergoing Investigations for Patient Abuse Charges",
+ "what_it_is": "Employment and Deployment Restrictions on Healthcare Professionals Undergoing Investigations for Patient Abuse Charges",
+ "sections": [
+  {
+   "label": "Healthcare professionals patient abuse investigations",
+   "summary": "The Minister was asked about employment restrictions, yearly charge numbers since 2010, and how many charged professionals kept working in Singapore healthcare.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Miss Rachel Ong",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) whether there are any restrictions on the employment or deployment of healthcare professionals who are undergoing investigation for charges relating to patient abuse; (b) for each year since 2010, what is the number of healthcare professionals who have been charged for patient abuse; and (c) of these, how many continued to work in the healthcare industry in Singapore.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "This includes cases of patient abuse by healthcare professionals.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The licensees must take steps as soon as possible to manage the risk of recurrent abuse.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "This may include the reassignment of a healthcare professional to non-clinical duties or to require the healthcare professional to take a leave of absence to minimise further patient interactions while investigations are ongoing.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Since 2010, four healthcare professionals have been convicted of offences related to patient abuse.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Three are no longer practising and one returned to practice after serving a 15-month suspension.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3547",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-04-02"
+  ],
+  "report_ids": [
+   "oral-answer-3547"
+  ],
+  "sentences_total": 8,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.75,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 2,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:35:25"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 911,
+   "completion_tokens": 84,
+   "estimated": false,
+   "cost_usd": 0.000151
+  }
+ }
+}

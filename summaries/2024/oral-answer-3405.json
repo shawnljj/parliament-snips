@@ -1,0 +1,138 @@
+{
+ "title": "Diversity in Acute Hospital Models in Singapore’s Healthcare Landscape",
+ "what_it_is": "Diversity in Acute Hospital Models in Singapore’s Healthcare Landscape",
+ "sections": [
+  {
+   "label": "Hospital to serve Singaporeans",
+   "summary": "The passage states the more important features include requiring the hospital to serve primarily Singaporeans.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Much attention has been given to the proposed not-for-profit feature, but actually, that is not the key feature.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Instead, we think the more important features are: First, the hospital is required to serve primarily Singaporeans.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bill size restrictions",
+   "summary": "The passage states bill size restrictions will be imposed on the private hospital to avoid a high-cost care model.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Third, cost-effective care – we intend to impose bill size restrictions on the private hospital as we do not want a high-cost care model.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Ratio moving to public hospitals",
+   "summary": "The passage states the ratio has shifted to 90:10 and continues to move towards the public hospitals.",
+   "sentences": [
+    {
+     "sid": "s00028",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Today, it has shifted to 90:10 and the ratio continues to move towards the public hospitals.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Quality factors for bidders",
+   "summary": "The passage states quality factors such as serving Singaporeans, affordability by bill sizes and value-based care are put in the tender and used to evaluate bidders.",
+   "sentences": [
+    {
+     "sid": "s00045",
+     "speaker": "Dr Tan Wu Meng (Jurong)",
+     "attributed": true,
+     "text": "Which is why I mentioned just now that we want to be singularly licensed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00046",
+     "speaker": "Dr Tan Wu Meng (Jurong)",
+     "attributed": true,
+     "text": "We put in other quality factors such as: primarily for Singaporeans; affordability, which will be measured in terms of bill sizes; as well as value-based care, how you intend to do value-based care.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00047",
+     "speaker": "Dr Tan Wu Meng (Jurong)",
+     "attributed": true,
+     "text": "All these will be taken into account as we had put put in the tender and as we evaluate interested bidders.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "One more affordable private hospital",
+   "summary": "The passage states one more affordable private hospital should be accommodated.",
+   "sentences": [
+    {
+     "sid": "s00054",
+     "speaker": "Dr Tan Wu Meng (Jurong)",
+     "attributed": true,
+     "text": "In addition, we think we can, we should be able to accommodate one more more affordable private hospital.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3405",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-02-05"
+  ],
+  "report_ids": [
+   "oral-answer-3405"
+  ],
+  "sentences_total": 54,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 5,
+  "selection_share": 0.1481,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 3,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T15:23:20"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2540,
+   "completion_tokens": 263,
+   "estimated": false,
+   "cost_usd": 0.000429
+  }
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "title": "Availability of Cat-breeding Locations for Rent",
+ "what_it_is": "Availability of Cat-breeding Locations for Rent",
+ "sections": [
+  {
+   "label": "Cat breeding licensing and enforcement",
+   "summary": "NParks monitors demand for commercial cat breeding, prioritises units, requires licences, investigates illegal breeding, and cares for seized cats.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for National Development (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "NParks will continue to monitor the demand for commercial cat breeding and prioritise newly available units for cat breeding, where appropriate.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for National Development (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Under the Animals and Birds (Licensing of Farms) Rules, a valid licence is required to breed animals for commercial purposes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for National Development (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "NParks investigates reports of the illegal commercial breeding of animals, including cats, and takes enforcement action against offenders.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for National Development (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Cats seized during such investigations will be under the care of NParks and its veterinarians.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Seized cats during investigations",
+   "summary": "Owners cannot visit seized cats during investigations, but cats remain under NParks care and are regularly assessed until investigations conclude.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "As the animals are seized as part of investigations, owners will not be able to visit them while investigations are ongoing.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "However, the cats will remain under the care of NParks and are regularly assessed by NParks, until investigations are concluded.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "The Animal Lodge availability",
+   "summary": "The Animal Lodge is currently the only one available, and NParks will track and work with industry to expand if demand is high.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "Currently, The Animal Lodge is the only one available.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "We will keep track and work with the industry to see how we can expand it if there is high demand.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3570",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-04-03"
+  ],
+  "report_ids": [
+   "oral-answer-3570"
+  ],
+  "sentences_total": 20,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.4,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:33:52"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1204,
+   "completion_tokens": 193,
+   "estimated": false,
+   "cost_usd": 0.000223
+  }
+ }
+}

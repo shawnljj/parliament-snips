@@ -1,0 +1,126 @@
+{
+ "title": "Measures to Address Durability Issues When Wind-swept Rain Enters Lift Shafts of HDB Blocks",
+ "what_it_is": "Measures to Address Durability Issues When Wind-swept Rain Enters Lift Shafts of HDB Blocks",
+ "sections": [
+  {
+   "label": "HDB wind-driven rain simulations",
+   "summary": "HDB has run wind-driven rain simulations for all new public housing since 2021 and adopts BCA SS 550-2020 lift design features.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for National Development (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "In view of increasingly volatile weather patterns brought about by climate change, HDB has conducted wind-driven rain, or WDR, simulations for all new public housing developments since 2021.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Second Minister for National Development (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Through the WDR simulations, the effects of rain and wind, even in more extreme conditions, are modelled to identify areas prone to rainwater splashing.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Second Minister for National Development (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "HDB adopts design features recommended under Building and construction Authority's (BCA's) SS 550-2020 standards for lifts, such as sloped thresholds at lift doors to reduce the risk of water ingress into the lifts.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Clementi Peaks rain screens",
+   "summary": "Clementi Peaks, completed October 2022, had rainwater splashing, so HDB installed rain screens at lift lobbies, noticed to residents in mid-August 2024.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "In the case of Clementi Peaks, however, Clementi Peaks was completed in October 2022 and this means that the design was finalised before HDB began incorporating the CFD simulations for WDR, which was in 2021.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "And shortly after handover, the residents reported that there were issues of rainwater splashing into the common corridors and lift lobbies on the higher floors, and this posed a risk of seepage into the lift shafts.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "HDB then decided to install additional rain screens at the lift lobbies to protect the lift, as a key infrastructure in common property, from rain splashing and this was for safety reasons and to avoid disruption of lift operations, which would, of course, affect all residents.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "And therefore, after consultations with HDB and the consultant, the contractor then served notice to residents of the installation of the rain screens at the affected lift lobbies in mid-August of 2024.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Earlier resident engagement lesson",
+   "summary": "The lesson is that engaging residents earlier, explaining the installation and taking feedback, is helpful, as residents were concerned about blocked views.",
+   "sentences": [
+    {
+     "sid": "s00028",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "The third point I want to make, and this acknowledges what the Member brought up, which is that I think the learning lesson from this is that it is helpful to engage the residents earlier, to let them know the reason why the installation is being done, and also possibly to take feedback, because in this case, as I understand it, residents were concerned about the view being blocked.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3675",
+  "group": "oral",
+  "year": "2024",
+  "sitting_dates": [
+   "2024-10-16"
+  ],
+  "report_ids": [
+   "oral-answer-3675"
+  ],
+  "sentences_total": 29,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2759,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-19T14:10:44"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 2034,
+   "completion_tokens": 212,
+   "estimated": false,
+   "cost_usd": 0.000344
+  }
+ }
+}
