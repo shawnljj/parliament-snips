@@ -561,6 +561,16 @@
     var t = document.querySelector('.top');
     return t ? t.offsetHeight : 0;
   }
+
+  /* THE READING LINE, defined once. It must match the CSS scroll-margin-top, or a jump lands
+     a heading just below the line and the scrollspy still calls the previous section active --
+     the reported "it takes me to the section before". The CSS is sticky-h + 12, so the spy
+     uses the same 12 and a 2px tolerance for sub-pixel scroll positions. */
+  var LINE_PAD = 12;                  // keep in step with .has-section-anchor's scroll-margin
+  var LINE_TOLERANCE = 2;             // a heading exactly on the line counts as reached
+  function readingLine() {
+    return stickyH() + LINE_PAD;
+  }
   function syncStickyVar() {
     document.documentElement.style.setProperty('--sticky-h', stickyH() + 'px');
   }
@@ -762,19 +772,18 @@
       mark.setAttribute('aria-hidden', 'true');
       b.appendChild(mark);
 
-      // Identity at rest, at no cost in width. Always-on name labels were tried
-      // and made the rail 107px wide -- 27% of a 390px screen, with the names
-      // truncated to uselessness ("What the G..."). Instead: section ticks keep
-      // their names in the pill (active section) and the drag bubble (on demand),
-      // and the 16 oral-answer ticks carry a NUMBER matching the numbered jump
-      // list in the Oral answers section, so a dot can be looked up without
-      // touching it.
-      if (entry.level === 3) {
-        var num = document.createElement('span');
-        num.className = 'section-rail-num';
-        num.textContent = String(entry.ordinal);
-        b.appendChild(num);
-      }
+      // EVERY tick is labelled. The name used to be created only for level-3 ticks, so when
+      // the rail was reduced to first-level sections every tick became a bare dot with no
+      // visible identity -- a reader could not tell what any node represented.
+      //
+      // The earlier objection was real and is answered by width, not by dropping the label:
+      // always-on names made the rail 107px wide (27% of a 390px screen). So on mobile the
+      // label is shown for the ACTIVE tick only, and on desktop -- where there is room at the
+      // margin -- every tick keeps its name.
+      var name = document.createElement('span');
+      name.className = 'section-rail-name';
+      name.textContent = truncate(entry.label, 34);
+      b.appendChild(name);
 
       var bubble = document.createElement('span');
       bubble.className = 'section-rail-bubble';
@@ -792,20 +801,15 @@
       b.appendChild(go);
 
       b.addEventListener('click', function (ev) {
-        // Two-step: the first tap PREVIEWS, the second commits. Previously every
-        // tap navigated (the peek needed a 350ms hold that a drifting thumb
-        // could not achieve), so the only way to learn what a dot was, was to
-        // be teleported to it. Tapping must never move the reader by surprise.
-        if (pendingIndex !== index) {
-          ev.preventDefault();
-          railPreview(index);
-          return;
-        }
+        // ONE TAP JUMPS. The two-step preview existed because a dot gave no clue what it
+        // led to, so a tap had to be able to answer that without moving the reader. Now the
+        // name is visible on the tick itself, so the preview answers a question nobody is
+        // asking -- and in practice the first tap looked like a broken jump, which is
+        // exactly how the owner reported it.
+        ev.preventDefault();
         railClearPending();
         railGo(index);
       });
-      b.addEventListener('focus', function () { railPreview(index); });
-      b.addEventListener('blur', function () { railClearPending(); });
 
       entry.button = b;
       track.appendChild(b);
@@ -957,10 +961,13 @@
      active immediately instead of lagging one behind. */
   function railActiveIndex() {
     if (!railEntries.length) return -1;
-    var off = stickyH() + 8;
+    // ADD the tolerance: a jump lands the heading ON the line, and sub-pixel rounding can put
+    // it a pixel below. Subtracting made the test harder and produced the off-by-one.
+    var off = readingLine() + LINE_TOLERANCE;
     var cur = 0;
     railEntries.forEach(function (e, i) {
-      if (e.el.getBoundingClientRect().top - off <= 1) cur = i;
+      // <= 0 means the heading has reached or passed the reading line.
+      if (e.el.getBoundingClientRect().top - off <= 0) cur = i;
     });
     var nearBottom = window.innerHeight + window.scrollY >=
                      document.documentElement.scrollHeight - 4;
