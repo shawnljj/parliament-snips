@@ -29,8 +29,8 @@
    ]
   },
   {
-   "label": "Review of residential building fire regulations",
-   "summary": "The Government is reviewing early observations from Hong Kong's investigations and studying whether regulations for construction and maintenance works need strengthening, with the outcome announced in due course.",
+   "label": "Review of residential building regulations",
+   "summary": "The Government is reviewing Hong Kong's investigations and studying whether to strengthen regulations for construction and maintenance works in residential buildings, with outcome announced later.",
    "sentences": [
     {
      "sid": "s00011",
@@ -49,8 +49,8 @@
    ]
   },
   {
-   "label": "Serious fatal fires and evacuation difficulties",
-   "summary": "Despite measures, there were three serious fires resulting in death last year, including a Toa Payoh case where fire spread from the 10th to 11th floor and some residents above had evacuation difficulties.",
+   "label": "Serious fatal fires in Singapore",
+   "summary": "Despite measures, three serious fires caused deaths last year, including a Toa Payoh case where fire spread from the 10th to 11th floor and some residents above had evacuation difficulties.",
    "sentences": [
     {
      "sid": "s00029",
@@ -83,7 +83,7 @@
   },
   {
    "label": "Main cause of fires",
-   "summary": "Statistics show the main primary cause of fires is unattended cooking.",
+   "summary": "Statistics show that the main primary cause of fires is unattended cooking.",
    "sentences": [
     {
      "sid": "s00048",
@@ -95,21 +95,21 @@
    ]
   },
   {
-   "label": "Reassurance on construction fire inspections",
-   "summary": "A question asks the Minister of State to reassure the public that the current inspection enforcement regime during construction and renovation works is sufficiently robust.",
+   "label": "Tai Po evacuation alert response",
+   "summary": "Interviews and survivor experiences from Tai Po showed many did not take the initial evacuation alert seriously, possibly contributing to more fatalities.",
    "sentences": [
     {
-     "sid": "s00052",
+     "sid": "s00054",
      "speaker": "Mr Alex Yam (Marsiling-Yew Tee)",
      "attributed": true,
-     "text": "Could the Minister of State reassure the public the current inspection enforcement regime during construction and renovation works is assessed to be sufficiently robust, given that these time periods where the confluence of hot works, temporary wiring and flammable materials significantly heighten risk, as we saw in in the tragic example in Tai Po?",
+     "text": "What we saw from the Tai Po example, from interviews with survivors, as well as some of the experiences of those who were trapped, it is that many did not take the initial evacuation alert seriously enough and that may have contributed to the increased number of fatalities.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Safety requirements for construction works",
-   "summary": "Construction and maintenance works in Singapore must adhere to safety requirements in the Fire Code and Workplace Safety and Health Regulations.",
+   "label": "Construction works safety requirements",
+   "summary": "Construction and maintenance works in Singapore must follow safety requirements in the Fire Code and Workplace Safety and Health Regulations.",
    "sentences": [
     {
      "sid": "s00057",
@@ -135,7 +135,7 @@
   },
   {
    "label": "Community Resilience Days take-up",
-   "summary": "SCDF conducts about 16 Community Resilience Days yearly with People's Association and Government agencies, and significant take-up shows residents take the programmes seriously.",
+   "summary": "SCDF conducts about 16 Community Resilience Days yearly with People's Association and Government agencies, and significant take-up shows constituencies, residents and grassroots leaders participate fully.",
    "sentences": [
     {
      "sid": "s00064",
@@ -155,7 +155,7 @@
   },
   {
    "label": "SCDF response time and fire lifts",
-   "summary": "SCDF responds to most fire and rescue incidents within eight minutes, and the Fire Code requires fire lifts in high-rise structures above 24 metres.",
+   "summary": "SCDF responds to most fire and rescue incidents within eight minutes, and the Fire Code requires fire lifts in high-rise structures above 24 metres and additional fire lifts for residential buildings 40 storeys and above.",
    "sentences": [
     {
      "sid": "s00079",
@@ -174,21 +174,21 @@
    ]
   },
   {
-   "label": "Subsidised HFADs for seniors",
-   "summary": "HFADs are encouraged to be installed in seniors' homes and are subsidised under the Enhancement for Active Seniors Programme.",
+   "label": "HFADs for elderly households",
+   "summary": "Levers have been strengthened to help elderly households prepare for fires, and HFADs are encouraged to be installed in seniors' homes.",
    "sentences": [
+    {
+     "sid": "s00092",
+     "speaker": "Mr Goh Pei Ming",
+     "attributed": true,
+     "text": "We have strengthened our levers to support the elderly households in being better prepared for some of these fires.",
+     "added_for_context": true
+    },
     {
      "sid": "s00093",
      "speaker": "Mr Goh Pei Ming",
      "attributed": true,
      "text": "We have encouraged HFADs to be installed in the homes of our seniors.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00094",
-     "speaker": "Mr Goh Pei Ming",
-     "attributed": true,
-     "text": "This is subsidised under the Enhancement for Active Seniors Programme.",
      "added_for_context": false
     }
    ]
@@ -230,14 +230,14 @@
    "coverage": 0.5455,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:39:46"
+   "checked_at": "2026-09-19T22:53:29"
   },
   "usage": {
    "calls": 6,
-   "prompt_tokens": 5504,
-   "completion_tokens": 682,
+   "prompt_tokens": 5505,
+   "completion_tokens": 686,
    "estimated": false,
-   "cost_usd": 0.000962
+   "cost_usd": 0.000963
   }
  }
 }

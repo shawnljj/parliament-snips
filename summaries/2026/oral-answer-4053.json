@@ -3,7 +3,7 @@
  "what_it_is": "Proportion of Social Service Agencies Paying Employees According to Social Service Sector Salary Guidelines",
  "sections": [
   {
-   "label": "Social service salary guidelines",
+   "label": "Social service salary guidelines review",
    "summary": "MSF reviews and raises social service salary guidelines, adjusts programme funding, and works with SSAs on salary adherence.",
    "sentences": [
     {
@@ -44,8 +44,8 @@
    ]
   },
   {
-   "label": "Wage adherence and turnover",
-   "summary": "No correlation study on wage adherence and turnover was done, but case load strongly affects possible turnover.",
+   "label": "Wage adherence and turnover study",
+   "summary": "No correlation or impact study on wage adherence and turnover has been done, but case load strongly affects possible turnover.",
    "sentences": [
     {
      "sid": "s00012",
@@ -71,8 +71,8 @@
    ]
   },
   {
-   "label": "Support for smaller communities",
-   "summary": "Smaller communities face overheads and smaller programme funding, so they are engaged regularly and can tap resources.",
+   "label": "Smaller communities overheads and resources",
+   "summary": "Smaller communities have overheads and smaller programme funding, so MSF engages them on resources and HR practices.",
    "sentences": [
     {
      "sid": "s00017",
@@ -127,14 +127,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:59:01"
+   "checked_at": "2026-09-19T22:28:14"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1418,
-   "completion_tokens": 175,
+   "completion_tokens": 184,
    "estimated": false,
-   "cost_usd": 0.000248
+   "cost_usd": 0.00025
   }
  }
 }

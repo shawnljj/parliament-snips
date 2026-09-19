@@ -3,8 +3,8 @@
  "what_it_is": "Moderating Shop Rental Increases in Heritage Precincts Such as Chinatown and Kampong Gelam",
  "sections": [
   {
-   "label": "Retail rents in historic districts",
-   "summary": "URA reports median retail rents in Kampong Gelam, Little India and Chinatown rose about 2% per annum over two years, comparable to Central Area retail and below nominal GDP growth.",
+   "label": "Historic district retail rents",
+   "summary": "URA reports median retail rents in Kampong Gelam, Little India and Chinatown rose about 2% annually over two years, comparable to Central Area retail and below nominal GDP growth.",
    "sentences": [
     {
      "sid": "s00005",
@@ -23,7 +23,7 @@
    ]
   },
   {
-   "label": "Heritage businesses task force measures",
+   "label": "Heritage business support measures",
    "summary": "The Inter-Agency Task Force for Heritage Businesses, Traditional Activities and Cultural Life introduced measures including marketing and business consultancy support under NHB's SG Heritage Business Scheme.",
    "sentences": [
     {
@@ -37,7 +37,7 @@
   },
   {
    "label": "Kampong Gelam lease rent increases",
-   "summary": "Most Kampong Gelam leases had moderate rent increases below nominal GDP growth and comparable to conventional Central Area retail spaces.",
+   "summary": "Most Kampong Gelam leases saw moderate rent increases below nominal GDP growth and comparable to conventional Central Area retail space increases.",
    "sentences": [
     {
      "sid": "s00021",
@@ -50,7 +50,7 @@
   },
   {
    "label": "Higher Kampong Gelam shophouse rents",
-   "summary": "While median Kampong Gelam shophouse rents rose moderately, a small proportion of leases signed between 2023 and 2025 saw increases of 25% or higher.",
+   "summary": "While median Kampong Gelam historic shophouse rents rose moderately, a small proportion of leases signed between 2023 and 2025 saw increases of 25% or higher.",
    "sentences": [
     {
      "sid": "s00027",
@@ -76,7 +76,7 @@
   },
   {
    "label": "URA controls in historic districts",
-   "summary": "URA has controls excluding non-heritage users such as fast food restaurants, supermarkets and new bars from core areas of Kampong Gelam, Chinatown and Little India.",
+   "summary": "URA has controls excluding non-heritage users like fast food restaurants, supermarkets and new bars from core areas of Kampong Gelam, Chinatown and Little India, and may review district borders and activities.",
    "sentences": [
     {
      "sid": "s00053",
@@ -171,14 +171,14 @@
    "coverage": 0.4545,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:25:39"
+   "checked_at": "2026-09-19T22:44:43"
   },
   "usage": {
    "calls": 6,
    "prompt_tokens": 5306,
-   "completion_tokens": 501,
+   "completion_tokens": 507,
    "estimated": false,
-   "cost_usd": 0.000883
+   "cost_usd": 0.000885
   }
  }
 }

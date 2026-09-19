@@ -3,8 +3,8 @@
  "what_it_is": "Barriers to Deploying Solar Panels in New Buildings, and Private Residential and Commercial Spaces",
  "sections": [
   {
-   "label": "Solar panel deployment barriers",
-   "summary": "The question asks about barriers to deploying solar panels in private residential and commercial spaces and whether more measures are being considered.",
+   "label": "Solar panels private buildings barriers",
+   "summary": "Singapore has reached two gigawatt-peak of installed solar capacity and targets three gigawatt-peak by 2030, with private residential solar installations rising from about 1,400 in 2020 to about 6,900 in 2025.",
    "sentences": [
     {
      "sid": "s00003",
@@ -19,12 +19,19 @@
      "attributed": true,
      "text": "We have achieved two gigawatt-peak of installed solar capacity island-wide and have set an increased target of three gigawatt-peak by 2030.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "For private residential buildings, the number with solar panels has increased more than four times in the last five years, from around 1,400 in 2020 to around 6,900 in 2025.",
+     "added_for_context": false
     }
    ]
   },
   {
    "label": "Grant support for building owners",
-   "summary": "Eligible building owners can receive grant support of up to 50% of energy improvement costs, capped at $1.2 million.",
+   "summary": "Eligible building owners can receive grant support of up to 50% of energy improvement works costs, capped at $1.2 million, depending on carbon abatement achieved.",
    "sentences": [
     {
      "sid": "s00011",
@@ -36,21 +43,8 @@
    ]
   },
   {
-   "label": "Electric cars and taxis benefited",
-   "summary": "As of March 2026, more than 55,000 electric cars and taxis have benefited from the EEAI.",
-   "sentences": [
-    {
-     "sid": "s00022",
-     "speaker": "Ms Gan Siow Huang",
-     "attributed": true,
-     "text": "As of March 2026, more than 55,000 electric cars and taxis have benefited from the EEAI.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Simplified fire safety for solar",
-   "summary": "Simplified fire safety requirements exempt more than half of solar panel installations on metal-roofed buildings, saving eligible business owners up to 30% on construction costs.",
+   "label": "Simplified fire safety solar requirements",
+   "summary": "Simplified fire safety requirements exempt more than half of solar panel installations on metal-roofed buildings, letting eligible business owners save up to 30% on total construction costs.",
    "sentences": [
     {
      "sid": "s00055",
@@ -62,8 +56,8 @@
    ]
   },
   {
-   "label": "MCST solar adoption and SkillsFuture",
-   "summary": "SkillsFuture Singapore partners Sembcorp Solar as a SkillsFuture Queen Bee, and feedback concerns MCST approval thresholds for solar adoption.",
+   "label": "MCST solar approval and training",
+   "summary": "SkillsFuture Singapore partners Sembcorp Solar as a SkillsFuture Queen Bee since 2024, and feedback was received on MCST concerns including the high approval threshold, with exploration of reducing it from 75% to possibly 50%.",
    "sentences": [
     {
      "sid": "s00060",
@@ -126,7 +120,7 @@
   "sentences_in_sections": 11,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 2,
-  "sections_total": 5,
+  "sections_total": 4,
   "selection_share": 0.1618,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -136,7 +130,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 5,
+   "sections_total": 4,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 11,
@@ -146,14 +140,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:56:13"
+   "checked_at": "2026-09-19T21:51:26"
   },
   "usage": {
    "calls": 4,
-   "prompt_tokens": 3824,
-   "completion_tokens": 310,
+   "prompt_tokens": 3839,
+   "completion_tokens": 323,
    "estimated": false,
-   "cost_usd": 0.000622
+   "cost_usd": 0.000628
   }
  }
 }

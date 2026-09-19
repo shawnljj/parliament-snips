@@ -3,8 +3,8 @@
  "what_it_is": "Strengthening Regulatory Regime for Nursing Homes",
  "sections": [
   {
-   "label": "MOH nursing home audits",
-   "summary": "MOH audits nursing homes and revokes licences when serious gaps are not rectified, as with Windsor Convalescent Home and LC Nursing Home.",
+   "label": "MOH nursing home regulatory oversight",
+   "summary": "MOH conducts audits, reviews and inspections of nursing homes, and escalates measures when gaps are serious and repeated, as in two licence revocations.",
    "sentences": [
     {
      "sid": "s00002",
@@ -44,8 +44,8 @@
    ]
   },
   {
-   "label": "Licence revocation and Vanguard",
-   "summary": "MOH revoked the two operators' licences when remediation was inadequate and arranged for Vanguard Healthcare to step in.",
+   "label": "Licence revocation and Vanguard Healthcare",
+   "summary": "When remediation efforts were inadequate or not sustained for two operators, MOH revoked their licences and arranged for Vanguard Healthcare to step in.",
    "sentences": [
     {
      "sid": "s00010",
@@ -57,8 +57,8 @@
    ]
   },
   {
-   "label": "Takeover, relocation, audit findings",
-   "summary": "MOH may take over operations or relocate residents, cannot coordinate private claims, and is asked to inform residents of audit findings.",
+   "label": "MOH takeover and private claims",
+   "summary": "MOH may take over operations or coordinate resident relocation, but cannot coordinate private claims against nursing homes as care is a contract.",
    "sentences": [
     {
      "sid": "s00017",
@@ -73,25 +73,31 @@
      "attributed": true,
      "text": "However, as the provision of care is a contract between the resident and the nursing home, MOH is unable to coordinate private claims from residents or their families against the nursing home.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Support for nursing homes",
+   "summary": "MOH supports nursing homes through manpower training grants and other support, raising collective standards of care and professionalism across the sector.",
+   "sentences": [
     {
-     "sid": "s00020",
-     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "sid": "s00024",
+     "speaker": "Mr Tan Kiat How",
      "attributed": true,
-     "text": "My third question is, for the transparency and welfare of residents, will MOH reconsider its stance of not informing residents and their family about audit findings before any regulatory action is confirmed?",
+     "text": "To his point about supporting nursing homes, we do support our nursing homes through different support from manpower training grants to other support for nursing homes, raising the collective standard of care and professionalism across the whole nursing home sector.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Informing families of lapses",
-   "summary": "MOH's first priority is ensuring improvements are done, lapses rectified and residents' safety not endangered.",
+   "label": "Information for caregivers and families",
+   "summary": "MOH is continually looking at how to provide meaningful information for caregivers and family members to make a decision.",
    "sentences": [
     {
-     "sid": "s00026",
+     "sid": "s00033",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
-     "text": "Thirdly, on informing the family members, MOH's first priority is to make sure those improvements are done, lapses are rectified and to make sure nothing endangers the residents' safety.",
+     "text": "MOH is continually looking at how we can provide meaningful information for caregivers and family members to make a decision.",
      "added_for_context": false
     }
    ]
@@ -113,7 +119,7 @@
   "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 2,
-  "sections_total": 4,
+  "sections_total": 5,
   "selection_share": 0.2941,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -123,24 +129,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 4,
+   "sections_total": 5,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 10,
    "sentences_selected": 10,
-   "turns_cited": 3,
+   "turns_cited": 2,
    "turns_total": 5,
-   "coverage": 0.6,
+   "coverage": 0.4,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:51:54"
+   "checked_at": "2026-09-19T21:48:36"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1901,
-   "completion_tokens": 239,
+   "prompt_tokens": 1893,
+   "completion_tokens": 287,
    "estimated": false,
-   "cost_usd": 0.000333
+   "cost_usd": 0.000345
   }
  }
 }

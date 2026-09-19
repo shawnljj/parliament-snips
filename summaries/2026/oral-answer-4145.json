@@ -3,8 +3,8 @@
  "what_it_is": "Efficient Use of EV Charging Infrastructure Located in Different Premises Across Different Times of Day",
  "sections": [
   {
-   "label": "EV charging utilisation and deployment",
-   "summary": "The Ministry deploys EV chargers with demand, monitors utilisation, and notes operators' idle fees and off-peak pricing.",
+   "label": "EV charging facility utilisation",
+   "summary": "EV chargers are deployed with growing demand, monitored closely, and more added when utilisation is high, with idle fees and off-peak pricing by operators.",
    "sentences": [
     {
      "sid": "s00001",
@@ -51,8 +51,8 @@
    ]
   },
   {
-   "label": "Car park level utilisation monitoring",
-   "summary": "Utilisation is monitored for the car park rather than individual chargers, to assess whether charging provision is sufficient.",
+   "label": "Car park utilisation monitoring",
+   "summary": "Utilisation is monitored for the car park rather than at individual charger level, as chargers are grouped in clusters.",
    "sentences": [
     {
      "sid": "s00016",
@@ -71,8 +71,8 @@
    ]
   },
   {
-   "label": "Electrical capacity upgrades and mandates",
-   "summary": "The Ministry is exploring electrical capacity upgrades with MTI and EMA, and will consider mandates after other possibilities.",
+   "label": "Electrical capacity upgrades exploration",
+   "summary": "The Ministry is exploring electrical capacity upgrades with MTI and EMA, and will consider mandating measures after other possibilities are exhausted.",
    "sentences": [
     {
      "sid": "s00023",
@@ -127,14 +127,14 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:57:00"
+   "checked_at": "2026-09-19T21:51:53"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1578,
-   "completion_tokens": 182,
+   "completion_tokens": 190,
    "estimated": false,
-   "cost_usd": 0.000272
+   "cost_usd": 0.000274
   }
  }
 }

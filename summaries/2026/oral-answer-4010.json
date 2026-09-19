@@ -23,8 +23,8 @@
    ]
   },
   {
-   "label": "Wait times vary by centre",
-   "summary": "Average wait times vary by type of Day Activity Centre, and larger centres with more facilities can have waits of five years or more.",
+   "label": "Varying DAC wait times",
+   "summary": "Average wait time varies by DAC type, and some larger centres with more facilities can have waits of five years or more.",
    "sentences": [
     {
      "sid": "s00006",
@@ -43,8 +43,8 @@
    ]
   },
   {
-   "label": "Fee caps and family costs",
-   "summary": "Fee caps were announced less than two years ago; families earning $2,800 or less have costs managed, while those earning more can pay up to $1,900.",
+   "label": "DAC fee caps and costs",
+   "summary": "Fee caps were announced under two years ago; families earning $2,800 or less have costs managed, while those earning more can pay up to $1,900.",
    "sentences": [
     {
      "sid": "s00013",
@@ -63,8 +63,8 @@
    ]
   },
   {
-   "label": "Community living and support programmes",
-   "summary": "Pilots include the Enabled Living Programme, Home Support Programme starting second half of this year, three Enabling Services Hubs, and the Enabling Skills for Life Programme.",
+   "label": "Enabled Living and Home Support pilots",
+   "summary": "Pilots include the Enabled Living Programme and the Home Support Programme, which will start in the second half of this year.",
    "sentences": [
     {
      "sid": "s00029",
@@ -72,19 +72,18 @@
      "attributed": true,
      "text": "Pilots like the Enabled Living Programme, the Home Support Programme, which will start in the second half of this year.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "ESHs and Enabling Skills for Life",
+   "summary": "More ESHs will be set up over the next few years for social activities, caregiver support and referrals, alongside the Enabling Skills for Life Programme.",
+   "sentences": [
     {
-     "sid": "s00030",
+     "sid": "s00032",
      "speaker": "Mr Eric Chua",
      "attributed": true,
-     "text": "These provide community living options for persons with disabilities and special needs.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00031",
-     "speaker": "Mr Eric Chua",
-     "attributed": true,
-     "text": "And then, there is the Enabling Services Hub (ESH), for which we have set up three across the island now.",
+     "text": "Progressively over the next few years we will be setting up more of these ESHs to make sure that we can provide community connections through the provision of social activities, caregiver support, as well as referral services.",
      "added_for_context": false
     },
     {
@@ -104,7 +103,7 @@
    ]
   },
   {
-   "label": "Increasing DAC spaces by 2030",
+   "label": "500 more DAC spaces by 2030",
    "summary": "DAC spaces will increase by 500 over the next few years by 2030, with readiness to ramp up more if assessed need arises.",
    "sentences": [
     {
@@ -129,12 +128,12 @@
    "oral-answer-4010"
   ],
   "sentences_total": 47,
-  "sentences_selected": 12,
-  "sentences_in_sections": 12,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 4,
-  "sections_total": 5,
-  "selection_share": 0.2553,
+  "sentences_added_for_context": 3,
+  "sections_total": 6,
+  "selection_share": 0.234,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -143,24 +142,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 5,
+   "sections_total": 6,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 12,
-   "sentences_selected": 12,
+   "sentences_published": 11,
+   "sentences_selected": 11,
    "turns_cited": 4,
    "turns_total": 7,
    "coverage": 0.5714,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:21:22"
+   "checked_at": "2026-09-19T22:41:21"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2836,
-   "completion_tokens": 320,
+   "prompt_tokens": 2844,
+   "completion_tokens": 365,
    "estimated": false,
-   "cost_usd": 0.000487
+   "cost_usd": 0.0005
   }
  }
 }

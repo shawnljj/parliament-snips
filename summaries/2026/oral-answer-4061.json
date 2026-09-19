@@ -16,8 +16,8 @@
    ]
   },
   {
-   "label": "Stricter sentences for motorists questioned",
-   "summary": "A Member asks authorities to consider that harsher punishment for a motorist may not always be fair if the cyclist was blatantly non-compliant with the law.",
+   "label": "Stricter sentences for motorists",
+   "summary": "The Member asks authorities to consider that harsher punishment for a motorist may not always be fair if the cyclist was blatantly non-compliant with the law.",
    "sentences": [
     {
      "sid": "s00005",
@@ -29,8 +29,8 @@
    ]
   },
   {
-   "label": "Holistic culpability and equal enforcement",
-   "summary": "TP assesses culpability holistically in traffic cases, and cyclists and e-bike users are treated like motorised vehicles for traffic rules and enforcement.",
+   "label": "Holistic culpability assessment in traffic cases",
+   "summary": "TP assesses culpability holistically when preferring charges, so no road user type is blamed disproportionately, and cyclists and e-bike users are treated like motorised vehicles.",
    "sentences": [
     {
      "sid": "s00009",
@@ -106,14 +106,14 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:41:47"
+   "checked_at": "2026-09-19T22:18:42"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1401,
-   "completion_tokens": 206,
+   "completion_tokens": 210,
    "estimated": false,
-   "cost_usd": 0.000254
+   "cost_usd": 0.000255
   }
  }
 }

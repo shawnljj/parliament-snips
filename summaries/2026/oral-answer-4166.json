@@ -16,8 +16,8 @@
    ]
   },
   {
-   "label": "SIMFONI model training and safeguards",
-   "summary": "SIMFONI models use international data adapted with local de-identified patient data, with an independent unit testing before deployment.",
+   "label": "SIMFONI model adaptation and safeguards",
+   "summary": "SIMFONI models are adapted from international models using de-identified local data, with an independent unit testing before deployment.",
    "sentences": [
     {
      "sid": "s00006",
@@ -43,28 +43,28 @@
    ]
   },
   {
-   "label": "Using locally trained AI tools",
-   "summary": "The passage urges finding the right AI tool trained in the local context, considering security and de-identified patient data in Singapore.",
+   "label": "Healthcare use-case approach",
+   "summary": "Working in healthcare, especially a public essential service, requires a careful use-case approach.",
    "sentences": [
     {
-     "sid": "s00021",
+     "sid": "s00017",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
-     "text": "Let us see what AI can do to solve some of these problems.",
+     "text": "Because those of us who work in healthcare, you know it is not simple, especially a public essential service.",
      "added_for_context": true
     },
     {
-     "sid": "s00022",
+     "sid": "s00018",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
-     "text": "And when you can find the right AI tool, make sure it is trained in the local context, taking into account security, de-identified data, patient data that is in Singapore.",
+     "text": "We have to take a very careful use-case approach.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Balanced approach to healthcare AI data",
-   "summary": "The passage argues for a balanced approach using data with precautions, noting TRUST data has been used incident-free.",
+   "label": "Balanced approach to data and safeguards",
+   "summary": "A balanced approach is needed: use data with precautions, as TRUST data has been used incident-free, rather than distrusting the system.",
    "sentences": [
     {
      "sid": "s00040",
@@ -147,14 +147,14 @@
    "coverage": 0.4286,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:36:35"
+   "checked_at": "2026-09-19T21:41:57"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2622,
-   "completion_tokens": 244,
+   "prompt_tokens": 2604,
+   "completion_tokens": 241,
    "estimated": false,
-   "cost_usd": 0.000435
+   "cost_usd": 0.000432
   }
  }
 }

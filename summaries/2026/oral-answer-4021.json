@@ -17,7 +17,7 @@
   },
   {
    "label": "PSI readings and haze measures",
-   "summary": "24-hour PSI readings stayed good to moderate this year with a peak of 69 on 8 February, so the haze has not warranted investigation under the Transboundary Haze Pollution Act.",
+   "summary": "24-hour PSI readings stayed good to moderate this year, peaking at 69 on 8 February, so the haze has not warranted investigation under the Transboundary Haze Pollution Act.",
    "sentences": [
     {
      "sid": "s00012",
@@ -43,48 +43,8 @@
    ]
   },
   {
-   "label": "Domestic regulations and preparedness responses",
-   "summary": "The speaker shares concern for Singaporeans' well-being and cites domestic regulations like the Transboundary Haze Pollution Act and a scientifically-based hierarchy of responses ready to activate.",
-   "sentences": [
-    {
-     "sid": "s00028",
-     "speaker": "Ms Grace Fu Hai Yien",
-     "attributed": true,
-     "text": "I do share the Member's concern for Singaporeans' well-being and indeed, that has been an issue for us to pay significant attention to, both in terms of getting our own domestic regulations in place, such as the Transboundary Haze Pollution Act, as well as to work very closely with our own agencies for preparedness.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00029",
-     "speaker": "Ms Grace Fu Hai Yien",
-     "attributed": true,
-     "text": "We do not wish it to recur, but if it does, we believe that we have developed a scientifically-based hierarchy of responses, catering to different segments of the society and we stand ready to activate them.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "No financial assistance from Singapore",
-   "summary": "They have capabilities and are aware of their own accountability to their people, so there is no discussion about financial assistance from Singapore.",
-   "sentences": [
-    {
-     "sid": "s00044",
-     "speaker": "Ms Grace Fu Hai Yien",
-     "attributed": true,
-     "text": "They have capabilities and they are aware of their own accountability to their people.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00045",
-     "speaker": "Ms Grace Fu Hai Yien",
-     "attributed": true,
-     "text": "So, there is no discussion about financial assistance from Singapore.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Four companies under investigation",
-   "summary": "An investigation is open at this moment, with four companies under investigation.",
+   "summary": "An investigation is open at this moment with four companies under investigation, and work continues to reach a conclusion.",
    "sentences": [
     {
      "sid": "s00055",
@@ -92,19 +52,26 @@
      "attributed": true,
      "text": "The second supplementary question, we have an investigation that is open at this moment, with four companies under investigation.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00056",
+     "speaker": "Ms Grace Fu Hai Yien",
+     "attributed": true,
+     "text": "We will continue to work hard to get to some conclusion on these investigations.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Threshold not reached, monitoring closely",
-   "summary": "The threshold for a haze pollution episode has not been reached, but monitoring continues and plans will be activated if close to that threshold.",
+   "label": "Haze threshold not reached",
+   "summary": "The threshold for a haze pollution episode has not been reached, but monitoring continues and plans will be activated if the threshold is approached.",
    "sentences": [
     {
      "sid": "s00059",
      "speaker": "Ms Grace Fu Hai Yien",
      "attributed": true,
      "text": "As I have explained earlier in my reply and also in my reply to the supplementary questions, we have not reached the threshold for a haze pollution episode.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00060",
@@ -128,12 +95,12 @@
    "oral-answer-4021"
   ],
   "sentences_total": 61,
-  "sentences_selected": 11,
-  "sentences_in_sections": 11,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 3,
-  "sections_total": 6,
-  "selection_share": 0.1803,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.1311,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -142,24 +109,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 6,
+   "sections_total": 4,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 11,
-   "sentences_selected": 11,
-   "turns_cited": 5,
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
    "turns_total": 13,
-   "coverage": 0.3846,
+   "coverage": 0.2308,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:19:15"
+   "checked_at": "2026-09-19T22:39:42"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 3141,
-   "completion_tokens": 353,
+   "prompt_tokens": 3016,
+   "completion_tokens": 257,
    "estimated": false,
-   "cost_usd": 0.000539
+   "cost_usd": 0.000494
   }
  }
 }

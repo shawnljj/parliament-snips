@@ -33,15 +33,15 @@
   "coverage": 0.129,
   "min_coverage_required": 0.15,
   "min_turns_required": 1,
-  "checked_at": "2026-09-19T04:18:18"
+  "checked_at": "2026-09-19T22:04:30"
  },
  "attempt": {
   "title": "Impact of War in Iran on Singaporeans and Singapore's Businesses, Trade, Supply Chains, LNG Stockpiles and Prices",
   "what_it_is": "Impact of War in Iran on Singaporeans and Singapore's Businesses, Trade, Supply Chains, LNG Stockpiles and Prices",
   "sections": [
    {
-    "label": "Electricity price increases and safeguards",
-    "summary": "Asks about projected electricity price increases over six to 12 months and measures to shield households from sudden spikes.",
+    "label": "Electricity price projections and household safeguards",
+    "summary": "Asks about electricity price projections over six to 12 months and measures to shield households from sudden price spikes.",
     "sentences": [
      {
       "sid": "s00002",
@@ -60,8 +60,8 @@
     ]
    },
    {
-    "label": "Qatar LNG damage and supply",
-    "summary": "Asks whether damage to Qatar's Ras Laffan LNG facilities affects Singapore's supply, alternatives, and downstream industries.",
+    "label": "Qatar LNG damage and Singapore supply",
+    "summary": "Asks whether damage to Qatar's Ras Laffan LNG facilities affects Singapore's LNG supply, alternatives, and downstream industries.",
     "sentences": [
      {
       "sid": "s00018",
@@ -73,21 +73,21 @@
     ]
    },
    {
-    "label": "Middle East conflict macroeconomic impact",
-    "summary": "Asks for a holistic assessment of the Middle East conflict's macroeconomic impact on Singapore under baseline and adverse scenarios.",
+    "label": "Fuel volatility impact on SMEs",
+    "summary": "Asks how the Ministry monitors fuel price volatility on SMEs and whether targeted temporary support will be considered.",
     "sentences": [
      {
-      "sid": "s00021",
-      "speaker": "Mr Saktiandi Supaat",
+      "sid": "s00029",
+      "speaker": "Dr Charlene Chen",
       "attributed": true,
-      "text": "asked the Deputy Prime Minister and Minister for Trade and Industry whether the Government can provide a holistic assessment of the macroeconomic impact of the Middle East conflict thus far on Singapore, including (i) inflation pass-through (ii) growth risks (iii) household cost pressures and (iv) policy responses, under both baseline and adverse energy shock scenarios.",
+      "text": "asked the Deputy Prime Minister and Minister for Trade and Industry in view of the Middle East conflict (a) how is the Ministry monitoring the impact of fuel price volatility on Small and Medium Enterprises (SMEs) with high transport and energy costs; and (b) whether the Ministry will consider targeted temporary support, including energy grants or enhancements to the Energy Efficiency Grant (EEG), to help businesses manage cost spikes and mitigate downstream impact on consumers.",
       "added_for_context": false
      }
     ]
    },
    {
-    "label": "Oil and LNG import reliance",
-    "summary": "Asks what proportion of Singapore's crude oil and LNG imports transit the Strait of Hormuz and contingency plans.",
+    "label": "Oil and LNG import stockpiles",
+    "summary": "Asks what proportion of crude oil and LNG imports transit the Strait of Hormuz, stockpile days, and contingency plans.",
     "sentences": [
      {
       "sid": "s00032",
@@ -99,8 +99,8 @@
     ]
    },
    {
-    "label": "Fuel prices affecting drivers",
-    "summary": "Asks how rising fuel prices affect SMEs and vehicle-dependent Singaporeans, and what support and safeguards exist.",
+    "label": "Fuel prices affecting drivers and riders",
+    "summary": "Asks how rising fuel prices affect SMEs and vehicle-dependent Singaporeans, what support exists, and safeguards against excessive pass-through.",
     "sentences": [
      {
       "sid": "s00036",
@@ -113,7 +113,7 @@
    },
    {
     "label": "Food reserves and urea transit",
-    "summary": "Asks whether strategic food reserves meet targets and whether urea and sulphur transit disruption affects food import prices.",
+    "summary": "Asks whether strategic food reserves meet targets, whether urea and sulphur transit affects food import prices, and measures since 2 March 2026.",
     "sentences": [
      {
       "sid": "s00055",
@@ -174,14 +174,14 @@
     "coverage": 0.129,
     "min_coverage_required": 0.15,
     "min_turns_required": 1,
-    "checked_at": "2026-09-19T04:18:18"
+    "checked_at": "2026-09-19T22:04:30"
    },
    "usage": {
     "calls": 6,
-    "prompt_tokens": 6614,
-    "completion_tokens": 379,
+    "prompt_tokens": 6636,
+    "completion_tokens": 400,
     "estimated": false,
-    "cost_usd": 0.001032
+    "cost_usd": 0.001041
    }
   }
  }

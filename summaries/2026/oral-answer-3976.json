@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "CPF Investment Scheme funds",
-   "summary": "Members who want higher returns can invest CPF savings through low-cost funds under the CPF Investment Scheme.",
+   "summary": "Members wanting higher returns can invest CPF savings through low-cost funds under the CPF Investment Scheme.",
    "sentences": [
     {
      "sid": "s00002",
@@ -30,7 +30,7 @@
   },
   {
    "label": "Safeguarding retirement adequacy",
-   "summary": "The penultimate objective has always been to safeguard retirement adequacy.",
+   "summary": "The speaker says the penultimate objective has always been to safeguard retirement adequacy.",
    "sentences": [
     {
      "sid": "s00012",
@@ -43,7 +43,7 @@
   },
   {
    "label": "Market downturn and retirement adequacy",
-   "summary": "An investor who liquidated investments for retirement during a market downturn could see a significant drop in asset value affecting retirement adequacy.",
+   "summary": "An investor liquidating investments during a market downturn could see asset value drop and retirement adequacy affected; details are in final stages.",
    "sentences": [
     {
      "sid": "s00015",
@@ -69,8 +69,8 @@
    ]
   },
   {
-   "label": "Lifetime Retirement Investment Scheme details",
-   "summary": "Details of the Lifetime Retirement Investment Scheme are close to being finalised and will be announced at the appropriate time.",
+   "label": "Lifetime Retirement Investment Scheme update",
+   "summary": "The Lifetime Retirement Investment Scheme was accepted by the Government in 2016, and the speaker says details are close to being finalised.",
    "sentences": [
     {
      "sid": "s00022",
@@ -85,32 +85,25 @@
      "attributed": true,
      "text": "I have shared earlier on that we are close to finalising the details.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00024",
-     "speaker": "Dr Tan See Leng",
-     "attributed": true,
-     "text": "We will announce it at the appropriate time.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00025",
-     "speaker": "Dr Tan See Leng",
-     "attributed": true,
-     "text": "We have taken guidance from the CPF Advisory Panel and we are in the process of studying how we can incorporate some of the features, because, obviously, a certain time has passed and the markets have also evolved.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Product weightages on equities and bonds",
-   "summary": "The product's construct will take into account different weightages on global equities versus bonds.",
+   "label": "Product construct and glide path",
+   "summary": "The product will weigh global equities against bonds and follow a glide path depending on when the member enters.",
    "sentences": [
     {
      "sid": "s00029",
      "speaker": "Dr Tan See Leng",
      "attributed": true,
      "text": "The construct of the product will take into account different weightages on global equities versus bonds.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00030",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "It will also be a glide path, depending on when the member would enter into the particular product that we are looking at.",
      "added_for_context": false
     }
    ]
@@ -128,12 +121,12 @@
    "oral-answer-3976"
   ],
   "sentences_total": 33,
-  "sentences_selected": 11,
-  "sentences_in_sections": 11,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 3,
+  "sentences_added_for_context": 2,
   "sections_total": 6,
-  "selection_share": 0.3333,
+  "selection_share": 0.303,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -145,21 +138,21 @@
    "sections_total": 6,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 11,
-   "sentences_selected": 11,
+   "sentences_published": 10,
+   "sentences_selected": 10,
    "turns_cited": 5,
    "turns_total": 8,
    "coverage": 0.625,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:28:19"
+   "checked_at": "2026-09-19T22:46:37"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 2025,
-   "completion_tokens": 302,
+   "prompt_tokens": 1998,
+   "completion_tokens": 311,
    "estimated": false,
-   "cost_usd": 0.000368
+   "cost_usd": 0.000367
   }
  }
 }

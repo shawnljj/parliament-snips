@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Citaro bus fire investigations",
-   "summary": "Investigations found Citaro bus fires were caused by failures of different parts within their useful life, with no common cause.",
+   "summary": "Investigations found Citaro bus fires were caused by failures of different parts within their recommended useful life, with no common cause.",
    "sentences": [
     {
      "sid": "s00004",
@@ -44,8 +44,8 @@
    ]
   },
   {
-   "label": "Causes of three bus fires",
-   "summary": "Three fires in the first half of the year had different causes: a propeller shaft failure and a turbo-charger failure.",
+   "label": "Three fires different causes",
+   "summary": "Three fires in the first half of the year had different causes, involving a propeller shaft and a turbo-charger.",
    "sentences": [
     {
      "sid": "s00014",
@@ -107,12 +107,12 @@
    "coverage": 0.3333,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:36:54"
+   "checked_at": "2026-09-19T21:42:08"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1458,
-   "completion_tokens": 144,
+   "completion_tokens": 142,
    "estimated": false,
    "cost_usd": 0.000244
   }

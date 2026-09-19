@@ -3,8 +3,8 @@
  "what_it_is": "Monitoring and Enforcement of Noise Threshold Compliance of Construction Noise near Residential Estates",
  "sections": [
   {
-   "label": "Noise enforcement and regulation review",
-   "summary": "NEA enforces against contractors exceeding permissible noise levels, with stricter action for repeated or longer offences, and reviews the regulations.",
+   "label": "NEA noise enforcement action",
+   "summary": "NEA enforces against contractors exceeding permissible noise levels, with more severe action for repeated or longer offences, and reviews regulations.",
    "sentences": [
     {
      "sid": "s00002",
@@ -23,8 +23,8 @@
    ]
   },
   {
-   "label": "Psycho-acoustic factors and WHO guidelines",
-   "summary": "Psycho-acoustic factors are referenced from WHO guidelines, which currently exclude them, though the science is under review.",
+   "label": "Psycho-acoustic factors WHO guidelines",
+   "summary": "Psycho-acoustic factors reference WHO guidelines, which currently exclude them, though this science is under review.",
    "sentences": [
     {
      "sid": "s00007",
@@ -36,8 +36,8 @@
    ]
   },
   {
-   "label": "Penalties for non-compliance",
-   "summary": "Those who fail to comply with the regulations are guilty of an offence, liable to fines up to $40,000 and further daily fines.",
+   "label": "Penalties for noise regulation offences",
+   "summary": "Failure to comply with regulations is an offence, liable to fines up to $40,000 and further fines up to $1,000 daily for continuing offences.",
    "sentences": [
     {
      "sid": "s00011",
@@ -63,16 +63,9 @@
    ]
   },
   {
-   "label": "Reviewing supervision and noise framework",
-   "summary": "The framework will be reviewed to balance public health protection with necessary work, including studying Lmax and WHO guidelines.",
+   "label": "Noise framework averaging and Lmax",
+   "summary": "The framework balances public health protection with necessary work, using five-minute and 12-hour averaging, and Lmax can be studied with WHO guidelines.",
    "sentences": [
-    {
-     "sid": "s00020",
-     "speaker": "Dr Janil Puthucheary",
-     "attributed": true,
-     "text": "Indeed, we will consider and review how to best provide the correct supervision, regulatory framework and enforcement.",
-     "added_for_context": false
-    },
     {
      "sid": "s00021",
      "speaker": "Dr Janil Puthucheary",
@@ -92,7 +85,7 @@
      "speaker": "Dr Janil Puthucheary",
      "attributed": true,
      "text": "The current framework requires an average sound level over five minutes and she has asked us about Lmax, which means, not taking into account the time span for a person to be exposed to that sound, but the absolute level for the sound exposure.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00025",
@@ -116,12 +109,12 @@
    "oral-answer-3973"
   ],
   "sentences_total": 26,
-  "sentences_selected": 11,
-  "sentences_in_sections": 11,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 3,
+  "sentences_added_for_context": 2,
   "sections_total": 4,
-  "selection_share": 0.4231,
+  "selection_share": 0.3846,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -133,19 +126,19 @@
    "sections_total": 4,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 11,
-   "sentences_selected": 11,
+   "sentences_published": 10,
+   "sentences_selected": 10,
    "turns_cited": 3,
    "turns_total": 6,
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:28:45"
+   "checked_at": "2026-09-19T22:46:55"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1768,
-   "completion_tokens": 239,
+   "prompt_tokens": 1748,
+   "completion_tokens": 248,
    "estimated": false,
    "cost_usd": 0.000314
   }

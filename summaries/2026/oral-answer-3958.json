@@ -3,8 +3,8 @@
  "what_it_is": "Raising Awareness on Benefits of Strength Training for Seniors",
  "sections": [
   {
-   "label": "HPB and SportSG strength training initiatives",
-   "summary": "HPB and SportSG run initiatives including guidelines, outreach, gym workshops, community programmes and Active Ageing Centre expansion to encourage senior strength training.",
+   "label": "HPB SportSG muscle loss initiatives",
+   "summary": "HPB and SportSG run initiatives including physical activity guidelines, outreach, gym workshops, community programmes and expanded community nodes to address muscle loss.",
    "sentences": [
     {
      "sid": "s00003",
@@ -26,19 +26,25 @@
      "attributed": true,
      "text": "A significant development is the expansion of community nodes, such as the Active Ageing Centre (AAC) network.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Tracking functional outcomes of programmes",
+   "summary": "The question asks whether the Ministry has tracked functional outcomes of seniors in cited programmes, such as ActiveSG's CALM, and whether their functional performance improved.",
+   "sentences": [
     {
-     "sid": "s00006",
-     "speaker": "Ms Rahayu Mahzam",
+     "sid": "s00010",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
      "attributed": true,
-     "text": "With this expansion, plus the Healthy 365 app, we can better reach out to seniors and engage them in strength training exercises.",
+     "text": "One, can the Minister of State share whether the Ministry has tracked functional outcomes of those who have been involved in the programmes that she has cited for seniors and for some programmes that exist for younger seniors too, for example, ActiveSG's Combat Age-related Loss of Muscle (CALM), and whether there has been a significant benefit in their functional performance since?",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "ActiveSG gym trainers and programmes",
-   "summary": "ActiveSG gyms have onsite trainers willing to support and encourage equipment users, plus introductory programmes for those unfamiliar with gym equipment.",
+   "summary": "ActiveSG gyms have onsite trainers willing to support and encourage equipment users, and introductory programmes exist for those unfamiliar with gym equipment.",
    "sentences": [
     {
      "sid": "s00019",
@@ -57,41 +63,21 @@
    ]
   },
   {
-   "label": "North needs being looked into",
-   "summary": "Attention is being given to the needs in the North, and this can be looked into without pre-empting the written PQ answer.",
+   "label": "North needs and written PQ",
+   "summary": "Attention is being given to needs in the North, and the speaker does not want to pre-empt the written PQ answer but will look into it.",
    "sentences": [
     {
      "sid": "s00023",
      "speaker": "Ms Rahayu Mahzam",
      "attributed": true,
      "text": "For the North, attention is being given to see how we can look at the needs.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00024",
      "speaker": "Ms Rahayu Mahzam",
      "attributed": true,
      "text": "I do not want to pre-empt the answer to the written PQ, but we can definitely look into this.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Gaps and Healthy 365 app",
-   "summary": "Gaps could be examined and improved, and the Healthy 365 app offers a good starting point for residents seeking guidance.",
-   "sentences": [
-    {
-     "sid": "s00027",
-     "speaker": "Ms Rahayu Mahzam",
-     "attributed": true,
-     "text": "Perhaps, we could look at where the gaps are and look at how we can improve on that.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00028",
-     "speaker": "Ms Rahayu Mahzam",
-     "attributed": true,
-     "text": "I would encourage those of your residents whom you say are not very familiar and are lethargic, and they do want to seek some guidance, the Healthy 365 app does provide a very good starting point and perhaps, that could be an initial introduction to a change in healthy living of the residents.",
      "added_for_context": false
     }
    ]
@@ -109,12 +95,12 @@
    "oral-answer-3958"
   ],
   "sentences_total": 28,
-  "sentences_selected": 10,
-  "sentences_in_sections": 10,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
+  "sentences_added_for_context": 0,
   "sections_total": 4,
-  "selection_share": 0.3571,
+  "selection_share": 0.2857,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -126,21 +112,21 @@
    "sections_total": 4,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 10,
-   "sentences_selected": 10,
-   "turns_cited": 2,
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
    "turns_total": 7,
-   "coverage": 0.2857,
+   "coverage": 0.4286,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:35:02"
+   "checked_at": "2026-09-19T22:50:19"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1868,
-   "completion_tokens": 246,
+   "prompt_tokens": 1834,
+   "completion_tokens": 253,
    "estimated": false,
-   "cost_usd": 0.00033
+   "cost_usd": 0.000328
   }
  }
 }

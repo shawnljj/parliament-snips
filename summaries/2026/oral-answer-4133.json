@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Heat wave criteria and advisories",
-   "summary": "Singapore declares a heat wave when daily maximum temperature averages at least 35°C for three consecutive days and daily mean is at least 29°C.",
+   "summary": "Singapore declares a heat wave at 35°C averaged over three days with 29°C mean, and the Government runs ongoing heat stress management initiatives.",
    "sentences": [
     {
      "sid": "s00002",
@@ -51,7 +51,7 @@
    ]
   },
   {
-   "label": "Mercury Taskforce coordination",
+   "label": "Mercury Taskforce agency coordination",
    "summary": "The Mercury Taskforce brings together more than 30 public sector agencies to look at sector-specific and domain-specific response plans.",
    "sentences": [
     {
@@ -71,22 +71,23 @@
    ]
   },
   {
-   "label": "Number of weather stations",
-   "summary": "The speaker recalls that there are 19 weather stations.",
+   "label": "Heat stations and Heat Resilience Policy Office",
+   "summary": "All stations are used for air temperature reporting, with 27 Wet-Bulb Globe Temperature stations, and the Heat Resilience Policy Office will coordinate whole-of-Government heat resilience plans.",
    "sentences": [
     {
-     "sid": "s00031",
+     "sid": "s00032",
      "speaker": "Dr Janil Puthucheary",
      "attributed": true,
-     "text": "From memory, I think we have 19 weather stations.",
+     "text": "Historically, not all of them were used for heat reporting, but today, all of them are, for air temperature.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00033",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "And then, we have, if I recall, another 27 Wet-Bulb Globe Temperature stations across Singapore.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Heat Resilience Policy Office coordination",
-   "summary": "The Heat Resilience Policy Office announced in the Committee of Supply will coordinate across the whole-of-Government on heat resilience action plans.",
-   "sentences": [
+    },
     {
      "sid": "s00035",
      "speaker": "Dr Janil Puthucheary",
@@ -109,12 +110,12 @@
    "oral-answer-4133"
   ],
   "sentences_total": 36,
-  "sentences_selected": 10,
-  "sentences_in_sections": 10,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
-  "sections_total": 4,
-  "selection_share": 0.2778,
+  "sentences_added_for_context": 3,
+  "sections_total": 3,
+  "selection_share": 0.3056,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -123,24 +124,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 4,
+   "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 10,
-   "sentences_selected": 10,
+   "sentences_published": 11,
+   "sentences_selected": 11,
    "turns_cited": 2,
    "turns_total": 4,
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:59:05"
+   "checked_at": "2026-09-19T21:53:21"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 2089,
-   "completion_tokens": 226,
+   "prompt_tokens": 2121,
+   "completion_tokens": 209,
    "estimated": false,
-   "cost_usd": 0.000356
+   "cost_usd": 0.000355
   }
  }
 }

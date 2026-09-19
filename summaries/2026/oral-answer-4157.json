@@ -3,8 +3,8 @@
  "what_it_is": "Review of Speak Mandarin Campaign and Stance on Chinese Dialects",
  "sections": [
   {
-   "label": "Speak Mandarin Campaign launch",
-   "summary": "The Speak Mandarin Campaign, launched in 1979, promotes Mandarin as a common language across dialect backgrounds and supports the bilingual policy.",
+   "label": "Speak Mandarin Campaign evolution",
+   "summary": "The Speak Mandarin Campaign, launched in 1979, promotes Mandarin as a common language and has evolved to strengthen Singapore Chinese cultural identity and make learning Mandarin enjoyable.",
    "sentences": [
     {
      "sid": "s00007",
@@ -26,13 +26,14 @@
      "attributed": true,
      "text": "By simplifying the linguistic environment, it also gives our bilingual policy the best chance to succeed.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Campaign evolves to cultural identity",
-   "summary": "The campaign has evolved to strengthen Singapore Chinese cultural identity and make Mandarin learning fun, with more curriculum time in education.",
-   "sentences": [
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mr David Neo",
+     "attributed": true,
+     "text": "The Promote Mandarin Council, which comprises distinguished private and public individuals across all different sectors who are volunteers, regularly reviews the campaign to keep its framing, approach and objectives relevant and meaningful in Singapore's multicultural context.",
+     "added_for_context": false
+    },
     {
      "sid": "s00012",
      "speaker": "Mr David Neo",
@@ -46,19 +47,12 @@
      "attributed": true,
      "text": "So, hence the campaign has evolved from promoting Mandarin as a common language, to strengthening their appreciation for our Singapore Chinese cultural identity and making the learning of Mandarin fun and enjoyable.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00015",
-     "speaker": "Mr David Neo",
-     "attributed": true,
-     "text": "In education, the Ministry of Social and Family Development and the Ministry of Education are setting aside more curriculum time to expose young Chinese students to Mandarin.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Dialect use decline and heritage",
-   "summary": "As English displaces mother tongues, dialect use declines, and dialect artistic materials are seen as heritage that deepens cultural appreciation.",
+   "label": "Declining dialect use in Singapore",
+   "summary": "As English displaces mother tongues, dialect use in Singapore has declined, and dialect artistic materials are seen as heritage that deepens appreciation of cultural heritage.",
    "sentences": [
     {
      "sid": "s00019",
@@ -106,7 +100,7 @@
   "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 1,
-  "sections_total": 4,
+  "sections_total": 3,
   "selection_share": 0.3462,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -116,7 +110,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 4,
+   "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 9,
@@ -126,14 +120,14 @@
    "coverage": 0.2,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:52:03"
+   "checked_at": "2026-09-19T21:48:42"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1637,
-   "completion_tokens": 226,
+   "prompt_tokens": 1646,
+   "completion_tokens": 192,
    "estimated": false,
-   "cost_usd": 0.000292
+   "cost_usd": 0.000284
   }
  }
 }

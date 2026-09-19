@@ -3,8 +3,8 @@
  "what_it_is": "Mobile Network Dead Zones in MRT Network and Steps to Rectify Persistent Signal Gaps",
  "sections": [
   {
-   "label": "Mobile coverage in MRT tunnels",
-   "summary": "MNOs must meet IMDA 4G standards, including over 99% mobile coverage in MRT tunnels and stations, with results published online.",
+   "label": "MNO 4G MRT coverage standards",
+   "summary": "MNOs must meet IMDA 4G Quality of Service standards, including over 99% mobile coverage in MRT tunnels and stations, with results published online.",
    "sentences": [
     {
      "sid": "s00002",
@@ -86,14 +86,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:22:24"
+   "checked_at": "2026-09-19T22:06:45"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1026,
-   "completion_tokens": 131,
+   "completion_tokens": 137,
    "estimated": false,
-   "cost_usd": 0.00018
+   "cost_usd": 0.000182
   }
  }
 }

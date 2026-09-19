@@ -3,7 +3,20 @@
  "what_it_is": "Land Transport and Related Matters Bill",
  "sections": [
   {
-   "label": "OBU toll and parking payments",
+   "label": "OBU installation rate",
+   "summary": "More than 90% of vehicles have the OBU installed to date.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
+     "attributed": true,
+     "text": "To date, more than 90% of vehicles have the OBU installed.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "OBU toll and parking uses",
    "summary": "Clauses 59 to 64 simplify settlement processes and decriminalise missed ERP charges, currently an offence under the Road Traffic Act.",
    "sentences": [
     {
@@ -23,8 +36,8 @@
    ]
   },
   {
-   "label": "ERP 2.0 transition, no distance charging",
-   "summary": "The intent is a smooth transition so ERP 2.0 resembles ERP 1.0, with no distance-based charging in the immediate term.",
+   "label": "ERP 2.0 transition intent",
+   "summary": "The intent is a smooth transition similar to ERP 1.0, with no distance-based charging in the immediate term.",
    "sentences": [
     {
      "sid": "s00032",
@@ -43,8 +56,8 @@
    ]
   },
   {
-   "label": "OBU mandatory from January 2027",
-   "summary": "On 1 January 2027, when ERP 2.0 is fully rolled out and ERP 1.0 decommissioned, the OBU becomes mandatory for all Singapore-registered vehicles.",
+   "label": "OBU mandatory in 2027",
+   "summary": "On 1 January 2027, when ERP 2.0 is fully rolled out and ERP 1.0 decommissioned, the OBU will be mandatory for all Singapore-registered vehicles.",
    "sentences": [
     {
      "sid": "s00039",
@@ -56,28 +69,22 @@
    ]
   },
   {
-   "label": "Offence to tamper with OBUs",
-   "summary": "Tampering with or modifying OBUs without authorisation, and providing or advertising such services, will be an offence.",
+   "label": "Penalties for illegal modifications",
+   "summary": "Clauses 52 and 57 raise penalties for illegal vehicle alterations and related offences, with higher fines for repeat offenders.",
    "sentences": [
     {
-     "sid": "s00045",
+     "sid": "s00047",
      "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
      "attributed": true,
-     "text": "To safeguard the integrity of the ERP 2.0 system, it will be an offence to tamper with or modify OBUs without authorisation, and provide or advertise services on the OBU similarly without authorisation.",
+     "text": "For serious cases of deliberate non-compliance or misuse, the legislation provides for penalties of up to $20,000 and/or imprisonment of up to two years.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Higher penalties for illegal modifications",
-   "summary": "Clause 52 raises maximum penalties for illegal vehicle alterations to fines up to $20,000 and/or up to two years' jail, doubled for repeat offenders.",
-   "sentences": [
+    },
     {
      "sid": "s00049",
      "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
      "attributed": true,
      "text": "Today, there are over 1,000 cases of illegal vehicle modifications detected annually.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00050",
@@ -87,18 +94,12 @@
      "added_for_context": false
     },
     {
-     "sid": "s00051",
+     "sid": "s00052",
      "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
      "attributed": true,
-     "text": "Under the Bill, individuals can face fines up to $20,000 and/or imprisonment for a term not exceeding two years, with penalties doubled for repeat offenders.",
+     "text": "For non-individuals, first time offenders can be fined up to $40,000, and up to $80,000 for repeat offenders.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Clause 57 increases offender penalties",
-   "summary": "Clause 57 increases penalties to fines up to $20,000 and/or up to two years' jail for a first offence, doubled for repeat offenders.",
-   "sentences": [
+    },
     {
      "sid": "s00054",
      "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
@@ -109,8 +110,8 @@
    ]
   },
   {
-   "label": "Speed limit and scooter certification",
-   "summary": "Speed limit for mobility vehicles on public paths lowered to six kilometres an hour, and mobility scooter users must be certified to have a medical need.",
+   "label": "Mobility vehicle and scooter rules",
+   "summary": "Speed limit for mobility vehicles on public paths drops to six kilometres an hour, and mobility scooter users must be certified to have a medical need.",
    "sentences": [
     {
      "sid": "s00086",
@@ -129,8 +130,8 @@
    ]
   },
   {
-   "label": "Rules effective June 2026",
-   "summary": "The rules are intended to take effect from 1 June 2026 to give stakeholders transition time after the Bill.",
+   "label": "Rules start June 2026",
+   "summary": "The rules are intended to take effect from 1 June 2026 to give stakeholders transition time.",
    "sentences": [
     {
      "sid": "s00095",
@@ -142,8 +143,8 @@
    ]
   },
   {
-   "label": "Six km/h penalties and fines",
-   "summary": "From 1 June 2026, selling mobility vehicles with device speed limit above six kilometres an hour and riding above that speed on public paths carry penalties.",
+   "label": "Mobility vehicle speed limit penalties",
+   "summary": "From 1 June 2026, selling or riding mobility vehicles above six kilometres per hour carries penalties.",
    "sentences": [
     {
      "sid": "s00102",
@@ -170,7 +171,7 @@
   },
   {
    "label": "PMA dimension and weight limits",
-   "summary": "From 1 June 2026, PMAs must not exceed a width of 70 centimetres, length of 120 centimetres, height of 150 centimetres and laden weight of 300 kilogrammes.",
+   "summary": "From 1 June 2026, PMAs must not exceed set width, length, height and laden weight limits.",
    "sentences": [
     {
      "sid": "s00110",
@@ -182,8 +183,8 @@
    ]
   },
   {
-   "label": "Medical need for mobility scooters",
-   "summary": "From 1 June 2026, only those with genuine medical need will be allowed to ride a mobility scooter on public paths.",
+   "label": "Mobility scooter medical need rule",
+   "summary": "From 1 June 2026, only those with genuine medical need may ride mobility scooters on public paths.",
    "sentences": [
     {
      "sid": "s00113",
@@ -195,7 +196,7 @@
    ]
   },
   {
-   "label": "Seniors exempted from certification",
+   "label": "Seniors exempt from certification",
    "summary": "Seniors aged 70 and above will be exempted from the certification requirement.",
    "sentences": [
     {
@@ -208,7 +209,7 @@
    ]
   },
   {
-   "label": "Mobility scooter medical certificate requirement",
+   "label": "Certificate of Medical Need enforcement",
    "summary": "From 1 June 2026, mobility scooter users on public paths need a Certificate of Medical Need, with penalties for non-compliance.",
    "sentences": [
     {
@@ -235,8 +236,8 @@
    ]
   },
   {
-   "label": "Phased mobility scooter registration regime",
-   "summary": "Registration starts for mobility scooters sold from 1 June 2026, and from 1 January 2029 all must be registered before public path use.",
+   "label": "Mobility scooter registration phases",
+   "summary": "Registration starts for mobility scooters sold from 1 June 2026, and all mobility scooters must be registered before public path use from 1 January 2029.",
    "sentences": [
     {
      "sid": "s00171",
@@ -262,8 +263,8 @@
    ]
   },
   {
-   "label": "Exemptions for seniors and beneficiaries",
-   "summary": "Exemptions from the Certificate of Medical Need requirement will apply to seniors and existing Government scheme beneficiaries.",
+   "label": "PMA Certificate of Medical Need exemptions",
+   "summary": "Exemptions from the Certificate of Medical Need requirement will apply to seniors and existing Government scheme beneficiaries, recognising PMA users' mobility challenges.",
    "sentences": [
     {
      "sid": "s00192",
@@ -283,7 +284,7 @@
   },
   {
    "label": "AMD-related fires in 2025",
-   "summary": "In 2025 alone, 49 AMD-related fires were recorded.",
+   "summary": "In 2025, 49 AMD-related fires were recorded.",
    "sentences": [
     {
      "sid": "s00201",
@@ -295,8 +296,8 @@
    ]
   },
   {
-   "label": "Amendments prohibiting keeping unsafe devices",
-   "summary": "Clauses 84 to 91 will amend the Small Motorised Vehicles (Safety) Act 2020 to prohibit keeping unsafe devices.",
+   "label": "Amendments prohibiting unsafe devices",
+   "summary": "Clauses 84 to 91 will amend the Small Motorised Vehicles (Safety) Act 2020 to prohibit the keeping of unsafe devices.",
    "sentences": [
     {
      "sid": "s00207",
@@ -308,7 +309,7 @@
    ]
   },
   {
-   "label": "Penalties for unsafe device offences",
+   "label": "Penalties for offences",
    "summary": "Penalties include fines up to $2,000 or imprisonment up to three months, or both, with higher penalties for non-individuals and repeat offenders.",
    "sentences": [
     {
@@ -334,8 +335,8 @@
    ]
   },
   {
-   "label": "Higher fines and disqualification periods",
-   "summary": "The Bill raises maximum fines to $10,000 for a first conviction and $20,000 for subsequent convictions, and clarifies that prescribed disqualification periods are minimums.",
+   "label": "Increased maximum fines for offences",
+   "summary": "The Bill raises maximum fines to $10,000 for a first conviction and $20,000 for subsequent convictions.",
    "sentences": [
     {
      "sid": "s00250",
@@ -343,32 +344,32 @@
      "attributed": true,
      "text": "The Bill updates the penalty framework by increasing the maximum fines to $10,000 for a first conviction and $20,000 for subsequent convictions.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00252",
-     "speaker": "The Senior Minister of State for Home Affairs (Ms Sim Ann)",
-     "attributed": true,
-     "text": "Next, clauses 69 to 73, 75 and 77 of the Bill clarify that the mandatory disqualification periods prescribed for certain offences under the Road Traffic Act are minimum disqualification periods and that no special reasons are required for a Court to order a longer disqualification period.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Longer disqualification without special reasons",
-   "summary": "The amendments make clear that no special reasons are needed before a Court may impose a disqualification period longer than the prescribed minimum.",
+   "label": "Court disqualification period powers",
+   "summary": "The Court may impose disqualification of any period at or above the prescribed minimum, including lifetime disqualification.",
    "sentences": [
     {
-     "sid": "s00259",
+     "sid": "s00253",
      "speaker": "The Senior Minister of State for Home Affairs (Ms Sim Ann)",
      "attributed": true,
-     "text": "The amendments make it clear that there is no need for special reasons before a Court may impose a disqualification period that is longer than the prescribed minimum period.",
+     "text": "The disqualification period that the Court may impose can be any period equal to or above the prescribed minimum disqualification period, including a lifetime disqualification period if it thinks fit.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00255",
+     "speaker": "The Senior Minister of State for Home Affairs (Ms Sim Ann)",
+     "attributed": true,
+     "text": "The High Court, in considering a sentencing framework for the relevant driving offence, noted that the offence already imposed a mandatory 12-year disqualification period, “unless the court for special reasons thinks fit to not order or to order otherwise”.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "SAF vehicle exemption and civilian processing",
-   "summary": "The amendment clarifies the exemption applies to vehicles owned or leased by SAF, and clauses 74 and 79 allow authorised civilians to process such violations.",
+   "summary": "The exemption applies to vehicles owned or leased by SAF, and clauses 74 and 79 let authorised civilians process such violations.",
    "sentences": [
     {
      "sid": "s00265",
@@ -383,19 +384,12 @@
      "attributed": true,
      "text": "Clauses 74 and 79 amend the Road Traffic Act to allow processing of such violations to be carried out by authorised civilians, including service providers, subject to appropriate safeguards.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00268",
-     "speaker": "The Senior Minister of State for Home Affairs (Ms Sim Ann)",
-     "attributed": true,
-     "text": "This would free up Traffic Police officers to focus on enforcement and complex cases.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Discretionary forfeiture for non-owner offenders",
-   "summary": "The amendment makes forfeiture of road vehicles discretionary in all scenarios if it is proved the offender is not the owner and used the vehicle without consent.",
+   "label": "Discretionary forfeiture for non-owner use",
+   "summary": "Forfeiture becomes discretionary if it is proved the scheduled offence was committed by a non-owner without the owner's consent.",
    "sentences": [
     {
      "sid": "s00271",
@@ -403,12 +397,19 @@
      "attributed": true,
      "text": "The amendment will make the forfeiture of road vehicles discretionary in all scenarios if it is proved to the Court's satisfaction that the person who committed the scheduled offence involving the vehicle is not the vehicle owner and had used the vehicle without the consent of its owner.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00272",
+     "speaker": "The Senior Minister of State for Home Affairs (Ms Sim Ann)",
+     "attributed": true,
+     "text": "MHA remains concerned by the road safety situation and has plans to further tighten our laws and regulatory framework.",
+     "added_for_context": false
     }
    ]
   },
   {
    "label": "ERP 2.0 road use management",
-   "summary": "Despite initial teething problems from mass OBU deployment, ERP 2.0 enables a more intelligent road use management.",
+   "summary": "Despite initial teething problems from mass OBU deployment, ERP 2.0 enables more intelligent road use management.",
    "sentences": [
     {
      "sid": "s00288",
@@ -420,8 +421,8 @@
    ]
   },
   {
-   "label": "OBU installation completion by 2027",
-   "summary": "Most vehicles now have OBUs, but full installation is only expected to complete by 2027, a gap of at least seven years from original approval.",
+   "label": "OBU installation completion timeline",
+   "summary": "Most vehicles now have OBUs, but full installation is only expected to complete by 2027.",
    "sentences": [
     {
      "sid": "s00293",
@@ -433,8 +434,8 @@
    ]
   },
   {
-   "label": "Distance charging affects road workers",
-   "summary": "Charging by distance is fairer in principle but risks disproportionately affecting delivery riders and private hire drivers who work long hours for just enough to make ends meet.",
+   "label": "Distance charging and road workers",
+   "summary": "Charging by distance is fairer in principle but risks disproportionately affecting delivery riders and private hire drivers earning just enough.",
    "sentences": [
     {
      "sid": "s00300",
@@ -447,7 +448,7 @@
   },
   {
    "label": "PMA speed limits and medical certificate",
-   "summary": "Irresponsible use is dangerous to pedestrians, especially frail and elderly residents, so the speaker welcomes measures limiting PMA speeds and requiring a Certificate of Medical Need.",
+   "summary": "Irresponsible PMA use endangers frail and elderly pedestrians, so the Bill limits PMA speeds and requires a Certificate of Medical Need.",
    "sentences": [
     {
      "sid": "s00313",
@@ -466,8 +467,8 @@
    ]
   },
   {
-   "label": "UL2272 and EN14194 fire safety standards",
-   "summary": "Requiring PMDs and PABs to meet UL2272 and EN14194 standards reduced fire risks from charging, and the speaker supports making possession of non-UL2272 e-scooters an offence.",
+   "label": "UL2272 and EN14194 safety standards",
+   "summary": "Requiring PMDs and PABs to meet UL2272 and EN14194 standards reduced fire risks from charging, and the speaker supports criminalising non-UL2272 e-scooter possession.",
    "sentences": [
     {
      "sid": "s00323",
@@ -493,8 +494,8 @@
    ]
   },
   {
-   "label": "Bill balances mobility and risk",
-   "summary": "Co-existence is key in built-up Singapore, and the Bill strikes a sensible balance between enabling mobility and managing risks from new usage patterns and technologies.",
+   "label": "Co-existence and Bill balance",
+   "summary": "The Bill strikes a sensible balance between enabling mobility and managing risks, keeping spaces open while protecting the vulnerable.",
    "sentences": [
     {
      "sid": "s00328",
@@ -520,8 +521,8 @@
    ]
   },
   {
-   "label": "Registrar-certified ERP data as evidence",
-   "summary": "Under clause 81, a document certified by the registrar containing transaction and location data from ERP 2.0 devices is admissible as evidence in court.",
+   "label": "ERP 2.0 data as evidence",
+   "summary": "Under clause 81, a registrar-certified document containing ERP 2.0 transaction and location data is admissible as evidence in court.",
    "sentences": [
     {
      "sid": "s00335",
@@ -533,8 +534,8 @@
    ]
   },
   {
-   "label": "Bill changes for PMAs",
-   "summary": "The Bill adds a Certificate of Medical Need, dimension limits, and cuts mobility scooter speed from 10 to six kilometres per hour.",
+   "label": "New PMA rules and enforcement",
+   "summary": "Despite limited enforcement resources, the Bill adds PMA changes: Certificate of Medical Need, dimension limits, and a speed limit cut from 10 to six kilometres per hour.",
    "sentences": [
     {
      "sid": "s00361",
@@ -546,8 +547,8 @@
    ]
   },
   {
-   "label": "AMD fires in HDB estates",
-   "summary": "Minister Shanmugam said 187 HDB fires were caused by AMDs: 46% PMDs, 42% PABs and 12% PMAs.",
+   "label": "HDB fires caused by AMDs",
+   "summary": "Minister Shanmugam said 187 HDB estate fires were caused by AMDs, 46% by PMDs, 42% by PABs and 12% by PMAs.",
    "sentences": [
     {
      "sid": "s00365",
@@ -567,7 +568,7 @@
   },
   {
    "label": "Speed cut and seniors",
-   "summary": "The speed references walking speeds, but a 40% drop increases travel time and weather exposure for seniors.",
+   "summary": "The Government noted the speed references walking speeds, but a 40% drop increases travel time and exposure for seniors.",
    "sentences": [
     {
      "sid": "s00377",
@@ -586,8 +587,8 @@
    ]
   },
   {
-   "label": "Exemption for seniors aged 70",
-   "summary": "The Government exempted seniors aged 70 and above from the certification requirement, which the speaker welcomes.",
+   "label": "Seniors exempted from certification",
+   "summary": "The speaker had urged allowing seniors to use mobility scooters, and welcomes the exemption for those aged 70 and above.",
    "sentences": [
     {
      "sid": "s00381",
@@ -606,8 +607,8 @@
    ]
   },
   {
-   "label": "Enforcement and PMA prosecutions",
-   "summary": "MHA said fines up to $2,000 were imposed but formal prosecutions were low, and 10 PMA road users were caught in 2024.",
+   "label": "PMA enforcement and prosecutions",
+   "summary": "MHA said notices and fines up to $2,000 were issued but formal prosecutions were low, and 10 PMA users were caught in 2024.",
    "sentences": [
     {
      "sid": "s00397",
@@ -626,8 +627,8 @@
    ]
   },
   {
-   "label": "PMA riders' earnings concerns",
-   "summary": "A rider expects earnings to fall 30% to 40% under the speed limit, and platform associations obtained commitments to review delivery targets.",
+   "label": "Rider earnings under speed limit",
+   "summary": "A rider expects earnings to fall 30% to 40% under the six kilometres per hour limit, and platform associations obtained commitments to review delivery targets.",
    "sentences": [
     {
      "sid": "s00424",
@@ -653,8 +654,8 @@
    ]
   },
   {
-   "label": "NDCA medical certification cost support",
-   "summary": "The NDCA will provide financial assistance to subsidise and co-pay out-of-pocket compliance costs from the Act, as medical certification can cost $50 to $100.",
+   "label": "NDCA subsidises medical certification",
+   "summary": "Medical certification costs $50 to $100, and the NDCA will provide financial assistance to subsidise members' out-of-pocket compliance costs under this Act.",
    "sentences": [
     {
      "sid": "s00438",
@@ -673,8 +674,8 @@
    ]
   },
   {
-   "label": "NDCA transition support and electric buses",
-   "summary": "NDCA works with platform operators through the tripartite framework, and Grab gave in-principle assurances to adjust performance targets, while NDCA supports riders through the transition.",
+   "label": "NDCA support for platform workers",
+   "summary": "NDCA works with platform operators through a tripartite framework to mitigate livelihood impact and support riders through the transition.",
    "sentences": [
     {
      "sid": "s00452",
@@ -689,19 +690,12 @@
      "attributed": true,
      "text": "We thank our platform operators partners, like Grab, who have given in-principle assurances to adjust performance targets, and NDCA will continue to support riders through the transition to defray costs, including medical certification and device modifications.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00455",
-     "speaker": "Ms Yeo Wan Ling (Punggol)",
-     "attributed": true,
-     "text": "(In Mandarin):   By 2030, electric buses will make up half of our public bus fleet.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Speed limits and foreign heavy vehicles",
-   "summary": "Passenger vehicles may travel up to 90 kilometres per hour and heavy vehicles are capped at 60 kilometres per hour, which may disadvantage local operators complying with speed-limiter requirements.",
+   "label": "Speed limits and enforcement",
+   "summary": "Passenger vehicles may travel up to 90 km/h and heavy vehicles 60 km/h, and the member urges enforcement that is practical and fair.",
    "sentences": [
     {
      "sid": "s00467",
@@ -716,12 +710,26 @@
      "attributed": true,
      "text": "Local operators who comply with speed-limiter requirements may find themselves disadvantaged when foreign-registered heavy vehicles, which may not be subjected to the same standards, continue travelling at higher speeds.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00471",
+     "speaker": "Ms Yeo Wan Ling (Punggol)",
+     "attributed": true,
+     "text": "They must be complemented by consistent enforcement, clear lane discipline and policies that reflect the realities of mixed traffic conditions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00472",
+     "speaker": "Ms Yeo Wan Ling (Punggol)",
+     "attributed": true,
+     "text": "I, therefore, urge the relevant Ministries to continue engaging drivers and operators to apply enforcement with judgement, and to ensure that implementation remains practical, fair and grounded in real-world conditions so that our roads are not just regulated, but genuinely safer for everyone.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "PMA speed limit reduction earnings loss",
-   "summary": "The Bill proposes reducing the PMA speed limit from 10 to six kilometres per hour, which platform workers said may reduce orders by 20% to 30%, or up to 50%.",
+   "label": "PMA speed limit reduction",
+   "summary": "The Bill proposes reducing the PMA speed limit from 10 km/h to six km/h, which platform workers say will cut earnings.",
    "sentences": [
     {
      "sid": "s00489",
@@ -747,8 +755,8 @@
    ]
   },
   {
-   "label": "Seed funding for community bus shuttles",
-   "summary": "The Ministry is encouraged to offer seed funding to pilot and test community bus shuttles in different towns, including Kaki Bukit, for underserved short journeys.",
+   "label": "Seed funding for community buses",
+   "summary": "The member encourages the Ministry to offer seed funding to pilot community bus shuttles in towns including Kaki Bukit.",
    "sentences": [
     {
      "sid": "s00509",
@@ -760,8 +768,8 @@
    ]
   },
   {
-   "label": "Free bus travel and community bus funding",
-   "summary": "The passage suggests free bus journeys for seniors through a Merdeka Pass and seed funding from MOT to study and test community bus services in towns like Kaki Bukit.",
+   "label": "Free public transport for seniors",
+   "summary": "The member proposes free bus journeys for seniors through a Merdeka Pass and seed funding to test community bus services.",
    "sentences": [
     {
      "sid": "s00515",
@@ -802,7 +810,7 @@
   },
   {
    "label": "Reclaiming road space for cycling",
-   "summary": "The Government should reconsider reclaiming road space from cars, including underused lanes and on-street parking, for cycling and walking infrastructure.",
+   "summary": "The Government should reconsider reclaiming road space from cars, including underutilised lanes and on-street parking, for cycling and walking.",
    "sentences": [
     {
      "sid": "s00535",
@@ -814,21 +822,21 @@
    ]
   },
   {
-   "label": "Tightening PMA user rules",
-   "summary": "The Bill's amendments to tighten PMA users' eligibility, operating rules and specifications are overdue.",
+   "label": "PMA misuse consequences",
+   "summary": "Misuse of PMAs has caused nuisance to pedestrians, injuries and deaths to PMA users.",
    "sentences": [
     {
-     "sid": "s00542",
+     "sid": "s00539",
      "speaker": "Ms Poh Li San (Sembawang West)",
      "attributed": true,
-     "text": "The Bill's amendments to tighten PMA users' eligibility, operating rules and specifications are overdue.",
+     "text": "Over the past few years, misuse of PMAs have resulted in nuisance to pedestrians, injuries and even deaths to PMA users.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "PMA eligibility age and conditions",
-   "summary": "While 70 may be reasonable for automatic eligibility, some younger people unable to walk far cannot obtain a doctor's certificate.",
+   "label": "PMA age eligibility limits",
+   "summary": "Some younger people who cannot walk far cannot get a doctor's certificate of eligibility.",
    "sentences": [
     {
      "sid": "s00546",
@@ -841,7 +849,7 @@
   },
   {
    "label": "Extending conditional PMA eligibility",
-   "summary": "The speaker hopes LTA will consider extending conditional PMA user eligibility to this group if they have no past speeding offences.",
+   "summary": "The speaker hopes LTA will consider extending conditional PMA eligibility to this group if they have no speeding offences.",
    "sentences": [
     {
      "sid": "s00552",
@@ -854,7 +862,7 @@
   },
   {
    "label": "Workshop on responsible PMA use",
-   "summary": "The speaker asks whether LTA can consider a basic workshop or course on responsible use to reduce anti-social PMA users.",
+   "summary": "The speaker asks whether LTA can consider a basic workshop or course on responsible use.",
    "sentences": [
     {
      "sid": "s00568",
@@ -866,8 +874,8 @@
    ]
   },
   {
-   "label": "PMA rules and registration numbers",
-   "summary": "The rules start 1 June 2026; PMDs must be registered, with about 5,100, while PMA numbers are unknown but sales rise.",
+   "label": "PMA rules and registration",
+   "summary": "Rules start 1 June 2026; PMDs need registration, about 5,100 exist, and PMA sales are rising.",
    "sentences": [
     {
      "sid": "s00580",
@@ -893,8 +901,8 @@
    ]
   },
   {
-   "label": "Neighbours reporting parked PMAs",
-   "summary": "Neighbours could inform LTA of where PMAs are parked, and the passage asks whether LTA officers can confiscate non-compliant devices.",
+   "label": "Neighbours and LTA confiscation powers",
+   "summary": "Neighbours are a useful information source, and the speaker asks if LTA officers can confiscate non-compliant items.",
    "sentences": [
     {
      "sid": "s00592",
@@ -914,7 +922,7 @@
   },
   {
    "label": "Certificate of Medical Need exemptions",
-   "summary": "LTA's OneMotoring site listed exemptions from the Certificate of Medical Need, including users aged 70 and above and certain fund beneficiaries.",
+   "summary": "LTA's OneMotoring site listed exemptions from the Certificate of Medical Need, including users aged 70 and above and fund beneficiaries.",
    "sentences": [
     {
      "sid": "s00609",
@@ -933,23 +941,22 @@
    ]
   },
   {
-   "label": "AMAP speed limit data",
-   "summary": "The passage asks what data supported AMAP's recommendation to reduce the PMA speed limit to six kilometres per hour from 10.",
+   "label": "Disabled People's Association implementation period",
+   "summary": "The Disabled People's Association said a one- to two-year implementation period would be more comparable to laws such as the Workplace Fairness Act.",
    "sentences": [
     {
-     "sid": "s00620",
+     "sid": "s00618",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
-     "text": "Lastly, I have some comments on AMAP, which developed the review of regulations for PMAs that forms this Bill.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00621",
-     "speaker": "Ms He Ting Ru (Sengkang)",
-     "attributed": true,
-     "text": "I note that in the report, while there is consideration of other legislation in other jurisdictions, I could not find much direct analysis or assessment of the available scientific literature on the issue of PMAs, particularly in relation to road safety, for instance, on the recommendation of reducing the speed limit to six kilometres per hour from the current 10 kilometres per hour.",
+     "text": "The Disabled People's Association highlighted this point in their comments on this Bill, stating that a one- to two-year implementation period would be more comparable to other laws, such as the Workplace Fairness Act.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Speed limit data question",
+   "summary": "The question asks the Minister of State for the actual data used to determine that reducing the speed limit to six kilometres an hour reduces serious injury risk.",
+   "sentences": [
     {
      "sid": "s00622",
      "speaker": "Ms He Ting Ru (Sengkang)",
@@ -960,28 +967,8 @@
    ]
   },
   {
-   "label": "Battery charging safety guidelines",
-   "summary": "Many incidents arise from uncertified batteries, unsafe modifications or overnight charging, and the passage encourages national charging-safety guidelines.",
-   "sentences": [
-    {
-     "sid": "s00643",
-     "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
-     "attributed": true,
-     "text": "Many arise from uncertified batteries, unsafe modifications or prolonged overnight charging at unsuitable locations.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00644",
-     "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
-     "attributed": true,
-     "text": "I encourage the introduction of national charging-safety guidelines, covering approved chargers, safe charging durations, designated charging zones and clear prohibitions against corridor charging.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Certification guidance and exemptions",
-   "summary": "Clear certification guidance and streamlined criteria are important, and MOH and LTA issued a circular with exceptions for those above 70.",
+   "label": "Certification guidance and exceptions",
+   "summary": "Clear guidance on who can certify and streamlined criteria are important, and MOH and LTA issued a circular with exceptions for those above 70.",
    "sentences": [
     {
      "sid": "s00651",
@@ -1000,8 +987,8 @@
    ]
   },
   {
-   "label": "Review of sentencing frameworks",
-   "summary": "Singapore recorded 7,049 injury traffic accidents and over 100 fatalities in 2024, and the passage urges a review of sentencing frameworks.",
+   "label": "Traffic accidents and sentencing review",
+   "summary": "Singapore recorded 7,049 injury traffic accidents and more than 100 fatalities in 2024, prompting an urge for a sentencing framework review.",
    "sentences": [
     {
      "sid": "s00659",
@@ -1015,7 +1002,7 @@
      "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
      "attributed": true,
      "text": "We have also seen cases where fatal outcomes arising from negligence or excessive speed resulted in sentences that, while legally consistent, have left the public uneasy.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00661",
@@ -1027,7 +1014,7 @@
    ]
   },
   {
-   "label": "New unsafe AMD possession offence",
+   "label": "Unsafe device possession offence",
    "summary": "Part 6 of the Bill introduces a new offence of keeping an unsafe AMD by amending the Small Motorised Vehicle (Safety) Act 2020.",
    "sentences": [
     {
@@ -1040,8 +1027,21 @@
    ]
   },
   {
-   "label": "Contractors processing camera-detected traffic notices",
-   "summary": "MHA's 12 January media release states civilian contractors will be tasked to process traffic notices for camera-detected violations.",
+   "label": "AMD fires disproportionately fatal",
+   "summary": "MHA confirmed on 12 January that AMD fires have been disproportionately fatal, responding to an Adjournment Motion by Andre Low.",
+   "sentences": [
+    {
+     "sid": "s00674",
+     "speaker": "Ms Sylvia Lim (Aljunied)",
+     "attributed": true,
+     "text": "On 12 January, in response to an Adjournment Motion filed by Workers' Party's Non-Constituency Member of Parliament Andre Low, MHA confirmed that AMD fires have been disproportionately fatal.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Contractors to process traffic notices",
+   "summary": "MHA's 12 January media release stated civilian contractors will process traffic notices for camera-detected violations.",
    "sentences": [
     {
      "sid": "s00684",
@@ -1053,35 +1053,21 @@
    ]
   },
   {
-   "label": "Appeals and outsourcing traffic enforcement",
-   "summary": "The speaker asks who will decide appeal cases when outsourcing provisions are activated, saying human judgement is better exercised by Police and LTA public servants.",
+   "label": "Resident charged with red light",
+   "summary": "A resident of the speaker's was initially charged with beating a red light.",
    "sentences": [
     {
-     "sid": "s00697",
+     "sid": "s00695",
      "speaker": "Ms Sylvia Lim (Aljunied)",
      "attributed": true,
-     "text": "When the provisions on outsourcing are activated, who will decide on appeal cases?",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00698",
-     "speaker": "Ms Sylvia Lim (Aljunied)",
-     "attributed": true,
-     "text": "It seems to me that some human judgement and discretion is required, which is better exercised by our public servants in the Police and the LTA.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00699",
-     "speaker": "Ms Sylvia Lim (Aljunied)",
-     "attributed": true,
-     "text": "So far, the Police have been forthcoming in arranging for the public to view camera footage to confirm if they have indeed committed certain traffic offences.",
+     "text": "For instance, in one case, a resident of mine was initially charged with beating a red light.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Parliamentary Questions on device safety",
-   "summary": "Since September debates, the speaker has asked seven Parliamentary Questions on AMD safety, six on electrical battery safety and three on fire safety.",
+   "label": "Parliamentary Questions on AMD safety",
+   "summary": "Since September debates, the speaker asked seven questions on AMD safety, six on battery safety and three on fire safety, filing 16 across MOT, MHA and MTI.",
    "sentences": [
     {
      "sid": "s00706",
@@ -1089,38 +1075,19 @@
      "attributed": true,
      "text": "Since debates commenced in this House in September, I have asked seven Parliamentary Questions on AMD safety, six Parliamentary Questions on electrical battery safety and three Parliamentary Questions on fire safety.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Disabled People's Association inclusivity recommendations",
-   "summary": "The Disabled People's Association recommended the Ministry optimise inclusivity and ease medical certification and registration for genuine users through grants, clarified certification and broad assessment of medical need.",
-   "sentences": [
+    },
     {
-     "sid": "s00720",
+     "sid": "s00707",
      "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
      "attributed": true,
-     "text": "The Disabled People's Association has recommended that the Ministry optimise inclusivity and ease the process for obtaining medical certification and registration for genuine users, such as by: (a) ensuring that grants or subsidies be established to cover any potential costs of certification and registration; (b) clarifying that the relevant \"certification\" needed does not require a formal medical diagnosis, but simply documentation from an assessor noting the need for the use of a PMA; and (c) ensuring that \"medical need\" to ride a PMA is assessed on a broad and inclusive basis.",
+     "text": "I filed a total of 16 questions across MOT, MHA and MTI, because one fire is a fire too many, especially in what is supposed to be a safe abode.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "PMD disposal points in HDB estates",
-   "summary": "When regulations against PMDs were introduced in 2019, LTA worked with e-waste recyclers to set up designated disposal points across HDB estates at no cost to owners.",
-   "sentences": [
-    {
-     "sid": "s00725",
-     "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
-     "attributed": true,
-     "text": "When the Government introduced regulations against PMDs in 2019, LTA worked with e-waste recyclers to set up designated disposal points across HDB estates, which facilitated the disposal of PMDs at no cost to existing owners.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "PMA speed limit lowered",
-   "summary": "The Bill lowers the speed limit for PMAs from 10 kilometres per hour to six kilometres per hour.",
+   "label": "Lowering PMA speed limit",
+   "summary": "The Bill lowers the PMA speed limit from 10 kilometres per hour to six kilometres per hour, which the speaker supports.",
    "sentences": [
     {
      "sid": "s00729",
@@ -1128,12 +1095,19 @@
      "attributed": true,
      "text": "A key development in this Bill lowering of the speed limit from 10 kilometres per hour to six kilometres per hour for PMAs.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00730",
+     "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
+     "attributed": true,
+     "text": "I support this move, as it better reflects the intended use of PMAs to replace walking for users with mobility challenges.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "AMD fire risk data",
-   "summary": "MHA data shows AMDs caused less than 5% of residential fires in five years but over 25% of fatalities.",
+   "label": "AMD fire risk and fatalities",
+   "summary": "MHA data shows AMDs caused under 5% of residential fires in five years but over 25% of fatalities.",
    "sentences": [
     {
      "sid": "s00740",
@@ -1145,8 +1119,8 @@
    ]
   },
   {
-   "label": "LTA device regulations, PMA standards",
-   "summary": "LTA has implemented UL2272 and EN15194 standards and biennial inspections, and a reply noted no common international fire safety standards for PMAs.",
+   "label": "PMD and PAB regulations",
+   "summary": "LTA has implemented regulations including the UL2272 standard and biennial inspections for PMDs and the EN15194 standard for PABs, with no common international fire safety standards for PMAs.",
    "sentences": [
     {
      "sid": "s00743",
@@ -1165,7 +1139,7 @@
    ]
   },
   {
-   "label": "Support for Bill, 2026 implementation",
+   "label": "Support for the Bill",
    "summary": "The speaker supports the Bill and looks forward to its implementation on 1 June 2026.",
    "sentences": [
     {
@@ -1178,7 +1152,7 @@
    ]
   },
   {
-   "label": "Banning keeping non-UL2272 e-scooters",
+   "label": "Offence to keep non-certified e-scooters",
    "summary": "The speaker supports making it an offence to keep non-UL2272-certified e-scooters, beyond banning their use on public paths and roads.",
    "sentences": [
     {
@@ -1191,8 +1165,8 @@
    ]
   },
   {
-   "label": "Bill strengthens PMA operating safety",
-   "summary": "The Bill reduces the PMA speed limit to six kilometres per hour by January 2029, extends size restrictions, requires registration and introduces a Certificate of Medical Need.",
+   "label": "Strengthening PMA operating safety",
+   "summary": "The Bill seeks to strengthen PMA operating safety by reducing the speed limit from 10 to six kilometres per hour by January 2029, extending size restrictions, requiring registration and introducing a Certificate of Medical Need for PMDs on public paths.",
    "sentences": [
     {
      "sid": "s00770",
@@ -1211,8 +1185,8 @@
    ]
   },
   {
-   "label": "Speeding violations 10-year high",
-   "summary": "In 2024, speeding violations reached a 10-year high, with cases doubling from the previous year.",
+   "label": "Speeding violations ten-year high",
+   "summary": "In 2024, speeding violations reached a 10-year high, with cases doubling compared to the previous year.",
    "sentences": [
     {
      "sid": "s00777",
@@ -1225,7 +1199,7 @@
   },
   {
    "label": "Penalties for illegal vehicle modifications",
-   "summary": "The speaker welcomes stronger penalties for illegal vehicle modifications, including speed limiter tampering, and urges companies to comply with speed limit rules ahead of the 1 July 2027 deadline.",
+   "summary": "The speaker welcomes stronger penalties for illegal vehicle modifications including speed limiter tampering, and urges companies to comply with speed limit rules ahead of the 1 July 2027 deadline.",
    "sentences": [
     {
      "sid": "s00782",
@@ -1244,30 +1218,9 @@
    ]
   },
   {
-   "label": "NTUC engagement with delivery workers",
-   "summary": "NTUC and workers' associations have met delivery workers to hear concerns about income, compliance costs and work routines, and their feedback will inform discussions with platform operators and agencies.",
+   "label": "Delivery workers' feedback on safety",
+   "summary": "NTUC and workers' associations have engaged delivery workers directly, and their feedback will inform discussions with platform operators and agencies.",
    "sentences": [
-    {
-     "sid": "s00794",
-     "speaker": "Dr Wan Rizal (Jalan Besar)",
-     "attributed": true,
-     "text": "They leave early in the morning and return late at night, not by choice, but out of their duty to support their families.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00795",
-     "speaker": "Dr Wan Rizal (Jalan Besar)",
-     "attributed": true,
-     "text": "This kind of work is employment with dignity; livelihood earned through one's own effort.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00796",
-     "speaker": "Dr Wan Rizal (Jalan Besar)",
-     "attributed": true,
-     "text": "As a labour movement, NTUC takes seriously the impact of implementing these regulations on our workers' daily lives.",
-     "added_for_context": false
-    },
     {
      "sid": "s00797",
      "speaker": "Dr Wan Rizal (Jalan Besar)",
@@ -1280,6 +1233,20 @@
      "speaker": "Dr Wan Rizal (Jalan Besar)",
      "attributed": true,
      "text": "Their feedback will form the basis for ongoing discussions with platform operators and relevant agencies, so that safety can be enhanced without sacrificing livelihoods.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00799",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "Fair safety is safety that takes into account the reality of workers' lives.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00800",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "Protecting lives, without denying the dignity of work and the right to earn a living.",
      "added_for_context": false
     }
    ]
@@ -1298,8 +1265,8 @@
    ]
   },
   {
-   "label": "Guidelines refinement after consultation",
-   "summary": "The guidelines are sound but will need refinement, and were developed after consulting 11 professional bodies.",
+   "label": "Guidelines developed after consulting bodies",
+   "summary": "The guidelines are sound but need refinement, and were developed after consulting 11 professional bodies.",
    "sentences": [
     {
      "sid": "s00825",
@@ -1318,28 +1285,8 @@
    ]
   },
   {
-   "label": "FAQ on good faith assessors",
-   "summary": "The FAQ clarifies that assessors acting in good faith will not be second guessed.",
-   "sentences": [
-    {
-     "sid": "s00839",
-     "speaker": "Dr Haresh Singaraju (Nominated Member)",
-     "attributed": true,
-     "text": "It matured over years, it is now a trusted reference.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00840",
-     "speaker": "Dr Haresh Singaraju (Nominated Member)",
-     "attributed": true,
-     "text": "I note that the \"Frequently Asked Questions\" (FAQ) clarifies that assessors acting in good faith will not be second guessed.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Registration of mobility vehicles",
-   "summary": "Mobility vehicles will now need to be registered with LTA, as there was no equivalent gate when devices became commercially available.",
+   "label": "Mobility vehicle registration with LTA",
+   "summary": "Mobility vehicles will now need to be registered with LTA, pegged with healthcare certificate or medical need, creating a tight entry system.",
    "sentences": [
     {
      "sid": "s00860",
@@ -1353,6 +1300,13 @@
      "speaker": "Dr Haresh Singaraju (Nominated Member)",
      "attributed": true,
      "text": "I am glad to note that mobility vehicles will now need to be registered with LTA.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00862",
+     "speaker": "Dr Haresh Singaraju (Nominated Member)",
+     "attributed": true,
+     "text": "Pegged with healthcare certificate or medical need, this creates a system that is tight at entry.",
      "added_for_context": false
     }
    ]
@@ -1378,7 +1332,7 @@
    ]
   },
   {
-   "label": "Consequences of unpaid vehicle payments",
+   "label": "Unpaid vehicle payments block renewals",
    "summary": "Vehicle owners who do not pay what they owe cannot renew road tax or sell their vehicle until payments are settled.",
    "sentences": [
     {
@@ -1391,8 +1345,8 @@
    ]
   },
   {
-   "label": "Noise complaints about PMA users",
-   "summary": "Residents complained about PMA users playing music loudly throughout the day, disrupting meetings, children's naps and rest.",
+   "label": "PMA noise near homes",
+   "summary": "A commitment addresses noise from PMAs on paths near residential areas, following complaints about loud music disrupting residents.",
    "sentences": [
     {
      "sid": "s00904",
@@ -1412,7 +1366,7 @@
   },
   {
    "label": "Graciousness on public transport",
-   "summary": "Commuters can be mindful that personal music, loud phone conversations and unnecessary noise in public intrude on shared space.",
+   "summary": "Commuters can be mindful that personal music, loud phone conversations and unnecessary noise intrude on shared public space.",
    "sentences": [
     {
      "sid": "s00909",
@@ -1438,8 +1392,8 @@
    ]
   },
   {
-   "label": "Amendments to mobility vehicle definitions",
-   "summary": "The amendment Bill changes the definition of mobility scooter, adds a definition of mobility vehicles, and creates an exception to an offence.",
+   "label": "Amendment Bill definitions and exception",
+   "summary": "Clauses 2(g), 2(h) and 16 amend mobility scooter and mobility vehicle definitions and create an exception to a certificate offence.",
    "sentences": [
     {
      "sid": "s00922",
@@ -1478,8 +1432,8 @@
    ]
   },
   {
-   "label": "AMD-related fires in HDB estates",
-   "summary": "MHA shared that 77, or 72%, of AMD-related fires in HDB estates involved non-compliant or modified PMDs and PABs, meaning 28% involved compliant devices.",
+   "label": "AMD fire compliance figures",
+   "summary": "MHA shared that 77, or 72%, of AMD-related fires in HDB estates in three years involved non-compliant or modified devices.",
    "sentences": [
     {
      "sid": "s00957",
@@ -1498,15 +1452,15 @@
    ]
   },
   {
-   "label": "Reducing threat from compliant devices",
-   "summary": "The passage asks how the Government can reduce the threat given more than one in four fires are caused by compliant devices, and encourages a feasibility study on parking and charging infrastructure in MSCPs.",
+   "label": "MSCP parking and charging study",
+   "summary": "The speaker asks how Government can reduce the threat and encourages a feasibility study on parking and charging devices at MSCPs.",
    "sentences": [
     {
      "sid": "s00961",
      "speaker": "Mr Ng Shi Xuan (Sembawang)",
      "attributed": true,
      "text": "How can the Government reduce the threat to safety and property, given that more than one in four fires are caused by these compliant devices?",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00962",
@@ -1518,21 +1472,8 @@
    ]
   },
   {
-   "label": "Enforcement of mobility aid speed limit",
-   "summary": "Reducing the speed limit for mobility aids to six kilometres per hour is reasonable, but consistent and sustained enforcement is key to changing behaviour.",
-   "sentences": [
-    {
-     "sid": "s00974",
-     "speaker": "Mr Ng Shi Xuan (Sembawang)",
-     "attributed": true,
-     "text": "Reducing the speed limit for mobility aids to six kilometres per hour is reasonable, but the key to truly changing behaviour lies in consistent and sustained enforcement.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Speeding and lorry owner compliance",
-   "summary": "Speeding remains a leading cause of fatal crashes, and more than 140 lorry owners had not complied despite EnterpriseSG support covering 50% of eligible costs.",
+   "label": "Speeding, grants, lorry compliance",
+   "summary": "Speeding remains a leading cause of fatal crashes, and over 140 lorry owners had not complied with support measures.",
    "sentences": [
     {
      "sid": "s00986",
@@ -1558,8 +1499,21 @@
    ]
   },
   {
-   "label": "PMA speed limit welcome move",
-   "summary": "The reduction of PMA speed limits from 10 kilometres per hour to six, the pace of brisk walking, is a welcome move.",
+   "label": "Fires from uncertified devices",
+   "summary": "Between 2022 and 2025, over 70% of such fires involved uncertified or illegally modified devices.",
+   "sentences": [
+    {
+     "sid": "s00991",
+     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
+     "attributed": true,
+     "text": "Between 2022 and 2025, over 70% of such fires involved uncertified or illegally modified devices.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "PMA speed limit reduction",
+   "summary": "The reduction of PMA speed limits from 10 kilometres per hour to six is a welcome move.",
    "sentences": [
     {
      "sid": "s01003",
@@ -1571,21 +1525,8 @@
    ]
   },
   {
-   "label": "Physiotherapists and medical certificates",
-   "summary": "A Member asks the Minister of State to explain why physiotherapists are excluded from issuing Certificates of Medical Need, especially for patients under their care.",
-   "sentences": [
-    {
-     "sid": "s01014",
-     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
-     "attributed": true,
-     "text": "Could the Minister of State explain the rationale for excluding physiotherapists from issuing Certificates of Medical Need, particularly for patients already under their care?",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Mobility vehicle definitions and registration",
-   "summary": "The passage states that clearer definitions of mobility vehicles, mandatory registration and a Certificate of Medical Need for certain devices strike a careful balance.",
+   "summary": "Clearer definitions of mobility vehicles, mandatory registration and a Certificate of Medical Need for certain devices strike a careful balance.",
    "sentences": [
     {
      "sid": "s01042",
@@ -1597,8 +1538,8 @@
    ]
   },
   {
-   "label": "Compliance, upstream responsibility, device controls",
-   "summary": "The speaker says compliance should come from understanding and support, and welcomes the Bill's focus on upstream responsibility and stronger controls on sale, advertisement and possession of unsafe devices.",
+   "label": "Upstream responsibility for unsafe devices",
+   "summary": "Compliance should come from understanding and support, and the Bill focuses on upstream responsibility for unsafe or non-compliant devices.",
    "sentences": [
     {
      "sid": "s01053",
@@ -1617,16 +1558,9 @@
    ]
   },
   {
-   "label": "Unsafe device offence and disqualification periods",
-   "summary": "The speaker welcomes an offence for keeping unsafe devices, says clear public education is essential, and welcomes clarification that mandatory disqualification periods are minimum periods.",
+   "label": "Public education and disqualification periods",
+   "summary": "Clear public education is essential, and mandatory disqualification periods are minimum periods, restoring original legislative intent.",
    "sentences": [
-    {
-     "sid": "s01061",
-     "speaker": "Mr Jackson Lam (Nee Soon)",
-     "attributed": true,
-     "text": "The introduction of an offence for keeping unsafe devices, even when they are not actively used, reflects an important reality that risks often arise long before an incident occurs.",
-     "added_for_context": false
-    },
     {
      "sid": "s01063",
      "speaker": "Mr Jackson Lam (Nee Soon)",
@@ -1644,8 +1578,21 @@
    ]
   },
   {
-   "label": "Land Transport and Related Matters Bill 2026",
-   "summary": "The passage states that with careful implementation and continued engagement, the Land Transport and Related Matters Bill 2026 will strengthen the transport system and Singaporeans' confidence in it.",
+   "label": "Enhanced speed limiter regime",
+   "summary": "The enhanced speed limiter regime for heavy vehicles is described as timely.",
+   "sentences": [
+    {
+     "sid": "s01067",
+     "speaker": "Mr Jackson Lam (Nee Soon)",
+     "attributed": true,
+     "text": "The enhanced speed limiter regime for heavy vehicles is also timely.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Land Transport Bill 2026",
+   "summary": "The Land Transport and Related Matters Bill 2026 will strengthen the transport system and Singaporeans' confidence in it.",
    "sentences": [
     {
      "sid": "s01078",
@@ -1657,8 +1604,8 @@
    ]
   },
   {
-   "label": "2021 fatal modified PMD fire",
-   "summary": "The passage recalls a 2021 incident in which a man died after his modified PMD burst into flames while he was inside a lift.",
+   "label": "2021 PMD lift fire",
+   "summary": "A 2021 incident involved a man who died after his modified PMD burst into flames inside a lift.",
    "sentences": [
     {
      "sid": "s01088",
@@ -1671,7 +1618,7 @@
   },
   {
    "label": "Orchard Road lorry accident",
-   "summary": "An accident on 28 January 2026 involving a lorry along Orchard Road sent 12 workers to hospital.",
+   "summary": "A 28 January 2026 lorry accident along Orchard Road sent 12 workers to the hospital.",
    "sentences": [
     {
      "sid": "s01106",
@@ -1684,7 +1631,7 @@
   },
   {
    "label": "Securing loads and seat belts",
-   "summary": "Unsecured loads risk workers being struck or crushed, so co-mingling goods and passengers should be prohibited and seat belts mandated.",
+   "summary": "Unsecured loads risk striking or crushing workers, so co-mingling goods and passengers should be prohibited and seat belts mandated.",
    "sentences": [
     {
      "sid": "s01110",
@@ -1710,7 +1657,7 @@
    ]
   },
   {
-   "label": "Speed caps for PMAs and others",
+   "label": "PMA speed cap questioned",
    "summary": "The Bill caps PMAs at six kilometres per hour on public paths while bicycles, PMDs and PABs may still go 25 kilometres per hour.",
    "sentences": [
     {
@@ -1738,7 +1685,7 @@
   },
   {
    "label": "Possession of non-UL2272 PMDs",
-   "summary": "Under this Bill, mere possession of non-UL2272 PMDs will be an offence.",
+   "summary": "The Bill makes mere possession of non-UL2272 PMDs an offence.",
    "sentences": [
     {
      "sid": "s01136",
@@ -1750,8 +1697,8 @@
    ]
   },
   {
-   "label": "Illegal modification and earnings",
-   "summary": "A device illegally modified to go faster translates into faster deliveries, shorter turnaround times, more completed orders and higher earnings.",
+   "label": "Illegally modified devices and earnings",
+   "summary": "Illegally and unsafely modified devices going faster translate into faster deliveries, shorter turnaround times, more completed orders and higher earnings.",
    "sentences": [
     {
      "sid": "s01160",
@@ -1763,8 +1710,8 @@
    ]
   },
   {
-   "label": "Platform companies and medical certificates",
-   "summary": "Sections 23E and 23J of the Bill hold platform companies responsible for workers using a mobility vehicle without a valid Certificate of Medical Need.",
+   "label": "Errant AMDs and platform responsibility",
+   "summary": "The problem of errant AMDs in public spaces will remain intractable, and sections 23E and 23J hold platform companies responsible for workers using a mobility vehicle without a valid Certificate of Medical Need.",
    "sentences": [
     {
      "sid": "s01167",
@@ -1783,8 +1730,8 @@
    ]
   },
   {
-   "label": "Platforms tracking rider behaviour",
-   "summary": "Platforms already have technology to track riders in real time and flag unsafe behaviour such as excessive speed.",
+   "label": "Platforms tracking riders' unsafe behaviour",
+   "summary": "Platforms have technological means to flag unsafe behaviour, tracking riders in real time and distance travelled, with simple matrix flagging excessive speed or unsafe behaviour.",
    "sentences": [
     {
      "sid": "s01171",
@@ -1810,8 +1757,8 @@
    ]
   },
   {
-   "label": "Fairer deal for riders",
-   "summary": "A system pressurising riders to take risks for decent income is unfair, and NDCA is in discussion with delivery platforms for a fairer deal.",
+   "label": "Pressure on riders to take risks",
+   "summary": "A system pressurising riders to take risks just to earn a decent income is neither fair nor acceptable, and the NDCA is in discussion with delivery platforms for a fairer deal.",
    "sentences": [
     {
      "sid": "s01181",
@@ -1823,8 +1770,8 @@
    ]
   },
   {
-   "label": "Medical certificate for mobility vehicles",
-   "summary": "A medical certificate requirement for driving or riding mobility vehicles on public paths is reasonable, and subsidies for clinical assessment are suggested.",
+   "label": "Medical certificate requirement for mobility vehicles",
+   "summary": "The medical certificate requirement for driving or riding mobility vehicles on public paths is reasonable to safeguard use and space for those with genuine mobility challenges, and the Government is asked to consider subsidies for clinical assessment costs.",
    "sentences": [
     {
      "sid": "s01189",
@@ -1850,8 +1797,28 @@
    ]
   },
   {
-   "label": "Streamlining and subsidising registration",
-   "summary": "The Government is asked to streamline the process and consider subsidies or grants for registration and associated fees.",
+   "label": "Registering mobility vehicles for accountability",
+   "summary": "The passage states that registering mobility vehicles facilitates accountability and helps enforcement, as lack of identification marks constrains enforcement even when cameras detect offences.",
+   "sentences": [
+    {
+     "sid": "s01196",
+     "speaker": "Mr Foo Cexiang (Tanjong Pagar)",
+     "attributed": true,
+     "text": "Second, the introduction of the need to register mobility vehicles.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01197",
+     "speaker": "Mr Foo Cexiang (Tanjong Pagar)",
+     "attributed": true,
+     "text": "We agree that this facilitates greater accountability and can help with enforcement as, currently, the lack of identification marks constrains enforcement even when offences may be detected by the Active Mobility Enforcement Cameras.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Streamlining registration and fee subsidies",
+   "summary": "The passage asks whether the Government will streamline the process and consider subsidies or grants for those facing financial challenges in registration and associated fees.",
    "sentences": [
     {
      "sid": "s01201",
@@ -1863,34 +1830,14 @@
    ]
   },
   {
-   "label": "Digital link for verification",
-   "summary": "The Government is asked to consider a seamless digital link between LTA's register and platform operator systems for automatic verification.",
-   "sentences": [
-    {
-     "sid": "s01214",
-     "speaker": "Mr Foo Cexiang (Tanjong Pagar)",
-     "attributed": true,
-     "text": "In addition, though, will the Government consider a seamless digital link between LTA's register and the platform operator systems to facilitate automatic verification so that there is less doubt in between the processes?",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Speed standards and enforcement",
-   "summary": "Many jurisdictions have ruled six-kilometre-per-hour for mobility aids on pathways, but the Bill's changes need effective enforcement.",
+   "label": "Speed standards and effective enforcement",
+   "summary": "The passage notes many jurisdictions set six-kilometre-per-hour for mobility aids on pathways, and says the Bill's positive effects depend on effective enforcement.",
    "sentences": [
     {
      "sid": "s01223",
      "speaker": "Mr Foo Cexiang (Tanjong Pagar)",
      "attributed": true,
      "text": "A quick check online will show that while there is not a single global standard on what the speed should be, many jurisdictions, including the United Kingdom, including France, certain jurisdictions in Australia, in fact, Slovenia as well, recently ruled a new six-kilometre-per-hour for the use of mobility aids on pathways.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s01224",
-     "speaker": "Mr Foo Cexiang (Tanjong Pagar)",
-     "attributed": true,
-     "text": "And I think many of the jurisdictions have all considered that this is based on the fact that it is a brisk walking speed.",
      "added_for_context": false
     },
     {
@@ -1911,7 +1858,7 @@
   },
   {
    "label": "Support for the Bill",
-   "summary": "The speaker supports the Bill despite the points raised.",
+   "summary": "The passage states that, notwithstanding the points raised, the speaker supports the Bill.",
    "sentences": [
     {
      "sid": "s01229",
@@ -1923,8 +1870,8 @@
    ]
   },
   {
-   "label": "Higher penalties for offences",
-   "summary": "The Bill raises penalties to fines up to $20,000 and/or imprisonment, signalling that personal preference cannot come at the expense of public safety and community well-being.",
+   "label": "Higher penalties for public safety",
+   "summary": "The passage states that raising penalties to fines up to $20,000 and/or imprisonment sends a message that personal preference cannot come at the expense of public safety and community well-being.",
    "sentences": [
     {
      "sid": "s01246",
@@ -1936,8 +1883,8 @@
    ]
   },
   {
-   "label": "Resident hit by PAB",
-   "summary": "Last December, 71-year-old Mrs Malar Singam was knocked down by a power-assisted bicycle near Pasir Ris Mall.",
+   "label": "Resident hit by power-assisted bicycle",
+   "summary": "The passage states that last December, a 71-year-old resident, Mrs Malar Singam, was knocked down by a power-assisted bicycle near Pasir Ris Mall.",
    "sentences": [
     {
      "sid": "s01258",
@@ -1963,7 +1910,7 @@
   },
   {
    "label": "Certificate of Medical Need for PMA",
-   "summary": "Clause 16 introduces a Certificate of Medical Need for PMA users, which is an important safeguard.",
+   "summary": "Clause 16 introduces a Certificate of Medical Need for PMA users, described as an important safeguard.",
    "sentences": [
     {
      "sid": "s01268",
@@ -1975,8 +1922,8 @@
    ]
   },
   {
-   "label": "Transitional measures for compliant devices",
-   "summary": "The Bill makes it an offence to keep non-compliant devices, and the speaker hopes transitional measures like buy-back or trade-in schemes can be considered.",
+   "label": "Offence to keep non-compliant devices",
+   "summary": "The Bill makes it an offence to keep non-compliant devices, alongside support for compliance as enforcement tightens.",
    "sentences": [
     {
      "sid": "s01279",
@@ -1991,19 +1938,12 @@
      "attributed": true,
      "text": "This Bill makes it an offence to keep non-compliant devices.",
      "added_for_context": false
-    },
-    {
-     "sid": "s01281",
-     "speaker": "Ms Valerie Lee (Pasir Ris-Changi)",
-     "attributed": true,
-     "text": "I hope we can consider transitional measures such as buy-back or trade-in schemes that could help users shift to compliant devices, particularly where earlier purchases were made in good faith.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Speed limits and subsidies feedback",
-   "summary": "An SME operator suggests differentiating speed limits by vehicle class for lower-weight lorries, and the Productivity Solutions Grant should not fund regulatory compliance.",
+   "label": "SME feedback on speed limits and grants",
+   "summary": "A speaker shares an SME operator's feedback on differentiating speed limits by vehicle class and on using the Productivity Solutions Grant for compliance.",
    "sentences": [
     {
      "sid": "s01285",
@@ -2025,11 +1965,18 @@
      "attributed": true,
      "text": "On subsidies for encouraging installations, I would also like to point out that the Productivity Solutions Grant should be meant for genuine productivity uplift and not regulatory compliance like this one.",
      "added_for_context": false
+    },
+    {
+     "sid": "s01289",
+     "speaker": "Ms Valerie Lee (Pasir Ris-Changi)",
+     "attributed": true,
+     "text": "Using productivity grants for mandatory requirements risks diluting their purpose.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Seniors exempted from medical certification",
+   "label": "Exemption for seniors aged 70",
    "summary": "Seniors aged 70 and above will be exempted from the medical certification requirement.",
    "sentences": [
     {
@@ -2042,7 +1989,7 @@
    ]
   },
   {
-   "label": "LTA financial incentives powers",
+   "label": "LTA power to provide financial support",
    "summary": "The Bill states that LTA has the power to provide financial incentives, support, grants, aid and assistance.",
    "sentences": [
     {
@@ -2055,8 +2002,8 @@
    ]
   },
   {
-   "label": "NEHR medical certification for mobility scooters",
-   "summary": "The member asks whether LTA will work with MOH to generate mobility scooter medical certification from previous records to reduce seeing a physical doctor.",
+   "label": "Medical certification for mobility scooters",
+   "summary": "Asks whether LTA will work with MOH on generating medical certification for mobility scooters from previous records.",
    "sentences": [
     {
      "sid": "s01319",
@@ -2069,7 +2016,7 @@
   },
   {
    "label": "Enforcement matters",
-   "summary": "The member speaks on matters pertaining to enforcement.",
+   "summary": "The speaker states they will speak on matters pertaining to enforcement.",
    "sentences": [
     {
      "sid": "s01325",
@@ -2082,7 +2029,7 @@
   },
   {
    "label": "Technology-enabled enforcement at high-traffic nodes",
-   "summary": "The member asks whether LTA will consider a technology-enabled enforcement solution at high-traffic MRT and mall linkway nodes.",
+   "summary": "Asks whether LTA will consider a technology-enabled enforcement solution at high-traffic MRT and mall linkways.",
    "sentences": [
     {
      "sid": "s01329",
@@ -2094,8 +2041,8 @@
    ]
   },
   {
-   "label": "Ramp power and rollback reassurance",
-   "summary": "A calculation suggests 158 watts maintains six kilometres per hour on a 4.8-degree ramp, and LTA is asked to reassure users devices will not roll backwards.",
+   "label": "Reassurance on devices rolling backwards",
+   "summary": "Cites a calculation that 158 watts maintains six kilometres per hour on a 4.8-degree ramp and seeks LTA reassurance on rolling backwards.",
    "sentences": [
     {
      "sid": "s01345",
@@ -2121,8 +2068,8 @@
    ]
   },
   {
-   "label": "LTA communications and social trust",
-   "summary": "The speaker hopes LTA communications make clear the intent is preventing unsafe misuse, not encouraging public policing, with enforcement guided by training and protocols.",
+   "label": "Communication on enforcement intent",
+   "summary": "Hopes LTA's communications make clear the intent is to prevent unsafe misuse, not encourage public policing, with enforcement guided by training and protocols.",
    "sentences": [
     {
      "sid": "s01352",
@@ -2141,8 +2088,8 @@
    ]
   },
   {
-   "label": "Certificate of Medical Need for PMA",
-   "summary": "From June this year, users must have a Certificate of Medical Need to own a PMA, obtained after completing the Assessment for Mobility Scooter.",
+   "label": "Certificate of Medical Need requirement",
+   "summary": "From June this year, users must have the Certificate of Medical Need to own a PMA, obtained after completing the Assessment for Mobility Scooter.",
    "sentences": [
     {
      "sid": "s01364",
@@ -2155,7 +2102,7 @@
   },
   {
    "label": "Reported PMA PMD PAB accidents",
-   "summary": "From 2023 to Q3 2025, MOT said around 710 reported accidents involving PMAs, PMDs or PABs caused injuries, about 590 on roads and 120 off-road.",
+   "summary": "From 2023 to Q3 2025, MOT reported around 710 injury accidents involving PMAs, PMDs or PABs, about 590 on roads and 120 off-road.",
    "sentences": [
     {
      "sid": "s01376",
@@ -2174,21 +2121,21 @@
    ]
   },
   {
-   "label": "Delivery riders switching to PMAs",
-   "summary": "Some delivery riders switched to PMAs after PMDs were banned from footpaths in 2019.",
+   "label": "Demerit system for PMA users",
+   "summary": "The question asks whether the Ministry can consider a demerit system for PMA users to deter repeat offenders who disregard others' safety.",
    "sentences": [
     {
-     "sid": "s01393",
+     "sid": "s01382",
      "speaker": "Ms Lee Hui Ying (Nee Soon)",
      "attributed": true,
-     "text": "Third, some delivery riders switched to PMAs after PMDs were banned from footpaths in 2019.",
+     "text": "Can the Ministry consider establishing a demerit system for PMA users to deter repeat offenders who fail to consider the safety of others?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Access and fees for scooter assessments",
-   "summary": "The speaker asks whether MOT will coordinate with MOH and MSF on affordable assessment access and set a fee cap to avoid price hiking.",
+   "label": "Mobility scooter assessment access and fees",
+   "summary": "The question asks whether MOT will coordinate with MOH and MSF on affordable assessment access for mobility scooter users and set a fee cap.",
    "sentences": [
     {
      "sid": "s01404",
@@ -2207,8 +2154,8 @@
    ]
   },
   {
-   "label": "Mobility scooter assessment safety",
-   "summary": "Asks whether mobility scooter assessments will evaluate safe operation and include time limits given health and ageing changes.",
+   "label": "Mobility scooter safe operation assessment",
+   "summary": "The question asks whether mobility scooter assessment will include evaluating whether patients can safely operate the assistive device.",
    "sentences": [
     {
      "sid": "s01410",
@@ -2216,19 +2163,25 @@
      "attributed": true,
      "text": "Will the assessment for mobility scooters include evaluating whether patients can safely operate the assistive device?",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Employment assistance for delivery workers",
+   "summary": "The question asks whether delivery workers who want to change careers will receive employment assistance.",
+   "sentences": [
     {
-     "sid": "s01411",
+     "sid": "s01419",
      "speaker": "Ms Lee Hui Ying (Nee Soon)",
      "attributed": true,
-     "text": "Considering changes in their health conditions and the effects of ageing, will assessments have time limits for safety purposes?",
+     "text": "Will delivery workers who want to change careers receive employment assistance?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Sandwich class of disability",
-   "summary": "Notes exemptions for seniors aged 70 and above and subsidy recipients, but raises concern about the sandwich class of disability.",
+   "label": "Sandwich class of disability concern",
+   "summary": "The speaker notes exemptions for seniors aged 70 and above and subsidy recipients, but is concerned about the \"sandwich class\" of disability.",
    "sentences": [
     {
      "sid": "s01435",
@@ -2240,21 +2193,8 @@
    ]
   },
   {
-   "label": "Fast-track PMA certification",
-   "summary": "Asks whether a fast-track or temporary certification process will exist for residents needing a PMA after surgery or injury.",
-   "sentences": [
-    {
-     "sid": "s01441",
-     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
-     "attributed": true,
-     "text": "First, will there be a fast-track or temporary certification process for residents who need a PMA after surgery or injury, ensuring rehabilitation does not become a compliance case?",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Polyclinic bottlenecks from rollout",
-   "summary": "Raises concern about bottlenecks at polyclinics with the rollout starting in mid-2026.",
+   "label": "Polyclinic rollout bottlenecks worry",
+   "summary": "The speaker worries about bottlenecks at polyclinics with the rollout starting in mid-2026.",
    "sentences": [
     {
      "sid": "s01445",
@@ -2266,8 +2206,8 @@
    ]
   },
   {
-   "label": "Unregistered vehicle offence and register",
-   "summary": "States section 28I creates an offence for using an unregistered vehicle and section 28M makes the register prima facie evidence.",
+   "label": "Unregistered vehicle offence and register evidence",
+   "summary": "Section 28I creates an offence for using an unregistered vehicle and section 28M makes the register prima facie evidence.",
    "sentences": [
     {
      "sid": "s01452",
@@ -2279,8 +2219,28 @@
    ]
   },
   {
-   "label": "Ang Mo Kio PMD fire",
-   "summary": "A fire involving a PMD broke out in a lift lobby at Block 641 Ang Mo Kio Avenue 4, disrupting electrical supply and damaging lifts.",
+   "label": "Training, delivery-time and enforcement data questions",
+   "summary": "The speaker asks why the Bill does not explicitly require training or delivery-time management, and whether enforcement data will redesign conflict hotspots.",
+   "sentences": [
+    {
+     "sid": "s01473",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "Second, why does the Bill not explicitly require training or delivery-time management, including algorithmic changes that do not reward speed at the expense of safety?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01475",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "Fourth, will enforcement data be used to redesign recurring conflict hotspots in estates?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Ang Mo Kio PMD fire disruption",
+   "summary": "A PMD fire in a lift lobby at Block 641 Ang Mo Kio Avenue 4 disrupted electrical supply and damaged lifts, underlining why prevention and enforcement matter.",
    "sentences": [
     {
      "sid": "s01482",
@@ -2295,32 +2255,19 @@
      "attributed": true,
      "text": "Electrical supply was disrupted and lifts were damaged.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Certificate of Medical Need safety",
-   "summary": "States that safety on the Certificate of Medical Need must not cost dignity, and fire risks on unsafe devices must be removed, not hidden.",
-   "sentences": [
-    {
-     "sid": "s01488",
-     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
-     "attributed": true,
-     "text": "On the Certificate of Medical Need, safety must never come at the cost of dignity.",
-     "added_for_context": false
     },
     {
-     "sid": "s01490",
+     "sid": "s01484",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "On unsafe devices, fire risks must be removed, not hidden.",
+     "text": "These disruptions were avoidable and they underline why prevention and enforcement matter.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "ERP 2.0 pricing flexibility",
-   "summary": "Asks the Minister whether there will be clear limits, transparent criteria and regular public updates for adjusting ERP 2.0 pricing zones.",
+   "label": "ERP 2.0 pricing limits and transparency",
+   "summary": "The speaker asks whether there will be clear limits and transparent criteria for adjusting ERP 2.0 pricing zones and regular public updates.",
    "sentences": [
     {
      "sid": "s01526",
@@ -2339,8 +2286,8 @@
    ]
   },
   {
-   "label": "LTA OBU user feedback",
-   "summary": "Asks the Minister how LTA is incorporating user feedback to refine the OBU experience.",
+   "label": "LTA user feedback on OBU",
+   "summary": "The speaker asks how LTA is incorporating user feedback to refine the OBU experience.",
    "sentences": [
     {
      "sid": "s01532",
@@ -2352,8 +2299,8 @@
    ]
   },
   {
-   "label": "Bill enforcement manpower and costs",
-   "summary": "Asks about projected manpower and costs, plans to scale up automated enforcement, and welcomes medical certification for PMA users.",
+   "label": "Enforcement manpower and medical certification",
+   "summary": "Asks about projected manpower and costs for expanded enforcement and plans to scale up automated enforcement, and welcomes medical certification for PMA users.",
    "sentences": [
     {
      "sid": "s01539",
@@ -2372,8 +2319,8 @@
    ]
   },
   {
-   "label": "PMA certification clinic list",
-   "summary": "Asks whether the Ministry can regularly publish a list of clinics offering certification with indicative fees for transparency and affordability.",
+   "label": "Publishing clinics and certification fees",
+   "summary": "Asks whether the Ministry can regularly publish a list of clinics offering certification and update indicative fees for transparency and affordability.",
    "sentences": [
     {
      "sid": "s01546",
@@ -2385,8 +2332,8 @@
    ]
   },
   {
-   "label": "Certificate of Medical Need support",
-   "summary": "Notes Members support the Certificate of Medical Need to curb abuse but says it must be clear who may have been left behind.",
+   "label": "Certificate of Medical Need concerns",
+   "summary": "States that while Members support a Certificate of Medical Need to curb abuse, they must be clear-eyed about who may be left behind.",
    "sentences": [
     {
      "sid": "s01557",
@@ -2398,8 +2345,8 @@
    ]
   },
   {
-   "label": "GPC urges flexible implementation",
-   "summary": "The GPC urges that implementation be flexible, affordable and clearly communicated so administrative complexities, cost or narrow definitions do not exclude or penalise dependent users.",
+   "label": "Flexible affordable implementation urged",
+   "summary": "The GPC urges flexible, affordable and clearly communicated implementation so complexities, cost or narrow definitions do not exclude or penalise dependent users.",
    "sentences": [
     {
      "sid": "s01560",
@@ -2411,8 +2358,8 @@
    ]
   },
   {
-   "label": "GPC calls for transition period",
-   "summary": "The GPC calls for a sensible transition period prioritising education and understanding, and discretion where users act in good faith.",
+   "label": "Sensible transition period called for",
+   "summary": "The GPC calls for a sensible transition period prioritising education and understanding, and discretion for users acting in good faith.",
    "sentences": [
     {
      "sid": "s01564",
@@ -2424,21 +2371,8 @@
    ]
   },
   {
-   "label": "Speed limiter regime expanded 2024",
-   "summary": "In 2024, the speed limiter regime was expanded to include lorries with a maximum laden weight between 3,501 and 12,000 kilogrammes.",
-   "sentences": [
-    {
-     "sid": "s01570",
-     "speaker": "The Senior Minister of State for Home Affairs (Ms Sim Ann)",
-     "attributed": true,
-     "text": "In 2024, the speed limiter regime was expanded to include lorries with a maximum laden weight of between 3,501 kilogrammes and 12,000 kilogrammes.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Speeding accidents involving heavy vehicles fall",
-   "summary": "Speeding-related accidents involving heavy vehicles decreased by 28% from 25 cases in 2024 to 18 cases in 2025 as more lorries installed speed limiters.",
+   "label": "Heavy vehicle speeding accidents decrease",
+   "summary": "Speeding-related accidents involving heavy vehicles fell 28% from 25 cases in 2024 to 18 in 2025, with further decreases expected after all lorries install speed limiters by 1 July 2027.",
    "sentences": [
     {
      "sid": "s01592",
@@ -2446,12 +2380,19 @@
      "attributed": true,
      "text": "The number of speeding-related accidents, including fatal ones, involving heavy vehicles has decreased by 28% from 25 cases in 2024 to 18 cases in 2025, as more lorries installed speed limiters last year.",
      "added_for_context": false
+    },
+    {
+     "sid": "s01593",
+     "speaker": "The Senior Minister of State for Home Affairs (Ms Sim Ann)",
+     "attributed": true,
+     "text": "We expect these figures to further decrease after all lorries install speed limiters by 1 July 2027.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Speed limiter installation assistance for businesses",
-   "summary": "94% of lorries due by 1 January 2026 installed speed limiters, with Enterprise Singapore, Traffic Police and industry support measures described.",
+   "label": "Speed limiter installation for lorries",
+   "summary": "94% of lorries needing speed limiters by 1 January 2026 installed them, with expanded SME grants, a third standard and more authorised agents.",
    "sentences": [
     {
      "sid": "s01602",
@@ -2484,8 +2425,8 @@
    ]
   },
   {
-   "label": "Outsourcing arrangement and enforcement automation",
-   "summary": "Ms Sylvia Lim asked about the outsourcing arrangement to private sector companies, and the amendments do not involve automation of enforcement decisions.",
+   "label": "Outsourcing enforcement decisions",
+   "summary": "These amendments do not involve the automation of enforcement decisions.",
    "sentences": [
     {
      "sid": "s01610",
@@ -2504,8 +2445,8 @@
    ]
   },
   {
-   "label": "Sentencing guidelines and mobility scooter medical assessment",
-   "summary": "MHA is working with the Sentencing Advisory Panel to publish sentencing guidelines for dangerous and careless driving, and doctors and occupational therapists will assess medical needs for mobility scooter use.",
+   "label": "Mobility scooter medical needs assessment",
+   "summary": "MHA is working with the Sentencing Advisory Panel on driving sentencing guidelines, and mobility scooters are not banned but safeguarded for those with medical needs.",
    "sentences": [
     {
      "sid": "s01622",
@@ -2538,21 +2479,21 @@
    ]
   },
   {
-   "label": "Risk-managed exemptions for mobility scooters",
-   "summary": "Exemptions include seniors aged 70 and above, existing Government-subsidised mobility scooter owners, and those who applied for MOH disability schemes for mobility or transferring needs.",
+   "label": "Registry of medical need certificates",
+   "summary": "The Government will maintain a registry of those with valid Certificates of Medical Need and those exempted from the requirement.",
    "sentences": [
     {
-     "sid": "s01650",
+     "sid": "s01637",
      "speaker": "The Minister of State for Transport (Mr Baey Yam Keng)",
      "attributed": true,
-     "text": "Risk-managed exemptions include seniors aged 70 and above, those who have already obtained Government-subsidised mobility scooters and those who have applied for MOH disability schemes to help with Activities of Daily Living (ADL) needs in \"mobility\" and/or \"transferring\".",
+     "text": "The Government will maintain a registry of those with valid Certificates of Medical Need and those exempted from the requirement.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "No subsidies for Certificate of Medical Need visits",
-   "summary": "Healthcare subsidies will not be given for visits made solely to obtain the Certificate of Medical Need.",
+   "label": "No subsidies for certificate visits",
+   "summary": "Healthcare subsidies will not be accorded for visits made solely to obtain the Certificate of Medical Need.",
    "sentences": [
     {
      "sid": "s01658",
@@ -2564,8 +2505,8 @@
    ]
   },
   {
-   "label": "Delivery riders without mobility challenges",
-   "summary": "PMAs are not the right mode of transport for delivery riders without mobility challenges, who can switch to other devices or vehicles before 1 June 2026.",
+   "label": "Delivery riders switching from PMAs",
+   "summary": "Delivery riders without mobility challenges should switch to other devices or vehicles before 1 June 2026, with industry support for new PMA rules.",
    "sentences": [
     {
      "sid": "s01672",
@@ -2580,25 +2521,26 @@
      "attributed": true,
      "text": "They can continue their trade by switching to other devices or vehicles before 1 June 2026.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Lowering PMA speed limit to six kilometres per hour",
-   "summary": "The speed limit was lowered to six kilometres per hour to peg it to brisk walking speed since PMAs replace walking.",
-   "sentences": [
+    },
     {
-     "sid": "s01690",
+     "sid": "s01674",
      "speaker": "The Minister of State for Transport (Mr Baey Yam Keng)",
      "attributed": true,
-     "text": "In accepting the recommendation to lower the speed limit to six kilometres per hour, our primary consideration was to peg the speed to brisk walking speed since PMAs are a replacement for walking.",
+     "text": "We had engaged the Digital Platforms Industry Association and the NDCA last year.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01675",
+     "speaker": "The Minister of State for Transport (Mr Baey Yam Keng)",
+     "attributed": true,
+     "text": "They expressed support for the new PMA rules, including the six kilometres an hour speed limit, in a joint statement.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Registration deadline for existing mobility scooter users",
-   "summary": "Stakeholders had time to change to compliant devices before the PMA rules commence on 1 June 2026, but existing mobility scooter users get until 1 January 2029 to register and change to compliant devices.",
+   "label": "PMA rules transition period",
+   "summary": "Stakeholders had time to switch before PMA rules start 1 June 2026, but mobility scooter users get until 1 January 2029 to register and comply with the six kilometres per hour speed limit.",
    "sentences": [
     {
      "sid": "s01697",
@@ -2617,8 +2559,8 @@
    ]
   },
   {
-   "label": "Current PAB registration cost",
-   "summary": "The current cost of registering power-assisted bicycles is $50.",
+   "label": "PAB registration cost comparison",
+   "summary": "The current cost of registering PABs is $50.",
    "sentences": [
     {
      "sid": "s01705",
@@ -2631,7 +2573,7 @@
   },
   {
    "label": "Mobility scooter registration framework",
-   "summary": "Registration and identification marks show the device's unique identification number, not owner details, and only individuals with a Certificate of Medical Need or exempted can generally register mobility scooters.",
+   "summary": "Registration and identification marks show the device's unique identification number, not owner details; generally only Certificate of Medical Need holders or exempted individuals can register mobility scooters, and families can share one.",
    "sentences": [
     {
      "sid": "s01709",
@@ -2653,26 +2595,25 @@
      "attributed": true,
      "text": "The registration framework will allow families to share a single mobility scooter.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Prosecution for keeping unsafe device",
+   "summary": "The individual can also be prosecuted for the offence of keeping the unsafe device.",
+   "sentences": [
     {
-     "sid": "s01712",
+     "sid": "s01738",
      "speaker": "The Minister of State for Transport (Mr Baey Yam Keng)",
      "attributed": true,
-     "text": "Registration is for the mobility scooter to ensure device compliance.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s01713",
-     "speaker": "The Minister of State for Transport (Mr Baey Yam Keng)",
-     "attributed": true,
-     "text": "It is not an offence to ride a mobility scooter that is registered to another person as long as the user is granted a Certificate of Medical Need or exempted.",
+     "text": "The individual can also be prosecuted for the offence of keeping the unsafe device.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Periodic inspections for PMAs",
-   "summary": "Periodic inspections are required for e-scooters, and mandating them for PMAs to check dimensions and speed limits must be weighed against the burden on users.",
+   "label": "E-scooter periodic inspections",
+   "summary": "Periodic inspections are required for e-scooters to check they remain compliant with the UL2272 standard and have not been illegally modified.",
    "sentences": [
     {
      "sid": "s01752",
@@ -2680,19 +2621,12 @@
      "attributed": true,
      "text": "Today, periodic inspections are required for e-scooters to check that they remain compliant with the UL2272 standard and have not been illegally modified.",
      "added_for_context": false
-    },
-    {
-     "sid": "s01753",
-     "speaker": "The Minister of State for Transport (Mr Baey Yam Keng)",
-     "attributed": true,
-     "text": "The benefits of mandating periodic inspections for PMAs solely to check dimensions and speed limits must be weighed against the burden on users.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Online sales of non-compliant devices",
-   "summary": "LTA works with e-commerce platforms Carousell, Lazada and Shopee to take down listings of non-compliant devices, and will look at strengthening rules for online sales and advertising.",
+   "label": "Online sales enforcement and rules",
+   "summary": "LTA works with e-commerce platforms Carousell, Lazada and Shopee to take down non-compliant device listings, and will look at strengthening rules for online sales and advertising in legislation.",
    "sentences": [
     {
      "sid": "s01757",
@@ -2711,8 +2645,21 @@
    ]
   },
   {
+   "label": "Certificate of Medical Need",
+   "summary": "The Certificate of Medical Need distinguishes genuine users from those who misuse mobility scooters.",
+   "sentences": [
+    {
+     "sid": "s01762",
+     "speaker": "The Minister of State for Transport (Mr Baey Yam Keng)",
+     "attributed": true,
+     "text": "With the Certificate of Medical Need, we distinguish genuine users from those who misuse mobility scooters.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
    "label": "ERP payment penalties",
-   "summary": "Most missed ERP payments are due to genuine oversight rather than intent to avoid payment, so this amendment makes penalties more proportionate to the offence.",
+   "summary": "This amendment makes penalties more proportionate to the offence, as most missed ERP payments are due to genuine oversight.",
    "sentences": [
     {
      "sid": "s01780",
@@ -2731,27 +2678,54 @@
    ]
   },
   {
-   "label": "Distance-based charging implementation",
-   "summary": "The speaker does not intend to implement distance-based charging immediately.",
+   "label": "LTA vehicle-specific data use",
+   "summary": "LTA will use vehicle-specific data only for payment, charges and enforcement.",
    "sentences": [
     {
-     "sid": "s01788",
+     "sid": "s01800",
      "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
      "attributed": true,
-     "text": "As I mentioned yesterday, I do not intend to implement distance-based charging immediately.",
+     "text": "As we have said before, LTA will use vehicle-specific data only for payment, charges and enforcement.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "OBU exemption for classic vehicles",
-   "summary": "Vehicles with unresolvable technical problems, such as old cars on Classic or Vintage Vehicle schemes, will be exempted from installing an OBU.",
+   "label": "OBU exemption for old cars",
+   "summary": "Old cars on the Classic or Vintage Vehicle schemes will be exempt from installing an OBU where technical problems cannot be resolved.",
    "sentences": [
     {
      "sid": "s01812",
      "speaker": "The Acting Minister for Transport (Mr Jeffrey Siow)",
      "attributed": true,
      "text": "Where technical problems cannot be resolved such as old cars on the Classic or Vintage Vehicle schemes, we will exempt them from the requirement to install an OBU.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Sitting suspension",
+   "summary": "The Sitting is suspended and the Chair will be taken at 5.05 pm.",
+   "sentences": [
+    {
+     "sid": "s01819",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "Clarification for the Minister, the Senior Minister of State and the Minister of State?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01820",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "Looks like the round-up speeches by the three officeholders are very comprehensive.      .",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01821",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "I suspend the Sitting and will take the Chair at 5.05 pm.",
      "added_for_context": false
     }
    ]
@@ -2771,12 +2745,12 @@
    "bill-781"
   ],
   "sentences_total": 1822,
-  "sentences_selected": 264,
-  "sentences_in_sections": 264,
+  "sentences_selected": 262,
+  "sentences_in_sections": 262,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 48,
-  "sections_total": 151,
-  "selection_share": 0.1449,
+  "sentences_added_for_context": 45,
+  "sections_total": 149,
+  "selection_share": 0.1438,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -2785,24 +2759,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 151,
+   "sections_total": 149,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 264,
-   "sentences_selected": 264,
-   "turns_cited": 29,
+   "sentences_published": 262,
+   "sentences_selected": 262,
+   "turns_cited": 31,
    "turns_total": 34,
-   "coverage": 0.8529,
+   "coverage": 0.9118,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:24:41"
+   "checked_at": "2026-09-19T22:43:56"
   },
   "usage": {
-   "calls": 85,
-   "prompt_tokens": 80929,
-   "completion_tokens": 9071,
+   "calls": 84,
+   "prompt_tokens": 80412,
+   "completion_tokens": 8666,
    "estimated": false,
-   "cost_usd": 0.01387
+   "cost_usd": 0.013684
   }
  }
 }

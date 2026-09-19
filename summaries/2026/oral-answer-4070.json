@@ -3,8 +3,8 @@
  "what_it_is": "Intended Role of Community Mental Health Services within Singapore’s Care Continuum",
  "sections": [
   {
-   "label": "Community mental health teams CREST COMIT",
-   "summary": "CREST and COMIT serve as first stops and follow-up care, with MOH and AIC monitoring clinical and functional outcomes.",
+   "label": "Community mental health teams and monitoring",
+   "summary": "CREST and COMIT serve as first stops and follow-up in the community, with MOH monitoring clinical outcomes, service utilisation and referral sources.",
    "sentences": [
     {
      "sid": "s00002",
@@ -54,12 +54,26 @@
      "attributed": true,
      "text": "These include clinical and functional outcomes using tools such as the Patient Health Questionnaire, Generalised Anxiety Disorder and the World Health Organization Disability Assessment Schedule 2.0.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "We also monitor the service utilisation and intensity of care needs of clients, including the referral sources.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "We use such data in our ongoing review and refinement of community mental health services, and to determine the resourcing for these services.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Resourcing gaps and care provider support",
-   "summary": "Regular interactions and meetings identify resourcing gaps, with training resources, pocket guides, funding and training support provided as needed.",
+   "label": "Training resources and right-siting clients",
+   "summary": "Regular interactions and structured meetings reveal resourcing gaps, and training resources and pocket guides help care providers right-site clients to the right level of care.",
    "sentences": [
     {
      "sid": "s00013",
@@ -73,20 +87,6 @@
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "And right now, one of our measures is to push forth training resources and having some pocket guides to help the care providers right-site the clients to the right level of care so that they are not overburdened by those who need more care than they can provide.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00015",
-     "speaker": "Dr Koh Poh Koon",
-     "attributed": true,
-     "text": "In these interactions and formalised meeting sessions, we will be able to get a sense of where the gaps might be and if need be, provide them with extra resources.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00016",
-     "speaker": "Dr Koh Poh Koon",
-     "attributed": true,
-     "text": "It could be funding, could be training support to be able to deliver the services that they need to do in the community.",
      "added_for_context": false
     }
    ]
@@ -128,12 +128,12 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:36:04"
+   "checked_at": "2026-09-19T22:15:06"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1435,
-   "completion_tokens": 148,
+   "prompt_tokens": 1421,
+   "completion_tokens": 154,
    "estimated": false,
    "cost_usd": 0.000242
   }

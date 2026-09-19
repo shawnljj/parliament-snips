@@ -3,8 +3,8 @@
  "what_it_is": "Measures to Ensure Accessibility of Creative Workspaces for Tenant Artists, Including Those at Goodman Arts Centre",
  "sections": [
   {
-   "label": "Arts gross floor area growth",
-   "summary": "NAC-tracked arts gross floor area totals 94,000 square metres, a 42% increase since 2010.",
+   "label": "Arts gross floor area",
+   "summary": "NAC tracks 94,000 square metres of arts gross floor area, a 42% increase since 2010.",
    "sentences": [
     {
      "sid": "s00004",
@@ -17,7 +17,7 @@
   },
   {
    "label": "Goodman Arts Centre units and rates",
-   "summary": "Goodman Arts Centre has 77 units, and rate increases are deferred in 2026, with a review at year-end for 2027.",
+   "summary": "Goodman Arts Centre has 77 units; rate increases are deferred in 2026, with rates reviewed at year-end for 2027.",
    "sentences": [
     {
      "sid": "s00008",
@@ -57,7 +57,7 @@
    ]
   },
   {
-   "label": "Arts spaces provision study",
+   "label": "Study on arts spaces provision",
    "summary": "A study on improving arts spaces provision is ongoing, with findings and recommendations to be shared when ready.",
    "sentences": [
     {
@@ -120,14 +120,14 @@
    "coverage": 0.4,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:13:42"
+   "checked_at": "2026-09-19T22:01:59"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1465,
-   "completion_tokens": 191,
+   "completion_tokens": 189,
    "estimated": false,
-   "cost_usd": 0.000259
+   "cost_usd": 0.000258
   }
  }
 }

@@ -3,7 +3,7 @@
  "what_it_is": "Data on Individuals Granted Permanent Residency under Global Investor Programme",
  "sections": [
   {
-   "label": "GIP investment options and outcomes",
+   "label": "Global Investor Programme investment options",
    "summary": "Qualified investors may apply through three options, and from 2015 to 2025 about 450 individuals received permanent residency through the GIP.",
    "sentences": [
     {
@@ -52,7 +52,7 @@
   },
   {
    "label": "GIP re-entry permit renewal",
-   "summary": "Only GIP PRs meeting both economic and residency commitments will have their re-entry permit renewed for a further five-year period.",
+   "summary": "Only GIP PRs meeting economic and residency commitments have their re-entry permit renewed for five years, and no major change in applicant profile is seen yet.",
    "sentences": [
     {
      "sid": "s00015",
@@ -107,14 +107,14 @@
    "coverage": 0.6,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:58:56"
+   "checked_at": "2026-09-19T22:28:11"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1564,
-   "completion_tokens": 150,
+   "completion_tokens": 155,
    "estimated": false,
-   "cost_usd": 0.000261
+   "cost_usd": 0.000262
   }
  }
 }

@@ -3,8 +3,8 @@
  "what_it_is": "Reports Made to Police for Circulation of AI-generated Fake Obscene Images",
  "sections": [
   {
-   "label": "Police investigations of obscene material reports",
-   "summary": "Police investigate obscene material reports by interviewing the accused and witnesses and examining digital forensic evidence.",
+   "label": "Police handling obscene material reports",
+   "summary": "Police investigate obscene material reports, may notify parents of young victims, offer victim care, and direct online service providers to block access.",
    "sentences": [
     {
      "sid": "s00002",
@@ -12,40 +12,34 @@
      "attributed": true,
      "text": "Where there is a report relating to any obscene material, the Police will conduct investigations, including through interviewing the accused and other witnesses, and examining any digital forensic evidence that may be available.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Online Criminal Harms Act directions",
-   "summary": "Police may direct online service providers to disable Singapore users' access to circulating AI-generated obscene images.",
-   "sentences": [
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Home Affairs (Ms Sim Ann) (for the Coordinating Minister for National Security and Minister for Home Affairs)",
+     "attributed": true,
+     "text": "For cases involving young victims, the Police may notify the parents or guardians.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Home Affairs (Ms Sim Ann) (for the Coordinating Minister for National Security and Minister for Home Affairs)",
+     "attributed": true,
+     "text": "The Police will also offer victim care services to victims who require psychological support.",
+     "added_for_context": false
+    },
     {
      "sid": "s00005",
      "speaker": "The Senior Minister of State for Home Affairs (Ms Sim Ann) (for the Coordinating Minister for National Security and Minister for Home Affairs)",
      "attributed": true,
      "text": "If the AI-generated obscene images are circulating online, the Police may issue directions under the Online Criminal Harms Act to online service providers to disable Singapore users’ access to them.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00007",
-     "speaker": "Ms Sylvia Lim (Aljunied)",
-     "attributed": true,
-     "text": "The first is that in some cases that I have come across, I was told by the victims that they reported to Police that their images had been artificially created and put up on porn websites, and the Police had advised them to take action under the Protection from Harassment Act, as it is a non-arrestable offence.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Penal Code intimate image offences",
-   "summary": "Police will act under Penal Code offences for circulating intimate images if the facts warrant it.",
+   "label": "Arrestable offences and blocking images",
+   "summary": "Police action on intimate image circulation depends on case facts, and Police may direct online service providers to block obscene images.",
    "sentences": [
-    {
-     "sid": "s00011",
-     "speaker": "Ms Sylvia Lim (Aljunied)",
-     "attributed": true,
-     "text": "The third question is, I believe that under the Penal Code, there are actually some arrestable offences that would actually cover some of the conduct – for example, being in possession of intimate images and so on, under section 377BD and 377BE.",
-     "added_for_context": false
-    },
     {
      "sid": "s00012",
      "speaker": "Ms Sylvia Lim (Aljunied)",
@@ -93,7 +87,7 @@
   "sentences_in_sections": 8,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 1,
-  "sections_total": 3,
+  "sections_total": 2,
   "selection_share": 0.5333,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -103,7 +97,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 3,
+   "sections_total": 2,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 8,
@@ -113,14 +107,14 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:59:31"
+   "checked_at": "2026-09-19T21:53:37"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1456,
-   "completion_tokens": 168,
+   "prompt_tokens": 1365,
+   "completion_tokens": 142,
    "estimated": false,
-   "cost_usd": 0.000251
+   "cost_usd": 0.000231
   }
  }
 }

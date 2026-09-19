@@ -56,15 +56,15 @@
    ]
   },
   {
-   "label": "LUSH within broader biodiversity strategy",
-   "summary": "LUSH, now in its third iteration, is one part of a strategy that also safeguards 7,800 hectares of green spaces and includes nature parks, habitat restoration and species recovery.",
+   "label": "LUSH part of biodiversity strategy",
+   "summary": "LUSH is one part of Singapore's strategy, which also includes safeguarding 7,800 hectares of green spaces, nature parks, habitat restoration and species recovery.",
    "sentences": [
     {
      "sid": "s00022",
      "speaker": "Mr Alvin Tan",
      "attributed": true,
      "text": "The LUSH project, now in its third iteration, is just a one part of our overall strategy to enhance and to preserve biodiversity in Singapore.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00023",
@@ -89,16 +89,9 @@
    ]
   },
   {
-   "label": "Shawn Lum Yishun Chencharu planting palette",
-   "summary": "Dr Shawn Lum offered expertise to co-create a planting palette with HDB for the Yishun Chencharu project, and the Member's external examples suggestion was called not quite appropriate to Singapore's context.",
+   "label": "Singapore's holistic biodiversity approach",
+   "summary": "The Member's suggestion to look at external examples is not quite appropriate to Singapore's context, which has a larger, more holistic, more coordinated approach.",
    "sentences": [
-    {
-     "sid": "s00034",
-     "speaker": "Mr Alvin Tan",
-     "attributed": true,
-     "text": "In this particular Yishun Chencharu project, Dr Shawn Lum has offered his expertise to co-create planting palette with HDB.",
-     "added_for_context": false
-    },
     {
      "sid": "s00035",
      "speaker": "Mr Alvin Tan",
@@ -128,12 +121,12 @@
    "oral-answer-4054"
   ],
   "sentences_total": 37,
-  "sentences_selected": 11,
-  "sentences_in_sections": 11,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 3,
+  "sentences_added_for_context": 2,
   "sections_total": 6,
-  "selection_share": 0.2973,
+  "selection_share": 0.2703,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -145,21 +138,21 @@
    "sections_total": 6,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 11,
-   "sentences_selected": 11,
+   "sentences_published": 10,
+   "sentences_selected": 10,
    "turns_cited": 3,
    "turns_total": 5,
    "coverage": 0.6,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:58:43"
+   "checked_at": "2026-09-19T22:28:02"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2345,
-   "completion_tokens": 384,
+   "prompt_tokens": 2318,
+   "completion_tokens": 362,
    "estimated": false,
-   "cost_usd": 0.000436
+   "cost_usd": 0.000426
   }
  }
 }

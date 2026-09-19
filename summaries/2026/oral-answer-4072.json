@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "MOH FY2025 operating expenditure reduction",
-   "summary": "MOH's revised FY2025 operating expenditure fell $0.31 billion due to lower-than-expected public healthcare cluster operating cost increases, while spending still rises to $20.04 billion in FY2026.",
+   "summary": "Lower-than-expected operating cost increases at public healthcare clusters caused a $0.31 billion reduction in MOH's revised FY2025 operating expenditure.",
    "sentences": [
     {
      "sid": "s00001",
@@ -45,7 +45,7 @@
   },
   {
    "label": "Non-public information on operations",
-   "summary": "Some information is non-public and related to projects and decisions, but patient care was not compromised and services continued to be delivered well.",
+   "summary": "Some information is non-public, but care to patients was not compromised and healthcare services continued to be delivered well.",
    "sentences": [
     {
      "sid": "s00014",
@@ -107,14 +107,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:36:09"
+   "checked_at": "2026-09-19T22:15:09"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1226,
-   "completion_tokens": 155,
+   "completion_tokens": 138,
    "estimated": false,
-   "cost_usd": 0.000215
+   "cost_usd": 0.00021
   }
  }
 }

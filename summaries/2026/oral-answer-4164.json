@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Questions on GovTech retrenchment details",
-   "summary": "Questions ask the Minister for Digital Development and Information about the 93 retrenched GovTech officers, retraining criteria, redeployment and morale.",
+   "summary": "Questions ask whether the Government has information on the 93 retrenched GovTech officers, retraining criteria and redeployment before external recruitment.",
    "sentences": [
     {
      "sid": "s00002",
@@ -50,21 +50,21 @@
    ]
   },
   {
-   "label": "Job opportunities for affected officers",
-   "summary": "More than 300 job opportunities relevant to the affected officers' competencies were identified.",
+   "label": "Age group of exiting officers",
+   "summary": "Among the 93 exiting officers, the largest age group is 40 to 49.",
    "sentences": [
     {
-     "sid": "s00043",
+     "sid": "s00032",
      "speaker": "The Senior Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister for Digital Development and Information)",
      "attributed": true,
-     "text": "Together, we identified a good mix of more than 300 job opportunities that are relevant to the affected officers' competencies.",
+     "text": "Among the 93 exiting officers, the largest age group is 40 to 49.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Digital tech talent pipeline support",
-   "summary": "The Government will support workers, including mid-career professionals, through initiatives such as TechSkills Accelerator, GovTech's Digital Academy and industry and IHL partnerships.",
+   "summary": "The Government is committed to building digital tech talent and supporting workers, including mid-career professionals, through TechSkills Accelerator, GovTech's Digital Academy and industry and IHL training.",
    "sentences": [
     {
      "sid": "s00060",
@@ -98,7 +98,7 @@
   },
   {
    "label": "Shortening exit pathway period",
-   "summary": "GovTech will aim to shorten the period officers spend on a pathway towards exit so they reach clarity on next steps more quickly.",
+   "summary": "GovTech found extended periods on a pathway towards exit created prolonged uncertainty and anxiety, so it will aim to shorten this period where possible.",
    "sentences": [
     {
      "sid": "s00081",
@@ -118,7 +118,7 @@
   },
   {
    "label": "Contract officers and age proportion",
-   "summary": "Contract officers in project and vendor management roles are more likely to be affected, and about 30% of affected workers are above age 50.",
+   "summary": "Contract officers in project and vendor management roles are more likely to be affected going forward, and about 30% of affected workers are above age 50.",
    "sentences": [
     {
      "sid": "s00089",
@@ -138,7 +138,7 @@
   },
   {
    "label": "Job support for GovTech officers",
-   "summary": "Communication was done early with over 300 job opportunities curated, and all 93 officers remain on GovTech payroll.",
+   "summary": "Communication was done early, over 300 job opportunities were curated, some officers are in application and interview stages, and all 93 officers remain on GovTech payroll.",
    "sentences": [
     {
      "sid": "s00111",
@@ -165,7 +165,7 @@
   },
   {
    "label": "Monitoring retrenched GovTech officers",
-   "summary": "GovTech will support and monitor all 93 officers and any future retrenched officers through job placement efforts.",
+   "summary": "GovTech is grateful to the officers, will keep supporting them, and intends to monitor all 93 and any future retrenched officers through job placement efforts.",
    "sentences": [
     {
      "sid": "s00117",
@@ -185,7 +185,7 @@
   },
   {
    "label": "AI use and GovTech transformation",
-   "summary": "AI use needs separate debate, officers need AI foundation, and GovTech needs more people equipped to build technology.",
+   "summary": "A separate debate is needed on AI use, officers should have an AI foundation, and GovTech needs more people equipped to build and own technology.",
    "sentences": [
     {
      "sid": "s00137",
@@ -261,14 +261,14 @@
    "coverage": 0.32,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:46:25"
+   "checked_at": "2026-09-19T21:45:21"
   },
   "usage": {
    "calls": 8,
-   "prompt_tokens": 7853,
-   "completion_tokens": 558,
+   "prompt_tokens": 7847,
+   "completion_tokens": 594,
    "estimated": false,
-   "cost_usd": 0.001256
+   "cost_usd": 0.001265
   }
  }
 }

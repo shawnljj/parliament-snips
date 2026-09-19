@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "E-vaporiser smuggling and online enforcement",
-   "summary": "HSA and ICA detected 59 large-scale smuggling cases in 2025, seizing around 230,000 e-vaporisers, while over 10,000 online advertisements were removed in 2024 and 2025.",
+   "summary": "HSA and ICA detected 59 large-scale smuggling cases in 2025, seizing around 230,000 e-vaporisers and related products, while over 10,000 online advertisements were removed in 2024 and 2025.",
    "sentences": [
     {
      "sid": "s00002",
@@ -37,8 +37,8 @@
    ]
   },
   {
-   "label": "Daily bot surveillance of commercial sites",
-   "summary": "Surveillance is done daily with bots to target commercial sites and identify offending sites that need to be taken down.",
+   "label": "Bot surveillance of commercial sites",
+   "summary": "Surveillance with bots is done daily to trawl commercial sites and identify offending sites that need to be taken down.",
    "sentences": [
     {
      "sid": "s00010",
@@ -51,7 +51,7 @@
   },
   {
    "label": "Blocking vape commercial sites",
-   "summary": "After offending sites are taken down, work continues with IMDA, SPF and the Online Criminal Harms Acts Office to block specific vape commercial sites.",
+   "summary": "After offending sites are taken down, work is done with IMDA, SPF and the Online Criminal Harms Acts Office to block specific vape commercial sites.",
    "sentences": [
     {
      "sid": "s00013",
@@ -99,14 +99,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:26:09"
+   "checked_at": "2026-09-19T22:45:07"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1203,
-   "completion_tokens": 210,
+   "completion_tokens": 214,
    "estimated": false,
-   "cost_usd": 0.000227
+   "cost_usd": 0.000228
   }
  }
 }

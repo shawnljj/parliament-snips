@@ -3,8 +3,8 @@
  "what_it_is": "Committee of Supply – Head V (Ministry of Trade and Industry)",
  "sections": [
   {
-   "label": "Budget cut for Head V",
-   "summary": "A motion proposes reducing the total sum allocated for Head V of the Estimates by $100.",
+   "label": "Budget cut motion on economy",
+   "summary": "A motion to reduce Head V of the Estimates by $100, noting the economy faces deep structural change in the global order.",
    "sentences": [
     {
      "sid": "s00002",
@@ -12,12 +12,19 @@
      "attributed": true,
      "text": "Mr Chairman, I move, \"That the total sum to be allocated for Head V of the Estimates be reduced by $100\".",
      "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Saktiandi Supaat (Bishan-Toa Payoh)",
+     "attributed": true,
+     "text": "Mr Chairman, our economy today is less about weathering cyclical volatility and more about navigating deep structural change in the global order.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Singapore's growth strategy",
-   "summary": "Singapore's strategy must strengthen business resilience, move into higher-value growth and create quality jobs, with growth coming from productivity.",
+   "label": "Singapore's three-part economic strategy",
+   "summary": "Singapore's strategy must strengthen business resilience, move into higher-value growth areas and translate growth into quality jobs for Singaporeans.",
    "sentences": [
     {
      "sid": "s00008",
@@ -25,19 +32,12 @@
      "attributed": true,
      "text": "In this environment, Singapore’s strategy must do three things simultaneously: strengthen business resilience, move decisively into higher-value growth areas and translate growth into quality jobs for Singaporeans.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00009",
-     "speaker": "Mr Saktiandi Supaat (Bishan-Toa Payoh)",
-     "attributed": true,
-     "text": "Ultimately, with constraints on labour and capital, growth must increasingly come from within, by deepening capabilities, innovation and knowledge, in other words, productivity.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Wage and training co-funding",
-   "summary": "The passage asks whether wage and training co-funding for job redesign can be strengthened and whether a counter-cyclical accelerator should be considered.",
+   "label": "Wage co-funding and counter-cyclical support",
+   "summary": "Asks whether wage and training co-funding for job redesign can be strengthened and whether a counter-cyclical accelerator should be considered.",
    "sentences": [
     {
      "sid": "s00019",
@@ -56,16 +56,22 @@
    ]
   },
   {
-   "label": "Decarbonisation jobs and energy",
-   "summary": "The passage asks about projected job creation from decarbonisation and how to keep energy reliable and affordable while building local capabilities.",
+   "label": "Greener energy transition",
+   "summary": "As a resource-scarce country, Singapore must accelerate its transition to greener energy to reduce vulnerability to global price shocks.",
    "sentences": [
     {
-     "sid": "s00046",
+     "sid": "s00045",
      "speaker": "Mr Saktiandi Supaat (Bishan-Toa Payoh)",
      "attributed": true,
-     "text": "Kenya, whose President has expressed an ambition to be the \"Singapore of Africa\", now generates about 90% of its electricity from renewable sources.",
+     "text": "As a resource-scarce country, we must accelerate our transition to greener energy to reduce vulnerability to global price shocks, especially in an era of heightened geopolitical fragmentation.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Decarbonisation jobs and energy affordability",
+   "summary": "Asks about projected job creation from decarbonisation and how sustainability ambitions can be met while keeping energy reliable and affordable.",
+   "sentences": [
     {
      "sid": "s00048",
      "speaker": "Mr Saktiandi Supaat (Bishan-Toa Payoh)",
@@ -79,19 +85,32 @@
      "attributed": true,
      "text": "How do we ensure that our sustainability ambitions are achieved while keeping energy reliable and affordable for households and businesses?",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Fiscal buffers and capability building",
+   "summary": "Fiscal discipline and buffers give space to respond to shocks, but long-term competitiveness depends on building, retaining and renewing capabilities.",
+   "sentences": [
     {
-     "sid": "s00050",
+     "sid": "s00053",
      "speaker": "Mr Saktiandi Supaat (Bishan-Toa Payoh)",
      "attributed": true,
-     "text": "And how can this transition catalyse new capabilities and industries locally, rather than simply raise costs?",
+     "text": "In a more volatile global environment, fiscal discipline and buffers give us the space to respond to shocks.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00054",
+     "speaker": "Mr Saktiandi Supaat (Bishan-Toa Payoh)",
+     "attributed": true,
+     "text": "But ultimately, our long-term competitiveness will depend on how deeply we build, retain and renew capabilities within our economy.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Target for local companies",
-   "summary": "MTI could consider setting an ambitious target for new local companies to reach that scale by 2035.",
+   "label": "Target for new local companies",
+   "summary": "MTI could consider setting an ambitious target for new local companies to reach that scale by 2035, so agencies can marshal resources.",
    "sentences": [
     {
      "sid": "s00061",
@@ -103,8 +122,8 @@
    ]
   },
   {
-   "label": "New tier for companies",
-   "summary": "MTI could consider adding a separate tier of companies between $100 and $200 million in annual revenue with slightly lower support than the SME tier.",
+   "label": "Separate tier for mid-sized companies",
+   "summary": "MTI could consider adding a separate tier of companies between $100 and $200 million in annual revenue, with slightly lower support than the SME tier.",
    "sentences": [
     {
      "sid": "s00064",
@@ -116,8 +135,8 @@
    ]
   },
   {
-   "label": "Enterprise Financing Scheme acquisitions support",
-   "summary": "The Enterprise Financing Scheme supports domestic acquisitions by firms up to $500 million in revenue, but this support lapses in a month, and the Ministry should consider extending or broadening it.",
+   "label": "Enterprise Financing Scheme domestic acquisitions support",
+   "summary": "The Enterprise Financing Scheme supports domestic acquisitions by firms up to $500 million in revenue, but this support lapses in a month.",
    "sentences": [
     {
      "sid": "s00087",
@@ -127,25 +146,18 @@
      "added_for_context": false
     },
     {
-     "sid": "s00089",
+     "sid": "s00088",
      "speaker": "Mr Shawn Loh (Jalan Besar)",
      "attributed": true,
-     "text": "The Ministry should consider extending or broadening this support.",
+     "text": "This was not mentioned in the Budget Statement.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "CASE referrals to CCS timing",
-   "summary": "When CASE refers a business to CCS for CPFTA breaches, it can take well over two years before an injunction is granted, with recent cases taking 28 to 39 months.",
+   "label": "Process duration from referral to Court Order",
+   "summary": "In recent cases, the process has taken between 28 and 39 months from referral to Court Order.",
    "sentences": [
-    {
-     "sid": "s00105",
-     "speaker": "Mr Melvin Yong Yik Chye (Radin Mas)",
-     "attributed": true,
-     "text": "Today, when CASE refers a business to the Competition and Consumer Commission of Singapore (CCS) for breaches of the Consumer Protection (Fair Trading) Act (or CPFTA), it can take well over two years before an injunction is granted by the Courts.",
-     "added_for_context": false
-    },
     {
      "sid": "s00106",
      "speaker": "Mr Melvin Yong Yik Chye (Radin Mas)",
@@ -156,8 +168,28 @@
    ]
   },
   {
-   "label": "Prepayment losses and cooling-off period",
-   "summary": "In 2025 consumers suffered over $2.7 million in prepayment losses, and the speaker calls on the Government to introduce a mandatory cooling-off period for businesses collecting significant prepayments.",
+   "label": "CCS administrative enforcement powers for CPFTA",
+   "summary": "CCS already exercises administrative powers under the Competition Act, and the Government is called on to grant similar powers for CPFTA breaches.",
+   "sentences": [
+    {
+     "sid": "s00110",
+     "speaker": "Mr Melvin Yong Yik Chye (Radin Mas)",
+     "attributed": true,
+     "text": "Today, CCS already exercises administrative powers under the Competition Act.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00111",
+     "speaker": "Mr Melvin Yong Yik Chye (Radin Mas)",
+     "attributed": true,
+     "text": "I call on the Government to grant CCS similar administrative enforcement powers for breaches of the CPFTA.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Mandatory cooling-off period for prepayments",
+   "summary": "In 2025, consumers suffered over $2.7 million in prepayment losses, and the Government is called on to introduce a mandatory cooling-off period.",
    "sentences": [
     {
      "sid": "s00120",
@@ -183,8 +215,8 @@
    ]
   },
   {
-   "label": "CCS actions against three businesses",
-   "summary": "In August 2024 CCS acted against Sterra for false claims, and last December against PRISM+ for fake countdown timers and COURTS for adding unsolicited products to shopping carts.",
+   "label": "CCS action against brands",
+   "summary": "CCS took action against Sterra, PRISM+ and COURTS for false claims, fake countdown timers and unsolicited cart additions.",
    "sentences": [
     {
      "sid": "s00137",
@@ -204,7 +236,7 @@
   },
   {
    "label": "Beauty industry complaints surge",
-   "summary": "CASE's February 2026 report recorded a 76% surge in beauty industry complaints last year, with consumers losing over $2.1 million.",
+   "summary": "CASE's February 2026 report recorded a 76% surge in beauty industry complaints, with consumers losing over $2.1 million.",
    "sentences": [
     {
      "sid": "s00155",
@@ -216,21 +248,14 @@
    ]
   },
   {
-   "label": "Criminalising severe predatory sales tactics",
-   "summary": "The speaker invites MTI to work with the Ministry of Home Affairs and the Attorney-General's Chambers to examine criminalising severe predatory sales tactics directed at vulnerable people.",
+   "label": "Beauty salon chain complaints",
+   "summary": "Another chain of beauty salons drew 53 complaints exceeding $980,000 in total.",
    "sentences": [
     {
-     "sid": "s00165",
+     "sid": "s00160",
      "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
      "attributed": true,
-     "text": "The gap in the law is precisely what must be closed.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00166",
-     "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
-     "attributed": true,
-     "text": "So, this is my final ask: I invite MTI to consider working with the Ministry of Home Affairs and the Attorney-General's Chambers to examine criminalising severe predatory sales tactics that are directed at vulnerable people.",
+     "text": "Another chain of beauty salons – 53 complaints, exceeding $980,000 in total.",
      "added_for_context": false
     }
    ]
@@ -249,8 +274,28 @@
    ]
   },
   {
+   "label": "Segment employment and value added",
+   "summary": "They provide economic stability and livelihoods, employing 45% of workers but contributing only 11% of nominal value added.",
+   "sentences": [
+    {
+     "sid": "s00190",
+     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
+     "attributed": true,
+     "text": "They provide economic stability for the nation and livelihoods for many workers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00191",
+     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
+     "attributed": true,
+     "text": "They employ 45% of our workers but contribute only 11% of nominal value added.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
    "label": "ASME GDP uplift estimate",
-   "summary": "ASME estimates a 10% uplift in this segment's value added could add $6.5 billion in annual GDP, over one percent of growth.",
+   "summary": "ASME estimates a 10% uplift in this segment's value added could add $6.5 billion in annual GDP.",
    "sentences": [
     {
      "sid": "s00198",
@@ -262,33 +307,27 @@
    ]
   },
   {
-   "label": "SMEs employ Singapore workers",
-   "summary": "SMEs employ seven out of 10 workers in Singapore and form the backbone of the economy.",
+   "label": "Succession planning in SME transformation",
+   "summary": "Unclear succession and informal governance hinder investment, so the speaker suggests integrating succession planning and family ownership transition into the SME transformation framework.",
    "sentences": [
     {
-     "sid": "s00201",
+     "sid": "s00204",
      "speaker": "Mr Edward Chia Bing Hui (Holland-Bukit Timah)",
      "attributed": true,
-     "text": "SMEs employ seven out of 10 workers in Singapore and form the backbone of our economy.",
+     "text": "Where succession is unclear or governance frameworks remain informal, it becomes difficult to invest in digitalisation, expansion or strategic pivots.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00205",
+     "speaker": "Mr Edward Chia Bing Hui (Holland-Bukit Timah)",
+     "attributed": true,
+     "text": "I therefore suggest that our SME transformation framework integrate succession planning and family ownership transition as core components of enterprise upgrading.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Enterprise Singapore family transition support",
-   "summary": "Enterprise Singapore could expand support to family ownership transition, including grants for succession planning, governance restructuring and ownership transfers.",
-   "sentences": [
-    {
-     "sid": "s00210",
-     "speaker": "Mr Edward Chia Bing Hui (Holland-Bukit Timah)",
-     "attributed": true,
-     "text": "Enterprise Singapore could also expand support to cover family ownership transition, including grants for succession planning, governance restructuring and ownership transfers.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "SME share of Singapore workforce",
+   "label": "SMEs employ Singapore workforce",
    "summary": "About 70% of Singapore's workforce, approximately 2.5 million people, are employed under SMEs.",
    "sentences": [
     {
@@ -301,8 +340,8 @@
    ]
   },
   {
-   "label": "Integrated AI assistant for SMEs",
-   "summary": "An SME logging into a Government portal for a licence, grant or financing could have an integrated AI assistant suggest relevant programmes and schemes automatically.",
+   "label": "Integrated AI assistant for Government portals",
+   "summary": "The speaker asks whether an integrated AI assistant could understand firms' profiles and automatically suggest relevant programmes and schemes on Government portals.",
    "sentences": [
     {
      "sid": "s00230",
@@ -314,7 +353,7 @@
    ]
   },
   {
-   "label": "Budget support for enterprises",
+   "label": "Support operating in sync",
    "summary": "The question is whether support operates in sync, and this year's Budget provides tax rebates and expansion support.",
    "sentences": [
     {
@@ -347,8 +386,8 @@
    ]
   },
   {
-   "label": "Enterprise ecosystem gap for SMEs",
-   "summary": "Restricted access and slow digital adoption could create an ecosystem gap, and one way to narrow it is a year-long SME subscription to enterprise AI tools.",
+   "label": "Narrowing enterprise ecosystem gap",
+   "summary": "Restricted access and slow digital adoption could create an ecosystem gap, and the speaker suggests offering SMEs a year-long subscription to enterprise AI tools.",
    "sentences": [
     {
      "sid": "s00274",
@@ -374,8 +413,8 @@
    ]
   },
   {
-   "label": "Prioritising SMEs able to scale",
-   "summary": "It asks whether, in a resource-constrained environment, SMEs willing and able to scale, innovate and uplift productivity should be prioritised.",
+   "label": "Prioritising scalable SMEs",
+   "summary": "Asks whether SMEs willing and able to scale, innovate and uplift productivity should be prioritised in a resource-constrained environment.",
    "sentences": [
     {
      "sid": "s00290",
@@ -387,8 +426,8 @@
    ]
   },
   {
-   "label": "Structural fragility and SME productivity",
-   "summary": "It asks about confronting structural fragility in sectors like F&B and helping SMEs move beyond digital adoption to sustained productivity growth.",
+   "label": "F&B fragility and SME productivity",
+   "summary": "Asks whether structural fragility in F&B is being confronted and how SMEs can move beyond digital adoption to measured productivity growth.",
    "sentences": [
     {
      "sid": "s00297",
@@ -407,8 +446,8 @@
    ]
   },
   {
-   "label": "SME challenges and internationalisation",
-   "summary": "Singapore SMEs face distinct challenges and operational constraints, and must internationalise because the domestic market is limited.",
+   "label": "SMEs must internationalise",
+   "summary": "States that Singapore SMEs face operational constraints and transformation pressures, and must internationalise because the domestic market is limited.",
    "sentences": [
     {
      "sid": "s00301",
@@ -421,7 +460,7 @@
   },
   {
    "label": "Targeting grants and tax deductions",
-   "summary": "Asks how the Government will ensure financial support and tax deduction eligibility criteria are precisely targeted to spend funds effectively.",
+   "summary": "Asks how the Government will ensure financial support and tax deduction eligibility criteria are precisely targeted so funds create intended impact.",
    "sentences": [
     {
      "sid": "s00308",
@@ -429,19 +468,12 @@
      "attributed": true,
      "text": "Learning from past experiences administering grants and credits, how will the Government ensure that financial support and eligibility criteria for tax deductions are precisely targeted, so that funds are spent effectively to create the intended impact.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00310",
-     "speaker": "Ms Tin Pei Ling (Marine Parade-Braddell Heights)",
-     "attributed": true,
-     "text": "Notably, based on the Parliamentary reply by Deputy Prime Minister Gan Kim Yong in January 2026, China is the second largest owner of retail businesses in Singapore.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Rental relief for local retailers",
-   "summary": "Asks whether the Ministry can consider targeted measures such as rental relief, tenancy support, landlord incentives and co-investment platforms for local businesses.",
+   "label": "Support for local retailers' premises",
+   "summary": "Asks whether the Ministry can consider measures such as rental relief, tenancy support, landlord incentives and co-investment platforms for local businesses.",
    "sentences": [
     {
      "sid": "s00313",
@@ -453,8 +485,21 @@
    ]
   },
   {
+   "label": "Partnerships and FTAs after US tariffs",
+   "summary": "Says that in light of US tariffs on Singapore, the Ministry should explore partnerships with other nations and additional Free Trade Agreements.",
+   "sentences": [
+    {
+     "sid": "s00316",
+     "speaker": "Mr Azhar Othman (Nominated Member)",
+     "attributed": true,
+     "text": "In light of the tariffs imposed by the US on various countries, including Singapore, it is crucial for the Ministry to explore potential partnerships with other nations and develop additional Free Trade Agreements (FTAs).",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
    "label": "GNP indicators for overseas value",
-   "summary": "Suggests MTI develop GNP indicators to track value created globally by Singapore and Singaporeans overseas.",
+   "summary": "A suggestion that MTI develop GNP indicators to track value created globally by Singapore and Singaporeans overseas.",
    "sentences": [
     {
      "sid": "s00327",
@@ -474,7 +519,7 @@
   },
   {
    "label": "Marketing Johor-Singapore SEZ deployment",
-   "summary": "Asks how MTI can direct EDB, Enterprise Singapore and other agencies with MFA to market a two-side deployment proposition into the Johor-Singapore SEZ.",
+   "summary": "A question on how MTI can direct agencies with MFA to market a two-side deployment proposition into the Johor-Singapore SEZ.",
    "sentences": [
     {
      "sid": "s00341",
@@ -494,7 +539,7 @@
   },
   {
    "label": "Johor-Singapore SEZ outcome scorecard",
-   "summary": "Suggests publishing a Johor-Singapore SEZ outcome scorecard.",
+   "summary": "A suggestion to publish a Johor-Singapore SEZ outcome scorecard.",
    "sentences": [
     {
      "sid": "s00350",
@@ -507,7 +552,7 @@
   },
   {
    "label": "Trusted place to deploy AI",
-   "summary": "States Singapore's advantage is not adopting AI but being the most trusted place to deploy AI.",
+   "summary": "Singapore's advantage is being the most trusted place to deploy AI, not adopting AI.",
    "sentences": [
     {
      "sid": "s00359",
@@ -519,8 +564,8 @@
    ]
   },
   {
-   "label": "Four shifts for economic growth",
-   "summary": "The speaker says four shifts are needed in how Singapore grows its economy in a fragmenting world.",
+   "label": "Four shifts for growing economy",
+   "summary": "Four shifts are shared for growing the economy in a fragmenting world, covering global value, ecosystems, overseas workforce and AI.",
    "sentences": [
     {
      "sid": "s00367",
@@ -559,8 +604,8 @@
    ]
   },
   {
-   "label": "Differentiating internationalisation support by market risk",
-   "summary": "The speaker asks whether MTI could differentiate internationalisation support by market risk profile, with enhanced guarantees, political risk coverage or risk-sharing.",
+   "label": "Internationalisation support by market risk",
+   "summary": "MTI is asked to consider differentiating internationalisation support by market risk profile, with enhanced guarantees, political risk coverage or risk-sharing in higher-risk corridors.",
    "sentences": [
     {
      "sid": "s00388",
@@ -572,7 +617,7 @@
    ]
   },
   {
-   "label": "Consortium-led bids for Singapore firms",
+   "label": "Consortium-led bids for firms",
    "summary": "Encouraging consortium-led bids would let complementary Singapore companies pool capabilities, share risk and compete for projects none could secure alone.",
    "sentences": [
     {
@@ -585,16 +630,9 @@
    ]
   },
   {
-   "label": "Startup SG Equity and EQDP expansion",
-   "summary": "The speaker asks MTI what specific gap the additional $1 billion injection into Startup SG Equity is trying to close.",
+   "label": "Startup SG Equity $1 billion injection",
+   "summary": "With an additional $1 billion injection into Startup SG Equity, MTI is asked what specific gap is being closed.",
    "sentences": [
-    {
-     "sid": "s00418",
-     "speaker": "Assoc Prof Kenneth Goh (Nominated Member)",
-     "attributed": true,
-     "text": "The expansion of the Startup SG Equity fund and the Equity Market Development Programme (EQDP) are all important steps, but my question is, as more Singapore companies scale globally, how do we ensure leadership, IP ownership and value creation remain anchored here so that —",
-     "added_for_context": false
-    },
     {
      "sid": "s00420",
      "speaker": "Mr Ng Shi Xuan",
@@ -606,14 +644,14 @@
   },
   {
    "label": "Startup SG Founder first-time founder rule",
-   "summary": "The speaker asks about the Startup SG Founder scheme, having heard one founder must be a first-time founder.",
+   "summary": "The member asks about the Startup SG Founder scheme, having heard one founder must be a first-time founder to get it.",
    "sentences": [
     {
      "sid": "s00428",
      "speaker": "Mr Ng Shi Xuan",
      "attributed": true,
      "text": "Beyond funding, I would like to check on the Startup SG Founder scheme.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00429",
@@ -625,8 +663,8 @@
    ]
   },
   {
-   "label": "Chief AI officer as service",
-   "summary": "A proposal asks whether a chief AI officer as a service model could let experienced AI leaders support multiple startups to deploy AI and scale.",
+   "label": "Chief AI officer as a service",
+   "summary": "The member asks whether a chief AI officer as a service model could be explored to let experienced AI leaders support multiple startups.",
    "sentences": [
     {
      "sid": "s00435",
@@ -639,7 +677,7 @@
   },
   {
    "label": "Singapore economy grew 5%",
-   "summary": "Singapore's economy grew by 5% last year, performing better than expected despite a challenging global environment.",
+   "summary": "Last year Singapore's economy grew by 5%, performing better than expected despite a challenging global environment.",
    "sentences": [
     {
      "sid": "s00438",
@@ -665,7 +703,7 @@
   },
   {
    "label": "Strait of Hormuz closed",
-   "summary": "The Strait of Hormuz, a key shipping route for crude oil and liquefied natural gas, has been closed.",
+   "summary": "The Strait of Hormuz, a key shipping route for crude oil and LNG, has been closed.",
    "sentences": [
     {
      "sid": "s00449",
@@ -697,19 +735,6 @@
    ]
   },
   {
-   "label": "Workato Asia Pacific revenue growth",
-   "summary": "Workato's Asia Pacific revenue increased 10-fold over five years, with over 12,000 customer companies in manufacturing, financial services and healthcare.",
-   "sentences": [
-    {
-     "sid": "s00485",
-     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
-     "attributed": true,
-     "text": "Workato's Asia Pacific revenue has increased 10-fold over the past five years, with a customer base of more than 12,000 companies across sectors, such as manufacturing, financial services and healthcare.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "AI Centres of Excellence support",
    "summary": "Over 60 companies have been supported to establish AI Centres of Excellence, and a \"Champions of AI\" programme will launch later this year.",
    "sentences": [
@@ -733,12 +758,19 @@
      "attributed": true,
      "text": "We will take this further by launching a \"Champions of AI\" programme later this year.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00502",
+     "speaker": "The Deputy Prime Minister and Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "Under this programme, we will target a select group of Singapore-based companies with the ambition and commitment to make AI a core driver of productivity, innovation and growth.",
+     "added_for_context": false
     }
    ]
   },
   {
    "label": "DBS AI in institutional banking",
-   "summary": "DBS deployed AI in institutional banking, reducing processing times for trade documentation by 60%.",
+   "summary": "DBS has deployed AI in institutional banking, reducing processing times for trade documentation by 60%.",
    "sentences": [
     {
      "sid": "s00510",
@@ -750,8 +782,8 @@
    ]
   },
   {
-   "label": "DBS AI economic value, AI Missions",
-   "summary": "DBS reported about $1 billion in economic value from data analytics, AI and Machine Learning in 2025, and AI Missions will start with four sectors.",
+   "label": "DBS AI economic value",
+   "summary": "In 2025 DBS reported about $1 billion in economic value from data analytics, AI and Machine Learning, and AI Missions will start with four sectors.",
    "sentences": [
     {
      "sid": "s00516",
@@ -778,7 +810,7 @@
   },
   {
    "label": "AI Park and Kampong AI",
-   "summary": "An AI Park will be established as a focal point, and Kampong AI will be built at One-North alongside the existing Lorong AI.",
+   "summary": "An AI Park and Kampong AI at One-North will be established to bring talent, researchers and resources together for AI excellence.",
    "sentences": [
     {
      "sid": "s00525",
@@ -818,7 +850,7 @@
   },
   {
    "label": "Singapore Battery Consortium funding",
-   "summary": "Industry platforms like the Singapore Battery Consortium have been useful, and NRF funding for the Consortium ends on 31 March.",
+   "summary": "Industry platforms like the Singapore Battery Consortium bring players together, and NRF funding for the Consortium ends on 31 March.",
    "sentences": [
     {
      "sid": "s00559",
@@ -863,7 +895,7 @@
    ]
   },
   {
-   "label": "Singapore carbon tax rise",
+   "label": "Carbon tax rise",
    "summary": "Singapore's carbon tax is expected to rise to signal decarbonisation.",
    "sentences": [
     {
@@ -876,8 +908,8 @@
    ]
   },
   {
-   "label": "Demand growth and supply diversification",
-   "summary": "AI data centres, quantum computing, semiconductor fabrication, advanced manufacturing and transport electrification will increase consumption, while imports and solar diversify supply.",
+   "label": "Energy demand and supply diversification",
+   "summary": "AI data centres, quantum computing, semiconductor fabrication, advanced manufacturing and transport electrification will raise consumption, while imports and solar diversify supply.",
    "sentences": [
     {
      "sid": "s00598",
@@ -889,8 +921,8 @@
    ]
   },
   {
-   "label": "Grid reliability investment question",
-   "summary": "The passage asks what investments are being made in grid reinforcement, storage and system balancing to keep reliability uncompromised.",
+   "label": "Grid reinforcement and storage investments",
+   "summary": "It asks what investments are being made in grid reinforcement, storage and system balancing to keep reliability uncompromised.",
    "sentences": [
     {
      "sid": "s00601",
@@ -902,9 +934,16 @@
    ]
   },
   {
-   "label": "Time-differentiated grid emissions factor",
-   "summary": "A time-differentiated grid emissions factor could incentivise load shifting, reduce strain and support decarbonisation.",
+   "label": "Dynamic pricing and emissions factor",
+   "summary": "It asks whether more dynamic pricing and a time-differentiated grid emissions factor could align demand with peak renewable generation.",
    "sentences": [
+    {
+     "sid": "s00604",
+     "speaker": "Mr Edward Chia Bing Hui",
+     "attributed": true,
+     "text": "Could more dynamic pricing better align demand with peak renewable generation?",
+     "added_for_context": false
+    },
     {
      "sid": "s00605",
      "speaker": "Mr Edward Chia Bing Hui",
@@ -915,21 +954,8 @@
    ]
   },
   {
-   "label": "Electricity system and energy security",
-   "summary": "Singapore's electricity system must stay stable, forward-looking and climate aligned as it advances as an AI and advanced manufacturing hub, since energy security underpins economic security.",
-   "sentences": [
-    {
-     "sid": "s00608",
-     "speaker": "Mr Edward Chia Bing Hui",
-     "attributed": true,
-     "text": "As Singapore advances as an AI and advanced manufacturing hub, our electricity system must remain stable, forward-looking and climate aligned, because energy security is the foundation of economic security.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Manufacturing R&D and semiconductor investment",
-   "summary": "Private sector R&D spending in manufacturing was $4.3 billion in 2023, up 54% from 2016, with over $30 billion anchored from semiconductor companies and $800 million for a RIE Flagship in Semiconductors.",
+   "label": "R&D and semiconductor investments",
+   "summary": "Private sector R&D expenditure was $4.3 billion in 2023, and $800 million will establish the RIE Flagship in Semiconductors.",
    "sentences": [
     {
      "sid": "s00617",
@@ -956,7 +982,7 @@
   },
   {
    "label": "NSTIC power electronics investment",
-   "summary": "The facility is on track to begin operations by 2027 with strong company interest, and $60 million will be invested in NSTIC (Power Electronics) for next-generation power electronics.",
+   "summary": "The facility is on track to commence operations by 2027, and $60 million will be invested in NSTIC (Power Electronics).",
    "sentences": [
     {
      "sid": "s00626",
@@ -988,8 +1014,8 @@
    ]
   },
   {
-   "label": "NSAS expansion and OSTIn officers",
-   "summary": "From an initial 30 officers from the Office for Space Technology and Industry, NSAS is expected to double in size over the next three years.",
+   "label": "NSAS expected to double in size",
+   "summary": "From an initial 30 officers from OSTIn, NSAS is expected to double in size over the next three years.",
    "sentences": [
     {
      "sid": "s00650",
@@ -1001,35 +1027,15 @@
    ]
   },
   {
-   "label": "AIMfg AI adoption support",
-   "summary": "Launched about a year and a half ago, AIMfg has supported close to 30 firms in developing and adopting AI-enabled solutions, with early trials showing expected annual cost savings of more than $150,000 per product.",
-   "sentences": [
-    {
-     "sid": "s00660",
-     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
-     "attributed": true,
-     "text": "Launched about a year and a half ago, AIMfg has supported close to 30 firms in developing and adopting AI-enabled solutions.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00662",
-     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
-     "attributed": true,
-     "text": "Early trials are promising, with expected annual cost savings of more than $150,000 for each product.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Solar capacity target raised",
-   "summary": "Singapore met its 2030 solar target early and is raising it to three GWp by 2030, aspiring to double last year's achievement in the second half of the 2030s.",
+   "label": "Solar capacity target raised to three GWp",
+   "summary": "The 2030 solar target of two GWp was reached last year, so the target is raised to three GWp by 2030.",
    "sentences": [
     {
      "sid": "s00683",
      "speaker": "The Minister for Manpower (Dr Tan See Leng)",
      "attributed": true,
      "text": "Last year, we reached our 2030 target of two gigawatt-peak (GWp) of installed solar capacity, five years ahead of schedule.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00684",
@@ -1041,8 +1047,21 @@
    ]
   },
   {
-   "label": "Imports and interconnector preparations",
-   "summary": "Singapore has identified subsea cable routes and landing sites for Indonesian imports and is studying a second Malaysia interconnector that could add up to two GW.",
+   "label": "Conditional Approvals awarded to projects",
+   "summary": "Around 8.4 gigawatts of Conditional Approvals have been awarded to promising projects to date.",
+   "sentences": [
+    {
+     "sid": "s00690",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "To date, we have awarded around 8.4 gigawatts (GW) of Conditional Approvals to promising projects.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Preparations for electricity imports",
+   "summary": "Suitable subsea cable routes and landing sites for imports from Indonesia are identified, and a feasibility study on a second Malaysia interconnector is being conducted.",
    "sentences": [
     {
      "sid": "s00694",
@@ -1057,19 +1076,12 @@
      "attributed": true,
      "text": "We are also conducting a full feasibility study on a second interconnector between Singapore and Malaysia.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00696",
-     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
-     "attributed": true,
-     "text": "If this is developed, this could provide up to two GW of bilateral interconnection capacity, on top of the one GW of capacity from our existing interconnector.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Biomethane regulatory sandbox",
-   "summary": "Singapore is exploring biomethane as a low-carbon fuel through a regulatory sandbox of up to 300 megawatts.",
+   "label": "Biomethane explored through regulatory sandbox",
+   "summary": "Biomethane is being explored as a viable low-carbon fuel through a regulatory sandbox of up to 300 megawatts.",
    "sentences": [
     {
      "sid": "s00699",
@@ -1081,8 +1093,28 @@
    ]
   },
   {
+   "label": "Advanced nuclear energy technologies studied",
+   "summary": "No decision has been made, but advanced nuclear energy technologies such as small modular reactors are being seriously studied.",
+   "sentences": [
+    {
+     "sid": "s00711",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "Other low-carbon solutions are not yet ready for deployment at scale, either due to technological nascency or under-developed supply chains.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00712",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "Thus, while we have not made a decision – and let me reiterate this, we have not made a decision – we are seriously studying the potential deployment of advanced nuclear energy technologies, such as small modular reactors.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
    "label": "Decarbonisation Grand Challenge funding",
-   "summary": "A new $800 million Decarbonisation Grand Challenge under RIE2030 supports 2035 abatement targets and 2050 net-zero ambitions.",
+   "summary": "A new $800 million Decarbonisation Grand Challenge is launched under RIE2030 to support 2035 abatement targets and 2050 net-zero ambitions.",
    "sentences": [
     {
      "sid": "s00723",
@@ -1102,7 +1134,7 @@
   },
   {
    "label": "Business Refresh Package for enterprises",
-   "summary": "The Government has tailored a Business Refresh Package of enhancements to existing schemes to help enterprises with productivity, revenue growth and a pro-enterprise environment.",
+   "summary": "The Government has tailored a Business Refresh Package of enhancements to existing schemes to help enterprises stay resilient, grow and thrive.",
    "sentences": [
     {
      "sid": "s00739",
@@ -1122,7 +1154,7 @@
   },
   {
    "label": "Frosts automated storage system results",
-   "summary": "With COI-SCM, Frosts rolled out a four-way shuttle automated storage and retrieval system at its Bedok facility, improving manpower efficiency over 30% and saving about $100,000 yearly.",
+   "summary": "Frosts, with COI-SCM, rolled out a four-way shuttle automated storage and retrieval system at its Bedok facility, yielding over 30% manpower efficiency gains and about $100,000 annual savings.",
    "sentences": [
     {
      "sid": "s00750",
@@ -1142,7 +1174,7 @@
   },
   {
    "label": "EFS-Green extension",
-   "summary": "EFS-Green extended for two years in 2024 and scope expanded; will be extended another five years.",
+   "summary": "In 2024 the EFS-Green was extended two years and expanded to cover companies adopting green solutions, and it will be extended another five years.",
    "sentences": [
     {
      "sid": "s00754",
@@ -1161,8 +1193,8 @@
    ]
   },
   {
-   "label": "EFS loan sub-caps removed",
-   "summary": "Facility-level sub-caps of $20 million and $30 million removed for EFS-Trade Loan and EFS-Fixed Assets Loan, retaining $50 million overall cap.",
+   "label": "Removing EFS facility-level sub-caps",
+   "summary": "Facility-level sub-caps of $20 million and $30 million per borrower group for EFS-Trade Loan and EFS-Fixed Assets Loan will be removed, retaining the $50 million overall cap.",
    "sentences": [
     {
      "sid": "s00764",
@@ -1174,8 +1206,8 @@
    ]
   },
   {
-   "label": "Grant support for venturing abroad",
-   "summary": "Support levels for grant schemes helping businesses venture abroad increased from 50% to 70% for SMEs and 30% to 50% for non-SMEs.",
+   "label": "Higher grants for venturing abroad",
+   "summary": "Support levels for grant schemes helping businesses venture abroad will rise from 50% to 70% for SMEs and 30% to 50% for non-SMEs.",
    "sentences": [
     {
      "sid": "s00771",
@@ -1187,8 +1219,8 @@
    ]
   },
   {
-   "label": "Grant cap extension and expansion",
-   "summary": "In addition to extending the $100,000 grant cap, new markets criteria removed and grant support extended to all local businesses.",
+   "label": "Grant cap extension for local businesses",
+   "summary": "The $100,000 grant cap is extended, new markets criteria removed, and grant support extended to all local businesses including SMEs and non-SMEs.",
    "sentences": [
     {
      "sid": "s00774",
@@ -1207,8 +1239,8 @@
    ]
   },
   {
-   "label": "DTDi expenditure cap increase",
-   "summary": "Expenditure cap for automatic DTDi-qualifying activities increased from $150,000 to $400,000 and existing qualifying activities made eligible for automatic deductions.",
+   "label": "Higher cap for automatic deductions",
+   "summary": "The expenditure cap for automatic DTDi-qualifying activities rises from $150,000 to $400,000, and existing qualifying activities become eligible for automatic deductions.",
    "sentences": [
     {
      "sid": "s00779",
@@ -1220,8 +1252,8 @@
    ]
   },
   {
-   "label": "Heartland schemes support enhanced",
-   "summary": "Support levels of Enhanced Visual Merchandising Programme and Heartland Enterprise Placemaking Grant increased from 50% to 70%.",
+   "label": "Enhanced support for heartland schemes",
+   "summary": "Support levels for the Enhanced Visual Merchandising Programme and Heartland Enterprise Placemaking Grant increase from 50% to 70%.",
    "sentences": [
     {
      "sid": "s00787",
@@ -1233,8 +1265,8 @@
    ]
   },
   {
-   "label": "New EDGE grant shopfront",
-   "summary": "Government will merge MRA, PSG and EDG grants into a new EDGE grant supporting up to $100,000 per year.",
+   "label": "New EDGE grant single shopfront",
+   "summary": "A new EDGE grant provides a single shopfront for Government grants, merging the MRA grant, PSG and EDG, supporting up to $100,000 per year.",
    "sentences": [
     {
      "sid": "s00804",
@@ -1261,7 +1293,7 @@
   },
   {
    "label": "EDGE launch by Enterprise Singapore",
-   "summary": "Enterprise Singapore will launch the EDGE grant in the second half of 2026.",
+   "summary": "Enterprise Singapore will launch EDGE in the second half of 2026.",
    "sentences": [
     {
      "sid": "s00810",
@@ -1293,8 +1325,8 @@
    ]
   },
   {
-   "label": "Consumer Protection Review Panel",
-   "summary": "Government convened an independent Consumer Protection Review Panel in March last year to recommend addressing consumer concerns.",
+   "label": "Consumer protection review panel",
+   "summary": "CCS has sought Court injunctions against egregious businesses, and an independent Consumer Protection Review Panel convened in March last year will recommend on consumer concerns.",
    "sentences": [
     {
      "sid": "s00844",
@@ -1327,8 +1359,8 @@
    ]
   },
   {
-   "label": "2025 tourism arrivals and receipts",
-   "summary": "Singapore welcomed 16.9 million international visitors last year, with tourism receipts of $23.9 billion in the first three quarters of 2025.",
+   "label": "Tourism arrivals and receipts",
+   "summary": "Last year Singapore welcomed 16.9 million international visitors, up 2.3%, and tourism receipts reached $23.9 billion in the first three quarters of 2025.",
    "sentences": [
     {
      "sid": "s00861",
@@ -1347,8 +1379,8 @@
    ]
   },
   {
-   "label": "Expected 2026 tourism figures",
-   "summary": "International visitor arrivals are expected to reach 17 to 18 million this year, bringing $31 billion to $32.5 billion in tourism receipts.",
+   "label": "Expected visitor arrivals and receipts",
+   "summary": "International visitor arrivals are expected to reach between 17 million and 18 million this year, bringing in approximately $31 billion to $32.5 billion in tourism receipts.",
    "sentences": [
     {
      "sid": "s00866",
@@ -1360,7 +1392,7 @@
    ]
   },
   {
-   "label": "Marina Bay Cruise Centre capacity",
+   "label": "Marina Bay cruise centre capacity",
    "summary": "In October, Marina Bay Cruise Centre Singapore's capacity was increased from 6,800 to 11,700 passengers.",
    "sentences": [
     {
@@ -1373,8 +1405,8 @@
    ]
   },
   {
-   "label": "Venture capital and startup ranking",
-   "summary": "VC funding to startups more than quadrupled from US$1 billion in 2014 to US$4.8 billion in 2024, and Singapore ranks fourth in the Global Startup Ecosystem Index 2025.",
+   "label": "Venture capital funding growth",
+   "summary": "Venture capital funding to startups more than quadrupled in the past decade, from US$1 billion in 2014 to US$4.8 billion in 2024.",
    "sentences": [
     {
      "sid": "s00911",
@@ -1382,19 +1414,12 @@
      "attributed": true,
      "text": "Venture capital (VC) funding to startups more than quadrupled in the past decade, from US$1 billion in 2014 to US$4.8 billion in 2024.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00912",
-     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan)",
-     "attributed": true,
-     "text": "We are ranked fourth in the Global Startup Ecosystem Index 2025, up from 16th a few years ago.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Startup SG Equity funding",
-   "summary": "First, $1 billion will be set aside to expand the Startup SG Equity scheme.",
+   "label": "Startup SG Equity expansion funding",
+   "summary": "$1 billion will be set aside to expand the Startup SG Equity (SSGE) scheme.",
    "sentences": [
     {
      "sid": "s00918",
@@ -1407,7 +1432,7 @@
   },
   {
    "label": "Anchor Fund second tranche",
-   "summary": "The bulk of this fund was deployed to support companies towards public listing in Singapore, and the second $1.5 billion tranche, Anchor Fund 2, will now launch.",
+   "summary": "The bulk of the fund was deployed to support companies seeking public listing in Singapore, and a second $1.5 billion tranche, Anchor Fund 2, will now launch.",
    "sentences": [
     {
      "sid": "s00942",
@@ -1426,9 +1451,16 @@
    ]
   },
   {
-   "label": "Growth capital workgroup",
-   "summary": "A new workgroup convened by Minister Chee Hong Tat will develop strategies to strengthen Singapore as a leading centre for growth capital.",
+   "label": "Dual listing and private capital",
+   "summary": "An SGX-Nasdaq dual listing bridge will let eligible companies list on both exchanges with one prospectus, and a workgroup will develop strategies for growth capital.",
    "sentences": [
+    {
+     "sid": "s00947",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan)",
+     "attributed": true,
+     "text": "Our upcoming SGX-Nasdaq dual listing bridge will also allow eligible companies to simultaneously list on both exchanges with one set of prospectus.",
+     "added_for_context": false
+    },
     {
      "sid": "s00949",
      "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan)",
@@ -1460,7 +1492,7 @@
    ]
   },
   {
-   "label": "LaunchPad @ One-North startups",
+   "label": "LaunchPad startup support",
    "summary": "Since JTC repurposed Block 71 Ayer Rajah Crescent and expanded the startup hub in 2015, LaunchPad @ One-North has supported over 2,400 startups.",
    "sentences": [
     {
@@ -1474,7 +1506,7 @@
   },
   {
    "label": "LaunchPad extension and refresh",
-   "summary": "JTC will extend and refresh LaunchPad to create more space for next-gen startups like those in Lorong AI.",
+   "summary": "JTC will extend and refresh LaunchPad to create more space for next-gen startups, making it Asia's flagship startup destination.",
    "sentences": [
     {
      "sid": "s00966",
@@ -1486,8 +1518,8 @@
    ]
   },
   {
-   "label": "New AI park Kampong AI",
-   "summary": "A key highlight of the refresh is a new AI park called Kampong AI, mentioned in the Prime Minister's Budget speech.",
+   "label": "Kampong AI park",
+   "summary": "A key highlight of the refresh is a new AI park called Kampong AI.",
    "sentences": [
     {
      "sid": "s00969",
@@ -1499,8 +1531,8 @@
    ]
   },
   {
-   "label": "Kampong AI ready in 2028",
-   "summary": "When ready in 2028, Kampong AI will be where AI startups and talent congregate and exchange ideas.",
+   "label": "Kampong AI in 2028",
+   "summary": "When ready in 2028, Kampong AI will be the place for AI startups and talent to congregate and exchange ideas.",
    "sentences": [
     {
      "sid": "s00972",
@@ -1513,7 +1545,7 @@
   },
   {
    "label": "Space for AI community",
-   "summary": "It is crucial for the AI community to have space to share ideas and build products, comprising two adjacent seven-storey developments.",
+   "summary": "It says a space is crucial for AI leaders and practitioners, comprising two seven-storey developments with business park units and event spaces for around 70 companies.",
    "sentences": [
     {
      "sid": "s00977",
@@ -1533,7 +1565,7 @@
   },
   {
    "label": "Pilot workspaces from 2026",
-   "summary": "Pilot workspaces will be available in LaunchPad @ One-North from 2026 for firms wanting a headstart.",
+   "summary": "It states that while fully ready by 2028, pilot workspaces will be available in LaunchPad @ One-North from 2026 for firms wanting a headstart.",
    "sentences": [
     {
      "sid": "s00981",
@@ -1545,8 +1577,8 @@
    ]
   },
   {
-   "label": "Woodlands Gateway district master-planning",
-   "summary": "JTC is master-planning the Woodlands Gateway district around the upcoming RTS Link station, a mixed-use district spanning up to 35 hectares.",
+   "label": "Woodlands Gateway district plan",
+   "summary": "It states JTC is master-planning a Woodlands Gateway district around the RTS Link station, with a first phase expected around 2030.",
    "sentences": [
     {
      "sid": "s00993",
@@ -1561,25 +1593,19 @@
      "attributed": true,
      "text": "This mixed-use district, spanning up to 35-hectares, that is about the size of 50 football fields, will include a transport hub connected to the RTS Link and Woodlands North MRT stations.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Digital Economy Agreements entering force",
-   "summary": "Digital Economy Agreements with the EU and the European Free Trade Association enter into force in early 2026.",
-   "sentences": [
+    },
     {
-     "sid": "s01014",
+     "sid": "s00995",
      "speaker": "Ms Gan Siow Huang",
      "attributed": true,
-     "text": "Our Digital Economy Agreements with the EU and the European Free Trade Association are entering into force in early 2026.",
+     "text": "The first phase is expected to complete around 2030.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "ASEAN upgraded trade agreements",
-   "summary": "ASEAN upgraded the ASEAN Trade in Goods Agreement and ASEAN-China Free Trade Area 3.0, and concluded the Digital Economy Framework Agreement.",
+   "label": "ASEAN agreements upgraded",
+   "summary": "It states ASEAN upgraded the ASEAN Trade in Goods Agreement and ASEAN-China Free Trade Area 3.0, and concluded the Digital Economy Framework Agreement.",
    "sentences": [
     {
      "sid": "s01017",
@@ -1605,8 +1631,8 @@
    ]
   },
   {
-   "label": "Digital Economic Partnership Agreement expansion",
-   "summary": "The Digital Economic Partnership Agreement will grow to six members, and an Agreement on Trade in Essential Supplies with New Zealand is being finalised.",
+   "label": "Digital Economy Partnership Agreement expansion",
+   "summary": "It states participation in the Digital Economic Partnership Agreement is expanding, with Costa Rica and Peru joining and China and the UAE in accession discussions.",
    "sentences": [
     {
      "sid": "s01024",
@@ -1639,8 +1665,8 @@
    ]
   },
   {
-   "label": "Enterprise support, energy, Sentosa questions",
-   "summary": "Questions were asked on MTI support trigger conditions, energy infrastructure budgeting, and the Greater Sentosa Master Plan's economic contribution.",
+   "label": "Questions on support and energy",
+   "summary": "It asks whether MTI has defined trigger conditions for targeted support and whether development expenditure numbers include energy infrastructure plans.",
    "sentences": [
     {
      "sid": "s01041",
@@ -1714,8 +1740,8 @@
    ]
   },
   {
-   "label": "MTI budget and decarbonisation",
-   "summary": "The MTI budget increase takes into account different aspects of increased spending, including the $800 million Decarbonisation Grand Challenge.",
+   "label": "MTI budget incremental delta",
+   "summary": "The MTI budget's incremental delta considers different aspects of increased spending, including the $800 million Decarbonisation Grand Challenge.",
    "sentences": [
     {
      "sid": "s01083",
@@ -1734,8 +1760,8 @@
    ]
   },
   {
-   "label": "Sentosa tourism strategy targets",
-   "summary": "Sentosa is part of Tourism Strategy 2040, with tourism receipts expected at $47-50 billion and Greater Sentosa attracting about 5.3 million international visitor arrivals in 2045.",
+   "label": "Greater Sentosa Master Plan Phase One",
+   "summary": "Greater Sentosa Master Plan Phase One is expected to attract about 5.3 million international visitor arrivals in 2045.",
    "sentences": [
     {
      "sid": "s01093",
@@ -1762,7 +1788,7 @@
   },
   {
    "label": "Assessing R&D economic outcomes",
-   "summary": "A Member asks Minister Tan how the Government assesses economic outcomes of R&D and commercialisation of public-funded IP in enterprise formation, licensing, GDP and jobs.",
+   "summary": "The member asks how the Government assesses economic outcomes of R&D and commercialisation of public-funded IP.",
    "sentences": [
     {
      "sid": "s01099",
@@ -1782,7 +1808,7 @@
   },
   {
    "label": "Business R&D expenditure growth",
-   "summary": "From 2016 to 2023, annual business expenditure on R&D grew 7.8% yearly to $9 billion, with private investment per public R&D dollar rising from $1.38 to $1.87.",
+   "summary": "From 2016 to 2023 annual business R&D expenditure grew 7.8% yearly to $9 billion, with private investment per public dollar rising to $1.87.",
    "sentences": [
     {
      "sid": "s01109",
@@ -1802,7 +1828,7 @@
   },
   {
    "label": "Private sector R&D jobs growth",
-   "summary": "Between 2016 and 2023, private sector R&D jobs grew 36% to more than 30,000, with locals filling over 70% of these roles.",
+   "summary": "Between 2016 and 2023 private sector R&D jobs grew 36% to more than 30,000, with locals filling over 70%.",
    "sentences": [
     {
      "sid": "s01113",
@@ -1815,7 +1841,7 @@
   },
   {
    "label": "A*STAR and IHL spinoffs",
-   "summary": "In the last five years, A*STAR and IHLs spun off over 300 companies, 230 local SMEs and startups licensed about 300 A*STAR technologies, and IHLs awarded over 900 licences.",
+   "summary": "In five years, A*STAR and IHLs spun off over 300 companies and awarded over 900 licences to SMEs and startups.",
    "sentences": [
     {
      "sid": "s01135",
@@ -1827,8 +1853,8 @@
    ]
   },
   {
-   "label": "Johor-Singapore SEZ arrangements",
-   "summary": "Government will facilitate a Singapore industrial estate in the Johor-Singapore SEZ if commercial parties invest, and is exploring a Digital Nomad Pass with Malaysia.",
+   "label": "Johor-Singapore SEZ and Digital Nomad Pass",
+   "summary": "Singapore will facilitate a Johor-Singapore SEZ industrial estate and is exploring a Digital Nomad Pass with Malaysia.",
    "sentences": [
     {
      "sid": "s01146",
@@ -1868,8 +1894,8 @@
    ]
   },
   {
-   "label": "Ammonia and hydrogen pathways",
-   "summary": "The speaker says work with a local conglomerate has moved to FEED studies, looking at ammonia as one possible pathway alongside hydrogen.",
+   "label": "Ammonia and hydrogen FEED studies",
+   "summary": "FEED studies with a local conglomerate look at ammonia as a pathway, alongside hydrogen, both well-understood molecules.",
    "sentences": [
     {
      "sid": "s01159",
@@ -1881,8 +1907,8 @@
    ]
   },
   {
-   "label": "Sandboxes and decarbonisation challenge",
-   "summary": "Bigger sandboxes encourage gencos and large companies to work locally with SMEs, and the $800 million Decarbonisation Grand Challenge aims to crowd in big gencos and MNCs to help local SMEs decarbonise.",
+   "label": "Sandboxes and Decarbonisation Grand Challenge",
+   "summary": "Bigger sandboxes encourage gencos and large companies to work with local SMEs, as does the $800 million Decarbonisation Grand Challenge.",
    "sentences": [
     {
      "sid": "s01165",
@@ -1901,28 +1927,28 @@
    ]
   },
   {
-   "label": "Cost pressures on households and businesses",
-   "summary": "The speaker says they are mindful of cost pressures on households and businesses, and try to allow low carbon importers to strike commercial arrangements with big energy intake customers.",
+   "label": "Low carbon importers and data centres",
+   "summary": "Low carbon importers can strike commercial arrangements with big energy intake customers like Google and Amazon Web Services, ring-fenced.",
    "sentences": [
-    {
-     "sid": "s01169",
-     "speaker": "Dr Tan See Leng",
-     "attributed": true,
-     "text": "To start off with, we are very mindful of the type of cost pressures and the pain that it may inflict, in fact, that it would inflict on, more importantly, our households and our businesses.",
-     "added_for_context": true
-    },
     {
      "sid": "s01170",
      "speaker": "Dr Tan See Leng",
      "attributed": true,
      "text": "So, where we come in is, we try to allow for the low carbon importers to strike up commercial arrangements with the big energy intake customers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01171",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "So, the likes of, whether it is Google, Amazon Web Services, some of these data centres, we allow them to negotiate and we ring-fence it.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Natural gas and carbon pricing",
-   "summary": "Natural gas will always be the base, but decarbonising it carries capture, aggregation, transport and storage costs, and carbon pricing reflects the true cost of that energy generation modality.",
+   "label": "Natural gas decarbonisation costs and carbon pricing",
+   "summary": "Carbon pricing reflects the true cost of natural gas generation, including capturing, aggregating, transporting and storing emissions.",
    "sentences": [
     {
      "sid": "s01174",
@@ -1941,21 +1967,8 @@
    ]
   },
   {
-   "label": "Helping SMEs enhance productivity",
-   "summary": "The first important component is to help SMEs, including micro enterprises, enhance productivity and cost efficiency.",
-   "sentences": [
-    {
-     "sid": "s01191",
-     "speaker": "Ms Low Yen Ling",
-     "attributed": true,
-     "text": "The first important component is to help our SMEs, including micro enterprises, enhance productivity and cost efficiency.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Adjustments to enterprise support",
-   "summary": "Two adjustments will be made: increasing support intensity and expanding support scope, with integrated and simplified application processes so SMEs can obtain Government support more quickly and easily.",
+   "label": "Support for SMEs and micro enterprises",
+   "summary": "Government will increase support intensity, expand support scope and simplify application processes so SMEs and micro enterprises get support faster.",
    "sentences": [
     {
      "sid": "s01199",
@@ -1975,7 +1988,7 @@
   },
   {
    "label": "Developing leadership in MNCs and sectors",
-   "summary": "Leadership depth can be strengthened by developing leaders in MNCs, companies and sectors with strong foundations like semiconductors and pharmaceuticals.",
+   "summary": "One way to deepen leadership is to develop leadership in MNCs, companies and sectors with a strong foundation, such as semiconductors and pharmaceuticals.",
    "sentences": [
     {
      "sid": "s01213",
@@ -1987,8 +2000,28 @@
    ]
   },
   {
-   "label": "Enterprise Singapore and TAC partnerships",
-   "summary": "Companies working with Enterprise Singapore and JTC increased production capacity six times through digitalisation and AI, and Enterprise Singapore and MTI will keep working with TACs.",
+   "label": "Attracting R&D functions to Singapore",
+   "summary": "The aim is to attract key operation functions, including R&D, so companies build R&D facilities and capabilities in Singapore instead of elsewhere.",
+   "sentences": [
+    {
+     "sid": "s01216",
+     "speaker": "Mr Gan Kim Yong",
+     "attributed": true,
+     "text": "And by doing so, we also want to attract key operation functions here, including R&D.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01217",
+     "speaker": "Mr Gan Kim Yong",
+     "attributed": true,
+     "text": "So, instead of doing R&D elsewhere, we want to encourage them to bring the R&D facilities here, build the R&D capabilities in Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Digitalisation, AI and TAC partnerships",
+   "summary": "Working with Enterprise Singapore and JTC, digitalisation and AI raised production capacity six times; Enterprise Singapore and MTI will continue working with TACs.",
    "sentences": [
     {
      "sid": "s01238",
@@ -2007,8 +2040,8 @@
    ]
   },
   {
-   "label": "Consumer Protection Review Panel",
-   "summary": "The Government convened an independent Consumer Protection Review Panel last year and stands prepared to take a whole-of-Government view to enhance consumer protection.",
+   "label": "Consumer protection review and regime",
+   "summary": "Government convened an independent Consumer Protection Review Panel last year and stands prepared to take a whole-of-Government view to enhance consumer protection.",
    "sentences": [
     {
      "sid": "s01254",
@@ -2046,12 +2079,12 @@
    "budget-2894"
   ],
   "sentences_total": 1263,
-  "sentences_selected": 195,
-  "sentences_in_sections": 195,
+  "sentences_selected": 198,
+  "sentences_in_sections": 198,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 43,
-  "sections_total": 111,
-  "selection_share": 0.1544,
+  "sentences_added_for_context": 46,
+  "sections_total": 113,
+  "selection_share": 0.1568,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -2060,24 +2093,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 111,
+   "sections_total": 113,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 195,
-   "sentences_selected": 195,
+   "sentences_published": 198,
+   "sentences_selected": 198,
    "turns_cited": 37,
    "turns_total": 55,
    "coverage": 0.6727,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:48:16"
+   "checked_at": "2026-09-19T22:22:17"
   },
   "usage": {
    "calls": 59,
-   "prompt_tokens": 55469,
-   "completion_tokens": 6626,
+   "prompt_tokens": 55428,
+   "completion_tokens": 6539,
    "estimated": false,
-   "cost_usd": 0.009621
+   "cost_usd": 0.009591
   }
  }
 }

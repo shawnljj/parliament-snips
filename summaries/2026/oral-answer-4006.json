@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Postal service quality feedback data",
-   "summary": "IMDA publishes compliance data; in 2025 it received 23 feedback items on misdelivered letters and delivery delays, with similar trends in 2023 and 2024.",
+   "summary": "IMDA publishes compliance data; in 2025 it received 23 feedback items on misdelivered and delayed letters, similar to 2023 and 2024.",
    "sentences": [
     {
      "sid": "s00002",
@@ -31,7 +31,7 @@
   },
   {
    "label": "Singapore postal quality standards comparison",
-   "summary": "A case will be looked into, and Singapore's QoS standards are among the most stringent, with Hong Kong delivering in one to three days.",
+   "summary": "A case will be looked into, and Singapore's QoS standards are among the most stringent, with other countries delivering in one to five days.",
    "sentences": [
     {
      "sid": "s00010",
@@ -107,12 +107,12 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:22:05"
+   "checked_at": "2026-09-19T22:41:55"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1166,
-   "completion_tokens": 154,
+   "completion_tokens": 151,
    "estimated": false,
    "cost_usd": 0.000206
   }

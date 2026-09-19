@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "EV fire safety in HDB car parks",
-   "summary": "HDB car parks have fire safety provisions like hose reels, fire engine access and ventilation, and EV chargers must meet Technical Reference 25.",
+   "summary": "Measures ensure HDB car parks meet safety standards for EV fires, including hose reels, fire engine access and ventilation, and EV chargers must comply with Technical Reference 25.",
    "sentences": [
     {
      "sid": "s00001",
@@ -37,8 +37,8 @@
    ]
   },
   {
-   "label": "Hose reels, access, ventilation compliance",
-   "summary": "Hose reels, fire engine access and ventilation help in a fire, and HDB car parks must comply with Technical Reference 25 specifications.",
+   "label": "Hose reels, access, ventilation, TR25",
+   "summary": "Hose reels, fire engine access and ventilation help in a fire, and HDB car parks must comply with Technical Reference 25 specifications and safety requirements.",
    "sentences": [
     {
      "sid": "s00008",
@@ -50,8 +50,8 @@
    ]
   },
   {
-   "label": "EV Battery Safety Taskforce reviews",
-   "summary": "The Land Transport Authority and SCDF regularly review fire safety requirements through their multi-agency EV Battery Safety Taskforce.",
+   "label": "LTA and SCDF review fire safety",
+   "summary": "The Land Transport Authority and SCDF regularly review fire safety requirements through their multi-agency EV Battery Safety Taskforce to support EV adoption in Singapore.",
    "sentences": [
     {
      "sid": "s00012",
@@ -99,14 +99,14 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:59:37"
+   "checked_at": "2026-09-19T21:53:43"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1222,
-   "completion_tokens": 189,
+   "completion_tokens": 209,
    "estimated": false,
-   "cost_usd": 0.000224
+   "cost_usd": 0.00023
   }
  }
 }

@@ -3,7 +3,7 @@
  "what_it_is": "Investigations into Whether Singaporeans Served in Israeli Defence Forces",
  "sections": [
   {
-   "label": "No proof Singaporeans in IDF",
+   "label": "No proof of Singaporeans in IDF",
    "summary": "The Ministry has no substantiated information confirming any Singaporean has served or is serving in the IDF.",
    "sentences": [
     {
@@ -16,8 +16,8 @@
    ]
   },
   {
-   "label": "Penalties for foreign conflict fighting",
-   "summary": "Singaporeans found fighting or planning to fight in foreign armed conflicts will be dealt with sternly under laws including the Internal Security Act, and may lose citizenship.",
+   "label": "Penalties for foreign armed conflict",
+   "summary": "Singaporeans found fighting or planning to fight in foreign conflicts will be dealt with under laws including the Internal Security Act, and may lose citizenship.",
    "sentences": [
     {
      "sid": "s00007",
@@ -57,7 +57,7 @@
   },
   {
    "label": "Action on credible foreign fighting information",
-   "summary": "Getting information may be difficult, but Singapore has reached out without response and will act on credible information regardless of which side is fought for.",
+   "summary": "Singapore has reached out without response, and will take action on credible information regardless of which side a person fights for.",
    "sentences": [
     {
      "sid": "s00042",
@@ -133,14 +133,14 @@
    "coverage": 0.25,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:27:18"
+   "checked_at": "2026-09-19T22:10:13"
   },
   "usage": {
    "calls": 3,
    "prompt_tokens": 2495,
-   "completion_tokens": 239,
+   "completion_tokens": 233,
    "estimated": false,
-   "cost_usd": 0.000416
+   "cost_usd": 0.000415
   }
  }
 }

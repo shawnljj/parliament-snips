@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Waste and recycling questions",
-   "summary": "Questions ask the Minister about recyclable waste proportions, industrial versus domestic waste, recycling categories, targets, lessons and measures for glass, paper and textiles.",
+   "summary": "Questions ask about recyclable and industrial versus domestic waste proportions, recycling targets, lessons, and measures for glass, paper and textiles.",
    "sentences": [
     {
      "sid": "s00001",
@@ -31,7 +31,7 @@
   },
   {
    "label": "2019 Masterplan recycling targets",
-   "summary": "The 2019 Masterplan set a 70% recycling rate target by 2030 and a 30% cut in landfill waste per capita per day by 2030.",
+   "summary": "The 2019 Masterplan set a 70% recycling rate target by 2030 and a 30% cut in per capita daily landfill waste by 2030.",
    "sentences": [
     {
      "sid": "s00021",
@@ -44,7 +44,7 @@
   },
   {
    "label": "Dedicated paper and cardboard collection",
-   "summary": "Since December 2025, NEA has worked with all PWCs to offer dedicated collection of paper and cardboard in their zones.",
+   "summary": "NEA has worked with all PWCs to offer dedicated paper and cardboard collection in their zones since December 2025.",
    "sentences": [
     {
      "sid": "s00030",
@@ -57,7 +57,7 @@
   },
   {
    "label": "Waste generation decline over decade",
-   "summary": "Domestic waste per capita fell 21% over the past decade, and non-domestic waste per unit GDP dropped more than 30%.",
+   "summary": "Domestic waste per capita fell 21% over the past decade, and non-domestic waste per unit GDP dropped over 30%.",
    "sentences": [
     {
      "sid": "s00040",
@@ -69,8 +69,8 @@
    ]
   },
   {
-   "label": "Waste residue commercial use engagement",
-   "summary": "It will work with industry partners to reduce risk and uncertainty of commercial use of waste residue and engage the public and industry.",
+   "label": "Industry partners and waste residue",
+   "summary": "It will work with industry partners to reduce risk and uncertainty of commercial use of waste residue and close resource loops.",
    "sentences": [
     {
      "sid": "s00044",
@@ -90,7 +90,7 @@
   },
   {
    "label": "Waste generation per capita fall",
-   "summary": "Waste generation per capita fell from 1.06 kilogrammes in 2015 to 0.83 kilogrammes today, suggesting Singaporeans are ready to reduce waste.",
+   "summary": "Waste generation per capita fell from 1.06 kilogrammes in 2015 to 0.83 kilogrammes today, suggesting real progress lies upstream in waste prevention.",
    "sentences": [
     {
      "sid": "s00063",
@@ -109,7 +109,7 @@
    ]
   },
   {
-   "label": "EU packaging and RFID waste sorting",
+   "label": "EU packaging and RFID suggestions",
    "summary": "The suggestions on EU packaging regulations and possible RFID-based sorting of food waste can be looked at and considered.",
    "sentences": [
     {
@@ -158,14 +158,14 @@
    "coverage": 0.4286,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:51:28"
+   "checked_at": "2026-09-19T21:48:19"
   },
   "usage": {
    "calls": 6,
    "prompt_tokens": 4732,
-   "completion_tokens": 437,
+   "completion_tokens": 425,
    "estimated": false,
-   "cost_usd": 0.000785
+   "cost_usd": 0.000781
   }
  }
 }

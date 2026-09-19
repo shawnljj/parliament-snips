@@ -3,8 +3,8 @@
  "what_it_is": "Constraints Limiting Conversion of Under-utilised HDB Multi-storey Car Park Spaces for Community Uses",
  "sections": [
   {
-   "label": "Clementi Peaks parking conversion timing",
-   "summary": "HDB says revenue is not a factor and Clementi Peaks parking needs have not stabilised since its July 2022 completion.",
+   "label": "Revenue not a HDB factor",
+   "summary": "Revenue considerations, including opportunity costs from forgone income, are not a factor in HDB's assessment.",
    "sentences": [
     {
      "sid": "s00007",
@@ -12,14 +12,13 @@
      "attributed": true,
      "text": "Revenue considerations, including opportunity costs from forgone income that Assoc Prof Jamus Lim mentioned at the COS debate last month, are not a factor in HDB's assessment.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00009",
-     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
-     "attributed": true,
-     "text": "In the case of Clementi Peaks, the project was completed less than four years ago in July 2022.",
-     "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Parking needs not stabilised",
+   "summary": "Parking needs have not fully stabilised and it is too early to consider converting parking spaces to other uses.",
+   "sentences": [
     {
      "sid": "s00010",
      "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling) (for the Minister for National Development)",
@@ -30,8 +29,8 @@
    ]
   },
   {
-   "label": "HDB on premature parking conversion",
-   "summary": "HDB does not recommend converting parking spaces early because permanent removal could cause parking shortages if demand grows later.",
+   "label": "Premature conversion risks parking shortages",
+   "summary": "HDB does not recommend converting parking spaces in early years of developments, as premature permanent removal could cause parking shortages if demand grows.",
    "sentences": [
     {
      "sid": "s00019",
@@ -50,8 +49,28 @@
    ]
   },
   {
-   "label": "HDB email on Sengkang car parks",
-   "summary": "The passage quotes an HDB email replying to a request to install playgrounds and cloud kitchens on Sengkang multi-storey car parks.",
+   "label": "Repurposing under-utilised MSCP spaces",
+   "summary": "Under-utilised MSCP spaces are incidental and not intended for community activities, but HDB can consider repurposing suitable carparks subject to parking needs and technical feasibility.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "For under-utilised space in MSCPs, these are incidental spaces, and they are not designed and intended for community activities and gatherings.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "But where the opportunity arises, HDB can consider repurposing suitable carparks into alternative uses, subject to meeting the parking needs of residents, which I mentioned earlier, as well as technical feasibility.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "HDB email on MSCP repurposing",
+   "summary": "HDB's email cites parking needs, structural loading, technical feasibility, regulatory, fire, safety, location and disamenity considerations for repurposing MSCPs, and HDB would facilitate requests addressing them.",
    "sentences": [
     {
      "sid": "s00037",
@@ -59,13 +78,14 @@
      "attributed": true,
      "text": "The HDB staff, and I quote the email that was sent back to the Member, it says, \"We refer to your request to install playgrounds and cloud kitchens on multi-storey car parks in Sengkang\".",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Considerations for non-parking MSCP uses",
-   "summary": "HDB lists structural loading, regulatory, fire and safety, building safety, location suitability and resident disamenities as considerations for non-parking uses.",
-   "sentences": [
+    },
+    {
+     "sid": "s00038",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "The email then goes on to say, \"HDB provides residential car parks primarily to meet the parking needs of HDB residents\".",
+     "added_for_context": false
+    },
     {
      "sid": "s00040",
      "speaker": "Ms Sun Xueling",
@@ -78,7 +98,7 @@
      "speaker": "Ms Sun Xueling",
      "attributed": true,
      "text": "Aside from this, there are other considerations, such as regulatory requirements, fire and safety, building safety standards, for instance, suitability of location and potential disamenities to residents that the non-parking uses may create\".",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00042",
@@ -102,12 +122,12 @@
    "oral-answer-4090"
   ],
   "sentences_total": 42,
-  "sentences_selected": 9,
-  "sentences_in_sections": 9,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 1,
-  "sections_total": 4,
-  "selection_share": 0.2143,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.2619,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -116,24 +136,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 4,
+   "sections_total": 5,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 9,
-   "sentences_selected": 9,
+   "sentences_published": 11,
+   "sentences_selected": 11,
    "turns_cited": 3,
    "turns_total": 8,
    "coverage": 0.375,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:19:03"
+   "checked_at": "2026-09-19T22:05:00"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2621,
-   "completion_tokens": 259,
+   "prompt_tokens": 2695,
+   "completion_tokens": 320,
    "estimated": false,
-   "cost_usd": 0.000439
+   "cost_usd": 0.000467
   }
  }
 }

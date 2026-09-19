@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "HPSI athlete support criteria",
-   "summary": "Sport Singapore's HPSI designs athlete support based on current performance and assessed potential rather than solely age, with no limit on support duration if criteria are met.",
+   "summary": "Sport Singapore's HPSI designs athlete support based on current performance and assessed potential, not solely age, with no limit on support duration if criteria are met.",
    "sentences": [
     {
      "sid": "s00002",
@@ -24,7 +24,7 @@
   },
   {
    "label": "spexPotential programme support",
-   "summary": "The spexPotential programme gives targeted financial and programmatic support to athletes with potential for SEA Games gold, based on their sport's high performance pathway developmental stage, for all ages.",
+   "summary": "spexPotential provides targeted financial and programmatic support to athletes with potential for SEA Games gold, based on their sport's high performance pathway stage, for all ages.",
    "sentences": [
     {
      "sid": "s00006",
@@ -56,8 +56,8 @@
    ]
   },
   {
-   "label": "Athlete supported across sports",
-   "summary": "As a swimmer she received spexCarding from age 14 and spexScholarship at 27, and now as a shooter receives spexCarding at 38.",
+   "label": "Swimmer's spexCarding and spexScholarship",
+   "summary": "As a swimmer, she was supported by spexCarding from age 14 and awarded the spexScholarship at age 27.",
    "sentences": [
     {
      "sid": "s00015",
@@ -65,19 +65,12 @@
      "attributed": true,
      "text": "As a swimmer, she was supported by spexCarding from when she was 14 years old and was awarded the spexScholarship when she was 27 years old.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00016",
-     "speaker": "The Acting Minister for Culture, Community and Youth (Mr David Neo)",
-     "attributed": true,
-     "text": "Now as a shooter, she is supported by spexCarding at 38 years old.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Broader window for spex grants",
-   "summary": "The speaker asks if the Ministry will consider a broader window for spex grants, noting the athlete was supported by spexCarding and spexGLOW for full-time training.",
+   "label": "Broader windows for spex grants",
+   "summary": "The Ministry is open to considering wider windows and different data points for spex grants to support athletes better throughout their careers.",
    "sentences": [
     {
      "sid": "s00027",
@@ -91,6 +84,13 @@
      "speaker": "Mr David Neo",
      "attributed": true,
      "text": "I believe I know the athlete in question and actually, he was supported by our spexCarding programme, and the spexGLOW programme, which allowed him to train full-time for a specific period of time.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00029",
+     "speaker": "Mr David Neo",
+     "attributed": true,
+     "text": "I think to the Member's suggestion, for sure, because our focus is on helping every athlete achieve their fullest potential and therefore, we are definitely open to looking at the wider windows, different data points, but it is all with the view of how do we support our athletes better.",
      "added_for_context": false
     }
    ]
@@ -132,14 +132,14 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:21:35"
+   "checked_at": "2026-09-19T22:41:30"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1801,
-   "completion_tokens": 317,
+   "prompt_tokens": 1839,
+   "completion_tokens": 302,
    "estimated": false,
-   "cost_usd": 0.000341
+   "cost_usd": 0.000342
   }
  }
 }

@@ -3,16 +3,9 @@
  "what_it_is": "Public Health Indicators to be Published to Enable Public to Track Health Outcomes and System Pressures",
  "sections": [
   {
-   "label": "National Population Health Survey reporting",
-   "summary": "The annual National Population Health Survey and MOH Budget Book publish lifestyle risk factors and key performance indicators, and health outcomes take time to shape.",
+   "label": "MOH Budget Book health indicators",
+   "summary": "The annual MOH Budget Book publishes key performance indicators such as life expectancy, mortality rates, disease prevalence and medical resources, and health outcomes take time to evolve.",
    "sentences": [
-    {
-     "sid": "s00003",
-     "speaker": "The Minister of State for Health (Ms Rahayu Mahzam) (for the Coordinating Minister for Social Policies and Minister for Health)",
-     "attributed": true,
-     "text": "The annual National Population Health Survey covers lifestyle risk factors and practices such as smoking, screening and vaccinations.",
-     "added_for_context": false
-    },
     {
      "sid": "s00005",
      "speaker": "The Minister of State for Health (Ms Rahayu Mahzam) (for the Coordinating Minister for Social Policies and Minister for Health)",
@@ -30,8 +23,8 @@
    ]
   },
   {
-   "label": "Reviewing meaningful health information publication",
-   "summary": "Tracking and measuring have costs, so measures must be meaningful and lead to better behaviours, and a review is underway on publishing information.",
+   "label": "Reviewing meaningful health information reporting",
+   "summary": "Tracking and measuring have costs, so measures must be meaningful and lead to better behaviours, and the review of how to publish this information continues.",
    "sentences": [
     {
      "sid": "s00027",
@@ -46,12 +39,19 @@
      "attributed": true,
      "text": "But I do take the point and we are actually reviewing to see what is a meaningful way to put out this information so that the public can understand, so that we can all track properly whether the good health outcomes are a result of the efforts that we are making.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00029",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "I will take the feedback back and we will continue to review this.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Reviewing health system measures",
-   "summary": "The measure will be constantly reviewed as a reflection of the health system, with feedback to MOH and prompt responses to healthcare utilisation.",
+   "label": "Reviewing waiting time measures",
+   "summary": "The Member is right that it will be constantly reviewed whether the measure reflects the health systems, with immediate responses to issues like polyclinic waiting times.",
    "sentences": [
     {
      "sid": "s00036",
@@ -134,14 +134,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:12:51"
+   "checked_at": "2026-09-19T22:01:29"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2529,
-   "completion_tokens": 200,
+   "prompt_tokens": 2523,
+   "completion_tokens": 211,
    "estimated": false,
-   "cost_usd": 0.00041
+   "cost_usd": 0.000412
   }
  }
 }

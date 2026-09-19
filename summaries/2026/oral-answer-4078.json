@@ -3,8 +3,8 @@
  "what_it_is": "Updated Assessment on Impact on Singapore's Economy and Businesses from New 15% Tariffs",
  "sections": [
   {
-   "label": "US section 122 tariff",
-   "summary": "The US imposed a 10% tariff under section 122 of the Trade Act of 1974, collected from 24 February 2026, with limited expected impact on Singapore.",
+   "label": "US section 122 tariff on imports",
+   "summary": "The US imposed a 10% section 122 tariff on all imports for 150 days, with limited expected impact on Singapore.",
    "sentences": [
     {
      "sid": "s00004",
@@ -31,7 +31,7 @@
   },
   {
    "label": "BizAdapt support levels raised",
-   "summary": "At Budget 2026, the Prime Minister and Minister for Finance announced BizAdapt support levels would be raised from up to 50% to up to 70%.",
+   "summary": "At Budget 2026, the Prime Minister and Minister for Finance announced BizAdapt support levels would rise from up to 50% to up to 70%.",
    "sentences": [
     {
      "sid": "s00018",
@@ -43,8 +43,8 @@
    ]
   },
   {
-   "label": "Tariff impact on Singapore",
-   "summary": "The tariffs' impact on Singapore's economy has been assessed as rather limited thus far.",
+   "label": "Tariffs' impact on Singapore economy",
+   "summary": "The tariffs' impact on Singapore's economy has thus far been assessed as rather limited.",
    "sentences": [
     {
      "sid": "s00028",
@@ -56,8 +56,8 @@
    ]
   },
   {
-   "label": "SBF playbook for companies",
-   "summary": "SBF published a playbook guiding companies on risk-mapping, re-configuring supply chains, and digitalising and innovating, with further measures ready when necessary.",
+   "label": "SBF playbook and further measures",
+   "summary": "SBF published a playbook guiding companies on risk-mapping, supply chain reconfiguration, digitalising and innovating, and further measures may be rolled out.",
    "sentences": [
     {
      "sid": "s00031",
@@ -77,7 +77,7 @@
   },
   {
    "label": "Safeguarding and expanding economic space",
-   "summary": "Singapore will safeguard and expand its economic space by deepening, diversifying and defending economic interests and trade linkages, including with emerging markets.",
+   "summary": "Singapore will safeguard and expand economic space by deepening, diversifying and defending economic interests and trade linkages, including with emerging markets.",
    "sentences": [
     {
      "sid": "s00035",
@@ -139,14 +139,14 @@
    "coverage": 0.375,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:27:13"
+   "checked_at": "2026-09-19T22:10:09"
   },
   "usage": {
    "calls": 3,
    "prompt_tokens": 2815,
-   "completion_tokens": 312,
+   "completion_tokens": 303,
    "estimated": false,
-   "cost_usd": 0.000481
+   "cost_usd": 0.000479
   }
  }
 }

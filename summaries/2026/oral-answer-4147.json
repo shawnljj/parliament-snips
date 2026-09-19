@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Child LifeSG Credits utilisation",
-   "summary": "As of April 2026, 83% of July 2025 Child LifeSG Credits are utilised, with reminders sent and no extension before July 2026 expiry.",
+   "summary": "As of April 2026, 83% of July 2025 Child LifeSG Credits are used, with reminders sent and no extension before July 2026 expiry.",
    "sentences": [
     {
      "sid": "s00002",
@@ -18,7 +18,7 @@
      "speaker": "The Minister of State for Social and Family Development (Mr Goh Pei Ming) (for the Minister for S",
      "attributed": true,
      "text": "The Ministry has been issuing reminders to utilise the credits via our social media platforms, as well as via the LifeSG app and SMS messages.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00004",
@@ -38,7 +38,7 @@
   },
   {
    "label": "Budget 2025 credits for older children",
-   "summary": "Budget 2025 announced a $500 credit to children above 12, topped up to Edusave or Post-Secondary Education Accounts.",
+   "summary": "Budget 2025 announced a $500 credit for children above 12, topped up to Edusave and Post-Secondary Education Accounts.",
    "sentences": [
     {
      "sid": "s00014",
@@ -50,8 +50,8 @@
    ]
   },
   {
-   "label": "July tranche and Large Family Credits",
-   "summary": "A $500 tranche will be given to all children this July, and Large Family LifeSG Credits were disbursed last month.",
+   "label": "Further credits and large family disbursement",
+   "summary": "Another $500 tranche will be given to all children this July, and Large Family LifeSG Credits were disbursed last month.",
    "sentences": [
     {
      "sid": "s00024",
@@ -92,7 +92,7 @@
   "sentences_selected": 8,
   "sentences_in_sections": 8,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
+  "sentences_added_for_context": 1,
   "sections_total": 3,
   "selection_share": 0.3077,
   "generated_by": "stage2b_select + stage2c_sections",
@@ -113,14 +113,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:56:52"
+   "checked_at": "2026-09-19T21:51:47"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1524,
-   "completion_tokens": 198,
+   "completion_tokens": 203,
    "estimated": false,
-   "cost_usd": 0.000269
+   "cost_usd": 0.00027
   }
  }
 }

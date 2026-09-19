@@ -3,8 +3,8 @@
  "what_it_is": "Structuring Singapore for Flourishing Families",
  "sections": [
   {
-   "label": "Minimum annual leave increase",
-   "summary": "Statutory minimum annual leave is seven days, rising yearly to a cap of 14 years, and the Employment Act review makes now the time to increase it.",
+   "label": "Statutory minimum annual leave increase",
+   "summary": "The statutory minimum annual leave is seven days, rising yearly to a cap of 14 years, and the Employment Act review makes this the time to increase it.",
    "sentences": [
     {
      "sid": "s00018",
@@ -23,7 +23,7 @@
    ]
   },
   {
-   "label": "Sick leave for dependants",
+   "label": "Caregiving in childcare and sick leave",
    "summary": "The speaker proposes the Government consider letting employees use their own sick leave based on dependants' Medical Certificates, such as young children or elderly parents.",
    "sentences": [
     {
@@ -43,8 +43,8 @@
    ]
   },
   {
-   "label": "Working main applicant subsidy rule",
-   "summary": "Higher tier infant care and childcare subsidies go only to a working main applicant, a mother or single father, working at least 56 hours monthly.",
+   "label": "Working main applicant subsidy condition",
+   "summary": "Higher tier basic infant care and childcare subsidies are available only to a working main applicant, a mother or single father, working at least 56 hours monthly.",
    "sentences": [
     {
      "sid": "s00035",
@@ -56,7 +56,7 @@
    ]
   },
   {
-   "label": "Infant childminding pilot observations",
+   "label": "Piloted infant childminding services",
    "summary": "The speaker asks what preliminary observations have come from the infant childminding services piloted with three operators since December 2024.",
    "sentences": [
     {
@@ -70,7 +70,7 @@
   },
   {
    "label": "Netherlands and Taiwan postpartum care",
-   "summary": "The Netherlands' kraamzorg gives every mother 80 hours of trained maternity nurse home care, and Taiwan launched funded postpartum checkups in May 2025.",
+   "summary": "The Netherlands' kraamzorg entitles every mother to 80 hours of trained maternity nurse home care, and Taiwan launched government-funded postpartum healthcare checkups in May 2025.",
    "sentences": [
     {
      "sid": "s00062",
@@ -89,7 +89,7 @@
    ]
   },
   {
-   "label": "Restructuring maternity leave",
+   "label": "Restructuring maternity leave for employers",
    "summary": "The speaker proposes extending maternity leave to six months, fully Government-paid up to a salary cap, with an optional additional six months at half-pay, also Government-funded up to a cap.",
    "sentences": [
     {
@@ -175,8 +175,8 @@
    ]
   },
   {
-   "label": "Marriage and birth rate declines",
-   "summary": "There were about 24,700 registered marriages last year, a 6.2% drop from 2024, and about 26,100 citizen births in 2025.",
+   "label": "Marriages and citizen births decline",
+   "summary": "There were about 24,700 registered marriages in 2025, down 6.2%, and about 26,100 citizen births, down 10.8% from 2024.",
    "sentences": [
     {
      "sid": "s00132",
@@ -235,7 +235,20 @@
    ]
   },
   {
-   "label": "Infant care and childcare places",
+   "label": "EEF financing and fertility costs",
+   "summary": "The Workgroup will review a suggestion to provide financing support for EEF and consider reducing fertility test and treatment costs.",
+   "sentences": [
+    {
+     "sid": "s00166",
+     "speaker": "The Second Minister for National Development (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The Workgroup will review the Member's suggestion to provide financing support for EEF and consider ways to reduce the cost of fertility tests and treatments.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Infant care and preschool places",
    "summary": "Full-day infant care places nearly tripled and childcare places nearly doubled over the past decade, with 80% preschool commitment met.",
    "sentences": [
     {
@@ -257,13 +270,6 @@
      "speaker": "The Second Minister for National Development (Ms Indranee Rajah)",
      "attributed": true,
      "text": "The industry median childcare fee before means-tested subsidies has fallen to $680 last year, compared to $760 in 2021.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00173",
-     "speaker": "The Second Minister for National Development (Ms Indranee Rajah)",
-     "attributed": true,
-     "text": "Applicants who are not working due to extenuating circumstances and need full-day childcare can apply for special approval to receive subsidy support equivalent to what a working applicant can receive.",
      "added_for_context": false
     }
    ]
@@ -305,7 +311,7 @@
   "sentences_in_sections": 28,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 7,
-  "sections_total": 15,
+  "sections_total": 16,
   "selection_share": 0.1522,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -315,7 +321,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 15,
+   "sections_total": 16,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 28,
@@ -325,14 +331,14 @@
    "coverage": 0.8,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:36:04"
+   "checked_at": "2026-09-19T21:41:41"
   },
   "usage": {
    "calls": 9,
-   "prompt_tokens": 8216,
-   "completion_tokens": 911,
+   "prompt_tokens": 8213,
+   "completion_tokens": 971,
    "estimated": false,
-   "cost_usd": 0.001405
+   "cost_usd": 0.001422
   }
  }
 }

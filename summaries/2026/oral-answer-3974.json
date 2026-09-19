@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Pet business enforcement and penalties",
-   "summary": "Measures against non-compliant pet businesses are being reviewed, including penalties, licence suspensions and possible CCTV requirements.",
+   "summary": "Measures against non-compliant pet businesses are described, with NParks investigating 54 groomer harm cases and a review of ABA penalties and CCTV requirements.",
    "sentences": [
     {
      "sid": "s00002",
@@ -58,23 +58,9 @@
    ]
   },
   {
-   "label": "Code of Animal Welfare breaches",
-   "summary": "The Code sets minimum standards for pet businesses and groomers, and breaches can support prosecution under the ABA.",
+   "label": "Groomer standards and ABA enforcement",
+   "summary": "Pet groomers are encouraged to follow standards, and breaches can support prosecution under ABA sections 42 and 41, with NParks taking enforcement action.",
    "sentences": [
-    {
-     "sid": "s00022",
-     "speaker": "Mr Alvin Tan",
-     "attributed": true,
-     "text": "With regard to the Code for Animal Welfare, which I mentioned earlier on, this is for specific to the pet industry.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00023",
-     "speaker": "Mr Alvin Tan",
-     "attributed": true,
-     "text": "This Code of Animal Welfare specifies minimum standards and best practices for pet businesses and pet groomers.",
-     "added_for_context": false
-    },
     {
      "sid": "s00024",
      "speaker": "Mr Alvin Tan",
@@ -87,6 +73,26 @@
      "speaker": "Mr Alvin Tan",
      "attributed": true,
      "text": "But where there are breaches to this code, they can be used to support prosecution under the ABA and where unnecessary pain or suffering has been found to be inflicted on the animal, that is section 42 of the ABA, or failure of duty of care is found, section 41 of the ABA, NParks then can take an appropriate enforcement action under ABA.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reporting animal welfare cases to AVS",
+   "summary": "Members of the public and the Member can contact AVS at 1800 4761 600 to report cases.",
+   "sentences": [
+    {
+     "sid": "s00028",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "If members of the public or the Member herself comes across any reports, please feel free to contact AVS.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00029",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "I have gotten the number here – it is 1800 4761 600.",
      "added_for_context": false
     }
    ]
@@ -108,7 +114,7 @@
   "sentences_in_sections": 11,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 3,
-  "sections_total": 2,
+  "sections_total": 3,
   "selection_share": 0.3793,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -118,7 +124,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 2,
+   "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 11,
@@ -128,14 +134,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:28:28"
+   "checked_at": "2026-09-19T22:46:44"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1943,
-   "completion_tokens": 137,
+   "completion_tokens": 206,
    "estimated": false,
-   "cost_usd": 0.00031
+   "cost_usd": 0.00033
   }
  }
 }

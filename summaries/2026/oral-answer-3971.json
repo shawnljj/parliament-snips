@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "HDB condensation and mould feedback",
-   "summary": "HDB received about 240 condensation and mould feedback cases in 2025 and inspects, advises owners and neighbours, and recommends ventilation and mould-resistant paint.",
+   "summary": "In 2025 HDB received about 240 condensation and mould feedback cases from neighbours' air-conditioner use, inspecting and advising flat owners.",
    "sentences": [
     {
      "sid": "s00002",
@@ -31,7 +31,7 @@
   },
   {
    "label": "Advisory on air-conditioner usage",
-   "summary": "HDB can advise neighbours on air-conditioner usage, will explore wall and ceiling enhancements, and may share compensation based on case specifics.",
+   "summary": "HDB can advise neighbours on air-conditioner usage, explore wall and ceiling enhancements, and consider compensation sharing in egregious cases.",
    "sentences": [
     {
      "sid": "s00011",
@@ -100,14 +100,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:29:07"
+   "checked_at": "2026-09-19T22:47:08"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1218,
-   "completion_tokens": 150,
+   "completion_tokens": 147,
    "estimated": false,
-   "cost_usd": 0.000213
+   "cost_usd": 0.000212
   }
  }
 }

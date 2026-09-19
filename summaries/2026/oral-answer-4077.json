@@ -78,7 +78,7 @@
   },
   {
    "label": "Reasons a website is draggy",
-   "summary": "The passage states that if the website is draggy, there can be a few reasons why it may be so.",
+   "summary": "If the website is draggy, there can be a few reasons why it may be so.",
    "sentences": [
     {
      "sid": "s00024",
@@ -126,14 +126,14 @@
    "coverage": 0.5714,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:27:22"
+   "checked_at": "2026-09-19T22:10:15"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1825,
-   "completion_tokens": 243,
+   "completion_tokens": 239,
    "estimated": false,
-   "cost_usd": 0.000324
+   "cost_usd": 0.000322
   }
  }
 }

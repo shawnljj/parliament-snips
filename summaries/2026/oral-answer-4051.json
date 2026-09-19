@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "GenAI chatbots and mental health",
-   "summary": "GenAI chatbots are not appropriate replacements for qualified mental health providers and may cause harm in crises.",
+   "summary": "GenAI chatbots are not appropriate replacements for qualified mental health care providers and may cause harm in crises.",
    "sentences": [
     {
      "sid": "s00002",
@@ -44,7 +44,7 @@
   },
   {
    "label": "Data privacy and informed consent",
-   "summary": "Online resources such as mindline.sg work on the basis of anonymity.",
+   "summary": "Many online resources such as mindline.sg work on the basis of anonymity.",
    "sentences": [
     {
      "sid": "s00019",
@@ -57,7 +57,7 @@
   },
   {
    "label": "Wysa rule-based chatbot",
-   "summary": "Wysa supplements counselling as a 24/7 pocket therapist using a clinician-validated rule-based model, unlike GenAI chatbots.",
+   "summary": "Wysa supplements professional counselling as a 24/7 pocket therapist using a clinician-validated rule-based model, unlike GenAI chatbots.",
    "sentences": [
     {
      "sid": "s00026",
@@ -133,14 +133,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:58:36"
+   "checked_at": "2026-09-19T22:27:58"
   },
   "usage": {
    "calls": 3,
    "prompt_tokens": 2328,
-   "completion_tokens": 219,
+   "completion_tokens": 222,
    "estimated": false,
-   "cost_usd": 0.000387
+   "cost_usd": 0.000388
   }
  }
 }

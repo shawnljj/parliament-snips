@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Motion on Pritam Singh conduct",
-   "summary": "On 14 January 2026 the House debated and passed a Motion on Mr Pritam Singh's conduct and his suitability as Leader of the Opposition.",
+   "summary": "On 14 January 2026 the House debated and passed a Motion on Mr Pritam Singh's conduct and suitability, and its resolutions were concluded that day.",
    "sentences": [
     {
      "sid": "s00001",
@@ -12,24 +12,18 @@
      "attributed": true,
      "text": "On 14 January 2026, this House debated and passed a Motion on \"Expression of Regret at the Conduct of Mr Pritam Singh and Consideration of His Suitability to Continue as the Leader of the Opposition\".",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Findings on Lim and Faisal",
-   "summary": "The question is what to do with the COP Report findings that Ms Lim and Mr Faisal were untruthful about the 8 August meeting.",
-   "sentences": [
+    },
     {
-     "sid": "s00005",
+     "sid": "s00002",
      "speaker": "The Leader of the House (Ms Indranee Rajah)",
      "attributed": true,
-     "text": "The question is what to do with the findings regarding Ms Lim and Mr Faisal in the COP Report on the \"Complaint against Ms Raeesah Khan for Untruth Spoken in Parliament\", specifically the Committee's finding that Ms Lim and Mr Faisal were untruthful to the COP about what was said at the 8 August meeting.",
+     "text": "The resolutions in that Motion relating to Mr Singh were all dealt with and concluded on that day.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "PPIPA section 22 punishment power",
+   "label": "Parliament power to punish offences",
    "summary": "Under section 22 of the PPIPA, Parliament may punish offences committed in the preceding session or the last session of the preceding Parliament.",
    "sentences": [
     {
@@ -42,8 +36,8 @@
    ]
   },
   {
-   "label": "15th Parliament jurisdiction limits",
-   "summary": "The 15th Parliament can only deal with offences from this Session or the Second Session of the 14th Parliament, so no penalties apply.",
+   "label": "15th Parliament PPIPA limits",
+   "summary": "The 15th Parliament can only deal with offences from this Session or the 14th Parliament's Second Session, so no penalties apply to First Session conduct.",
    "sentences": [
     {
      "sid": "s00046",
@@ -62,8 +56,8 @@
    ]
   },
   {
-   "label": "No further action needed",
-   "summary": "Given the specific circumstances, the view is that no further action need be taken on the Committee's finding regarding Ms Lim and Mr Faisal.",
+   "label": "No action on Committee finding",
+   "summary": "Given the case's specific circumstances, the Speaker's view is that no further action is needed on the Committee's finding regarding Ms Lim and Mr Faisal.",
    "sentences": [
     {
      "sid": "s00052",
@@ -125,7 +119,7 @@
   "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 1,
-  "sections_total": 6,
+  "sections_total": 5,
   "selection_share": 0.1538,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -135,7 +129,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 6,
+   "sections_total": 5,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 10,
@@ -145,14 +139,14 @@
    "coverage": 0.6,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:51:44"
+   "checked_at": "2026-09-19T21:48:29"
   },
   "usage": {
    "calls": 4,
-   "prompt_tokens": 3511,
-   "completion_tokens": 377,
+   "prompt_tokens": 3453,
+   "completion_tokens": 331,
    "estimated": false,
-   "cost_usd": 0.000597
+   "cost_usd": 0.000576
   }
  }
 }

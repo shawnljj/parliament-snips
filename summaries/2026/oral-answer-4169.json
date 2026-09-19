@@ -3,8 +3,8 @@
  "what_it_is": "Remedial Actions to Address Erroneous Disbursements of SkillsFuture Singapore Grants as Identified in FY2025/2026 Auditor-General's Report",
  "sections": [
   {
-   "label": "SWDA fraud checks and ETSS errors",
-   "summary": "SWDA investigates potential gaming, will report criminal behaviour to Police, and has fixed the ETSS system logic and procedures with no adverse impact on recipients.",
+   "label": "SWDA fraud detection and ETSS errors",
+   "summary": "SWDA investigates potential gaming, will make Police reports, and has fixed the IT system and procedures behind erroneous ETSS disbursements.",
    "sentences": [
     {
      "sid": "s00003",
@@ -58,8 +58,8 @@
    ]
   },
   {
-   "label": "ETSS disbursement and over-disbursement amounts",
-   "summary": "Total ETSS grant disbursed to affected companies was $4.32 million, with about $2.24 million over-disbursed, as $2.08 million would have been eligible under SkillsFuture Mid-Career Enhanced Subsidy.",
+   "label": "ETSS grant and over-disbursement amounts",
+   "summary": "Total ETSS grant disbursed was $4.32 million, with about $2.24 million over-disbursed, as $2.08 million would have been eligible under SkillsFuture Mid-Career Enhanced Subsidy.",
    "sentences": [
     {
      "sid": "s00015",
@@ -114,14 +114,14 @@
    "coverage": 0.2857,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:36:57"
+   "checked_at": "2026-09-19T21:42:10"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1635,
-   "completion_tokens": 180,
+   "completion_tokens": 172,
    "estimated": false,
-   "cost_usd": 0.000279
+   "cost_usd": 0.000277
   }
  }
 }

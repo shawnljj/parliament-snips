@@ -3,7 +3,7 @@
  "what_it_is": "Singapore Energy Resilience Strategy: An Off-grid and Micro-grid Power Using Smart Energy Management Solutions to be Deployed Island-wide",
  "sections": [
   {
-   "label": "Gas dependence and blackout risk",
+   "label": "Gas generation and blackout risks",
    "summary": "About 95% of electricity comes from imported natural gas, and supply interruptions or plant failures could cause a system-wide blackout.",
    "sentences": [
     {
@@ -30,7 +30,7 @@
    ]
   },
   {
-   "label": "Public housing backup lacking",
+   "label": "Public housing backup power",
    "summary": "Public housing estates, home to 80% of the population, largely lack backup beyond stairwell emergency lighting.",
    "sentences": [
     {
@@ -43,8 +43,8 @@
    ]
   },
   {
-   "label": "HDB rooftop solar potential",
-   "summary": "A typical 1,500 square metre HDB roof can host 250 to 300 kilowatt-peak solar, generating about 340 megawatt-hour yearly for daylight needs.",
+   "label": "HDB rooftop solar output",
+   "summary": "A typical 1,500 square metre HDB roof can host 250 to 300 kilowatt-peak solar, generating about 340 megawatt-hour yearly.",
    "sentences": [
     {
      "sid": "s00033",
@@ -77,7 +77,7 @@
   },
   {
    "label": "National distributed BESS capacity",
-   "summary": "About 10,000 HDB blocks hold 1.5 gigawatt-hours of BESS, plus two gigawatt-hours commercial and industrial, totalling 3.5 gigawatt-hours.",
+   "summary": "National distributed storage totals 3.5 gigawatt-hours, equivalent to a 500 megawatt gas plant running seven hours.",
    "sentences": [
     {
      "sid": "s00068",
@@ -110,7 +110,7 @@
   },
   {
    "label": "Constituency-scale microgrid task force proposal",
-   "summary": "A speaker urges the Ministry to approve a multi-agency task force to pilot the first constituency-scale microgrid with solar and BESS.",
+   "summary": "A speaker urges the Ministry to review and approve a multi-agency task force to pilot the first constituency-scale microgrid with solar and BESS.",
    "sentences": [
     {
      "sid": "s00095",
@@ -129,8 +129,8 @@
    ]
   },
   {
-   "label": "Singapore power interruption statistics 2025",
-   "summary": "In 2025, average power interruption time was under one minute per customer on mainland Singapore, with about 0.02 interruptions per customer.",
+   "label": "2025 power interruption statistics",
+   "summary": "In 2025, average power interruption time was under one minute per customer on mainland Singapore and average frequency was about 0.02 times per customer.",
    "sentences": [
     {
      "sid": "s00109",
@@ -143,7 +143,7 @@
   },
   {
    "label": "Future Grid Capabilities Roadmap and laboratory",
-   "summary": "EMA and SP Group developed the Future Grid Capabilities Roadmap, with the upcoming SP Technology Laboratory as one outcome.",
+   "summary": "EMA and SP Group developed the Future Grid Capabilities Roadmap last year, with the upcoming SP Technology Laboratory as one concrete outcome.",
    "sentences": [
     {
      "sid": "s00119",
@@ -163,7 +163,7 @@
   },
   {
    "label": "Demand-side Flexibility Roadmap",
-   "summary": "EMA's Demand-side Flexibility Roadmap sets out how demand-side flexibility will work in practice.",
+   "summary": "EMA's Demand-side Flexibility Roadmap sets out how this will work in practice.",
    "sentences": [
     {
      "sid": "s00128",
@@ -188,8 +188,8 @@
    ]
   },
   {
-   "label": "Pulau Ubin Micro-Grid reliability upgrade",
-   "summary": "The 2013 Pulau Ubin Micro-Grid, solar PV with battery and diesel, serves about 30 consumers and its operator is upgrading it after reliability issues.",
+   "label": "Pulau Ubin Micro-Grid",
+   "summary": "The Pulau Ubin Micro-Grid, launched in 2013 as an R&D testbed, is powered by solar PV, battery storage and diesel generators, and serves about 30 consumers.",
    "sentences": [
     {
      "sid": "s00153",
@@ -216,7 +216,7 @@
   },
   {
    "label": "Decarbonisation Grand Challenge funding",
-   "summary": "EMA will publish grant call results; the Government set aside $800 million under the Decarbonisation Grand Challenge for low-carbon technology research and innovation, including energy storage and grid modernisation.",
+   "summary": "EMA will publish grant call results; the Government set aside $800 million under the Decarbonisation Grand Challenge for low-carbon technologies including energy storage and grid modernisation.",
    "sentences": [
     {
      "sid": "s00160",
@@ -242,8 +242,8 @@
    ]
   },
   {
-   "label": "Data centres and grid options",
-   "summary": "Data centres are energy guzzlers using diesel back-up; electricity imports, batteries, solar and micro-grids are options to consider for the grid of the future.",
+   "label": "Data centres power and diesel",
+   "summary": "Data centres are huge power users, about 70 MW to 100 MW each, running on diesel back-up, which may create another set of carbon emissions.",
    "sentences": [
     {
      "sid": "s00169",
@@ -258,19 +258,18 @@
      "attributed": true,
      "text": "So, this is something we may look into closely because that would create another set of carbon emission.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Data centres seeking sustainable alternatives",
+   "summary": "Data centres are looking for sustainable options such as electricity imports, renewable energy, batteries, solar and micro-grids to complement the existing grid.",
+   "sentences": [
     {
-     "sid": "s00172",
+     "sid": "s00174",
      "speaker": "Ms Gan Siow Huang",
      "attributed": true,
-     "text": "I want to thank Mr Azhar Othman on his comments.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00173",
-     "speaker": "Ms Gan Siow Huang",
-     "attributed": true,
-     "text": "I fully agree that data centres, they are energy guzzlers.",
+     "text": "In fact, data centres are also actively looking for alternative solutions that are more sustainable.",
      "added_for_context": false
     },
     {
@@ -309,12 +308,12 @@
    "matter-adj-2980"
   ],
   "sentences_total": 179,
-  "sentences_selected": 30,
-  "sentences_in_sections": 30,
+  "sentences_selected": 29,
+  "sentences_in_sections": 29,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 5,
-  "sections_total": 14,
-  "selection_share": 0.1676,
+  "sentences_added_for_context": 4,
+  "sections_total": 15,
+  "selection_share": 0.162,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -323,24 +322,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 14,
+   "sections_total": 15,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 30,
-   "sentences_selected": 30,
+   "sentences_published": 29,
+   "sentences_selected": 29,
    "turns_cited": 4,
    "turns_total": 6,
    "coverage": 0.6667,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:58:52"
+   "checked_at": "2026-09-19T21:53:11"
   },
   "usage": {
    "calls": 8,
-   "prompt_tokens": 7359,
-   "completion_tokens": 881,
+   "prompt_tokens": 7351,
+   "completion_tokens": 915,
    "estimated": false,
-   "cost_usd": 0.001277
+   "cost_usd": 0.001285
   }
  }
 }

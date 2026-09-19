@@ -3,8 +3,8 @@
  "what_it_is": "Health Screenings for Those from Countries with High-risk of Nipah Virus, and Healthcare Advisories to Doctors and Public",
  "sections": [
   {
-   "label": "Health measures for travellers and workers",
-   "summary": "Clinical guidance, a webinar, an adjusted Health Declaration Card, temperature screening and CDA announcements to migrant workers and employers were issued, with CDA monitoring India and globally.",
+   "label": "Precautionary health measures for travellers and workers",
+   "summary": "Singapore issued clinical guidance, held a webinar, adjusted the Health Declaration Card, activated temperature screening, and disseminated precautionary health measures to migrant workers and employers.",
    "sentences": [
     {
      "sid": "s00002",
@@ -30,8 +30,8 @@
    ]
   },
   {
-   "label": "Enhanced SG Arrival Card prompts",
-   "summary": "The enhanced electronic health declaration card prompts travellers who click yes to symptoms to enter their previous travel destination, including West Bengal.",
+   "label": "Enhanced electronic health declaration card",
+   "summary": "The SG Arrival Card prompts travellers who click yes to symptoms to enter their previous travel destination, including West Bengal.",
    "sentences": [
     {
      "sid": "s00009",
@@ -57,14 +57,21 @@
    ]
   },
   {
-   "label": "SG Arrival Card data to CDA",
-   "summary": "Information collected by the SG Arrival declaration card is piped into CDA for contact tracing if necessary.",
+   "label": "SG Arrival Card data and Nipah research",
+   "summary": "SG Arrival declaration card information is piped into CDA for contact tracing, and a question is asked about Nipah virus diagnostic kits, vaccines and bio-safety 4 laboratory capacity.",
    "sentences": [
     {
      "sid": "s00015",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "Any of the information collected by the SG Arrival declaration card will indeed be piped into CDA so that we can perform any contact tracing if necessary.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
+     "attributed": true,
+     "text": "What is the progress of local research into Nipah virus diagnostic kits and vaccines and does Singapore currently possess or have any plans to develop bio-safety 4 laboratory capacity for vaccine testing.",
      "added_for_context": false
     }
    ]
@@ -82,12 +89,12 @@
    "oral-answer-4014"
   ],
   "sentences_total": 20,
-  "sentences_selected": 7,
-  "sentences_in_sections": 7,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 0,
   "sections_total": 3,
-  "selection_share": 0.35,
+  "selection_share": 0.4,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -99,21 +106,21 @@
    "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 7,
-   "sentences_selected": 7,
-   "turns_cited": 3,
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 4,
    "turns_total": 8,
-   "coverage": 0.375,
+   "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:19:50"
+   "checked_at": "2026-09-19T22:40:15"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1426,
-   "completion_tokens": 193,
+   "prompt_tokens": 1464,
+   "completion_tokens": 217,
    "estimated": false,
-   "cost_usd": 0.000254
+   "cost_usd": 0.000266
   }
  }
 }

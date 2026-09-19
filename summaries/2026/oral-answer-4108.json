@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Sexual offence cases and locations",
-   "summary": "Rape and outrage of modesty cases rose from 2024 to 2025, mostly involving known offenders, with many occurring in residential premises.",
+   "summary": "Rape and outrage of modesty cases rose from 2024 to 2025, mostly involving known offenders, with offences occurring in residential, commercial and educational premises.",
    "sentences": [
     {
      "sid": "s00002",
@@ -80,14 +80,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:14:00"
+   "checked_at": "2026-09-19T22:02:11"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1057,
-   "completion_tokens": 88,
+   "completion_tokens": 92,
    "estimated": false,
-   "cost_usd": 0.000173
+   "cost_usd": 0.000174
   }
  }
 }

@@ -3,8 +3,8 @@
  "what_it_is": "Emergency Communications between Parents and their Children given Smartphone Ban in Secondary Schools",
  "sections": [
   {
-   "label": "MOE support for school smartphone guidelines",
-   "summary": "MOE engaged school leaders and provided implementation guidelines, FAQs and shared good practices to support secondary schools in implementing tightened smartphone and smartwatch guidelines.",
+   "label": "MOE support for smartphone guidelines",
+   "summary": "MOE engaged school leaders and provided resources like implementation guidelines and FAQs to support secondary schools in implementing tightened smartphone and smartwatch guidelines.",
    "sentences": [
     {
      "sid": "s00002",
@@ -23,8 +23,8 @@
    ]
   },
   {
-   "label": "Emergency communication protocols for parents",
-   "summary": "Schools have emergency communication protocols; parents can contact the general office, students can use general office phones, and students need not own a handphone.",
+   "label": "Emergency communication protocols with parents",
+   "summary": "Schools have protocols for emergency communication with parents, who can contact the general office, and students may use general office phones.",
    "sentences": [
     {
      "sid": "s00006",
@@ -46,25 +46,25 @@
      "attributed": true,
      "text": "Students who need to contact their parents may also do so using phones in the general office.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00009",
-     "speaker": "The Minister of State for Education (Ms Jasmin Lau) (for the Minister for Education)",
-     "attributed": true,
-     "text": "There is no need for students to own or use a handphone.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Parental support for the ban",
-   "summary": "Parents are largely supportive of the ban, some have questions about implementation, and MOE continues to engage schools and school leaders.",
+   "label": "Parent support and school implementation",
+   "summary": "Parents are largely supportive of the ban, schools are implementing the new measures, and MOE continues to engage schools and school leaders.",
    "sentences": [
     {
      "sid": "s00013",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
      "text": "By and large, parents are supportive of the ban.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Ms Jasmin Lau",
+     "attributed": true,
+     "text": "Schools are in the process of implementing the new measures.",
      "added_for_context": false
     },
     {
@@ -120,14 +120,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:35:18"
+   "checked_at": "2026-09-19T22:50:33"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1188,
-   "completion_tokens": 199,
+   "prompt_tokens": 1185,
+   "completion_tokens": 191,
    "estimated": false,
-   "cost_usd": 0.000222
+   "cost_usd": 0.000219
   }
  }
 }

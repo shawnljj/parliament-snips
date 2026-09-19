@@ -3,8 +3,8 @@
  "what_it_is": "Differentiating between Wealth Held by Households in Public Versus in Private Housing, and Measures to Sustain or Improve Upward Mobility Rates",
  "sections": [
   {
-   "label": "Housing wealth and mobility questions",
-   "summary": "Two questions ask whether owner-occupied and private housing wealth are differentiated in inequality measures, and what sustains upward mobility rates.",
+   "label": "Housing wealth inequality and mobility questions",
+   "summary": "Questions ask whether owner-occupied and private housing wealth are differentiated in inequality measures, and what sustains upward mobility.",
    "sentences": [
     {
      "sid": "s00001",
@@ -23,8 +23,8 @@
    ]
   },
   {
-   "label": "Survey-based wealth measurement plans",
-   "summary": "Singapore relies on survey-based approaches, has no plans for more asset disclosure powers, and plans the next Household Expenditure Survey for 2028.",
+   "label": "Survey-based wealth measurement approach",
+   "summary": "Singapore relies primarily on survey-based approaches and has no plans to seek powers for more granular asset disclosures for inequality measurement.",
    "sentences": [
     {
      "sid": "s00014",
@@ -39,14 +39,13 @@
      "attributed": true,
      "text": "We have no plans at this point to seek additional legislative or administrative powers to require more granular asset disclosures solely for inequality measurement.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00016",
-     "speaker": "Mr Jeffrey Siow",
-     "attributed": true,
-     "text": "This is our first compilation of the wealth Gini coefficient and we do not have a historical series.",
-     "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Household Expenditure Survey 2028",
+   "summary": "The next cycle of the Household Expenditure Survey is planned for 2028.",
+   "sentences": [
     {
      "sid": "s00018",
      "speaker": "Mr Jeffrey Siow",
@@ -58,7 +57,7 @@
   },
   {
    "label": "Top wealth shares",
-   "summary": "The top 1% hold about 14% of total household wealth and the top 5% hold about 33%.",
+   "summary": "The top 1% hold about 14% of total household wealth, and the top 5% hold about 33%.",
    "sentences": [
     {
      "sid": "s00027",
@@ -70,8 +69,21 @@
    ]
   },
   {
-   "label": "Fiscal measures for inequality",
-   "summary": "Tackling inequality and improving mobility requires sustained investment, and fiscal measures will be reviewed and updated.",
+   "label": "Wealth taxation approach",
+   "summary": "Wealth is taxed in ways less susceptible to cross-border movement and tax planning while preserving competitiveness.",
+   "sentences": [
+    {
+     "sid": "s00035",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "Our approach is to tax wealth in ways that are less susceptible to cross-border movement and tax planning, while preserving competitiveness.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Inequality and mobility commitment",
+   "summary": "Tackling inequality and improving mobility requires sustained investment across generations, with fiscal measures reviewed and updated.",
    "sentences": [
     {
      "sid": "s00050",
@@ -97,16 +109,9 @@
    ]
   },
   {
-   "label": "Wealth data measurement limits",
-   "summary": "Wealth is hard to measure, the wealth Gini is compiled for the first time using survey and administrative data, and wealth data depends on the five-yearly survey.",
+   "label": "First wealth Gini measurement",
+   "summary": "The wealth Gini coefficient is being measured for the first time, using survey and administrative data, and can be improved over time.",
    "sentences": [
-    {
-     "sid": "s00058",
-     "speaker": "Mr Jeffrey Siow",
-     "attributed": true,
-     "text": "Wealth is notoriously hard to measure, particularly data on overseas assets and unlisted assets.",
-     "added_for_context": false
-    },
     {
      "sid": "s00060",
      "speaker": "Mr Jeffrey Siow",
@@ -120,26 +125,45 @@
      "attributed": true,
      "text": "This is the first time we are measuring the wealth Gini coefficient and we are open to improving it over time.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Using data for trending",
+   "summary": "The important part of using this data is to look at the trending.",
+   "sentences": [
     {
-     "sid": "s00063",
+     "sid": "s00068",
      "speaker": "Mr Jeffrey Siow",
      "attributed": true,
-     "text": "In terms of household income trends, we already publish that data regularly, annually, in the Key Household Income Trends Report.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00064",
-     "speaker": "Mr Jeffrey Siow",
-     "attributed": true,
-     "text": "But for the wealth Gini coefficient and wealth data, it is dependent on the main source, which is the household expenditure survey, which we do every five years.",
+     "text": "In terms of what we would do with this data, I think the important part is to look at the trending.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Support for bottom-quintile families",
-   "summary": "Bottom-quintile families have multiple needs, so a package of measures including enhanced ComLink+ is being worked on.",
+   "label": "Ageing, mobility and younger cohorts",
+   "summary": "Structural pressures on inequality will emerge as society ages and the economy matures, and there is not yet good data on younger Singaporeans.",
+   "sentences": [
+    {
+     "sid": "s00080",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "As our society ages and new generations come onboard and the economy matures, structural pressures on inequality will naturally emerge and sustaining mobility will become more challenging.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00081",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "So, to Ms Mariam's question on younger cohorts, we do not yet have good data on younger Singaporeans because they are still in the early stages of their careers and their earnings have not stabilised.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Support for bottom quintile families",
+   "summary": "Families in the bottom quintile have multiple needs, so a package of measures including enhanced ComLink+ is being worked on.",
    "sentences": [
     {
      "sid": "s00084",
@@ -158,16 +182,9 @@
    ]
   },
   {
-   "label": "Property tax rates and deferral",
-   "summary": "Investment and higher-value properties are taxed higher, one-property homeowners lower with rebates, and eligible seniors can defer property tax via interest-free instalments.",
+   "label": "Property tax deferral for seniors",
+   "summary": "Asset rich but income poor seniors have deferral mechanisms for property tax payments, including extended interest-free instalments.",
    "sentences": [
-    {
-     "sid": "s00098",
-     "speaker": "Mr Jeffrey Siow",
-     "attributed": true,
-     "text": "Investment properties and higher-value properties are taxed higher and homeowners with only one property are taxed lower and they receive property tax rebates when necessary.",
-     "added_for_context": false
-    },
     {
      "sid": "s00099",
      "speaker": "Mr Jeffrey Siow",
@@ -192,7 +209,7 @@
    ]
   },
   {
-   "label": "No simulation on separating property investment",
+   "label": "No property investment simulations",
    "summary": "No simulations have been done on separating investment property from owner-occupied property.",
    "sentences": [
     {
@@ -200,6 +217,19 @@
      "speaker": "Mr Jeffrey Siow",
      "attributed": true,
      "text": "On whether or not we have done simulations on separating investment of property from owner-occupied property, we have not done so.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tax burden work wealth",
+   "summary": "The speaker says they remain open on whether tax burden will shift from work to wealth taxation.",
+   "sentences": [
+    {
+     "sid": "s00114",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "On tax burden, whether or not we will shift from work to wealth taxation, I think, we remain open.",
      "added_for_context": false
     }
    ]
@@ -221,7 +251,7 @@
   "sentences_in_sections": 22,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 6,
-  "sections_total": 8,
+  "sections_total": 13,
   "selection_share": 0.176,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -231,24 +261,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 8,
+   "sections_total": 13,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 22,
    "sentences_selected": 22,
-   "turns_cited": 7,
+   "turns_cited": 8,
    "turns_total": 12,
-   "coverage": 0.5833,
+   "coverage": 0.6667,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:03:40"
+   "checked_at": "2026-09-19T22:30:34"
   },
   "usage": {
-   "calls": 7,
-   "prompt_tokens": 5886,
-   "completion_tokens": 492,
+   "calls": 8,
+   "prompt_tokens": 6102,
+   "completion_tokens": 676,
    "estimated": false,
-   "cost_usd": 0.000962
+   "cost_usd": 0.001044
   }
  }
 }

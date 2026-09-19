@@ -3,8 +3,8 @@
  "what_it_is": "Effectiveness of COSMIC as Platform for Financial Institutions to Share Information on Customers Showing Money Laundering Red Flags",
  "sections": [
   {
-   "label": "COSMIC expansion and outcomes",
-   "summary": "COSMIC's initial phase involved six banks targeting three financial crime risks, and MAS is expanding its scope and onboarding more banks within two years.",
+   "label": "COSMIC launch and financial crime risks",
+   "summary": "COSMIC's initial phase involved six major Singapore banks and targeted misuse of legal persons, trade finance misuse, and proliferation financing.",
    "sentences": [
     {
      "sid": "s00002",
@@ -19,21 +19,13 @@
      "attributed": true,
      "text": "Since its launch, COSMIC has enhanced participant banks' ability to detect bad actors and strengthened our financial sector's defences against financial crime.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00004",
-     "speaker": "The Minister of State for Foreign Affairs and National Development (Mr Alvin Tan) (for the Prime Minister and Minister for Finance)",
-     "attributed": true,
-     "text": "Arising from information shared on the platform, COSMIC participant banks filed additional suspicious transaction reports.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00005",
-     "speaker": "The Minister of State for Foreign Affairs and National Development (Mr Alvin Tan) (for the Prime Minister and Minister for Finance)",
-     "attributed": true,
-     "text": "Further, following participant banks' review and investigations, a significant number of suspicious customer accounts were closed.",
-     "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "COSMIC expansion after FATF assessment",
+   "summary": "MAS is widening COSMIC's scope beyond three risk areas and onboarding more banks, with expansion scheduled for completion within two years.",
+   "sentences": [
     {
      "sid": "s00007",
      "speaker": "The Minister of State for Foreign Affairs and National Development (Mr Alvin Tan) (for the Prime Minister and Minister for Finance)",
@@ -65,14 +57,28 @@
    ]
   },
   {
-   "label": "COSMIC first-year STR flows",
-   "summary": "In its first year, COSMIC participant banks filed additional Suspicious Transaction Reports relating to aggregate fund flows of more than $1.6 billion.",
+   "label": "COSMIC first-year STR outcomes",
+   "summary": "In its first year, participant banks filed additional STRs on fund flows over $1.6 billion and closed more than 1,000 suspicious accounts.",
    "sentences": [
     {
      "sid": "s00021",
      "speaker": "Mr Alvin Tan",
      "attributed": true,
      "text": "In the first year of operations, COSMIC participant banks filed additional Suspicious Transaction Reports (STRs) relating to aggregate fund flows of more than $1.6 billion dollars.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "And following the participant banks' review and investigation, more than1,000 suspicious customer accounts were closed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "So, we are reviewing the efficacy and effectiveness of COSMIC, and the mutual evaluation by the FATF also gives us some feedback on whether this is effective.",
      "added_for_context": false
     }
    ]
@@ -94,7 +100,7 @@
   "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 1,
-  "sections_total": 2,
+  "sections_total": 3,
   "selection_share": 0.36,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -104,7 +110,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 2,
+   "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 9,
@@ -114,14 +120,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:37:00"
+   "checked_at": "2026-09-19T21:42:13"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1575,
-   "completion_tokens": 152,
+   "prompt_tokens": 1592,
+   "completion_tokens": 201,
    "estimated": false,
-   "cost_usd": 0.000263
+   "cost_usd": 0.000279
   }
  }
 }

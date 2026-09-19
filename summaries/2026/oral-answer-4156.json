@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Blocking 14 online social media posts",
-   "summary": "The Government issued Disabling Directions under OCHA to block Singapore users from 14 online social media posts assessed to be an offence under section 298A(a) of the Penal Code.",
+   "summary": "The Government issued Disabling Directions under OCHA to block Singapore users' access to 14 online social media posts assessed to offend section 298A(a) of the Penal Code.",
    "sentences": [
     {
      "sid": "s00003",
@@ -57,8 +57,8 @@
    ]
   },
   {
-   "label": "Government action against divisive videos",
-   "summary": "The Government had to act decisively against these videos because they seek to undermine Singapore's cohesion and divide us based on race.",
+   "label": "Government action against videos",
+   "summary": "The Government had to act decisively against these videos because they seek to undermine Singapore's cohesion and divide society by race.",
    "sentences": [
     {
      "sid": "s00038",
@@ -71,7 +71,7 @@
   },
   {
    "label": "Online directions under FICA and OCHA",
-   "summary": "Online directions under FICA were first issued in July 2024, other online directions under OCHA have also been used, and they have been generally effective as social media companies complied.",
+   "summary": "Online directions under FICA were first used in July 2024, and other online directions under OCHA have been generally effective as social media companies complied.",
    "sentences": [
     {
      "sid": "s00049",
@@ -133,14 +133,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:51:50"
+   "checked_at": "2026-09-19T21:48:33"
   },
   "usage": {
    "calls": 3,
    "prompt_tokens": 2877,
-   "completion_tokens": 267,
+   "completion_tokens": 257,
    "estimated": false,
-   "cost_usd": 0.000478
+   "cost_usd": 0.000475
   }
  }
 }

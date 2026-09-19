@@ -3,8 +3,8 @@
  "what_it_is": "Impact of US Tariff Increases and US Export Declines on Price Pressures for Singaporeans",
  "sections": [
   {
-   "label": "US exports fall, tariffs, inflation",
-   "summary": "Singapore's non-oil domestic exports to the US fell 9.2% year-on-year from April to December 2025, with tariffs not expected to directly affect Singapore's inflation as US importers pay them.",
+   "label": "US exports and tariffs",
+   "summary": "Singapore's non-oil domestic exports to the US fell 9.2% year-on-year from April to December 2025, with no direct inflation impact as US importers pay tariffs.",
    "sentences": [
     {
      "sid": "s00003",
@@ -30,8 +30,8 @@
    ]
   },
   {
-   "label": "Import prices, CPI, core inflation",
-   "summary": "Lower import prices helped reduce CPI-All Items inflation to 0.9% and MAS Core Inflation to 0.7% last year, with continued monitoring and readiness to support Singaporeans.",
+   "label": "Import prices and inflation",
+   "summary": "Lower import prices helped cut CPI-All Items inflation to 0.9% and MAS Core Inflation to 0.7% last year, with continued monitoring and possible support.",
    "sentences": [
     {
      "sid": "s00008",
@@ -50,8 +50,8 @@
    ]
   },
   {
-   "label": "Inflation by income household groups",
-   "summary": "Last year CPI-All Items inflation was 0.6% for the lowest 20% income household groups and 0.9% for the middle 60% income group, enabling targeted support.",
+   "label": "Inflation by income group",
+   "summary": "Last year CPI-All Items inflation was 0.6% for the lowest 20% income group and 0.9% for the middle 60%, enabling targeted support.",
    "sentences": [
     {
      "sid": "s00012",
@@ -113,14 +113,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:20:04"
+   "checked_at": "2026-09-19T22:40:23"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1233,
-   "completion_tokens": 243,
+   "completion_tokens": 224,
    "estimated": false,
-   "cost_usd": 0.000241
+   "cost_usd": 0.000235
   }
  }
 }

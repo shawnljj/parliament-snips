@@ -3,8 +3,8 @@
  "what_it_is": "Sleep Sufficiency Trends Among School-going Children and Adolescents",
  "sections": [
   {
-   "label": "MOE student sleep survey",
-   "summary": "MOE surveys Primary 5 and Secondary 3 students on sleep; in 2025 they averaged seven hours on school days, slightly more than 2023.",
+   "label": "Student sleep sufficiency survey",
+   "summary": "MOE surveys Primary 5 and Secondary 3 students on sleep; in 2025 they averaged seven hours on school days, slightly up from 2023.",
    "sentences": [
     {
      "sid": "s00002",
@@ -23,8 +23,8 @@
    ]
   },
   {
-   "label": "School sleep measures and start times",
-   "summary": "Secondary devices default to sleep mode at 10.30pm, MOE engages parents on sleep health, and schools decide their own start times.",
+   "label": "Devices, parents, school start times",
+   "summary": "Secondary students' devices default to sleep mode at 10.30pm, MOE engages parents on sleep, and schools decide their own start times.",
    "sentences": [
     {
      "sid": "s00006",
@@ -114,14 +114,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:37:04"
+   "checked_at": "2026-09-19T21:42:15"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1430,
-   "completion_tokens": 156,
+   "completion_tokens": 159,
    "estimated": false,
-   "cost_usd": 0.000244
+   "cost_usd": 0.000245
   }
  }
 }

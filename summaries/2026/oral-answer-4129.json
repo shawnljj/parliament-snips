@@ -3,14 +3,21 @@
  "what_it_is": "Monitoring AI Use by Primary School Students",
  "sections": [
   {
-   "label": "Questions on AI in primary schools",
-   "summary": "Questions ask about prerequisite skills, the Primary 4 entry point, implementation roadmap, and teacher guidelines and support for AI use.",
+   "label": "Questions on AI in primary education",
+   "summary": "Questions ask the Education Minister about prerequisites, the Primary 4 entry point, implementation roadmap, teacher support, safeguards, and rollout assessment for AI in primary education.",
    "sentences": [
     {
      "sid": "s00002",
      "speaker": "Mr Kenneth Tiong Boon Kiat",
      "attributed": true,
      "text": "asked the Minister for Education (a) what prerequisite skills must primary school students demonstrate before AI is first introduced for usage; (b) what is the rationale for the Primary 4 entry point; (c) what is the implementation roadmap for AI in primary curricula, including age cohorts and approved tools; and (d) what guidelines, training and workload support will teachers receive to distinguish productive AI use from shortcut substitution.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Dr Charlene Chen",
+     "attributed": true,
+     "text": "asked the Minister for Education in respect of the use of artificial intelligence in education (a) whether the Ministry has established safeguards to ensure (i) transparency to parents on data collected through AI-enabled learning tools and (ii) procedural fairness when students are penalised for inappropriate AI use; and (b) if so, what do these safeguards entail.",
      "added_for_context": false
     },
     {
@@ -23,8 +30,8 @@
    ]
   },
   {
-   "label": "MOE approach to AI learning",
-   "summary": "MOE's approach is for every student to learn about AI, use AI, learn with AI and learn beyond AI.",
+   "label": "MOE approach to AI",
+   "summary": "MOE's approach is for every student to learn about AI, learn to use AI, learn with AI and learn beyond AI.",
    "sentences": [
     {
      "sid": "s00009",
@@ -36,21 +43,28 @@
    ]
   },
   {
-   "label": "Primary 4 English AI example",
-   "summary": "Primary 4 students in an English Language class can use the AI Learning Assistant (LEA) in SLS for composition writing.",
+   "label": "AI literacy in Primary 1 to 3",
+   "summary": "From Primary 1 to 3, hands-on learning is prioritised and students learn AI basics but are not assigned work requiring direct AI use.",
    "sentences": [
     {
-     "sid": "s00025",
+     "sid": "s00017",
      "speaker": "Mr Desmond Lee",
      "attributed": true,
-     "text": "For example, Primary 4 students in an English Language class can use the AI Learning Assistant (LEA) in SLS for composition writing in class.",
+     "text": "From Primary 1 to 3, physical, tactile, hands-on learning is prioritised as students build foundational knowledge and develop cognitive and social skills.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "But students learn about the basics of AI – so, AI literacy – so that they are aware of its presence in their daily lives, but schools will not assign any work that requires them to use AI directly.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Code for Fun and AI modules",
-   "summary": "From Primary 4, students undergo the mandatory 10-hour Code for Fun programme, with optional five-hour AI for Fun modules.",
+   "label": "Code for Fun from Primary 4",
+   "summary": "From Primary 4, students undergo the mandatory 10-hour Code for Fun programme, with optional five-hour AI for Fun modules on generative AI and computer vision.",
    "sentences": [
     {
      "sid": "s00037",
@@ -69,8 +83,8 @@
    ]
   },
   {
-   "label": "AI banned in national exams",
-   "summary": "National exams continue to be proctored and use of AI is prohibited.",
+   "label": "AI prohibited in national exams",
+   "summary": "National exams continue to be proctored and the use of AI is prohibited.",
    "sentences": [
     {
      "sid": "s00046",
@@ -82,8 +96,8 @@
    ]
   },
   {
-   "label": "Anonymised student AI data",
-   "summary": "Data from students' use of MOE-built AI tools is anonymised and not used to train external AI models.",
+   "label": "Anonymised data from MOE AI tools",
+   "summary": "Data from students' use of MOE-built AI tools is anonymised and not used to train external AI models powering these tools.",
    "sentences": [
     {
      "sid": "s00050",
@@ -95,8 +109,8 @@
    ]
   },
   {
-   "label": "SG-LEADS study data collection",
-   "summary": "The Singapore Longitudinal Early Development Study by A*STAR will start collecting data in 2027.",
+   "label": "SG-LEADS children AI usage study",
+   "summary": "A*STAR's SG-LEADS study will start collecting data in 2027 to understand Singapore children's AI usage patterns and effects on learning and well-being.",
    "sentences": [
     {
      "sid": "s00058",
@@ -104,39 +118,19 @@
      "attributed": true,
      "text": "One example is the Singapore Longitudinal Early Development Study (SG-LEADS) by the Agency for Science, Technology and Research (A*STAR), which will start to collect data in 2027.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "AI literacy development and other systems",
-   "summary": "AI literacy development is critical and timely, with China, UAE and the UK introducing AI literacy from Primary 1.",
-   "sentences": [
-    {
-     "sid": "s00068",
-     "speaker": "Mr Desmond Lee",
-     "attributed": true,
-     "text": "If we are not mindful, we may lose the consciousness in detecting the presence of, and influence that AI has in our decision making and ways of thinking, simply because it works so seamlessly.",
-     "added_for_context": true
     },
     {
-     "sid": "s00069",
+     "sid": "s00059",
      "speaker": "Mr Desmond Lee",
      "attributed": true,
-     "text": "So, development of AI literacy is critical and must be timely.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00071",
-     "speaker": "",
-     "attributed": false,
-     "text": "Some systems like China, UAE and the United Kingdom (UK) have introduced AI – AI literacy, AI use – from Primary 1.",
+     "text": "This research seeks to understand Singapore children’s AI usage patterns and how their AI usage affects their learning and well-being outcomes.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Approach to AI in education",
-   "summary": "The approach to AI in education has guiding principles of students at the centre and pedagogy first.",
+   "label": "AI in education guiding principles",
+   "summary": "The approach to AI in education has two guiding principles: students at the centre, and pedagogy first.",
    "sentences": [
     {
      "sid": "s00081",
@@ -162,8 +156,21 @@
    ]
   },
   {
+   "label": "AI not for social emotional learning",
+   "summary": "For children from more vulnerable families, AI in education, SLS and MOE schools is not used for affective or social emotional issues or learning.",
+   "sentences": [
+    {
+     "sid": "s00088",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "Likewise, for children coming from more vulnerable families – AI in education, AI in SLS, AI in MOE schools is not used for affective or social emotional issues or social emotional learning.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
    "label": "Sweden reversing digitalisation strategy",
-   "summary": "The Swedish government reversed its digitalisation strategy in 2023, investing over €200 million to reintroduce physical textbooks and removing mandatory digital tools for young children.",
+   "summary": "The conclusion drew on peer-reviewed studies, and Sweden reversed its digitalisation strategy in 2023, investing over €200 million to reintroduce physical textbooks.",
    "sentences": [
     {
      "sid": "s00098",
@@ -183,7 +190,7 @@
   },
   {
    "label": "Avoiding cognitive offload with AI",
-   "summary": "Using AI tools should not lead children to cognitively offload, relying on AI as a crutch instead of learning deeply.",
+   "summary": "MOE tools in SLS are teacher-supervised and structured so children cannot ask for spoon-fed answers, preventing cognitive offload.",
    "sentences": [
     {
      "sid": "s00102",
@@ -198,12 +205,19 @@
      "attributed": true,
      "text": "We want to make sure that in using AI tools, our children do not cognitively offload – and that is shorthand for saying that they rely on the AI as a crutch to deliver the answer, but not learn deeply, so they do not develop cognitively.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00104",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "And that is why in my earlier reply, I mentioned that the MOE tools that are used in SLS are teacher-supervised and the tools are structured in a way that they do not allow children to ask for spoon-fed answers.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Guarding against general purpose AI tools",
-   "summary": "AI tools in SLS are used for an educative purpose, but children must be guarded against general purpose AI tools outside this environment.",
+   "label": "Guarding against general purpose AI",
+   "summary": "SLS teaching uses AI tools for an educative purpose, but children must be guarded against general purpose AI tools outside this environment causing cognitive offload.",
    "sentences": [
     {
      "sid": "s00112",
@@ -216,7 +230,7 @@
   },
   {
    "label": "AI literacy from young",
-   "summary": "Starting AI literacy young lets children learn with teacher and parent supervision before using tools independently.",
+   "summary": "Starting AI literacy young, with teacher and parent supervision, gives children principles for independent use later.",
    "sentences": [
     {
      "sid": "s00125",
@@ -235,34 +249,14 @@
    ]
   },
   {
-   "label": "Parental consent for external AI tools",
-   "summary": "Externally brought-in AI tools with a parental consent element are brought to parents, and children are not allowed to use them.",
-   "sentences": [
-    {
-     "sid": "s00131",
-     "speaker": "Mr Desmond Lee",
-     "attributed": true,
-     "text": "If there are specific tools that are externally brought in where there is a parental consent element that we will then bring to the parents, then we will not allow the children to use those AI tools.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Age restrictions and parent trials",
-   "summary": "Tools with age restrictions are not used for children below that age, and parents may try MOE's AI tools.",
+   "label": "Age restrictions on tools",
+   "summary": "Tools with age restrictions will not be used for children below that age.",
    "sentences": [
     {
      "sid": "s00146",
      "speaker": "Mr Desmond Lee",
      "attributed": true,
      "text": "If the tool has an age restriction, then we will not use it for children below that age.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00147",
-     "speaker": "",
-     "attributed": false,
-     "text": "Third, to let parents try out MOE's AI tools, like the Learning Feedback Assistant and so on.",
      "added_for_context": false
     },
     {
@@ -276,7 +270,7 @@
   },
   {
    "label": "Support for less privileged children",
-   "summary": "Less privileged children lack scaffolding and support at home and outside school, addressed through schemes and community partnership.",
+   "summary": "Less privileged children lack home scaffolding, addressed through MOE Opportunity Fund, ComLink, Gift-A-Family and community partnerships.",
    "sentences": [
     {
      "sid": "s00153",
@@ -296,7 +290,7 @@
   },
   {
    "label": "AI age-based safeguards question",
-   "summary": "The question asks whether MOE will recommend to MDDI age-based guidelines or safeguards for AI tools, especially standalone ones.",
+   "summary": "The question asks whether MOE will recommend age-based guidelines and safeguards to MDDI for AI tools, especially standalone ones.",
    "sentences": [
     {
      "sid": "s00167",
@@ -321,8 +315,8 @@
    ]
   },
   {
-   "label": "iCON NotebookLM upper secondary students",
-   "summary": "iCON provides NotebookLM to upper secondary school students, and its usage is being monitored.",
+   "label": "NotebookLM for upper secondary",
+   "summary": "NotebookLM is available to upper secondary students through iCON, and its usage is being monitored.",
    "sentences": [
     {
      "sid": "s00179",
@@ -350,7 +344,7 @@
   "sentences_in_sections": 31,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 6,
-  "sections_total": 19,
+  "sections_total": 18,
   "selection_share": 0.1703,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -360,7 +354,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 19,
+   "sections_total": 18,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 31,
@@ -370,14 +364,14 @@
    "coverage": 0.6842,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:58:36"
+   "checked_at": "2026-09-19T21:53:00"
   },
   "usage": {
-   "calls": 11,
-   "prompt_tokens": 10233,
-   "completion_tokens": 1041,
+   "calls": 10,
+   "prompt_tokens": 10129,
+   "completion_tokens": 1042,
    "estimated": false,
-   "cost_usd": 0.001724
+   "cost_usd": 0.00171
   }
  }
 }

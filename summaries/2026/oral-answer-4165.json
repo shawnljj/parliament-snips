@@ -3,8 +3,8 @@
  "what_it_is": "Probe into 15 July GCE \"O\" Level English Oral Exam Incident, Lessons Learnt and Support for Affected Candidates",
  "sections": [
   {
-   "label": "Questions on O Level oral exam",
-   "summary": "Questions ask the Minister for Education about reviewing the 15 July 2026 O Level English oral examination, assistance requests and remedies for anomalies.",
+   "label": "O Level oral exam questions",
+   "summary": "Questions ask the Minister for Education about the 15 July 2026 O Level English oral examination, SEAB assistance, score comparisons and remedies.",
    "sentences": [
     {
      "sid": "s00001",
@@ -31,7 +31,7 @@
   },
   {
    "label": "Candidates reporting prompt discrepancy",
-   "summary": "On 15 July 2026, 173 candidates from 76 schools reported a different prompt on their screens, rising to 432 from 102 schools.",
+   "summary": "On 15 July 2026, 173 candidates from 76 schools reported a prompt discrepancy, rising to 432 from 102 schools, out of close to 5,000 candidates.",
    "sentences": [
     {
      "sid": "s00025",
@@ -57,21 +57,21 @@
    ]
   },
   {
-   "label": "Screens matched approved materials",
-   "summary": "The investigation showed that the prompt on the candidates' screens matched the prompt in the approved examination materials.",
+   "label": "Candidates and oral examiner teams",
+   "summary": "The 432 candidates who reported the discrepancy came from 200 different oral examiner teams.",
    "sentences": [
     {
-     "sid": "s00030",
+     "sid": "s00038",
      "speaker": "Dr Janil Puthucheary",
      "attributed": true,
-     "text": "The investigation showed that the prompt on the candidates' screens match the prompt in the approved examination materials.",
+     "text": "The 432 candidates who reported this discrepancy came from 200 different oral examiner teams.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Cause not technical or malicious",
-   "summary": "SEAB concluded the cause of the incidents was neither technical in nature nor a deliberate or malicious act.",
+   "label": "SEAB concludes cause of incidents",
+   "summary": "SEAB concluded the cause of the incidents was not technical, nor a deliberate or malicious act.",
    "sentences": [
     {
      "sid": "s00047",
@@ -83,7 +83,7 @@
    ]
   },
   {
-   "label": "Mean scores comparable",
+   "label": "Oral examination mean scores",
    "summary": "Preliminary data shows the 15 July oral mean score was comparable to the other four 2026 sessions and to the remaining candidates' mean score.",
    "sentences": [
     {
@@ -103,7 +103,7 @@
    ]
   },
   {
-   "label": "Review of oral prompt reading",
+   "label": "Reviewing oral prompt reading",
    "summary": "SEAB will review the oral examination processes for students to read the oral prompt more carefully during the 10-minute preparation time.",
    "sentences": [
     {
@@ -137,7 +137,7 @@
   },
   {
    "label": "SEAB learning from misread prompts",
-   "summary": "SEAB will learn from the incident to reduce misread prompts and better guide exam preparation.",
+   "summary": "SEAB will look to learn from the incident how to reduce the risk of prompts being misread and guide students better.",
    "sentences": [
     {
      "sid": "s00079",
@@ -171,7 +171,7 @@
   },
   {
    "label": "External investigation of SEAB evidence",
-   "summary": "Planning sheets often lacked candidates' names, making correlation with specific reports hard.",
+   "summary": "The Ministry was asked whether someone outside SEAB could conduct an external investigation, but planning sheets often lacked candidates' names.",
    "sentences": [
     {
      "sid": "s00100",
@@ -190,8 +190,8 @@
    ]
   },
   {
-   "label": "GovTech audit of technical platforms",
-   "summary": "GovTech audited the technical platforms and processes.",
+   "label": "GovTech auditing technical platforms",
+   "summary": "GovTech came in to audit the technical platforms and processes.",
    "sentences": [
     {
      "sid": "s00105",
@@ -204,7 +204,7 @@
   },
   {
    "label": "Examiners trained in positive marking",
-   "summary": "Examiners are trained in a process of positive marking.",
+   "summary": "The examiners are trained in a process of positive marking.",
    "sentences": [
     {
      "sid": "s00121",
@@ -252,14 +252,14 @@
    "coverage": 0.625,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:36:16"
+   "checked_at": "2026-09-19T21:41:49"
   },
   "usage": {
    "calls": 7,
-   "prompt_tokens": 6669,
-   "completion_tokens": 593,
+   "prompt_tokens": 6666,
+   "completion_tokens": 615,
    "estimated": false,
-   "cost_usd": 0.0011
+   "cost_usd": 0.001105
   }
  }
 }

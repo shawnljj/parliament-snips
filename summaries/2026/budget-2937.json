@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "First Budget of new term",
-   "summary": "This first Budget of the new term is the largest annual Budget to date, passed in a changed and uncertain world.",
+   "summary": "This is the first Budget in this new term of Parliament, the largest annual Budget to date, passed amid a changed and uncertain world.",
    "sentences": [
     {
      "sid": "s00001",
@@ -24,7 +24,7 @@
   },
   {
    "label": "Total fertility rate spotlight",
-   "summary": "Budget 2026 highlighted the total fertility rate falling to a historic low of 0.87, signalling a marriage and parenthood reset.",
+   "summary": "Budget 2026 highlighted the total fertility rate, which dropped to a historic low of 0.87, signalling a marriage and parenthood reset.",
    "sentences": [
     {
      "sid": "s00011",
@@ -37,7 +37,7 @@
   },
   {
    "label": "Projected FY2025 surplus",
-   "summary": "The approach has stood Singapore in good stead, with a projected healthy surplus of $15.1 billion for FY2025.",
+   "summary": "This approach has stood Singapore in good stead, with a projected healthy surplus of $15.1 billion for FY2025.",
    "sentences": [
     {
      "sid": "s00014",
@@ -69,28 +69,8 @@
    ]
   },
   {
-   "label": "Expectation of honourable leaders",
-   "summary": "An unspoken expectation is that those in power act honourably, with Singaporeans adding an ideal of upright, trustworthy political leaders.",
-   "sentences": [
-    {
-     "sid": "s00050",
-     "speaker": "The Leader of the House (Ms Indranee Rajah)",
-     "attributed": true,
-     "text": "The unspoken and unwritten expectation is that those in power are individuals who can be relied upon to always act honourably.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00051",
-     "speaker": "The Leader of the House (Ms Indranee Rajah)",
-     "attributed": true,
-     "text": "It resembles the British system, except, as Mr Goh noted, Singaporeans have gone further and superimposed on our Constitutional framework the ideal of a political leader who is upright, morally beyond reproach, someone people can trust.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Safeguarding model and Budget debate",
-   "summary": "Safeguarding the unique model requires right laws, principles and people, and this year's Budget had nine days of debate.",
+   "label": "Budget debate participation details",
+   "summary": "Safeguarding the model requires the right laws, principles and people, and this year's Budget had nine days of debate with 68 Members speaking.",
    "sentences": [
     {
      "sid": "s00062",
@@ -119,12 +99,19 @@
      "attributed": true,
      "text": "And for the first time in my recollection, there was no formal break in the Budget process.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00067",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "This year, you have added a new item to your toolkit to keep us on time and in line – the bell and the mute button.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Budget debate time increased",
-   "summary": "With more Members in the 15th Parliament, Budget and Committee of Supply debate time was 12% more than last year despite about a third fewer cuts.",
+   "label": "Longer debate with more Members",
+   "summary": "With more Members in the 15th Parliament, this year's Budget and Committee of Supply debate took 12% more time than last year despite fewer cuts.",
    "sentences": [
     {
      "sid": "s00077",
@@ -137,7 +124,7 @@
   },
   {
    "label": "Unanimous support for Budget 2026",
-   "summary": "Both sides of the House gave unanimous support to Budget 2026.",
+   "summary": "Both sides of the House gave unanimous support for Budget 2026.",
    "sentences": [
     {
      "sid": "s00081",
@@ -149,8 +136,8 @@
    ]
   },
   {
-   "label": "Speaker's six-hour seating record",
-   "summary": "The Speaker set a personal record by sitting in the same seat for six hours and 10 minutes.",
+   "label": "Speaker's personal sitting record",
+   "summary": "The speaker set a personal record by sitting in the same seat for six hours and 10 minutes.",
    "sentences": [
     {
      "sid": "s00099",
@@ -162,8 +149,8 @@
    ]
   },
   {
-   "label": "Navigating volatility as 15th Parliament",
-   "summary": "The passage says Singapore must brace for greater volatility and urges Members of the 15th Parliament to keep the Singaporean people in view.",
+   "label": "Singapore bracing for volatility",
+   "summary": "Singapore must brace for greater volatility, and Members of the 15th Parliament must commit to doing what is best for Singapore.",
    "sentences": [
     {
      "sid": "s00117",
@@ -191,13 +178,20 @@
      "speaker": "Mr Speaker",
      "attributed": true,
      "text": "As Members of this 15th Parliament, whatever storms may range on the high seas or up in the skies, let us keep our eyes on the horizon that is the Singaporean people.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00122",
      "speaker": "Mr Speaker",
      "attributed": true,
      "text": "We must leave the world in no doubt of our commitment to do what is best for Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00123",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "Only then, can we secure our future together in a changed world.",
      "added_for_context": false
     }
    ]
@@ -219,7 +213,7 @@
   "sentences_in_sections": 20,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 4,
-  "sections_total": 10,
+  "sections_total": 9,
   "selection_share": 0.1613,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -229,7 +223,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 10,
+   "sections_total": 9,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 20,
@@ -239,14 +233,14 @@
    "coverage": 1.0,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:21:39"
+   "checked_at": "2026-09-19T22:06:23"
   },
   "usage": {
    "calls": 6,
-   "prompt_tokens": 5664,
-   "completion_tokens": 580,
+   "prompt_tokens": 5632,
+   "completion_tokens": 534,
    "estimated": false,
-   "cost_usd": 0.000955
+   "cost_usd": 0.000938
   }
  }
 }

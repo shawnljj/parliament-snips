@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Firms' hiring intention survey",
-   "summary": "MOM's survey shows the proportion of firms intending to hire in the next three months fell from 54.6% in February 2026 to 44.6% in March 2026.",
+   "summary": "MOM's survey shows firms intending to hire fell from 54.6% in February 2026 to 44.6% in March 2026, with early signs of stabilisation in April.",
    "sentences": [
     {
      "sid": "s00009",
@@ -12,12 +12,19 @@
      "attributed": true,
      "text": "Based on the Ministry of Manpower's (MOM's) survey, the proportion of firms intending to hire in the next three months, fell from 54.6% in February 2026 to 44.6% in March 2026.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "Although expectations remain below February's levels, there were early signs of stabilisation in April.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Work Pass policy calibration question",
-   "summary": "Asked whether Work Pass policies will be further calibrated if Singaporeans, particularly mid-career PMETs, face weaker hiring, the Ministry says it has not seen shifts in firms' hiring preferences.",
+   "label": "Work Pass policy calibration",
+   "summary": "The Ministry was asked whether it intends to further calibrate Work Pass policies if Singaporeans, particularly mid-career PMETs, face weaker hiring, and said it has not seen shifts in firms' hiring preferences.",
    "sentences": [
     {
      "sid": "s00015",
@@ -31,13 +38,6 @@
      "speaker": "Dr Tan See Leng",
      "attributed": true,
      "text": "We have not seen any shifts at the moment in firms' hiring preferences.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00017",
-     "speaker": "Dr Tan See Leng",
-     "attributed": true,
-     "text": "Our resident employment continued to grow in the first quarter of 2026, and we just released the report about a week ago.",
      "added_for_context": false
     }
    ]
@@ -56,7 +56,7 @@
    ]
   },
   {
-   "label": "Crisis and global structural shifts",
+   "label": "Crisis and structural shifts",
    "summary": "The view is that the crisis is likely to accelerate existing structural shifts already underway in the entire global economy.",
    "sentences": [
     {
@@ -70,7 +70,7 @@
   },
   {
    "label": "Singapore as trusted hub",
-   "summary": "Singapore's strategic position, goodwill, trust, credibility and reputation mean the crisis will test it, and prevailing would cement its position as a trusted hub; the Prime Minister committed that no export restriction will be imposed, sectors will remain relevant, and decarbonisation targets remain.",
+   "summary": "Singapore's strategic position, goodwill, trust, credibility and reputation will be tested by the crisis, and prevailing would consolidate its position as a trusted hub; the Prime Minister committed to no export restriction, sectors will remain relevant, and decarbonisation targets remain.",
    "sentences": [
     {
      "sid": "s00042",
@@ -103,8 +103,8 @@
    ]
   },
   {
-   "label": "Economic Strategy Review report draft",
-   "summary": "The speaker had the opportunity of reading the draft of the Economic Strategy Review report, which is going to be released soon.",
+   "label": "Economic Strategy Review report",
+   "summary": "The speaker read the draft of the Economic Strategy Review report, which is going to be released soon.",
    "sentences": [
     {
      "sid": "s00051",
@@ -159,14 +159,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:56:27"
+   "checked_at": "2026-09-19T21:51:30"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 3118,
-   "completion_tokens": 393,
+   "prompt_tokens": 3110,
+   "completion_tokens": 388,
    "estimated": false,
-   "cost_usd": 0.000547
+   "cost_usd": 0.000544
   }
  }
 }

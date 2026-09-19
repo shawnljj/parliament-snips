@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Maternity leave and adoptive parents",
-   "summary": "Maternity leave is a month longer as biological mothers need more physical recovery, while adoptive parents get the same parental and childcare leave benefits as biological parents.",
+   "summary": "Maternity leave is a month longer as biological mothers need more time to recuperate, while adoptive parents receive the same parental and childcare leave benefits.",
    "sentences": [
     {
      "sid": "s00002",
@@ -30,8 +30,8 @@
    ]
   },
   {
-   "label": "Considering leave duration by need",
-   "summary": "Leave duration is considered by need, with a difference between those who give birth and those who adopt, and the key consideration is what is required.",
+   "label": "Considering leave duration and need",
+   "summary": "Leave duration is considered based on need, with a difference between those who give birth and those who adopt, while fresh ideas remain open.",
    "sentences": [
     {
      "sid": "s00008",
@@ -93,14 +93,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:57:14"
+   "checked_at": "2026-09-19T21:52:05"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1020,
-   "completion_tokens": 143,
+   "completion_tokens": 140,
    "estimated": false,
-   "cost_usd": 0.000183
+   "cost_usd": 0.000182
   }
  }
 }

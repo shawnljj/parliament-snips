@@ -51,28 +51,28 @@
    ]
   },
   {
-   "label": "Posting Groups and social mixing",
-   "summary": "Posting Groups and Full Subject-Based Banding allow more students to experience social mixing in schools, and a review is ongoing.",
+   "label": "Review and public engagement",
+   "summary": "The Ministry is reviewing the matter and will engage the public in education conversations, updating when ready.",
    "sentences": [
-    {
-     "sid": "s00011",
-     "speaker": "Ms Jasmin Lau",
-     "attributed": true,
-     "text": "In response to his first question, yesterday, I did explain how our system of Posting Groups and Full Subject-Based Banding now do allow many more of our students to experience social mixing in our schools.",
-     "added_for_context": false
-    },
     {
      "sid": "s00013",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
      "text": "On the Member's second question, we are reviewing.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Ms Jasmin Lau",
+     "attributed": true,
+     "text": "We will also engage the public in our education conversations, and update when ready.",
+     "added_for_context": false
     }
    ]
   },
   {
    "label": "Primary school academic intervention",
-   "summary": "Primary schools provide targeted academic intervention, including learning support and reading remediation programmes, for students needing help with foundational skills.",
+   "summary": "Primary schools provide targeted academic intervention, including learning support, reading remediation and mathematics support, for students needing help with foundational skills.",
    "sentences": [
     {
      "sid": "s00024",
@@ -127,14 +127,14 @@
    "coverage": 0.6667,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:13:05"
+   "checked_at": "2026-09-19T22:01:39"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1769,
-   "completion_tokens": 189,
+   "prompt_tokens": 1744,
+   "completion_tokens": 183,
    "estimated": false,
-   "cost_usd": 0.000301
+   "cost_usd": 0.000295
   }
  }
 }

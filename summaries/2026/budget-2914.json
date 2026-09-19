@@ -3,8 +3,8 @@
  "what_it_is": "Committee of Supply – Head T (Ministry of National Development)",
  "sections": [
   {
-   "label": "MND budget cut motion",
-   "summary": "A motion is moved to reduce Head T of the Estimates by $100, after the GPC consulted widely.",
+   "label": "MND budget reduction motion",
+   "summary": "The speaker moves to reduce Head T of the Estimates by $100, after the GPC consulted widely on MND matters.",
    "sentences": [
     {
      "sid": "s00002",
@@ -36,8 +36,28 @@
    ]
   },
   {
-   "label": "EC housing grant",
-   "summary": "ECs currently receive a housing grant of up to $30,000.",
+   "label": "Targeted programme for housing needs",
+   "summary": "The speaker hopes MND considers a targeted programme using structured HDB loans, mortgage guarantees or long-term rentals without a waiting BTO.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Mr Kwek Hian Chuan Henry (Kebun Baru)",
+     "attributed": true,
+     "text": "I understand that if you unpack the needs of this group, actually it is driven by different factors.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Kwek Hian Chuan Henry (Kebun Baru)",
+     "attributed": true,
+     "text": "But I hope that MND can consider creating a targeted programme, like they did for fresh starts, where they can use a combination of policy instruments, whether it is structured HDB loans, Government-backed mortgage guarantees or long-term affordable rentals without requiring a waiting BTO?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "EC housing grant amount",
+   "summary": "Executive condominiums currently receive a housing grant of up to $30,000.",
    "sentences": [
     {
      "sid": "s00027",
@@ -49,20 +69,7 @@
    ]
   },
   {
-   "label": "Land devoted to housing",
-   "summary": "15% of land is already devoted to housing, against other competing demands.",
-   "sentences": [
-    {
-     "sid": "s00043",
-     "speaker": "Mr Kwek Hian Chuan Henry (Kebun Baru)",
-     "attributed": true,
-     "text": "Today, we already devoted 15% of our land to housing, and this is against other competing demands for our small island state.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Building higher storeys",
+   "label": "Building beyond 40 and 50 storeys",
    "summary": "One option is to build higher, beyond 40 and 50 storeys.",
    "sentences": [
     {
@@ -116,7 +123,7 @@
   },
   {
    "label": "HDB income ceilings",
-   "summary": "Some are unable to buy due to HDB income ceilings of $14,000 for BTO flats and $16,000 for ECs.",
+   "summary": "Some are unable to buy flats due to HDB income ceilings of $14,000 for BTO flats and $16,000 for ECs.",
    "sentences": [
     {
      "sid": "s00078",
@@ -128,21 +135,34 @@
    ]
   },
   {
-   "label": "Subsidy clawback regime",
-   "summary": "The subsidy clawback regime started at around 6% and is now at 14% for some BTO developments.",
+   "label": "BTO option above income threshold",
+   "summary": "It asks whether HDB would let first-timer couples exceeding the income threshold still have the option to buy a BTO flat.",
    "sentences": [
     {
-     "sid": "s00090",
+     "sid": "s00093",
      "speaker": "Mr Pritam Singh (Aljunied)",
      "attributed": true,
-     "text": "One example is the subsidy clawback regime which started at around 6% and is now at 14% for some BTO developments.",
+     "text": "In view of these levers, would HDB consider allowing a first-timer couple who exceed the income eligibility threshold to, nonetheless, be given the option of purchasing a BTO flat?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "HDB shop rental measures",
-   "summary": "HDB announced successful bidders for HDB shops must commit tendered rates for six years, and the speaker proposes a rental monitoring council.",
+   "label": "Appeals against income ceiling",
+   "summary": "It asks how many appeals HDB received each year from 2020 to 2025 from first-time applicants blocked by the income ceiling.",
+   "sentences": [
+    {
+     "sid": "s00096",
+     "speaker": "Mr Pritam Singh (Aljunied)",
+     "attributed": true,
+     "text": "To this end, Sir, can the Minister also share how many appeals it has received from first-time applicants who sought to purchase a BTO flat but could not do so because of the income eligibility ceiling for each year from 2020 to 2025?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "HDB shop tenancy terms",
+   "summary": "On 10 January 2026 HDB announced successful bidders for HDB shops must commit to tendered rates for two tenancy terms totalling six years.",
    "sentences": [
     {
      "sid": "s00104",
@@ -150,14 +170,13 @@
      "attributed": true,
      "text": "On 10 January 2026, on the back of public concerns about rising commercial rents, HDB announced, amongst other things, that successful bidders for any HDB shops would have to commit to their tendered rates for over two tenancy terms totalling six years instead of one three-year term to encourage prudent bidding.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00106",
-     "speaker": "Mr Pritam Singh (Aljunied)",
-     "attributed": true,
-     "text": "The majority of HDB shops are in private hands, 8,500 compared to 7,000 rented out by the HDB.",
-     "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "HDB commercial rental transparency",
+   "summary": "It calls for publishing HDB commercial and sublet rents on a central portal and for a council to monitor market rental rates.",
+   "sentences": [
     {
      "sid": "s00107",
      "speaker": "Mr Pritam Singh (Aljunied)",
@@ -210,8 +229,8 @@
    ]
   },
   {
-   "label": "Acceptable rental price increases",
-   "summary": "Rental price increases between 3% and 15% are generally acceptable, and growth beyond this range should be reviewed before approval.",
+   "label": "Acceptable rental price increase range",
+   "summary": "Rental price increases of 3% to 15% are generally acceptable, and growth beyond this range should be reviewed before approval.",
    "sentences": [
     {
      "sid": "s00116",
@@ -231,7 +250,7 @@
   },
   {
    "label": "Resale HDB and EC prices",
-   "summary": "Resale HDB and EC per square foot prices rose from 2016 to 2024, with the difference reaching 154%.",
+   "summary": "Per square foot prices for resale HDB flats and ECs rose from 2016 to 2024, with the difference reaching 154%.",
    "sentences": [
     {
      "sid": "s00140",
@@ -257,8 +276,8 @@
    ]
   },
   {
-   "label": "New EC versus resale HDB prices",
-   "summary": "In 2025 the average new EC price is $1.7 million against $652,000 for a resale HDB flat, a gap over $1 million.",
+   "label": "New EC versus resale HDB price",
+   "summary": "In 2025, the average new EC price is $1.7 million versus $652,000 for a resale HDB flat.",
    "sentences": [
     {
      "sid": "s00147",
@@ -271,7 +290,7 @@
   },
   {
    "label": "EC affordability and proposed solutions",
-   "summary": "A household faces a shortfall of just over $700,000 for an average EC, and the speaker urges MND to rethink the EC model.",
+   "summary": "A household faces a shortfall of just over $700,000 for an EC, and the speaker urges MND to rethink the EC model.",
    "sentences": [
     {
      "sid": "s00154",
@@ -311,7 +330,7 @@
    ]
   },
   {
-   "label": "MOP for standard, Plus, Prime flats",
+   "label": "MOP for flat types",
    "summary": "The MOP is five years for standard flats and 10 years for Plus and Prime flats.",
    "sentences": [
     {
@@ -337,8 +356,8 @@
    ]
   },
   {
-   "label": "Young couples and housing eligibility",
-   "summary": "With median households crossing $12,000, many young couples are ineligible for BTO or PPHS support yet priced out of resale.",
+   "label": "Young couples priced out",
+   "summary": "Median households crossing $12,000 leaves many young couples ineligible for BTO or PPHS support yet priced out of resale.",
    "sentences": [
     {
      "sid": "s00176",
@@ -351,7 +370,7 @@
   },
   {
    "label": "Lowering BTO eligibility age",
-   "summary": "The passage asks whether the Government will weigh lowering the BTO eligibility age from 35.",
+   "summary": "It asks whether the Government will weigh lowering the BTO eligibility age from 35.",
    "sentences": [
     {
      "sid": "s00181",
@@ -363,8 +382,8 @@
    ]
   },
   {
-   "label": "Public rental home ownership transition",
-   "summary": "In 2020, Parliament heard that only 2% of public rental households transition to home ownership each year.",
+   "label": "Rental households transitioning to ownership",
+   "summary": "In 2020, Parliament heard only 2% of public rental households transition to home ownership each year.",
    "sentences": [
     {
      "sid": "s00193",
@@ -376,7 +395,7 @@
    ]
   },
   {
-   "label": "Long transition times",
+   "label": "Long transition over ten years",
    "summary": "Over a third takes more than 10 years.",
    "sentences": [
     {
@@ -389,7 +408,7 @@
    ]
   },
   {
-   "label": "Government co-owner equity proposal",
+   "label": "Government as flat co-owner",
    "summary": "The Government would hold perhaps 20% equity, and the buyer would put down only 2% in cash or CPF.",
    "sentences": [
     {
@@ -402,7 +421,7 @@
    ]
   },
   {
-   "label": "Senior HDB households study",
+   "label": "Senior HDB households share",
    "summary": "A study from October 2023 to April 2024 found senior households form one-third of all HDB households, up from one quarter in 2018.",
    "sentences": [
     {
@@ -416,7 +435,7 @@
   },
   {
    "label": "Seniors monetising flats for repairs",
-   "summary": "Renting out rooms or the Lease Buyback Scheme are meant to supplement retirement income and medical expenses, not to afford basic repairs.",
+   "summary": "Seniors should not need to monetise their homes just to afford basic repairs, so they can age in place with dignity.",
    "sentences": [
     {
      "sid": "s00233",
@@ -443,7 +462,7 @@
   },
   {
    "label": "Aged Well Neighbourhoods announcement",
-   "summary": "The Prime Minister announced the \"Aged Well Neighbourhoods\" at last year's National Day Rally to support seniors who prefer to age at home.",
+   "summary": "The Prime Minister announced Aged Well Neighbourhoods at last year's National Day Rally to support seniors who prefer to age at home.",
    "sentences": [
     {
      "sid": "s00238",
@@ -455,7 +474,7 @@
    ]
   },
   {
-   "label": "Contract renewal bid increases",
+   "label": "Renewal bids higher than previous",
    "summary": "In one recent renewal, bids were up to 86% higher than the previous contract.",
    "sentences": [
     {
@@ -468,8 +487,8 @@
    ]
   },
   {
-   "label": "Government S&CC support grants",
-   "summary": "Government provides about $240 million annually in grants, and a 2023 time-limited special funding that has since expired.",
+   "label": "Government grants for town councils",
+   "summary": "The Government provides about $240 million annually through grants, and in 2023 MND introduced time-limited special funding to cushion cost increases.",
    "sentences": [
     {
      "sid": "s00278",
@@ -483,20 +502,13 @@
      "speaker": "Mr Liang Eng Hwa (Bukit Panjang)",
      "attributed": true,
      "text": "In 2023, MND also introduced a time-limited special funding to help cushion cost increases and moderate S&CC adjustments.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00280",
-     "speaker": "Mr Liang Eng Hwa (Bukit Panjang)",
-     "attributed": true,
-     "text": "That support was very helpful, but it has since expired.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "MND support review requests",
-   "summary": "MP asks MND to review S&CC Operating Grant quantum, study support for ageing blocks, and clarify Progressive Wage Credit Scheme cost-sharing.",
+   "label": "Questions on S&CC support",
+   "summary": "Questions were asked on reviewing the S&CC Operating Grant baseline, supporting estates with ageing blocks, and the Progressive Wage Credit Scheme cost-sharing model.",
    "sentences": [
     {
      "sid": "s00283",
@@ -522,8 +534,8 @@
    ]
   },
   {
-   "label": "HIP II scope details request",
-   "summary": "MP asks the Minister to share more details on the scope, scale and implementation timeline of HIP II.",
+   "label": "Details sought on HIP II",
+   "summary": "The Minister was asked to share more details on the scope, scale and implementation timeline of HIP II.",
    "sentences": [
     {
      "sid": "s00288",
@@ -542,8 +554,8 @@
    ]
   },
   {
-   "label": "VERS compensation top-up subsidy",
-   "summary": "MP urges the Ministry to make the baseline VERS package one where affected homeowners need no cash top-up, implying government subsidy.",
+   "label": "VERS compensation for affected homeowners",
+   "summary": "The speaker urges the Ministry to make the baseline VERS deal one where affected homeowners need not top up cash for a replacement flat, possibly requiring Government subsidy.",
    "sentences": [
     {
      "sid": "s00298",
@@ -576,20 +588,27 @@
    ]
   },
   {
-   "label": "Lease Buyback Scheme market value",
-   "summary": "Government already pays market value for leases under the Lease Buyback Scheme to homeowners who remain in situ.",
+   "label": "Lease Buyback and relocation costs",
+   "summary": "The Government already pays market value for leases under the Lease Buyback Scheme, so additional relocation and resettlement costs should be compensated.",
    "sentences": [
     {
      "sid": "s00308",
      "speaker": "Mr Xie Yao Quan (Jurong Central)",
      "attributed": true,
      "text": "The Government is already paying market value for leases under the Lease Buyback Scheme to homeowners who remain in situ, in their current properties.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00309",
+     "speaker": "Mr Xie Yao Quan (Jurong Central)",
+     "attributed": true,
+     "text": "It stands to reason that there should be additional costs crystalised and compensated for relocation, for resettlement.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Public rental flats air-conditioning",
+   "label": "Air-conditioning in public rental flats",
    "summary": "In response to a Parliamentary Question filed in October, only 7,000 of more than 50,000 public rental flats have air-conditioning.",
    "sentences": [
     {
@@ -602,8 +621,8 @@
    ]
   },
   {
-   "label": "Proposed ACCESS scheme for families",
-   "summary": "A new ACCESS scheme under ComLink+ is proposed to provide a milestone incentive for modular, space-saving furniture for families with young children in rental flats.",
+   "label": "Proposed ACCESS scheme under ComLink+",
+   "summary": "The speaker proposes a new ACCESS scheme under ComLink+ to provide a milestone incentive for modular, space-saving furniture for families with young children in rental flats.",
    "sentences": [
     {
      "sid": "s00324",
@@ -630,7 +649,7 @@
   },
   {
    "label": "Social and Heritage Impact Assessment",
-   "summary": "The passage asks whether the Ministry will implement a formal Social and Heritage Impact Assessment.",
+   "summary": "The speaker asks whether the Ministry will implement a formal Social and Heritage Impact Assessment.",
    "sentences": [
     {
      "sid": "s00334",
@@ -642,8 +661,8 @@
    ]
   },
   {
-   "label": "HDB LUP cost cap reply",
-   "summary": "On 6 September 2024, HDB replied in writing that the cost per flat had exceeded the LUP cost cap substantially, so LUP could not be implemented.",
+   "label": "HDB reply on LUP cost cap",
+   "summary": "HDB replied in writing on 6 September 2024 that the cost per flat had exceeded the LUP cost cap substantially, but changed its mind barely 12 months later.",
    "sentences": [
     {
      "sid": "s00373",
@@ -662,8 +681,8 @@
    ]
   },
   {
-   "label": "Blocks without full lift access",
-   "summary": "The Minister's reply revealed that of 140 blocks with no full same floor lift access, 100 remain unfeasible and LUP will extend to 40 more blocks.",
+   "label": "Lift access for HDB blocks",
+   "summary": "The Minister said 100 of 140 blocks without same floor lift access remain unfeasible as LUP cost exceeds $200,000 per unit, and LUP will extend to 40 more blocks.",
    "sentences": [
     {
      "sid": "s00377",
@@ -695,8 +714,8 @@
    ]
   },
   {
-   "label": "Lift access for HDB blocks",
-   "summary": "The speaker asks the Minister to set a timeline for LUP for 40 blocks and remove the hard cap for 100 blocks.",
+   "label": "Requests on LUP timeline and funding",
+   "summary": "The speaker asks the Minister to define a timeline for LUP for the 40 blocks and to remove the hard cap for the remaining 100 blocks.",
    "sentences": [
     {
      "sid": "s00384",
@@ -722,8 +741,8 @@
    ]
   },
   {
-   "label": "Same floor lift access appeal",
-   "summary": "The speaker urges the Government to ensure every HDB homeowner gets same floor lift access, noting about 100 blocks cannot benefit from LUP.",
+   "label": "Urging lift access for remaining blocks",
+   "summary": "The speaker urges the Government to bridge the final mile so every HDB homeowner can have same floor lift access, noting about 100 blocks cannot benefit from LUP.",
    "sentences": [
     {
      "sid": "s00390",
@@ -749,8 +768,8 @@
    ]
   },
   {
-   "label": "Lift grant for seniors aged 70",
-   "summary": "The speaker hopes HDB extends the Lift Access Housing Grant to households with an occupier aged 70 and above.",
+   "label": "Extending grant to seniors aged 70",
+   "summary": "The speaker hopes HDB will consider extending the Lift Access Housing Grant to households with at least one occupier aged 70 and above.",
    "sentences": [
     {
      "sid": "s00402",
@@ -769,7 +788,7 @@
    ]
   },
   {
-   "label": "Pest bird feedback cases",
+   "label": "Public feedback on pest birds",
    "summary": "MND receives about 22,000 cases of public feedback on pest birds every year.",
    "sentences": [
     {
@@ -782,8 +801,8 @@
    ]
   },
   {
-   "label": "National pest bird strategy",
-   "summary": "The speaker proposes MND strengthen funding and manpower for pest bird management and develop a national strategy with measurable outcomes.",
+   "label": "Pest bird management funding",
+   "summary": "The speaker proposes that MND strengthen funding and manpower for pest bird management and develop a national strategy with measurable outcomes.",
    "sentences": [
     {
      "sid": "s00423",
@@ -795,8 +814,8 @@
    ]
   },
   {
-   "label": "Diseases from bird droppings",
-   "summary": "Bird droppings carry dangerous diseases such as cryptococcosis, histoplasmosis and psittacosis.",
+   "label": "Bird droppings carry diseases",
+   "summary": "Their droppings carry dangerous diseases such as cryptococcosis, histoplasmosis and psittacosis.",
    "sentences": [
     {
      "sid": "s00433",
@@ -808,8 +827,8 @@
    ]
   },
   {
-   "label": "NParks pigeon pilot expansion timeline",
-   "summary": "The NParks pilot began in July 2024 with three Town Councils and expanded to three more in June 2025; the MP asks for a timeline to extend it to all remaining Town Councils and proposes reducing the 35-unit netting trial duration.",
+   "label": "NParks pilot expansion timeline",
+   "summary": "The speaker asks for a timeline to extend the NParks pilot to all Town Councils and proposes shortening the 35-unit netting trial.",
    "sentences": [
     {
      "sid": "s00440",
@@ -835,8 +854,8 @@
    ]
   },
   {
-   "label": "Animal welfare legislation plans 2026",
-   "summary": "The passage asks what the Ministry's specific plans are for 2026 regarding animal welfare legislation.",
+   "label": "Animal welfare legislation plans",
+   "summary": "The speaker asks what the Ministry's specific plans for 2026 are regarding animal welfare legislation.",
    "sentences": [
     {
      "sid": "s00452",
@@ -848,8 +867,8 @@
    ]
   },
   {
-   "label": "Crow shooting safeguards in estates",
-   "summary": "The passage asks about protocols for crow shooting, particularly in residential areas, and what safeguards minimise public exposure, especially to young children, during operations in estates.",
+   "label": "Crow shooting safeguards",
+   "summary": "The speaker asks about protocols and safeguards for crow shooting in residential areas, especially to minimise public exposure to young children.",
    "sentences": [
     {
      "sid": "s00455",
@@ -861,8 +880,8 @@
    ]
   },
   {
-   "label": "S Pass salary increases business costs",
-   "summary": "The passage states that the periodic raising of S Pass qualifying salaries creates a domino effect, jacking up business costs unnecessarily.",
+   "label": "S Pass salary domino effect",
+   "summary": "The speaker states that periodic raising of S Pass qualifying salaries creates a domino effect that jacks up business costs unnecessarily.",
    "sentences": [
     {
      "sid": "s00466",
@@ -874,21 +893,21 @@
    ]
   },
   {
-   "label": "Redesigning construction careers for locals",
-   "summary": "The passage asks how MND will redesign construction careers to attract and anchor a sizable local talent pool.",
+   "label": "BCA Act penalty calibration",
+   "summary": "Asks whether Building and Construction Authority Act penalties uphold standards without creating fear that deters capable leaders.",
    "sentences": [
     {
-     "sid": "s00475",
+     "sid": "s00478",
      "speaker": "Ms Lee Hui Ying (Nee Soon)",
      "attributed": true,
-     "text": "How will MND redesign construction careers to attract and anchor a sizable local talent pool?",
+     "text": "Are penalties under the Building and Construction Authority Act calibrated so they uphold standards without creating a climate of fear that deters capable leaders?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Green cover 40% of land",
-   "summary": "The passage states that despite extensive urbanisation, green cover spans a remarkable 40% of land area.",
+   "label": "Green cover share",
+   "summary": "States that despite extensive urbanisation, green cover spans 40% of land area.",
    "sentences": [
     {
      "sid": "s00482",
@@ -900,55 +919,55 @@
    ]
   },
   {
-   "label": "Nature in housing design",
-   "summary": "MND is asked how it weighed trade-offs and integrated nature, including flora and fauna, into design of newer housing estates for heat and sea-level challenges.",
+   "label": "MND city nature targets",
+   "summary": "States MND's city nature push has 2030 targets including species recovery plans and forest, marine and coastal habitat restoration.",
    "sentences": [
     {
-     "sid": "s00494",
+     "sid": "s00495",
      "speaker": "Ms Nadia Ahmad Samdin (Ang Mo Kio)",
      "attributed": true,
-     "text": "In this regard, could MND share how it has weighed trade-offs and integrated nature, including preservation of existing flora and fauna into design principles for newer and upcoming housing estates towards improving heat resilience and tackling rising sea level challenges?",
+     "text": "Under MND's push for city nature, several 2030 targets have been laid out, including animal and plant species recovery plans, as well as forest, marine and coastal habitat restoration.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Ten minutes from park",
-   "summary": "The national vision that every household is 10 minutes from a park also means wildlife is 10 minutes away, increasing human-wildlife interactions and clashes.",
+   "label": "Park proximity goal",
+   "summary": "States part of the national vision is that every household is 10 minutes away from a park.",
    "sentences": [
     {
      "sid": "s00498",
      "speaker": "Ms Nadia Ahmad Samdin (Ang Mo Kio)",
      "attributed": true,
      "text": "Part of our national vision is the goal that every household is 10 minutes away from a park.",
-     "added_for_context": true
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singles flat purchase options",
+   "summary": "Notes singles can typically buy only 2-room, Flexi or resale flats, and asks if the Ministry will expand options.",
+   "sentences": [
+    {
+     "sid": "s00519",
+     "speaker": "Ms Nadia Ahmad Samdin (Ang Mo Kio)",
+     "attributed": true,
+     "text": "Second, singles up till now can typically only purchase 2-room, Flexi or resale flats, given that two-room flexi flats are highly sought after by both singles and seniors, can the Ministry consider expanding the options?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Population and HDB flat growth",
+   "summary": "States resident population grew from 2.4 million to 4.2 million between 1980 and 2025, and HDB flats rose from 330,000 to over 1.2 million.",
+   "sentences": [
+    {
+     "sid": "s00526",
+     "speaker": "Mr Foo Cexiang (Tanjong Pagar)",
+     "attributed": true,
+     "text": "Between 1980 and 2025, the resident population has grown from 2.4 million to 4.2 million.",
+     "added_for_context": false
     },
-    {
-     "sid": "s00499",
-     "speaker": "Ms Nadia Ahmad Samdin (Ang Mo Kio)",
-     "attributed": true,
-     "text": "This also means that wildlife is 10 minutes away from us, increasing the number of wildlife human interactions and sometimes clashes – from monkeys to otters, wild boars to snakes, hornbills to tapirs, sambar deer to migrating storks.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Reviewing housing aspirations",
-   "summary": "MND is asked how it reviewed Singaporeans' housing aspirations and whether it can explore unique typologies like dual key or modular layouts for caregiving.",
-   "sentences": [
-    {
-     "sid": "s00515",
-     "speaker": "Ms Nadia Ahmad Samdin (Ang Mo Kio)",
-     "attributed": true,
-     "text": "How has MND reviewed the housing aspirations of Singaporeans, and can MND consider exploring some unique typologies in upcoming projects, for example, dual key or modular layout suitable for caregiving?",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Smaller households, more flats",
-   "summary": "Average household size fell from about five in 1980 to three in 2025, while HDB more than tripled flats from 330,000 to over 1.2 million.",
-   "sentences": [
     {
      "sid": "s00527",
      "speaker": "Mr Foo Cexiang (Tanjong Pagar)",
@@ -966,7 +985,7 @@
    ]
   },
   {
-   "label": "Marriages with non-residents",
+   "label": "citizen marriages with non-residents",
    "summary": "In the past three years, one in four citizen marriages were with a non-resident.",
    "sentences": [
     {
@@ -979,34 +998,21 @@
    ]
   },
   {
-   "label": "Flats reaching MOP 2026",
-   "summary": "About 13,000 flats will reach their five-year MOP in 2026, nearly double that of last year.",
+   "label": "HDB resale price growth",
+   "summary": "HDB resale price growth moderated to 2.9% last year, the slowest since 2019.",
    "sentences": [
     {
-     "sid": "s00555",
+     "sid": "s00556",
      "speaker": "Mr Ang Wei Neng",
      "attributed": true,
-     "text": "About 13,000 flats will reach their five-year MOP in 2026, nearly double that of last year.",
+     "text": "At the same time, HDB resale price growth has moderated to 2.9% last year, the slowest since 2019.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Unchanged $14,000 cap",
-   "summary": "The $14,000 cap has not changed since 2019 while nominal wages rose by more than 25%.",
-   "sentences": [
-    {
-     "sid": "s00563",
-     "speaker": "Mr Ang Wei Neng",
-     "attributed": true,
-     "text": "The $14,000 cap has not changed since 2019 even though nominal wages have risen by more than 25%.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "First-timer BTO application rates",
-   "summary": "Median application rates for first-timer families fell from almost seven times in 2020 to 1.1 to 1.9 times in 2025, and 0.9 times last month.",
+   "label": "BTO application rates for first-timers",
+   "summary": "Median application rates for first-timer families applying for 3-room and bigger BTO flats fell from almost seven times in 2020 to between 1.1 and 1.9 times in 2025, and were 0.9 times last month.",
    "sentences": [
     {
      "sid": "s00583",
@@ -1025,8 +1031,8 @@
    ]
   },
   {
-   "label": "Building more homes faster",
-   "summary": "HDB will launch around 19,600 BTO flats this year, over 4,000 with waiting times under three years, and increase 2-room Flexi supply from 2026 to 2028.",
+   "label": "building more homes faster",
+   "summary": "The Ministry prioritises building more homes faster, with HDB launching around 19,600 BTO flats this year, over 4,000 of them Shorter Waiting Time flats.",
    "sentences": [
     {
      "sid": "s00602",
@@ -1047,19 +1053,12 @@
      "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
      "attributed": true,
      "text": "Of these, more than 4,000 will be Shorter Waiting Time flats, with a waiting time of less than three years.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00605",
-     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
-     "attributed": true,
-     "text": "We will also increase the 2-room Flexi supply by almost 50% from 2026 to 2028 to meet growing demand from seniors and singles.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Tallest public housing project",
+   "label": "tallest public housing project",
    "summary": "The development will include Singapore's tallest ever public housing project, rising above 60 storeys.",
    "sentences": [
     {
@@ -1072,8 +1071,8 @@
    ]
   },
   {
-   "label": "60-storey versus 40-storey flats",
-   "summary": "A 60-storey block can provide 50% more flats than a 40-storey block, the height of most of today's tallest HDB blocks.",
+   "label": "60-storey block flat numbers",
+   "summary": "A 60-storey block can provide 50% more flats compared to a 40-storey block, the height of most of our tallest HDB blocks today.",
    "sentences": [
     {
      "sid": "s00626",
@@ -1086,7 +1085,7 @@
   },
   {
    "label": "Toa Payoh parcel units",
-   "summary": "The parcel will feature around 1,600 units, including public rental, 2-room Flexi and 4-room flats, and Toa Payoh's first Community Care Apartments.",
+   "summary": "The parcel will have around 1,600 units, including public rental, 2-room Flexi, 4-room flats and Toa Payoh's first Community Care Apartments.",
    "sentences": [
     {
      "sid": "s00642",
@@ -1098,7 +1097,7 @@
    ]
   },
   {
-   "label": "More homes in Toa Payoh West",
+   "label": "Additional homes in Toa Payoh",
    "summary": "Over the next decade, more than 10,000 additional homes will be launched across Toa Payoh West and Mount Pleasant.",
    "sentences": [
     {
@@ -1124,7 +1123,7 @@
    ]
   },
   {
-   "label": "VERS redevelopment of older towns",
+   "label": "VERS redevelopment plans",
    "summary": "Older HDB towns and estates will be progressively redeveloped through VERS, starting with a few sites in the first half of the next decade.",
    "sentences": [
     {
@@ -1164,7 +1163,7 @@
    ]
   },
   {
-   "label": "Resale flat price growth slowing",
+   "label": "Resale flat price trends",
    "summary": "Resale flat price growth slowed from 12.7% in 2021 to 2.9% in 2025, with prices flat in fourth quarter 2025.",
    "sentences": [
     {
@@ -1191,8 +1190,8 @@
    ]
   },
   {
-   "label": "EC prices versus condominiums",
-   "summary": "EC new sale prices are about 20% to 30% lower than comparable private condominiums.",
+   "label": "EC versus private condominium prices",
+   "summary": "New EC sale prices are about 20% to 30% lower than comparable private condominiums.",
    "sentences": [
     {
      "sid": "s00719",
@@ -1204,8 +1203,8 @@
    ]
   },
   {
-   "label": "Sustainable development land use",
-   "summary": "MND's third priority is developing Singapore sustainably by balancing land use requirements and trade-offs within limited space.",
+   "label": "Sustainable development as MND priority",
+   "summary": "MND's third priority is developing Singapore sustainably by balancing land use requirements and navigating trade-offs within limited space.",
    "sentences": [
     {
      "sid": "s00740",
@@ -1217,8 +1216,8 @@
    ]
   },
   {
-   "label": "New technologies and land optimisation",
-   "summary": "Outram and Toa Payoh are examples; new technologies like taller flats and Pneumatic Waste Conveyance System, plus under-utilised spaces, will optimise land use.",
+   "label": "Optimising land use and conservation",
+   "summary": "Singapore will study new technologies, optimise land use including under-utilised spaces, and preserve green, blue and heritage spaces.",
    "sentences": [
     {
      "sid": "s00745",
@@ -1240,25 +1239,19 @@
      "attributed": true,
      "text": "We will also look at other ways of optimising land use, such as making better use of under-utilised spaces like the area under flyovers and MRT viaducts.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Housing supply and common spaces",
-   "summary": "For homebuyers and residents, a robust supply of private and public housing will be kept up and common spaces created for communities.",
-   "sentences": [
+    },
     {
-     "sid": "s00753",
+     "sid": "s00748",
      "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
      "attributed": true,
-     "text": "For our homebuyers and residents, we will keep up a robust supply of private and public housing, and we will create common spaces where we can build strong communities.",
+     "text": "As we develop and grow, we will keep an eye on conservation – preserving key green and blue spaces, and valuable pieces of our heritage.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Major developments and skilled professionals",
-   "summary": "Terminal 5, Paya Lebar Air Base, Greater Southern Waterfront and Long Island will be built, with at least 80,000 new homes and 1,000 new architects and engineers yearly.",
+   "label": "Development plans and skilled professionals needed",
+   "summary": "Singapore will build at least 80,000 homes in over 10 housing areas and needs at least 1,000 new architects and engineers yearly.",
    "sentences": [
     {
      "sid": "s00761",
@@ -1291,8 +1284,21 @@
    ]
   },
   {
-   "label": "Higher internship allowance and salary",
-   "summary": "Firms will offer a higher internship allowance of at least $1,500 and a higher starting salary above market rate if the intern joins after graduation.",
+   "label": "INSPIRE enhanced internship programme",
+   "summary": "An enhanced internship programme called INSPIRE was launched to deepen on-the-job learning, improve mentorship and enable higher starting salaries.",
+   "sentences": [
+    {
+     "sid": "s00772",
+     "speaker": "The Second Minister for National Development (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "To deepen the on-the-job learning, improve mentorship, and enable higher starting salaries, we have launched an enhanced internship programme called \"INSPIRE\".",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Higher internship allowance and starting salary",
+   "summary": "Firms will offer an internship allowance of at least $1,500 and a higher starting salary above market rate for interns who join after graduation.",
    "sentences": [
     {
      "sid": "s00777",
@@ -1304,21 +1310,8 @@
    ]
   },
   {
-   "label": "INSPIRE recognised for professional registration",
-   "summary": "PEB and BOA will recognise the INSPIRE internship's pre-graduation experience as qualifying practical experience towards professional registration.",
-   "sentences": [
-    {
-     "sid": "s00785",
-     "speaker": "The Second Minister for National Development (Ms Indranee Rajah)",
-     "attributed": true,
-     "text": "As the INSPIRE internship will deepen skills acquisition, the Professional Engineers Board (PEB) and the Board of Architects (BOA) will recognise this pre-graduation experience as qualifying practical experience towards professional registration.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Reduced Fee Score expansion",
-   "summary": "BCA expanded the Reduced Fee Score to public sector projects up to $100 million since December 2025, and the Limitation of Liability clause is now default in the Standard Consultancy Agreement.",
+   "summary": "BCA expanded the Reduced Fee Score to public sector projects up to $100 million since December 2025, and the Limitation of Liability clause is now a default provision.",
    "sentences": [
     {
      "sid": "s00808",
@@ -1358,7 +1351,7 @@
   },
   {
    "label": "Strata Management Act review areas",
-   "summary": "A comprehensive review will strengthen the Building (Strata Management) Act, focusing on sinking funds, consent thresholds, self-governance frameworks and clarifying strata-titled stakeholders' responsibilities.",
+   "summary": "A comprehensive review will strengthen the Building (Strata Management) Act, focusing on sinking funds, consent thresholds, self-governance frameworks and stakeholder responsibilities.",
    "sentences": [
     {
      "sid": "s00839",
@@ -1410,7 +1403,7 @@
    ]
   },
   {
-   "label": "Flats set aside first-timers",
+   "label": "Flats set aside for first-timers",
    "summary": "At least 90% of 4-room and bigger flats are set aside for first-timer families, and about two-thirds of first-timer families who applied in 2023 and 2024 booked a flat.",
    "sentences": [
     {
@@ -1430,8 +1423,8 @@
    ]
   },
   {
-   "label": "TCPS quota and eligibility changes",
-   "summary": "TCPS quota doubles to 10% of BTO and SBF supply, and families qualify from expecting a third child, from June 2026.",
+   "label": "TCPS quota and eligibility",
+   "summary": "TCPS quota doubles from 5% to 10% of BTO and SBF flat supply, and families qualify from the mother's third pregnancy.",
    "sentences": [
     {
      "sid": "s00903",
@@ -1445,20 +1438,13 @@
      "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling)",
      "attributed": true,
      "text": "Second, we will expand the eligibility criteria so that families can qualify for TCPS from the time when the mother is expecting her third child.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00906",
-     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling)",
-     "attributed": true,
-     "text": "These changes will take effect from the June 2026 sales exercise.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Bus service in new BTO estates",
-   "summary": "HDB and LTA will plan for at least one bus service to operate with the first key collection in new large-scale BTO estates.",
+   "summary": "HDB and LTA will plan for at least one bus service to run with the first key collection in new large-scale BTO estates.",
    "sentences": [
     {
      "sid": "s00918",
@@ -1471,7 +1457,7 @@
   },
   {
    "label": "Rent-free period for HDB shops",
-   "summary": "Rent-free period rises to a maximum of six months for HDB shops and coffee shops, applying to tenders from March 2026.",
+   "summary": "HDB will increase the rent-free period for HDB shops in new BTO projects from two months to a maximum of six months.",
    "sentences": [
     {
      "sid": "s00927",
@@ -1479,19 +1465,18 @@
      "attributed": true,
      "text": "Next, HDB will increase the rent-free period for HDB shops in new BTO projects from two months to a maximum of six months.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Lower first-year rent for shops",
+   "summary": "HDB will further lower the rent paid in the first year to 70% to enhance support for shop operators.",
+   "sentences": [
     {
-     "sid": "s00928",
+     "sid": "s00931",
      "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling)",
      "attributed": true,
-     "text": "Similarly, for coffee shops, their rent-free period will increase from the current three months to a maximum of six months.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00929",
-     "speaker": "The Senior Minister of State for National Development (Ms Sun Xueling)",
-     "attributed": true,
-     "text": "This will apply to shop tenders from March 2026, and shops will need to start operations early to enjoy the maximum six-month rent-free period.",
+     "text": "To enhance support for shop operators, HDB will further lower the rent paid in the first year to 70%.",
      "added_for_context": false
     }
    ]
@@ -1518,7 +1503,7 @@
   },
   {
    "label": "Play framework for playgrounds",
-   "summary": "A published framework covering physical, social and creative play will be applied to new BTO playgrounds from 2026 and existing ones refreshed with Town Councils.",
+   "summary": "The published framework covers physical, social and creative play for children aged two to 12, applied to new BTO playgrounds from 2026.",
    "sentences": [
     {
      "sid": "s00962",
@@ -1537,8 +1522,8 @@
    ]
   },
   {
-   "label": "Tendered rent for shop bidders",
-   "summary": "Successful bidders of new shop tenders from January 2026 must maintain their tendered rent for two tenancy terms instead of one.",
+   "label": "New shop tender rent terms",
+   "summary": "From January 2026, successful bidders of all new shop tenders must maintain their tendered rent for two tenancy terms instead of one three-year term.",
    "sentences": [
     {
      "sid": "s00984",
@@ -1550,8 +1535,8 @@
    ]
   },
   {
-   "label": "HDB coffee shop rent data",
-   "summary": "HDB will collect data on stall rents charged by rental coffee shop operators, while IRAS keeps records of privately-owned HDB shop tenancy transactions.",
+   "label": "Coffee shop stall rent data",
+   "summary": "HDB announced in January 2026 it will collect data on stall rents charged by rental coffee shop operators, while IRAS keeps records of privately-owned HDB shop tenancy transactions.",
    "sentences": [
     {
      "sid": "s00988",
@@ -1570,7 +1555,7 @@
    ]
   },
   {
-   "label": "Price-quality tenders for coffee shops",
+   "label": "Price-quality tender evaluation",
    "summary": "Since 2018, HDB has evaluated tender submissions for new coffee shops and new supermarkets using the price-quality method.",
    "sentences": [
     {
@@ -1583,8 +1568,8 @@
    ]
   },
   {
-   "label": "Rent stability and stall rent data",
-   "summary": "Successful bidders must hold tendered rent for two tenancy terms, and HDB collects stall rent data to give stall holders more transparent rental information.",
+   "label": "Rental policies and housing update",
+   "summary": "Successful bidders must hold tendered rent for two tenancy terms, HDB collects coffee shop stall rent data, and housing policies will be updated for different groups.",
    "sentences": [
     {
      "sid": "s01003",
@@ -1610,8 +1595,8 @@
    ]
   },
   {
-   "label": "Integrated blocks as rental flats",
-   "summary": "Integrated blocks will be part of about 6,300 public rental flats completed over five years, increasing supply and cutting waiting times.",
+   "label": "Public rental flats supply",
+   "summary": "Integrated blocks form part of about 6,300 public rental flats to be completed over five years, increasing supply and reducing waiting times to an average of three months.",
    "sentences": [
     {
      "sid": "s01018",
@@ -1637,8 +1622,8 @@
    ]
   },
   {
-   "label": "Fresh Start Housing Grant disbursement",
-   "summary": "The Fresh Start Housing Grant rose from $50,000 to $75,000, with $60,000 upfront and $15,000 over five years after key collection.",
+   "label": "Fresh Start Housing Grant increase",
+   "summary": "The Fresh Start Housing Grant for eligible second-timer ComLink+ rental families rose from $50,000 to $75,000, with $60,000 upfront and $15,000 over five years.",
    "sentences": [
     {
      "sid": "s01037",
@@ -1658,7 +1643,7 @@
   },
   {
    "label": "Fresh Start Housing Grant increase",
-   "summary": "Last year, the Fresh Start Housing Grant for eligible Second-Timer ComLink+ rental families was increased from $50,000 to $75,000.",
+   "summary": "The Fresh Start Housing Grant for eligible Second-Timer ComLink+ rental families rose from $50,000 to $75,000 last year.",
    "sentences": [
     {
      "sid": "s01056",
@@ -1671,7 +1656,7 @@
   },
   {
    "label": "LBS proceeds and Silver Housing Bonus",
-   "summary": "From 2021 to 2025, average LBS proceeds plus bonus for a 4-room flat exceeded $200,000, and seniors right-sizing to a 3-room or smaller flat can get up to $40,000 Silver Housing Bonus.",
+   "summary": "From 2021 to 2025, average LBS proceeds plus bonus for a 4-room flat exceeded $200,000, and right-sizers can get up to $40,000 Silver Housing Bonus.",
    "sentences": [
     {
      "sid": "s01080",
@@ -1690,21 +1675,28 @@
    ]
   },
   {
-   "label": "Chong Boon Silver Upgrading Programme",
-   "summary": "Four precincts in Chong Boon will be the first to benefit from the Silver Upgrading Programme when works are complete later this year.",
+   "label": "Seniors activities and Community Care Apartments",
+   "summary": "Seniors get organised activities and custodial support from a community manager, and five Community Care Apartments have launched since 2021.",
    "sentences": [
     {
-     "sid": "s01098",
+     "sid": "s01085",
      "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Dr Syed Harun Alhabsyi)",
      "attributed": true,
-     "text": "Four precincts in Chong Boon will be the first to benefit from the Silver Upgrading Programme when the works are complete later this year.",
+     "text": "Activities are regularly organised for seniors to interact and seniors receive custodial support through a community manager, providing a peace of mind.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01086",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Dr Syed Harun Alhabsyi)",
+     "attributed": true,
+     "text": "We have launched five Community Care Apartments since 2021.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Home Fire Alarm Devices in rental flats",
-   "summary": "Home Fire Alarm Devices have been installed in over 80% of public rental flats, with the remainder progressively equipped at no cost to tenants.",
+   "label": "Home Fire Alarm Devices installation",
+   "summary": "Home Fire Alarm Devices are installed in over 80% of public rental flats, with the rest progressively equipped at no cost to tenants.",
    "sentences": [
     {
      "sid": "s01104",
@@ -1723,8 +1715,8 @@
    ]
   },
   {
-   "label": "Lift Upgrading Programme coverage and plans",
-   "summary": "Since 2001, the LUP has brought direct lift access to 99% of HDB blocks; in 2025 it was announced for six blocks with plans for about 40 more.",
+   "label": "Lift Upgrading Programme coverage",
+   "summary": "Since 2001 the LUP gave direct lift access to 99% of HDB blocks, with six blocks announced in 2025 and about 40 more planned.",
    "sentences": [
     {
      "sid": "s01110",
@@ -1756,8 +1748,8 @@
    ]
   },
   {
-   "label": "Veterinary Council and Veterinary Practice Bill",
-   "summary": "A Veterinary Council will be established as a professional regulatory body to uplift standards and investigate misconduct, with the Veterinary Practice Bill to be introduced this week.",
+   "label": "Veterinary Council and Practice Bill",
+   "summary": "A Veterinary Council will be established as a professional regulatory body, and the Veterinary Practice Bill will be introduced this week.",
    "sentences": [
     {
      "sid": "s01133",
@@ -1796,21 +1788,21 @@
    ]
   },
   {
-   "label": "Wetlands by the Bay announcement",
-   "summary": "Gardens by the Bay will welcome an all-new Wetlands by the Bay.",
+   "label": "NParks crow shooting resumption",
+   "summary": "NParks will resume crow shooting progressively from the second half of this month.",
    "sentences": [
     {
-     "sid": "s01169",
+     "sid": "s01157",
      "speaker": "The Minister of State for National Development (Mr Alvin Tan)",
      "attributed": true,
-     "text": "Today, I am pleased to announce that Gardens by the Bay will welcome an all-new Wetlands by the Bay.",
+     "text": "NParks will resume crow shooting progressively from the second half of this month.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Second marine park and research centre",
-   "summary": "A second marine park at Lazarus South and Kusu Reef will be designated, with $60 million for a marine science research centre hosted by NUS.",
+   "summary": "A second marine park will be designated at Lazarus South and Kusu Reef, and $60 million invested in a marine science research centre hosted by NUS.",
    "sentences": [
     {
      "sid": "s01186",
@@ -1843,8 +1835,8 @@
    ]
   },
   {
-   "label": "Consultation and EIA requirements",
-   "summary": "Projects in or near sensitive areas or with potential transboundary impact must undergo in-depth consultation, and an EIA is required if there is potential significant environmental impact.",
+   "label": "Environmental impact assessments for sensitive projects",
+   "summary": "Projects in or near sensitive areas or with potential transboundary impact must undergo in-depth consultation, and an EIA is required if significant environmental impact is possible.",
    "sentences": [
     {
      "sid": "s01207",
@@ -1856,28 +1848,8 @@
    ]
   },
   {
-   "label": "Review of income eligibility threshold",
-   "summary": "The review of the income eligibility threshold is something being actively looked at.",
-   "sentences": [
-    {
-     "sid": "s01221",
-     "speaker": "Mr Chee Hong Tat",
-     "attributed": true,
-     "text": "Chairman, Mr Kwek asked about the timing of our review of income eligibility threshold.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s01222",
-     "speaker": "Mr Chee Hong Tat",
-     "attributed": true,
-     "text": "This is something which we are actively looking at.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Looking for more land",
-   "summary": "More places will be looked for, and more land is needed to prepare sites to build more and build faster.",
+   "label": "Looking for more building sites",
+   "summary": "More places will be sought, and more land prepared, to build more and build faster.",
    "sentences": [
     {
      "sid": "s01225",
@@ -1890,7 +1862,7 @@
   },
   {
    "label": "Household fragmentation and HDB supply",
-   "summary": "Household numbers rose despite smaller household sizes, and HDB will keep supply robust, going beyond 55,000 flats in three years if demand stays strong.",
+   "summary": "Household numbers rose despite smaller household size, and HDB will keep supply robust, going beyond 55,000 flats in three years if demand stays strong.",
    "sentences": [
     {
      "sid": "s01248",
@@ -1909,8 +1881,8 @@
    ]
   },
   {
-   "label": "Lift access assurance",
-   "summary": "The Government intends to try to provide lift access to as many households as possible.",
+   "label": "Lift access for households",
+   "summary": "The assurance given is that the intent is to try to provide lift access to as many households as possible.",
    "sentences": [
     {
      "sid": "s01252",
@@ -1922,21 +1894,35 @@
    ]
   },
   {
-   "label": "Income threshold review timing",
-   "summary": "The speaker does not have information on when the income threshold was last reviewed.",
+   "label": "Prudence, technology and rental income ceiling",
+   "summary": "It states a need to balance and be prudent, hopes new technologies and industry work give more options, and asks when the Public Rental Scheme income ceiling was last revised.",
    "sentences": [
     {
-     "sid": "s01260",
-     "speaker": "Dr Syed Harun Alhabsyi",
+     "sid": "s01255",
+     "speaker": "Mr Chee Hong Tat",
      "attributed": true,
-     "text": "With regard to the question on when the income threshold was last reviewed, I do not have the information with me at this point of time.",
+     "text": "I think there is a need to balance and to be prudent.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01256",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "I am hopeful that with new technologies coming out and working closely with the industry, there will be more options available that will allow us to be able to cater to more units.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01257",
+     "speaker": "Mr Fadli Fawzi",
+     "attributed": true,
+     "text": "First, I would like to ask when the monthly household income ceiling for the Public Rental Scheme's eligibility was last revised and whether there are any plans to review this ceiling in light of wage increases under the Progressive Wage Model.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Rental to home ownership transition",
-   "summary": "No annual targets are set for rental households transitioning to home ownership, though 2,000 rental families were helped last year.",
+   "summary": "No annual targets are set for rental households transitioning to home ownership, and 2,000 rental families were helped last year and are waiting for flats.",
    "sentences": [
     {
      "sid": "s01267",
@@ -1956,7 +1942,7 @@
   },
   {
    "label": "Lift Access Housing Grant eligibility",
-   "summary": "Eligibility is based on needs, not age, requiring a medical condition causing difficulty with stairs; no plans to expand criteria by age.",
+   "summary": "Eligibility is assessed on needs rather than age, requires a medical condition causing difficulty with stairs, and there are no plans to expand criteria based on age.",
    "sentences": [
     {
      "sid": "s01283",
@@ -1976,7 +1962,7 @@
   },
   {
    "label": "2-room Flexi supply and singles",
-   "summary": "Supply of 2-room Flexi flats will increase about 50% over three years, and the Government is reviewing whether singles can buy bigger flats with family members.",
+   "summary": "Supply of 2-room Flexi flats will increase about 50% over three years, and it is being reviewed whether some singles could buy bigger flats with a family member.",
    "sentences": [
     {
      "sid": "s01309",
@@ -2009,7 +1995,7 @@
    ]
   },
   {
-   "label": "BTO demand and supply",
+   "label": "BTO flat supply competition",
    "summary": "Allowing an ineligible group to buy BTO flats would make them compete with current buyers, so more and faster building is needed.",
    "sentences": [
     {
@@ -2024,19 +2010,6 @@
      "speaker": "Mr Chee Hong Tat",
      "attributed": true,
      "text": "So, again, in order to ensure that we are able to meet this higher demand, supply is key, and that is why I hope to have the support of all Members of this House that we have to build more and build faster.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Second Marine Park intent",
-   "summary": "The second Marine Park aims to safeguard ecologically significant habitats and enhance biodiversity with those on Sisters' Island.",
-   "sentences": [
-    {
-     "sid": "s01337",
-     "speaker": "Mr Alvin Tan",
-     "attributed": true,
-     "text": "For the second Marine Park, the intent is to safeguard the ecologically significant habitats around the area, and also to enhance the existing biodiversity with the existing ones on Sisters' Island.",
      "added_for_context": false
     }
    ]
@@ -2062,8 +2035,8 @@
    ]
   },
   {
-   "label": "HDB supply reduction plan",
-   "summary": "A question asks whether HDB supply is still planned to fall to about 15,700 from today's 19,600.",
+   "label": "HDB and private supply plans",
+   "summary": "The Member asks whether HDB supply will fall to about 15,700 from 19,600 and about private and EC supply in 2026 and 2027.",
    "sentences": [
     {
      "sid": "s01360",
@@ -2071,12 +2044,19 @@
      "attributed": true,
      "text": "On the HDB front, is it still the plan to have the supply come down to about 15,700 or so, versus the 19,600 levels today.",
      "added_for_context": false
+    },
+    {
+     "sid": "s01361",
+     "speaker": "Mr Chua Kheng Wee Louis",
+     "attributed": true,
+     "text": "Similarly, for private residential property, what are the expectations on supply for the second half of 2026 as well as 2027; the reason being, if I look at the last three Government Land Sale programmes, I think the supply has been coming down, especially for EC supply.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "EC grant support risk",
-   "summary": "Increasing grants for ECs risks public funds being creamed off by developers rather than reaching home buyers.",
+   "label": "Increasing grants for EC buyers",
+   "summary": "Increasing grants is direct, but because EC prices are set by developers, public funds risk being creamed off by developers instead of reaching home buyers.",
    "sentences": [
     {
      "sid": "s01365",
@@ -2096,7 +2076,7 @@
   },
   {
    "label": "Supply pipeline beyond 55,000",
-   "summary": "The supply pipeline is not limited to 55,000, and more will be built if demand is strong.",
+   "summary": "The supply pipeline is not limited to the 55,000 stated earlier, and more will be built if demand is strong.",
    "sentences": [
     {
      "sid": "s01374",
@@ -2123,7 +2103,7 @@
   },
   {
    "label": "Lift access and Lorong Halus EIA",
-   "summary": "The speaker lacks the exact number but aims to achieve lift access for 40 blocks and says Lorong Halus did not require an EIA.",
+   "summary": "The exact number is not available now, but lift access for 40 blocks is being pursued, and Lorong Halus did not require an EIA.",
    "sentences": [
     {
      "sid": "s01427",
@@ -2156,8 +2136,8 @@
    ]
   },
   {
-   "label": "Managing limited land",
-   "summary": "The speaker says there is not a lot of land and all of it needs to be managed.",
+   "label": "Land management constraints",
+   "summary": "The passage states that there is not a lot of land and that all of these need to be managed and said upfront.",
    "sentences": [
     {
      "sid": "s01435",
@@ -2176,8 +2156,8 @@
    ]
   },
   {
-   "label": "Slight price dip",
-   "summary": "Prices dipped slightly by 0.1% up to mid-February, and the speaker says it is too early to remove the measure.",
+   "label": "Slight dip in prices",
+   "summary": "The passage states there was a slight dip of minus 0.1% up to mid-February and it is too early to remove this.",
    "sentences": [
     {
      "sid": "s01452",
@@ -2196,8 +2176,8 @@
    ]
   },
   {
-   "label": "Netting trial specifications",
-   "summary": "The speaker says the trial for the 35 units is ongoing in response to sharing netting solution specifications with Town Councils.",
+   "label": "Netting solution trial with Town Councils",
+   "summary": "The passage states the trial for the 35 units is ongoing and addresses sharing specifications of the netting solution with Town Councils.",
    "sentences": [
     {
      "sid": "s01459",
@@ -2216,8 +2196,8 @@
    ]
   },
   {
-   "label": "Lift access for 40 blocks",
-   "summary": "The speaker says implementation for the 40 identified blocks will be looked at within the next three years.",
+   "label": "Progress for 40 blocks",
+   "summary": "The passage states there will be a look to implement the progress for the 40 blocks identified within the next three years.",
    "sentences": [
     {
      "sid": "s01468",
@@ -2248,12 +2228,12 @@
    "budget-2914"
   ],
   "sentences_total": 1471,
-  "sentences_selected": 217,
-  "sentences_in_sections": 217,
+  "sentences_selected": 215,
+  "sentences_in_sections": 215,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 39,
-  "sections_total": 119,
-  "selection_share": 0.1475,
+  "sentences_added_for_context": 37,
+  "sections_total": 118,
+  "selection_share": 0.1462,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -2262,24 +2242,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 119,
+   "sections_total": 118,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 217,
-   "sentences_selected": 217,
-   "turns_cited": 39,
+   "sentences_published": 215,
+   "sentences_selected": 215,
+   "turns_cited": 38,
    "turns_total": 74,
-   "coverage": 0.527,
+   "coverage": 0.5135,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:29:52"
+   "checked_at": "2026-09-19T22:11:56"
   },
   "usage": {
    "calls": 68,
-   "prompt_tokens": 67021,
-   "completion_tokens": 7039,
+   "prompt_tokens": 67035,
+   "completion_tokens": 7042,
    "estimated": false,
-   "cost_usd": 0.011354
+   "cost_usd": 0.011357
   }
  }
 }

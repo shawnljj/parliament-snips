@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Mandatory retrenchment notification requirement",
-   "summary": "Firms with 10 or more employees must submit a mandatory retrenchment notification to MOM within five working days of notifying retrenched employees.",
+   "summary": "Firms with 10 or more employees must submit a mandatory retrenchment notification to MOM within five working days of notifying retrenchment.",
    "sentences": [
     {
      "sid": "s00002",
@@ -76,7 +76,7 @@
    ]
   },
   {
-   "label": "Possible effect on retrenchment negotiations",
+   "label": "Possible effect on retrenchment timing",
    "summary": "This may push companies to finalise retrenchments faster and therefore discourage such backend negotiations.",
    "sentences": [
     {
@@ -125,7 +125,7 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:09:45"
+   "checked_at": "2026-09-19T21:59:49"
   },
   "usage": {
    "calls": 3,

@@ -30,8 +30,8 @@
    ]
   },
   {
-   "label": "Individual circumstances in assessment",
-   "summary": "Individual circumstances are considered when assessing persons for the wider range of care and caregiver support available.",
+   "label": "Individual circumstances in care assessment",
+   "summary": "Individual circumstances are considered in assessing persons for the wider range of care and caregiver support available.",
    "sentences": [
     {
      "sid": "s00006",
@@ -43,7 +43,7 @@
    ]
   },
   {
-   "label": "Subsidised care schemes not ADL-tied",
+   "label": "Subsidised care schemes not tied to ADLs",
    "summary": "Subsidised care schemes offset caregiving expenses and are not tied to the ADL threshold, with schemes continually enhanced and reviewed.",
    "sentences": [
     {
@@ -134,12 +134,12 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:37:08"
+   "checked_at": "2026-09-19T21:42:18"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1437,
-   "completion_tokens": 188,
+   "completion_tokens": 189,
    "estimated": false,
    "cost_usd": 0.000254
   }

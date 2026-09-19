@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Singapore dollar weakness against ringgit",
-   "summary": "The passage states MAS manages the Singapore dollar against a trade-weighted basket, not bilateral rates, and will monitor developments.",
+   "summary": "The passage states MAS manages the Singapore dollar against a trade-weighted basket, not any bilateral rate, and will monitor developments.",
    "sentences": [
     {
      "sid": "s00001",
@@ -44,16 +44,9 @@
    ]
   },
   {
-   "label": "RTS Link Task Force support",
-   "summary": "The passage states the RTS Link Task Force met to look at ways to enhance local business competitiveness and will announce measures in due course.",
+   "label": "RTS Link heartland business support",
+   "summary": "The passage states enhancements to grants and support for heartland businesses were announced, and measures will be announced in due course.",
    "sentences": [
-    {
-     "sid": "s00012",
-     "speaker": "Mr Alvin Tan",
-     "attributed": true,
-     "text": "In fact, earlier this morning I met with the RTS Link Task Force, of which I am chairing, to look at ways in which to enhance our local business, their competitiveness, their ability to place-make.",
-     "added_for_context": false
-    },
     {
      "sid": "s00013",
      "speaker": "Mr Alvin Tan",
@@ -97,12 +90,12 @@
    "oral-answer-4083"
   ],
   "sentences_total": 16,
-  "sentences_selected": 10,
-  "sentences_in_sections": 10,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 2,
   "sections_total": 2,
-  "selection_share": 0.625,
+  "selection_share": 0.5625,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -114,21 +107,21 @@
    "sections_total": 2,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 10,
-   "sentences_selected": 10,
+   "sentences_published": 9,
+   "sentences_selected": 9,
    "turns_cited": 3,
    "turns_total": 4,
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:22:00"
+   "checked_at": "2026-09-19T22:06:37"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1417,
-   "completion_tokens": 145,
+   "prompt_tokens": 1372,
+   "completion_tokens": 139,
    "estimated": false,
-   "cost_usd": 0.000239
+   "cost_usd": 0.000231
   }
  }
 }

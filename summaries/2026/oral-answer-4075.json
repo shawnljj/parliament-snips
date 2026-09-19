@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Healthcare abuse reporting helpline oversight",
-   "summary": "Asked whether MOH will consider a centralised helpline or oversight under the Tripartite Framework for non-police abuse cases in public healthcare.",
+   "summary": "Asked whether MOH will consider an independent centralised helpline or oversight under the Tripartite Framework for non-police abuse cases in public healthcare.",
    "sentences": [
     {
      "sid": "s00001",
@@ -30,7 +30,7 @@
    ]
   },
   {
-   "label": "Zero tolerance and internal hospital process",
+   "label": "Internal hospital abuse case process",
    "summary": "MOH and Government take a zero-tolerance stance against abuse of healthcare workers, and hospitals keep incident management internal to assess perpetrators.",
    "sentences": [
     {
@@ -71,8 +71,8 @@
    ]
   },
   {
-   "label": "Post-incident management and MOH escalation",
-   "summary": "Post-incident management emphasises the institution's zero-tolerance stance, and staff can escalate unfairness concerns to MOH for independent review.",
+   "label": "Post-incident management and escalation",
+   "summary": "Post-incident management emphasises the institution's zero-tolerance stance, and staff can escalate fairness concerns to MOH for a separate independent review.",
    "sentences": [
     {
      "sid": "s00020",
@@ -134,14 +134,14 @@
    "coverage": 0.6,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:35:27"
+   "checked_at": "2026-09-19T22:14:51"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1815,
-   "completion_tokens": 202,
+   "completion_tokens": 201,
    "estimated": false,
-   "cost_usd": 0.000311
+   "cost_usd": 0.00031
   }
  }
 }

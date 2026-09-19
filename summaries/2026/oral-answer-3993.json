@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "AI impact on PMET jobs",
-   "summary": "IHLs work with sector agencies and industry partners to keep curriculum relevant for the AI era, complemented by work-based learning like the AI Apprenticeship Programme.",
+   "summary": "IHLs work with sector agencies and industry to keep curriculum relevant for the AI era, complemented by work-based learning like the AI Apprenticeship Programme.",
    "sentences": [
     {
      "sid": "s00003",
@@ -31,7 +31,7 @@
   },
   {
    "label": "GRIT Programme for graduates",
-   "summary": "In view of heightened economic uncertainties in 2025, the Government introduced the GRIT Programme to help young graduates gain industry-relevant experience and move to permanent employment.",
+   "summary": "Amid 2025 economic uncertainties, the Government introduced the GRIT Programme to help young graduates gain industry experience and move to permanent employment.",
    "sentences": [
     {
      "sid": "s00009",
@@ -43,7 +43,20 @@
    ]
   },
   {
-   "label": "WSG job transformation and reskilling",
+   "label": "MOM monitoring AI impact",
+   "summary": "MOM is monitoring and observing trends and getting feedback from employers on AI's impact.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Shawn Huang Wei Zhong",
+     "attributed": true,
+     "text": "For the first supplementary question, whether there are any impact or trends, MOM is currently monitoring and observing as well as getting feedback from the employers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "WSG maps and reskilling programmes",
    "summary": "WSG's Jobs Transformation Maps guide employers and workers on AI reshaping roles, while the AI Apprenticeship Programme and reskilling programmes like TeSA and Career Conversion Programmes provide support.",
    "sentences": [
     {
@@ -82,12 +95,12 @@
    "oral-answer-3993"
   ],
   "sentences_total": 20,
-  "sentences_selected": 7,
-  "sentences_in_sections": 7,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 0,
-  "sections_total": 3,
-  "selection_share": 0.35,
+  "sections_total": 4,
+  "selection_share": 0.4,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -96,24 +109,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 3,
+   "sections_total": 4,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 7,
-   "sentences_selected": 7,
+   "sentences_published": 8,
+   "sentences_selected": 8,
    "turns_cited": 2,
    "turns_total": 4,
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:26:00"
+   "checked_at": "2026-09-19T22:45:00"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1566,
-   "completion_tokens": 218,
+   "prompt_tokens": 1599,
+   "completion_tokens": 255,
    "estimated": false,
-   "cost_usd": 0.00028
+   "cost_usd": 0.000295
   }
  }
 }

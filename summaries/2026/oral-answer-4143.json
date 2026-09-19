@@ -3,8 +3,8 @@
  "what_it_is": "Constraints that Prevent Scaling of Hydrokinetic Turbine Arrays in Singapore Strait",
  "sections": [
   {
-   "label": "Tidal energy plans and constraints",
-   "summary": "Government addresses tidal energy strategy and maritime constraints, noting limited sea space and estimated potential below 1% of energy needs.",
+   "label": "Tidal energy plans and maritime constraints",
+   "summary": "The Government was asked about tidal energy plans and maritime constraints, and stated limited sea space limits domestic tidal energy to under 1% of Singapore's energy needs.",
    "sentences": [
     {
      "sid": "s00001",
@@ -66,14 +66,14 @@
    "coverage": 1.0,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:57:19"
+   "checked_at": "2026-09-19T21:52:09"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 827,
-   "completion_tokens": 67,
+   "completion_tokens": 76,
    "estimated": false,
-   "cost_usd": 0.000135
+   "cost_usd": 0.000137
   }
  }
 }

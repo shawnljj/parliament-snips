@@ -3,19 +3,6 @@
  "what_it_is": "Low-altitude Economy: Building the Flying Car, Air Tourism and Drone Logistics Industry",
  "sections": [
   {
-   "label": "Speaker declares eVTOL company founder",
-   "summary": "The speaker declares he is the founder of an eVTOL company in Singapore that designs manned drones and is flying.",
-   "sentences": [
-    {
-     "sid": "s00005",
-     "speaker": "Dr Neo Kok Beng (Nominated Member)",
-     "attributed": true,
-     "text": "First, I would like to declare I am the founder of an eVTOL company that designs manned drones or eVTOL in Singapore and is flying.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Global drone and eVTOL market",
    "summary": "The global drone market including military is about US$30 billion, and commercial eVTOL about $3.1 billion, projected to reach $216 billion by 2035.",
    "sentences": [
@@ -31,7 +18,7 @@
      "speaker": "Dr Neo Kok Beng (Nominated Member)",
      "attributed": true,
      "text": "And eVTOL, in the commercial side, is probably about $3.1 billion.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00032",
@@ -43,8 +30,8 @@
    ]
   },
   {
-   "label": "Reported Singapore economic contribution",
-   "summary": "A report about four years ago by a now-defunct private company said Singapore had about $4 billion output contribution and 1,500 jobs.",
+   "label": "Report on Singapore output and jobs",
+   "summary": "A report by a now-defunct private company said Singapore had about $4 billion output contribution and about 1,500 jobs.",
    "sentences": [
     {
      "sid": "s00045",
@@ -56,7 +43,7 @@
    ]
   },
   {
-   "label": "NTU eVTOL hover test",
+   "label": "NTU eVTOL design unveiled",
    "summary": "At the Airshow, NTU unveiled the design of an eVTOL that has done its initial hover test in Singapore.",
    "sentences": [
     {
@@ -70,7 +57,7 @@
   },
   {
    "label": "Drone projects and national strategy",
-   "summary": "ST Engineering, NTU and SIT have drone or eVTOL projects, and the speaker calls for a national low-altitude economy strategy.",
+   "summary": "ST Engineering, NTU and SIT have drone or eVTOL projects, and a national strategy for low-altitude economy is proposed.",
    "sentences": [
     {
      "sid": "s00069",
@@ -96,7 +83,7 @@
    ]
   },
   {
-   "label": "First Maritime Drone Estate",
+   "label": "Maritime Drone Estate launch",
    "summary": "MPA launched Singapore's first Maritime Drone Estate in April 2021.",
    "sentences": [
     {
@@ -110,7 +97,7 @@
   },
   {
    "label": "Cheap storage in neighbouring land",
-   "summary": "The passage states that neighbours have land and plantations where cheap storage facilities, ports and logistics centres could be placed and goods airlifted out.",
+   "summary": "Neighbouring countries have land and plantations where cheap container ports, storage or logistics centres could store goods for airlift.",
    "sentences": [
     {
      "sid": "s00106",
@@ -129,15 +116,22 @@
    ]
   },
   {
-   "label": "National Research Foundation funding recommendation",
-   "summary": "The speaker recommends the National Research Foundation treat this as a white space and allocate money for industry, universities and research institutions.",
+   "label": "Air mobility business model funding",
+   "summary": "The speaker recommends the National Research Foundation treat air mobility as a white space and allocate money for industry, universities and research institutions.",
    "sentences": [
+    {
+     "sid": "s00110",
+     "speaker": "Dr Neo Kok Beng (Nominated Member)",
+     "attributed": true,
+     "text": "So, moving facilities or bus or trucks or bicycles into the air is not just simply moving into the air.",
+     "added_for_context": true
+    },
     {
      "sid": "s00111",
      "speaker": "Dr Neo Kok Beng (Nominated Member)",
      "attributed": true,
      "text": "It is also coming with a different business model.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00112",
@@ -156,7 +150,7 @@
    ]
   },
   {
-   "label": "eVTOLs as domestic transport option",
+   "label": "eVTOL viability in Singapore",
    "summary": "The passage states eVTOLs may not be viable extensively in Singapore due to congested airspace and a well-connected ground transport network.",
    "sentences": [
     {
@@ -183,8 +177,8 @@
    ]
   },
   {
-   "label": "Drone use reducing man-hours",
-   "summary": "The passage states that using drones in this manner can potentially reduce required man-hours by up to 70%.",
+   "label": "Drones reducing man-hours",
+   "summary": "Using drones in this manner can potentially reduce required man-hours by up to 70%.",
    "sentences": [
     {
      "sid": "s00141",
@@ -209,8 +203,8 @@
    ]
   },
   {
-   "label": "Enhanced real-time airspace clearance processes",
-   "summary": "In 2025, real-time airspace clearance processes were enhanced so operators can obtain immediate clearance for drone operations at certain heights and locations.",
+   "label": "Enhanced real-time airspace clearance",
+   "summary": "In 2025, real-time airspace clearance processes were enhanced so operators can obtain immediate clearance at certain heights and locations.",
    "sentences": [
     {
      "sid": "s00154",
@@ -222,8 +216,8 @@
    ]
   },
   {
-   "label": "Polytechnics as drone training organisations",
-   "summary": "Four of Singapore's five polytechnics are approved as Unmanned Aircraft Training Organisations and run practical drone operations courses.",
+   "label": "Polytechnics as Unmanned Aircraft Training Organisations",
+   "summary": "Four of five polytechnics are approved as Unmanned Aircraft Training Organisations and conduct practical drone operations courses.",
    "sentences": [
     {
      "sid": "s00160",
@@ -235,7 +229,7 @@
    ]
   },
   {
-   "label": "CAAS Unmanned Aircraft Flying Areas",
+   "label": "Unmanned Aircraft Flying Areas launched",
    "summary": "CAAS has launched two Unmanned Aircraft Flying Areas at Pandan Reservoir and Dover Road for enthusiasts' recreational operations.",
    "sentences": [
     {
@@ -248,8 +242,8 @@
    ]
   },
   {
-   "label": "Chinese cities trialling urban drones",
-   "summary": "Chinese cities are trialling drones for uses like deliveries, façade inspections, traffic monitoring and enforcement, and search and rescue, which Singapore may explore.",
+   "label": "Chinese cities trialling drones",
+   "summary": "Chinese cities are trialling drones for urban uses such as deliveries, façade inspections, traffic monitoring and enforcement, and search and rescue.",
    "sentences": [
     {
      "sid": "s00178",
@@ -262,7 +256,7 @@
   },
   {
    "label": "Ministry of Transport drone plans",
-   "summary": "The Ministry of Transport will consult stakeholders, drive public sector drone use, work with the private sector on commercial uses, and emphasise safety.",
+   "summary": "The Ministry of Transport will consult stakeholders and focus on driving public sector drone usage while working with the private sector on commercial use cases.",
    "sentences": [
     {
      "sid": "s00189",
@@ -317,8 +311,8 @@
   "sentences_selected": 29,
   "sentences_in_sections": 29,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 6,
-  "sections_total": 16,
+  "sentences_added_for_context": 5,
+  "sections_total": 15,
   "selection_share": 0.1487,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -328,7 +322,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 16,
+   "sections_total": 15,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 29,
@@ -338,14 +332,14 @@
    "coverage": 0.8,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:12:41"
+   "checked_at": "2026-09-19T22:01:20"
   },
   "usage": {
    "calls": 9,
-   "prompt_tokens": 8225,
-   "completion_tokens": 940,
+   "prompt_tokens": 8213,
+   "completion_tokens": 879,
    "estimated": false,
-   "cost_usd": 0.001415
+   "cost_usd": 0.001396
   }
  }
 }

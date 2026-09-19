@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "FIDReC insurance dispute claims",
-   "summary": "FIDReC completed an average of 246 annual insurance claims, 95 health claims, with 4% ruled for policyholders.",
+   "summary": "FIDReC completed an average of 246 annual insurance claims from 2022 to 2024, 95 health insurance, with 4% ruled for policyholders.",
    "sentences": [
     {
      "sid": "s00002",
@@ -30,7 +30,7 @@
    ]
   },
   {
-   "label": "Insurers must prove material non-disclosure",
+   "label": "Insurer burden on non-disclosure",
    "summary": "Insurers must show non-disclosure of a health condition is material to underwriting before rejecting a claim.",
    "sentences": [
     {
@@ -43,8 +43,8 @@
    ]
   },
   {
-   "label": "Disputes are tiny share of claims",
-   "summary": "Disputes and complaints reaching FIDReC or MAS are under 0.01% of all insurance claims.",
+   "label": "Disputes share of insurance claims",
+   "summary": "Disputes and complaints reaching FIDReC or MAS are under 0.01% of all insurance claims, about one in 10,000.",
    "sentences": [
     {
      "sid": "s00016",
@@ -76,8 +76,8 @@
    ]
   },
   {
-   "label": "FIDReC resolves most cases",
-   "summary": "Over 85% of FIDReC cases are resolved through mediation or adjudication, making it an effective channel.",
+   "label": "FIDReC mediation and adjudication",
+   "summary": "FIDReC handles disagreements with insurers, resolving over 85% of cases through mediation or adjudication, remaining effective for Singaporeans.",
    "sentences": [
     {
      "sid": "s00034",
@@ -132,14 +132,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:21:26"
+   "checked_at": "2026-09-19T22:41:25"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1912,
-   "completion_tokens": 281,
+   "completion_tokens": 300,
    "estimated": false,
-   "cost_usd": 0.000346
+   "cost_usd": 0.000352
   }
  }
 }

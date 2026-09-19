@@ -16,7 +16,7 @@
    ]
   },
   {
-   "label": "India, Middle East, EU AI investments",
+   "label": "AI and data centre investments",
    "summary": "India aims to attract up to US$200 billion in AI and data centre investments, while the Middle East and EU secure sovereign compute capacity.",
    "sentences": [
     {
@@ -29,20 +29,7 @@
    ]
   },
   {
-   "label": "Singapore's AI competitive strengths",
-   "summary": "Singapore cannot compete on population or compute scales but can compete on precision, trust, regulatory credibility and deep sectoral integration.",
-   "sentences": [
-    {
-     "sid": "s00029",
-     "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
-     "attributed": true,
-     "text": "Singapore cannot compete on population or compute scales, but we can compete on precision, trust, regulatory credibility and deep sectoral integration.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Leveraging governance and National AI Council",
+   "label": "National AI Council announcement welcomed",
    "summary": "The speaker asks how to leverage high-trust governance, regulatory credibility and deep sectoral concentration, and welcomes the National AI Council announcement.",
    "sentences": [
     {
@@ -62,8 +49,8 @@
    ]
   },
   {
-   "label": "Determining national AI Mission sectors",
-   "summary": "The speaker asks how the Government determined the four key sectors for the national AI Missions.",
+   "label": "Four key sectors for AI Missions",
+   "summary": "A question asks how the Government determined the four key sectors for the national AI Missions.",
    "sentences": [
     {
      "sid": "s00045",
@@ -75,21 +62,21 @@
    ]
   },
   {
-   "label": "Three enablers for AI advantage",
-   "summary": "Three enablers must move together for Singapore to harness AI: workforce capabilities, enterprise adoption including SMEs, and strong ethical governance.",
+   "label": "Sovereign AI compute capacity",
+   "summary": "A question asks how much sovereign AI compute capacity is held.",
    "sentences": [
     {
-     "sid": "s00054",
-     "speaker": "Mr Sharael Taha",
+     "sid": "s00051",
+     "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
      "attributed": true,
-     "text": "If Singapore is to harness AI as a strategic advantage, three enablers must move together – deep and broad workforce capabilities, widespread enterprise adoption, including SMEs and strong ethical governance.",
+     "text": "How much of sovereign AI compute capacity do we have?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "QKD maturity conclusion",
-   "summary": "A conclusion states QKD is not yet sufficiently mature and can only serve niche use cases.",
+   "label": "QKD maturity and PQC priority",
+   "summary": "The conclusion states QKD is not yet sufficiently mature and serves only niche use cases, with migration to post quantum cryptography having priority.",
    "sentences": [
     {
      "sid": "s00066",
@@ -97,11 +84,18 @@
      "attributed": true,
      "text": "Their conclusion: QKD is not yet sufficiently mature and can only serve niche use cases.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00067",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "They said: \"Migration to post quantum cryptography (PQC) has priority over the use of QKD\".",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "PQC deadlines and commitment",
+   "label": "Foreign PQC deadlines",
    "summary": "Australia's deadline to cease classical public key cryptography is 2030, Japan's is 2035, and 18 EU states signed a PQC commitment last November.",
    "sentences": [
     {
@@ -114,8 +108,8 @@
    ]
   },
   {
-   "label": "Harvest now decrypt later",
-   "summary": "Without PQC, adversaries harvest today and decrypt tomorrow; the National Quantum Safe Network is expanding with dedicated QKD fibre but has no PQC migration deadline.",
+   "label": "National Quantum Safe Network expansion",
+   "summary": "Without PQC, adversaries harvest today and decrypt tomorrow; Singapore is expanding the National Quantum Safe Network with dedicated QKD fibre but has no PQC migration deadline.",
    "sentences": [
     {
      "sid": "s00077",
@@ -135,7 +129,7 @@
   },
   {
    "label": "Quantum budget and Grok images",
-   "summary": "A question asks how the quantum safe budget breaks down between QKD and PQC and when Singapore will set a PQC migration deadline; IMDA engaged with X over Grok's non consensual intimate images.",
+   "summary": "A question asks when Singapore will set a PQC migration deadline and how the quantum safe budget splits between QKD and PQC; IMDA engaged with X over Grok's non consensual intimate images.",
    "sentences": [
     {
      "sid": "s00082",
@@ -161,9 +155,16 @@
    ]
   },
   {
-   "label": "TikTok addictive design finding",
-   "summary": "Last month the European Commission made a preliminary finding that TikTok's addictive design itself is a legal violation.",
+   "label": "Addictive social media design",
+   "summary": "Infinite scroll, autoplay videos and algorithmic feeds are attention-capture dark patterns exploiting children's developing brains, and the European Commission preliminarily found TikTok's addictive design a legal violation.",
    "sentences": [
+    {
+     "sid": "s00102",
+     "speaker": "Ms He Ting Ru (Sengkang)",
+     "attributed": true,
+     "text": "On social media platforms, infinite scroll, autoplay videos and algorithmic feeds are attention-capture dark patterns designed to maximise engagement by exploiting reward-seeking and eroding self-regulation in children whose brains are still developing.",
+     "added_for_context": false
+    },
     {
      "sid": "s00103",
      "speaker": "Ms He Ting Ru (Sengkang)",
@@ -174,7 +175,7 @@
    ]
   },
   {
-   "label": "Design risk assessment requirement",
+   "label": "Code of practice design risk assessment",
    "summary": "A question asks whether the code of practice requires designated services to submit a design risk assessment covering recommendation systems, auto play and scroll architecture.",
    "sentences": [
     {
@@ -187,21 +188,8 @@
    ]
   },
   {
-   "label": "Select Committee on children social media",
-   "summary": "A question asks whether the Ministry would consider using a Select Committee to examine global efforts to protect children from social media harms.",
-   "sentences": [
-    {
-     "sid": "s00112",
-     "speaker": "Ms He Ting Ru (Sengkang)",
-     "attributed": true,
-     "text": "Three, would the Ministry consider my call last week to use a Select Committee to better examine global efforts to protect children from the harms of social media, especially in the light of momentum building to outrightly ban social media for children?",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "AI videos of leadership rumours",
-   "summary": "It states publicly indefensible actions should not be undertaken, and cites a Lianhe Zaobao article on AI-generated videos about leadership struggles.",
+   "label": "AI videos on leadership",
+   "summary": "Publicly indefensible positions should not be undertaken and decisions must stand to public scrutiny; a 5 February Lianhe Zaobao article documented AI-generated videos claiming Prime Minister Lawrence Wong is being forced out.",
    "sentences": [
     {
      "sid": "s00125",
@@ -242,7 +230,7 @@
   },
   {
    "label": "POFMA and AI misinformation videos",
-   "summary": "A question asks why POFMA was not used against those behind the AI-generated videos, given the scale of AI misinformation.",
+   "summary": "Asks why POFMA was not used against those behind AI-generated misinformation videos.",
    "sentences": [
     {
      "sid": "s00133",
@@ -254,21 +242,8 @@
    ]
   },
   {
-   "label": "Media literacy for seniors",
-   "summary": "A question asks what structured long-term programmes the Ministry will develop to strengthen media literacy and critical thinking among vulnerable populations such as seniors.",
-   "sentences": [
-    {
-     "sid": "s00136",
-     "speaker": "Mr Fadli Fawzi (Aljunied)",
-     "attributed": true,
-     "text": "What structured long-term programmes will the Ministry develop to strengthen media literacy and critical thinking, especially among vulnerable populations such as seniors?",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Albatross File declassification",
-   "summary": "It states the recent declassification of the Albatross File illustrates why a Freedom of Information Act and automatic declassification are necessary.",
+   "summary": "States the Albatross File declassification shows why a Freedom of Information Act and automatic declassification are necessary.",
    "sentences": [
     {
      "sid": "s00148",
@@ -281,7 +256,7 @@
   },
   {
    "label": "Automatic declassification after 25 years",
-   "summary": "It states government data or records that could inform public debate should be automatically declassified after 25 years, subject to national security concerns.",
+   "summary": "Says government data and records informing public debate should be automatically declassified after 25 years, subject to national security concerns.",
    "sentences": [
     {
      "sid": "s00152",
@@ -293,21 +268,21 @@
    ]
   },
   {
-   "label": "MDDI shaping historical narratives",
-   "summary": "MDDI is responsible for shaping Singaporeans' historical narratives and ensuring national historical touchstones are accurate, principled and grounded.",
+   "label": "Shifting burden of proof",
+   "summary": "States a Freedom of Information Act and automatic declassification would shift the burden of proof from citizens to the Government.",
    "sentences": [
     {
-     "sid": "s00164",
-     "speaker": "Mr Christopher de Souza (Holland-Bukit Timah)",
+     "sid": "s00156",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
      "attributed": true,
-     "text": "A core responsibility of MDDI is shaping the historical narratives for Singaporeans and ensuring that our national historical touchstones are accurate, principled and grounded.",
+     "text": "A Freedom of Information Act and automatic declassification would shift the burden of proof from citizens to the Government.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Employers survey on AI hiring",
-   "summary": "In a survey of 250 local employers, 80% acknowledged AI has already reduced their entry-level hiring.",
+   "summary": "States that in a survey of 250 local employers, 80% acknowledged AI has already reduced their entry-level hiring.",
    "sentences": [
     {
      "sid": "s00187",
@@ -320,7 +295,7 @@
   },
   {
    "label": "Conditions for AI subsidy schemes",
-   "summary": "Stronger guardrails are needed so Government support does not accelerate displacement of entry-level roles, with two conditions suggested for AI-related roles and subsidy schemes.",
+   "summary": "Suggests two conditions for AI-related roles and subsidy schemes, including structured declarations on AI's impact on HR decisions.",
    "sentences": [
     {
      "sid": "s00190",
@@ -335,12 +310,19 @@
      "attributed": true,
      "text": "Broadly, I suggest two conditions to be added for all AI-related roles and subsidy schemes.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00192",
+     "speaker": "Mr Abdul Muhaimin Abdul Malik (Sengkang)",
+     "attributed": true,
+     "text": "First, at the minimum, companies should be required to submit a structured declaration detailing how their AI transformation efforts are expected to impact HR decisions, particularly for entry-level roles.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Companies commit to entry-level roles",
-   "summary": "Companies should commit to a sustained level of entry-level roles and ensure structured development opportunities for entry level highest.",
+   "label": "Entry-level roles and development",
+   "summary": "Companies should commit to sustained entry-level roles and structured development opportunities for entry-level staff.",
    "sentences": [
     {
      "sid": "s00195",
@@ -365,8 +347,8 @@
    ]
   },
   {
-   "label": "Upfront support and performance incentives",
-   "summary": "The Government is asked to consider strengthening upfront support to reduce early-stage exposure, then introduce performance-linked incentives giving enhanced support up to 80% to 90% of qualifying transformation costs.",
+   "label": "Upfront support and performance-linked incentives",
+   "summary": "The Government is asked to consider strengthening upfront support and introducing performance-linked incentives of up to 80% to 90% of qualifying transformation costs.",
    "sentences": [
     {
      "sid": "s00214",
@@ -379,7 +361,7 @@
   },
   {
    "label": "Unified communication architecture for enterprises",
-   "summary": "Asks whether MDDI would strengthen a unified communication architecture so enterprises see one coherent transformation pathway rather than multiple agencies.",
+   "summary": "MDDI is asked to consider strengthening a unified communication architecture so enterprises see one coherent transformation pathway rather than multiple agencies.",
    "sentences": [
     {
      "sid": "s00223",
@@ -391,8 +373,8 @@
    ]
   },
   {
-   "label": "Budget 2026 AI direction",
-   "summary": "Budget 2026 sets a direction with a National AI Council chaired by the Prime Minister and national AI Missions across four sectors.",
+   "label": "National AI Council and Missions",
+   "summary": "Budget 2026 sets a direction of a National AI Council chaired by the Prime Minister and national AI Missions across four sectors.",
    "sentences": [
     {
      "sid": "s00233",
@@ -404,7 +386,7 @@
    ]
   },
   {
-   "label": "Enterprise Innovation Scheme AI support",
+   "label": "Expanding Enterprise Innovation Scheme",
    "summary": "Budget measures such as expanding the Enterprise Innovation Scheme to support qualifying AI expenditures can spur uptake.",
    "sentences": [
     {
@@ -417,8 +399,8 @@
    ]
   },
   {
-   "label": "Workforce AI skills and training plans",
-   "summary": "Asks the Ministry's plans to equip the workforce with AI skills, tie training to productivity and outcomes, and encourage employer buy-in.",
+   "label": "Workforce AI training plans",
+   "summary": "The Ministry is asked about plans to equip the workforce with AI skills, tie training to productivity and business outcomes, and encourage employer buy-in.",
    "sentences": [
     {
      "sid": "s00260",
@@ -445,7 +427,7 @@
   },
   {
    "label": "Reducing SME AI uncertainty",
-   "summary": "Asks how the Ministry will reduce uncertainty for SMEs adopting AI.",
+   "summary": "The question asks how the Ministry will reduce uncertainty for SMEs adopting AI.",
    "sentences": [
     {
      "sid": "s00270",
@@ -457,8 +439,8 @@
    ]
   },
   {
-   "label": "Champions of AI alongside other schemes",
-   "summary": "Asks how the Champions of AI programme will sit alongside the Enterprise Innovation Scheme and Productivity Solutions Grant, administered by different boards and Ministries.",
+   "label": "Champions of AI coordination",
+   "summary": "The question asks how the Champions of AI programme will sit alongside the Enterprise Innovation Scheme and Productivity Solutions Grant, which are run by different statutory boards and Ministries.",
    "sentences": [
     {
      "sid": "s00273",
@@ -470,8 +452,8 @@
    ]
   },
   {
-   "label": "AI know-how for local IT firms",
-   "summary": "Asks whether MDDI can work with top AI firms and hyperscalers to transfer know-how to local IT firms, and whether GovTech can adopt these approaches and require government IT vendors to do the same.",
+   "label": "IT firms and AI know-how",
+   "summary": "The question asks whether MDDI can work with top AI firms and hyperscalers to transfer know-how to local IT services firms, and whether GovTech can adopt these approaches and require Government IT service companies to do the same.",
    "sentences": [
     {
      "sid": "s00281",
@@ -498,7 +480,7 @@
   },
   {
    "label": "Public Service Media headwinds",
-   "summary": "States that Public Service Media face significant headwinds: declining circulation, a fragmented media space, an evolving advertising model and growing overseas disinformation.",
+   "summary": "Public Service Media face significant headwinds: declining circulation in a fragmented media space, a rapidly evolving advertising model and growing disinformation from overseas.",
    "sentences": [
     {
      "sid": "s00290",
@@ -510,8 +492,8 @@
    ]
   },
   {
-   "label": "Helping media stay financially viable",
-   "summary": "Asks how this is done to help them stay financially viable and forestall similar painful restructuring here.",
+   "label": "Public Service Media financial viability",
+   "summary": "The question asks how it helps Public Service Media stay financially viable so similar painful restructuring can be forestalled here.",
    "sentences": [
     {
      "sid": "s00294",
@@ -524,7 +506,7 @@
   },
   {
    "label": "Fake reports about Lee and Wong",
-   "summary": "Notes that many would have read fake online reports claiming Senior Minister Lee publicly disagreed with Prime Minister Wong.",
+   "summary": "The passage states that many people read fake online reports claiming Senior Minister Lee publicly disagreed with Prime Minister Wong.",
    "sentences": [
     {
      "sid": "s00309",
@@ -536,8 +518,8 @@
    ]
   },
   {
-   "label": "AI worsens information threat",
-   "summary": "States that AI worsens the threat because it can generate convincing content at scale, iterate rapidly and probe and undermine critical information infrastructure.",
+   "label": "AI worsening threat to infrastructure",
+   "summary": "AI worsens the threat because it can generate convincing content at scale, iterate rapidly and probe critical information infrastructure.",
    "sentences": [
     {
      "sid": "s00312",
@@ -549,8 +531,8 @@
    ]
   },
   {
-   "label": "Singapore's global AI governance role",
-   "summary": "Recalls Singapore's Model AI Governance Framework of January 2019 and later work on Generative and Agentic AI, and asks what more the Government will do on global AI governance, standards, certification, coordination and capacity building.",
+   "label": "Singapore AI governance and global role",
+   "summary": "The passage asks what more the Government will do on global AI governance, standards, certification, coordination and capacity building, building on Singapore's frameworks.",
    "sentences": [
     {
      "sid": "s00325",
@@ -576,8 +558,8 @@
    ]
   },
   {
-   "label": "AI safety and anti-scam measures",
-   "summary": "Proposes a national AI safety curriculum, AI-specific online harms under the Online Safety Commission, and a public-private AI anti-scam taskforce.",
+   "label": "Four AI safety proposals",
+   "summary": "The passage proposes a national AI safety curriculum, AI-specific online harms under the OSC, a public-private anti-scam taskforce and community digital safety ambassadors.",
    "sentences": [
     {
      "sid": "s00339",
@@ -599,12 +581,19 @@
      "attributed": true,
      "text": "Three, establish a public-private AI anti-scam taskforce to stay ahead of evolving threats and coordinate responses.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00342",
+     "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
+     "attributed": true,
+     "text": "Four, leveraging the base of Digital Ambassadors, develop a network of community-based digital safety ambassadors focused on AI risks in senior activity centres, schools and social service settings.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Targeted rules for frontier AI",
-   "summary": "States frontier AI models pose a different category of risk, so Singapore should move toward targeted requirements for high-risk AI systems.",
+   "label": "Targeted rules for high-risk AI",
+   "summary": "The passage states frontier AI models pose a different category of risk and argues for targeted requirements for high-risk or high-impact AI systems.",
    "sentences": [
     {
      "sid": "s00356",
@@ -623,21 +612,8 @@
    ]
   },
   {
-   "label": "Practical AI tools for SMEs",
-   "summary": "Says the refreshed National AI Strategy sets direction on trusted AI, but SMEs need practical tools like sector-specific trust roadmaps and governance templates.",
-   "sentences": [
-    {
-     "sid": "s00373",
-     "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
-     "attributed": true,
-     "text": "The refreshed National AI Strategy sets the direction on trusted AI, but SMEs need practical tools that they can use tomorrow – sector‑specific AI trust roadmaps that spell out common risks and good practices, pre-approved governance templates for data handling, model testing and human-in-the-loop check, simple \"green‑lane\" guidance so low‑risk use cases can move quickly while higher‑risk ones get the safeguards they need.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "SME governance and worker skills",
-   "summary": "Asks how SMEs can tap champions for governance support and how workers get role-specific skill maps and hands-on training.",
+   "label": "SMEs, workers and AI adoption",
+   "summary": "The passage asks how SMEs can tap champions for governance support and sets out worker skill maps, training, Budget investment and cyber resilience support.",
    "sentences": [
     {
      "sid": "s00377",
@@ -677,8 +653,8 @@
    ]
   },
   {
-   "label": "National AI Impact Programme",
-   "summary": "MDDI is creating the National AI Impact Programme, aiming to support 10,000 local enterprises over three years to integrate AI.",
+   "label": "National AI Impact Programme for SMEs",
+   "summary": "MDDI is creating the National AI Impact Programme, aiming to support 10,000 local enterprises to integrate AI over three years.",
    "sentences": [
     {
      "sid": "s00417",
@@ -711,8 +687,8 @@
    ]
   },
   {
-   "label": "AI tools on Go Digital",
-   "summary": "States peak sales rose 30% and AI tools make up 30% of digital solutions on IMDA's SMEs Go Digital platform.",
+   "label": "AI tools on SMEs Go Digital",
+   "summary": "Peak sales rose 30%, and AI tools make up 30% of digital solutions on IMDA's SMEs Go Digital platform.",
    "sentences": [
     {
      "sid": "s00428",
@@ -739,7 +715,7 @@
   },
   {
    "label": "Mocha Chai GenAI sound tool",
-   "summary": "After joining IMDA's Digital Leaders Programme, Mocha Chai created a GenAI tool that generates matching sound effects from video footage, cutting weeks of work to a day.",
+   "summary": "After IMDA's Digital Leaders Programme, Mocha Chai built a GenAI tool generating sound effects, cutting weeks of work to a day.",
    "sentences": [
     {
      "sid": "s00439",
@@ -752,7 +728,7 @@
   },
   {
    "label": "Digital Leaders Accelerator Bootcamp launch",
-   "summary": "The Digital Leaders Programme is being enhanced and a new Digital Leaders Accelerator Bootcamp launched to build skills and confidence in change management, not just tech capabilities.",
+   "summary": "MDDI is enhancing the Digital Leaders Programme and launching a Digital Leaders Accelerator Bootcamp for change management skills and confidence.",
    "sentences": [
     {
      "sid": "s00444",
@@ -785,7 +761,7 @@
   },
   {
    "label": "Expanding TeSA for AI bilingual workers",
-   "summary": "IMDA will work with relevant agencies and professional bodies to expand its TeSA programme to develop AI bilingual workers in key domains.",
+   "summary": "IMDA will work with agencies and professional bodies to expand TeSA and develop AI bilingual workers in key domains.",
    "sentences": [
     {
      "sid": "s00466",
@@ -798,7 +774,7 @@
   },
   {
    "label": "Model Governance Framework for Agentic AI",
-   "summary": "The new Model Governance Framework for Agentic AI will help organisations manage systems that can act with greater independence while ensuring human oversight.",
+   "summary": "A new Model Governance Framework for Agentic AI will help organisations manage systems that act with greater independence while ensuring human oversight.",
    "sentences": [
     {
      "sid": "s00473",
@@ -810,8 +786,8 @@
    ]
   },
   {
-   "label": "Cybersecurity standards, tools, workforce plans",
-   "summary": "Cybersecurity standards and requirements for CII owners will be reviewed, advanced tools provided to CII owners, and capabilities built up in the cybersecurity workforce with partners.",
+   "label": "Cybersecurity plans for CII owners",
+   "summary": "Cybersecurity standards and requirements for CII owners will be reviewed, advanced tools provided, and workforce capabilities built with partners.",
    "sentences": [
     {
      "sid": "s00489",
@@ -863,7 +839,7 @@
    ]
   },
   {
-   "label": "CSA reviewing cybersecurity standards",
+   "label": "Review of cybersecurity standards scope",
    "summary": "CSA is reviewing the scope of current cybersecurity standards and obligations and may include non-CII systems interconnected with CII systems.",
    "sentences": [
     {
@@ -876,8 +852,8 @@
    ]
   },
   {
-   "label": "IMDA enhancing telecom cybersecurity regulations",
-   "summary": "IMDA will enhance its cybersecurity regulations for telecommunications operators given recent waves of attacks.",
+   "label": "IMDA enhancing telecommunications cybersecurity regulations",
+   "summary": "IMDA will be enhancing its cybersecurity regulations for telecommunications operators given recent waves of attacks.",
    "sentences": [
     {
      "sid": "s00522",
@@ -889,8 +865,8 @@
    ]
   },
   {
-   "label": "Helping CII owners against APTs",
-   "summary": "CII owners will be helped to level up against APTs through classified threat intelligence, proprietary threat detection systems, and progressive deployment.",
+   "label": "Helping CII owners fight APTs",
+   "summary": "CSA will share classified threat intelligence and deploy proprietary threat detection tools to CII owners to help them detect and respond to APTs.",
    "sentences": [
     {
      "sid": "s00541",
@@ -931,7 +907,7 @@
   },
   {
    "label": "More Leadership Programme runs",
-   "summary": "CSA will conduct more runs of the Leadership Programme over the next few years given participants' positive feedback.",
+   "summary": "CSA will conduct more runs of the Leadership Programme over the next few years following positive participant feedback.",
    "sentences": [
     {
      "sid": "s00561",
@@ -943,7 +919,7 @@
    ]
   },
   {
-   "label": "Router cybersecurity requirements raised",
+   "label": "Raising router cybersecurity requirements",
    "summary": "CSA and IMDA intend to raise minimum cybersecurity requirements for all routers sold in Singapore to CLS Level 2 equivalent.",
    "sentences": [
     {
@@ -956,7 +932,7 @@
    ]
   },
   {
-   "label": "IP camera cybersecurity requirements",
+   "label": "IP cameras CLS Level 2",
    "summary": "CSA will explore requiring IP cameras to meet CLS Level 2, similar to home routers, to better protect citizens.",
    "sentences": [
     {
@@ -982,21 +958,14 @@
    ]
   },
   {
-   "label": "Training and quantum-safe networks",
-   "summary": "They are working with industry experts on training and deploying two quantum-safe networks nationwide through NQSN+.",
+   "label": "Quantum-Safe Handbook and Index",
+   "summary": "In October 2025, CSA released a Quantum-Safe Handbook and Quantum Readiness Index to raise awareness of associated risks.",
    "sentences": [
     {
-     "sid": "s00599",
+     "sid": "s00598",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
-     "text": "We are working with industry experts to better support organisations in their efforts, including through training.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00600",
-     "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
-     "attributed": true,
-     "text": "We are also deploying two quantum-safe networks nationwide through the National Quantum Safe Network Plus (NQSN+) initiative.",
+     "text": "In October 2025, CSA released a Quantum-Safe Handbook and Quantum Readiness Index to raise awareness of the associated risks.",
      "added_for_context": false
     }
    ]
@@ -1023,7 +992,7 @@
   },
   {
    "label": "Enhanced Vaping Information System launch",
-   "summary": "Their enhanced Vaping Information System was live in three weeks, while a system built from scratch would have taken months.",
+   "summary": "Their enhanced Vaping Information System went live in three weeks, while a system built from scratch would have taken months.",
    "sentences": [
     {
      "sid": "s00650",
@@ -1042,7 +1011,7 @@
    ]
   },
   {
-   "label": "GovTech agentic AI coding tools",
+   "label": "GovTech piloting agentic AI coding tools",
    "summary": "GovTech is piloting agentic AI coding tools internally and plans to expand these capabilities across Government.",
    "sentences": [
     {
@@ -1068,8 +1037,8 @@
    ]
   },
   {
-   "label": "Government scam protection steps",
-   "summary": "Mr Sharael Taha asked about efforts to protect citizens from scams, and steps taken include unifying Government SMS messages under the \"gov.sg\" sender ID.",
+   "label": "Scam protection and government calls",
+   "summary": "Steps taken include unifying Government SMS under the gov.sg sender ID, and OGP and IMDA are developing systems for agencies to make calls with a common prefix.",
    "sentences": [
     {
      "sid": "s00669",
@@ -1083,6 +1052,13 @@
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
      "text": "We have already taken steps, for example, by unifying SMS messages from Government under the \"gov.sg\" sender ID.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00671",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
+     "attributed": true,
+     "text": "For citizens to easily identify and trust calls from the Government, OGP and IMDA are developing systems for agencies to make calls with numbers that start with a common prefix.",
      "added_for_context": false
     }
    ]
@@ -1114,21 +1090,8 @@
    ]
   },
   {
-   "label": "LifeSG parental services",
-   "summary": "Through LifeSG, parents can complete services like birth registration, apply for Baby Bonus and Shared Parental Leave, with far less paperwork.",
-   "sentences": [
-    {
-     "sid": "s00705",
-     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
-     "attributed": true,
-     "text": "Through LifeSG, parents can complete services like birth registration, apply for Baby Bonus and Shared Parental Leave, with far less paperwork.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Nurse registration process streamlined",
-   "summary": "Registration processes are simplified and the Professional Registration System rebuilt, cutting foreign nurse registration from up to six months to 30 days.",
+   "summary": "MDDI is rebuilding the Professional Registration System to automate checks, cutting foreign nurse registration from up to six months to 30 days.",
    "sentences": [
     {
      "sid": "s00717",
@@ -1150,32 +1113,19 @@
      "attributed": true,
      "text": "We have reduced processing time for foreign nurse registrations from up to six months to 30 days.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Government policy and service delivery",
-   "summary": "Government officials are asked whether policies are delivered in the simplest way and whether they would accept the service experience for their own families.",
-   "sentences": [
-    {
-     "sid": "s00722",
-     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
-     "attributed": true,
-     "text": "All of us working in Government must ask ourselves: if we are responsible for a policy, is it being delivered in the simplest way possible?",
-     "added_for_context": false
     },
     {
-     "sid": "s00723",
+     "sid": "s00720",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
-     "text": "If we are designing a service, ask: would I accept this experience for my own family?",
+     "text": "For patients and families waiting for care, this can mean earlier treatment, earlier support and less anxiety.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Singaporeans compare digital experiences",
-   "summary": "Singaporeans increasingly compare government digital services to the best digital experiences in their daily lives, not just to other governments.",
+   "label": "Singaporeans expect best digital experiences",
+   "summary": "Singaporeans increasingly compare government digital services to the best digital experiences in their daily lives, a standard MDDI must meet.",
    "sentences": [
     {
      "sid": "s00727",
@@ -1183,12 +1133,19 @@
      "attributed": true,
      "text": "Increasingly, Singaporeans compare us to the best digital experiences in their daily lives, not just to governments elsewhere.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00728",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
+     "attributed": true,
+     "text": "That is the standard and it is our responsibility to meet it.",
+     "added_for_context": false
     }
    ]
   },
   {
    "label": "Online Safety Commission established",
-   "summary": "The Online Safety (Relief and Accountability) Act establishes the Online Safety Commission by the first half of this year to support victims of five online harms.",
+   "summary": "Under the Online Safety (Relief and Accountability) Act, a new Online Safety Commission will be set up by the first half of this year.",
    "sentences": [
     {
      "sid": "s00737",
@@ -1215,7 +1172,7 @@
   },
   {
    "label": "App store age assurance measures",
-   "summary": "From the end of this month, designated app stores must implement age assurance measures to stop users under 18 accessing age-inappropriate apps.",
+   "summary": "From the end of this month, designated app stores must implement age assurance to stop under-18s accessing age-inappropriate apps.",
    "sentences": [
     {
      "sid": "s00752",
@@ -1254,7 +1211,7 @@
   },
   {
    "label": "Code for Fun AI update",
-   "summary": "IMDA and MOE are updating the Code for Fun programme to add AI skills, available to all schools in 2027.",
+   "summary": "IMDA and MOE are updating the Code for Fun programme to integrate AI skills for all students, available to all schools in 2027.",
    "sentences": [
     {
      "sid": "s00800",
@@ -1286,7 +1243,7 @@
    ]
   },
   {
-   "label": "NLB SURE information literacy packages",
+   "label": "NLB SURE information literacy rollout",
    "summary": "NLB will roll out new resource packages and outreach programmes under SURE to build information literacy skills.",
    "sentences": [
     {
@@ -1300,7 +1257,7 @@
   },
   {
    "label": "Langkah Digital for Malay/Muslim community",
-   "summary": "M3 launched Langkah Digital, led by Yayasan MENDAKI, built on three elements: Kenal, Guna and Yakin.",
+   "summary": "M³ launched Langkah Digital, led by Yayasan MENDAKI, designed around three elements: Kenal, Guna, Yakin.",
    "sentences": [
     {
      "sid": "s00823",
@@ -1315,19 +1272,12 @@
      "attributed": true,
      "text": "As I announced last month, Langkah Digital is designed around three key elements – Kenal, Guna, Yakin.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00825",
-     "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
-     "attributed": true,
-     "text": "Kenal (Knowing) helps people learn more about safe digital exploration; Guna (Use) encourages integrating technology in daily life; and Yakin (Confident) nurtures lifelong digital learning so that the community can continue to adapt independently.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Langkah Digital workshops and participants",
-   "summary": "Since launching last month, 12 AI-related workshops and events have reached over 400 participants.",
+   "label": "AI workshops community participation",
+   "summary": "12 AI-related workshops and events have been rolled out in the community, reaching over 400 participants.",
    "sentences": [
     {
      "sid": "s00834",
@@ -1339,8 +1289,8 @@
    ]
   },
   {
-   "label": "Visitors to exhibition on Singapore path",
-   "summary": "Over 130,000 visited since December, with 96% saying they gained deeper understanding of Singapore's path.",
+   "label": "Exhibition visitor understanding survey",
+   "summary": "Over 130,000 visited since December and 96% said they left with a deeper understanding of Singapore's path.",
    "sentences": [
     {
      "sid": "s00853",
@@ -1352,8 +1302,21 @@
    ]
   },
   {
+   "label": "Albatross File editorial notes",
+   "summary": "The editorial notes of The Albatross File: Inside Separation state nothing material to understanding the separation was held back.",
+   "sentences": [
+    {
+     "sid": "s00860",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
+     "attributed": true,
+     "text": "As stated in the editorial notes of The Albatross File: Inside Separation, nothing material to the understanding of the separation was held back.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
    "label": "Freedom of Information Act proposal",
-   "summary": "Mr Fadli proposed a Freedom of Information Act to declassify records after 25 years, but it could lead to more opacity.",
+   "summary": "Mr Fadli proposed a Freedom of Information Act to automatically declassify and publicly release records after 25 years, which could lead to more opacity.",
    "sentences": [
     {
      "sid": "s00863",
@@ -1372,8 +1335,8 @@
    ]
   },
   {
-   "label": "Transparency, governance and records access",
-   "summary": "A Freedom of Information Act can hinder governance, so transparency should prioritise good governance, and a public records access mechanism already exists.",
+   "label": "Transparency and governance trade-offs",
+   "summary": "A Freedom of Information Act can hinder governance because sensitive issues go undocumented, so transparency should lead to good governance and an informed citizenry.",
    "sentences": [
     {
      "sid": "s00869",
@@ -1406,8 +1369,8 @@
    ]
   },
   {
-   "label": "SG60 Heart&Soul Experience visitors",
-   "summary": "The SG60 Heart&Soul Experience drew two million visitors in the second half of last year, letting Singaporeans express hopes and dreams.",
+   "label": "SG60 Heart&Soul Experience",
+   "summary": "The SG60 Heart&Soul Experience, visited by two million visitors in the second half of last year, let Singaporeans express hopes and dreams for Singapore.",
    "sentences": [
     {
      "sid": "s00875",
@@ -1419,8 +1382,8 @@
    ]
   },
   {
-   "label": "NAIC authority and NAIS 2.0 progress",
-   "summary": "Questions ask whether NAIC will have execution authority or be advisory, how it integrates MTI and MDDI strategies, and what progress NAIS 2.0 has made.",
+   "label": "NAIC and NAIS 2.0 questions",
+   "summary": "Questions were raised on the NAIC's authority and integration with MTI and MDDI, and on progress and lessons from NAIS 2.0.",
    "sentences": [
     {
      "sid": "s00887",
@@ -1446,8 +1409,8 @@
    ]
   },
   {
-   "label": "Trusted AI certification and NAIS 2.0",
-   "summary": "A formal trusted AI certification regime for high-risk systems is considered, and the Prime Minister launched NAIS 2.0 in December 2023.",
+   "label": "Trusted AI certification regime question",
+   "summary": "Asks whether a formal trusted AI certification regime will be considered for high-risk AI systems in finance, healthcare and aviation.",
    "sentences": [
     {
      "sid": "s00892",
@@ -1466,8 +1429,8 @@
    ]
   },
   {
-   "label": "Lorong AI growth and events",
-   "summary": "Lorong AI grew faster and bigger than expected, hosting about 150 events with 4,000 people last year.",
+   "label": "Lorong AI growth",
+   "summary": "Lorong AI moved faster and grew bigger than expected, hosting about 150 events with around 4,000 people last year.",
    "sentences": [
     {
      "sid": "s00909",
@@ -1506,8 +1469,8 @@
    ]
   },
   {
-   "label": "Prime Minister chairs National AI Council",
-   "summary": "The Prime Minister chairs the National AI Council, indicating Singapore's keenness to make AI transformation real for all Singaporeans.",
+   "label": "National AI Council and trust institutions",
+   "summary": "The Prime Minister chairs the National AI Council, and a digital trust centre and online safety centre have been set up.",
    "sentences": [
     {
      "sid": "s00947",
@@ -1522,13 +1485,14 @@
      "attributed": true,
      "text": "He advises us on a whole range of things, but to chair the National AI Council is a very strong indication that we are keen on making AI transformation real for all Singaporeans and not just something that just continues to exist as a vision.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "AI safety and online safety institutions",
-   "summary": "Singapore set up a digital trust centre as its AI Safety Institute and a Centre of Advanced Technologies for Online Safety, and will seek industry and academia collaboration.",
-   "sentences": [
+    },
+    {
+     "sid": "s00950",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "Very quickly, Mr Chairman, I think there was also a question about trust and regulatory credibility, and whether we will set up institutions to do that.",
+     "added_for_context": false
+    },
     {
      "sid": "s00951",
      "speaker": "Mrs Josephine Teo",
@@ -1554,7 +1518,7 @@
   },
   {
    "label": "Access to National AI Impact Programme",
-   "summary": "Citizens will access the National AI Impact Programme not solely through channels overseen by MDDI and IMDA.",
+   "summary": "Citizens will access the National AI Impact Programme not solely through channels MDDI and IMDA oversee.",
    "sentences": [
     {
      "sid": "s00960",
@@ -1587,7 +1551,7 @@
   },
   {
    "label": "Accountancy and legal professions start",
-   "summary": "The speaker says work will start with the accountancy and legal professions, then extend to fields like human resources.",
+   "summary": "For individuals, the effort starts with accountancy and legal professions, then extends to fields like HR, which has 50,000 practitioners.",
    "sentences": [
     {
      "sid": "s00968",
@@ -1607,7 +1571,7 @@
   },
   {
    "label": "Elections online advertising legislation",
-   "summary": "The speaker says existing legislation is sometimes not enough, citing the Elections (Integrity of Online Advertising) legislation.",
+   "summary": "There are instances where existing legislation, laws and measures are not enough, so the ELIONA legislation was introduced.",
    "sentences": [
     {
      "sid": "s00982",
@@ -1626,8 +1590,8 @@
    ]
   },
   {
-   "label": "AI translation for public websites",
-   "summary": "The National Translation Committee is working with GovTech and A*STAR on language models to translate public materials into Malay, Mandarin and Tamil.",
+   "label": "AI translation for mother tongue languages",
+   "summary": "The National Translation Committee works with GovTech and A*STAR on LLMs to translate English public materials into Malay, Mandarin and Tamil.",
    "sentences": [
     {
      "sid": "s00996",
@@ -1668,7 +1632,7 @@
   },
   {
    "label": "Optimising speed security cost trust",
-   "summary": "The speaker says Singapore cannot optimise one dimension over another and must optimise across speed, security, cost and trust.",
+   "summary": "One dimension cannot be optimised over another; Singapore must optimise across speed, security, cost and trust.",
    "sentences": [
     {
      "sid": "s01029",
@@ -1687,8 +1651,8 @@
    ]
   },
   {
-   "label": "Thanks to MDDI team",
-   "summary": "The speaker thanks ministers, the MDDI Permanent Secretary and team, and Members, then seeks leave to withdraw an amendment.",
+   "label": "Thanks to MDDI team and Members",
+   "summary": "The speaker thanks ministers, the MDDI team, the GPC and Members for 25 cuts and over three hours of debate, and seeks leave to withdraw the amendment.",
    "sentences": [
     {
      "sid": "s01033",
@@ -1750,8 +1714,8 @@
   "sentences_selected": 166,
   "sentences_in_sections": 166,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 24,
-  "sections_total": 95,
+  "sentences_added_for_context": 23,
+  "sections_total": 89,
   "selection_share": 0.1596,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -1761,24 +1725,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 95,
+   "sections_total": 89,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 166,
    "sentences_selected": 166,
-   "turns_cited": 24,
+   "turns_cited": 22,
    "turns_total": 43,
-   "coverage": 0.5581,
+   "coverage": 0.5116,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:50:20"
+   "checked_at": "2026-09-19T22:23:20"
   },
   "usage": {
-   "calls": 46,
-   "prompt_tokens": 41927,
-   "completion_tokens": 5416,
+   "calls": 45,
+   "prompt_tokens": 41634,
+   "completion_tokens": 5109,
    "estimated": false,
-   "cost_usd": 0.007386
+   "cost_usd": 0.007259
   }
  }
 }

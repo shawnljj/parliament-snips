@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "PARF rebate lowered for EVs",
-   "summary": "The PARF rebate was lowered and its cap cut from $60,000 to $30,000 as EVs become more common, with changes effective immediately.",
+   "summary": "PARF rebate was lowered and its cap cut from $60,000 to $30,000 as EVs make early deregistration incentives less needed.",
    "sentences": [
     {
      "sid": "s00005",
@@ -37,8 +37,8 @@
    ]
   },
   {
-   "label": "Affected car buyers with committed purchases",
-   "summary": "Fewer than 2,000 car buyers with committed purchases are estimated to be affected, mostly higher-end internal combustion engine car buyers.",
+   "label": "Affected car buyers with purchases",
+   "summary": "Fewer than 2,000 car buyers with committed purchases are estimated affected, mostly higher-end internal combustion engine car buyers.",
    "sentences": [
     {
      "sid": "s00012",
@@ -64,8 +64,8 @@
    ]
   },
   {
-   "label": "Balance of ownership and usage controls",
-   "summary": "Singapore needs a balance of ownership and usage controls to keep road congestion in check, with PARF adjusted because EV take-up rose.",
+   "label": "Ownership and usage controls balance",
+   "summary": "Singapore needs a balance of ownership and usage controls, and PARF was adjusted because increased EV take-up made its original objective less relevant.",
    "sentences": [
     {
      "sid": "s00017",
@@ -134,14 +134,14 @@
    "coverage": 0.5714,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:35:32"
+   "checked_at": "2026-09-19T22:14:53"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1605,
-   "completion_tokens": 204,
+   "completion_tokens": 200,
    "estimated": false,
-   "cost_usd": 0.000282
+   "cost_usd": 0.000281
   }
  }
 }

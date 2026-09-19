@@ -3,8 +3,8 @@
  "what_it_is": "Details on Stepped-up Surveillance for Central Kitchens, Including Different Classification for those Supplying School Meals",
  "sections": [
   {
-   "label": "Licensing and inspection of central kitchens",
-   "summary": "Central kitchens are licensed by SFA and inspected more frequently due to their larger scale of food processing or preparation.",
+   "label": "Licensing of central kitchens",
+   "summary": "Central kitchens are licensed by the Singapore Food Agency and inspected more frequently due to their larger scale of food processing or preparation.",
    "sentences": [
     {
      "sid": "s00002",
@@ -23,8 +23,8 @@
    ]
   },
   {
-   "label": "Food safety lapses and school meal checks",
-   "summary": "Central kitchens with major lapses are downgraded and inspected more regularly, and since August 2025 SFA stepped up checks on school meal suppliers.",
+   "label": "Food safety lapses and school meals",
+   "summary": "Kitchens with major food safety lapses are downgraded and inspected more regularly, and since August 2025 SFA has stepped up checks on central kitchens supplying school meals.",
    "sentences": [
     {
      "sid": "s00006",
@@ -50,8 +50,8 @@
    ]
   },
   {
-   "label": "Sourcing from licensed importers and manufacturers",
-   "summary": "SFA requires importers and manufacturers to comply with food safety requirements, and food establishments should source from these licensed parties.",
+   "label": "Sourcing from licensed importers",
+   "summary": "SFA requires all importers and manufacturers to comply with food safety requirements, and central kitchens and all food establishments should source from these licensed importers and manufacturers.",
    "sentences": [
     {
      "sid": "s00018",
@@ -64,7 +64,7 @@
   },
   {
    "label": "SAFE grades in Government procurement",
-   "summary": "Phase 1 was implemented on 19 January 2026, with Government procurement considering suppliers' and central kitchen providers' SAFE grades and food safety track record.",
+   "summary": "Phase 1 was implemented on 19 January 2026, and for all Government procurement the SAFE grades of suppliers and central kitchen providers are taken into consideration.",
    "sentences": [
     {
      "sid": "s00030",
@@ -83,8 +83,8 @@
    ]
   },
   {
-   "label": "Uni-directional process for food segregation",
-   "summary": "A uni-directional process helps segregate ready-to-eat from non-ready-to-eat food products.",
+   "label": "Uni-directional process segregation",
+   "summary": "A uni-directional process helps to segregate ready-to-eat from non-ready-to-eat food products.",
    "sentences": [
     {
      "sid": "s00035",
@@ -132,14 +132,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:25:52"
+   "checked_at": "2026-09-19T22:44:54"
   },
   "usage": {
    "calls": 3,
    "prompt_tokens": 2218,
-   "completion_tokens": 303,
+   "completion_tokens": 312,
    "estimated": false,
-   "cost_usd": 0.000395
+   "cost_usd": 0.000398
   }
  }
 }

@@ -3,8 +3,8 @@
  "what_it_is": "Safeguards to Ensure Citizen Data Is Not Disclosed to or Processed by Foreign-headquartered Vendors",
  "sections": [
   {
-   "label": "Safeguards for citizen data vendors",
-   "summary": "The Government says safeguards protect citizen data when foreign-headquartered vendors process it, including needs-based access, technical controls, data residency and contracts.",
+   "label": "Safeguards for citizen data with vendors",
+   "summary": "The Government applies risk-based safeguards, technical controls, governance and contracts to protect citizen data used by vendors from foreign disclosure demands.",
    "sentences": [
     {
      "sid": "s00001",
@@ -46,7 +46,7 @@
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister for Digital Development and Information)",
      "attributed": true,
      "text": "This is coupled with proper governance frameworks and contractual agreements on how the data can be accessed, used, stored and retained.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00007",
@@ -58,8 +58,8 @@
    ]
   },
   {
-   "label": "Foreign laws overriding contracts",
-   "summary": "The Government says foreign laws with extraterritorial reach can override contracts, so it also relies on technical controls and governance frameworks.",
+   "label": "Foreign laws can override contracts",
+   "summary": "Some jurisdictions' laws with extraterritorial reach can override contractual obligations, so the Government also relies on technical controls and governance frameworks.",
    "sentences": [
     {
      "sid": "s00014",
@@ -73,7 +73,7 @@
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
      "text": "Such legislation or regulations can override contractual obligations.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00016",
@@ -121,7 +121,7 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:19:37"
+   "checked_at": "2026-09-19T22:05:20"
   },
   "usage": {
    "calls": 2,

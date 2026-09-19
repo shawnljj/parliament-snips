@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Civil List Class 2 increase",
-   "summary": "No change is proposed for Class 1, while Class 2 salaries for the President's personal staff rise from $6,696,700 to $7,318,000.",
+   "summary": "No change is proposed for Class 1, while Class 2 expenditures for the President's personal staff would rise from $6,696,700 to $7,318,000.",
    "sentences": [
     {
      "sid": "s00005",
@@ -30,8 +30,8 @@
    ]
   },
   {
-   "label": "Civil List Classes 3 and 4",
-   "summary": "Class 3 household expenses rise to $4,542,000 and Class 4 rises to $1,288,000 for seconded public officers' manpower.",
+   "label": "Civil List Class 3 and 4 increases",
+   "summary": "Class 3 household expenses would increase from $3,342,200 to $4,542,000, and Class 4 expenditures from $550,000 to $1,288,000.",
    "sentences": [
     {
      "sid": "s00012",
@@ -41,24 +41,10 @@
      "added_for_context": false
     },
     {
-     "sid": "s00013",
-     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
-     "attributed": true,
-     "text": "This is to cater for the higher cost of maintaining and securing IT systems as well as organising official events at the Istana, while the main building of the Istana undergoes major restoration works.",
-     "added_for_context": false
-    },
-    {
      "sid": "s00014",
      "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
      "attributed": true,
      "text": "For Class 4 expenditures, it is proposed to increase the sum from $550,000 to $1,288,000.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00015",
-     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
-     "attributed": true,
-     "text": "As explained earlier, this arises because expenditure on manpower for public officers seconded to the President's office will now be categorised under Class 4.",
      "added_for_context": false
     }
    ]
@@ -76,12 +62,12 @@
    "motion-2938"
   ],
   "sentences_total": 17,
-  "sentences_selected": 7,
-  "sentences_in_sections": 7,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 0,
   "sections_total": 2,
-  "selection_share": 0.4118,
+  "selection_share": 0.2941,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -93,21 +79,21 @@
    "sections_total": 2,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 7,
-   "sentences_selected": 7,
+   "sentences_published": 5,
+   "sentences_selected": 5,
    "turns_cited": 1,
    "turns_total": 2,
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:22:08"
+   "checked_at": "2026-09-19T22:06:39"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1182,
-   "completion_tokens": 161,
+   "prompt_tokens": 1114,
+   "completion_tokens": 160,
    "estimated": false,
-   "cost_usd": 0.000211
+   "cost_usd": 0.000201
   }
  }
 }

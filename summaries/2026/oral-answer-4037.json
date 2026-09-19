@@ -3,7 +3,7 @@
  "what_it_is": "Review of Fire Safety and Evacuation Risks Following Temporary Relaxation of Occupancy Cap for Private Residences",
  "sections": [
   {
-   "label": "Fire safety for residential premises",
+   "label": "Fire safety rules for residences",
    "summary": "All residential premises in Singapore are subject to fire safety requirements regulated by the Singapore Civil Defence Force.",
    "sentences": [
     {
@@ -37,7 +37,7 @@
   },
   {
    "label": "Higher occupancy cap registration and monitoring",
-   "summary": "Fire safety standards remain sufficient with the higher occupancy cap; owners of eligible properties must register with URA, and MCST monitors liveability and fire safety standards.",
+   "summary": "Fire safety standards remain sufficient with the temporary higher occupancy cap; owners of eligible larger private properties must register with URA for the higher cap, and MCSTs monitor liveability and fire safety standards.",
    "sentences": [
     {
      "sid": "s00015",
@@ -147,14 +147,14 @@
    "coverage": 0.4,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:03:44"
+   "checked_at": "2026-09-19T22:30:38"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1912,
-   "completion_tokens": 226,
+   "completion_tokens": 234,
    "estimated": false,
-   "cost_usd": 0.000331
+   "cost_usd": 0.000333
   }
  }
 }

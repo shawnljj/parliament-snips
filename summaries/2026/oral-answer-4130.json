@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Online Criminal Harms Act powers",
-   "summary": "The Government relies on Online Criminal Harms Act legal powers to issue Directions preventing online criminal content from interacting with users in Singapore.",
+   "summary": "The Government relies on Online Criminal Harms Act powers to issue Directions against online criminal content detected in Singapore.",
    "sentences": [
     {
      "sid": "s00003",
@@ -24,7 +24,7 @@
   },
   {
    "label": "OCHA Codes of Practice measures",
-   "summary": "Under the OCHA Codes of Practice, designated online services like Telegram must implement systems to disrupt malicious accounts, and Police are working with providers on further anti-scam measures this year.",
+   "summary": "Designated online services like Telegram must implement measures under the OCHA Codes of Practice, with further anti-scam measures coming this year.",
    "sentences": [
     {
      "sid": "s00007",
@@ -39,12 +39,19 @@
      "attributed": true,
      "text": "As part of the continuing efforts against the serious crime situation, the Police are working with designated online service providers, including Telegram, to implement further anti-scam measures under the OCHA Codes of Practice by this year.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister of State for Home Affairs (Mr Goh Pei Ming) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "The Government will continue to review our laws and regulations to ensure that they remain effective in protecting users in Singapore from online criminal harms.",
+     "added_for_context": false
     }
    ]
   },
   {
    "label": "Telegram anonymity and scam offers",
-   "summary": "Telegram users can remain anonymous, and follow-ups through the Central Narcotics Bureau found many offers to sell drugs or sexual offers are scams masquerading as those offers.",
+   "summary": "Telegram allows anonymity, and follow-ups through the Central Narcotics Bureau found many drug and sexual offers there are scams.",
    "sentences": [
     {
      "sid": "s00014",
@@ -65,19 +72,6 @@
      "speaker": "Mr Goh Pei Ming",
      "attributed": true,
      "text": "And when we followed it up through the Central Narcotics Bureau, we realised that actually many of these offers to sell drugs, even sexual offers, are actually scams masquerading as those offers.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "First quarter numbers trend",
-   "summary": "In the first quarter of this year, the numbers have continued that trend, and the speaker is slightly heartened.",
-   "sentences": [
-    {
-     "sid": "s00024",
-     "speaker": "Mr Goh Pei Ming",
-     "attributed": true,
-     "text": "In the first quarter of this year, the numbers have continued that trend; we are slightly heartened.",
      "added_for_context": false
     }
    ]
@@ -112,7 +106,7 @@
   "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 1,
-  "sections_total": 5,
+  "sections_total": 4,
   "selection_share": 0.3214,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -122,7 +116,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 5,
+   "sections_total": 4,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 9,
@@ -132,14 +126,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:59:16"
+   "checked_at": "2026-09-19T21:53:27"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1675,
-   "completion_tokens": 289,
+   "prompt_tokens": 1677,
+   "completion_tokens": 223,
    "estimated": false,
-   "cost_usd": 0.000315
+   "cost_usd": 0.000297
   }
  }
 }

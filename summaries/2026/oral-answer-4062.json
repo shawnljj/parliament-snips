@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Healthcare workforce sustainability strategy",
-   "summary": "Singapore adopts a multi-pronged workforce strategy, builds local core, brings in foreign workers, and diversifies recruitment sources.",
+   "summary": "Singapore adopts a multi-pronged workforce strategy, builds local healthcare workforce, recruits foreign workers, and diversifies recruitment sources with bilateral agreements.",
    "sentences": [
     {
      "sid": "s00001",
@@ -51,8 +51,8 @@
    ]
   },
   {
-   "label": "Foreign domestic workers care progression",
-   "summary": "A question asks whether foreign domestic workers can progress to community care sector care staff or nurses.",
+   "label": "Foreign domestic workers in Singapore",
+   "summary": "Singapore has 300,000 foreign domestic workers, about one-fifth of the foreign workforce, many caring for seniors at home.",
    "sentences": [
     {
      "sid": "s00026",
@@ -74,14 +74,13 @@
      "attributed": true,
      "text": "Many of them work in the homes in the care settings at home, taking care of seniors with a range of conditions as well, some more severe than others.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00030",
-     "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
-     "attributed": true,
-     "text": "Sometimes, after the seniors pass on, they are unable to continue taking care of another senior in another home setting.",
-     "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Foreign domestic workers care progression",
+   "summary": "The question asks whether foreign domestic workers can progress to community care sector care staff or nurse roles.",
+   "sentences": [
     {
      "sid": "s00031",
      "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
@@ -104,12 +103,12 @@
    "oral-answer-4062"
   ],
   "sentences_total": 32,
-  "sentences_selected": 11,
-  "sentences_in_sections": 11,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 3,
-  "sections_total": 2,
-  "selection_share": 0.3438,
+  "sections_total": 3,
+  "selection_share": 0.3125,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -118,24 +117,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 2,
+   "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 11,
-   "sentences_selected": 11,
+   "sentences_published": 10,
+   "sentences_selected": 10,
    "turns_cited": 3,
    "turns_total": 6,
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:41:40"
+   "checked_at": "2026-09-19T22:18:35"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2276,
-   "completion_tokens": 140,
+   "prompt_tokens": 2256,
+   "completion_tokens": 185,
    "estimated": false,
-   "cost_usd": 0.000358
+   "cost_usd": 0.000368
   }
  }
 }

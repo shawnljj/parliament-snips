@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Gaming disorder support and regulation",
-   "summary": "Community counselling exists and app stores must add age assurance by March 2026, while playtime limits are monitored.",
+   "summary": "Community counselling exists, app stores must add age assurance by March 2026, and the Government will monitor other jurisdictions' playtime limits and identity verification.",
    "sentences": [
     {
      "sid": "s00001",
@@ -47,12 +47,19 @@
      "attributed": true,
      "text": "The Government will continue to monitor developments in other jurisdictions, including playtime limits or identity verification, and study if safeguards for online video games are required.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
+     "attributed": true,
+     "text": "In view of the 10.3% prevalence rate for Internet gaming disorder among young adults in Singapore, will the Government take more urgent measures and more strictly regulate the gaming industry?",
+     "added_for_context": false
     }
    ]
   },
   {
    "label": "Educating and protecting app users",
-   "summary": "The Government will educate and protect users, balancing protection against personal autonomy and enforcement practicality, working with developers and app stores.",
+   "summary": "The Government will do more to educate and protect users, working upstream with developers and app stores on age-appropriate safeguards, while adults retain personal autonomy.",
    "sentences": [
     {
      "sid": "s00012",
@@ -66,13 +73,6 @@
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "But on his question of whether we will do more to educate and protect users from some of the harmful things that might be available on apps, the answer is yes.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00014",
-     "speaker": "Dr Koh Poh Koon",
-     "attributed": true,
-     "text": "But we will need to look at how we can balance between increased protection for users versus personal autonomy, and the practicality of enforcement.",
      "added_for_context": false
     },
     {
@@ -123,19 +123,19 @@
    "sections_without_sentences": [],
    "sentences_published": 11,
    "sentences_selected": 11,
-   "turns_cited": 3,
+   "turns_cited": 4,
    "turns_total": 4,
-   "coverage": 0.75,
+   "coverage": 1.0,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:35:42"
+   "checked_at": "2026-09-19T22:14:57"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1680,
-   "completion_tokens": 142,
+   "prompt_tokens": 1690,
+   "completion_tokens": 156,
    "estimated": false,
-   "cost_usd": 0.000275
+   "cost_usd": 0.00028
   }
  }
 }

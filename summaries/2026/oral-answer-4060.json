@@ -3,8 +3,8 @@
  "what_it_is": "Efforts to Increase Availability and Uptake of Screening for Common Types of Cancer",
  "sections": [
   {
-   "label": "Healthier SG cancer screening",
-   "summary": "Healthier SG recommends and subsidises screening for breast, cervical and colorectal cancer, while lung and liver screening is only for high-risk individuals.",
+   "label": "Cancer screening and healthier lifestyles",
+   "summary": "Healthier SG subsidises screening for breast, cervical and colorectal cancer, while lung and liver screening is only for high-risk individuals, and MOH promotes healthier lifestyles.",
    "sentences": [
     {
      "sid": "s00002",
@@ -37,8 +37,8 @@
    ]
   },
   {
-   "label": "Screening scheme resource assessment",
-   "summary": "Screening decisions reference the Screening Test Review Committee and require assessing resources, funding, prevalence and clinical effectiveness before making a scheme.",
+   "label": "Screening recommendations and resource assessment",
+   "summary": "Screening decisions reference the Screening Test Review Committee, and general population screening requires resource allocation and separate assessment.",
    "sentences": [
     {
      "sid": "s00010",
@@ -107,14 +107,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:41:54"
+   "checked_at": "2026-09-19T22:18:47"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1229,
-   "completion_tokens": 146,
+   "completion_tokens": 148,
    "estimated": false,
-   "cost_usd": 0.000213
+   "cost_usd": 0.000214
   }
  }
 }

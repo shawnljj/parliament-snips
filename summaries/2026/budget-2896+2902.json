@@ -3,21 +3,8 @@
  "what_it_is": "Committee of Supply – Head K (Ministry of Education)",
  "sections": [
   {
-   "label": "Budget cut for Head K",
-   "summary": "The speaker moves to reduce the total sum allocated for Head K of the Estimates by $100.",
-   "sentences": [
-    {
-     "sid": "s00001",
-     "speaker": "Mr Darryl David (Ang Mo Kio)",
-     "attributed": true,
-     "text": "Chairman, Sir, I move, \"That the total sum to be allocated for Head K of the Estimates be reduced by $100\".",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "SMEs struggle with AI",
-   "summary": "Recent industry discussions in The Straits Times report many SMEs struggle with AI implementation, especially workforce training and clear pathways.",
+   "label": "SMEs struggling with AI implementation",
+   "summary": "Industry discussions report many SMEs struggle with AI implementation, especially workforce training and finding clear pathways forward.",
    "sentences": [
     {
      "sid": "s00006",
@@ -29,8 +16,8 @@
    ]
   },
   {
-   "label": "Enrichment pathways for AI students",
-   "summary": "Students with strong aptitude should get structured enrichment pathways, and Finland and South Korea have national AI curricula.",
+   "label": "Structured enrichment pathways for students",
+   "summary": "Students with strong aptitude should get enrichment pathways, and Finland and South Korea have national AI curricula.",
    "sentences": [
     {
      "sid": "s00022",
@@ -49,8 +36,8 @@
    ]
   },
   {
-   "label": "Tiered teacher AI training",
-   "summary": "The speaker urges MOE to implement tiered professional development programmes for teachers, with foundational training and advanced modules.",
+   "label": "Teacher AI professional development",
+   "summary": "Teachers need proficiency in AI technologies and responsible embedding, so MOE is urged to implement tiered professional development programmes.",
    "sentences": [
     {
      "sid": "s00041",
@@ -65,32 +52,38 @@
      "attributed": true,
      "text": "I urge MOE to implement tiered professional development programmes for teachers.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Adaptive learning systems personalising content",
+   "summary": "Adaptive learning systems can personalise content to a student's pace, proficiency and cognitive profile, giving targeted support.",
+   "sentences": [
     {
-     "sid": "s00043",
+     "sid": "s00048",
      "speaker": "Mr Darryl David (Ang Mo Kio)",
      "attributed": true,
-     "text": "Foundational training should cover AI tools and digital pedagogy while advanced modules focus on curriculum design, ethics and mentoring.",
+     "text": "Adaptive learning systems can personalise content to a student's pace, proficiency and cognitive profile, providing targeted support to address gaps and reinforce strengths.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Supporting neurodiverse students in AI",
-   "summary": "As AI literacy advances, students with neurodiverse profiles, learning differences or disabilities must be supported.",
+   "label": "AI and class sizes",
+   "summary": "AI could creatively address class sizes, with the goal of improving the teacher-student ratio rather than just smaller classes.",
    "sentences": [
     {
-     "sid": "s00046",
+     "sid": "s00065",
      "speaker": "Mr Darryl David (Ang Mo Kio)",
      "attributed": true,
-     "text": "As we advance AI literacy, we must support students with neurodiverse profiles, learning differences or disabilities.",
+     "text": "Let us explore how we can perhaps use AI in a way that would be able to address the issue of class sizes in a creative manner, such that the end goal is not simply reducing the class size to smaller numbers in a class but enhancing and improving the teacher-student ratio.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Dedicated AI CET centre",
-   "summary": "The Government could consider a dedicated CET centre for AI and data literacy offering modular programmes for adult learners.",
+   "summary": "A dedicated AI CET centre for adult learners could offer modular programmes, complementing existing polytechnic and university offerings.",
    "sentences": [
     {
      "sid": "s00068",
@@ -105,26 +98,26 @@
      "attributed": true,
      "text": "A dedicated AI CET centre could offer modular programmes ranging from foundational literacy to advanced applications in responsible AI governance, sector-specific problem solving and workplace integration.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00070",
+     "speaker": "Mr Darryl David (Ang Mo Kio)",
+     "attributed": true,
+     "text": "This would complement existing offerings from polytechnics and universities, such as Professional and Adult Continuing Education academies, which already provide professional courses in AI and data analytics.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "AI education ecosystem foundation",
-   "summary": "The passage urges MOE and stakeholders to build a cohesive AI education ecosystem through curriculum, pedagogy and inclusive learning.",
+   "label": "AI education ecosystem call",
+   "summary": "The speaker urges MOE, the Government and stakeholders to keep building a cohesive AI education ecosystem.",
    "sentences": [
-    {
-     "sid": "s00072",
-     "speaker": "Mr Darryl David (Ang Mo Kio)",
-     "attributed": true,
-     "text": "The foundation we lay today in schools through deliberate curriculum design, thoughtful pedagogy and inclusive learning will determine whether Singaporeans can navigate this transformation with confidence, creativity and responsibility.",
-     "added_for_context": true
-    },
     {
      "sid": "s00073",
      "speaker": "Mr Darryl David (Ang Mo Kio)",
      "attributed": true,
      "text": "I urge MOE, the Government and other stakeholders to continue building a cohesive AI education ecosystem, one that nurtures curiosity, equips students for the future and ensures Singaporeans remain leaders and innovators in an increasingly digital, AI-augmented world.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00074",
@@ -136,8 +129,8 @@
    ]
   },
   {
-   "label": "Inclusive after-school gifted enrichment model",
-   "summary": "The new model keeps higher-ability pupils in their schools for after-school enrichment, reimagining excellence as inclusive and socially integrated.",
+   "label": "Inclusive gifted education model",
+   "summary": "The new model keeps higher-ability pupils in their schools for after-school enrichment modules, unlike the school-based gifted education model.",
    "sentences": [
     {
      "sid": "s00080",
@@ -156,7 +149,7 @@
    ]
   },
   {
-   "label": "Stretching brightest learners, social cohesion",
+   "label": "After-school enrichment modules purpose",
    "summary": "The modules should stretch brightest learners and reinforce social cohesion, not act as accelerated tuition or PSLE advantage.",
    "sentences": [
     {
@@ -197,7 +190,7 @@
   },
   {
    "label": "Teacher workload and recruitment",
-   "summary": "Teachers work over 47 hours weekly, six more than OECD counterparts, with less teaching time, despite increased recruitment from 700 to 1,000.",
+   "summary": "Teachers work over 47 hours weekly, six more than OECD counterparts, and teach 18 hours versus almost 23 in the OECD.",
    "sentences": [
     {
      "sid": "s00110",
@@ -223,8 +216,8 @@
    ]
   },
   {
-   "label": "Capping class sizes, Allied Educators",
-   "summary": "The Workers' Party calls to cap class sizes closer to the OECD average of 21, or add Allied Educators or Teaching Assistants.",
+   "label": "Capping class sizes call",
+   "summary": "The Workers' Party reiterates its call to cap class sizes closer to the OECD average of 21, especially at primary level.",
    "sentences": [
     {
      "sid": "s00132",
@@ -263,8 +256,8 @@
    ]
   },
   {
-   "label": "DSA admissions and intention",
-   "summary": "DSA's intention to broaden success definitions is right, but admissions rose from about 3,500 in 2019 to about 4,400 in 2023, around 11% of the cohort.",
+   "label": "DSA admissions rise",
+   "summary": "DSA's intention to broaden definitions of success is right, but admissions rose from about 3,500 in 2019 to about 4,400 in 2023, around 11% of the cohort.",
    "sentences": [
     {
      "sid": "s00140",
@@ -284,7 +277,7 @@
   },
   {
    "label": "Refining DSA and through-train pilot",
-   "summary": "DSA should be refined through outreach, school-based nominations and clearer criteria, and MOE should consider a safeguarded voluntary 10-year through-train pilot.",
+   "summary": "DSA should be refined to broaden opportunity through outreach, school-based nominations and clearer criteria, and MOE should consider a safeguarded voluntary 10-year through-train pilot.",
    "sentences": [
     {
      "sid": "s00152",
@@ -303,8 +296,8 @@
    ]
   },
   {
-   "label": "WP optional PSLE proposal",
-   "summary": "The WP proposed making PSLE optional, with academically inclined students competing for specialised schools and others defaulting to a through-train pathway.",
+   "label": "WP proposal on PSLE and pathways",
+   "summary": "The WP proposed making PSLE optional, with academically inclined students competing for specialised secondary schools and others defaulting to a through-train pathway.",
    "sentences": [
     {
      "sid": "s00180",
@@ -330,8 +323,8 @@
    ]
   },
   {
-   "label": "Affiliation, sorting and school start times",
-   "summary": "It suggests removing secondary school affiliation advantages, centring each child's potential, and setting a national 8.30 am school start standard.",
+   "label": "Affiliation, sorting, school start times",
+   "summary": "One step is removing secondary school affiliation advantages, centring the child in school matching, and MOE setting a national 8.30 am start time with an integrated primary school day.",
    "sentences": [
     {
      "sid": "s00195",
@@ -371,16 +364,9 @@
    ]
   },
   {
-   "label": "Primary school start and end times",
-   "summary": "It proposes primary school starting at 8.30 am and ending at 3.30 pm so students on early bus routes do not start exhausted.",
+   "label": "8.30 am start and integrated day",
+   "summary": "Shifting to 8.30 am ensures students do not start exhausted, and an integrated primary school day is proposed from 8.30 am to 3.30 pm.",
    "sentences": [
-    {
-     "sid": "s00215",
-     "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
-     "attributed": true,
-     "text": "Currently, many primary school students on early bus routes are picked up from 6.00 am or even earlier.",
-     "added_for_context": false
-    },
     {
      "sid": "s00216",
      "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
@@ -398,7 +384,20 @@
    ]
   },
   {
-   "label": "Malay chamber business programme",
+   "label": "Entrepreneurship in CCAs",
+   "summary": "Integrating entrepreneurship into CCAs lets students learn about business establishment and experience being an entrepreneur.",
+   "sentences": [
+    {
+     "sid": "s00224",
+     "speaker": "Mr Azhar Othman (Nominated Member)",
+     "attributed": true,
+     "text": "By integrating entrepreneurship into the CCAs, students can learn about business establishment and experience what it means to be an entrepreneur.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Malay Chamber student programme",
    "summary": "The Singapore Malay Chambers of Commerce and Industry started a programme where students visit the chamber to learn how businesses are established and operated.",
    "sentences": [
     {
@@ -438,7 +437,7 @@
   },
   {
    "label": "Classroom air-conditioning capital cost",
-   "summary": "Capital cost is less than $100 million for all classrooms, under 1% of the MOE's budget paid once.",
+   "summary": "Capital cost is less than $100 million for all classrooms, under 1% of MOE's budget, paid once.",
    "sentences": [
     {
      "sid": "s00250",
@@ -450,8 +449,8 @@
    ]
   },
   {
-   "label": "MOE classroom temperature standards questions",
-   "summary": "The passage asks whether MOE will set indoor temperature standards for classrooms and commit to a timeline for phased mixed mode air-conditioning, starting with primary schools.",
+   "label": "Questions on classroom temperature standards",
+   "summary": "The passage asks whether MOE will set indoor temperature standards and commit to a timeline for phased mixed mode air-conditioning, starting with primary schools.",
    "sentences": [
     {
      "sid": "s00256",
@@ -470,8 +469,28 @@
    ]
   },
   {
-   "label": "Increase primary school PE time",
-   "summary": "The passage proposes raising minimum primary school PE curriculum time to five hours weekly, supplementing PE teachers with qualified coaches from national registries.",
+   "label": "Primary school PE time",
+   "summary": "Primary schools provide two to 2.5 hours of PE weekly, which the passage says is insufficient for children needing 60 minutes of daily activity.",
+   "sentences": [
+    {
+     "sid": "s00279",
+     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
+     "attributed": true,
+     "text": "Primary schools provide two to 2.5 hours of PE weekly, but logistics can eat into this short duration.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00280",
+     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
+     "attributed": true,
+     "text": "This is insufficient to build a robust physical foundation in children, who need at least 60 minutes of moderate to rigorous physical activity daily.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Proposal to increase PE hours",
+   "summary": "The passage proposes raising minimum primary PE curriculum time to five hours weekly, with MOE supplementing PE teachers with qualified coaches from two registries.",
    "sentences": [
     {
      "sid": "s00284",
@@ -497,8 +516,8 @@
    ]
   },
   {
-   "label": "School space and play areas",
-   "summary": "Canteens could get nonslip flooring and movable furniture for play areas, and school surfaces could get plastic sports tiling to expand PE space.",
+   "label": "Overcoming school space constraints",
+   "summary": "The passage proposes fitting canteens with nonslip flooring and movable furniture, and covering school surfaces with plastic sports tiling, to expand PE space.",
    "sentences": [
     {
      "sid": "s00289",
@@ -517,34 +536,21 @@
    ]
   },
   {
-   "label": "Annual graduation rates by ethnicity",
-   "summary": "Annual university graduation rates by ethnicity would provide continuous monitoring rather than sporadic snapshots.",
+   "label": "AI as pedagogical tool",
+   "summary": "The passage states AI must be used as a pedagogical tool, not merely as an efficiency tool.",
    "sentences": [
     {
-     "sid": "s00305",
-     "speaker": "Mr Abdul Muhaimin Abdul Malik (Sengkang)",
-     "attributed": true,
-     "text": "First, annual university graduation rates by ethnicity would provide continuous monitoring rather than sporadic snapshots.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "AI feedback and instruction",
-   "summary": "AI can provide real-time feedback, identify misconceptions early and support differentiated instruction at scale.",
-   "sentences": [
-    {
-     "sid": "s00318",
+     "sid": "s00316",
      "speaker": "Assoc Prof Kenneth Goh (Nominated Member)",
      "attributed": true,
-     "text": "AI can provide real-time feedback, identify misconceptions early and support differentiated instruction at scale.",
+     "text": "First, AI must be used as a pedagogical tool, not merely as an efficiency tool.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "AI-enabled formative assessments",
-   "summary": "AI-enabled formative assessments give real-time feedback, detect misconceptions early and adapt learning, reducing reliance on a single high-stakes checkpoint.",
+   "summary": "The passage states AI-enabled formative assessments give real-time feedback, detect misconceptions early and adapt learning, reducing reliance on a single high-stakes checkpoint.",
    "sentences": [
     {
      "sid": "s00323",
@@ -557,7 +563,7 @@
   },
   {
    "label": "Piloting AI formative assessments",
-   "summary": "It asks whether MOE will pilot AI-enabled formative assessments at scale and whether such pilots could recalibrate high-stakes examinations' timing and weight.",
+   "summary": "The passage asks whether MOE will pilot AI-enabled formative assessments at scale and whether such pilots could recalibrate high-stakes examinations' timing and weight.",
    "sentences": [
     {
      "sid": "s00328",
@@ -570,7 +576,7 @@
   },
   {
    "label": "Expanding high-demand school capacity",
-   "summary": "It asks whether MOE could expand high-demand schools' footprint and capacity through additional campuses or increased intake in more locations.",
+   "summary": "The speaker asks whether MOE will consider expanding high-demand schools through additional campuses or larger intakes in more locations.",
    "sentences": [
     {
      "sid": "s00340",
@@ -589,8 +595,8 @@
    ]
   },
   {
-   "label": "DSA pathway longitudinal data gap",
-   "summary": "Without longitudinal data on students' progress through the DSA pathway, assessing its intended and unintended outcomes is difficult.",
+   "label": "Missing DSA longitudinal data",
+   "summary": "Without longitudinal data on students' progress, engagement, transition and early exit, assessing the DSA pathway's outcomes is difficult.",
    "sentences": [
     {
      "sid": "s00348",
@@ -636,7 +642,7 @@
   },
   {
    "label": "AI literacy as national competency",
-   "summary": "As digital literacy became a baseline skill, AI literacy must now become a shared national competency.",
+   "summary": "Just as digital literacy became a baseline skill, AI literacy must now become a shared national competency.",
    "sentences": [
     {
      "sid": "s00377",
@@ -648,7 +654,7 @@
    ]
   },
   {
-   "label": "IHL curriculum for AI job market",
+   "label": "IHL curriculum for AI jobs",
    "summary": "The question asks how the Ministry will ensure IHLs refresh curriculum and pedagogy so students are ready for an AI-disrupted job market.",
    "sentences": [
     {
@@ -661,8 +667,8 @@
    ]
   },
   {
-   "label": "Surge in AI agent job postings",
-   "summary": "The Randstad Workmonitor 2026 Report states global job postings requiring AI agent skills surged over 1500% in 2025 alone.",
+   "label": "AI agent skills job postings",
+   "summary": "The Randstad Workmonitor 2026 Report states global job postings requiring AI agent skills rose over 1500% in 2025.",
    "sentences": [
     {
      "sid": "s00391",
@@ -674,8 +680,8 @@
    ]
   },
   {
-   "label": "Micro-credential recognition and targets",
-   "summary": "Speaker asks the Ministry to set a timeline for cross-IHL micro-credential recognition and annual targets for fast-moving sectors.",
+   "label": "Micro-credentials stacked into qualifications",
+   "summary": "Chan envisioned in July 2024 micro-credentials from IHLs stacking into formal qualifications; the speaker asks for timelines, targets and annual reporting.",
    "sentences": [
     {
      "sid": "s00394",
@@ -709,7 +715,7 @@
   },
   {
    "label": "Overseas stackable credentials recognition",
-   "summary": "Speaker cites MIT and Georgia Tech programmes and asks the Minister to extend SkillsFuture Credit and passport recognition to such overseas credentials.",
+   "summary": "The speaker cites MIT MicroMasters and Georgia Tech programmes and asks the Minister to extend SkillsFuture Credit and passport recognition to such overseas credentials.",
    "sentences": [
     {
      "sid": "s00401",
@@ -728,8 +734,8 @@
    ]
   },
   {
-   "label": "MIT study on AI and cognition",
-   "summary": "An MIT study found heavy reliance on AI for essay writing may cause long-term cognitive harm, weakened neural connectivity and poorer memory recall.",
+   "label": "MIT study on AI essay writing",
+   "summary": "An MIT study found heavy reliance on AI for essay writing may cause long-term cognitive harm, weakened neural connectivity, poorer memory and reduced ownership.",
    "sentences": [
     {
      "sid": "s00412",
@@ -749,7 +755,7 @@
   },
   {
    "label": "Assessments without AI assistance",
-   "summary": "Instructors may use supervised assessments with restricted Internet access and more viva marks for take-home assignments to assess thinking.",
+   "summary": "Instructors may use supervised assessments with restricted Internet access, and for take-home assignments weight marks toward vivas or oral examinations.",
    "sentences": [
     {
      "sid": "s00426",
@@ -769,7 +775,7 @@
   },
   {
    "label": "Temasek Polytechnic skills transcript",
-   "summary": "Temasek Polytechnic is pioneering a skills transcript for students graduating this year in Singapore.",
+   "summary": "Temasek Polytechnic in Singapore is pioneering a skills transcript for students graduating this year.",
    "sentences": [
     {
      "sid": "s00436",
@@ -782,7 +788,7 @@
   },
   {
    "label": "SkillsFuture and Workforce Singapore merger",
-   "summary": "The merger of SkillsFuture Singapore and Workforce Singapore is therefore significant.",
+   "summary": "The merger of SkillsFuture Singapore and Workforce Singapore is significant.",
    "sentences": [
     {
      "sid": "s00441",
@@ -794,8 +800,8 @@
    ]
   },
   {
-   "label": "Longer-term employment outcomes focus",
-   "summary": "Outcomes should focus on sustained progression, including longer-term wage growth, employment stability and quality of skills-job matching.",
+   "label": "Outcomes focus on sustained progression",
+   "summary": "Outcomes should focus on longer-term wage growth, employment stability and quality of skills-job matching beyond enrolment and initial placement.",
    "sentences": [
     {
      "sid": "s00445",
@@ -814,8 +820,8 @@
    ]
   },
   {
-   "label": "New agency dual reporting",
-   "summary": "The new agency will report to both MOE and MOM, and the question asks how decision-making gridlocks can be prevented.",
+   "label": "New agency reporting to MOE and MOM",
+   "summary": "The new agency will report to both MOE and MOM, raising the question of preventing decision-making gridlocks.",
    "sentences": [
     {
      "sid": "s00452",
@@ -827,7 +833,7 @@
    ]
   },
   {
-   "label": "Complementing SkillsFuture offerings",
+   "label": "Complementing SkillsFuture with simpler offerings",
    "summary": "The speaker proposes complementing existing SkillsFuture offerings with something simpler, lighter and decision-friendly.",
    "sentences": [
     {
@@ -840,8 +846,8 @@
    ]
   },
   {
-   "label": "TeSA AI inclusion accommodations",
-   "summary": "Expanding TeSA to help non-tech workers gain AI capabilities, with training providers incorporating accommodations for persons with disabilities, and asks what requirements ensure this.",
+   "label": "TeSA expansion and AI training inclusion",
+   "summary": "Expanding TeSA to help non-tech workers gain practical AI capabilities signals AI is foundational, and training providers under national AI initiatives should incorporate reasonable accommodations.",
    "sentences": [
     {
      "sid": "s00475",
@@ -881,8 +887,8 @@
    ]
   },
   {
-   "label": "McKinsey automation displacement research",
-   "summary": "McKinsey research finds up to 30% of global work activities could be displaced, with least susceptible activities requiring social and emotional intelligence, negotiation, empathetic judgment and creative collaboration.",
+   "label": "McKinsey automation research findings",
+   "summary": "McKinsey Global Institute research finds up to 30% of work activities globally could be displaced by current technologies.",
    "sentences": [
     {
      "sid": "s00486",
@@ -895,7 +901,7 @@
   },
   {
    "label": "Youth mental health and test anxiety",
-   "summary": "IMH's study found one in three young Singaporeans aged 15 to 35 had a mental disorder, and PISA data shows 86% worry about poor grades.",
+   "summary": "The Institute of Mental Health study found one in three young Singaporeans aged 15 to 35 had a lifetime mental disorder, and PISA data shows 86% of students worry about poor grades.",
    "sentences": [
     {
      "sid": "s00496",
@@ -914,8 +920,8 @@
    ]
   },
   {
-   "label": "Protected hours for exploration",
-   "summary": "The passage proposes two protected hours per week for student-led, self-directed exploration.",
+   "label": "Protected hours for student exploration",
+   "summary": "Two protected hours per week are for student-led, self-directed exploration.",
    "sentences": [
     {
      "sid": "s00506",
@@ -927,8 +933,8 @@
    ]
   },
   {
-   "label": "Discovery Endowment Credits for Singaporeans",
-   "summary": "The passage describes Discovery Endowment Credits giving Singaporeans aged 15 to 25 opportunities for non-academic self-directed exploration and related activities.",
+   "label": "Discovery Endowment Credits for young Singaporeans",
+   "summary": "Discovery Endowment Credits will give Singaporeans aged 15 to 25 opportunities for non-academic self-directed exploration, internships, niche skills, project materials or social enterprise grants.",
    "sentences": [
     {
      "sid": "s00522",
@@ -969,7 +975,7 @@
   },
   {
    "label": "Oversubscribed ITE and polytechnic courses",
-   "summary": "The passage asks about occupancy rates for ITEs, polytechnics and part-time courses, and plans to increase openings for working adults.",
+   "summary": "A Woodgrove MP says qualified residents are disappointed when preferred ITE and polytechnic courses are oversubscribed, and asks for occupancy or utilisation rates.",
    "sentences": [
     {
      "sid": "s00541",
@@ -984,19 +990,25 @@
      "attributed": true,
      "text": "Can the Ministry share the current occupancy or utilisation rates for our ITEs, polytechnics, as well as their part-time courses?",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Proposal for new ITE in North",
+   "summary": "A Marsiling-Yew Tee GRC MP says he previously raised in the House the proposal for a new ITE in the North.",
+   "sentences": [
     {
-     "sid": "s00543",
+     "sid": "s00545",
      "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
      "attributed": true,
-     "text": "What plans exist to increase openings for working adults balancing careers and family as well?",
+     "text": "As one of the Members of Parliament for Marsiling-Yew Tee Group Representation Constituency (GRC), I have previously raised in this House the proposal for a new ITE in the North.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Broadening education financing schemes",
-   "summary": "The passage urges a review and broadening of the CPF Education Loan Scheme and Tuition Fee Loan to cover more courses.",
+   "summary": "The speaker urges a review and broadening of the Central Provident Fund Education Loan Scheme and Tuition Fee Loan to cover vocational trades, the arts, AI and sustainability.",
    "sentences": [
     {
      "sid": "s00554",
@@ -1015,7 +1027,7 @@
    ]
   },
   {
-   "label": "Majority age group of participants",
+   "label": "Majority participant age group",
    "summary": "The passage asks which age group makes up the majority of participants.",
    "sentences": [
     {
@@ -1028,34 +1040,28 @@
    ]
   },
   {
-   "label": "Progress in skills and pathways",
-   "summary": "The passage states that Singapore has made strong progress in reshaping views of skills, applied learning and multiple pathways to success.",
+   "label": "ITE progression and workplace competencies",
+   "summary": "The passage asks about making ITE progression routes visible, weighting workplace competencies, and piloting a conditional university pathway.",
    "sentences": [
-    {
-     "sid": "s00565",
-     "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
-     "attributed": true,
-     "text": "Mr Chairman, Sir, Singapore has made strong progress in reshaping how we view skills, applied learning and multiple pathways to success.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Work-Study Diploma progression routes",
-   "summary": "An MP asks how MOE will make ITE progression routes to the Work-Study Diploma and beyond more visible to students and parents.",
-   "sentences": [
-    {
-     "sid": "s00571",
-     "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
-     "attributed": true,
-     "text": "Mr Chairman, Sir, the Work-Study Diploma is a strong model for the future of our learning.",
-     "added_for_context": false
-    },
     {
      "sid": "s00573",
      "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
      "attributed": true,
      "text": "First, can the Minister share how MOE will make ITE progression routes to the Work-Study Diploma and beyond more visible to students and parents, including pathway maps by sector and stackable credentials with clear milestones and entry criteria?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00574",
+     "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
+     "attributed": true,
+     "text": "Second, can the Minister update how MOE will give greater formal weight to workplace proven competencies with assessments that are rigorous and recognised across employers?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00575",
+     "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
+     "attributed": true,
+     "text": "Third, will the Minister consider piloting a structured conditional university pathway for top performing ITE and work study learners anchored on sustained workplace achievement and continued upgrading without implying that university is the only outcome?",
      "added_for_context": false
     }
    ]
@@ -1075,7 +1081,7 @@
   },
   {
    "label": "President's Award for Adult Educators",
-   "summary": "An MP asks whether the Ministry would consider a President's Award for Adult Educators, like the President's Award for Teachers.",
+   "summary": "The passage asks whether the Ministry would consider a President's Award for Adult Educators, like the President's Award for Teachers.",
    "sentences": [
     {
      "sid": "s00587",
@@ -1087,8 +1093,8 @@
    ]
   },
   {
-   "label": "Affiliated and non-affiliated cut-off points",
-   "summary": "An MP states that for one popular school in 2025, the non-affiliated cut-off point was 10 and the affiliated cut-off point was 20.",
+   "label": "School cut-off points comparison",
+   "summary": "The passage states that for one popular school in 2025, the non-affiliated cut-off point was 10 and the affiliated cut-off point was 20.",
    "sentences": [
     {
      "sid": "s00602",
@@ -1100,8 +1106,21 @@
    ]
   },
   {
-   "label": "Capping or removing affiliation cut-off points",
-   "summary": "An MP suggests capping the affiliation cut-off point difference at two to three points, reviewing AL band mark ranges, or removing affiliation cut-off points.",
+   "label": "AL marks ranges",
+   "summary": "The passage states that AL 6 spans 45 to 64 marks and AL 5 spans 65 to 74 marks.",
+   "sentences": [
+    {
+     "sid": "s00605",
+     "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
+     "attributed": true,
+     "text": "For example, AL 6 spans between 45 marks and 64 marks, and AL 5, 65 to 74 marks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Affiliation cut-off points and fairness",
+   "summary": "MOE could cap the difference between affiliated and non-affiliated cut-off points or remove affiliation cut-off points completely.",
    "sentences": [
     {
      "sid": "s00616",
@@ -1109,38 +1128,26 @@
      "attributed": true,
      "text": "Perhaps MOE can consider either capping the maximum difference between affiliated and non-affiliated cut-off points to two to three points, together with a review with the mark range within each of the AL bands to accurately reflect students' readiness, or maybe to remove affiliation cut-off points completely.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Protected spaces for non-alumni students",
-   "summary": "An MP asks whether MOE could consider more protected spaces for non-alumni students in oversubscribed schools.",
-   "sentences": [
+    },
     {
-     "sid": "s00620",
+     "sid": "s00617",
      "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
      "attributed": true,
-     "text": "To remain inclusive, I wonder could MOE consider more protected spaces for non-alumni students in oversubscribed schools so that primary school choice is not driven by structural advantage from networks or resources.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Better resourced school advantages",
-   "summary": "Better resourced schools, especially independent secondary schools, often have stronger alumni networks, industry relationships and capacity to organise career activities.",
-   "sentences": [
+     "text": "To be clear, the goal here is not to abolish school identity, but to ensure that identity does not come at a cost of public confidence in fairness or unintentionally weakening social mixing.",
+     "added_for_context": true
+    },
     {
-     "sid": "s00626",
+     "sid": "s00618",
      "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
      "attributed": true,
-     "text": "For instance, a better resourced school, especially our independent secondary schools, often have stronger alumni networks, more established industry relationships, greater capacity to organise their visits, talks or attachment.",
+     "text": "This links to the Primary 1 admission as well, especially under Phase 2A, which gives priority to parents who are alumni of the school.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Career exposure for disadvantaged students",
-   "summary": "For less resourced or disadvantaged students, career discovery opportunities matter more because without professional networks they cannot easily gain career insights or informal internships.",
+   "summary": "Students from less resourced backgrounds benefit more from career discovery opportunities because they lack professional networks.",
    "sentences": [
     {
      "sid": "s00631",
@@ -1152,8 +1159,8 @@
    ]
   },
   {
-   "label": "Expanding and standardising career exposure",
-   "summary": "It proposes expanding and standardising career exposure across schools through internships, externships, learning journeys, workplace visits, shadowing days and structured career days, aligned with priority sectors.",
+   "label": "Standardising career exposure across schools",
+   "summary": "Career exposure should be expanded and standardised across schools, especially non-IP and less resourced institutions, and structured around priority sectors.",
    "sentences": [
     {
      "sid": "s00634",
@@ -1163,10 +1170,10 @@
      "added_for_context": false
     },
     {
-     "sid": "s00635",
+     "sid": "s00636",
      "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
      "attributed": true,
-     "text": "This includes internship, externship, where feasible, but also shorter and more scalable formats, such as our learning journeys, workplace visits, shadowing days and structured career day with real job content.",
+     "text": "The aim is to ensure the experiences do not sit within some schools, but they are made available throughout our system, especially our non-IP schools and less resourced educational institution.",
      "added_for_context": false
     },
     {
@@ -1193,7 +1200,7 @@
   },
   {
    "label": "Support for student participation",
-   "summary": "It suggests simpler sign-up, transportation support and, if needed, a small allowance so participation does not depend on the student's financial or family situation.",
+   "summary": "Simpler sign-up, transportation support and a small allowance if needed should ensure participation does not depend on financial or family situation.",
    "sentences": [
     {
      "sid": "s00643",
@@ -1206,7 +1213,7 @@
   },
   {
    "label": "National School Mental Well-Being Charter",
-   "summary": "It proposes a National School Mental Well-Being Charter with a national baseline for resilience education, including minimum annual CCE allocation, defined competencies, central vetting and a validated annual instrument.",
+   "summary": "A National School Mental Well-Being Charter is proposed with a national baseline for resilience education and a validated annual measuring instrument.",
    "sentences": [
     {
      "sid": "s00653",
@@ -1240,7 +1247,7 @@
   },
   {
    "label": "Concert student well-being outcomes",
-   "summary": "Students reported a 13% improvement in well-being, a 17% rise in positive emotions and a 41% drop in negative emotions and stronger social connection from a single concert.",
+   "summary": "Students reported a 13% improvement in well-being, a 17% rise in positive emotions and a 41% drop in negative emotions from a single concert.",
    "sentences": [
     {
      "sid": "s00668",
@@ -1265,7 +1272,7 @@
    ]
   },
   {
-   "label": "SEN officer increase",
+   "label": "Increase in SEN officers",
    "summary": "SEN officers increased from about 450 in 2017 to about 750 by 2024.",
    "sentences": [
     {
@@ -1279,7 +1286,7 @@
   },
   {
    "label": "SPED capacity and manpower strategy",
-   "summary": "Capacity will rise from 8,300 in 2024 to 10,000 places by 2030, requiring a deliberate manpower strategy and a lifelong learning model for SPED schools.",
+   "summary": "Capacity rises from 8,300 in 2024 to 10,000 places by 2030, requiring a manpower strategy and a future SPED school model.",
    "sentences": [
     {
      "sid": "s00693",
@@ -1348,7 +1355,7 @@
   },
   {
    "label": "Adapting instruction and family involvement",
-   "summary": "The passage asks how classroom instruction is adapted for students needing supports not consistently available in mainstream schools and how SEN students and families shape supports.",
+   "summary": "The passage asks how classroom instruction is adapted for students needing supports and how SEN students and families shape supports.",
    "sentences": [
     {
      "sid": "s00715",
@@ -1367,8 +1374,8 @@
    ]
   },
   {
-   "label": "Executive-function screening proposal",
-   "summary": "The passage proposes incorporating structured executive-function indicators into the Primary 1 screening framework via a 30 to 45 minute cohort-wide baseline.",
+   "label": "Executive-function indicators in screening",
+   "summary": "The passage proposes adding structured executive-function indicators to the Primary 1 screening framework through a 30 to 45 minute baseline.",
    "sentences": [
     {
      "sid": "s00724",
@@ -1394,21 +1401,8 @@
    ]
   },
   {
-   "label": "Mother tongue interest waning",
-   "summary": "Some students struggle with English and mother tongue, and interest in mother tongue languages is waning.",
-   "sentences": [
-    {
-     "sid": "s00738",
-     "speaker": "Ms Lee Hui Ying",
-     "attributed": true,
-     "text": "Some students struggle with both English and their mother tongue and interest in mother tongue languages is waning.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Mother tongue seen as exam",
-   "summary": "Mother tongue is often seen as an exam to pass and a source of stress rather than a living language, and support for parents and digital platforms is asked about.",
+   "label": "Mother tongue learning support",
+   "summary": "The speaker asks whether MOE will support parents to immerse young children at home and use digital platforms for engaging learning.",
    "sentences": [
     {
      "sid": "s00743",
@@ -1427,8 +1421,8 @@
    ]
   },
   {
-   "label": "Community bilingual language initiatives",
-   "summary": "Three proposals are made: catalytic micro grants for community-led bilingual initiatives, regular community language spaces, and parent enablement toolkits and nudges.",
+   "label": "Community bilingual initiatives support",
+   "summary": "The passage proposes catalytic micro grants, regular community language spaces, and parent enablement toolkits to support mother tongue use.",
    "sentences": [
     {
      "sid": "s00752",
@@ -1454,8 +1448,28 @@
    ]
   },
   {
-   "label": "Full SBB and Mother Tongue",
-   "summary": "The first Full SBB cohort sits the SEC exam in 2027, admissions are streamlined into a single exercise in 2028, and students strong in Mother Tongue at PSLE can take Higher Mother Tongue from Secondary 1.",
+   "label": "Mother tongue beyond schools",
+   "summary": "The passage states mother tongue cannot be taught in schools alone and these feelings must be refreshed in hearts.",
+   "sentences": [
+    {
+     "sid": "s00759",
+     "speaker": "Dr Hamid Razak",
+     "attributed": true,
+     "text": "These beautiful feelings have to be refreshed in our hearts as we speak in our mother tongue.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00760",
+     "speaker": "Dr Hamid Razak",
+     "attributed": true,
+     "text": "Therefore, we cannot teach mother tongue in schools alone.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Full SBB and Mother Tongue changes",
+   "summary": "The passage states the first Full SBB cohort sits the SEC exam in 2027 and describes a single Post-Secondary Admissions Exercise in 2028 and Higher Mother Tongue eligibility.",
    "sentences": [
     {
      "sid": "s00787",
@@ -1489,7 +1503,7 @@
   },
   {
    "label": "Average form class sizes",
-   "summary": "The average form class size is 34 for primary schools and 33 for secondary schools today.",
+   "summary": "The passage states the average form class size is 34 for primary and 33 for secondary schools today.",
    "sentences": [
     {
      "sid": "s00799",
@@ -1502,7 +1516,7 @@
   },
   {
    "label": "Teacher recruitment numbers",
-   "summary": "Teacher recruitment rose from 700 the previous year to a target of over 1,000 new teachers a year, with over 1,300 recruited last year.",
+   "summary": "The passage states teacher recruitment rose from 700 to a target of over 1,000 a year, with over 1,300 recruited last year.",
    "sentences": [
     {
      "sid": "s00805",
@@ -1528,7 +1542,7 @@
    ]
   },
   {
-   "label": "Allied educators and admin staff",
+   "label": "Allied educators and admin support staff",
    "summary": "Allied educators in priority areas doubled from about 800 to 1,600 over 10 years, and administrative support staff rose from around six to nine per school.",
    "sentences": [
     {
@@ -1549,7 +1563,7 @@
   },
   {
    "label": "Broadening school-based programme access",
-   "summary": "Access to school-based programmes will broaden from around 7% of the cohort today to 10%.",
+   "summary": "Access to school-based programmes will be broadened from around 7% of the cohort today to 10%.",
    "sentences": [
     {
      "sid": "s00832",
@@ -1601,7 +1615,7 @@
    ]
   },
   {
-   "label": "Expanding schools with extra resources",
+   "label": "Expanding schools with additional resources",
    "summary": "From 2026, more resources will go to schools, expanding schools with additional manpower and funding from 100 to 157.",
    "sentences": [
     {
@@ -1667,7 +1681,7 @@
    ]
   },
   {
-   "label": "PSLE paper question balance",
+   "label": "PSLE paper question difficulty balance",
    "summary": "Every PSLE paper has a calibrated balance of questions for different abilities: 85% easy and moderate, 15% challenging.",
    "sentences": [
     {
@@ -1680,41 +1694,8 @@
    ]
   },
   {
-   "label": "Water pouring word problem",
-   "summary": "Ray poured one-fifth of X's water into Y to fill it, then Sarah poured all Y's water into X, overflowing 120 cm3.",
-   "sentences": [
-    {
-     "sid": "s00916",
-     "speaker": "Mr Desmond Lee",
-     "attributed": true,
-     "text": "Ray poured one-fifth of the water from X into Y to fill it completely, and then, Sarah poured all the water from Y in X, and 120 cm3 of water overflowed from X.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Comparing structured and unstructured questions",
-   "summary": "The next page shows the same question structured into two parts, (a) two marks and (b) three marks, versus the first question's five marks at once.",
-   "sentences": [
-    {
-     "sid": "s00923",
-     "speaker": "Mr Desmond Lee",
-     "attributed": true,
-     "text": "Turn over the sheet and compare this with the question on the next page.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00924",
-     "speaker": "Mr Desmond Lee",
-     "attributed": true,
-     "text": "This is essentially the same question, but structured, meaning that the question has two parts: (a), two marks; and then, (b), three marks, versus the first question, that dives straight in, five marks at one go.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Difference between two maths questions",
-   "summary": "The second question on page two was a maths question from PSLE in 2022, differing clearly from the first.",
+   "label": "PSLE questions and student self-worth",
+   "summary": "The second question shown was a 2022 PSLE maths question, and examinations like the PSLE should not define students' self-worth.",
    "sentences": [
     {
      "sid": "s00930",
@@ -1722,12 +1703,26 @@
      "attributed": true,
      "text": "The difference between the two questions, on page one and page two, is clear; and the second question, on page two that you are looking at, was a maths question from PSLE back in 2022.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00932",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "On this note, we agree with Ms Eileen Chong that examinations, such as the PSLE, should not define students' self-worth.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00933",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "We also agree with Ms Denise Phua and Assoc Prof Kenneth Goh that our schools should not just focus on academic results, and they indeed do not.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Education Conversations consultation series",
-   "summary": "A series of Education Conversations will be started to engage and consult educators, parents, researchers, students and the community.",
+   "label": "Starting Education Conversations consultations",
+   "summary": "Continuing Forward Singapore efforts, a series of Education Conversations will engage and consult educators, parents, researchers, students and the community.",
    "sentences": [
     {
      "sid": "s00952",
@@ -1753,8 +1748,8 @@
    ]
   },
   {
-   "label": "Primary 1 Registration Framework changes",
-   "summary": "Changes to the Primary 1 Registration Framework expanded access, with reserved Phase 2C places raised from 20 in 2014 to 40 in 2022.",
+   "label": "Primary 1 Registration access changes",
+   "summary": "Primary 1 Registration changes reserved 20 Phase 2C places in 2014, increased to 40 in 2022, for students with no prior school connections.",
    "sentences": [
     {
      "sid": "s00963",
@@ -1780,8 +1775,21 @@
    ]
   },
   {
+   "label": "Schools equipping students for AI",
+   "summary": "Schools and IHLs will equip students to harness AI through the four \"Learns\" to prepare the workforce for an AI-transformed future.",
+   "sentences": [
+    {
+     "sid": "s00989",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "To prepare our workforce for an AI-transformed future, our schools and IHLs will equip our students to harness AI through the four \"Learns\".",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
    "label": "SkillsFuture Level-Up Programme 2024",
-   "summary": "In 2024, the SkillsFuture Level-Up Programme was introduced to lower mid-career workers' opportunity costs of training.",
+   "summary": "In 2024, the SkillsFuture Level-Up Programme was introduced to further lower mid-career workers' opportunity costs of training.",
    "sentences": [
     {
      "sid": "s00998",
@@ -1793,8 +1801,8 @@
    ]
   },
   {
-   "label": "New SSG and WSG statutory board",
-   "summary": "At Budget 2026, a new Statutory Board jointly overseen by MOM and MOE will integrate SSG's training and WSG's employment facilitation.",
+   "label": "New Statutory Board for skills and jobs",
+   "summary": "At Budget 2026, the Prime Minister announced SSG and WSG would be reorganised into a new Statutory Board overseen by MOM and MOE.",
    "sentences": [
     {
      "sid": "s01002",
@@ -1814,7 +1822,7 @@
   },
   {
    "label": "Review of educator salaries",
-   "summary": "MOE is reviewing salaries of educators, including Allied Educators and MOE Kindergarten Educators, and will share more when ready.",
+   "summary": "MOE is reviewing the salaries of educators, including Allied Educators and MOE Kindergarten Educators, and will share more when ready.",
    "sentences": [
     {
      "sid": "s01013",
@@ -1827,7 +1835,7 @@
   },
   {
    "label": "Cohort benefit share increase",
-   "summary": "Around 10% of the cohort will benefit, up from 7% today.",
+   "summary": "With this, around 10% of the cohort will benefit, up from 7% today.",
    "sentences": [
     {
      "sid": "s01027",
@@ -1839,7 +1847,7 @@
    ]
   },
   {
-   "label": "Schools receiving additional resources",
+   "label": "More schools receiving additional resources",
    "summary": "Schools receiving these additional resources will increase from the current 100 to 157.",
    "sentences": [
     {
@@ -1853,7 +1861,7 @@
   },
   {
    "label": "Bilingualism and Mother Tongue funding",
-   "summary": "Funding for the Mother Tongue Language Learning and Promotion Committees will increase over the next five years to strengthen bilingualism through a wider range of activities.",
+   "summary": "Funding for Mother Tongue Language Learning and Promotion Committees will increase over five years to strengthen bilingualism through more activities.",
    "sentences": [
     {
      "sid": "s01043",
@@ -1882,19 +1890,12 @@
      "attributed": true,
      "text": "In the spirit of \"we first\", we will keep working together with Singaporeans to improve our education system and weave a stronger social fabric.",
      "added_for_context": false
-    },
-    {
-     "sid": "s01047",
-     "speaker": "Mr Desmond Lee",
-     "attributed": true,
-     "text": "This work is more critical and urgent this fast-changing and uncertain world.",
-     "added_for_context": false
     }
    ]
   },
   {
    "label": "Forward Singapore education enhancements",
-   "summary": "Under the Forward Singapore agenda, MOE will continue to enhance the education system and schools to help every child reach their full potential.",
+   "summary": "Under the Forward Singapore agenda, MOE will continue enhancing the education system and schools to be more student centric.",
    "sentences": [
     {
      "sid": "s01069",
@@ -1906,8 +1907,8 @@
    ]
   },
   {
-   "label": "Recent education programme improvements",
-   "summary": "Recent improvements include extending the Reading Remediation Programme to Primary 5 and Learning Support for Mathematics to Primary 3 and 4, refreshing the Mother Tongue Support Programme, and implementing Full SBB in 2024.",
+   "label": "Reading, Mathematics, Mother Tongue, Full SBB",
+   "summary": "Recent improvements extend Reading Remediation to Primary 5, Learning Support for Mathematics to Primary 3 and 4, refresh Mother Tongue Support, and implement Full SBB in 2024.",
    "sentences": [
     {
      "sid": "s01074",
@@ -1941,7 +1942,7 @@
   },
   {
    "label": "Post-secondary admissions criteria review",
-   "summary": "MOE reviewed admissions criteria for post-secondary pathways and will update the posting system from 2028 and implement a new Post-Secondary Admissions Exercise.",
+   "summary": "MOE reviewed post-secondary admissions criteria and will update its posting system from 2028 with a new Post-Secondary Admissions Exercise.",
    "sentences": [
     {
      "sid": "s01098",
@@ -1961,7 +1962,7 @@
   },
   {
    "label": "New Post-Secondary Admissions Exercise",
-   "summary": "The new PSE will transform the JAE, PFP and ITE JIE to provide a single admissions process for graduates applying to junior colleges, MI, Polytechnics and ITE.",
+   "summary": "The new PSE will transform the JAE, PFP and ITE JIE into a single admissions process for junior colleges, MI, Polytechnics and ITE.",
    "sentences": [
     {
      "sid": "s01103",
@@ -1973,8 +1974,8 @@
    ]
   },
   {
-   "label": "PSE choice order tie-breaker",
-   "summary": "Choice order becomes a posting tie-breaker for the PSE, with 2027 SEC cohort applying in 2028 and outcomes released by early February.",
+   "label": "Choice order posting tie-breaker",
+   "summary": "Choice order will be a posting tie-breaker after citizenship, before gross aggregate score and computerised balloting, for the 2027 SEC cohort.",
    "sentences": [
     {
      "sid": "s01107",
@@ -2000,7 +2001,7 @@
    ]
   },
   {
-   "label": "Youths' life goals survey",
+   "label": "Youths value contributing to society",
    "summary": "Over eight in 10 youths find contributing to society and helping the less fortunate important life goals.",
    "sentences": [
     {
@@ -2027,7 +2028,7 @@
   },
   {
    "label": "Canoeing added to list",
-   "summary": "Canoeing was added to the list last year.",
+   "summary": "Last year, Canoeing was added to the list.",
    "sentences": [
     {
      "sid": "s01165",
@@ -2052,8 +2053,8 @@
    ]
   },
   {
-   "label": "MOE studying rising temperatures",
-   "summary": "MOE has studied rising temperatures' impact on learning since 1989, when Mr Chandra Das asked about air-conditioning classrooms and implementation timelines.",
+   "label": "MOE studying rising temperatures since 1989",
+   "summary": "MOE has studied rising temperatures' impact on learning since 1989, when MP Chandra Das asked about air-conditioning classrooms and timelines.",
    "sentences": [
     {
      "sid": "s01177",
@@ -2065,8 +2066,8 @@
    ]
   },
   {
-   "label": "Classroom cooling and heat measures",
-   "summary": "Schools added fans, cool paint, breathable uniforms and mixed-mode cooling, and commissioned a 2020 study on optimal classroom thermal comfort.",
+   "label": "Measures against heat in schools",
+   "summary": "MOE added fans, cool paint and breathable uniforms, implemented mixed-mode cooling in halls, and commissioned a 2020 study on thermal comfort.",
    "sentences": [
     {
      "sid": "s01180",
@@ -2088,12 +2089,19 @@
      "attributed": true,
      "text": "That is why we commissioned the study in 2020, which Mr Tiong cited, precisely to determine how best to apply mixed-mode cooling to bring about optimal thermal comfort conditions including temperatures in classrooms, while balancing other considerations such as long-term heat resilience and acclimatisation, energy consumption and impact on the environment.",
      "added_for_context": false
+    },
+    {
+     "sid": "s01183",
+     "speaker": "The Senior Minister of State for Education (Mr David Neo)",
+     "attributed": true,
+     "text": "We are thus committed to ensuring that all students, regardless of which school they attend, have access to conducive learning environments.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Primary 4 museum visits",
-   "summary": "Since 2018, Primary 4 students may visit art museums through the Museum-based Learning Experience in the formal art curriculum.",
+   "label": "Primary 4 art museum visits",
+   "summary": "Since 2018, Primary 4 students can visit art museums through the Museum-based Learning Experience in the formal art curriculum.",
    "sentences": [
     {
      "sid": "s01192",
@@ -2105,21 +2113,8 @@
    ]
   },
   {
-   "label": "Performing Arts-based Learning experience",
-   "summary": "MOE's Performing Arts-based Learning experience, developed with the National Arts Council, builds upon students' holistic education.",
-   "sentences": [
-    {
-     "sid": "s01197",
-     "speaker": "The Senior Minister of State for Education (Mr David Neo)",
-     "attributed": true,
-     "text": "MOE’s Performing Arts-based Learning experience, developed in partnership with the National Arts Council, builds upon students’ holistic education.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Religious exposure through CCE, Social Studies",
-   "summary": "Schools offer balanced, age-appropriate exposure to all major religions in Singapore through CCE and Social Studies lessons.",
+   "label": "Religious exposure in schools",
+   "summary": "MOE says schools offer balanced, age-appropriate exposure to all major religions through CCE and Social Studies lessons to support mutual understanding.",
    "sentences": [
     {
      "sid": "s01205",
@@ -2138,8 +2133,8 @@
    ]
   },
   {
-   "label": "Training attendance and employer numbers",
-   "summary": "Over 600,000 individuals attended MOE and SSG-supported training in 2025, and participating employers rose from about 12,000 to over 23,000.",
+   "label": "Training attendance and employers",
+   "summary": "In 2025, over 600,000 individuals attended MOE and SSG-supported training, and employers sending employees nearly doubled from 2015.",
    "sentences": [
     {
      "sid": "s01218",
@@ -2159,7 +2154,7 @@
   },
   {
    "label": "SSG and WSG merger",
-   "summary": "SSG and WSG merge into a new Statutory Board jointly overseen by MOM and MOE, keeping SkillsFuture agile and responsive.",
+   "summary": "SSG and WSG merge into a new Statutory Board jointly overseen by MOM and MOE to keep SkillsFuture agile and responsive.",
    "sentences": [
     {
      "sid": "s01225",
@@ -2171,8 +2166,8 @@
    ]
   },
   {
-   "label": "SkillsFuture Mid-Career support schemes",
-   "summary": "The SFLP includes a $4,000 SkillsFuture Credit (Mid-Career) top-up for about 7,500 courses and a Mid-Career Training Allowance of up to $3,000 monthly for full-time training.",
+   "label": "SkillsFuture Credit and allowance",
+   "summary": "The SFLP includes a $4,000 SkillsFuture Credit (Mid-Career) top-up for about 7,500 courses and a training allowance of up to $3,000 monthly.",
    "sentences": [
     {
      "sid": "s01237",
@@ -2185,7 +2180,7 @@
   },
   {
    "label": "WSQ courses qualifying for SFLP",
-   "summary": "Around 200 WSQ courses across sectors such as Healthcare, Information and Communication, Engineering, Media and Early Childhood are expected to qualify for the SFLP from 4Q 2026.",
+   "summary": "Around 200 WSQ courses are expected to qualify for the SFLP from 4Q 2026 across sectors including Healthcare, Engineering and Media.",
    "sentences": [
     {
      "sid": "s01246",
@@ -2197,8 +2192,8 @@
    ]
   },
   {
-   "label": "Direct course enrolment on MySkillsFuture",
-   "summary": "Starting with selected training providers, individuals can enrol directly in courses on MySkillsFuture using pre-filled SingPass information instead of applying separately on the provider's website.",
+   "label": "MySkillsFuture direct course enrolment",
+   "summary": "Selected training providers let individuals enrol directly in courses on MySkillsFuture using pre-filled SingPass information, without a separate application.",
    "sentences": [
     {
      "sid": "s01260",
@@ -2210,8 +2205,28 @@
    ]
   },
   {
-   "label": "Stackable micro-credentials and ITE Progression Award",
-   "summary": "Micro-credentials can be stacked to full qualifications for self-paced learning, and the ITE Progression Award supports ITE graduates aged 30 and below to upskill to a diploma.",
+   "label": "SkillsFuture Career Transition Programme",
+   "summary": "Learners can take a course without committing to the full programme, and the SkillsFuture Career Transition Programme offers career advisory, job search help and project work.",
+   "sentences": [
+    {
+     "sid": "s01266",
+     "speaker": "The Senior Minister of State for Education (Dr Janil Puthucheary)",
+     "attributed": true,
+     "text": "This provides flexibility for learners to take the course without committing to the full programme upfront.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01267",
+     "speaker": "The Senior Minister of State for Education (Dr Janil Puthucheary)",
+     "attributed": true,
+     "text": "There is also the SkillsFuture Career Transition Programme where trainees benefit from career advisory and assistance in job searches and may undergo project work with companies, beyond classroom training.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Micro-credentials and ITE Progression Award",
+   "summary": "Micro-credentials can be stacked to full qualifications, and the ITE Progression Award supports ITE graduates aged 30 and below upskilling to a diploma.",
    "sentences": [
     {
      "sid": "s01278",
@@ -2230,8 +2245,8 @@
    ]
   },
   {
-   "label": "ITE Work-Study Diploma growth and outcomes",
-   "summary": "The ITE Work-Study Diploma grew from four courses and 100 trainees in 2018 to 45 courses and 1,600 trainees in 2025, with about nine in 10 graduates securing full-time employment.",
+   "label": "ITE Work-Study Diploma growth",
+   "summary": "The ITE Work-Study Diploma grew from four courses and 100 trainees in 2018 to 45 courses and 1,600 trainees in 2025, with about nine in 10 graduates employed full-time.",
    "sentences": [
     {
      "sid": "s01288",
@@ -2248,13 +2263,6 @@
      "added_for_context": false
     },
     {
-     "sid": "s01290",
-     "speaker": "The Senior Minister of State for Education (Dr Janil Puthucheary)",
-     "attributed": true,
-     "text": "More importantly, the programme has achieved good graduate outcomes.",
-     "added_for_context": false
-    },
-    {
      "sid": "s01291",
      "speaker": "The Senior Minister of State for Education (Dr Janil Puthucheary)",
      "attributed": true,
@@ -2264,7 +2272,7 @@
    ]
   },
   {
-   "label": "Enhanced employer incentives for Work-Study Diploma",
+   "label": "Enhanced ITE Work-Study Diploma incentives",
    "summary": "MOE and SSG will raise the employer incentive for the ITE Work-Study Diploma from $15,000 to $20,000 per trainee for new cohorts from April 2026.",
    "sentences": [
     {
@@ -2272,13 +2280,26 @@
      "speaker": "The Senior Minister of State for Education (Dr Janil Puthucheary)",
      "attributed": true,
      "text": "MOE and SSG will enhance the employer incentives for the ITE Work-Study Diploma for new cohorts from April 2026.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s01309",
      "speaker": "The Senior Minister of State for Education (Dr Janil Puthucheary)",
      "attributed": true,
      "text": "We will increase the quantum of the incentive provided to Work-Study Diploma employer partners from $15,000 to $20,000, for each trainee that employers hire and train.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Incentive disbursed at milestones",
+   "summary": "The new $20,000 incentive will be fully disbursed at several milestones throughout the course duration.",
+   "sentences": [
+    {
+     "sid": "s01313",
+     "speaker": "The Senior Minister of State for Education (Dr Janil Puthucheary)",
+     "attributed": true,
+     "text": "The new $20,000 incentive will be fully disbursed at several milestones throughout the course duration.",
      "added_for_context": false
     }
    ]
@@ -2318,7 +2339,7 @@
   },
   {
    "label": "CET ecosystem training providers",
-   "summary": "The CET ecosystem today includes more than 700 training providers, including IHLs and industry and union partners, offering market-responsive programmes.",
+   "summary": "The CET ecosystem today includes more than 700 training providers, including IHLs and industry and union partners offering market-responsive programmes.",
    "sentences": [
     {
      "sid": "s01331",
@@ -2330,7 +2351,7 @@
    ]
   },
   {
-   "label": "Trainer and adult educator requirements",
+   "label": "Trainer certification and TAEPP requirements",
    "summary": "SSG required at least 80% of trainers to hold the Advanced Certificate in Learning and Performance, and introduced the TAEPP with practice and development hours.",
    "sentences": [
     {
@@ -2358,7 +2379,7 @@
   },
   {
    "label": "SSG and WSG merger",
-   "summary": "The merger of SSG and WSG will connect skills development more closely with employment, respond more nimbly to new needs and better support Singaporeans' aspirations.",
+   "summary": "The merger of SSG and WSG will connect skills development more closely with employment and career opportunities and better support Singaporeans' aspirations.",
    "sentences": [
     {
      "sid": "s01368",
@@ -2370,8 +2391,8 @@
    ]
   },
   {
-   "label": "Foundational AI literacy in schools",
-   "summary": "Students will have foundational AI literacy by the time they enter IHLs, integrated into school programming so access does not depend solely on family background.",
+   "label": "Foundational AI literacy for students",
+   "summary": "By the time students enter IHLs, every one of them will have foundational AI literacy.",
    "sentences": [
     {
      "sid": "s01386",
@@ -2379,33 +2400,32 @@
      "attributed": true,
      "text": "By the time our students enter IHLs, every one of them will have foundational AI literacy.",
      "added_for_context": false
-    },
-    {
-     "sid": "s01387",
-     "speaker": "The Minister of State for Education (Ms Jasmin Lau)",
-     "attributed": true,
-     "text": "They will understand what AI is, how it works and what its risks and possibilities are.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s01388",
-     "speaker": "The Minister of State for Education (Ms Jasmin Lau)",
-     "attributed": true,
-     "text": "But we will introduce this thoughtfully and integrate AI literacy into our school programming.",
-     "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "AI literacy in schools",
+   "summary": "AI literacy is built in schools in a structured and calibrated manner, so access and guidance do not depend solely on family background.",
+   "sentences": [
     {
      "sid": "s01390",
      "speaker": "The Minister of State for Education (Ms Jasmin Lau)",
      "attributed": true,
      "text": "Our approach ensures that AI literacy is built within schools in a structured and calibrated manner, so that access and guidance do not depend solely on family background.",
      "added_for_context": false
+    },
+    {
+     "sid": "s01391",
+     "speaker": "The Minister of State for Education (Ms Jasmin Lau)",
+     "attributed": true,
+     "text": "No student should be disadvantaged in this new era because of circumstance.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Testing AI solutions with users",
-   "summary": "Users must survey and test solutions with real users before deciding which fits best, with assessment approaches kept fit-for-purpose as AI tools are widely available.",
+   "label": "Testing solutions with real users",
+   "summary": "They must survey and test with real users before choosing a solution, and assessment approaches will remain fit-for-purpose.",
    "sentences": [
     {
      "sid": "s01407",
@@ -2437,7 +2457,7 @@
    ]
   },
   {
-   "label": "Education for purpose and competencies",
+   "label": "CCE and 21st Century Competencies",
    "summary": "The education system must nurture purpose, resilience, ethical conviction and will to act, with strengthened CCE and a refreshed 21st Century Competencies framework.",
    "sentences": [
     {
@@ -2453,18 +2473,24 @@
      "attributed": true,
      "text": "We are strengthening CCE and we have recently refreshed our 21st Century Competencies framework to more strongly develop civic literacy, adaptive thinking and moral courage to stand up for what is right.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Ng Chee Meng on IHL curriculum",
+   "summary": "Mr Ng Chee Meng asked how IHLs can better design curriculum so graduates remain employable in an AI-transformed future.",
+   "sentences": [
     {
-     "sid": "s01422",
+     "sid": "s01430",
      "speaker": "The Minister of State for Education (Ms Jasmin Lau)",
      "attributed": true,
-     "text": "We will ensure every student masters strong fundamentals of literacy and numeracy while cultivating curiosity and a lifelong learning mindset so that no matter how the world changes, they can continue learning, unlearning and relearning throughout life.",
+     "text": "Mr Ng Chee Meng asked how our IHLs can better design curriculum to ensure our graduates remain employable in an AI-transformed future.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "IHL curriculum refresh with partners",
+   "label": "IHLs refresh curriculum with industry",
    "summary": "IHLs work with sector agencies and industry partners to continually refresh curriculum so learning keeps pace with technological change.",
    "sentences": [
     {
@@ -2477,7 +2503,7 @@
    ]
   },
   {
-   "label": "LifeSkills Framework for IHL students",
+   "label": "IHLs LifeSkills Framework update",
    "summary": "IHLs are strengthening innovation, critical thinking, communication and engagement skills through the updated LifeSkills Framework.",
    "sentences": [
     {
@@ -2490,8 +2516,8 @@
    ]
   },
   {
-   "label": "SME@AITE AI student projects",
-   "summary": "Through the SME@AITE centre, a partnership between the Association of Small and Medium Enterprises and ITE, students work with SMEs to develop AI solutions for sectors such as food and beverage and retail.",
+   "label": "SME@AITE centre AI projects",
+   "summary": "Through the SME@AITE centre, students work directly with SMEs to develop AI solutions for sectors such as food and beverage, and retail.",
    "sentences": [
     {
      "sid": "s01445",
@@ -2503,8 +2529,8 @@
    ]
   },
   {
-   "label": "AI training for educators",
-   "summary": "MOE and NIE are strengthening professional learning so educators can use AI tools meaningfully and thoughtfully.",
+   "label": "MOE NIE educator AI learning",
+   "summary": "MOE and NIE are strengthening professional learning opportunities so educators can use AI tools meaningfully and thoughtfully.",
    "sentences": [
     {
      "sid": "s01460",
@@ -2516,7 +2542,7 @@
    ]
   },
   {
-   "label": "New educator AI training",
+   "label": "New educator structured training",
    "summary": "All new educators undergo structured training within their first two years, with many courses incorporating AI-enabled teaching and assessment approaches.",
    "sentences": [
     {
@@ -2542,9 +2568,16 @@
    ]
   },
   {
-   "label": "AI readiness archetype tool",
-   "summary": "A short set of questions groups individuals into readiness archetypes and directs them to SSG-supported courses, available on the revamped mySkillsFuture portal by the second quarter of this year.",
+   "label": "SSG SIT self-diagnostic tool",
+   "summary": "SSG and SIT developed a self-diagnostic tool grouping individuals into archetypes and directing them to SSG-supported courses, available on mySkillsFuture by the second quarter.",
    "sentences": [
+    {
+     "sid": "s01495",
+     "speaker": "The Minister of State for Education (Ms Jasmin Lau)",
+     "attributed": true,
+     "text": "SSG has partnered the Singapore Institute of Technology to develop a simple self-diagnostic tool.",
+     "added_for_context": false
+    },
     {
      "sid": "s01496",
      "speaker": "The Minister of State for Education (Ms Jasmin Lau)",
@@ -2558,19 +2591,12 @@
      "attributed": true,
      "text": "This tool will be available on the revamped mySkillsFuture portal by the second quarter of this year.",
      "added_for_context": false
-    },
-    {
-     "sid": "s01499",
-     "speaker": "The Minister of State for Education (Ms Jasmin Lau)",
-     "attributed": true,
-     "text": "Today, there are around 1,600 AI-related courses on the mySkillsFuture portal.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "AI course subsidies and discounts",
-   "summary": "SSG course fee subsidies and SkillsFuture Credits make AI upskilling more accessible, and from the second half of 2026 all IHLs will offer selected AI-related courses at significant discounts for alumni for one year.",
+   "label": "AI upskilling course discounts",
+   "summary": "From the second half of 2026, all IHLs will offer selected AI-related courses at significant discounts for alumni for one year.",
    "sentences": [
     {
      "sid": "s01506",
@@ -2590,7 +2616,7 @@
   },
   {
    "label": "Updating what and how we teach",
-   "summary": "Teaching content and methods will be updated so Singaporeans stay competitive and navigate complexity with confidence, asking better questions if AI can generate answers.",
+   "summary": "We will update what we teach and how we teach so Singaporeans can navigate complexity with confidence.",
    "sentences": [
     {
      "sid": "s01515",
@@ -2616,8 +2642,8 @@
    ]
   },
   {
-   "label": "Human skills in AI age",
-   "summary": "Deepening what makes us human lets students, workers and the country flourish in the age of AI.",
+   "label": "Flourishing in the age of AI",
+   "summary": "By deepening what makes us human, students, workers and the country can flourish in the age of AI.",
    "sentences": [
     {
      "sid": "s01520",
@@ -2629,8 +2655,8 @@
    ]
   },
   {
-   "label": "Multilingual literacy rate rise",
-   "summary": "In 1980, 31% of the population had literacy in more than one language, rising to 72% by 2020.",
+   "label": "Rise in multilingual literacy",
+   "summary": "In 1980, 31% of the population had literacy in more than one language; by 2020, that figure had risen to 72%.",
    "sentences": [
     {
      "sid": "s01529",
@@ -2649,21 +2675,8 @@
    ]
   },
   {
-   "label": "Katapella 2025 Malay choral competition",
-   "summary": "Last year the Malay Language Learning and Promotion Committee and Mediacorp organised Katapella 2025, Singapore's first national-level Malay choral recitation competition.",
-   "sentences": [
-    {
-     "sid": "s01546",
-     "speaker": "The Senior Parliamentary Secretary to the Minister for Education (Dr Syed Harun Alhabsyi)",
-     "attributed": true,
-     "text": "Last year, in partnership with Mediacorp, the Malay Language Learning and Promotion Committee organised Katapella 2025, Singapore's first national-level Malay choral recitation competition.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Increased funding for MTLLPCs",
-   "summary": "MOE will increase MTLLPC funding from FY2026 to FY2030, giving $33 million, up from $30 million in the earlier tranche.",
+   "summary": "MOE will increase MTLLPC funding from FY2026 to FY2030, with $33 million in this tranche, up from $30 million earlier.",
    "sentences": [
     {
      "sid": "s01554",
@@ -2682,8 +2695,21 @@
    ]
   },
   {
-   "label": "Free Mother Tongue parent workshops",
-   "summary": "From June this year, MTLLPCs will work with Community Centres to offer free workshops led by Mother Tongue preschool teachers for parents.",
+   "label": "Early childhood critical for language",
+   "summary": "A Tamil saying is cited to state that the early childhood years are critical for language development.",
+   "sentences": [
+    {
+     "sid": "s01559",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Education (Dr Syed Harun Alhabsyi)",
+     "attributed": true,
+     "text": "As the Tamil saying goes, “ஐந்தில் வளையாதது ஐம்பதில் வளையுமா?”, or “If it doesn't bend at five, will it bend at 50?” The early childhood years are critical for language development.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Mother Tongue preschool workshops",
+   "summary": "From June, MTLLPCs and Community Centres will offer free workshops led by Mother Tongue preschool teachers to help parents use Mother Tongue daily with their child.",
    "sentences": [
     {
      "sid": "s01569",
@@ -2709,7 +2735,7 @@
   },
   {
    "label": "Expanding SPED school capacity",
-   "summary": "From the second half of 2026 through the early 2030s, work with SSAs will expand SPED school capacity in three ways.",
+   "summary": "Working with SSAs, SPED school capacity will expand from the second half of 2026 through the early 2030s in three ways.",
    "sentences": [
     {
      "sid": "s01584",
@@ -2756,7 +2782,7 @@
   },
   {
    "label": "SPED salaries enhanced in 2024",
-   "summary": "In 2024, salaries for SPED teachers and teacher aides were enhanced by working with the SSAs.",
+   "summary": "In 2024, SPED teacher and teacher aide salaries were enhanced with the SSAs to improve the attractiveness of a SPED career.",
    "sentences": [
     {
      "sid": "s01611",
@@ -2769,7 +2795,7 @@
   },
   {
    "label": "Initiative expansion to 60 schools",
-   "summary": "Over 30 schools are rolling out this initiative, with expansion planned to approximately 60 schools from 2026 to 2027.",
+   "summary": "Over 30 schools currently roll out this initiative, with expansion planned to approximately 60 schools from 2026 to 2027.",
    "sentences": [
     {
      "sid": "s01630",
@@ -2782,7 +2808,7 @@
   },
   {
    "label": "Parent Peer Support Programme pilot",
-   "summary": "With CaringSG, the Parent Peer Support Programme will be piloted in some SPED schools.",
+   "summary": "MOE will pilot the Parent Peer Support Programme in some SPED schools with CaringSG.",
    "sentences": [
     {
      "sid": "s01633",
@@ -2794,7 +2820,7 @@
    ]
   },
   {
-   "label": "Parents Gateway extended to SPED schools",
+   "label": "Parents Gateway for SPED schools",
    "summary": "Parents Gateway will be extended to all 26 SPED schools from the second half of 2026.",
    "sentences": [
     {
@@ -2814,8 +2840,8 @@
    ]
   },
   {
-   "label": "SPED graduates transition support review",
-   "summary": "MOE is reviewing education support for SPED graduates transitioning into employment or post-secondary education under an inter-agency taskforce.",
+   "label": "Review of SPED graduate support",
+   "summary": "MOE is reviewing education support for SPED graduates transitioning into employment or post-secondary education.",
    "sentences": [
     {
      "sid": "s01648",
@@ -2828,7 +2854,7 @@
   },
   {
    "label": "Mother Tongue Committees funding increase",
-   "summary": "MOE will increase funding for Mother Tongue Languages Learning and Promotion Committees from FY2026 to FY2030, from $30 million to $33 million.",
+   "summary": "MOE will increase Mother Tongue Languages Learning and Promotion Committees funding from FY2026 to FY2030, from $30 million to $33 million.",
    "sentences": [
     {
      "sid": "s01668",
@@ -2847,8 +2873,8 @@
    ]
   },
   {
-   "label": "Free Mother Tongue parent workshops",
-   "summary": "From June this year, the Committees will work with Community Centres to offer free workshops helping parents integrate Mother Tongue into daily communication with their children.",
+   "label": "Free Mother Tongue workshops for parents",
+   "summary": "From June this year, the Committees will work with Community Centres to offer free workshops helping parents integrate Mother Tongue into daily communication.",
    "sentences": [
     {
      "sid": "s01679",
@@ -2860,7 +2886,7 @@
    ]
   },
   {
-   "label": "Malay university students and awards",
+   "label": "Malay university students and MENDAKI awards",
    "summary": "Malay students in local autonomous university degree programmes rose from 600 in 2011 to over 1,000 in 2020, and 119 received the MENDAKI Excellence Award in 2025.",
    "sentences": [
     {
@@ -2880,8 +2906,8 @@
    ]
   },
   {
-   "label": "Technology for classroom management",
-   "summary": "MOE will study the use of technology to help augment classroom management, and learning and teaching in classrooms.",
+   "label": "Technology and class sizes",
+   "summary": "MOE will study technology to augment classroom management and teaching, and has moved to prioritise resources to students needing more support.",
    "sentences": [
     {
      "sid": "s01698",
@@ -2889,13 +2915,14 @@
      "attributed": true,
      "text": "For the first question, we certainly will study the use of technology to help augment classroom management, and learning and teaching in the classrooms.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Class sizes and resource prioritisation",
-   "summary": "Class sizes have been actively reduced compared to decades ago, with resources prioritised to students needing more support and scaffolding.",
-   "sentences": [
+    },
+    {
+     "sid": "s01699",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "Already in the Student Learning Space, which is used not just at home, but also in the classroom to accompany teaching and pedagogy, students already have recourse to online material, as well as the use of AI tools, for example, the learning feedback assistant.",
+     "added_for_context": false
+    },
     {
      "sid": "s01701",
      "speaker": "Mr Desmond Lee",
@@ -2906,21 +2933,8 @@
    ]
   },
   {
-   "label": "Centre-based advanced modules for primary school",
-   "summary": "Centre-based advanced modules relate to the new framework for primary school students with talents and strengths in certain domains.",
-   "sentences": [
-    {
-     "sid": "s01704",
-     "speaker": "Mr Desmond Lee",
-     "attributed": true,
-     "text": "Third, on the centre-based advanced modules, this is in relation to the new framework and approach for students with talents and strengths in certain domains, this is for primary school.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Opportunity Fund student beneficiaries",
-   "summary": "Students can tap on the Opportunity Fund, and a 2026 reply to Mr Gerald Giam stated about 50,000 students benefit annually.",
+   "label": "Opportunity Fund student numbers",
+   "summary": "Students can tap on the Opportunity Fund, which about 50,000 students benefit from annually.",
    "sentences": [
     {
      "sid": "s01711",
@@ -2939,28 +2953,48 @@
    ]
   },
   {
-   "label": "Bursary criteria and beneficiary numbers",
-   "summary": "With enhanced bursary criteria, about 133,000 students will benefit, compared with the base of 50,000 students.",
+   "label": "Equitable access across schools",
+   "summary": "A question is raised whether MOE will ensure a stronger baseline across all schools for equitable access to opportunities.",
    "sentences": [
+    {
+     "sid": "s01715",
+     "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
+     "attributed": true,
+     "text": "Some have a stronger alumni network that they can tap on or community resources.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01716",
+     "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
+     "attributed": true,
+     "text": "I wonder whether would MOE ensure a stronger baseline across all schools so that students from disadvantaged background, regardless of which school they are in, will have equitable access to opportunities.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Disadvantaged students and bursaries",
+   "summary": "Schools have data on disadvantaged students, and enhanced bursary criteria mean about 133,000 students will benefit.",
+   "sentences": [
+    {
+     "sid": "s01724",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "Our schools have data of the students who are more disadvantaged and who may need more support, whether they are from a lower SES family or because they face more complex challenges.",
+     "added_for_context": false
+    },
     {
      "sid": "s01726",
      "speaker": "Mr Desmond Lee",
      "attributed": true,
      "text": "In terms of the base, 50,000 students, I mentioned earlier that with our enhanced the bursary criteria, about 133,000 students will benefit.",
      "added_for_context": false
-    },
-    {
-     "sid": "s01727",
-     "speaker": "Mr Desmond Lee",
-     "attributed": true,
-     "text": "Whether that is the right base, well, it is debatable.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Site selection and transport accessibility",
-   "summary": "First-round sites were selected for geographical spread and public transport accessibility, with travel ideally under half an hour and resources so no child is deprived.",
+   "label": "Centre-based advanced module sites",
+   "summary": "Selected sites have geographical spread and public transport accessibility, and schools will have resources so no child is deprived of access.",
    "sentences": [
     {
      "sid": "s01730",
@@ -2987,7 +3021,7 @@
   },
   {
    "label": "Selection based on potential",
-   "summary": "Students from disadvantaged backgrounds are uplifted, and selection is changed to identify potential, especially sporting potential, rather than performance requiring preparation.",
+   "summary": "MOE has uplifted disadvantaged students to nurture interests and talents, and is changing selection to identify potential rather than performance.",
    "sentences": [
     {
      "sid": "s01780",
@@ -3006,8 +3040,8 @@
    ]
   },
   {
-   "label": "SPED salary enhancements",
-   "summary": "Since 2024 the enhanced journeys of excellence package strengthened SPED teaching, with salary guidelines reviewed and enhanced from 2024 to 2026.",
+   "label": "SPED teaching salary enhancements",
+   "summary": "Since 2024 the enhanced journeys of excellence package strengthened SPED teaching quality and professionalism, with salary guidelines reviewed and enhanced from 2024 to 2026.",
    "sentences": [
     {
      "sid": "s01786",
@@ -3026,42 +3060,36 @@
    ]
   },
   {
-   "label": "PSLE, DSA, internships arms races",
-   "summary": "The passage states there are PSLE, DSA and internships arms races, and previously hot housing for the GEP.",
+   "label": "Benchmarks for school support consistency",
+   "summary": "The Member asks whether MOE sets benchmarks for consistent implementation across schools and tracks time from first observation to additional Primary 1 support.",
    "sentences": [
     {
-     "sid": "s01793",
-     "speaker": "Mr Desmond Lee",
+     "sid": "s01813",
+     "speaker": "Dr Charlene Chen (Tampines)",
      "attributed": true,
-     "text": "Well, we have a PSLE arms race, DSA arms race, internships arms race – and earlier I mentioned, even previously for the GEP, there were some hot housing in order to push children through, not always to the benefit of the children.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "PSLE and through-train suggestions",
-   "summary": "On PSLE and through-train, no suggestion will be off the table in the Education Conversations.",
-   "sentences": [
-    {
-     "sid": "s01805",
-     "speaker": "Mr Desmond Lee",
-     "attributed": true,
-     "text": "On PSLE and through-train, as I said, in coming up with the Education Conversations, no suggestion will be off the table.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Mental health access and SEN training",
-   "summary": "Guidelines exist on mental health access and counsellors, and all teachers undergo preservice SEN training, with in-service training since 2020.",
-   "sentences": [
-    {
-     "sid": "s01819",
-     "speaker": "Dr Syed Harun Alhabsyi",
-     "attributed": true,
-     "text": "The first on benchmarks and fidelity, we do have certain guidelines with regard to how access to mental health needs, as well as the accessibility to counsellors, and the variety of support structures within the schools.",
+     "text": "Does MOE set benchmarks to ensure fidelity and consistency of implementation across schools?",
      "added_for_context": false
     },
+    {
+     "sid": "s01815",
+     "speaker": "Dr Charlene Chen (Tampines)",
+     "attributed": true,
+     "text": "Can the Ministry assure this House that students' access to structured resilience education, timely counsellor support, for example, does not vary meaningfully from school to school?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01817",
+     "speaker": "Dr Charlene Chen (Tampines)",
+     "attributed": true,
+     "text": "Could the Ministry share whether it tracks how long it takes on average from first observation to deployment of additional support in Primary 1?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Teachers' SEN training",
+   "summary": "All teachers undergo preservice SEN training and, since 2020, in-service training under the SEN professional development roadmap.",
+   "sentences": [
     {
      "sid": "s01821",
      "speaker": "Dr Syed Harun Alhabsyi",
@@ -3079,8 +3107,8 @@
    ]
   },
   {
-   "label": "Allied Educators and T&L sunsetted",
-   "summary": "Expanding Allied Educators and Teaching and Learning was sunsetted about nine years ago, with resources dedicated to allied education areas.",
+   "label": "Expanding Allied Educators sunsetted",
+   "summary": "Expanding Allied Educators, Teaching and Learning was sunsetted, announced about nine years ago.",
    "sentences": [
     {
      "sid": "s01841",
@@ -3088,18 +3116,11 @@
      "attributed": true,
      "text": "In (b), expanding Allied Educators, Teaching and Learning (T&L) has been sunsetted; we announced it quite a number of years ago, about nine years ago.",
      "added_for_context": false
-    },
-    {
-     "sid": "s01842",
-     "speaker": "Mr Desmond Lee",
-     "attributed": true,
-     "text": "We are dedicating our resources to allied education in areas which benefit the students and the teachers, such as SEN, counselling for children's wellness as well as student welfare.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "SSAs, ComLink, Primary 1 places",
+   "label": "SSA collaboration and Primary 1 places",
    "summary": "Schools work with SSAs through the ComLink Alliance Working Group and UPLIFT, and the Primary 1 admission framework is being reviewed.",
    "sentences": [
     {
@@ -3115,13 +3136,40 @@
      "attributed": true,
      "text": "On Primary 1 places, if we were to, as I said, we are reviewing the Primary 1 admission framework to achieve the broad goal I mentioned earlier.",
      "added_for_context": false
+    },
+    {
+     "sid": "s01862",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "Indeed, some have suggested expanding the places for certain schools where they are very popular and hope to then have more diversity.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Cubic centimetres and centimetres figures",
-   "summary": "For (a) the figure is 7,200 cubic centimetres; for (b) it is 32 centimetres.",
+   "label": "Filtering by training provider",
+   "summary": "Users can currently filter by training provider, which may proxy location, and the Member's suggestion to improve search is acknowledged.",
    "sentences": [
+    {
+     "sid": "s01876",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Currently, users can filter on the basis of training provider, which may be a proxy for location as well, but I take the Member's point that perhaps this is another way in which we can improve the search experience and I thank her for her suggestion.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Nee Soon South MTL engagement",
+   "summary": "Details of community engagement are still being developed, and Nee Soon South can discuss MTL programmes with MOE; measurements are 7,200 cubic centimetres and 32 centimetres.",
+   "sentences": [
+    {
+     "sid": "s01883",
+     "speaker": "Dr Syed Harun Alhabsyi",
+     "attributed": true,
+     "text": "With regard to the details as to where in the different communities we will be engaging, I think it is still being developed in terms of the details, but certainly if Nee Soon South is keen to be able to engage MOE to develop programmes in keeping with the development of the MTLs, we can discuss that in further detail.",
+     "added_for_context": false
+    },
     {
      "sid": "s01885",
      "speaker": "Mr Desmond Lee",
@@ -3132,8 +3180,8 @@
    ]
   },
   {
-   "label": "Primary AI exposure light touch",
-   "summary": "At primary level, focus stays on fundamentals and any AI exposure is very light touch, without expecting students to use AI tools for work.",
+   "label": "Primary level fundamentals focus",
+   "summary": "At the primary level, the focus will remain firmly on fundamentals such as literacy, numeracy, reasoning and character.",
    "sentences": [
     {
      "sid": "s01895",
@@ -3141,33 +3189,12 @@
      "attributed": true,
      "text": "Just to give a sense, at the primary level, the focus will remain firmly on fundamentals, like I mentioned, literacy, numeracy, reasoning and character.",
      "added_for_context": false
-    },
-    {
-     "sid": "s01896",
-     "speaker": "Ms Jasmin Lau",
-     "attributed": true,
-     "text": "So, any exposure to AI will be very light touch.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s01897",
-     "speaker": "Ms Jasmin Lau",
-     "attributed": true,
-     "text": "They may learn about what is AI and some of the risks involved.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s01898",
-     "speaker": "Ms Jasmin Lau",
-     "attributed": true,
-     "text": "But we do not expect them to use AI tools for their work.",
-     "added_for_context": false
     }
    ]
   },
   {
    "label": "School-based and centre-based programmes",
-   "summary": "Schools cater to up to 10% of their cohort with trained teachers, while centre-based advanced modules pool teachers from different schools, including former GEP teachers.",
+   "summary": "School-based programmes cater to up to 10% of each school cohort, and centre-based advanced modules pool teachers from different schools, including former GEP teachers, deployed from MOE HQ.",
    "sentences": [
     {
      "sid": "s01903",
@@ -3201,7 +3228,7 @@
   },
   {
    "label": "Higher MTLs in secondary school",
-   "summary": "Higher Mother Tongue Languages can be taken in secondary school regardless of PSLE AL score.",
+   "summary": "Higher MTLs are available in secondary school, and students can take them regardless of their PSLE AL score.",
    "sentences": [
     {
      "sid": "s01912",
@@ -3234,12 +3261,12 @@
    "budget-2902"
   ],
   "sentences_total": 1920,
-  "sentences_selected": 313,
-  "sentences_in_sections": 313,
+  "sentences_selected": 316,
+  "sentences_in_sections": 316,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 44,
-  "sections_total": 171,
-  "selection_share": 0.163,
+  "sentences_added_for_context": 47,
+  "sections_total": 172,
+  "selection_share": 0.1646,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -3248,24 +3275,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 171,
+   "sections_total": 172,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 313,
-   "sentences_selected": 313,
-   "turns_cited": 52,
+   "sentences_published": 316,
+   "sentences_selected": 316,
+   "turns_cited": 53,
    "turns_total": 78,
-   "coverage": 0.6667,
+   "coverage": 0.6795,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:45:51"
+   "checked_at": "2026-09-19T22:20:55"
   },
   "usage": {
    "calls": 85,
-   "prompt_tokens": 84535,
-   "completion_tokens": 10262,
+   "prompt_tokens": 84772,
+   "completion_tokens": 10166,
    "estimated": false,
-   "cost_usd": 0.014708
+   "cost_usd": 0.014715
   }
  }
 }

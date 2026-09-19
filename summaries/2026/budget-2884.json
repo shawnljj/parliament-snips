@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "National Service Bill 1967",
-   "summary": "In 1967 he moved the National Service Bill asking why defend Singapore if it was said to be indefensible.",
+   "summary": "In 1967 he moved the National Service Bill asking why defend Singapore if the island was said to be indefensible.",
    "sentences": [
     {
      "sid": "s00008",
@@ -56,8 +56,8 @@
    ]
   },
   {
-   "label": "Singapore defence partnerships and counterterrorism",
-   "summary": "Singapore anchors security in a strong defence force and diversified partnerships, including US, Australia, FPDA, ADMM-Plus and ASEAN Our Eyes.",
+   "label": "Singapore defence partnerships strategy",
+   "summary": "Singapore anchors security in a strong defence force and defence partnerships, including the US, Australia and the Five Power Defence Arrangements.",
    "sentences": [
     {
      "sid": "s00059",
@@ -79,14 +79,13 @@
      "attributed": true,
      "text": "The Five Power Defence Arrangements continues to provide a practical and flexible platform for interoperability through regular exercises.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00062",
-     "speaker": "Mr Vikram Nair (Sembawang)",
-     "attributed": true,
-     "text": "Within our region, the ASEAN Defence Ministers Meeting (ADMM) and ADMM-Plus bring together the Association of Southeast Asian Nations (ASEAN) and key external partners, including China, India, Japan and others, to strengthen dialogue and cooperation in defence and security.",
-     "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Counterterrorism information-sharing ASEAN",
+   "summary": "Singapore has strengthened counterterrorism information-sharing with regional partners, including through the ASEAN Our Eyes Initiative.",
+   "sentences": [
     {
      "sid": "s00064",
      "speaker": "Mr Vikram Nair (Sembawang)",
@@ -97,8 +96,28 @@
    ]
   },
   {
-   "label": "State-based armed conflicts 2024",
-   "summary": "In 2024 there were 61 state-based armed conflicts worldwide, the highest number since the Second World War.",
+   "label": "Hosting Trump-Kim summit 2018",
+   "summary": "Singapore hosted the historic Trump-Kim summit in 2018, promoting dialogue in place of conflict.",
+   "sentences": [
+    {
+     "sid": "s00075",
+     "speaker": "Mr Shawn Huang Wei Zhong (West Coast-Jurong West)",
+     "attributed": true,
+     "text": "Our strategic location and world-class infrastructure have made us an ideal host for sensitive international discussions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00076",
+     "speaker": "Mr Shawn Huang Wei Zhong (West Coast-Jurong West)",
+     "attributed": true,
+     "text": "We successfully hosted the historic Trump-Kim summit in 2018, promoting dialogue in place of conflict.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Global armed conflict numbers",
+   "summary": "In 2024, there were 61 state-based armed conflicts worldwide, the highest number since the Second World War.",
    "sentences": [
     {
      "sid": "s00090",
@@ -110,16 +129,9 @@
    ]
   },
   {
-   "label": "Drones in Russia-Ukraine war",
-   "summary": "In the Russia-Ukraine war both sides deploy drones, and Ukraine used low-cost naval drones to break Russia's Black Sea blockade.",
+   "label": "Ukraine naval drones",
+   "summary": "Ukraine used low-cost naval drones to break Russia's Black Sea blockade and force the Russian fleet to withdraw from Crimea without conventional warships.",
    "sentences": [
-    {
-     "sid": "s00102",
-     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
-     "attributed": true,
-     "text": "In the Russia-Ukraine war, both sides deploy drones.",
-     "added_for_context": false
-    },
     {
      "sid": "s00103",
      "speaker": "Ms Joan Pereira (Tanjong Pagar)",
@@ -130,9 +142,16 @@
    ]
   },
   {
-   "label": "SAF counter-UAS groups established",
-   "summary": "The SAF set up a Counter-UAS Development and Operations group and the Air Force a UAS Warfare and Tactics Centre.",
+   "label": "DSTA robotics and SAF UAS",
+   "summary": "DSTA has pivoted toward robotics, drones, autonomy and AI, and the SAF and Air Force set up UAS groups and a centre.",
    "sentences": [
+    {
+     "sid": "s00111",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "Indeed, the Defence Science and Technology Agency (DSTA) has already pivoted decisively toward robotics, drones, autonomy and AI, recognising that the proliferation of drones and autonomous systems is reshaping the physical domain while cyberattacks and disinformation are transforming the digital space.",
+     "added_for_context": false
+    },
     {
      "sid": "s00112",
      "speaker": "Ms Joan Pereira (Tanjong Pagar)",
@@ -143,8 +162,8 @@
    ]
   },
   {
-   "label": "Update on emerging battlefield technologies",
-   "summary": "The Member asks the Minister for an update on strategies against emerging and disruptive battlefield technologies and ensuring Singapore's security.",
+   "label": "Question on emerging battlefield technologies",
+   "summary": "The speaker asks the Minister for an update on strategies against emerging and disruptive battlefield technologies and on ensuring Singapore's security.",
    "sentences": [
     {
      "sid": "s00115",
@@ -156,8 +175,8 @@
    ]
   },
   {
-   "label": "Unmanned technology and falling birth rate",
-   "summary": "The Member notes a cheap drone can destroy costly infrastructure and asks how the SAF uses unmanned technology in training given the falling birth rate.",
+   "label": "Drone costs and SAF unmanned training",
+   "summary": "A $20,000 drone can destroy millions in infrastructure, and the speaker asks how SAF uses unmanned technology in training given Singapore's falling birth rate.",
    "sentences": [
     {
      "sid": "s00121",
@@ -176,8 +195,8 @@
    ]
   },
   {
-   "label": "Projected manpower savings from unmanned systems",
-   "summary": "The Member asks MINDEF's projected percentage manpower savings from unmanned systems to mitigate the declining population.",
+   "label": "MINDEF unmanned systems manpower savings",
+   "summary": "The question asks for MINDEF's projected percentage manpower savings from unmanned systems to mitigate the declining population.",
    "sentences": [
     {
      "sid": "s00126",
@@ -190,7 +209,7 @@
   },
   {
    "label": "Digital and Intelligence Service update",
-   "summary": "The Member asks for an update on how the DIS builds cyber capabilities, talent pipelines, and industry and academic partnerships.",
+   "summary": "The passage asks the Minister for an update on how the DIS builds cyber capabilities, talent pipelines and industry and academic partnerships.",
    "sentences": [
     {
      "sid": "s00145",
@@ -209,8 +228,8 @@
    ]
   },
   {
-   "label": "Defence spending and procurement cost effectiveness",
-   "summary": "The Member asks for defence spending projections and how MINDEF and the SAF ensure cost effectiveness in procurements and long-term programmes.",
+   "label": "Defence spending and procurement cost",
+   "summary": "The passage asks for this year's defence spending projection and how MINDEF and the SAF ensure cost effectiveness in procurements and long-term programmes.",
    "sentences": [
     {
      "sid": "s00157",
@@ -229,8 +248,21 @@
    ]
   },
   {
-   "label": "MINDEF supply chain and contracts",
-   "summary": "Asks how MINDEF diversifies global partners, whether contracts have clawback clauses and liquidated damages, and whether AGO gets full audit access.",
+   "label": "Japan undelivered military equipment audits",
+   "summary": "The passage states that audits in Japan reportedly found nearly US$7 billion of military equipment undelivered five years after contracts were signed.",
+   "sentences": [
+    {
+     "sid": "s00163",
+     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
+     "attributed": true,
+     "text": "In Japan, audits reportedly revealed that military equipment worth nearly US$7 billion remained undelivered five years after contracts were signed, forcing their military to operate with critical capability gaps.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Supply chain diversification and contract clauses",
+   "summary": "The passage asks how MINDEF diversifies global sourcing to mitigate single point failures and whether contracts have claw back clauses and liquidated damages.",
    "sentences": [
     {
      "sid": "s00170",
@@ -245,27 +277,20 @@
      "attributed": true,
      "text": "Does MINDEF have a robust claw back clauses and does it provide for liquidated damages for delays within these high-end contracts?",
      "added_for_context": false
-    },
-    {
-     "sid": "s00173",
-     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
-     "attributed": true,
-     "text": "Furthermore, MINDEF must ensure that multi-billion-dollar high-end contracts are transparent and accountable.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00174",
-     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
-     "attributed": true,
-     "text": "This can be done by ensuring the Auditor-General's Office (AGO) is given full access to audit procurement milestones, contract variations and delivery timelines.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "MINDEF talent programmes",
-   "summary": "MINDEF has programmes to grow talent from within: Sentinel Programme, Cyber Work-Learn Scheme, and enhanced expertise deployment scheme.",
+   "label": "Defence Cyber Command talent programmes",
+   "summary": "The passage states the Defence Cyber Command was inaugurated last March and lists MINDEF programmes to grow talent from within.",
    "sentences": [
+    {
+     "sid": "s00188",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "The Defence Cyber Command was inaugurated last March.",
+     "added_for_context": false
+    },
     {
      "sid": "s00189",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
@@ -276,8 +301,8 @@
    ]
   },
   {
-   "label": "UK cyber recruitment terms",
-   "summary": "Describes basic training cut to one month, waived standards, salary over $40,000 pounds, and 30 recruits entering roles in late 2025.",
+   "label": "Basic training and pay terms",
+   "summary": "The passage states basic training cut to one month, waived fitness and medical standards, no formal qualifications required, and salary figures.",
    "sentences": [
     {
      "sid": "s00200",
@@ -285,19 +310,12 @@
      "attributed": true,
      "text": "Basic training cut to one month, fitness and medical standards waived, no formal qualifications required, demonstrated skills sufficient, starting salary over $40,000 pounds, with up to $25,000 in additional skills pay.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00201",
-     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
-     "attributed": true,
-     "text": "The first cohort of 30 entered operational roles in late 2025, helping defend UK networks against 90,000 attacks over two years.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "NSF allowance raise cost",
-   "summary": "Raising second year NSF allowances to $1,800 LQS with CPF would cost $150 to $200 million yearly, under 1% of the defence budget.",
+   "label": "NSF allowance and defence budget",
+   "summary": "Raising second year NSF allowances to the $1,800 Local Qualifying Salary with employer CPF would cost about $150 to $200 million a year, under 1% of the defence budget.",
    "sentences": [
     {
      "sid": "s00214",
@@ -316,8 +334,8 @@
    ]
   },
   {
-   "label": "Singapore defence cooperation partnerships",
-   "summary": "Asks how Singapore will strengthen defence cooperation with multiple partners and what safeguards prevent over-reliance on any single partnership.",
+   "label": "Singapore defence cooperation partners",
+   "summary": "Singapore must stay flexible to work with multiple partners while preserving sovereignty, and the question asks how defence cooperation with the US, China and other partners will be strengthened.",
    "sentences": [
     {
      "sid": "s00228",
@@ -331,13 +349,6 @@
      "speaker": "Ms Hazlina Abdul Halim (East Coast)",
      "attributed": true,
      "text": "How will Singapore strengthen defence cooperation not only with the US and China, but also with other key strategic partners in our region and beyond, whether through joint exercises, military exchanges, technology collaboration, defence industry partnerships or crisis communication mechanisms?",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00231",
-     "speaker": "Ms Hazlina Abdul Halim (East Coast)",
-     "attributed": true,
-     "text": "What safeguards are in place to ensure that we do not become overly reliant to any single defence partnership?",
      "added_for_context": false
     }
    ]
@@ -356,8 +367,8 @@
    ]
   },
   {
-   "label": "Total Defence activities update",
-   "summary": "MINDEF is asked for an update on participation and outcomes from Total Defence activities like Exercise SG Ready this year.",
+   "label": "Total Defence participation update",
+   "summary": "MINDEF is asked for an update on participation and outcomes from Total Defence activities like Exercise SG Ready, and on plans to strengthen community engagement with defence.",
    "sentences": [
     {
      "sid": "s00249",
@@ -365,12 +376,19 @@
      "attributed": true,
      "text": "Could MINDEF please provide an update on participation and outcomes from Total Defence related activities, like Exercise SG Ready, this year?",
      "added_for_context": false
+    },
+    {
+     "sid": "s00250",
+     "speaker": "Ms Hazlina Abdul Halim (East Coast)",
+     "attributed": true,
+     "text": "How else is MINDEF planning to strengthen community engagement with defence?",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Security environment changes",
-   "summary": "The security environment has seen three major changes in recent years.",
+   "label": "Security environment major changes",
+   "summary": "In recent years, the security environment has seen three major changes.",
    "sentences": [
     {
      "sid": "s00258",
@@ -383,7 +401,7 @@
   },
   {
    "label": "Technology changing defence",
-   "summary": "Technology is rapidly changing the way defence is built.",
+   "summary": "Third, technology is rapidly changing the way defence is built.",
    "sentences": [
     {
      "sid": "s00265",
@@ -422,7 +440,7 @@
   },
   {
    "label": "Voluntary services as NS extension",
-   "summary": "It is asked whether such services can be seen not as purely voluntary but as an extension of National Service.",
+   "summary": "It asks whether such services could be seen as an extension of National Service rather than purely voluntary.",
    "sentences": [
     {
      "sid": "s00295",
@@ -434,35 +452,28 @@
    ]
   },
   {
-   "label": "MINDEF defence ecosystem questions",
-   "summary": "Questions ask how MINDEF envisions the wider population's role, cross-government mobilisation, and whole-of-nation resilience as conflict evolves.",
+   "label": "SAFVC roles and volunteers",
+   "summary": "Started in 2014, SAFVC lets new citizens, first-generation PRs, women and those without NS obligations serve in over 30 roles.",
    "sentences": [
     {
-     "sid": "s00313",
-     "speaker": "Miss Rachel Ong (Tanjong Pagar)",
+     "sid": "s00316",
+     "speaker": "Mr Sanjeev Kumar Tiwari (Nominated Member)",
      "attributed": true,
-     "text": "First, how does MINDEF envision the role of the wider population evolving within Singapore's defence ecosystem over the longer term, particularly as demographics change and fewer citizens may have direct experience of NS?",
+     "text": "Chairman, started in 2014, the SAFVC stands as a vital avenue for new citizens, first‑generation PRs, Singaporean women and those without NS obligations to step forward, serve alongside our NSFs, NSmen and Regulars.",
      "added_for_context": false
     },
     {
-     "sid": "s00314",
-     "speaker": "Miss Rachel Ong (Tanjong Pagar)",
+     "sid": "s00317",
+     "speaker": "Mr Sanjeev Kumar Tiwari (Nominated Member)",
      "attributed": true,
-     "text": "Second, beyond preparedness exercises and participation schemes, how is MINDEF working across the Government and society to ensure that, in a national crisis, Singapore can mobilise quickly with public trust, cohesion and shared resolve already in place?",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00315",
-     "speaker": "Miss Rachel Ong (Tanjong Pagar)",
-     "attributed": true,
-     "text": "Third, as the nature of conflict evolves beyond conventional warfare to include hybrid, informational and societal dimensions, how is MINDEF strengthening Singapore's overall whole-of-nation resilience framework so that our defence posture remains credible not only militarily, but also socially and psychologically?",
+     "text": "The SAFVC has grown steadily, offering more than 30 meaningful roles across the Army, Navy, Air Force and the DIS – from security, naval operations to engineering and legal work.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "SAFVC 10th anniversary volunteers",
-   "summary": "Celebrating its 10th anniversary, a decade that saw over 1,500 volunteers step forward to serve.",
+   "summary": "The SAFVC celebrates its 10th anniversary, a decade in which over 1,500 volunteers stepped forward to serve.",
    "sentences": [
     {
      "sid": "s00322",
@@ -474,8 +485,8 @@
    ]
   },
   {
-   "label": "SAFVC first Exercise Wallaby participation",
-   "summary": "Last year the SAFVC first joined Exercise Wallaby, with Forward Support Group volunteers providing medical, logistics, maintenance and transportation support.",
+   "label": "SAFVC at Exercise Wallaby",
+   "summary": "Last year the SAFVC first joined Exercise Wallaby, where volunteers in the Forward Support Group provided medical, logistics, maintenance and transportation support.",
    "sentences": [
     {
      "sid": "s00326",
@@ -487,9 +498,16 @@
    ]
   },
   {
-   "label": "SAFRA since 1972 and clubs",
-   "summary": "Since 1972 SAFRA has been more than gyms and pools, with seven clubs standing as a tangible national thank you to those who serve.",
+   "label": "SAFVC volunteerism and SAFRA clubs",
+   "summary": "The passage asks how SAFVC will expand volunteer opportunities and notes SAFRA's seven clubs since 1972.",
    "sentences": [
+    {
+     "sid": "s00334",
+     "speaker": "Mr Sanjeev Kumar Tiwari (Nominated Member)",
+     "attributed": true,
+     "text": "Looking ahead, as Singapore's society becomes more diverse and as more individuals without formal NS obligations express the desire to serve, the question is, how will SAFVC expand opportunities for volunteerism and what new roles could emerge to meet evolving operational needs from cyber and data to medical, logistics and community engagement?",
+     "added_for_context": false
+    },
     {
      "sid": "s00336",
      "speaker": "Mr Patrick Tay Teck Guan (Pioneer)",
@@ -508,7 +526,7 @@
   },
   {
    "label": "SAFRA relevance and NS needs",
-   "summary": "To remain relevant in 2026 and beyond, SAFRA must bridge \"serving time\" and \"belonging,\" with a clarification on the NS community's changing needs.",
+   "summary": "The passage asks what initiatives or infrastructure improvements the NS community can look forward to as SAFRA stays relevant.",
    "sentences": [
     {
      "sid": "s00344",
@@ -516,25 +534,19 @@
      "attributed": true,
      "text": "To remain relevant in 2026 and beyond, SAFRA must continue to bridge the gap between \"serving time\" and \"belonging.\" My first clarification relates to the NS community's changing needs.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "SAFRA vision for national servicemen",
-   "summary": "SAFRA's vision is for every national serviceman to be committed to Total Defence.",
-   "sentences": [
+    },
     {
-     "sid": "s00350",
+     "sid": "s00346",
      "speaker": "Mr Patrick Tay Teck Guan (Pioneer)",
      "attributed": true,
-     "text": "SAFRA's vision is for every national serviceman to be committed to Total Defence.",
+     "text": "What upcoming initiatives or infrastructure improvements can the NS community look forward to?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "SAFRA network for defence engagement",
-   "summary": "Asks whether SAFRA's network and facilities can engage the wider Singapore public on defence matters.",
+   "label": "SAFRA engaging public on defence",
+   "summary": "The passage asks whether SAFRA's network and facilities can engage the wider Singapore public on defence matters.",
    "sentences": [
     {
      "sid": "s00357",
@@ -547,7 +559,7 @@
   },
   {
    "label": "Total Defence beyond equipment",
-   "summary": "States that Total Defence has never been just about equipment.",
+   "summary": "The passage states that Total Defence has never been just about equipment.",
    "sentences": [
     {
      "sid": "s00360",
@@ -559,8 +571,8 @@
    ]
   },
   {
-   "label": "SAFRA clubhouses and Total Defence programmes",
-   "summary": "Describes SAFRA's seven clubhouses and 475,000 members, Exercise SG Ready 2026 activities, and suggests MINDEF work with SAFRA on dialogues and workshops.",
+   "label": "SAFRA as defence engagement platform",
+   "summary": "The passage describes SAFRA's seven clubhouses, 475,000 members, Exercise SG Ready 2026 activities, and suggests MINDEF could work with SAFRA on dialogues and workshops.",
    "sentences": [
     {
      "sid": "s00395",
@@ -582,25 +594,19 @@
      "attributed": true,
      "text": "MINDEF could consider working with SAFRA to hold more regular community dialogue sessions on disinformation, resilience workshops and curated content on threats facing Singapore with a focus on engaging the wider community.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "MINDEF plans to leverage SAFRA",
-   "summary": "Asks the Minister whether MINDEF plans to better leverage SAFRA's infrastructure and network to raise Total Defence awareness.",
-   "sentences": [
+    },
     {
-     "sid": "s00401",
+     "sid": "s00400",
      "speaker": "Mr Alex Yeo (Potong Pasir)",
      "attributed": true,
-     "text": "In the premises, I would like to ask the Minister whether MINDEF have plans to better leverage SAFRA's existing infrastructure and network to build stronger ties and raise Total Defence awareness in the community.",
+     "text": "Its wide reach makes it a potentially formidable tool to strengthen our Total Defence strategy, as a strategic defence engagement platform that can raise awareness and deepen ties in the community.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Singapore's strategic realities",
-   "summary": "States that Singapore's strategic realities are its geography, manpower and constrained resources.",
+   "summary": "The passage states Singapore's strategic realities are geography, manpower and constrained resources.",
    "sentences": [
     {
      "sid": "s00411",
@@ -612,8 +618,8 @@
    ]
   },
   {
-   "label": "Small population and defence force",
-   "summary": "States that with its small population, Singapore cannot rely on a fully Regular or volunteer force large enough for defence needs.",
+   "label": "Small population defence limits",
+   "summary": "Singapore's small population means it cannot rely on a fully Regular or volunteer force large enough for its defence needs.",
    "sentences": [
     {
      "sid": "s00420",
@@ -625,29 +631,23 @@
    ]
   },
   {
-   "label": "Erosion of international laws and norms",
-   "summary": "The order prioritised collective problem-solving, rules of behaviour in the global commons and guardrails against military escalation, but countries can no longer be expected to work within international laws and norms by default.",
+   "label": "Might makes right world",
+   "summary": "Countries are re-evaluating relationships, accelerating a return to a \"might makes right\" world that pressures Singapore's autonomy and sovereignty.",
    "sentences": [
     {
-     "sid": "s00424",
+     "sid": "s00428",
      "speaker": "The Minister for Defence (Mr Chan Chun Sing)",
      "attributed": true,
-     "text": "This order prioritised collective problem-solving and rules of behaviour in the global commons, as well as serving as guardrails against military escalation.",
+     "text": "Indeed, countries everywhere are re-evaluating their relationships, to see who they can work with in the new environment.",
      "added_for_context": true
     },
     {
-     "sid": "s00425",
+     "sid": "s00429",
      "speaker": "The Minister for Defence (Mr Chan Chun Sing)",
      "attributed": true,
-     "text": "However, we can no longer expect countries to work within international laws and norms as a default.",
+     "text": "These developments accelerate a return to a \"might makes right\" world.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Pressure on Singapore's autonomy",
-   "summary": "For small countries like Singapore, this shift puts pressure on our autonomy and sovereignty.",
-   "sentences": [
+    },
     {
      "sid": "s00430",
      "speaker": "The Minister for Defence (Mr Chan Chun Sing)",
@@ -659,7 +659,7 @@
   },
   {
    "label": "Reliance on ourselves",
-   "summary": "The world does not owe Singapore a living or survival, so it can rely only on itself and not on others' security guarantees.",
+   "summary": "The world does not owe Singapore a living or survival, so it can rely only on itself, not others' security guarantees.",
    "sentences": [
     {
      "sid": "s00451",
@@ -678,8 +678,8 @@
    ]
   },
   {
-   "label": "SAF capabilities beyond war threshold",
-   "summary": "The SAF must have calibrated options for scenarios beyond and below the threshold of war, so MINDEF/SAF will build conventional, cheap-asymmetric, cyber and classified capabilities.",
+   "label": "MINDEF/SAF capability suite",
+   "summary": "MINDEF/SAF will build conventional, cheap-asymmetric, cyber and classified capabilities for scenarios beyond and below the threshold of war.",
    "sentences": [
     {
      "sid": "s00458",
@@ -711,7 +711,7 @@
    ]
   },
   {
-   "label": "Second MRCV launch date",
+   "label": "Second MRCV launch",
    "summary": "The second MRCV is on track to be launched in the third quarter of 2026.",
    "sentences": [
     {
@@ -724,7 +724,7 @@
    ]
   },
   {
-   "label": "CyTEC repositioned as experimentation centre",
+   "label": "Cyber Defence Test Centre repositioning",
    "summary": "The DIS will reposition the Cyber Defence Test and Evaluation Centre as a Cyber Defence Test and Experimentation Centre.",
    "sentences": [
     {
@@ -738,7 +738,7 @@
   },
   {
    "label": "Second MMRC at Bedok Camp",
-   "summary": "The Army will build a second MMRC at Bedok Camp so more soldiers can use such facilities.",
+   "summary": "The Army will build a second MMRC at Bedok Camp, freeing land from six baffled ranges and letting NSmen book ranges via the OneNS app.",
    "sentences": [
     {
      "sid": "s00496",
@@ -746,32 +746,26 @@
      "attributed": true,
      "text": "For more of our soldiers to use such facilities, the Army will build a second MMRC at Bedok Camp.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "NSmen range vision and capability investment",
-   "summary": "The speaker's vision is for NSmen to use a range like a bowling alley, and investments in conventional, cheap-asymmetric, cyber and classified capabilities will continue.",
-   "sentences": [
+    },
     {
-     "sid": "s00500",
+     "sid": "s00498",
      "speaker": "The Minister for Defence (Mr Chan Chun Sing)",
      "attributed": true,
-     "text": "And it has always been my own personal vision that our NSmen can go into a range to hone their skill, just as they go to a bowling alley.",
+     "text": "MMRC 2 will free up land currently occupied by six baffled ranges, which can be repurposed for our other training needs.",
      "added_for_context": true
     },
     {
-     "sid": "s00501",
+     "sid": "s00499",
      "speaker": "The Minister for Defence (Mr Chan Chun Sing)",
      "attributed": true,
-     "text": "We have and we will continue to invest steadily in conventional, cheap-asymmetric, cyber and classified capabilities.",
+     "text": "It will also be easier for our soldiers to train at MMRC 2 NSmen can simply book ranges for training conveniently through the OneNS app without having to go through their parent unit.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Defence technology community and industry",
-   "summary": "Beyond the services and DIS, defence must include the defence and technology community and defence industries, with investment in DSO and DSTA and a local defence industry.",
+   "label": "Defence technology community and industries",
+   "summary": "Defence must include the defence and technology community and defence industries, with investment in DSO and DSTA and local industry giving resilience and capabilities.",
    "sentences": [
     {
      "sid": "s00517",
@@ -797,7 +791,7 @@
    ]
   },
   {
-   "label": "Defence spending growth with GDP",
+   "label": "Defence spending growth pace",
    "summary": "Defence spending growth is expected to keep pace with GDP barring major shocks, with readiness to spend more if needed.",
    "sentences": [
     {
@@ -818,7 +812,7 @@
   },
   {
    "label": "Review of Medical Classification System",
-   "summary": "MINDEF will review the Medical Classification System to be more precise.",
+   "summary": "MINDEF will review the Medical Classification System to be more precise, better characterising servicemen's medical fitness and its effect on tasks.",
    "sentences": [
     {
      "sid": "s00554",
@@ -826,12 +820,19 @@
      "attributed": true,
      "text": "To this end, MINDEF will review our Medical Classification System to be more precise.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00555",
+     "speaker": "The Minister for Defence (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "This will allow better characterisation of the medical fitness of our servicemen, and how that affects their ability to undertake various tasks.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Cyber NSmen sectoral defence teams",
-   "summary": "The DIS will organise national servicemen with cyber expertise into Sectoral Cyber Defence Teams.",
+   "label": "Sectoral Cyber Defence Teams",
+   "summary": "The DIS will better organise national servicemen with relevant cyber expertise into Sectoral Cyber Defence Teams.",
    "sentences": [
     {
      "sid": "s00565",
@@ -843,8 +844,8 @@
    ]
   },
   {
-   "label": "SAF NSmen support rings",
-   "summary": "The second ring is 250,000 mobilisable NSmen; the third is about 750,000 former NSmen and 2.5 million families and employers.",
+   "label": "SAF NSmen and NS community",
+   "summary": "The second ring is 250,000 mobilisable NSmen, and the third is about 750,000 former NSmen plus 2.5 million families and employers.",
    "sentences": [
     {
      "sid": "s00575",
@@ -863,21 +864,8 @@
    ]
   },
   {
-   "label": "SAFRA mission review engagement",
-   "summary": "SAFRA will review its mission to extend engagement beyond active NSmen.",
-   "sentences": [
-    {
-     "sid": "s00582",
-     "speaker": "The Minister for Defence (Mr Chan Chun Sing)",
-     "attributed": true,
-     "text": "In support of this objective, SAFRA will review its mission to extend its engagement beyond active NSmen.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Defence Volunteer Ecosystem strengthening",
-   "summary": "MINDEF will strengthen the Defence Volunteer Ecosystem through the SG Defence Volunteer Network and SAFVC.",
+   "summary": "MINDEF will strengthen the Defence Volunteer Ecosystem through the SG Defence Volunteer Network and SAFVC as more Singaporeans volunteer.",
    "sentences": [
     {
      "sid": "s00593",
@@ -910,7 +898,7 @@
   },
   {
    "label": "Underwater infrastructure defence partnerships",
-   "summary": "Singapore is tapping Finland, Estonia and the Netherlands for principles and best practices on critical underwater infrastructure defence cooperation.",
+   "summary": "MINDEF taps Finland, Estonia and the Netherlands for underwater infrastructure defence principles and best practices, diversifying global partnerships against supply chain failures.",
    "sentences": [
     {
      "sid": "s00624",
@@ -929,8 +917,8 @@
    ]
   },
   {
-   "label": "Foreign defence industry partnerships",
-   "summary": "Countries show increased interest in partnering Singapore through initiatives like the Defence Industry Day, which brings together defence industries.",
+   "label": "Countries partnering Singapore defence industry",
+   "summary": "Various countries show increased interest in partnering Singapore through initiatives like the Defence Industry Day, which brings together different countries' defence industries.",
    "sentences": [
     {
      "sid": "s00632",
@@ -943,7 +931,7 @@
   },
   {
    "label": "Whole-of-society defence and complacency",
-   "summary": "Defence belongs to all Singaporeans, and advanced capabilities and spending count for nothing if complacency allows fundamental surprise.",
+   "summary": "Defence belongs to all of society, and advanced capabilities and billions in infrastructure count for nothing if Singaporeans are complacent or fundamentally surprised.",
    "sentences": [
     {
      "sid": "s00635",
@@ -986,18 +974,19 @@
      "attributed": true,
      "text": "The recent conflicts have presented many examples where, even when confronted with clear intelligence of threats, capable and technologically advanced militaries failed to respond because they convinced themselves that it would not happen to them or that it could not happen to them.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Peace heightens complacency dangers",
-   "summary": "Every day of peace is another day where the dangers of complacency heighten, as Mr Alex Yam mentioned.",
-   "sentences": [
+    },
     {
-     "sid": "s00643",
+     "sid": "s00641",
      "speaker": "The Minister for Defence (Mr Chan Chun Sing)",
      "attributed": true,
-     "text": "Every day of peace is another day where the dangers of complacency heighten, as Mr Alex Yam mentioned.",
+     "text": "They did not fail in technology, equipping or training.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00642",
+     "speaker": "The Minister for Defence (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "They failed to challenge their mindsets, they failed to guard against complacency, and they fell into denial of the harsh possibilities of conflict.",
      "added_for_context": false
     }
    ]
@@ -1016,8 +1005,8 @@
    ]
   },
   {
-   "label": "Work-Learn Schemes for SAF capabilities",
-   "summary": "The schemes focus on areas vital to SAF capabilities such as AI and engineering, with 10 introduced to date.",
+   "label": "Ten Work-Learn Schemes introduced",
+   "summary": "The schemes focus on areas vital to SAF capabilities, including AI and engineering, and 10 have been introduced to date.",
    "sentences": [
     {
      "sid": "s00659",
@@ -1049,8 +1038,8 @@
    ]
   },
   {
-   "label": "NS allowance reviews over decade",
-   "summary": "Four reviews of NS allowances were conducted in 2015, 2020, 2023 and July 2025.",
+   "label": "Four NS allowance reviews",
+   "summary": "Over the past decade, four reviews of NS allowances were conducted: in 2015, 2020, 2023 and July 2025.",
    "sentences": [
     {
      "sid": "s00670",
@@ -1062,8 +1051,8 @@
    ]
   },
   {
-   "label": "NS servicemen payout amounts",
-   "summary": "Servicemen receive up to $6,500 on completing full-time NS, about $5,500 in CPF, and up to $18,500 after Operationally Ready NS training.",
+   "label": "NS servicemen completion payouts",
+   "summary": "Servicemen receive up to $6,500 upon completing full-time NS, about $5,500 of it CPF, and up to $18,500 after Operationally Ready NS training.",
    "sentences": [
     {
      "sid": "s00674",
@@ -1075,7 +1064,7 @@
    ]
   },
   {
-   "label": "NSmen redeployed to expertise roles",
+   "label": "NSmen redeployed to aligned roles",
    "summary": "About 850 NSmen have been redeployed into roles better aligned with their professional expertise.",
    "sentences": [
     {
@@ -1088,7 +1077,7 @@
    ]
   },
   {
-   "label": "Cyber NSmen in defence teams",
+   "label": "NSmen cyber defence deployment",
    "summary": "From June this year, the SAF will deploy NSmen with cyber expertise into Sectoral Cyber Defence Teams.",
    "sentences": [
     {
@@ -1114,7 +1103,7 @@
    ]
   },
   {
-   "label": "National Education Ambassadors count",
+   "label": "National Education Ambassadors",
    "summary": "MINDEF now has more than 100 National Education Ambassadors from various professional backgrounds.",
    "sentences": [
     {
@@ -1127,8 +1116,8 @@
    ]
   },
   {
-   "label": "SAFVC volunteers trained and serving",
-   "summary": "Over 1,500 SAFVC volunteers have been trained and served Singapore, and the SAFVC will be enhanced for wider roles.",
+   "label": "SAFVC volunteers trained and served",
+   "summary": "More than 1,500 SAFVC volunteers have been trained and served Singapore since its formation, and the SAFVC will be enhanced.",
    "sentences": [
     {
      "sid": "s00742",
@@ -1174,8 +1163,8 @@
    ]
   },
   {
-   "label": "Exercise SG Ready community participation",
-   "summary": "This year's Exercise SG Ready was held over two weeks with more than 1,000 agencies, businesses and community organisations taking part.",
+   "label": "Exercise SG Ready participation",
+   "summary": "This year's Exercise SG Ready was held over two weeks earlier this month, with more than 1,000 agencies, businesses and community organisations taking part.",
    "sentences": [
     {
      "sid": "s00771",
@@ -1195,7 +1184,7 @@
   },
   {
    "label": "Business continuity and phishing exercise",
-   "summary": "Over 500 organisations revised Business Continuity Plans and close to 140 companies joined a phishing exercise sending more than 8,500 emails.",
+   "summary": "Over 500 organisations revised Business Continuity Plans and close to 140 companies joined a phishing exercise sending more than 8,500 emails to employees.",
    "sentences": [
     {
      "sid": "s00783",
@@ -1207,8 +1196,8 @@
    ]
   },
   {
-   "label": "Defence as everyone's responsibility",
-   "summary": "Defence is being transformed from the duty of national servicemen and Regulars into the responsibility of everyone, including women, PRs and new citizens.",
+   "label": "Total Defence responsibility for everyone",
+   "summary": "Defence is transformed from the duty of national servicemen and Regulars into the responsibility of everyone, including women, PRs and new citizens.",
    "sentences": [
     {
      "sid": "s00792",
@@ -1248,20 +1237,7 @@
    ]
   },
   {
-   "label": "SAFRA's evolving defence role",
-   "summary": "SAFRA's evolving role in strengthening Singapore's defence ecosystem is outlined, transforming from a social club into part of a nation-wide defence movement.",
-   "sentences": [
-    {
-     "sid": "s00802",
-     "speaker": "The Minister of State for Defence (Mr Desmond Choo)",
-     "attributed": true,
-     "text": "Today, I will outline SAFRA's evolving role in strengthening Singapore's defence ecosystem, transforming from what was once seen primarily as a social club into a part of a vital, nation-wide defence movement.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "SAFRA clubhouse network expansion",
+   "label": "SAFRA clubhouse network and members",
    "summary": "SAFRA expanded to seven clubhouses across Singapore and now serves more than 400,000 members, including NSFs.",
    "sentences": [
     {
@@ -1274,54 +1250,48 @@
    ]
   },
   {
-   "label": "SAFRA role in defence commitment",
-   "summary": "Mr Alex Yam asked how defence can remain a shared national commitment across generations, making SAFRA's role more critical.",
+   "label": "SAFRA support for NS community",
+   "summary": "SAFRA has always served the NS community and will do more and differently by strengthening support for NSmen across every life stage.",
    "sentences": [
     {
-     "sid": "s00824",
+     "sid": "s00834",
      "speaker": "The Minister of State for Defence (Mr Desmond Choo)",
      "attributed": true,
-     "text": "Mr Alex Yam asked how we can ensure defence remains a shared national commitment across generations.",
+     "text": "SAFRA has always been dedicated to serving the NS community.",
      "added_for_context": true
     },
     {
-     "sid": "s00825",
+     "sid": "s00835",
      "speaker": "The Minister of State for Defence (Mr Desmond Choo)",
      "attributed": true,
-     "text": "This is where SAFRA's role becomes even more critical.",
+     "text": "It will do more and differently by strengthening support for NSmen across every stage of their life.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "SAFRA as community bridge",
-   "summary": "SAFRA cannot remain only a lifestyle and recreational provider; it must bridge citizen soldiers with the broader community.",
+   "label": "SAFRA pre-NS and career programmes",
+   "summary": "SAFRA supports transitions through pre-NS programmes, quarterly SkillsFuture@NS Fairs, and deeper partnerships such as with NTUC's Employment and Employability Institute.",
    "sentences": [
     {
-     "sid": "s00830",
+     "sid": "s00839",
      "speaker": "The Minister of State for Defence (Mr Desmond Choo)",
      "attributed": true,
-     "text": "It cannot remain only a provider of lifestyle and recreational facilities.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00831",
-     "speaker": "The Minister of State for Defence (Mr Desmond Choo)",
-     "attributed": true,
-     "text": "It must become a bridge, connecting our citizen soldiers with the broader community they protect.",
+     "text": "SAFRA will continue to support this transition through pre-NS engagement programmes and initiatives, such as water confidence courses and pre-NS talks, helping young men build familiarity and confidence before enlistment.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "SkillsFuture@NS Fairs for transition",
-   "summary": "For those transitioning after full-time NS, SAFRA hosts quarterly SkillsFuture@NS Fairs connecting them with career and education opportunities.",
-   "sentences": [
+    },
     {
      "sid": "s00840",
      "speaker": "The Minister of State for Defence (Mr Desmond Choo)",
      "attributed": true,
      "text": "For those transitioning after full-time NS, SAFRA hosts quarterly SkillsFuture@NS Fairs that connect them with career and education opportunities.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00842",
+     "speaker": "The Minister of State for Defence (Mr Desmond Choo)",
+     "attributed": true,
+     "text": "Moving forward, SAFRA will deepen and enhance partnership with agencies, such as the National Trades Union Congress' (NTUC's) Employment and Employability Institute to strengthen career support for NSmen.",
      "added_for_context": false
     }
    ]
@@ -1340,15 +1310,15 @@
    ]
   },
   {
-   "label": "SAFRA expanding NS Experience camps",
-   "summary": "SAFRA will expand its partnership with the SAF and other organisations to develop new NS Experience camp variants.",
+   "label": "SAFRA expands NS Experience camps",
+   "summary": "SAFRA will expand its partnership with the SAF and other organisations to develop new NS Experience camp variants, including a one-day and a two-day programme.",
    "sentences": [
     {
      "sid": "s00851",
      "speaker": "The Minister of State for Defence (Mr Desmond Choo)",
      "attributed": true,
      "text": "Building on this success, SAFRA will expand its partnership with the SAF and other organisations to develop new variants of the NS Experience camp.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00852",
@@ -1360,8 +1330,8 @@
    ]
   },
   {
-   "label": "NSman volunteers financial planning",
-   "summary": "Since 2023, LTC(NS) William Koh has volunteered financial planning expertise, benefiting over 650 NSmen through workshops and coaching.",
+   "label": "NSman volunteers financial planning expertise",
+   "summary": "Since 2023, LTC(NS) William Koh has volunteered financial planning expertise, benefiting over 650 fellow NSmen through workshops and one-on-one coaching.",
    "sentences": [
     {
      "sid": "s00862",
@@ -1373,16 +1343,9 @@
    ]
   },
   {
-   "label": "SAFRA Community Defence Festival 2027",
-   "summary": "The inaugural SAFRA Community Defence and Resilience Festival in early 2027 will be held at multiple sites, engaging up to 80,000 participants.",
+   "label": "Festival with defence-themed activities",
+   "summary": "The Festival will be held at multiple sites across Singapore, featuring defence-themed activities for the masses and engaging up to 80,000 participants.",
    "sentences": [
-    {
-     "sid": "s00880",
-     "speaker": "The Minister of State for Defence (Mr Desmond Choo)",
-     "attributed": true,
-     "text": "The public can look forward to the inaugural SAFRA Community Defence and Resilience Festival in early 2027.",
-     "added_for_context": false
-    },
     {
      "sid": "s00881",
      "speaker": "The Minister of State for Defence (Mr Desmond Choo)",
@@ -1393,8 +1356,8 @@
    ]
   },
   {
-   "label": "SAFRA expands community defence pathways",
-   "summary": "SAFRA will expand NSmen regional engagement and, with Nexus, create pathways for youths, women and others to contribute to defence initiatives.",
+   "label": "SAFRA expands NSmen regional engagement",
+   "summary": "SAFRA will expand opportunities for NSmen to lead regional engagement efforts and create pathways for youths, women and others to contribute to defence-related initiatives.",
    "sentences": [
     {
      "sid": "s00890",
@@ -1413,8 +1376,8 @@
    ]
   },
   {
-   "label": "SAFRA bridges soldiers and community",
-   "summary": "SAFRA's evolution aims to help every Singaporean understand their stake in defence, serving as a bridge between citizen soldiers and the community.",
+   "label": "NS vital, SAFRA as bridge",
+   "summary": "NS is vital to the nation's survival, and SAFRA's evolution aims to help every Singaporean understand their stake in defence, with SAFRA as a bridge to the community.",
    "sentences": [
     {
      "sid": "s00895",
@@ -1428,7 +1391,7 @@
      "speaker": "The Minister of State for Defence (Mr Desmond Choo)",
      "attributed": true,
      "text": "SAFRA’s evolution is about helping every Singaporean understand their stake in our nation’s defence.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00897",
@@ -1436,12 +1399,19 @@
      "attributed": true,
      "text": "We will achieve this with SAFRA serving as a bridge connecting our citizen soldiers with the wider community.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00898",
+     "speaker": "The Minister of State for Defence (Mr Desmond Choo)",
+     "attributed": true,
+     "text": "When NSmen volunteer in their communities, when families participate in defence activities, when businesses support our servicemen, we create a nation where defence truly becomes everyone’s mission.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Renewing conventional and asymmetric capabilities",
-   "summary": "Capabilities include conventional, classified, cyber and cheap asymmetric ones, and platforms such as armoured fighting vehicles, ships and planes will be renewed.",
+   "label": "Renewing conventional, classified, cyber capabilities",
+   "summary": "This includes conventional, classified, cyber and cheap asymmetric capabilities, and platforms such as armoured fighting vehicles, ships or planes will continue to be renewed.",
    "sentences": [
     {
      "sid": "s00914",
@@ -1460,8 +1430,21 @@
    ]
   },
   {
-   "label": "Four second-hand C130 acquired",
-   "summary": "Four second-hand C130 aircraft have been acquired to be refurbished to meet operational needs and stretch the defence dollar.",
+   "label": "Looking ahead long term",
+   "summary": "It is important to keep looking ahead at the threat horizon over the next 10 to 20 years, not just one to two years.",
+   "sentences": [
+    {
+     "sid": "s00918",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "Nevertheless, as I have mentioned, it is important for us to keep looking ahead, not just to look at the threat horizon in the next one to two years, but in the next 10 to 20 years.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Acquiring second-hand C130 aircraft",
+   "summary": "Four second-hand C130 were acquired to be refurbished for operational needs and to stretch the defence dollar.",
    "sentences": [
     {
      "sid": "s00924",
@@ -1473,8 +1456,8 @@
    ]
   },
   {
-   "label": "Ballistic missiles in Southeast Asia",
-   "summary": "The passage asks the Minister to assess the introduction of modern ballistic missiles in Southeast Asia after Indonesia acquired the KHAN from Türkiye.",
+   "label": "Question on ballistic missiles",
+   "summary": "The question asks the Minister's assessment of weapon types new to Southeast Asia, specifically modern ballistic missiles after Indonesia's KHAN acquisition from Türkiye.",
    "sentences": [
     {
      "sid": "s00928",
@@ -1487,7 +1470,7 @@
   },
   {
    "label": "Camp housing and equipment costs",
-   "summary": "The passage states that camp housing and equipment are needed, cost under 1% of the defence budget, and asks why soldiers cannot be paid fairly.",
+   "summary": "It houses them because they are needed in camp at 5.30 am and gives them equipment, costing less than 1% of the defence budget.",
    "sentences": [
     {
      "sid": "s00936",
@@ -1502,32 +1485,18 @@
      "attributed": true,
      "text": "It is less than 1% of the defence budget.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00938",
-     "speaker": "Mr Kenneth Tiong Boon Kiat",
-     "attributed": true,
-     "text": "Why can we not find it to pay our soldiers fairly?",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Ballistic missile threat and secrecy",
-   "summary": "The passage states ballistic missile threat is not new, the SAF builds capabilities ahead of time, and specific threat scenarios and operational responses are not discussed.",
+   "label": "Ballistic missile threat discussion limits",
+   "summary": "The ballistic missile threat is not new and can come from within and beyond the region, but specific threat scenarios and operational responses are not discussed in the Chamber.",
    "sentences": [
     {
      "sid": "s00941",
      "speaker": "Mr Chan Chun Sing",
      "attributed": true,
      "text": "First, ballistic missiles threat is not new, and it can emanate from within and beyond this region.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00942",
-     "speaker": "Mr Chan Chun Sing",
-     "attributed": true,
-     "text": "It has existed for a long time and SAF will continue to build up our capabilities ahead of time.",
      "added_for_context": false
     },
     {
@@ -1548,7 +1517,7 @@
   },
   {
    "label": "Support for NSmen and NSFs",
-   "summary": "The passage states NSmen and NSFs will be taken care of in consultation with the Ministry of Finance, with contributions to their HOME account.",
+   "summary": "NSmen and NSFs will be taken care of in consultation with the Ministry of Finance where budget space allows, contributing to their HOME account for housing, medical and education.",
    "sentences": [
     {
      "sid": "s00965",
@@ -1567,8 +1536,21 @@
    ]
   },
   {
-   "label": "Agencies in recent cyber attacks",
-   "summary": "The passage states that in recent cyber attacks, agencies involved include MINDEF, MHA, the Cyber Security Agency, IMDA and other related sectors.",
+   "label": "NSF allowance review",
+   "summary": "NSF allowances will be regularly reviewed.",
+   "sentences": [
+    {
+     "sid": "s00972",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "Of course, we will regularly review our NSF allowances.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cyber attack agency assets",
+   "summary": "In recent cyber attacks, agencies involved include assets and capabilities from MINDEF, MHA, CSA, IMDA and other related sectors.",
    "sentences": [
     {
      "sid": "s00982",
@@ -1580,8 +1562,8 @@
    ]
   },
   {
-   "label": "Whole-of-Government cyber capability building",
-   "summary": "The passage states resources are deployed to help agencies build capabilities, including exercises and training for telcos, because defence strength depends on the weakest link.",
+   "label": "Whole-of-Government capability building",
+   "summary": "Government deploys resources to help agencies build capabilities, including exercises and trainings for telcos during the CII incident.",
    "sentences": [
     {
      "sid": "s00988",
@@ -1600,8 +1582,8 @@
    ]
   },
   {
-   "label": "Defeating terrorists, keeping peace",
-   "summary": "Passage states that defeating terrorists means telling them they may harm a few but cannot rob us of peace.",
+   "label": "Defeating terrorists message",
+   "summary": "The message to terrorists is that they may harm a few but will never rob us of our peace.",
    "sentences": [
     {
      "sid": "s00999",
@@ -1613,8 +1595,8 @@
    ]
   },
   {
-   "label": "MINDEF audit and local collaboration",
-   "summary": "MINDEF says its audit system is multi-layered and robust, with classified agencies cross-auditing, and was asked about local entrepreneurs.",
+   "label": "MINDEF audit and collaboration",
+   "summary": "MINDEF's audit system is multi-layered and robust, with classified agencies cross-auditing each other, even for classified projects.",
    "sentences": [
     {
      "sid": "s01003",
@@ -1654,8 +1636,8 @@
    ]
   },
   {
-   "label": "Lifecycle support for defence platforms",
-   "summary": "Passage states the need for after-sales service, spares and technical capability to upgrade platforms for 20 years and beyond.",
+   "label": "After-sales service and lifecycle",
+   "summary": "MINDEF wants after-sales service and assurance of capability, spares and support for a platform's 20-year lifecycle.",
    "sentences": [
     {
      "sid": "s01022",
@@ -1670,19 +1652,25 @@
      "attributed": true,
      "text": "We want to make sure that there is a after-sales service and we want to assure ourselves if the lifecycle of that platform is for 20 years, we have the capability and the assurance and the spares to make sure that, that will work for 20 years.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Protecting shared technologies",
+   "summary": "Securing technologies requires protecting intellectual property and respecting the conditions under which they were shared.",
+   "sentences": [
     {
-     "sid": "s01024",
+     "sid": "s01032",
      "speaker": "Mr Chan Chun Sing",
      "attributed": true,
-     "text": "Even if one day the supplier goes away, we must have the technical capability to continue to upgrade those platforms for the 20 years and beyond.",
+     "text": "When we secure any technologies, we must also protect the intellectual property and respect the conditions upon which those technologies have been shared with us.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Cyberattack on entire network",
-   "summary": "Passage states a cyberattack on one part of the system is an attack on the entire network, and collective defence is better.",
+   "label": "Collective cyber defence",
+   "summary": "A cyberattack on one part of the system is an attack on the entire network, so defence is better done collectively.",
    "sentences": [
     {
      "sid": "s01046",
@@ -1694,8 +1682,8 @@
    ]
   },
   {
-   "label": "Norms for underwater infrastructure protection",
-   "summary": "Passage states interest from partners to develop norms for protecting critical underwater infrastructure and narrow an international legal lacuna.",
+   "label": "Norms for underwater infrastructure",
+   "summary": "Singapore seeks like-minded partners to develop norms protecting critical underwater infrastructure, given an international legal lacuna.",
    "sentences": [
     {
      "sid": "s01054",
@@ -1716,7 +1704,7 @@
      "speaker": "Mr Chan Chun Sing",
      "attributed": true,
      "text": "Because under international laws there is a lacuna on what can be done and who should be responsible for what.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s01057",
@@ -1728,8 +1716,8 @@
    ]
   },
   {
-   "label": "EnergyOne gym and travelling programmes",
-   "summary": "Passage states EnergyOne gym staff understand military training requirements, and programmes should travel rather than building clubhouses.",
+   "label": "EnergyOne gym and clubhouse",
+   "summary": "EnergyOne's gym is run by capable former personnel who incorporated military training, and the clubhouse will move to where people are.",
    "sentences": [
     {
      "sid": "s01067",
@@ -1744,19 +1732,12 @@
      "attributed": true,
      "text": "It is our vision that we will extend and move the clubhouse to where the people are.",
      "added_for_context": false
-    },
-    {
-     "sid": "s01069",
-     "speaker": "Mr Desmond Choo",
-     "attributed": true,
-     "text": "It is no longer enough or prudent for us to keep building clubhouses, so we must make sure that our programmes can travel.",
-     "added_for_context": false
     }
    ]
   },
   {
    "label": "Contributing to Singapore's relevance",
-   "summary": "The Chair thanks Mr Yip for his clarification and encourages the Public Service and SAF to contribute to Singapore's relevance to the world.",
+   "summary": "Mr Yip is thanked for clarification, and the speaker encourages the Public Service and SAF to strengthen Singapore's relevance to the world.",
    "sentences": [
     {
      "sid": "s01081",
@@ -1776,7 +1757,7 @@
   },
   {
    "label": "Realistic view of foreign powers",
-   "summary": "Singapore does not take a moralistic attitude to others' foreign policy or military posture but realistically views what they do and why.",
+   "summary": "Singapore is not moralistic about others' foreign policy but realistic, and never assumes the US, China or middle powers will keep engaging.",
    "sentences": [
     {
      "sid": "s01090",
@@ -1791,12 +1772,19 @@
      "attributed": true,
      "text": "So, for the US, China and other middle powers, we never take it as a given that they will continue to want to engage with Singapore.",
      "added_for_context": false
+    },
+    {
+     "sid": "s01092",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "What has worked in the past may no longer work, going forward.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Reliability, trustworthiness and capability",
-   "summary": "Nobody will partner Singapore if it is not reliable, trustworthy or capable, and the SAF opens new opportunities with credible standing.",
+   "label": "SAF credibility with partners",
+   "summary": "The SAF opens new partnership opportunities because partners find it a credible institution, since reliability, trustworthiness and capability are needed to attract partners.",
    "sentences": [
     {
      "sid": "s01104",
@@ -1820,19 +1808,6 @@
      "added_for_context": false
     }
    ]
-  },
-  {
-   "label": "Strengthening total defence",
-   "summary": "Total defence must be strengthened because a capable SAF and a resilient society go hand in hand.",
-   "sentences": [
-    {
-     "sid": "s01116",
-     "speaker": "Mr Yip Hon Weng",
-     "attributed": true,
-     "text": "At the same time, we must strengthen total defence because a capable SAF and a resilient society go hand in hand.",
-     "added_for_context": false
-    }
-   ]
   }
  ],
  "_meta": {
@@ -1847,12 +1822,12 @@
    "budget-2884"
   ],
   "sentences_total": 1117,
-  "sentences_selected": 176,
-  "sentences_in_sections": 176,
+  "sentences_selected": 175,
+  "sentences_in_sections": 175,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 27,
-  "sections_total": 100,
-  "selection_share": 0.1576,
+  "sentences_added_for_context": 26,
+  "sections_total": 97,
+  "selection_share": 0.1567,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -1861,24 +1836,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 100,
+   "sections_total": 97,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 176,
-   "sentences_selected": 176,
-   "turns_cited": 29,
+   "sentences_published": 175,
+   "sentences_selected": 175,
+   "turns_cited": 28,
    "turns_total": 40,
-   "coverage": 0.725,
+   "coverage": 0.7,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:54:36"
+   "checked_at": "2026-09-19T22:25:58"
   },
   "usage": {
    "calls": 47,
-   "prompt_tokens": 45742,
-   "completion_tokens": 5669,
+   "prompt_tokens": 45760,
+   "completion_tokens": 5576,
    "estimated": false,
-   "cost_usd": 0.007991
+   "cost_usd": 0.007968
   }
  }
 }

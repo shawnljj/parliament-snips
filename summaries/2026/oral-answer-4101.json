@@ -3,7 +3,7 @@
  "what_it_is": "Gross Monthly Income Data of Full-time PMETs in Different Percentiles",
  "sections": [
   {
-   "label": "PME income percentiles 2025",
+   "label": "PME monthly income percentiles",
    "summary": "In 2025, full-time employed resident PMEs had gross monthly incomes of about $4,500 at the 10th percentile and $13,900 at the 80th percentile.",
    "sentences": [
     {
@@ -66,12 +66,12 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:19:53"
+   "checked_at": "2026-09-19T22:05:31"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 918,
-   "completion_tokens": 89,
+   "completion_tokens": 87,
    "estimated": false,
    "cost_usd": 0.000153
   }

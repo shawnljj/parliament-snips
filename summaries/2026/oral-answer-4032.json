@@ -24,7 +24,7 @@
   },
   {
    "label": "Tripartite Workgroup on Senior Employment",
-   "summary": "The Tripartite Workgroup on Senior Employment is studying recommendations for better support across a senior's career journey, to be released in the second half of this year.",
+   "summary": "The Tripartite Workgroup on Senior Employment is studying recommendations for support across a senior's career journey, to be released in the second half of this year.",
    "sentences": [
     {
      "sid": "s00012",
@@ -43,8 +43,8 @@
    ]
   },
   {
-   "label": "Helping employed professionals pivot",
-   "summary": "The Tripartite Workgroup for Senior Employment is looking at helping professionals still in employment understand where to pivot and guide their skills acquisition.",
+   "label": "Helping workers pivot earlier",
+   "summary": "The Tripartite Workgroup for Senior Employment is looking at helping professionals still in employment understand where to pivot and acquire skills, going upstream to the 40s.",
    "sentences": [
     {
      "sid": "s00027",
@@ -70,7 +70,7 @@
    ]
   },
   {
-   "label": "NTUC cross-sector worker movements",
+   "label": "NTUC lateral movement practice",
    "summary": "NTUC has a practice of helping workers potentially displaced from one union sector reach across unions in adjacent sectors through an internal arrangement.",
    "sentences": [
     {
@@ -83,21 +83,21 @@
    ]
   },
   {
-   "label": "Tight labour market and awareness",
-   "summary": "The labour market is tight due to Singapore's resource constraints, and the key is raising worker awareness of adjacent-sector opportunities and helping them gain skills.",
+   "label": "Awareness and career employment services",
+   "summary": "The aim is more worker awareness of opportunities in adjacent sectors and a system to gain skills to pivot, through more support in career employment services.",
    "sentences": [
-    {
-     "sid": "s00041",
-     "speaker": "Dr Koh Poh Koon",
-     "attributed": true,
-     "text": "The labour market is tight not because we want to facilitate lateral movements, but it is tight because we have resource constraints in Singapore.",
-     "added_for_context": true
-    },
     {
      "sid": "s00042",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "But despite that tightness, I think the key thing is to make sure that there is more awareness amongst the workers themselves where opportunities may lie in adjacent sectors and have a system to help them gain the necessary skills so they can pivot across.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00043",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "That would be something that we hope to also do, through injecting a lot more support and services in some of our career employment services that we are thinking about, so that, as an ecosystem, we have a more comprehensive way to help – whether they are engineers, IT professionals or PMEs in different sectors as well, to be able to pivot across when opportunities arise.",
      "added_for_context": false
     }
    ]
@@ -139,14 +139,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:15:09"
+   "checked_at": "2026-09-19T22:37:46"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2922,
-   "completion_tokens": 312,
+   "prompt_tokens": 2970,
+   "completion_tokens": 316,
    "estimated": false,
-   "cost_usd": 0.000496
+   "cost_usd": 0.000504
   }
  }
 }

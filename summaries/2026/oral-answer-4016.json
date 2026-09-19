@@ -14,6 +14,13 @@
      "added_for_context": false
     },
     {
+     "sid": "s00003",
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "More detailed data is publicly available in the Ministry of Social and Family Development’s (MSF's) “Supporting Lower-Income Households Trends Report”.",
+     "added_for_context": false
+    },
+    {
      "sid": "s00004",
      "speaker": "The Minister for Education (Mr Desmond Lee)",
      "attributed": true,
@@ -23,8 +30,8 @@
    ]
   },
   {
-   "label": "MSF data on ComLink children",
-   "summary": "The data results from holistic wrap-around support integrating agencies, SSAs, community groups and corporates, with family coaches and school colleagues supporting children and linking to family agencies.",
+   "label": "MSF data and wrap-around support",
+   "summary": "The MSF data results from holistic wrap-around support integrating agencies, SSAs, community groups and corporates, with family coaches and school colleagues.",
    "sentences": [
     {
      "sid": "s00014",
@@ -50,8 +57,8 @@
    ]
   },
   {
-   "label": "Community groups and UPLIFT support",
-   "summary": "Members should link community groups to the ComLink Alliance Working Group in each town, and UPLIFT support provides holistic development and enrichment, not only academics.",
+   "label": "Community groups, UPLIFT and holistic support",
+   "summary": "Members can link community groups to ComLink Alliance Working Groups, and UPLIFT support provides holistic development, not only academics.",
    "sentences": [
     {
      "sid": "s00021",
@@ -110,12 +117,12 @@
    "oral-answer-4016"
   ],
   "sentences_total": 28,
-  "sentences_selected": 11,
-  "sentences_in_sections": 11,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 4,
   "sections_total": 3,
-  "selection_share": 0.3929,
+  "selection_share": 0.4286,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -127,21 +134,21 @@
    "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 11,
-   "sentences_selected": 11,
+   "sentences_published": 12,
+   "sentences_selected": 12,
    "turns_cited": 2,
    "turns_total": 4,
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:19:34"
+   "checked_at": "2026-09-19T22:40:03"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1878,
-   "completion_tokens": 214,
+   "prompt_tokens": 1910,
+   "completion_tokens": 210,
    "estimated": false,
-   "cost_usd": 0.000323
+   "cost_usd": 0.000326
   }
  }
 }

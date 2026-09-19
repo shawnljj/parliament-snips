@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Singpass alternative verification methods",
-   "summary": "GovTech and MAS replied on alternative biometric or non-facial verification options for Singpass, with non-Singpass alternatives expected from organisations.",
+   "summary": "A joint GovTech and MAS reply states alternative verification methods exist for users unable to use facial recognition, and organisations must offer a non-Singpass alternative.",
    "sentences": [
     {
      "sid": "s00003",
@@ -38,7 +38,7 @@
   },
   {
    "label": "Bank and government verification alternatives",
-   "summary": "MAS requires banks to have alternative verification methods, and government digital services are tested with citizens of all abilities.",
+   "summary": "MAS requires banks to have alternative verification methods, government tests digital services with citizens of all abilities, and public education can improve.",
    "sentences": [
     {
      "sid": "s00010",
@@ -100,14 +100,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:20:07"
+   "checked_at": "2026-09-19T22:40:25"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1125,
-   "completion_tokens": 137,
+   "completion_tokens": 144,
    "estimated": false,
-   "cost_usd": 0.000196
+   "cost_usd": 0.000198
   }
  }
 }

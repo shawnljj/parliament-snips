@@ -3,8 +3,8 @@
  "what_it_is": "Reasons for Sharp Decline in Dengue Cases Reported in 2025",
  "sections": [
   {
-   "label": "Dengue decrease and Project Wolbachia expansion",
-   "summary": "Dengue cases fell due to no major local outbreaks, global decline and stakeholder efforts, with Project Wolbachia expanding to 800,000 households by end-2026.",
+   "label": "Dengue decrease and Wolbachia expansion",
+   "summary": "Dengue fell due to no major local outbreaks, global decline and stakeholder efforts, with Project Wolbachia expanding to 800,000 households by end-2026.",
    "sentences": [
     {
      "sid": "s00002",
@@ -57,8 +57,8 @@
    ]
   },
   {
-   "label": "Global and local dengue decrease",
-   "summary": "Global dengue cases decreased from 14.4 million to five million in 2025, and locally there is an absence of clusters.",
+   "label": "Global and local dengue decline",
+   "summary": "Global dengue cases fell from 14.4 million to five million in 2025, and locally there were no clusters.",
    "sentences": [
     {
      "sid": "s00023",
@@ -70,8 +70,8 @@
    ]
   },
   {
-   "label": "Finite resources and expansion pace",
-   "summary": "Finite resources and the speed of suppressing mosquito populations, depending on local mosquito situation and breeding habitats, influence expansion pace.",
+   "label": "Expansion pace and finite resources",
+   "summary": "Finite resources and how quickly mosquito populations can be suppressed influence the pace of expansion.",
    "sentences": [
     {
      "sid": "s00031",
@@ -119,14 +119,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:35:06"
+   "checked_at": "2026-09-19T22:50:23"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1907,
-   "completion_tokens": 249,
+   "completion_tokens": 238,
    "estimated": false,
-   "cost_usd": 0.000337
+   "cost_usd": 0.000334
   }
  }
 }

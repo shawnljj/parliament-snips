@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Affiliated school reserved places",
-   "summary": "MOE requires affiliated secondary schools to reserve at least 20% of Secondary 1 places for non-affiliated students, applied to each posting group.",
+   "summary": "MOE requires affiliated secondary schools to reserve at least 20% of Secondary 1 places for non-affiliated students in each posting group.",
    "sentences": [
     {
      "sid": "s00002",
@@ -59,7 +59,7 @@
   },
   {
    "label": "Posting group score variance",
-   "summary": "The speaker asks about high variance, citing reports of differences up to 10 points within a posting group.",
+   "summary": "The speaker asks about high variance within a posting group, citing reports of differences up to 10 points.",
    "sentences": [
     {
      "sid": "s00012",
@@ -114,14 +114,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:21:57"
+   "checked_at": "2026-09-19T22:41:48"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1447,
-   "completion_tokens": 144,
+   "completion_tokens": 142,
    "estimated": false,
-   "cost_usd": 0.000243
+   "cost_usd": 0.000242
   }
  }
 }

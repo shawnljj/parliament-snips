@@ -17,7 +17,7 @@
   },
   {
    "label": "Singapore US trade surplus dispute",
-   "summary": "A Federal Register Notice said Singapore had a US$27 billion bilateral trade surplus with the US in 2024, but MTI clarified the US ran that surplus.",
+   "summary": "A US notice said Singapore had a US$27 billion bilateral trade surplus with the US in 2024, but MTI clarified the US ran that surplus.",
    "sentences": [
     {
      "sid": "s00010",
@@ -36,7 +36,7 @@
    ]
   },
   {
-   "label": "Section 122 tariff on Singapore",
+   "label": "Section 122 tariff on Singapore exports",
    "summary": "The Section 122 tariff of 10% imposed on Singapore's exports to the US since 24 February 2026 remains unchanged.",
    "sentences": [
     {
@@ -82,8 +82,8 @@
    ]
   },
   {
-   "label": "Business Adaptation Grant support",
-   "summary": "They have been kept in touch with, and a Business Adaptation Grant remains available to help companies understand the implications of the US tariffs.",
+   "label": "Contact and Business Adaptation Grant",
+   "summary": "They have been kept in touch with, and a Business Adaptation Grant remains available to help companies understand the US tariffs' implications.",
    "sentences": [
     {
      "sid": "s00036",
@@ -103,7 +103,7 @@
   },
   {
    "label": "Attending the hearings",
-   "summary": "The answer is yes; they will be attending the hearings.",
+   "summary": "The answer is yes, and they will be attending the hearings.",
    "sentences": [
     {
      "sid": "s00058",
@@ -151,12 +151,12 @@
    "coverage": 0.25,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:18:42"
+   "checked_at": "2026-09-19T22:04:49"
   },
   "usage": {
    "calls": 4,
    "prompt_tokens": 3458,
-   "completion_tokens": 393,
+   "completion_tokens": 394,
    "estimated": false,
    "cost_usd": 0.000594
   }

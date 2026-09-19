@@ -3,9 +3,16 @@
  "what_it_is": "Expanding Use of ActiveSG Credits to Include Sports Facilities Such As Those at Community Clubs and The Kallang",
  "sections": [
   {
-   "label": "ActiveSG credits usage locations",
-   "summary": "ActiveSG credits can be used at ActiveSG sports facilities, community sport facilities, ActiveSG and Active Health programmes, and over 370 school sports facilities under the Dual-Use Scheme.",
+   "label": "ActiveSG credits public sports facilities",
+   "summary": "The Government says ActiveSG credits can be used at ActiveSG sports facilities, community sport facilities, programmes, and over 370 school sports facilities under the Dual-Use Scheme.",
    "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Culture, Community and Youth (Ms Goh Hanyan) (for the Acting Minister for Culture, Community and Youth)",
+     "attributed": true,
+     "text": "The Government is committed to ensuring that public sports facilities remain accessible and affordable for all Singaporeans.",
+     "added_for_context": false
+    },
     {
      "sid": "s00003",
      "speaker": "The Senior Parliamentary Secretary to the Minister for Culture, Community and Youth (Ms Goh Hanyan) (for the Acting Minister for Culture, Community and Youth)",
@@ -38,7 +45,7 @@
   },
   {
    "label": "My ActiveSG+ booking system enhancement",
-   "summary": "SportSG is enhancing the My ActiveSG+ booking system, focusing first on user experience before expanding ActiveSG credits for People's Association facilities.",
+   "summary": "SportSG is enhancing the My ActiveSG+ booking system, focusing on user experience before expanding ActiveSG credits for People's Association facilities.",
    "sentences": [
     {
      "sid": "s00010",
@@ -62,12 +69,12 @@
    "oral-answer-4085"
   ],
   "sentences_total": 10,
-  "sentences_selected": 5,
-  "sentences_in_sections": 5,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 0,
   "sections_total": 2,
-  "selection_share": 0.5,
+  "selection_share": 0.6,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -79,21 +86,21 @@
    "sections_total": 2,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 5,
-   "sentences_selected": 5,
+   "sentences_published": 6,
+   "sentences_selected": 6,
    "turns_cited": 2,
    "turns_total": 4,
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:22:16"
+   "checked_at": "2026-09-19T22:06:42"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1066,
-   "completion_tokens": 145,
+   "prompt_tokens": 1085,
+   "completion_tokens": 148,
    "estimated": false,
-   "cost_usd": 0.00019
+   "cost_usd": 0.000193
   }
  }
 }

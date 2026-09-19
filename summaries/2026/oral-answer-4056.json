@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Hawker stallholder citizenship rules",
-   "summary": "MSE allows only Singaporean Citizens and Permanent Residents to be stallholders at hawker centres, while licensed food shops can hire foreign workers under levy rates and a two-locals-to-one-foreign-worker quota.",
+   "summary": "MSE allows only Singaporean Citizens and Permanent Residents to be hawker stallholders, while licensed food shops may hire foreign workers under levy and quota rules.",
    "sentences": [
     {
      "sid": "s00003",
@@ -21,37 +21,37 @@
      "added_for_context": false
     },
     {
-     "sid": "s00007",
+     "sid": "s00006",
      "speaker": "The Senior Minister of State for Manpower (Dr Koh Poh Koon) (for the Minister for Manpower)",
      "attributed": true,
-     "text": "Differentiating levies and quotas further to favour smaller operators could incentivise the larger operators to break up into smaller entities to hire more foreign workers.",
+     "text": "To address the manpower needs of micro enterprises, we allow those with only one local worker to hire their first Work Permit Holder.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Support schemes for small F&B",
-   "summary": "The Government has schemes supporting small F&B companies, including the FoodX programme for outsourcing food preparation to central kitchens and the F&B Process Optimisation Programme for technology adoption and process redesign.",
+   "label": "Productivity grant and manpower review",
+   "summary": "Companies may use the Productivity Solutions Grant, and foreign manpower policies for hawkers and small F&B companies will continue to be reviewed.",
    "sentences": [
     {
-     "sid": "s00017",
+     "sid": "s00019",
      "speaker": "The Senior Minister of State for Manpower (Dr Koh Poh Koon) (for the Minister for Manpower)",
      "attributed": true,
-     "text": "So, instead of just looking at raising headcounts, the Government has schemes to support small F&B companies.",
+     "text": "Companies may also tap on broader schemes such as the Productivity Solutions Grant to support transformation efforts to raise productivity.",
      "added_for_context": true
     },
     {
-     "sid": "s00018",
+     "sid": "s00020",
      "speaker": "The Senior Minister of State for Manpower (Dr Koh Poh Koon) (for the Minister for Manpower)",
      "attributed": true,
-     "text": "These include the FoodX programme, which supports the outsourcing of labour-intensive food preparation to central kitchens to improve operational efficiency; as well as the F&B Process Optimisation Programme, which supports technological adoption and process redesign.",
+     "text": "We will continue to review the foreign manpower policies for hawkers and small F&B companies, together with relevant agencies, including MSE.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Headcount, authenticity and productivity trade-offs",
-   "summary": "The Government is prepared to consider more headcount if it makes sense, but that could impact recipe authenticity, and smaller operators may need to rethink business models and use government resources to be more productive.",
+   "label": "Foreign headcount and recipe authenticity",
+   "summary": "Giving more headcount could affect recipe authenticity, and smaller operators may need to rethink business models and use resources like central kitchens.",
    "sentences": [
     {
      "sid": "s00035",
@@ -127,14 +127,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:50:45"
+   "checked_at": "2026-09-19T22:23:32"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2371,
-   "completion_tokens": 243,
+   "prompt_tokens": 2348,
+   "completion_tokens": 205,
    "estimated": false,
-   "cost_usd": 0.0004
+   "cost_usd": 0.000386
   }
  }
 }

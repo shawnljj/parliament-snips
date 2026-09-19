@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "PREDICT pilot programme participation",
-   "summary": "The PREDICT pilot programme offers prenatal screening for recessive genetic disorders, but fewer than 1,300 couples showed interest and about 800 have been tested.",
+   "summary": "The PREDICT pilot offers carrier testing to couples at KKH, but fewer than 1,300 showed interest and about 800 have been tested.",
    "sentences": [
     {
      "sid": "s00002",
@@ -25,7 +25,7 @@
      "speaker": "The Minister for Health (Mr Ong Ye Kung)",
      "attributed": true,
      "text": "Many couples did not complete the mandatory genetic counselling or decide not to proceed after the genetic counselling.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00006",
@@ -44,15 +44,28 @@
    ]
   },
   {
+   "label": "Preconception couples and KKH",
+   "summary": "KKH does not really come into contact with preconception couples because this is a preconception test.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Because this is a preconception test, KKH does not really come into contact with preconception couples.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
    "label": "Insurance and PREDICT disease coverage",
-   "summary": "The second suspected reason is insurance concerns if tested positive, and the third is that PREDICT covers 80 diseases.",
+   "summary": "The speaker suspects insurance concerns and PREDICT covering 80 diseases are reasons, without having done a study.",
    "sentences": [
     {
      "sid": "s00018",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "The second reason, I strongly suspect – we have not done any study about the reasons – is actually insurance.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00019",
@@ -64,21 +77,14 @@
    ]
   },
   {
-   "label": "Insurance Act and disease-specific approach",
-   "summary": "A new Act being drafted would bar genetic data use for insurance underwriting, and a disease-specific approach is thought more likely to succeed.",
+   "label": "Insurance and genetic data underwriting",
+   "summary": "The speaker says insurance must be addressed, and a new Act is being drafted so genetic data cannot be used for insurance underwriting.",
    "sentences": [
     {
      "sid": "s00025",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "Number one, you have to address the issue of insurance – and Members might know, we are in the process of drafting a new Act that will come to this Chamber to approve – so that genetic data cannot be used for insurance underwriting.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00027",
-     "speaker": "Mr Ong Ye Kung",
-     "attributed": true,
-     "text": "Number two, we think it is more likely to be successful if you take a disease-specific approach, like FH or breast cancer, that is clearly linked to certain genetic conditions, and if tested positive, we know what the treatment pathway is, what the implications are, and the doctor can advise the patient what exactly to do or not to do.",
      "added_for_context": false
     }
    ]
@@ -100,7 +106,7 @@
   "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 1,
-  "sections_total": 3,
+  "sections_total": 4,
   "selection_share": 0.3,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -110,7 +116,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 3,
+   "sections_total": 4,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 9,
@@ -120,14 +126,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:19:19"
+   "checked_at": "2026-09-19T22:05:06"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1797,
-   "completion_tokens": 201,
+   "prompt_tokens": 1752,
+   "completion_tokens": 240,
    "estimated": false,
-   "cost_usd": 0.000308
+   "cost_usd": 0.000312
   }
  }
 }

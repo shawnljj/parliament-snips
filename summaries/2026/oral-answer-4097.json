@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Harmony Circles and Asatizah Support",
-   "summary": "Harmony Circles run interfaith initiatives and asatizah provide counselling, including Asatizah Solace Care by PERGAS.",
+   "summary": "Harmony Circles run interfaith initiatives and fundraising, while asatizah like Asatizah Solace Care offer counselling and guidance.",
    "sentences": [
     {
      "sid": "s00006",
@@ -51,7 +51,7 @@
   },
   {
    "label": "Asatizah Training and National Interest",
-   "summary": "Asatizah receive training under the Asatizah Recognition Scheme and engage with PERGAS and MUIS on national interest.",
+   "summary": "Asatizah receive training through CET and the Asatizah Recognition Scheme, with PERGAS and MUIS engagements on national interest.",
    "sentences": [
     {
      "sid": "s00034",
@@ -127,14 +127,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:19:09"
+   "checked_at": "2026-09-19T22:05:03"
   },
   "usage": {
    "calls": 3,
    "prompt_tokens": 2483,
-   "completion_tokens": 198,
+   "completion_tokens": 200,
    "estimated": false,
-   "cost_usd": 0.000403
+   "cost_usd": 0.000404
   }
  }
 }

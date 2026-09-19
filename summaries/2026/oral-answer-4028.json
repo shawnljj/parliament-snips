@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "PPHS supply and allocation priority",
-   "summary": "HDB met its 4,000-unit PPHS target by end-2025, with priority tiers and recent selection rates for households.",
+   "summary": "HDB met its 4,000-unit PPHS target at end-2025, with priority tiers and recent invitation rates for flat selection.",
    "sentences": [
     {
      "sid": "s00003",
@@ -72,7 +72,7 @@
   },
   {
    "label": "PPHS ramp-up due to COVID",
-   "summary": "The PPHS ramp-up came about because of the housing crunch during COVID and difficulties meeting the building programme.",
+   "summary": "The PPHS ramp-up came about because of the housing crunch due to the COVID period and building programme difficulties.",
    "sentences": [
     {
      "sid": "s00018",
@@ -120,14 +120,14 @@
    "coverage": 0.4,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:19:58"
+   "checked_at": "2026-09-19T22:40:20"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1349,
-   "completion_tokens": 195,
+   "completion_tokens": 197,
    "estimated": false,
-   "cost_usd": 0.000243
+   "cost_usd": 0.000244
   }
  }
 }

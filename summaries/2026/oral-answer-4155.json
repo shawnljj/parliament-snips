@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Walk-in consultation waiting times",
-   "summary": "In 2025, walk-in patients had median doctor consultation waiting times of eight minutes and 95th percentile of 72 minutes, though MOH does not track peak versus off-peak.",
+   "summary": "In 2025 walk-in patients had median doctor consultation waiting time of eight minutes and 95th percentile of 72 minutes, with MOH not tracking peak versus off-peak.",
    "sentences": [
     {
      "sid": "s00002",
@@ -57,8 +57,8 @@
    ]
   },
   {
-   "label": "Walk-in appointments and GP clinics",
-   "summary": "The Ministry lacks numbers on walk-in versus scheduled appointments, but walk-ins will always occur, so CHAS-resourced GP clinics provide an additional subsidised option.",
+   "label": "Walk-in versus scheduled appointments",
+   "summary": "The Ministry lacks numbers on walk-in versus scheduled appointment percentages, and cites CHAS GP clinics and Healthier SG for walk-in care.",
    "sentences": [
     {
      "sid": "s00033",
@@ -141,14 +141,14 @@
    "coverage": 0.5714,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:56:34"
+   "checked_at": "2026-09-19T21:51:36"
   },
   "usage": {
    "calls": 3,
    "prompt_tokens": 2746,
-   "completion_tokens": 216,
+   "completion_tokens": 208,
    "estimated": false,
-   "cost_usd": 0.000445
+   "cost_usd": 0.000443
   }
  }
 }

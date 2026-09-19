@@ -3,8 +3,8 @@
  "what_it_is": "Number of Air-conditioned Classrooms in Schools and Schools that are Most Vulnerable to Urban Heat Island Effect",
  "sections": [
   {
-   "label": "Green Mark school design",
-   "summary": "New schools are designed for Green Mark Platinum Super Low Energy certification, emphasising passive design to cut heat gain, air-conditioning reliance and optimise natural ventilation.",
+   "label": "New school green design",
+   "summary": "New schools are designed for Green Mark Platinum Super Low Energy certification, emphasising passive design to reduce heat gain and air-conditioning reliance.",
    "sentences": [
     {
      "sid": "s00004",
@@ -17,7 +17,7 @@
   },
   {
    "label": "School cooling measures by 2027",
-   "summary": "By 2027 all schools get more powerful classroom fans and cool paint on facades, with air-conditioning considered for enclosed classrooms and studies on rising temperatures.",
+   "summary": "By 2027 all schools get more powerful fans and cool paint, with air-conditioning considered for enclosed classrooms and studies on rising temperatures.",
    "sentences": [
     {
      "sid": "s00008",
@@ -51,7 +51,7 @@
   },
   {
    "label": "Targeting cooling measures at schools",
-   "summary": "A 2024 NUS study found cognitive performance declines above a temperature threshold, but cooling measures will be targeted at schools where students face more discomfort.",
+   "summary": "A 2024 NUS study found cognitive performance declines above a temperature threshold, but cooling measures will be targeted at schools with more discomfort.",
    "sentences": [
     {
      "sid": "s00018",
@@ -113,14 +113,14 @@
    "coverage": 0.3333,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:35:52"
+   "checked_at": "2026-09-19T22:15:01"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1507,
-   "completion_tokens": 205,
+   "completion_tokens": 194,
    "estimated": false,
-   "cost_usd": 0.000268
+   "cost_usd": 0.000265
   }
  }
 }

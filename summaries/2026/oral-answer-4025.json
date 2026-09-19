@@ -3,8 +3,8 @@
  "what_it_is": "Incorporating Neuro-developmental Conditions in Existing Tiered-care Mental Health Model to Ensure Holistic Care",
  "sections": [
   {
-   "label": "Tiered mental health care access",
-   "summary": "The tiered-care model is organised by severity and complexity, not diagnosis, and applies to individuals with ADHD and autism who have co-occurring mental health needs.",
+   "label": "Tiered mental health care services",
+   "summary": "The tiered-care model is organised by severity and complexity, and applies to individuals with ADHD and autism who have co-occurring mental health needs.",
    "sentences": [
     {
      "sid": "s00002",
@@ -45,7 +45,7 @@
   },
   {
    "label": "National Mental Health Office collaboration",
-   "summary": "The National Mental Health Office collaborates with social partners and would work with them on awareness courses if capabilities need strengthening.",
+   "summary": "The National Mental Health Office collaborates with social partners, and counsellors who detect depression are encouraged to refer onwards for specialist assessments.",
    "sentences": [
     {
      "sid": "s00011",
@@ -114,14 +114,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:19:53"
+   "checked_at": "2026-09-19T22:40:17"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1531,
-   "completion_tokens": 150,
+   "completion_tokens": 151,
    "estimated": false,
-   "cost_usd": 0.000256
+   "cost_usd": 0.000257
   }
  }
 }

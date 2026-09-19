@@ -3,8 +3,8 @@
  "what_it_is": "Oversight of Wakaf Management",
  "sections": [
   {
-   "label": "Wakaf management and disbursement",
-   "summary": "Wakaf assets are managed by Warees Investments, MUIS and approved mutawallis, with a MUIS committee reviewing annual disbursements.",
+   "label": "Wakaf assets management and governance",
+   "summary": "Wakaf assets are managed by Warees Investments, a MUIS subsidiary, and appointed mutawallis, with governance mechanisms for financial sustainability, accountability and transparency.",
    "sentences": [
     {
      "sid": "s00002",
@@ -14,12 +14,18 @@
      "added_for_context": false
     },
     {
-     "sid": "s00004",
+     "sid": "s00003",
      "speaker": "The Acting Minister-in-charge of Muslim Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim)",
      "attributed": true,
-     "text": "First, all mutawallis must be approved by the MUIS Council and have the competencies to maintain good governance and long-term sustainability of the wakaf they oversee.",
+     "text": "There are clear governance mechanisms in place to ensure that wakaf assets remain financially sustainable and are managed with accountability and transparency.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "MUIS Wakaf Disbursement Committee",
+   "summary": "The MUIS Wakaf Disbursement Committee, with MUIS Council members, monitors and reviews annual wakaf disbursements and recommends fund allocation per the wakif's intention.",
+   "sentences": [
     {
      "sid": "s00006",
      "speaker": "The Acting Minister-in-charge of Muslim Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim)",
@@ -30,8 +36,8 @@
    ]
   },
   {
-   "label": "Wakaf Revitalisation Scheme",
-   "summary": "MUIS and Warees have undertaken asset enhancement and redevelopment under the Wakaf Revitalisation Scheme to optimise returns while sustaining heritage value.",
+   "label": "Wakaf Revitalisation Scheme initiatives",
+   "summary": "For some wakaf properties, MUIS and Warees undertook asset enhancement and redevelopment under the Wakaf Revitalisation Scheme to optimise financial returns while sustaining heritage value.",
    "sentences": [
     {
      "sid": "s00010",
@@ -43,8 +49,8 @@
    ]
   },
   {
-   "label": "2024 wakaf disbursements",
-   "summary": "In 2024, $11.3 million was disbursed to wakaf beneficiaries, including family members, mosques, madrasah, community organisations and charities.",
+   "label": "2024 wakaf disbursements and beneficiaries",
+   "summary": "In 2024, $11.3 million was disbursed to wakaf beneficiaries including benefactors' family members, mosques, madrasah, community organisations and charities, for purposes depending on the wakif's intention.",
    "sentences": [
     {
      "sid": "s00018",
@@ -63,8 +69,8 @@
    ]
   },
   {
-   "label": "Jamae Chulia restoration assurance",
-   "summary": "The Jamae Chulia Mosque restoration is completed and the Jamae Chulia Heritage will be completed soon, with assurance that wakif intentions are held in trust.",
+   "label": "Jamae Chulia restoration and future trust",
+   "summary": "The Jamae Chulia Mosque restoration is completed and the Jamae Chulia Heritage will be completed soon, and the speaker assures doing their best to hold the wakif's wishes in trust.",
    "sentences": [
     {
      "sid": "s00035",
@@ -106,7 +112,7 @@
   "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 1,
-  "sections_total": 4,
+  "sections_total": 5,
   "selection_share": 0.2432,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -116,7 +122,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 4,
+   "sections_total": 5,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 9,
@@ -126,14 +132,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:03:04"
+   "checked_at": "2026-09-19T22:30:09"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2502,
-   "completion_tokens": 273,
+   "prompt_tokens": 2496,
+   "completion_tokens": 369,
    "estimated": false,
-   "cost_usd": 0.000427
+   "cost_usd": 0.000453
   }
  }
 }

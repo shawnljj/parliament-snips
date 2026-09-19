@@ -3,16 +3,9 @@
  "what_it_is": "Frequency of Cancer Drug List Reviews and Updates",
  "sections": [
   {
-   "label": "Cancer Drug List mechanism",
-   "summary": "The Cancer Drug List lets MOH negotiate lower cancer drug prices, with 400 drug-indication pairings listed and MediFund aid for unlisted drugs.",
+   "label": "Cancer Drug List prices and listings",
+   "summary": "The CDL reduced cancer drug prices by an average of 30%, lists 400 drug-indication pairings, and MediFund aids unlisted drugs case by case.",
    "sentences": [
-    {
-     "sid": "s00002",
-     "speaker": "The Minister of State for Health (Ms Rahayu Mahzam) (for the Coordinating Minister for Social Policies and Minister for Health)",
-     "attributed": true,
-     "text": "The Cancer Drug List (CDL) mechanism enables the Ministry of Health (MOH) to negotiate better drug prices and keep cancer care affordable and sustainable for more patients over the longer term.",
-     "added_for_context": false
-    },
     {
      "sid": "s00003",
      "speaker": "The Minister of State for Health (Ms Rahayu Mahzam) (for the Coordinating Minister for Social Policies and Minister for Health)",
@@ -25,13 +18,6 @@
      "speaker": "The Minister of State for Health (Ms Rahayu Mahzam) (for the Coordinating Minister for Social Policies and Minister for Health)",
      "attributed": true,
      "text": "MOH updates the CDL three times a year, in consultation with an expert committee comprising cancer specialists from public and private sectors.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00005",
-     "speaker": "The Minister of State for Health (Ms Rahayu Mahzam) (for the Coordinating Minister for Social Policies and Minister for Health)",
-     "attributed": true,
-     "text": "We take into consideration medical advancements, evolving evidence of clinical and cost-effectiveness and alignment with international standards of cancer care.",
      "added_for_context": false
     },
     {
@@ -51,8 +37,8 @@
    ]
   },
   {
-   "label": "ACE horizon scanning tracking",
-   "summary": "ACE conducts horizon scanning to track overseas-approved drugs and identify priority drugs with the Cancer Drug Sub-committee.",
+   "label": "ACE horizon scanning for drugs",
+   "summary": "ACE conducts horizon scanning to track approved overseas drugs and identify priority drugs with the Cancer Drug Sub-committee.",
    "sentences": [
     {
      "sid": "s00012",
@@ -64,21 +50,35 @@
    ]
   },
   {
-   "label": "Clinician requests to ACE",
-   "summary": "Clinicians may directly submit requests to ACE to evaluate treatments, largely for very rare cancers with small patient numbers.",
+   "label": "Clinician requests for rare cancers",
+   "summary": "Clinicians may submit requests to ACE for rare cancer treatments, and administrative burden processes could be streamlined separately.",
    "sentences": [
     {
      "sid": "s00016",
      "speaker": "Ms Rahayu Mahzam",
      "attributed": true,
      "text": "In certain instances, yes, the clinicians may directly submit requests to ACE to evaluate treatments for potential inclusion in the CDL.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00017",
      "speaker": "Ms Rahayu Mahzam",
      "attributed": true,
      "text": "This is intended largely for treatments for very rare cancers, for example, where there are fewer than five to 10 patients per year where the treatment is not Health Sciences Authority-registered due to the very small patient numbers, but there is clinical need and the treatment has been approved by at least one reference overseas regulatory authority.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "I also note the separate point the Member made about the administrative burden that the doctors and clinicians have to undertake.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "We could take that separately and we could see how best we could streamline those processes.",
      "added_for_context": false
     }
    ]
@@ -120,14 +120,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:36:51"
+   "checked_at": "2026-09-19T21:42:06"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1570,
-   "completion_tokens": 186,
+   "prompt_tokens": 1548,
+   "completion_tokens": 192,
    "estimated": false,
-   "cost_usd": 0.000272
+   "cost_usd": 0.00027
   }
  }
 }

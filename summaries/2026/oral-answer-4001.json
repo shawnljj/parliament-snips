@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "SAFE framework food safety grading",
-   "summary": "The SAFE framework, part of SFA's science- and risk-based regime, will be implemented in two phases starting 19 January 2026.",
+   "summary": "The SAFE framework is part of SFA's science- and risk-based food safety regime, implemented in two phases starting 19 January 2026.",
    "sentences": [
     {
      "sid": "s00002",
@@ -44,8 +44,8 @@
    ]
   },
   {
-   "label": "FSMS, AFHO and Grade C downgrade",
-   "summary": "Establishments must implement a Food Safety Management System and appoint an Advanced Food Hygiene Officer, and major lapses or 12 demerit points downgrade them to Grade C.",
+   "label": "FSMS, AFHO and Grade C",
+   "summary": "Establishments must implement an FSMS and appoint an AFHO; major lapses or 12 demerit points downgrade them to Grade C.",
    "sentences": [
     {
      "sid": "s00014",
@@ -64,21 +64,21 @@
    ]
   },
   {
-   "label": "AFHO training course subsidies",
-   "summary": "Individuals applying for the AFHO training course will receive SkillsFuture Singapore subsidies of up to 70%.",
+   "label": "SME FSMS grant support",
+   "summary": "SMEs can receive up to 50% support under EnterpriseSG's Enterprise Development Grant to implement and certify their FSMS.",
    "sentences": [
     {
-     "sid": "s00022",
+     "sid": "s00025",
      "speaker": "Mr Zaqy Mohamad",
      "attributed": true,
-     "text": "Individuals who apply for the AFHO training course will receive SkillsFuture Singapore subsidies of up to 70%.",
+     "text": "As for FSMS implementation, small and medium-sized enterprises (SMEs) can receive up to 50% support under EnterpriseSG's Enterprise Development Grant to implement and certify their FSMS.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Risk-based inspection frequency",
-   "summary": "Under the risk-based regime, inspections are done more frequently for higher-risk or poorly performing outlets.",
+   "summary": "The risk-based regime allows more frequent inspections for outlets found to be higher risk or performing poorly.",
    "sentences": [
     {
      "sid": "s00043",
@@ -90,7 +90,7 @@
    ]
   },
   {
-   "label": "Grade B government procurement criterion",
+   "label": "Grade B government procurement",
    "summary": "Government procurement requires a minimum of Grade B in the criteria to be procured under Government contracts.",
    "sentences": [
     {
@@ -104,7 +104,7 @@
   },
   {
    "label": "No self-declaration for audits",
-   "summary": "For Category 1 and Category 2 classification, no self declaration is required for audits.",
+   "summary": "For Category 1 and Category 2 classification, no self declaration is required.",
    "sentences": [
     {
      "sid": "s00075",
@@ -117,7 +117,7 @@
   },
   {
    "label": "SFA Point Demerit System",
-   "summary": "SFA's Point Demerit System triggers suspension, and court convictions also lead to suspension, safeguarding consumer safety.",
+   "summary": "Under SFA's Point Demerit System, triggering it causes suspension, and court conviction also leads to suspension, safeguarding public and consumer safety.",
    "sentences": [
     {
      "sid": "s00084",
@@ -179,14 +179,14 @@
    "coverage": 0.6364,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:21:09"
+   "checked_at": "2026-09-19T22:41:11"
   },
   "usage": {
    "calls": 6,
-   "prompt_tokens": 4865,
-   "completion_tokens": 414,
+   "prompt_tokens": 4883,
+   "completion_tokens": 416,
    "estimated": false,
-   "cost_usd": 0.000797
+   "cost_usd": 0.0008
   }
  }
 }

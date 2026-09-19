@@ -51,7 +51,7 @@
   },
   {
    "label": "Temasek returns and assessment",
-   "summary": "Temasek reported 8% per annum Total Shareholder Return over 20 years in US dollar terms, and the Government assesses both entities' returns as reasonable and within expectations.",
+   "summary": "Temasek reported 8% per annum Total Shareholder Return over 20 years in US dollar terms, and the Government assesses both entities' returns as reasonable.",
    "sentences": [
     {
      "sid": "s00029",
@@ -83,7 +83,7 @@
    ]
   },
   {
-   "label": "NIRC based on long-term returns",
+   "label": "NIRC basis and smoothing",
    "summary": "Net Investment Returns taken into the Budget are based on long-term expected returns, not fluctuating year-to-year returns, and the asset base is smoothed over the long term.",
    "sentences": [
     {
@@ -103,8 +103,8 @@
    ]
   },
   {
-   "label": "GIC returns disclosed, assets not",
-   "summary": "GIC discloses five-, 10- and 20-year returns, but total assets under management are not disclosed to avoid encouraging speculative attacks on the Singapore dollar.",
+   "label": "GIC returns and asset disclosure",
+   "summary": "GIC discloses five-, 10- and 20-year returns, but total assets under management are not disclosed to avoid speculative attacks on the Singapore dollar.",
    "sentences": [
     {
      "sid": "s00060",
@@ -116,21 +116,21 @@
    ]
   },
   {
-   "label": "GIC and Temasek disclosures",
-   "summary": "GIC and Temasek have disclosed more information over time and will be encouraged to review other meaningful disclosures.",
+   "label": "Disclosure within overall investment system",
+   "summary": "The principle is that entities' disclosures should be part of an overall system enabling them to maximise long-term returns.",
    "sentences": [
     {
-     "sid": "s00064",
+     "sid": "s00065",
      "speaker": "Mr Jeffrey Siow",
      "attributed": true,
-     "text": "Over time, GIC and Temasek have disclosed more information, and we will continue to encourage them to review if there are other meaningful disclosures to make.",
+     "text": "Our principle is that what the entities disclose should be part of an overall system that enables them to maximise their ability to generate long-term returns.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "GIC 20-year real return",
-   "summary": "GIC achieved a real return of 3.8% per annum over the past 20 years, within the Government's expectations given the risk profile.",
+   "summary": "GIC achieved a real return of 3.8% per annum over 20 years, within the Government's expectations given the risk profile.",
    "sentences": [
     {
      "sid": "s00075",
@@ -142,20 +142,7 @@
    ]
   },
   {
-   "label": "GIC risk-adjusted outperformance",
-   "summary": "GIC returns were much less volatile and outperformed the reference portfolio on a risk adjusted basis with higher returns per unit of volatility.",
-   "sentences": [
-    {
-     "sid": "s00081",
-     "speaker": "Mr Jeffrey Siow",
-     "attributed": true,
-     "text": "At the same time, GIC returns were much less volatile in the same timeframe and in fact, have outperformed the reference portfolio on a risk adjusted basis, given that it has achieved higher returns per unit of volatility.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Benchmarks and national context",
+   "label": "Benchmarks and unique context",
    "summary": "Investment entities should have clear benchmarks and consider Singapore's context, including Budget returns and CPF interest obligations.",
    "sentences": [
     {
@@ -168,8 +155,21 @@
    ]
   },
   {
-   "label": "Alpha and challenging returns",
-   "summary": "The passage asks how the Government is convinced GIC and Temasek give alpha, and notes generating good returns has become more challenging.",
+   "label": "Threshold for NIRC framework review",
+   "summary": "The question asks what level of long-term returns should trigger a Government review of the NIRC framework's sustainability.",
+   "sentences": [
+    {
+     "sid": "s00104",
+     "speaker": "Mr Shawn Loh (Jalan Besar)",
+     "attributed": true,
+     "text": "What level of long-term investment returns should be the threshold which triggers a Government review of the NIRC framework to look at its sustainability, based on new structural trends in the global investment climate?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Alpha from GIC and Temasek",
+   "summary": "The question asks how the Government is convinced GIC and Temasek's active approach gives deserved alpha, amid challenging returns.",
    "sentences": [
     {
      "sid": "s00107",
@@ -189,7 +189,7 @@
   },
   {
    "label": "Riding out market fluctuations",
-   "summary": "The system lets Singapore ride out year-to-year fluctuations and sustained global under-performance due to a large asset base and long-term view.",
+   "summary": "The system lets Singapore ride out year-to-year fluctuations and sustained global under-performance due to its large asset base and long-term view.",
    "sentences": [
     {
      "sid": "s00111",
@@ -202,7 +202,7 @@
   },
   {
    "label": "GIC track record and de-risking",
-   "summary": "The GIC team's track record shows it can meet its mandate, and it has de-risked during periods of distress such as COVID.",
+   "summary": "The GIC team's track record under its mandate shows it can de-risk during periods of distress such as COVID.",
    "sentences": [
     {
      "sid": "s00118",
@@ -221,8 +221,8 @@
    ]
   },
   {
-   "label": "No direction on individual investments",
-   "summary": "The speaker says they do not work on individual investment decisions and will not direct GIC's investment focus or local investing.",
+   "label": "No direction on investment focus",
+   "summary": "The entity decides its own investment focus and local investing, as the government will not direct those decisions.",
    "sentences": [
     {
      "sid": "s00136",
@@ -249,7 +249,7 @@
   },
   {
    "label": "Temasek portfolio sustainable returns",
-   "summary": "The speaker says that as long as Temasek's total portfolio can generate sustainable returns, that will be a good outcome.",
+   "summary": "For Temasek's total asset portfolio, generating sustainable returns as a portfolio would be a good outcome.",
    "sentences": [
     {
      "sid": "s00144",
@@ -297,14 +297,14 @@
    "coverage": 0.5556,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:39:18"
+   "checked_at": "2026-09-19T22:53:12"
   },
   "usage": {
    "calls": 9,
-   "prompt_tokens": 8601,
-   "completion_tokens": 914,
+   "prompt_tokens": 8591,
+   "completion_tokens": 888,
    "estimated": false,
-   "cost_usd": 0.00146
+   "cost_usd": 0.001451
   }
  }
 }

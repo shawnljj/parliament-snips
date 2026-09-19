@@ -3,8 +3,8 @@
  "what_it_is": "Barrier-free Access on Public Footpaths for Mobility Scooters and Motorised Wheelchairs",
  "sections": [
   {
-   "label": "Footpath width and clearance standards",
-   "summary": "Public paths are kept free of encumbrances, with minimum clear widths set for new footpaths and widening of old ones, subject to site constraints and feedback.",
+   "label": "Footpath width and encumbrances",
+   "summary": "Public paths are kept free of encumbrances, new footpaths must meet minimum widths, and old footpaths are widened unless site constraints exist.",
    "sentences": [
     {
      "sid": "s00002",
@@ -45,7 +45,7 @@
   },
   {
    "label": "Path widening constraints in private estates",
-   "summary": "Path widening is usually done with other estate improvement works outside LTA's jurisdiction, and a calibrated approach considers private estate constraints and user volumes.",
+   "summary": "Path widening is usually done with other estate improvement works, faces constraints in private estates, and follows a calibrated approach based on user volume.",
    "sentences": [
     {
      "sid": "s00010",
@@ -107,14 +107,14 @@
    "coverage": 0.3333,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:50:49"
+   "checked_at": "2026-09-19T22:23:34"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1308,
-   "completion_tokens": 155,
+   "completion_tokens": 152,
    "estimated": false,
-   "cost_usd": 0.000227
+   "cost_usd": 0.000226
   }
  }
 }

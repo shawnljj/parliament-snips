@@ -3,8 +3,8 @@
  "what_it_is": "Redesigning Shelter Models to Better Meet Needs of Rough Sleepers",
  "sections": [
   {
-   "label": "Rough sleepers survey locations",
-   "summary": "The 2025 MSF Street Count found most rough sleepers choose sheltered, well-lit locations.",
+   "label": "MSF Street Count Rough Sleepers Survey",
+   "summary": "The 2025 MSF Street Count of Rough Sleepers Survey found most rough sleepers choose sheltered and well-lit locations.",
    "sentences": [
     {
      "sid": "s00004",
@@ -16,7 +16,7 @@
    ]
   },
   {
-   "label": "Rough sleeping due to disagreements",
+   "label": "Rough sleepers with homes",
    "summary": "Many rough sleepers have homes but rough sleep due to disagreements with family, friends or co-tenants.",
    "sentences": [
     {
@@ -30,7 +30,7 @@
   },
   {
    "label": "MSF shelter redesign and PATH fund",
-   "summary": "MSF redesigned shelter units with partitioned spaces and announced a $450,000 PATH fund.",
+   "summary": "MSF redesigned shelter units with partitioned bed spaces, shelves and wardrobes, and announced a $450,000 PATH fund.",
    "sentences": [
     {
      "sid": "s00011",
@@ -49,8 +49,8 @@
    ]
   },
   {
-   "label": "Rough sleepers refusing shelters",
-   "summary": "The prevalence rate is about 75%, and about three-quarters do not wish to check into shelters.",
+   "label": "Rough sleepers avoiding shelters",
+   "summary": "The prevalence rate is about 75%, and about three-quarters of rough sleepers do not wish to check into shelters.",
    "sentences": [
     {
      "sid": "s00019",
@@ -70,7 +70,7 @@
   },
   {
    "label": "Transitional shelter bed utilisation",
-   "summary": "The Street Count Report mentioned 730 transitional shelter bed spaces, with about 66% utilisation as of September last year.",
+   "summary": "The Street Count Report mentioned 730 transitional shelter bed spaces, with utilisation about two thirds as of September last year.",
    "sentences": [
     {
      "sid": "s00023",
@@ -125,14 +125,14 @@
    "coverage": 0.3333,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:03:48"
+   "checked_at": "2026-09-19T22:30:40"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1616,
-   "completion_tokens": 265,
+   "completion_tokens": 283,
    "estimated": false,
-   "cost_usd": 0.0003
+   "cost_usd": 0.000305
   }
  }
 }

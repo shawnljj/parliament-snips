@@ -3,23 +3,9 @@
  "what_it_is": "Definition and Measurable Indicators for \"Good Jobs\" under Economic Strategy Review",
  "sections": [
   {
-   "label": "Measuring job quality and labour indicators",
-   "summary": "It states job quality has multiple dimensions, describes labour market indicators used, and cites income, discrimination and workplace safety figures.",
+   "label": "Labour market indicators and outcomes",
+   "summary": "Singapore measures labour market participation, underutilisation and earnings, and reports income growth, less discrimination and low fatality rates.",
    "sentences": [
-    {
-     "sid": "s00004",
-     "speaker": "The Senior Minister of State for Manpower (Dr Koh Poh Koon) (for the Minister for Manpower)",
-     "attributed": true,
-     "text": "It often includes factors such as wage growth, opportunities for career development, fair and safe workplaces, personal fulfilment, and what gives someone highest utility, among many others.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00005",
-     "speaker": "The Senior Minister of State for Manpower (Dr Koh Poh Koon) (for the Minister for Manpower)",
-     "attributed": true,
-     "text": "There are multiple dimensions to good jobs, and no single, universally accepted framework for measuring job quality.",
-     "added_for_context": false
-    },
     {
      "sid": "s00006",
      "speaker": "The Senior Minister of State for Manpower (Dr Koh Poh Koon) (for the Minister for Manpower)",
@@ -72,14 +58,27 @@
    ]
   },
   {
-   "label": "Wage share as job quality measure",
-   "summary": "It says multiple dimensions of job quality will continue to be measured, possibly including wage share over time.",
+   "label": "Definition of well-paying jobs",
+   "summary": "Well-paying jobs are those that pay above the median wage of the resident workforce.",
    "sentences": [
     {
-     "sid": "s00033",
+     "sid": "s00030",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
-     "text": "The Member's second question of looking at wage share, well, I think there are, like I said, there are multiple dimensions to track and we will continue to measure multiple dimensions of job quality, that could include looking at wage share over time.",
+     "text": "In general, well-paying jobs are those that pay above the median wage of the resident workforce.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "International job quality frameworks",
+   "summary": "Relevant dimensions from other international job quality frameworks, including the OECD's, will be considered.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "In doing so, we will consider relevant dimensions that are included in other international frameworks of job quality, including the one that the Member has mentioned – the OECD's job quality framework.",
      "added_for_context": false
     }
    ]
@@ -97,12 +96,12 @@
    "oral-answer-4020"
   ],
   "sentences_total": 36,
-  "sentences_selected": 10,
-  "sentences_in_sections": 10,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
-  "sections_total": 2,
-  "selection_share": 0.2778,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.25,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -111,24 +110,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 2,
+   "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 10,
-   "sentences_selected": 10,
+   "sentences_published": 9,
+   "sentences_selected": 9,
    "turns_cited": 2,
    "turns_total": 4,
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:19:25"
+   "checked_at": "2026-09-19T22:39:55"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1948,
-   "completion_tokens": 140,
+   "prompt_tokens": 1903,
+   "completion_tokens": 172,
    "estimated": false,
-   "cost_usd": 0.000312
+   "cost_usd": 0.000315
   }
  }
 }

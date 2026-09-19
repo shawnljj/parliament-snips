@@ -3,8 +3,8 @@
  "what_it_is": "Tighter Controls and Real-time Anomaly Detection for SIM Card Purchases, Re-registration Patterns and GSM Gateway Misuse",
  "sections": [
   {
-   "label": "SIM card limits and scam lines",
-   "summary": "Scam mules are barred from new mobile lines since 1 October 2025, and from 28 February 2026 each person is limited to 10 postpaid SIM cards across all telcos, on top of the existing cap of three prepaid SIM cards.",
+   "label": "Scam mule SIM card limits",
+   "summary": "Scam mules are barred from new mobile lines since 1 October 2025, and from 28 February 2026 each person is limited to 10 postpaid SIM cards across all telcos.",
    "sentences": [
     {
      "sid": "s00004",
@@ -30,7 +30,7 @@
    ]
   },
   {
-   "label": "Gateway device import approval rule",
+   "label": "Gateway device SIM slot rule",
    "summary": "Gateway devices with five or more SIM card slots are prohibited without IMDA's prior approval for import since 1 February 2025.",
    "sentences": [
     {
@@ -56,7 +56,7 @@
    ]
   },
   {
-   "label": "SMS first-contact cases decrease",
+   "label": "SMS first contact cases drop",
    "summary": "Cases with SMS as the first contact method decreased about 65%, from 1,285 cases in 2024 to 450 cases in 2025.",
    "sentences": [
     {
@@ -70,7 +70,7 @@
   },
   {
    "label": "SIMCardHowMany checking tool",
-   "summary": "IMDA and GovTech jointly developed SIMCardHowMany, which lets mobile phone users check the number of postpaid SIM cards registered under their names, within the postpaid limit of 10 SIM cards.",
+   "summary": "IMDA and GovTech jointly developed SIMCardHowMany, a tool allowing mobile phone users to check the number of postpaid SIM cards registered under their names.",
    "sentences": [
     {
      "sid": "s00039",
@@ -125,14 +125,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:56:43"
+   "checked_at": "2026-09-19T21:51:41"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 2042,
-   "completion_tokens": 345,
+   "completion_tokens": 324,
    "estimated": false,
-   "cost_usd": 0.000382
+   "cost_usd": 0.000377
   }
  }
 }

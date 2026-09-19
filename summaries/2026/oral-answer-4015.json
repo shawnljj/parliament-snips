@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "PREPARE Nipah virus research projects",
-   "summary": "PREPARE funds six Nipah virus research projects by Duke-NUS, NUS and A*STAR, none using live virus, as Singapore lacks a BSL 4 lab.",
+   "summary": "PREPARE funds six Nipah virus research projects by Duke-NUS, NUS and A*STAR, none using live virus, which needs a BSL 4 lab Singapore lacks.",
    "sentences": [
     {
      "sid": "s00002",
@@ -57,8 +57,8 @@
    ]
   },
   {
-   "label": "Cautious posture, vaccine premature",
-   "summary": "A cautious posture is adopted, with monitoring and containment for arrivals, but seeking vaccine targets now is premature.",
+   "label": "Cautious posture, no vaccine procurement",
+   "summary": "The posture differs from COVID, so procuring vaccine targets now is premature; incoming symptomatic individuals get containment, isolation, supportive care and 14-day monitoring.",
    "sentences": [
     {
      "sid": "s00021",
@@ -127,14 +127,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:19:37"
+   "checked_at": "2026-09-19T22:40:06"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1749,
-   "completion_tokens": 194,
+   "completion_tokens": 206,
    "estimated": false,
-   "cost_usd": 0.000299
+   "cost_usd": 0.000303
   }
  }
 }

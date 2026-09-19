@@ -30,14 +30,14 @@
    ]
   },
   {
-   "label": "Service incident resolution requirement",
-   "summary": "Service providers must resolve service incidents within one hour, or IMDA may take enforcement actions and impose financial penalties.",
+   "label": "IMDA reviewing resilience regulations",
+   "summary": "IMDA is reviewing telecom service resilience regulations to ensure they remain effective.",
    "sentences": [
     {
-     "sid": "s00016",
+     "sid": "s00023",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
-     "text": "For example, service providers are required to ensure that service incidents are resolved within one hour, failing which IMDA may take enforcement actions and impose financial penalties.",
+     "text": "IMDA is reviewing telecom service resilience regulations to ensure they remain effective.",
      "added_for_context": false
     }
    ]
@@ -64,7 +64,7 @@
   },
   {
    "label": "Incident frequency and duration averages",
-   "summary": "Average incidents fell from eight per year in 2016-2020 to six in 2021-2025, and average duration fell from eight to six-and-a-half hours.",
+   "summary": "Average incidents fell from eight in 2016-2020 to six in 2021-2025, and average duration fell from eight to six-and-a-half hours.",
    "sentences": [
     {
      "sid": "s00053",
@@ -91,7 +91,7 @@
   },
   {
    "label": "Compensation rules and Singtel rebate",
-   "summary": "Two countries require limited compensation that the March Singtel incidents would not qualify for, and Singtel decided to pay a one-time rebate.",
+   "summary": "Two countries require limited compensation that the March Singtel incidents would not have qualified for, and Singtel decided to pay a one-time rebate.",
    "sentences": [
     {
      "sid": "s00087",
@@ -117,7 +117,7 @@
    ]
   },
   {
-   "label": "IMDA and CSA review",
+   "label": "IMDA and CSA to investigate",
    "summary": "IMDA, together with CSA, will have to look very seriously into these issues.",
    "sentences": [
     {
@@ -166,14 +166,14 @@
    "coverage": 0.25,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:18:35"
+   "checked_at": "2026-09-19T22:04:44"
   },
   "usage": {
    "calls": 4,
-   "prompt_tokens": 4303,
-   "completion_tokens": 365,
+   "prompt_tokens": 4286,
+   "completion_tokens": 358,
    "estimated": false,
-   "cost_usd": 0.000705
+   "cost_usd": 0.0007
   }
  }
 }

@@ -3,8 +3,54 @@
  "what_it_is": "An Economy of the Future that Works for All",
  "sections": [
   {
-   "label": "EDB investment and jobs trend",
-   "summary": "EDB fixed asset investment rose for three years while expected jobs and value added fell.",
+   "label": "Singapore Fortune Global 500 companies",
+   "summary": "Singapore has three companies in the Fortune Global 500.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "Singapore has three companies in the Fortune Global 500.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Heineken Tuas brewing wind-down",
+   "summary": "Heineken is winding down brewing at Tuas, moving production to Malaysia and Vietnam, with about 130 jobs affected.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "Heineken is winding down brewing at Tuas and moving production to Malaysia and Vietnam, and about 130 jobs go with it.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Local R&D champion absence",
+   "summary": "Firms should build what others cannot easily copy, but no local R&D champion worth over a billion dollars has emerged.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "Build what others cannot easily copy so that firms come here in spite of our costs.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00034",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "But after decades and tens of billions, not one local R&D champion has emerged worth more than a billion dollars.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "EDB fixed asset investment and jobs",
+   "summary": "EDB committed $14.2 billion of fixed asset investment last year, with investment rising three years but jobs falling.",
    "sentences": [
     {
      "sid": "s00040",
@@ -14,31 +60,10 @@
      "added_for_context": false
     },
     {
-     "sid": "s00041",
-     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
-     "attributed": true,
-     "text": "But for it, we get the opposite trend in jobs.",
-     "added_for_context": false
-    },
-    {
      "sid": "s00042",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "In 2023, 20,000 jobs; in 2024, 18,700 jobs; and last year 15,700 jobs.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00043",
-     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
-     "attributed": true,
-     "text": "The value added expected went from $26.7 billion to $23.5 billion to $18 billion.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00044",
-     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
-     "attributed": true,
-     "text": "So, even on official statistics, the engine of investment to jobs is faltering.",
      "added_for_context": false
     }
    ]
@@ -57,8 +82,8 @@
    ]
   },
   {
-   "label": "Productivity and income growth gap",
-   "summary": "Labour productivity grew 2.5% yearly from 2016 to 2024 while real mean income grew 1.3% yearly.",
+   "label": "Productivity and income growth comparison",
+   "summary": "Labour productivity grew 2.5% yearly from 2016 to 2024, while real mean income grew 1.3%, and output per worker outpaced major economies.",
    "sentences": [
     {
      "sid": "s00059",
@@ -84,28 +109,28 @@
    ]
   },
   {
-   "label": "Market land value proposition",
-   "summary": "The proposition is that Singapore should stop treating market land value as a natural price for socially productive land use.",
+   "label": "Pricing state land at development cost",
+   "summary": "The proposition is that Singapore should stop treating market land value as a natural price for every socially productive use of land, tested by a university-centred special zone.",
    "sentences": [
-    {
-     "sid": "s00093",
-     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
-     "attributed": true,
-     "text": "We do not ask a child for an immediate pay-off.",
-     "added_for_context": true
-    },
     {
      "sid": "s00094",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "So, the proposition: Singapore should stop treating market land value as a natural price for every socially productive use of land.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00095",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "And the test: a university-centred special zone where state land is priced at development cost rather than market scarcity value.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Special zone around NTU",
-   "summary": "A special zone around NTU is proposed where state land is charged as cost recovery and returns come from companies.",
+   "summary": "The bargain has four parts, and a special zone surrounding NTU should be created where state land is charged as cost recovery and returns come from companies.",
    "sentences": [
     {
      "sid": "s00103",
@@ -125,7 +150,7 @@
   },
   {
    "label": "Development cost of completed flats",
-   "summary": "In December 2022 the Government put the development cost of 13,506 completed flats at $396,000 each.",
+   "summary": "In December 2022, the Government put the development cost of that year's 13,506 completed flats at $396,000 each, with land 59% of the cost.",
    "sentences": [
     {
      "sid": "s00123",
@@ -144,8 +169,8 @@
    ]
   },
   {
-   "label": "NTU expansion and Bahar land",
-   "summary": "NTU can still expand unlike NUS, and 116 hectares adjoining NTU are planned for Bahar and CleanTech Park.",
+   "label": "NTU expansion and planned land",
+   "summary": "Unlike NUS, whose Kent Ridge and One-North districts have little room left, NTU can still expand, and Bahar and CleanTech Park adjoin NTU with 116 hectares.",
    "sentences": [
     {
      "sid": "s00146",
@@ -164,8 +189,8 @@
    ]
   },
   {
-   "label": "Jurong Innovation District Bahar precinct",
-   "summary": "The 620-hectare Jurong Innovation District holds Bahar as the next greenfield precinct, already zoned with an Environmental Impact Assessment underway.",
+   "label": "Jurong Innovation District and Bahar",
+   "summary": "The Jurong Innovation District, 620 hectares, holds in Bahar the next greenfield precinct, already zoned with the Environmental Impact Assessment underway.",
    "sentences": [
     {
      "sid": "s00158",
@@ -178,7 +203,7 @@
   },
   {
    "label": "Johor Zone Agreement signing",
-   "summary": "The Johor Zone Agreement was signed in January 2025.",
+   "summary": "Second, the Johor Zone Agreement was signed in January 2025.",
    "sentences": [
     {
      "sid": "s00161",
@@ -191,7 +216,7 @@
   },
   {
    "label": "NTU and co-living room rents",
-   "summary": "NTU rooms cost about $412 to $657 monthly, while SG Youth co-living rooms start at $1,800 to $2,000 before utilities and deposits.",
+   "summary": "NTU rooms cost about $412 to $657 monthly, while co-living rooms start at $1,800 to $2,000, roughly 30% below the usual rate.",
    "sentences": [
     {
      "sid": "s00170",
@@ -210,8 +235,8 @@
    ]
   },
   {
-   "label": "Per-head housing cost calculation",
-   "summary": "A 500 square foot unit at $200 per square foot, amortised over 10 years at 5%, comes to about $380 a head monthly.",
+   "label": "500 square foot unit cost",
+   "summary": "A 500 square foot unit at $200 per square foot, amortised over 10 years at 5%, comes to about $1,061 monthly, or $380 a head.",
    "sentences": [
     {
      "sid": "s00185",
@@ -223,9 +248,16 @@
    ]
   },
   {
-   "label": "Campus use cap and visa changes",
-   "summary": "The speaker proposes lifting URA's 5% or 30,000 square metre cap on non-academic campus use and hastening visa decisions.",
+   "label": "JTC leases and zone proposals",
+   "summary": "JTC lets land on its own lease terms, and the speaker proposes lifting URA's campus use cap and hastening visa decisions.",
    "sentences": [
+    {
+     "sid": "s00220",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "JTC let its land on contracts it writes itself – rent formulas, renewal test, quotas, carve outs, occupancy covenants.",
+     "added_for_context": false
+    },
     {
      "sid": "s00221",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
@@ -250,8 +282,8 @@
    ]
   },
   {
-   "label": "Zhongguancun zone investment arm",
-   "summary": "The zone's state-owned Oriza Holdings was incorporated in 2001, and China's New Third Board began in 2006 as a Zhongguancun pilot, going nationwide in 2013.",
+   "label": "Oriza Holdings investment arm",
+   "summary": "The zone's state-owned investment arm, Oriza Holdings, was incorporated in 2001 and manages about US$14 billion.",
    "sentences": [
     {
      "sid": "s00229",
@@ -259,19 +291,12 @@
      "attributed": true,
      "text": "The zone grew its own investment arm, Oriza Holdings – state-owned, controlled by the Parks Administration Committee, incorporated in 2001, with about US$14 billion under management today.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00231",
-     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
-     "attributed": true,
-     "text": "China's New Third Board, its national over-the-counter equity market for unlisted small companies, began in 2006 as a Zhongguancun Science Park Share Transfer pilot and went nationwide in 2013.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Proposed zone around NTU",
-   "summary": "The speaker asks for a zone around NTU, a new restricted tenure land use category, and a zone authority taking stakes in enterprises.",
+   "label": "Zone proposal and threefold ask",
+   "summary": "The speaker asks for a zone around NTU, a new restricted land use category, and a zone authority taking stakes in enterprises.",
    "sentences": [
     {
      "sid": "s00234",
@@ -291,7 +316,7 @@
   },
   {
    "label": "WP Motion on future economy",
-   "summary": "The WP moved a Motion to create an economy of the future, aiming to shift from an MNC-centric model to an SME-focused one.",
+   "summary": "The WP moved a Motion to create an economy of the future, shifting from an MNC-centric model to an SME-focused one.",
    "sentences": [
     {
      "sid": "s00247",
@@ -317,8 +342,8 @@
    ]
   },
   {
-   "label": "Institutions and low tax climate",
-   "summary": "Emphasis on quality institutions, low taxes, property rights, rule of law and civil service raised per capita income from about $1,600 to over $121,000.",
+   "label": "Institutions, taxes, property rights, civil service",
+   "summary": "Emphasis on quality institutions, low taxes, property rights, rule of law and a high functioning civil service raised per capita income from about $1,600 at Independence to more than $121,000 today.",
    "sentences": [
     {
      "sid": "s00257",
@@ -337,8 +362,8 @@
    ]
   },
   {
-   "label": "Lagging productivity growth",
-   "summary": "A known design flaw in relentlessly accumulating inputs to production has left productivity growth lagging.",
+   "label": "Productivity growth lagging",
+   "summary": "A known design flaw in relentlessly accumulating inputs to production has left Singapore lagging in productivity growth.",
    "sentences": [
     {
      "sid": "s00266",
@@ -350,8 +375,8 @@
    ]
   },
   {
-   "label": "Pivot from MNCs to SMEs",
-   "summary": "Singapore must evolve away from reliance on foreign MNCs and pivot toward SMEs as its homegrown economic engine.",
+   "label": "Shift from MNCs to SMEs",
+   "summary": "Singapore must evolve away from reliance on foreign MNCs toward SMEs, shifting from tax competition, undervalued exchange rates and wooing footloose MNCs.",
    "sentences": [
     {
      "sid": "s00275",
@@ -359,20 +384,27 @@
      "attributed": true,
      "text": "For starters, we must evolve away from our traditional reliance on foreign MNCs as a driver of our growth and pivot toward SMEs as our homegrown economic engine.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00276",
+     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
+     "attributed": true,
+     "text": "While the ESR speaks about both, it betrays, somewhat, an implicit bias toward the former.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00277",
+     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
+     "attributed": true,
+     "text": "We need a conscious shift from not too much fixation with tax competition and undervalued exchange rate and the wooing of footloose MNCs.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "SMEs role in economy",
-   "summary": "Small firms drive destructive innovation and startups sustain growth, but Singapore SMEs contribute only half of value added despite employing seven in ten workers.",
+   "label": "SMEs share of economy",
+   "summary": "SMEs account for 99 of 100 registered enterprises and employ seven of 10 Singaporean workers, but contribute only half of the economy's value added.",
    "sentences": [
-    {
-     "sid": "s00285",
-     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
-     "attributed": true,
-     "text": "Research shows that worldwide, small firms drive destructive innovation, and startups are the bulwark of sustainable growth through this process of creative destruction.",
-     "added_for_context": false
-    },
     {
      "sid": "s00286",
      "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
@@ -384,7 +416,7 @@
   },
   {
    "label": "SMEs low productivity",
-   "summary": "SMEs struggle with low productivity, which the Government has explicitly acknowledged.",
+   "summary": "SMEs struggle with low levels of productivity, which the Government itself has explicitly acknowledged.",
    "sentences": [
     {
      "sid": "s00296",
@@ -396,28 +428,8 @@
    ]
   },
   {
-   "label": "SMEs as development innovation",
-   "summary": "SMEs must be the source of development innovation, the 'D' in R&D, as Singapore's R&D is under 2% of GDP.",
-   "sentences": [
-    {
-     "sid": "s00300",
-     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
-     "attributed": true,
-     "text": "Our SMEs must stand ready to be the source of development innovation, the \"D\" in R&D.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00301",
-     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
-     "attributed": true,
-     "text": "I have shared with this House previously about how at less than 2% of GDP, our nation's R&D remains squarely below the global average and significantly behind that of leading innovation nations.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "ESR and R&D funding",
-   "summary": "The ESR talks about R&D but does not underscore the pivot's importance, noting a $37 billion commitment announced last year.",
+   "label": "R&D pivot and funding",
+   "summary": "The ESR talks about R&D but does not underscore the pivot's importance, while the Prime Minister's Office announced a $37 billion commitment to research, innovation and enterprise funding over five years.",
    "sentences": [
     {
      "sid": "s00304",
@@ -436,8 +448,8 @@
    ]
   },
   {
-   "label": "R&D tax incentives",
-   "summary": "Corporate R&D tax incentives are generous, with up to 400% deduction for the first $400,000 and up to 100% Refundable Investment Credit.",
+   "label": "Corporate R&D tax incentives",
+   "summary": "Tax incentives for corporate R&D allow up to 400% deduction for the first $400,000 of qualifying expenditures yearly, plus up to 100% Refundable Investment Credit.",
    "sentences": [
     {
      "sid": "s00308",
@@ -449,8 +461,21 @@
    ]
   },
   {
-   "label": "Rent increase cap",
-   "summary": "One strategy is to cap the maximum annual rent increase at the historical rate of about 3%, limiting the rate not the level.",
+   "label": "Domestic enterprises' R&D spending share",
+   "summary": "Domestic enterprises account for half of the economy's value-added R&D spending but only $1 of every $5.",
+   "sentences": [
+    {
+     "sid": "s00320",
+     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
+     "attributed": true,
+     "text": "Despite being half of our economy's value-added R&D spending by domestic enterprises account for only $1 of every $5.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cap on annual rent increases",
+   "summary": "One strategy is to cap the maximum yearly rent increase at the historical annual increase of about 3%, limiting the rate not the level.",
    "sentences": [
     {
      "sid": "s00325",
@@ -469,28 +494,8 @@
    ]
   },
   {
-   "label": "Government landlords and dependency ratio",
-   "summary": "The speaker says limiting changes to Government and agency landlords would be a major step, and suggests revisiting the dependency ratio ceiling for sectors like F&B.",
-   "sentences": [
-    {
-     "sid": "s00330",
-     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
-     "attributed": true,
-     "text": "Even if we limit it to Government and agency landlords, such as the HDB or JTC, it will be a major step forward.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00331",
-     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
-     "attributed": true,
-     "text": "It may also be time to revisit the dependency ratio ceiling for certain sectors, like F&B, where Singaporeans continue to shun open positions that are advertised even at attractive wages.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "ITE and university student supply",
-   "summary": "In 2024, ITE supplied 1,300 students and autonomous universities sent 800, with around 300 firms joining such programmes, under 1% of registered SMEs.",
+   "label": "SME internship participation and German approach",
+   "summary": "In 2024 ITE supplied 1,300 students and autonomous universities 800, with around 300 firms, under 1% of registered SMEs, joining such programmes.",
    "sentences": [
     {
      "sid": "s00355",
@@ -505,12 +510,26 @@
      "attributed": true,
      "text": "Around 300 firms have joined such programmes, which are less than 1% of registered SMEs.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00359",
+     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
+     "attributed": true,
+     "text": "This can be insurmountable for smaller companies with limited resources and understanding of how to go about doing so.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00360",
+     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
+     "attributed": true,
+     "text": "It may be better to take a cue from the German approach, where more than one in 10 companies participate in their equivalent programme, by expanding the scope of potential applicants, allowing interns to be hired using SkillsFuture funds and accepting simpler application criteria from SME employers.",
+     "added_for_context": false
     }
    ]
   },
   {
    "label": "Grants paired with skills transfer",
-   "summary": "Larger grants should be paired with a clear proposal and timetable for skills transfer, including possibly sunsetting foreign Employment Passes if no additional transfer occurs.",
+   "summary": "Larger grants should be paired with a clear proposal and timetable for skills transfer, including possibly sunsetting foreign Employment Passes after a designated duration.",
    "sentences": [
     {
      "sid": "s00364",
@@ -523,7 +542,7 @@
   },
   {
    "label": "Not a wholesale model overhaul",
-   "summary": "The speaker clarifies he is not calling for a wholesale overhaul of the GLC-heavy, MNC-led and foreign capital-reliant model, which has served Singapore well.",
+   "summary": "The call is not for a wholesale overhaul of the GLC-heavy, MNC-led and foreign capital-reliant model, which has served us well to date.",
    "sentences": [
     {
      "sid": "s00367",
@@ -535,8 +554,8 @@
    ]
   },
   {
-   "label": "Shifts to favour homegrown firms",
-   "summary": "The speaker calls for policy and institutional shifts to place small and especially medium-sized firms at the heart of the economic model, away from large foreign MNCs and GLCs.",
+   "label": "Shift to homegrown medium-sized firms",
+   "summary": "Calls for policy and institutional shifts placing small and medium-sized firms at the heart of Singapore's economic model, away from large foreign MNCs and GLCs.",
    "sentences": [
     {
      "sid": "s00371",
@@ -569,8 +588,8 @@
    ]
   },
   {
-   "label": "Q2 growth and business costs",
-   "summary": "Singapore's economy grew 5.7% in the second quarter, with manufacturing up 12.2% on AI-related demand, while many businesses face uncertain demand and high costs.",
+   "label": "Singapore second quarter economic growth",
+   "summary": "Singapore's economy grew 5.7% in the second quarter, with manufacturing expanding 12.2% on AI-related demand for electronics and precision engineering.",
    "sentences": [
     {
      "sid": "s00378",
@@ -585,19 +604,25 @@
      "attributed": true,
      "text": "Manufacturing expanded by 12.2%, driven largely by AI-related demand for electronics and precision engineering.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "SBF UAE partner connection",
+   "summary": "GlobalConnect@SBF, supported by Enterprise Singapore, connected a company to a UAE partner and opened doors to regional projects.",
+   "sentences": [
     {
-     "sid": "s00381",
+     "sid": "s00411",
      "speaker": "Mr Mark Lee (Nominated Member)",
      "attributed": true,
-     "text": "Many businesses, especially domestic-facing ones, continue to grapple with uncertain demand and persistently high manpower, rental and operating costs.",
+     "text": "Through GlobalConnect@SBF, supported by Enterprise Singapore, SBF connected it to a United Arab Emirates (UAE) partner and opened doors to regional projects.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Engagement sessions and adopted recommendations",
-   "summary": "25 engagement sessions brought stakeholders together, and 24 of 27 recommendations were adopted, including manpower, lease, solar and SME office changes.",
+   "label": "Engagement sessions and recommendation adoption",
+   "summary": "25 engagement sessions brought businesses, trade associations and chambers and public agencies together, and 24 of 27 recommendations were adopted.",
    "sentences": [
     {
      "sid": "s00419",
@@ -623,8 +648,8 @@
    ]
   },
   {
-   "label": "SBF overseas projects facilitation",
-   "summary": "SBF facilitated 108 overseas projects for 79 Singapore companies across 44 markets, including an agri-food firm's RM50 million Johor investment.",
+   "label": "SBF overseas project facilitation",
+   "summary": "SBF facilitated 108 overseas projects for 79 Singapore companies across 44 markets, including an agri-food company investing over RM50 million in Johor.",
    "sentences": [
     {
      "sid": "s00429",
@@ -651,7 +676,7 @@
   },
   {
    "label": "RTS Link cross-border spending",
-   "summary": "After the RTS Link opens, Singapore consumers could spend an additional $1.05 billion annually in Johor Bahru and Johor visitors $756 million in Singapore.",
+   "summary": "After the RTS Link opens, Singapore consumers could spend an additional $1.05 billion annually in Johor Bahru, and Johor visitors an additional $756 million in Singapore.",
    "sentences": [
     {
      "sid": "s00439",
@@ -663,8 +688,8 @@
    ]
   },
   {
-   "label": "Companies and EmployWell participation",
-   "summary": "Over 5,200 companies took part in these programmes, and EmployWell gave over 2,100 individuals employability support, with more than 1,000 re-entering the workforce.",
+   "label": "EmployWell and company programmes",
+   "summary": "Over 5,200 companies joined these programmes, and EmployWell gave over 2,100 individuals employability support, with more than 1,000 re-entering the workforce.",
    "sentences": [
     {
      "sid": "s00459",
@@ -683,8 +708,8 @@
    ]
   },
   {
-   "label": "Business diversification and support measures",
-   "summary": "Businesses are diversifying investments and the Government introduced support measures, while AI raises energy demand and an ageing population raises workforce and consumer concerns.",
+   "label": "Business risks and external pressures",
+   "summary": "Businesses are diversifying investment and managing risks, and the Government introduced support measures to ease short-term pressure on SMEs and people from external pressures.",
    "sentences": [
     {
      "sid": "s00476",
@@ -710,8 +735,21 @@
    ]
   },
   {
-   "label": "Cannot support Motion",
-   "summary": "The speaker states they cannot support the Motion in its current form.",
+   "label": "Worker learning and business environment",
+   "summary": "Workers should keep learning and upgrading skills, and the Government should keep building a fair, open and transparent business environment.",
+   "sentences": [
+    {
+     "sid": "s00486",
+     "speaker": "Mr Mark Lee (Nominated Member)",
+     "attributed": true,
+     "text": "Workers should continue learning and upgrading skills and the Government should continue building a fair, open and transparent business environment.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Motion not supported",
+   "summary": "The speaker cannot support the Motion in its current form.",
    "sentences": [
     {
      "sid": "s00489",
@@ -723,8 +761,8 @@
    ]
   },
   {
-   "label": "Three economic imperatives",
-   "summary": "The passage states three imperatives: sharpen Singapore's value proposition, enhance agility and adaptability, and build resilience alongside efficiency.",
+   "label": "Three imperatives",
+   "summary": "Its three imperatives are to sharpen Singapore's value proposition, enhance agility and adaptability, and build resilience alongside efficiency.",
    "sentences": [
     {
      "sid": "s00500",
@@ -736,8 +774,8 @@
    ]
   },
   {
-   "label": "Business R&D expenditure 2023",
-   "summary": "Business expenditure on research and development reached about $9 billion in 2023.",
+   "label": "Business R&D expenditure",
+   "summary": "Business expenditure in R&D reached about $9 billion in 2023.",
    "sentences": [
     {
      "sid": "s00504",
@@ -749,21 +787,8 @@
    ]
   },
   {
-   "label": "Focus on mutual business support",
-   "summary": "The passage states focus should be on helping MNCs, large local companies, SMEs and startups build up one another.",
-   "sentences": [
-    {
-     "sid": "s00517",
-     "speaker": "Mr Edward Chia Bing Hui",
-     "attributed": true,
-     "text": "Instead, our focus should be on helping MNCs, large local companies, SMEs and startups build up one another.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Global partnership builds capabilities",
-   "summary": "The passage states partnership with a global enterprise can help a Singapore company build proprietary capabilities, move up the value chain and compete globally, noting AEM's market capitalisation is around $2.8 billion.",
+   "label": "AEM partnership builds capabilities",
+   "summary": "Partnership with a global enterprise helps a Singapore company build proprietary capabilities, move up the value chain and compete globally; AEM's market capitalisation is around $2.8 billion.",
    "sentences": [
     {
      "sid": "s00524",
@@ -782,8 +807,8 @@
    ]
   },
   {
-   "label": "Exports share of GDP 2025",
-   "summary": "In 2025, Singapore's exports of goods and services amounted to approximately 178% of GDP.",
+   "label": "Singapore exports share of GDP",
+   "summary": "In 2025, Singapore's exports of goods and services were approximately 178% of GDP, reflecting deep connection to regional and global markets.",
    "sentences": [
     {
      "sid": "s00534",
@@ -791,12 +816,19 @@
      "attributed": true,
      "text": "In 2025, Singapore's exports for goods and services amounted to approximately 178% of our GDP.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00535",
+     "speaker": "Mr Edward Chia Bing Hui",
+     "attributed": true,
+     "text": "This reflects how deeply our economy is connected to regional and global markets.",
+     "added_for_context": false
     }
    ]
   },
   {
    "label": "Government help for internationalisation",
-   "summary": "The passage states the Government can help local enterprises internationalise through market access platforms, financing support, overseas networks, talent development and partnerships with regional governments and businesses.",
+   "summary": "The Government can help local enterprises internationalise through market access platforms, financing support, overseas networks, talent development and partnerships with regional governments and businesses.",
    "sentences": [
     {
      "sid": "s00546",
@@ -808,28 +840,28 @@
    ]
   },
   {
-   "label": "Forward Singapore and ESR focus",
-   "summary": "The Forward Singapore agenda strengthens social support, and the ESR focuses on good jobs, lifelong learning, enterprise transformation and resilience.",
+   "label": "NVPC Company of Good Movement",
+   "summary": "The NVPC's Company of Good Movement, marking its 10th anniversary, recognises businesses that embed corporate purpose and create positive impact beyond traditional economic indicators.",
    "sentences": [
     {
-     "sid": "s00556",
+     "sid": "s00561",
      "speaker": "Mr Edward Chia Bing Hui",
      "attributed": true,
-     "text": "The Forward Singapore agenda strengthens social support across different life stages.",
+     "text": "The National Volunteer And Philanthropy Centre's (NVPC's) Company of Good Movement is one example.",
      "added_for_context": false
     },
     {
-     "sid": "s00557",
+     "sid": "s00562",
      "speaker": "Mr Edward Chia Bing Hui",
      "attributed": true,
-     "text": "The ESR builds on this by focusing on good jobs, lifelong learning, enterprise transformation and resilience.",
+     "text": "It has just marked its 10th anniversary and recognises businesses that embed corporate purpose and create positive impact beyond traditional economic indicators.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Companies conferred in three years",
-   "summary": "In three years the movement has conferred 1,046 companies, over 70% of them local companies.",
+   "label": "Companies conferred by movement",
+   "summary": "In three years, the movement has conferred 1,046 companies, more than 70% of them local companies.",
    "sentences": [
     {
      "sid": "s00568",
@@ -841,29 +873,35 @@
    ]
   },
   {
-   "label": "Open, competitive, inclusive future economy",
-   "summary": "The future economy must be open, competitive and inclusive, embracing AI to expand human capability and giving every Singaporean a fair chance.",
+   "label": "Honest sustainable inclusion motion",
+   "summary": "This is a more honest and sustainable form of inclusion, which is why the proposed amended Motion matters.",
    "sentences": [
     {
-     "sid": "s00584",
+     "sid": "s00579",
      "speaker": "Mr Edward Chia Bing Hui",
      "attributed": true,
-     "text": "Our future economy must be open, competitive and inclusive at the same time.",
-     "added_for_context": false
+     "text": "This is a more honest and sustainable form of inclusion.",
+     "added_for_context": true
     },
     {
-     "sid": "s00585",
+     "sid": "s00580",
      "speaker": "Mr Edward Chia Bing Hui",
      "attributed": true,
-     "text": "We must attract the best from the world while developing the best in Singaporeans.",
+     "text": "This is why the proposed amended Motion matters.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Supporting local enterprises, AI, global hub",
+   "summary": "The passage argues for supporting local enterprises, embracing AI to expand human capability, and ensuring Singaporeans benefit domestically while remaining a global trusted hub.",
+   "sentences": [
     {
      "sid": "s00586",
      "speaker": "Mr Edward Chia Bing Hui",
      "attributed": true,
      "text": "We must support local enterprises while staying plugged into a global network.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00587",
@@ -873,11 +911,18 @@
      "added_for_context": false
     },
     {
+     "sid": "s00588",
+     "speaker": "Mr Edward Chia Bing Hui",
+     "attributed": true,
+     "text": "We must grow externally while ensuring that Singaporeans benefit domestically.",
+     "added_for_context": true
+    },
+    {
      "sid": "s00589",
      "speaker": "Mr Edward Chia Bing Hui",
      "attributed": true,
      "text": "It recognises the real anxieties that workers and businesses face, but it also recognises that Singapore cannot respond to uncertainty by becoming smaller in our ambition.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00590",
@@ -899,13 +944,14 @@
      "attributed": true,
      "text": "It is built by making growth translate into good jobs.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Four amendments to the Motion",
-   "summary": "Mr Edward Chia proposed four amendments to the Motion, changing words in lines 1 and 5.",
-   "sentences": [
+    },
+    {
+     "sid": "s00593",
+     "speaker": "Mr Edward Chia Bing Hui",
+     "attributed": true,
+     "text": "It is built by making innovation accessible to enterprises and workers.",
+     "added_for_context": false
+    },
     {
      "sid": "s00595",
      "speaker": "Mr Speaker",
@@ -944,28 +990,21 @@
    ]
   },
   {
-   "label": "Economy powered by both",
-   "summary": "The speaker says the amendment basically means an economy must be powered by both local companies and global enterprises.",
+   "label": "Amendment aligns with ESR spirit",
+   "summary": "The passage states that the crux of the amendment is that the original Motion's spirit and intent are aligned with the ESR.",
    "sentences": [
     {
-     "sid": "s00610",
-     "speaker": "Mr Kenneth Tiong Boon Kiat",
-     "attributed": true,
-     "text": "It appears to me, to use a favourite word from a Minister opposite.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00611",
+     "sid": "s00613",
      "speaker": "Mr Edward Chia Bing Hui",
      "attributed": true,
-     "text": "But I think it is basically really saying that an economy must be powered by both local companies and global enterprises.",
+     "text": "Essentially, I think the crux of the amendment is to first say that the spirit of your Motion, the intent, the original Motion is aligned with the ESR.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "State land ownership and ESR report",
-   "summary": "The state owns about 90% of Singapore's land, yet land is not mentioned in the ESR report's 32 recommendations.",
+   "summary": "The passage states the state owns about 90% of Singapore's land and that land is not mentioned in the ESR report's 32 recommendations.",
    "sentences": [
     {
      "sid": "s00620",
@@ -984,8 +1023,8 @@
    ]
   },
   {
-   "label": "Singapore land cost share",
-   "summary": "A real estate C-suite member said land costs now form roughly 70% of total project development expenditure in Singapore, up from 4% in the 1980s for Raffles City.",
+   "label": "Land costs share of development expenditure",
+   "summary": "The passage states a local C-suite member said land costs now form roughly 70% of total project development expenditure, up from 4% in the 1980s for Raffles City.",
    "sentences": [
     {
      "sid": "s00626",
@@ -997,8 +1036,8 @@
    ]
   },
   {
-   "label": "Reserve price and tender outcomes",
-   "summary": "The Minister for Law disclosed the reserve price is pegged to 85% of the Chief Valuer's estimated market value, and 17 of 133 sites tendered from 2016 to 2021 were not awarded.",
+   "label": "Reserve price and unawarded tender sites",
+   "summary": "The passage states the reserve price is pegged to 85% of estimated market value and that 17 of 133 sites tendered from 2016 to 2021 were not awarded.",
    "sentences": [
     {
      "sid": "s00645",
@@ -1010,8 +1049,8 @@
    ]
   },
   {
-   "label": "Site awarded above refused bid",
-   "summary": "The site was awarded in April 2015 at $1.67 billion, or $943 per square foot per plot ratio, about two thirds higher than the bid the Government had earlier refused.",
+   "label": "Site sold at higher rate",
+   "summary": "The passage states a site tendered and awarded in April 2015 was sold at $1.67 billion, or $943 per square foot per plot ratio, about two thirds higher than an earlier refused bid.",
    "sentences": [
     {
      "sid": "s00652",
@@ -1023,8 +1062,8 @@
    ]
   },
   {
-   "label": "Home loans and mortgage growth",
-   "summary": "Home loans make up at least 70% of total household liabilities in Singapore, and mortgage borrowing grew 5.8% year on year in the first quarter of this year.",
+   "label": "Singapore household mortgage borrowing growth",
+   "summary": "Home loans are at least 70% of household liabilities in Singapore, and mortgage borrowing grew 5.8% year on year in Q1 this year.",
    "sentences": [
     {
      "sid": "s00660",
@@ -1036,8 +1075,34 @@
    ]
   },
   {
-   "label": "Compute initiative and firm pairing",
-   "summary": "An Enterprise Compute Initiative was announced at Budget 2025 with up to $150 million, and by October 2025 some 1,000 firms were reportedly paired with cloud partners, against about 385,000 firms in 2024.",
+   "label": "Singapore workers living paycheck to paycheck",
+   "summary": "ADP Research found 60% of workers in Singapore were living paycheck to paycheck as of 2024.",
+   "sentences": [
+    {
+     "sid": "s00664",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "Moreover, according to ADP Research, 60% of workers in Singapore were living paycheck to paycheck as of 2024.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public rental option for Singaporeans",
+   "summary": "The speaker calls for a public rental option for young and middle-income Singaporeans with tenure-security and income-based rent.",
+   "sentences": [
+    {
+     "sid": "s00669",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "My second call is therefore for a meaningful public rental option for young and middle-income Singaporeans with tenure-security and rent set with reference to income rather than market value.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Compute as AI economy input",
+   "summary": "Compute is the scarce foundational input of the AI economy, and an Enterprise Compute Initiative was announced at Budget 2025 with up to $150 million.",
    "sentences": [
     {
      "sid": "s00672",
@@ -1052,33 +1117,19 @@
      "attributed": true,
      "text": "We have made a start and I acknowledge that an Enterprise Compute Initiative was announced at Budget 2025 with up to $150 million of funding support.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00675",
-     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
-     "attributed": true,
-     "text": "By October 2025, we had reportedly paired some 1,000 firms with cloud partners, but this is a very modest figure as compared to the 385,000 or so firms in Singapore's enterprise landscape in 2024, as identified in the ESR's final report.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "UK compute and Singapore AI adoption",
-   "summary": "The UK committed up to £2 billion by 2030 under its Compute Roadmap, while Singapore extracts some $20 billion in land sales proceeds a year but sets aside $150 million for compute and $1 billion over five years for AI research, with 4% of firms embedding AI by 2026.",
+   "label": "Land sales versus AI funding",
+   "summary": "Singapore extracts about $20 billion yearly in land sales proceeds but sets aside $150 million for compute and $1 billion over five years for AI research.",
    "sentences": [
-    {
-     "sid": "s00683",
-     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
-     "attributed": true,
-     "text": "The United Kingdom (UK) having found itself with only 1.3% of global compute capacity in late 2022, committed up to £2 billion by 2030 under its Compute Roadmap, and its AI Research Resource now allocates compute directly: 10,000 GPU hours for first-time users and 20,000 GPU hours for SMEs, awarded as capacity rather than cash.",
-     "added_for_context": true
-    },
     {
      "sid": "s00684",
      "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
      "attributed": true,
      "text": "We extract some $20 billion in a single year in land sales proceeds also and yet, we are only setting aside $150 million for the digital land on which our own companies must build, and $1 billion over five years in overall national AI research.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00685",
@@ -1090,7 +1141,7 @@
    ]
   },
   {
-   "label": "Expanding compute access",
+   "label": "Policy options for compute access",
    "summary": "Policy-makers can act by expanding compute access for startups and researchers and investing in shared training assets.",
    "sentences": [
     {
@@ -1103,8 +1154,8 @@
    ]
   },
   {
-   "label": "National compute programme subsidies",
-   "summary": "A national compute programme should offer subsidised allocated capacity to local companies, especially SMEs and entrepreneurs, priced below market.",
+   "label": "Subsidised compute for local companies",
+   "summary": "A national compute programme should offer subsidised allocated capacity to local companies, especially SMEs and entrepreneurs, priced below market with published rates.",
    "sentences": [
     {
      "sid": "s00693",
@@ -1123,8 +1174,8 @@
    ]
   },
   {
-   "label": "Foreign investment tax incentives",
-   "summary": "Singapore extends generous low tax incentives and charges as low as 5% corporate income tax to attract MNCs.",
+   "label": "Tax incentives for foreign investment",
+   "summary": "Singapore offers generous low tax incentives and corporate income tax as low as 5% instead of 17% to attract MNCs.",
    "sentences": [
     {
      "sid": "s00702",
@@ -1143,8 +1194,8 @@
    ]
   },
   {
-   "label": "Economic Strategy Review support",
-   "summary": "The speaker welcomes the Economic Strategy Review Committee report and supports the Motion, while noting state rent maximisation and business sentiments.",
+   "label": "Economic Strategy Review Committee report",
+   "summary": "The speaker welcomes the committee's final report and supports the Motion, but says the vision stays on paper while the state maximises rent.",
    "sentences": [
     {
      "sid": "s00709",
@@ -1170,9 +1221,29 @@
    ]
   },
   {
-   "label": "MNC-local partnership projects",
-   "summary": "In 2025, EDB generated 19 MNC-local enterprise partnership projects working with Enterprise Singapore.",
+   "label": "Singapore's complementary strengths advantage",
+   "summary": "Singapore's advantage has been combining complementary strengths that reinforce one another into ecosystems creating more value.",
    "sentences": [
+    {
+     "sid": "s00732",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "Singapore's advantage has been our ability to combine complementary strengths that reinforce one another into ecosystems that create more value.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "EDB major investment approvals",
+   "summary": "When EDB approves a major investment it asks more than capital or jobs; in 2025 with Enterprise Singapore it generated 19 MNC-local partnership projects.",
+   "sentences": [
+    {
+     "sid": "s00745",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "When EDB approves a major investment, it is not simply asking how much capital will come or how many jobs will be created.",
+     "added_for_context": false
+    },
     {
      "sid": "s00747",
      "speaker": "Ms Mariam Jaafar (Sembawang)",
@@ -1183,8 +1254,8 @@
    ]
   },
   {
-   "label": "Capability gaps of enterprises",
-   "summary": "Capability gaps in growth capital, management, technology, networks and risk appetite are closed by making global connections work better for Singaporean enterprises.",
+   "label": "Constraints facing enterprises",
+   "summary": "The constraints are usually different: access to growth capital, cross-border management experience, technology transformation, overseas market networks, or risk appetite.",
    "sentences": [
     {
      "sid": "s00757",
@@ -1192,45 +1263,25 @@
      "attributed": true,
      "text": "The constraints are usually different – access to growth capital, management with experience running operations across borders, or leading technology transformation, networks that open overseas markets, risk appetite.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00758",
-     "speaker": "Ms Mariam Jaafar (Sembawang)",
-     "attributed": true,
-     "text": "These are capability gaps and they are unlikely to be closed simply by wining ourselves off connections with our global capital.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00759",
-     "speaker": "Ms Mariam Jaafar (Sembawang)",
-     "attributed": true,
-     "text": "If anything, they are closed by making those connections work better for many more Singaporean enterprises.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Helping Singaporean enterprises compete internationally",
-   "summary": "The question is whether enough Singaporean enterprises are being helped to connect to ecosystems, gain capabilities, compete internationally and become ecosystem builders.",
-   "sentences": [
-    {
-     "sid": "s00763",
-     "speaker": "Ms Mariam Jaafar (Sembawang)",
-     "attributed": true,
-     "text": "The real question is whether we are helping enough Singaporean enterprises get connected to the ecosystems, acquire the capabilities that allow them to climb the value chain, compete internationally and ultimately, become ecosystem builders themselves.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "PSA global ports and digital solutions",
-   "summary": "PSA operates over 70 terminals in 45 countries, and its global port management plus digital technologies, data, automation and AI let it design solutions single-port operators cannot.",
+   "label": "PSA global terminals and data",
+   "summary": "PSA operates over 70 terminals in 45 countries, and managing ports worldwide gives it a data advantage as competitive advantage.",
    "sentences": [
     {
      "sid": "s00780",
      "speaker": "Ms Mariam Jaafar (Sembawang)",
      "attributed": true,
      "text": "Today, it operates over 70 terminals across more than 180 locations in 45 countries.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00781",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "But the most valuable thing PSA has now is not simply a larger portfolio of terminals.",
      "added_for_context": false
     },
     {
@@ -1246,32 +1297,19 @@
      "attributed": true,
      "text": "By combining operational expertise with digital technologies, data, automation and AI to design solutions its customers cannot get from a single-port operator.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Ownership, capability and competitiveness",
-   "summary": "The speaker says targeting ownership before capability and competitiveness means not owning more of the pie, and supports Mr Edward Chia's amendments.",
-   "sentences": [
-    {
-     "sid": "s00806",
-     "speaker": "Ms Mariam Jaafar (Sembawang)",
-     "attributed": true,
-     "text": "Target ownership before capability and competitiveness, and we do not own more of the pie.",
-     "added_for_context": true
     },
     {
-     "sid": "s00807",
+     "sid": "s00784",
      "speaker": "Ms Mariam Jaafar (Sembawang)",
      "attributed": true,
-     "text": "That is why I support the hon Member Mr Edward Chia's amendments.",
+     "text": "The data advantage, the capability, that is the competitive advantage.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Building an economy of the future",
-   "summary": "Singapore succeeded by becoming useful and indispensable to the world, and must now build a future economy where more Singaporeans can create, capture and own value.",
+   "label": "Singapore building future economy",
+   "summary": "Singapore succeeded by being useful to the world, and must build a future economy with opportunities for more Singaporeans.",
    "sentences": [
     {
      "sid": "s00813",
@@ -1312,7 +1350,7 @@
   },
   {
    "label": "Autonomous university graduate employment rates",
-   "summary": "Among autonomous university graduates, 88.9% of the 2025 cohort secured employment within six months, down from 91.2%, while full-time permanent employment fell to 74.4% from 79.4%.",
+   "summary": "88.9% of the 2025 autonomous university graduate cohort secured employment within six months, down from 91.2% in 2024.",
    "sentences": [
     {
      "sid": "s00827",
@@ -1338,7 +1376,7 @@
    ]
   },
   {
-   "label": "Private education institution graduate employment",
+   "label": "Private education graduate employment rates",
    "summary": "Among surveyed fresh graduates from full-time external degree programmes at private education institutions, 78.9% secured employment and 46.9% were in full-time permanent employment.",
    "sentences": [
     {
@@ -1347,19 +1385,12 @@
      "attributed": true,
      "text": "Among surveyed fresh graduates from full-time external degree programmes at private education institutions, 78.9% secured employment and 46.9% were in full-time permanent employment.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00835",
-     "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
-     "attributed": true,
-     "text": "So, another 24% were in part-time or temporary work, including 9.7% who said this was involuntary.",
-     "added_for_context": false
     }
    ]
   },
   {
    "label": "Fair Start Promise for youths",
-   "summary": "Proposes a Fair Start Promise, a national commitment to work towards a simple goal for youths, since exposure is not employment.",
+   "summary": "Exposure is not employment, so a \"Fair Start Promise\" is proposed as a national commitment to work towards a simple goal for youths.",
    "sentences": [
     {
      "sid": "s00853",
@@ -1378,8 +1409,21 @@
    ]
   },
   {
-   "label": "Opening entry-level jobs to beginners",
-   "summary": "Says more ordinary entry-level jobs should be opened to capable beginners, and where real work can develop a beginner, that proper job should be the priority.",
+   "label": "Fair Start Promise as SWDA mission",
+   "summary": "The Government should make fulfilling the \"Fair Start Promise\" a core mission of SWDA, with staged targets showing progress.",
+   "sentences": [
+    {
+     "sid": "s00859",
+     "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
+     "attributed": true,
+     "text": "The Government should make fulfilling the \"Fair Start Promise\" a core mission of SWDA, with staged targets that show whether Singapore is moving closer to the goal.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Priority for ordinary entry-level jobs",
+   "summary": "Where an employer has real work that can develop a beginner, the priority should be that proper job.",
    "sentences": [
     {
      "sid": "s00865",
@@ -1392,7 +1436,7 @@
   },
   {
    "label": "SWDA standards for verified competencies",
-   "summary": "Says the SWDA should establish standards for IHLs and employers to verify projects, internships, Work-Study stints and assessed competencies through the Careers and Skills Passport.",
+   "summary": "The SWDA should establish standards for IHLs and employers to verify projects, internships, Work-Study stints and assessed competencies through the Careers and Skills Passport.",
    "sentences": [
     {
      "sid": "s00873",
@@ -1405,7 +1449,7 @@
   },
   {
    "label": "Apprenticeship framework and SWDA role",
-   "summary": "Says GRIT offers short traineeships, but longer occupations need a proper apprenticeship framework with paid employment, employee status, CPF, structured training and portable competences, which SWDA should expand.",
+   "summary": "GRIT offers short traineeships, but sustained occupations need a proper apprenticeship framework, and SWDA should expand apprenticeship places meeting a common quality floor.",
    "sentences": [
     {
      "sid": "s00882",
@@ -1431,8 +1475,8 @@
    ]
   },
   {
-   "label": "Support tied to genuine jobs",
-   "summary": "Says support should go where employers create genuine additional jobs or apprenticeships that would not proceed on the same terms without help, and procuring agencies can require proportionate commitment without a blanket quota.",
+   "label": "Support and procurement conditions",
+   "summary": "Support should be available where an employer creates a genuine additional job or apprenticeship that would not proceed without help, and procuring agencies can require proportionate commitment.",
    "sentences": [
     {
      "sid": "s00903",
@@ -1447,19 +1491,12 @@
      "attributed": true,
      "text": "Where workforce development is relevant to a substantial public contract, procuring agencies can require or recognise proportionate commitment to proper apprenticeships and genuine employee entry level roles.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00906",
-     "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
-     "attributed": true,
-     "text": "The purpose is to connect public purchasing demand to the development of Singapore's future workforce without imposing a blanket quota on every contractor.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Recovering money for misrepresented roles",
-   "summary": "Says money should be recovered where an employer misrepresents the role or fails to provide the promised job, wages or development.",
+   "label": "Recovering money for misrepresentation",
+   "summary": "Money should be recovered where an employer misrepresents the role or fails to provide the promised job, wages or development.",
    "sentences": [
     {
      "sid": "s00910",
@@ -1471,8 +1508,8 @@
    ]
   },
   {
-   "label": "SWDA baseline and targets",
-   "summary": "The SWDA should publish a baseline and staged targets, with results showing how many young people remain without stable employment at six months, for how long and why.",
+   "label": "Baseline, targets and six-month outcomes",
+   "summary": "The SWDA should publish a baseline and staged targets, and results must show how many young people remain without stable employment at six months.",
    "sentences": [
     {
      "sid": "s00913",
@@ -1491,8 +1528,48 @@
    ]
   },
   {
+   "label": "Skills-based hiring and apprenticeships",
+   "summary": "The three proposals are opening jobs to beginners with skills-based hiring, building paid apprenticeships and creating opportunities where public intervention changes hiring decisions.",
+   "sentences": [
+    {
+     "sid": "s00921",
+     "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
+     "attributed": true,
+     "text": "The three proposals I suggested are the practical ways to move closer towards making that a reality: opening existing jobs to capable beginners with skills-based hiring, building proper paid apprenticeships and creating additional opportunities where public intervention changes the calculus and hiring decision for any employer.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Geopolitical tensions and protectionism",
+   "summary": "Livelihood fundamentals cannot be disrupted, amid geopolitical tensions, a multi-polar world, rising protectionism and supply chains reconfigured along political lines.",
+   "sentences": [
+    {
+     "sid": "s00937",
+     "speaker": "Mr Azhar Othman (Nominated Member)",
+     "attributed": true,
+     "text": "The fundamental of our livelihood cannot be disrupted or changed.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00938",
+     "speaker": "Mr Azhar Othman (Nominated Member)",
+     "attributed": true,
+     "text": "We live in an era of heightened geopolitical tensions and a multi-polar world.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00939",
+     "speaker": "Mr Azhar Othman (Nominated Member)",
+     "attributed": true,
+     "text": "Countries are turning inwards, protectionism is rising, supply chains are being re-configured along political lines.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
    "label": "Expanding free trade agreements",
-   "summary": "Singapore must expand its network of free trade agreements with as many countries as possible, including emerging markets, opening new doors for SMEs and services.",
+   "summary": "Singapore must expand its network of free trade agreements with as many countries as possible, including emerging markets, not just big economies.",
    "sentences": [
     {
      "sid": "s00947",
@@ -1507,31 +1584,11 @@
      "attributed": true,
      "text": "We must pursue FTAs with as many countries as possible, not just big economies but also, emerging markets.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00949",
-     "speaker": "Mr Azhar Othman (Nominated Member)",
-     "attributed": true,
-     "text": "Every new FTA is a new door for our SMEs, a new channel for our services and a new vote of confidence in Singapore's open economy.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Enterprise Singapore international presence",
-   "summary": "Enterprise Singapore's international presence must be leveraged more aggressively.",
-   "sentences": [
-    {
-     "sid": "s00955",
-     "speaker": "Mr Azhar Othman (Nominated Member)",
-     "attributed": true,
-     "text": "Enterprise Singapore's international presence must be leveraged more aggressively.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Grants for internationalisation",
+   "label": "Grants to derisk internationalisation",
    "summary": "The Government should enhance grants and financial support to derisk internationalisation.",
    "sentences": [
     {
@@ -1544,7 +1601,7 @@
    ]
   },
   {
-   "label": "SMEs share of enterprises",
+   "label": "SMEs share of enterprises and workforce",
    "summary": "SMEs make up 99% of Singapore's enterprises and employ about two-thirds of its workforce.",
    "sentences": [
     {
@@ -1557,8 +1614,8 @@
    ]
   },
   {
-   "label": "Companies embedding sustainability",
-   "summary": "As Singapore aims for net-zero by 2050 or earlier, companies must embed sustainability into their operations.",
+   "label": "Sustainability and green hub measures",
+   "summary": "As Singapore aims for net-zero by 2050 or earlier, companies must embed sustainability, and Singapore can attract green investments through tax breaks, fast-track approvals and a certification one-stop shop.",
    "sentences": [
     {
      "sid": "s00995",
@@ -1566,25 +1623,26 @@
      "attributed": true,
      "text": "As Singapore aims for net-zero by 2050 or earlier, companies must embed sustainability into their operations.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "AI already here",
-   "summary": "AI is not coming; AI is already here.",
-   "sentences": [
+    },
     {
-     "sid": "s01001",
+     "sid": "s00997",
      "speaker": "Mr Azhar Othman (Nominated Member)",
      "attributed": true,
-     "text": "AI is not coming; AI is already here.",
+     "text": "We would also like to see Singapore positioned as a green hub.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00998",
+     "speaker": "Mr Azhar Othman (Nominated Member)",
+     "attributed": true,
+     "text": "We can attract green investments by offering tax breaks for sustainable ventures, fast-track approvals for green projects, a one-stop shop for sustainability certification.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "SkillsFuture framework expansion",
-   "summary": "The SkillsFuture framework is a good start but must go further, allowing training credits for AI tools, memberships and stipends for reskilling.",
+   "label": "SkillsFuture training credits expansion",
+   "summary": "The SkillsFuture framework should go further by allowing training credits for AI tools, trade association memberships and stipends for reskilling mid-career workers.",
    "sentences": [
     {
      "sid": "s01008",
@@ -1596,8 +1654,8 @@
    ]
   },
   {
-   "label": "Support for displaced workers",
-   "summary": "For jobs displaced by AI, stronger monthly income support, career conversion programmes, counselling and mental health support are needed.",
+   "label": "Support for AI-displaced workers",
+   "summary": "Workers displaced by AI need stronger monthly income support during retraining, tailored career conversion programmes, counselling and mental health support.",
    "sentences": [
     {
      "sid": "s01011",
@@ -1609,8 +1667,8 @@
    ]
   },
   {
-   "label": "R&D grants and business costs",
-   "summary": "Government must increase R&D grants and tax incentives, expand the R&D Tax Incentive scheme, create co-funding pools, support pilot projects, review regulatory fees, streamline compliance, provide SME relief and keep housing and transport affordable.",
+   "label": "R&D grants and business cost relief",
+   "summary": "The Government must increase R&D grants and tax incentives, create co-funding pools, review regulatory fees and provide targeted relief for SMEs.",
    "sentences": [
     {
      "sid": "s01015",
@@ -1637,7 +1695,7 @@
   },
   {
    "label": "Bridge for trade and excellence",
-   "summary": "Singapore must be a bridge for trade, become Centres of Excellence, embrace sustainability, prepare the workforce for AI, and build an economy where Singaporeans and enterprises prosper.",
+   "summary": "Singapore must be a bridge for trade, become Centres of Excellence, embrace sustainability and prepare its workforce for the AI revolution.",
    "sentences": [
     {
      "sid": "s01027",
@@ -1678,7 +1736,7 @@
   },
   {
    "label": "Shrinking local craft workforce",
-   "summary": "Over the past decade the local craft workforce shrank by 40% to 50%, with only 28% of 186,000 craftsmen and trades workers being locals and a median age of 56.",
+   "summary": "The local craft workforce has shrunk by 40% to 50%, with only 28% of 186,000 craftsmen and trades workers being locals with a median age of 56.",
    "sentences": [
     {
      "sid": "s01043",
@@ -1697,8 +1755,8 @@
    ]
   },
   {
-   "label": "Penalties versus unregulated alternatives",
-   "summary": "Non-compliance carries fines up to $10,000, jail up to three years, or both, yet a gap exists between licensed and unregulated rates.",
+   "label": "Gap between licensed and unregulated trades",
+   "summary": "Non-compliance carries fines up to $10,000 or three years' jail, yet a massive gap exists between licensed trades persons' rates and unregulated marketplace alternatives.",
    "sentences": [
     {
      "sid": "s01065",
@@ -1710,8 +1768,8 @@
    ]
   },
   {
-   "label": "Electrocution deaths from unsafe wiring",
-   "summary": "In 2016 a 15-year-old boy and in 2020 an elderly couple and their son were electrocuted after unsafe water heater installation.",
+   "label": "Water heater electrocution deaths",
+   "summary": "Improper wiring of water heaters by unlicensed workers caused electrocution deaths of a boy in 2016 and a family in 2020.",
    "sentences": [
     {
      "sid": "s01068",
@@ -1730,8 +1788,8 @@
    ]
   },
   {
-   "label": "Licensing bottleneck and modular endorsement pathway",
-   "summary": "Two years of full spectrum practical experience creates a bottleneck, which a modular trade endorsement pathway certifying competencies task by task can resolve.",
+   "label": "Licensing bottleneck and modular endorsement",
+   "summary": "Post-graduation licensing requires two years of full spectrum practical experience, creating a bottleneck that a modular trade endorsement pathway could resolve.",
    "sentences": [
     {
      "sid": "s01077",
@@ -1765,33 +1823,46 @@
   },
   {
    "label": "Tradesperson skills ledger platform",
-   "summary": "A digital tradesperson skills ledger platform would log task-specific endorsements verified under licensed artisans, creating an immutable record of practical milestones.",
+   "summary": "Operationalising modular endorsements requires a modern digital architecture, an official tradesperson skills ledger platform.",
    "sentences": [
     {
      "sid": "s01084",
      "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
      "attributed": true,
      "text": "To operationalise these modular endorsements, we need a modern digital architecture, an official tradesperson skills ledger platform.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s01085",
-     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
-     "attributed": true,
-     "text": "It allows tradespersons to log task-specific trade endorsements, verified under the supervision of licensed artisans, creating an immutable record of their practical milestones.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Employer-tied licensing veto power",
-   "summary": "Rigid employer-tied licensing requirements inadvertently grant employers veto power over an entry-level worker's advancement.",
+   "label": "Independent audit for apprentices",
+   "summary": "An independent audit mechanism is needed if apprentices face unreasonable administrative delays or employer gatekeeping during on-the-job training.",
    "sentences": [
     {
-     "sid": "s01090",
+     "sid": "s01092",
      "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
      "attributed": true,
-     "text": "Across skilled trades, the Government currently enforces safety through rigid employer-tied licensing requirements, inadvertently, granting employers veto power over an entry-level worker's advancement.",
+     "text": "While on-the-job training under senior practitioners remains essential, we must ensure that if an apprentice faces unreasonable administrative delays or employer gatekeeping, an independent audit mechanism exists.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Support for the Motion",
+   "summary": "The speaker says the structural redesign will restore workers' leverage and supports the original Motion by Mr Kenneth Tiong and Assoc Prof James Lim.",
+   "sentences": [
+    {
+     "sid": "s01105",
+     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
+     "attributed": true,
+     "text": "Through independent representation, technology driven competency tracking and structured apprenticeships, this comprehensive structural redesign will restore our workers' leverage, and ensure that national economic progress serves the dignity and prosperity of every Singaporean.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01106",
+     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
+     "attributed": true,
+     "text": "So, I support the original Motion standing in the names of my hon friends, Mr Kenneth Tiong, the Member for Aljunied group representation constituency (GRC), and Assoc Prof James Lim, the Member for Sengkang GRC.",
      "added_for_context": false
     }
    ]
@@ -1811,7 +1882,7 @@
   },
   {
    "label": "Singapore merchandise trade size",
-   "summary": "In 2025, Singapore's merchandise trade reached almost $1.4 trillion, several times the size of GDP.",
+   "summary": "In 2025, Singapore's merchandise trade reached almost $1.4 trillion, several times the size of its GDP.",
    "sentences": [
     {
      "sid": "s01135",
@@ -1823,7 +1894,7 @@
    ]
   },
   {
-   "label": "EDB investment commitments 2025",
+   "label": "EDB investment commitments and jobs",
    "summary": "In 2025, EDB secured $14.2 billion in fixed asset investment commitments, expected to create around 15,700 jobs over five years.",
    "sentences": [
     {
@@ -1836,8 +1907,8 @@
    ]
   },
   {
-   "label": "Private R&D and spillovers",
-   "summary": "Private sector R&D expenditure more than doubled from $4.3 billion in 2013 to $9 billion in 2023, and a 2025 MTI study estimated spillover benefits from EDB-supported firms.",
+   "label": "Private R&D and spillover benefits",
+   "summary": "Private sector R&D expenditure doubled from $4.3 billion in 2013 to $9 billion in 2023, and a 2025 MTI study estimated spillover benefits from EDB-supported firms.",
    "sentences": [
     {
      "sid": "s01148",
@@ -1864,7 +1935,7 @@
   },
   {
    "label": "Capability transfer for workers",
-   "summary": "The Capability Transfer Programme supports foreign specialists transferring capabilities to local workforce and overseas training, and more structured capability transfer could be facilitated.",
+   "summary": "The Capability Transfer Programme supports bringing foreign specialists to transfer capabilities to local workers and overseas training for Singaporeans, and more structured transfer could be facilitated.",
    "sentences": [
     {
      "sid": "s01177",
@@ -1890,8 +1961,8 @@
    ]
   },
   {
-   "label": "Foreign manpower policy question",
-   "summary": "If labour costs are the principal concern, are Members suggesting significantly relaxing foreign manpower policies?",
+   "label": "Labour costs and foreign manpower",
+   "summary": "The passage asks whether Members are suggesting significantly relaxing foreign manpower policies if labour costs are the principal concern.",
    "sentences": [
     {
      "sid": "s01190",
@@ -1904,7 +1975,7 @@
   },
   {
    "label": "Trade-offs in policy objectives",
-   "summary": "Parliament has debated proposals on wages, retirement adequacy and environmental measures, illustrating trade-offs as such measures can affect business cost structures.",
+   "summary": "Parliament has debated proposals on wages, retirement adequacy and environmental measures, which illustrate trade-offs as such measures can affect business cost structures.",
    "sentences": [
     {
      "sid": "s01195",
@@ -1943,7 +2014,7 @@
    ]
   },
   {
-   "label": "Malay/Muslim business owners and AI",
+   "label": "AI for Malay/Muslim businesses",
    "summary": "The passage asks how more Malay/Muslim business owners can use AI to raise productivity, strengthen competitiveness and grow their businesses.",
    "sentences": [
     {
@@ -1957,7 +2028,7 @@
   },
   {
    "label": "Youths in emerging sectors",
-   "summary": "The passage asks whether more young people can enter sectors such as advanced manufacturing, digital technology, AI and the green economy, questions to be examined by the Committee for Economic Resilience.",
+   "summary": "The passage asks whether more young people can enter advanced manufacturing, digital technology, AI, the green economy and other emerging sectors.",
    "sentences": [
     {
      "sid": "s01231",
@@ -1976,8 +2047,8 @@
    ]
   },
   {
-   "label": "Support for Motion with amendments",
-   "summary": "The speaker says he cannot support the Motion as it stands but will support it with MP Edward Chia's proposed amendments, including replacing the word \"engine\".",
+   "label": "Motion support with amendments",
+   "summary": "The speaker cannot support the Motion as it stands but will support it with MP Edward Chia's proposed amendments, including replacing the word \"engine\".",
    "sentences": [
     {
      "sid": "s01245",
@@ -2038,8 +2109,8 @@
    ]
   },
   {
-   "label": "Mandatory retrenchment benefits proposal",
-   "summary": "The passage proposes mandatory retrenchment benefits funded by joint employer and employee contributions of 0.1% of monthly salary, paying retrenched workers 40% of last drawn salary for up to six months.",
+   "label": "Redundancy insurance scheme proposal",
+   "summary": "The passage proposes mandatory retrenchment benefits and a redundancy insurance scheme funded by employer and employee contributions of 0.1% of monthly salary.",
    "sentences": [
     {
      "sid": "s01275",
@@ -2053,6 +2124,13 @@
      "speaker": "Mr Fadli Fawzi (Aljunied)",
      "attributed": true,
      "text": "We must protect hardworking Singaporeans and legislate mandatory retrenchment benefits.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01277",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "attributed": true,
+     "text": "We believe that a redundancy insurance scheme offers better protection for all workers, including our PMEs.",
      "added_for_context": false
     },
     {
@@ -2079,22 +2157,16 @@
    ]
   },
   {
-   "label": "Coverage limited to involuntary redundancy",
-   "summary": "The passage states that coverage is restricted only to cases of involuntary redundancy, eliminating concerns that workers may quit to collect benefits.",
+   "label": "Funding for postgraduate reskilling",
+   "summary": "The passage agrees with ESR Thrust 7 and proposes interest-free education loans and an expanded CPF Education Loan Scheme for postgraduate programmes.",
    "sentences": [
     {
-     "sid": "s01287",
+     "sid": "s01300",
      "speaker": "Mr Fadli Fawzi (Aljunied)",
      "attributed": true,
-     "text": "First, coverage is restricted only to cases of involuntary redundancy, thus eliminating the concerns that workers may quit in order to collect benefits.",
+     "text": "Here, I am in agreement with ESR's diagnosis and recommendation in Thrust 7, which calls for expanding funding support to cover a broader range of deeper rescaling pathways, including post-graduate programmes offered by institutes of higher learning (IHLs).",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Education loans and CPF expansion",
-   "summary": "The Government should offer interest-free education loans to mid-career Singaporeans doing postgraduate degrees and expand the CPF Education Loan Scheme to Master's programmes.",
-   "sentences": [
+    },
     {
      "sid": "s01302",
      "speaker": "Mr Fadli Fawzi (Aljunied)",
@@ -2112,23 +2184,9 @@
    ]
   },
   {
-   "label": "Merger of SkillsFuture and Workforce Singapore",
-   "summary": "The merger of SkillsFuture Singapore and Workforce Singapore into one Statutory Board could support workers through displacement, retraining, job matching and re-employment.",
+   "label": "SWDA integrated support system",
+   "summary": "SWDA could serve a new integrated system supporting workers through displacement, retraining, job matching and re-employment.",
    "sentences": [
-    {
-     "sid": "s01316",
-     "speaker": "Mr Fadli Fawzi (Aljunied)",
-     "attributed": true,
-     "text": "If retraining ends with the worker returning home to search job portals alone, then we have merely replaced one form of insecurity with another.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s01317",
-     "speaker": "Mr Fadli Fawzi (Aljunied)",
-     "attributed": true,
-     "text": "I am thus encouraged by the opportunity presented last month by the merger of SkillsFuture Singapore and Workforce Singapore into a single Statutory Board.",
-     "added_for_context": false
-    },
     {
      "sid": "s01318",
      "speaker": "Mr Fadli Fawzi (Aljunied)",
@@ -2139,8 +2197,8 @@
    ]
   },
   {
-   "label": "One-stop employment centre caseworkers",
-   "summary": "SWDA should be a premier one-stop employment centre where every involuntarily unemployed jobseeker gets a dedicated caseworker.",
+   "label": "SWDA one-stop employment centre",
+   "summary": "SWDA should be a premier one-stop employment centre assigning each involuntary unemployed jobseeker a dedicated caseworker.",
    "sentences": [
     {
      "sid": "s01322",
@@ -2152,8 +2210,8 @@
    ]
   },
   {
-   "label": "Missing outcome data on workforce development",
-   "summary": "Billions are spent on workforce development but little outcome data is public, including which courses or providers perform better, whether wages rise, or whether workers stay employed.",
+   "label": "Missing workforce development outcome data",
+   "summary": "Billions support workforce development but little outcome data is public, leaving course, provider, wage and retention outcomes unknown.",
    "sentences": [
     {
      "sid": "s01343",
@@ -2179,8 +2237,8 @@
    ]
   },
   {
-   "label": "Publishing SkillsFuture effectiveness metrics",
-   "summary": "The Government should publish more metrics so workers can assess how effective specific SkillsFuture programmes are for employment prospects.",
+   "label": "Publishing SkillsFuture programme metrics",
+   "summary": "Government should publish more metrics, such as six-month job placement numbers and average new-job wages per provider and course.",
    "sentences": [
     {
      "sid": "s01349",
@@ -2188,12 +2246,19 @@
      "attributed": true,
      "text": "The Government should thus publish more metrics to help workers assess the effectiveness of specific SkillsFuture programmes in relation to employment prospects.",
      "added_for_context": false
+    },
+    {
+     "sid": "s01350",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "attributed": true,
+     "text": "For example, for each provider and course, we should publish how many trainees found new jobs within six months and the average wages of these new jobs.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "AGO finding on potential grant gaming",
-   "summary": "The AGO found six groups of 30-related entities showed patterns suggesting potential gaming of programmes to maximise grant claims rather than genuine training.",
+   "label": "AGO finding on grant claim gaming",
+   "summary": "AGO found six groups of 30-related entities showed patterns suggesting potential gaming of programmes to maximise grant claims.",
    "sentences": [
     {
      "sid": "s01358",
@@ -2205,34 +2270,8 @@
    ]
   },
   {
-   "label": "Six proposals in speech",
-   "summary": "The speech recaps six proposals on retrenchment benefits, redundancy insurance, education loans, SWDA consolidation, industry collaboration and outcome data.",
-   "sentences": [
-    {
-     "sid": "s01362",
-     "speaker": "Mr Fadli Fawzi (Aljunied)",
-     "attributed": true,
-     "text": "To recap the proposals in my speech: one, legislating mandatory retrenchment benefits; two, implementing universal redundancy insurance; three, introducing interest-free education loans and allowing CPF to be used for postgraduate studies; four, consolidating SWDA into a one-stop shop for employment and upskilling, with dedicated caseworkers; five, collaborating more closely with industry partners to finetune SkillsFuture offerings and curricula; and six, publishing more public outcome data by provider and course.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "ESR proactive career bridges",
-   "summary": "The ESR's proposal for proactive career bridges for workers in at-risk roles is an important step in that direction.",
-   "sentences": [
-    {
-     "sid": "s01388",
-     "speaker": "Assoc Prof Kenneth Goh (Nominated Member)",
-     "attributed": true,
-     "text": "The ESR's proposal for proactive career bridges for workers in at-risk roles is an important step in that direction.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Subsidised semesters count against grant",
-   "summary": "When they transfer programmes, the subsidised semesters already used count against the tuition grant available for the new programme.",
+   "label": "Course-correction allowance for transfers",
+   "summary": "Passage asks whether a limited one-time course-correction allowance could disregard one or two subsidised semesters for a first transfer.",
    "sentences": [
     {
      "sid": "s01391",
@@ -2240,37 +2279,32 @@
      "attributed": true,
      "text": "When they transfer programmes, the subsidised semesters already used count against the tuition grant available for the new programme.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "One-time course-correction allowance",
-   "summary": "It asks whether there could be a limited, one-time course-correction allowance for a first transfer made during the first year.",
-   "sentences": [
+    },
+    {
+     "sid": "s01392",
+     "speaker": "Assoc Prof Kenneth Goh (Nominated Member)",
+     "attributed": true,
+     "text": "Any additional study required may therefore attract non-subsidised fees.",
+     "added_for_context": false
+    },
     {
      "sid": "s01394",
      "speaker": "Assoc Prof Kenneth Goh (Nominated Member)",
      "attributed": true,
      "text": "Could there be a limited, one-time course-correction allowance for a first transfer made during the first year?",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Return after leaving for venture",
-   "summary": "A worker who leaves a job to pursue a venture should be able to return to employment, regardless of the venture's eventual outcome.",
-   "sentences": [
+    },
     {
-     "sid": "s01407",
+     "sid": "s01395",
      "speaker": "Assoc Prof Kenneth Goh (Nominated Member)",
      "attributed": true,
-     "text": "A worker who leaves a job to pursue a venture should be able to return to employment, regardless of the venture's eventual outcome.",
+     "text": "For example, one or two subsidised semesters could be disregarded, subject to appropriate academic advising and maximum recognition of credits already completed.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Bettr Group coffee and training",
+   "label": "Bettr Group coffee training employment",
    "summary": "Bettr Group is a homegrown specialty coffee company that combines its business with training and inclusive employment for people facing social and economic barriers.",
    "sentences": [
     {
@@ -2283,8 +2317,8 @@
    ]
   },
   {
-   "label": "Worker development and ESR",
-   "summary": "The ESR calls for AI to augment workers through job redesign and training, and for learning to be integrated with real work and employers' needs.",
+   "label": "Path to develop and progress",
+   "summary": "Workers should also see a path to develop and progress, building on the ESR's calls for AI to augment workers through job redesign and training.",
    "sentences": [
     {
      "sid": "s01419",
@@ -2303,7 +2337,7 @@
    ]
   },
   {
-   "label": "Pay for greater responsibility",
+   "label": "Greater responsibilities reflected in pay",
    "summary": "Where workers take on greater responsibilities and help generate productivity gains, this should be reflected in their pay or greater autonomy.",
    "sentences": [
     {
@@ -2316,8 +2350,8 @@
    ]
   },
   {
-   "label": "Reciprocal commitment and amended Motion",
-   "summary": "Workers and innovation flourish together only through reciprocal commitment, and the speaker supports the Motion as amended by Mr Edward Chia.",
+   "label": "Reciprocal commitment workers and employers",
+   "summary": "Workers and innovation can flourish together only through a reciprocal commitment, and the speaker would support the Motion as amended by Mr Edward Chia.",
    "sentences": [
     {
      "sid": "s01431",
@@ -2327,18 +2361,18 @@
      "added_for_context": false
     },
     {
-     "sid": "s01433",
+     "sid": "s01432",
      "speaker": "Assoc Prof Kenneth Goh (Nominated Member)",
      "attributed": true,
-     "text": "I would have preferred a more nuanced and calibrated formulation, one that preserves its aspirations while making the trade-offs and responsibilities clearer.",
-     "added_for_context": true
+     "text": "I therefore retain reservations about paragraph (a) as presently framed.",
+     "added_for_context": false
     },
     {
      "sid": "s01434",
      "speaker": "Assoc Prof Kenneth Goh (Nominated Member)",
      "attributed": true,
      "text": "That said, the amendments proposed by Mr Edward Chia brings the Motion closer to my position and it is more consistent with the points I have made.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s01435",
@@ -2350,8 +2384,8 @@
    ]
   },
   {
-   "label": "Shortening retrenchment notification requirement",
-   "summary": "Thrust 6 calls to shorten the requirement for companies to submit a mandatory retrenchment notification within five working days after workers are notified.",
+   "label": "Shorten mandatory retrenchment notification requirement",
+   "summary": "Thrust 6 calls to shorten the current requirement for companies to submit a mandatory retrenchment notification within five working days after workers are notified.",
    "sentences": [
     {
      "sid": "s01439",
@@ -2363,7 +2397,7 @@
    ]
   },
   {
-   "label": "Retrenchments April to June",
+   "label": "4,500 retrenchments April to June",
    "summary": "It was reported that the 4,500 retrenchments from April to June this year were the highest since the last quarter of 2020.",
    "sentences": [
     {
@@ -2377,7 +2411,7 @@
   },
   {
    "label": "Rising recorded retrenchments",
-   "summary": "Recorded retrenchments increased from 6,440 in 2022 to 13,020 in 2024, and 14,490 in 2025.",
+   "summary": "Recorded retrenchments rose from 6,440 in 2022 to 13,020 in 2024 and 14,490 in 2025.",
    "sentences": [
     {
      "sid": "s01447",
@@ -2396,8 +2430,8 @@
    ]
   },
   {
-   "label": "Retrenched workers lacking benefits",
-   "summary": "In 2024, potentially close to 3,000 retrenched workers in Singapore received no retrenchment benefits or less than the tripartite guidelines prescribe.",
+   "label": "No statutory retrenchment entitlement",
+   "summary": "In 2024 potentially close to 3,000 retrenched workers received no benefits or less than the tripartite guidelines, as Singapore workers have no statutory entitlement.",
    "sentences": [
     {
      "sid": "s01451",
@@ -2405,25 +2439,39 @@
      "attributed": true,
      "text": "Critically, though, what we can reasonably extrapolate from both these data points is that in 2024, for example, potentially close to 3,000 retrenched workers in Singapore either received no retrenchment benefits at all or received less than what is prescribed by the tripartite guidelines.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Tribunal on retrenchment benefits",
-   "summary": "In JIF v JIG, the Employment Claims Tribunal held that section 45 of the Employment Act does not create a statutory entitlement to retrenchment benefits.",
-   "sentences": [
+    },
     {
-     "sid": "s01460",
+     "sid": "s01453",
      "speaker": "Mr Pritam Singh (Aljunied)",
      "attributed": true,
-     "text": "In JIF v JIG, the Employment Claims Tribunal held that section 45 of the Employment Act does not create a statutory entitlement to retrenchment benefits.",
+     "text": "Today, many economies in Asia provide some form of legislative statutory protection for retrenched workers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01454",
+     "speaker": "Mr Pritam Singh (Aljunied)",
+     "attributed": true,
+     "text": "However, workers in Singapore have no statutory entitlement to retrenchment benefits.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "DBS data on younger Singaporeans",
-   "summary": "DBS's 2025 financial wellness series found Gen Zs and Millennials aged 25 to 44 are falling behind older counterparts in retirement savings.",
+   "label": "Thailand severance payments law",
+   "summary": "Thailand legislates severance payments based on years of service.",
+   "sentences": [
+    {
+     "sid": "s01470",
+     "speaker": "Mr Pritam Singh (Aljunied)",
+     "attributed": true,
+     "text": "Thailand legislates severance payments based on years of service.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "DBS financial wellness findings",
+   "summary": "DBS Bank's 2025 financial wellness series found Gen Zs and Millennials aged 25 to 44 are shouldering heavier liabilities and falling behind in retirement savings.",
    "sentences": [
     {
      "sid": "s01477",
@@ -2449,41 +2497,21 @@
    ]
   },
   {
-   "label": "Employers' federation on Employment Act review",
-   "summary": "The Singapore National Employers' Federation cautioned that the Employment Act review should not inadvertently mandate practices reducing employer flexibilities and undermining competitiveness.",
+   "label": "Employers paying retrenchment benefits",
+   "summary": "Based on available data on retrenchment benefits, many employers are already prepared to pay retrenchment benefits to workers.",
    "sentences": [
     {
-     "sid": "s01492",
+     "sid": "s01486",
      "speaker": "Mr Pritam Singh (Aljunied)",
      "attributed": true,
-     "text": "In fact, when the Government announced the review of the Employment Act last year, the Singapore National Employers' Federation cautioned that the review should not, and I quote, \"inadvertently mandate progressive employment practices that may reduce flexibilities for employers and undermine business competitiveness\".",
+     "text": "Employers must play their part too, based on the available data on retrenchment benefits, we know that many employers are already prepared to shoulder that responsibility and pay retrenchment benefits to workers.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Facts on retrenchment benefit benchmarks",
-   "summary": "Collective agreements already prescribe retrenchment benefits, and most employers converge at those benchmarks, with few paying more than one month per year of service.",
-   "sentences": [
-    {
-     "sid": "s01503",
-     "speaker": "Mr Pritam Singh (Aljunied)",
-     "attributed": true,
-     "text": "However, the facts do not fully support this concern.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s01504",
-     "speaker": "Mr Pritam Singh (Aljunied)",
-     "attributed": true,
-     "text": "There are already collective agreements that prescribe retrenchment benefits and the vast majority of employers converge at those benchmarks anyway, with a very small number paying more than the one-month norm for each year of service.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Employers already providing retrenchment benefits",
-   "summary": "Eight out of 10 eligible employees already receive retrenchment benefits up to the tripartite guideline of two weeks salary for every year of service.",
+   "label": "Eight in 10 receive benefits",
+   "summary": "Eight out of 10 eligible employees already receive retrenchment benefits up to the tripartite guideline of two weeks salary per year of service.",
    "sentences": [
     {
      "sid": "s01514",
@@ -2503,7 +2531,7 @@
   },
   {
    "label": "Subsidiary legislation for higher payouts",
-   "summary": "Subsidiary legislation could direct higher retrenchment payouts for larger firms, up to one month's salary per year of service.",
+   "summary": "Subsidiary legislation could direct higher payouts for larger firms, such as up to one month's salary per year of service.",
    "sentences": [
     {
      "sid": "s01519",
@@ -2515,8 +2543,8 @@
    ]
   },
   {
-   "label": "Retrenchment benefit backstop approaches",
-   "summary": "Some countries use national insurance schemes, wage guarantee agreements, or treat retrenchment benefits as preferential debt in insolvency.",
+   "label": "Retrenchment benefit approaches across countries",
+   "summary": "Some countries create backstops like national insurance, others advance wage guarantee agreements, and others treat retrenchment benefits as preferential debt.",
    "sentences": [
     {
      "sid": "s01524",
@@ -2528,8 +2556,8 @@
    ]
   },
   {
-   "label": "Call for statutory retrenchment benefits framework",
-   "summary": "The speaker urges the Government to convene employers, unions and workers to develop a statutory retrenchment benefits framework and supports the Motion.",
+   "label": "Statutory retrenchment benefits framework call",
+   "summary": "The speaker urges the Government to convene employers, unions and workers to develop a statutory retrenchment benefits framework with the objective of introducing legislation.",
    "sentences": [
     {
      "sid": "s01529",
@@ -2551,39 +2579,18 @@
      "attributed": true,
      "text": "A resilient society requires workers who know they will not be left to bear the burdens of economic change alone, because in line with the call of the Labour Movement in NTUC, no less, while not every job can be protected, every worker deserves protection.",
      "added_for_context": false
-    },
-    {
-     "sid": "s01532",
-     "speaker": "Mr Pritam Singh (Aljunied)",
-     "attributed": true,
-     "text": "I support the original Motion in the names of Members Kenneth Tiong and Jamus Lim, which calls for an inclusive and equal economy for all Singaporeans.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s01533",
-     "speaker": "Mr Speaker",
-     "attributed": true,
-     "text": "We have been in session for close to five and a half hours, so I propose to take a break.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s01534",
-     "speaker": "Mr Speaker",
-     "attributed": true,
-     "text": "I suspend the Sitting and will take the chair at 4.20 pm.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Singapore adult skills compared to OECD",
-   "summary": "Singapore tops test scores of 15-year-olds but ranks only mid-pack among OECD economies in adult literacy and numeracy.",
+   "label": "Three factors for worker support",
+   "summary": "Three sets of factors are needed: nimble workers, transforming organisations, and a refreshed work and learning ecosystem enabled by public policy.",
    "sentences": [
     {
-     "sid": "s01550",
+     "sid": "s01549",
      "speaker": "Assoc Prof Terence Ho (Nominated Member)",
      "attributed": true,
-     "text": "Singapore tops the world in test scores of 15-year-olds, but can we top the world in the skills and learning agility of 45-year-olds?",
+     "text": "Three sets of factors are needed: first, workers must be nimble and adaptable; second, organisations must transform to activate skills and unlock the potential of workers; third, we need a refreshed work and learning ecosystem enabled by public policy to support workers and organisations, and help them thrive.",
      "added_for_context": false
     },
     {
@@ -2597,7 +2604,7 @@
   },
   {
    "label": "Formal training not applied at work",
-   "summary": "Research suggests much formal training is not applied at work due to lack of opportunity or unconducive workplaces.",
+   "summary": "Research suggests much of what people learn in formal training is not applied at work due to lack of opportunity or unconducive workplaces.",
    "sentences": [
     {
      "sid": "s01569",
@@ -2609,8 +2616,8 @@
    ]
   },
   {
-   "label": "Skills-first practices and learning roles",
-   "summary": "Leaders, HR, managers and unions enable learning, and organisations should adopt skills-first practices for hiring and advancement.",
+   "label": "Roles in enabling learning and skills-first practices",
+   "summary": "Leaders, HR professionals, line managers and unions have roles in enabling learning, and organisations should adopt skills-first practices for hiring and advancement.",
    "sentences": [
     {
      "sid": "s01572",
@@ -2636,8 +2643,8 @@
    ]
   },
   {
-   "label": "Institute of Adult Learning framework",
-   "summary": "The Institute of Adult Learning will launch a skills-first framework for action in October setting out actions and behaviours for individuals, employers and training providers.",
+   "label": "Adult learning skills-first framework",
+   "summary": "The Institute of Adult Learning will launch a skills-first framework for action in October, setting out actions for individuals, employers and training providers.",
    "sentences": [
     {
      "sid": "s01585",
@@ -2662,21 +2669,8 @@
    ]
   },
   {
-   "label": "Personalised career guidance investment",
-   "summary": "There is scope to further invest in personalised career guidance and job-matching capabilities, recommending jobs based on skills, values, aspirations and personality fit.",
-   "sentences": [
-    {
-     "sid": "s01593",
-     "speaker": "Assoc Prof Terence Ho (Nominated Member)",
-     "attributed": true,
-     "text": "Fourth, there is scope to further invest in personalised career guidance and job-matching capabilities, not just recommending jobs based on skills, but also on values, aspirations and personality fit.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Support for micro entrepreneurship",
-   "summary": "The Government could review supporting ventures through financing, access to AI compute, business networks, mentoring or other targeted support to encourage micro entrepreneurship.",
+   "summary": "The Government could review supporting such ventures through financing, AI compute access, business networks, mentoring or other targeted support for micro entrepreneurship.",
    "sentences": [
     {
      "sid": "s01601",
@@ -2689,13 +2683,20 @@
   },
   {
    "label": "Lifelong learning and employability expertise",
-   "summary": "Singapore needs to build up expertise in lifelong learning and employability, as it has in pedagogy for school-age children.",
+   "summary": "Singapore needs to build expertise in lifelong learning and employability, as it has in pedagogy, to be at the cutting edge in the AI age.",
    "sentences": [
     {
      "sid": "s01605",
      "speaker": "Assoc Prof Terence Ho (Nominated Member)",
      "attributed": true,
      "text": "Just as we have built up considerable expertise in pedagogy that has placed Singapore at the forefront of global education for school-age children, we need to similarly build up expertise in lifelong learning and employability.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01607",
+     "speaker": "Assoc Prof Terence Ho (Nominated Member)",
+     "attributed": true,
+     "text": "By building up our research and practice ecosystem, Singapore can be at the cutting edge of learning and employability in the AI age.",
      "added_for_context": false
     }
    ]
@@ -2714,7 +2715,7 @@
    ]
   },
   {
-   "label": "ESR Thrust 5 AI-resilient sectors",
+   "label": "Thrust 5 AI-resilient sectors",
    "summary": "Thrust 5 of the ESR recommended improving the attractiveness of AI-resilient sectors such as allied health, early childhood education and social work.",
    "sentences": [
     {
@@ -2728,7 +2729,7 @@
   },
   {
    "label": "Median wages of nurses, social workers, preschool teachers",
-   "summary": "Latest MOM data as of June 2025 shows median gross monthly wages of $5,129 for registered nurses, $4,565 for social workers and $4,150 for preschool teachers.",
+   "summary": "MOM data as of June 2025 shows registered nurses earn a median gross wage of $5,129 monthly, social workers $4,565 and preschool teachers $4,150.",
    "sentences": [
     {
      "sid": "s01633",
@@ -2747,8 +2748,8 @@
    ]
   },
   {
-   "label": "2022 study on public healthcare burnout",
-   "summary": "A 2022 study in the Academy of Medicine, Singapore's journal found 37.8% of respondents had high emotional exhaustion, 29.7% high de-personalisation and 55.3% low personal accomplishment scores.",
+   "label": "Burnout study in public healthcare",
+   "summary": "A 2022 study in the Academy of Medicine, Singapore journal found 37.8% of respondents had high emotional exhaustion, 29.7% high de-personalisation and 55.3% low personal accomplishment.",
    "sentences": [
     {
      "sid": "s01639",
@@ -2787,14 +2788,21 @@
    ]
   },
   {
-   "label": "SME growth capital and listing path",
-   "summary": "The ESR report acknowledges SMEs find it difficult to secure growth stage capital, and suggests ESG work with SGX on governance and disclosure for co-invested companies.",
+   "label": "SME growth stage capital access",
+   "summary": "The ESR report acknowledges difficulty securing growth stage capital, and suggests ESG work with SGX on governance and disclosure for co-invested companies to ease listing.",
    "sentences": [
     {
      "sid": "s01672",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "For SME looking to scale, the ESR report acknowledges that companies still find it difficult to secure growth stage capital and that Temasek already participates in SME co-investment.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01673",
+     "speaker": "Ms He Ting Ru (Sengkang)",
+     "attributed": true,
+     "text": "But what our businesses need to grow is bolder and broader base access to financing catalysed by private and public capital.",
      "added_for_context": false
     },
     {
@@ -2807,21 +2815,8 @@
    ]
   },
   {
-   "label": "Business failure and personal bankruptcy",
-   "summary": "A Straits Times article on 26 May indicated business failure is among the top reasons individuals go into personal bankruptcy.",
-   "sentences": [
-    {
-     "sid": "s01679",
-     "speaker": "Ms He Ting Ru (Sengkang)",
-     "attributed": true,
-     "text": "After I spoke in early May this year about supporting entrepreneurship amongst youths, including a call to adapt our current bankruptcy framework, a Straits Times' article on 26 May indicated that business failure is among the top reasons why individuals go into personal bankruptcy.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "EU second chance policy",
-   "summary": "An EU expert group report said second chance policy for bankrupt entrepreneurs may aid company creation and job growth, and the EU adopted a preventive restructuring approach.",
+   "label": "EU second chance policy for entrepreneurs",
+   "summary": "A 2011 EU expert group report said second chance policies for bankrupt entrepreneurs may be promising, and the EU has adopted a preventive restructuring approach.",
    "sentences": [
     {
      "sid": "s01683",
@@ -2833,7 +2828,7 @@
    ]
   },
   {
-   "label": "Data centres moved to Johor",
+   "label": "Data centres moving to Johor and Batam",
    "summary": "The 2019 moratorium on new data centres and higher operating costs drove operators to Johor and Batam, with Singaporean companies owning the largest capacity share there.",
    "sentences": [
     {
@@ -2847,7 +2842,7 @@
   },
   {
    "label": "Forest clearing and resource use",
-   "summary": "Concern is mounting over forests cut for housing and development, while EMA noted electricity consumption rose 4% in 2024 and PUB expects non-domestic water use to rise.",
+   "summary": "Forests are being cleared for housing and a commercial hub, while electricity and non-domestic water consumption are rising.",
    "sentences": [
     {
      "sid": "s01699",
@@ -2873,19 +2868,6 @@
    ]
   },
   {
-   "label": "Future economy felt by workers",
-   "summary": "Many Singaporean workers and business owners already feel the future economy through uncertain demand, rising costs, sharper competition and fast-changing technologies and industries.",
-   "sentences": [
-    {
-     "sid": "s01715",
-     "speaker": "Mr Patrick Tay Teck Guan (Pioneer)",
-     "attributed": true,
-     "text": "For many Singaporean workers and business owners, the future economy is already being felt in very real ways in uncertain demand, rising costs, sharper competition, new technologies and industries that are changing faster than ever before.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "AI disrupting jobs",
    "summary": "AI will disrupt jobs at a speed and scale not seen before.",
    "sentences": [
@@ -2900,7 +2882,7 @@
   },
   {
    "label": "Retrenchment benefits and unemployment support",
-   "summary": "On retrenchment benefits and unemployment support, NTUC and the Labour Movement have worked with tripartite partners to ensure no worker is left behind.",
+   "summary": "NTUC and tripartite partners are working to ensure no worker is left behind on retrenchment benefits and unemployment support.",
    "sentences": [
     {
      "sid": "s01732",
@@ -2919,8 +2901,8 @@
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "Strengthening retrenchment protection regime",
+   "summary": "Tripartite partners are negotiating whether to review the Employment Act and strengthen advisories into guidelines with stronger measures against non-compliant companies.",
    "sentences": [
     {
      "sid": "s01736",
@@ -2928,12 +2910,19 @@
      "attributed": true,
      "text": "In fact, we have been trying to lobby, myself inclusive, in this House, for the past decade, including earlier this year, for further strengthening of the retrenchment protection regime here in Singapore.",
      "added_for_context": false
+    },
+    {
+     "sid": "s01738",
+     "speaker": "Mr Patrick Tay Teck Guan (Pioneer)",
+     "attributed": true,
+     "text": "In fact, the tripartite partners, as I am involved in the negotiations for the Employment Act as well as all the relevant statutory provisions as well as advisories, we remain open in negotiating and discussions are underway, whether it is the Employment Act reviewing the Tripartite Advisory to strengthen it to tripartite guidelines, which I have raised before in this House, and even stronger measures against companies that flopped or failed to, comply with advisories.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "SkillsFuture Jobseeker Support Scheme",
+   "summary": "The SkillsFuture Jobseeker Support Scheme was implemented on 26 April last year.",
    "sentences": [
     {
      "sid": "s01746",
@@ -2952,8 +2941,8 @@
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "Raising Jobseeker Support income threshold",
+   "summary": "With more PMEs affected by lay-offs, the income threshold of the SkillsFuture Jobseeker Support scheme, currently $5,000, could be raised to the median salary of PMEs.",
    "sentences": [
     {
      "sid": "s01750",
@@ -2972,8 +2961,8 @@
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "Tripartite Jobs Council formation",
+   "summary": "MOM, NTUC and the Singapore National Employers Federation announced the formation of the Tripartite Jobs Council earlier this year.",
    "sentences": [
     {
      "sid": "s01758",
@@ -2985,21 +2974,8 @@
    ]
   },
   {
-   "label": "",
-   "summary": "",
-   "sentences": [
-    {
-     "sid": "s01765",
-     "speaker": "Mr Patrick Tay Teck Guan (Pioneer)",
-     "attributed": true,
-     "text": "Through the GRIT programme, NTUC works hand-in-hand with Government and employers in sectors such as financial services, information and communication technology, manufacturing to give young graduates structured, industry-relevant experience.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "",
-   "summary": "",
+   "label": "Overseas revenue for businesses",
+   "summary": "According to the SBF, overseas revenue accounts for more than 40% of total revenue for half of our businesses.",
    "sentences": [
     {
      "sid": "s01770",
@@ -3011,9 +2987,16 @@
    ]
   },
   {
-   "label": "NTUC funding for initiative",
-   "summary": "In 2022 the Government gave NTUC $100 million to scale up the initiative, then another $200 million after it showed results for workers.",
+   "label": "CTCs and government funding",
+   "summary": "Since 2019 CTCs have brought management, workers and union leaders together, with the Government providing NTUC $100 million in 2022 and another $200 million after results.",
    "sentences": [
+    {
+     "sid": "s01777",
+     "speaker": "Mr Patrick Tay Teck Guan (Pioneer)",
+     "attributed": true,
+     "text": "Since 2019, our CTCs have brought company management, workers and union leaders together to drive business and workforce transformation.",
+     "added_for_context": false
+    },
     {
      "sid": "s01778",
      "speaker": "Mr Patrick Tay Teck Guan (Pioneer)",
@@ -3024,8 +3007,8 @@
    ]
   },
   {
-   "label": "Training roadmap and wage gains",
-   "summary": "A union-management training roadmap reskilled 24 workers, raised capacity 12% and gave 5% wage increases; over 15,000 workers have benefited from CTC Grant projects.",
+   "label": "CTC training and wage outcomes",
+   "summary": "A structured training roadmap reskilled 24 workers, raised production capacity 12% and gave a 5% wage increase; over 15,000 workers have benefited from CTC Grant projects.",
    "sentences": [
     {
      "sid": "s01781",
@@ -3057,8 +3040,8 @@
    ]
   },
   {
-   "label": "Overseas exposure and management representation",
-   "summary": "The passage says young professionals must be given chances to lead and build networks, welcomes ESR's recommendation to expand the Overseas Markets Immersion Programme, and encourages monitoring Singaporeans in management positions.",
+   "label": "Overseas exposure and local PMEs",
+   "summary": "The ESR has recommended expanding the Overseas Markets Immersion Programme, and the Government is encouraged to monitor the proportion of Singaporeans in management positions.",
    "sentences": [
     {
      "sid": "s01799",
@@ -3084,8 +3067,8 @@
    ]
   },
   {
-   "label": "Overseas exposure commitments and numbers",
-   "summary": "It commits to 17,000 short-term overseas exposure places a year by 2030, up from 9,000, and 3,000 overseas internships in ASEAN, China and India, doubled from 1,500.",
+   "label": "Overseas exposure for young Singaporeans",
+   "summary": "It commits to 17,000 short-term overseas exposure places a year by 2030 and 3,000 overseas internships in ASEAN, China and India.",
    "sentences": [
     {
      "sid": "s01832",
@@ -3111,8 +3094,8 @@
    ]
   },
   {
-   "label": "Scholarship study destinations",
-   "summary": "Over 2023 to 2025, on an annual average basis, 49% of government scholarship recipients studied at local autonomous universities, 30% in the UK, 15% in the US and 6% in other countries.",
+   "label": "Government scholarship study destinations",
+   "summary": "Over 2023 to 2025, 49% of scholarship recipients studied at local autonomous universities, 30% in the UK, 15% in the US and 6% elsewhere.",
    "sentences": [
     {
      "sid": "s01843",
@@ -3131,8 +3114,8 @@
    ]
   },
   {
-   "label": "Third languages taught in schools",
-   "summary": "The key third languages offered remain French, German, Japanese and Spanish, though blueprints stress future ties with neighbours whose languages are not taught.",
+   "label": "Third languages taught to students",
+   "summary": "Key third languages offered remain French, German, Japanese and Spanish, though blueprints emphasise that our future lies with neighbours.",
    "sentences": [
     {
      "sid": "s01854",
@@ -3144,8 +3127,8 @@
    ]
   },
   {
-   "label": "Youth Talent Programme folded into Global Ready Talent",
-   "summary": "The Youth Talent Programme was folded into the Global Ready Talent Programme, which reportedly supported 29,470 students between 2020 and 2024.",
+   "label": "Youth Talent Programme folded in",
+   "summary": "The Youth Talent Programme was folded into the Global Ready Talent Programme, which supported 29,470 students between 2020 and 2024.",
    "sentences": [
     {
      "sid": "s01865",
@@ -3157,7 +3140,7 @@
    ]
   },
   {
-   "label": "Interest versus actual overseas work stints",
+   "label": "Interest versus actual overseas work",
    "summary": "50% of Singaporeans expressed interest in working abroad, but only 3% have done a stint of six months or more.",
    "sentences": [
     {
@@ -3170,8 +3153,8 @@
    ]
   },
   {
-   "label": "Programme sending younger Singaporeans abroad",
-   "summary": "It helps employers send younger Singaporeans on structured postings abroad, launched in 2024 with 250 places over two years, and has supported over 180 professionals.",
+   "label": "Programme sending Singaporeans on postings",
+   "summary": "It helps employers send younger Singaporeans on structured postings abroad, launched in 2024 with 250 places over two years, supporting over 180 professionals.",
    "sentences": [
     {
      "sid": "s01881",
@@ -3197,21 +3180,21 @@
    ]
   },
   {
-   "label": "VIE places young people abroad",
-   "summary": "The VIE places more than 11,500 young people abroad every year.",
+   "label": "VIE job placement rate",
+   "summary": "Nine in 10 young persons on a VIE assignment find a job within six months of completing it.",
    "sentences": [
     {
-     "sid": "s01896",
+     "sid": "s01903",
      "speaker": "Ms Eileen Chong Pei Shan (Non-Constituency Member)",
      "attributed": true,
-     "text": "The VIE places more than 11,500 young people abroad every year.",
+     "text": "Nine in 10 young persons on a VIE assignment find a job within six months of completing their stint.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Learning from France's VIE design",
-   "summary": "It calls for drawing inspiration from the VIE's design, state support for what individuals and small companies cannot do, and measuring outcomes like France does.",
+   "label": "Support and outcome measurement",
+   "summary": "It calls for state support where individuals and small companies cannot act alone, and for publishing OMIP outcomes two and five years after completion.",
    "sentences": [
     {
      "sid": "s01909",
@@ -3230,8 +3213,8 @@
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "Adulting 101 programme launch",
+   "summary": "The SG Youth Plan will launch a programme called Adulting 101 teaching CPF, public housing policy, marriage and parenthood.",
    "sentences": [
     {
      "sid": "s01913",
@@ -3239,52 +3222,32 @@
      "attributed": true,
      "text": "The SG Youth Plan will see the launch of a new programme called “Adulting 101”.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "",
-   "summary": "",
-   "sentences": [
-    {
-     "sid": "s01919",
-     "speaker": "Ms Eileen Chong Pei Shan (Non-Constituency Member)",
-     "attributed": true,
-     "text": "She is weighing it against a BTO queue that rewards those who stay home; against CPF contributions a regional employer will not make; against the challenges of coming home to a housing and healthcare system she stepped out of.",
-     "added_for_context": true
     },
     {
-     "sid": "s01920",
+     "sid": "s01914",
      "speaker": "Ms Eileen Chong Pei Shan (Non-Constituency Member)",
      "attributed": true,
-     "text": "We have built a domestic architecture so finely tuned for staying home that leaving often means accepting penalties.",
+     "text": "It will teach us about CPF, public housing policy, marriage and parenthood.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "Regional posting BTO and school",
+   "summary": "It calls for exploring how regional postings affect BTO opportunities and obligations, and how children can re-enter Singapore schools seamlessly.",
    "sentences": [
     {
-     "sid": "s01928",
+     "sid": "s01924",
      "speaker": "Ms Eileen Chong Pei Shan (Non-Constituency Member)",
      "attributed": true,
-     "text": "It is a good job that depends on someone else’s decision to come.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s01929",
-     "speaker": "Ms Eileen Chong Pei Shan (Non-Constituency Member)",
-     "attributed": true,
-     "text": "There is another kind of good job; one we seize because a field is taking shape around us and Singapore is well placed to lead it – the growing social impact sector in Southeast Asia.",
+     "text": "Explore how we can ensure that a regional posting does not complicate BTO opportunities and obligations; that children who go on post with their parents can have a seamless re-entry into school in Singapore.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "Equipping Singaporeans for region",
+   "summary": "The Singaporean equipped to work in the region appreciates for a lifetime.",
    "sentences": [
     {
      "sid": "s01939",
@@ -3296,8 +3259,8 @@
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "Pest management wage extension",
+   "summary": "As Chairman of the Tripartite Cluster, the speaker was part of last month's announcement extending the Progressive Wage Model to pest management workers.",
    "sentences": [
     {
      "sid": "s01968",
@@ -3309,8 +3272,8 @@
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "Income growth at 20th percentile",
+   "summary": "Over the past decade, incomes at the 20th percentile grew 2.9% a year, ahead of 2.1% at the median, and the 20th percentile-to-median ratio rose to 0.55.",
    "sentences": [
     {
      "sid": "s01971",
@@ -3330,7 +3293,7 @@
   },
   {
    "label": "e2i job matching support",
-   "summary": "The Council, managed by e2i, supported over 110,000 workers with job matching between 2020 and 2024.",
+   "summary": "Managed by e2i, the Council supported more than 110,000 workers with job matching between 2020 and 2024.",
    "sentences": [
     {
      "sid": "s01981",
@@ -3342,8 +3305,8 @@
    ]
   },
   {
-   "label": "Retrenched residents reemployment rate",
-   "summary": "The share of retrenched residents back in work within six months rose to 60.7% in the first quarter of this year.",
+   "label": "Retrenched residents re-employment rate",
+   "summary": "The share of retrenched residents back in work within six months improved for a second consecutive quarter, to 60.7% in the first quarter of this year.",
    "sentences": [
     {
      "sid": "s01989",
@@ -3355,8 +3318,8 @@
    ]
   },
   {
-   "label": "National Career Centres expansion",
-   "summary": "e2i now runs 27 National Career Centres across Singapore, expanded since 2024, to reach more workers.",
+   "label": "e2i National Career Centres",
+   "summary": "To reach more workers, e2i now runs 27 National Career Centres across Singapore, expanded since 2024.",
    "sentences": [
     {
      "sid": "s02002",
@@ -3368,8 +3331,8 @@
    ]
   },
   {
-   "label": "CTCs and AI projects",
-   "summary": "Over 3,800 CTCs have been formed, benefiting over 300,000 workers, with about 31% of this year's CTC Grant projects AI-related.",
+   "label": "CTCs and AI-related projects",
+   "summary": "More than 3,800 CTCs have been formed, benefiting over 300,000 workers, and about 31% of CTC Grant projects supported this year are AI-related, up from about 17% last year.",
    "sentences": [
     {
      "sid": "s02012",
@@ -3389,7 +3352,7 @@
   },
   {
    "label": "NTUC Youth career mentorship",
-   "summary": "NTUC Youth gives younger members career guidance and industry exposure, including a four-month Career Mentorship Programme with over 400 volunteer mentors.",
+   "summary": "Through NTUC Youth, younger members receive career guidance and industry exposure, and a Career Mentorship Programme has more than 400 volunteer mentors from over 20 industries offering a four-month mentorship.",
    "sentences": [
     {
      "sid": "s02034",
@@ -3409,7 +3372,7 @@
   },
   {
    "label": "Malay/Muslim worker support",
-   "summary": "More than 6,000 Malay/Muslim workers have been supported through career fairs and skills carnivals.",
+   "summary": "More than 6,000 Malay/Muslim workers were supported through career fairs and skills carnivals.",
    "sentences": [
     {
      "sid": "s02041",
@@ -3422,7 +3385,7 @@
   },
   {
    "label": "Future economy worker support",
-   "summary": "It states that a future economy means every worker has support and a clear path, and that national strategies will be judged where support is delivered.",
+   "summary": "An economy of the future gives every worker someone walking alongside them and a clear path forward.",
    "sentences": [
     {
      "sid": "s02048",
@@ -3463,7 +3426,7 @@
   },
   {
    "label": "Unemployment and real income",
-   "summary": "It states resident unemployment was 2.9% in March 2026, and from 2021 to 2025 median real income grew 7.4% while the 20th percentile rose 10.1%.",
+   "summary": "Resident unemployment was 2.9% in March 2026, and real income grew at the median and 20th percentile from 2021 to 2025.",
    "sentences": [
     {
      "sid": "s02059",
@@ -3489,8 +3452,8 @@
    ]
   },
   {
-   "label": "Jobseekers employed via Workforce Singapore",
-   "summary": "It states that in 2025, more than 62,000 jobseekers secured employment after benefiting from Workforce Singapore's programmes and services.",
+   "label": "Jobseekers securing employment",
+   "summary": "In 2025, more than 62,000 jobseekers secured employment after benefiting from Workforce Singapore's programmes and services.",
    "sentences": [
     {
      "sid": "s02090",
@@ -3502,8 +3465,8 @@
    ]
   },
   {
-   "label": "Programme employment and salary outcomes",
-   "summary": "It states about nine in 10 participants remained employed 24 months after starting the programme and about six in 10 earned more than before.",
+   "label": "Participant employment and salary outcomes",
+   "summary": "About nine in 10 participants remained employed for 24 months, and about six in 10 earned more than their previous salaries.",
    "sentences": [
     {
      "sid": "s02093",
@@ -3516,7 +3479,7 @@
   },
   {
    "label": "PMET vacancies and graduate employment",
-   "summary": "It states that in the first quarter of 2026 there were about 32,800 entry-level PMET vacancies, and around nine in 10 2025 university graduates found employment within a year.",
+   "summary": "In the first quarter of 2026, entry-level PMET vacancies were about 32,800, and around nine in 10 2025 university graduates found employment within a year.",
    "sentences": [
     {
      "sid": "s02108",
@@ -3535,8 +3498,8 @@
    ]
   },
   {
-   "label": "SkillsFuture and AI programmes",
-   "summary": "It states that initiatives like the SkillsFuture Work-Study Programme, AI Apprenticeship Programme and MAS Young Talent Programme help Singaporeans gain industry-level skills while working.",
+   "label": "SkillsFuture work-study and AI programmes",
+   "summary": "Initiatives like SkillsFuture Work-Study, AI Apprenticeship and MAS's Young Talent Programme help Singaporeans gain industry-level skills while working and move into growth sectors.",
    "sentences": [
     {
      "sid": "s02116",
@@ -3549,7 +3512,7 @@
   },
   {
    "label": "Support for displaced workers",
-   "summary": "The government is studying ways to better support displaced workers, including enhancements to the SkillsFuture Jobseeker Support Scheme, in line with ESR recommendations.",
+   "summary": "Following ESR recommendations, the government is studying ways to better support displaced workers, including enhancements to the SkillsFuture Jobseeker Support Scheme.",
    "sentences": [
     {
      "sid": "s02123",
@@ -3561,7 +3524,7 @@
    ]
   },
   {
-   "label": "Income ratio improvement",
+   "label": "20th percentile to median income ratio",
    "summary": "From 2014 to 2024, the ratio of income at the 20th percentile to the median improved from 0.52 to 0.55.",
    "sentences": [
     {
@@ -3574,8 +3537,8 @@
    ]
   },
   {
-   "label": "Skills trades job pathways",
-   "summary": "MOM formed a partnership with the Specialists Trade Alliance of Singapore to develop structured pathways into skills trades jobs, starting with electrical trades.",
+   "label": "Partnership on skills trades pathways",
+   "summary": "MOM has partnered with the Specialists Trade Alliance of Singapore to develop structured pathways into good jobs in skills trades, starting with electrical trades.",
    "sentences": [
     {
      "sid": "s02149",
@@ -3587,7 +3550,7 @@
    ]
   },
   {
-   "label": "Tech startups in Singapore",
+   "label": "Number of Singapore tech startups",
    "summary": "Singapore now has more than 4,500 tech startups.",
    "sentences": [
     {
@@ -3600,8 +3563,8 @@
    ]
   },
   {
-   "label": "Foreign-owned firms employment share",
-   "summary": "Foreign-owned firms make up about one-fifth of firms but employ nearly one-third of resident workers, with citizens and PRs holding about 85% of senior management roles in 2025.",
+   "label": "Foreign-owned firms and resident employment",
+   "summary": "Foreign-owned firms are about one-fifth of firms but employ nearly one-third of resident workers; in 2025 citizens and PRs held about 85% of senior management roles in these MNCs.",
    "sentences": [
     {
      "sid": "s02173",
@@ -3620,7 +3583,7 @@
    ]
   },
   {
-   "label": "Company training committees formed",
+   "label": "Company Training Committees formed",
    "summary": "Since 2019, more than 3,800 CTCs have been formed, benefiting over 300,000 workers.",
    "sentences": [
     {
@@ -3633,7 +3596,7 @@
    ]
   },
   {
-   "label": "Applicant success rate",
+   "label": "Applicants success rate",
    "summary": "Last year, only 4,000 out of 10,000 applicants were successful.",
    "sentences": [
     {
@@ -3647,7 +3610,7 @@
   },
   {
    "label": "Redundancy insurance and Jobseeker Support",
-   "summary": "A Redundancy Insurance Scheme could reduce underemployment risk, and CNA reported MOM expects Jobseeker Support to cover only 60% of the involuntarily unemployed yearly.",
+   "summary": "A Redundancy Insurance Scheme could reduce underemployment risk, and MOM expects Jobseeker Support to cover only 60% of the involuntarily unemployed yearly.",
    "sentences": [
     {
      "sid": "s02203",
@@ -3667,7 +3630,7 @@
   },
   {
    "label": "Jobseeker Support and ESR report",
-   "summary": "The Jobseeker Support Scheme requires workers to show they are applying for re-employment, and the ESR report highlights the need to study whether an insurance scheme is useful.",
+   "summary": "Jobseeker Support requires workers to show they are applying for re-employment, and the ESR report highlights the need to study whether an insurance scheme is useful.",
    "sentences": [
     {
      "sid": "s02208",
@@ -3686,8 +3649,8 @@
    ]
   },
   {
-   "label": "Electrical trades and rising costs",
-   "summary": "Electrical trades are easier because EMA oversees parts of the system, but increasing costs may have unintended knock-on effects that must be studied.",
+   "label": "Electrical trades and increasing costs",
+   "summary": "Electrical trades are easier because EMA oversees parts of the system, but increasing costs may have unintended knock-on effects.",
    "sentences": [
     {
      "sid": "s02215",
@@ -3707,7 +3670,7 @@
   },
   {
    "label": "SMEs share of enterprises and workforce",
-   "summary": "SMEs make up 99% of all enterprises and employ more than 70% of the workforce.",
+   "summary": "SMEs make up 99% of all enterprises and employ more than 70% of our workforce.",
    "sentences": [
     {
      "sid": "s02221",
@@ -3720,7 +3683,7 @@
   },
   {
    "label": "Manpower efficiency and online sales",
-   "summary": "The system enabled a 50% improvement in manpower efficiency, and within a few years 60% of business revenue comes from online sales.",
+   "summary": "The system enabled a 50% improvement in manpower efficiency, and 60% of business revenue now comes from online sales.",
    "sentences": [
     {
      "sid": "s02245",
@@ -3739,8 +3702,8 @@
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "F&B Process Optimisation Programme",
+   "summary": "Businesses can improve productivity and redesign their operations through the F&B Process Optimisation Programme.",
    "sentences": [
     {
      "sid": "s02262",
@@ -3752,8 +3715,8 @@
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "Kopi & Tarts food preparation time",
+   "summary": "Kopi & Tarts, with about 20 outlets in Singapore, reduced more than 40 hours of daily food preparation time by outsourcing ingredient preparation through FoodX.",
    "sentences": [
     {
      "sid": "s02265",
@@ -3772,8 +3735,8 @@
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "Enhanced schemes support level increase",
+   "summary": "Earlier this year, both schemes were enhanced by increasing support from 50% to 70% to help heartland enterprises refresh concepts and storefronts.",
    "sentences": [
     {
      "sid": "s02272",
@@ -3785,8 +3748,8 @@
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "Scale-Up companies additional revenue",
+   "summary": "Scale-Up has supported more than 100 companies, and 80 generated a combined $2.5 billion in additional revenue within three years.",
    "sentences": [
     {
      "sid": "s02281",
@@ -3805,8 +3768,8 @@
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "Overseas Centres for Singapore companies",
+   "summary": "A network of over 35 Overseas Centres provides market intelligence, partner introductions and on-the-ground support for Singapore companies venturing overseas.",
    "sentences": [
     {
      "sid": "s02291",
@@ -3825,8 +3788,8 @@
    ]
   },
   {
-   "label": "",
-   "summary": "",
+   "label": "PACT partnerships and companies",
+   "summary": "Since 2010, PACT has supported 137 partnerships and benefited more than 2,500 Singapore-based companies.",
    "sentences": [
     {
      "sid": "s02304",
@@ -3839,7 +3802,7 @@
   },
   {
    "label": "Business regulatory service standards",
-   "summary": "93% of business regulatory applications have published service standards, 80% commit to 30 working days, and licences with at least three-year validity will rise to 80% by 2029.",
+   "summary": "93% of business regulatory applications have published service standards, 45% of licences last at least three years, rising to 80% by 2029.",
    "sentences": [
     {
      "sid": "s02331",
@@ -3861,20 +3824,6 @@
      "attributed": true,
      "text": "This will increase to 80% of licences by year 2029.",
      "added_for_context": false
-    },
-    {
-     "sid": "s02336",
-     "speaker": "The Senior Minister of State for Trade and Industry (Ms Low Yen Ling)",
-     "attributed": true,
-     "text": "This approach keeps our enterprise ecosystem vibrant as Government and regulations stay responsive to the needs of our businesses and to the needs of our SMEs.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s02337",
-     "speaker": "The Senior Minister of State for Trade and Industry (Ms Low Yen Ling)",
-     "attributed": true,
-     "text": "And recently, just three months ago, in May this year, JTC streamlined lease transfers for smaller industrial sites with remaining tenures, reducing the processing time from two months to one month, to help our businesses acquire space and respond more quickly to changing needs.",
-     "added_for_context": false
     }
    ]
   },
@@ -3892,9 +3841,16 @@
    ]
   },
   {
-   "label": "Enterprise ecosystem and economic growth",
-   "summary": "These efforts strengthen Singapore's enterprise ecosystem, and the economy grew 5% in 2025 with growth forecast at around 2% to 4% this year.",
+   "label": "Productivity grant and economic growth",
+   "summary": "Enterprise Singapore cut Productivity Solutions Grant processing to two weeks, and Singapore forecasts 2% to 4% growth this year after 5% in 2025.",
    "sentences": [
+    {
+     "sid": "s02343",
+     "speaker": "The Senior Minister of State for Trade and Industry (Ms Low Yen Ling)",
+     "attributed": true,
+     "text": "For example, under the Productivity Solutions Grant, Enterprise Singapore has streamlined the processes, and reduced processing times significantly to two weeks.",
+     "added_for_context": false
+    },
     {
      "sid": "s02344",
      "speaker": "The Senior Minister of State for Trade and Industry (Ms Low Yen Ling)",
@@ -3953,7 +3909,7 @@
   },
   {
    "label": "Support for amended Motion",
-   "summary": "The speaker says a strong and resilient economy can be built for the future and supports the Motion as amended by Mr Edward Chia.",
+   "summary": "The speaker supports the Motion as amended by Mr Edward Chia and calls for a strong, resilient economy for Singapore.",
    "sentences": [
     {
      "sid": "s02375",
@@ -3972,8 +3928,8 @@
    ]
   },
   {
-   "label": "Enterprise Singapore internationalisation grant outcomes",
-   "summary": "The speaker asks how many Enterprise Singapore-supported SMEs succeeded in internationalisation, the applicant-to-success ratio, five-year survival, and the grants' internal rate of return.",
+   "label": "Questions on Enterprise Singapore internationalisation",
+   "summary": "The speaker asks how many Enterprise Singapore-supported SMEs succeeded in internationalisation, the applicant-to-success ratio, five-year survival, and grant internal rate of return.",
    "sentences": [
     {
      "sid": "s02382",
@@ -4019,7 +3975,7 @@
    ]
   },
   {
-   "label": "Government help for F&B business costs",
+   "label": "Help for F&B business costs",
    "summary": "The speaker asks what the Government is doing to help local F&B operators with their business costs.",
    "sentences": [
     {
@@ -4033,7 +3989,7 @@
   },
   {
    "label": "F&B productivity and AI support",
-   "summary": "The passage describes sharing with F&B that not everything must be outsourced, a productivity study with the Singapore Productivity Centre, and the F&B AI and Digital Integration Programme launched at Restaurant Asia 2026.",
+   "summary": "The passage describes sharing with F&B, a productivity study with the Singapore Productivity Centre, and the F&B AI and Digital Integration Programme launched at Restaurant Asia 2026.",
    "sentences": [
     {
      "sid": "s02403",
@@ -4100,8 +4056,8 @@
    ]
   },
   {
-   "label": "Singapore firm in US Navy challenge",
-   "summary": "The passage describes trials in lakes, ponds and seas including Hawaii, selection for the US Navy's countermeasure modernisation challenge as one of two and the only non-US firm, and raising US$7.7 million.",
+   "label": "Singapore firm selected for US Navy challenge",
+   "summary": "A Singapore firm is one of two selected for the US Navy's countermeasure modernisation challenge, and the only non-US firm.",
    "sentences": [
     {
      "sid": "s02449",
@@ -4134,8 +4090,8 @@
    ]
   },
   {
-   "label": "Funding deep tech ventures",
-   "summary": "The speaker calls on MTI to expand funding for early-stage high-failure, high-impact deep tech ventures and allow them to fail.",
+   "label": "Call to expand deep tech funding",
+   "summary": "The speaker calls on MTI to expand funding lines for early-stage high-failure, high-impact deep tech ventures and allow them to fail.",
    "sentences": [
     {
      "sid": "s02457",
@@ -4154,8 +4110,8 @@
    ]
   },
   {
-   "label": "MetaOptics Catalist listing",
-   "summary": "A*STAR spin-off MetaOptics, pre-profitability with some revenue, listed on Catalist at about $30 million and now has about $200 million market capitalisation and is going to NASDAQ.",
+   "label": "MetaOptics Catalist listing and NASDAQ",
+   "summary": "A*STAR spin-off MetaOptics listed on Catalist at about $30 million, now has about $200 million market capitalisation, and is going to NASDAQ.",
    "sentences": [
     {
      "sid": "s02469",
@@ -4174,8 +4130,8 @@
    ]
   },
   {
-   "label": "Catalist listing size pathway",
-   "summary": "SGX participated in a special pathway for Catalist listing of technology ventures, and the speaker suggests a $50 million or $100 million capitalisation sweet spot rather than $1 billion.",
+   "label": "Catalist pathway and listing sizes",
+   "summary": "SGX participated in a special Catalist listing pathway for technology ventures, and the speaker suggests targeting $50 million or $100 million capitalisation.",
    "sentences": [
     {
      "sid": "s02475",
@@ -4203,7 +4159,7 @@
      "speaker": "Dr Neo Kok Beng (Nominated Member)",
      "attributed": true,
      "text": "We have the Global Listing Board but it is also a big number.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s02479",
@@ -4211,12 +4167,26 @@
      "attributed": true,
      "text": "So, perhaps the sweet spot is not really to go for the $1 billion size capitalisation, but actually to go for $50 million or $100 million, as a pathway to get them funded properly because these are long-term investments, but with a high potential to go global and worldwide.",
      "added_for_context": false
+    },
+    {
+     "sid": "s02480",
+     "speaker": "Dr Neo Kok Beng (Nominated Member)",
+     "attributed": true,
+     "text": "Using our knowledge or education passport for global impact, Mr Chew pointed out Singapore has historically looked outwards and upwards and has created an outsider global footprint, advising the graduates to use the extraordinary educational passport to take their work to the world.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s02482",
+     "speaker": "Dr Neo Kok Beng (Nominated Member)",
+     "attributed": true,
+     "text": "Alenia, I am not sure Members are familiar with them or with Dr Mark Lim.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Ecosystems and innovation system",
-   "summary": "The speaker says startups need to tap ecosystems like the Institution of Engineers and that the Motion must include the system of innovation.",
+   "label": "Motion must include innovation system",
+   "summary": "The speaker says the Motion must include the system of innovation and tap on ecosystems, not just assist startups with resources.",
    "sentences": [
     {
      "sid": "s02490",
@@ -4242,7 +4212,7 @@
    ]
   },
   {
-   "label": "NUS Overseas Colleges startups",
+   "label": "Eight startups met at NUS Homecoming",
    "summary": "At end-June, the speaker met eight startups at NUS Homecoming from the NUS Overseas Colleges programme.",
    "sentences": [
     {
@@ -4256,7 +4226,7 @@
   },
   {
    "label": "Thriving Singaporeans and businesses",
-   "summary": "The speaker's central argument is that thriving Singaporeans drive thriving Singapore businesses, and thriving businesses build a thriving Singapore.",
+   "summary": "The speaker argues that thriving Singaporeans drive thriving Singapore businesses, and thriving businesses build a thriving Singapore.",
    "sentences": [
     {
      "sid": "s02509",
@@ -4268,8 +4238,8 @@
    ]
   },
   {
-   "label": "5Cs for business growth",
-   "summary": "The speaker says good ideas need customers, capital, connections, capabilities and confidence to grow.",
+   "label": "Workers sharing business gains",
+   "summary": "When businesses do well, workers should share in the gains.",
    "sentences": [
     {
      "sid": "s02513",
@@ -4277,26 +4247,12 @@
      "attributed": true,
      "text": "When businesses do well, workers should share in the gains.",
      "added_for_context": false
-    },
-    {
-     "sid": "s02515",
-     "speaker": "[Mr Speaker in the Chair]",
-     "attributed": true,
-     "text": "I have seen our enterprise landscapes from several perspectives, having worked in a successful startup, supporting Singapore companies in the Public Service and now running an SME.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s02516",
-     "speaker": "[Mr Speaker in the Chair]",
-     "attributed": true,
-     "text": "These experiences have convinced me that good ideas need \"5Cs\" to grow: customers, capital, connections, capabilities and confidence.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Customer and track record barrier",
-   "summary": "A company needs a major customer for a track record, but needs a track record to secure one.",
+   "label": "Track record and major customer",
+   "summary": "A company cannot establish a track record without a major customer, but cannot secure one without a track record.",
    "sentences": [
     {
      "sid": "s02525",
@@ -4308,8 +4264,8 @@
    ]
   },
   {
-   "label": "Lead demand for sectors",
-   "summary": "Companies in four sectors face similar barriers, so the speaker welcomes mobilising lead demand from large companies and the public sector.",
+   "label": "Barriers and lead demand",
+   "summary": "Singapore companies in sustainability, advanced manufacturing, healthcare and enterprise technology face similar barriers, so the speaker welcomes the ESR's recommendation to mobilise lead demand.",
    "sentences": [
     {
      "sid": "s02531",
@@ -4328,8 +4284,21 @@
    ]
   },
   {
+   "label": "First customer as passport",
+   "summary": "A first customer in Singapore is often a passport to the region.",
+   "sentences": [
+    {
+     "sid": "s02540",
+     "speaker": "[Mr Speaker in the Chair]",
+     "attributed": true,
+     "text": "A first customer in Singapore is often a passport to the region.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
    "label": "Procurement for new entrants",
-   "summary": "Buyers could weight verified performance, certifications, pilot results and delivery capacity, and use smaller or phased contracts where risks are manageable.",
+   "summary": "Agencies and major buyers could weight verified performance, certifications, pilot results and delivery capacity, and use smaller or phased contracts where risks are manageable.",
    "sentences": [
     {
      "sid": "s02550",
@@ -4348,8 +4317,8 @@
    ]
   },
   {
-   "label": "Measuring effectiveness by outcomes",
-   "summary": "Effectiveness should be measured by partnerships formed, standards attained, projects commercialised and contracts secured, not membership or events.",
+   "label": "Measuring enterprise policy by outcomes",
+   "summary": "Its effectiveness should be measured by partnerships formed, standards attained, projects commercialised and contracts secured, not membership or events.",
    "sentences": [
     {
      "sid": "s02564",
@@ -4361,7 +4330,7 @@
    ]
   },
   {
-   "label": "Penguin green loan ferries",
+   "label": "Penguin green loan for electric ferries",
    "summary": "After securing Shell as a customer, Penguin obtained a green loan under the Enterprise Financing Scheme – Green for electric ferries and shore chargers.",
    "sentences": [
     {
@@ -4374,28 +4343,21 @@
    ]
   },
   {
-   "label": "Tracking company progression stages",
-   "summary": "Figures show support delivered but not enterprise progress, so tracking should cover movement from pilot to first contract, export and scale.",
+   "label": "Success measured by participation",
+   "summary": "Success is too often measured by participation, such as companies receiving grants, joining programmes, attending trade fairs or completing pilots.",
    "sentences": [
     {
-     "sid": "s02594",
+     "sid": "s02593",
      "speaker": "[Mr Speaker in the Chair]",
      "attributed": true,
-     "text": "These figures tell us whether support has been delivered, but not whether enterprises have progressed.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s02595",
-     "speaker": "[Mr Speaker in the Chair]",
-     "attributed": true,
-     "text": "We should also track how many companies move from pilot to first contract, from first contract to export and from export to scale.",
+     "text": "Too often, success is measured by participation: how many companies received a grant, joined a programme, attended a trade fair or mission or completed a pilot?",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Evaluating enterprise policy by progression",
-   "summary": "Enterprise policy should be evaluated by progression, not merely by participation.",
+   "summary": "Enterprise policy should be evaluated not merely by participation, but by progression.",
    "sentences": [
     {
      "sid": "s02599",
@@ -4408,7 +4370,7 @@
   },
   {
    "label": "Investing in SME leader capabilities",
-   "summary": "Investment in SME owners, directors and business leaders should help them interpret technologies, assess overseas opportunities, understand financing, manage people and decide when to adapt, expand, pivot or diversify.",
+   "summary": "Investment in SME owners, directors and business leaders should help them interpret technologies, assess opportunities, understand financing, manage people and decide when to adapt.",
    "sentences": [
     {
      "sid": "s02606",
@@ -4427,8 +4389,8 @@
    ]
   },
   {
-   "label": "Supporting responsible entrepreneurs",
-   "summary": "Responsible entrepreneurs need mentorship, suitable financing, strong networks and a reasonable second chance after honest commercial failure, and genuine commercial failure must be distinguished from misconduct.",
+   "label": "Support and second chances for entrepreneurs",
+   "summary": "Responsible entrepreneurs need mentorship, financing, networks and a reasonable second chance after honest failure, distinguishing genuine failure from misconduct.",
    "sentences": [
     {
      "sid": "s02611",
@@ -4454,8 +4416,8 @@
    ]
   },
   {
-   "label": "Wage growth and productivity",
-   "summary": "Sustained real wage growth must be supported by higher productivity, stronger capabilities and businesses creating greater value, with workers sharing gains through better wages, career progression and skilled roles.",
+   "label": "Wage standards and productivity",
+   "summary": "Wage standards provide a floor, but sustained real wage growth must also be supported by higher productivity, stronger capabilities and businesses creating greater value.",
    "sentences": [
     {
      "sid": "s02625",
@@ -4463,32 +4425,25 @@
      "attributed": true,
      "text": "Wage standards provide an important floor, but sustained real wage growth must also be supported by higher productivity, stronger capabilities and businesses that create greater value.",
      "added_for_context": false
-    },
-    {
-     "sid": "s02626",
-     "speaker": "[Mr Speaker in the Chair]",
-     "attributed": true,
-     "text": "Crucially, workers must share in these gains through better wages, stronger career progression and greater opportunities to take on skilled and leadership roles.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Progression, people and ESR recommendations",
-   "summary": "Enterprise policy should be evaluated by progression from pilot to first contract, export and scale, and the ESR recommendations set out how to get there for businesses and workers.",
+   "label": "Investing in leaders and workers",
+   "summary": "The passage calls for investing in business leaders and workers, evaluating enterprise policy by progression, and supporting the Motion as amended, especially Part (b).",
    "sentences": [
+    {
+     "sid": "s02637",
+     "speaker": "[Mr Speaker in the Chair]",
+     "attributed": true,
+     "text": "Fourth, invest in the business leaders and workers responsible for carrying out transformation and ensure that both share in its gains.",
+     "added_for_context": false
+    },
     {
      "sid": "s02639",
      "speaker": "Mr Ng Shi Xuan",
      "attributed": true,
      "text": "— we should evaluate enterprise policy by progression, not merely participation; whether companies move from pilot to first contract; from first contract to export; and from export to scale.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s02640",
-     "speaker": "Mr Ng Shi Xuan",
-     "attributed": true,
-     "text": "Ultimately, an economy for the future must be built around its people.",
      "added_for_context": false
     },
     {
@@ -4521,8 +4476,8 @@
    ]
   },
   {
-   "label": "Support for MNCs and SMEs",
-   "summary": "Assoc Prof Jamus Lim suggested the Government supports SMEs less than MNCs and that Singapore must pivot to SMEs, but the response says both must succeed.",
+   "label": "MNCs and SMEs both needed",
+   "summary": "Assoc Prof Jamus Lim suggested pivoting from MNCs to SMEs, but the passage states both MNCs and SMEs in Singapore need to succeed.",
    "sentences": [
     {
      "sid": "s02675",
@@ -4569,7 +4524,7 @@
   },
   {
    "label": "Enterprise Singapore supporting local companies",
-   "summary": "In 2018 MTI agencies were reorganised to form Enterprise Singapore, a Statutory Board supporting local companies end-to-end in capability building, innovation, financing, talent and internationalisation.",
+   "summary": "Building a business requires leadership, technology, capital, talent and confidence to venture overseas, so MTI re-organised agencies in 2018 to form Enterprise Singapore.",
    "sentences": [
     {
      "sid": "s02693",
@@ -4588,8 +4543,8 @@
    ]
   },
   {
-   "label": "Singapore Economic Resilience Task Force",
-   "summary": "The Singapore Economic Resilience Task Force, chaired by Deputy Prime Minister Gan Kim Yong, was set up after US Liberation Day tariffs to help businesses adapt, with Castlery diversifying its manufacturing base with Enterprise Singapore's support.",
+   "label": "Economic Resilience Task Force support",
+   "summary": "The Singapore Economic Resilience Task Force was set up after US Liberation Day tariffs to help businesses adapt, with Castlery diversifying its manufacturing base.",
    "sentences": [
     {
      "sid": "s02707",
@@ -4615,8 +4570,8 @@
    ]
   },
   {
-   "label": "Singaporeans in MNC senior management",
-   "summary": "More than two-thirds of senior management positions in MNCs in Singapore today are held by Singaporeans.",
+   "label": "Singaporeans in MNC management",
+   "summary": "More than two-thirds of senior management positions in MNCs in Singapore are held by Singaporeans.",
    "sentences": [
     {
      "sid": "s02720",
@@ -4628,8 +4583,8 @@
    ]
   },
   {
-   "label": "Applied Materials Tampines campus investment",
-   "summary": "Mr Saktiandi said Applied Materials recently invested in a second campus at Tampines, which they described with excitement when the speaker visited their first Upper Changi facility.",
+   "label": "Applied Materials Tampines campus",
+   "summary": "Applied Materials recently invested in building a second campus at Tampines, as told to the speaker during a visit to their first facility.",
    "sentences": [
     {
      "sid": "s02724",
@@ -4642,7 +4597,7 @@
   },
   {
    "label": "Investment resources and local enterprises",
-   "summary": "Resources for attracting investments do not come at the expense of local enterprises, and reducing ecosystem support risks MNCs leaving and local companies operating elsewhere.",
+   "summary": "Resources committed to attracting investments do not come at the expense of local enterprises, and reducing them risks MNCs and local companies leaving.",
    "sentences": [
     {
      "sid": "s02735",
@@ -4662,7 +4617,7 @@
   },
   {
    "label": "ESR outcomes and whole-of-society effort",
-   "summary": "The speaker supports Mr Edward Chia's amended Motion, saying the ESR will be judged by outcomes like better jobs and incomes, and requires a whole-of-society effort.",
+   "summary": "The ESR will be judged by outcomes like better jobs, higher incomes, social mobility and resilience, and requires a whole-of-society effort.",
    "sentences": [
     {
      "sid": "s02744",
@@ -4703,7 +4658,7 @@
   },
   {
    "label": "Tripartite Guidelines worker compensation review",
-   "summary": "The Government is looking at whether compensation can go above 90%, is not wedded to legislating it, and will consult SNEF and unions before deciding.",
+   "summary": "With the Tripartite Guidelines, at least nine and 10 workers are compensated, and the Government is considering stronger support and whether to legislate, after consulting employers and unions.",
    "sentences": [
     {
      "sid": "s02754",
@@ -4744,7 +4699,7 @@
   },
   {
    "label": "Singaporeans sharing economic success",
-   "summary": "A Singaporean gets a lasting share of success through good jobs, real wage growth, relevant skills, and support to recover and build again after setbacks.",
+   "summary": "Singaporeans gain a lasting share of success through good jobs, real wage growth, relevant skills, and support to recover from setbacks.",
    "sentences": [
     {
      "sid": "s02785",
@@ -4757,7 +4712,7 @@
   },
   {
    "label": "Three ESR imperatives",
-   "summary": "The ESR is guided by three imperatives: sharpen Singapore's value proposition, enhance agility and adaptability of firms, workers and institutions, and build resilience alongside efficiency.",
+   "summary": "The ESR is guided by three imperatives: sharpen Singapore's value proposition, enhance agility and adaptability, and build resilience alongside efficiency.",
    "sentences": [
     {
      "sid": "s02796",
@@ -4769,8 +4724,8 @@
    ]
   },
   {
-   "label": "Fairness versus equality in policy",
-   "summary": "Assoc Prof Kenneth Goh distinguished fairness from equality alone as a guide for policy.",
+   "label": "Fairness guiding policy",
+   "summary": "Assoc Prof Kenneth Goh said fairness, not equality alone, should guide policy, preventing entrenched disadvantage while calibrating opportunities and support to different needs.",
    "sentences": [
     {
      "sid": "s02801",
@@ -4778,12 +4733,19 @@
      "attributed": true,
      "text": "Assoc Prof Kenneth Goh made a useful distinction: fairness, rather than equality alone, should guide policy.",
      "added_for_context": false
+    },
+    {
+     "sid": "s02802",
+     "speaker": "The Minister for Trade and Industry (Energy and Industry) (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "It means preventing disadvantage from becoming entrenched while calibrating opportunities and support for different needs and for different circumstances.",
+     "added_for_context": false
     }
    ]
   },
   {
    "label": "Global and local enterprises",
-   "summary": "The speaker says global companies helped a homegrown Singapore enterprise start, establish credibility and grow, so global and local enterprises are not opposites.",
+   "summary": "After showing it could deliver, winning the next customer's confidence became easier, so global and local enterprises were never regarded as opposites.",
    "sentences": [
     {
      "sid": "s02817",
@@ -4797,13 +4759,6 @@
      "speaker": "The Minister for Trade and Industry (Energy and Industry) (Dr Tan See Leng)",
      "attributed": true,
      "text": "Therefore, I have never regarded global enterprises and local enterprises as opposites.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s02819",
-     "speaker": "The Minister for Trade and Industry (Energy and Industry) (Dr Tan See Leng)",
-     "attributed": true,
-     "text": "In my own experience, established global companies helped a homegrown Singapore enterprise to start, establish credibility and grow.",
      "added_for_context": false
     }
    ]
@@ -4830,7 +4785,7 @@
   },
   {
    "label": "Startup SG Founder support",
-   "summary": "Startup SG Founder provides startup capital to first-time entrepreneurs, alongside mentorship and communities for founders.",
+   "summary": "Startup SG Founder provides startup capital to first-time entrepreneurs, with mentorship and communities to help founders learn and grow.",
    "sentences": [
     {
      "sid": "s02859",
@@ -4842,8 +4797,8 @@
    ]
   },
   {
-   "label": "Industry R&D employment and spinoffs",
-   "summary": "Industry R&D employment has grown to over 30,000, with locals filling more than 70%, and A*STAR and university technologies spun off over 300 companies in five years.",
+   "label": "Industry R&D employment and spin-offs",
+   "summary": "Industry R&D employment exceeds 30,000 with locals in over 70%, and A*STAR and university technologies spun off over 300 companies in five years.",
    "sentences": [
     {
      "sid": "s02872",
@@ -4862,8 +4817,8 @@
    ]
   },
   {
-   "label": "T-UP programme secondment",
-   "summary": "Under the T-UP programme, A*STAR research scientists and engineers can be seconded to support local SMEs' R&D projects for up to two years.",
+   "label": "T-UP secondment for SMEs",
+   "summary": "Under T-UP, A*STAR research scientists and engineers can be seconded to support local SMEs' R&D projects for up to two years.",
    "sentences": [
     {
      "sid": "s02877",
@@ -4875,8 +4830,8 @@
    ]
   },
   {
-   "label": "RIE2030 research funding commitment",
-   "summary": "Under RIE2030, $37 billion over five years will support fundamental research and translation in semiconductors, transport, healthy longevity and decarbonisation.",
+   "label": "RIE2030 funding and research areas",
+   "summary": "Under RIE2030, $37 billion will be committed over five years to support fundamental research and translation in semiconductors, transport, healthy longevity and decarbonisation.",
    "sentences": [
     {
      "sid": "s02887",
@@ -4895,8 +4850,8 @@
    ]
   },
   {
-   "label": "Startup and equities market financing",
-   "summary": "$1 billion tops up Startup SG Equity, while the Equities Market Review and a second $1.5 billion Anchor Fund tranche support public markets and listings.",
+   "label": "Financing support for companies",
+   "summary": "$1 billion was topped up to Startup SG Equity, and a second $1.5 billion Anchor Fund tranche plus the Equities Market Review will support public markets and listings.",
    "sentences": [
     {
      "sid": "s02911",
@@ -4950,7 +4905,7 @@
   },
   {
    "label": "Global Innovation Alliance support",
-   "summary": "The Global Innovation Alliance has supported close to 1,200 companies entering new markets, with over 240 startups gaining traction abroad; GIA2030 will launch new programmes.",
+   "summary": "The Global Innovation Alliance has supported close to 1,200 companies entering new markets, with over 240 startups gaining traction abroad, and GIA2030 will launch new programmes.",
    "sentences": [
     {
      "sid": "s02937",
@@ -4983,7 +4938,7 @@
    ]
   },
   {
-   "label": "ESR career bridges proposal",
+   "label": "Career bridges for at-risk workers",
    "summary": "The ESR proposes career bridges linking workers in at-risk roles to more resilient occupations through training, guidance and job matching.",
    "sentences": [
     {
@@ -4996,8 +4951,8 @@
    ]
   },
   {
-   "label": "Helping workers navigate change",
-   "summary": "The objective is to help each person return confidently to sustainable work, helping every worker prepare earlier and navigate change without being left alone.",
+   "label": "Helping workers return to sustainable work",
+   "summary": "The objective is to help each person return confidently to sustainable work, helping every worker prepare earlier, acquire capabilities, find next steps and navigate change.",
    "sentences": [
     {
      "sid": "s02973",
@@ -5023,8 +4978,8 @@
    ]
   },
   {
-   "label": "Amended Motion on Singapore economy",
-   "summary": "The amended Motion captures the combination Singapore needs: an equal and inclusive economy and one powered by local and global enterprises.",
+   "label": "Amended Motion on Singapore's economy",
+   "summary": "The amended Motion captures an equal and inclusive economy with opportunities for entrepreneurs, households, businesses and workers, and dynamic local and global enterprises.",
    "sentences": [
     {
      "sid": "s02987",
@@ -5036,8 +4991,8 @@
    ]
   },
   {
-   "label": "Government's role in economy",
-   "summary": "The Government will maintain a trusted, open economy, invest long term, address gaps and help workers prepare for change.",
+   "label": "Government's part in the economy",
+   "summary": "The Government will maintain a trusted, open economy, invest long term, address capability, financing and market-access gaps, and help workers prepare for change.",
    "sentences": [
     {
      "sid": "s02991",
@@ -5049,8 +5004,8 @@
    ]
   },
   {
-   "label": "Fair chance for entrepreneurs",
-   "summary": "Entrepreneurs decide timing and opportunity, but Singapore can ensure every person has a fair chance, pathway and support.",
+   "label": "Fair chance and support in Singapore",
+   "summary": "Timing and opportunity are for entrepreneurs and founders to decide, but Singapore can remain a place with a fair chance, pathway to progress and support.",
    "sentences": [
     {
      "sid": "s02995",
@@ -5069,43 +5024,23 @@
    ]
   },
   {
-   "label": "Global competition and agency support",
-   "summary": "Competition is now global against countries like China and the US, and can be eased with support from Enterprise Singapore, SBF and MTI.",
+   "label": "Supporting Singaporean homegrown enterprises",
+   "summary": "The Ministry of Trade and Industry will be renamed Ministry of Energy, Trade and Industry from 1 October 2026, with support for Singaporean enterprises to anchor here.",
    "sentences": [
     {
-     "sid": "s03009",
-     "speaker": "Mr Azhar Othman",
+     "sid": "s03015",
+     "speaker": "Mr Speaker",
      "attributed": true,
-     "text": "My point of clarification is this: we compete in a global scale now.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s03010",
-     "speaker": "Mr Azhar Othman",
-     "attributed": true,
-     "text": "What we compete before, purely on company to company; and now we compete against China, against US, against everybody.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s03011",
-     "speaker": "Mr Azhar Othman",
-     "attributed": true,
-     "text": "And my point is that in the context of Singapore's unique strategy, the competition can be made easier with the help of what our company has grown.",
+     "text": "Minister Dr Tan, would you like to respond?",
      "added_for_context": true
     },
     {
-     "sid": "s03012",
-     "speaker": "Mr Azhar Othman",
+     "sid": "s03016",
+     "speaker": "Dr Tan See Leng",
      "attributed": true,
-     "text": "We have the support of Enterprise Singapore, SBF, we have the support of MTI and so forth.",
+     "text": "We certainly will do our best to support all of our Singapore homegrown enterprise.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "MTI renaming and Cabinet reshuffle",
-   "summary": "MTI will be renamed Ministry of Energy, Trade and Industry from 1 October 2026, with DPM Gan overseeing trade and the speaker energy and industry.",
-   "sentences": [
+    },
     {
      "sid": "s03017",
      "speaker": "Dr Tan See Leng",
@@ -5126,31 +5061,32 @@
      "attributed": true,
      "text": "And therefore, given the size and the scope of what we all have to do, Deputy Prime Minister Gan in his experience, overseeing trade and the macroeconomic strategy; and I will look at energy and industry, and I will actively engage the trade associations and chambers.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Motion answers economic worries",
-   "summary": "The Motion was filed to answer Singaporeans' economic worries about jobs, work, flats, rent, courses, wages and building something.",
-   "sentences": [
+    },
     {
-     "sid": "s03023",
-     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "sid": "s03020",
+     "speaker": "Dr Tan See Leng",
      "attributed": true,
-     "text": "Speaker, I thank every Member who spoke on both sides of this House.",
+     "text": "We do not have the monopoly of knowledge or information.",
      "added_for_context": true
     },
     {
-     "sid": "s03024",
-     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "sid": "s03021",
+     "speaker": "Dr Tan See Leng",
      "attributed": true,
-     "text": "We filed this Motion to provide answers to the economic worries top-of-mind for every Singaporean: whether there is a job and whether it lasts; whether the young person who has done everything asked of them can find work that goes somewhere; whether a flat is within reach; whether a small shop can survive its rent; whether the course a worker is sent on leads to a job; whether the growth we announced is felt in a wage; whether a Singaporean who wants to build something can afford to do it in spite of the high cost structure here.",
+     "text": "We will look to as many expert guidance and also invite possible openings for us to see how we can better support our Singaporean enterprises and our fellow Singaporeans.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s03022",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "But of course, with one main outcome – and that is they have to anchor themselves here in our beloved homeland.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Special zone near NTU",
+   "label": "Innovation zone near NTU",
    "summary": "He proposed a special zone around NTU where state land is charged at development cost rather than market scarcity value.",
    "sentences": [
     {
@@ -5170,15 +5106,35 @@
    ]
   },
   {
-   "label": "Tenders, compute, Fair Start Promise",
-   "summary": "He proposed concept and price tenders for strategic sites and an HDB model for compute, while Mr Andre Low proposed a Fair Start Promise for young Singaporeans under 30.",
+   "label": "Upfront grants for small firms",
+   "summary": "Support is offered automatically with grants paid upfront rather than on reimbursement, because small firms' binding constraint is cash and time.",
    "sentences": [
+    {
+     "sid": "s03040",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "Support offered to firms automatically – grants paid upfront, rather than on reimbursement, because small firms' binding constraint is cash and time, and not the existence of a scheme.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Rent, tenders, compute, Fair Start",
+   "summary": "He proposed concept and price tenders as default for strategic sites, an HDB model for compute, and Mr Andre Low proposed a Fair Start Promise.",
+   "sentences": [
+    {
+     "sid": "s03051",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "Because rent is not just one cost, it is already inside all of the others.",
+     "added_for_context": true
+    },
     {
      "sid": "s03052",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "He proposed concept and price tenders as the default for strategic sites, because a system where the highest bidder wins, the reserve price is unpublished and unawarded sites simply can wait, can only ratchet upward.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s03053",
@@ -5197,21 +5153,8 @@
    ]
   },
   {
-   "label": "Dinesh agrees with Fair Start",
-   "summary": "Minister of State Dinesh broadly agreed with Mr Andre Low's proposals and shared the aspiration of giving every young Singaporean a fair start.",
-   "sentences": [
-    {
-     "sid": "s03059",
-     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
-     "attributed": true,
-     "text": "Minister of State Dinesh broadly agreed with Mr Andre Low's proposals and acknowledged that he shared our aspiration of giving every young Singaporean a fair start.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Universal redundancy insurance scheme",
-   "summary": "Mr Fadli Fawzi proposed a universal redundancy insurance scheme funded by employer and employee contributions, paying 40% of last drawn pay capped at 40% of median for up to six months.",
+   "summary": "Mr Fadli Fawzi proposed a universal redundancy insurance scheme funded by employer and employee contributions, paying 40% of last drawn pay up to six months.",
    "sentences": [
     {
      "sid": "s03068",
@@ -5224,7 +5167,7 @@
   },
   {
    "label": "Statutory retrenchment benefits floor",
-   "summary": "He proposed legislating a statutory floor for retrenchment benefits at two weeks' salary per year of service, with higher payouts for larger firms, because the Courts confirmed a gap.",
+   "summary": "He proposed legislating a statutory floor for retrenchment benefits at two weeks' salary per year of service, with higher payouts for larger firms.",
    "sentences": [
     {
      "sid": "s03078",
@@ -5291,7 +5234,7 @@
   },
   {
    "label": "WP stance on amendments",
-   "summary": "The WP accepts Amendment Nos 2 and 4, had reservations on No 3, and says the ESR proceeds regardless.",
+   "summary": "The WP accepts Amendment Nos 2 and 4, had reservations on Amendment No 3, and says the ESR proceeds with its belief on record.",
    "sentences": [
     {
      "sid": "s03128",
@@ -5318,7 +5261,7 @@
   },
   {
    "label": "WP accepts Amendment No 3",
-   "summary": "The WP calls the suggestion a false binary and strawman, but will accept Amendment No 3 without nitpicking semantics.",
+   "summary": "The WP calls the suggestion a false binary and strawman, but will not nitpick Amendment No 3's semantics and accepts it.",
    "sentences": [
     {
      "sid": "s03142",
@@ -5337,8 +5280,8 @@
    ]
   },
   {
-   "label": "Recurring committee ambitions",
-   "summary": "Four committees from 2010 to 2026 repeated near identical ambitions: move up the value chain, grow champions, internationalise, reskill.",
+   "label": "Recurring ambitions across four reviews",
+   "summary": "The 2010, 2017, 2021 and 2026 reviews share near identical ambitions: move up the value chain, grow champions, internationalise, reskill.",
    "sentences": [
     {
      "sid": "s03150",
@@ -5350,8 +5293,8 @@
    ]
   },
   {
-   "label": "2010 committee targets",
-   "summary": "The 2010 committee set productivity and enterprise targets; the productivity goal was met, the 1,000-company goal was not tracked after 2017.",
+   "label": "2010 committee targets and tracking",
+   "summary": "The 2010 committee set productivity and enterprise targets; the productivity goal was met, and the 1,000-company goal was not tracked after 2017.",
    "sentences": [
     {
      "sid": "s03156",
@@ -5372,7 +5315,7 @@
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "One on enterprises – \"We can raise this number significantly to reach 1,000 such enterprises over the next 10 years.\" Local companies with revenue over $100 million.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s03159",
@@ -5384,8 +5327,8 @@
    ]
   },
   {
-   "label": "Manufacturing share of GDP",
-   "summary": "Manufacturing was 17.4% of GDP in 2016 and remains 17.4% in 2025.",
+   "label": "Manufacturing share and ESR target",
+   "summary": "Manufacturing was 17.4% of GDP in 2016 and 2025; the 2021 taskforce had no macroeconomic targets, and the 2026 ESR has one target-shaped sentence.",
    "sentences": [
     {
      "sid": "s03165",
@@ -5393,12 +5336,26 @@
      "attributed": true,
      "text": "Manufacturing was 17.4% of GDP in 2016 and remains 17.4% in 2025.",
      "added_for_context": false
+    },
+    {
+     "sid": "s03166",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "From the 2021 Emerging Stronger Taskforce, I could find no macroeconomic targets at all.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s03167",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "And in this 2026 ESR, the only target-shaped sentence, appearing twice, reads: \"we should set an ambitious target to significantly increase the number of Singapore headquartered companies with more than $1 billion in revenue\".",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "No consensus on amended Motion",
-   "summary": "Three of four amendments are accounted for, but consensus on the amended Motion failed over the term \"notwithstanding\".",
+   "label": "Disagreement over notwithstanding term",
+   "summary": "Three of four amendments are accounted for, but no consensus was reached because of disagreement over the term \"notwithstanding\".",
    "sentences": [
     {
      "sid": "s03200",
@@ -5417,8 +5374,8 @@
    ]
   },
   {
-   "label": "Retrenchment benefits and cash flow",
-   "summary": "The Member asks whether mandatory payments of at least one month for larger companies could push firms with cash flow issues into deeper distress.",
+   "label": "Retrenchment benefits and company distress",
+   "summary": "The Member asks whether mandatory payments for firms with cash flow issues could push them into deeper distress and risk remaining jobs.",
    "sentences": [
     {
      "sid": "s03227",
@@ -5438,7 +5395,7 @@
   },
   {
    "label": "Statutory minimum as standard",
-   "summary": "The Member asks whether a statutory minimum could become the standard, with higher-paying firms paying only the prescribed amount.",
+   "summary": "The Member asks whether a statutory minimum could become the standard, with higher-paying firms paying only the prescribed amount and less room for negotiation.",
    "sentences": [
     {
      "sid": "s03232",
@@ -5451,7 +5408,7 @@
   },
   {
    "label": "Security for retrenched workers",
-   "summary": "The Member states the best security for a retrenched worker is not only a payout but the ability to find the next good job.",
+   "summary": "The best security for a retrenched worker is not only a payout but the ability to find the next good job.",
    "sentences": [
     {
      "sid": "s03235",
@@ -5463,9 +5420,23 @@
    ]
   },
   {
-   "label": "Amendment No 1 wording",
-   "summary": "Amendment No 1 deletes \"not withstanding\" in line 1 and inserts \"in line with\", and the Question is put.",
+   "label": "Debate conclusion and Amendment No 1",
+   "summary": "The debate concludes and the question is put on Amendment No 1, to delete \"not withstanding\" and insert \"in line with\".",
    "sentences": [
+    {
+     "sid": "s03243",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "We have now come to the conclusion of the debate and I shall put forth the questions to the House for a decision.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s03244",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "We have four amendments proposed by Mr Edward Chia.",
+     "added_for_context": false
+    },
     {
      "sid": "s03245",
      "speaker": "Mr Speaker",
@@ -5476,8 +5447,8 @@
    ]
   },
   {
-   "label": "Amendments Nos 2 to 4",
-   "summary": "Amendments Nos 2, 3 and 4 are stated and the Question is put on the amended Motion.",
+   "label": "Amendments No 2, 3 and 4",
+   "summary": "Amendment No 2 deletes \"economic engine driven\" and inserts \"economy powered\"; No 3 inserts \"global enterprises\"; No 4 inserts \"and external\".",
    "sentences": [
     {
      "sid": "s03250",
@@ -5498,13 +5469,6 @@
      "speaker": "Mr Speaker",
      "attributed": true,
      "text": "Amendment No 4, \"In line 5, after the words 'healthy domestic', to insert 'and external'.\"",
-     "added_for_context": false
-    },
-    {
-     "sid": "s03254",
-     "speaker": "Mr Speaker",
-     "attributed": true,
-     "text": "The question is, \"That this House, in line with the suggestions in the Economic Strategy Review on the future Singapore economy, believes: (a) in a more equal and inclusive economy, with opportunities for entrepreneurs to experiment, households and businesses to succeed, workers to thrive, and ideas and innovation to flourish; and (b) in an economy powered by dynamic local companies, global enterprises, healthy domestic and external demand, and Singaporeans and Singaporean capital venturing abroad.\" Those who agree say \"Aye\".",
      "added_for_context": false
     }
    ]
@@ -5527,7 +5491,7 @@
   "sentences_in_sections": 545,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 101,
-  "sections_total": 282,
+  "sections_total": 276,
   "selection_share": 0.1674,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -5537,43 +5501,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 282,
-   "sections_without_summary": [
-    150,
-    151,
-    152,
-    153,
-    154,
-    155,
-    168,
-    169,
-    170,
-    171,
-    172,
-    173,
-    198,
-    199,
-    200,
-    201,
-    202,
-    203
-   ],
+   "sections_total": 276,
+   "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 545,
    "sentences_selected": 545,
-   "turns_cited": 51,
+   "turns_cited": 48,
    "turns_total": 81,
-   "coverage": 0.6296,
+   "coverage": 0.5926,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:35:28"
+   "checked_at": "2026-09-19T21:41:29"
   },
   "usage": {
-   "calls": 141,
-   "prompt_tokens": 140740,
-   "completion_tokens": 17197,
+   "calls": 140,
+   "prompt_tokens": 140206,
+   "completion_tokens": 16734,
    "estimated": false,
-   "cost_usd": 0.024519
+   "cost_usd": 0.024314
   }
  }
 }

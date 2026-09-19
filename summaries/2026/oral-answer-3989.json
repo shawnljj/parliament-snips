@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Beverage Container Return Scheme questions",
-   "summary": "Questions ask about reverse vending machine numbers, redemption capacity, unredeemed deposits, and affordability impact on lower-income households before the April 2026 launch.",
+   "summary": "Questions ask about reverse vending machines, return points, deposit redemption capacity, unredeemed deposits, and affordability impact on lower-income households.",
    "sentences": [
     {
      "sid": "s00004",
@@ -37,7 +37,7 @@
   },
   {
    "label": "Producer fee per container",
-   "summary": "All producers must pay a producer fee of three to four cents per container to scheme operator BCRS Ltd.",
+   "summary": "All producers will need to pay a producer fee of three to four cents per container to scheme operator BCRS Ltd.",
    "sentences": [
     {
      "sid": "s00024",
@@ -50,7 +50,7 @@
   },
   {
    "label": "Extended transition period and grant",
-   "summary": "The transition period was extended from three to six months, and a $2,500 transition grant was introduced for smaller businesses.",
+   "summary": "The transition period was extended from three months to six months, and a $2,500 transition grant was introduced for smaller businesses.",
    "sentences": [
     {
      "sid": "s00034",
@@ -69,8 +69,8 @@
    ]
   },
   {
-   "label": "Scheme launch and transition support",
-   "summary": "Deposit-marked containers enter the market gradually, with widespread availability expected by August and September, and ambassadors deployed at launch.",
+   "label": "Scheme launch and transition monitoring",
+   "summary": "Containers with the deposit mark will gradually enter the market, with widespread availability expected by August and September, and ambassadors deployed at launch.",
    "sentences": [
     {
      "sid": "s00048",
@@ -92,19 +92,32 @@
      "attributed": true,
      "text": "At launch, we will deploy ambassadors on the ground to guide the public on how to use the RVMs.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Stakeholder discussions on BCRS",
+   "summary": "Discussions are ongoing with stakeholders including coffeeshops and smaller retailers to help them understand and explain the scheme to consumers.",
+   "sentences": [
     {
-     "sid": "s00053",
+     "sid": "s00056",
      "speaker": "Dr Janil Puthucheary",
      "attributed": true,
-     "text": "NEA and BCRS Ltd, together with our community partners, are committed to providing additional support to better address their needs.",
+     "text": "Many are already champions of our sustainability initiatives and I hope will continue to advocate for how BCRS is a very important step in our journey to look after our land, our resources and our environment.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00057",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We are also in discussions with other key stakeholders, including coffeeshops and smaller retailers, to help them understand the scheme and explain it to consumers.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Reverse vending machine logistics",
-   "summary": "Return point network operators contract companies to empty reverse vending machines at least once daily, and more if return rates are high.",
+   "label": "RVM operators and reverse logistics",
+   "summary": "Return point network operators contract companies to empty RVMs at least once daily, more if return rates are high.",
    "sentences": [
     {
      "sid": "s00072",
@@ -123,8 +136,8 @@
    ]
   },
   {
-   "label": "Producer container cost",
-   "summary": "Producers of 80% of beverage containers put to market say their cost is about three to four cents.",
+   "label": "Producer cost for beverage containers",
+   "summary": "Producers of 80% of beverage containers put to market said their cost is about three to four cents.",
    "sentences": [
     {
      "sid": "s00086",
@@ -149,8 +162,8 @@
    ]
   },
   {
-   "label": "RVM queues and malfunctions",
-   "summary": "Questions ask about queues at RVMs and logistical arrangements for malfunctions, with 1,000 RVMs deployed first.",
+   "label": "Queues, malfunctions and RVM deployment",
+   "summary": "Questions ask about queues, waiting periods, malfunctions and logistics, noting 1,000 RVMs are being deployed first.",
    "sentences": [
     {
      "sid": "s00094",
@@ -176,8 +189,8 @@
    ]
   },
   {
-   "label": "RVM numbers and licensing",
-   "summary": "Assessed 1,000 to 2,000 RVMs are needed, with malfunctions and logistics part of licensing and contracts requiring 90% up-time.",
+   "label": "RVM numbers, uptime and licensing",
+   "summary": "Assessing that 1,000 to 2,000 RVMs suffice, with licensing and contracts requiring 90% machine up-time.",
    "sentences": [
     {
      "sid": "s00104",
@@ -210,21 +223,28 @@
    ]
   },
   {
-   "label": "Smaller producer costs",
-   "summary": "For producers under 50,000 containers yearly, $2,500 covers registration and first-year producer fees of about $2,000.",
+   "label": "Deposit mark waiver and grant",
+   "summary": "A question asks about waiving the deposit mark after transition, and a $2,500 grant is being provided.",
    "sentences": [
     {
-     "sid": "s00118",
+     "sid": "s00114",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "Second, would the Ministry consider waiving the requirement to have the deposit mark after the transition period, given that there should be sufficient public awareness by then and retailers no longer need to distinguish products with and without the 10-cent deposit?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00115",
      "speaker": "Dr Janil Puthucheary",
      "attributed": true,
-     "text": "For a smaller producer, which we define as less than 50,000 beverage containers put to market per year, and that represents about one quarter of the producers in our estimate, the $2,500 is more than sufficient to cover both the product registration cost as well as the producer fees for the first year, which is about $2,000 in total.",
+     "text": "We are currently providing a grant of $2,500.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Market price increase",
-   "summary": "Assessment is that 80% of the market will have a 3% to 4% increase.",
+   "label": "Market increase assessment",
+   "summary": "The assessment is that 80% of the market will have a 3% to 4% increase.",
    "sentences": [
     {
      "sid": "s00152",
@@ -236,8 +256,8 @@
    ]
   },
   {
-   "label": "Refund methodology and cash",
-   "summary": "EZ-Link SimplyGo is a refund methodology and more will come, but cash or cash vouchers are not planned.",
+   "label": "Refund methodology options",
+   "summary": "EZ-Link SimplyGo is available as a refund methodology, with further methodologies planned, but cash or cash vouchers are not planned.",
    "sentences": [
     {
      "sid": "s00155",
@@ -270,7 +290,7 @@
   },
   {
    "label": "Grant amount and consumer impact",
-   "summary": "The passage asks whether consumer impact was factored into setting the grant at $2,500, citing choice and market functioning as protection.",
+   "summary": "The passage asks whether consumer impact was factored into setting the grant at $2,500, and states choice and market functioning are likely the biggest protection.",
    "sentences": [
     {
      "sid": "s00165",
@@ -301,12 +321,12 @@
    "oral-answer-3989"
   ],
   "sentences_total": 169,
-  "sentences_selected": 28,
-  "sentences_in_sections": 28,
+  "sentences_selected": 30,
+  "sentences_in_sections": 30,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 6,
-  "sections_total": 15,
-  "selection_share": 0.1657,
+  "sentences_added_for_context": 8,
+  "sections_total": 16,
+  "selection_share": 0.1775,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -315,24 +335,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 15,
+   "sections_total": 16,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 28,
-   "sentences_selected": 28,
-   "turns_cited": 11,
+   "sentences_published": 30,
+   "sentences_selected": 30,
+   "turns_cited": 12,
    "turns_total": 22,
-   "coverage": 0.5,
+   "coverage": 0.5455,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:25:18"
+   "checked_at": "2026-09-19T22:44:24"
   },
   "usage": {
    "calls": 9,
-   "prompt_tokens": 8207,
-   "completion_tokens": 834,
+   "prompt_tokens": 8240,
+   "completion_tokens": 890,
    "estimated": false,
-   "cost_usd": 0.001383
+   "cost_usd": 0.001403
   }
  }
 }

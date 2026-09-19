@@ -3,7 +3,7 @@
  "what_it_is": "Proposal For Highest Tier of Silver Support for Seniors Above 80 Who Live in Smaller HDB Flats",
  "sections": [
   {
-   "label": "Silver Support Scheme and Majulah Package",
+   "label": "Silver Support Scheme and social support",
    "summary": "The Silver Support Scheme gives payments to seniors aged 65 and above with lower lifetime wages, smaller flats and little family support, alongside other social support measures.",
    "sentences": [
     {
@@ -49,6 +49,13 @@
      "added_for_context": false
     },
     {
+     "sid": "s00008",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "In addition, the Assurance Package helps defray living expenses for Singaporean households.",
+     "added_for_context": false
+    },
+    {
      "sid": "s00009",
      "speaker": "The Minister for Manpower (Dr Tan See Leng)",
      "attributed": true,
@@ -59,20 +66,13 @@
   },
   {
    "label": "Balancing fiscal prudence and sustainability",
-   "summary": "The speaker says a balance must be struck between fiscal prudence and fiscal sustainability, and any action must be sustainable over the long haul.",
+   "summary": "The speaker says fiscal prudence and fiscal sustainability have to be balanced.",
    "sentences": [
     {
      "sid": "s00016",
      "speaker": "Dr Tan See Leng",
      "attributed": true,
      "text": "Like I said earlier on, we have to balance it between fiscal prudence and fiscal sustainability.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00017",
-     "speaker": "Dr Tan See Leng",
-     "attributed": true,
-     "text": "If we do something, I think, we need to ensure that we can sustain it over the long haul.",
      "added_for_context": false
     }
    ]
@@ -114,14 +114,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T05:35:12"
+   "checked_at": "2026-09-19T22:50:27"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1431,
-   "completion_tokens": 155,
+   "prompt_tokens": 1425,
+   "completion_tokens": 141,
    "estimated": false,
-   "cost_usd": 0.000244
+   "cost_usd": 0.000239
   }
  }
 }

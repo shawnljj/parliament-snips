@@ -4,14 +4,14 @@
  "sections": [
   {
    "label": "Second-hand smoke guidelines and smoking bans",
-   "summary": "MOH previously addressed second-hand smoke health effects; no official guidelines are planned, and smoking is banned at over 49,000 public places.",
+   "summary": "MOH previously addressed second-hand smoke health effects; no official guidelines are planned, and smoking is prohibited at over 49,000 public places.",
    "sentences": [
     {
      "sid": "s00002",
      "speaker": "The Minister of State for Health (Ms Rahayu Mahzam) (for the Coordinating Minister for Social Policies and Minister for Health)",
      "attributed": true,
      "text": "The health effects of prolonged exposure to second-hand smoke was previously addressed in the Ministry of Health's (MOH's) answer to oral Question No 12 during Parliamentary Sitting on 2 October 2018.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00003",
@@ -43,7 +43,7 @@
    ]
   },
   {
-   "label": "No official guidelines, policies consider health impact",
+   "label": "No official guidelines, policies consider impact",
    "summary": "There are no official guidelines and no plans for them, but the health impact is considered in policies, advisories, I Quit Programmes and health promotion.",
    "sentences": [
     {
@@ -98,7 +98,7 @@
   "sentences_selected": 8,
   "sentences_in_sections": 8,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
+  "sentences_added_for_context": 1,
   "sections_total": 4,
   "selection_share": 0.3333,
   "generated_by": "stage2b_select + stage2c_sections",
@@ -119,14 +119,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T03:59:24"
+   "checked_at": "2026-09-19T21:53:32"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1525,
-   "completion_tokens": 225,
+   "completion_tokens": 229,
    "estimated": false,
-   "cost_usd": 0.000277
+   "cost_usd": 0.000278
   }
  }
 }

@@ -43,21 +43,14 @@
    ]
   },
   {
-   "label": "Reviewing selection and monitoring processes",
-   "summary": "MOE recognises room for improvement in the sector and is further reviewing its processes for selecting and monitoring SCC and KCare operators.",
+   "label": "Police report on unauthorised GIRO deductions",
+   "summary": "MOE filed a police report on unauthorised GIRO deductions when these were reported to schools in February.",
    "sentences": [
     {
-     "sid": "s00034",
+     "sid": "s00021",
      "speaker": "Dr Janil Puthucheary",
      "attributed": true,
-     "text": "Nevertheless, we do recognise that there is room for improvement within the sector to provide better services, to strengthen the resilience of operators and to better monitor the service provision.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00035",
-     "speaker": "Dr Janil Puthucheary",
-     "attributed": true,
-     "text": "We are further reviewing our processes for selecting and monitoring SCC and KCare operators.",
+     "text": "With reference to the unauthorised General Interbank Recurring Order (GIRO) deductions, MOE has filed a police report when these were reported to schools in February.",
      "added_for_context": false
     }
    ]
@@ -76,8 +69,8 @@
    ]
   },
   {
-   "label": "Feedback on Little Professors and MOE action",
-   "summary": "Feedback about Little Professors was nothing untoward, but after a serious February incident MOE acted, and a police report was made over finances.",
+   "label": "Feedback on Little Professors and February incident",
+   "summary": "Parents can give feedback to the operator, schools and MOE HQ, and MOE reviewed last year's feedback about Little Professors.",
    "sentences": [
     {
      "sid": "s00059",
@@ -124,8 +117,8 @@
    ]
   },
   {
-   "label": "Double GIRO deductions returned",
-   "summary": "Double GIRO deductions reported before February this year, which happened last year, were returned to parents; a later round required a police report.",
+   "label": "Returned double GIRO deductions",
+   "summary": "The double GIRO deductions reported before February this year, which happened last year, were returned to parents.",
    "sentences": [
     {
      "sid": "s00088",
@@ -151,7 +144,7 @@
    ]
   },
   {
-   "label": "Government help coordinating claims",
+   "label": "Government help for claims process",
    "summary": "The Government will find ways to assist affected families and parents with coordinating claims rather than having individuals seek out the Small Claims Tribunal.",
    "sentences": [
     {
@@ -171,8 +164,8 @@
    ]
   },
   {
-   "label": "MOE staff relieve administrative burdens",
-   "summary": "MOE HQ staff, parent support groups, former Little Professor staff and external staff stepped in to relieve administrative burdens while an operator is pending appointment.",
+   "label": "Support after student care operator collapse",
+   "summary": "MOE HQ staff, parent support groups, former Little Professor staff and external staff provided interim relief, and the sector is being reviewed to detect earlier and respond faster.",
    "sentences": [
     {
      "sid": "s00107",
@@ -217,12 +210,12 @@
    "oral-answer-4058"
   ],
   "sentences_total": 111,
-  "sentences_selected": 22,
-  "sentences_in_sections": 22,
+  "sentences_selected": 21,
+  "sentences_in_sections": 21,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 6,
+  "sentences_added_for_context": 5,
   "sections_total": 8,
-  "selection_share": 0.1982,
+  "selection_share": 0.1892,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -234,21 +227,21 @@
    "sections_total": 8,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 22,
-   "sentences_selected": 22,
+   "sentences_published": 21,
+   "sentences_selected": 21,
    "turns_cited": 6,
    "turns_total": 14,
    "coverage": 0.4286,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:50:40"
+   "checked_at": "2026-09-19T22:23:28"
   },
   "usage": {
    "calls": 6,
-   "prompt_tokens": 5861,
-   "completion_tokens": 502,
+   "prompt_tokens": 5848,
+   "completion_tokens": 497,
    "estimated": false,
-   "cost_usd": 0.000961
+   "cost_usd": 0.000958
   }
  }
 }

@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "ECDA funding and fee caps",
-   "summary": "ECDA funds EIPIC and EIPIC-P, with means-tested fee caps; median income families pay up to $210 or $360 monthly.",
+   "summary": "ECDA funds EIPIC and EIPIC-P, with means-tested fee caps; a median income family pays up to $210 for EIPIC and $360 for EIPIC-P.",
    "sentences": [
     {
      "sid": "s00002",
@@ -31,7 +31,7 @@
   },
   {
    "label": "Intervention hours and CDA use",
-   "summary": "Enrolled children get five to 12 hours weekly over two or three sessions; parents may use CDA for registered supplementary services.",
+   "summary": "Enrolled children typically receive five to 12 hours of intervention weekly, and parents may use the CDA for supplementary services from ECDA-registered providers.",
    "sentences": [
     {
      "sid": "s00008",
@@ -50,8 +50,8 @@
    ]
   },
   {
-   "label": "ECDA registered private providers",
-   "summary": "ECDA strongly recommends parents use its registered service providers, which also regulates services and controls costs.",
+   "label": "ECDA-registered private providers recommended",
+   "summary": "ECDA strongly recommends parents use service providers registered with ECDA, which is the Government's way of regulating services and controlling costs.",
    "sentences": [
     {
      "sid": "s00015",
@@ -70,8 +70,8 @@
    ]
   },
   {
-   "label": "Additional sessions via CDA",
-   "summary": "Parents may choose additional sessions, which professionals do not call cardinal, and can pay using CDA funds.",
+   "label": "CDA funds for additional sessions",
+   "summary": "Parents choosing additional sessions can use CDA account funds to pay for them, though professionals would not call these cardinal.",
    "sentences": [
     {
      "sid": "s00021",
@@ -126,14 +126,14 @@
    "coverage": 0.6,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:13:32"
+   "checked_at": "2026-09-19T22:01:48"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1631,
-   "completion_tokens": 236,
+   "completion_tokens": 264,
    "estimated": false,
-   "cost_usd": 0.000294
+   "cost_usd": 0.000302
   }
  }
 }

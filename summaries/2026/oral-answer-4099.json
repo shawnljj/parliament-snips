@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Haze effects on seniors",
-   "summary": "An MP asks whether haze has increased medical consultations and worsened respiratory conditions among seniors, and how Community Health Posts can better support them.",
+   "summary": "An MP asks whether the Ministry has seen more medical consultations for haze-induced symptoms and whether seniors are more prone to respiratory exacerbations during haze.",
    "sentences": [
     {
      "sid": "s00001",
@@ -38,7 +38,7 @@
   },
   {
    "label": "Community Health Posts for seniors",
-   "summary": "Community Health Posts provide seniors immediate community access to healthcare at Active Ageing Centres, with regular engagements, telemedicine, services and medication, serving as touchpoints in crises.",
+   "summary": "Community Health Posts give seniors immediate community access to healthcare at Active Ageing Centres, with regular engagements, telemedicine, medical services and medication.",
    "sentences": [
     {
      "sid": "s00009",
@@ -107,14 +107,14 @@
    "coverage": 1.0,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:19:47"
+   "checked_at": "2026-09-19T22:05:25"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1166,
-   "completion_tokens": 149,
+   "completion_tokens": 145,
    "estimated": false,
-   "cost_usd": 0.000205
+   "cost_usd": 0.000204
   }
  }
 }

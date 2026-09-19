@@ -17,7 +17,7 @@
   },
   {
    "label": "Monitoring AI threats with partners",
-   "summary": "The Ministry says the capability is not a sudden step jump and it monitors the space with international partners and agencies.",
+   "summary": "The Ministry says the capability is not an unprepared step jump and it monitors the space with international partners and agencies.",
    "sentences": [
     {
      "sid": "s00012",
@@ -36,8 +36,8 @@
    ]
   },
   {
-   "label": "Supporting SMEs on cybersecurity",
-   "summary": "Resources help SMEs do self-checks, follow CSA guidelines, and have cybersecurity hygiene baked into pre-approved SME Go Digital solutions.",
+   "label": "Supporting SME cybersecurity and AI",
+   "summary": "Resources help SMEs self-check systems, follow CSA guidelines, and bake cybersecurity hygiene into pre-approved SME Go Digital solutions.",
    "sentences": [
     {
      "sid": "s00023",
@@ -56,35 +56,35 @@
    ]
   },
   {
-   "label": "Monitoring AI trend over time",
-   "summary": "The trend has been monitored and acted on for some time, covering not just one model but open-source models too.",
+   "label": "Testing AI and open-source models",
+   "summary": "Capabilities were built up over time and Singapore works with AI labs and cybersecurity firms for early model access to test capabilities.",
    "sentences": [
-    {
-     "sid": "s00045",
-     "speaker": "Mr Tan Kiat How",
-     "attributed": true,
-     "text": "Because this is a trend that we have seen for some time, and we have been monitoring the trend and taking action for period of time.",
-     "added_for_context": true
-    },
     {
      "sid": "s00046",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "And it is not just about a single model but broadly, even open-source models, we have built up capabilities over time and within matter of months because of how fast AI technology is developing.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00047",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "We work closely with all AI labs, cybersecurity firms as well as different partners around the world to have early access, if we can, to different models and frontier models to test the capabilities.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Visits to 11 CII sectors",
-   "summary": "The speaker says all 11 critical information infrastructure sectors have been visited over the past months and year.",
+   "label": "Visiting all 11 CII sectors",
+   "summary": "The Minister completed visits to all 11 critical information infrastructure sectors, where leadership is aware of risks and taking steps.",
    "sentences": [
     {
      "sid": "s00052",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "In this House, during the Budget and Committee of Supply speeches, I shared with the House that I have been visiting every of the CII sectors – 11 critical information infrastructure sectors – over the past months and year.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00053",
@@ -92,12 +92,26 @@
      "attributed": true,
      "text": "I am pleased to share with everyone that I have completed all 11.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00055",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "And I am very heartened that all the senior leadership, from chief executives to board members, are aware of the risks and are taking steps.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00056",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "They are putting in place, not just processes and investments to secure themselves and their systems, but also proactively thinking about how to secure their AI uses in their organisations.",
+     "added_for_context": false
     }
    ]
   },
   {
    "label": "Sharing threat intelligence with CII",
-   "summary": "Government and CSA will share selected threat intelligence with selected CII owners to help detect advanced persistent threat actors.",
+   "summary": "Government and CSA will share selected threat intelligence with selected CII owners to better monitor and detect advanced persistent threat actors.",
    "sentences": [
     {
      "sid": "s00061",
@@ -128,12 +142,12 @@
    "oral-answer-4126"
   ],
   "sentences_total": 62,
-  "sentences_selected": 11,
-  "sentences_in_sections": 11,
+  "sentences_selected": 13,
+  "sentences_in_sections": 13,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 3,
+  "sentences_added_for_context": 5,
   "sections_total": 6,
-  "selection_share": 0.1774,
+  "selection_share": 0.2097,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -145,21 +159,21 @@
    "sections_total": 6,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 11,
-   "sentences_selected": 11,
+   "sentences_published": 13,
+   "sentences_selected": 13,
    "turns_cited": 3,
    "turns_total": 10,
    "coverage": 0.3,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T04:09:26"
+   "checked_at": "2026-09-19T21:59:36"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 3465,
-   "completion_tokens": 320,
+   "prompt_tokens": 3537,
+   "completion_tokens": 326,
    "estimated": false,
-   "cost_usd": 0.000575
+   "cost_usd": 0.000586
   }
  }
 }
