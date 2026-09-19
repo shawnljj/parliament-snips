@@ -817,8 +817,11 @@ SCRIPT = r"""
         // something. 700ms is long enough to read a two-word label mid-scroll.
         railPill.classList.add('is-visible');
         if (railPillTimer !== undefined) window.clearTimeout(railPillTimer);
+        // Capture the ELEMENT, not the global: railRebuild() nulls the global on desktop, so
+        // reading it 700ms later threw and the repeat errors broke the rest of the page.
+        var pill = railPill;
         railPillTimer = window.setTimeout(function () {
-          railPill.classList.remove('is-visible');
+          if (pill && pill.classList) pill.classList.remove('is-visible');
         }, 700);
       } else {
         railPill.classList.remove('is-visible');
@@ -1131,6 +1134,19 @@ SCRIPT = r"""
     });
     fillInline(brief);
   }
+
+  // The desktop collapse switch: hides the faded context for one brief, leaving the selected
+  // sentences and the collapsed markers. Per brief, because a Budget sitting carries several
+  // and a reader may want the record on one and not another.
+  document.addEventListener('change', function (e) {
+    var cb = e.target;
+    if (!cb || !cb.classList || !cb.classList.contains('osw-in')) return;
+    var brief = cb.getAttribute('data-brief');
+    if (!brief) return;
+    document.querySelectorAll('.dsec[data-brief="' + brief + '"]').forEach(function (sec) {
+      sec.classList.toggle('hide-ctx', cb.checked);
+    });
+  });
 
   document.addEventListener('click', function (e) {
     var t = e.target;
@@ -1773,6 +1789,19 @@ def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
     if leftover and cards:
         cards[-1] = cards[-1].replace("</section>", leftover + "</section>")
 
+    # The collapse switch, built as its own string: Python 3.9 cannot nest a triple-quoted
+    # f-string inside another, and an f-string expression may not contain a backslash.
+    switch_html = ""
+    if total:
+        switch_html = (
+            '<div class="onlysel">'
+            f'<input type="checkbox" class="osw-in" id="onlysel-{esc(item_id)}" '
+            f'data-brief="{esc(item_id)}">'
+            f'<label class="osw" for="onlysel-{esc(item_id)}"><i></i>'
+            f'<span>Hide the sentences <b>not</b> selected</span></label>'
+            f'<span class="oshint">{hidden_n:,} of {total:,} sentences in this record</span>'
+            '</div>')
+
     return f"""
 <article class="brief brief-v4">
   <header class="brief-hd">
@@ -1782,6 +1811,7 @@ def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
       {f' · {total:,} sentences in the record' if total else ''}
     </p>
     {f'<p class="brief-what">{esc(brief.get("what_it_is", ""))}</p>' if brief.get("what_it_is") else ''}
+    {switch_html}
   </header>
   {''.join(cards)}
   <footer class="brief-ft">
@@ -2183,6 +2213,31 @@ STYLE = """
 .brief-v4 .brief-hd h2{font-size:19px;line-height:1.32;margin:0 0 4px;letter-spacing:-.01em}
 .brief-v4 .brief-meta{margin:0;font-size:12.5px;color:var(--dim)}
 .brief-v4 .brief-what{margin:9px 0 0;font-size:14.5px;line-height:1.55;color:#2c343b}
+/* The collapse switch. DESKTOP ONLY: on a phone the record is already collapsed behind a
+   count, so a second control would be redundant. It exists because the full transcript is 5x
+   the selected text and is a long scroll even on a wide screen. */
+.onlysel{display:none}
+.osw{display:inline-flex;align-items:center;gap:10px;cursor:pointer;user-select:none;
+  font-size:13.5px;color:var(--dim);margin-top:14px}
+.osw b{color:var(--accent)}
+.onlysel .osw-in{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.osw i{position:relative;flex:none;width:38px;height:22px;background:#dde3e9;
+  border-radius:999px;transition:background .18s ease}
+.osw i::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;
+  background:#fff;border-radius:50%;box-shadow:0 1px 2px rgba(20,24,29,.22);
+  transition:transform .18s cubic-bezier(.3,1.4,.5,1)}
+.onlysel .osw-in:checked ~ .osw i{background:var(--accent)}
+.onlysel .osw-in:checked ~ .osw i::after{transform:translateX(16px)}
+.onlysel .osw-in:focus-visible ~ .osw i{outline:2.5px solid var(--accent);outline-offset:2px}
+.oshint{margin-left:14px;font-size:12px;color:var(--faint)}
+@media (min-width:760px){
+  .onlysel{display:flex;align-items:baseline;gap:4px;flex-wrap:wrap}
+}
+/* When the switch is on the faded context goes, and the collapsed marker returns in its
+   place, so the reader keeps a count and can still expand it. Scoped to the brief. */
+.dsec.hide-ctx .runfull{display:none}
+.dsec.hide-ctx .gapi.run > .gapd{display:flex}
+.dsec.hide-ctx .ctx{display:none}
 
 /* A section is the sticky card's containing block, so the card releases exactly when
    the section ends -- no JavaScript, and the requirement is met by layout alone. */

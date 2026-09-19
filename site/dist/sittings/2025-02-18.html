@@ -842,8 +842,11 @@
         // something. 700ms is long enough to read a two-word label mid-scroll.
         railPill.classList.add('is-visible');
         if (railPillTimer !== undefined) window.clearTimeout(railPillTimer);
+        // Capture the ELEMENT, not the global: railRebuild() nulls the global on desktop, so
+        // reading it 700ms later threw and the repeat errors broke the rest of the page.
+        var pill = railPill;
         railPillTimer = window.setTimeout(function () {
-          railPill.classList.remove('is-visible');
+          if (pill && pill.classList) pill.classList.remove('is-visible');
         }, 700);
       } else {
         railPill.classList.remove('is-visible');
@@ -1156,6 +1159,19 @@
     });
     fillInline(brief);
   }
+
+  // The desktop collapse switch: hides the faded context for one brief, leaving the selected
+  // sentences and the collapsed markers. Per brief, because a Budget sitting carries several
+  // and a reader may want the record on one and not another.
+  document.addEventListener('change', function (e) {
+    var cb = e.target;
+    if (!cb || !cb.classList || !cb.classList.contains('osw-in')) return;
+    var brief = cb.getAttribute('data-brief');
+    if (!brief) return;
+    document.querySelectorAll('.dsec[data-brief="' + brief + '"]').forEach(function (sec) {
+      sec.classList.toggle('hide-ctx', cb.checked);
+    });
+  });
 
   document.addEventListener('click', function (e) {
     var t = e.target;
