@@ -1392,7 +1392,37 @@ def render_brief(brief, sitting_dates=None):
       </article>"""
 
 
-def render_brief_selected(brief, sitting_dates=None):
+def short_brief(item_id, others=()):
+    """A compact qualifier for a sentence id, long enough to disambiguate, no longer.
+
+    The stored id is an internal key like "budget-2916+2918+2928". The reader needs only
+    enough to tell two records on the same page apart, so the SHARED prefix across the
+    page's ids is dropped: on a page of oral answers that leaves the number, and on a mixed
+    page it leaves the group word. Falls back to the full id when nothing is shared.
+    """
+    i = str(item_id or "")
+    others = [str(o) for o in others if o and o != i]
+    if not others:
+        return i
+    # longest common prefix across every id on the page
+    pre = i
+    for o in others:
+        n = 0
+        while n < len(pre) and n < len(o) and pre[n] == o[n]:
+            n += 1
+        pre = pre[:n]
+    # Trim the shared prefix back to a SEPARATOR so no half-word is left behind:
+    # "motion-" vs "matter-" share only "m", and cutting there leaves "otion-...".
+    cut = 0
+    for sep in ("-", "+", "/"):
+        k = pre.rfind(sep)
+        if k > cut:
+            cut = k + 1
+    out = i[cut:].strip("+-") or i
+    return out if len(out) >= 2 else i
+
+
+def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
     """Render a selection-schema (v4) brief: sections, verbatim sentences, sticky summary.
 
     This is the shape that replaced paraphrasing. Every published sentence is copied from
@@ -1403,6 +1433,16 @@ def render_brief_selected(brief, sitting_dates=None):
     meta = brief.get("_meta", {}) or {}
     title = brief.get("title") or meta.get("id") or "Untitled"
     item_id = meta.get("id") or ""
+    # A sentence id is unique only WITHIN an item. When the page carries several briefs --
+    # a Budget sitting has four -- "s00006" appears in each with different text, so the bare
+    # id is ambiguous and uncheckable. Qualify it with the brief, but keep the raw id in the
+    # DOM (data attributes and the anchor) so provenance is unchanged.
+    ambiguous_ids = bool(page_brief_ids) and len(page_brief_ids) > 1
+
+    def sid_label(sid):
+        if not ambiguous_ids:
+            return esc(sid)
+        return f"{esc(sid)} \u00b7 {esc(short_brief(item_id, page_brief_ids))}"
     sections = brief.get("sections") or []
     if not sections:
         return ""
@@ -1479,7 +1519,11 @@ def render_brief_selected(brief, sitting_dates=None):
     run_before = {}
     for a, b in runs:
         run_before[b + 1] = (a, b)
-    emitted = set()          # each run is rendered EXACTLY once
+    # Each run is rendered EXACTLY once, keyed by its START id. The key must be the same in
+    # both places that emit (a section's tail and the head of the next section's first
+    # sentence): keying one by `a` and the other by `b + 1` made the guard miss, so 64 runs
+    # appeared twice and the second copy sat under the wrong summary.
+    emitted = set()
     hidden_n = sum(b - a + 1 for a, b in runs)   # sentences behind the buttons
 
     def skipped_rows(a, b):
@@ -1506,10 +1550,12 @@ def render_brief_selected(brief, sitting_dates=None):
         rows = []
         for x in sents:
             k = sid_num(x.get("sid"))
-            # the unpublished run immediately before this sentence, if any
-            if k is not None and k in run_before and k not in emitted:
+            # The unpublished run immediately before this sentence, if this section is
+            # where the reader first meets it. Skipped when a previous section's tail
+            # already emitted it -- keyed on the run START, matching the tail loop.
+            if k is not None and k in run_before and run_before[k][0] not in emitted:
                 a, b = run_before[k]
-                emitted.add(k)
+                emitted.add(a)
                 rows.append(inline_rows(a, b) if b - a + 1 <= INLINE_MAX
                             else skipped_rows(a, b))
             raw_spk = (x.get("speaker") or "").strip()
@@ -1523,7 +1569,9 @@ def render_brief_selected(brief, sitting_dates=None):
                    if x.get("added_for_context") else "")
             rows.append(
                 f'<li class="vs">'
-                f'<div class="vs-meta"><span class="sid">{esc(x.get("sid", ""))}</span>'
+                f'<div class="vs-meta">'
+                f'<span class="sid" title="{esc(item_id)}">{sid_label(x.get("sid", ""))}'
+                f'</span>'
                 f'{spk_html}{ctx}</div>'
                 f'<p class="vs-text">{esc(x.get("text", ""))}</p>'
                 f'</li>')
@@ -1600,11 +1648,11 @@ def render_brief_selected(brief, sitting_dates=None):
 </article>"""
 
 
-def render_brief_any(brief, sitting_dates=None):
+def render_brief_any(brief, sitting_dates=None, page_brief_ids=None):
     """Dispatch on schema, so a mixed archive still renders coherently."""
     meta = brief.get("_meta", {}) or {}
     if brief.get("sections"):
-        return render_brief_selected(brief, sitting_dates)
+        return render_brief_selected(brief, sitting_dates, page_brief_ids)
     return render_brief(brief, sitting_dates)
 
 
@@ -1756,7 +1804,8 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
 
     def brief_list(items, limit=None):
         out = items if limit is None else items[:limit]
-        return "".join(render_brief_any(b) for b in out)
+        ids = [(b.get("_meta") or {}).get("id") for b in out]
+        return "".join(render_brief_any(b, page_brief_ids=ids) for b in out)
 
     # The section rail builds ticks from h2/h3 headings, so the briefs need real
     # headings rather than being a run of <article>s. Without these the rail
@@ -1764,8 +1813,12 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     def brief_block(items, heading):
         if not items:
             return ""
+        # The id list is built ONCE, outside the generator. Nested inside it, the
+        # comprehension became the generator's item rather than an argument, so join()
+        # received ids instead of HTML and the page collapsed to a single card.
+        ids = [(x.get("_meta") or {}).get("id") for x in items]
         return (f'<h2 class="railhead">{esc(heading)}</h2>'
-                + "".join(render_brief_any(b) for b in items))
+                + "".join(render_brief_any(b, page_brief_ids=ids) for b in items))
 
     lead = reports[0] if reports else {}
     if substantive:
