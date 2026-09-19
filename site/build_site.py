@@ -1390,6 +1390,37 @@ def coverage_text(cov):
     return f"{n} of about {mx} ({n / mx * 100:.0f}%)"
 
 
+_SITTING_TIMES = None
+
+
+def sitting_times():
+    """Sitting durations, keyed by date. Missing file is not an error -- the pages just
+    report the length as not recorded."""
+    global _SITTING_TIMES
+    if _SITTING_TIMES is None:
+        p = os.path.join(ROOT, "pipeline", "sitting_times.json")
+        try:
+            _SITTING_TIMES = json.load(open(p, encoding="utf-8"))
+        except (OSError, ValueError):
+            _SITTING_TIMES = {}
+    return _SITTING_TIMES
+
+
+def published_words(briefs):
+    """Words a reader actually sees: the published sentences plus the summaries.
+
+    Counts what the page puts in front of them, not the whole record -- the point is to
+    tell them how long THIS page takes, not how long the Hansard does.
+    """
+    n = 0
+    for b in briefs or []:
+        for sec in b.get("sections") or []:
+            n += len((sec.get("summary") or "").split())
+            for s in sec.get("sentences") or []:
+                n += len((s.get("text") or "").split())
+    return n
+
+
 def brief_substance(brief):
     """The size of a brief's substance, whatever schema it is.
 
@@ -2044,6 +2075,48 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     else:
         lede_words = f"{len(reports):,} items of business"
 
+    # HOW LONG THE SITTING RAN, AND HOW LONG THE BRIEF TAKES TO READ.
+    # Duration comes from pipeline/sitting_times.json, extracted from the Hansard's own
+    # <h6> clock stamps (see tools/extract_sitting_times.py). It is deliberately ROUGH --
+    # rounded to the half hour and prefixed with ~ -- because it is a derived bracket, not
+    # a published figure. Where no stamps could be read, say so plainly and give the
+    # typical range instead of inventing a number for this sitting.
+    dur_html = ""
+    st = sitting_times().get(d)
+    if st and st.get("status") == "ok" and st.get("minutes"):
+        h = st["minutes"] / 60.0
+        if h >= 1:
+            rough = round(h * 2) / 2.0                     # nearest half hour
+            hours = f"{rough:g}".replace(".0", "")
+            dur_txt = (f"about {hours} hour{'s' if rough != 1 else ''}")
+        else:
+            dur_txt = f"about {int(round(st['minutes'] / 5.0) * 5)} minutes"
+        dur_html = (f'<li><span class="lbl">Sitting ran</span> '
+                    f'<b title="Derived from the clock stamps in the Hansard record; '
+                    f'rounded to the nearest half hour.">{esc(dur_txt)}</b></li>')
+    else:
+        # No stamps readable for this sitting. Say so plainly and give the typical range --
+        # never a number for this sitting, because there is not one.
+        dur_html = ('<li><span class="lbl">Sitting ran</span> '
+                    '<b>not recorded '
+                    '<span class="hint">(typically 7&ndash;12 hours)</span></b></li>')
+
+    read_html = ""
+    pw = published_words(briefs)
+    if pw:
+        mins = max(1, int(round(pw / 200.0)))              # 200 wpm, a normal reading pace
+        if mins >= 60:
+            rh = mins // 60
+            rm = mins % 60
+            rtxt = f"{rh}h{f' {rm}m' if rm else ''}"
+        else:
+            rtxt = f"{mins} min"
+        read_html = (f'<li><span class="lbl">Reading this</span> '
+                     f'<b title="{pw:,} words at 200 words per minute.">{esc(rtxt)}</b> '
+                     f'<span class="hint">({pw:,} words)</span></li>')
+
+    meta_html = f'<ul class="smeta">{dur_html}{read_html}</ul>' if (dur_html or read_html) else ""
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2068,6 +2141,7 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     <p class="kicker">Singapore Parliament &middot; Sitting No. {esc(str(lead.get("sitting_no") or ""))}</p>
     <h1><time datetime="{esc(d)}">{esc(pretty_date(d))}</time></h1>
     <p class="dek">{lede_words}, read so you don't have to.</p>
+    {meta_html}
   </section>
 
   {f'''
@@ -2463,6 +2537,20 @@ h1,h2,h3{line-height:1.2;margin:0}
   color:var(--accent);margin:0 0 16px}
 .lede h1{font-size:clamp(40px,7.5vw,76px);letter-spacing:-.032em;font-weight:800}
 .dek{font-size:19px;color:var(--dim);margin:18px 0 0;max-width:56ch}
+/* How long the sitting ran, and how long this page takes to read. Sits under the dek in
+   the lede. Base stylesheet IS the 390px layout: one row per fact, label in a fixed
+   column so nothing wraps mid-label and the values line up. */
+.smeta{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;align-items:baseline;
+  list-style:none;margin:16px 0 0;padding:0}
+.smeta li{display:contents}
+.smeta .lbl{color:var(--meta,#6b7280);font-size:11.5px;text-transform:uppercase;
+  letter-spacing:.05em;white-space:nowrap}
+.smeta b{color:var(--ink);font-weight:600;font-size:14px}
+.smeta .hint{color:var(--meta,#6b7280);font-size:12.5px;font-weight:400}
+@media (min-width:761px){
+  .smeta{grid-auto-flow:column;grid-template-columns:none;gap:0 26px;align-items:baseline;
+    grid-auto-columns:max-content}
+}
 .dek b{color:var(--ink)}
 .span-note{font:500 12.5px var(--mono);color:var(--faint);margin:14px 0 0}
 
