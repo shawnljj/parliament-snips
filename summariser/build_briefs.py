@@ -978,15 +978,32 @@ def stage2c_sections(item, selected, model):
             usage_total[k] += usage.get(k, 0) or 0
         got = parse_json(raw) or {}
         out = {}
-        for o in (got.get("items") or []):
+        # MERGE EVERY RECOVERED OBJECT, not just the first. parse_json returns only the first
+        # JSON object in the reply, and a model that answers with ONE OBJECT PER PASSAGE
+        # (rather than one object holding an "items" list) would have all but its first
+        # answer silently discarded -- producing exactly the 6-section empty runs measured in
+        # 2026. parse_json_many already exists for this failure mode elsewhere in the file.
+        candidates = []
+        for obj in parse_json_many(raw):
+            if not isinstance(obj, dict):
+                continue
+            if obj.get("items"):
+                candidates.extend(obj["items"])
+            elif "n" in obj:
+                candidates.append(obj)
+        for o in candidates:
             if not isinstance(o, dict):
                 continue
             n = o.get("n")
             if isinstance(n, int) and 1 <= n <= len(indices):
-                out[indices[n - 1]] = {
-                    "label": (o.get("label") or "").strip()[:80],
-                    "summary": (o.get("summary") or "").strip()[:400],
-                }
+                lab = (o.get("label") or "").strip()[:80]
+                summ = (o.get("summary") or "").strip()[:400]
+                # An item with NO USABLE TEXT is not an answer. Recording it would mark the
+                # section as handled and the retry below would skip it, publishing a blank
+                # section silently -- which is exactly how 72 sections of 2026 shipped empty.
+                if not summ and not lab:
+                    continue
+                out[indices[n - 1]] = {"label": lab, "summary": summ}
         return out
 
     for start, batch in _chunks():
@@ -1012,7 +1029,12 @@ def stage2c_sections(item, selected, model):
                 print(f"      retry failed: {str(exc)[:60]}")
     still = [k for k in range(len(groups)) if k not in results]
     if still:
-        print(f"      {len(still)} section(s) still without a summary")
+        # A section with no summary is DATA LOSS, not a cosmetic gap: the page renders its
+        # verbatim sentences with no explanation of what they are, and nothing downstream
+        # notices. 2026 shipped 72 such sections because this only printed a line. It now
+        # raises, so the item is recorded as an error rather than published incomplete.
+        raise RuntimeError(f"{len(still)} of {len(groups)} section(s) have no usable summary "
+                           f"(section indices: {still[:8]}{'...' if len(still) > 8 else ''})")
 
     out = []
     for k, g in enumerate(groups):
