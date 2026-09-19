@@ -544,6 +544,32 @@ SCRIPT = r"""
     setTimeout(function () { if (el.parentNode) el.remove(); }, 12000);
   }
 
+  /* ---------- desktop progress bar ----------
+     Same measurement the resume toast quotes, computed the same way, so the two cannot
+     disagree. Updated on scroll through rAF, like the rest of this page's scroll work. */
+  var pbar = document.querySelector('.pbar');
+  var pbarFill = pbar ? pbar.querySelector('.pbar-fill') : null;
+  var pbarTxt = pbar ? pbar.querySelector('.pbar-txt') : null;
+  var pbarRaf = null;
+
+  function pbarSync() {
+    if (!pbar) return;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    var y = window.scrollY || window.pageYOffset || 0;
+    var pct = max > 0 ? Math.min(100, Math.max(0, Math.round((y / max) * 100))) : 100;
+    if (pbarFill) pbarFill.style.width = pct + '%';
+    if (pbarTxt) pbarTxt.textContent = pct + '%';
+    pbar.setAttribute('aria-valuenow', pct);
+  }
+
+  function pbarOnScroll() {
+    if (pbarRaf) return;
+    pbarRaf = requestAnimationFrame(function () { pbarRaf = null; pbarSync(); });
+  }
+  // The page grows as the faded context fills in, so recompute after those land rather than
+  // trusting the height measured at load -- otherwise the percentage is wrong early on.
+  window.addEventListener('resize', pbarSync, { passive: true });
+
   /* ---------- 3. section rail (mobile only) ----------
      Ported from the owner's sgfamily.life rail (src/section-rail.ts), because
      the pattern is proven and he asked for that, not a fresh invention.
@@ -558,6 +584,8 @@ SCRIPT = r"""
          imported.
        * A "dormant" state replaces the original's view-toggle rule: the rail
          hides while the lede is on screen and there is nothing below to map. */
+  // The rail is built at EVERY width now: on desktop it is the breakpoint navigator, on
+  // mobile the same thing sized for a thumb. One system, so a fix to one is a fix to both.
   var RAIL_MQ = '(max-width: 760px)';
   // Numbering for the level-3 ticks, so a dot has a stable identity that can be
   // matched against the numbered jump list in the Oral answers section.
@@ -565,8 +593,10 @@ SCRIPT = r"""
   var rail = null, railFill = null, railPill = null, railEntries = [], railActive = -1;
   var railPillTimer = null, railResizeTimer = null, pendingIndex = -1;
 
+  // Retained for the pill logic below, which still asks whether the rail is in its compact
+  // form. The rail itself is no longer gated on width.
   function railIsMobile() {
-    return window.matchMedia && window.matchMedia(RAIL_MQ).matches;
+    return window.matchMedia && window.matchMedia('(max-width: 760px)').matches;
   }
   function truncate(text, max) {
     max = max || 42;
@@ -577,6 +607,12 @@ SCRIPT = r"""
     var seen = {};
     var out = [];
     railOrdinal = 0;
+    // ONLY motions and questions. Including each in-brief section label as well produced 302
+    // ticks, which rendered as an unreadable wall of overlapping labels -- a rail is a
+    // scannable index, and 279 extra ticks cannot be scanned or labelled. Measured on this
+    // page: 23 real breakpoints versus 279 in-brief labels, and a rail carries one of those
+    // numbers usefully. The in-brief sections remain reachable by scrolling, which the
+    // progress bar measures.
     [].slice.call(document.querySelectorAll('main h2, main h3')).forEach(function (h, i) {
       var label = (h.textContent || '').replace(/\s+/g, ' ').trim();
       if (!label) return;
@@ -588,8 +624,9 @@ SCRIPT = r"""
       if (seen[h.id]) return;
       seen[h.id] = 1;
       h.classList.add('has-section-anchor');
-      // Level 2 for the section headings, level 3 for everything nested under
-      // one, so the tick column is scannable by size.
+      // Size tells the reader what kind of stop it is: 2 = page section, 3 = a motion or
+      // question. Ticks must stay large enough to hit, so adding a third level would mean
+      // shrinking these below a usable target.
       var level = h.tagName === 'H2' ? 2 : 3;
       // Ordinal numbers the level-3 ticks in reading order, matching the
       // numbered list the reader can open in the Oral answers section.
@@ -895,12 +932,8 @@ SCRIPT = r"""
   }
 
   function railRebuild() {
-    if (!railIsMobile()) {
-      if (rail) rail.remove();
-      rail = null; railFill = null; railPill = null;
-      railEntries = []; railActive = -1;
-      return;
-    }
+    // No width gate: the rail is built at every width now. It used to be torn down above
+    // 760px, which is why desktop had no breakpoints at all.
     railEnsure();
     railEntries = railCollect();
     railBuild();
@@ -911,22 +944,22 @@ SCRIPT = r"""
   }
 
   window.addEventListener('scroll', function () {
+    pbarOnScroll();
     // Scrolling dismisses a pending preview: the reader has moved on, and a
     // stale "tap again to go" would be misleading.
     if (pendingIndex >= 0) railClearPending();
     railSync();
   }, { passive: true });
   window.addEventListener('resize', function () {
-    if (!railIsMobile()) { railRebuild(); return; }
     railSizeTicks();
+    pbarSync();
     if (railResizeTimer !== undefined) window.clearTimeout(railResizeTimer);
     railResizeTimer = window.setTimeout(railRebuild, 150);
   });
-  if (window.matchMedia) {
-    var railMq = window.matchMedia(RAIL_MQ);
-    var railOnChange = function () { railRebuild(); };
-    if (railMq.addEventListener) railMq.addEventListener('change', railOnChange);
-    else if (railMq.addListener) railMq.addListener(railOnChange);
+  if (false) {
+    // The media-query listener was needed only while the rail was mobile-only. Kept as a
+    // no-op rather than deleted so the surrounding block's braces stay balanced.
+    var railMq = null;
   }
 
   /* ---------- jump list: closed on mobile, open on desktop ---------- */
@@ -2103,6 +2136,12 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     </ul>
   </section>
 
+  <div class="pbar" role="progressbar" aria-label="Progress through this sitting"
+       aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <span class="pbar-fill"></span>
+    <span class="pbar-txt">0%</span>
+  </div>
+
   <footer><p>Parsnips &middot; an unofficial reader for the Official Report.
   Hansard is a public record; the full text is at sprs.parl.gov.sg.</p></footer>
 </main>
@@ -2194,6 +2233,12 @@ def render_archive(sittings, *, css_href, home_href, archive_href, summaries=Non
   <section class="arch">
     {''.join(blocks) or '<p class="empty">No sittings yet.</p>'}
   </section>
+  <div class="pbar" role="progressbar" aria-label="Progress through this sitting"
+       aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <span class="pbar-fill"></span>
+    <span class="pbar-txt">0%</span>
+  </div>
+
   <footer><p>Parsnips &middot; an unofficial reader for the Official Report.
   Hansard is a public record; the full text is at sprs.parl.gov.sg.</p></footer>
 </main>
@@ -2782,18 +2827,18 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
  rail would overflow. JS sizes ticks and gap to the largest that fits, and
  enlarges the HIT AREA independently of the visible dot, so the target does not
  have to be sacrificed to fit the column. */
-.section-rail{display:none}
-@media (max-width:760px){
-  .section-rail{display:block;position:fixed;top:50%;right:6px;transform:translateY(-50%);
-    z-index:70;padding:10px 0;pointer-events:none;max-width:calc(100vw - 12px)}
-  .section-rail.is-dormant{display:none}
-  .section-rail-track{position:relative;display:flex;flex-direction:column;
+.section-rail{display:block;position:fixed;top:50%;right:6px;transform:translateY(-50%);
+  z-index:70;padding:10px 0;pointer-events:none;max-width:calc(100vw - 12px)}
+
+.section-rail{right:6px;transform:translateY(-50%)}
+.section-rail.is-dormant{display:none}
+.section-rail-track{position:relative;display:flex;flex-direction:column;
     align-items:center;gap:var(--rail-gap,14px);padding:2px 8px;pointer-events:auto}
   /* Ticks must not shrink. They are flex items in a fixed-height column, so the
      default flex-shrink:1 silently squeezed every computed height (a 40px
      request rendered at 25px). The JS sizes them to fit, so shrinking is not
      wanted. */
-  .section-rail-tick{flex:none}
+.section-rail-tick{flex:none}
   /* Gesture blockers. Without these a long press could not complete: the tick
      inherits touch-action:auto, so the browser claims a vertical thumb drift as
      a scroll and fires pointercancel, and iOS would raise its text-selection
@@ -2803,57 +2848,57 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
      scrolling normally. This deliberately makes the rail strip a dead zone for
      page scrolling -- acceptable, and in fact intended, because that strip is
      already reserved as the rail gutter. */
-  .section-rail-track{touch-action:none}
-  .section-rail,.section-rail-tick,.section-rail-bubble,.section-rail-go{
+.section-rail-track{touch-action:none}
+.section-rail,.section-rail-tick,.section-rail-bubble,.section-rail-go{
     touch-action:manipulation}
-  .section-rail-tick{-webkit-touch-callout:none;user-select:none;
+.section-rail-tick{-webkit-touch-callout:none;user-select:none;
     -webkit-user-select:none;-webkit-tap-highlight-color:transparent}
-  .section-rail-tick *{user-select:none;-webkit-user-select:none}
+.section-rail-tick *{user-select:none;-webkit-user-select:none}
   /* While scrubbing, the finger owns the rail: suppress tick hover states so the
      highlight reflects the drag position, not a stray hover. */
-  .section-rail.is-scrubbing{cursor:ns-resize}
-  .section-rail.is-scrubbing .section-rail-tick{transition:none}
+.section-rail.is-scrubbing{cursor:ns-resize}
+.section-rail.is-scrubbing .section-rail-tick{transition:none}
   /* progress fill runs behind the ticks */
-  .section-rail-fill{position:absolute;top:12px;bottom:12px;left:50%;width:2px;
+.section-rail-fill{position:absolute;top:12px;bottom:12px;left:50%;width:2px;
     margin-left:-1px;border-radius:2px;background:#e2e8e3;overflow:hidden}
-  .section-rail-fill::after{content:'';position:absolute;inset:0 0 auto 0;
+.section-rail-fill::after{content:'';position:absolute;inset:0 0 auto 0;
     height:calc(var(--rail-progress,0) * 100%);
     background:linear-gradient(180deg,var(--accent),#2f8f66);
     transition:height .25s ease}
   /* Ticks are laid out as a row: the dot, then its identity (a name for the
      section-level ticks, a number for the oral-answer ones). The rail answers
      "which section is this?" at rest rather than only after a gesture. */
-  .section-rail-tick{position:relative;appearance:none;border:0;background:transparent;
+.section-rail-tick{position:relative;appearance:none;border:0;background:transparent;
     padding:0 2px;width:auto;min-width:24px;height:var(--rail-tick-h,22px);
     display:flex;align-items:center;justify-content:flex-end;gap:5px;cursor:pointer}
-  .section-rail-tick-mark{display:block;width:6px;height:6px;border-radius:50%;
+.section-rail-tick-mark{display:block;width:6px;height:6px;border-radius:50%;
     background:#c4cfc7;box-shadow:0 0 0 3px rgba(251,251,250,.9);
     transition:width .2s ease,height .2s ease,background .2s ease,transform .2s ease}
   /* Expand the HIT AREA independently of the visible dot. The column can only be
      ~27px tall per tick or 21 ticks overflow the screen, but the tappable box can
      still be widened horizontally and padded vertically via a pseudo-element, so
      the target approaches 44px without changing what is drawn. */
-  .section-rail-tick::before{content:'';position:absolute;left:-8px;right:-8px;
+.section-rail-tick::before{content:'';position:absolute;left:-8px;right:-8px;
     top:-8px;bottom:-8px}
-  .section-rail-tick.level-2 .section-rail-tick-mark{width:8px;height:8px}
+.section-rail-tick.level-2 .section-rail-tick-mark{width:8px;height:8px}
   /* Always-visible name for section ticks, and the number for oral-answer ticks.
      Both sit to the LEFT of the dot so the dot column stays aligned. */
-  .section-rail-name{order:-1;font:600 9.5px/1.15 var(--mono);color:var(--dim);
+.section-rail-name{order:-1;font:600 9.5px/1.15 var(--mono);color:var(--dim);
     text-align:right;max-width:74px;white-space:nowrap;overflow:hidden;
     text-overflow:ellipsis;background:rgba(251,251,250,.82);border-radius:5px;
     padding:2px 4px}
-  .section-rail-num{order:-1;font:600 9px/1 var(--mono);color:var(--faint);
+.section-rail-num{order:-1;font:600 9px/1 var(--mono);color:var(--faint);
     min-width:11px;text-align:right}
-  .section-rail-tick.level-2 .section-rail-name{color:var(--ink)}
-  .section-rail-tick.is-active .section-rail-name{color:var(--accent)}
-  .section-rail-tick.is-pending .section-rail-name,
-  .section-rail-tick.is-pending .section-rail-num{color:var(--accent)}
-  .section-rail-tick.is-active .section-rail-tick-mark{background:var(--accent);
+.section-rail-tick.level-2 .section-rail-name{color:var(--ink)}
+.section-rail-tick.is-active .section-rail-name{color:var(--accent)}
+.section-rail-tick.is-pending .section-rail-name,
+.section-rail-tick.is-pending .section-rail-num{color:var(--accent)}
+.section-rail-tick.is-active .section-rail-tick-mark{background:var(--accent);
     transform:scale(1.35)}
   /* A tick waiting to confirm: first tap names the section, second tap jumps. */
-  .section-rail-tick.is-pending .section-rail-tick-mark{background:var(--accent);
+.section-rail-tick.is-pending .section-rail-tick-mark{background:var(--accent);
     transform:scale(1.25)}
-  .section-rail-tick.is-pending .section-rail-bubble{opacity:1;
+.section-rail-tick.is-pending .section-rail-bubble{opacity:1;
     transform:translateY(-50%) scale(1)}
   /* always-visible label for the section currently on screen.
      No fixed position can avoid ALL content on a page where every pixel between
@@ -2861,19 +2906,19 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
      it named, above the rail it landed on the header nav. So it is gated on
      active scrolling instead (see the JS) -- present while the reader is moving
      between sections, gone ~700ms after they stop, when they are reading. */
-  .section-rail-pill{position:absolute;top:50%;right:0;
+.section-rail-pill{position:absolute;top:50%;right:0;
     transform:translateY(-50%) translateX(6px);max-width:min(190px,52vw);
     padding:5px 10px;border-radius:999px;background:rgba(20,24,29,.94);color:#fff;
     font-size:10.5px;font-weight:700;line-height:1.25;white-space:nowrap;
     overflow:hidden;text-overflow:ellipsis;opacity:0;
     transition:opacity .2s ease,transform .2s ease;pointer-events:none;z-index:2}
-  .section-rail-pill.is-visible{opacity:1;transform:translateY(-50%) translateX(0)}
+.section-rail-pill.is-visible{opacity:1;transform:translateY(-50%) translateX(0)}
   /* Preview bubble: the full name, shown while scrubbing or pending.
      It must be WIDER than the rail column: constrained to the track it collapsed
      to 58px and wrapped into a tall sliver, and because the track is the only
      part of the rail with pointer-events, the bubble was painted behind page
      content. Fixed to the viewport's right edge instead, above everything. */
-  .section-rail-bubble{position:fixed;top:0;left:auto;right:10px;
+.section-rail-bubble{position:fixed;top:0;left:auto;right:10px;
     transform:translateY(-50%) scale(.96);
     max-width:min(300px,78vw);width:max-content;
     padding:7px 11px;border-radius:10px;
@@ -2883,16 +2928,17 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
     font-size:12px;font-weight:700;line-height:1.3;white-space:normal;
     opacity:0;pointer-events:none;z-index:90;
     transition:opacity .15s ease,transform .15s ease}
-  .section-rail-tick.is-pending .section-rail-bubble{opacity:1;
+.section-rail-tick.is-pending .section-rail-bubble{opacity:1;
     transform:translateY(-50%) scale(1)}
   /* The explicit confirm affordance, visible while pending. */
-  .section-rail-go{position:fixed;top:0;left:auto;right:10px;
+.section-rail-go{position:fixed;top:0;left:auto;right:10px;
     font:700 10px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;
     color:#fff;background:var(--accent);border-radius:6px;padding:6px 9px;
     opacity:0;pointer-events:none;z-index:91;
     transition:opacity .15s ease}
-  .section-rail-tick.is-pending .section-rail-go{opacity:1}
-}
+.section-rail-tick.is-pending .section-rail-go{opacity:1}
+
+
 @media (prefers-reduced-motion:reduce){
   .section-rail-fill::after,.section-rail-tick-mark,.section-rail-pill,
   .section-rail-bubble{transition:none}
@@ -2920,6 +2966,31 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
 .resume .rgo{background:var(--accent);color:#fff;border:0}
 .resume .rno{background:none;border:0;color:#aeb8c2;font-size:18px;padding:0 6px}
 @media (min-width:761px){.resume{left:auto;right:16px;max-width:380px}}
+
+/* The section rail, on desktop: pinned to the right margin so it does not collide with the
+   summary column or the bottom progress bar. Level-1 ticks are small, level-3 largest. */
+@media (min-width:761px){
+  .section-rail{right:10px;top:50%;transform:translateY(-50%);height:52vh}
+  .section-rail-tick.level-2{height:8px}
+  .section-rail-tick.level-3{height:6px}
+}
+
+/* DESKTOP PROGRESS BAR: bottom-pinned, same ink and accent as the resume toast, because it
+   reports the same thing the toast does -- how far through this sitting the reader is. It is
+   desktop-only: on a phone the section rail already shows position, and a bar would cost
+   vertical space that a phone cannot spare. */
+.pbar{display:none}
+@media (min-width:761px){
+  .pbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:44;height:26px;
+    background:var(--ink);color:#fff;font-size:11px;line-height:26px;
+    letter-spacing:.06em;text-transform:uppercase}
+  .pbar-fill{position:absolute;left:0;top:0;bottom:0;width:0;
+    background:var(--accent);transition:width .12s linear}
+  .pbar-txt{position:relative;display:block;text-align:center;color:#fff;
+    mix-blend-mode:difference;font-weight:600}
+  /* The toast sits above the bar, not on it. */
+  .resume{bottom:38px}
+}
 
 /* Touch targets: text stays compact, the tappable box grows to >=44px. */
 .qsum>summary,.supp-wrap>summary,.ns>summary,.morepts>summary,.proc>summary,

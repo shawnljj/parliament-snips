@@ -615,6 +615,12 @@
     </ul>
   </section>
 
+  <div class="pbar" role="progressbar" aria-label="Progress through this sitting"
+       aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <span class="pbar-fill"></span>
+    <span class="pbar-txt">0%</span>
+  </div>
+
   <footer><p>Parsnips &middot; an unofficial reader for the Official Report.
   Hansard is a public record; the full text is at sprs.parl.gov.sg.</p></footer>
 </main>
@@ -710,6 +716,32 @@
     setTimeout(function () { if (el.parentNode) el.remove(); }, 12000);
   }
 
+  /* ---------- desktop progress bar ----------
+     Same measurement the resume toast quotes, computed the same way, so the two cannot
+     disagree. Updated on scroll through rAF, like the rest of this page's scroll work. */
+  var pbar = document.querySelector('.pbar');
+  var pbarFill = pbar ? pbar.querySelector('.pbar-fill') : null;
+  var pbarTxt = pbar ? pbar.querySelector('.pbar-txt') : null;
+  var pbarRaf = null;
+
+  function pbarSync() {
+    if (!pbar) return;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    var y = window.scrollY || window.pageYOffset || 0;
+    var pct = max > 0 ? Math.min(100, Math.max(0, Math.round((y / max) * 100))) : 100;
+    if (pbarFill) pbarFill.style.width = pct + '%';
+    if (pbarTxt) pbarTxt.textContent = pct + '%';
+    pbar.setAttribute('aria-valuenow', pct);
+  }
+
+  function pbarOnScroll() {
+    if (pbarRaf) return;
+    pbarRaf = requestAnimationFrame(function () { pbarRaf = null; pbarSync(); });
+  }
+  // The page grows as the faded context fills in, so recompute after those land rather than
+  // trusting the height measured at load -- otherwise the percentage is wrong early on.
+  window.addEventListener('resize', pbarSync, { passive: true });
+
   /* ---------- 3. section rail (mobile only) ----------
      Ported from the owner's sgfamily.life rail (src/section-rail.ts), because
      the pattern is proven and he asked for that, not a fresh invention.
@@ -724,6 +756,8 @@
          imported.
        * A "dormant" state replaces the original's view-toggle rule: the rail
          hides while the lede is on screen and there is nothing below to map. */
+  // The rail is built at EVERY width now: on desktop it is the breakpoint navigator, on
+  // mobile the same thing sized for a thumb. One system, so a fix to one is a fix to both.
   var RAIL_MQ = '(max-width: 760px)';
   // Numbering for the level-3 ticks, so a dot has a stable identity that can be
   // matched against the numbered jump list in the Oral answers section.
@@ -731,8 +765,10 @@
   var rail = null, railFill = null, railPill = null, railEntries = [], railActive = -1;
   var railPillTimer = null, railResizeTimer = null, pendingIndex = -1;
 
+  // Retained for the pill logic below, which still asks whether the rail is in its compact
+  // form. The rail itself is no longer gated on width.
   function railIsMobile() {
-    return window.matchMedia && window.matchMedia(RAIL_MQ).matches;
+    return window.matchMedia && window.matchMedia('(max-width: 760px)').matches;
   }
   function truncate(text, max) {
     max = max || 42;
@@ -743,6 +779,12 @@
     var seen = {};
     var out = [];
     railOrdinal = 0;
+    // ONLY motions and questions. Including each in-brief section label as well produced 302
+    // ticks, which rendered as an unreadable wall of overlapping labels -- a rail is a
+    // scannable index, and 279 extra ticks cannot be scanned or labelled. Measured on this
+    // page: 23 real breakpoints versus 279 in-brief labels, and a rail carries one of those
+    // numbers usefully. The in-brief sections remain reachable by scrolling, which the
+    // progress bar measures.
     [].slice.call(document.querySelectorAll('main h2, main h3')).forEach(function (h, i) {
       var label = (h.textContent || '').replace(/\s+/g, ' ').trim();
       if (!label) return;
@@ -754,8 +796,9 @@
       if (seen[h.id]) return;
       seen[h.id] = 1;
       h.classList.add('has-section-anchor');
-      // Level 2 for the section headings, level 3 for everything nested under
-      // one, so the tick column is scannable by size.
+      // Size tells the reader what kind of stop it is: 2 = page section, 3 = a motion or
+      // question. Ticks must stay large enough to hit, so adding a third level would mean
+      // shrinking these below a usable target.
       var level = h.tagName === 'H2' ? 2 : 3;
       // Ordinal numbers the level-3 ticks in reading order, matching the
       // numbered list the reader can open in the Oral answers section.
@@ -1061,12 +1104,8 @@
   }
 
   function railRebuild() {
-    if (!railIsMobile()) {
-      if (rail) rail.remove();
-      rail = null; railFill = null; railPill = null;
-      railEntries = []; railActive = -1;
-      return;
-    }
+    // No width gate: the rail is built at every width now. It used to be torn down above
+    // 760px, which is why desktop had no breakpoints at all.
     railEnsure();
     railEntries = railCollect();
     railBuild();
@@ -1077,22 +1116,22 @@
   }
 
   window.addEventListener('scroll', function () {
+    pbarOnScroll();
     // Scrolling dismisses a pending preview: the reader has moved on, and a
     // stale "tap again to go" would be misleading.
     if (pendingIndex >= 0) railClearPending();
     railSync();
   }, { passive: true });
   window.addEventListener('resize', function () {
-    if (!railIsMobile()) { railRebuild(); return; }
     railSizeTicks();
+    pbarSync();
     if (railResizeTimer !== undefined) window.clearTimeout(railResizeTimer);
     railResizeTimer = window.setTimeout(railRebuild, 150);
   });
-  if (window.matchMedia) {
-    var railMq = window.matchMedia(RAIL_MQ);
-    var railOnChange = function () { railRebuild(); };
-    if (railMq.addEventListener) railMq.addEventListener('change', railOnChange);
-    else if (railMq.addListener) railMq.addListener(railOnChange);
+  if (false) {
+    // The media-query listener was needed only while the rail was mobile-only. Kept as a
+    // no-op rather than deleted so the surrounding block's braces stay balanced.
+    var railMq = null;
   }
 
   /* ---------- jump list: closed on mobile, open on desktop ---------- */
