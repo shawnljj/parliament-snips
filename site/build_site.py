@@ -2125,10 +2125,11 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     meta_html = (f'<p class="slogan">{dur_part}, {read_part}.</p>'
                  if read_part else f'<p class="slogan">{dur_part}.</p>')
 
-    # THE PRIMARY SOURCE, for a reader who wants to check the brief against what was actually
-    # said. Only rendered where a video was positively resolved to MDDI's own channel on this
-    # sitting's date; the archive does not reach every year, and a wrong link to the record of
-    # proceedings would be worse than no link. Opens in a new tab with rel=noopener.
+    # THE PRIMARY SOURCE. Where a video was positively resolved to MDDI's own channel on this
+    # sitting's date, link it. Where it was not, SAY SO rather than omitting the line: the
+    # gap is then visible and honest, and a reader is not left wondering whether the page
+    # simply forgot. MDDI's archive does not reach further back than about November 2025, and
+    # no other source is the official recording.
     vid = sitting_videos().get(d) or {}
     if vid.get("video_id"):
         meta_html += (
@@ -2136,6 +2137,14 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
             f'{esc(vid["video_id"])}" target="_blank" rel="noopener noreferrer">'
             f'Watch the full sitting &rarr;</a>'
             f'<span class="hint">MDDI Singapore, the official recording</span></p>')
+    else:
+        # ONE sentence, not two fragments joined by punctuation: a middot between two wrapping
+        # spans renders as an orphan bullet at the start of the second line. Plain prose cannot
+        # break that way.
+        meta_html += (
+            '<p class="srcvid is-none">'
+            '<span class="novid">No recording on the official MDDI channel '
+            '&mdash; their archive does not go back this far</span></p>')
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -2571,6 +2580,13 @@ h1,h2,h3{line-height:1.2;margin:0}
   border-bottom:1px solid rgba(22,120,80,.3)}
 .srcvid a:hover{border-bottom-color:var(--accent)}
 .srcvid .hint{color:var(--meta,#6b7280);font-size:12.5px}
+/* The "no recording" case. Stated plainly rather than hidden -- the gap is real and the
+   reader is told why, instead of the line silently vanishing. Muted, not alarming. The two
+   halves are joined by a middot so they read as ONE statement rather than two stray lines. */
+.srcvid .novid{color:var(--dim);font-weight:500}
+.srcvid.is-none{padding-right:var(--rail-gutter,0px)}
+/* no pseudo-element separator: the text is one sentence now, so a generated middot would
+   only be able to land at a line start and read as an orphan bullet. */
 .dek b{color:var(--ink)}
 .span-note{font:500 12.5px var(--mono);color:var(--faint);margin:14px 0 0}
 
