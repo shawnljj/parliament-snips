@@ -516,8 +516,13 @@ def load_item(path):
     if not os.path.exists(full):
         return None
     sents = _BD.load_item(full)
-    if not sents:
+    if sents is None:
         return None
+    # An EMPTY list is not a missing payload. The file exists and was parsed; the record
+    # simply yielded no content sentences (a formal resolution, a motion of thanks). Returning
+    # the dict with an empty "sentences" lets the caller withhold it with a reason, instead of
+    # mislabelling it "dataset payload missing", which put five permanent false alarms in
+    # every year's run report.
     # Return the raw dict WITH "sentences" added, rather than a new type: callers already
     # read title / group / sitting_dates / report_ids off this same dict, and a wrapper
     # object would change the shape everywhere for no benefit.
@@ -951,33 +956,63 @@ def stage2c_sections(item, selected, model):
     n_batches = (len(groups) + BATCH - 1) // BATCH
     print(f"      sections: {len(groups)} group(s) in {n_batches} batch(es) of {BATCH}",
           flush=True)
-    for start, batch in _chunks():
-        print(f"      sections {start // BATCH + 1}/{n_batches}…", flush=True)
+    # A DROPPED BATCH LEFT SECTIONS WITH NO SUMMARY, silently. Measured on 2025: 124 of
+    # 5,721 sections (2.17%) had none, and 17 of the 18 gaps were EXACT multiples of the
+    # batch size -- so a whole call returned nothing or returned fewer objects than passages
+    # and nothing asked again. The sections still rendered with their verbatim sentences, so
+    # the loss was invisible unless counted. Ask again for whatever came back unanswered,
+    # with a SMALLER batch, which is the same lesson the citation verifier taught.
+    def _ask_batch(indices, batch_no):
+        """One model call for these section indices; returns {index: {label, summary}}."""
         blocks = []
-        for k, g in enumerate(batch):
-            body = " ".join(sentences[i]["text"] for i in g)
-            blocks.append(f"[{start + k + 1}] {body}")
+        for pos, idx in enumerate(indices):
+            body = " ".join(sentences[i]["text"] for i in groups[idx])
+            blocks.append(f"[{pos + 1}] {body}")
         prompt = ("\n\n".join(blocks)
                   + "\n\nFor EACH numbered passage above, return one object. "
                     'Return JSON only: {"items": [{"n": 1, "label": "3-6 words", '
                     '"summary": "one sentence under 30 words"}]}')
+        raw, usage = ask(prompt, BATCH_SUMMARY_SYSTEM, model)
+        usage_total["calls"] += 1
+        for k in ("prompt_tokens", "completion_tokens"):
+            usage_total[k] += usage.get(k, 0) or 0
+        got = parse_json(raw) or {}
+        out = {}
+        for o in (got.get("items") or []):
+            if not isinstance(o, dict):
+                continue
+            n = o.get("n")
+            if isinstance(n, int) and 1 <= n <= len(indices):
+                out[indices[n - 1]] = {
+                    "label": (o.get("label") or "").strip()[:80],
+                    "summary": (o.get("summary") or "").strip()[:400],
+                }
+        return out
+
+    for start, batch in _chunks():
+        print(f"      sections {start // BATCH + 1}/{n_batches}…", flush=True)
+        idx = list(range(start, start + len(batch)))
         try:
-            raw, usage = ask(prompt, BATCH_SUMMARY_SYSTEM, model)
-            usage_total["calls"] += 1
-            for k in ("prompt_tokens", "completion_tokens"):
-                usage_total[k] += usage.get(k, 0) or 0
-            got = parse_json(raw) or {}
-            for o in (got.get("items") or []):
-                if not isinstance(o, dict):
-                    continue
-                n = o.get("n")
-                if isinstance(n, int) and start < n <= start + len(batch):
-                    results[n - 1] = {
-                        "label": (o.get("label") or "").strip()[:80],
-                        "summary": (o.get("summary") or "").strip()[:400],
-                    }
+            results.update(_ask_batch(idx, start // BATCH + 1))
         except Exception as exc:                                    # noqa: BLE001
             print(f"      section batch {start // BATCH + 1} failed: {str(exc)[:60]}")
+
+    # retry whatever is still unanswered, in halves, so a long batch gets a second chance
+    for attempt in range(3):
+        missing = [k for k in range(len(groups)) if k not in results]
+        if not missing:
+            break
+        size = max(1, BATCH // (2 ** (attempt + 1)))
+        print(f"      retrying {len(missing)} section(s) with batches of {size}", flush=True)
+        for i in range(0, len(missing), size):
+            chunk = missing[i:i + size]
+            try:
+                results.update(_ask_batch(chunk, 0))
+            except Exception as exc:                                # noqa: BLE001
+                print(f"      retry failed: {str(exc)[:60]}")
+    still = [k for k in range(len(groups)) if k not in results]
+    if still:
+        print(f"      {len(still)} section(s) still without a summary")
 
     out = []
     for k, g in enumerate(groups):

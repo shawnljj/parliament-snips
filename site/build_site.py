@@ -1583,18 +1583,29 @@ def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
                 rows.append(inline_rows(a, b) if b - a + 1 <= INLINE_MAX
                             else skipped_rows(a, b))
             raw_spk = (x.get("speaker") or "").strip()
-            # A name on a sentence is needed ONLY where the speaker changes inside a
-            # multi-speaker section. In the 95.6% of sections with one speaker the card
-            # carries the name and the rows carry none, which is cleaner and cannot be
-            # scrolled past. The raw name is always on data-speaker for provenance.
-            if not multi_speaker:
-                spk_html = ""
-            elif raw_spk != sec_last_spk:
-                sec_last_spk = raw_spk
-                spk_html = (f'<span class="who">{esc(short_speaker(raw_spk))}</span>'
-                            if raw_spk else "")
+            # EVERY sentence carries its speaker. Suppressing it made the page tidier and
+            # made the attribution easier to miss, and the owner's reason for wanting it
+            # back is the stronger one: naming the speaker on each sentence is what lends
+            # the record credibility, because a reader can see who said each thing rather
+            # than inferring it from a card at the top. The card ALSO names them, so the
+            # section is attributable at a glance and every line is attributable in detail.
+            #
+            # The first mention of a speaker in a brief carries their full string (portfolio
+            # or constituency) in a second line; later mentions are just the name, so the
+            # repetition stays short.
+            if not raw_spk:
+                spk_html = '<span class="who none"></span>'
             else:
-                spk_html = ""
+                spk = esc(short_speaker(raw_spk))
+                if raw_spk not in seen_speakers:
+                    seen_speakers.add(raw_spk)
+                    # Only the part the short form OMITS, or the name prints twice.
+                    plain = short_speaker(raw_spk) or ""
+                    extra = (raw_spk[len(plain):].strip()
+                             if (plain and raw_spk.startswith(plain)) else raw_spk)
+                    if extra:
+                        spk = f'{spk} <span class="spkfull">{esc(extra)}</span>'
+                spk_html = f'<span class="who">{spk}</span>'
             ctx = ('<span class="ctxmark">context</span>'
                    if x.get("added_for_context") else "")
             rows.append(
@@ -2102,8 +2113,11 @@ STYLE = """
 .vs:first-child{border-top:0;padding-top:2px}
 .vs-meta{display:flex;align-items:baseline;gap:8px;margin-bottom:4px;flex-wrap:wrap}
 .sid{font:600 10.5px/1.5 var(--mono);color:var(--faint);letter-spacing:.03em}
-.vs-meta .who{font-size:11.5px;color:var(--dim);text-transform:uppercase;
-  letter-spacing:.045em}
+/* The speaker repeats on every sentence -- deliberately, because naming who said each thing
+   is what makes the record checkable. Kept small and tight so it does not dominate the text
+   it attributes. */
+.vs-meta .who{font-size:11px;color:var(--dim);text-transform:uppercase;
+  letter-spacing:.045em;line-height:1.3}
 .vs-meta .who.none{display:block;min-height:.7rem}
 /* Same speaker as the row above: nothing to show, and no line taken. Distinct from
    .who.none, which means the RECORD names no speaker -- that one keeps its line so an
