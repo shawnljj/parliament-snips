@@ -58,6 +58,13 @@
    the brief. Faint-but-readable, so a reader can still check what was passed over. */
 .sk-text{margin:0;font-size:14px;line-height:1.55;color:var(--dim)}
 .gapmsg{margin:6px 0 0;font-size:12px;color:var(--faint);text-align:center}
+/* Small unpublished runs render INLINE: 26% of runs are one or two sentences, and a
+   marker saying "1 sentence not selected" costs as much space as the sentence it hides.
+   They are visually quieter than published rows so the brief still reads as a brief. */
+.ski{margin:0}
+.ski .sk{padding:8px 0 9px;border-bottom:1px solid var(--line)}
+.ski .sk-text{color:var(--faint);font-size:14px}
+.ski .sid{color:#dfe4ea}
 /* Portfolio shown once, then just the name -- a 49-char title on every sentence wraps. */
 .spkfull{display:block;text-transform:none;letter-spacing:0;font-size:11px;
   color:var(--faint);margin-top:1px}

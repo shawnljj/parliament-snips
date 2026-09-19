@@ -971,10 +971,12 @@ SCRIPT = r"""
   railRebuild();
 
   // ---------------------------------------------------------------- skipped sentences
-  // The count beside a gap is a button. The sentences behind it are NOT in the page --
-  // measured, they are 3.74x the published text, so embedding them would take a sitting
-  // from 465 KB to ~3 MB on a phone for material most readers never open. Fetched once per
-  // brief and cached, so a second tap in the same brief is instant.
+  // Every sentence in the record is either published in the brief or sits inside an
+  // unpublished run that the page ACCOUNTS for -- leading, trailing, or internal. Small
+  // runs render inline; larger ones are collapsed behind a button. The text itself is
+  // never in the page: measured, the unpublished material is 3.74x the published text, so
+  // embedding it would take a sitting from 465 KB to ~3 MB. It is fetched once per brief
+  // and cached, so every run in that brief fills from one request.
   var SKIP_CACHE = {};
 
   function skEsc(t) {
@@ -986,38 +988,63 @@ SCRIPT = r"""
     var m = /^s0*(\d+)$/.exec(sid || '');
     return m ? +m[1] : -1;
   }
+  function rowHtml(s) {
+    var who = (s.speaker || '').trim();
+    var meta = '<span class="sid">' + skEsc(s.sid) + '</span>'
+      + (who ? '<span class="who">' + skEsc(who) + '</span>'
+             : '<span class="who none"></span>');
+    return '<div class="sk"><div class="sk-meta">' + meta + '</div>'
+         + '<p class="sk-text">' + skEsc(s.text) + '</p></div>';
+  }
   function loadSkipped(brief) {
-    if (SKIP_CACHE[brief] && SKIP_CACHE[brief].then) return SKIP_CACHE[brief];
-    if (SKIP_CACHE[brief]) return Promise.resolve(SKIP_CACHE[brief]);
+    if (SKIP_CACHE[brief] && !SKIP_CACHE[brief].then) {
+      return Promise.resolve(SKIP_CACHE[brief]);
+    }
+    if (SKIP_CACHE[brief]) return SKIP_CACHE[brief];
     var url = '../skipped/' + encodeURIComponent(brief) + '.json';
     SKIP_CACHE[brief] = fetch(url).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
     }).then(function (list) {
-      SKIP_CACHE[brief] = list;              // keep the data, not the promise
+      SKIP_CACHE[brief] = list;
       return list;
     });
     return SKIP_CACHE[brief];
   }
-  function renderSkipped(host, list, from, to) {
-    // Only the sentences inside THIS gap's id range, so one brief's payload serves every
-    // gap on the page.
+  function fill(host, list, from, to) {
     var picked = list.filter(function (s) {
       var v = skNum(s.sid);
-      return v > from && v < to;
+      return v >= from && v <= to;
     });
-    if (!picked.length) {
-      host.innerHTML = '<p class="gapmsg">No sentences to show here.</p>';
-      return;
-    }
-    host.innerHTML = picked.map(function (s) {
-      var who = (s.speaker || '').trim();
-      var meta = '<span class="sid">' + skEsc(s.sid) + '</span>'
-        + (who ? '<span class="who">' + skEsc(who) + '</span>'
-               : '<span class="who none"></span>');
-      return '<div class="sk"><div class="sk-meta">' + meta + '</div>'
-           + '<p class="sk-text">' + skEsc(s.text) + '</p></div>';
-    }).join('');
+    host.innerHTML = picked.length ? picked.map(rowHtml).join('')
+      : '<p class="gapmsg">No sentences to show here.</p>';
+  }
+
+  // Fill every inline run for a brief on first sight, so the page always ACCOUNTS for the
+  // whole record without the reader having to ask.
+  function fillInline(brief, root) {
+    var hosts = (root || document).querySelectorAll(
+      '.ski[data-brief="' + brief + '"], .dsec[data-brief="' + brief + '"] .ski');
+    if (!hosts.length) return;
+    loadSkipped(brief).then(function (list) {
+      hosts.forEach(function (h) {
+        if (h.dataset.done) return;
+        h.dataset.done = '1';
+        fill(h, list, +h.dataset.from, +h.dataset.to);
+      });
+    }).catch(function () {});
+  }
+
+  function initBrief(brief) {
+    var secs = document.querySelectorAll('.dsec[data-brief="' + brief + '"]');
+    if (!secs.length) return;
+    secs.forEach(function (sec) {
+      var gap = sec.querySelector('.gapd');
+      if (gap && !gap.dataset.wired) {
+        gap.dataset.wired = '1';
+      }
+    });
+    fillInline(brief);
   }
 
   document.addEventListener('click', function (e) {
@@ -1042,11 +1069,8 @@ SCRIPT = r"""
     body.hidden = false;
     body.innerHTML = '<p class="gapmsg">Loading&hellip;</p>';
     loadSkipped(brief).then(function (list) {
-      renderSkipped(body, list, +btn.getAttribute('data-from'),
-                    +btn.getAttribute('data-to'));
+      fill(body, list, +btn.getAttribute('data-from'), +btn.getAttribute('data-to'));
     }).catch(function () {
-      // Say so rather than showing an empty box: a silent failure here reads as the
-      // record having nothing in the gap.
       body.innerHTML = '<p class="gapmsg">Could not load these sentences. '
         + 'The full record is at sprs.parl.gov.sg.</p>';
     });
@@ -1054,6 +1078,13 @@ SCRIPT = r"""
 
   window.addEventListener('load', function () {
     syncStickyVar(); railRebuild(); offerResume();
+    // Fill every brief's inline runs, so the page accounts for the whole record without
+    // the reader having to ask. Deferred to load so the fetch never delays first paint.
+    var seen = {};
+    document.querySelectorAll('.dsec[data-brief]').forEach(function (sec) {
+      var b = sec.getAttribute('data-brief');
+      if (b && !seen[b]) { seen[b] = 1; initBrief(b); }
+    });
   });
 })();
 """
@@ -1390,6 +1421,72 @@ def render_brief_selected(brief, sitting_dates=None):
         m = re.match(r"s(\d+)$", str(x or "").strip())
         return int(m.group(1)) if m else None
 
+    # ---------------------------------------------------------------- runs
+    # A marker "between sections" was the first attempt and it LOST SENTENCES: measured
+    # across 2026, 277 of 287 briefs had text the page never accounted for -- 817 leading
+    # sentences with no marker, 755 trailing, and ~800 more inside sections, because a
+    # section's sentences are not always contiguous either (bill-772's section jumps from
+    # s00194 to s00196). That is silent loss, which R-2.5 forbids outright.
+    #
+    # So the record is walked as ALTERNATING RUNS of published and unpublished ids, and
+    # every unpublished run is accounted for. One rule, and it covers leading, trailing and
+    # internal holes without any of them being a special case.
+    #
+    # Small runs are shown INLINE rather than collapsed: 26% of runs are one or two
+    # sentences, and a marker saying "1 sentence not selected" costs as much space as the
+    # sentence and reads as noise. The collapse is for material worth hiding.
+    INLINE_MAX = 2
+
+    def sid_num(x):
+        """Integer position of a sentence id. Ids are global and ordered within an item
+        (s00008, s00009, s00025...), so the number IS the position in the record."""
+        m = re.match(r"s0*(\d+)$", str(x or "").strip())
+        return int(m.group(1)) if m else None
+
+    total = meta.get("sentences_total") or 0
+    pub_by_id = {}
+    for sec in sections:
+        for x in sec.get("sentences") or []:
+            k = sid_num(x.get("sid"))
+            if k is not None:
+                pub_by_id[k] = x
+
+    # walk 1..total, collecting the unpublished runs and where each begins
+    runs, start = [], None
+    for i in range(1, max(1, total) + 1):
+        if i in pub_by_id:
+            if start is not None:
+                runs.append((start, i - 1))
+                start = None
+        elif start is None:
+            start = i
+    if start is not None:
+        runs.append((start, total))
+    # runs keyed by the id that FOLLOWS them, so when a published sentence is reached the
+    # run immediately before it is findable. Keyed by b + 1: a run ending at k-1 is found
+    # by looking up k. (An earlier version looked up k-1 here, which missed every run that
+    # ended exactly one id before a published sentence -- the off-by-one that left
+    # sentences unaccounted for.)
+    run_before = {}
+    for a, b in runs:
+        run_before[b + 1] = (a, b)
+    emitted = set()          # each run is rendered EXACTLY once
+
+    def skipped_rows(a, b):
+        """A collapsed run: a button stating the count, and a hidden body the script fills."""
+        between = b - a + 1
+        return (f'<button class="gapd" type="button" data-from="{a}" data-to="{b}" '
+                f'aria-expanded="false">'
+                f'<span class="gapn">{between:,} '
+                f'sentence{"s" if between != 1 else ""} not selected</span>'
+                f'<span class="gapx">show</span></button>'
+                f'<div class="gapbody" hidden></div>')
+
+    def inline_rows(a, b):
+        """Small runs render as quiet rows. Filled by script from the payload, because
+        embedding them would put every skipped sentence on every page."""
+        return ('<div class="ski" data-from="%d" data-to="%d"></div>' % (a, b))
+
     cards = []
     seen_speakers = set()
     for n, sec in enumerate(sections):
@@ -1398,18 +1495,18 @@ def render_brief_selected(brief, sitting_dates=None):
             continue
         rows = []
         for x in sents:
+            k = sid_num(x.get("sid"))
+            # the unpublished run immediately before this sentence, if any
+            if k is not None and k in run_before and k not in emitted:
+                a, b = run_before[k]
+                emitted.add(k)
+                rows.append(inline_rows(a, b) if b - a + 1 <= INLINE_MAX
+                            else skipped_rows(a, b))
             raw_spk = (x.get("speaker") or "").strip()
-            # Show the portfolio once, then just the name: repeating a 49-character title
-            # on every sentence wraps the attribution line and costs a line each time.
             spk = esc(short_speaker(raw_spk)) if raw_spk else ""
-            if spk and spk != raw_spk and raw_spk not in seen_speakers:
+            if spk and spk != esc(raw_spk) and raw_spk not in seen_speakers:
                 seen_speakers.add(raw_spk)
                 spk = f'{spk} <span class="spkfull">{esc(raw_spk)}</span>'
-            # A turn the record does not attribute prints NOTHING rather than a
-            # placeholder: the text usually names the speaker inline, and inventing a
-            # name is the one thing this pipeline must not do.
-            # spk is pre-escaped (and may carry the first-mention span), so it is
-            # inserted raw here. Escaping twice renders the markup as visible text.
             spk_html = (f'<span class="who">{spk}</span>' if spk
                         else '<span class="who none"></span>')
             ctx = ('<span class="ctxmark">context</span>'
@@ -1431,30 +1528,41 @@ def render_brief_selected(brief, sitting_dates=None):
                 + (f'<p class="sumtext">{esc(summary)}</p>' if summary else "")
                 + '</div></div>')
 
-        # HOW MANY SENTENCES LIE BETWEEN THIS SECTION AND THE NEXT. A single global count
-        # in a page footer was tried and is useless on a long item: a 140-section brief
-        # puts that footer ~100,000px down the page, so no reader ever reaches it. A
-        # local count sits exactly at the gap and says what was passed over right there.
-        gap_html = ""
-        nxt = (sections[n + 1].get("sentences") or []) if n + 1 < len(sections) else []
-        if nxt:
-            a, b = sid_num(sents[-1].get("sid")), sid_num(nxt[0].get("sid"))
-            if a is not None and b is not None and b - a - 1 > 0:
-                between = b - a - 1
-                gap_html = (
-                    f'<button class="gapd" type="button" data-from="{a}" data-to="{b}" '
-                    f'aria-expanded="false">'
-                    f'<span class="gapn">{between:,} '
-                    f'sentence{"s" if between != 1 else ""} not selected</span>'
-                    f'<span class="gapx">show</span></button>'
-                    f'<div class="gapbody" hidden></div>')
+        # A run that starts after this section's last sentence belongs HERE, at the end of
+        # this section: that is where the reader meets it. Emitting only the first such run
+        # left the rest unaccounted for, so every remaining run before the next section's
+        # first sentence is emitted in id order.
+        tail = ""
+        last = sid_num(sents[-1].get("sid"))
+        if last is not None:
+            tail_runs = [r for r in runs if r[0] > last and r[0] not in emitted]
+            # stop at the next section's start so runs stay with the text they precede
+            nxt_first = None
+            if n + 1 < len(sections):
+                nxt_s = sections[n + 1].get("sentences") or []
+                if nxt_s:
+                    nxt_first = sid_num(nxt_s[0].get("sid"))
+            for a, b in tail_runs:
+                if nxt_first is not None and b + 1 > nxt_first:
+                    break
+                emitted.add(a)
+                tail += (inline_rows(a, b) if b - a + 1 <= INLINE_MAX
+                         else skipped_rows(a, b))
 
         cards.append(
             f'<section class="dsec" id="sec-{n + 1}" data-brief="{esc(item_id)}">'
             f'{sum_html}'
             f'<ol class="vslist">{"".join(rows)}</ol>'
-            f'{gap_html}'
+            f'{tail}'
             f'</section>')
+
+    # anything left is the record's tail; emit it after the last section. Without this the
+    # final sentences of an item were silently absent from the page.
+    leftover = "".join(
+        (inline_rows(a, b) if b - a + 1 <= INLINE_MAX else skipped_rows(a, b))
+        for a, b in runs if a not in emitted)
+    if leftover and cards:
+        cards[-1] = cards[-1].replace("</section>", leftover + "</section>")
 
     return f"""
 <article class="brief brief-v4">
@@ -1909,6 +2017,13 @@ STYLE = """
    the brief. Faint-but-readable, so a reader can still check what was passed over. */
 .sk-text{margin:0;font-size:14px;line-height:1.55;color:var(--dim)}
 .gapmsg{margin:6px 0 0;font-size:12px;color:var(--faint);text-align:center}
+/* Small unpublished runs render INLINE: 26% of runs are one or two sentences, and a
+   marker saying "1 sentence not selected" costs as much space as the sentence it hides.
+   They are visually quieter than published rows so the brief still reads as a brief. */
+.ski{margin:0}
+.ski .sk{padding:8px 0 9px;border-bottom:1px solid var(--line)}
+.ski .sk-text{color:var(--faint);font-size:14px}
+.ski .sid{color:#dfe4ea}
 /* Portfolio shown once, then just the name -- a 49-char title on every sentence wraps. */
 .spkfull{display:block;text-transform:none;letter-spacing:0;font-size:11px;
   color:var(--faint);margin-top:1px}

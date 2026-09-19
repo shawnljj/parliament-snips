@@ -1004,10 +1004,12 @@
   railRebuild();
 
   // ---------------------------------------------------------------- skipped sentences
-  // The count beside a gap is a button. The sentences behind it are NOT in the page --
-  // measured, they are 3.74x the published text, so embedding them would take a sitting
-  // from 465 KB to ~3 MB on a phone for material most readers never open. Fetched once per
-  // brief and cached, so a second tap in the same brief is instant.
+  // Every sentence in the record is either published in the brief or sits inside an
+  // unpublished run that the page ACCOUNTS for -- leading, trailing, or internal. Small
+  // runs render inline; larger ones are collapsed behind a button. The text itself is
+  // never in the page: measured, the unpublished material is 3.74x the published text, so
+  // embedding it would take a sitting from 465 KB to ~3 MB. It is fetched once per brief
+  // and cached, so every run in that brief fills from one request.
   var SKIP_CACHE = {};
 
   function skEsc(t) {
@@ -1019,38 +1021,63 @@
     var m = /^s0*(\d+)$/.exec(sid || '');
     return m ? +m[1] : -1;
   }
+  function rowHtml(s) {
+    var who = (s.speaker || '').trim();
+    var meta = '<span class="sid">' + skEsc(s.sid) + '</span>'
+      + (who ? '<span class="who">' + skEsc(who) + '</span>'
+             : '<span class="who none"></span>');
+    return '<div class="sk"><div class="sk-meta">' + meta + '</div>'
+         + '<p class="sk-text">' + skEsc(s.text) + '</p></div>';
+  }
   function loadSkipped(brief) {
-    if (SKIP_CACHE[brief] && SKIP_CACHE[brief].then) return SKIP_CACHE[brief];
-    if (SKIP_CACHE[brief]) return Promise.resolve(SKIP_CACHE[brief]);
+    if (SKIP_CACHE[brief] && !SKIP_CACHE[brief].then) {
+      return Promise.resolve(SKIP_CACHE[brief]);
+    }
+    if (SKIP_CACHE[brief]) return SKIP_CACHE[brief];
     var url = '../skipped/' + encodeURIComponent(brief) + '.json';
     SKIP_CACHE[brief] = fetch(url).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
     }).then(function (list) {
-      SKIP_CACHE[brief] = list;              // keep the data, not the promise
+      SKIP_CACHE[brief] = list;
       return list;
     });
     return SKIP_CACHE[brief];
   }
-  function renderSkipped(host, list, from, to) {
-    // Only the sentences inside THIS gap's id range, so one brief's payload serves every
-    // gap on the page.
+  function fill(host, list, from, to) {
     var picked = list.filter(function (s) {
       var v = skNum(s.sid);
-      return v > from && v < to;
+      return v >= from && v <= to;
     });
-    if (!picked.length) {
-      host.innerHTML = '<p class="gapmsg">No sentences to show here.</p>';
-      return;
-    }
-    host.innerHTML = picked.map(function (s) {
-      var who = (s.speaker || '').trim();
-      var meta = '<span class="sid">' + skEsc(s.sid) + '</span>'
-        + (who ? '<span class="who">' + skEsc(who) + '</span>'
-               : '<span class="who none"></span>');
-      return '<div class="sk"><div class="sk-meta">' + meta + '</div>'
-           + '<p class="sk-text">' + skEsc(s.text) + '</p></div>';
-    }).join('');
+    host.innerHTML = picked.length ? picked.map(rowHtml).join('')
+      : '<p class="gapmsg">No sentences to show here.</p>';
+  }
+
+  // Fill every inline run for a brief on first sight, so the page always ACCOUNTS for the
+  // whole record without the reader having to ask.
+  function fillInline(brief, root) {
+    var hosts = (root || document).querySelectorAll(
+      '.ski[data-brief="' + brief + '"], .dsec[data-brief="' + brief + '"] .ski');
+    if (!hosts.length) return;
+    loadSkipped(brief).then(function (list) {
+      hosts.forEach(function (h) {
+        if (h.dataset.done) return;
+        h.dataset.done = '1';
+        fill(h, list, +h.dataset.from, +h.dataset.to);
+      });
+    }).catch(function () {});
+  }
+
+  function initBrief(brief) {
+    var secs = document.querySelectorAll('.dsec[data-brief="' + brief + '"]');
+    if (!secs.length) return;
+    secs.forEach(function (sec) {
+      var gap = sec.querySelector('.gapd');
+      if (gap && !gap.dataset.wired) {
+        gap.dataset.wired = '1';
+      }
+    });
+    fillInline(brief);
   }
 
   document.addEventListener('click', function (e) {
@@ -1075,11 +1102,8 @@
     body.hidden = false;
     body.innerHTML = '<p class="gapmsg">Loading&hellip;</p>';
     loadSkipped(brief).then(function (list) {
-      renderSkipped(body, list, +btn.getAttribute('data-from'),
-                    +btn.getAttribute('data-to'));
+      fill(body, list, +btn.getAttribute('data-from'), +btn.getAttribute('data-to'));
     }).catch(function () {
-      // Say so rather than showing an empty box: a silent failure here reads as the
-      // record having nothing in the gap.
       body.innerHTML = '<p class="gapmsg">Could not load these sentences. '
         + 'The full record is at sprs.parl.gov.sg.</p>';
     });
@@ -1087,6 +1111,13 @@
 
   window.addEventListener('load', function () {
     syncStickyVar(); railRebuild(); offerResume();
+    // Fill every brief's inline runs, so the page accounts for the whole record without
+    // the reader having to ask. Deferred to load so the fetch never delays first paint.
+    var seen = {};
+    document.querySelectorAll('.dsec[data-brief]').forEach(function (sec) {
+      var b = sec.getAttribute('data-brief');
+      if (b && !seen[b]) { seen[b] = 1; initBrief(b); }
+    });
   });
 })();
 
