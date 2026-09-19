@@ -1391,6 +1391,7 @@ def coverage_text(cov):
 
 
 _SITTING_TIMES = None
+_SITTING_VIDEOS = None
 
 
 def sitting_times():
@@ -1404,6 +1405,24 @@ def sitting_times():
         except (OSError, ValueError):
             _SITTING_TIMES = {}
     return _SITTING_TIMES
+
+
+def sitting_videos():
+    """Official MDDI YouTube recordings, keyed by date.
+
+    A date is present with a null value when a search ran and found nothing -- that is a
+    real verdict, recorded so the search is not repeated. Where there is no video the page
+    OMITS the link rather than guessing: a wrong link to the primary record would be worse
+    than none, and the archive does not reach every year.
+    """
+    global _SITTING_VIDEOS
+    if _SITTING_VIDEOS is None:
+        p = os.path.join(ROOT, "pipeline", "sitting_videos.json")
+        try:
+            _SITTING_VIDEOS = json.load(open(p, encoding="utf-8"))
+        except (OSError, ValueError):
+            _SITTING_VIDEOS = {}
+    return _SITTING_VIDEOS
 
 
 def published_words(briefs):
@@ -2096,7 +2115,7 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     pw = published_words(briefs)
     if pw:
         mins = max(1, pw / 200.0)
-        if mins >= 60:
+        if mins >= 55:
             rough = round(mins / 30.0) / 2.0                   # nearest half hour
             tail = f"~{rough:g} hour{'s' if rough != 1 else ''}"
         else:
@@ -2105,6 +2124,18 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
         read_part = f"Parsnips <b>{tail}</b>"
     meta_html = (f'<p class="slogan">{dur_part}, {read_part}.</p>'
                  if read_part else f'<p class="slogan">{dur_part}.</p>')
+
+    # THE PRIMARY SOURCE, for a reader who wants to check the brief against what was actually
+    # said. Only rendered where a video was positively resolved to MDDI's own channel on this
+    # sitting's date; the archive does not reach every year, and a wrong link to the record of
+    # proceedings would be worse than no link. Opens in a new tab with rel=noopener.
+    vid = sitting_videos().get(d) or {}
+    if vid.get("video_id"):
+        meta_html += (
+            f'<p class="srcvid"><a href="https://www.youtube.com/watch?v='
+            f'{esc(vid["video_id"])}" target="_blank" rel="noopener noreferrer">'
+            f'Watch the full sitting &rarr;</a>'
+            f'<span class="hint">MDDI Singapore, the official recording</span></p>')
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -2532,6 +2563,14 @@ h1,h2,h3{line-height:1.2;margin:0}
   /* clear the rail's floating label, which is absolutely positioned over this column */
   padding-right:var(--rail-gutter,0px)}
 .slogan b{color:var(--ink);font-weight:700}
+/* The link to the official recording. Sits under the slogan, modest -- it is an escape
+   hatch for a reader who wants the primary source, not a call to action. */
+.srcvid{margin:12px 0 0;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;
+  font-size:14px;padding-right:var(--rail-gutter,0px)}
+.srcvid a{color:var(--accent);font-weight:600;text-decoration:none;
+  border-bottom:1px solid rgba(22,120,80,.3)}
+.srcvid a:hover{border-bottom-color:var(--accent)}
+.srcvid .hint{color:var(--meta,#6b7280);font-size:12.5px}
 .dek b{color:var(--ink)}
 .span-note{font:500 12.5px var(--mono);color:var(--faint);margin:14px 0 0}
 
