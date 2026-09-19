@@ -2889,7 +2889,17 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
 .section-rail-name{order:-1;font:600 9.5px/1.15 var(--mono);color:var(--dim);
     text-align:right;max-width:74px;white-space:nowrap;overflow:hidden;
     text-overflow:ellipsis;background:rgba(251,251,250,.82);border-radius:5px;
-    padding:2px 4px}
+    padding:2px 4px;
+    /* PHONE: only the ACTIVE tick shows its name. All of them at once made the rail 107px
+       wide over content with 14px of padding -- a 103px overlap. The reader still learns what
+       any tick is, by reading the active one.
+       Width is capped to the gutter the rail actually has, so the label cannot reach back over
+       the text; it ellipsizes instead. Measured: the gutter is 46px, so 40px of label plus its
+       padding fits with nothing overlapping. */
+    visibility:hidden;position:absolute;right:20px;max-width:96px;
+    padding:3px 7px;background:#fff;border:1px solid var(--line);
+    box-shadow:0 1px 4px rgba(20,24,29,.10);z-index:2}
+.section-rail-tick.is-active .section-rail-name{visibility:visible}
 .section-rail-num{order:-1;font:600 9px/1 var(--mono);color:var(--faint);
     min-width:11px;text-align:right}
 .section-rail-tick.level-2 .section-rail-name{color:var(--ink)}
@@ -2974,6 +2984,8 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
    summary column or the bottom progress bar. Level-1 ticks are small, level-3 largest. */
 @media (min-width:761px){
   .section-rail{right:10px;top:50%;transform:translateY(-50%);height:52vh}
+  /* Desktop: the margin is empty, so EVERY tick keeps its name, laid out inline. */
+  .section-rail-name{position:static;visibility:visible;max-width:190px;font-size:10.5px}
   .section-rail-tick.level-2{height:8px}
   .section-rail-tick.level-3{height:6px}
 }
@@ -3102,7 +3114,10 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
      every line still under it; 50px clears it with margin to spare. Horizontal
      room is the price of a fixed right-edge rail; the alternative is a rail that
      overlaps the text it exists to index. */
-  .wrap{padding-left:16px;padding-right:50px}
+  /* The rail gets its OWN column: 46px of gutter reserved, so it never overlaps content.
+     Without this the rail floated over the text and a reader could not tell where the page
+     ended and the navigator began. */
+  .wrap{padding-left:16px;padding-right:62px}
   .top .wrap{padding-left:14px;padding-right:14px}
 }
 """
