@@ -1,0 +1,152 @@
+{
+ "title": "Review of Drug Testing Standards in Singapore",
+ "what_it_is": "Review of Drug Testing Standards in Singapore",
+ "sections": [
+  {
+   "label": "HSA medicine quality standards",
+   "summary": "HSA sets stringent standards for medicines sold in Singapore, evaluating them against international standards of quality, safety and efficacy before approval.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The Health Sciences Authority (HSA) sets stringent standards on the quality and safety of medicines sold in Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Before being approved for sale, the medicines are evaluated to ensure that they meet the required international standards of quality, safety and efficacy.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Losartan medicines recalled for NMBA",
+   "summary": "On 28 March 2019, HSA recalled three losartan blood pressure medicine brands after testing found NMBA above the acceptable limit.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "On 28 March 2019, HSA recalled three brands of medicines which belong to the angiotensin receptor blocker (ARB) class of blood pressure medication and contain the ingredient losartan.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Following the recall of several losartan medicines in the US due to the presence of a nitrosamine impurity, N-nitroso-N-methyl-4-aminobutyric acid (NMBA), HSA tested the suspected losartan medicines and they were found to contain trace amounts of NMBA which are above the acceptable limit.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Advisory to continue medicines",
+   "summary": "Because short-term risk was low, affected patients were advised to continue taking their medicines until suitable alternatives were provided.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "As the short-term risk of taking the medicine was low, the advisory to affected patients was to continue taking their medicines until they are provided with suitable alternatives.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Patients switching to alternatives",
+   "summary": "As of 28 April, more than half of affected patients had switched to alternatives, and institutions offered earlier appointments to those scheduled on or after 1 July.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "As of 28 April, we have helped more than half of the affected patients switch to alternative medicines.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00026",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For all patients whose appointments are on or after 1 July, public healthcare institutions have already reached out to all of them to offer earlier appointments.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00027",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We are on schedule to complete the exercise by end June this year.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Losartan stock stabilisation date",
+   "summary": "Stock of losartan and other ARBs is expected to stabilise from 1 July onwards.",
+   "sentences": [
+    {
+     "sid": "s00031",
+     "speaker": "Ms Irene Quay Siew Ching (Nominated Member)",
+     "attributed": true,
+     "text": "Just a question: when are we expecting the stock to be stabilised so that patients will not be inconvenienced by the current stock restriction policy?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00032",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "We expect the stock of losartan as well as other ARBs to stabilise from 1 July onwards.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1988",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-05-08"
+  ],
+  "report_ids": [
+   "oral-answer-1988"
+  ],
+  "sentences_total": 35,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.2857,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:51:11"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1904,
+   "completion_tokens": 284,
+   "estimated": false,
+   "cost_usd": 0.000346
+  }
+ }
+}

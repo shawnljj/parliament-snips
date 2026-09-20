@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-09-20T18:04:29",
+ "generated": "2026-09-20T19:24:28",
  "sittings": {
   "2015-01-19": {
    "date": "2015-01-19",
@@ -1233,28 +1233,28 @@
    "sitting_no": "1",
    "report_version": "sprs3",
    "reports": 26,
-   "words": 25717,
-   "turns": 32,
+   "words": 25640,
+   "turns": 33,
    "collected": 26,
    "max_result": 26,
    "ratio": 1.0,
-   "speaker_attribution": 0.75,
+   "speaker_attribution": 0.939,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 23,
-     "words": 22399
+     "words": 22319
     },
     "tribute": {
      "n": 1,
-     "words": 2162
+     "words": 2165
     },
     "other": {
      "n": 2,
      "words": 1156
     }
    },
-   "source_hash": "d08b437fea025f51",
+   "source_hash": "ec615ec85e772d3f",
    "summarisation": {
     "summarisable": 23,
     "summarised": 0,
@@ -1294,17 +1294,17 @@
    "sitting_no": "2",
    "report_version": "sprs3",
    "reports": 8,
-   "words": 33888,
-   "turns": 32,
+   "words": 33901,
+   "turns": 31,
    "collected": 8,
    "max_result": 8,
    "ratio": 1.0,
-   "speaker_attribution": 0.875,
+   "speaker_attribution": 0.871,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 1,
-     "words": 33156
+     "words": 33169
     },
     "motion": {
      "n": 4,
@@ -1315,7 +1315,7 @@
      "words": 206
     }
    },
-   "source_hash": "b5d79b856cf71fb1",
+   "source_hash": "b6723034a4167f25",
    "summarisation": {
     "summarisable": 3,
     "summarised": 0,
@@ -1335,32 +1335,32 @@
    "sitting_no": "3",
    "report_version": "sprs3",
    "reports": 7,
-   "words": 35449,
-   "turns": 46,
+   "words": 35474,
+   "turns": 43,
    "collected": 7,
    "max_result": 7,
    "ratio": 1.0,
-   "speaker_attribution": 0.87,
+   "speaker_attribution": 0.86,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 1,
-     "words": 35145
+     "words": 35165
     },
     "bill": {
      "n": 3,
      "words": 176
     },
+    "other": {
+     "n": 1,
+     "words": 56
+    },
     "motion": {
      "n": 2,
      "words": 77
-    },
-    "other": {
-     "n": 1,
-     "words": 51
     }
    },
-   "source_hash": "d6fca31f54a6d47c",
+   "source_hash": "d38d6f26120dac8c",
    "summarisation": {
     "summarisable": 1,
     "summarised": 0,
@@ -1378,8 +1378,8 @@
    "sitting_no": "4",
    "report_version": "sprs3",
    "reports": 18,
-   "words": 40325,
-   "turns": 92,
+   "words": 40332,
+   "turns": 91,
    "collected": 18,
    "max_result": 18,
    "ratio": 1.0,
@@ -1388,7 +1388,7 @@
    "groups": {
     "budget": {
      "n": 2,
-     "words": 31323
+     "words": 31330
     },
     "oral": {
      "n": 8,
@@ -1407,7 +1407,7 @@
      "words": 39
     }
    },
-   "source_hash": "18d687d0862b1098",
+   "source_hash": "8ae3a10b76f994f4",
    "summarisation": {
     "summarisable": 9,
     "summarised": 0,
@@ -1432,22 +1432,22 @@
    "volume_no": "94",
    "sitting_no": "5",
    "report_version": "sprs3",
-   "reports": 34,
-   "words": 48699,
-   "turns": 135,
-   "collected": 34,
+   "reports": 32,
+   "words": 48679,
+   "turns": 132,
+   "collected": 32,
    "max_result": 32,
-   "ratio": 1.062,
-   "speaker_attribution": 0.933,
-   "enumeration": "linear+sections",
+   "ratio": 1.0,
+   "speaker_attribution": 0.97,
+   "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 2,
-     "words": 32963
+     "words": 32972
     },
     "oral": {
      "n": 18,
-     "words": 13062
+     "words": 13033
     },
     "written": {
      "n": 8,
@@ -1460,13 +1460,9 @@
     "motion": {
      "n": 3,
      "words": 96
-    },
-    "other": {
-     "n": 2,
-     "words": 0
     }
    },
-   "source_hash": "6967c625eff57486",
+   "source_hash": "a2e2f320b2b0e29e",
    "summarisation": {
     "summarisable": 20,
     "summarised": 0,
@@ -1503,17 +1499,17 @@
    "sitting_no": "6",
    "report_version": "sprs3",
    "reports": 30,
-   "words": 43743,
-   "turns": 165,
+   "words": 43731,
+   "turns": 164,
    "collected": 30,
    "max_result": 30,
    "ratio": 1.0,
-   "speaker_attribution": 0.958,
+   "speaker_attribution": 0.976,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 1,
-     "words": 18455
+     "words": 18463
     },
     "motion": {
      "n": 4,
@@ -1521,7 +1517,7 @@
     },
     "oral": {
      "n": 13,
-     "words": 10614
+     "words": 10594
     },
     "written": {
      "n": 11,
@@ -1532,7 +1528,7 @@
      "words": 48
     }
    },
-   "source_hash": "16e38fc9ec13975e",
+   "source_hash": "7b5878575144173c",
    "summarisation": {
     "summarisable": 16,
     "summarised": 0,
@@ -1565,8 +1561,8 @@
    "sitting_no": "7",
    "report_version": "sprs3",
    "reports": 87,
-   "words": 73518,
-   "turns": 342,
+   "words": 73532,
+   "turns": 340,
    "collected": 87,
    "max_result": 85,
    "ratio": 1.024,
@@ -1575,7 +1571,7 @@
    "groups": {
     "bill": {
      "n": 9,
-     "words": 42567
+     "words": 42581
     },
     "adjournment": {
      "n": 1,
@@ -1598,7 +1594,7 @@
      "words": 127
     }
    },
-   "source_hash": "4f56f1a554ade8c4",
+   "source_hash": "10fda77a3c31ce34",
    "summarisation": {
     "summarisable": 19,
     "summarised": 0,
@@ -1634,17 +1630,17 @@
    "sitting_no": "8",
    "report_version": "sprs3",
    "reports": 39,
-   "words": 44031,
-   "turns": 222,
+   "words": 44042,
+   "turns": 219,
    "collected": 39,
    "max_result": 39,
    "ratio": 1.0,
-   "speaker_attribution": 0.977,
+   "speaker_attribution": 0.982,
    "enumeration": "linear",
    "groups": {
     "bill": {
      "n": 2,
-     "words": 11130
+     "words": 11141
     },
     "statement": {
      "n": 2,
@@ -1667,7 +1663,7 @@
      "words": 119
     }
    },
-   "source_hash": "e345dbaea019f694",
+   "source_hash": "69d2bdbf2bea3de4",
    "summarisation": {
     "summarisable": 20,
     "summarised": 0,
@@ -1704,8 +1700,8 @@
    "sitting_no": "9",
    "report_version": "sprs3",
    "reports": 61,
-   "words": 54909,
-   "turns": 210,
+   "words": 54911,
+   "turns": 208,
    "collected": 61,
    "max_result": 59,
    "ratio": 1.034,
@@ -1714,7 +1710,7 @@
    "groups": {
     "bill": {
      "n": 3,
-     "words": 30553
+     "words": 30570
     },
     "adjournment": {
      "n": 1,
@@ -1722,7 +1718,7 @@
     },
     "oral": {
      "n": 21,
-     "words": 12748
+     "words": 12733
     },
     "written": {
      "n": 32,
@@ -1737,7 +1733,7 @@
      "words": 25
     }
    },
-   "source_hash": "6c906d387d53a74c",
+   "source_hash": "598a784fcbe0323a",
    "summarisation": {
     "summarisable": 25,
     "summarised": 0,
@@ -1778,14 +1774,14 @@
    "volume_no": "94",
    "sitting_no": "10",
    "report_version": "sprs3",
-   "reports": 42,
-   "words": 29898,
-   "turns": 141,
-   "collected": 42,
+   "reports": 40,
+   "words": 29903,
+   "turns": 139,
+   "collected": 40,
    "max_result": 40,
-   "ratio": 1.05,
-   "speaker_attribution": 0.979,
-   "enumeration": "linear+sections",
+   "ratio": 1.0,
+   "speaker_attribution": 0.986,
+   "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 1,
@@ -1793,14 +1789,14 @@
     },
     "oral": {
      "n": 16,
-     "words": 11321
+     "words": 11326
     },
     "written": {
      "n": 19,
      "words": 4672
     },
     "other": {
-     "n": 5,
+     "n": 3,
      "words": 275
     },
     "motion": {
@@ -1808,7 +1804,7 @@
      "words": 26
     }
    },
-   "source_hash": "b35c59718adf4868",
+   "source_hash": "d6cfde4a5596fde6",
    "summarisation": {
     "summarisable": 17,
     "summarised": 0,
@@ -1841,22 +1837,22 @@
    "volume_no": "94",
    "sitting_no": "11",
    "report_version": "sprs3",
-   "reports": 30,
-   "words": 56910,
-   "turns": 126,
-   "collected": 30,
+   "reports": 28,
+   "words": 56918,
+   "turns": 124,
+   "collected": 28,
    "max_result": 28,
-   "ratio": 1.071,
-   "speaker_attribution": 0.929,
-   "enumeration": "linear+sections",
+   "ratio": 1.0,
+   "speaker_attribution": 0.944,
+   "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 2,
-     "words": 49516
+     "words": 49536
     },
     "oral": {
      "n": 6,
-     "words": 4438
+     "words": 4426
     },
     "written": {
      "n": 13,
@@ -1871,11 +1867,11 @@
      "words": 71
     },
     "other": {
-     "n": 4,
+     "n": 2,
      "words": 41
     }
    },
-   "source_hash": "4dd13141671c0224",
+   "source_hash": "c0578e170476a790",
    "summarisation": {
     "summarisable": 8,
     "summarised": 0,
@@ -1900,17 +1896,17 @@
    "sitting_no": "12",
    "report_version": "sprs3",
    "reports": 16,
-   "words": 56650,
-   "turns": 90,
+   "words": 56678,
+   "turns": 88,
    "collected": 16,
    "max_result": 16,
    "ratio": 1.0,
-   "speaker_attribution": 0.978,
+   "speaker_attribution": 0.977,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 1,
-     "words": 50930
+     "words": 50958
     },
     "oral": {
      "n": 8,
@@ -1929,7 +1925,7 @@
      "words": 66
     }
    },
-   "source_hash": "3f3a4c388bc33c27",
+   "source_hash": "da7d3083059d53fa",
    "summarisation": {
     "summarisable": 9,
     "summarised": 0,
@@ -1955,17 +1951,17 @@
    "sitting_no": "13",
    "report_version": "sprs3",
    "reports": 13,
-   "words": 58758,
-   "turns": 172,
+   "words": 58773,
+   "turns": 171,
    "collected": 13,
    "max_result": 13,
    "ratio": 1.0,
-   "speaker_attribution": 0.971,
+   "speaker_attribution": 0.977,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 7,
-     "words": 57121
+     "words": 57136
     },
     "oral": {
      "n": 4,
@@ -1980,7 +1976,7 @@
      "words": 27
     }
    },
-   "source_hash": "5a7b81efcec7717b",
+   "source_hash": "e194c131d0b3f0a7",
    "summarisation": {
     "summarisable": 9,
     "summarised": 0,
@@ -2006,24 +2002,24 @@
    "sitting_no": "14",
    "report_version": "sprs3",
    "reports": 7,
-   "words": 60405,
-   "turns": 150,
+   "words": 60427,
+   "turns": 146,
    "collected": 7,
    "max_result": 7,
    "ratio": 1.0,
-   "speaker_attribution": 0.967,
+   "speaker_attribution": 0.966,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 6,
-     "words": 60384
+     "words": 60406
     },
     "motion": {
      "n": 1,
      "words": 21
     }
    },
-   "source_hash": "7e0987df8b383d98",
+   "source_hash": "ed2a0be1997c5bf7",
    "summarisation": {
     "summarisable": 4,
     "summarised": 0,
@@ -2044,17 +2040,17 @@
    "sitting_no": "15",
    "report_version": "sprs3",
    "reports": 8,
-   "words": 67778,
-   "turns": 175,
+   "words": 67815,
+   "turns": 169,
    "collected": 8,
    "max_result": 8,
    "ratio": 1.0,
-   "speaker_attribution": 0.977,
+   "speaker_attribution": 0.982,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 5,
-     "words": 67612
+     "words": 67649
     },
     "written": {
      "n": 1,
@@ -2065,7 +2061,7 @@
      "words": 52
     }
    },
-   "source_hash": "5bab31fabca41b2e",
+   "source_hash": "a69f4ce90a8329c6",
    "summarisation": {
     "summarisable": 3,
     "summarised": 0,
@@ -2085,8 +2081,8 @@
    "sitting_no": "16",
    "report_version": "sprs3",
    "reports": 8,
-   "words": 70223,
-   "turns": 205,
+   "words": 70237,
+   "turns": 203,
    "collected": 8,
    "max_result": 8,
    "ratio": 1.0,
@@ -2095,7 +2091,7 @@
    "groups": {
     "budget": {
      "n": 6,
-     "words": 70014
+     "words": 70028
     },
     "written": {
      "n": 1,
@@ -2106,7 +2102,7 @@
      "words": 17
     }
    },
-   "source_hash": "7f1f49f9bad35cc8",
+   "source_hash": "e7d69a2d3556b1f6",
    "summarisation": {
     "summarisable": 4,
     "summarised": 0,
@@ -2127,8 +2123,8 @@
    "sitting_no": "17",
    "report_version": "sprs3",
    "reports": 7,
-   "words": 67529,
-   "turns": 185,
+   "words": 67554,
+   "turns": 181,
    "collected": 7,
    "max_result": 7,
    "ratio": 1.0,
@@ -2137,14 +2133,14 @@
    "groups": {
     "budget": {
      "n": 6,
-     "words": 67508
+     "words": 67533
     },
     "motion": {
      "n": 1,
      "words": 21
     }
    },
-   "source_hash": "d803b4634b8c805a",
+   "source_hash": "00e446ff352c98d3",
    "summarisation": {
     "summarisable": 4,
     "summarised": 0,
@@ -2165,17 +2161,17 @@
    "sitting_no": "18",
    "report_version": "sprs3",
    "reports": 10,
-   "words": 68577,
-   "turns": 221,
+   "words": 68610,
+   "turns": 216,
    "collected": 10,
    "max_result": 10,
    "ratio": 1.0,
-   "speaker_attribution": 0.968,
+   "speaker_attribution": 0.972,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 7,
-     "words": 68485
+     "words": 68518
     },
     "other": {
      "n": 1,
@@ -2186,7 +2182,7 @@
      "words": 53
     }
    },
-   "source_hash": "aef0e7c82d9e1f50",
+   "source_hash": "89053ca52f8d231a",
    "summarisation": {
     "summarisable": 5,
     "summarised": 0,
@@ -2208,17 +2204,17 @@
    "sitting_no": "19",
    "report_version": "sprs3",
    "reports": 13,
-   "words": 34457,
-   "turns": 86,
+   "words": 34461,
+   "turns": 85,
    "collected": 13,
    "max_result": 13,
    "ratio": 1.0,
-   "speaker_attribution": 0.884,
+   "speaker_attribution": 0.882,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 5,
-     "words": 28603
+     "words": 28607
     },
     "bill": {
      "n": 6,
@@ -2233,7 +2229,7 @@
      "words": 0
     }
    },
-   "source_hash": "c79f1ba22527ce8c",
+   "source_hash": "67554e9e9c885cc7",
    "summarisation": {
     "summarisable": 6,
     "summarised": 0,
@@ -2256,12 +2252,12 @@
    "sitting_no": "20",
    "report_version": "sprs3",
    "reports": 56,
-   "words": 34326,
+   "words": 34314,
    "turns": 228,
    "collected": 56,
    "max_result": 56,
    "ratio": 1.0,
-   "speaker_attribution": 0.969,
+   "speaker_attribution": 0.978,
    "enumeration": "linear",
    "groups": {
     "bill": {
@@ -2270,7 +2266,7 @@
     },
     "oral": {
      "n": 23,
-     "words": 12210
+     "words": 12198
     },
     "written": {
      "n": 27,
@@ -2285,7 +2281,7 @@
      "words": 27
     }
    },
-   "source_hash": "0632a39bbd015ca0",
+   "source_hash": "ec6ba52f894c57b8",
    "summarisation": {
     "summarisable": 26,
     "summarised": 0,
@@ -2327,18 +2323,18 @@
    "volume_no": "94",
    "sitting_no": "21",
    "report_version": "sprs3",
-   "reports": 117,
-   "words": 54653,
-   "turns": 333,
-   "collected": 117,
+   "reports": 106,
+   "words": 51002,
+   "turns": 308,
+   "collected": 106,
    "max_result": 115,
-   "ratio": 1.017,
-   "speaker_attribution": 0.973,
+   "ratio": 0.922,
+   "speaker_attribution": 0.974,
    "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 7,
-     "words": 6847
+     "words": 6852
     },
     "oral": {
      "n": 17,
@@ -2349,8 +2345,8 @@
      "words": 4084
     },
     "written": {
-     "n": 86,
-     "words": 21605
+     "n": 75,
+     "words": 17949
     },
     "motion": {
      "n": 3,
@@ -2361,7 +2357,7 @@
      "words": 0
     }
    },
-   "source_hash": "264f1754ae929313",
+   "source_hash": "af26ed16b6342cf8",
    "summarisation": {
     "summarisable": 19,
     "summarised": 0,
@@ -2396,30 +2392,30 @@
    "volume_no": "94",
    "sitting_no": "22",
    "report_version": "sprs3",
-   "reports": 113,
-   "words": 96580,
-   "turns": 403,
-   "collected": 113,
+   "reports": 110,
+   "words": 97567,
+   "turns": 402,
+   "collected": 110,
    "max_result": 112,
-   "ratio": 1.009,
+   "ratio": 0.982,
    "speaker_attribution": 0.983,
    "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 3,
-     "words": 56196
+     "words": 56193
     },
     "motion": {
      "n": 7,
-     "words": 3950
+     "words": 3960
     },
     "oral": {
      "n": 8,
-     "words": 11794
+     "words": 11788
     },
     "written": {
-     "n": 91,
-     "words": 24174
+     "n": 88,
+     "words": 25160
     },
     "petition": {
      "n": 1,
@@ -2430,7 +2426,7 @@
      "words": 74
     }
    },
-   "source_hash": "407edb06f1f2175d",
+   "source_hash": "1b65a94510154c61",
    "summarisation": {
     "summarisable": 14,
     "summarised": 0,
@@ -2461,17 +2457,17 @@
    "sitting_no": "23",
    "report_version": "sprs3",
    "reports": 61,
-   "words": 90111,
-   "turns": 310,
+   "words": 90136,
+   "turns": 305,
    "collected": 61,
    "max_result": 59,
    "ratio": 1.034,
-   "speaker_attribution": 0.965,
+   "speaker_attribution": 0.974,
    "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 6,
-     "words": 64999
+     "words": 65024
     },
     "oral": {
      "n": 9,
@@ -2490,7 +2486,7 @@
      "words": 0
     }
    },
-   "source_hash": "c961e6cbaec71e20",
+   "source_hash": "ef3209dea8131b3f",
    "summarisation": {
     "summarisable": 14,
     "summarised": 0,
@@ -2521,25 +2517,25 @@
    "sitting_no": "24",
    "report_version": "sprs3",
    "reports": 99,
-   "words": 76369,
-   "turns": 393,
+   "words": 76399,
+   "turns": 389,
    "collected": 99,
    "max_result": 97,
    "ratio": 1.021,
-   "speaker_attribution": 0.98,
+   "speaker_attribution": 0.982,
    "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 3,
-     "words": 22038
+     "words": 22057
     },
     "statement": {
      "n": 1,
-     "words": 9784
+     "words": 9786
     },
     "tribute": {
      "n": 1,
-     "words": 8069
+     "words": 8078
     },
     "adjournment": {
      "n": 1,
@@ -2562,7 +2558,7 @@
      "words": 0
     }
    },
-   "source_hash": "ad83d7483f8b3de7",
+   "source_hash": "588d202119a84be8",
    "summarisation": {
     "summarisable": 22,
     "summarised": 0,
@@ -2600,30 +2596,30 @@
    "volume_no": "94",
    "sitting_no": "25",
    "report_version": "sprs3",
-   "reports": 98,
-   "words": 54860,
-   "turns": 284,
-   "collected": 98,
+   "reports": 95,
+   "words": 54186,
+   "turns": 274,
+   "collected": 95,
    "max_result": 98,
-   "ratio": 1.0,
-   "speaker_attribution": 0.951,
+   "ratio": 0.969,
+   "speaker_attribution": 0.96,
    "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 9,
-     "words": 9483
+     "words": 9489
     },
     "oral": {
      "n": 7,
-     "words": 21757
+     "words": 21758
     },
     "adjournment": {
      "n": 1,
      "words": 4363
     },
     "written": {
-     "n": 76,
-     "words": 19115
+     "n": 73,
+     "words": 18434
     },
     "motion": {
      "n": 2,
@@ -2634,7 +2630,7 @@
      "words": 0
     }
    },
-   "source_hash": "84f85afdb142d4a6",
+   "source_hash": "f1e9f179b7db6bba",
    "summarisation": {
     "summarisable": 9,
     "summarised": 0,
@@ -2659,18 +2655,18 @@
    "volume_no": "94",
    "sitting_no": "26",
    "report_version": "sprs3",
-   "reports": 100,
-   "words": 65493,
-   "turns": 342,
-   "collected": 100,
+   "reports": 91,
+   "words": 62192,
+   "turns": 323,
+   "collected": 91,
    "max_result": 98,
-   "ratio": 1.02,
-   "speaker_attribution": 0.977,
+   "ratio": 0.929,
+   "speaker_attribution": 0.975,
    "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 7,
-     "words": 19387
+     "words": 19399
     },
     "motion": {
      "n": 8,
@@ -2685,15 +2681,15 @@
      "words": 12753
     },
     "written": {
-     "n": 65,
-     "words": 18943
+     "n": 56,
+     "words": 15630
     },
     "other": {
      "n": 4,
      "words": 235
     }
    },
-   "source_hash": "89ebb8b040349166",
+   "source_hash": "af16d3007004922e",
    "summarisation": {
     "summarisable": 21,
     "summarised": 0,
@@ -2731,17 +2727,17 @@
    "sitting_no": "27",
    "report_version": "sprs3",
    "reports": 39,
-   "words": 72717,
-   "turns": 378,
+   "words": 72738,
+   "turns": 375,
    "collected": 39,
    "max_result": 39,
    "ratio": 1.0,
-   "speaker_attribution": 0.984,
+   "speaker_attribution": 0.987,
    "enumeration": "linear",
    "groups": {
     "bill": {
      "n": 3,
-     "words": 53786
+     "words": 53807
     },
     "oral": {
      "n": 13,
@@ -2760,7 +2756,7 @@
      "words": 78
     }
    },
-   "source_hash": "d8bf6499b742a6a7",
+   "source_hash": "44ff4b255a47135c",
    "summarisation": {
     "summarisable": 16,
     "summarised": 0,
@@ -4449,22 +4445,22 @@
    "volume_no": "94",
    "sitting_no": "55",
    "report_version": "sprs3",
-   "reports": 74,
-   "words": 78909,
-   "turns": 331,
-   "collected": 74,
+   "reports": 83,
+   "words": 81488,
+   "turns": 350,
+   "collected": 83,
    "max_result": 81,
-   "ratio": 0.914,
-   "speaker_attribution": 0.973,
+   "ratio": 1.025,
+   "speaker_attribution": 0.977,
    "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 8,
-     "words": 49043
+     "words": 49064
     },
     "oral": {
      "n": 6,
-     "words": 12827
+     "words": 12812
     },
     "adjournment": {
      "n": 1,
@@ -4475,11 +4471,11 @@
      "words": 1024
     },
     "written": {
-     "n": 55,
-     "words": 13389
+     "n": 64,
+     "words": 15962
     }
    },
-   "source_hash": "bdddaaa23ba22a0a",
+   "source_hash": "5e9ca32c88e98a48",
    "summarisation": {
     "summarisable": 11,
     "summarised": 0,
@@ -4507,8 +4503,8 @@
    "sitting_no": "56",
    "report_version": "sprs3",
    "reports": 40,
-   "words": 48371,
-   "turns": 176,
+   "words": 48379,
+   "turns": 175,
    "collected": 40,
    "max_result": 38,
    "ratio": 1.053,
@@ -4517,7 +4513,7 @@
    "groups": {
     "bill": {
      "n": 5,
-     "words": 32820
+     "words": 32828
     },
     "oral": {
      "n": 14,
@@ -4536,7 +4532,7 @@
      "words": 0
     }
    },
-   "source_hash": "20834e44f92559ad",
+   "source_hash": "cda70064ec1670d5",
    "summarisation": {
     "summarisable": 18,
     "summarised": 0,
@@ -4571,8 +4567,8 @@
    "sitting_no": "57",
    "report_version": "sprs3",
    "reports": 25,
-   "words": 37738,
-   "turns": 177,
+   "words": 37750,
+   "turns": 176,
    "collected": 25,
    "max_result": 25,
    "ratio": 1.0,
@@ -4581,7 +4577,7 @@
    "groups": {
     "motion": {
      "n": 3,
-     "words": 20374
+     "words": 20386
     },
     "oral": {
      "n": 21,
@@ -4592,7 +4588,7 @@
      "words": 60
     }
    },
-   "source_hash": "d62a7a9e2b5ed47d",
+   "source_hash": "4cd616ee83175d51",
    "summarisation": {
     "summarisable": 21,
     "summarised": 0,
@@ -4629,18 +4625,18 @@
    "volume_no": "94",
    "sitting_no": "58",
    "report_version": "sprs3",
-   "reports": 98,
-   "words": 82794,
-   "turns": 382,
-   "collected": 98,
+   "reports": 93,
+   "words": 82055,
+   "turns": 377,
+   "collected": 93,
    "max_result": 96,
-   "ratio": 1.021,
-   "speaker_attribution": 0.982,
+   "ratio": 0.969,
+   "speaker_attribution": 0.984,
    "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 4,
-     "words": 45756
+     "words": 45769
     },
     "adjournment": {
      "n": 1,
@@ -4648,15 +4644,15 @@
     },
     "statement": {
      "n": 1,
-     "words": 3188
+     "words": 3184
     },
     "oral": {
      "n": 15,
-     "words": 12103
+     "words": 12082
     },
     "written": {
-     "n": 74,
-     "words": 18286
+     "n": 69,
+     "words": 17559
     },
     "motion": {
      "n": 1,
@@ -4667,7 +4663,7 @@
      "words": 0
     }
    },
-   "source_hash": "86a52c47600645c6",
+   "source_hash": "82d513c66d348ed3",
    "summarisation": {
     "summarisable": 21,
     "summarised": 0,
@@ -4705,7 +4701,7 @@
    "sitting_no": "59",
    "report_version": "sprs3",
    "reports": 48,
-   "words": 88539,
+   "words": 88545,
    "turns": 345,
    "collected": 48,
    "max_result": 46,
@@ -4715,11 +4711,11 @@
    "groups": {
     "bill": {
      "n": 3,
-     "words": 36965
+     "words": 36966
     },
     "motion": {
      "n": 5,
-     "words": 34196
+     "words": 34201
     },
     "oral": {
      "n": 18,
@@ -4734,7 +4730,7 @@
      "words": 0
     }
    },
-   "source_hash": "2fe23d8fc6716414",
+   "source_hash": "954e7120a6bf36b2",
    "summarisation": {
     "summarisable": 23,
     "summarised": 0,
@@ -4774,7 +4770,7 @@
    "sitting_no": "60",
    "report_version": "sprs3",
    "reports": 32,
-   "words": 27396,
+   "words": 27397,
    "turns": 152,
    "collected": 32,
    "max_result": 32,
@@ -4784,7 +4780,7 @@
    "groups": {
     "budget": {
      "n": 1,
-     "words": 13461
+     "words": 13462
     },
     "oral": {
      "n": 21,
@@ -4807,7 +4803,7 @@
      "words": 0
     }
    },
-   "source_hash": "45f575299bbf9d0e",
+   "source_hash": "4396c872cb760b1e",
    "summarisation": {
     "summarisable": 21,
     "summarised": 0,
@@ -4844,18 +4840,18 @@
    "volume_no": "94",
    "sitting_no": "61",
    "report_version": "sprs3",
-   "reports": 30,
-   "words": 59561,
-   "turns": 110,
-   "collected": 30,
+   "reports": 28,
+   "words": 59582,
+   "turns": 109,
+   "collected": 28,
    "max_result": 28,
-   "ratio": 1.071,
+   "ratio": 1.0,
    "speaker_attribution": 0.936,
-   "enumeration": "linear+sections",
+   "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 1,
-     "words": 52405
+     "words": 52426
     },
     "oral": {
      "n": 10,
@@ -4872,13 +4868,9 @@
     "motion": {
      "n": 2,
      "words": 68
-    },
-    "other": {
-     "n": 2,
-     "words": 0
     }
    },
-   "source_hash": "70828f60e70b2590",
+   "source_hash": "39d0683405c2a0cd",
    "summarisation": {
     "summarisable": 10,
     "summarised": 0,
@@ -4905,8 +4897,8 @@
    "sitting_no": "62",
    "report_version": "sprs3",
    "reports": 14,
-   "words": 53848,
-   "turns": 146,
+   "words": 53861,
+   "turns": 145,
    "collected": 14,
    "max_result": 14,
    "ratio": 1.0,
@@ -4915,7 +4907,7 @@
    "groups": {
     "budget": {
      "n": 2,
-     "words": 50748
+     "words": 50756
     },
     "oral": {
      "n": 4,
@@ -4923,7 +4915,7 @@
     },
     "other": {
      "n": 2,
-     "words": 711
+     "words": 716
     },
     "written": {
      "n": 1,
@@ -4938,7 +4930,7 @@
      "words": 73
     }
    },
-   "source_hash": "4d6c8265f6c2491f",
+   "source_hash": "4eebb8df98ed7a45",
    "summarisation": {
     "summarisable": 6,
     "summarised": 0,
@@ -4961,17 +4953,17 @@
    "sitting_no": "63",
    "report_version": "sprs3",
    "reports": 13,
-   "words": 78227,
-   "turns": 240,
+   "words": 78238,
+   "turns": 239,
    "collected": 13,
    "max_result": 13,
    "ratio": 1.0,
-   "speaker_attribution": 0.975,
+   "speaker_attribution": 0.983,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 5,
-     "words": 75763
+     "words": 75774
     },
     "oral": {
      "n": 6,
@@ -4986,7 +4978,7 @@
      "words": 21
     }
    },
-   "source_hash": "8887f958f73f4738",
+   "source_hash": "b27715a2662ad2df",
    "summarisation": {
     "summarisable": 10,
     "summarised": 0,
@@ -5013,17 +5005,17 @@
    "sitting_no": "64",
    "report_version": "sprs3",
    "reports": 13,
-   "words": 78916,
-   "turns": 217,
+   "words": 78960,
+   "turns": 211,
    "collected": 13,
    "max_result": 13,
    "ratio": 1.0,
-   "speaker_attribution": 0.968,
+   "speaker_attribution": 0.972,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 8,
-     "words": 77957
+     "words": 78001
     },
     "oral": {
      "n": 1,
@@ -5038,7 +5030,7 @@
      "words": 54
     }
    },
-   "source_hash": "1050bfd52735b0a1",
+   "source_hash": "282f4e873aaa8ba8",
    "summarisation": {
     "summarisable": 7,
     "summarised": 0,
@@ -5062,8 +5054,8 @@
    "sitting_no": "65",
    "report_version": "sprs3",
    "reports": 9,
-   "words": 77026,
-   "turns": 220,
+   "words": 77051,
+   "turns": 217,
    "collected": 9,
    "max_result": 9,
    "ratio": 1.0,
@@ -5072,7 +5064,7 @@
    "groups": {
     "budget": {
      "n": 5,
-     "words": 76684
+     "words": 76709
     },
     "written": {
      "n": 1,
@@ -5091,7 +5083,7 @@
      "words": 0
     }
    },
-   "source_hash": "b16ca9d32415bc9a",
+   "source_hash": "eee982a9173aad21",
    "summarisation": {
     "summarisable": 3,
     "summarised": 0,
@@ -5111,8 +5103,8 @@
    "sitting_no": "66",
    "report_version": "sprs3",
    "reports": 10,
-   "words": 84161,
-   "turns": 231,
+   "words": 84185,
+   "turns": 228,
    "collected": 10,
    "max_result": 10,
    "ratio": 1.0,
@@ -5121,14 +5113,14 @@
    "groups": {
     "budget": {
      "n": 7,
-     "words": 83139
+     "words": 83163
     },
     "motion": {
      "n": 3,
      "words": 1022
     }
    },
-   "source_hash": "322d708cf58b7b78",
+   "source_hash": "b503bcc43bdba155",
    "summarisation": {
     "summarisable": 7,
     "summarised": 0,
@@ -5152,8 +5144,8 @@
    "sitting_no": "67",
    "report_version": "sprs3",
    "reports": 6,
-   "words": 75119,
-   "turns": 227,
+   "words": 75145,
+   "turns": 225,
    "collected": 6,
    "max_result": 6,
    "ratio": 1.0,
@@ -5162,14 +5154,14 @@
    "groups": {
     "budget": {
      "n": 5,
-     "words": 75099
+     "words": 75125
     },
     "motion": {
      "n": 1,
      "words": 20
     }
    },
-   "source_hash": "3453fb677a9a0e71",
+   "source_hash": "2564d5a9c2d2d3d4",
    "summarisation": {
     "summarisable": 3,
     "summarised": 0,
@@ -5189,8 +5181,8 @@
    "sitting_no": "68",
    "report_version": "sprs3",
    "reports": 8,
-   "words": 42687,
-   "turns": 169,
+   "words": 42692,
+   "turns": 170,
    "collected": 8,
    "max_result": 8,
    "ratio": 1.0,
@@ -5199,7 +5191,7 @@
    "groups": {
     "budget": {
      "n": 4,
-     "words": 39064
+     "words": 39069
     },
     "motion": {
      "n": 2,
@@ -5210,7 +5202,7 @@
      "words": 425
     }
    },
-   "source_hash": "7d32e7fe9698183c",
+   "source_hash": "b40537f83e515126",
    "summarisation": {
     "summarisable": 6,
     "summarised": 0,
@@ -5232,18 +5224,18 @@
    "volume_no": "94",
    "sitting_no": "69",
    "report_version": "sprs3",
-   "reports": 44,
-   "words": 63797,
+   "reports": 43,
+   "words": 63795,
    "turns": 173,
-   "collected": 44,
+   "collected": 43,
    "max_result": 42,
-   "ratio": 1.048,
+   "ratio": 1.024,
    "speaker_attribution": 0.942,
    "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 9,
-     "words": 52090
+     "words": 52088
     },
     "oral": {
      "n": 18,
@@ -5258,11 +5250,11 @@
      "words": 169
     },
     "other": {
-     "n": 3,
+     "n": 2,
      "words": 0
     }
    },
-   "source_hash": "e8c2e8e3fdee559c",
+   "source_hash": "b715aa7c1caba51b",
    "summarisation": {
     "summarisable": 24,
     "summarised": 0,
@@ -5303,17 +5295,17 @@
    "sitting_no": "70",
    "report_version": "sprs3",
    "reports": 16,
-   "words": 34945,
-   "turns": 121,
+   "words": 34962,
+   "turns": 119,
    "collected": 16,
    "max_result": 16,
    "ratio": 1.0,
-   "speaker_attribution": 0.959,
+   "speaker_attribution": 0.958,
    "enumeration": "linear",
    "groups": {
     "bill": {
      "n": 4,
-     "words": 29730
+     "words": 29747
     },
     "oral": {
      "n": 7,
@@ -5332,7 +5324,7 @@
      "words": 25
     }
    },
-   "source_hash": "63e95999b1c38898",
+   "source_hash": "c91e5a8a62445e60",
    "summarisation": {
     "summarisable": 10,
     "summarised": 0,
@@ -5359,17 +5351,17 @@
    "sitting_no": "71",
    "report_version": "sprs3",
    "reports": 8,
-   "words": 50843,
-   "turns": 132,
+   "words": 50858,
+   "turns": 130,
    "collected": 8,
    "max_result": 8,
    "ratio": 1.0,
-   "speaker_attribution": 0.97,
+   "speaker_attribution": 0.969,
    "enumeration": "linear",
    "groups": {
     "bill": {
      "n": 3,
-     "words": 46433
+     "words": 46448
     },
     "oral": {
      "n": 2,
@@ -5384,7 +5376,7 @@
      "words": 158
     }
    },
-   "source_hash": "40d74274ad3396bc",
+   "source_hash": "e2c31f9470a1f97c",
    "summarisation": {
     "summarisable": 5,
     "summarised": 0,
@@ -5405,27 +5397,27 @@
    "volume_no": "94",
    "sitting_no": "72",
    "report_version": "sprs3",
-   "reports": 23,
-   "words": 22932,
-   "turns": 23,
-   "collected": 23,
+   "reports": 24,
+   "words": 22115,
+   "turns": 22,
+   "collected": 24,
    "max_result": 23,
-   "ratio": 1.0,
-   "speaker_attribution": 0.957,
-   "enumeration": "linear",
+   "ratio": 1.043,
+   "speaker_attribution": 0.955,
+   "enumeration": "linear+sections",
    "groups": {
     "budget": {
-     "n": 22,
-     "words": 22932
+     "n": 21,
+     "words": 22115
     },
     "other": {
-     "n": 1,
+     "n": 3,
      "words": 0
     }
    },
-   "source_hash": "b4ed87a037ddf865",
+   "source_hash": "d038598433e52e4a",
    "summarisation": {
-    "summarisable": 22,
+    "summarisable": 21,
     "summarised": 0,
     "complete": false
    },
@@ -5434,7 +5426,6 @@
     "president-address-11",
     "president-address-12",
     "president-address-13",
-    "president-address-14",
     "president-address-15",
     "president-address-16",
     "president-address-17",
@@ -5462,28 +5453,28 @@
    "sitting_no": "73",
    "report_version": "sprs3",
    "reports": 3,
-   "words": 39854,
-   "turns": 28,
+   "words": 39866,
+   "turns": 26,
    "collected": 3,
    "max_result": 3,
    "ratio": 1.0,
-   "speaker_attribution": 0.964,
+   "speaker_attribution": 0.962,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 1,
-     "words": 39719
+     "words": 39730
     },
     "motion": {
      "n": 1,
-     "words": 69
+     "words": 70
     },
     "other": {
      "n": 1,
      "words": 66
     }
    },
-   "source_hash": "2accdd9b22276ffc",
+   "source_hash": "b9a373e18d37ecc7",
    "summarisation": {
     "summarisable": 1,
     "summarised": 0,
@@ -5501,24 +5492,24 @@
    "sitting_no": "74",
    "report_version": "sprs3",
    "reports": 2,
-   "words": 42599,
-   "turns": 56,
+   "words": 42611,
+   "turns": 53,
    "collected": 2,
    "max_result": 2,
    "ratio": 1.0,
-   "speaker_attribution": 0.964,
+   "speaker_attribution": 0.981,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 1,
-     "words": 42569
+     "words": 42580
     },
     "motion": {
      "n": 1,
-     "words": 30
+     "words": 31
     }
    },
-   "source_hash": "0499d079245ea74d",
+   "source_hash": "1c96db2c536b9e70",
    "summarisation": {
     "summarisable": 1,
     "summarised": 0,
@@ -5536,24 +5527,24 @@
    "sitting_no": "75",
    "report_version": "sprs3",
    "reports": 4,
-   "words": 27142,
-   "turns": 31,
+   "words": 27161,
+   "turns": 23,
    "collected": 4,
    "max_result": 4,
    "ratio": 1.0,
-   "speaker_attribution": 0.774,
+   "speaker_attribution": 0.913,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 2,
-     "words": 26938
+     "words": 26956
     },
     "motion": {
      "n": 2,
-     "words": 204
+     "words": 205
     }
    },
-   "source_hash": "f47384410c9ea66a",
+   "source_hash": "9cf0b615c9140fc4",
    "summarisation": {
     "summarisable": 2,
     "summarised": 0,
@@ -5572,17 +5563,17 @@
    "sitting_no": "76",
    "report_version": "sprs3",
    "reports": 13,
-   "words": 44478,
-   "turns": 79,
+   "words": 44493,
+   "turns": 76,
    "collected": 13,
    "max_result": 13,
    "ratio": 1.0,
-   "speaker_attribution": 0.886,
+   "speaker_attribution": 0.882,
    "enumeration": "linear",
    "groups": {
     "budget": {
      "n": 2,
-     "words": 34781
+     "words": 34795
     },
     "statement": {
      "n": 1,
@@ -5598,10 +5589,10 @@
     },
     "motion": {
      "n": 3,
-     "words": 146
+     "words": 147
     }
    },
-   "source_hash": "df3a5e856debe594",
+   "source_hash": "574339f54a912ca1",
    "summarisation": {
     "summarisable": 3,
     "summarised": 0,
@@ -5620,26 +5611,26 @@
    "volume_no": "94",
    "sitting_no": "77",
    "report_version": "sprs3",
-   "reports": 32,
-   "words": 61489,
-   "turns": 198,
-   "collected": 32,
+   "reports": 34,
+   "words": 61491,
+   "turns": 190,
+   "collected": 34,
    "max_result": 32,
-   "ratio": 1.0,
-   "speaker_attribution": 0.914,
-   "enumeration": "linear",
+   "ratio": 1.062,
+   "speaker_attribution": 0.968,
+   "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 2,
-     "words": 29227
+     "words": 29234
     },
     "budget": {
      "n": 1,
-     "words": 17731
+     "words": 17735
     },
     "oral": {
      "n": 13,
-     "words": 10824
+     "words": 10815
     },
     "written": {
      "n": 14,
@@ -5648,9 +5639,13 @@
     "motion": {
      "n": 2,
      "words": 170
+    },
+    "other": {
+     "n": 2,
+     "words": 0
     }
    },
-   "source_hash": "10aa1e10d0dca855",
+   "source_hash": "89ba2de72e79bd2d",
    "summarisation": {
     "summarisable": 16,
     "summarised": 0,
@@ -5682,26 +5677,26 @@
    "volume_no": "94",
    "sitting_no": "78",
    "report_version": "sprs3",
-   "reports": 113,
-   "words": 78967,
-   "turns": 347,
-   "collected": 113,
+   "reports": 110,
+   "words": 77791,
+   "turns": 342,
+   "collected": 110,
    "max_result": 112,
-   "ratio": 1.009,
-   "speaker_attribution": 0.965,
+   "ratio": 0.982,
+   "speaker_attribution": 0.971,
    "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 9,
-     "words": 44503
+     "words": 44504
     },
     "oral": {
      "n": 8,
      "words": 11458
     },
     "written": {
-     "n": 89,
-     "words": 22848
+     "n": 86,
+     "words": 21671
     },
     "motion": {
      "n": 3,
@@ -5712,7 +5707,7 @@
      "words": 33
     }
    },
-   "source_hash": "d0f82bb201b6daa0",
+   "source_hash": "24930bdee29d5ea4",
    "summarisation": {
     "summarisable": 16,
     "summarised": 0,
@@ -5744,26 +5739,26 @@
    "volume_no": "94",
    "sitting_no": "79",
    "report_version": "sprs3",
-   "reports": 51,
-   "words": 65093,
-   "turns": 232,
-   "collected": 51,
+   "reports": 55,
+   "words": 65782,
+   "turns": 240,
+   "collected": 55,
    "max_result": 53,
-   "ratio": 0.962,
-   "speaker_attribution": 0.97,
+   "ratio": 1.038,
+   "speaker_attribution": 0.988,
    "enumeration": "linear+sections",
    "groups": {
     "motion": {
      "n": 4,
-     "words": 42766
+     "words": 42775
     },
     "oral": {
      "n": 8,
-     "words": 13094
+     "words": 13086
     },
     "written": {
-     "n": 36,
-     "words": 9166
+     "n": 40,
+     "words": 9854
     },
     "bill": {
      "n": 1,
@@ -5774,7 +5769,7 @@
      "words": 0
     }
    },
-   "source_hash": "804d7678f6139594",
+   "source_hash": "a9f5d563937ce8bd",
    "summarisation": {
     "summarisable": 10,
     "summarised": 0,
@@ -5801,17 +5796,17 @@
    "sitting_no": "80",
    "report_version": "sprs3",
    "reports": 24,
-   "words": 59221,
-   "turns": 139,
+   "words": 59234,
+   "turns": 133,
    "collected": 24,
    "max_result": 24,
    "ratio": 1.0,
-   "speaker_attribution": 0.942,
+   "speaker_attribution": 0.977,
    "enumeration": "linear",
    "groups": {
     "motion": {
      "n": 5,
-     "words": 45497
+     "words": 45510
     },
     "oral": {
      "n": 16,
@@ -5822,7 +5817,7 @@
      "words": 765
     }
    },
-   "source_hash": "4c73bd0a4c0b9bd3",
+   "source_hash": "96df73ce1085d20e",
    "summarisation": {
     "summarisable": 19,
     "summarised": 0,
@@ -5858,25 +5853,25 @@
    "sitting_no": "81",
    "report_version": "sprs3",
    "reports": 94,
-   "words": 64391,
-   "turns": 369,
+   "words": 64392,
+   "turns": 368,
    "collected": 94,
    "max_result": 92,
    "ratio": 1.022,
-   "speaker_attribution": 0.97,
+   "speaker_attribution": 0.978,
    "enumeration": "linear+sections",
    "groups": {
     "statement": {
      "n": 2,
-     "words": 14694
+     "words": 14699
     },
     "bill": {
      "n": 5,
-     "words": 9743
+     "words": 9744
     },
     "oral": {
      "n": 12,
-     "words": 13257
+     "words": 13252
     },
     "adjournment": {
      "n": 1,
@@ -5895,7 +5890,7 @@
      "words": 0
     }
    },
-   "source_hash": "4057d55ed1494097",
+   "source_hash": "384bf33d12005f6d",
    "summarisation": {
     "summarisable": 17,
     "summarised": 0,
@@ -5929,40 +5924,40 @@
    "sitting_no": "82",
    "report_version": "sprs3",
    "reports": 113,
-   "words": 71088,
-   "turns": 390,
+   "words": 69398,
+   "turns": 382,
    "collected": 113,
    "max_result": 114,
    "ratio": 0.991,
-   "speaker_attribution": 0.954,
+   "speaker_attribution": 0.966,
    "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 12,
-     "words": 32395
+     "words": 32407
     },
     "adjournment": {
      "n": 1,
-     "words": 4152
+     "words": 4149
     },
     "oral": {
      "n": 21,
-     "words": 13032
+     "words": 13018
     },
     "written": {
      "n": 75,
-     "words": 21039
-    },
-    "other": {
-     "n": 3,
-     "words": 444
+     "words": 19798
     },
     "motion": {
      "n": 1,
      "words": 26
+    },
+    "other": {
+     "n": 3,
+     "words": 0
     }
    },
-   "source_hash": "69bbc58b67e09833",
+   "source_hash": "f5d40def78c00248",
    "summarisation": {
     "summarisable": 24,
     "summarised": 0,
@@ -6002,18 +5997,18 @@
    "volume_no": "94",
    "sitting_no": "83",
    "report_version": "sprs3",
-   "reports": 85,
-   "words": 73896,
-   "turns": 324,
-   "collected": 85,
+   "reports": 80,
+   "words": 72506,
+   "turns": 306,
+   "collected": 80,
    "max_result": 83,
-   "ratio": 1.024,
-   "speaker_attribution": 0.932,
+   "ratio": 0.964,
+   "speaker_attribution": 0.954,
    "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 12,
-     "words": 42644
+     "words": 42653
     },
     "adjournment": {
      "n": 1,
@@ -6021,11 +6016,11 @@
     },
     "oral": {
      "n": 9,
-     "words": 12894
+     "words": 12888
     },
     "written": {
-     "n": 56,
-     "words": 13441
+     "n": 51,
+     "words": 12048
     },
     "other": {
      "n": 5,
@@ -6036,7 +6031,7 @@
      "words": 89
     }
    },
-   "source_hash": "88eb815f0847adb8",
+   "source_hash": "efa467d7d0f6664a",
    "summarisation": {
     "summarisable": 16,
     "summarised": 0,
@@ -6068,29 +6063,29 @@
    "volume_no": "94",
    "sitting_no": "84",
    "report_version": "sprs3",
-   "reports": 43,
-   "words": 56061,
-   "turns": 240,
-   "collected": 43,
+   "reports": 41,
+   "words": 56076,
+   "turns": 233,
+   "collected": 41,
    "max_result": 41,
-   "ratio": 1.049,
-   "speaker_attribution": 0.946,
-   "enumeration": "linear+sections",
+   "ratio": 1.0,
+   "speaker_attribution": 0.97,
+   "enumeration": "linear",
    "groups": {
     "bill": {
      "n": 5,
-     "words": 38153
+     "words": 38175
     },
     "oral": {
      "n": 13,
-     "words": 12937
+     "words": 12930
     },
     "written": {
      "n": 21,
      "words": 4812
     },
     "other": {
-     "n": 3,
+     "n": 1,
      "words": 126
     },
     "motion": {
@@ -6098,7 +6093,7 @@
      "words": 33
     }
    },
-   "source_hash": "3da3f3895285a09b",
+   "source_hash": "109cd550caf13474",
    "summarisation": {
     "summarisable": 17,
     "summarised": 0,
@@ -6131,18 +6126,18 @@
    "volume_no": "94",
    "sitting_no": "85",
    "report_version": "sprs3",
-   "reports": 101,
-   "words": 78901,
-   "turns": 348,
-   "collected": 101,
+   "reports": 94,
+   "words": 77381,
+   "turns": 329,
+   "collected": 94,
    "max_result": 99,
-   "ratio": 1.02,
-   "speaker_attribution": 0.96,
+   "ratio": 0.949,
+   "speaker_attribution": 0.97,
    "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 9,
-     "words": 32563
+     "words": 32575
     },
     "oral": {
      "n": 3,
@@ -6153,8 +6148,8 @@
      "words": 7481
     },
     "written": {
-     "n": 84,
-     "words": 25718
+     "n": 77,
+     "words": 24186
     },
     "motion": {
      "n": 1,
@@ -6165,7 +6160,7 @@
      "words": 0
     }
    },
-   "source_hash": "8d025edd90bf90d5",
+   "source_hash": "e98a235053c7b213",
    "summarisation": {
     "summarisable": 8,
     "summarised": 0,
@@ -6190,21 +6185,21 @@
    "sitting_no": "86",
    "report_version": "sprs3",
    "reports": 53,
-   "words": 69605,
-   "turns": 258,
+   "words": 69641,
+   "turns": 247,
    "collected": 53,
    "max_result": 51,
    "ratio": 1.039,
-   "speaker_attribution": 0.938,
+   "speaker_attribution": 0.968,
    "enumeration": "linear+sections",
    "groups": {
     "bill": {
      "n": 5,
-     "words": 47432
+     "words": 47461
     },
     "oral": {
      "n": 9,
-     "words": 12511
+     "words": 12518
     },
     "written": {
      "n": 35,
@@ -6219,7 +6214,7 @@
      "words": 0
     }
    },
-   "source_hash": "563a45642cc7e926",
+   "source_hash": "4de3a23b2a5f3c3f",
    "summarisation": {
     "summarisable": 13,
     "summarised": 0,

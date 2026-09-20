@@ -1,0 +1,132 @@
+{
+ "title": "Selectively Allowing Single Parent and Child to Rent HDB Flats",
+ "what_it_is": "Selectively Allowing Single Parent and Child to Rent HDB Flats",
+ "sections": [
+  {
+   "label": "Single parents rental flat applications",
+   "summary": "Single parents aged 21 and above with a child are treated like other applicants for HDB public rental flats and may apply directly.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Single parents aged 21 and above who wish to apply for a rental flat from the Housing and Development Board (HDB) with their child are treated similarly with other applicants for a public rental flat.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "All applicants may submit their application directly at HDB’s rental counters without having to appeal first.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "HDB looks into all applications for a public rental flat to assess each individual’s housing options holistically.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "The applicants’ ability to afford alternative housing options, whether their family has space to accommodate them, as well as whether they face issues, such as family conflict, are all factors which HDB takes into consideration.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Applicants in the circumstances described by the Member will qualify for a public rental flat.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "HDB housing budget assessment",
+   "summary": "HDB assesses affordability by working out a housing budget using income, age for a housing loan, CPF and cash savings, and prior home ownership.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "To assess an applicant's ability to afford alternative housing, HDB will work out their housing budget, and they will take into account their income, their age relevant to a housing loan, their savings in the Central Provident Fund (CPF) and cash, and whether or not they previously had home ownership.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Sibling housing expectation",
+   "summary": "The answer states that the sibling is not expected to house them.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "No, we do not expect the sibling to house them.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Exemptions above $1,500 income",
+   "summary": "For households with income above $1,500, many examples of exemptions into public rental have been given.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "For households with income above $1,500, there are actually many examples of exemptions into public rental that have been given.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2016",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-08-05"
+  ],
+  "report_ids": [
+   "oral-answer-2016"
+  ],
+  "sentences_total": 21,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.381,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 4,
+   "turns_total": 8,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:49:13"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1455,
+   "completion_tokens": 228,
+   "estimated": false,
+   "cost_usd": 0.000268
+  }
+ }
+}

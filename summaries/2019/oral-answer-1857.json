@@ -1,0 +1,114 @@
+{
+ "title": "Restraint Policy for Persons in Custody",
+ "what_it_is": "Restraint Policy for Persons in Custody",
+ "sections": [
+  {
+   "label": "Restraint policy for arrested persons",
+   "summary": "Police will generally not restrain arrested persons below 16 or 65 and above, except for serious crimes or escape risk.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister of Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "We have, nevertheless, recently reviewed the policy and have made some changes.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Parliamentary Secretary to the Minister of Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "We will, as a general position, not restrain a PIC known to the relevant enforcement officers to be below 16 years old or aged 65 and above when the PIC is being arrested.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Parliamentary Secretary to the Minister of Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "But if the PIC is suspected of committing serious crimes like murder, rape or drug trafficking, or if the escorting officer assesses, for example, that there is a risk of the PIC escaping or causing harm to others or self, then he or she is likely to be restrained.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Parliamentary Secretary to the Minister of Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "We will have to go by judgements made by officers on the spot.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Parliamentary Secretary to the Minister of Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "This exception policy will not apply to PICs under Prisons' custody, which will include convicted prisoners and persons in remand.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Parliamentary Secretary to the Minister of Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "That means persons below 16 and above 65 will be under restraint when under Prisons' escort.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "For PICs with intellectual disabilities, we will treat them no differently from other PICs as they might exhibit non-compliant behaviour and attempt to escape or hurt others without any tell-tale signs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "Thus, we will restrain them by default if the PIC is between 16 and 65 years old.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1857",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-01-14"
+  ],
+  "report_ids": [
+   "oral-answer-1857"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 1,
+  "selection_share": 0.5333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:24:00"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1125,
+   "completion_tokens": 87,
+   "estimated": false,
+   "cost_usd": 0.000182
+  }
+ }
+}

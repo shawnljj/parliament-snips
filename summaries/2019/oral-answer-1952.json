@@ -1,0 +1,150 @@
+{
+ "title": "Impact of Pasir Gudang Incident in Johor on Singaporeans",
+ "what_it_is": "Impact of Pasir Gudang Incident in Johor on Singaporeans",
+ "sections": [
+  {
+   "label": "Punggol VOC sensors and Pasir Gudang",
+   "summary": "Asked what sensors measure volatile organic compounds in Punggol air and whether levels rose since the Pasir Gudang dumping.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Assoc Prof Daniel Goh Pei Siong",
+     "attributed": true,
+     "text": "asked the Minister for the Environment and Water Resources (a) what specific sensors are there in place in Punggol to measure the level of volatile organic compounds in the air; and (b) whether there has been an increase in the measured levels since the chemical waste dumping incident in Pasir Gudang.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Johoreans ill from Sungai Kim Kim dumping",
+   "summary": "Media reports say over 3,000 Johoreans fell ill after 20 to 40 tonnes of chemical waste were dumped into Sungai Kim Kim.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "According to media reports, since 7 March 2019, more than 3,000 Johoreans fell ill as a result of the illegal dumping of around 20 to 40 tonnes of chemical waste into Sungai Kim Kim, a river in Pasir Gudang.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Soil and polluted water removed",
+   "summary": "More than 900 tonnes of soil and 1,500 tonnes of polluted water have been removed.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "More than 900 tonnes of soil and 1,500 tonnes of polluted water have been removed.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "PUB oil booms on Singapore coast",
+   "summary": "As a precaution, PUB installed oil booms at outlet drains and estuaries along Singapore's north and north-eastern coast.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "As a precautionary measure, PUB has installed oil booms at the outlet drains and estuaries along the north and north-eastern coast of Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SFA seafood tests find no anomalies",
+   "summary": "SFA tests of seafood from these fish farms for PAHs, VOCs and heavy metals detected no anomalies.",
+   "sentences": [
+    {
+     "sid": "s00045",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Singapore Food Agency's (SFA's) tests of seafood samples from these fish farms for compounds, such as polycyclic aromatic hydrocarbons (PAHs), VOCs and heavy metals, have not detected any anomalies.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Smells and ambient air readings",
+   "summary": "By morning the sun and stronger wind dilute and disperse odours, and smells show no direct correlation with ambient air quality readings.",
+   "sentences": [
+    {
+     "sid": "s00063",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "So, by daytime, in the morning, the sun is up and the wind speed has gathered strength, it then gets diluted and dispersed away.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00064",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "But let me say that there is no direct correlation or association between the smells – burning smell or chemical smell – and the ambient air quality readings.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Flaring process gases safety",
+   "summary": "Flaring safely burns process gases into carbon dioxide and water vapour, so there would be no health impact from the flaring.",
+   "sentences": [
+    {
+     "sid": "s00073",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Actually, flaring will safely burn these process gases off into carbon dioxide and water vapour so that there would not be any health impact due to this flaring.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1952",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-04-01"
+  ],
+  "report_ids": [
+   "oral-answer-1952"
+  ],
+  "sentences_total": 73,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 7,
+  "selection_share": 0.1096,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 7,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 5,
+   "coverage": 0.6,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:58:50"
+  },
+  "usage": {
+   "calls": 6,
+   "prompt_tokens": 4241,
+   "completion_tokens": 401,
+   "estimated": false,
+   "cost_usd": 0.000706
+  }
+ }
+}

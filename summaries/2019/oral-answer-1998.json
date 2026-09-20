@@ -1,0 +1,113 @@
+{
+ "title": "Monitoring Recent Pollution in Pasir Gudang",
+ "what_it_is": "Monitoring Recent Pollution in Pasir Gudang",
+ "sections": [
+  {
+   "label": "Singapore air and water quality",
+   "summary": "From 2008 to 2018, northeast region air and water quality was comparable to the rest of Singapore, and was not affected by Pasir Gudang pollution incidents.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "From 2008 to 2018, the air and water quality in the northeast region was comparable to the rest of Singapore, including during the northeast monsoon period.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "The air and water quality in Singapore has not been affected by the recent pollution incidents in Pasir Gudang.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "The ambient levels of Volatile Organic Compounds (VOCs) in the northeast region were also well within safe limits.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "The Singapore Civil Defence Force (SCDF) also deployed portable standoff chemical gas detectors in the northeast and did not detect any toxic chemicals in the air.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SCDF and BOMBA cooperation",
+   "summary": "SCDF and BOMBA exchange information on high-risk chemical factories and carry out regular joint border exercises.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "Mr Pritam Singh",
+     "attributed": true,
+     "text": "The last question was on the number of high-risk chemical factories at Pasir Gudang.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00034",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "There is a constant exchange, as mentioned just now, between SCDF and BOMBA of Malaysia, as well as between NEA and DOE of Malaysia, to exchange information as new factories come up and the kind of risks and protection that they have put in place for each to respond to each other.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00035",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "BOMBA and SCDF carry out very regular joint exercises at our borders to work together and cooperate.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1998",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-07-08"
+  ],
+  "report_ids": [
+   "oral-answer-1998"
+  ],
+  "sentences_total": 35,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.2,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 3,
+   "turns_total": 9,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:50:51"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2282,
+   "completion_tokens": 146,
+   "estimated": false,
+   "cost_usd": 0.00036
+  }
+ }
+}

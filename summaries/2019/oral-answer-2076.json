@@ -1,0 +1,159 @@
+{
+ "title": "Sources of Carbon Emissions in Singapore",
+ "what_it_is": "Sources of Carbon Emissions in Singapore",
+ "sections": [
+  {
+   "label": "Singapore 2017 greenhouse gas emissions",
+   "summary": "Singapore emitted 52.5 million tonnes of carbon dioxide equivalent in 2017, with buildings and households at about 19%, land transport about 14%, and municipal solid waste incineration about 3%.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Singapore generated 52.5 million tonnes of carbon dioxide equivalent of greenhouse gas (GHG) emissions in 2017.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "The buildings and household sectors contributed around 19% of our total GHG emissions, of which a sizeable portion would have been for air-conditioning.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "The land transport sector contributed around 14%, and the incineration of municipal solid waste at waste-to-energy plants contributed around 3% of our total GHG emissions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "2040 peak period transport target",
+   "summary": "By 2040, Singapore targets nine in 10 peak period journeys by public, active and shared modes, completed within 45 minutes.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "By 2040, we target for nine in 10 peak period journeys to be taken using public, active and shared modes of transport, and for these journeys to be completed within 45 minutes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "District cooling projects and plans",
+   "summary": "District cooling already exists at One Raffles Quay and Marina Bay, where energy consumption fell about 40%, with plans for Jurong Lake District.",
+   "sentences": [
+    {
+     "sid": "s00031",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "In fact, there are already district cooling projects at One Raffles Quay as well as the Marina Bay area.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00032",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "We have found that for the Marina Bay area scheme, there was about a 40% reduction in energy consumption.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00033",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "We have plans to introduce district cooling in the new Jurong Lake District.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Waste incineration and gasification study",
+   "summary": "All household waste is incinerated at four waste-to-energy plants in Woodlands or Tuas, and small-scale waste treatment including gasification is being studied.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Regarding gasification technology, as the Member knows, all household waste is currently incinerated at our four waste-to-energy incineration plants, it is mass incineration technology either at Woodlands or Tuas.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00039",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "We are studying the feasibility of small-scale waste treatment, including utilising gasification technology.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Carbon capture utilisation and storage study",
+   "summary": "The National Climate Change Secretariat commissioned a study on CCUS technologies, including carbonisation, to determine challenges, opportunities and recommend next steps.",
+   "sentences": [
+    {
+     "sid": "s00050",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "When we talk about Carbon Capture Utilisation and Storage (CCUS), it is really about capturing the carbon which would otherwise be released into the atmosphere, converting it into something useful or storing it safely.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00051",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "So, indeed, the National Climate Change Secretariat has commissioned a study on CCUS technologies, including carbonisation that Mr Leon Perera asked about, to determine the challenges as well as the opportunities of such technology and also to recommend the next steps.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2076",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-11-04"
+  ],
+  "report_ids": [
+   "oral-answer-2076"
+  ],
+  "sentences_total": 55,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.2,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 3,
+   "turns_total": 9,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:39:24"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2988,
+   "completion_tokens": 330,
+   "estimated": false,
+   "cost_usd": 0.000511
+  }
+ }
+}

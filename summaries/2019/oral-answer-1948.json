@@ -1,0 +1,86 @@
+{
+ "title": "Insurance and Other Assistance Given to Injured NSmen",
+ "what_it_is": "Insurance and Other Assistance Given to Injured NSmen",
+ "sections": [
+  {
+   "label": "MINDEF medical coverage for NSmen",
+   "summary": "MINDEF pays all necessary medical expenses for service-related injuries at Government restructured hospitals, clinics and community hospitals, and expands coverage and compensation if conditions worsen.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Defence (Mr Heng Chee How) (for the Minister for Defence)",
+     "attributed": true,
+     "text": "MINDEF provides full medical coverage for service-related injuries by paying for all necessary medical expenses incurred by the NSman at Government restructured hospitals, clinics and community hospitals, for as long as required.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Defence (Mr Heng Chee How) (for the Minister for Defence)",
+     "attributed": true,
+     "text": "This includes the costs of medical supplies and equipment, as well as specialist care.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Defence (Mr Heng Chee How) (for the Minister for Defence)",
+     "attributed": true,
+     "text": "Should the service-related injury be aggravated, or if there are new medical conditions arising from the injury, MINDEF will expand the scope of medical coverage to cover those conditions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Defence (Mr Heng Chee How) (for the Minister for Defence)",
+     "attributed": true,
+     "text": "MINDEF will also provide higher compensation amounts if there is an increase in the degree of permanent disability.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1948",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-03-07"
+  ],
+  "report_ids": [
+   "oral-answer-1948"
+  ],
+  "sentences_total": 6,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.6667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:01:59"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 803,
+   "completion_tokens": 87,
+   "estimated": false,
+   "cost_usd": 0.000137
+  }
+ }
+}

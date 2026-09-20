@@ -1,0 +1,134 @@
+{
+ "title": "Assessment of Risk for Unlisted Assets in Portfolios of GIC and Temasek Holdings",
+ "what_it_is": "Assessment of Risk for Unlisted Assets in Portfolios of GIC and Temasek Holdings",
+ "sections": [
+  {
+   "label": "GIC Temasek unlisted asset valuation",
+   "summary": "Government reviews unlisted asset valuations in GIC and Temasek portfolios, which use industry-standard methods, independent valuations, impairment testing and annual audits.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Leon Perera",
+     "attributed": true,
+     "text": "asked the Deputy Prime Minister and Minister for Finance (a) whether the valuation of unlisted assets in the portfolios of GIC and Temasek Holdings is taken into account when the Government reviews the overall risks of its whole portfolio of assets; and (b) if so, what approaches are taken by the Government to ensure that unlisted assets are valued realistically by GIC and Temasek at the time of injection and in each subsequent year.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "These unlisted assets include private equity, infrastructure and real estate.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "They are valued at the time of investment and then regularly updated.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "Both GIC and Temasek adopt valuation methods that are in line with industry practices and in accordance with international accounting standards.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "This includes independent valuation from valuation firms and testing for any potential impairment.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "In addition, the entities are subject to an annual independent audit.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "To date, the auditors have not raised any issues about GIC and Temasek’s valuation practices.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Publishing conservative unlisted asset figures",
+   "summary": "A Member asks whether Sovereign Wealth Funds could also publish conservative figures based on acquisition cost, noting initial cost is book value and impairments require write-downs.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Mr Leon Perera (Non-Constituency Member)",
+     "attributed": true,
+     "text": "So, in the interest of achieving that kind of realism, would the Government consider requiring the Sovereign Wealth Funds to, in addition to publishing portfolio valuations based on these accounting practices for unlisted asset valuations that the Minister described, also publish more conservative figures for valuing the unlisted assets based on the cost of the acquisition, so as to serve as a kind of check on the extent to which that valuation would be realisable in the future?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "So, even in private equity, the initial cost of investment is used as book value but, subsequent to that, you can test for subsequent valuations because there will be other rounds of fund-raising, which allow you to have a market test of where the valuation of the underlying entity is.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "And if there is any potential impairment to the asset, the valuers are required to mark down and write down the asset value.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2031",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-08-06"
+  ],
+  "report_ids": [
+   "oral-answer-2031"
+  ],
+  "sentences_total": 14,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.7143,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 4,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:47:47"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1407,
+   "completion_tokens": 159,
+   "estimated": false,
+   "cost_usd": 0.000242
+  }
+ }
+}

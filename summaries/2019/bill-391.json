@@ -1,0 +1,152 @@
+{
+ "title": "Good and Services Tax (Amendment) Bill",
+ "what_it_is": "Good and Services Tax (Amendment) Bill",
+ "sections": [
+  {
+   "label": "GST amendment bill changes",
+   "summary": "Two amendments refine GST on imported services from the 2018 Bill, while three come from periodic GST review.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Two of them seek to refine the implementation of Goods and Services Tax (GST) on imported services, which was passed in the GST (Amendment) Bill 2018.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "The other three arise from the periodic review of the GST regime to clarify technical rules, improve GST administration and reduce business compliance costs.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Imported services GST administration",
+   "summary": "The first amendment clarifies GST administration for imported services, including Overseas Vendor Registration and Reverse Charge scope.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "The first amendment provides technical clarifications and improvement to GST administration in relation to imported services.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "This includes refinements to the Overseas Vendor Registration regime to allow GST group registration for overseas suppliers, as well as allow local electronic marketplace operators to account for GST on both business-to-business and business-to-consumer supplies of digital services, on behalf of their underlying suppliers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "The amendment also seeks to clarify the scope of Reverse Charge, that it applies to all businesses that are GST-registered or liable for GST registration and are not allowed input tax claims in full.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Misrepresentation information offences",
+   "summary": "The second amendment introduces offences for misrepresentation of information.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "The second amendment introduces offences for misrepresentation of information.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Digital payment tokens GST exemption",
+   "summary": "Supply of digital payment tokens exchanged for fiat currency or other tokens, and loans of such tokens, will be exempt from GST.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "While digital payment tokens are not legal tender like fiat currency, they are known to serve as a medium of exchange in some transactions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "So, we will exempt from GST the supply of digital payment tokens that are in exchange for fiat currency or other digital payment tokens.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "We will also exempt from GST the loan of digital payment tokens.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tax proceedings no longer private",
+   "summary": "Tax proceedings before the Courts will no longer be heard privately by default, to align with international trends and promote open justice.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Second, to align ourselves with international trends and to improve accountability and promote open justice, tax proceedings before the Courts will no longer be heard privately by default.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-391",
+  "group": "bill",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-11-04"
+  ],
+  "report_ids": [
+   "bill-391"
+  ],
+  "sentences_total": 31,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.3226,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:39:29"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1609,
+   "completion_tokens": 257,
+   "estimated": false,
+   "cost_usd": 0.000297
+  }
+ }
+}

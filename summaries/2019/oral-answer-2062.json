@@ -1,0 +1,113 @@
+{
+ "title": "Mandatory Measures to Warn Pedestrians of Approaching Cyclists or PMDs",
+ "what_it_is": "Mandatory Measures to Warn Pedestrians of Approaching Cyclists or PMDs",
+ "sections": [
+  {
+   "label": "Rider visibility laser light suggestion",
+   "summary": "The purpose is to increase rider visibility to other path users, and the practicality and effectiveness of laser lights will be studied, considering costs and safety.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The purpose is to increase visibility of the rider to other path users.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "We will study the practicality and effectiveness of the suggestion of using laser lights, bearing in mind the costs and safety implications.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Laser light risk to path users",
+   "summary": "There is no conclusive study on laser projection lights' visibility and effectiveness, and the Class 3A or 3R laser risks harming path users, especially children.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "First, there really has not been any conclusive study about laser projection lights' visibility and effectiveness on shared paths and footpaths.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "As we know, the laser beam is a Class 3A or 3R laser.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "There is a certain element of risk when it is shone into the eye.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "This could potentially harm path users, especially children, who may be at that particular eye level with the laser projection.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "We will definitely look at the suggestion and see whether it is, indeed, effective and worth implementing.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2062",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-09-04"
+  ],
+  "report_ids": [
+   "oral-answer-2062"
+  ],
+  "sentences_total": 21,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:42:34"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1212,
+   "completion_tokens": 148,
+   "estimated": false,
+   "cost_usd": 0.000211
+  }
+ }
+}

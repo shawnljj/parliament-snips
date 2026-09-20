@@ -1,0 +1,153 @@
+{
+ "title": "Update on Local Representation in Universities and Effectiveness of Universities’ Talent Grooming Schemes",
+ "what_it_is": "Update on Local Representation in Universities and Effectiveness of Universities’ Talent Grooming Schemes",
+ "sections": [
+  {
+   "label": "Singaporean academics and START scholarships",
+   "summary": "Singaporean academics have stayed about 50% of autonomous university faculty over 10 years, and 91 START scholarships were awarded in four years.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Education (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "The number of Singaporean academics as a proportion of all faculty members in our autonomous universities (AUs) has remained fairly stable at about 50% over the last 10 years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Education (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Under START, 91 scholarships have been awarded over the past four years.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MOE and AU scheme spending",
+   "summary": "MOE and the autonomous universities have invested around $11 million yearly on three schemes since 2015.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Education (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "On average, MOE and the AUs have invested around $11 million per year on these three schemes since 2015.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore Core in arts and social sciences",
+   "summary": "Arts and social sciences need a strong Singapore Core so students and faculty understand the Asian and Singapore context.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "For arts and social sciences, it is a bit more complex because students and faculty who are here also need to understand the Asian context, the Singapore context, the history, the geography of Singapore that define who we are.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "So, beyond having diversity in terms of knowledge and background, we particularly need a strong Singapore Core in arts and social sciences.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "University rankings and their shortcomings",
+   "summary": "Rankings attract talent and students but are criticised as blunt, research-focused and publication-focused, so universities should not blindly chase them.",
+   "sentences": [
+    {
+     "sid": "s00047",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Because when you rank high, you can attract good talent, you can attract good students and there is a whole vibrancy around the whole campus.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00048",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "However, if you also ask most academic leaders around the world, education ministers around the world, not everyone is happy with the ranking system because of the rubrics.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00049",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "It is just a bit too blunt, a bit too focused on research and not so much on teaching.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00050",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "And even within research, too much focus on publications rather than translational research, or the impact of the research.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00051",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "And nobody has really cracked the puzzle how else to measure and to have a robust international ranking system.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00052",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "And we must know these shortcomings and make sure that the Ministry and universities work together, ensure that we know the multifaceted missions of our AUs and make sure we carry out our work in a way that fulfils all these missions and not blindly chase rankings.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1869",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-01-14"
+  ],
+  "report_ids": [
+   "oral-answer-1869"
+  ],
+  "sentences_total": 54,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 4,
+  "selection_share": 0.2037,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 3,
+   "turns_total": 9,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:23:46"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2830,
+   "completion_tokens": 240,
+   "estimated": false,
+   "cost_usd": 0.000463
+  }
+ }
+}

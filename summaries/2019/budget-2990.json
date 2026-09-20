@@ -1,0 +1,79 @@
+{
+ "title": "Committee of Supply – Total Sums for Main Estimates, Development Estimates and Resolutions",
+ "what_it_is": "Committee of Supply – Total Sums for Main Estimates, Development Estimates and Resolutions",
+ "sections": [
+  {
+   "label": "Sitting suspended for extended break",
+   "summary": "The Speaker reminds Members to return for the Supply Bill and Supplementary Supply Bill, suspends the Sitting for an extended break, and will take the Chair at 3.55 pm.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "Do remember to come back for the Supply Bill and the Supplementary Supply Bill.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "I suspend the Sitting and, in honour of the women here today, on this special day, we will have an extended break.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "I will take the Chair at 3.55 pm.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "budget-2990",
+  "group": "budget",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-03-08"
+  ],
+  "report_ids": [
+   "budget-2990"
+  ],
+  "sentences_total": 4,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.75,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:00:24"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 590,
+   "completion_tokens": 79,
+   "estimated": false,
+   "cost_usd": 0.000105
+  }
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "title": "Reports of Mental Health Cases in Schools",
+ "what_it_is": "Reports of Mental Health Cases in Schools",
+ "sections": [
+  {
+   "label": "Mental health cases in schools",
+   "summary": "A question asks for annual numbers of mental health cases reported for primary, secondary and post-secondary students, diagnoses via referrals, and exam provision requests.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Dr Intan Azura Mokhtar",
+     "attributed": true,
+     "text": "asked the Minister for Education over the past five years (a) what is the annual number of cases related to mental health issues reported to the Ministry involving (i) primary school students, (ii) secondary school students and (iii) post-secondary students; (b) how many have been diagnosed through referrals made by mainstream schools or the Ministry; and (c) how many have made requests for special provisions for examinations or other assessment-related issues.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Confidential diagnoses limit counts",
+   "summary": "Because medical diagnoses are confidential, schools may not be told referral outcomes, making precise diagnosis numbers difficult to determine.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Education (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Education)",
+     "attributed": true,
+     "text": "Further, as medical diagnoses are confidential, schools and institutions may not be kept informed of the outcome following a referral.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Education (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Education)",
+     "attributed": true,
+     "text": "It is, therefore, difficult to determine the precise number of students diagnosed with mental health issues.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Access Arrangements application numbers",
+   "summary": "Over five years, annual Access Arrangements applications for PSLE and GCE-level exams indicating conditions like anxiety and depression were 0.1% to 0.2% of the cohort.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Education (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Education)",
+     "attributed": true,
+     "text": "On the separate issue of Access Arrangements for examinations, over the last five years, the annual number of applications for Access Arrangements across the Primary School Leaving Examination (PSLE) and GCE-level examinations that have indicated conditions, such as anxiety and depression, is very small, at between 0.1% and 0.2% of the cohort.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Extra time and alternative assessments",
+   "summary": "The Ministry is asked about extra exam time and alternative assessments for students with anxiety or depression, and replies that it takes a case-by-case approach.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Dr Intan Azura Mokhtar (Ang Mo Kio)",
+     "attributed": true,
+     "text": "Can I check whether the Ministry makes provisions for extra time for students who are diagnosed with conditions, such as anxiety or depression, when they take their examinations, very much like that for students who are diagnosed with dyslexia, for example?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Intan Azura Mokhtar (Ang Mo Kio)",
+     "attributed": true,
+     "text": "The second question is whether the Ministry would also consider alternative assessments, such as regular assignments rather than a one-time pen and paper test or examination, for such students who are diagnosed with mental health issues.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "Indeed, we take on a case-by-case approach in the cases that we come across.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "We want to see how we can help the students as much as possible, and that is what we do for the Access Arrangements which I have shared earlier.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "It also includes working with professionals and specialists, and we take on the advice from the specialists on what would be the best approach to provide that educational experience to the children.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "So, we will take in the Member's feedback and, at the same time, we will continue to help as many people as possible.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1882",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-01-15"
+  ],
+  "report_ids": [
+   "oral-answer-1882"
+  ],
+  "sentences_total": 22,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.4545,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 5,
+   "coverage": 0.8,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:22:00"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1685,
+   "completion_tokens": 254,
+   "estimated": false,
+   "cost_usd": 0.000307
+  }
+ }
+}

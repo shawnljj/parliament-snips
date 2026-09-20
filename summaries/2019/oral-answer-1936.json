@@ -1,0 +1,138 @@
+{
+ "title": "Findings from Trial of Using Speed-tracking Devices for Heavy Vehicles",
+ "what_it_is": "Findings from Trial of Using Speed-tracking Devices for Heavy Vehicles",
+ "sections": [
+  {
+   "label": "Speed-tracking device trial for heavy vehicles",
+   "summary": "TP requires speed limiters for heavy vehicles and trialled speed-tracking devices from December 2017 to August 2018, finding them accurate but tamper-prone.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Today, the Traffic Police (TP) already require the use of speed limiters for heavy vehicles.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Between December 2017 and August 2018, TP conducted a trial on speed-tracking devices, to assess if they might be more effective than speed limiters in discouraging heavy vehicle drivers from speeding.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "TP concluded from the trial that even though the speed-tracking devices were accurate in measuring vehicle speed, they were also susceptible to being tampered with.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Speed tracking devices not mandatory",
+   "summary": "TP has decided not to make the speed tracking devices mandatory.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "TP has decided not to make the speed tracking devices mandatory.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "First-time offenders' penalties",
+   "summary": "First-time offenders are liable for up to three months' imprisonment, a $1,000 fine, or both.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "First-time offenders are liable for an imprisonment term of up to three months, a fine of $1,000 or both.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Increased composition sums for speeding",
+   "summary": "MHA announced higher composition sums from 1 April 2019, raising the sum for heavy vehicle drivers exceeding the speed limit by over 31 kilometres per hour from $200 to $400.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "MHA recently announced increases in composition sums for road traffic offences which will take effect on 1 April 2019.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00026",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "With this change, the composition sum for heavy vehicle drivers who exceed the speed limit by over 31 kilometres per hour would be increased from $200 today to $400.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Decrease in heavy vehicle speeding violations",
+   "summary": "Between 2014 and 2018, speeding violations involving heavy vehicles with speed limiters decreased by about 37%, from 1,737 in 2014 to 1,087 in 2018.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "Between 2014 and 2018, the number of speeding violations involving heavy vehicles with speed limiters actually decreased by about 37%, from 1,737 in 2014 to 1,087 in 2018.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1936",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-02-26"
+  ],
+  "report_ids": [
+   "oral-answer-1936"
+  ],
+  "sentences_total": 41,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 5,
+  "selection_share": 0.1951,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:14:07"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1802,
+   "completion_tokens": 312,
+   "estimated": false,
+   "cost_usd": 0.00034
+  }
+ }
+}

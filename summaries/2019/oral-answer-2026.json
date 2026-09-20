@@ -1,0 +1,132 @@
+{
+ "title": "Reasons for Repetitive Findings of IT Lapses in Government Agencies",
+ "what_it_is": "Reasons for Repetitive Findings of IT Lapses in Government Agencies",
+ "sections": [
+  {
+   "label": "Audits of agency IT systems",
+   "summary": "IT systems of 85 agencies were audited from 2009 to 2011, and a common finding was that agencies did not regularly review system architecture and standards.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Communications and Information and Transport (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Major IT systems belonging to 85 agencies were audited over three years from 2009 to 2011.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Communications and Information and Transport (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "A common finding from these audits was that agencies were not carrying out regular reviews of their system architecture and standards to make sure that there were no weaknesses and to bring them up to date with the latest available security systems.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Communications and Information and Transport (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "This has been addressed through the deployment of central IT infrastructure and common services, whose architecture and standards are reviewed regularly at a whole-of-Government level.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Manual IT process lapses",
+   "summary": "A specific IT lapse in the Auditor-General's Office audit for FY2018/2019 and preceding years involved agencies' processes depending on individuals to manually update and monitor access and log management.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Communications and Information and Transport (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "One specific type of IT lapse in the Auditor-General’s Office's audit for financial year (FY) 2018/2019 and the preceding years is where agencies’ processes depend on individuals to manually update and monitor areas like access and log management.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Communications and Information and Transport (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "To address this decisively, the Government will introduce systems to relieve our officers from carrying out these processes manually and reduce the likelihood of such lapses.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Communications and Information and Transport (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "We will systematically automate IT processes across the public sector to manage user access rights, review privileged users’ activities and review system logs.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public Sector Data Security Review Committee",
+   "summary": "The Public Sector Data Security Review Committee, chaired by Senior Minister Teo Chee Hean, will present its final recommendations to the Government in November.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Senior Minister of State for Communications and Information and Transport (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The Public Sector Data Security Review Committee, chaired by Senior Minister Teo Chee Hean, will present its final recommendations to the Government in November and will look into not just the technical measures, such as automation, but also process and people measures to raise data security across the public sector.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Systemic IT process audit findings",
+   "summary": "The audit findings from 2009 to 2011 were largely about systemic processes around IT systems, namely whether agencies had put in place the right internal reviews and oversight.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The audit findings from 2009 to 2011 were largely about the systemic processes around IT systems, namely, whether the agencies have put in place the right kind of internal reviews and oversight.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2026",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-08-06"
+  ],
+  "report_ids": [
+   "oral-answer-2026"
+  ],
+  "sentences_total": 25,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.32,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:47:35"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1636,
+   "completion_tokens": 274,
+   "estimated": false,
+   "cost_usd": 0.000306
+  }
+ }
+}

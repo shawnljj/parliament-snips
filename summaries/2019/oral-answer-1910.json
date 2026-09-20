@@ -1,0 +1,134 @@
+{
+ "title": "Approval Rate for HDB Non-concessionary Housing Loans",
+ "what_it_is": "Approval Rate for HDB Non-concessionary Housing Loans",
+ "sections": [
+  {
+   "label": "HDB third housing loan appeals",
+   "summary": "HDB extended a third housing loan in some cases, receiving about 4,500 appeals last year and assisting about 900 households.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Nevertheless, HDB has extended a third housing loan upon careful consideration of the merits of each specific case, particularly for those with urgent need of housing but are unable to secure commercial financing options.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Last year, HDB received around 4,500 such appeals, and assisted about 20% of the appeals or about 900 households.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "HDB will continue to evaluate such appeals and extend flexibility where necessary.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reasons for rejecting third loans",
+   "summary": "HDB directs bank-eligible applicants to commercial loans and rejects others unable to service loans, advising them to build savings first.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "The first would be cases where they, in fact, can get a loan from the bank.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "HDB would then ask them to take a commercial loan because they are, in fact, eligible.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "The second would be the one that Mr Ong Teng Koon has referred to.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "They cannot get commercial loans from the bank and they are asking for a third HDB loan.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "And in most of these cases, the reason why HDB rejects or is unable to approve is because they are unable to service the loan to begin with.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "So, there is an issue of them having difficulty with incomes and the ability to service the loan is in question.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "So, rather than having them overstretch themselves, it is more prudent for them to build up their savings, steady their incomes and then they can consider applying for an HDB loan at a subsequent stage.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1910",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-02-12"
+  ],
+  "report_ids": [
+   "oral-answer-1910"
+  ],
+  "sentences_total": 16,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.625,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:18:23"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1223,
+   "completion_tokens": 147,
+   "estimated": false,
+   "cost_usd": 0.000212
+  }
+ }
+}

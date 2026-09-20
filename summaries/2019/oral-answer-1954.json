@@ -1,0 +1,146 @@
+{
+ "title": "Remedial Actions Following Blood Donors' Personal Data Leak",
+ "what_it_is": "Remedial Actions Following Blood Donors' Personal Data Leak",
+ "sections": [
+  {
+   "label": "Blood donor data leak questions",
+   "summary": "Questions ask the Minister for Health about cybersecurity measures, the data leak of over 800,000 blood donors' information, its effects, prevention and penalties.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "Mr Desmond Choo",
+     "attributed": true,
+     "text": "asked the Minister for Health in light of the cyber breach involving 800,000 blood donors (a) how will the Ministry improve its overall cybersecurity measures; and (b) how will its security framework also extend to its providers and vendors.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Mr Dennis Tan Lip Fong",
+     "attributed": true,
+     "text": "asked the Minister for Health in respect of the data leak of more than 800,000 blood donors' personal information from the database of the Health Sciences Authority (a) why was the data placed on a server accessible through the Internet on 4 January 2019; (b) how did the unnamed cybersecurity consultant gain access to the data; (c) why did he keep the data; and (d) whether his conduct was in breach of any law.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Assoc Prof Daniel Goh Pei Siong",
+     "attributed": true,
+     "text": "asked the Minister for Health regarding the data leak of more than 800,000 blood donors' personal information (a) whether the Health Sciences Authority is aware of any unauthorised access to the database during the nine-week period of exposure on the Internet; and (b) whether such incidents are being investigated.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "asked the Minister for Health in respect of the incident whereby personal information of more than 800,000 blood donors were improperly put online by the IT vendor of the Health Sciences Authority (a) what are the possible effects of such disclosure to the blood donors affected and what measures can be put in place to minimise these effects; (b) what structures will be put in place to ensure that such an incident can be avoided in the future; and (c) what penalties will be imposed to address any improper action by relevant parties that led to the improper disclosure.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cybersecurity expert informs PDPC",
+   "summary": "On 13 March 2019 a foreign cybersecurity expert told the PDPC that blood donors' registration-related information was accessible due to a server vulnerability managed by Secur Solutions.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Mr Edwin Tong Chun Fai",
+     "attributed": true,
+     "text": "On 13 March 2019, a foreign cybersecurity expert had informed the Personal Data Protection Commission (PDPC) that the registration-related information of blood donors could be accessed because of a vulnerability in the server used and managed by Secur Solutions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Expert deleted data, no action",
+   "summary": "He told HSA on 16 March 2019 he deleted his copy, sought no payment, and no legal action will be taken as he reported the vulnerability and did not expose the data.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Mr Edwin Tong Chun Fai",
+     "attributed": true,
+     "text": "He informed HSA on 16 March 2019 that he had deleted his copy of the data and has no intention of disclosing its contents.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Edwin Tong Chun Fai",
+     "attributed": true,
+     "text": "He had never made any request for compensation or payment, and we will not be taking any legal action against him because he had reported the vulnerability to us straightaway, and had no intention to keep, use or otherwise expose the contents of the database, and has not done so.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public Sector Data Security Review Committee",
+   "summary": "The Government announced a Public Sector Data Security Review Committee chaired by Deputy Prime Minister Teo Chee Hean, and the Ministry agreed to streamline IT procurement in public healthcare.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Mr Edwin Tong Chun Fai",
+     "attributed": true,
+     "text": "Yesterday, the Government also announced that the Prime Minister has also convened a Public Sector Data Security Review Committee, chaired by Deputy Prime Minister Teo Chee Hean, to conduct a comprehensive review of data security practices across the entire Public Service.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00027",
+     "speaker": "Mr Edwin Tong Chun Fai",
+     "attributed": true,
+     "text": "Dr Chia Shi-Lu has asked if the Ministry should consider streamlining the procurement of IT services across its departments, Statutory Boards and public hospitals to reduce personal data access by multiple vendors.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Mr Edwin Tong Chun Fai",
+     "attributed": true,
+     "text": "We agree and have done so progressively in the public healthcare family, where we are able to do so.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1954",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-04-01"
+  ],
+  "report_ids": [
+   "oral-answer-1954"
+  ],
+  "sentences_total": 31,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.3226,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 5,
+   "turns_total": 11,
+   "coverage": 0.4545,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:58:56"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2631,
+   "completion_tokens": 282,
+   "estimated": false,
+   "cost_usd": 0.000447
+  }
+ }
+}

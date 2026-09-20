@@ -1,0 +1,133 @@
+{
+ "title": "Employment Screening Process for Foreigners Applying for Work Permit",
+ "what_it_is": "Employment Screening Process for Foreigners Applying for Work Permit",
+ "sections": [
+  {
+   "label": "Foreigner work permit screening",
+   "summary": "Screening of work permit applicants helps minimise undesirable persons working in Singapore, with around 8,400 rejected yearly on average between 2016 and 2018.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Er Dr Lee Bee Wah",
+     "attributed": true,
+     "text": "asked the Minister for Manpower (a) what is the employment screening process for foreigners applying for a work permit; and (b) in the past three years, how many applicants have been rejected because of their unsatisfactory records.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Manpower (Mr Zaqy Mohamad) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "This screening of applicants helps to minimise incidence where undesirable persons are inadvertently allowed to work in Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Manpower (Mr Zaqy Mohamad) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "Between 2016 and 2018, around 8,400 applicants were rejected per year, on average, as a result of this screening.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Adverse records and employer appeals",
+   "summary": "Foreigners who infringed MOM regulations have adverse records marked, and employers may appeal or blacklist them for such conduct.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Mr Zaqy Mohamad",
+     "attributed": true,
+     "text": "Generally, as part of policy, as foreigners who have infringed MOM's regulations, they will have their adverse record marked.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Zaqy Mohamad",
+     "attributed": true,
+     "text": "For this case, if the maids' employers want to appeal, they can certainly appeal, but I am not sure if the Member is asking for them to return, or she wants them black-listed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Mr Zaqy Mohamad",
+     "attributed": true,
+     "text": "So, I suppose the employers also have an option to blacklist them as well for such adverse conduct, for example, that they want MOM to take note of.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Zaqy Mohamad",
+     "attributed": true,
+     "text": "We will certainly take note and mark it in the list.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Unlicensed moneylending adverse conduct",
+   "summary": "Unlicensed moneylending is adverse conduct that goes into the record without the employer needing to report it.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Mr Zaqy Mohamad",
+     "attributed": true,
+     "text": "When I talk about adverse conduct, when we talk about moneylending, it applies to unlicensed moneylending.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Zaqy Mohamad",
+     "attributed": true,
+     "text": "If it is unlicensed, certainly, that is adverse conduct and so, it will go into the record without the need for the employer to report this.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1923",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-02-18"
+  ],
+  "report_ids": [
+   "oral-answer-1923"
+  ],
+  "sentences_total": 13,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.6923,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 5,
+   "turns_total": 7,
+   "coverage": 0.7143,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:15:01"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1239,
+   "completion_tokens": 198,
+   "estimated": false,
+   "cost_usd": 0.000229
+  }
+ }
+}

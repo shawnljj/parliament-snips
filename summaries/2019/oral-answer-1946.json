@@ -1,0 +1,126 @@
+{
+ "title": "Statistics for Top 10 Scams",
+ "what_it_is": "Statistics for Top 10 Scams",
+ "sections": [
+  {
+   "label": "Reported scam cases increase",
+   "summary": "Reported cases of these top scam types rose from around 2,600 in 2014 to around 5,800 in 2018.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "For these top types of scams, the number of reported cases has gone up from around 2,600 cases in 2014 to around 5,800 cases in 2018.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "TCTF and E-FECT results",
+   "summary": "TCTF closed over 600 bank accounts and recovered more than S$1.5 million, while E-FECT arrested 26 e-commerce scammers and solved over 230 e-commerce scams.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "TCTF has closed over 600 bank accounts and recovered more than S$1.5 million.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Within two months of its formation, E-FECT arrested 26 e-commerce scammers and solved more than 230 e-commerce scams.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "This includes training frontline counter staff to spot scam victims and displaying crime advisories prominently at the counters and automated teller machines.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "These efforts have resulted in heightened awareness and vigilance amongst their staff, which helped prevent at least 80 scam cases involving close to $300,000 in 2018.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Single Cybercrime Command consolidation",
+   "summary": "Cybercrime investigations are consolidated under a single Cybercrime Command pooling resources, alongside officer training, specialised units and community involvement.",
+   "sentences": [
+    {
+     "sid": "s00041",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "Cybercrime investigations are consolidated under a single Cybercrime Command.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00042",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "We have consolidated all the resources within the Divisions into a single Cybercrime Command, where we can pool all the resources together.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00044",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "The answer is yes, there is capability and there is concerted effort on our part to tackle this problem, and these are the various measures which we have introduced – from having a single Cybercrime Command, ensuring training of our officers on the ground as well as forming specialised units and involving the community.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1946",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-03-06"
+  ],
+  "report_ids": [
+   "oral-answer-1946"
+  ],
+  "sentences_total": 45,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.1778,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:04:06"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2267,
+   "completion_tokens": 211,
+   "estimated": false,
+   "cost_usd": 0.000376
+  }
+ }
+}

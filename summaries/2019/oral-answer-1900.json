@@ -1,0 +1,112 @@
+{
+ "title": "Preventive Measures Implemented Following Data Leak Involving Persons with HIV",
+ "what_it_is": "Preventive Measures Implemented Following Data Leak Involving Persons with HIV",
+ "sections": [
+  {
+   "label": "HIV registry data leak questions",
+   "summary": "Questions to the Minister for Health on measures to reduce spread of leaked HIV data, protect psychosocial welfare, and ensure HIV testing climate.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Ms Anthea Ong",
+     "attributed": true,
+     "text": "asked the Minister for Health with the data leak involving 14,200 people with HIV, what specific measures will be taken to (i) reduce the spread of, and access to, the personal data and HIV status of the affected persons, (ii) ensure that the psychosocial welfare of these persons are protected in view of the stigmatisation and discrimination that exist at the workplace and in society and (iii) ensure that this incident does not negate years of painstaking efforts in providing a safe climate for people to come forward for HIV testing.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "Mr Leon Perera",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what designations of staff have access to the individualised data in the HIV registry; (b) whether staff who have legitimate reasons to analyse the data for policy purposes have access to the aggregated rather than the individualised data and, if not, why not; and (c) whether actions to extract or export such data are tracked and subjected to regular scrutiny to ensure that the purpose of the data extraction is legitimate.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Dennis Tan Lip Fong",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what action was taken to ensure that Mikhy Farrera-Brochez no longer possessed or had any access to confidential information of HIV patients which was taken from the Ministry's HIV registry, prior to his deportation from Singapore after his imprisonment; (b) when was he deported; and (c) whether affected patients were alerted when it was known that their data had been compromised in May 2016 and, if not, why not.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "HIV data disclosure safeguards questions",
+   "summary": "Questions to the Minister for Health on safeguarding affected persons, destigmatising HIV, and the 2016 Police report investigation.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Assoc Prof Walter Theseira",
+     "attributed": true,
+     "text": "asked the Minister for Health in light of the unauthorised disclosure of HIV registry data announced on 28 January 2019, what steps will be taken to (i) safeguard the affected persons against unwarranted discrimination that affects their ability to participate in society, such as in employment and housing, (ii) educate the public to destigmatise HIV and related health conditions and (iii) assure the public that HIV testing remains confidential, safe and important for public and personal health.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Png Eng Huat",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what was the outcome of the investigation into the May 2016 Police report which the Ministry lodged against Mikhy Farrera-Brochez on the possession of confidential information obtained from Singapore's HIV registry; (b) whether the Ministry made its own investigation after being tipped off in 2016 before making the Police report and, if so, what did the internal investigation reveal about the extent and amount of data stolen; and (c) whether there was any audit done on the integrity and unauthorised access of the HIV registry before May 2016.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public disclosure standards for data incidents",
+   "summary": "Questions to the Prime Minister on standards for timely public disclosure of Government personal data incidents and why this breach was not disclosed.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Assoc Prof Walter Theseira",
+     "attributed": true,
+     "text": "asked the Prime Minister (a) what standards apply for the timely public disclosure of Government information incidents involving personal data, given that in the case of the unauthorised disclosure of HIV registry data announced on 28 January 2019, the Ministry of Health lodged Police reports in May 2016 and May 2018; (b) what are the reasons why this breach was not publicly disclosed when the first Police report was made; and (c) whether public disclosure standards will be reviewed in light of this incident.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1900",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-02-12"
+  ],
+  "report_ids": [
+   "oral-answer-1900"
+  ],
+  "sentences_total": 10,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.6,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 6,
+   "turns_total": 10,
+   "coverage": 0.6,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:18:20"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1942,
+   "completion_tokens": 180,
+   "estimated": false,
+   "cost_usd": 0.000322
+  }
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "title": "Streamlining Public Hospitals' Admission Process",
+ "what_it_is": "Streamlining Public Hospitals' Admission Process",
+ "sections": [
+  {
+   "label": "Financial counselling for hospital patients",
+   "summary": "Public hospital patients are counselled on costs before planned admission, after emergency admission, and given updated estimates if bills rise.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "﻿The Senior Minister of State for Health and Law (Mr Edwin Tong Chun Fai) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For planned admissions and surgeries in public hospitals, financial counselling is done prior to admission or surgery.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "﻿The Senior Minister of State for Health and Law (Mr Edwin Tong Chun Fai) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For emergency cases, however, the priority is on quick diagnosis and intervention.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "﻿The Senior Minister of State for Health and Law (Mr Edwin Tong Chun Fai) (for the Minister for Health)",
+     "attributed": true,
+     "text": "So, in those cases, patients are counselled as soon as possible after admission.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "﻿The Senior Minister of State for Health and Law (Mr Edwin Tong Chun Fai) (for the Minister for Health)",
+     "attributed": true,
+     "text": "If there is a significant increase in estimated bill size during the course of the inpatient’s stay, which could occur for reasons, such as complications that were not anticipated prior, the patient would be provided with an updated estimate as quickly as possible.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "﻿The Senior Minister of State for Health and Law (Mr Edwin Tong Chun Fai) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Patients are counselled based on their financial status and the subsidies they are eligible for, as well as the expected MediShield Life payouts and the available MediSave withdrawals for their specific treatment and their condition.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Financial difficulty and medical social worker",
+   "summary": "Patients indicating financial difficulty are asked if they want referral to a Medical Social Worker, and care is not denied for financial constraints.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "﻿The Senior Minister of State for Health and Law (Mr Edwin Tong Chun Fai) (for the Minister for Health)",
+     "attributed": true,
+     "text": "If they indicate a financial difficulty, they will then be asked whether they wish to be referred to a Medical Social Worker to explore additional financial assistance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "﻿The Senior Minister of State for Health and Law (Mr Edwin Tong Chun Fai) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Patients’ medical needs will be prioritised and no one will be denied appropriate care because of financial constraints.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Proactive information from financial records",
+   "summary": "Information is proactively drawn from the National Electronic Financial Records for patients who gave prior consent to access it.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Mr Edwin Tong Chun Fai",
+     "attributed": true,
+     "text": "On the Member's first point, we do have a process where there is proactive intervention in terms of trying to give information proactively, especially for patients who might be identified as someone who is not able to understand the treatment processes and also may not even know what questions to ask.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Edwin Tong Chun Fai",
+     "attributed": true,
+     "text": "This is drawn proactively from information stored in the National Electronic Financial Records (NEFR) and it is obviously available to help patients who have, prior to that, given consent for their information to be accessed.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2057",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-09-03"
+  ],
+  "report_ids": [
+   "oral-answer-2057"
+  ],
+  "sentences_total": 24,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.375,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:44:17"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1750,
+   "completion_tokens": 185,
+   "estimated": false,
+   "cost_usd": 0.000297
+  }
+ }
+}

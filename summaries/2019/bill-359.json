@@ -1,0 +1,126 @@
+{
+ "title": "Pioneer Generation Fund (Amendment) Bill",
+ "what_it_is": "Pioneer Generation Fund (Amendment) Bill",
+ "sections": [
+  {
+   "label": "Merdeka Generation benefits and subsidies",
+   "summary": "From July, MG seniors can redeem $100 PAssion Silver top-ups and receive MediSave top-ups, MediShield Life subsidies, CHAS subsidies and a CareShield Life incentive.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "From July this year, MG seniors can redeem their $100 PAssion Silver card top-ups at selected Community Clubs (CCs), Mass Rapid Transit stations and bus interchanges.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "They can use these credits to pay for activities at their CCs, entry to ActiveSG pools and gyms, public transport and more.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "They will also receive their first MediSave top-ups in July, as well as additional subsidies for their MediShield Life premiums.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "From November onwards, they will enjoy subsidies for their bills at Community Health Assist Scheme (CHAS) clinics, polyclinics and Specialist Outpatient Clinics.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "In addition, they can enjoy a $4,000 sign-up incentive if they join CareShield Life between 2021 and 2023.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fund amount and projected costs",
+   "summary": "The Government will set aside $6.1 billion in the Fund, which with interest is estimated to cover the Package's projected cost of over $8 billion.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "As mentioned in this year's Budget, the Government will set aside $6.1 billion in this Fund.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "With accumulated interest over time, we estimate that this amount will be sufficient to cover the projected cost of the Package, which is over $8 billion.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MGP birth year eligibility",
+   "summary": "The MGP applies to Singapore Citizens born between 1 January 1950 and 31 December 1959.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "The MGP applies to Singapore Citizens born between 1 January 1950 and 31 December 1959.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-359",
+  "group": "bill",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-05-06"
+  ],
+  "report_ids": [
+   "bill-359"
+  ],
+  "sentences_total": 27,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2963,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:57:23"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1608,
+   "completion_tokens": 210,
+   "estimated": false,
+   "cost_usd": 0.000284
+  }
+ }
+}

@@ -1,0 +1,139 @@
+{
+ "title": "Dealing with Increased Incidence of Tuberculosis Cases",
+ "what_it_is": "Dealing with Increased Incidence of Tuberculosis Cases",
+ "sections": [
+  {
+   "label": "TB incidence and latent TB",
+   "summary": "Active TB incidence rates were similar in 2017 and 2018, and up to 30% have latent TB, which is not infectious.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "The incidence rates of active tuberculosis (TB) cases in 2017 and 2018 were similar, at 39 cases per 100,000 resident population.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "In 2018, almost half of new active TB cases were aged 60 and older, although their incidence rates had also remained stable.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "As such, up to 30% have latent TB.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "Latent TB patients do not exhibit symptoms and are not infectious, but one in 10 may progress to active TB during their lifetime.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "TBCU contact investigations",
+   "summary": "The Tuberculosis Control Unit conducts contact investigations to identify persons with close and prolonged contact with infectious TB cases.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "To contain TB transmission, the Tuberculosis Control Unit (TBCU) conducts contact investigations to identify persons who have had close and prolonged contact with infectious TB cases.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MDR-TB isolation and treatment",
+   "summary": "MDR-TB patients are isolated about two months and undergo directly observed therapy for about two years, with rapid DNA tests adopted.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "For Multi-Drug Resistant TB (MDR-TB), patients are isolated for treatment until they become non-infectious, which takes about two months, and they will undergo directly observed therapy (DOT) for about two years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "We have also adopted new technologies, such as rapid DNA tests for drug resistance, reducing time taken for identification of MDR-TB from two months to a few hours to facilitate early intervention.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Long-term TB control goal",
+   "summary": "Setting a firm TB control target is difficult, but the longer-term goal is to benchmark against high-income countries with rates under 20 per 100,000.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "Hence, it is quite difficult to set a firm target to achieve firm TB control.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "But in the longer term, our goal is to benchmark ourselves against high-income countries that have TB rates of about less than 20 cases per 100,000 population.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1972",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-05-07"
+  ],
+  "report_ids": [
+   "oral-answer-1972"
+  ],
+  "sentences_total": 40,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.225,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 9,
+   "coverage": 0.2222,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:55:28"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 2000,
+   "completion_tokens": 246,
+   "estimated": false,
+   "cost_usd": 0.000349
+  }
+ }
+}

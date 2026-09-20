@@ -1,0 +1,133 @@
+{
+ "title": "Preventing Disruptions at Changi Airport Caused by Drones",
+ "what_it_is": "Preventing Disruptions at Changi Airport Caused by Drones",
+ "sections": [
+  {
+   "label": "UAS airport restrictions and reports",
+   "summary": "UAS are banned within five kilometres of Singapore airports without a permit, with eight unauthorised reports near Changi over three years and countermeasures in place.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "UAS are prohibited from flying within five kilometres of any airport in Singapore without a permit.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Law enforcement officers also conduct regular surveillance patrols around the airport and respond to sightings of unauthorised UAS.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Over the past three years, there were eight reports of unauthorised UAS within five kilometres of Changi Airport.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "None of these cases involved intrusions into Changi Airport.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "We have countermeasures to deal with safety and security threats posed by UAS.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Enforcement capability against UAS",
+   "summary": "Enforcement agencies are building capabilities to detect, identify, locate operators of, and safely take down UAS, with Auxiliary Police patrolling Changi and Seletar.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "First of all, I would like to state that the enforcement agencies have been building up our capability to counter safety and security threats posed by UAS.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "This includes the ability to detect and identify UAS to locate its operator as well as the capability to take down the aircraft safely.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "To enforce the restriction of flying of UAS, the Civil Aviation Authority of Singapore (CAAS) has engaged the Auxiliary Police to conduct regular surveillance patrols around Changi as well as Seletar airports.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Centralised UAS flight management system",
+   "summary": "A centralised flight management system is intended to give an island-wide situational picture of UAS activities, check permits, and alert contravening operators.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "For cooperative UAS, we intend to develop a centralised flight management system that will actually provide an island-wide situational picture of UAS activities through tracking solutions, and this will allow us to zoom in on individual UAS, check if they are operating under valid permits, as well as to issue alerts to operators if they are found to be contravening regulations.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1860",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-01-14"
+  ],
+  "report_ids": [
+   "oral-answer-1860"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.3913,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 7,
+   "coverage": 0.2857,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:23:55"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1520,
+   "completion_tokens": 215,
+   "estimated": false,
+   "cost_usd": 0.000273
+  }
+ }
+}

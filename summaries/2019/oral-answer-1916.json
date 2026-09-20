@@ -1,0 +1,133 @@
+{
+ "title": "Ensuring Accuracy of Species Declarations for Shark Fin Shipments",
+ "what_it_is": "Ensuring Accuracy of Species Declarations for Shark Fin Shipments",
+ "sections": [
+  {
+   "label": "CITES shark fin trade regulation",
+   "summary": "Singapore is a CITES Party regulating trade in listed species, including some sharks, through permits; AVA found one wrongly declared fins consignment in five years.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Singapore is a Party to the Convention on International Trade in Endangered Species of Wild Flora and Fauna (CITES), which is an international agreement to ensure that trade does not threaten wildlife species with extinction.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Trade in CITES-listed species, including some shark species, is regulated through a system of CITES permits, which are issued by both importing and exporting countries in accordance with CITES rules and regulations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "In the past five years, AVA has found one consignment of sharks' fins to be wrongly declared.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "AVA permits and DNA testing",
+   "summary": "AVA requires CITES permits for listed shark imports and uses a targeted approach, sampling fins for DNA testing when consignments are flagged.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "In accordance with the CITES regulations, AVA requires all imports of CITES-listed shark species to be accompanied by permits.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "As I have also mentioned earlier in my reply, AVA then adopts a targeted approach to act on shark fin consignments that may have been brought in without the necessary permits or have been wrongly declared.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "These consignments then undergo DNA testing to verify if the species declarations are accurate.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "So, when a shark fin consignment has been flagged, based on tip-offs or surveillance, AVA samples different fins within the same consignment for further testing and DNA analysis.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Mandatory environmental food labelling study",
+   "summary": "AVA regulates food labelling mainly for food safety and public health, and would need to study effectiveness, regulatory impact and resources for environmental labelling.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "On whether or not there should be a mandatory labelling scheme, currently, AVA regulates food labelling primarily for the purposes of food safety and public health.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "AVA would need to carefully study the effectiveness, the regulatory impact and resource implications of a food labelling scheme based on environmental considerations.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1916",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-02-13"
+  ],
+  "report_ids": [
+   "oral-answer-1916"
+  ],
+  "sentences_total": 20,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.45,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 3,
+   "turns_total": 7,
+   "coverage": 0.4286,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:16:56"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1457,
+   "completion_tokens": 201,
+   "estimated": false,
+   "cost_usd": 0.00026
+  }
+ }
+}

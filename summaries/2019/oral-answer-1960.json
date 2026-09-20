@@ -1,0 +1,141 @@
+{
+ "title": "Impact of Inclusion of Capital Income on Singapore's Gini Coefficient",
+ "what_it_is": "Impact of Inclusion of Capital Income on Singapore's Gini Coefficient",
+ "sections": [
+  {
+   "label": "Gini coefficient and capital income",
+   "summary": "MP asks about Gini coefficient with capital income; Ministry says such data is not included due to measurement issues.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Louis Ng Kok Kwang",
+     "attributed": true,
+     "text": "asked the Minister for Finance (a) what is the Gini coefficient of Singapore for each year in the past 10 years when capital income is taken into account; (b) if such data is not available, whether inclusion of capital income is likely to increase or decrease Singapore's Gini coefficient; and (c) whether the Ministry will take into account capital income when reporting Singapore's Gini coefficient.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "This data is available annually and enables the timely tracking of income inequality.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "Collecting income data from sources other than work is more challenging.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "Such data are typically collected based on self-reporting by respondents and are more susceptible to measurement errors.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "This is why the Department of Statistics has thus far not included such data in its computation of the Gini coefficient.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "Nevertheless, the Government will continue to explore ways to better measure and monitor income inequality.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "Regardless of the measurement issues, our approach remains to keep our social support measures progressive and targeted at the lower- and middle-income households.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "OECD capital income and surveys",
+   "summary": "OECD countries include capital income; Singapore's household expenditure survey covers non-work income but not in Gini computation.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "I also understand that, for example, all the other Organization for Economic Co-operation and Development (OECD) countries do include capital income.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "We do have surveys of income other than work in the household expenditure survey.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "It is not part of the Gini coefficient computation.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "So, that income is covered in the household expenditure survey which is done once every five years.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1960",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-04-01"
+  ],
+  "report_ids": [
+   "oral-answer-1960"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 2,
+  "selection_share": 0.7333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 4,
+   "turns_total": 4,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:59:03"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1163,
+   "completion_tokens": 138,
+   "estimated": false,
+   "cost_usd": 0.000201
+  }
+ }
+}

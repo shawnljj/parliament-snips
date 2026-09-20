@@ -1,0 +1,126 @@
+{
+ "title": "Government Assistance for CHAS-registered Clinics to Better Advise Patients",
+ "what_it_is": "Government Assistance for CHAS-registered Clinics to Better Advise Patients",
+ "sections": [
+  {
+   "label": "CHAS clinic subsidies and guidelines",
+   "summary": "MOH partners GP and dental clinics under CHAS to give subsidised care to CHAS, PG and future MG cardholders, and provides clinical and claims guidelines.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The Ministry of Health (MOH) partners participating general practitioner (GP) and dental clinics under the Community Health Assist Scheme (CHAS) to provide CHAS, Pioneer Generation (PG) and, in future, Merdeka Generation (MG) cardholders, with subsidised medical and dental care.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "MOH provides clinical and claims guidelines to all CHAS GP and dental clinics, such as on the eligibility of items for CHAS subsidies, to ensure appropriate clinical care and utilisation of subsidies.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Training for CHAS clinics",
+   "summary": "AIC conducts onsite training and outreach talks to help GP and dental clinics understand CHAS guidelines and how CHAS helps patients.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "To help GP and dental clinics understand the guidelines and how CHAS can help their patients, AIC conducts individualised onsite training sessions for doctors and clinic staff, and organises outreach efforts, such as regional lunchtime talks, on CHAS.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CHAS referrals to specialist clinics",
+   "summary": "CHAS clinics may refer patients needing specialist care to public hospital SOCs as subsidised patients via unnamed referrals, but CHAS subsidies do not apply at SOCs.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Indeed, Mr Speaker, with the rapidly ageing population and when CHAS subsidies are extended to all Singaporeans with chronic conditions, the number of Singaporeans utilising CHAS benefits will inevitably increase.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "The CHAS agreement states that CHAS clinics can refer CHAS patients who require specialist care to the Specialist Outpatient Clinics (SOCs) at public hospitals as subsidised patients as long as their referrals are unnamed referrals.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Such subsidised referrals can be made for any medical conditions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "At the SOCs, patients receive prevailing SOC subsidies based on their per capita household income.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "CHAS subsidies, however, do not apply on SOC visits.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1945",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-03-06"
+  ],
+  "report_ids": [
+   "oral-answer-1945"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.5333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:04:08"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1328,
+   "completion_tokens": 207,
+   "estimated": false,
+   "cost_usd": 0.000244
+  }
+ }
+}

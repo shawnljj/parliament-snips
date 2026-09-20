@@ -1,0 +1,100 @@
+{
+ "title": "Unauthorised Modifications in Industrial Buildings",
+ "what_it_is": "Unauthorised Modifications in Industrial Buildings",
+ "sections": [
+  {
+   "label": "Periodic Structural Inspection regime",
+   "summary": "BCA requires Periodic Structural Inspection every 10 years for residential and five years for non-residential buildings, with penalties for unauthorised works and PE failures.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for National Development (Mr Zaqy Mohamad) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "The Building and Construction Authority (BCA) imposes the Periodic Structural Inspection (PSI) regime to ensure that buildings are structurally safe.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for National Development (Mr Zaqy Mohamad) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "The PSI has to be carried out every 10 years for residential buildings and every five years for non-residential buildings, including those for industrial use.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for National Development (Mr Zaqy Mohamad) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "During the inspections, the PEs must also check for any A&A works to the structure of the building and report their findings to BCA.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister of State for National Development (Mr Zaqy Mohamad) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Any A&A works not in the original BCA-approved plans would be considered unauthorised.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister of State for National Development (Mr Zaqy Mohamad) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Under the Building Control Act, offenders may be liable to a fine of $200,000 or a jail term of up to two years, or both.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister of State for National Development (Mr Zaqy Mohamad) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "A PE who fails to perform his duties in carrying out the PSI according to the requirements may be liable to a fine of up to $20,000.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1959",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-04-01"
+  ],
+  "report_ids": [
+   "oral-answer-1959"
+  ],
+  "sentences_total": 11,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.5455,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:59:04"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 959,
+   "completion_tokens": 94,
+   "estimated": false,
+   "cost_usd": 0.000161
+  }
+ }
+}

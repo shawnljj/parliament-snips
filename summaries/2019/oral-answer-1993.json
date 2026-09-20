@@ -1,0 +1,154 @@
+{
+ "title": "Efforts to Detect and Deter Trade of Pangolins",
+ "what_it_is": "Efforts to Detect and Deter Trade of Pangolins",
+ "sections": [
+  {
+   "label": "Singapore approach to illegal wildlife trade",
+   "summary": "Singapore uses a whole-of-Government, multi-pronged approach against illegal wildlife trade, with regularly reviewed risk profiles, leading to two seizures of nearly 26 tonnes of pangolin scales in April 2019.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Singapore adopts a whole-of-Government and multi-pronged approach to combat illegal wildlife trade, including the trade of pangolins.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Risk profiles and indicators are reviewed regularly to ensure that the framework remains robust.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "This approach has led to two successful seizures of nearly 26 tonnes of pangolin scales in April 2019.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MMPDS prototype testing by ICA",
+   "summary": "MHA and ICA are testing an MMPDS prototype, and depending on the outcome, ICA can work with NParks to use it to detect smuggling of illegal wildlife products.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "The Ministry of Home Affairs and ICA are currently testing a prototype of the MMPDS.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for National Development (Ms Sun Xueling) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Depending on the outcome of this testing, ICA can work with NParks to use this technology to detect the smuggling of illegal wildlife products.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cargo scanning and TradeNet risk profiles",
+   "summary": "All incoming air and land cargo is scanned, selected seaport cargo is scanned, and TradeNet declarations are checked against risk profiles to identify shipments for inspection.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "On the first point, for our air and land checkpoints, all incoming cargo is scanned.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00035",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "Indeed, for our seaports, there is a large volume that we have.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00036",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "So, selected cargo that is identified during upstream risk assessment will be scanned.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00038",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "It allows us to target high-risk entities that may be involved in illegal wildlife trade.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00039",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "So, when the Singapore National Single Window for trade declaration, known as TradeNet, receives and processes information declared by traders prior to the arrival or departure of cargo, our risk profiles are applied to this information to identify shipments for further inspection.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "But I take the point that the Member made that if there is better technology available that allows us to scan a greater volume of cargo more effectively and more efficiently, we will definitely do so.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00042",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "And that is why we are conducting the pilot on MMPDS that the Member had mentioned.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1993",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-05-08"
+  ],
+  "report_ids": [
+   "oral-answer-1993"
+  ],
+  "sentences_total": 44,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 3,
+  "selection_share": 0.2727,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:51:07"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2338,
+   "completion_tokens": 234,
+   "estimated": false,
+   "cost_usd": 0.000393
+  }
+ }
+}

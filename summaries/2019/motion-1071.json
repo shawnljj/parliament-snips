@@ -1,0 +1,65 @@
+{
+ "title": "Simultaneous Debate on Motions",
+ "what_it_is": "Simultaneous Debate on Motions",
+ "sections": [
+  {
+   "label": "Separate votes on two Motions",
+   "summary": "At the end of the debate, Members will be able to vote on the two Motions separately.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Government Whip (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "At the end of the debate, Members will be able to vote on the two Motions separately.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-1071",
+  "group": "motion",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-02-11"
+  ],
+  "report_ids": [
+   "motion-1071"
+  ],
+  "sentences_total": 3,
+  "sentences_selected": 1,
+  "sentences_in_sections": 1,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 1,
+   "sentences_selected": 1,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:20:20"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 553,
+   "completion_tokens": 59,
+   "estimated": false,
+   "cost_usd": 9.4e-05
+  }
+ }
+}

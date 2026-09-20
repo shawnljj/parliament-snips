@@ -1,0 +1,120 @@
+{
+ "title": "Extension of HDB Repair Services to Support Elderly or Less Mobile Residents in Non-rental Flats",
+ "what_it_is": "Extension of HDB Repair Services to Support Elderly or Less Mobile Residents in Non-rental Flats",
+ "sections": [
+  {
+   "label": "HDB repair help for flat owners",
+   "summary": "HDB does not repair flats, but elderly or less mobile residents living alone can seek help from Town Council units or HDB advice and contractor referrals.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "As such, the Housing and Development Board (HDB) does not provide repair services for flat owners.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Nevertheless, we recognise that some flat owners, such as the elderly or less mobile residents who live alone, may require extra help, so there are various avenues for these residents to seek help.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "For urgent assistance on maintenance matters, such as power trips that occur after office hours, residents can contact their Town Council’s Essential Maintenance Service Unit, which can provide advice over the phone or recommend an electrician that the flat owner can engage.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "HDB can also provide general advice on home repair and maintenance, including referring residents to repair contractors that are listed on HDB’s website.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Maintenance responsibility for rental and sold flats",
+   "summary": "HDB maintains rental flats it owns, while sold flat owners bear responsibility but can turn to Town Councils, community organisations and HDB help.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Mr Saktiandi Supaat (Bishan-Toa Payoh)",
+     "attributed": true,
+     "text": "I was wondering whether the services that have been provided to the rental flat residents can be extended to some of our elderly and vulnerable residents in the flats in the vicinity.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "So, for the rental flats, as HDB is the owner, we will, therefore, take charge of maintenance for these units.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "For sold flats, owners have to bear responsibility.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "But as I said earlier, just because we uphold this principle does not mean that owners have to fend for themselves, because there are in place a range of different assistance schemes or different organisations that owners can turn to, including Town Councils and community organisations, and HDB will also do its part within this set-up to facilitate and help where possible.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2015",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-08-05"
+  ],
+  "report_ids": [
+   "oral-answer-2015"
+  ],
+  "sentences_total": 12,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.6667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:49:18"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1254,
+   "completion_tokens": 152,
+   "estimated": false,
+   "cost_usd": 0.000218
+  }
+ }
+}

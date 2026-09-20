@@ -1,0 +1,154 @@
+{
+ "title": "Living in Private Properties but with No Declared Income",
+ "what_it_is": "Living in Private Properties but with No Declared Income",
+ "sections": [
+  {
+   "label": "Citizens in private property without income",
+   "summary": "The passage states how many citizens live in private properties without declared income and lists three groups they generally fall under.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Lim Biow Chuan",
+     "attributed": true,
+     "text": "asked the Deputy Prime Minister and Minister for Finance, currently, how many citizens live in private properties but do not have any declared income.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "They generally come under three groups: (a) they have no yearly income of any form; or (b) they do have income but that income is not taxable, including interest income or dividend income; or (c) they do have taxable income, but are not required to file tax returns as they are not subject to tax after taking into account their tax deductions and reliefs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "The 164,000 figure includes citizens who have access to other financial means.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Broad-based schemes and private property residents",
+   "summary": "The passage states about 80% are covered by broad-based schemes and that 164,000 of 2.7 million adults live in private properties without declared income.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "There may be some who do not fall within the broad-based schemes, and then, we have to see how we can assist those, look at the way in which we try to identify them, because we do not have the detailed granular information.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "I would say about 80% are covered through our broad-based schemes like GST Vouchers, MediShield Life, Community Health Assist Scheme, Workfare Income Supplement, Silver Support and so on.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "I think the group that Mr Lim Biow Chuan is talking about is those who live in private properties who have not declared their income.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "That is 164,000 out of the 2.7 million adults that I mentioned.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "GST Vouchers and assistance assurance",
+   "summary": "The passage states GST Vouchers offset lower-income residents, schemes apply to all, and those genuinely in need will not be left without assistance.",
+   "sentences": [
+    {
+     "sid": "s00041",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "For the GST Vouchers, for example, the idea was really to offset for those who are lower income and have less means.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "It is also not fair to be subsidising those who do have some means.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00044",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "I will come back to the basic point, which is that there are schemes which apply to all, and residents in private properties without income will benefit from those.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00046",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "The assurance we can give is that those genuinely in need will not be left without assistance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00048",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "Precisely because we recognised that these different groups have contributed to the nation, that is why those are not means-tested and are given to all.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1985",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-05-08"
+  ],
+  "report_ids": [
+   "oral-answer-1985"
+  ],
+  "sentences_total": 48,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 3,
+  "selection_share": 0.25,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 4,
+   "turns_total": 6,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:51:05"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2545,
+   "completion_tokens": 211,
+   "estimated": false,
+   "cost_usd": 0.000415
+  }
+ }
+}

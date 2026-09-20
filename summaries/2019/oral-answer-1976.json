@@ -1,0 +1,140 @@
+{
+ "title": "Dealing with Complaints of Reckless Behaviour of PMD Users",
+ "what_it_is": "Dealing with Complaints of Reckless Behaviour of PMD Users",
+ "sections": [
+  {
+   "label": "LTA feedback and accident reports",
+   "summary": "LTA receives feedback from MPs and stakeholders, assesses it for follow-up actions, and uses it to identify enforcement hotspots.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "LTA also receives feedback from Members of Parliament as well as community and industry stakeholders.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Persons involved in such accidents should immediately file a report with the Police.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "LTA carefully assesses all feedback to determine the follow-up actions required.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "For example, such feedback helps LTA to identify the hotspots to determine the appropriate enforcement efforts.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Active Mobility Advisory Panel recommendation",
+   "summary": "The Active Mobility Advisory Panel recommended allowing active mobility devices on footpaths after consultation, and banning them is not the solution.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "We all understand that the severity of injuries should an accident happen on the roads can be even more serious and fatalities more likely.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "This is the reason why the Active Mobility Advisory Panel, after extensive public and stakeholders' consultation, had recommended to allow active mobility devices to be used on footpaths.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Banning the use of active mobility devices on footpaths is actually not the solution.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Increased feedback and accidents",
+   "summary": "Feedback and accidents have increased over six months, so public education, enforcement, and e-scooter registration are being stepped up.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Er Dr Lee Bee Wah (Nee Soon)",
+     "attributed": true,
+     "text": "The Senior Minister of State earlier mentioned that there are many ways that a report can be made about accidents or near-miss accidents.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "But based on what I have shared in previous Parliamentary sessions, there is, indeed, an increase in the number of feedback received as well as the number of accidents over the past six months.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Therefore, we are stepping up our effort in public education, stepping up enforcement action as well as implementing the registration regime for e-scooters.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1976",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-05-07"
+  ],
+  "report_ids": [
+   "oral-answer-1976"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.4348,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 6,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:55:37"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1392,
+   "completion_tokens": 188,
+   "estimated": false,
+   "cost_usd": 0.000248
+  }
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "title": "Number of Public Transport Vouchers Not Redeemed",
+ "what_it_is": "Number of Public Transport Vouchers Not Redeemed",
+ "sections": [
+  {
+   "label": "Public Transport Vouchers redemption and distribution",
+   "summary": "MP asks about 2018 PTV redemption, administrative costs, and automatic distribution; Ministry says criteria expanded so one in five households eligible and more PTVs available for CCC flexibility.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Assoc Prof Walter Theseira",
+     "attributed": true,
+     "text": "asked the Minister for Transport (a) what are the reasons leading to only 192,000 out of the projected 300,000 Public Transport Vouchers (PTVs) being redeemed in the 2018 exercise; (b) what are the administrative costs and challenges faced by the People's Association and grassroots organisations in their PTV outreach programmes; and (c) whether the Ministry will explore the possibility of automatic distribution for PTVs 2019 for individuals who fulfil certain criteria, such as those under ComCare, Silver Support Scheme, or HDB Public Rental Scheme.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "We regularly review the PTV process to set appropriate eligibility criteria and the quantum for each exercise.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "This year, we have expanded the criteria so that one in five resident households are eligible, doubling the proportion for the 2018 PTV exercise.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "In addition, we will continue to make available more PTVs, over and above the number of eligible households.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "This is so that local Citizens' Consultative Committees (CCCs) can have the flexibility to provide additional assistance to needy households with special circumstances or those that marginally miss the eligibility criteria.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "2018 vouchers highest amount",
+   "summary": "The number of vouchers made available in the 2018 exercise was the highest amount at that point.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "For the latest exercise, in 2018, the number of vouchers made available was the highest amount at that point.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "2019 PTV income criterion raised",
+   "summary": "For 2019 PTVs the household income eligibility criterion was raised, and low-income workers on WIS qualify for concessionary fare, with over half of Singaporeans not paying full adult fare.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "Given this time, for the 2019 PTVs, we have raised the household income eligibility criterion, so we expect more households to benefit and hopefully they can come forward to apply for the PTVs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00027",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "For example, low-income workers who are already on the Workfare Income Supplement (WIS) scheme can already qualify for the concessionary fare.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00029",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "In fact, more than half of Singaporeans do not pay the full adult fare, so they are already taken care of under the concessionary fares schemes.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2087",
+  "group": "oral",
+  "year": "2019",
+  "sitting_dates": [
+   "2019-11-05"
+  ],
+  "report_ids": [
+   "oral-answer-2087"
+  ],
+  "sentences_total": 32,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.2812,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:37:39"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1899,
+   "completion_tokens": 218,
+   "estimated": false,
+   "cost_usd": 0.000327
+  }
+ }
+}

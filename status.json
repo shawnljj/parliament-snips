@@ -1,12 +1,11 @@
 {
  "project": "parsnips",
- "written_at": "2026-09-20T18:42:53+08:00",
+ "written_at": "2026-09-20T19:24:39+08:00",
  "by": "tools/write_status.py",
- "status": "failed",
+ "status": "working",
  "changed_since_last": [
-  "2514 briefs live across 7 year(s)",
-  "4 year(s) have datasets but no briefs yet: 2016, 2017, 2018, 2019",
-  "1 year(s) FAIL their gates: 2026"
+  "2809 briefs live across 8 year(s)",
+  "3 year(s) have datasets but no briefs yet: 2016, 2017, 2018"
  ],
  "corpus": {
   "2016": {
@@ -22,7 +21,7 @@
    "dataset_items": 366
   },
   "2019": {
-   "briefs": 0,
+   "briefs": 299,
    "dataset_items": 301
   },
   "2020": {
@@ -50,11 +49,17 @@
    "dataset_items": 301
   },
   "2026": {
-   "briefs": 291,
+   "briefs": 287,
    "dataset_items": 291
   }
  },
  "gates": [
+  {
+   "name": "check_selection",
+   "scope": "summaries/2019",
+   "result": "PASS",
+   "defects": 0
+  },
   {
    "name": "check_selection",
    "scope": "summaries/2020",
@@ -94,17 +99,17 @@
   {
    "name": "check_selection",
    "scope": "summaries/2026",
-   "result": "FAIL",
-   "defects": 4
+   "result": "PASS",
+   "defects": 0
   }
  ],
- "blocked": true,
- "blocked_on": "1 failing gate(s)",
- "needs_decision": "1 year(s) fail check_selection (2026). Fix before shipping, or accept the defects.",
- "severity": "high",
+ "blocked": false,
+ "blocked_on": null,
+ "needs_decision": null,
+ "severity": "low",
  "git": {
   "unpushed_commits": 0,
-  "dirty_files": 2,
-  "last_commit": "61be77a 2026 now reports the four stale briefs as defects, not a pass"
+  "dirty_files": 450,
+  "last_commit": "6db613d Remove four pre-schema-4 briefs the current pipeline withholds"
  }
 }
