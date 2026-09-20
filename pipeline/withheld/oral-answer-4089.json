@@ -33,7 +33,7 @@
   "coverage": 0.129,
   "min_coverage_required": 0.15,
   "min_turns_required": 1,
-  "checked_at": "2026-09-20T10:21:37"
+  "checked_at": "2026-09-20T18:37:29"
  },
  "attempt": {
   "title": "Impact of War in Iran on Singaporeans and Singapore's Businesses, Trade, Supply Chains, LNG Stockpiles and Prices",
@@ -41,7 +41,7 @@
   "sections": [
    {
     "label": "Electricity price increases and safeguards",
-    "summary": "Asks about electricity price projections over six to 12 months and measures to shield households from sudden spikes.",
+    "summary": "Asks about electricity price projections over six to 12 months and measures to shield households from sudden price spikes.",
     "sentences": [
      {
       "sid": "s00002",
@@ -60,7 +60,7 @@
     ]
    },
    {
-    "label": "Qatar LNG facility damages",
+    "label": "Qatar LNG facility damages impact",
     "summary": "Asks whether damage to Qatar's Ras Laffan LNG facilities affects Singapore's supply, alternatives, and downstream industries.",
     "sentences": [
      {
@@ -73,21 +73,21 @@
     ]
    },
    {
-    "label": "Middle East conflict trade impact",
-    "summary": "Asks how the Middle East conflict has impacted trade volume and 2026 GDP forecasts, and measures to support SMEs.",
+    "label": "Middle East conflict macroeconomic assessment",
+    "summary": "Asks for a holistic assessment of the Middle East conflict's macroeconomic impact on Singapore under baseline and adverse scenarios.",
     "sentences": [
      {
-      "sid": "s00028",
-      "speaker": "Mr Dennis Tan Lip Fong",
+      "sid": "s00021",
+      "speaker": "Mr Saktiandi Supaat",
       "attributed": true,
-      "text": "asked the Deputy Prime Minister and Minister for Trade and Industry (a) how has the Middle East conflict impacted Singapore’s trade volume and GDP growth forecasts for 2026; and (b) what specific measures are being implemented to support local businesses, particularly SMEs, facing the consequences of the disruption of energy supplies and global trade routes.",
+      "text": "asked the Deputy Prime Minister and Minister for Trade and Industry whether the Government can provide a holistic assessment of the macroeconomic impact of the Middle East conflict thus far on Singapore, including (i) inflation pass-through (ii) growth risks (iii) household cost pressures and (iv) policy responses, under both baseline and adverse energy shock scenarios.",
       "added_for_context": false
      }
     ]
    },
    {
-    "label": "Oil and LNG import reliance",
-    "summary": "Asks what proportion of crude oil and LNG imports transit the Strait of Hormuz, stockpile days, and contingency plans.",
+    "label": "Strait of Hormuz import dependence",
+    "summary": "Asks what proportion of Singapore's crude oil and LNG imports transit the Strait of Hormuz and contingency plans.",
     "sentences": [
      {
       "sid": "s00032",
@@ -99,21 +99,21 @@
     ]
    },
    {
-    "label": "Fuel prices affecting drivers",
-    "summary": "Asks how rising fuel prices affect SMEs and vehicle-dependent Singaporeans, available support, and safeguards against excessive pass-through.",
+    "label": "Fuel excise duties impact review",
+    "summary": "Asks whether fuel excise duties' impact on consumers has been assessed and whether temporary adjustments were considered.",
     "sentences": [
      {
-      "sid": "s00036",
-      "speaker": "Ms Nadia Ahmad Samdin",
+      "sid": "s00045",
+      "speaker": "Dr Hamid Razak",
       "attributed": true,
-      "text": "asked the Deputy Prime Minister and Minister for Trade and Industry (a) what is the Government’s assessment of how rising fuel prices are affecting SMEs and Singaporeans who depend on their vehicles for daily income, including private hire drivers and delivery riders; (b) what support is available to these segments; and (c) what safeguards are in place to ensure that fuel price increases do not disproportionately burden consumers through excessive pass-through.",
+      "text": "asked the Prime Minister and Minister for Finance (a) whether the Ministry has assessed the impact of current fuel excise duties on consumers amid recent global fuel price increases; (b) whether temporary adjustments to fuel duties have been considered as a stabilisation measure; and (c) if so, what criteria or thresholds would guide such a policy review.",
       "added_for_context": false
      }
     ]
    },
    {
     "label": "Food reserves and urea transit",
-    "summary": "Asks whether strategic food reserves meet targets, impact of urea and sulphur transiting the Strait of Hormuz, and buffering measures.",
+    "summary": "Asks whether strategic food reserves meet targets and whether urea and sulphur transit disruptions affect food import prices.",
     "sentences": [
      {
       "sid": "s00055",
@@ -126,7 +126,7 @@
    },
    {
     "label": "Road tax and petrol duty rebates",
-    "summary": "An MP asked the Acting Minister for Transport whether road tax rebates and petrol duty rebates will be announced amid high energy prices from Middle East conflict.",
+    "summary": "Asked whether the Ministry will announce road tax rebates for several vehicle types and petrol duty rebates for private hire and taxi drivers.",
     "sentences": [
      {
       "sid": "s00059",
@@ -174,14 +174,14 @@
     "coverage": 0.129,
     "min_coverage_required": 0.15,
     "min_turns_required": 1,
-    "checked_at": "2026-09-20T10:21:37"
+    "checked_at": "2026-09-20T18:37:29"
    },
    "usage": {
     "calls": 6,
-    "prompt_tokens": 6682,
-    "completion_tokens": 396,
+    "prompt_tokens": 6666,
+    "completion_tokens": 383,
     "estimated": false,
-    "cost_usd": 0.001046
+    "cost_usd": 0.00104
    }
   }
  }

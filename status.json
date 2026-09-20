@@ -1,13 +1,12 @@
 {
  "project": "parsnips",
- "written_at": "2026-09-20T18:36:21+08:00",
+ "written_at": "2026-09-20T18:42:53+08:00",
  "by": "tools/write_status.py",
  "status": "failed",
  "changed_since_last": [
   "2514 briefs live across 7 year(s)",
   "4 year(s) have datasets but no briefs yet: 2016, 2017, 2018, 2019",
-  "1 year(s) FAIL their gates: 2026",
-  "3 unpushed commit(s)"
+  "1 year(s) FAIL their gates: 2026"
  ],
  "corpus": {
   "2016": {
@@ -104,8 +103,8 @@
  "needs_decision": "1 year(s) fail check_selection (2026). Fix before shipping, or accept the defects.",
  "severity": "high",
  "git": {
-  "unpushed_commits": 3,
-  "dirty_files": 0,
-  "last_commit": "357adfc A brief with no sections was invisible to every check"
+  "unpushed_commits": 0,
+  "dirty_files": 2,
+  "last_commit": "61be77a 2026 now reports the four stale briefs as defects, not a pass"
  }
 }
