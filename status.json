@@ -1,12 +1,13 @@
 {
  "project": "parsnips",
- "written_at": "2026-09-20T18:34:09+08:00",
+ "written_at": "2026-09-20T18:36:21+08:00",
  "by": "tools/write_status.py",
- "status": "working",
+ "status": "failed",
  "changed_since_last": [
-  "2188 briefs live across 6 year(s)",
-  "5 year(s) have datasets but no briefs yet: 2016, 2017, 2018, 2019, 2020",
-  "2 unpushed commit(s)"
+  "2514 briefs live across 7 year(s)",
+  "4 year(s) have datasets but no briefs yet: 2016, 2017, 2018, 2019",
+  "1 year(s) FAIL their gates: 2026",
+  "3 unpushed commit(s)"
  ],
  "corpus": {
   "2016": {
@@ -26,7 +27,7 @@
    "dataset_items": 301
   },
   "2020": {
-   "briefs": 0,
+   "briefs": 326,
    "dataset_items": 333
   },
   "2021": {
@@ -55,6 +56,12 @@
   }
  },
  "gates": [
+  {
+   "name": "check_selection",
+   "scope": "summaries/2020",
+   "result": "PASS",
+   "defects": 0
+  },
   {
    "name": "check_selection",
    "scope": "summaries/2021",
@@ -88,17 +95,17 @@
   {
    "name": "check_selection",
    "scope": "summaries/2026",
-   "result": "PASS",
-   "defects": 0
+   "result": "FAIL",
+   "defects": 4
   }
  ],
- "blocked": false,
- "blocked_on": null,
- "needs_decision": null,
- "severity": "low",
+ "blocked": true,
+ "blocked_on": "1 failing gate(s)",
+ "needs_decision": "1 year(s) fail check_selection (2026). Fix before shipping, or accept the defects.",
+ "severity": "high",
  "git": {
-  "unpushed_commits": 2,
-  "dirty_files": 33,
-  "last_commit": "a811ab0 Record how the project bots are reached and how they report"
+  "unpushed_commits": 3,
+  "dirty_files": 0,
+  "last_commit": "357adfc A brief with no sections was invisible to every check"
  }
 }
