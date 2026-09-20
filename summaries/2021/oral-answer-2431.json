@@ -1,0 +1,146 @@
+{
+ "title": "Proposal to Consider Wholesale Insurance for Banks and Other Credit Card Issuers to Permit Easier Write-offs for Smaller Transaction Amounts",
+ "what_it_is": "Proposal to Consider Wholesale Insurance for Banks and Other Credit Card Issuers to Permit Easier Write-offs for Smaller Transaction Amounts",
+ "sections": [
+  {
+   "label": "Card fraud loss insurance",
+   "summary": "Jamus Lim asked whether banks and card issuers should be encouraged to obtain wholesale insurance cover for card fraud losses.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Assoc Prof Jamus Lim asked if banks and credit card issuers should be encouraged to obtain wholesale insurance cover for card fraud losses, so that they can write-off smaller losses incurred as a result of fraud.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "There is little demand from credit card issuers to purchase insurance to cover fraud-related losses arising from their credit card portfolios.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Instead of insurance, which will lead to higher costs for consumers, it is more important for credit card issuers and customers to play their respective parts in preventing fraud.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Timely report caps liability",
+   "summary": "A timely report caps a customer's liability at $100 unless he is later found to have acted fraudulently or negligently.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "A timely report will cap a customer's liability at $100 unless he is subsequently found to have acted fraudulently or negligently.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Shifting fraud liability burden",
+   "summary": "Banks can recover unauthorised non-OTP merchant payments from merchants, and the ABS Code of Practice is being reviewed.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "For unauthorised payments to merchants that are not secured by OTP, banks have the right to recover the lost amounts fully from the merchants, and hence customers will not bear any loss.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "In addition, the industry Code of Practice for Banks on Credit Cards issued by the Association of Banks in Singapore (ABS), sets out the liability of cardholders under various circumstances, is currently being reviewed to consider emerging scenarios for fraud and further risk mitigating measures.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
+     "attributed": true,
+     "text": "The US has the Fair Credit Reporting Act which, by limiting the liability on consumers, has actually shifted a significant part of the burden of fraud detection and policing away from the consumer and government, and back toward credit card providers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
+     "attributed": true,
+     "text": "Even, as the Minister had shared, we have some elements of this in place, I think the routine reporting of fraud and in our own Meet-the-People's sessions, when we have residents coming into us, fearful for the loss of their life savings due to fraud, makes me feel that consumers are often still in lurch for liability for unauthorised transactions on their credit card accounts.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
+     "attributed": true,
+     "text": "So, to build on my question, I wonder if the MAS has considered other forms of regulation that would potentially shift the burden of responsibility away from consumers constantly just improving their cyber hygiene, and toward better deployment of fraud detection technology and tools by financial institutions because they are held more liable for fraud-related losses.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Non-negligent consumers' minimised losses",
+   "summary": "Consumers who are not negligent and report quickly have their losses minimised, as encapsulated in the ABS Code of Practice.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "In fact, for consumers, so long as they are not negligent, they are responsible, they report quickly, the losses they suffer is very much minimised and these are all encapsulated in the industry Code of Practice for Banks on Credit Cards.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2431",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-03-04"
+  ],
+  "report_ids": [
+   "oral-answer-2431"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.3846,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:50:09"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1882,
+   "completion_tokens": 237,
+   "estimated": false,
+   "cost_usd": 0.00033
+  }
+ }
+}

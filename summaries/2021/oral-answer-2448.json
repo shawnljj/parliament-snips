@@ -1,0 +1,126 @@
+{
+ "title": "Singapore's Further Plans for COVID-19 Vaccination and Prevention of Surge in Community Cases Given New Virus Variants",
+ "what_it_is": "Singapore's Further Plans for COVID-19 Vaccination and Prevention of Surge in Community Cases Given New Virus Variants",
+ "sections": [
+  {
+   "label": "Sinovac approval and imported COVID-19 cases",
+   "summary": "Questions ask about Sinovac's arrival before HSA approval, its evaluation and purchase agreement, quarantine reviews, and imported COVID-19 cases.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Seah Kian Peng",
+     "attributed": true,
+     "text": "asked the Minister for Health how is it that a shipment of the Sinovac vaccine arrives in Singapore before the vaccine has been approved for use by HSA.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "Mr Liang Eng Hwa",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what is the progress of the vaccine evaluation by HSA for Sinovac; and (b) whether the advance purchase agreement for Sinovac is still valid.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Yip Hon Weng",
+     "attributed": true,
+     "text": "asked the Minister for Health in light of the new COVID-19 cluster announced on 14 April 2021 (a) whether a review will be done on the quarantine requirements and controlled itineraries for incoming business travellers; (b) whether there are special measures for workplaces to manage short-term visit pass holders to protect other employees; and (c) whether this incident will result in a review on allowing workers to return to offices, particularly those from overseas.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Saktiandi Supaat",
+     "attributed": true,
+     "text": "asked the Minister for Health from the COVID-19 cases emanating from overseas arrivals in the past six months (a) which are the three countries that accounted for the most number of cases; (b) what recourse can Singapore take with their respective Governments to address this; (c) at what point will Singapore suspend travellers from these countries; and (d) what other enhanced measures can the Ministry take to ensure imported cases of COVID-19 variants do not emerge in Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Vaccination numbers and COVID-19 variants",
+   "summary": "Questions ask how many citizens completed vaccination, adverse reactions, re-vaccination plans, and detection of seven COVID-19 variants.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Mr Leong Mun Wai",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) to date, how many Singapore citizens have completed the full COVID-19 vaccination; (b) how many suspected adverse reaction cases have been encountered when administering the vaccination regime compared with the performance of Pfizer and Moderna vaccines in other countries; and (c) whether there are plans to re-vaccinate all Singapore residents after a stipulated period after the full vaccination regime has been completed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mr Leong Mun Wai",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) when did the Ministry detect the first cases for each of the seven reported COVID-19 variants; and (b) whether the eight local cases of COVID-19 variants are related to the imported cases.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Vaccine injury claims and vaccine doses",
+   "summary": "Questions ask about Vaccine Injury Financial Assistance Programme claims, infections after two doses, vaccination numbers, and third dose plans.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Ms Sylvia Lim",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) to date, how many claims have been made under the Vaccine Injury Financial Assistance Programme; (b) what is the nature of the injuries claimed for; and (c) how many claims have been allowed to date.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Ang Wei Neng",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) how many people have been tested positive for COVID-19 despite having taken two doses of the vaccine or have had prior COVID-19 infection; (b) how many people in Singapore have taken one and two doses of the vaccine respectively as of April 2021; (c) whether the Government is planning for the third dose of the vaccine; and (d) what is the progress on approving the use of other COVID-19 vaccines in Singapore besides the current two approved vaccines.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2448",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-05-10"
+  ],
+  "report_ids": [
+   "oral-answer-2448"
+  ],
+  "sentences_total": 19,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.4211,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 8,
+   "turns_total": 19,
+   "coverage": 0.4211,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:43:48"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 2237,
+   "completion_tokens": 204,
+   "estimated": false,
+   "cost_usd": 0.00037
+  }
+ }
+}

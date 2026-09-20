@@ -1,0 +1,126 @@
+{
+ "title": "Revising Start Time for Schools",
+ "what_it_is": "Revising Start Time for Schools",
+ "sections": [
+  {
+   "label": "School start times and sleep",
+   "summary": "MOE was asked whether school start times will be revised later than 8.30 am, and says schools start no earlier than 7.30 am with autonomy to start later.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Miss Cheng Li Hui",
+     "attributed": true,
+     "text": "asked the Minister for Education in light that fewer than 15% of Secondary school students get enough of the recommended daily eight hours of sleep and experts on children and sleep advocate starting school no earlier than 8.30 am, whether there are plans to revise the starting time for all Primary, Secondary and pre-tertiary schools to later than 8.30 am.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "The Ministry of Education (MOE) has also recently commissioned two research studies on the impact of factors affecting sleep duration and quality of our students in Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "Currently, schools start no earlier than 7.30 am.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "Schools have the autonomy to adopt a later school start time, taking into consideration factors such as parents’ feedback, school end time, impact on after-school and inter-school programmes, transport provisions and traffic situation around the schools.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Sleep studies on later starts",
+   "summary": "A 2016 local study and a 2018 Seattle study found later school start times increased student sleep, prompting two commissioned studies.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "A local study by Prof Michael Chee in 2016 showed that a 45-minute delay in school start time resulted in a 10-minute increase in sleep time for students from one school in Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "An overseas study in Seattle, 2018, reported an additional 34 minutes of sleep when school started later by nearly an hour.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "That is why we have commissioned the two studies to understand the topic better.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Factors for later school start",
+   "summary": "MOE would consider parents' feedback, after-school and inter-school programmes, transport provisions and traffic conditions around schools.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "As I mentioned in my main reply, MOE would take into consideration parents' feedback; we will look at the impact on after-school and inter-school programmes and also transport provisions and traffic conditions around the schools.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2563",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-08-03"
+  ],
+  "report_ids": [
+   "oral-answer-2563"
+  ],
+  "sentences_total": 31,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2581,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 4,
+   "turns_total": 9,
+   "coverage": 0.4444,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:29:49"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1925,
+   "completion_tokens": 201,
+   "estimated": false,
+   "cost_usd": 0.000326
+  }
+ }
+}

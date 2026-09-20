@@ -1,0 +1,133 @@
+{
+ "title": "Update on Recognition and Verification of Health Passports",
+ "what_it_is": "Update on Recognition and Verification of Health Passports",
+ "sections": [
+  {
+   "label": "ITP and vaccination certificate recognition",
+   "summary": "Since 1 May 2021 travellers to Singapore can use the ITP to share pre-departure PCR test results, and Singapore is in bilateral talks with Australia, Malaysia and Republic of Korea on mutual recognition of vaccination certificates.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Since 1 May 2021, passengers travelling to Singapore have been able to use the ITP to share their pre-departure Polymerase Chain Reaction (PCR) test results when checking-in with their airlines, as well as on-arrival at the immigration checkpoints at Changi Airport.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Singapore is also in bilateral discussions with several countries on establishing mechanisms for the mutual recognition of vaccination certificates, including with Australia, Malaysia and Republic of Korea.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "We have set up inter-agency bilateral working groups with these countries and are exchanging information on how we may mutually verify the authenticity of each other’s certificates.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "This includes the exchange of public keys for the verification of digital certificates and the exchange of specimen copies for the verification of physical certificates.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "These discussions will likely take some time, as countries and regions are at different stages of progress in vaccinating their respective populations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Nonetheless, these multilateral and regional discussions are useful in laying the groundwork for us to re-open travel for vaccinated individuals between Singapore and these countries when we are ready to do so.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Verifying vaccination done properly",
+   "summary": "The passage asks how to verify that residents of different countries are vaccinated properly, and says the ITP and other certificates should be viewed as a two-step process.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr Ang Wei Neng (West Coast)",
+     "attributed": true,
+     "text": "Two, how are we going to verify that this vaccination that each of the residents in the different country get are in the appropriate manner, that they are vaccinated properly?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "I think we should view the ITP and also other forms of such certificates, as a two-step process.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Restrictions not automatically lifted",
+   "summary": "The passage states that coming from a particular country and testing negative or being vaccinated does not automatically do away with some restrictions.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "Just because the individual comes from a particular country and has been tested negative or has been vaccinated, does not mean that we automatically do away with some of the restrictions.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2484",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-07-06"
+  ],
+  "report_ids": [
+   "oral-answer-2484"
+  ],
+  "sentences_total": 24,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.375,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:37:17"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1563,
+   "completion_tokens": 217,
+   "estimated": false,
+   "cost_usd": 0.00028
+  }
+ }
+}

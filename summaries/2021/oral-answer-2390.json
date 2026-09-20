@@ -1,0 +1,92 @@
+{
+ "title": "Percentage of Confirmed COVID-19 Cases for Each Country in Relation to Total Arrivals from Those Countries",
+ "what_it_is": "Percentage of Confirmed COVID-19 Cases for Each Country in Relation to Total Arrivals from Those Countries",
+ "sections": [
+  {
+   "label": "COVID-19 insurance for travellers",
+   "summary": "Imported case proportions were 0.04%, 0.01%, 1.6% and 3.7%; from 1 January 2021 Work Permit and S Pass holders need medical insurance, and from 1 February 2021 short-term visitors need travel insurance.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The proportion of imported cases out of the arrivals from each of these countries and regions was 0.04%, 0.01%, 1.6% and 3.7% respectively.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "From 1 January 2021 onwards, all Work Permit and S Pass holders are required to have medical insurance to pay for COVID-19 medical treatment and hospitalisation costs in Singapore, should the pass holder develop symptoms or test positive within the first 14 days of arrival into Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "From 1 February 2021 onwards, all short-term visitors applying to enter Singapore under the Air Travel Pass and Reciprocal Green Lanes have to purchase travel insurance for their COVID-19-related medical treatment and hospitalisation costs in Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Review of insurance requirement",
+   "summary": "The Government will review extending the insurance requirement to other travellers, considering COVID-19 situations in their country of origin and insurance market product availability.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The Government will review whether to extend the insurance requirement to other travellers, taking into consideration the COVID-19 situations in their country of origin, as well as the availability of products in the insurance market.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2390",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-02-16"
+  ],
+  "report_ids": [
+   "oral-answer-2390"
+  ],
+  "sentences_total": 9,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4444,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:04:30"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1021,
+   "completion_tokens": 159,
+   "estimated": false,
+   "cost_usd": 0.000187
+  }
+ }
+}

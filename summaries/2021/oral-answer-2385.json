@@ -1,0 +1,159 @@
+{
+ "title": "Increase in and Safeguarding against Securities Trading Fueled by Online Discussions and Social Media Chat Groups",
+ "what_it_is": "Increase in and Safeguarding against Securities Trading Fueled by Online Discussions and Social Media Chat Groups",
+ "sections": [
+  {
+   "label": "Online trading and market safeguards",
+   "summary": "No signs that online discussions significantly increased Singapore-listed securities trading, but MAS and SGX RegCo are on heightened alert.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Desmond Choo",
+     "attributed": true,
+     "text": "asked the Prime Minister (a) whether there are signs of significant increase in securities trading fueled by online discussions and social media chat groups; (b) what are the protections against such activities destabilising the smooth running of the securities market; and (c) whether MAS is considering safeguards.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "There have been no signs that discussions in online forums or social media chat groups have led to any significant increase in the trading of securities listed in Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Notwithstanding this, the Monetary Authority of Singapore (MAS) and Singapore Exchange Regulation (SGX RegCo) are on heightened alert to such activities.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fallen prices and safeguards",
+   "summary": "Prices have fallen from their peaks, raising whether the increases were sustainable, and safeguards address such risks.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "These prices have since fallen from their peaks, raising a new issue of whether the price increases were sustainable.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "We have various safeguards in place to address such risks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Three market safeguards",
+   "summary": "The safeguards are market transparency, curbing sharp price movements, and enforcing against market misconduct.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "One, providing market transparency; two, curbing any sharp price movements; and three, enforcing against market misconduct.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Short positions in Singapore",
+   "summary": "Short positions in Singapore are much less compared to the US.",
+   "sentences": [
+    {
+     "sid": "s00035",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "On short squeezes, the short positions in Singapore compared to the US, are much less.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Transparency, US options, short squeezes",
+   "summary": "Transparency gives investors more information, and US single stock options add short positions causing short squeezes, which Singapore lacks.",
+   "sentences": [
+    {
+     "sid": "s00039",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "So, because of the transparency, investors have more information to act on.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00040",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "And thirdly, there are also mechanisms in the US such as having single stock options – you can have many puts, for example; it is equivalent to short selling – that also exposures themselves to more short positions, resulting in short squeezes; which we do not have here.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "So, for various reasons, plus all the measures I mentioned earlier – enforcement, being alert to such price surges, implementing circuit breaker.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00042",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "We will continue to be on the alert to prevent such events, such short squeezes from happening.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2385",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-02-16"
+  ],
+  "report_ids": [
+   "oral-answer-2385"
+  ],
+  "sentences_total": 44,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.25,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:04:21"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2291,
+   "completion_tokens": 261,
+   "estimated": false,
+   "cost_usd": 0.000394
+  }
+ }
+}

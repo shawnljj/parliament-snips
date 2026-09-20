@@ -1,0 +1,120 @@
+{
+ "title": "Protection for Point-to-point Drivers when Ferrying Patients to and from PCR Test Venues",
+ "what_it_is": "Protection for Point-to-point Drivers when Ferrying Patients to and from PCR Test Venues",
+ "sections": [
+  {
+   "label": "Taxi and PHC passenger precautions",
+   "summary": "Persons travelling to and from PCR tests must use private transport, and drivers are advised to take precautions such as switching off air-con and cleaning vehicles.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Persons who feel unwell and are travelling to and from their polymerase chain reaction (PCR) test venue are required to commute via private transport, which includes taxis or private hire cars (PHCs).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "As these persons are taking regular taxis or PHCs, there is an adequate supply to meet their needs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "These passengers should inform their taxi and PHC drivers about their health status so that the drivers may take appropriate precautions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Drivers have been advised to switch off the air-con when ferrying these passengers, wind down their windows during and after each trip, and clean their vehicles after the trips.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Passengers should also sit at the back, diagonally from the drivers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "MOH has assessed that these measures are sufficient to minimise the risk of in-vehicle transmission of the virus and there is no need for extra precautionary measures, such as having drivers put on full personal protective equipment.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Furthermore, about 98% of our taxi and PHC drivers are fully vaccinated.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "COVID-19 driver relief fund",
+   "summary": "Drivers who contract COVID-19 from ferrying Ag+ passengers for PCR tests can apply for a one-time $3,000 relief through The Courage Fund.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "In addition to that, drivers who contract COVID-19 as a result of providing services in a heightened COVID-19 risk situation – for instance, ferrying Ag+ passengers for their PCR tests – they can apply for a one-time relief of $3,000 through The Courage Fund for frontliners that is administered by the National Council of Social Service.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2650",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-11-03"
+  ],
+  "report_ids": [
+   "oral-answer-2650"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.3077,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:14:12"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1709,
+   "completion_tokens": 158,
+   "estimated": false,
+   "cost_usd": 0.000284
+  }
+ }
+}

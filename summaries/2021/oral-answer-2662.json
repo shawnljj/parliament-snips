@@ -1,0 +1,119 @@
+{
+ "title": "Accidents and Violations Involving Heavy Vehicles",
+ "what_it_is": "Accidents and Violations Involving Heavy Vehicles",
+ "sections": [
+  {
+   "label": "Heavy vehicle accidents and violations",
+   "summary": "The passage gives annual accident and violation figures for heavy vehicles from 2018 to June 2021 and notes the Traffic Police does not track if accident vehicles ferried workers.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "The annual breakdown of these accidents is as follows: in 2018, 776 accidents; in 2019, 690; in 2020, 426; and in 2021 up till June this year, 268.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "There were 57,639 traffic violations committed by heavy vehicles from January 2018 to June 2021.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "The annual breakdown of these violations is as follows: in 2018, 19,004; in 2019, 19,449; in 2020, 13,900; and in 2021 up till June, 5,286.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "The Traffic Police (TP) does not track if the vehicles involved in accidents were ferrying workers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "ADAS support for SMEs",
+   "summary": "SMEs wanting to install ADAS or other vehicular safety technologies on heavy vehicles can apply for support from the Productivity Solutions Grant administered by Enterprise Singapore.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Today, small and medium enterprises which wish to install ADAS or other vehicular safety technologies on their heavy vehicles can apply for support from the Productivity Solutions Grant, administered by Enterprise Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Speed limiters and top violations",
+   "summary": "The Government will look at suggestions on speed limiters and lorries, and the top three heavy vehicle violations are speeding, red light running and careless driving.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "With regard to his suggestion about speed limiters as well as the lorries, the Government will bring this back and take a look at these suggestions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "With regard to the breakdown of the top three most frequent traffic violation committed by heavy vehicles, indeed, number one is speeding, number two is red light running and number three is careless driving.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2662",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-11-03"
+  ],
+  "report_ids": [
+   "oral-answer-2662"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.3043,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:14:15"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1642,
+   "completion_tokens": 208,
+   "estimated": false,
+   "cost_usd": 0.000288
+  }
+ }
+}

@@ -1,0 +1,140 @@
+{
+ "title": "Update on Incident where Singapore National Eye Centre Staff was Given Wrong Dosage of COVID-19 Vaccine",
+ "what_it_is": "Update on Incident where Singapore National Eye Centre Staff was Given Wrong Dosage of COVID-19 Vaccine",
+ "sections": [
+  {
+   "label": "SNEC vaccination error communication lapse",
+   "summary": "MOH and SNEC found the error came from a lapse in communication among the vaccination team, and the exercise at SNEC was stopped.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "MOH and SNEC have identified that the error was due to a lapse in communication among the vaccination team.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The staff in charge of diluting the vaccine had been called away to attend to other matters during the preparation of the vaccine before the dilution of the doses in that particular vial had been carried out.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "A second staff member had mistaken the undiluted doses in that vial to be ready for administration.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Following this incident, as a safety measure, the vaccination exercise at SNEC was immediately stopped.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Frequency and scope of MOH audits",
+   "summary": "The question asks how frequent MOH onsite audits are and whether they cover all centres, PHIs and PHPCs.",
+   "sentences": [
+    {
+     "sid": "s00040",
+     "speaker": "Ms Ng Ling Ling (Ang Mo Kio)",
+     "attributed": true,
+     "text": "My question, for the MOH onsite audits, how frequent would these be and would these cover all centres, because there are many vaccination centres that have been rolled out in speed by private medical groups contracted by MOH, and would these also cover the PHIs and the PHPCs?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Follow-up care for affected employee",
+   "summary": "The question asks about long-term follow-up and care for the affected employee, and the reply says no adverse effects were detected.",
+   "sentences": [
+    {
+     "sid": "s00049",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "My supplementary question is whether the authorities will continue to follow up with the affected employee for long-term side effects and whether the employee will continue to receive care for long-term health problems if the employee leaves the service.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00050",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Certainly, the affected staff member will have healthcare and will be followed up quite closely.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00051",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "But, I would like to reassure that there were no adverse effects, no side effects that were detected, despite what is obviously an error.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00052",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The nature of adverse effects and side effects from vaccines is that they are present within hours to days usually, after a vaccination.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00053",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We are quite assured by the health and comfort, and the status of the staff member affected.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2399",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-02-24"
+  ],
+  "report_ids": [
+   "oral-answer-2399"
+  ],
+  "sentences_total": 54,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.1852,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 10,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:03:32"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2823,
+   "completion_tokens": 200,
+   "estimated": false,
+   "cost_usd": 0.000451
+  }
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "title": "Number of and Treatment for Those with Clinical Depression and Anxiety",
+ "what_it_is": "Number of and Treatment for Those with Clinical Depression and Anxiety",
+ "sections": [
+  {
+   "label": "Residents treated for mental health",
+   "summary": "From 2016 to 2019, MOH data show a yearly average of about 49,800 Singapore residents received treatment for mental health issues at healthcare institutions.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "From 2016 to 2019, based on data reported to the Ministry of Health (MOH), a yearly average of about 49,800 Singapore residents received treatment for mental health issues at our healthcare institutions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Depression and anxiety patient data",
+   "summary": "Averages of 33,700 and 34,500 residents sought care for depression and anxiety, with most under 60, Chinese, and in smaller flats.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "During the same period, the average number of residents seeking care for depression and anxiety was 33,700 and 34,500 respectively.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Approximately 60% of patients with anxiety or depression are under 60 years old; 70% are of Chinese ethnicity; about 30% live in 3-room or smaller public flats.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Findings from the 2016 Singapore Mental Health Study (SMHS) show that unemployment and divorced or separated marital status are significantly associated with depression.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The 2010 SMHS found that nearly half of those with depression and anxiety also had chronic physical illness.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2646",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-11-02"
+  ],
+  "report_ids": [
+   "oral-answer-2646"
+  ],
+  "sentences_total": 14,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.3571,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 1,
+   "turns_total": 4,
+   "coverage": 0.25,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:16:06"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1106,
+   "completion_tokens": 147,
+   "estimated": false,
+   "cost_usd": 0.000196
+  }
+ }
+}

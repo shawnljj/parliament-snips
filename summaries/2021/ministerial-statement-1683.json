@@ -1,0 +1,139 @@
+{
+ "title": "Support Measures for Phase Two (Heightened Alert)",
+ "what_it_is": "Support Measures for Phase Two (Heightened Alert)",
+ "sections": [
+  {
+   "label": "Jobs Support Scheme enhancements extended",
+   "summary": "JSS enhancements for affected sectors are increased and extended four weeks to 18 August, with 60% support for sectors required to close.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "The additional support measures I announced last week have taken this feedback into account, so, let me provide a quick summary.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "We will continue to help enterprises retain their local workers by increasing and extending the Jobs Support Scheme (JSS) enhancements for affected sectors by four weeks until 18 August.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "For sectors that are required to close or suspend most of their activities, we are providing 60% JSS support, up from 50% previously.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Landlords required to give rental support",
+   "summary": "The Government intends to require landlords to provide a matching two-week rental support to tenants, after landlords were not forthcoming.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "The Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "However, many tenants, especially those in the affected F&B and retail sectors, have told us that not all landlords were forthcoming in providing such rental support.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00030",
+     "speaker": "The Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "This time, in light of the difficulties faced by many businesses, the Government intends to require landlords to provide a matching two-week rental support to their tenants.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "COVID-19 Recovery Grant income-loss extension",
+   "summary": "The COVID-19 Recovery Grant Temporary scheme's income-loss coverage is extended to end-August, with eligible workers able to re-apply for a second payout.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "The Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "In particular, to ensure continued assistance to individuals impacted by the safe management measures, we have extended the COVID-19 Recovery Grant – Temporary scheme’s income-loss coverage period from end-July to end-August.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "The Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Eligible workers who continue to be impacted can re-apply to receive a second payout.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00044",
+     "speaker": "The Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "This latest round of support measures for the current Phase Two (Heightened Alert) is expected to cost $1.1 billion.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "FY2021 fiscal position unchanged",
+   "summary": "Because the support package is funded via reallocation, the overall FY2021 fiscal position is expected to remain unchanged with an $11 billion deficit.",
+   "sentences": [
+    {
+     "sid": "s00055",
+     "speaker": "The Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Given that we are funding this support package via reallocation, we expect the overall fiscal position for FY2021 to remain unchanged with an overall deficit of $11 billion or 2.2% of gross domestic product (GDP).",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "ministerial-statement-1683",
+  "group": "statement",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-07-26"
+  ],
+  "report_ids": [
+   "ministerial-statement-1683"
+  ],
+  "sentences_total": 71,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 4,
+  "selection_share": 0.1268,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 1,
+   "turns_total": 3,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:35:27"
+  },
+  "usage": {
+   "calls": 4,
+   "prompt_tokens": 3288,
+   "completion_tokens": 256,
+   "estimated": false,
+   "cost_usd": 0.000532
+  }
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "title": "Adoption Rates of Electric Passenger Vehicles",
+ "what_it_is": "Adoption Rates of Electric Passenger Vehicles",
+ "sections": [
+  {
+   "label": "Electric vehicle adoption and charging",
+   "summary": "Adoption rate exceeded 2020's 0.3%, with incentives, 60,000 charging points targeted by 2030 and 600 more by next year.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "",
+     "attributed": false,
+     "text": "The following question stood in the name of  Mr Shawn Huang Wei Zhong –  12 To ask the Minister for Transport (a) what are the adoption rates of electric passenger vehicles over the past year; (b) what are the projected rates for 2022 and 2023; (c) whether the build-up of electric charging infrastructure at public and private spaces are on track to support the increase in adoption rates; and (d) whether there are considerations to bring forward the implementation timeline for clean energy buses.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "This is higher than the registration rate of 0.3% for the whole of 2020.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "The Electric Vehicle (EV) Early Adoption Incentive and the enhanced Vehicular Emissions Scheme, both launched earlier this year, help to narrow the upfront cost gap between electric cars and internal combustion engine cars.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "With the launch of these schemes, as well as lower battery costs and more EV models from car makers, we expect that this number will continue to grow in the coming years.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We aim to put in place 60,000 charging points by 2030.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "There are around 2,000 charging points in Singapore today.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We will add another 600 charging points at 200 public carparks by next year through the Government’s pilot tender on EV charger deployment.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cleaner energy public buses",
+   "summary": "Government buys only cleaner energy buses since 2020, so no pure diesel buses before 2040, with 60 electric buses by year-end.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "On public buses, the Government has committed to buy only cleaner energy buses since 2020.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "As public buses are replaced after being in service for 17 years, this means that there should be no more pure diesel public buses on our roads before 2040.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "Cleaner energy buses bring significant benefits, such as cleaner air and less noise pollution.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We would have deployed 60 electric buses on our roads by the end of this year.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2540",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-07-27"
+  ],
+  "report_ids": [
+   "oral-answer-2540"
+  ],
+  "sentences_total": 14,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 2,
+  "selection_share": 0.7857,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 2,
+   "turns_total": 2,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:34:24"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1290,
+   "completion_tokens": 158,
+   "estimated": false,
+   "cost_usd": 0.000225
+  }
+ }
+}

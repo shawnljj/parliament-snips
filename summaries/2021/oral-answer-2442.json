@@ -1,0 +1,140 @@
+{
+ "title": "Proof of COVID-19 Vaccination for Singaporeans",
+ "what_it_is": "Proof of COVID-19 Vaccination for Singaporeans",
+ "sections": [
+  {
+   "label": "Vaccination status and unvaccinated measures",
+   "summary": "MOH will release information on proving vaccination status, and measures for the unvaccinated are based on public health considerations, not on why someone is unvaccinated.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The effectiveness of the Pfizer-BioNTech and Moderna vaccines, which are currently the only COVID-19 vaccines allowed for use in Singapore, are widely recognised internationally.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "MOH will be releasing further information on how individuals can show their valid vaccination status when ready.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We will make it easy and convenient to prove one’s vaccination status, including for persons without smart phones.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The measures required for the unvaccinated are generally based on public health considerations to prevent infection and, so, would not distinguish between those who choose not to be vaccinated and those who were not medically eligible.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Border measures and vaccine recognition",
+   "summary": "More data is needed to assess changes to border measures for vaccinated individuals, and cross-border recognition of vaccine certification may take time.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "More data is needed to assess if changes to border measures, such as testing and Stay-Home Notice (SHN) requirements, can be made for vaccinated individuals.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "More information is also needed to assess if such measures will be affected by the different types of vaccines.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We are actively discussing with international counterparts on the possible mutual recognition of vaccination certificates.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Border measures will also take into account other factors, such as the number of COVID-19 cases and the infection control measures implemented in the source countries.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Hence, progress on cross-border recognition of vaccine certification may take some time.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Pre-event testing exemption for vaccinated",
+   "summary": "From 24 April 2021, individuals more than two weeks after their second dose can enter events requiring pre-event testing without undergoing it.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Indeed, it is so and that is why, in the previous announcements, there were accommodations made for individuals who have completed the full vaccination regimen, such as from 24 April 2021, if you have had more than two weeks after your second dose, one can gain entry into events that require pre-event testing without the need to undergo pre-event testing.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2442",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-04-05"
+  ],
+  "report_ids": [
+   "oral-answer-2442"
+  ],
+  "sentences_total": 35,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.2857,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 11,
+   "coverage": 0.1818,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:45:00"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1884,
+   "completion_tokens": 205,
+   "estimated": false,
+   "cost_usd": 0.000321
+  }
+ }
+}

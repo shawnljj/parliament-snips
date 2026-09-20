@@ -1,0 +1,132 @@
+{
+ "title": "Checks on Hygiene of Food Stalls and Catering Licensees",
+ "what_it_is": "Checks on Hygiene of Food Stalls and Catering Licensees",
+ "sections": [
+  {
+   "label": "Singapore Food Agency licensing oversight",
+   "summary": "The Singapore Food Agency, formed in April 2019, consolidated food-related functions and licenses all food establishments, which must meet its requirements.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "The formation of the Singapore Food Agency (SFA) in April 2019 has brought together all food-related functions under a single agency to enhance regulatory oversight of the entire food supply chain.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "All food establishments, including food stalls and caterers, are licensed by SFA and required to comply with SFA’s licensing conditions and regulatory requirements.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SFA inspections of food stalls",
+   "summary": "From April 2019 to March 2020, SFA conducted over 47,000 inspections of food stalls and caterers, decreasing during circuit breaker then resuming.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "From April 2019 to March 2020, SFA conducted more than 47,000 inspections on food stalls and caterers, which was on average about twice per food stall or caterer over this period.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "During the circuit breaker period, the total number of inspections conducted temporarily decreased as some food establishments had ceased their operations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "SFA resumed its usual frequency of inspections after the circuit breaker period.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Retraining after food premises suspension",
+   "summary": "Food handlers and food hygiene officers in suspended premises must re-attend and pass specified courses before resuming work.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "In the case of a suspension, all food handlers must also re-attend and pass the Basic Food Hygiene Course (BFHC) before they are able to resume work at the premises.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "All appointed food hygiene officers working in suspended premises will also be required to re-attend and pass the Singapore Workforce Skills Qualifications Conduct Food and Beverage Hygiene Audit course to ensure that they remain properly trained to be able to continue to oversee and enhance the food safety standards of the premises.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Food grade on delivery platforms",
+   "summary": "Food establishment grades are not currently listed on the delivery platform, and the suggestion will be considered in the next food safety framework review.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Ms Grace Fu Hai Yien",
+     "attributed": true,
+     "text": "At the moment, the grade of the food establishments is not listed on the delivery platform, we will consider her suggestion when we next review our food safety framework.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2355",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-01-04"
+  ],
+  "report_ids": [
+   "oral-answer-2355"
+  ],
+  "sentences_total": 27,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.2963,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:10:54"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1683,
+   "completion_tokens": 248,
+   "estimated": false,
+   "cost_usd": 0.000305
+  }
+ }
+}

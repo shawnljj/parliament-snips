@@ -1,0 +1,78 @@
+{
+ "title": "Supply Bill",
+ "what_it_is": "Supply Bill",
+ "sections": [
+  {
+   "label": "Supply Bill appropriations approval",
+   "summary": "The Supply Bill seeks legislative approval for appropriations from the Consolidated Fund and Development Fund for the 2021-2022 financial year.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The purpose of the Supply Bill before Members is to give legislative approval for the appropriations from the Consolidated Fund and Development Fund to meet the expenditure for the financial year 1 April 2021 to 31 March 2022.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Minister expenditure warrants",
+   "summary": "The approved Supply Bill will empower the Minister to issue warrants authorising expenditure from the Consolidated Fund and Development Fund.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The Supply Bill, when approved, will empower the Minister to issue warrants authorising expenditure up to the amount for each Head as shown in the Bill to be paid out from the Consolidated Fund and the Development Fund.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-496",
+  "group": "bill",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-03-08"
+  ],
+  "report_ids": [
+   "bill-496"
+  ],
+  "sentences_total": 4,
+  "sentences_selected": 2,
+  "sentences_in_sections": 2,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 2,
+   "sentences_selected": 2,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:46:31"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 728,
+   "completion_tokens": 110,
+   "estimated": false,
+   "cost_usd": 0.000133
+  }
+ }
+}

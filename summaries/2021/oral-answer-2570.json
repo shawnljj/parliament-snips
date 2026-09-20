@@ -1,0 +1,133 @@
+{
+ "title": "Number of Nursing Homes, Available Beds and Average Occupancy Rates",
+ "what_it_is": "Number of Nursing Homes, Available Beds and Average Occupancy Rates",
+ "sections": [
+  {
+   "label": "Nursing home beds and waiting",
+   "summary": "Nursing homes rose from 69 in 2016 to 77 in 2020, beds from about 13,000 to 16,300, occupancy around 90%, and a resident waited about a year.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The number of nursing homes has increased from 69 in 2016 to 77 in 2020, comprising 24 public, 22 not-for-profit and 31 private nursing homes in 2020.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The number of licensed nursing home beds has also increased from around 13,000 to 16,300 in the same time period, where there were 6,400 public, 6,000 not-for-profit and 3,900 private nursing home beds in 2020.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Bed occupancy rate has generally remained stable over the past five years at around 90%.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "The Parliamentary Question really originated based on the concern that one of my residents had already been waiting for about a year for a nursing home bed and was told to be mentally prepared to wait up to three years for a space.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "Given that the number of nursing homes has increased by just about one a year since 2006, I was just wondering, firstly, what plans does the Ministry have in terms of accelerating the build-up of nursing home beds?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Beds matter more than homes",
+   "summary": "The key is the number of beds available, not the number of nursing homes, since homes come in different sizes.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "While the number of nursing homes may have increased somewhat, the key is not about the number of nursing homes but the number of beds available.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "Each nursing home can come in different sizes, so just because the increase in the number of homes may not be exponential does not mean that the number of beds available is not increasing significantly.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Elderly fear being kept in homes",
+   "summary": "Many elderly fear being kept in a home away from family, so more resources should go to home nursing and home care.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "If you speak to enough elderly, that is one of the things they fear a lot as well, to be kept in a home, away from their family.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "So, we should devote a lot more resources in helping them to be able to be cared for close to their families, especially in areas like home nursing and home care.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2570",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-08-03"
+  ],
+  "report_ids": [
+   "oral-answer-2570"
+  ],
+  "sentences_total": 19,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.4737,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:30:02"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1558,
+   "completion_tokens": 211,
+   "estimated": false,
+   "cost_usd": 0.000277
+  }
+ }
+}

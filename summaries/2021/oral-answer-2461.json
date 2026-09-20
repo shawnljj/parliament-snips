@@ -1,0 +1,126 @@
+{
+ "title": "Update on Recent Cases of Gastroenteritis in Education Institutions",
+ "what_it_is": "Update on Recent Cases of Gastroenteritis in Education Institutions",
+ "sections": [
+  {
+   "label": "Gastroenteritis outbreaks in education institutions",
+   "summary": "SFA and MOH investigated 27 GE outbreaks since 2021 involving over 800 people, with 18 linked to education institutions and 14 in preschools.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "Since the start of 2021, the Singapore Food Agency (SFA) and Ministry of Health (MOH) have conducted joint investigations into 27 incidents of Gastroenteritis (GE) outbreaks involving more than 800 people.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "Of these incidents, 18 were associated with education institutions, with 14 in preschools alone.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "Despite only being four months into the year, this is reaching the level of 2019, when 18 out of 33 GE incidents in education institutions occurred in pre-schools.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Poor housekeeping and cleaning lapses",
+   "summary": "Investigations suggest poor housekeeping and cleaning lapses, including ineffective cleaning agents and mixed chopping boards and knives, contributed to GE outbreaks.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "For the recent incidents at education institutions, investigations suggest that poor housekeeping practices in schools and lapses in cleaning, including within schools' in-house kitchens, could have contributed to the GE outbreaks.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "For instance, ineffective cleaning agents were used to sanitise areas contaminated with vomitus and faeces.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "Chopping boards and knives for raw meat and cooked food were also found kept together instead of separately, thus increasing the risk for cross-contamination.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Enhanced food safety training and sanitation",
+   "summary": "SFA will enhance food safety training for food handlers and implement an environmental sanitation regime for premises such as pre-schools later this year.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "SFA will enhance the food safety training framework for food handlers to better equip them with the knowledge and skills to ensure food safety.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "Later this year, we will implement the environmental sanitation regime for premises, such as pre-schools, under the Environmental Public Health Act.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2461",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-05-11"
+  ],
+  "report_ids": [
+   "oral-answer-2461"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.3478,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:41:14"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1447,
+   "completion_tokens": 209,
+   "estimated": false,
+   "cost_usd": 0.000261
+  }
+ }
+}

@@ -1,12 +1,11 @@
 {
  "project": "parsnips",
- "written_at": "2026-09-20T15:34:37+08:00",
+ "written_at": "2026-09-20T17:11:34+08:00",
  "by": "tools/write_status.py",
  "status": "working",
  "changed_since_last": [
-  "1842 briefs live across 5 year(s)",
-  "6 year(s) have datasets but no briefs yet: 2016, 2017, 2018, 2019, 2020, 2021",
-  "2 unpushed commit(s)"
+  "2188 briefs live across 6 year(s)",
+  "5 year(s) have datasets but no briefs yet: 2016, 2017, 2018, 2019, 2020"
  ],
  "corpus": {
   "2016": {
@@ -30,7 +29,7 @@
    "dataset_items": 333
   },
   "2021": {
-   "briefs": 0,
+   "briefs": 346,
    "dataset_items": 352
   },
   "2022": {
@@ -55,6 +54,12 @@
   }
  },
  "gates": [
+  {
+   "name": "check_selection",
+   "scope": "summaries/2021",
+   "result": "PASS",
+   "defects": 0
+  },
   {
    "name": "check_selection",
    "scope": "summaries/2022",
@@ -91,8 +96,8 @@
  "needs_decision": null,
  "severity": "low",
  "git": {
-  "unpushed_commits": 2,
+  "unpushed_commits": 0,
   "dirty_files": 3,
-  "last_commit": "2fa8822 Wire the status artifact in: auto-write on every run, and point COS at it"
+  "last_commit": "c2402cc Ship 2022: 412 briefs, and the corpus reaches five years"
  }
 }

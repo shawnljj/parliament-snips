@@ -1,0 +1,146 @@
+{
+ "title": "Pilot Programme for SMRT Taxis to be Equipped with Booster Seats for Young Children",
+ "what_it_is": "Pilot Programme for SMRT Taxis to be Equipped with Booster Seats for Young Children",
+ "sections": [
+  {
+   "label": "SMRT taxi booster seat pilot",
+   "summary": "About 1,750 SMRT taxis had booster seats, but utilisation was low due to few commuter requests, and SMRT will update on usage.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "About 1,750 SMRT taxis were equipped with booster seats for young children.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "However, the utilisation rate for these booster seats was low, as there were very few requests for the booster seats from commuters.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The booster seats remain in the taxis, and SMRT will provide further updates on their usage soon.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "If there are other taxi companies who are keen to conduct similar pilots, LTA will be glad to consider.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "We know that children are getting injured because they are not in child car seats during the accident.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "We know that being in a child car seat can reduce the incidents of death by over 50% if you are in a car seat.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Private vehicle child car seat penalty",
+   "summary": "For private vehicles, a child not in a car seat could result in jail.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "For private vehicles, if your child is not in a car seat, you could go to jail for it.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Taxis and child restraint permutations",
+   "summary": "It is not feasible for taxis to be fully equipped with different permutations of child restraints for boarding children.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "First, it is not feasible for taxis to be fully equipped with different permutations of child restraints to cater to the children who may board the taxi.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Child seat rule and economic situation",
+   "summary": "Imposing this is not wise in the current economic situation, but parents can use private hire cars included in the Act.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "And I do not think it is wise to impose this during this current economic situation.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00030",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "But, parents have option of using private hire cars, or PHCs, already, as they are included in this Act.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2430",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-03-04"
+  ],
+  "report_ids": [
+   "oral-answer-2430"
+  ],
+  "sentences_total": 46,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.2174,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:50:05"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1972,
+   "completion_tokens": 235,
+   "estimated": false,
+   "cost_usd": 0.000342
+  }
+ }
+}

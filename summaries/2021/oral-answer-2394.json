@@ -1,0 +1,114 @@
+{
+ "title": "Reports of Unauthorised Online Banking Transactions and Proportion that Involves Suspected Mobile Device Hacking",
+ "what_it_is": "Reports of Unauthorised Online Banking Transactions and Proportion that Involves Suspected Mobile Device Hacking",
+ "sections": [
+  {
+   "label": "Unauthorised online banking and card transactions",
+   "summary": "Police received 1,848 reports in 2020 of unauthorised online banking and card transactions from phishing, with cases rising since 2018.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "In 2020, the Police received 1,848 reports of unauthorised online banking and card transactions involving criminals phishing for banking and card details from the victims before performing these unauthorised transactions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The cases are, unfortunately, on an upward trend.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "In 2018 and 2019, there were 114 and 329 cases respectively.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The Monetary Authority of Singapore (MAS) requires banks to implement controls, such as multi-factor authentication using one-time passwords or OTPs, to keep online transactions secure.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Recently, some account holders have reported successful online card transactions when no SMS OTPs were received, or when no SMS OTPs were revealed to others.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "As a precaution, the banks have put in place additional measures, such as rejecting card payments made to some commonly disputed merchants, or placing limits on the transaction amounts that customers can transact with such merchants.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "So, if you suspect that you have been a victim of fraud or cybercrime, the first step is to make a police report and contact your bank immediately so that investigations can take place promptly.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "If an unauthorised transaction was due to the bank’s lapses or non-compliance with MAS’ rules, the customer will not bear any financial loss provided that he has practiced proper cyber hygiene and had not been negligent.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2394",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-02-16"
+  ],
+  "report_ids": [
+   "oral-answer-2394"
+  ],
+  "sentences_total": 20,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.4,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:04:26"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1366,
+   "completion_tokens": 106,
+   "estimated": false,
+   "cost_usd": 0.000221
+  }
+ }
+}

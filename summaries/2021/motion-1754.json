@@ -1,0 +1,85 @@
+{
+ "title": "Motion under Standing Order 18(6) Proviso",
+ "what_it_is": "Motion under Standing Order 18(6) Proviso",
+ "sections": [
+  {
+   "label": "Petition terms for Members",
+   "summary": "The Speaker suggests making the Petition's terms and contents available to Members.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Deputy Leader of the House (Mr Zaqy Mohamad)",
+     "attributed": true,
+     "text": "While the hon Member has given a brief statement on the material allegations and prayers of the petitioners, I think it would be helpful if the terms and contents of the Petition could be made available to Members.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Recording Workers' Party dissent",
+   "summary": "A Member asks that Workers' Party Members' dissent be recorded and dissenting Members stand.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "Mr Pritam Singh",
+     "attributed": true,
+     "text": "With regard to the Motion, I would wish that Workers' Party Members have their dissent recorded.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "If I can ask all the Members who are dissenting to stand so that we can record it.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-1754",
+  "group": "motion",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-10-04"
+  ],
+  "report_ids": [
+   "motion-1754"
+  ],
+  "sentences_total": 6,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 3,
+   "turns_total": 5,
+   "coverage": 0.6,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:23:14"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 699,
+   "completion_tokens": 100,
+   "estimated": false,
+   "cost_usd": 0.000126
+  }
+ }
+}

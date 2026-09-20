@@ -1,0 +1,146 @@
+{
+ "title": "Accidents Involving Public Buses and Probe into Recent Accident at Bukit Batok Bus Interchange",
+ "what_it_is": "Accidents Involving Public Buses and Probe into Recent Accident at Bukit Batok Bus Interchange",
+ "sections": [
+  {
+   "label": "Bukit Batok bus interchange accident",
+   "summary": "On 11 July 2021, a bus turning within the Bukit Batok Bus Interchange hit another bus that had just entered.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "On 11 July 2021, an accident occurred at the Bukit Batok Bus Interchange when a bus that was making a turn within the interchange hit another bus that had just entered the interchange.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bus interchange speed and traffic rules",
+   "summary": "Buses in interchanges must keep to 15 kilometres per hour and obey stop lines and \"Slow\" markings painted on driveways.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "Buses driving within the interchanges must adhere to a speed limit of 15 kilometres per hour and obey traffic schemes such as the stop lines and the \"Slow\" markings which are prominently painted on the driveways.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Falling public bus accident numbers",
+   "summary": "Public bus accidents have fallen, with 148 from January to May 2021 versus 270 in the same 2017 period, and yearly rates declining.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "The number of accidents involving public buses, not just in bus interchanges but across different settings, has been falling steadily.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "There were 148 of such accidents between January and May 2021, as compared to 270 in the same period in 2017.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "The average yearly accident rate for our public buses has been on a downward trend over the last few years, from about 0.15 cases per 100,000 bus-kilometre travelled in 2017, to about 0.10 cases per 100,000 bus-kilometre travelled between January and May 2021.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MP questions bus accident types",
+   "summary": "A member says every bus accident is one too many and asks what types the 148 cases were, noting Bukit Batok involved two buses.",
+   "sentences": [
+    {
+     "sid": "s00044",
+     "speaker": "Mr Saktiandi Supaat (Bishan-Toa Payoh)",
+     "attributed": true,
+     "text": "The Senior Minister of State mentioned that the number of cases has been falling and also that 0.15 cases per 100 kilometres have dropped to about 0.1 number of cases in 2021.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00045",
+     "speaker": "Mr Saktiandi Supaat (Bishan-Toa Payoh)",
+     "attributed": true,
+     "text": "But, to me and to many residents, every single bus accident, not just in the interchange but outside, is one too many as it involves a heavy vehicle.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00046",
+     "speaker": "Mr Saktiandi Supaat (Bishan-Toa Payoh)",
+     "attributed": true,
+     "text": "So, for the 148 cases, what types of cases are those?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00048",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "Some involving pedestrians, some involving cyclists, some involving motorists.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00049",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "I think what happened in Bukit Batok is within the interchange and it is actually between two buses.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2520",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-07-26"
+  ],
+  "report_ids": [
+   "oral-answer-2520"
+  ],
+  "sentences_total": 53,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.1887,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 10,
+   "coverage": 0.3,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:35:21"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 3056,
+   "completion_tokens": 260,
+   "estimated": false,
+   "cost_usd": 0.000501
+  }
+ }
+}

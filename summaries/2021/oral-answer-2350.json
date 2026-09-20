@@ -1,0 +1,112 @@
+{
+ "title": "Update on Plan for Live-streaming Parliamentary Sittings",
+ "what_it_is": "Update on Plan for Live-streaming Parliamentary Sittings",
+ "sections": [
+  {
+   "label": "Parliament Sitting live-streamed on YouTube",
+   "summary": "This Sitting is streamed real-time on MCI's YouTube channel, with two live-streams and full video kept six months.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "As we speak, this Sitting is being streamed real-time on MCI’s YouTube channel, which is accessible to all.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "There will be two live-streams: one with English interpretation of speeches made in vernacular languages, and one without.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "As with current practice, the full video of each live-stream will remain on MCI’s YouTube channel for a period of six months after the end of the Sitting.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public watch proceedings in real time",
+   "summary": "Live-streaming lets members of the public watch proceedings in real time without being physically present in Parliament.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "With live-streaming, members of the public will now also be able to watch proceedings in real time, without having to be physically present in Parliament.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "No sign language, auto-captioning available",
+   "summary": "There are no provisions for sign language, but the English YouTube stream will have auto-captioning available.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "At this point, we do not have the provisions for sign language.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "However, the English stream on YouTube will have auto-captioning available.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2350",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-01-04"
+  ],
+  "report_ids": [
+   "oral-answer-2350"
+  ],
+  "sentences_total": 17,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.3529,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:11:01"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1142,
+   "completion_tokens": 179,
+   "estimated": false,
+   "cost_usd": 0.00021
+  }
+ }
+}

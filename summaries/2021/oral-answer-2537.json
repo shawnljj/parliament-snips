@@ -1,0 +1,140 @@
+{
+ "title": "Plans for Zero Emissions Transport System in Jurong Innovation District and Existing Jurong Industrial Areas",
+ "what_it_is": "Plans for Zero Emissions Transport System in Jurong Innovation District and Existing Jurong Industrial Areas",
+ "sections": [
+  {
+   "label": "Land transport carbon emissions",
+   "summary": "Domestic land transport accounts for about 15% of Singapore's total carbon emissions, and efforts are underway to reduce its net carbon emissions.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "Domestic land transport accounts for approximately 15% of Singapore's total carbon emissions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We have thus embarked on a major effort to reduce the net carbon emissions of the land transport sector.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public transport and vehicle targets",
+   "summary": "It covers shared and active transport, sets modal share targets, describes the Jurong Region Line and car-lite JID, and envisages all vehicles on cleaner energy by 2040.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "It also includes shared transport services, such as taxis, private hire cars, car sharing, as well as active modes, such as walking and cycling.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We have set ambitious national targets: increasing the peak-period mass public transport modal share from 64% today to 75% by 2030 and 90% of all peak-period journeys to be made by Walk-Cycle-Ride modes by 2040.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "In addition to the existing East-West Line that serves the Jurong industrial estate area, the upcoming Jurong Region Line (JRL) will also serve both the Jurong Innovation District (JID) and the Jurong industrial estate area.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "Further, JID will also be a car-lite district, with tighter vehicle parking provision norms of 50% of the usual standards.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "An 11-kilometre-long Sky Corridor will also seamlessly connect pedestrians and commuters from the nearby JRL stations to all other destinations in the vicinity via walking and cycling without having to interact with vehicles at ground level.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "Second, we will substantially reduce emissions from our vehicle population.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We envisage all vehicles to run on cleaner energy by 2040.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "HDB carpark charging points",
+   "summary": "From 2025, residents and commuters in these towns can expect charging points in every HDB carpark.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "Come 2025, residents and commuters in these towns can look forward to charging points in every HDB carpark.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2537",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-07-27"
+  ],
+  "report_ids": [
+   "oral-answer-2537"
+  ],
+  "sentences_total": 27,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.3704,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 4,
+   "coverage": 0.25,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:34:16"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1613,
+   "completion_tokens": 203,
+   "estimated": false,
+   "cost_usd": 0.000283
+  }
+ }
+}

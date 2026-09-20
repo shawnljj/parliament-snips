@@ -1,0 +1,146 @@
+{
+ "title": "External Wall Seepages and Ceiling Leakages in HDB Flats",
+ "what_it_is": "External Wall Seepages and Ceiling Leakages in HDB Flats",
+ "sections": [
+  {
+   "label": "HDB external wall seepage measures",
+   "summary": "HDB lacks data on external wall seepage cases, has no facade repair programme, co-shares 50% of facade repair costs, and BCA will require Periodic Facade Inspection.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "As such, HDB does not have information on the total number of external wall seepage cases.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "There are currently no plans to roll out a programme for façade repairs to address external wall seepage specifically, as such issues can be prevented today through regular maintenance by Town Councils.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "HDB provides assistance to Town Councils by co-sharing 50% of the costs of façade repairs, under the Façade Repairs Co-payment scheme.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "From the second half of this year, BCA will require a Periodic Façade Inspection (PFI) to be carried out for all buildings above 20 years old and above 13 metres in height.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "HDB ceiling leak repair cost",
+   "summary": "Under this scheme, HDB will pay 50% of the ceiling leak repair cost.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "Under this scheme, HDB will pay 50% of the ceiling leak repair cost.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Proposal for national facade repair programme",
+   "summary": "The proposal is for a similar national programme for facade repair to reap economies of scale and save public funds.",
+   "sentences": [
+    {
+     "sid": "s00046",
+     "speaker": "Mr Muhamad Faisal Bin Abdul Manap (Aljunied)",
+     "attributed": true,
+     "text": "Basically, my proposal is to have a similar national programme for facade repair.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00047",
+     "speaker": "Mr Muhamad Faisal Bin Abdul Manap (Aljunied)",
+     "attributed": true,
+     "text": "One, so as to reap the economies of scale benefit; hence, resulting in the saving of public funds.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Maintaining buildings and facade inspection regime",
+   "summary": "Maintaining buildings and structures is important, with a periodic facade inspection regime and the Facade Repair Co-Payment Scheme addressing the situation.",
+   "sentences": [
+    {
+     "sid": "s00050",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "As I shared earlier, we feel that it is important to make sure the buildings or structures that we have are maintained and, at the same time, we look at it in terms of the long term how we can ensure the maintainability and the use of such facilities including the facade.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00051",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "That is why we have a periodic facade inspection regime which will ensure that there is regular and timely inspection.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00053",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "At the same time, the Facade Repair Co-Payment Scheme will help to take care of such a situation.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2380",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-02-02"
+  ],
+  "report_ids": [
+   "oral-answer-2380"
+  ],
+  "sentences_total": 56,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.1786,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 7,
+   "coverage": 0.4286,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:04:35"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2778,
+   "completion_tokens": 252,
+   "estimated": false,
+   "cost_usd": 0.000459
+  }
+ }
+}

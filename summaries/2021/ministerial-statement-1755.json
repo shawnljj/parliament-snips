@@ -1,0 +1,159 @@
+{
+ "title": "Allegation of Police Behaviour towards Victim of Sexual Assault",
+ "what_it_is": "Allegation of Police Behaviour towards Victim of Sexual Assault",
+ "sections": [
+  {
+   "label": "Raeesah Khan speech on empowering women",
+   "summary": "Minister Shanmugam raises something said by MP Raeesah Khan in the 3 August 2021 Sitting on the WP's Motion on Empowering Women.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "Mr Tan Chuan-Jin",
+     "attributed": true,
+     "text": "No, Minister Shanmugam has something else to raise.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Home Affairs and Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "This relates to something that was said in the Parliamentary Sitting on 3 August 2021, this year, by one of the Members of Parliament, Ms Raeesah Khan, on the Workers' Party's (WP's) Motion on Empowering Women.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Request for Police station details",
+   "summary": "The Member is asked to name the Police station she went to with the victim and the officers who attended.",
+   "sentences": [
+    {
+     "sid": "s00028",
+     "speaker": "The Minister for Home Affairs and Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "And for us to take this further, we need more details.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00029",
+     "speaker": "The Minister for Home Affairs and Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "So, can the Member – I ask the Member through you, Sir – to tell us at the very least the Police station that she went to with the victim and, if possible, the names of the Police officer or officers who attended to the victim and the Member.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Confirmation of 2018 incident and records",
+   "summary": "She is asked to confirm this took place in 2018, and Police could not identify a case where Ms Khan was present with the victim.",
+   "sentences": [
+    {
+     "sid": "s00037",
+     "speaker": "The Minister for Home Affairs and Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "Can she confirm that this took place in 2018?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00038",
+     "speaker": "The Minister for Home Affairs and Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "I should add that since we take very seriously all these points, Police has spent a lot of time searching their records since this point was made.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00039",
+     "speaker": "The Minister for Home Affairs and Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "They do not seem to be able to identify a case where Ms Khan was present with the victim.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Confirmation that account is accurate",
+   "summary": "Ms Khan is asked to confirm in the House that her account is accurate and that such an incident happened, as no case fits the description.",
+   "sentences": [
+    {
+     "sid": "s00059",
+     "speaker": "Mr K Shanmugam",
+     "attributed": true,
+     "text": "Can I ask through you, Sir, for Ms Khan to confirm in this House that everything she has told us is accurate, that she did accompany such a person and such an incident did happen?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00060",
+     "speaker": "Mr K Shanmugam",
+     "attributed": true,
+     "text": "We have no such case that fits in with the description that has been given by the Member.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Police interview and Internal Affairs referral",
+   "summary": "Police will interview Ms Khan, misconduct allegations go to SPF's Internal Affairs Office, and she must recall the station, year, month and officer details.",
+   "sentences": [
+    {
+     "sid": "s00064",
+     "speaker": "Mr K Shanmugam",
+     "attributed": true,
+     "text": "The officers in-charge and the Police will interview Ms Khan and any allegations of misconduct concerning specific officers will be referred to SPF's Internal Affairs Office for further investigation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00065",
+     "speaker": "Mr K Shanmugam",
+     "attributed": true,
+     "text": "I will say to Ms Khan, through you, Sir, that, at the very least, she must remember which Police station, which year this happened and which month and some details of the number and the ages and the races of the Police officers whom she says, and she has confirmed for us, that she did see them.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "ministerial-statement-1755",
+  "group": "statement",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-10-04"
+  ],
+  "report_ids": [
+   "ministerial-statement-1755"
+  ],
+  "sentences_total": 65,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.1692,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 4,
+   "turns_total": 17,
+   "coverage": 0.2353,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:23:13"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2945,
+   "completion_tokens": 313,
+   "estimated": false,
+   "cost_usd": 0.0005
+  }
+ }
+}

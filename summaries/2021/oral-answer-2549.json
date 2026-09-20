@@ -1,0 +1,139 @@
+{
+ "title": "Proportion of Self-employed Persons Who Could Not Receive COVID-19 Recovery Grants due to Insufficient MediSave Payments",
+ "what_it_is": "Proportion of Self-employed Persons Who Could Not Receive COVID-19 Recovery Grants due to Insufficient MediSave Payments",
+ "sections": [
+  {
+   "label": "CSG and CRG eligibility criteria",
+   "summary": "CSG and CRG assist lower to middle income employees affected by COVID-19, with CRG also supporting self-employed persons; application deadlines differ.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "Both CSG and CRG assist lower to middle income resident employees who, as a result of the economic impact of COVID-19, are: (a) Involuntarily unemployed due to retrenchment or contract termination; (b) Placed on involuntary no-pay leave for at least three consecutive months; or (c) Experiencing significant salary loss for at least three consecutive months.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "CRG also supports self-employed persons (SEPs) who experience significant loss in net trade income for at least three consecutive months.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "Applications for the CSG closed on 31 December 2020, while CRG is open for applications until 31 December 2021.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Job search training criterion failures",
+   "summary": "Applicants failing the job search or training criterion were under 1% of unsuccessful CSG applications and around 3% of unsuccessful CRG applications.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "Applicants failing to meet the job search or training criterion accounted for less than 1% of unsuccessful CSG applications and around 3% of unsuccessful CRG applications as of 27 June 2021.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MediSave requirement for CRG SEPs",
+   "summary": "Second tranche CRG SEP applicants must have no outstanding MediSave contributions or commit to GIRO instalments, a requirement waived for first tranche.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "To qualify for a second tranche of CRG assistance, SEP applicants should either not have any outstanding MediSave contributions or commit to making contributions via a GIRO instalment plan with CPF Board.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "We have waived this requirement for those applying for their first tranche of CRG to allow eligible SEPs to receive timely assistance and give them more time to make arrangements for their MediSave contributions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "Individuals who do not meet the MediSave contribution criterion make up less than 1% of the unsuccessful CRG applications by SEPs.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Absolute number of 1%",
+   "summary": "A member asked for the absolute number of individuals in the 1%, and the response gave the specific percentage as 0.04%.",
+   "sentences": [
+    {
+     "sid": "s00027",
+     "speaker": "Mr Pritam Singh (Aljunied)",
+     "attributed": true,
+     "text": "Just to give us a better sense of the 1%, in absolute numbers, how many individuals are you referring to?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "I do not have the specific number, but to be specific about the percentage, it is 0.04%.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2549",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-08-02"
+  ],
+  "report_ids": [
+   "oral-answer-2549"
+  ],
+  "sentences_total": 28,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.3214,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 3,
+   "turns_total": 7,
+   "coverage": 0.4286,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:31:46"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1920,
+   "completion_tokens": 260,
+   "estimated": false,
+   "cost_usd": 0.000342
+  }
+ }
+}

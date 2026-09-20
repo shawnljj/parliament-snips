@@ -1,0 +1,79 @@
+{
+ "title": "Adjustments to Current COVID-19 Measures and Easing into Endemic Stage",
+ "what_it_is": "Adjustments to Current COVID-19 Measures and Easing into Endemic Stage",
+ "sections": [
+  {
+   "label": "COVID-19 wastewater testing questions",
+   "summary": "Questions ask how extensive wastewater testing for COVID-19 is across HDB and private estates and lessons from Hougang and Yishun cases.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Mr Dennis Tan Lip Fong",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) how extensive is wastewater testing for traces of COVID-19 being currently conducted across the various HDB and private housing estates in Singapore; and (b) what are the lessons learned from wastewater testing in recent COVID-19 cases in Hougang and Yishun.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Ms Joan Pereira",
+     "attributed": true,
+     "text": "asked the Minister for Health with regard to the mandatory 14-day COVID-19 testing for businesses in high-risk settings (a) whether the Government will provide assistance to one-man operations to help them comply with the new regulations; and (b) what form of supervision is there over their swabs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Ms Raeesah Khan",
+     "attributed": true,
+     "text": "asked the Minister for Health as Singapore moves towards an endemic strategy in dealing with COVID-19 (a) whether a decrease in the number of COVID-19-related temporary roles can be expected; (b) whether the demand for such roles will be expected to vary based on the prevailing COVID-19 situation; and (c) what are the Ministry's plans to maintain flexibility in our COVID-19 response in terms of staffing so as to be able to scale up operations should the situation require it.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2517",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-07-26"
+  ],
+  "report_ids": [
+   "oral-answer-2517"
+  ],
+  "sentences_total": 5,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.6,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 3,
+   "turns_total": 5,
+   "coverage": 0.6,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:35:50"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1030,
+   "completion_tokens": 76,
+   "estimated": false,
+   "cost_usd": 0.000165
+  }
+ }
+}

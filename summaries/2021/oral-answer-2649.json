@@ -1,0 +1,120 @@
+{
+ "title": "Investigations into Whether Singapore-based Individuals or Financial Institutions were Implicated in Pandora Papers Disclosures",
+ "what_it_is": "Investigations into Whether Singapore-based Individuals or Financial Institutions were Implicated in Pandora Papers Disclosures",
+ "sections": [
+  {
+   "label": "Pandora Papers and Singapore FIs",
+   "summary": "MAS says the Pandora Papers have not raised significant AML/CFT concerns over Singapore financial institutions, but it is engaging them to assess if controls need tightening.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "The ICIJ has reported that 336 prominent individuals from around the world had established offshore structures to hold assets, assisted by 14 service providers operating in at least 38 jurisdictions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "Two of the 14 service providers are foreign-incorporated trust companies with subsidiaries in Singapore that are licensed and regulated by MAS.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "Based on MAS’ assessment and information available thus far, the Pandora Papers have not raised significant concerns over the money laundering and counter terrorism financing (AML/CFT) controls of our FIs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "Nevertheless, MAS is engaging the relevant FIs to assess if tightening of controls is warranted.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MAS actions on trust companies",
+   "summary": "Both Singapore trust companies named in the Pandora Papers had already faced MAS supervisory or enforcement action before being mentioned.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "In fact, both the licensed trust companies in Singapore mentioned in the Pandora Papers have already been subject to MAS’ supervisory or enforcement actions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "One of them, Asiaciti Trust (Singapore) Pte Ltd, paid a composition penalty of $1.1 million imposed by MAS in July last year for its failure to implement adequate AML/CFT policies and procedures.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "The other trust company, Trident Trust Company (Singapore) Pte Ltd, was directed by MAS in September last year to remediate weaknesses detected in its risk assessment controls during MAS’ supervisory surveillance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "Both companies were under intensified scrutiny by MAS before they were mentioned in the Pandora Papers.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2649",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-11-03"
+  ],
+  "report_ids": [
+   "oral-answer-2649"
+  ],
+  "sentences_total": 25,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.32,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 4,
+   "coverage": 0.25,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:14:10"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1625,
+   "completion_tokens": 150,
+   "estimated": false,
+   "cost_usd": 0.00027
+  }
+ }
+}

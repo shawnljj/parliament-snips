@@ -1,0 +1,120 @@
+{
+ "title": "Details of COVID-19 Vaccination Roll-out Plan and Concerns on Efficacy of COVID-19 Vaccines",
+ "what_it_is": "Details of COVID-19 Vaccination Roll-out Plan and Concerns on Efficacy of COVID-19 Vaccines",
+ "sections": [
+  {
+   "label": "COVID-19 vaccine questions to Health Minister",
+   "summary": "Questions ask the Health Minister about COVID-19 vaccine numbers, rollout, safety assessment, side effects, HSA criteria, delivery timelines, and genome sequencing.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Dr Lim Wee Kiak",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what is the number of COVID-19 vaccines that have been secured for Singapore; (b) how will the vaccination programme be rolled out; (c) what is the earliest projected date to commence the programme; and (d) whether the vaccination be made mandatory for both Singaporeans and foreign residents.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "Mr Lim Biow Chuan",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what are the measures taken by the Ministry to ensure that any vaccines for COVID-19 are appropriate and safe for Singaporeans; and (b) whether the Ministry has assessed all potential side effects of the vaccine.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Ms Foo Mee Har",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what are the details of the rollout plans for COVID-19 vaccination in Singapore; (b) how does the Ministry determine the safety and effectiveness of the various vaccines coming into the market; and (c) whether individuals who have been vaccinated will be given a \"vaccination card\" to facilitate identification that may be required from time to time.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Ms Sylvia Lim",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what criteria are used by the Health Sciences Authority (HSA) to assess COVID-19 vaccinations before approval for public use; and (b) what benchmarks for efficacy are used.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Miss Cheng Li Hui",
+     "attributed": true,
+     "text": "asked the Minister for Health regarding the COVID-19 vaccines (a) what are the potential side effects associated with the vaccines; (b) whether the extent and probability of side effects occurring are significantly different from existing flu vaccines; (c) what are the plans to deal with the severe side effects that can arise due to the administration of the vaccines; and (d) what recourse do Singaporeans have should they experience severe side effects.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Mr Chua Kheng Wee Louis",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what is the number of COVID-19 vaccine submissions that are in each phase of evaluation by HSA; (b) what is the number of doses of each type of COVID-19 vaccine that has been secured for Singapore; (c) what is the delivery timeline for these vaccines; and (d) whether individuals will be given autonomy to decide on the type of vaccine they will receive when more than one vaccine has been approved.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Tan Wu Meng",
+     "attributed": true,
+     "text": "asked the Minister for Health in view of certain COVID-19 infections having \"high genetic similarity\" of virus despite dissimilar countries of origin among persons who served Stay-Home Notice (SHN) at Mandarin Orchard Singapore, whether the Ministry will consider establishing capability for scaled-up rapid whole-genome sequencing (WGS) of virus from clinical samples including nose swabs, so as to complement existing WGS from cultured COVID-19 virus.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Measures against new COVID-19 variant",
+   "summary": "A question asks the Health Minister what measures Singapore will put in place against a new COVID-19 variant spreading in the UK and Europe.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Mr Murali Pillai",
+     "attributed": true,
+     "text": "asked the Minister for Health what measures will be put in place in Singapore to deal with the new variant of the COVID-19 virus that is reported to be spreading rapidly in the UK and parts of Europe.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2351",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-01-04"
+  ],
+  "report_ids": [
+   "oral-answer-2351"
+  ],
+  "sentences_total": 13,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.6154,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 8,
+   "turns_total": 13,
+   "coverage": 0.6154,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:10:56"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1918,
+   "completion_tokens": 157,
+   "estimated": false,
+   "cost_usd": 0.000312
+  }
+ }
+}

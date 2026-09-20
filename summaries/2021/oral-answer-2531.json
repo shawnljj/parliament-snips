@@ -1,0 +1,106 @@
+{
+ "title": "Enforcing Safe Distancing Measures on Trains and Public Buses and Managing Commuter Volume during Phase Three (Heightened Alert)",
+ "what_it_is": "Enforcing Safe Distancing Measures on Trains and Public Buses and Managing Commuter Volume during Phase Three (Heightened Alert)",
+ "sections": [
+  {
+   "label": "COVID-19 measures on public transport",
+   "summary": "Operators stepped up cleaning, applied disinfectant coating, required masks and no talking, and an A*STAR study found these measures keep COVID-19 transmission risk low.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Since the start of the circuit breaker period last year, our operators have stepped up regular cleaning of buses, trains and public transport nodes, and have applied a long-lasting microbial disinfectant coating on high contact surfaces.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Commuters are also required to wear masks on public transport and to refrain from talking during their commute.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "An A*STAR study in 2020 concluded that these measures, together with the ventilation systems and natural fresh air intake on public transport, are effective in keeping the risk of COVID-19 transmission low.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Our public transport operators and the Land Transport Authority (LTA) also issue regular public reminders and deploy staff and Auxiliary Police to ensure adherence to these safe management measures.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reporting non-compliant commuters",
+   "summary": "Commuters can inform public transport staff, and operators will work through LTA to take enforcement actions such as fines or Police activation.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "If that fails or if the commuters feel uncomfortable in engaging these errant commuters directly, they can inform the nearest public transport staff, such as our bus captains or our customer service officers at the train stations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "For cases of non-compliance, our public transport operators will work through LTA to take the necessary enforcement actions, such as issuance of fines or the activation of the Police.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2531",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-07-27"
+  ],
+  "report_ids": [
+   "oral-answer-2531"
+  ],
+  "sentences_total": 17,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.3529,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:34:20"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1312,
+   "completion_tokens": 149,
+   "estimated": false,
+   "cost_usd": 0.000225
+  }
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "title": "Weather-induced Soil Erosion and Damage to Roads",
+ "what_it_is": "Weather-induced Soil Erosion and Damage to Roads",
+ "sections": [
+  {
+   "label": "LTA road inspections for potholes",
+   "summary": "LTA inspects over 9,000 lane-kilometres of roads for defects, with expressways weekly, major roads fortnightly, and other roads every two months.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "LTA conducts frequent inspections of over 9,000 lane-kilometres of roads to check for road defects, including potholes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Expressways are inspected weekly, major roads fortnightly, and all other roads once every two months.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "January 2021 pothole repairs",
+   "summary": "LTA identified 2,570 potholes in January 2021, its highest monthly number, tripled repair manpower, and repaired about 95% by 31 January.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "From 1 to 31 January 2021, LTA identified 2,570 potholes on our roads, the highest ever number of potholes recorded in a single month, and more than double the number of a typical wet season month.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "When a pothole is identified, LTA typically tries to repair it within 24 hours.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "In January 2021, LTA has tripled its manpower for road repairs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "As of 31 January, about 95% of the potholes have been repaired.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Soil erosion on slope",
+   "summary": "Two soil erosion episodes occurred in early January 2021 along a slip road slope, and LTA repaired the first incident and lined about 70 metres with concrete.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "In early January 2021, during downpours, there were two episodes of soil erosion at two different sections of the slope surface along the slip road from TPE(PIE) to Loyang Avenue and Tampines Avenue 7, despite the slope having been lined with a protective covering.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "For the first incident on 2 January 2021, LTA repaired the eroded surface and lined about 70 metres of the slope adjacent to the incident site with concrete.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2369",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-02-01"
+  ],
+  "report_ids": [
+   "oral-answer-2369"
+  ],
+  "sentences_total": 31,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2581,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 4,
+   "coverage": 0.25,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:08:12"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1806,
+   "completion_tokens": 224,
+   "estimated": false,
+   "cost_usd": 0.000316
+  }
+ }
+}

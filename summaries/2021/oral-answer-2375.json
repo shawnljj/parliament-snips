@@ -1,0 +1,152 @@
+{
+ "title": "Impact of SolarWinds Breach on Singapore and Cybersecurity of Critical Systems",
+ "what_it_is": "Impact of SolarWinds Breach on Singapore and Cybersecurity of Critical Systems",
+ "sections": [
+  {
+   "label": "SolarWinds clients and affected customers",
+   "summary": "SolarWinds' clients include US government agencies and Fortune 500 companies, and about 18,000 customers were affected, though fewer were compromised by follow-on activity.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "As reported by the media, SolarWinds’ clients include US government agencies and Fortune 500 companies – including Microsoft, CISCO Systems and VMWare.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "It affected about 18,000 customers, although a much smaller number were compromised by follow-on activity on their systems.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CSA response to SolarWinds breach",
+   "summary": "CSA raised the National Cyber Threat Alert Level and worked with CII sectors, with no indication thus far that Singapore's CII and Government systems were adversely affected.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "When first alerted of the breach, the Cyber Security Agency, or CSA, immediately raised the National Cyber Threat Alert Level and worked with our Critical Information Infrastructure, or CII, sectors to check and monitor our critical systems.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "There is no indication thus far that Singapore’s CII and Government systems have been adversely affected by the SolarWinds breach.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Shift to zero-trust posture",
+   "summary": "Dealing with sophisticated cyber threats in the longer term requires a fundamental shift in mindset towards a zero-trust cybersecurity posture.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "In the longer term, dealing with these sophisticated cyber threats requires a fundamental shift in mindset towards a \"zero-trust\" cybersecurity posture.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Global cyber threats and zero-trust",
+   "summary": "Cyber threats are global, transborder and can affect us through trusted network systems and vendors, so a zero-trust posture must be adopted.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "Because the first is, how we can ensure that we are not vulnerable and the second is how we can help companies fortify themselves against such threats.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00034",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "I think underlying this is the key point first, what I stated earlier in my main response, which is that, the nature of cyber threats is such that they are global, they are transborder and they can occur or affect us through a multiplicity of chance; not least, as the SolarWinds incident illustrates, through trusted network systems and vendors.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00035",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "And therefore, the first and perhaps most important point is the \"zero-trust\" posture that we must adopt.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CSA contact and alert system",
+   "summary": "CSA is in regular contact with counterparts worldwide for information and intelligence, and has an alert system to raise levels so CII owners step up activities.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "In particular, CSA is in regular contact with its counterparts around the world and that is an important source of this information and intelligence that is necessary to strengthen our own system.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00039",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "CSA also has, as I mentioned, an alert system, so that when it is warranted, the alert levels are raised so that our CII owners are aware that the threat landscape has shifted and they need to step up some of their activities in response to that.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2375",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-02-02"
+  ],
+  "report_ids": [
+   "oral-answer-2375"
+  ],
+  "sentences_total": 42,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.2381,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:04:42"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2475,
+   "completion_tokens": 315,
+   "estimated": false,
+   "cost_usd": 0.000435
+  }
+ }
+}

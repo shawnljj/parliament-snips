@@ -1,0 +1,139 @@
+{
+ "title": "Child And Elder Care as Reasons for Not Participating in Workforce",
+ "what_it_is": "Child And Elder Care as Reasons for Not Participating in Workforce",
+ "sections": [
+  {
+   "label": "Care-giving as main reason",
+   "summary": "In 2018, 144,100 residents cited care-giving as their main reason, including 55,300 caring for own children, falling to 133,500 and 52,900 in 2019.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "Data from the annual Comprehensive Labour Force Survey shows that in 2018, 144,100 or 4.3% of the resident population cited broader care-giving responsibilities as the main reason.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "Among these, 55,300 were providing care for own children.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "There was a slight reduction in 2019, to 133,500 and 52,900 respectively.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Years since last job",
+   "summary": "For those citing care-giving for own children in 2018 and 2019, the median years since their last job was about four to five years.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "For those who cited care-giving for own children in 2018 and 2019, the median number of years since their last job was about four to five years.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Female resident employment rate",
+   "summary": "In 2019, the resident employment rate for females aged 25 to 64 was 73.3%, above the OECD average of 66.3%.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "In 2019, the overall resident employment rate for females aged between 25 and 64 was at 73.3%, which is above the OECD average of 66.3%.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Telecommuting for care-givers",
+   "summary": "A member asks whether the Ministry plans to encourage or incentivise employers to adopt prolonged telecommuting for employees with care-giving needs.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "Mr Melvin Yong Yik Chye (Radin Mas)",
+     "attributed": true,
+     "text": "At NTUC, I regularly receive feedback from our PMETs, in particular, mothers and those with ageing parents, that they often feel that they have been disadvantaged in their careers due to their care-giving needs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "Mr Melvin Yong Yik Chye (Radin Mas)",
+     "attributed": true,
+     "text": "With COVID-19 drastically changing the way that we work and permanent telecommuting arrangements have now become a reality, I would like to ask if the Ministry has any plans to encourage or even incentivise employers to adopt prolonged telecommuting arrangements for employees with care-giving needs, so that they can both work and care for their loved ones, at the same time.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00044",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "Indeed, MOM together with our tripartite partners have been strongly advocating flexible work arrangements, not just for care-givers, but for all adults who may be able to achieve better work-life harmony and balance by having that flexibility of working from home, or having staggered work hours, or working part-time.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00045",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "Certainly, we want to continue to encourage employers to keep an open mind and seize the opportunity to look at expanding the scope of flexible work arrangements for all their employees, regardless of whether they are care-givers or not.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2382",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-02-02"
+  ],
+  "report_ids": [
+   "oral-answer-2382"
+  ],
+  "sentences_total": 45,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.2,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 3,
+   "turns_total": 9,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:04:40"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2811,
+   "completion_tokens": 275,
+   "estimated": false,
+   "cost_usd": 0.000471
+  }
+ }
+}

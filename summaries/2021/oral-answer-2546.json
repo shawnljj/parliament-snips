@@ -1,0 +1,153 @@
+{
+ "title": "Data on Sources of Marine Debris in Past Five Years",
+ "what_it_is": "Data on Sources of Marine Debris in Past Five Years",
+ "sections": [
+  {
+   "label": "Marine debris origins data",
+   "summary": "The question asks for yearly estimates of marine debris from ship waste and neighbouring countries, and whether such data will be collected.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Louis Ng Kok Kwang",
+     "attributed": true,
+     "text": "asked the Minister for Sustainability and the Environment (a) for each year in the past five years, what is the estimated percentage of marine debris that originates from (i) disposal of waste from ships and (ii) floating debris from neighbouring countries; and (b) if such data is not currently collected, whether the Ministry will start collecting the data.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Sustainability and the Environment (Mr Desmond Tan) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "However, apportioning this marine litter to different sources is inherently challenging, as there is currently no internationally accepted methodology to conclusively determine the origins of transboundary marine litter.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Pollution and waste regulations",
+   "summary": "The passage states there are strict regulations on pollution control and waste disposal.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Desmond Tan",
+     "attributed": true,
+     "text": "First of all, we have strict regulations on pollution control as well as waste disposal.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Ship pollution rules and ASEAN",
+   "summary": "MPA enforces the Prevention of Pollution of the Sea Act, prohibits ship disposal, requires garbage records, and Singapore adopts ASEAN marine debris measures.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Mr Desmond Tan",
+     "attributed": true,
+     "text": "As for the ships, MPA is the agency that implements regulations to minimise marine pollution through the Prevention of Pollution of the Sea Act, or PPSA.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Desmond Tan",
+     "attributed": true,
+     "text": "Any form of disposal into the sea from the ship, is currently prohibited and any violation can result in fines or imprisonment.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Desmond Tan",
+     "attributed": true,
+     "text": "Ships are also required to maintain records of all their garbage and management plans for verification by inspectors.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr Desmond Tan",
+     "attributed": true,
+     "text": "I understand that MPA today, on average, sends out five garbage collection vessels every day and they have nine additional vessels to pick up the marine trash flotsam from the sea.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Desmond Tan",
+     "attributed": true,
+     "text": "At the regional level, Singapore, along with ASEAN member states, continues to adopt the Bangkok Declaration on Combating Marine Debris in ASEAN Region and the ASEAN Framework of Action on Marine Debris from 2019.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NEA marine litter study",
+   "summary": "NEA has begun a two-year study of marine litter and micro-plastics in Singapore's waters and beaches, though origins may remain unclear.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "Mr Desmond Tan",
+     "attributed": true,
+     "text": "NEA will continue to do its part to step up on the cleaning, especially during the monsoon seasons.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00027",
+     "speaker": "Mr Desmond Tan",
+     "attributed": true,
+     "text": "I wish to mention that to better understand the marine litter situation in Singapore, NEA has recently embarked on a two-year study to gain a better understanding of the levels as well as the pathways of marine litter and micro-plastics in Singapore's inland waters, coastal waters as well as recreational beaches, which could then support recommendations for future marine litter and micro-plastics monitoring programme or initiatives.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Mr Desmond Tan",
+     "attributed": true,
+     "text": "I want to caveat at this juncture that it is not clear if the study would be able to explain the causes or the origins of the debris but we think that is an important step forward.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2546",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-08-02"
+  ],
+  "report_ids": [
+   "oral-answer-2546"
+  ],
+  "sentences_total": 28,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 4,
+  "selection_share": 0.3929,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:31:48"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1853,
+   "completion_tokens": 230,
+   "estimated": false,
+   "cost_usd": 0.000324
+  }
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "title": "NParks' Tree Inspection Regime",
+ "what_it_is": "NParks' Tree Inspection Regime",
+ "sections": [
+  {
+   "label": "Regular tree inspections schedule",
+   "summary": "Trained inspectors carry out regular tree inspections every six to 24 months, depending on location and tree size.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "Regular tree inspections are carried out by trained inspectors every six to 24 months, depending on the location and size of the tree.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Annual inspections for large trees",
+   "summary": "Since November 2016, in-depth inspections are also conducted annually for trees of more than four metres in girth.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "Since November 2016, such in-depth inspections are also conducted annually for trees of more than four metres in girth.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Arboriculture courses and tree failures",
+   "summary": "Courses by international and local experts train NParks staff and others; over 620 arborists are accredited, and tree failure incidents fell from 3,100 in 2000 to 339 in 2020.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "These courses are conducted by both international and local arboriculture experts, for NParks staff, as well as tree care professionals in the private sector and other public agencies that manage trees.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "There are currently more than 620 arborists in Singapore who are accredited with the International Society of Arboriculture.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "With this comprehensive tree management programme, NParks has reduced the number of tree failure incidents by almost nine-fold, from 3,100 in the year 2000, to 339 in 2020.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tree support systems use",
+   "summary": "NParks uses tree support systems for trees that have reached maturity or have known structural weaknesses, among others.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "NParks does use tree support systems for trees that have reached maturity or have known structural weaknesses, among others.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Support systems constrain young trees",
+   "summary": "Tree support systems can constrain young and semi-mature trees in the ability to grow.",
+   "sentences": [
+    {
+     "sid": "s00048",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "Tree support systems can constrain, however, young and semi-mature trees in the ability to grow.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Trees managed and arborist community",
+   "summary": "NParks manages some 6 million trees, Town Council areas about a million, and others manage trees; over 620 arborists are trained and accredited.",
+   "sentences": [
+    {
+     "sid": "s00060",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "NParks manages some 6 million trees in Singapore, whilst in Town Council areas, if I recall right, about a million trees managed in areas under Town Council management.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00061",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "There are, of course, trees managed by private property owners, by MCSTs, by other agencies as well.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00062",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "And so, the first thing is to ensure that the arborists in Singapore, as I said earlier in my reply, that we have a community of arborists numbering more than 620, who are trained and accredited by the International Society of Arboriculture.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2425",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-03-03"
+  ],
+  "report_ids": [
+   "oral-answer-2425"
+  ],
+  "sentences_total": 67,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.1493,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 7,
+   "coverage": 0.4286,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:52:31"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 3337,
+   "completion_tokens": 348,
+   "estimated": false,
+   "cost_usd": 0.000565
+  }
+ }
+}

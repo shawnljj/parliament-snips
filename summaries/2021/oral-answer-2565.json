@@ -1,0 +1,92 @@
+{
+ "title": "Annual Range, Median and Average Commission Paid by Housing Developers to Appointed Sales Agents",
+ "what_it_is": "Annual Range, Median and Average Commission Paid by Housing Developers to Appointed Sales Agents",
+ "sections": [
+  {
+   "label": "Developer sales agent commissions",
+   "summary": "Commissions paid by housing developers to sales agents are a private contractual arrangement and the Government does not require disclosure.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Second Minister for National Development (Ms Indranee Rajah) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "The commissions paid by housing developers to their sales agents are a private contractual arrangement and the Government does not require this information to be disclosed.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "URA and sales commissions",
+   "summary": "URA does not ask for information on sales commissions, which are a private arrangement between developers and sales agents.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "In fact, URA does not ask for information on the commissions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "I think he also said that the report said that the Ministry would engage the developers for information and provide feedback.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "I think the engagement of developers is something URA and the Ministry does regularly, but specifically on sales commissions, as I have mentioned, the Government does not collect data on that; and that is a private arrangement between the developers and the sales agents.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2565",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-08-03"
+  ],
+  "report_ids": [
+   "oral-answer-2565"
+  ],
+  "sentences_total": 11,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.3636,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:30:14"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1018,
+   "completion_tokens": 109,
+   "estimated": false,
+   "cost_usd": 0.000173
+  }
+ }
+}

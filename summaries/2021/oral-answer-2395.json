@@ -1,0 +1,134 @@
+{
+ "title": "Financial Support Schemes for Working Care-givers of Cancer Patients",
+ "what_it_is": "Financial Support Schemes for Working Care-givers of Cancer Patients",
+ "sections": [
+  {
+   "label": "Financial support for cancer patients",
+   "summary": "The passage lists subsidies, MediSave, MediFund, and grants available to cancer patients and their care-givers.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We have financial support schemes to help keep cancer treatment expenses more affordable for patients and their care-givers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "This includes means-tested subsidies of up to 70% at public Specialist Outpatient Clinics and up to 75% for subsidised medications.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Eligible Singaporeans can also receive means-tested subsidies of up to 80% for long-term care services such as centre-based rehabilitation for cancer patients.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For patients who are diagnosed with terminal cancer and receiving end-of-life care, MediSave may be used to pay for home palliative care or day hospice care, and there is no withdrawal limit if the bill is paid using the patient’s own MediSave.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In addition, patients with financial needs can apply for MediFund assistance, which helps to provide a safety net for those who are still unable to afford the bills.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The Home Caregiving Grant (HCG) was introduced in October 2019 to provide a $200 monthly cash grant to eligible individuals, including cancer patients, with permanent moderate disability to defray the costs of long-term care-giving.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Another grant – the Caregiver Training Grant – allows care-givers, including working care-givers, to attend approved courses to better care for their loved ones.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Beyond healthcare-specific financial measures, care-givers can also qualify for tax reliefs if they meet the conditions under dependant related relief schemes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Balancing MediSave withdrawal limits",
+   "summary": "The passage states the need to balance care-giver MediSave withdrawal limits between family support and the care-giver's own future healthcare needs.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "I think his starting point is that families want to be the first line of support and do their part to care more for the financial needs of those in the family who are suffering from cancer.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "But in trying to make sure there is a certain withdrawal limit for the use of the care-giver's MediSave funds to support the needs of a family member who is afflicted with cancer, we need to strike the balance between preserving enough MediSave funds for the care-giver as well, for his or her own longer term healthcare needs, while at the same time, trying to make sure that there is enough family support to care for the one who is suffering from cancer.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2395",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-02-16"
+  ],
+  "report_ids": [
+   "oral-answer-2395"
+  ],
+  "sentences_total": 22,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.4545,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:04:23"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1819,
+   "completion_tokens": 145,
+   "estimated": false,
+   "cost_usd": 0.000295
+  }
+ }
+}

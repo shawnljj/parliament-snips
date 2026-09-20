@@ -1,0 +1,120 @@
+{
+ "title": "Annual Number of Suicides and Attempted Suicides by Age, Race, Educational Level and Economic Background",
+ "what_it_is": "Annual Number of Suicides and Attempted Suicides by Age, Race, Educational Level and Economic Background",
+ "sections": [
+  {
+   "label": "Suicide data and prevention approach",
+   "summary": "Published data show suicide patterns by age and race, with multiple contributing factors, and Singapore uses a multi-pronged prevention approach.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "From the published data, we can deduce that by age, younger people 19 years and below, account for disproportionately fewer suicides, while the converse is true for people aged 60 and above.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "By race, Malays account for disproportionately fewer suicides, while the converse is true for Indians.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Breakdowns by education level and economic background are not available.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "There are usually multiple factors that may lead a person to commit and attempt suicide.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "These factors include relationships, family, social, financial, mental and physical health issues.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "Singapore adopts a multi-pronged approach to suicide prevention.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "Government agencies and stakeholders in the social service sectors work together to prevent suicides by promoting upstream prevention, encouraging help-seeking, providing support to at-risk groups and offering crisis support.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cannot force proceeding",
+   "summary": "Whether or not they wish to proceed is something that cannot be forced on them.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "As to whether or not they wish to proceed, that is something that we cannot force them to.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2645",
+  "group": "oral",
+  "year": "2021",
+  "sitting_dates": [
+   "2021-11-02"
+  ],
+  "report_ids": [
+   "oral-answer-2645"
+  ],
+  "sentences_total": 18,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4444,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 5,
+   "coverage": 0.6,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T16:16:05"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1256,
+   "completion_tokens": 134,
+   "estimated": false,
+   "cost_usd": 0.000213
+  }
+ }
+}
