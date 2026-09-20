@@ -468,6 +468,28 @@ def parse_turns(content_html):
     return turns
 
 
+def normalise_turns(turns):
+    """Turn new-parser output into the shape the pipeline stores.
+
+    ONE implementation, used by both fetch_sitting and backfill. The two entry points each
+    parsed turns themselves, so a fix applied to one silently missed the other -- which is
+    exactly what happened: the structural parser was wired into fetch_sitting, and backfill
+    (the tool that actually re-fetches a year) kept calling the old regex parser and
+    republished the pollution the new one removes.
+    """
+    return [{"speaker": t["speaker"], "text": t["text"],
+             "lang": t.get("lang") or "English",
+             "is_procedural": bool(t.get("is_procedural")),
+             "time": t.get("time"),
+             "words": len((t["text"] or "").split())}
+            for t in turns]
+
+
+def parse_report_turns(content_html):
+    """The single way report HTML becomes turns. Both callers use this."""
+    return normalise_turns(H.parse_report(content_html or ""))
+
+
 def fetch_report(report_id):
     """Full content + metadata for one report."""
     data = post_soft("getHansardTopic", {"id": report_id.rstrip("#")})
@@ -496,16 +518,7 @@ def fetch_sitting(day, workers=5):
         # &nbsp;-prefixed paragraphs, styled <strong> tags and names split across tags --
         # each failure merging one speaker's words into the previous speaker's turn.
         # See scraper/hansard_parse.py for the rule and the evidence behind it.
-        turns = H.parse_report(meta.get("content") or "")
-        # normalise to the shape the rest of the pipeline expects: speaker/text/lang/
-        # is_procedural/words. The new parser also yields `time` (the clock stamp) which the
-        # old one discarded; it is kept because it is what sitting durations were scraped for.
-        turns = [{"speaker": t["speaker"], "text": t["text"],
-                  "lang": t.get("lang") or "English",
-                  "is_procedural": bool(t.get("is_procedural")),
-                  "time": t.get("time"),
-                  "words": len((t["text"] or "").split())}
-                 for t in turns]
+        turns = parse_report_turns(meta.get("content") or "")
         group = group_for(meta.get("reportType") or listing.get("reportType"), rid)
         items.append({
             "report_id": rid,

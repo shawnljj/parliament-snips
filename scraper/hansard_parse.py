@@ -174,13 +174,28 @@ def split_paragraph(pieces):
     if i >= n or pieces[i].kind != "strong":
         return None, _pieces_text(pieces), None
 
-    # join consecutive strong pieces: a long ministerial title is sometimes tagged in two
-    # pieces when the site's styling changes mid-name.
+    # joint consecutive strong pieces: a long ministerial title is sometimes tagged in two
+    # pieces when the site's styling changes mid-name, and the source puts WHITESPACE between
+    # them ("</strong>\t<strong style=...>"). A plain "while next is strong" loop stops at that
+    # whitespace and truncates the title mid-name -- which is how
+    # "The Senior Parliamentary Secretary to the Minister for Social and Family Development
+    # (Mr Eric Chua) (for the" got published. Blank text pieces between strongs are skipped.
     name_parts = []
     j = i
-    while j < n and pieces[j].kind == "strong":
-        name_parts.append(pieces[j].text or "")
-        j += 1
+    while j < n:
+        if pieces[j].kind == "strong":
+            name_parts.append(pieces[j].text or "")
+            j += 1
+            continue
+        if pieces[j].kind == "text" and _is_blank(pieces[j].text):
+            # only skip it if ANOTHER strong follows, otherwise it is the real separator
+            k2 = j + 1
+            while k2 < n and pieces[k2].kind == "text" and _is_blank(pieces[k2].text):
+                k2 += 1
+            if k2 < n and pieces[k2].kind == "strong":
+                j = k2
+                continue
+        break
     name = re.sub(r"[\s\u00a0]+", " ", " ".join(name_parts)).strip()
 
     # a trailing colon is part of the name in "<strong>Mr Speaker:</strong> body"; strip it.
@@ -242,6 +257,14 @@ def parse_report(html, keep_asides=True):
             continue
         speaker, body, _lang = split_paragraph(pieces)
         if speaker is not None:
+            # A NAMED TURN WITH NO TEXT is dropped, not emitted. The source contains
+            # "<p><strong>NAME</strong>:</p>" with nothing after the colon -- the Speaker
+            # calls a Member who then does not speak, or a heading with an empty body. Keeping
+            # it puts an empty turn in the dataset, which becomes an empty sentence candidate
+            # and can reach a brief as a blank. The old parser skipped these because its
+            # regex required text after the colon.
+            if not body.strip():
+                continue
             current = {"speaker": speaker, "text": body, "time": current_time,
                        "is_procedural": False}
             turns.append(current)

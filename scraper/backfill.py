@@ -32,7 +32,7 @@ sys.path.insert(0, HERE)
 
 from parsnips_fetch import (  # noqa: E402
     discover_sittings, discover_sittings_cached, enumerate_sitting_reports,
-    fetch_report, group_for, parse_turns,
+    fetch_report, group_for, parse_report_turns,
 )
 from concurrent.futures import ThreadPoolExecutor  # noqa: E402
 import storage  # noqa: E402  (shared layout: year shards, keys, manifest)
@@ -122,7 +122,7 @@ def fetch_one(date):
         if not meta:
             failures += 1
         listing = reports[rid]
-        turns = parse_turns(meta.get("content") or "")
+        turns = parse_report_turns(meta.get("content") or "")
         rtype = meta.get("reportType") or listing.get("reportType")
         items.append({
             "report_id": rid,
