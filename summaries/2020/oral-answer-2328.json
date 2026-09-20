@@ -1,0 +1,132 @@
+{
+ "title": "Portion of Average Bill for Surgical Procedure Paid Via MediShield Life and Via Out-of-pocket Payments",
+ "what_it_is": "Portion of Average Bill for Surgical Procedure Paid Via MediShield Life and Via Out-of-pocket Payments",
+ "sections": [
+  {
+   "label": "Hospital subsidies and bill payments",
+   "summary": "Government subsidises up to 80% of surgical and hospital charges, with MediShield Life, MediSave and small cash payments covering the rest.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The Government provides significant subsidies of up to 80% for both the surgical procedure and the daily hospital charges, which include any number of tests, scans and rehabilitative services which may be required as part of the treatment episode.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For hospitalisations involving a more complex surgical procedure, it will cover about 15% to 20% of the total bill in a subsidised ward on average, while MediSave pays for about 5% to 10%.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "About 3% of the bill is then paid for in cash.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For example, an average subsidised bill for a heart artery bypass surgery, a much more complex surgery, would cost probably about $33,000 before subsidies, where MediShield Life pays for about $7,300, MediSave covers about $1,600, and the patient pays the remainder of about $200 in cash.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Overall, for all treatments, including less complex surgeries, eight in 10 of all subsidised hospitalisation bills incurred by Singaporeans were paid $100 in cash or less.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MediShield Life surgical claim limits",
+   "summary": "MediShield Life surgical procedure claim limits were increased in January to match rising healthcare costs and cover complex surgeries better.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The MediShield Life claim limits for surgical procedures were recently increased in January this year to keep pace with rising healthcare costs and provide better coverage for more complex surgical procedures.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Policy year claim limit increase",
+   "summary": "The Council recommended raising the policy year claim limit from $100,000 to $150,000 for that year.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In addition, the Council has also recommended to raise the policy year claim limit from the current $100,000 to $150,000 for that year.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "No denial due to inability to pay",
+   "summary": "No Singaporean will be denied appropriate healthcare because they cannot pay.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "No Singaporean will be denied appropriate healthcare due to their inability to pay.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2328",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-11-02"
+  ],
+  "report_ids": [
+   "oral-answer-2328"
+  ],
+  "sentences_total": 28,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.2857,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 4,
+   "coverage": 0.25,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:45:04"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1791,
+   "completion_tokens": 230,
+   "estimated": false,
+   "cost_usd": 0.000315
+  }
+ }
+}

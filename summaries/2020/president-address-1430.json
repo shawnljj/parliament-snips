@@ -1,0 +1,172 @@
+{
+ "title": "Ministry of Transport",
+ "what_it_is": "Ministry of Transport",
+ "sections": [
+  {
+   "label": "Changi Airport air links lost",
+   "summary": "Changi Airport has lost about 50% of its air links and over 95% of scheduled passenger services.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Changi Airport has lost about 50% of its air links and over 95% of scheduled passenger services.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "RTS Link and HSR talks",
+   "summary": "Singapore and Malaysia agreed to resume the RTS Link Project, and discussions continue on the suspended Kuala Lumpur-Singapore HSR Project.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Last month, Singapore and Malaysia agreed to resume the Johor Bahru – Singapore Rapid Transit System (RTS) Link Project.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00027",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "When service commences in 2026, it will ease Causeway congestion, improve connectivity and deepen people-to-people ties.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00028",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We are also in discussions with Malaysia on the Kuala Lumpur – Singapore High Speed Rail (HSR) Project, which has been suspended at Malaysia's request until 31 December 2020.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Rail and bus improvements",
+   "summary": "MOT has improved rail and bus services, with MRT Mean Kilometres Between Failure rising from 130,000 to over one million train-km.",
+   "sentences": [
+    {
+     "sid": "s00035",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Over the last five years, MOT has significantly improved rail and bus services.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00036",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We have turned the corner on rail reliability, with Mean Kilometres Between Failure of the Mass Rapid Transit (MRT) system increasing from 130,000 train-km to over one million train-km.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cleaner buses and vehicle growth",
+   "summary": "Vehicle growth rate is 0%, the Government will buy only cleaner energy buses, and aims to phase out internal combustion engine private vehicles by 2040.",
+   "sentences": [
+    {
+     "sid": "s00046",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Our vehicle growth rate is already 0%, and the Government will henceforth purchase only cleaner energy buses.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00047",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We will further work towards phasing out private vehicles with internal combustion engines by 2040.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Pedestrianisation and cycling paths",
+   "summary": "There may be scope to pedestrianise certain roads, and cycling paths will expand from 460km to around 1,300km by 2030.",
+   "sentences": [
+    {
+     "sid": "s00051",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "There may be scope to pedestrianise certain roads.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00052",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We will also follow through on our plan to expand cycling paths from 460km now to around 1,300km by 2030 under the Islandwide Cycling Network.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Maritime decarbonisation efforts",
+   "summary": "Singapore set up an International Advisory Panel on Maritime Decarbonisation and a Maritime GreenFuture Fund to develop and adopt low-carbon technologies.",
+   "sentences": [
+    {
+     "sid": "s00056",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Internationally, we will play our part to tackle climate change.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00057",
+     "speaker": "The Minister for Transport (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We have set up an International Advisory Panel on Maritime Decarbonisation to develop strategies for maritime decarbonisation, and started a Maritime GreenFuture Fund to accelerate the development and adoption of low-carbon technologies.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-1430",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-24"
+  ],
+  "report_ids": [
+   "president-address-1430"
+  ],
+  "sentences_total": 58,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 6,
+  "selection_share": 0.2069,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:59:12"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2643,
+   "completion_tokens": 356,
+   "estimated": false,
+   "cost_usd": 0.00047
+  }
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "title": "Ministry of Manpower",
+ "what_it_is": "Ministry of Manpower",
+ "sections": [
+  {
+   "label": "National Jobs Council spearheads SGUnited",
+   "summary": "The National Jobs Council will lead a Whole-of-Government effort to bring together 100,000 jobs and skills opportunities through the SGUnited Jobs and Skills Package.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "The National Jobs Council will spearhead the Whole-of-Government effort to bring together 100,000 jobs and skills opportunities through the SGUnited Jobs and Skills Package.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Foreign workforce policy adjustments",
+   "summary": "Due to COVID-19 and economic disruption, foreign workforce policies will be adjusted, including raising salary criteria for EP and S Passes.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "However, with COVID-19 and the economic disruption it has caused, there is now more slack in the labour market.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We will therefore make further adjustments to our foreign workforce policies, including raising the salary criteria for EP and S Passes, to reflect the changed conditions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Progressive Wage Model income increases",
+   "summary": "In cleaning, security, and landscaping where PWM is fully implemented, full-time workers' gross monthly incomes rose about 30% in five years.",
+   "sentences": [
+    {
+     "sid": "s00036",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "In sectors like cleaning, security, and landscaping where the Progressive Wage Model (PWM) has been fully implemented, full-time workers have seen their gross monthly incomes increase by around 30% in the last five years, much higher than median wages.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Expanding Progressive Wage Model sectors",
+   "summary": "Over time, the PWM will be expanded to more sectors practically while preserving low local unemployment.",
+   "sentences": [
+    {
+     "sid": "s00039",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "Over time, we will expand the PWM to more sectors, in a manner that is practical and ensures we preserve low levels of local unemployment.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Workfare, Silver Support, disability employment support",
+   "summary": "Workfare payouts rose from January 2020; enhanced Silver Support helps 100,000 more seniors; the EEC covers about four in five PwD employees.",
+   "sentences": [
+    {
+     "sid": "s00044",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "Workfare payouts were raised from January 2020 to uplift more workers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00045",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "The enhanced Silver Support will provide higher payouts and help 100,000 more seniors with lesser means, covering up to one in three of our elderly.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00046",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "To better support persons with disabilities (PwDs), we introduced the Enabling Employment Credit (EEC) which will cover about four in five of current PwD employees.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Assurance, Care & Engagement Group",
+   "summary": "A new operating unit, the Assurance, Care & Engagement (ACE) Group, will take over and continue the Inter-Agency Task Force's work.",
+   "sentences": [
+    {
+     "sid": "s00052",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We will also build on the experience of managing and safeguarding the wellbeing of migrant workers during the pandemic.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00053",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We have set up a new operating unit – the Assurance, Care & Engagement (ACE) Group – to take over and continue the work of the Inter-Agency Task Force.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-1426",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-24"
+  ],
+  "report_ids": [
+   "president-address-1426"
+  ],
+  "sentences_total": 64,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.1562,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:58:50"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2918,
+   "completion_tokens": 362,
+   "estimated": false,
+   "cost_usd": 0.00051
+  }
+ }
+}

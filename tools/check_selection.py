@@ -36,6 +36,7 @@ def main():
 
     n_sec = n_pub = 0
     mismatch, unresolved, inferred, dups, empty_sec, no_summary = [], [], [], [], [], []
+    no_sections = []          # a brief with no sections is invisible to every check below
     covs = []
 
     for f in files:
@@ -43,6 +44,11 @@ def main():
         iid = os.path.basename(f)[:-5]
         rec = record(iid)
         seen = set()
+        # A brief from an older schema has no "sections" key at all, so the loop below never
+        # runs: zero sections means zero defects and it reports PASS. Four such files sat on
+        # a schema-4 site undetected. Structural emptiness is a defect, not an absence.
+        if not (b.get("sections") or []):
+            no_sections.append((iid, b.get("schema")))
         for si, sec in enumerate(b.get("sections") or []):
             n_sec += 1
             ss = sec.get("sentences") or []
@@ -75,12 +81,14 @@ def main():
     print(f"  4. DUPLICATES           same sentence twice           : {len(dups)}")
     print(f"     empty sections                                     : {len(empty_sec)}")
     print(f"     sections without a summary                          : {len(no_summary)}")
+    print(f"     briefs with NO sections at all                      : {len(no_sections)}")
     if covs:
         print(f"\n  coverage  min {covs[0]:.3f}  median {covs[len(covs) // 2]:.3f}  "
               f"max {covs[-1]:.3f}")
     for label, items in (("mismatch", mismatch), ("unresolved", unresolved),
                          ("inferred", inferred), ("duplicate", dups),
-                         ("empty section", empty_sec), ("no summary", no_summary)):
+                         ("empty section", empty_sec), ("no summary", no_summary),
+                         ("NO SECTIONS", no_sections)):
         for it in items[:5]:
             print(f"    {label}: {it}")
     # no_summary COUNTED AS A DEFECT. It was measured and printed and then left out of the
@@ -88,7 +96,7 @@ def main():
     # A measured failure that does not affect the verdict is worse than no check: it reads
     # as a pass.
     bad = (len(mismatch) + len(unresolved) + len(inferred) + len(dups)
-           + len(empty_sec) + len(no_summary))
+           + len(empty_sec) + len(no_summary) + len(no_sections))
     print(f"\n{'PASS' if not bad else 'FAIL'} — {bad} defect(s)")
     return 0 if not bad else 1
 

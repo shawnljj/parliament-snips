@@ -1,0 +1,137 @@
+{
+ "title": "Number of Singaporeans Provided Childcare, Preschool and After-school Care Subsidies",
+ "what_it_is": "Number of Singaporeans Provided Childcare, Preschool and After-school Care Subsidies",
+ "sections": [
+  {
+   "label": "Childcare subsidy questions for families",
+   "summary": "An MP asks about numbers of Singaporeans receiving childcare, preschool and after-school care subsidies, extending subsidies to non-working mothers, and reviewing ECDA subsidies and means testing.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Gan Thiam Poh",
+     "attributed": true,
+     "text": "asked the Minister for Social and Family Development (a) what is the current number of Singaporeans who have been provided with childcare/preschool and after-school care subsidies respectively, broken down by (i) income group (ii) amount of subsidy and (iii) the after-subsidy fee they are paying; (b) whether the Ministry will extend the subsidies to non-working mothers who look after other elder children in the family; and (c) whether the Ministry will review the subsidies given by ECDA centres in providing childcare/preschool and after-school care and also consider eliminating means testing so that all parents pay a uniform fee.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Median subsidy and nett fee",
+   "summary": "For this group, the median total subsidy is $560 with a median nett fee of $210, and the median total subsidy is $767 with a median nett fee of $3.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Social and Family Development (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "For this group, the median total subsidy is $560 and the median nett fee after subsidy is $210.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Social and Family Development (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "For this group, the median total subsidy is $767 and the median nett fee is $3.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Childcare subsidy income ceiling raised",
+   "summary": "In January 2020 the household income ceiling for Childcare Additional Subsidy and KiFAS was raised to $12,000 per month from $7,500 and $6,000.",
+   "sentences": [
+    {
+     "sid": "s00031",
+     "speaker": "The Minister for Social and Family Development (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "In January 2020, we raised the household income ceiling for the Childcare Additional Subsidy and KiFAS to $12,000 per month, up from $7,500 and $6,000 respectively, to support more families with pre-school expenses.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Incentivising families with more children",
+   "summary": "The question asks whether the Government will also consider incentivising families who have more children.",
+   "sentences": [
+    {
+     "sid": "s00040",
+     "speaker": "Mr Gan Thiam Poh (Ang Mo Kio)",
+     "attributed": true,
+     "text": "My question is: will the Government also consider incentivising families who have more children?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reason for encouraging more babies",
+   "summary": "Encouraging more babies is one reason why it was done, but not the reason to do it.",
+   "sentences": [
+    {
+     "sid": "s00043",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "Encouraging more babies is one reason why we did it, but not the reason to do it.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Higher subsidies for students above seven",
+   "summary": "Students above seven years old who need care because of their family circumstances have access to higher subsidies given the special circumstances.",
+   "sentences": [
+    {
+     "sid": "s00046",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "For students above seven years old who need care because of the circumstances in their families, they have access to higher subsidies given the special circumstances the families may need.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2315",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-10-15"
+  ],
+  "report_ids": [
+   "oral-answer-2315"
+  ],
+  "sentences_total": 47,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 6,
+  "selection_share": 0.1489,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 4,
+   "turns_total": 4,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:45:18"
+  },
+  "usage": {
+   "calls": 4,
+   "prompt_tokens": 2959,
+   "completion_tokens": 360,
+   "estimated": false,
+   "cost_usd": 0.000515
+  }
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "title": "Ministry of Education",
+ "what_it_is": "Ministry of Education",
+ "sections": [
+  {
+   "label": "MOE Kindergartens by 2025",
+   "summary": "By 2025, at least 60 MOE Kindergartens will be operated.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Education (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "By 2025, we will operate at least 60 MOE Kindergartens.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Blended learning and digital devices",
+   "summary": "MOE will make blended learning part of the curriculum from next year and accelerate giving personal digital learning devices to all secondary students by end-2021.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for Education (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Building on our experience with home-based learning, MOE will make blended learning an integral feature of the curriculum from next year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Education (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "As part of our National Digital Literacy Programme, we will accelerate the roll out of personal digital learning devices to all secondary school students by end-2021.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Phasing out secondary school streaming",
+   "summary": "By 2024, streaming will be phased out and Full Subject-Based Banding implemented across secondary schools.",
+   "sentences": [
+    {
+     "sid": "s00027",
+     "speaker": "The Minister for Education (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "By 2024, streaming will be phased out and Full Subject-Based Banding will be implemented across secondary schools.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SFEd roadmap and education reshaping",
+   "summary": "SFEd gives teachers a roadmap in six areas, and MOE is reshaping education and working with partners to help Singaporeans learn for life.",
+   "sentences": [
+    {
+     "sid": "s00039",
+     "speaker": "The Minister for Education (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "SFEd provides a roadmap for all teachers to strengthen their practice in six areas: assessment literacy, differentiated instruction, inquiry-based learning, e-pedagogy, CCE, and support for students with special educational needs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "The Minister for Education (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "In the midst of crisis, we are seizing opportunities to reshape our education system for the longer term, and to accelerate improvements in the way we teach and learn.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "The Minister for Education (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "In partnership with parents, employers, and community, we will help Singaporeans to learn for life and learn from life.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00042",
+     "speaker": "The Minister for Education (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "We will continue to uplift our people and expand opportunities for progression, as part of our overall efforts to build a more fair and just society.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-1423",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-24"
+  ],
+  "report_ids": [
+   "president-address-1423"
+  ],
+  "sentences_total": 42,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.1905,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:59:28"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2360,
+   "completion_tokens": 246,
+   "estimated": false,
+   "cost_usd": 0.000399
+  }
+ }
+}

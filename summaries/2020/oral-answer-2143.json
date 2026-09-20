@@ -1,0 +1,125 @@
+{
+ "title": "Analysis that Supported Development of SecureMyBike Project in Admiralty that was Eventually Discontinued",
+ "what_it_is": "Analysis that Supported Development of SecureMyBike Project in Admiralty that was Eventually Discontinued",
+ "sections": [
+  {
+   "label": "SecureMyBike studies and WCR plans",
+   "summary": "Asks what studies supported the $4.7 million SecureMyBike project at Admiralty MRT, discontinued for lack of demand, and how future walk, cycle and ride infrastructure will be ensured.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Assoc Prof Walter Theseira",
+     "attributed": true,
+     "text": "asked the Minister for Transport (a) what are the studies, projections or cost-benefit analyses that supported development of the $4.7 million SecureMyBike project at Admiralty MRT that has been discontinued due to lack of demand; and (b) how does the Ministry plan to ensure future walk, cycle and ride (WCR) infrastructure improvements.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "LTA ends bicycle parking pilot",
+   "summary": "LTA ended the pilot because fees could not cover operating cost; Kampung Admiralty succeeded overall but underground bicycle parking was disappointing.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "As the fees collected could not cover the operating cost, LTA decided to end the pilot or the trial.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "But overall, Kampung Admiralty has been a highly successful project, although the outcome for underground parking for bicycles has turned out to be disappointing.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Possible future underground bicycle parking",
+   "summary": "As PMD numbers fall, shared and private bicycle use may rise, so similar underground bicycle parking systems may be needed in Singapore, perhaps at Kampung Admiralty.",
+   "sentences": [
+    {
+     "sid": "s00046",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "As the number of PMDs comes down, the usage of shared bikes and privately owned bicycles may well rise again.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00047",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "I would not be surprised that similar underground bicycle parking systems may be needed in Singapore, perhaps even at Kampung Admiralty, in the future.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Planning assumptions and project review",
+   "summary": "Planning assumptions must be set down clearly to check after project completion, which is why there is always a project review or post-mortem.",
+   "sentences": [
+    {
+     "sid": "s00052",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "Indeed, we must have that discipline of making sure that you set down clearly what are the planning assumptions so that you can check back after the project is completed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00053",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "That is why there is always a project review or a post-mortem so that we learn from it.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2143",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-02-04"
+  ],
+  "report_ids": [
+   "oral-answer-2143"
+  ],
+  "sentences_total": 57,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.1228,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 3,
+   "turns_total": 5,
+   "coverage": 0.6,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:30:44"
+  },
+  "usage": {
+   "calls": 5,
+   "prompt_tokens": 3242,
+   "completion_tokens": 277,
+   "estimated": false,
+   "cost_usd": 0.000531
+  }
+ }
+}

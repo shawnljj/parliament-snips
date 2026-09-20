@@ -1,0 +1,86 @@
+{
+ "title": "Supplementary Estimates of Expenditure for the Financial Year 1 April 2020 to 31 March 2021",
+ "what_it_is": "Supplementary Estimates of Expenditure for the Financial Year 1 April 2020 to 31 March 2021",
+ "sections": [
+  {
+   "label": "COVID-19 support budget increases",
+   "summary": "Three sums are moved: $500 million for a Foreign Worker Levy Rebate, $200 million for loan scheme enhancements, and $4 billion for Special Transfers.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Mr Chairman, I beg to move, \"That the total sum to be allocated to Head S of the Main Estimates be increased by $500,000,000.\" The increase is to provide employers with a Foreign Worker Levy Rebate as announced in the Deputy Prime Minister's Ministerial Statement on 6 April 2020, to temporarily ease the labour costs of affected firms.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "Mr Chairman, I beg to move, \"That the total sum to be allocated to Head V of the Development Estimates be increased by $200,000,000.\" The increase is for further enhancements to the Temporary Bridging Loan Programme, Enterprise Financing Scheme, or EFS – SME Working Capital Loan, and EFS – Trade Loan, as announced in Deputy Prime Minister's Ministerial Statement on 6 April 2020.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "Mr Chairman, I beg to move, \"That the total sum to be allocated to Head Z of the Main Estimates be increased by $4,000,000,000.\" The increase is for additional Special Transfers as announced in Deputy Prime Minister's Ministerial Statement on 6 April 2020.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "Of the increase, $2.9 billion is for the enhancements to the Jobs Support Scheme; and $1.1 billion is for the one-off Solidarity Payment to households during this period.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "budget-1371",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-04-07"
+  ],
+  "report_ids": [
+   "budget-1371"
+  ],
+  "sentences_total": 11,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.3636,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:08:12"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1193,
+   "completion_tokens": 86,
+   "estimated": false,
+   "cost_usd": 0.000191
+  }
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "title": "Ministry of National Development",
+ "what_it_is": "Ministry of National Development",
+ "sections": [
+  {
+   "label": "Helping sector restart work safely",
+   "summary": "One immediate priority is to help the sector restart work safely and smoothly as quickly as possible.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "One of our immediate priorities is to help the sector restart work safely and smoothly, as quickly as possible.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Construction sector transformation post-COVID-19",
+   "summary": "To strengthen the construction sector post-COVID-19, the pace of industry transformation will be stepped up to improve productivity.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "To help the construction sector to get on a stronger footing post-COVID-19, we will step up the pace of industry transformation to improve productivity.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Assisting households facing difficulties",
+   "summary": "In the near term, households facing difficulties will be assisted, for example through more flexible mortgage repayments.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "In the near term, we will seek to assist households who are facing difficulties, for example, by allowing more flexibility in mortgage repayments.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reviewing schemes and assisted living flats",
+   "summary": "Schemes will continue to be reviewed and improved, and new assisted living flats integrating affordable housing with care services will be launched.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We will continue to review and improve these schemes.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00026",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We will also launch new assisted living flats that will integrate affordable housing with care services, to support seniors with care needs.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Super Low Energy Buildings programme",
+   "summary": "Adoption of best-in-class energy performance solutions will be encouraged through the Super Low Energy Buildings programme, aiming to green 80% of buildings by 2030.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We will encourage the adoption of best-in-class energy performance solutions through the Super Low Energy Buildings programme.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00043",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We aim to green 80% of our buildings by 2030.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "HDB Green Towns and Jurong Lake District",
+   "summary": "Existing towns will get resource-saving initiatives through the HDB Green Towns Programme, and Jurong Lake District will be developed as a model sustainable mixed-use district.",
+   "sentences": [
+    {
+     "sid": "s00047",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "For existing towns, we will deploy resource-saving and other sustainable initiatives through the HDB Green Towns Programme, including rooftop solar panels for more HDB blocks, smart LED lighting in common areas, and the intensification of greenery in selected multi-storey carparks.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00048",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We aim to reduce energy consumption in HDB towns by 15% by 2030.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00049",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We will develop Jurong Lake District (JLD) as a model sustainable mixed-use district, with smart infrastructure and planning to optimise resources and reduce the carbon footprint, and as a potential platform for urban solution trials and other new opportunities.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-1431",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-24"
+  ],
+  "report_ids": [
+   "president-address-1431"
+  ],
+  "sentences_total": 58,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.1724,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:58:55"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2671,
+   "completion_tokens": 344,
+   "estimated": false,
+   "cost_usd": 0.00047
+  }
+ }
+}

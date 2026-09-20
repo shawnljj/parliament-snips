@@ -1,0 +1,126 @@
+{
+ "title": "Medical Insurance for Gig Economy Workers",
+ "what_it_is": "Medical Insurance for Gig Economy Workers",
+ "sections": [
+  {
+   "label": "Support for self-employed persons",
+   "summary": "The Government set up a Tripartite Workgroup on SEPs in 2017 and has implemented its recommendations since March 2018, including MediShield Life coverage and PML insurance.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "In 2017, the Government set up a Tripartite Workgroup on self-employed persons (SEPs).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "Since March 2018, we have been implementing the Workgroup's recommendations to address SEPs' challenges.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "Today, all SEPs are already covered under MediShield Life against large hospital bills.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "To mitigate this, we worked with insurers to make available Prolonged Medical Leave (PML) insurance products.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "Today, major intermediaries, like Grab and Gojek, provide PML insurance coverage at no additional cost to their regular drivers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Contribute-as-you-Earn pilot",
+   "summary": "Government agencies lead the Contribute-as-you-Earn pilot, where SEPs contribute to MediSave as they receive payment for their services.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "In addition, Government agencies have taken the lead to implement the \"Contribute-as-you-Earn\" (CAYE) pilot, where SEPs contribute to their MediSave accounts as they receive payment for their services.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Workfare Income Supplement for SEPs",
+   "summary": "Over 40,000 SEPs receive WIS yearly, and WIS for SEPs was enhanced by raising the income ceiling to $2,300 and maximum payouts to $2,667.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "Each year, more than 40,000 SEPs receive WIS.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We have recently enhanced WIS for SEPs by increasing the qualifying income ceiling from $2,000 to $2,300, and the maximum annual payouts from $2,400 to $2,667.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2150",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-02-18"
+  ],
+  "report_ids": [
+   "oral-answer-2150"
+  ],
+  "sentences_total": 27,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2963,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 5,
+   "coverage": 0.2,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:29:44"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1513,
+   "completion_tokens": 224,
+   "estimated": false,
+   "cost_usd": 0.000275
+  }
+ }
+}

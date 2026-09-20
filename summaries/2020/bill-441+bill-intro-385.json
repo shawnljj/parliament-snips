@@ -1,0 +1,86 @@
+{
+ "title": "Revised Supplementary Supply (FY 2020) Bill",
+ "what_it_is": "Revised Supplementary Supply (FY 2020) Bill",
+ "sections": [
+  {
+   "label": "Urgency of support measures",
+   "summary": "The approach is adopted because of the urgency of implementing additional support measures announced in the Deputy Prime Minister's Ministerial Statement on 6 April 2020.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "We adopt this approach because of the urgency of implementing the additional support measures announced in the Deputy Prime Minister's Ministerial Statement on 6 April 2020.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "President's urgency certification for Bill",
+   "summary": "The President's certification of urgency was sought and obtained under Standing Order 86 to read the Bill three times in a single Sitting, providing for the Estimates approved in Committee of Supply.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "In order to read the Bill three times in a single Parliamentary Sitting, I have sought and obtained the President's certification that the urgency exists for this Bill, under Standing Order 86 of the Standing Orders of the Parliament of Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "This Bill provides for the Estimates as approved in the Committee of Supply earlier today.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-441+bill-intro-385",
+  "group": "bill",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-04-07"
+  ],
+  "report_ids": [
+   "bill-441",
+   "bill-intro-385"
+  ],
+  "sentences_total": 5,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.6,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:08:19"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 708,
+   "completion_tokens": 136,
+   "estimated": false,
+   "cost_usd": 0.000137
+  }
+ }
+}

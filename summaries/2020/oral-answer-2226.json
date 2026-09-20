@@ -1,0 +1,125 @@
+{
+ "title": "Internet Traffic and Connectivity during Circuit Breaker Period",
+ "what_it_is": "Internet Traffic and Connectivity during Circuit Breaker Period",
+ "sections": [
+  {
+   "label": "Traffic volume and network capacity",
+   "summary": "Traffic stays within each operator's network capacity with at least a 30% buffer, though some users may have had longer waits or buffering.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "On the whole, the volume of traffic remains well within each operator's network capacity, with a buffer of at least 30%.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "Some users may have experienced a longer wait when accessing certain websites or buffering when viewing online content.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Ministry and IMDA increase buffers",
+   "summary": "The Ministry and IMDA are working with telecom operators to further increase their network capacity buffers.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "Notwithstanding the current healthy capacity headroom in their networks, my Ministry and IMDA are working with our telecom operators to further increase their buffers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Starhub fibre broadband disruptions",
+   "summary": "Two recent Starhub fibre broadband disruptions were caused by network equipment failure and a domain name server issue, not traffic or capacity; IMDA is investigating.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "On the specific incidents that the Member has highlighted with respect to Starhub, based on the information that is available from Starhub as of now, the two recent disruptions to its fibre broadband service were caused by network equipment failure and also a domain name server issue, respectively.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "It was not, based on the information we have as of now, due to network traffic or network capacity issues.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "Having said that IMDA is investigating into the matter and once its investigation comes to a close, we will draw the appropriate conclusions and take the necessary steps.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "IMDA action against non-compliant operators",
+   "summary": "Where an operator has fallen short through negligence or non-compliance, IMDA will take appropriate action including penalties under the legislation.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "Having said that, where an operator has been found to have fallen short, either because of negligence or because they did not comply with specific requirements, then IMDA will take appropriate action including imposing penalties as provided for under the legislation.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2226",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-05-05"
+  ],
+  "report_ids": [
+   "oral-answer-2226"
+  ],
+  "sentences_total": 19,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.3684,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:05:31"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1452,
+   "completion_tokens": 239,
+   "estimated": false,
+   "cost_usd": 0.00027
+  }
+ }
+}

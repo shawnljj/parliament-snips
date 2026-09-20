@@ -1,0 +1,133 @@
+{
+ "title": "Prime Minister's Office (Smart Nation and Digital Government Group)",
+ "what_it_is": "Prime Minister's Office (Smart Nation and Digital Government Group)",
+ "sections": [
+  {
+   "label": "Digital Government Blueprint 2023",
+   "summary": "All Government services will be digital from end-to-end by 2023, as committed in the Digital Government Blueprint.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "All Government services will be digital from end-to-end by 2023, as committed in the Digital Government Blueprint.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "PayNow registrations and ICT contracts",
+   "summary": "PayNow registrations, projected Government ICT contract value and SME procurement participation are stated.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "For instance, there are now over 2.4 million individuals registered for PayNow Mobile, 1.7 million for PayNow NRIC and 200,000 companies for PayNow Corporate.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "The value of Government ICT contracts is projected to increase by over 30% for FY20, to $3.5 billion.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Small and Medium Enterprises (SMEs) will be able to participate in up to 80% of procurement opportunities.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Digital inclusion for vulnerable groups",
+   "summary": "The Government will strengthen and start digital inclusion efforts, including translating services and working with SG Digital Office.",
+   "sentences": [
+    {
+     "sid": "s00044",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "COVID-19 has shown that vulnerable groups who are unable to access digital technology are at a greater risk of being left behind.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00046",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "The Government will take the lead to strengthen existing, and start new, digital inclusion efforts.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00047",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "These include efforts to translate digital services and websites commonly used by seniors into our official languages.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00048",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Our digital services are tested for accessibility and meet accessibility standards, and we will constantly incorporate feedback from seniors and persons with disabilities.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00049",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "We will also work closely with MCI’s SG Digital Office to increase outreach to less digitally literate persons and equip them with the necessary hardware and skills.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-1442",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-24"
+  ],
+  "report_ids": [
+   "president-address-1442"
+  ],
+  "sentences_total": 60,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.15,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:59:04"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2619,
+   "completion_tokens": 184,
+   "estimated": false,
+   "cost_usd": 0.000418
+  }
+ }
+}

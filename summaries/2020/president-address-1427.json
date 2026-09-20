@@ -1,0 +1,159 @@
+{
+ "title": "Ministry of Communications and Information",
+ "what_it_is": "Ministry of Communications and Information",
+ "sections": [
+  {
+   "label": "MCI digital dividend and divide",
+   "summary": "MCI will create tech jobs, digitalise SMEs, and set a baseline of digital access and skills for all.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "The Ministry of Communications and Information (MCI) will maximise Singapore's \"digital dividend\" by creating new jobs and driving digital innovation, and bridge the \"digital divide\" by establishing a baseline level of digital access and skills for all.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "As part of the Government's priority to create jobs for Singaporeans, MCI will accelerate the creation of tech and tech-related jobs in the Information and Communications Technology (ICT) sector, and across the economy.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We will ramp up placements, traineeships, and skills upgrading under the SGUnited Jobs & Skills Package, as well as the TechSkills Accelerator (TeSA) and Cybersecurity Development Programmes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "MCI will step up efforts to digitalise our Small and Medium Enterprises (SMEs) which employ almost 70% of our workforce.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We will provide targeted financial assistance through the Digital Resilience Bonus (DRB) for the most affected Retail and Food Services sectors, in addition to broad-based schemes such as Start Digital Packs, the Productivity Solutions Grant, and Grow Digital e-commerce platforms for SMEs to access overseas markets.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Digital Economy Agreements signed",
+   "summary": "Singapore has signed DEAs with Australia, Chile and New Zealand, and talks continue with the Republic of Korea.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "Singapore has signed DEAs with Australia, Chile, and New Zealand; talks are ongoing with the Republic of Korea.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cybersecurity and Safer Cyberspace Masterplan",
+   "summary": "MCI will secure cyberspace, strengthen Critical Information Infrastructure cybersecurity, and CSA will implement the Safer Cyberspace Masterplan.",
+   "sentences": [
+    {
+     "sid": "s00032",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "MCI will keep our cyberspace secure so that Singaporeans can benefit from digitalisation.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00033",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We will strengthen the cybersecurity of our Critical Information Infrastructure (CII) – systems providing essential services, such as energy, telecommunications and water.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00035",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "The Cyber Security Agency of Singapore (CSA) will implement the Safer Cyberspace Masterplan to secure Singapore's digital core, safeguard cyber activities, and nurture a cyber-savvy population.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Information and media literacy campaigns",
+   "summary": "MCI will work with academia and community partners to extend public education campaigns giving Singaporeans information and media literacy skills.",
+   "sentences": [
+    {
+     "sid": "s00040",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "MCI will work with academia and community partners to augment the reach and impact of our public education campaigns that will empower Singaporeans with information and media literacy skills to protect themselves from digital harms.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Whole-of-Government communications strategy",
+   "summary": "MCI will enhance its Whole-of-Government communications strategy using analytics and technology to tailor content to different segments.",
+   "sentences": [
+    {
+     "sid": "s00043",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "MCI will further enhance its Whole-of-Government communications strategy by using analytics and technology to tailor content to different segments based on their needs and preferred platforms.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-1427",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-24"
+  ],
+  "report_ids": [
+   "president-address-1427"
+  ],
+  "sentences_total": 46,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.2391,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:59:06"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2693,
+   "completion_tokens": 284,
+   "estimated": false,
+   "cost_usd": 0.000457
+  }
+ }
+}

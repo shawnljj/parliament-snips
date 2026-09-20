@@ -1,0 +1,86 @@
+{
+ "title": "Impact of Wuhan Coronavirus Outbreak on Singapore and Countermeasures Taken",
+ "what_it_is": "Impact of Wuhan Coronavirus Outbreak on Singapore and Countermeasures Taken",
+ "sections": [
+  {
+   "label": "Wuhan pneumonia questions to Health Minister",
+   "summary": "Questions ask the Minister for Health about Singapore's susceptibility, suspected cases, measures, patient conditions, travel advisories, a multi-agency taskforce, response, containment, preparedness and citizen support.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Desmond Choo",
+     "attributed": true,
+     "text": "asked the Minister for Health in view of the escalating Wuhan pneumonia situation in China (a) how susceptible is Singapore; (b) whether there are suspected cases in Singapore; and (c) what are the measures put in place or are being considered in the event the situation worsens.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "Mr Melvin Yong Yik Chye",
+     "attributed": true,
+     "text": "asked the Minister for Health with regard to the Wuhan virus (a) what is the condition of the suspected patients in Singapore so far; (b) whether the Ministry will be issuing an advisory on travel restrictions for Singaporeans travelling to affected cities; and (c) whether a multi-agency taskforce will be formed to look into the containment and management of the virus spread in Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Ms Tin Pei Ling",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what is Singapore’s response to the Wuhan pneumonia outbreak; and (b) what actions are taken to contain the spread to, and among, Singaporeans.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Mr Pritam Singh",
+     "attributed": true,
+     "text": "asked the Minister for Health how prepared are the authorities to deal with the outbreak of the novel coronavirus pneumonia in Wuhan and what can citizens do to help support the Ministry’s efforts.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2110",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-02-03"
+  ],
+  "report_ids": [
+   "oral-answer-2110"
+  ],
+  "sentences_total": 7,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.5714,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 4,
+   "turns_total": 7,
+   "coverage": 0.5714,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:32:45"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1077,
+   "completion_tokens": 93,
+   "estimated": false,
+   "cost_usd": 0.000177
+  }
+ }
+}

@@ -1,0 +1,140 @@
+{
+ "title": "Ministry of Trade and Industry",
+ "what_it_is": "Ministry of Trade and Industry",
+ "sections": [
+  {
+   "label": "COVID-19 pandemic disrupting businesses",
+   "summary": "The COVID-19 pandemic has disrupted businesses and livelihoods and is the most serious challenge since Independence.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "The COVID-19 pandemic has disrupted businesses and livelihoods.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "It is the most serious challenge we have faced since Independence.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Opening economy safely and sustainably",
+   "summary": "The first step is to open the economy safely and sustainably, enabling businesses to resume with safe management measures, testing and contact tracing.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "Our first step will be to open our economy safely and sustainably, because it will be difficult to generate economic growth otherwise.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We will enable businesses to resume progressively and manage the risks with tight safe management measures for higher-risk activities.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We will expand our testing and contact tracing capacity significantly, so that we can isolate clusters swiftly and effectively, to allow the rest of the economy to continue operating.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Industry Transformation Maps sector support",
+   "summary": "Industry Transformation Maps will provide sector-specific support, with MTI partnering businesses and workers to reopen the economy safely and sustainably.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We will leverage our Industry Transformation Maps (ITMs) to provide sector-specific support.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00043",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We are confronting this crisis from a position of strength.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00044",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "Our hard-won reputation for transparency, rule of law, skilled workforce, and world-class connectivity are significant advantages, and will enable us to adapt to the challenging environment.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00045",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "MTI will partner businesses, workers, and other stakeholders to forge a new path ahead.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00046",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We will reopen our economy safely and sustainably, help businesses and workers adjust, and establish a conducive environment for businesses and workers to grow, to realise our vision of a vibrant economy with opportunities for all.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-1425",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-24"
+  ],
+  "report_ids": [
+   "president-address-1425"
+  ],
+  "sentences_total": 46,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.2174,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:59:30"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2176,
+   "completion_tokens": 189,
+   "estimated": false,
+   "cost_usd": 0.000358
+  }
+ }
+}

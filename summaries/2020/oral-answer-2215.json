@@ -1,0 +1,140 @@
+{
+ "title": "Reports of Fake News Related to COVID-19",
+ "what_it_is": "Reports of Fake News Related to COVID-19",
+ "sections": [
+  {
+   "label": "POFMA falsehood corrections actions",
+   "summary": "Singapore uses POFMA to require factual corrections alongside false claims, including against foreign parties, and charges one individual under the Miscellaneous Offences Act.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "Our primary focus is on ensuring that Singaporeans receive reliable and accurate information in a timely manner.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We have also used the powers under POFMA – the Protection from Online Falsehoods and Manipulation Act – to require purveyors of falsehoods to place factual corrections alongside false claims.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "These actions have been against Singaporeans, here or abroad, as well as some foreign parties and websites.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We will not hesitate to use the full force of the law against those who deliberately or maliciously purvey falsehoods.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "As was elaborated earlier, recently, an individual was charged in Court under the Miscellaneous Offences Act for claiming on Facebook that he had Government “intel” about tighter measures coming up.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Early actions and falsehood clusters",
+   "summary": "Early crisis actions restrained sharing of false information, but such incidents remain episodic and cluster around new information sources.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "First, on the numbers and whether there is a clear trend, I would say that some of the actions that we took at the early stages of this crisis have had a salutary effect in injecting further restraint in the propensity to share such information or to purvey such false information.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "Having said that, I think they are also episodic; and we see sometimes, for want of a better word, a cluster pop-up because there is a new source of information and then others build on it.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Range of enforcement responses",
+   "summary": "When false information is brought to attention, quick action follows, ranging from clarifications to POFMA orders and other laws, with the Public Prosecutor deciding on serious action.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "What we do do is, when the false information is brought to our attention then we take quick action.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "And the action that we take we have a range of responses, from clarifications to correction orders under the POFMA legislation, to even more serious actions that we can take, under POFMA, under the Miscellaneous Offences Act and even the Penal Code.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "So, we have a range of tools at our disposal and depending on the circumstances of each case and the outcome of investigations, the Public Prosecutor will decide if more serious action is to be taken.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2215",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-05-04"
+  ],
+  "report_ids": [
+   "oral-answer-2215"
+  ],
+  "sentences_total": 24,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.4167,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:07:01"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1786,
+   "completion_tokens": 200,
+   "estimated": false,
+   "cost_usd": 0.000306
+  }
+ }
+}

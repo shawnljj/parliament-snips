@@ -1,0 +1,132 @@
+{
+ "title": "Heath Status of Singaporeans based in China in Light of COVID-19",
+ "what_it_is": "Heath Status of Singaporeans based in China in Light of COVID-19",
+ "sections": [
+  {
+   "label": "Singaporeans eRegistered in mainland China",
+   "summary": "More than 1,900 Singaporeans in mainland China remain eRegistered with Singapore based on current records.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Based on our current records, there are still more than 1,900 Singaporeans in mainland China who are eRegistered with us.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Infected Singaporean and Hubei return flights",
+   "summary": "One Singaporean infected and hospitalised in Hubei was discharged, and 266 Singaporeans and family members returned from Hubei on two flights.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "To date, we are aware of one Singaporean who was infected with the virus and hospitalised in Hubei.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Our Embassy in Beijing has been in touch with him to offer consular assistance and I am very pleased to inform the House that he has since been discharged from hospital in China.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "I am also pleased that on the two flights on 30 January and 9 February this year, with the assistance of the Chinese government, the Singapore Government was able to facilitate the safe return home of 266 fellow Singaporeans and their family members from Hubei.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Seven returned Singaporeans tested positive",
+   "summary": "Seven of the 266 had tested positive for COVID-19 and all have since been discharged from hospital.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Amongst the 266, seven of them had tested positive for the COVID-19 virus.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "I am glad to report that all have since been discharged from hospital.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reasons Singaporeans stayed in China",
+   "summary": "Some Singaporeans work and live in China, while others stayed to look after extended families there.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Dr Vivian Balakrishnan",
+     "attributed": true,
+     "text": "Some of them, clearly, are working and living there, and their livelihoods depend on their presence in China.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Dr Vivian Balakrishnan",
+     "attributed": true,
+     "text": "Others have got family members there and although there was opportunity for them to return, because they felt an obligation to look after their extended families, they stayed on.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2166",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-03-02"
+  ],
+  "report_ids": [
+   "oral-answer-2166"
+  ],
+  "sentences_total": 28,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.2857,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:24:03"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1626,
+   "completion_tokens": 237,
+   "estimated": false,
+   "cost_usd": 0.000294
+  }
+ }
+}

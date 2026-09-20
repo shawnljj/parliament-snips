@@ -1,0 +1,146 @@
+{
+ "title": "Delay in Roll-out of Distance-based Charging in Next-generation ERP System",
+ "what_it_is": "Delay in Roll-out of Distance-based Charging in Next-generation ERP System",
+ "sections": [
+  {
+   "label": "Next-generation ERP and GNSS",
+   "summary": "LTA chose GNSS for the next-generation ERP because the current system, in place since 1998, is reaching the end of its operational life.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The key reason for switching to the next-generation ERP, or nexgen ERP, is that the current system, which has been in place since 1998, is reaching the end of its operational life.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "After studying several options, LTA concluded that the Global Navigation Satellite System, or GNSS, was the most suitable technology to use for nexgen ERP.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "It can also potentially be used for distance-based charging.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "There is no specific contract cost attributable to this feature, as it is part of the system design in the contract.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Distance-based pricing timing",
+   "summary": "Distance-based pricing is several years away.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "As announced earlier, such distance-based pricing is several years away.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Rollout schedule and duration",
+   "summary": "The rollout will begin around the second half of 2021 and take about 18 months.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "As I have said, we are going to roll this out around second half of 2021 and it will take about 18 months.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Distance-based charging and Parking.SG",
+   "summary": "Decisions on revenue neutrality and other taxes are premature, distance-based charging is several years away, and Parking.SG already enables coupon-less car park charging.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "So, with regard to his questions, about whether it will be revenue neutral and what about the other taxes and so on.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00026",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "I think it is premature, we will have to study all these different approaches first in order to come to a decision.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00027",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "As I have said and I think we have consistently said – any form of distance-based charging is several years away.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "With regards to coupon-less car park charging, Parking.SG is already able to do this.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2322",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-10-15"
+  ],
+  "report_ids": [
+   "oral-answer-2322"
+  ],
+  "sentences_total": 30,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:45:27"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1661,
+   "completion_tokens": 226,
+   "estimated": false,
+   "cost_usd": 0.000296
+  }
+ }
+}

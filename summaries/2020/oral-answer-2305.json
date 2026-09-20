@@ -1,0 +1,93 @@
+{
+ "title": "Update on GPFirst Programme at Changi General Hospital",
+ "what_it_is": "Update on GPFirst Programme at Changi General Hospital",
+ "sections": [
+  {
+   "label": "GPFirst emergency care referrals",
+   "summary": "GPFirst refers patients needing emergency care to the ED with priority and a $50 subsidy, and has expanded to more hospitals.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Patients assessed by the participating GPs as requiring emergency care would be referred on and be given priority to be seen earlier at the ED.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "These patients will be given a $50 subsidy on their ED bill to help offset the cost of their GP visit.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "From 2014 to 2017, there was a reduction of about 8.5% in the self-referred attendances at CGH ED, which may be attributed to GPFirst and other measures implemented during this period of time.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "MOH has expanded GPFirst beyond CGH's region in phases.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "As of September 2020, GPFirst has been expanded to involve more GPs around Khoo Teck Puat Hospital and the Urgent Care Centre @Admiralty Medical Centre, and will be progressively implemented in the region surrounding Sengkang General Hospital, National University Hospital and Ng Teng Fong General Hospital by the end of 2021.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2305",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-10-14"
+  ],
+  "report_ids": [
+   "oral-answer-2305"
+  ],
+  "sentences_total": 8,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.625,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:46:10"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 975,
+   "completion_tokens": 77,
+   "estimated": false,
+   "cost_usd": 0.000158
+  }
+ }
+}

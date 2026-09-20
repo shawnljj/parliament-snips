@@ -1,0 +1,134 @@
+{
+ "title": "Walk-in Consultations at Polyclinics for Mental Health Issues",
+ "what_it_is": "Walk-in Consultations at Polyclinics for Mental Health Issues",
+ "sections": [
+  {
+   "label": "Mental health services in polyclinics",
+   "summary": "Polyclinics offer walk-in mental health services, with trained GPs, CHAS subsidies and 43 community outreach teams.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Dr Wan Rizal",
+     "attributed": true,
+     "text": "asked the Minister for Health whether there are plans to include mental health services in the polyclinics to be open to walk-ins, rather than through referrals or on an appointment basis, to reduce treatment delay of mental healthcare in the community.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "This is to ensure that persons with mental health conditions can access care closer to home and in a less stigmatising environment.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Over the years, we have worked with the polyclinic clusters to set up mental health services in polyclinics and gradually build up the capabilities of our primary care doctors to manage persons with mild to moderate mental health conditions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Persons with mental health concerns can walk in to polyclinics and they will be attended to by polyclinics doctors who will conduct preliminary assessment and provide appropriate management, including making a referral to the mental health services, where necessary.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Under the Mental Health General Practitioner Partnership Programme or MHGPP, we have trained over 220 GPs to identify, diagnose and manage persons with mental health issues in the community.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Community Health Assist Scheme or CHAS subsidies are available for persons seeking mental healthcare with our MHGPP partners, who are also CHAS GP clinics.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "To date, we have a network of 43 community outreach teams across Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Access to mental health care",
+   "summary": "The intent is broad access to care, not compulsory services at every clinic, with referrals to specialised providers.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "That is the intent to which we work towards.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "I think to insist that this be compulsory across every single clinic perhaps is not in the right spirit of how care should be delivered.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "You make sure that the broad base of access is there and for certain specialised domains, you improve understanding, you improve access and the teams should then make referral to GPs, polyclinics and centres where they have the full suite of services to be able to care for people with these conditions.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2343",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-11-04"
+  ],
+  "report_ids": [
+   "oral-answer-2343"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.4348,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:42:19"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1660,
+   "completion_tokens": 141,
+   "estimated": false,
+   "cost_usd": 0.000272
+  }
+ }
+}

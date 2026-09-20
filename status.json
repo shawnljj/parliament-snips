@@ -1,11 +1,12 @@
 {
  "project": "parsnips",
- "written_at": "2026-09-20T17:11:34+08:00",
+ "written_at": "2026-09-20T18:34:09+08:00",
  "by": "tools/write_status.py",
  "status": "working",
  "changed_since_last": [
   "2188 briefs live across 6 year(s)",
-  "5 year(s) have datasets but no briefs yet: 2016, 2017, 2018, 2019, 2020"
+  "5 year(s) have datasets but no briefs yet: 2016, 2017, 2018, 2019, 2020",
+  "2 unpushed commit(s)"
  ],
  "corpus": {
   "2016": {
@@ -96,8 +97,8 @@
  "needs_decision": null,
  "severity": "low",
  "git": {
-  "unpushed_commits": 0,
-  "dirty_files": 3,
-  "last_commit": "c2402cc Ship 2022: 412 briefs, and the corpus reaches five years"
+  "unpushed_commits": 2,
+  "dirty_files": 33,
+  "last_commit": "a811ab0 Record how the project bots are reached and how they report"
  }
 }

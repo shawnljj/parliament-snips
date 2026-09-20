@@ -1,0 +1,119 @@
+{
+ "title": "Ministry of Defence",
+ "what_it_is": "Ministry of Defence",
+ "sections": [
+  {
+   "label": "SAF readiness during COVID-19",
+   "summary": "The SAF maintained operational readiness during COVID-19, resumed training including Basic Military Training and In-Camp Training, and RSS Supreme joined the Rim of the Pacific Exercise 2020.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "Despite COVID-19, the SAF has not compromised on operational readiness, be it in island defence, maritime security, air defence, counter-terrorism, or cyber defence.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "To generate new units to meet security needs, we have resumed more training activities, including Basic Military Training for new enlistees and essential In-Camp Training for National Service (NS) units.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "In August 2020, RSS Supreme joined 22 ships from nine other navies at the biennial Rim of the Pacific Exercise 2020 held at sea off Hawaii.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Next-Gen SAF capabilities",
+   "summary": "The Next-Gen SAF will protect Singapore's peace and security through enhanced situational awareness, greater connectivity, and sharper strike precision, enabled by a leaner but better trained force.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "In response, the Next-Gen SAF will seek to protect the peace and security of Singapore by fighting with enhanced situational awareness, greater connectivity, and sharper strike precision, all enabled by a leaner but better trained force.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Military ties and Total Defence engagement",
+   "summary": "Singapore will grow military ties through defence cooperation agreements, scale up exercises and dialogues, and step up Total Defence engagements, with NS's 55th anniversary and NS Square as commemorative opportunities.",
+   "sentences": [
+    {
+     "sid": "s00037",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "With other regional partners, we will grow our military ties as established through defence cooperation agreements to scale up bilateral military exercises, and conduct regular dialogues and exchanges.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00038",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "To strengthen Singaporeans' collective commitment to Total Defence, MINDEF and the SAF will step up engagements with key segments of society, including families, employers, businesses, and educational institutions, as well as the wider public.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "The 55th anniversary of NS in 2022 and upcoming development of the prominent NS Square at Marina Bay will provide valuable opportunities to commemorate NS and reaffirm the central role that it plays in our nation and our lives.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-1433",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-24"
+  ],
+  "report_ids": [
+   "president-address-1433"
+  ],
+  "sentences_total": 41,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.1707,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:59:23"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2380,
+   "completion_tokens": 226,
+   "estimated": false,
+   "cost_usd": 0.000396
+  }
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "title": "Ministry of Law",
+ "what_it_is": "Ministry of Law",
+ "sections": [
+  {
+   "label": "COVID-19 Temporary Measures Act",
+   "summary": "Parliament passed the COVID-19 (Temporary Measures) Bill in April 2020, and the Act raised bankruptcy and insolvency monetary thresholds and time limits.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "To mitigate the impact of the pandemic, Parliament passed the COVID-19 (Temporary Measures) Bill in April 2020 under a certificate of urgency.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "The Act also increased the monetary thresholds and time limits for bankruptcy and insolvency to help individuals and companies respectively.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Convention coming into force",
+   "summary": "The Convention will come into force on 12 September 2020.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "The Convention will come into force on 12 September 2020.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SG Patent Fast Track launch",
+   "summary": "The SG Patent Fast Track was launched in April 2020 to help businesses protect inventions in all technology fields, including COVID-19 solutions.",
+   "sentences": [
+    {
+     "sid": "s00028",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "To encourage and strengthen support for businesses to use their IP for growth, we launched the SG Patent Fast Track in April 2020 to enable innovative businesses to protect their inventions in all fields of technology, including COVID-19 solutions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Criminal and family justice reforms",
+   "summary": "Amendments to the Penal Code and Protection from Harassment Act, a new Protection from Harassment Court, and family justice reforms were set out.",
+   "sentences": [
+    {
+     "sid": "s00036",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "To strengthen the criminal justice system, we amended the Penal Code to introduce enhanced penalties for offences against minors and vulnerable victims, and to create new offences for voyeurism, distributing intimate images, and sexually exploiting minors.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00037",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We also amended the Protection from Harassment Act to strengthen protection for victims of harassment and online bullying, and to tackle offences such as doxxing.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00038",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We will operationalise a new specialist Protection from Harassment Court to provide a one-stop solution for victims to receive holistic and effective relief with simplified procedures and expedited timelines.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00039",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We will progressively implement the recommendations of the Committee to review and enhance Reforms in the Family Justice System to promote the use of multi-disciplinary approaches and processes to resolve family disputes out of court.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-1434",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-24"
+  ],
+  "report_ids": [
+   "president-address-1434"
+  ],
+  "sentences_total": 43,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.186,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:59:16"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2426,
+   "completion_tokens": 249,
+   "estimated": false,
+   "cost_usd": 0.000409
+  }
+ }
+}

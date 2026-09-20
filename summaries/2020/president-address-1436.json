@@ -1,0 +1,126 @@
+{
+ "title": "Prime Minister's Office (National Security Coordination Secretariat)",
+ "what_it_is": "Prime Minister's Office (National Security Coordination Secretariat)",
+ "sections": [
+  {
+   "label": "Traditional and emergent security threats",
+   "summary": "Traditional threats like terrorism, subversion and espionage remain, while disinformation and COVID-19 add to vulnerabilities of Singapore's multi-racial society.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Traditional threats to national security in areas like terrorism, foreign subversion, and espionage remain.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Emergent, cross-domain threats, like the rapid spread of disinformation on the internet, add to and amplify existing vulnerabilities of our multi-racial, multi-religious society.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "COVID-19 has also added pressure in many areas, including to our supply chains and our social resilience.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Securing critical flows and supplies",
+   "summary": "NSCS will draw COVID-19 lessons to strengthen long-term pandemic capabilities, as border closures and geopolitical tensions threaten critical supplies and Singapore's trading hub position.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "NSCS will also work with agencies to draw lessons from COVID-19 to strengthen our long-term capabilities to deal with pandemics.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The COVID-19 crisis has accentuated our need to secure such flows, as countries close their borders and restrict the export of critical goods.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Geopolitical tensions in areas like international trade could also affect our ability to secure critical supplies and impact our position as an international transport and trading hub.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Whole-of-nation pandemic readiness",
+   "summary": "Learning from COVID-19, NSCS will strengthen whole-of-nation capabilities and readiness for future pandemics through health surveillance, crisis response capacity and resilient facility design.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Learning from COVID-19, NSCS will work to strengthen our whole-of-nation capabilities and readiness to deal with future pandemics.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "These will include enhanced health surveillance, increased capacity for crisis response and healthcare, and more resilient design of key facilities and essential services against pandemics.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-1436",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-24"
+  ],
+  "report_ids": [
+   "president-address-1436"
+  ],
+  "sentences_total": 29,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2759,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:59:31"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1631,
+   "completion_tokens": 211,
+   "estimated": false,
+   "cost_usd": 0.000287
+  }
+ }
+}

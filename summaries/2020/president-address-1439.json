@@ -1,0 +1,159 @@
+{
+ "title": "Ministry of Finance",
+ "what_it_is": "Ministry of Finance",
+ "sections": [
+  {
+   "label": "COVID-19 response priority",
+   "summary": "The Government's immediate priority is protecting lives and livelihoods by responding to the evolving COVID-19 pandemic.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "In this new term of Government, our immediate priority is to protect lives and livelihoods by enabling a timely and robust response to the evolving COVID-19 pandemic.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MOF fiscal packages",
+   "summary": "MOF launched major fiscal packages, including the Jobs Support Scheme, to protect workers, save jobs and stem unemployment.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "In the face of the COVID-19 crisis, MOF mounted successive major fiscal packages to protect our workers and save jobs.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We launched key measures like the Jobs Support Scheme to stabilise the economy and stem unemployment.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Pre-school education spending",
+   "summary": "Annual spending on affordable, quality pre-school education is being doubled within the next few years from 2018 levels.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "To give every child a good start in life, we are doubling our annual spending on affordable, quality pre-school education within the next few years, from 2018 levels.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reserves drawn for crisis",
+   "summary": "The Government has drawn on reserves equivalent to over 20 years of past budget surpluses to combat the crisis.",
+   "sentences": [
+    {
+     "sid": "s00040",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "To combat this crisis, we have drawn on our reserves, equivalent to over 20 years of past budget surpluses.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "GST, reserves and fiscal system",
+   "summary": "The Government plans to raise GST to fund healthcare and social spending, use borrowing for infrastructure, and keep a fair, progressive fiscal system.",
+   "sentences": [
+    {
+     "sid": "s00046",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We will do so in a way that fosters collective responsibility, with each generation contributing its fair share.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00047",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We therefore plan to raise the Goods and Services Tax (GST) to help fund our growing healthcare and social spending needs, while making responsible use of borrowing to finance infrastructure investments that will benefit many generations to come.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00049",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "As announced in the Unity Budget, the GST rate increase will not take effect in 2021.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00050",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We will continue to steward the reserves well to prepare us for future shocks and crises, and to invest them for long-term returns that will be shared equitably between present and future generations.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00051",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We are committed to a fiscal system that is fair and progressive – with the better-off contributing more, and lower- and middle-income households receiving more in benefits than the taxes they pay.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00052",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We will continue to adjust taxes on income, consumption and assets to achieve the right balance, while keeping our tax rates competitive.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-1439",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-24"
+  ],
+  "report_ids": [
+   "president-address-1439"
+  ],
+  "sentences_total": 57,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.193,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:58:57"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2664,
+   "completion_tokens": 277,
+   "estimated": false,
+   "cost_usd": 0.000451
+  }
+ }
+}

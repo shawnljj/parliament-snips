@@ -1,0 +1,158 @@
+{
+ "title": "Prime Minister's Office (Strategy Group)",
+ "what_it_is": "Prime Minister's Office (Strategy Group)",
+ "sections": [
+  {
+   "label": "COVID-19 pandemic management task force",
+   "summary": "The Government's management of the COVID-19 pandemic is led by the Multi-Ministry Task Force.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "The Government's management of the COVID-19 pandemic is led by the Multi-Ministry Task Force.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Supporting businesses and workers",
+   "summary": "Work is underway with economic agencies to identify new growth opportunities and create good jobs for Singaporeans.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "Even as we support businesses and workers to cope with the severe disruption to our economy, work is underway with economic agencies to look ahead in partnership with businesses, to identify and seize new growth opportunities for businesses and create new good jobs for Singaporeans.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Population policies and family support",
+   "summary": "Population policies aim for a sustainable Singapore, with continued support for parenthood aspirations and families in housing, preschool, parental leave and child-raising costs.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "Our population policies aim to ensure a sustainable Singapore with a cohesive society and vibrant economy that improves Singaporeans' lives.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00023",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We will continue to support Singaporeans in their parenthood aspirations and support families especially in housing, preschool, parental leave, and the cost of raising children.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Climate contributions submitted to UN",
+   "summary": "Singapore submitted its enhanced 2030 Nationally Determined Contribution and Long-Term Low-Emissions Development Strategy to underscore commitment to global climate action.",
+   "sentences": [
+    {
+     "sid": "s00031",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "Earlier this year, Singapore submitted our enhanced 2030 Nationally Determined Contribution (NDC) and Long-Term Low-Emissions Development Strategy (LEDS) to underscore our commitment to continued global climate action.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Green growth and cleaner energy",
+   "summary": "Singapore will generate green growth areas, build resilience through food security, reduce transport emissions and adopt cleaner energy vehicles such as electric vehicles.",
+   "sentences": [
+    {
+     "sid": "s00036",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We will catalyse and generate new green growth areas for Singapore and create new jobs for Singaporeans.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00037",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We will build resilience to future crises and supply shocks, such as by enhancing our food security, in a resource efficient manner.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00038",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We will build on the adaptations that Singaporeans have made during this period of COVID-19, to reduce transport emissions through increased telecommuting and wider use of public transport, and make a decisive move to adopt cleaner energy vehicles such as electric vehicles.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SG Together partnerships",
+   "summary": "Under SG Together, Singaporeans and businesses will develop ideas through Emerging Stronger Conversations, Action Networks and Alliances for Action, with the Strategy Group strengthening partnerships.",
+   "sentences": [
+    {
+     "sid": "s00043",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "As part of the SG Together movement, we will work with Singaporeans and businesses to develop new ideas and translate them into action, through the Emerging Stronger Conversations, SG Together Action Networks and Alliances for Action.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00044",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "The Strategy Group will play its part in strengthening partnerships, especially in the areas of parenthood and climate change.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-1440",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-24"
+  ],
+  "report_ids": [
+   "president-address-1440"
+  ],
+  "sentences_total": 45,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.2222,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:59:09"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2542,
+   "completion_tokens": 338,
+   "estimated": false,
+   "cost_usd": 0.000451
+  }
+ }
+}

@@ -1,0 +1,139 @@
+{
+ "title": "Duties and Privileges of the Leader of the Opposition",
+ "what_it_is": "Duties and Privileges of the Leader of the Opposition",
+ "sections": [
+  {
+   "label": "Leader of Opposition not in Constitution",
+   "summary": "The Leader of the Opposition role is not provided for in the Constitution or Parliament's Standing Orders.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The position of the Leader of the Opposition is not provided for in our Constitution or in the Standing Orders of Parliament.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Seat, resources and first response",
+   "summary": "The Opposition leader sits opposite the Prime Minister and gets an office, staff, resources, allowance and first response rights.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The leader of the main Opposition party typically takes the seat directly opposite the Prime Minister in this Chamber during Parliament sittings, similar to the practice in other countries that formally recognise the role of the Leader of the Opposition.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "He will be given an office in Parliament, staff support and resources and additional allowance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The Leader of the Opposition will generally be given the right of first response among MPs to ask the lead question of Ministers on policies, Bills and Motions in Parliament.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Pritam Singh's Opposition duties",
+   "summary": "As Leader of the Opposition, Mr Pritam Singh leads and organises Opposition parliamentary business, including alternative views, scrutiny and committee nominations.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "As Leader of the Opposition, Mr Pritam Singh will lead and organise the Opposition's parliamentary business.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "This includes leading the Opposition in: (a) Presenting alternative views in parliamentary debates on policies, Bills and Motions; (b)\tScrutinising the Government’s positions and actions in Parliament; and (c)\tNominating Opposition Members for appointment to Select Committees, including Standing Select Committees such as the Public Accounts Committee.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "First response and longer speeches",
+   "summary": "Where practices allow, the Leader of the Opposition has first response rights and, with House agreement, longer speaking duration, supported by extra staff and resources.",
+   "sentences": [
+    {
+     "sid": "s00036",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "Where the existing practices and conventions allow, the Leader of the Opposition will have the right of first response amongst Members to pose lead questions to Ministers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00037",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "Subject to the agreement of the House, he will also be granted longer speaking duration for speeches.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00039",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "The additional staff and resources provided to him would support the Leader of the Opposition in this endeavour.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "ministerial-statement-1446",
+  "group": "statement",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-31"
+  ],
+  "report_ids": [
+   "ministerial-statement-1446"
+  ],
+  "sentences_total": 41,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.2195,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 2,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:58:30"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2382,
+   "completion_tokens": 239,
+   "estimated": false,
+   "cost_usd": 0.0004
+  }
+ }
+}

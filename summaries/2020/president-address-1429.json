@@ -1,0 +1,139 @@
+{
+ "title": "Prime Minister’s Office (National Research Foundation)",
+ "what_it_is": "Prime Minister’s Office (National Research Foundation)",
+ "sections": [
+  {
+   "label": "Singapore COVID-19 research projects",
+   "summary": "Singapore was third outside China to culture the virus, and its RIE community works on over 200 COVID-19 research projects.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "Singapore was the third country in the world, outside of China, to successfully culture the virus.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "Today, the research, innovation and enterprise (RIE) community continues to work on more than 200 research projects that not only support Singapore’s current fight against COVID-19, but also strengthen Singapore's preparedness for future pandemics.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Additive manufacturing COVID-19 solutions",
+   "summary": "The National Additive Manufacturing Innovation Cluster catalysed deployments including a 3D printing facility at PSA and 3D-printed nasal swabs.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "For example, the National Additive Manufacturing Innovation Cluster has catalysed the deployment of innovative additive manufacturing solutions, ranging from the world's first 3D printing facility for port operations at the Port of Singapore Authority (PSA) with homegrown firm 3D Metal Forge, to 3D-printed nasal swabs to support COVID-19 testing.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Growth of research scientists",
+   "summary": "The proportion of research scientists and engineers grew at a compound annual rate of 3.5% over 20 years.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "The proportion of research scientists and engineers in our population has grown at a compound annual rate of 3.5% over the last 20 years, and is now comparable to that of other small advanced economies.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Returning Singapore Scientist scheme and RIE",
+   "summary": "The Returning Singapore Scientist scheme attracts overseas Singaporean scientists home, and RIE investments and plans strengthen industry partnership and resilience.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "At the same time, our Returning Singapore Scientist scheme attracts overseas Singaporean scientists and talents home, to grow a strong core of Singapore researchers who will eventually take on leadership positions and drive the pursuit of scientific excellence here.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00030",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "Our RIE investments have created a strong foundation for Singapore to seize the new opportunities in a post-COVID-19 world and emerge stronger.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00031",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "Our RIE plan for the next five years will strengthen the partnership with industries and create new opportunities for Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00032",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "It will also ensure that Singapore remains resilient in the face of new challenges, beyond the current COVID-19 pandemic.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00033",
+     "speaker": "The Deputy Prime Minister (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We must continue to exploit new knowledge and S&T capabilities to diversify our economy, create new industries, train our people, and build capacity to meet Singapore’s national needs.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-1429",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-24"
+  ],
+  "report_ids": [
+   "president-address-1429"
+  ],
+  "sentences_total": 34,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.2647,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:59:25"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2363,
+   "completion_tokens": 249,
+   "estimated": false,
+   "cost_usd": 0.000401
+  }
+ }
+}

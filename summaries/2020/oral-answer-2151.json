@@ -1,0 +1,132 @@
+{
+ "title": "Percentage of Grassroots Advisors Who are Members of Political Party",
+ "what_it_is": "Percentage of Grassroots Advisors Who are Members of Political Party",
+ "sections": [
+  {
+   "label": "PA role and grassroots advisors",
+   "summary": "The PA promotes social cohesion, bridges Government and people, and appoints grassroots advisors to guide grassroots organisations in implementing government policies.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing) (for the Minister for Culture, Community and Youth)",
+     "attributed": true,
+     "text": "Its role is to promote social cohesion and to act as a bridge between the Government and the people.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing) (for the Minister for Culture, Community and Youth)",
+     "attributed": true,
+     "text": "The PA appoints grassroots advisors (GRAs) to guide its grassroots organisations (GROs) in communicating and implementing the policies and programmes of the government of the day.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Party membership and GRA appointment",
+   "summary": "Membership of a political party is neither a qualification nor a disqualification for appointment as a grassroots advisor.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing) (for the Minister for Culture, Community and Youth)",
+     "attributed": true,
+     "text": "Membership of a political party is neither a qualification nor a disqualification for the purpose of being appointed a GRA.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Applying for assistance",
+   "summary": "Anyone who needs help and meets the eligibility criteria may apply for assistance.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing) (for the Minister for Culture, Community and Youth)",
+     "attributed": true,
+     "text": "Anyone who needs help and meets the eligibility criteria may apply for assistance.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Equal help for eligible residents",
+   "summary": "Eligible residents are helped equally regardless of where they live, and can be referred by MPs, VWOs or grassroots advisors.",
+   "sentences": [
+    {
+     "sid": "s00039",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "No matter where you live in Singapore, if the resident is eligible for help according to the national guidelines, everyone is helped equally.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "It can be referred to by their respective Members of Parliament; it can be referred to by the VWOs; it can be referred to by the GRAs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "All of us can play a part to refer needy residents to the agencies for help.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00042",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "And I do not think there is any discrimination based on that.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2151",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-02-18"
+  ],
+  "report_ids": [
+   "oral-answer-2151"
+  ],
+  "sentences_total": 42,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.1905,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 10,
+   "coverage": 0.2,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:29:40"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2254,
+   "completion_tokens": 221,
+   "estimated": false,
+   "cost_usd": 0.000377
+  }
+ }
+}

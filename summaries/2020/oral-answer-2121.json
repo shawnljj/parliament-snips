@@ -1,0 +1,106 @@
+{
+ "title": "Impact on Citizen Unemployment Rate When Persons who are Employed Become New Citizens",
+ "what_it_is": "Impact on Citizen Unemployment Rate When Persons who are Employed Become New Citizens",
+ "sections": [
+  {
+   "label": "New citizens and unemployment rate",
+   "summary": "Adding new citizens does not significantly change the citizen unemployment rate, which is three unemployed out of 100 citizens in the labour force.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "In any case, the addition of new citizens in Singapore does not change the citizen unemployment rate in any significant way.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "This means, if there were only 100 citizens in the labour force, three of them are unemployed.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Citizen unemployment rate falls",
+   "summary": "The citizen unemployment rate falls by 0.03 percentage points to 2.97%, and the impact of new citizens on the labour force is negligible.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "As a result, the citizen unemployment rate falls by 0.03 percentage points to 2.97%.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "In fact, out of 3.5 million Singapore Citizens, significantly less than 1% received their citizenship within the past year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "Some are working adults, while others have yet to join the labour force or have retired.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "This means that the impact to the citizen labour force and unemployment rate is essentially negligible.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2121",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-02-03"
+  ],
+  "report_ids": [
+   "oral-answer-2121"
+  ],
+  "sentences_total": 10,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.6,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:32:48"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 841,
+   "completion_tokens": 135,
+   "estimated": false,
+   "cost_usd": 0.000156
+  }
+ }
+}

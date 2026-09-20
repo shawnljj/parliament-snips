@@ -1,0 +1,113 @@
+{
+ "title": "Update on Ministry of Health’s Strategies on Managing COVID-19 Cases in Hospitals and Limiting Spread in the Community",
+ "what_it_is": "Update on Ministry of Health’s Strategies on Managing COVID-19 Cases in Hospitals and Limiting Spread in the Community",
+ "sections": [
+  {
+   "label": "COVID-19 healthcare questions",
+   "summary": "Questions ask the Minister for Health about ethical resource prioritisation, healthcare capacity, ICU beds, testing strategies, serological testing and lifting circuit breaker measures.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "",
+     "attributed": false,
+     "text": "The following question stood in the name of  Ms Irene Quay Siew Ching –  1 To ask the Minister for Health (a) whether Singapore has an ethical framework ready to prioritise resources and patients when our healthcare system reaches a breaking point due to widespread community transmission; and (b) what are the plans to ramp up our healthcare capacity to avoid the need for implementing such an ethical framework.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "Mr Leon Perera",
+     "attributed": true,
+     "text": "asked the Minister for Health what plans are in place to ensure the rapid scale-ability of our acute care infrastructure and ICU beds in the event of a rapid escalation of COVID-19 cases requiring hospitalisation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Leon Perera",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what are the impediments to testing of asymptomatic individuals who are deemed to be at risk from COVID-19 due to proximity to those tested positive, or for other reasons; and (b) to what extent has testing been expanded to those who do not exhibit typical COVID-19 symptoms.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Ms Sylvia Lim",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what is the Government's current strategy and approach for COVID-19 testing; (b) whether the current testing approach is sufficient to provide reliable information about the spread of COVID-19 in the community; and (c) what is the Government's current and desired testing capacity for COVID-19.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Ms Sylvia Lim",
+     "attributed": true,
+     "text": "asked the Minister for Health whether the Government has plans for widespread use of antibody (serological) testing for COVID-19 to determine the extent of the spread of the SARS-CoV-2 virus in the Singapore population and identify those who are immune to the disease.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Ms Sylvia Lim",
+     "attributed": true,
+     "text": "asked the Minister for Health what are the metrics the Government will use to decide if the movement control measures such as those imposed under the current circuit breaker can be gradually lifted.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Ministerial Statement later",
+   "summary": "The Speaker is told that a Ministerial Statement will be made later.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "Speaker, Sir, I will be making a Ministerial Statement later.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2203",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-05-04"
+  ],
+  "report_ids": [
+   "oral-answer-2203"
+  ],
+  "sentences_total": 11,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.6364,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 7,
+   "turns_total": 11,
+   "coverage": 0.6364,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:07:07"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1525,
+   "completion_tokens": 131,
+   "estimated": false,
+   "cost_usd": 0.00025
+  }
+ }
+}

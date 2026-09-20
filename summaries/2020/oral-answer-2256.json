@@ -1,0 +1,134 @@
+{
+ "title": "Data Usage Pattern since Start of COVID-19 and Adequacy of Digital Infrastructure",
+ "what_it_is": "Data Usage Pattern since Start of COVID-19 and Adequacy of Digital Infrastructure",
+ "sections": [
+  {
+   "label": "Data usage and digital infrastructure",
+   "summary": "MCI and IMDA are working with telecom operators to enhance telecom infrastructure, including network buffers and early 5G investment.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Ms Tin Pei Ling",
+     "attributed": true,
+     "text": "asked the Minister for Communications and Information (a) how have national data usage volume and pattern changed since the onset of COVID-19; (b) whether our digital infrastructure is currently adequate; (c) whether there are new plans to enhance our digital infrastructure post-COVID-19; and (d) how will the potential resultant increase in carbon emissions be mitigated.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "This is despite the fact that since the onset of COVID-19, our telecom operators have seen an increase in data usage volume due to telecommuting and home-based learning – as updated to this House by Minister S Iswaran last month.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "Singapore's digital infrastructure remains adequate for our needs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "Given the growing reliance on telecom services, we are also looking into measures to strengthen the security and resilience of our networks, and minimise the risk of outages.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "Therefore, MCI and IMDA are working with our telecom operators to enhance our telecom infrastructure.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "This includes further increasing network buffers to keep pace with future demands and investing early in 5G networks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "IMDA investigating network outages",
+   "summary": "IMDA is investigating outages by StarHub, M1 and MyRepublic and will take enforcement action where operators are found liable.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "IMDA takes a very serious view of such network disruptions and is investigating the causes of the outages by StarHub, M1 and MyRepublic.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "Where necessary, IMDA will take enforcement action against any operator found liable for causing an outage or failing to restore services quickly.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "These will be essential to the overall resilience of our digital infrastructure, and quality of service rendered to customers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "We aim to enhance our digital infrastructure in a sustainable manner that takes into consideration the energy and carbon footprint generated.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2256",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-06-05"
+  ],
+  "report_ids": [
+   "oral-answer-2256"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.6667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 2,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:00:32"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1255,
+   "completion_tokens": 143,
+   "estimated": false,
+   "cost_usd": 0.000216
+  }
+ }
+}

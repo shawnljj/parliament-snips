@@ -1,0 +1,86 @@
+{
+ "title": "Assessing Adequacy of Parking Lots for Delivery Trucks in Multi-storey Carparks in Public Housing Estates or Town Centres",
+ "what_it_is": "Assessing Adequacy of Parking Lots for Delivery Trucks in Multi-storey Carparks in Public Housing Estates or Town Centres",
+ "sections": [
+  {
+   "label": "HDB loading and unloading bays",
+   "summary": "Loading and unloading bays near HDB blocks have no height limits, and their number may be adjusted locally based on feedback.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Second Minister for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "To facilitate loading and unloading activities, the bays are located near HDB blocks and do not have height limits.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Second Minister for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Delivery drivers can make use of these bays for loading and unloading activities.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "The number of loading and unloading bays may be adjusted at the local level based on feedback from commercial tenants and users of these bays.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "HDB exercises flexibility allowing delivery drivers, whether they are alone or even with some accompanying colleagues, time to do their deliveries.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2125",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-02-03"
+  ],
+  "report_ids": [
+   "oral-answer-2125"
+  ],
+  "sentences_total": 6,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.6667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:32:47"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 828,
+   "completion_tokens": 77,
+   "estimated": false,
+   "cost_usd": 0.000137
+  }
+ }
+}

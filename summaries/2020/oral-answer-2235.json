@@ -1,0 +1,79 @@
+{
+ "title": "Adequate Number of HDB Flats under Parenthood Provisional Housing Scheme for Young Families",
+ "what_it_is": "Adequate Number of HDB Flats under Parenthood Provisional Housing Scheme for Young Families",
+ "sections": [
+  {
+   "label": "PPHS flats supply and demand",
+   "summary": "HDB has 680 PPHS flats, about 550 occupied, will add about 200 more by end-2021 for a total of about 880, and will monitor demand and review supply.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "HDB has 680 PPHS flats presently, of which about 550 are occupied.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "HDB will be adding about 200 more flats by end-2021, bringing the total supply to about 880.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "HDB will continue to monitor the demand and review the supply of PPHS flats, with a view to ensuring a small and steady supply of PPHS flats in the longer term.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2235",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-05-26"
+  ],
+  "report_ids": [
+   "oral-answer-2235"
+  ],
+  "sentences_total": 6,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:04:50"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 733,
+   "completion_tokens": 89,
+   "estimated": false,
+   "cost_usd": 0.000128
+  }
+ }
+}

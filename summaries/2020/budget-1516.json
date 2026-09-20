@@ -1,0 +1,139 @@
+{
+ "title": "Third Supplementary Estimates of Expenditure for the Financial Year 1 April 2020 to 31 March 2021",
+ "what_it_is": "Third Supplementary Estimates of Expenditure for the Financial Year 1 April 2020 to 31 March 2021",
+ "sections": [
+  {
+   "label": "COVID-19 quarantine facility spending",
+   "summary": "An MP moves to cut Head T by $100 and asks why more COVID-19 quarantine and Stay Home Notice facilities are needed and their total cost.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "Mr Leong Mun Wai (Non-Constituency Member)",
+     "attributed": true,
+     "text": "Mr Chairman, I beg to move, \"That the total sum to be allocated for Head T of the Estimates be reduced by $100\".",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Mr Leong Mun Wai (Non-Constituency Member)",
+     "attributed": true,
+     "text": "With the number of COVID-19 infection cases declining, why is there a need to build more COVID-19-related quarantine and Stay Home Notice facilities?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Leong Mun Wai (Non-Constituency Member)",
+     "attributed": true,
+     "text": "Following from that, what is the total expenditure on these facilities since the start of the COVID-19?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Mr Leong Mun Wai (Non-Constituency Member)",
+     "attributed": true,
+     "text": "And how much of that is attributable to the foreign workers?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Facility peak capacity",
+   "summary": "At its peak, these facilities could house about 100,000 people.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Minister of State for National Development (Mr Tan Kiat How)",
+     "attributed": true,
+     "text": "At its peak, these facilities could house about 100,000 people.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Facility expenditure and migrant workers",
+   "summary": "Hotels, state properties and Singapore Expo account for the largest share; no detailed migrant worker breakdown exists but they are likely a sizeable proportion.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "The Minister of State for National Development (Mr Tan Kiat How)",
+     "attributed": true,
+     "text": "The facilities that account for the largest share are hotels for use as GQFs and SDFs, state properties as temporary accommodation for migrant workers, and Singapore Expo for use as CCF.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Minister of State for National Development (Mr Tan Kiat How)",
+     "attributed": true,
+     "text": "While we do not have the detailed breakdown of the expenditure attributable to migrant workers, we expect that they are likely to form a sizeable proportion, as migrant workers constitute the bulk of the infection cases in Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Continued vigilance against COVID-19",
+   "summary": "Singapore will remain vigilant against COVID-19 resurgence and keep necessary facilities while regularly adjusting capacity.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Minister of State for National Development (Mr Tan Kiat How)",
+     "attributed": true,
+     "text": "However, we cannot for a moment believe or assume that we are out of the woods.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00021",
+     "speaker": "The Minister of State for National Development (Mr Tan Kiat How)",
+     "attributed": true,
+     "text": "Therefore, we will continue to remain vigilant to guard against COVID-19 resurgence and ensure that we have the necessary COVID-related facilities in place while regularly adjusting the capacity based on the situation.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "budget-1516",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-10-15"
+  ],
+  "report_ids": [
+   "budget-1516"
+  ],
+  "sentences_total": 25,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.36,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:45:23"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1449,
+   "completion_tokens": 229,
+   "estimated": false,
+   "cost_usd": 0.000267
+  }
+ }
+}

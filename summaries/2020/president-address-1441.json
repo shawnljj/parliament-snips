@@ -1,0 +1,145 @@
+{
+ "title": "Prime Minister's Office (Public Service Division)",
+ "what_it_is": "Prime Minister's Office (Public Service Division)",
+ "sections": [
+  {
+   "label": "Public Service external environment challenges",
+   "summary": "The Public Service faces a volatile external environment, higher domestic expectations, and tighter resources, requiring work with likeminded partners to uphold global rules.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "Our Public Service faces a more volatile external environment, a domestic population with higher expectations, and a need to deliver its work well, within tighter resource constraints.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "Externally, Singapore will need to navigate the increasing contestation of great powers in geopolitics, trade, technology, and security.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We will have to work with likeminded partners to uphold the global rules-based geopolitical and trade order.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Shrinking labour force and ageing population",
+   "summary": "A shrinking labour force and ageing population will constrain the Public Service's size and the talent share it can take from the economy.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "A shrinking labour force and ageing population will constrain the size of our Public Service and the share of talent that our Public Service can reasonably take from the broader economy.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public Sector S&T Policy and Plans Office",
+   "summary": "The Public Sector S&T Policy and Plans Office was set up to coordinate S&T capability planning, aggregate demand for efficiency, and train S&T experts.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "For instance, we have set up the Public Sector S&T Policy and Plans Office (S&TPPO) to coordinate the planning of S&T capabilities, aggregate demand for greater efficiency as well as train a strong pool of S&T experts.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Jobseekers placed into jobs and training",
+   "summary": "Through partnership with unions and employers, about 13,000 jobseekers, including new graduates, mid-career jobseekers, and retrenched workers, were placed into new jobs and training.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "For instance, through close partnership with the unions and employers, some 13,000 jobseekers – including new graduates, mid-career jobseekers, and retrenched workers – have been placed into new jobs and training opportunities.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Building a future-ready Public Service",
+   "summary": "The Public Service will deepen its ethos, groom leaders, strengthen values, competencies, and accountability through 360° feedback and coaching, to be future-ready.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We will deepen our Public Service ethos in our people and groom leaders who can lead their organisations to deliver well today, while building new capabilities to prepare for tomorrow’s challenges.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00023",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We will strengthen Public Service values, competencies, and accountability among our leaders through wider adoption of 360° feedback and coaching.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We are committed to build a future-ready Public Service that will serve Singapore and Singaporeans well into the future.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-1441",
+  "group": "budget",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-08-24"
+  ],
+  "report_ids": [
+   "president-address-1441"
+  ],
+  "sentences_total": 24,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 5,
+  "selection_share": 0.375,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:59:33"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1477,
+   "completion_tokens": 321,
+   "estimated": false,
+   "cost_usd": 0.000297
+  }
+ }
+}

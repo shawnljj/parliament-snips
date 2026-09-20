@@ -1,0 +1,153 @@
+{
+ "title": "Trend of Neighbour Dispute Complaints Received by HDB Given Work-from-home Arrangements",
+ "what_it_is": "Trend of Neighbour Dispute Complaints Received by HDB Given Work-from-home Arrangements",
+ "sections": [
+  {
+   "label": "HDB social disamenity feedback reports",
+   "summary": "HDB received about 3,400 social disamenity reports yearly from 2015 to 2019, rising to about 2,100 monthly from April to July 2020.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "From 2015 to 2019, HDB received an average of about 3,400 reports or feedback on social disamenities per year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "In 2020, about 600 cases of such feedback were received per month from January to March 2020.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "This increased to about 2,100 cases of feedback per month from April to July 2020 as more people worked or studied from home due to the circuit breaker measures.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CDRT neighbour dispute applications",
+   "summary": "From 2015 to 2019 there were 380 CDRT applications, about two-thirds resolved amicably, though specific neighbour dispute cases cannot be shared.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "My understanding is that we are not able to share what are the cases at CDRT that relate specifically to neighbour disputes.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "But we understand from the State Courts that from 2015 to 2019, there were 380 applications to the CDRT and, of these applications, about two-thirds were resolved amicably.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Smoking feedback in HDB areas",
+   "summary": "Feedback about smoking in HDB areas was 216 in 2017, about 370 in 2018 and about 710 in 2019, with no breakdown by location.",
+   "sentences": [
+    {
+     "sid": "s00027",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "We are not able to break it down into whether it occurred in the common areas or in other places.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "But in terms of the feedback, we had 216 instances of feedback about smoking in HDB areas in 2017, about 370 cases in 2018 and about 710 cases in 2019.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Social disamenities and neighbour dispute tracking",
+   "summary": "Social disamenities include noise and foul smells, sometimes without an identifiable unit, and there is intention to track neighbour disputes more closely.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "In terms of what categories are under social disamenities that would include issues apart from cigarette smoke which Mr Louis Ng mentioned, they would include issues to do with noise, foul smells, for instance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00035",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "And the reason why they are a bit different than neighbourly disputes is that sometimes complaints are raised but the complainant may not be able to identify which unit originated these issues and, therefore, it would not quite be a case where we can identify specific neighbours and it may not be then a neighbour dispute case per se.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00037",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "Going forward, we do have intention to track neighbour disputes more closely because we do recognise that we now have developed an ecology of different methods in which to promote harmonious living and to also strengthen our community norms.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00038",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "This would include not just what our HDB branches can do on the ground but also in consultation and partnership with our grassroots volunteers with other organisations, like the Kindness Movement and also in concert with resolution mechanisms, such as CMC and CDRT.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2340",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-11-04"
+  ],
+  "report_ids": [
+   "oral-answer-2340"
+  ],
+  "sentences_total": 38,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 4,
+  "selection_share": 0.2895,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 4,
+   "turns_total": 8,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T17:42:13"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2677,
+   "completion_tokens": 284,
+   "estimated": false,
+   "cost_usd": 0.000454
+  }
+ }
+}

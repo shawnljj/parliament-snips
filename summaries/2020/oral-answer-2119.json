@@ -1,0 +1,106 @@
+{
+ "title": "Frequency of SCDF Audits on Functionality of Fire Hose Points in Condominiums",
+ "what_it_is": "Frequency of SCDF Audits on Functionality of Fire Hose Points in Condominiums",
+ "sections": [
+  {
+   "label": "MCST fire safety responsibilities",
+   "summary": "Under the Fire Safety Act, MCSTs must ensure condominium fire safety measures are functional, and some must appoint professional engineers for annual Fire Certificate renewal.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Home Affairs (Ms Sun Xueling) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Under the Fire Safety Act, the Management Corporation Strata Title (MCST) is responsible for ensuring that all fire safety measures in a condominium, including fire hose reels, are functional.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Home Affairs (Ms Sun Xueling) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "For condominiums with higher fire safety risks, such as those with a habitable height of more than 24 metres and require certain fire protection systems, their MCSTs are required to appoint professional engineers to conduct an audit of the fire safety measures as part of the annual renewal of the building’s Fire Certificate.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Home Affairs (Ms Sun Xueling) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "If any fire safety measure is found to be non-functional, the MCST is responsible.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Home Affairs (Ms Sun Xueling) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Simply hiring a third party to inspect the fire safety measures does not absolve the MCST from liabilities.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SCDF enforcement against MCSTs",
+   "summary": "SCDF may issue a fire hazard abatement notice to MCSTs, and if not rectified, may make out an offence and issue a notice of composition.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "If the MCSTs are found to not have done what they should have done, the SCDF may issue a fire hazard abatement notice.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "In the event that they are not rectified in accordance with the notice, then the SCDF may make out an offence and issue a notice of composition to the MCST.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2119",
+  "group": "oral",
+  "year": "2020",
+  "sitting_dates": [
+   "2020-02-03"
+  ],
+  "report_ids": [
+   "oral-answer-2119"
+  ],
+  "sentences_total": 14,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4286,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T18:32:38"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1226,
+   "completion_tokens": 150,
+   "estimated": false,
+   "cost_usd": 0.000214
+  }
+ }
+}
