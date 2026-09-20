@@ -64,6 +64,7 @@ DATA_DIR = os.path.join(os.path.dirname(HERE), "data")
 
 sys.path.insert(0, HERE)
 import storage  # noqa: E402  (the project's single atomic-write implementation)
+import hansard_parse as H  # noqa: E402  (structural parser; see that module for why)
 
 BASE = "https://sprs.parl.gov.sg/search"
 _UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
@@ -491,7 +492,20 @@ def fetch_sitting(day, workers=5):
     for rid in ids:
         meta = fetched.get(rid) or {}
         listing = reports[rid]
-        turns = parse_turns(meta.get("content") or "")
+        # THE NEW STRUCTURAL PARSER. Replaces the regex parse_turns, which failed on
+        # &nbsp;-prefixed paragraphs, styled <strong> tags and names split across tags --
+        # each failure merging one speaker's words into the previous speaker's turn.
+        # See scraper/hansard_parse.py for the rule and the evidence behind it.
+        turns = H.parse_report(meta.get("content") or "")
+        # normalise to the shape the rest of the pipeline expects: speaker/text/lang/
+        # is_procedural/words. The new parser also yields `time` (the clock stamp) which the
+        # old one discarded; it is kept because it is what sitting durations were scraped for.
+        turns = [{"speaker": t["speaker"], "text": t["text"],
+                  "lang": t.get("lang") or "English",
+                  "is_procedural": bool(t.get("is_procedural")),
+                  "time": t.get("time"),
+                  "words": len((t["text"] or "").split())}
+                 for t in turns]
         group = group_for(meta.get("reportType") or listing.get("reportType"), rid)
         items.append({
             "report_id": rid,
