@@ -1,15 +1,16 @@
 {
  "project": "parsnips",
- "written_at": "2026-09-20T19:24:39+08:00",
+ "written_at": "2026-09-20T22:40:42+08:00",
  "by": "tools/write_status.py",
- "status": "working",
+ "status": "failed",
  "changed_since_last": [
-  "2809 briefs live across 8 year(s)",
-  "3 year(s) have datasets but no briefs yet: 2016, 2017, 2018"
+  "3520 briefs live across 10 year(s)",
+  "1 year(s) have datasets but no briefs yet: 2017",
+  "1 year(s) FAIL their gates: 2016"
  ],
  "corpus": {
   "2016": {
-   "briefs": 0,
+   "briefs": 349,
    "dataset_items": 354
   },
   "2017": {
@@ -17,7 +18,7 @@
    "dataset_items": 345
   },
   "2018": {
-   "briefs": 0,
+   "briefs": 362,
    "dataset_items": 366
   },
   "2019": {
@@ -54,6 +55,18 @@
   }
  },
  "gates": [
+  {
+   "name": "check_selection",
+   "scope": "summaries/2016",
+   "result": "FAIL",
+   "defects": 672
+  },
+  {
+   "name": "check_selection",
+   "scope": "summaries/2018",
+   "result": "PASS",
+   "defects": 0
+  },
   {
    "name": "check_selection",
    "scope": "summaries/2019",
@@ -103,13 +116,13 @@
    "defects": 0
   }
  ],
- "blocked": false,
- "blocked_on": null,
- "needs_decision": null,
- "severity": "low",
+ "blocked": true,
+ "blocked_on": "1 failing gate(s)",
+ "needs_decision": "1 year(s) fail check_selection (2016). Fix before shipping, or accept the defects.",
+ "severity": "high",
  "git": {
   "unpushed_commits": 0,
-  "dirty_files": 450,
-  "last_commit": "6db613d Remove four pre-schema-4 briefs the current pipeline withholds"
+  "dirty_files": 835,
+  "last_commit": "48ca778 Ship 2019: 299 briefs, and the corpus passes 100,000 sentences"
  }
 }

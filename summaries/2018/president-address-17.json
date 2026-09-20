@@ -1,0 +1,146 @@
+{
+ "title": "Ministry of Education",
+ "what_it_is": "Ministry of Education",
+ "sections": [
+  {
+   "label": "PSLE scoring and learning emphasis",
+   "summary": "Efforts continue to reduce over-emphasis on examination results, with changes to PSLE scoring and Secondary 1 posting due in 2021.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Education (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "As an Asian society, we put strong focus on academic excellence, but we need to continue with efforts to dial back the over-emphasis on examination results, which can dampen the enthusiasm for learning.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Education (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We are on track to implement the changes to the Primary School Leaving Examination (PSLE) scoring and Secondary 1 posting systems in 2021.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Smart schools and digital learning",
+   "summary": "Smart schools efforts continue, and the Singapore Student Learning Space will be rolled out to all schools this year.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "The Minister for Education (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We will build on our efforts to develop \"smart schools\", to better prepare our students for the future, and to be responsible members of a more digitalised society.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00024",
+     "speaker": "The Minister for Education (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We will support self-directed as well as collaborative learning by enhancing the Singapore Student Learning Space, which will be rolled out to all schools this year.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "School-based SCCs in primary schools",
+   "summary": "All primary schools will have a school-based SCCs by 2020.",
+   "sentences": [
+    {
+     "sid": "s00036",
+     "speaker": "The Minister for Education (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "All primary schools will have a school-based SCCs by 2020.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Affiliation places and special needs education",
+   "summary": "From 2019, 20% of affiliated secondary school places are reserved for non-affiliated students, and compulsory education starts for children with special educational needs.",
+   "sentences": [
+    {
+     "sid": "s00039",
+     "speaker": "The Minister for Education (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "From 2019, we will reserve 20% of places at every affiliated secondary school for students who do not benefit from affiliation priority.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "The Minister for Education (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We will actively promote interaction among students of all backgrounds through initiatives, such as applied learning, Co-Curricular Activities and Outward Bound School camps.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "The Minister for Education (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "From 2019, we will roll out compulsory education for children with special educational needs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00042",
+     "speaker": "The Minister for Education (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "With our social service sector partners, we will deliver quality education to serve the varied needs of our students, optimise their potential and nurture them to become independent and confident individuals.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "The Minister for Education (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We will expand the School-to-Work transition programme to offer customised training to help more students secure employment.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-17",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-17"
+  ],
+  "sentences_total": 47,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.2128,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:07:43"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2361,
+   "completion_tokens": 242,
+   "estimated": false,
+   "cost_usd": 0.000398
+  }
+ }
+}

@@ -1,0 +1,152 @@
+{
+ "title": "Progress of Public-Private Partnership Projects",
+ "what_it_is": "Progress of Public-Private Partnership Projects",
+ "sections": [
+  {
+   "label": "CHAS primary care subsidies",
+   "summary": "MOH introduced CHAS in 2012 to subsidise primary care at participating GP and dental clinics for Pioneers and about half of Singaporean households.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In primary care, MOH introduced the Community Health Assist Scheme (CHAS) in 2012 to strengthen our partnerships with general practitioners (GPs) and dental clinics in providing subsidised primary care for Pioneers and about half of Singaporean households.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We now have about 900 GP clinics and 650 dental clinics participating in CHAS.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Last year, 650,000 Singaporeans benefited from CHAS subsidies at these clinics.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Emergency Care Collaboration with Raffles Hospital",
+   "summary": "The Emergency Care Collaboration with Raffles Hospital since 2015 charges Singapore Citizens and Permanent Residents similar to public hospital rates.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "One example is the Emergency Care Collaboration with Raffles Hospital since 2015.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Charges for Singapore Citizens and Permanent Residents are similar to what they would pay at our public hospitals.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Private nursing home subsidies",
+   "summary": "MOH works with the private sector on long-term care, with a portable subsidy scheme of up to 75% at participating private nursing homes.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For long-term care, MOH has been working with the private sector to increase capacity to meet the needs of our ageing population.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We have a portable subsidy scheme with up to 75% subsidy at participating private nursing homes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Funding new Assisi Hospice",
+   "summary": "MOH is providing funding support for the new Assisi Hospice, expected to be completed by the end of this year.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For example, we are providing funding support for the development of the new Assisi Hospice, which is expected to be completed by the end of this year.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Feedback on Raffles Hospital arrangement",
+   "summary": "The arrangement has worked out well, with good feedback from patients on their experiences at Raffles Hospital.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "But since then, the arrangement has worked out well.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00027",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "We have got good feedback from patients on their experiences at Raffles Hospital.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1299",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-05-09"
+  ],
+  "report_ids": [
+   "oral-answer-1299"
+  ],
+  "sentences_total": 31,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.3226,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:01:29"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1673,
+   "completion_tokens": 288,
+   "estimated": false,
+   "cost_usd": 0.000315
+  }
+ }
+}

@@ -1,0 +1,152 @@
+{
+ "title": "Ministry of Social and Family Development",
+ "what_it_is": "Ministry of Social and Family Development",
+ "sections": [
+  {
+   "label": "Preschool places and bilingual learning",
+   "summary": "By 2023, two in three preschoolers will have places in Government or Government-supported preschools, and Anchor Operator preschools offering Malay or Tamil will double.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "Two out of every three preschoolers will have a place in Government or Government-supported preschools by 2023, in centres run by Anchor Operators and Partner Operators, as well as Ministry of Education (MOE) Kindergartens.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "To build a strong foundation for bilingual learning, we will also double the number of Anchor Operator preschools which offer Malay or Tamil as Mother Tongue Languages, in addition to Chinese.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Family justice system reforms",
+   "summary": "The Committee to Review and Enhance Reforms in the Family Justice System will enhance the therapeutic and restorative approach to reduce negative impact on children from family break-up and divorce.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "Through the work of the newly-formed Committee to Review and Enhance Reforms in the Family Justice System, we will enhance the therapeutic and restorative approach in the family justice system, so as to reduce the negative impact on children arising from family break-up and divorce.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Prevention, rehabilitation and recidivism committee",
+   "summary": "The National Committee on Prevention, Rehabilitation and Recidivism will review approaches, identify new strategies and drive coordination across public, private and people sectors.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "The National Committee on Prevention, Rehabilitation and Recidivism, comprising Government agencies and community partners, will review the effectiveness of our approaches, identify new strategies and drive greater coordination across the public, private and people sectors.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Kinship care, vulnerable adults, VWO capabilities",
+   "summary": "We will explore enhancing kinship care, introduce legislation to protect vulnerable adults, strengthen agency and community linkages, groom leaders, deepen skills and strengthen VWO capabilities.",
+   "sentences": [
+    {
+     "sid": "s00037",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We will also explore how to further enhance kinship care arrangements, where children are cared for by relatives, and thus are able to remain more closely connected with their families.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00038",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We will introduce legislation to protect vulnerable adults who are suffering from abuse, neglect or self-neglect in their homes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00039",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "Along with changes to the law, we will strengthen linkages across agencies and the community to support vulnerable adults and their families.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We will groom leaders and professionals, deepen skills and capabilities, and create more developmental pathways.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00042",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We will also continue to strengthen the organisational capabilities of voluntary welfare organisations (VWOs) through initiatives, such as the VWOs-Charities Capability Fund.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "VWO volunteer management capabilities",
+   "summary": "NCSS will work with VWOs to build volunteer management capabilities and shape volunteer roles and opportunities for meaningful contribution.",
+   "sentences": [
+    {
+     "sid": "s00045",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "NCSS will work with VWOs to build the volunteer management capabilities of our VWOs and better shape volunteer roles and opportunities so that volunteers can contribute meaningfully.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-21",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-21"
+  ],
+  "sentences_total": 49,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.2041,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:07:34"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2714,
+   "completion_tokens": 319,
+   "estimated": false,
+   "cost_usd": 0.000469
+  }
+ }
+}

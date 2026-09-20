@@ -1,0 +1,146 @@
+{
+ "title": "Trend for Income Gap",
+ "what_it_is": "Trend for Income Gap",
+ "sections": [
+  {
+   "label": "Gini coefficient and income growth",
+   "summary": "The Gini coefficient stayed relatively stable from 2010 to 2015, lower-income household incomes grew, and Government transfers lowered the 2015 Gini to 0.41.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "Over the last five years, the Gini coefficient remained relatively stable, at 0.472 in 2010 and 0.463 in 2015.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "Over the same period, the average household income from work per household member for the first and second decile both grew by about 24% in real terms.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "The Government has also introduced transfers to help lower-income Singaporeans.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "This is reflected in the lower Gini coefficient of 0.41 in 2015, after Government taxes and transfers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Income growth gap narrowing",
+   "summary": "The gap between real income growth of full-time employed Singapore Citizens at the 20th percentile and the median narrowed in the last five years.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "The gap between real income growth of full-time employed Singapore Citizens at the 20th percentile and the median has narrowed in the last five years, compared to the previous five years, from 2.1% versus 2.9% per year to 2.9% versus 3%.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Sustaining wage increases for workers",
+   "summary": "The passage states the aim for workers at all levels to see wages rise sustainably, through productivity, innovation, jobs transformation and skill upgrading, and notes the F&B Industry Transformation Plan launch.",
+   "sentences": [
+    {
+     "sid": "s00044",
+     "speaker": "Mr Lim Swee Say",
+     "attributed": true,
+     "text": "In a way, yes, we want to make sure that workers at all levels – be they in the bottom 20% or 30% percentiles and so on – to be able to continue to see their wages go up in a sustainable manner.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00045",
+     "speaker": "Mr Lim Swee Say",
+     "attributed": true,
+     "text": "I think we all agree that the best way to sustain that is through productivity, innovation, jobs transformation, skill upgrading.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00047",
+     "speaker": "Mr Lim Swee Say",
+     "attributed": true,
+     "text": "Just a few days ago last week, Deputy Prime Minister Tharman Shanmugaratnam launched the Industry Transformation Plan for the food and beverage (F&B) sector.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tripartite efforts for sustained wage increases",
+   "summary": "The passage states cooperation with the Ministry of Education and SkillsFuture to upgrade workers for better-paying jobs, and that tripartite efforts are needed to sustain wage increases long term.",
+   "sentences": [
+    {
+     "sid": "s00051",
+     "speaker": "Mr Lim Swee Say",
+     "attributed": true,
+     "text": "If the jobs are going to be transformed, then we work closely together with the Ministry of Education and SkillsFuture to ensure that the existing workers as well as the workers not in the sector today, can be upgraded and transformed Page: 39 to take on the better-paying jobs.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00052",
+     "speaker": "Mr Lim Swee Say",
+     "attributed": true,
+     "text": "I agree with the Member that it is only through tripartite efforts that we can ensure that the wage increase can be sustained for the long term.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1344",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-09-13"
+  ],
+  "report_ids": [
+   "oral-answer-1344"
+  ],
+  "sentences_total": 52,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.1923,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:55:01"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2721,
+   "completion_tokens": 283,
+   "estimated": false,
+   "cost_usd": 0.00046
+  }
+ }
+}

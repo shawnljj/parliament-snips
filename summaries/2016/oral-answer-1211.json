@@ -1,0 +1,126 @@
+{
+ "title": "Bookings Made for Stationary Vehicles with Engines Running",
+ "what_it_is": "Bookings Made for Stationary Vehicles with Engines Running",
+ "sections": [
+  {
+   "label": "Vehicle engine idling enforcement",
+   "summary": "Idling a stationary vehicle engine is an offence under the Vehicular Emissions Regulations, and NEA booked over 12,000 motorists in three years.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for the Environment and Water Resources (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "Under the Environmental Protection and Management (Vehicular Emissions) Regulations, it is an offence to leave the engine of a motor vehicle running when it is stationary for reasons other than traffic conditions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for the Environment and Water Resources (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "While there is no grace period allowed for the idling of vehicle engine in the Regulations, NEA officers will exercise judgement on the ground before errant motorists are booked.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for the Environment and Water Resources (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "Over the past three years, NEA has booked more than 12,000 motorists for idling their vehicles.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Rise in enforcement numbers",
+   "summary": "The numbers increased largely because of more enforcement and more complaints from the public.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "The numbers have increased largely because we have enforced more and there have been more complaints from the public.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Idling offence penalties",
+   "summary": "Regulation 21 makes idling an offence, carrying maximum fines of $2,000 and $5,000, with a $70 compound fine.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "Under Regulation 21 of the Environmental Protection and Management Regulations, it is an offence for any driver to leave the engine of a motor vehicle idling when the vehicle is stationary for reasons other than traffic conditions, or the working of on-board machinery for some ancillary purposes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00026",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "The offence carries the following Court penalty: a maximum fine of $2,000 for the first offence, a maximum fine of $5,000 for the second and subsequent offence.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00027",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "There are provisions under the regulations to compound the offence and the quantum of the compound fine is currently fixed at $70.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "We will look at whether we need to review this for the future.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1211",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-03-01"
+  ],
+  "report_ids": [
+   "oral-answer-1211"
+  ],
+  "sentences_total": 28,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2857,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:22:17"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1614,
+   "completion_tokens": 191,
+   "estimated": false,
+   "cost_usd": 0.000279
+  }
+ }
+}

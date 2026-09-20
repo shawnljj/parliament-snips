@@ -1,0 +1,120 @@
+{
+ "title": "Additional Help for Costly Medical Tests",
+ "what_it_is": "Additional Help for Costly Medical Tests",
+ "sections": [
+  {
+   "label": "Outpatient scan subsidies and MediSave",
+   "summary": "Pioneers get 50% off subsidised bills; subsidies cover outpatient diagnostic scans and blood tests, and MediSave withdrawal limits apply for scans and elderly outpatient treatments.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Pioneers enjoy a further 50% off the subsidised bill.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "These subsidies apply to outpatient diagnostic services needed for treatment, including magnetic resonance imaging (MRIs), computed tomography (CT) scans and blood tests.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Based on 2015 data, the median post-subsidy bill size for MRI was $260 while the 90th percentile bill size was $560.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For CT scans, the median and 90th percentile post-subsidy bill sizes were $140 and $440 respectively.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Besides Government subsidies, Singaporeans can use MediSave for outpatient scans, with a withdrawal limit of $300 per year for non-cancer scans and $600 per year for cancer scans.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Elderly Singaporeans who are 65 years old and above also have the flexibility to use up to $200 of MediSave every year to pay for their outpatient treatments at public healthcare institutions and participating Community Health Assist Scheme general practitioner clinics.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MediShield Life, MediSave, MediFund support",
+   "summary": "Singaporeans can claim up to $3,000 of MediShield Life and withdraw up to $1,200 MediSave monthly for chemotherapy, while low-income Singaporeans can apply for MediFund.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For example, Singaporeans can claim up to $3,000 of MediShield Life, and withdraw up to $1,200 MediSave per month for their chemotherapy treatment, including diagnostic scans and investigations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Beyond Government subsidies, MediSave and MediShield Life, low-income Singaporeans who require further financial support can approach medical social workers at our public healthcare institutions to apply for MediFund.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1370",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-11-07"
+  ],
+  "report_ids": [
+   "oral-answer-1370"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.5333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:52:28"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1235,
+   "completion_tokens": 176,
+   "estimated": false,
+   "cost_usd": 0.000222
+  }
+ }
+}

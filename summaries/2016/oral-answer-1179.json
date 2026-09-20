@@ -1,0 +1,113 @@
+{
+ "title": "Evening ERP along Central Expressway",
+ "what_it_is": "Evening ERP along Central Expressway",
+ "sections": [
+  {
+   "label": "Evening ERP on CTE",
+   "summary": "Evening ERP on the northbound CTE keeps speeds at the lower end of the target, with speeds below 45 km/h between 6.30 pm and 7.00 pm.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Even with the evening ERP along the northbound Central Expressway (CTE), current traffic speeds are at the lower end of the targeted speed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "In fact, speeds dropped below 45 kilometres per hour between 6.30 pm and 7.00 pm.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Page: 25 If we remove the evening ERP, we will see even slower speeds and more traffic congestion.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "ERP fee setting and speed data",
+   "summary": "ERP fee setting at each quarterly adjustment relies on machine-generated speed data, which have not yet justified a reduction.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "As I use CTE often enough, whether speeds improve or deteriorate, I have first-hand knowledge.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "But for ERP fee setting at each quarterly adjustment, we rely on the speed data which machines generate.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "As I have said, those data have not yet justified a reduction.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "But we hope that maybe with, for example, the new interchange which the Member talked about, speeds may enter the targeted range in a very definitive way – then there will be scope for adjustments.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1179",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-28"
+  ],
+  "report_ids": [
+   "oral-answer-1179"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.2692,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:25:27"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1371,
+   "completion_tokens": 146,
+   "estimated": false,
+   "cost_usd": 0.000233
+  }
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "title": "Self-driving Vehicles Being Tested on Public Roads",
+ "what_it_is": "Self-driving Vehicles Being Tested on Public Roads",
+ "sections": [
+  {
+   "label": "AV trial safety requirements",
+   "summary": "AV trials require safety assessment, lightly used roads, trained safety drivers, black-box recorders and insurance before public road testing.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Dr Janil Puthucheary) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "To ensure the safety of all road users, trials must fulfil stringent requirements.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Dr Janil Puthucheary) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The vehicle must pass a safety assessment to demonstrate that it can adequately handle basic manoeuvres and come to a safe stop upon the detection of an obstacle.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Dr Janil Puthucheary) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Initial AV trials will only be conducted on lightly used roads, such as those in the one-north district.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Transport (Dr Janil Puthucheary) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "All AVs being tested must be accompanied by a safety driver trained to immediately take over full control of the AV when required.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Transport (Dr Janil Puthucheary) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "LTA will only waive the requirement for a safety driver after AV developers have convincingly proven the competence, reliability and safety of their technology.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Transport (Dr Janil Puthucheary) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "LTA also requires the AVs to be fitted with a \"black-box\" data recorder, which stores video footage and collects key data, and to have the required insurance coverage against third-party liability and property damage before the AVs are allowed to be tested on our public roads.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Phased tiered approach",
+   "summary": "The approach is phased and tiered, gradually increasing confidence in the safety of a technology or platform.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "And some of these steps we have not come across yet.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We have a phased approach, a tiered approach, and that is how we will be gradually increasing our confidence in the safety of any given technology or platform.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Holding back unproven technology",
+   "summary": "If not convinced a technology provides sufficient safety and learning from incidents, they will hold back and study further.",
+   "sentences": [
+    {
+     "sid": "s00028",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "For the second part of the question, yes, if there is a technology that we are not convinced will provide that level of safety as well as the opportunity to learn from any near misses and incidents so that it can improve its safety over time, we will, of course, hold back and study further and improve as we go along.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-41",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-07-11"
+  ],
+  "report_ids": [
+   "oral-answer-41"
+  ],
+  "sentences_total": 28,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.3214,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:57:07"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1666,
+   "completion_tokens": 181,
+   "estimated": false,
+   "cost_usd": 0.000284
+  }
+ }
+}

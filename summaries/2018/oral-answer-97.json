@@ -1,0 +1,120 @@
+{
+ "title": "Noise Emissions from Buses",
+ "what_it_is": "Noise Emissions from Buses",
+ "sections": [
+  {
+   "label": "Bus noise compliance and trials",
+   "summary": "LTA enforces bus noise limits through procurement and maintenance rules, and will trial 50 diesel-hybrid and 60 electric buses.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The Land Transport Authority (LTA) ensures compliance by stipulating stringent procurement specifications on vendors and strict maintenance requirements on public bus operators, including regular inspections to check that noise levels are within permissible limits.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Meanwhile, LTA will be conducting trials with 50 diesel-hybrid buses starting in late 2018 and with 60 electric buses from 2019.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "If they prove cost-effective, we will be able to migrate our buses to a quieter fleet.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Setbacks, trees and bus noise",
+   "summary": "Agencies set buildings back from roads, plant trees to absorb noise, and work with operators to regulate bus movement.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "For example, our land development agency, such as the Housing and Development Board and Urban Redevelopment Authority have development guidelines to set back residential buildings away from major roads.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Take, for instance, the building setback distance from expressways is 30 metres, and for major arterial roads it is about 15 metres.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "In addition to that, land is also set aside for the National Parks Board to plant trees and shrubs along the road to absorb the traffic noise.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "With regard to specific driver behaviour, fortunately, the number of pieces of feedback of noisy buses received by LTA is currently quite low.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "LTA, together with the National Environment Agency, are working very closely with the public bus operators to see how we can regulate the movement of the buses in these interchanges so as to minimise the noise emitted that is causing inconvenience and disamenities to nearby residents.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-97",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-10-02"
+  ],
+  "report_ids": [
+   "oral-answer-97"
+  ],
+  "sentences_total": 17,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4706,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:33:10"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1325,
+   "completion_tokens": 147,
+   "estimated": false,
+   "cost_usd": 0.000227
+  }
+ }
+}

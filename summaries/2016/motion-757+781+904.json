@@ -1,0 +1,90 @@
+{
+ "title": "Rearrangement of Business",
+ "what_it_is": "Rearrangement of Business",
+ "sections": [
+  {
+   "label": "Suspending Standing Orders for Bills",
+   "summary": "The House is asked to suspend Standing Orders 26(1) and 89(3) so three Bills can be read before Budget debate resumes on 28 February 2017.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Deputy Leader (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "As the Debate on the FY 2017/2018 Budget Statement is a Business of Supply, and Standing Order 89(3) requires that Supply business must be the first order of the day on the allotted days, no businesses can precede the Debate on the Budget Statement.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Deputy Leader (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "The agreement of the House is, therefore, sought to suspend both these Standing Orders to allow the aforementioned Bills to be read for the Second time before the resumption of Debate on the FY 2017/2018 Budget Statement.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Deputy Leader (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "Resolved, \"That, notwithstanding Standing Order No 26(1) and No 89(3), the Second Reading of the Patents (Amendment) Bill, Architects (Amendment) Bill and Early Childhood Development Centres Bill be taken before the resumption of Debate on the FY 2017/2018 Budget Statement on 28 February 2017.\" −",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "As the Message is on a matter which the House will be considering at the Second Reading of the Constitution (Amendment) Bill, I seek the House's agreement for the Message to be read at the time when the Constitution (Amendment) Bill is to be taken.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-757+781+904",
+  "group": "motion",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-08-15",
+   "2016-11-07",
+   "2017-02-28"
+  ],
+  "report_ids": [
+   "motion-757",
+   "motion-781",
+   "motion-904"
+  ],
+  "sentences_total": 7,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.5714,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:59:44"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1025,
+   "completion_tokens": 91,
+   "estimated": false,
+   "cost_usd": 0.000169
+  }
+ }
+}

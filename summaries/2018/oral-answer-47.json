@@ -1,0 +1,99 @@
+{
+ "title": "Safeguarding Health Data from Cyberattacks",
+ "what_it_is": "Safeguarding Health Data from Cyberattacks",
+ "sections": [
+  {
+   "label": "SingHealth cyberattack parliamentary questions",
+   "summary": "Questions ask the Minister for Health about assessing data tampering, latent programmes, access to other networks, NEHR protection, audits, similar systems and rectification measures.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "13",
+     "attributed": true,
+     "text": "To ask the Minister for Health with regard to the SingHealth cyberattack, how will the Ministry assess whether (i) the data have not been tampered with, (ii) subversive latent programmes have not infiltrated and been installed in SingHealth's network, and (iii) access to other Government networks has not been gained through SingHealth's system.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Ms Joan Pereira",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what steps will be taken to ensure that the data on the National Electronic Health Record (NEHR) system is protected from cyberattacks; (b) what systems are in place to determine whether medical records are tampered with; and (c) when there is a data leak or alteration of personal information or medical records, what will be done to safeguard the interests of patients whose data are in the record.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Mr Christopher de Souza",
+     "attributed": true,
+     "text": "asked the Minister for Health with regard to the recent hacking of SingHealth's IT system (a) what has been discovered in the investigations thus far; (b) what lessons are learnt; and (c) how will similar situations be avoided in the future.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Ang Wei Neng",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) when was the last audit, internal or external, conducted on the public SingHealth IT system, particularly in areas related to the patient database; (b) which are the public healthcare systems that use similar IT systems as that of SingHealth; (c) what are the immediate rectification measures taken by SingHealth and other healthcare groups under the Eastern, Western and Central regions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SingHealth cyberattack disclosure and security",
+   "summary": "Questions ask why the cyberattack on 1.5 million people's medical records was not disclosed earlier, what security measures were taken and what action against perpetrators.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Mr Dennis Tan Lip Fong",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) why were details of the cyberattack on the medical records of 1.5 million people under SingHealth's hospitals, speciality clinics and polyclinics not disclosed to the public earlier; (b) what measures have been taken to improve security since the cyberattack; and (c) what actions will be taken against the perpetrators of the cyberattack.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-47",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-08-06"
+  ],
+  "report_ids": [
+   "oral-answer-47"
+  ],
+  "sentences_total": 8,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.625,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 5,
+   "turns_total": 8,
+   "coverage": 0.625,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:55:38"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1375,
+   "completion_tokens": 146,
+   "estimated": false,
+   "cost_usd": 0.000233
+  }
+ }
+}

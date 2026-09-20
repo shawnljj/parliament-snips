@@ -1,0 +1,134 @@
+{
+ "title": "Impact of Hike in Water Prices on Overall Consumption Patterns",
+ "what_it_is": "Impact of Hike in Water Prices on Overall Consumption Patterns",
+ "sections": [
+  {
+   "label": "Water price hike and conservation",
+   "summary": "Water prices were raised to reflect rising supply costs and keep the water system financially sustainable, with daily household consumption falling from 148 litres per person in 2016 to 143 in 2017.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Ms Foo Mee Har",
+     "attributed": true,
+     "text": "asked the Minister for the Environment and Water Resources what impact has the hike in water prices had on water conservation efforts and overall consumption patterns.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for the Environment and Water Resources (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "We have raised water prices to reflect the rising costs of water supply, so that our water system remains financially sustainable.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for the Environment and Water Resources (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "This will allow us to continue investing ahead of time to ensure a secure and reliable water supply, while encouraging everyone to conserve this precious resource and use it wisely.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for the Environment and Water Resources (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "I mentioned during my Ministry's Committee of Supply debate this year that Singapore’s daily household water consumption has decreased from 148 litres per person in 2016 to 143 litres per person in 2017.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "PUB water efficiency measures",
+   "summary": "PUB is introducing water efficiency labels for dishwashers, phasing out one-tick water fittings, replacing inefficient fittings in 3,700 households, installing smart shower devices in 10,000 new homes, and working with large water users.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for the Environment and Water Resources (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "Starting this month, PUB will require all dishwashers sold in Singapore for household use to have a water efficiency label, so that consumers can make informed purchasing decisions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for the Environment and Water Resources (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "From April next year, all other water fittings with a one-tick rating will be phased out from the market.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for the Environment and Water Resources (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "To further boost this effort, the water closet replacement project was launched, where PUB has successfully replaced non-water efficient water closets, basin and kitchen taps for some 3,700 eligible households to date.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for the Environment and Water Resources (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "Recognising that showering contributes most to household water usage, smart shower devices will be installed in 10,000 new homes over these two years to motivate residents to watch and cut down on water usage during showers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "The Minister for the Environment and Water Resources (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "PUB has been working closely with more than 600 large water users in the submission of their water efficiency management plans.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for the Environment and Water Resources (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "PUB is working with companies to progressively develop and make available water efficiency benchmarks and best practice guides.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-86",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-10-01"
+  ],
+  "report_ids": [
+   "oral-answer-86"
+  ],
+  "sentences_total": 21,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.4762,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 3,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:52:29"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1420,
+   "completion_tokens": 181,
+   "estimated": false,
+   "cost_usd": 0.000249
+  }
+ }
+}

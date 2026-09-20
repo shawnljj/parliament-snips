@@ -1,0 +1,134 @@
+{
+ "title": "Measures to Keep Cost of Food at Coffee Shops Affordable",
+ "what_it_is": "Measures to Keep Cost of Food at Coffee Shops Affordable",
+ "sections": [
+  {
+   "label": "HDB coffee shop supply",
+   "summary": "HDB ensures a good supply of coffee shops in its estates to keep food prices competitive, with close to 750 built and more planned.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "To provide residents with access to affordable food options, the Housing and Development Board (HDB) ensures that there is a good supply of coffee shops in HDB estates to maintain healthy price competition.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "There are presently close to 750 HDB-built coffee shops, of which 70 were completed in the last five years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "A further 31 are in the pipeline and will be completed in the next five years.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Price-Quality Method tendering",
+   "summary": "HDB piloted the Price-Quality Method, where quality scores 50%, and will replace e-bidding with PQM for all coffee shops later this year.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "For example, instead of simply awarding to the highest price bids, HDB has been piloting the use of the Price-Quality Method (PQM) to tender out several coffee shops.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Under the PQM, quality score accounts for 50% of the evaluation and operators with affordable food options will score higher.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "That is why HDB recently awarded a coffee shop in Choa Chu Kang to a food operator with affordable food options and with initiatives to improve productivity, even though their rental bid was 40% lower than the highest bid.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "We have seen good outcomes from this tendering approach.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "So, I am happy to share that HDB will be replacing the existing e-bidding system with the PQM tender for all coffee shops later this year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Er Dr Lee Bee Wah (Nee Soon)",
+     "attributed": true,
+     "text": "I met up with the coffee shop operator.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Er Dr Lee Bee Wah (Nee Soon)",
+     "attributed": true,
+     "text": "They told me that because of e-bidding, some of them are not experienced, just because they want to come into business, they put up a higher price and then when they come in, they cannot survive, they close down.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-42",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-07-11"
+  ],
+  "report_ids": [
+   "oral-answer-42"
+  ],
+  "sentences_total": 20,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 3,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:57:16"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1419,
+   "completion_tokens": 155,
+   "estimated": false,
+   "cost_usd": 0.000242
+  }
+ }
+}

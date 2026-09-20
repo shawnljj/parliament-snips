@@ -1,0 +1,144 @@
+{
+ "title": "Ministry of Defence",
+ "what_it_is": "Ministry of Defence",
+ "sections": [
+  {
+   "label": "Asia military spending surpasses Europe",
+   "summary": "Asia's military spending has surpassed Europe's since 2012.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "Asia’s military spending has already surpassed Europe’s since 2012.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MINDEF and SAF regional terrorist threat",
+   "summary": "MINDEF and SAF are dealing directly with the regional terrorist threat, which is at an all-time high.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "The Ministry of Defence (MINDEF) and SAF are dealing directly with the regional terrorist threat, which is at an all-time high.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MINDEF cyber defence organisations",
+   "summary": "MINDEF will strengthen cyber defence through the newly established Defence Cyber Organisation and SAF Cyber Defence Group.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "MINDEF will strengthen our cyber defence through the newly established Defence Cyber Organisation and SAF Cyber Defence Group.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "ASEAN defence chairmanship aims",
+   "summary": "As 2018 ADMM and ADMM-Plus Chairman, Singapore aims to enhance counter-terrorism cooperation, improve response to chemical, biological and radiological threats, and develop confidence-building measures.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "As the Chairman of the Association of Southeast Asian Nations (ASEAN) Defence Ministers’ Meeting (ADMM) and ADMM-Plus in 2018, we aim to: (a) enhance regional counter-terrorism cooperation; (b) improve the region’s capability to respond to chemical, biological and radiological threats from terrorist groups and rogue actors; and (c) develop practical confidence-building measures and codes for unplanned encounters in the aviation and maritime domains, to reduce the risk of miscalculation and de-escalate tensions in the region.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MINDEF bilateral defence relations",
+   "summary": "MINDEF has deepened defence relations through a new US Navy naval exercise, a Naval Bilateral Agreement with India, Queensland training facilities, and ties with China.",
+   "sentences": [
+    {
+     "sid": "s00039",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "Bilaterally, MINDEF has deepened relations with defence partners through initiatives, such as a new naval exercise with the US Navy and a new Naval Bilateral Agreement with India.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "Cooperation with Australia is progressing steadily as we commence construction of facilities to support more SAF troops to train in Queensland in 2019.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "We will strengthen our ties with China and deepen military-to-military ties between SAF and the People’s Liberation Army.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Hybrid warfare and social compact",
+   "summary": "In this new era, hybrid warfare can be waged first through cyberspace, and aggressors will seek to turn Singaporeans against one another to weaken the social compact.",
+   "sentences": [
+    {
+     "sid": "s00046",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "In this new era, where hybrid warfare can be waged first through cyberspace before any physical means, potential aggressors will seek to turn one Singaporean against another to weaken our social compact.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-3",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-3"
+  ],
+  "sentences_total": 48,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 6,
+  "selection_share": 0.1667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:07:38"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2569,
+   "completion_tokens": 352,
+   "estimated": false,
+   "cost_usd": 0.000458
+  }
+ }
+}

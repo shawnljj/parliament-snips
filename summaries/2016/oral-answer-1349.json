@@ -1,0 +1,120 @@
+{
+ "title": "Solar Panels for Commercial and Residential Buildings",
+ "what_it_is": "Solar Panels for Commercial and Residential Buildings",
+ "sections": [
+  {
+   "label": "Solar panel deployment approach",
+   "summary": "Singapore takes a practical approach to scaling up solar panels, aiming for 350 MWp by 2020 on 5,000 HDB blocks and 100 Government buildings.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for National Development (Dr Koh Poh Koon) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Second, the cost-effectiveness of solar panels depends on the location of the building, and the exposure of the rooftop to direct sunlight.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for National Development (Dr Koh Poh Koon) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Hence, instead of a mandatory requirement for all buildings, we take a practical approach in scaling up the deployment of solar panels on such building rooftops.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister of State for National Development (Dr Koh Poh Koon) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "With demand aggregation, we plan to increase solar generation capacity to 350-megawatt peak (MWp) by 2020, with solar panels deployed on around 5,000 Housing and Development Board blocks and 100 Government buildings.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister of State for National Development (Dr Koh Poh Koon) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "In addition, the Building and Construction Authority Green Mark Scheme encourages the adoption of renewable energy sources, which include solar power.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister of State for National Development (Dr Koh Poh Koon) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "To date, about 20 MWp of solar panels are due to be installed in our Green Mark projects.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "No mandatory solar panel mandate",
+   "summary": "Mandating solar panels across all buildings is not commercially sensible due to limited rooftop space, shading, and low potential to meet total electrical demand.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "Indeed, we are always watching what other people are doing and trying to adopt best practices and also to see how the technology evolves as far as solar photovoltaic panels are concerned.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "But, today, because of the competing uses on limited rooftop space, and the bigger challenge being the fact that rooftops can be shaded by a building nearby, I think, commercially, it would not make sense for us to mandate that across all buildings, because then you would have installed the solar panels and not get any use out of them.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "Hypothetically, even if we were to install panels across all our rooftops, that would probably only satisfy about 10% of our total electrical demands.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1349",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-09-13"
+  ],
+  "report_ids": [
+   "oral-answer-1349"
+  ],
+  "sentences_total": 16,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:55:17"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1313,
+   "completion_tokens": 145,
+   "estimated": false,
+   "cost_usd": 0.000224
+  }
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "title": "Ministry of Foreign Affairs",
+ "what_it_is": "Ministry of Foreign Affairs",
+ "sections": [
+  {
+   "label": "Singapore ASEAN Chairmanship priorities",
+   "summary": "As ASEAN Chair, Singapore will focus on collective resilience, innovation, unity, centrality, the ASEAN Smart Cities Network, and cooperation in cybersecurity, counterterrorism and people-to-people linkages.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "As the Association of Southeast Asian Nations (ASEAN) Chair this year, Singapore will focus on strengthening ASEAN’s collective resilience and promoting innovation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Our Chairmanship will emphasise the importance of ASEAN’s unity and centrality in the evolving regional architecture.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "A key initiative is the ASEAN Smart Cities Network to promote ASEAN’s connectivity and attractiveness as an investment destination, and to improve the livelihood of ASEAN citizens.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "We will also enhance ASEAN’s cooperation in areas, such as cybersecurity, counterterrorism and people-to-people linkages.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Malaysia connectivity projects",
+   "summary": "With Malaysia, the Kuala Lumpur-Singapore High Speed Rail and Johor Bahru-Singapore Rapid Transit System Link will give both sides a greater stake in each other's success.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "With Malaysia, connectivity projects like the Kuala Lumpur-Singapore High Speed Rail and the Johor Bahru-Singapore Rapid Transit System Link will give both sides a greater stake in each other’s success.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Multilateral trade and agreements",
+   "summary": "Amidst rising protectionism, Singapore will work with partners in WTO, G20 and APEC to maintain a rules-based open multilateral order, and push RCEP, EU-Singapore FTA and Eurasian Economic Union negotiations.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Amidst rising protectionism, we will work with like-minded partners in international groupings, such as the World Trade Organisation (WTO), Group of 20 (G20), and Asia Pacific Economic Cooperation (APEC), to maintain a rules-based and open multilateral order.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "We will push for progress on the Regional Comprehensive Economic Partnership (RCEP) and the European Union-Singapore Free Trade Agreement (FTA), as well as for negotiations with the Eurasian Economic Union.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MFA monitoring regional threats",
+   "summary": "Amidst an uncertain external environment, MFA is closely monitoring potential threats to regional peace and stability, including trade wars, terrorism and the Korean Peninsula situation.",
+   "sentences": [
+    {
+     "sid": "s00027",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Amidst an uncertain external environment, MFA is closely monitoring potential threats to regional peace and stability, including trade wars, terrorism and the situation on the Korean Peninsula.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-6",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-6"
+  ],
+  "sentences_total": 28,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.2857,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:08:04"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1613,
+   "completion_tokens": 288,
+   "estimated": false,
+   "cost_usd": 0.000306
+  }
+ }
+}

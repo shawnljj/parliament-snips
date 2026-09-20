@@ -1,0 +1,139 @@
+{
+ "title": "Telecommunication Cables Damaged by Earthworks",
+ "what_it_is": "Telecommunication Cables Damaged by Earthworks",
+ "sections": [
+  {
+   "label": "Cable cut incidents by contractors",
+   "summary": "Cable cut incidents rose from four each in 2013 and 2014 to seven in 2015, with three already in 2016, all 18 caused by third-party contractors.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "The number of incidents has grown steadily, from four each in 2013 and 2014 to seven in 2015.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "In 2016 alone, there have already been three of such incidents.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "All 18 cable cuts from 2013 to 2016 were caused by third-party contractors involved in the construction of new mass rapid transit (MRT) lines, such as the Downtown Line and the Thomson East-Coast Line, power cabling, water and sewage piping works and other development projects.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Penalties for damaging telecommunication cables",
+   "summary": "Contractors who damage telecommunication cables during earthworks may be fined up to $1 million and imprisoned five years, with past penalties of $60,000 to $570,000.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "Any contractor who fails to observe these precautions and damages any telecommunication cables while carrying out earthworks may be fined up to $1 million and imprisoned for five years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "IDA has previously prosecuted errant parties in Court, which has imposed penalties ranging from $60,000 to $570,000.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "IDA cable location and prosecution measures",
+   "summary": "IDA directed telcos to indicate GPS coordinates for new cables and manholes and install metallic tracer wires, and will investigate and prosecute cable cut offenders.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "To aid efforts in locating telecommunication cables going forward, IDA has directed all telcos to indicate GPS geographical coordinates for new deployments of telecommunication cables and manholes on their service plans; and to install metallic tracer wires along new underground optical fibre cables.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "At the same time, IDA will thoroughly investigate and prosecute those responsible for cable cuts, and will apply for deterrent sentences upon conviction.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Varying outage estimates and affected consumers",
+   "summary": "The estimate varies, sometimes a couple of days or a couple of hours, and affected consumers vary depending on network configuration.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "On the first question as to the estimate, it varies.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00030",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "We have sometimes as long as a couple of days, as well as a couple of hours, and the consumers affected can also vary, depending on the network configuration.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1201",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-02-29"
+  ],
+  "report_ids": [
+   "oral-answer-1201"
+  ],
+  "sentences_total": 34,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.2647,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 3,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:24:03"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1933,
+   "completion_tokens": 272,
+   "estimated": false,
+   "cost_usd": 0.000347
+  }
+ }
+}

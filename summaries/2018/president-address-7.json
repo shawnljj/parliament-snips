@@ -1,0 +1,118 @@
+{
+ "title": "Ministry of Transport",
+ "what_it_is": "Ministry of Transport",
+ "sections": [
+  {
+   "label": "Air and sea hub investment",
+   "summary": "Air and sea transport contribute over 10% of GDP and 250,000 jobs, and Singapore is investing in Changi Airport expansion and Tuas Port.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Coordinating Minister for Infrastructure and Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Together, they contribute more than 10% of our gross domestic product and 250,000 jobs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Coordinating Minister for Infrastructure and Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "To anchor Singapore as a world-class air hub and International Maritime Centre, we are investing in the Changi Airport expansion and the next generation Tuas Port.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Rail network expansion by 2030",
+   "summary": "By 2030, Singapore will expand its rail network by 130 kilometres.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Coordinating Minister for Infrastructure and Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "By 2030, we will expand our rail network by 130 kilometres (km).",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Transport industry transformation jobs",
+   "summary": "The air, sea and land transport Industry Transformation Maps will create more than 21,000 new jobs by 2030.",
+   "sentences": [
+    {
+     "sid": "s00044",
+     "speaker": "The Coordinating Minister for Infrastructure and Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Through the air, sea and land transport Industry Transformation Maps, we will create more than 21,000 new jobs by 2030.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Smart Nation and Future Economy Council",
+   "summary": "Smart Nation efforts aim to connect living, working and playing for productivity and innovation, while the Future Economy Council strengthens global connections.",
+   "sentences": [
+    {
+     "sid": "s00048",
+     "speaker": "The Coordinating Minister for Infrastructure and Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Our drive towards being a Smart Nation will better connect the way we live, work and play so that productivity can grow and innovation can flourish.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00049",
+     "speaker": "The Coordinating Minister for Infrastructure and Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "The work of the Future Economy Council will also strengthen our physical, digital, financial and trade connections to the rest of the world to ensure our relevance.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-7",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-7"
+  ],
+  "sentences_total": 50,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.12,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:07:51"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2205,
+   "completion_tokens": 230,
+   "estimated": false,
+   "cost_usd": 0.000373
+  }
+ }
+}

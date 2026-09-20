@@ -1,0 +1,92 @@
+{
+ "title": "False Information Provided to Secure Primary School Places",
+ "what_it_is": "False Information Provided to Secure Primary School Places",
+ "sections": [
+  {
+   "label": "False information school registration cases",
+   "summary": "Fewer than 10 reported cases in 10 years; MOE refers suspected false information to Police, and convicted parents' children transfer schools.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Education (Schools) (Mr Ng Chee Meng)",
+     "attributed": true,
+     "text": "In the last 10 years, there were less than 10 such reported cases.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Education (Schools) (Mr Ng Chee Meng)",
+     "attributed": true,
+     "text": "Where there is reason to believe that false information may have been used, MOE will refer the case to the Police for their investigation and action.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Education (Schools) (Mr Ng Chee Meng)",
+     "attributed": true,
+     "text": "In cases where the verdict is finalised and the parent is convicted of the charge, the child who was previously registered in a school based on false information would be transferred to another school with available vacancies.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Support for affected child",
+   "summary": "Educational and emotional support will be extended to the affected child if needed.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "Yes, if needed, we will extend the necessary support both educationally and emotionally to the child affected.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1469",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-02-27"
+  ],
+  "report_ids": [
+   "oral-answer-1469"
+  ],
+  "sentences_total": 9,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4444,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:28:49"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 899,
+   "completion_tokens": 115,
+   "estimated": false,
+   "cost_usd": 0.000158
+  }
+ }
+}

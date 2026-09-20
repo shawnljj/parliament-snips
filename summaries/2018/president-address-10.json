@@ -1,0 +1,152 @@
+{
+ "title": "Ministry of Finance",
+ "what_it_is": "Ministry of Finance",
+ "sections": [
+  {
+   "label": "Carbon tax introduction",
+   "summary": "A carbon tax is introduced as part of an approach to improve energy efficiency and address climate change commitments.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "The introduction of a carbon tax is part of an overall approach to improve Singapore’s energy efficiency and address our climate change commitments.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Increased social spending areas",
+   "summary": "The Government has substantially increased social spending in education, healthcare, housing, Workfare and Silver Support.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "The Government has substantially increased social spending in major areas, including education, healthcare, housing, Workfare and Silver Support.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tightening fiscal position, GST increase",
+   "summary": "Rising expenditures, falling corporate tax rates and international tax discussions lead to steps to strengthen revenue, including a GST increase.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "Our fiscal position is expected to tighten considerably in the coming years due to rising expenditures, especially in healthcare, infrastructure and security.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "Several countries are moving to reduce their corporate income tax rates.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "There are also ongoing discussions to develop international tax rules under the Base Erosion and Profit Shifting project.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00026",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "This is why we are taking steps to strengthen our revenue position, including through an increase in the Goods and Services Tax.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Managing expenditure and infrastructure funding",
+   "summary": "Expenditure growth will be managed carefully, with new funding approaches explored for large-scale infrastructure through borrowing by Statutory Boards and Government-owned companies.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We will do this by managing our expenditure growth carefully and continually seeking more cost-effective solutions in the public sector.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00031",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We will explore new funding approaches for large-scale infrastructure investments, particularly through borrowing by Statutory Boards and Government-owned companies.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reserves framework and returns",
+   "summary": "The Reserves help weather shocks and build confidence, and the framework for investing them and using part of returns will continue.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "Our Reserves provide us with the means to weather shocks and crises and strengthen investor and market confidence in Singapore.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00035",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We will continue to uphold the framework that enables us to invest our Reserves for long-term returns, and to use part of the returns to supplement our budgetary needs.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-10",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-10"
+  ],
+  "sentences_total": 37,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.2703,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:07:59"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1691,
+   "completion_tokens": 273,
+   "estimated": false,
+   "cost_usd": 0.000313
+  }
+ }
+}

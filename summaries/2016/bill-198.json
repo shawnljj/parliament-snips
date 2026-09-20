@@ -1,0 +1,133 @@
+{
+ "title": "Goods and Services Tax (Amendment) Bill",
+ "what_it_is": "Goods and Services Tax (Amendment) Bill",
+ "sections": [
+  {
+   "label": "GST travel restriction orders",
+   "summary": "Allows the Comptroller of GST to impose Travel Restriction Orders on persons who wrongly claimed tourist refunds and owe GST.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "First, allowing the Comptroller of GST to impose Travel Restriction Orders on persons who have wrongly claimed tourist refunds.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Once such an order is imposed, the relevant person owing the GST generally will not be allowed to leave Singapore unless he pays the GST owed.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "This amendment expands this power to cover cases of persons who make wrongful GST tourist refund claims.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Travel restrictions and aircraft definition",
+   "summary": "Clause 3 lets the Comptroller impose Travel Restrictions on persons with unpaid wrongful tourist refunds; clause 2 rationalises the aircraft definition for zero-rating.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Where a tourist refund is wrongly claimed by a person and not repaid to the Comptroller, clause 3 of the Bill now allows the Comptroller to impose Travel Restrictions on the person.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Second, clause 2 rationalises the definition of aircraft to make it clear when zero-rating of specified supplies relating to aircraft will apply.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Aircraft definition and GST zero-rating",
+   "summary": "Removes the recreation or pleasure reference, defines aircraft by international travel or military use, and extends zero-rating to supplies attributable to international flights.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The Bill removes the reference to whether the aircraft is used for recreation or pleasure.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The revised definition will refer to all aircraft that is wholly used or intended to be wholly used for international travel, or any military aircraft.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Clause 2 also extends the GST zero-rating to supplies relating to international flights.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The amendment will extend zero-rating of GST to specific supplies made in relation to any aircraft that is not wholly used or not intended to be wholly used for international travel, as long as the supplies can be specifically attributable to international flights.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-198",
+  "group": "bill",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-02-29"
+  ],
+  "report_ids": [
+   "bill-198"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.3913,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:24:08"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1426,
+   "completion_tokens": 206,
+   "estimated": false,
+   "cost_usd": 0.000257
+  }
+ }
+}

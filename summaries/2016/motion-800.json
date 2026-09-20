@@ -1,0 +1,146 @@
+{
+ "title": "Subscription to the International Development Association",
+ "what_it_is": "Subscription to the International Development Association",
+ "sections": [
+  {
+   "label": "IDA allocations to four countries",
+   "summary": "Cambodia, Lao PDR, Myanmar and Vietnam received US$3.8 billion in the last replenishment round.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for National Development and Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "In the last replenishment round, Cambodia, Lao PDR, Myanmar and Vietnam received a total of US$3.8 billion in allocations.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore IDA contribution share",
+   "summary": "Singapore raised its share from 0.08% to 0.15% and maintained it for the 17th replenishment.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for National Development and Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "In 2010, we increased our share of contributions from 0.08% to 0.15% for the 16th round of replenishment.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for National Development and Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "We maintained this share of 0.15% for the 17th replenishment exercise in 2013.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for National Development and Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Now, we have an upcoming 18th round of replenishment for IDA, and the majority of IDA donors have supported a total replenishment size of US$75 billion over the period of FY18 to FY20.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for National Development and Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "This will enable IDA to double its core resources to countries in fragile and conflict-affected situations, as well as channel resources for crisis response and pandemic preparedness.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Minister for National Development and Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "To fund this 18th replenishment, IDA will, for the first time, also tap on capital markets to blend grant member contributions with market borrowings.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore burden share 18th replenishment",
+   "summary": "Singapore will maintain its burden share at 0.15%, amounting to US$46 million from MOF's budget.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "The Minister for National Development and Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "For this coming 18th round of replenishment, we will be maintaining our burden share at 0.15%.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00026",
+     "speaker": "The Minister for National Development and Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "This was the same percentage as we had in the last round and translates into an amount of US$46 million from MOF's budget.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Parliament approval for IDA subscription",
+   "summary": "Parliament's approval is requested to increase Singapore's total IDA subscription to not more than US$1.1 million.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "The Minister for National Development and Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Under section 4(2) of the IDA Act, Parliament's approval is required for total IDA subscription exceeding US$1 million.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00030",
+     "speaker": "The Minister for National Development and Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "We are, therefore, requesting that Parliament approve that the total subscription of Singapore to IDA be increased to a sum not exceeding US$1.1 million.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-800",
+  "group": "motion",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-11-10"
+  ],
+  "report_ids": [
+   "motion-800"
+  ],
+  "sentences_total": 30,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:29:55"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1667,
+   "completion_tokens": 240,
+   "estimated": false,
+   "cost_usd": 0.000301
+  }
+ }
+}

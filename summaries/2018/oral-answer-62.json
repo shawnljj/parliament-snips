@@ -1,0 +1,127 @@
+{
+ "title": "Employers' Recognition of Hospitalisation Leave Issued by Community Hospitals",
+ "what_it_is": "Employers' Recognition of Hospitalisation Leave Issued by Community Hospitals",
+ "sections": [
+  {
+   "label": "Community hospital leave recognition",
+   "summary": "Acute hospital hospitalisation leave stays valid under the Employment Act, and MOM intends to update the approved institutions list to include community hospitals.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "Hospitalisation leave certified by a doctor from an acute hospital remains valid under the Employment Act (EA), even if the patient is subsequently transferred to a community hospital.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "Hospitalisation leave issued for patients directly admitted to a community hospital should be recognised under the EA, similar to stays in other public hospitals.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "However, we understand that only a very small proportion of community hospital patients are directly admitted, that is, admitted without being referred by an acute hospital.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "Currently, the EA does not name the community hospitals as among the list of approved medical institutions for certifying hospitalisation leave.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "The Ministry of Manpower (MOM) intends to work with the Ministry of Health (MOH) to update this list and will consult the tripartite partners before finalising it.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "The review is ongoing and when we are ready, we will update Members.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Recognised medical certificates for sick leave",
+   "summary": "MCs from Government medical officers or company-approved practitioners registered under the Medical Registration Act are recognised for paid sick leave.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "One part of it is that if it is issued by a Government medical officer, it will be recognised for the purposes of paid sick leave.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "Alternatively, if the medical practitioner is registered under the Medical Registration Act and is part of a panel of company-approved practitioners, then the MCs are also recognised for paid sick leave.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "So, in the case of the Primary Care Network, if it falls into these two categories, then the answer is yes.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-62",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-09-10"
+  ],
+  "report_ids": [
+   "oral-answer-62"
+  ],
+  "sentences_total": 17,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.5294,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 3,
+   "turns_total": 8,
+   "coverage": 0.375,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:53:53"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1299,
+   "completion_tokens": 144,
+   "estimated": false,
+   "cost_usd": 0.000222
+  }
+ }
+}

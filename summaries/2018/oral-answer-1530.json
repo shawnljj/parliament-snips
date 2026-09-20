@@ -1,0 +1,99 @@
+{
+ "title": "Number of Silver Support Scheme Beneficiaries",
+ "what_it_is": "Number of Silver Support Scheme Beneficiaries",
+ "sections": [
+  {
+   "label": "Silver Support and ComCare recipients",
+   "summary": "Over 152,000 seniors received Silver Support payouts in 2017, and around 6,100 of them also received ComCare financial assistance.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for Manpower (Mrs Josephine Teo) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "Over 152,000 seniors received Silver Support payouts in 2017.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Second Minister for Manpower (Mrs Josephine Teo) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "Of these, around 6,100 were also recipients of ComCare financial assistance.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "ComCare and Silver Support eligibility",
+   "summary": "ComCare long-term assistance does not affect Silver Support eligibility, but for short-term ComCare Support the SSO considers all incomes, including SSS.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "For example, if they are receiving ComCare long-term assistance, then, in fact, it would not affect their eligibility for a Silver Support payout and vice versa.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "But there are recipients of ComCare Support who are receiving the support for only an interim period, for the short term.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "As a result, the SSO will take into account all of the incomes that they have, including what they may be receiving under SSS.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1530",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-02-05"
+  ],
+  "report_ids": [
+   "oral-answer-1530"
+  ],
+  "sentences_total": 13,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.3846,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:34:23"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1032,
+   "completion_tokens": 140,
+   "estimated": false,
+   "cost_usd": 0.000184
+  }
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "title": "Singapore Study on Consumption of Vitamins and Health Supplements",
+ "what_it_is": "Singapore Study on Consumption of Vitamins and Health Supplements",
+ "sections": [
+  {
+   "label": "Diet and supplement risks",
+   "summary": "Some groups may risk deficiencies and benefit from supplements, but a balanced diet is the best way to get nutrients, and supplements should not replace it.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Certain groups of people may be at risk of deficiencies, such as pregnant women and those with restricted diets or certain medical conditions, and they can benefit from some dietary supplements.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The best way for most of us to get the nutrients we need is to eat a balanced diet of a variety of foods.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Health supplements cannot and should not replace a balanced diet.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "HSA post-market surveillance testing",
+   "summary": "HSA samples and tests locally sold products for harmful ingredients; over five years more than 900 health supplements were tested and eight removed for drugs or heavy metals.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For products sold locally, HSA administers a post-market surveillance programme to sample and test these products for harmful ingredients, contaminants or adulterants.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Over the last five years, more than 900 health supplements were tested.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Eight products were found to contain western pharmaceutical drugs or toxic heavy metals and were removed from the market.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "No licence, online sales allowed",
+   "summary": "Health supplements and dealers need no HSA licence and may be sold online if free of harmful, pharmaceutical or prohibited substances, but online sales cannot be policed completely.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Currently, health supplements and the dealers are not required to be approved for licence by HSA, and health supplements are allowed to be sold on the Internet but must not contain harmful substances or western pharmaceutical drugs or prohibited substances.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "While I understand the concern, it is not possible to police online sales of health supplements completely.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1491",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-02-19"
+  ],
+  "report_ids": [
+   "oral-answer-1491"
+  ],
+  "sentences_total": 19,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.4211,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:29:28"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1305,
+   "completion_tokens": 209,
+   "estimated": false,
+   "cost_usd": 0.000241
+  }
+ }
+}

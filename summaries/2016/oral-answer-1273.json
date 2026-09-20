@@ -1,0 +1,72 @@
+{
+ "title": "Town Councils with Largest Number of Flats Eligible for Upgrading",
+ "what_it_is": "Town Councils with Largest Number of Flats Eligible for Upgrading",
+ "sections": [
+  {
+   "label": "Town Councils HIP eligible flats",
+   "summary": "Aljunied-Hougang, Jurong-Clementi and Nee Soon are the three Town Councils with the most HIP-eligible flats, and HDB aims to finish selecting remaining eligible flats by FY2018.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "The three Town Councils with the largest number of flats eligible for HIP are Aljunied-Hougang, Jurong-Clementi and Nee Soon.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "HDB is working to complete the selection of the remaining HIP-eligible flats by FY2018.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1273",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-04-06"
+  ],
+  "report_ids": [
+   "oral-answer-1273"
+  ],
+  "sentences_total": 5,
+  "sentences_selected": 2,
+  "sentences_in_sections": 2,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.4,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 2,
+   "sentences_selected": 2,
+   "turns_cited": 1,
+   "turns_total": 4,
+   "coverage": 0.25,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:14:40"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 714,
+   "completion_tokens": 88,
+   "estimated": false,
+   "cost_usd": 0.000125
+  }
+ }
+}

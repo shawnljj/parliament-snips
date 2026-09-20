@@ -1,0 +1,125 @@
+{
+ "title": "LTA's Planning Assumptions for Traffic Impact on Singapore Roads",
+ "what_it_is": "LTA's Planning Assumptions for Traffic Impact on Singapore Roads",
+ "sections": [
+  {
+   "label": "Transport impact assessments for developments",
+   "summary": "LTA requires developers to conduct transport impact assessments for new and redeveloped sites to identify road network impact and recommend mitigating measures.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "LTA requires developers to conduct transport impact assessments (TIAs) to identify the impact of new developments and redevelopments on the surrounding road network and recommend mitigating measures.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "This applies to both new and mature estates.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Vehicle scenarios in assessments",
+   "summary": "LTA does not require the TIA to consider vehicle population scenarios, but factoring in the zero vehicle growth rate and public transport enhancements accounts for reduced private car usage.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "LTA does not require the TIA to consider a range of vehicle population scenarios, nor for a specific car-lite scenario.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "However, by factoring in the vehicle growth rate, which is currently zero for non-commercial vehicles, and enhancements to public transport and active mobility infrastructure in the vicinity, the developments will account for a reduction in the usage of private cars over time.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Possible transport improvement measures",
+   "summary": "Possible measures include staging developments to prevent traffic demand surges or road widening, and encouraging public transport and active mobility.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Some of these possible transport improvement measures will include staging the developments to prevent a surge in traffic demand or road widening whenever possible and also to encourage the use of public transport and active mobility modes of transport.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Silver Zones implementation",
+   "summary": "15 Silver Zones have been implemented, and the number will increase to 50 by 2023.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "To update the Member, we have implemented 15 Silver Zones over the years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "We will increase the number of Silver Zones to 50 by 2023.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1441",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-03-19"
+  ],
+  "report_ids": [
+   "oral-answer-1441"
+  ],
+  "sentences_total": 20,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.35,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:12:24"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1358,
+   "completion_tokens": 226,
+   "estimated": false,
+   "cost_usd": 0.000253
+  }
+ }
+}

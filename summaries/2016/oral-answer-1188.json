@@ -1,0 +1,126 @@
+{
+ "title": "Ambulance Evacuation for Accident Victims and Seriously Ill Patients",
+ "what_it_is": "Ambulance Evacuation for Accident Victims and Seriously Ill Patients",
+ "sections": [
+  {
+   "label": "SCDF emergency ambulance call volume",
+   "summary": "SCDF EMS responded to over 155,000 calls in 2014, meeting the 11-minute target in 83% of cases, up from 78% in 2013.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Singapore Civil Defence Force (SCDF)'s Emergency Medical Services (EMS) responded to more than 155,000 calls in 2014.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "This means that there are more than 400 calls a day.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Despite the high volume of calls, SCDF has responded to 83% of these cases within 11 minutes in 2014.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "This was an improvement from 78% in 2013.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "The number of emergency ambulance calls has been increasing at a rate of about 5% a year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "At this rate of growth, we can expect the number of calls to double in 15 years' time.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SCDF tiered response model",
+   "summary": "SCDF will increasingly adopt a tiered response model to channel resources to areas of greatest need.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "First, SCDF will be increasingly adopting a tiered response model so that resources are channelled to areas of greatest need.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Conveying patients to nearest hospital",
+   "summary": "SCDF conveys patients needing emergency medical treatment to the nearest available MOH-designated hospital via the fastest possible route.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "Based on this principle, SCDF conveys patients requiring emergency medical treatment to the nearest available MOH-designated hospital based on the fastest possible route.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1188",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-29"
+  ],
+  "report_ids": [
+   "oral-answer-1188"
+  ],
+  "sentences_total": 25,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.32,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:24:53"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1436,
+   "completion_tokens": 199,
+   "estimated": false,
+   "cost_usd": 0.000257
+  }
+ }
+}

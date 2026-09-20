@@ -1,0 +1,159 @@
+{
+ "title": "Ministry of Communications and Information",
+ "what_it_is": "Ministry of Communications and Information",
+ "sections": [
+  {
+   "label": "Restructuring IDA and MDA",
+   "summary": "The passage states that IDA and MDA will be restructured to reflect the converged infocomm media industry and seize new opportunities.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "These technologies have the potential to drive innovation, enhance productivity for economic growth and improve the quality of life for all Singaporeans.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "We will restructure the Info-communications Development Authority of Singapore (IDA) and Media Development Authority of Singapore (MDA), so as to reflect the converged nature of the infocomm media industry and in order to seize new opportunities more effectively.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Combining IDA and MDA functions",
+   "summary": "The passage states that IDA and MDA functions will combine into IMDA, laws will be updated, and analogue broadcast will switch off in end-2017.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "The industry development and regulatory functions of IDA and MDA will be combined to form the Info-communications Media Development Authority of Singapore (IMDA).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "We will also update our Telecommunications Act, Broadcasting Act and Films Act to keep pace with the demands of the converged infocomm media space.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "We aim to complete the nationwide transition to digital broadcasting and switch off analogue broadcast in end-2017.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cyber security expenditure share",
+   "summary": "The passage states that cyber security expenditure as a share of the Government's IT budget will increase to at least 8% in the long term.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "To set an example, cyber security expenditure, as a share of the Government's IT budget, will increase to at least 8% in the long term.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "National Reading Movement",
+   "summary": "The passage states that a National Reading Movement will start to encourage more Singaporeans to read and promote a reading culture.",
+   "sentences": [
+    {
+     "sid": "s00041",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "As reading is a gateway to lifelong learning, we will start a National Reading Movement to encourage more Singaporeans to pick up reading and promote a culture of reading.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Literacy, broadcast and subtitling plans",
+   "summary": "The passage states plans to promote literacy skills, invest in Public Service Broadcast, review Okto and Channel U, and subtitle live broadcasts.",
+   "sentences": [
+    {
+     "sid": "s00044",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "We will do this by enhancing public awareness and through collaborative programmes with our communities, libraries, private organisations and other institutions of learning to promote these literacy skills to match Singaporeans' digital lifestyle.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00045",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "We will continue to invest in Public Service Broadcast programmes to develop more compelling and engaging local content on our free-to-air channels and suitable online platforms to meet the diverse needs of our local audience.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00046",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "We are reviewing Okto and Channel U, to provide more choices for young audiences.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00047",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "We will introduce subtitling progressively for our live broadcast programmes to be more inclusive and reach out to a wider audience.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-243",
+  "group": "budget",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-15"
+  ],
+  "report_ids": [
+   "president-address-243"
+  ],
+  "sentences_total": 51,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.2157,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:30:58"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2522,
+   "completion_tokens": 303,
+   "estimated": false,
+   "cost_usd": 0.000438
+  }
+ }
+}

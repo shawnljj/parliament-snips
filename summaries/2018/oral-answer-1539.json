@@ -1,0 +1,145 @@
+{
+ "title": "Annual Water Pipe Leaks in Last Decade",
+ "what_it_is": "Annual Water Pipe Leaks in Last Decade",
+ "sections": [
+  {
+   "label": "Singapore pipe leak rate decline",
+   "summary": "Singapore has about six leaks per 100 km of pipes yearly, down from about 10 in 2003 and 2004.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for the Environment and Water Resources (Dr Amy Khor Lean Suan) (for the Minister for the Environment and Water Resources)",
+     "attributed": true,
+     "text": "Over the last seven years, Singapore has experienced about six leaks per 100 kilometres (km) of pipes per year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for the Environment and Water Resources (Dr Amy Khor Lean Suan) (for the Minister for the Environment and Water Resources)",
+     "attributed": true,
+     "text": "This is down from about 10 leaks per 100 km of pipes per year in 2003 and 2004, and as I have noted earlier, among the lowest incidence in the world.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Pipe renewal and regulations",
+   "summary": "Pipe renewal rose from 20 km in 2016 to 30 km in 2017 and will reach 50 km in 2018, with strengthened 2017 regulations.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Minister of State for the Environment and Water Resources (Dr Amy Khor Lean Suan) (for the Minister for the Environment and Water Resources)",
+     "attributed": true,
+     "text": "The renewal rate has increased from 20 km per year in 2016 to 30 km per year in 2017 and will reach 50 km per year in 2018.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Senior Minister of State for the Environment and Water Resources (Dr Amy Khor Lean Suan) (for the Minister for the Environment and Water Resources)",
+     "attributed": true,
+     "text": "Regulations were strengthened in 2017 to require companies to notify or seek approval from PUB before undertaking construction activities that may affect the pipe network and to ensure appropriate protection measures.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Anticipated 2017 leak rate",
+   "summary": "For 2017, the incidence rate was anticipated to be about six leaks per 100 km.",
+   "sentences": [
+    {
+     "sid": "s00035",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "In fact, for 2017, we anticipated that the incidence rate will be about six leaks per 100 km.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Berlin, Munich, UK leak rates",
+   "summary": "Berlin and Munich have about seven leaks per 100 km, and the United Kingdom's eastern region about 13.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Just to give the Member an example from data that we have got: Berlin as well as Munich in Germany, it is about seven leaks over 100 km.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "In United Kingdom's eastern region, it is about 13 leaks per 100 km.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Proactive pipeline leak prevention",
+   "summary": "Annual inspection of 5,500 km of pipeline network uses acoustic leak noise data loggers to find leaks before visual inspection.",
+   "sentences": [
+    {
+     "sid": "s00047",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "This also includes proactively trying to prevent leaks from happening.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00048",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "So, our annual inspection of 5,500 km of water pipeline network that we have is a proactive or pre-emptive measure because we also utilise our portable acoustic leak noise data loggers to try and identify these leaks before they surface, through visual inspection as well as using these tools.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1539",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-01-10"
+  ],
+  "report_ids": [
+   "oral-answer-1539"
+  ],
+  "sentences_total": 54,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 5,
+  "selection_share": 0.1667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 7,
+   "coverage": 0.2857,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:35:25"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2494,
+   "completion_tokens": 297,
+   "estimated": false,
+   "cost_usd": 0.000432
+  }
+ }
+}

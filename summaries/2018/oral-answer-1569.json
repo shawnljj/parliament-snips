@@ -1,0 +1,126 @@
+{
+ "title": "Investigation and Review into Fraudulent Claims for Government Schemes",
+ "what_it_is": "Investigation and Review into Fraudulent Claims for Government Schemes",
+ "sections": [
+  {
+   "label": "Wage Credit payouts and clawbacks",
+   "summary": "Over $4.7 billion in Wage Credit payouts went to employers from 2014 to 2017, while IRAS denied or clawed back $5.57 million and found over 1,000 non-compliant cases.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "A total of more than $4.7 billion in Wage Credit payouts has been given out to employers from 2014 to 2017.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "Over the same period, which is from 2014 to 2017, the Inland Revenue Authority of Singapore (IRAS) denied or clawed back $5.57 million of WCS payouts.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "IRAS found a total of over 1,000 cases where employers either gave false information or contrived to fraudulently obtain payouts that they did not qualify for or which were otherwise non-compliant.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "IRAS prosecutions for fraud",
+   "summary": "IRAS has prosecuted 13 cases for fraud under the PIC scheme and one case under WCS.",
+   "sentences": [
+    {
+     "sid": "s00028",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "To date, IRAS has prosecuted 13 cases for fraud under the PIC scheme, and one case under WCS.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Risk-based approach to audits",
+   "summary": "A risk-based approach means sampling by risk rather than 100% checks, with IRAS auditing 98,000 higher-risk cases and sampling lower-risk cases less.",
+   "sentences": [
+    {
+     "sid": "s00037",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "Taking a risk-based approach means not 100% sampling.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00038",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "As Minister Ong Ye Kung earlier mentioned, doing 100% checks is going to be counter-productive to a large extent because it will entail a large bureaucratic process.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00039",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "So, taking a risk-based approach means sampling according to risks and when IRAS says that it has done audits for 98,000 cases, then it has identified these as the higher-risk cases and done detailed audits on them.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "To the extent that there are cases with lower risks, then the sampling will be lower as well.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1569",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-01-08"
+  ],
+  "report_ids": [
+   "oral-answer-1569"
+  ],
+  "sentences_total": 40,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:38:58"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2303,
+   "completion_tokens": 225,
+   "estimated": false,
+   "cost_usd": 0.000385
+  }
+ }
+}

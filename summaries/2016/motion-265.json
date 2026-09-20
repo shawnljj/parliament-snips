@@ -1,0 +1,106 @@
+{
+ "title": "Election of Deputy Speakers",
+ "what_it_is": "Election of Deputy Speakers",
+ "sections": [
+  {
+   "label": "Deputy Speaker Twelfth Parliament",
+   "summary": "He participated in parliamentary conferences and was elected Deputy Speaker in the Twelfth Parliament session in 2011.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "Mr Seah Kian Peng (Marine Parade)",
+     "attributed": true,
+     "text": "He also participated actively in the work of various parliamentary conferences.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Seah Kian Peng (Marine Parade)",
+     "attributed": true,
+     "text": "He was also the Deputy Speaker in the Twelfth Parliament session, having been elected and appointed to the position in 2011.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Election of Deputy Speakers",
+   "summary": "Mr Charles Chong and Mr Lim Biow Chuan were declared duly elected as Deputy Speakers of the Thirteenth Parliament session.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Mr Seah Kian Peng (Marine Parade)",
+     "attributed": true,
+     "text": "A lawyer by profession, Mr Lim has contributed actively to parliamentary work.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Seah Kian Peng (Marine Parade)",
+     "attributed": true,
+     "text": "He was a member on the Standing Select Committee and was Singapore's regional representative in the Commonwealth Parliamentary Association Exco.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Seah Kian Peng (Marine Parade)",
+     "attributed": true,
+     "text": "With their expertise, experience and character, I am confident that both Mr Charles Chong and Mr Lim Biow Chuan will make good deputies in discharging their duties and supporting Mdm Speaker in the course of this Thirteenth Parliament session.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mdm Speaker",
+     "attributed": true,
+     "text": "There being no other proposal, I declare Mr Charles Chong and Mr Lim Biow Chuan to have been duly elected as Deputy Speakers of this Parliament.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-265",
+  "group": "motion",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-25"
+  ],
+  "report_ids": [
+   "motion-265"
+  ],
+  "sentences_total": 12,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 2,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 2,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:30:35"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 913,
+   "completion_tokens": 114,
+   "estimated": false,
+   "cost_usd": 0.00016
+  }
+ }
+}

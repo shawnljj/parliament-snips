@@ -1,0 +1,146 @@
+{
+ "title": "Singapore's Stance on Syrian Refugees",
+ "what_it_is": "Singapore's Stance on Syrian Refugees",
+ "sections": [
+  {
+   "label": "Singapore refugee policy",
+   "summary": "Singapore, a small crowded city-state with limited land, cannot accept persons seeking refugee status, a decades-old Government policy.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Four million have been forced to flee, and many millions more internally displaced.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "It does not appear that there will be any resolution soon.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "But as a small densely packed, crowded city-state with limited land, Singapore is not in a position to accept any persons seeking refugee status, regardless of ethnicity or place of origin.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "This is a long-standing, indeed decades-old, Government policy.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Political solution for Syria",
+   "summary": "A political solution is needed to end the conflict, with initiatives like International Syria Support Group meetings and UN Security Council Resolution 2254.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "The answer is that there needs to be a political solution to end the conflict definitively.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Initiatives such as the recent meetings of the International Syria Support Group are certainly a step in the right direction, given the participation of key stakeholders, including, if I may add, that of the Kingdom of Saudi Arabia and the Islamic Republic of Iran.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "We were also encouraged by the unanimous adoption of UN Security Council Resolution 2254, which laid out a roadmap for a political settlement in Syria.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Donating to Syrian relief",
+   "summary": "Singaporeans can help Syrians by donating to legitimate humanitarian charities such as Singapore Red Cross and Rahmatan Lil Alamin Foundation.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Singaporeans who wish to help to alleviate the suffering of Syrians can contribute by donating to legitimate, humanitarian charity organisations that provide emergency relief and rehabilitation support, such as the Singapore Red Cross and the Rahmatan Lil Alamin Foundation started by the Islamic Religious Council of Singapore, or MUIS.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "In fact, this foundation supports the Temasek Education Centre in Kilis, Turkey that currently provides education for hundreds of displaced Syrian children.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Limits until political solution",
+   "summary": "That is the limit of what can be done until a political solution and peace is achieved in the country and region.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "Dr Vivian Balakrishnan",
+     "attributed": true,
+     "text": "Unfortunately, that is the limit of what we can do right now until a political solution and peace is achieved within that fractured country, and in the region as a whole.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-496",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-27"
+  ],
+  "report_ids": [
+   "oral-answer-496"
+  ],
+  "sentences_total": 25,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.4,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:25:51"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1688,
+   "completion_tokens": 232,
+   "estimated": false,
+   "cost_usd": 0.000301
+  }
+ }
+}

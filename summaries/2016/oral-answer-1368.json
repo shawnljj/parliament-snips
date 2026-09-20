@@ -1,0 +1,120 @@
+{
+ "title": "Anxiety amongst Students Delayed by Train Breakdowns on Major Examination Days",
+ "what_it_is": "Anxiety amongst Students Delayed by Train Breakdowns on Major Examination Days",
+ "sections": [
+  {
+   "label": "PSLE students and train breakdowns",
+   "summary": "A question asks whether PSLE results will be moderated for students affected by train breakdowns, how many were affected, and what contingency plans exist.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Dr Lim Wee Kiak",
+     "attributed": true,
+     "text": "asked\tthe Minister for Education (Schools) in light of PSLE students who are affected by train breakdowns (a) whether the Ministry will moderate their examination results to take into account the anxiety faced by them which may impact their performance; (b) how many students have been affected by the recent train disruptions; and (c) what contingency plans are there to help these students cope with their anxiety of turning up late for examinations.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Parliamentary Secretary to the Ministers for Education (Ms Low Yen Ling) (for the Minister for Education (Schools))",
+     "attributed": true,
+     "text": "That being said, the Singapore Examinations and Assessment Board (SEAB) has contingency plans to deal with events that may disrupt the conduct of National Examinations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Parliamentary Secretary to the Ministers for Education (Ms Low Yen Ling) (for the Minister for Education (Schools))",
+     "attributed": true,
+     "text": "This is to ensure that examination candidates are not disadvantaged due to major train service disruptions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SEAB examination contingency and review",
+   "summary": "Candidates get time to calm down and full examination duration, and SEAB reviews affected candidates case-by-case using circumstances, past performance and school recommendations.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Parliamentary Secretary to the Ministers for Education (Ms Low Yen Ling) (for the Minister for Education (Schools))",
+     "attributed": true,
+     "text": "For instance, candidates would be allowed time to rest and to calm down before they take their papers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Parliamentary Secretary to the Ministers for Education (Ms Low Yen Ling) (for the Minister for Education (Schools))",
+     "attributed": true,
+     "text": "Only when they are given time to calm down would the papers then be given to the candidates.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Parliamentary Secretary to the Ministers for Education (Ms Low Yen Ling) (for the Minister for Education (Schools))",
+     "attributed": true,
+     "text": "I want to assure the Member that the candidates would receive the full duration of time allotted for the examination.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Parliamentary Secretary to the Ministers for Education (Ms Low Yen Ling) (for the Minister for Education (Schools))",
+     "attributed": true,
+     "text": "There are also existing processes in place to ensure fair assessment of the candidates who may be affected by adverse situations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Parliamentary Secretary to the Ministers for Education (Ms Low Yen Ling) (for the Minister for Education (Schools))",
+     "attributed": true,
+     "text": "SEAB will review the performance of these candidates on a case-by-case basis, taking into account: (a) the circumstances under which they took the examination; (b) their past years' performance in school examinations; and (c) their schools' recommendations.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1368",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-11-07"
+  ],
+  "report_ids": [
+   "oral-answer-1368"
+  ],
+  "sentences_total": 10,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.8,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 2,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:52:31"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1125,
+   "completion_tokens": 145,
+   "estimated": false,
+   "cost_usd": 0.000198
+  }
+ }
+}

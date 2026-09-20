@@ -1,0 +1,93 @@
+{
+ "title": "Minimise Time between When Land is Acquired by Government and When the Land is Developed",
+ "what_it_is": "Minimise Time between When Land is Acquired by Government and When the Land is Developed",
+ "sections": [
+  {
+   "label": "Time between land acquisition and development",
+   "summary": "The Minister for Law states that land options are weighed, MinLaw and SLA work with landowners and agencies, and development generally starts shortly after possession.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Dennis Tan Lip Fong",
+     "attributed": true,
+     "text": "asked the Minister for Law what measures are in place to minimise the time between when land is acquired by the Government and when that land is developed for the purpose for which it was acquired.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Law (Ms Indranee Rajah) (for the Minister for Law)",
+     "attributed": true,
+     "text": "We weigh all available land options on their suitability to meet the requirements of a public development, before deciding on any land acquisition.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Law (Ms Indranee Rajah) (for the Minister for Law)",
+     "attributed": true,
+     "text": "Where private land is needed, MinLaw and Singapore Land Authority (SLA) work closely with the landowners and developing agencies to ensure that the acquired land can be handed over in time for development.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Law (Ms Indranee Rajah) (for the Minister for Law)",
+     "attributed": true,
+     "text": "The time taken for agencies to commence and complete development of acquired land parcels vary, depending on the scale and complexity of the project.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Law (Ms Indranee Rajah) (for the Minister for Law)",
+     "attributed": true,
+     "text": "Once the state takes possession of the acquired land, development works, generally, commence shortly after.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1453",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-03-19"
+  ],
+  "report_ids": [
+   "oral-answer-1453"
+  ],
+  "sentences_total": 6,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.8333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 2,
+   "turns_total": 2,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:12:39"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 814,
+   "completion_tokens": 82,
+   "estimated": false,
+   "cost_usd": 0.000137
+  }
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "title": "Main Complaints from Cardholders in Community Health Assist Scheme",
+ "what_it_is": "Main Complaints from Cardholders in Community Health Assist Scheme",
+ "sections": [
+  {
+   "label": "CHAS claims and complaints",
+   "summary": "About 5.8 million CHAS claims were made, with about half of complaints about clinic charges, and AIC engaged each clinic for clarification.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In comparison, about 5.8 million CHAS claims were made over the same period.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "About half of the complaints were related to charges at the CHAS clinics, including incorrect billing and high fees.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Other complaints included operational issues resulting in incorrect subsidy, refusal by the clinic to provide itemised billing, customer service issues and concerns over the professional practice of the doctor or dentist.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In each case, the AIC had engaged the clinic involved to seek clarification on the issues raised by the patient.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MOH advice on clinic charges",
+   "summary": "MOH strongly advises clinics to prominently display common charges and provide itemised billing to patients.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Clinics are strongly advised by MOH to prominently display common charges in their clinics and provide itemised billing to patients.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Itemised receipts not mandatory",
+   "summary": "Itemised receipts are not mandatory now, and MOH is looking into whether to make them compulsory in future.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "At this point in time, it is not mandatory for clinics to issue itemised receipts to their patients.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "MOH is in the process of looking into whether it is necessary to make it compulsory in the future.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Considering compulsory itemised billing",
+   "summary": "MOH is in the process of looking at it and is seriously considering making it compulsory.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Like I have mentioned, MOH is actually in the process of looking at it and we are seriously considering making it compulsory.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1306",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-07-11"
+  ],
+  "report_ids": [
+   "oral-answer-1306"
+  ],
+  "sentences_total": 25,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.32,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:00:48"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1504,
+   "completion_tokens": 224,
+   "estimated": false,
+   "cost_usd": 0.000273
+  }
+ }
+}

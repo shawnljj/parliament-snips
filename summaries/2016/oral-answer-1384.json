@@ -1,0 +1,119 @@
+{
+ "title": "Measuring Quality of Healthcare Delivery and Adequacy of Healthcare Resources",
+ "what_it_is": "Measuring Quality of Healthcare Delivery and Adequacy of Healthcare Resources",
+ "sections": [
+  {
+   "label": "Healthcare beds and workforce expansion",
+   "summary": "Between 2014 and 2020, Singapore will add hospital, nursing home and care places, and expand its healthcare workforce by 30,000.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "Between 2014 and 2020, we will add about 3,500 more acute and community hospital beds, 6,300 more nursing home beds as well as 8,300 more home and centre-based care places.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "Under the 2020 Healthcare Manpower Plan announced recently, we are taking steps to expand our healthcare workforce by 30,000 between 2015 and 2020 to meet the changing needs of Singapore's population.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Pioneer Package and MediShield Life payouts",
+   "summary": "Over 400,000 Pioneers benefited from the 2014 Package, and MediShield Life paid about $282 million to older Singaporeans in 11 months.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "Since the Package was launched in 2014, more than 400,000 Pioneers have benefited from it and the Government has provided over $700 million in benefits in total.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "In its first 11 months, MediShield Life paid out about $282 million for claims by older Singaporeans aged above 65, almost double the total $151 million payout under the previous MediShield over the same period last year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "MOH will continue to review affordability and coverage of healthcare for the elderly, while ensuring that our healthcare financing system is sustainable over the long term.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Nursing Care Package and campaign",
+   "summary": "A Care Package for nursing and a \"Care To Go Beyond\" campaign were introduced to improve recognition and careers of healthcare workers.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "Mr Gan Kim Yong",
+     "attributed": true,
+     "text": "For example, for nursing, we introduced the Care Package to improve their recognition, to provide more opportunities for career advancements as well as training, education and development.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00030",
+     "speaker": "Mr Gan Kim Yong",
+     "attributed": true,
+     "text": "We have also rolled out a campaign \"Care To Go Beyond\" to profile many of our healthcare workers, including allied health professionals as well as support staff, to ensure that they have a fulfilling and rewarding career and are well-recognised.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1384",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-11-08"
+  ],
+  "report_ids": [
+   "oral-answer-1384"
+  ],
+  "sentences_total": 35,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:31:00"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1881,
+   "completion_tokens": 206,
+   "estimated": false,
+   "cost_usd": 0.000321
+  }
+ }
+}

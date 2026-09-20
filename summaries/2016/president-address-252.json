@@ -1,0 +1,158 @@
+{
+ "title": "Ministry of Manpower",
+ "what_it_is": "Ministry of Manpower",
+ "sections": [
+  {
+   "label": "Manpower-lean economy transition",
+   "summary": "Sustaining a nation of opportunities requires transiting from a manpower-led to a manpower-lean economy.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "To sustain a nation of opportunities, we need to transit from a manpower-led to a manpower-lean economy.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Strengthening Singaporean Core workforce",
+   "summary": "Strengthening the Singaporean Core requires faster economic restructuring, more higher quality jobs, and less reliance on low-skilled foreign manpower.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "To strengthen the Singaporean Core in the workforce, we need to speed up our economic restructuring efforts and create more higher quality jobs to which Singaporeans aspire.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "Companies need to embrace productivity and innovation and reduce reliance on low-skilled foreign manpower.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Protection, Progression and Pride",
+   "summary": "The three Ps will be pursued by enhancing the Employment Act, extending the Industrial Relations Act, and raising the re-employment age to 67 by 2017.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "We will seek to achieve this through the three Ps – Protection, Progression and Pride.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "We have enhanced the Employment Act to protect more workers and extended the Industrial Relations Act to cover more Professionals, Managers and Executives (PMEs).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "We will raise the re-employment age from 65 to 67 by 2017.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Sectoral Manpower Plans",
+   "summary": "Tripartite partners are developing Sectoral Manpower Plans to create diverse career pathways for Singaporeans while meeting industry manpower needs.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "The tripartite partners are developing Sectoral Manpower Plans to help create diverse career pathways for Singaporeans to fulfil their aspirations, while meeting the manpower needs of industry.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CPF retirement peace of mind",
+   "summary": "Greater peace of mind in retirement will be pursued by enhancing the flexibility and adequacy of the CPF system while ensuring long-term sustainability.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "We want Singaporeans to have greater peace of mind in retirement.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00030",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "We will continue to enhance the flexibility and adequacy of the CPF system while ensuring its long-term sustainability.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Silver Support Scheme",
+   "summary": "The Silver Support Scheme will provide quarterly cash supplements for elderly Singaporeans with lesser means in retirement.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "For elderly Singaporeans who have lesser means in their retirement years, we will implement the Silver Support Scheme to provide quarterly cash supplements.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-252",
+  "group": "budget",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-15"
+  ],
+  "report_ids": [
+   "president-address-252"
+  ],
+  "sentences_total": 36,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.2778,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:31:21"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1631,
+   "completion_tokens": 333,
+   "estimated": false,
+   "cost_usd": 0.000322
+  }
+ }
+}

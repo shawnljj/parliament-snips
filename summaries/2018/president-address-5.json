@@ -1,0 +1,144 @@
+{
+ "title": "Prime Minister's Office (National Security Coordination Secretariat)",
+ "what_it_is": "Prime Minister's Office (National Security Coordination Secretariat)",
+ "sections": [
+  {
+   "label": "External and persistent security threats",
+   "summary": "Changes in the external geopolitical landscape create new tensions and uncertainty, while terrorism, cybersecurity risks and other traditional security challenges persist.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Changes in the external geopolitical landscape are creating new tensions and uncertainty in the global security environment that we must respond to.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "At the same time, persistent threats – terrorism, cybersecurity risks, and other traditional security challenges – continue to pose significant risks to citizens and our way of life.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "National Security Coordination Secretariat coordination role",
+   "summary": "The National Security Coordination Secretariat works with other Government agencies to anticipate threats and develop timely responses, and is enhancing the Government's ability to identify emergent risks.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The National Security Coordination Secretariat (NSCS) works with other Government agencies to anticipate threats and develop responses in a timely manner to ensure that the Government as a whole is well-coordinated to deal effectively with present and future risks.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "NSCS is working to enhance the Government’s ability to identify emergent risks to national security.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Risk identification guiding prioritisation",
+   "summary": "Identifying risks will guide the Government's prioritisation of response measures, including resource allocation, and cross-cutting risks affecting multiple domains and agencies may affect national security.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The identification of risks will guide the Government’s prioritisation of response measures, including resource allocation. lnter-dependencies and cross-cutting risks which affect multiple domains and agencies are not easily discernible but may affect our national security.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Mitigating cross-cutting risks",
+   "summary": "NSCS is working with relevant stakeholders in the different domains to identify and mitigate cross-cutting risks.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "NSCS is working with relevant stakeholders in the different domains to identify and mitigate cross-cutting risks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "High terrorism threat",
+   "summary": "The terrorism threat is at a high, and the Government needs to anticipate and deal with the threat upstream.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The terrorism threat is at a high, and the Government needs to anticipate and deal with the threat upstream.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NSCS continued work with agencies",
+   "summary": "NSCS will continue to work with agencies and stakeholders to identify risks, sensitise officers, build capabilities and develop coordinated responses to national security issues.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "NSCS will continue to work with agencies and stakeholders to identify risks, sensitise our officers, build capabilities and develop coordinated responses to national security issues.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-5",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-5"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 6,
+  "selection_share": 0.3478,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:08:06"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1330,
+   "completion_tokens": 335,
+   "estimated": false,
+   "cost_usd": 0.00028
+  }
+ }
+}

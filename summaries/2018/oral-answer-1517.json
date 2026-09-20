@@ -1,0 +1,106 @@
+{
+ "title": "Foreign Students Applying for Permanent Residency and Subsequent Citizenship in Singapore",
+ "what_it_is": "Foreign Students Applying for Permanent Residency and Subsequent Citizenship in Singapore",
+ "sections": [
+  {
+   "label": "PR and citizenship conversion",
+   "summary": "Of 5,932 foreign students granted PR, 1,072 took up citizenship and 85 renounced PR by end-2017.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Second Minister for Home Affairs (Mrs Josephine Teo) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Close to 82%, or 5,932, have been granted PR.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Second Minister for Home Affairs (Mrs Josephine Teo) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Of these PRs, 1,072, or 18%, have subsequently taken up citizenship as at the end of 2017.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for Home Affairs (Mrs Josephine Teo) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Eighty-five, or around 1%, have renounced their PR.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "PR and citizenship assessment criteria",
+   "summary": "Applicants' nationalities reflect the foreign student profile, and PR or citizenship is assessed on integration ability and societal contribution potential.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "Mr Saktiandi Supaat",
+     "attributed": true,
+     "text": "The question I have is the nationalities of the students who had been successful in getting their PR and also those that had been successful in getting their citizenship as well.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "But suffice to say that they would have to reflect the profile of the foreign student population in Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "The important thing to point out is that in assessing whether an applicant should be granted PR or Singapore Citizenship, an important consideration is the applicant's ability to integrate with the local population as well as his potential to contribute to our society.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1517",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-02-06"
+  ],
+  "report_ids": [
+   "oral-answer-1517"
+  ],
+  "sentences_total": 12,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 3,
+   "turns_total": 7,
+   "coverage": 0.4286,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:32:16"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1056,
+   "completion_tokens": 131,
+   "estimated": false,
+   "cost_usd": 0.000185
+  }
+ }
+}

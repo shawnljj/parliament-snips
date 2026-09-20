@@ -1,0 +1,160 @@
+{
+ "title": "Nationalities of Engineers Working in Singapore",
+ "what_it_is": "Nationalities of Engineers Working in Singapore",
+ "sections": [
+  {
+   "label": "Engineers in Singapore workforce",
+   "summary": "Asks how many engineers work in Singapore and how many are Singaporeans, permanent residents and foreigners.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Er Dr Lee Bee Wah",
+     "attributed": true,
+     "text": "asked\tthe Minister for Manpower (a) how many engineers are there currently working in Singapore; and (b) how many of these are Singaporeans and permanent residents, and foreigners respectively.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Manpower (Mr Teo Ser Luck) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "Engineers play a crucial role in Singapore, and are needed to improve our infrastructure, grow key sectors such as manufacturing and telecommunications and drive the Smart Nation initiative.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Manpower (Mr Teo Ser Luck) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "Sectoral Tripartite Committees (STCs) for sectors such as construction, manufacturing, transport and infocomm technology (ICT) are formulating their respective Sectoral Manpower Plans to enhance sectoral competitiveness and strengthen the Singaporean Core.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public sector engineer locals",
+   "summary": "States some specialised skill sets may not be readily available here, but in the public sector most engineers are locals.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Mr Teo Ser Luck",
+     "attributed": true,
+     "text": "Some are specialised skill sets which may not be readily available here.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Teo Ser Luck",
+     "attributed": true,
+     "text": "But in the public sector, majority of our engineers are locals.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Employing Singaporeans in Government",
+   "summary": "Says Government agencies and Statutory Boards employ just Singaporeans, with engineering graduates filling engineering and non-engineering positions.",
+   "sentences": [
+    {
+     "sid": "s00027",
+     "speaker": "Er Dr Lee Bee Wah",
+     "attributed": true,
+     "text": "Employ just Singaporeans in Government agencies and Statutory Boards.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Mr Teo Ser Luck",
+     "attributed": true,
+     "text": "There are many positions with engineering graduates filling up the positions, both engineering jobs and non-engineering jobs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00029",
+     "speaker": "Mr Teo Ser Luck",
+     "attributed": true,
+     "text": "We will do our best, wherever we can, based on merit to give our local engineers and local graduates to be employed in Civil Service.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Encouraging engineers to return",
+   "summary": "Says engineers not in their profession are encouraged to return, as sectors lack engineers, through career support programmes.",
+   "sentences": [
+    {
+     "sid": "s00032",
+     "speaker": "Mr Teo Ser Luck",
+     "attributed": true,
+     "text": "Yes, we encourage engineers who are not in their profession to come back.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00033",
+     "speaker": "Mr Teo Ser Luck",
+     "attributed": true,
+     "text": "There is today, based on feedback from the enterprises and the sector, a lack of engineers in the sectors.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00034",
+     "speaker": "Mr Teo Ser Luck",
+     "attributed": true,
+     "text": "We encourage them and through different programmes of support.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00035",
+     "speaker": "Mr Teo Ser Luck",
+     "attributed": true,
+     "text": "There are already current programmes in career support to bring them back, especially the matured engineers.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1272",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-04-05"
+  ],
+  "report_ids": [
+   "oral-answer-1272"
+  ],
+  "sentences_total": 36,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 4,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 6,
+   "turns_total": 9,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:14:45"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1715,
+   "completion_tokens": 224,
+   "estimated": false,
+   "cost_usd": 0.000303
+  }
+ }
+}

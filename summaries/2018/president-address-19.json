@@ -1,0 +1,144 @@
+{
+ "title": "Prime Minister's Office (Monetary Authority of Singapore)",
+ "what_it_is": "Prime Minister's Office (Monetary Authority of Singapore)",
+ "sections": [
+  {
+   "label": "MAS monetary policy role",
+   "summary": "MAS monetary policy will facilitate the economic transition by keeping consumer price inflation low and providing a conducive macroeconomic environment for innovation and investment.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of the Monetary Authority of Singapore (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "The Monetary Authority of Singapore’s (MAS') monetary policy will facilitate this economic transition, by ensuring that consumer price inflation is kept low and providing a conducive macroeconomic environment for innovation and investment.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Financial Services Industry Transformation Map",
+   "summary": "The Financial Services ITM sets strategies to grow the sector by 4.3% annually and create 3,000 net jobs plus 1,000 FinTech jobs from 2016 to 2020.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of the Monetary Authority of Singapore (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "The Financial Services Industry Transformation Map (ITM) sets out strategies to grow the financial services sector by 4.3% per annum and create annually 3,000 net jobs in financial services and an additional 1,000 in the FinTech sector from 2016 to 2020.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of the Monetary Authority of Singapore (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "The ITM comprises three broad thrusts – leveraging global and regional opportunities, embracing innovation and deepening the talent pool.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Asset management and fund domiciliation",
+   "summary": "MAS will anchor deeper asset management capabilities in Singapore and implement the new Singapore Variable Capital Company structure to position Singapore as a global fund management and domiciliation hub.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of the Monetary Authority of Singapore (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "MAS will anchor deeper asset management capabilities in Singapore and implement the new Singapore Variable Capital Company structure to position Singapore as a global hub for fund management and domiciliation.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "PayNow transfers and business payments",
+   "summary": "MAS worked with industry to roll out PayNow for convenient, secure inter-bank transfers using mobile number or NRIC, and will extend it to businesses for payments and efficiency gains.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of the Monetary Authority of Singapore (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "MAS worked with the industry to roll out PayNow, enabling people to make inter-bank transfers conveniently and securely using just their mobile number or National Registration Identity Card (NRIC).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of the Monetary Authority of Singapore (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "PayNow will be extended to allow businesses to pay one another and receive payments from customers seamlessly for efficiency gains and cost reduction.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cyber threat surveillance system",
+   "summary": "MAS has implemented a 24/7 surveillance system to monitor cyber threats in the financial industry and will strengthen cyber intelligence capabilities and information exchange platforms.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of the Monetary Authority of Singapore (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "MAS has implemented a 24/7 surveillance system to monitor cyber threats in the financial industry and will strengthen capabilities in cyber intelligence and enhance platforms for information exchange on cyber incidents.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Financial industry conduct guidelines",
+   "summary": "MAS will propose guidelines to raise conduct standards across the financial industry and step up supervisory reviews on risk governance and culture in financial institutions.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of the Monetary Authority of Singapore (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "MAS will propose guidelines to raise standards of conduct across the financial industry and step up supervisory reviews relating to risk governance and culture in financial institutions.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-19",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-19"
+  ],
+  "sentences_total": 30,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 6,
+  "selection_share": 0.2667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:08:01"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1709,
+   "completion_tokens": 366,
+   "estimated": false,
+   "cost_usd": 0.000342
+  }
+ }
+}

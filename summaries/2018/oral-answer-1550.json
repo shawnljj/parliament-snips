@@ -1,0 +1,126 @@
+{
+ "title": "Cumulative Noise from Successive Developments under Construction",
+ "what_it_is": "Cumulative Noise from Successive Developments under Construction",
+ "sections": [
+  {
+   "label": "Construction noise near residents",
+   "summary": "The Minister was asked whether land development allocation considers cumulative construction noise on nearby residents and what measures incentivise noise minimisation.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Dr Tan Wu Meng",
+     "attributed": true,
+     "text": "asked the Minister for National Development (a) whether the tempo and siting of land development allocation considers the cumulative effect of continuous noise on nearby residents arising from successive construction developments in close proximity; and (b) what measures are being used to incentivise the minimisation of noise arising from public or private sector developments especially when there are residential areas nearby.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "However, given our built-up urban environment and land constraints, it is not always possible to totally avoid noise-generating activities such as construction works.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "In areas that are being developed fairly rapidly such as new housing estates, residents who moved into the area earlier may go through the experience of several nearby upcoming developments being constructed subsequently.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Nevertheless, public sector agencies are committed to reducing construction noise levels.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Construction noise limits and enforcement",
+   "summary": "Noise limits are imposed on construction sites, with fines up to $40,000, stop-work orders for repeat offenders, and a no-work rule since September 2011.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "During the construction process, noise limits are imposed on construction sites under the Environmental Protection and Management Act.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Construction companies which violate these limits are liable to enforcement action by NEA, which could include a fine of up to $40,000 upon conviction, and a \"stop-work order\" may also be imposed on repeat offenders.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "A \"no-work rule\" has also been in place since September 2011 which prohibits noisy work activities on Sundays and public holidays at construction sites within 150 metres of residential premises and noise-sensitive premises.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Quieter Construction Fund",
+   "summary": "NEA has a Quieter Construction Fund which co-funds construction activities that may be more expensive but quieter.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "In fact, NEA also has a Quieter Construction Fund which co-funds construction activities that may be more expensive, but can do things in a quieter way.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1550",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-01-10"
+  ],
+  "report_ids": [
+   "oral-answer-1550"
+  ],
+  "sentences_total": 13,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.6154,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:35:38"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1283,
+   "completion_tokens": 190,
+   "estimated": false,
+   "cost_usd": 0.000233
+  }
+ }
+}

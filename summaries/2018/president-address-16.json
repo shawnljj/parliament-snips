@@ -1,0 +1,159 @@
+{
+ "title": "Ministry of Manpower",
+ "what_it_is": "Ministry of Manpower",
+ "sections": [
+  {
+   "label": "CPF, SMEs and SkillsFuture",
+   "summary": "The passage states plans to keep CPF responsive, scale up the Lean Enterprise Development Scheme, promote solutions with partners, and launch SkillsFuture for Enterprises.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We should also ensure that our Central Provident Fund (CPF) system remains responsive to the needs of Singaporeans.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We will scale up the Lean Enterprise Development Scheme to support the implementation of Industry Transformation Maps for more pervasive productivity improvements and innovation, especially among small and medium enterprises (SMEs).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "Together with partners like Enterprise Singapore and the National Trades Union Congress' (NTUC’s) Employment and Employability Institute, we will promote ready-to-go solutions and industry-level projects for maximum reach and impact.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We will launch SkillsFuture for Enterprises to help businesses make human capital development a key part of their corporate capabilities to better support their internationalisation and growth.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Progressive Wage Model benefits",
+   "summary": "The Progressive Wage Model, initiated by the labour movement, has benefited more than 70,000 resident workers in cleaning, landscaping and security.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "The Progressive Wage Model (PWM), which was initiated by the labour movement, has benefited more than 70,000 resident workers in the cleaning, landscaping and security sectors.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fair workplaces and Employment Act",
+   "summary": "The passage states fair and progressive workplaces will be championed, core employment protection enhanced, and the Employment Act's salary cap removed to cover all managers and executives.",
+   "sentences": [
+    {
+     "sid": "s00040",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We will champion fair and progressive workplaces and enhance core employment protection for all.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00041",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We will remove the Employment Act’s salary cap to extend coverage to all managers and executives.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Work injury and workplace safety",
+   "summary": "The Work Injury Compensation Act will be amended, the Return-To-Work programme expanded by 2020, and the Workplace Safety and Health 2028 plan will target a fatality rate below one per 100,000 workers.",
+   "sentences": [
+    {
+     "sid": "s00045",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "The Work Injury Compensation Act will be amended to improve protection for injured workers and shorten insurance claims processing times.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00046",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "Having piloted the Return-To-Work programme since 2017, we will expand coverage to support all injured workers seeking rehabilitation treatment at public hospitals by 2020.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00048",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "Our Workplace Safety and Health 2028 plan will chart new strategies to achieve a workplace fatality rate of less than one per 100,000 workers by 2028.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CPF consultation at age 65",
+   "summary": "CPF Board will extend the voluntary consultation service currently available to members turning age 55 to all members turning age 65.",
+   "sentences": [
+    {
+     "sid": "s00052",
+     "speaker": "The Minister for Manpower (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "To help them plan better for retirement, CPF Board will extend the voluntary consultation service that is currently available to all members turning age 55, to all members turning age 65 as well.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-16",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-16"
+  ],
+  "sentences_total": 63,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.1746,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:07:29"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2762,
+   "completion_tokens": 326,
+   "estimated": false,
+   "cost_usd": 0.000478
+  }
+ }
+}

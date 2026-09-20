@@ -1,0 +1,165 @@
+{
+ "title": "Ministry of Law",
+ "what_it_is": "Ministry of Law",
+ "sections": [
+  {
+   "label": "Community Disputes Resolution Act",
+   "summary": "The Community Disputes Resolution Act came into force on 1 October 2015, providing a new course of action and tribunals for neighbour disputes.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "As part of the Community Disputes Management Framework, the Community Disputes Resolution Act came into force on 1 October 2015, providing a new course of action and tribunals for neighbours locked in intractable disputes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "IPOS International Patent Authority",
+   "summary": "IPOS has commenced operations as an International Authority for patent search and examination work under the Patent Cooperation Treaty.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "The Intellectual Property Office of Singapore (IPOS) has commenced operations as an International Authority for patent search and examination work under the Patent Cooperation Treaty (PCT).",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Hague Convention on Choice of Courts",
+   "summary": "Singapore will implement and ratify the Hague Convention on Choice of Courts Agreements to make Singapore Court judgments easier to enforce abroad.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "Internationally, we will continue to contribute to the discourse on international law issues.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00024",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We will advance Singapore's interests by implementing and ratifying the Hague Convention on Choice of Courts Agreements, which will make it easier for the judgments of the Singapore Courts to be enforced in other countries, in instances where a Singapore Court is the chosen Court to hear the dispute.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Criminal Legal Aid Scheme funding",
+   "summary": "MinLaw has started funding the Criminal Legal Aid Scheme, which is run by the Law Society's Pro Bono Services Office.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "MinLaw has started funding the Criminal Legal Aid Scheme, which is run by the Law Society's Pro Bono Services Office.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Moneylending regime strengthening measures",
+   "summary": "Measures to strengthen moneylending include a centralised credit bureau for moneylenders and an aggregate unsecured borrowing cap.",
+   "sentences": [
+    {
+     "sid": "s00037",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "The Registries of Moneylenders and Pawnbrokers work to ensure that borrowers are able to access credit in a safe environment.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00038",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We will be implementing a series of measures to strengthen the moneylending regime, including the setting up of a centralised credit bureau for moneylenders and the introduction of an aggregate unsecured borrowing cap.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Pawnbroker, bankruptcy and insolvency reforms",
+   "summary": "Measures include yearly pawnbroker audits, a more rehabilitative bankruptcy discharge system, credit risk assessment reforms, and unifying bankruptcy and insolvency regimes.",
+   "sentences": [
+    {
+     "sid": "s00041",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We have also introduced measures to strengthen the governance of the industry, such as requiring pawnbrokers to appoint an auditor to conduct a yearly audit of their business transactions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00042",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We will be introducing a more rehabilitative system that allows bankrupts to be discharged within clear timeframes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We will also implement reforms to encourage credit providers to undertake better risk assessment and borrowers to work responsibly towards clearing their debt.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00044",
+     "speaker": "The Minister for Law (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "In parallel, we will update and unify the individual bankruptcy and corporate insolvency regimes into a single piece of legislation.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-251",
+  "group": "budget",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-15"
+  ],
+  "report_ids": [
+   "president-address-251"
+  ],
+  "sentences_total": 44,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 6,
+  "selection_share": 0.25,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:31:05"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2464,
+   "completion_tokens": 351,
+   "estimated": false,
+   "cost_usd": 0.000443
+  }
+ }
+}

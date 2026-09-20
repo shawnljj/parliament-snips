@@ -1,0 +1,120 @@
+{
+ "title": "Causes for IT Glitch that Resulted in Patients Receiving Mislabelled Medicines",
+ "what_it_is": "Causes for IT Glitch that Resulted in Patients Receiving Mislabelled Medicines",
+ "sections": [
+  {
+   "label": "GP Connect medication label errors",
+   "summary": "A GP Connect system upgrade caused some clinics to print wrong units of measurement on medication labels, which IHiS investigated and addressed.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Following a system upgrade by an information technology (IT) vendor for general practitioner (GP) Connect implemented on 1 September, some GP clinics encountered problems where some medication labels were printed wrongly.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "While the correct medication and the total quantity of medication were correctly dispensed, the system printed the wrong Unit of Measurement (UOM) on the label.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Once notified, Integrated Health Information System (IHiS), the public healthcare IT agency and owner of the GP Connect system, investigated the incident, informed all affected clinics from 2 September, and provided support to the clinics.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "No further errors have been reported since 3 September.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Affected patients were monitored by the clinics and, to date, there have not been any reports of adverse effects.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Investigations revealed that the IT vendor had made some changes to the application code which resulted in incorrect medication labels being printed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Hence, the user acceptance tests designed to evaluate the upgrade did not pick up the error.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fault lies with IT vendor",
+   "summary": "The fault lies with the IT vendor, which changed the application code without informing IHiS.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "As the error was executed as a result of the IT vendor changing the application code without informing IHiS, the fault actually lies with the IT vendor.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-84",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-10-01"
+  ],
+  "report_ids": [
+   "oral-answer-84"
+  ],
+  "sentences_total": 28,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.2857,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 9,
+   "coverage": 0.2222,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:52:24"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1626,
+   "completion_tokens": 139,
+   "estimated": false,
+   "cost_usd": 0.000267
+  }
+ }
+}

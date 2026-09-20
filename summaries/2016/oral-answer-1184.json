@@ -1,0 +1,166 @@
+{
+ "title": "Replacement of MRT Parts and Systems",
+ "what_it_is": "Replacement of MRT Parts and Systems",
+ "sections": [
+  {
+   "label": "Early component replacement for safety",
+   "summary": "Components are often replaced before expiry for safety and reliability, depending on use, treatment, maintenance and operating environment, with operators responsible for earlier replacement.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "In practice, many components are replaced before their expiry, for safety and reliability reasons.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "This is because how long they will actually last depends on many other factors, such as how often they are used, how they are treated and maintained, as well as the operating environment.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "It is the responsibility of the train operators to make this detailed assessment and replace deteriorated components earlier than their end of life if necessary, to maintain the safety, reliability and performance of the system.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "LTA condition-monitoring tools",
+   "summary": "LTA works with operators to install condition-monitoring tools and sensors, and will continue tightening the maintenance and replacement regime.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "To further ensure timely replacement and upgrades, LTA has been working with the operators to install condition-monitoring tools – tools that can continuously monitor the condition of the components that they are interested in – as well as sensors, when they become available in the market.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "LTA will continue to work with the operators to further tighten the maintenance and replacement regime.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Train complexity and obsolescence",
+   "summary": "For complex trains, manufacturer recommendations are only a guide, and parts are often replaced due to obsolescence rather than expiry.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "When it becomes more complicated, like a train, which requires interactions between many components, systems and parts, it is no longer so straightforward.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00026",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "That is why I said that a manufacturer's recommendation is just a reference, a guide.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "It is just no longer a case of \"Well, just replace those parts because manufacturers say year x\".",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00029",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "We are now often in situations where parts are replaced, not because they are going to reach or about to expire, but because of obsolescence.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Replacing functioning parts early",
+   "summary": "Sometimes functioning parts are replaced before expiry because of obsolescence or because better, more reliable, easier to maintain parts are available.",
+   "sentences": [
+    {
+     "sid": "s00035",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "In short, sometimes, we have to replace before the expiry date, even though they are still functioning, because of obsolescence and sometimes, better, more reliable and easier to maintain parts are now available.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Automated warehousing stock items",
+   "summary": "Automated warehousing with computerised forklifts is used to move stock, and the number of items is a five-digit figure.",
+   "sentences": [
+    {
+     "sid": "s00044",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "They have to make use of automated warehousing with computerised forklifts to move the stock.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00045",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "I asked, \"How many items?\" It is a five-digit figure.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1184",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-29"
+  ],
+  "report_ids": [
+   "oral-answer-1184"
+  ],
+  "sentences_total": 57,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 5,
+  "selection_share": 0.2105,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:24:38"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2931,
+   "completion_tokens": 294,
+   "estimated": false,
+   "cost_usd": 0.000493
+  }
+ }
+}

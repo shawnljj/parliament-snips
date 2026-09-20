@@ -1,0 +1,144 @@
+{
+ "title": "Primary Sources of Infection for Tuberculosis in Singapore",
+ "what_it_is": "Primary Sources of Infection for Tuberculosis in Singapore",
+ "sections": [
+  {
+   "label": "TB infection through close exposure",
+   "summary": "TB can be caught through close and prolonged exposure to a person with active TB, such as household members, co-workers and classmates.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "One can be infected with TB through close and prolonged exposure to a person with active TB, such as household members, co-workers and classmates.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Latent TB progression risk",
+   "summary": "About one in 10 healthy persons with latent TB will progress to active TB at some point in their lifetime.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "About one in 10 healthy persons with latent TB will progress to active TB at some point during their lifetime.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MDR-TB rapid DNA testing",
+   "summary": "TBCU will implement rapid DNA tests for drug resistance testing of all TB cases, cutting testing from eight weeks to a few hours.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Specifically on multi-drug resistant TB (MDR-TB), TBCU will be implementing rapid DNA tests for drug resistance testing of all TB cases, reducing the testing duration from eight weeks to just a few hours.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Melvin Yong Yik Chye (Tanjong Pagar)",
+     "attributed": true,
+     "text": "First, earlier this year, MOH released an update that two in three new cases reported last year in 2017 were aged 50 and above and up to 30% of older residents in Singapore have latent TB.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Latent TB screening not cost-effective",
+   "summary": "Five percent of those who acquired latent TB may get active TB within two years and another 5% within their lifetime, so screening all latent TB patients is probably not necessary or cost-effective.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Five percent of those who acquired latent TB may get active TB within the first two years and another 5% may develop active TB within their lifetime.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00026",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Based on these statistics, it is probably not necessary and not cost-effective to do screening or treatment of all patients with latent TB.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Preschool staff medical check-up",
+   "summary": "Under the Childcare Centres Regulations, new preschool staff must undergo a medical check-up including a chest X-ray and be certified free from active TB before starting work.",
+   "sentences": [
+    {
+     "sid": "s00031",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "With regard to the Member's second question on the screening of employees in preschools, under the Childcare Centres Regulations, all new staff members are required to undergo a medical check-up which includes a chest X-ray and be certified free from active TB by a registered medical practitioner before they can start work in a preschool centre.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Active TB staff work clearance",
+   "summary": "Staff diagnosed with active TB will not be permitted to return to work until cleared as fit for work by a medical practitioner.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Once the staff are diagnosed to have active TB, of course, they will not be permitted to return to work until they have been cleared to be fit for work by the medical practitioner.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-38",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-07-11"
+  ],
+  "report_ids": [
+   "oral-answer-38"
+  ],
+  "sentences_total": 34,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 6,
+  "selection_share": 0.2353,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:57:00"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2300,
+   "completion_tokens": 357,
+   "estimated": false,
+   "cost_usd": 0.000422
+  }
+ }
+}

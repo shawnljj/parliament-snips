@@ -1,0 +1,79 @@
+{
+ "title": "Public Education and National Registry for Zika",
+ "what_it_is": "Public Education and National Registry for Zika",
+ "sections": [
+  {
+   "label": "Zika screening, pregnancy, worker health",
+   "summary": "Questions ask the Minister for Health about free Zika screening, support for pregnant women, awareness steps, and health management of workers in sites and dormitories.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Ms Tin Pei Ling",
+     "attributed": true,
+     "text": "asked\tthe Minister for Health (a) whether free Zika screening can be offered to residents of affected areas; (b) what support will be given to pregnant women suspected of Zika infection; and (c) whether there are useful insights learnt from managing and communicating the latest Zika incident and, if so, what are they.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Christopher de Souza",
+     "attributed": true,
+     "text": "asked the Minister for Health what steps have been taken to spread awareness among members of the public of the effects of the Zika virus on pregnant women and what steps can be taken to reduce the risk of contracting the virus.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Assoc Prof Daniel Goh Pei Siong",
+     "attributed": true,
+     "text": "asked\tthe Minister for Health given the need for better health management of workers staying in construction sites and dormitories close to residential areas to control the spread of dengue and Zika (a) whether daily temperature-taking and submission of records should be implemented for these sites and dormitories; and (b) whether the primary care system for the workers should be reviewed and improved upon.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1335",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-09-13"
+  ],
+  "report_ids": [
+   "oral-answer-1335"
+  ],
+  "sentences_total": 5,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.6,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 3,
+   "turns_total": 5,
+   "coverage": 0.6,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:55:26"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1021,
+   "completion_tokens": 81,
+   "estimated": false,
+   "cost_usd": 0.000166
+  }
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "title": "Statement from Leader of the House",
+ "what_it_is": "Statement from Leader of the House",
+ "sections": [
+  {
+   "label": "Tax increase statements since 2013",
+   "summary": "The Government says it has been deliberate and consistent since August 2013 in stating taxes must rise beyond this decade for spending needs.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "The first mention of the need for the tax increase was in the Prime Minister's National Day Rally in 2013, more than four years ago.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "The Minister for Finance reiterated this in his 2017 Budget Statement and again at a constituency function a few months later.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "The Prime Minister spoke again of the likelihood of a tax increase last November and had expressly referred to the Finance Minister's earlier statements.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "Indeed, in the previous term of Government, Deputy Prime Minister Tharman had said during the 2014 Budget Statement and in the 2015 Budget Statement that while the Government had taken steps to ensure that it had sufficient revenue to meet spending needs till the end of this decade, I quote, \"we will run into structural deficits if we did not raise revenues in the next decade.\" As the Minister for Finance told Ms Lim in this House last Thursday, what Deputy Prime Minister Tharman said in 2014 and 2015 remains true today.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "The Government has enough money till the end of this decade but, beyond that, it would have to raise taxes to meet rising expenditure needs, especially in healthcare.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "The Government never floated test balloons on this matter.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "It has been deliberate and consistent in all its statements since August 2013.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Request to withdraw allegation",
+   "summary": "A request is made for Ms Lim to withdraw her allegation about test balloons and GST and apologise by 8 March 2018.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "However, Parliamentary privilege does not entitle Members of Parliament to knowingly maintain allegations that have been shown to have no factual basis.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00023",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "Now that Ms Lim has been apprised of the facts, I request that she withdraw her allegation that the Government had floated test balloons on the need to raise revenues within this term and had intended to raise the GST immediately, and apologise to this House, before the end of this Sitting of Parliament on Thursday, 8 March 2018.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-830",
+  "group": "motion",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-03-06"
+  ],
+  "report_ids": [
+   "motion-830"
+  ],
+  "sentences_total": 25,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.36,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:18:12"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1781,
+   "completion_tokens": 147,
+   "estimated": false,
+   "cost_usd": 0.000291
+  }
+ }
+}

@@ -1,0 +1,153 @@
+{
+ "title": "Ministry of Communications and Information",
+ "what_it_is": "Ministry of Communications and Information",
+ "sections": [
+  {
+   "label": "ICMD sectors as growth multipliers",
+   "summary": "MCI will strengthen the Infocomm, Media and Design sectors by implementing the Infocomm Media Industry Transformation Map and deepening digital technology capabilities.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "To that end, MCI will strengthen the Infocomm, Media and Design (ICMD) sectors as growth multipliers for Singapore.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We will implement the Infocomm Media Industry Transformation Map and deepen our capabilities in digital technologies to grow the sector and create exciting new jobs.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Digital transformation and SME support",
+   "summary": "A stronger ICMD sector will accelerate digital transformation, with the SMEs Go Digital programme expanded and TeSA ramped up to equip Singaporeans with skills.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "A stronger ICMD sector will enable Singapore to accelerate digital transformation across the economy.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We will expand our small and medium enterprises (SMEs) Go Digital programme to help our SMEs ride this new wave of growth, and develop more targeted Industry Digital Plans.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We will prepare Singaporeans for a more vibrant, innovation-driven digital economy.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We will ramp up the TechSkills Accelerator (TeSA) efforts to equip more Singaporeans with relevant skills.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Regulations and Digital Readiness Blueprint",
+   "summary": "Regulations including the Broadcasting Act and Personal Data Protection Act will remain fit for purpose, and a Digital Readiness Blueprint will be introduced.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We will ensure our regulations remain fit for purpose, including the Broadcasting Act and the Personal Data Protection Act.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "We will introduce a Digital Readiness Blueprint to enable all Singaporeans to fully participate in and benefit from digital opportunities in their everyday lives.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore Bicentennial history and events",
+   "summary": "The Bicentennial will go back 500 years to the 14th century, and the Singapore Bicentennial Office will work with partners to organise events.",
+   "sentences": [
+    {
+     "sid": "s00044",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "Beyond looking at the 200 years from 1819, the Bicentennial will go back a further 500 years to the 14th century to appreciate the context of Singapore’s evolution leading up to 1819.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00045",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "It is an opportunity to reflect on our rich history, appreciate our transformation into a global city, and reaffirm the values that will take us forward as a sovereign nation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00046",
+     "speaker": "The Minister for Communications and Information (Mr S Iswaran)",
+     "attributed": true,
+     "text": "The Singapore Bicentennial Office will work with community and corporate partners to organise events that bring Singaporeans along this shared journey.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-18",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-18"
+  ],
+  "sentences_total": 46,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 4,
+  "selection_share": 0.2391,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:07:53"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2277,
+   "completion_tokens": 260,
+   "estimated": false,
+   "cost_usd": 0.000392
+  }
+ }
+}

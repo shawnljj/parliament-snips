@@ -1,0 +1,126 @@
+{
+ "title": "Prime Minister's Office (National Security Coordination Secretariat)",
+ "what_it_is": "Prime Minister's Office (National Security Coordination Secretariat)",
+ "sections": [
+  {
+   "label": "National security threats and NSCS role",
+   "summary": "NSCS looks ahead at possible threats and works with agencies and stakeholders to prepare for new and emerging threats.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "While we have built up our social resilience and strengthened our security forces, our national security can be undermined in many ways, including a terrorist attack, a virus, whether medical or cyber, food contamination and social fissures.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Online self-radicalisation and spread of terrorist methods enable copy-cat attacks.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The role of the National Security Coordination Secretariat (NSCS) is to look ahead at possible threats and work with relevant Government agencies and stakeholders to develop plans to ensure that we are well-prepared to tackle new and emerging threats.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Critical infrastructure and social resilience",
+   "summary": "NSCS studies interdependencies of critical infrastructures and works with agencies and community groups on social resilience factors.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "NSCS also studies the linkages between various critical infrastructures across sectors, such as energy, water, health, infocomm, banking and finance and transport.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The intent is to identify and address potential vulnerabilities and danger areas that may arise due to the interdependencies, so that if a problem occurs in one part of the system, the impact on other parts, or other systems, can be limited and minimised.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "NSCS has been working with Government agencies and community groups from the social sector, to develop a stronger understanding of the factors that affect social resilience, such as attitudes towards crises and emergencies, social capital and social trust, in a time of changing demographics and family resilience.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Social media is a new factor which allows the rapid spread of information and directions to quickly manage a situation and restore confidence and order, but it can also spread rumours and disinformation which complicates the task of restoring order and exacerbates the situation.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cyber security research partnerships",
+   "summary": "NSCS works with MHA, MINDEF, IDA, EDB and NRF to develop practical solutions for cyber security and ICT challenges.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "NSCS works with MHA, MINDEF, IDA, EDB and NRF to engender research and develop practical solutions for cyber security and InfoComm Technology (ICT) challenges, to keep Singaporeans safe in the cyber world.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-262",
+  "group": "budget",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-15"
+  ],
+  "report_ids": [
+   "president-address-262"
+  ],
+  "sentences_total": 22,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.3636,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:31:35"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1477,
+   "completion_tokens": 189,
+   "estimated": false,
+   "cost_usd": 0.00026
+  }
+ }
+}

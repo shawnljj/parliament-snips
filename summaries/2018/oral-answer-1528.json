@@ -1,0 +1,114 @@
+{
+ "title": "Safeguarding Confidentiality of Patient Information with National Electronic Health Record",
+ "what_it_is": "Safeguarding Confidentiality of Patient Information with National Electronic Health Record",
+ "sections": [
+  {
+   "label": "NEHR confidentiality and security measures",
+   "summary": "MOH governs NEHR access for direct patient care, using legislation, two-factor authentication, audit logs and patient access records to prevent breaches.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "",
+     "attributed": false,
+     "text": "The following question stood in the name of  Dr Lim Wee Kiak –  20 To ask the Minister for Health with the introduction of the National Electronic Health Record (NEHR) (a) how will the Ministry safeguard the confidentiality of the records as data leaks can affect a patient's employability and career prospects; (b) what security measures will be put in place to ensure that not every employee in a clinic has access to the records; and (c) what measures are put in place to prevent data breaches.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "This is achieved through a combination of legislative measures, data management policies, system features and public education.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "All access to the NEHR system will be governed and authorised by the Ministry of Health (MOH).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Access to individual health records through the NEHR is meant for purposes of direct patient care.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "NEHR information will not be revealed to third parties like insurers and employers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "To deter unauthorised access, a two-factor authentication system has been incorporated, together with features to detect suspicious access and usage.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In addition, all access to the NEHR is captured in audit logs and patients will be able to view a record of accesses made to their NEHR records so that they can report unauthorised access.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "When suspicious access is detected or reported, we will carry out investigations and those found to have misused the system will be dealt with under the law, in accordance with the penalties under the Cybersecurity and Computer Misuse Act and the proposed Healthcare Services Act.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1528",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-02-05"
+  ],
+  "report_ids": [
+   "oral-answer-1528"
+  ],
+  "sentences_total": 12,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.6667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 2,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:34:25"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1200,
+   "completion_tokens": 96,
+   "estimated": false,
+   "cost_usd": 0.000195
+  }
+ }
+}

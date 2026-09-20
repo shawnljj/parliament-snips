@@ -1,0 +1,171 @@
+{
+ "title": "Singapore's Deployment to Support Multinational Coalition against ISIS",
+ "what_it_is": "Singapore's Deployment to Support Multinational Coalition against ISIS",
+ "sections": [
+  {
+   "label": "Coalition operations against ISIS",
+   "summary": "The coalition is working to capture Mosul and isolate Al-Raqqa, and ISIS has lost over 40% of its populated territory in Iraq and around 20% in Syria.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "The coalition is working towards capturing Mosul in Iraq and isolating Al-Raqqa in Syria, in order to dismantle ISIS' presence in these countries.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "So, as a rough measure, since the start of operations, ISIS has lost more than 40% of the populated territory it once held in Iraq, and around 20% of its territory in Syria.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Regional terror attacks and arrests",
+   "summary": "A grenade attack in Puchong injured eight, and Indonesian authorities arrested six suspects planning rocket attacks on Singapore from Batam.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "Nearer home, a grenade attack at a nightclub in Puchong that injured eight.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "And just a few days ago, Indonesian authorities arrested six suspects who were planning attacks on Singapore by using rockets launched from Batam against targets in Marina Bay.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Terrorism-related detentions in Singapore",
+   "summary": "Singapore presently has 20 persons in detention, one on Suspension Direction and 22 on Restriction Orders for terrorism-related activities.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "In Singapore, there are presently 20 persons in detention, one on Suspension Direction and 22 others on Restriction Orders for terrorism-related activities.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SAF medical team to Iraq",
+   "summary": "SAF has agreed to deploy a medical support team for healthcare needs and medical triage of coalition troops and local residents in Iraq.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "SAF has, therefore, agreed to deploy a medical support team to address the healthcare needs and medical triage of coalition troops and local residents in Iraq.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore's contributions in Afghanistan",
+   "summary": "Singapore made a difference in Uruzgan by providing hospital personnel for troops and residents, and imagery analyst teams disrupted cells.",
+   "sentences": [
+    {
+     "sid": "s00044",
+     "speaker": "Dr Ng Eng Hen",
+     "attributed": true,
+     "text": "And  if our contributions in Afghanistan can be compared with, we made a difference.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00045",
+     "speaker": "Dr Ng Eng Hen",
+     "attributed": true,
+     "text": "We made a difference in Uruzgan when we provided personnel to tend to both the troops as well as the residents in Afghanistan through a hospital.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00047",
+     "speaker": "Dr Ng Eng Hen",
+     "attributed": true,
+     "text": "Our imagery analyst teams made a difference because we could disrupt cells.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Weapons locating radar contribution",
+   "summary": "Our weapons locating radar made a big difference.",
+   "sentences": [
+    {
+     "sid": "s00050",
+     "speaker": "Dr Ng Eng Hen",
+     "attributed": true,
+     "text": "Our weapons locating radar made a big difference.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "US Secretary thanks imagery analysts",
+   "summary": "US Secretary of Defense Ashton Carter thanked an imagery analyst team whose work disrupted a terrorist bank and reduced terrorism financing.",
+   "sentences": [
+    {
+     "sid": "s00054",
+     "speaker": "Dr Ng Eng Hen",
+     "attributed": true,
+     "text": "In fact, it was when US Secretary of Defense Ashton Carter visited the imagery analyst team here that had come back, he personally thanked them because it was their work that allowed a particular terrorist bank that got disrupted, that reduced the means for them to finance global terrorism.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1319",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-08-15"
+  ],
+  "report_ids": [
+   "oral-answer-1319"
+  ],
+  "sentences_total": 55,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 7,
+  "selection_share": 0.2,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 7,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:59:40"
+  },
+  "usage": {
+   "calls": 4,
+   "prompt_tokens": 2834,
+   "completion_tokens": 385,
+   "estimated": false,
+   "cost_usd": 0.000505
+  }
+ }
+}

@@ -1,0 +1,150 @@
+{
+ "title": "Prime Minister's Office (Monetary Authority of Singapore)",
+ "what_it_is": "Prime Minister's Office (Monetary Authority of Singapore)",
+ "sections": [
+  {
+   "label": "Monetary policy and inflation outlook",
+   "summary": "Monetary policy decisions recognise that inflation is low today but is likely to rise over the medium term amidst a tight labour market.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic and Social Policies (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "Our monetary policy decisions recognise that inflation is low today, but is likely to rise over the medium term amidst a tight labour market.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MAS exchange rate policy actions",
+   "summary": "MAS' gradual appreciation of the Singapore dollar's nominal effective exchange rate since 2010 controlled inflationary pressures, and in 2015 MAS eased policy in a calibrated manner.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic and Social Policies (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "MAS' monetary policy of a gradual appreciation of the nominal effective exchange rate of the Singapore dollar since 2010 has brought inflationary pressures under control.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic and Social Policies (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "In 2015, MAS eased monetary policy in a calibrated manner, in line with the softening of inflation and growth.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Framework for systemically-important banks",
+   "summary": "Last year, MAS introduced a framework to strengthen the ability of domestic systemically-important banks to withstand shocks.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic and Social Policies (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "Last year, MAS introduced a framework to strengthen the ability of domestic systemically-important banks to withstand shocks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reforms for Singapore securities markets",
+   "summary": "MAS and SGX have been working to implement reforms such as a minimum trading price, short position reporting and collateralised trading to strengthen Singapore's securities markets.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic and Social Policies (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "To strengthen Singapore's securities markets, MAS and SGX have been working to implement reforms, such as a minimum trading price for shares, short position reporting and collateralised trading.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Savings and investment options expansion",
+   "summary": "MAS expanded retail investors' savings and investment options by improving corporate bond availability, enhancing exchange-traded fund access and introducing Singapore Savings Bonds.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic and Social Policies (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "MAS has expanded the suite of savings and investment options for retail investors by: (a) improving the availability of corporate bonds for stable, long-term returns; (b) enhancing access to exchange-traded funds for diversified equity returns; and (c) introducing the Singapore Savings Bonds for flexible risk-free returns.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Financial Sector Technology and Innovation funding",
+   "summary": "MAS has committed $225 million over the next five years to support initiatives under the Financial Sector Technology and Innovation scheme.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic and Social Policies (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "MAS has also committed $225 million over the next five years to support initiatives under the Financial Sector Technology and Innovation scheme.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MAS industry technology and skills",
+   "summary": "MAS will work with industry to maximise technology's potential and use SkillsFuture to deepen skills across the financial sector workforce.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic and Social Policies (Mr Tharman Shanmugaratnam)",
+     "attributed": true,
+     "text": "MAS will work actively with the industry to maximise the potential of technology and will make full use of SkillsFuture to deepen skills, at all levels of the financial sector workforce.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-258",
+  "group": "budget",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-15"
+  ],
+  "report_ids": [
+   "president-address-258"
+  ],
+  "sentences_total": 35,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 7,
+  "selection_share": 0.2286,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 7,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:31:19"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 1940,
+   "completion_tokens": 395,
+   "estimated": false,
+   "cost_usd": 0.000382
+  }
+ }
+}

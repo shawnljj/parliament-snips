@@ -1,0 +1,158 @@
+{
+ "title": "Investigations into Interruptions and Service Lapses in Singpass and Corppass Services",
+ "what_it_is": "Investigations into Interruptions and Service Lapses in Singpass and Corppass Services",
+ "sections": [
+  {
+   "label": "Authentication Server software bug slowdown",
+   "summary": "A Gemalto Authentication Server software bug caused records to persist instead of being removed after 30 days, causing the slowdown.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Communications and Information and Education (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The slowdown was caused by a software bug in the Authentication Server provided by Gemalto, a commercial vendor.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Communications and Information and Education (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "We have verified that the enhancement complied with all technical specifications and was properly tested.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Communications and Information and Education (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "However, the interaction between the enhancement and the software bug caused some records to persist in the system, instead of being automatically removed 30 days after they expired, which was the root cause of the slowdown.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Symptoms could have been detected earlier",
+   "summary": "The slowdown symptoms could have been detected earlier even though the bug itself was elusive.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Communications and Information and Education (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "First, while the bug itself was elusive, the symptoms – the slowdown in system performance – could have been detected earlier.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reviewing system design resiliency",
+   "summary": "Hardware redundancy did not address internal software bugs, so the system design will be reviewed for all-round resiliency.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Minister of State for Communications and Information and Education (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Second, while the system had the hardware backup to deal with hardware and infrastructure failure, such redundancy did not address the unknown internal software bugs of this nature.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Senior Minister of State for Communications and Information and Education (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "We will review the system design to improve all-round resiliency, beyond just hardware resiliency.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Two-factor authentication text message delays",
+   "summary": "Residents reported slow two-factor authentication text messages after restoration, and contracts with commercial providers are being reviewed.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Dr Tan Wu Meng (Jurong)",
+     "attributed": true,
+     "text": "Thirdly, would the Senior Minister of State be able to provide some assurance about the on-going analysis that will take place moving forward because I have received feedback from my residents in Clementi that even after the system was restored, they still found that the two-factor authentication text messages could take an inordinate amount of time to be delivered to their phones?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We are reviewing the contracts with our commercial providers, both with respect to the incident as well as with what we will be engaging in going forward.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Studying two-factor authentication text messages",
+   "summary": "The issue of two-factor authentication text messages will be studied.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "On the analysis about the two-factor authentication, we will study the issue with respect to the text messages.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singpass Mobile two-factor authentication plans",
+   "summary": "Long-term plans for two-factor authentication on National Digital Identity would use the Singpass Mobile approach.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "In the long term, our plans for the two-factor authentication on National Digital Identity would, hopefully, get around this with the Singpass Mobile approach that we have briefly described.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1446",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-03-19"
+  ],
+  "report_ids": [
+   "oral-answer-1446"
+  ],
+  "sentences_total": 29,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.3448,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:12:18"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1670,
+   "completion_tokens": 299,
+   "estimated": false,
+   "cost_usd": 0.000318
+  }
+ }
+}

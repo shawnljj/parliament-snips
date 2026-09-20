@@ -1,0 +1,119 @@
+{
+ "title": "Profile of Singaporeans on Public Transport Concession Schemes",
+ "what_it_is": "Profile of Singaporeans on Public Transport Concession Schemes",
+ "sections": [
+  {
+   "label": "Senior citizen concession scheme",
+   "summary": "The senior citizen concession scheme recognises seniors' contributions, with close to 900,000 residents aged 60 and above expected to qualify by 2020.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The concession scheme for senior citizens, which accounts for more than 40% of residents with concession cards, aims to recognise their contributions towards our nation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "By 2020, we expect that there will be close to 900,000 Singapore Residents aged 60 and above who will qualify.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Over the last five years, the average number of journeys made by senior citizens has increased by around 50% while the number of senior citizen concession pass holders rose by around 30%.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Low-income public transport expenditure",
+   "summary": "Over the past decade, low-income residents' monthly public transport expenditure as a share of household income fell from 4.2% to 2.7%.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "Looking at the past decade, when we look at the low-income residents, the monthly expenditure on public transport as a proportion of their household income has come down from 4.2% to 2.7%.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Concession funding and fare balance",
+   "summary": "Most concession schemes are cross-funded by full-fare paying commuters, and PTC must balance land transport financial sustainability with fare affordability.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "Except for the Workfare Transport Scheme and the persons with disabilities scheme, which are funded by the Government, the others are cross-funded by other full-fare paying commuters.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "So, there is cross-subsidy by other full-fare paying commuters.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "Ultimately, PTC has to take into consideration and to strike a balance between ensuring the financial sustainability of the land transport system and the fare affordability for our commuters.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-4",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-18"
+  ],
+  "report_ids": [
+   "oral-answer-4"
+  ],
+  "sentences_total": 21,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:02:12"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1367,
+   "completion_tokens": 200,
+   "estimated": false,
+   "cost_usd": 0.000247
+  }
+ }
+}

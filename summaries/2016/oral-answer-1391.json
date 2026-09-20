@@ -1,0 +1,140 @@
+{
+ "title": "Measures to Benchmark and Improve MRT Service Disruption Problems",
+ "what_it_is": "Measures to Benchmark and Improve MRT Service Disruption Problems",
+ "sections": [
+  {
+   "label": "MRT train reliability performance",
+   "summary": "MRT trains now travel about 158,000 train-km between delays over five minutes, better than last year's 133,000 but below Hong Kong and Taipei, with targets of 400,000 by 2018 and 800,000 by 2020.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Our Mass Rapid Transit (MRT) trains now travel about 158,000 train-kilometre (km), almost 160,000 train-km, between delays of more than five minutes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "This is a common industry-wide performance indicator on reliability.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "This performance, 158,000 train-km, is better than the performance of last year of 133,000 train-km: about 160,000 train-km versus 130,000 train-km.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "However, we are still quite far off from Hong Kong (Mass Transit Railway’s (MTR's) performance of 360,000 train-km and Taipei Metro's 800,000 train-km.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "The best in class chalks up 800,000 train-km; we are now 160,000 train-km.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "We have set ourselves a target of 400,000 train-km by 2018 and 800,000 train-km by 2020 for our MRT lines.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Maintenance standards and rail financing",
+   "summary": "LTA introduced Maintenance Performance Standards and, under the New Rail Financing Framework, the Government will own operating assets, with sleeper, signalling and power rail replacement completed by 2018.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "The Land Transport Authority (LTA) has introduced new process-based Maintenance Performance Standards to address maintenance issues upstream before delays occur.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Second, with the transition of the industry to the New Rail Financing Framework, where the Government will own the operating assets, we will be able to renew and replace all operating assets in a timely manner.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "For example, the replacement of sleepers, the signalling system and the power rail would all be completed by 2018.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Signal interference cause",
+   "summary": "The cause was signal interference, with a particular signal interfering with the wireless signalling system and causing some difficulties.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "The cause is clear, that there was signal interference – a particular signal was interfering with our wireless signalling system and causing some of these difficulties.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1391",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-11-09"
+  ],
+  "report_ids": [
+   "oral-answer-1391"
+  ],
+  "sentences_total": 28,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.3571,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:30:36"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1695,
+   "completion_tokens": 227,
+   "estimated": false,
+   "cost_usd": 0.000301
+  }
+ }
+}

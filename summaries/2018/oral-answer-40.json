@@ -1,0 +1,140 @@
+{
+ "title": "Update on Whether ERP is Required to Manage Traffic Congestion",
+ "what_it_is": "Update on Whether ERP is Required to Manage Traffic Congestion",
+ "sections": [
+  {
+   "label": "Evening ERP on northbound CTE",
+   "summary": "Evening ERP is imposed only on the northbound CTE, where speeds of 48 to 56 km/h are near the lower bound of optimal expressway speeds, so it is still required.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Currently, evening ERP is only imposed along the northbound Central Expressway (CTE), where traffic speeds range between 48 kilometre per hour and 56 kilometre per hour.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "This is near the lower bound of the optimal expressway speeds.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Evening ERP is, therefore, still required there to prevent further congestion.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Review of ERP purpose",
+   "summary": "A request was made for MOT to review the ERP's purpose and effectiveness, noting northbound CTE evening journey speeds changed little over two and a half years.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Er Dr Lee Bee Wah (Nee Soon)",
+     "attributed": true,
+     "text": "So, I would like to ask the Senior Parliamentary Secretary whether MOT can review the purpose of the ERP and see how effective it is in mitigating the traffic jam.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "However, over the last two and a half years, the journey speeds on the north-bound CTE in the evening have not changed much.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "It has not become much worse, nor has it improved significantly.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "ERP rate adjustment on CTE",
+   "summary": "ERP charges were raised for northbound CTE traffic after PIE in 2016 and 2017 when speeds fell below 45 km/h, and speeds rose after adjustment.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "I think I can hear some murmurs among Members here who have direct experience of travelling along the CTE in the evening.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00030",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "But, if I could just use the example for the north-bound traffic along the CTE after the PIE, in the third quarter of 2016 and the first quarter of 2017, we did raise the ERP charges because we observed that traffic has come down below the optimum range of 45 km/h, way below 45 km/h.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00031",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "When the ERP rates were adjusted, it did help to lessen the traffic and the speeds went up.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00032",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "So, with that, motorists have been able to reach home faster and we see a direct impact on the motorists' behaviour with the pricing policy.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-40",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-07-11"
+  ],
+  "report_ids": [
+   "oral-answer-40"
+  ],
+  "sentences_total": 33,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.303,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 6,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:57:04"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1804,
+   "completion_tokens": 225,
+   "estimated": false,
+   "cost_usd": 0.000316
+  }
+ }
+}

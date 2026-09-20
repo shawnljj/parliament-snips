@@ -1,0 +1,93 @@
+{
+ "title": "Pioneer Generation Fund (Amendment) Bill",
+ "what_it_is": "Pioneer Generation Fund (Amendment) Bill",
+ "sections": [
+  {
+   "label": "Pioneer Generation Fund amendments",
+   "summary": "Technical amendments to the Pioneer Generation Fund Act make clear that a Pioneer's financial means must not be considered when allocating Pioneer Generation Package benefits.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Senior Minister of State for Finance (Ms Sim Ann) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "The intent of the Pioneer Generation Package is to honour and recognise the contributions of all Pioneers in nation building, regardless of their financial status.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Finance (Ms Sim Ann) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "As such, they receive similar benefits on top of existing healthcare subsidies which the Government already provides for all Singaporeans.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Finance (Ms Sim Ann) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "We have taken in former Nominated Member of Parliament Ms Chia Yong Yong's suggestion during the Second Reading of the Pioneer Generation Fund Bill in November 2014 for an amendment to better convey the intent of the Pioneer Generation Package and avoid any doubt that the fund could be restricted to providing relief to only those needing financial help.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Finance (Ms Sim Ann) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "Hence, the technical amendments to section 3 and section 27 of the Pioneer Generation Fund Act are proposed to make clear that the financial means of a Pioneer must not be taken into account when allocating the Pioneer Generation Package benefits, which are met from the Pioneer Generation Fund.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Finance (Ms Sim Ann) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "These benefits include the Pioneer Generation Medisave top-ups, maximum subsidy for MediShield Life premiums and healthcare costs, for example, additional subsidies at polyclinics, subsidised Specialist Outpatient Clinics and Community Health Assist Scheme (CHAS) clinics and the Pioneer Generation Disability Assistance Scheme.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-200",
+  "group": "bill",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-03-01"
+  ],
+  "report_ids": [
+   "bill-200"
+  ],
+  "sentences_total": 6,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.8333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:22:23"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 958,
+   "completion_tokens": 80,
+   "estimated": false,
+   "cost_usd": 0.000157
+  }
+ }
+}

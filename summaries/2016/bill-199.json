@@ -1,0 +1,132 @@
+{
+ "title": "Income Tax (Amendment) Bill",
+ "what_it_is": "Income Tax (Amendment) Bill",
+ "sections": [
+  {
+   "label": "M&A and internationalisation tax schemes",
+   "summary": "The M&A scheme is extended five years with higher allowances and lower shareholding threshold, and internationalisation support is enhanced with a new incentive.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "First, to help spur mergers and acquisitions (M&As) so that companies, especially small and medium enterprises, can acquire scale, attract talent and compete effectively overseas, the M&A scheme will be extended for another five years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The tax allowance for acquisition costs will also be increased, from the current 5% to 25% of the value of acquisition, with the cap on allowance remaining at $5 million for each Year of Assessment (YA).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Subject to conditions, companies would be able to claim M&A benefits for acquisitions resulting in at least 20% shareholding in the target company, down from the current threshold of 50% shareholding.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Second, to provide greater support to businesses expanding overseas, the Double Tax Deduction for Internationalisation scheme has been enhanced to cover salaries incurred for Singaporeans posted to newly set up or acquired entities overseas.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Third, a new tax incentive, the International Growth Scheme, has also been introduced to provide support to Singapore companies in their internationalisation efforts.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Concessionary tax rate for internationalisation",
+   "summary": "Qualifying companies get a 10% concessionary tax rate on incremental income from internationalisation activities such as exports and HQ activities.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Qualifying companies will enjoy a 10% concessionary tax rate on their incremental income from internationalisation activities, such as income derived from the export of goods and services or from global or regional headquarter (HQ)-related activities.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Top marginal tax rate increase",
+   "summary": "The top marginal tax rate rises by two percentage points, from 20% to 22%, for chargeable income above $320,000.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Specifically, the top marginal tax rate will be raised by two percentage points, from 20% to 22% for those with a chargeable income above $320,000.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Donation tax deduction extension",
+   "summary": "The 250% tax deduction for donations is extended three years, till the end of 2018, to instil a culture of giving.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The 250% tax deduction for donations, which was to expire at the end of 2015, has also been extended for another three years till the end of 2018, to instil a culture of giving.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-199",
+  "group": "bill",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-02-29"
+  ],
+  "report_ids": [
+   "bill-199"
+  ],
+  "sentences_total": 32,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.25,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:24:05"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1831,
+   "completion_tokens": 252,
+   "estimated": false,
+   "cost_usd": 0.000327
+  }
+ }
+}

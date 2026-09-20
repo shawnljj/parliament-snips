@@ -1,0 +1,158 @@
+{
+ "title": "Number of Generational-correlated Drug Offenders",
+ "what_it_is": "Number of Generational-correlated Drug Offenders",
+ "sections": [
+  {
+   "label": "Drug offenders' children and support",
+   "summary": "The question asks about drug offenders' children, rehabilitation support, youth outreach and community awareness; the number of offenders with children at home is not tracked.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Er Dr Lee Bee Wah",
+     "attributed": true,
+     "text": "asked the Minister for Home Affairs (a) how many drug offenders have children at home; (b) what rehabilitation support is provided to youths and children of parents who are found guilty of drug-related crimes; (c) what outreach activities are in place to encourage youths to stay drug-free; and (d) what is being done to increase vigilance and awareness of drug-related activities in the community.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "We do not track the number of drug offenders who have children at home, nor the number of children of drug offenders who become drug abusers later in life.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Youth Engagement Programme 2012",
+   "summary": "The Home Team introduced the Youth Engagement Programme in 2012 to reach at-risk youths through sports and youth camps.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "In addition, the Home Team introduced the Youth Engagement Programme (YEP) in 2012 to reach out to at-risk youths and keep them meaningfully occupied through sports and youth camps.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NCPR set up April 2018",
+   "summary": "The National Committee on Prevention, Rehabilitation and Recidivism was set up in April 2018, co-chaired by Mr Desmond Lee and Mrs Josephine Teo.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "To this end, the National Committee on Prevention, Rehabilitation and Recidivism (NCPR) was set up in April 2018, co-chaired by the Minister for Social and Family Development Mr Desmond Lee, and Second Minister for Home Affairs Mrs Josephine Teo.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Case management for inmates' children",
+   "summary": "A key programme feature is case management to assess needs of children of inmates and ex-offenders and channel them to VWOs.",
+   "sentences": [
+    {
+     "sid": "s00028",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "One of the key features of the programme is to provide case management services to enable more effective assessment of the needs of children of inmates and ex-offenders and channelling them to the relevant VWOs for follow-up.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Yellow Ribbon Community Project visits",
+   "summary": "The Yellow Ribbon Community Project has grassroots volunteers visit families, gather needs and link them to support structures, and YRCP 2.0 trains volunteers.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "One of the projects that we have is the Yellow Ribbon Community Project where grassroots volunteers visit family, gather information on their needs and link them up to the grassroots advisors, as well as to existing support structures, such as the Residents' Committee and various other avenues of help, including the Community Development Councils (CDCs).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00035",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "Recently, we enhanced the Yellow Ribbon Community Project (YRCP) – we call it YRCP 2.0 – and we have been training volunteers so that they can make a greater impact.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "YRCP in over 80 constituencies",
+   "summary": "Over 80 constituencies are involved in YRCP, where grassroots volunteers receive information from Prisons and conduct regular house visits.",
+   "sentences": [
+    {
+     "sid": "s00050",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "Over 80 constituencies are involved in our YRCP.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00051",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "I will check whether the Member's constituency is part of it.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00052",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "But through this programme, the grassroots volunteers actually receive information from Prisons, and there have been regular house visits done.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-92",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-10-02"
+  ],
+  "report_ids": [
+   "oral-answer-92"
+  ],
+  "sentences_total": 58,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.1724,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 5,
+   "turns_total": 13,
+   "coverage": 0.3846,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:32:57"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 3159,
+   "completion_tokens": 361,
+   "estimated": false,
+   "cost_usd": 0.000543
+  }
+ }
+}

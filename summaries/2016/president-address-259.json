@@ -1,0 +1,146 @@
+{
+ "title": "Prime Minister's Office (National Climate Change Secretariat)",
+ "what_it_is": "Prime Minister's Office (National Climate Change Secretariat)",
+ "sections": [
+  {
+   "label": "Climate resilience and emissions commitment",
+   "summary": "Singapore will strengthen climate resilience and manage emissions for sustainable growth, and is on track to cut emissions 16% below business as usual by 2020.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "We will strengthen our resilience against the risks from climate change and manage our greenhouse gas emissions to achieve economic growth in a sustainable manner.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "We are already on track to fulfil our existing commitment to reduce greenhouse gas emissions by 16% below business as usual by 2020.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore's 2030 emissions commitment",
+   "summary": "Singapore committed to reduce Emissions Intensity by 36% from 2005 levels by 2030 and stabilise greenhouse gas emissions with the aim of peaking around 2030.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "In line with the Agreement, Singapore has made a further commitment to reduce our Emissions Intensity1 by 36% from 2005 levels by 2030 and stabilise greenhouse gas emissions with the aim of peaking around 2030.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Industry and household energy efficiency measures",
+   "summary": "Industries must improve energy efficiency and cut emissions, supported by the Energy Conservation Act, programmes, incentives, solar scale-up, and household appliance labelling and standards.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Our industries will have to step up efforts to re-examine their processes and implement measures to enhance energy efficiency and reduce emissions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "This will be complemented by mandatory measures under the Energy Conservation Act, as well as various capability building programmes, incentives and financing schemes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "For example, solar deployment will be scaled up from the current 47 MWp, to provide around 350 MWp of electricity by 2020.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Household energy efficiency will continue to be improved through the Mandatory Energy Labelling Scheme, which provides information to help consumers make more informed decisions when purchasing household appliances.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The Minimum Energy Performance Standards scheme will ensure that only household electrical appliances2 that meet minimum energy performance standards can be sold in Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Second National Climate Change Study projections",
+   "summary": "The first phase of the Second National Climate Change Study, completed in April 2015, provides long-term climate projections to assess impacts and plan resilience measures.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The first phase of the Second National Climate Change Study completed in April 2015 provides the long-term climate projections for Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "We will build on these projections to assess the impact on Singapore and develop plans to enhance our resilience in areas, such as coastal protection, water resources and urban infrastructure.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-259",
+  "group": "budget",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-15"
+  ],
+  "report_ids": [
+   "president-address-259"
+  ],
+  "sentences_total": 28,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.3571,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:31:29"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1551,
+   "completion_tokens": 269,
+   "estimated": false,
+   "cost_usd": 0.000292
+  }
+ }
+}

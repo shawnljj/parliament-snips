@@ -1,0 +1,100 @@
+{
+ "title": "Green Rebate for Tesla Electric Car",
+ "what_it_is": "Green Rebate for Tesla Electric Car",
+ "sections": [
+  {
+   "label": "Second-hand Tesla rebate retesting",
+   "summary": "Imported second-hand cars must be retested for fuel consumption or CO2 emissions to apply rebates or surcharges, unlike new cars.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "When it is ready to be sold in Singapore, the importers will have to submit its electrical energy consumption information for the Land Transport Authority (LTA) to assess if it will attract a rebate or a surcharge.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "If it is as energy efficient as a new Tesla S, a new Tesla 3 car would be entitled to the maximum rebate under our current Carbon Emissions-based Vehicle Scheme (CEVS).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "I suppose Tesla, being a sexy and iconic product, attracts attention.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "But I think what was lost in the debate was that that particular unit was a second-hand Tesla.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "In other words, if it were a new Tesla Model S, it would have enjoyed the maximum rebate of $30,000.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "But for all imported second-hand cars, whether electric or otherwise, we have a duty to require the second-hand car to be retested to find out what exactly is the fuel consumption or the CO2 emission rate, so that we can apply the rebate or surcharge properly.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1295",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-05-09"
+  ],
+  "report_ids": [
+   "oral-answer-1295"
+  ],
+  "sentences_total": 10,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.6,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:02:01"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1015,
+   "completion_tokens": 88,
+   "estimated": false,
+   "cost_usd": 0.000167
+  }
+ }
+}

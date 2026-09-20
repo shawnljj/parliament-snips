@@ -1,0 +1,147 @@
+{
+ "title": "Impact of Sending 26 MRT Trains Back to Manufacturer on Service Reliability",
+ "what_it_is": "Impact of Sending 26 MRT Trains Back to Manufacturer on Service Reliability",
+ "sections": [
+  {
+   "label": "MRT train numbers and buffer",
+   "summary": "There are 140 MRT trains, with 124 deployed at peak, and about 10% kept as buffer for repairs, upgrading and standby.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Pritam Singh",
+     "attributed": true,
+     "text": "asked \tthe Minister for Transport (a) what is the total number of MRT trains deployed for operations currently; (b) among these, what percentage of trains are not embarking passengers as they need to be sent back to the manufacturer CSR Sifang for depot-level train repairs due for completion in 2019; and (c) in what way has this episode affected the Ministry's plans to improve the reliability of the MRT system.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "So, we have 140 trains altogether, but actual deployment, at the maximum, that means, during peak hours, 124.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "It is standard practice in all subway systems to have a buffer, about a 10% of trains for repairs, upgrading and standby.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bolster replacement and reliability",
+   "summary": "One train at a time is sent to China for bolster replacement, within the 10% buffer, and the incident has not affected reliability.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "At any one time, there is only one train sent back to China for the manufacturer to replace the bolsters and, therefore, we are well within the 10% buffer.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "The Kawasaki-Sifang train incident has not affected the reliability of the system.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "None of the delays on the trains was due to the bolsters' hairline cracks.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "As I said, the problem was with certain batches of aluminium which are manufactured and used for the bolsters.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "So, when the manufacturer offered to say from now on, all bolsters will be manufactured in Japan, that settles the issue.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Kawasaki ownership of bolster problem",
+   "summary": "Kawasaki took full ownership, volunteered bolster and car-body replacement, extended warranty, giving free train use and prolonged warranty.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "If the Member has listened carefully to what I have said over the last half an hour, he would note that Kawasaki, at great cost to themselves, has taken full ownership of the problem − not in denial, \"not my problem\", \"somebody else's problem\".",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "They went all out to \tPage: 27 protect their reputation, make certain decisions, not at our request, but on their own, volunteered to have the bolsters replaced, to completely replace the car-bodies, extended warranty, restarted the warranty commencement.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "What it means is that we have free use of the trains for several years and a prolonged warranty period.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1333",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-08-16"
+  ],
+  "report_ids": [
+   "oral-answer-1333"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 3,
+  "selection_share": 0.4783,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 4,
+   "turns_total": 7,
+   "coverage": 0.5714,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:57:44"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1780,
+   "completion_tokens": 200,
+   "estimated": false,
+   "cost_usd": 0.000305
+  }
+ }
+}

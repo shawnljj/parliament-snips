@@ -1,0 +1,160 @@
+{
+ "title": "Capital Reserve in PUB's Accounts",
+ "what_it_is": "Capital Reserve in PUB's Accounts",
+ "sections": [
+  {
+   "label": "PUB Capital Reserve and borrowing",
+   "summary": "PUB's Capital Reserve rose from $3 billion to $5.3 billion as its PPE grew from $3.9 billion to $7.1 billion, and PUB borrows for investments.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "The Capital Reserve does not represent surplus funds that PUB has at its disposal.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "These are important investments to ensure a secure and sustainable water supply for Singapore.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "Therefore, the increase in PUB's Capital Reserve from $3 billion to $5.3 billion over the last decade must be seen in conjunction with PUB’s growing asset base, specifically its PPE, which has grown from $3.9 billion to $7.1 billion over the same period.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "In fact, the Capital Reserve alone has not been sufficient to fully cover PUB's investments in water infrastructure.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "And that is why in the Committee of Supply (COS) debate earlier this year, I explained that PUB has had to borrow from the capital markets for its investments and it will continue to do so going forward.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong) (for the Minister for Finance)",
+     "attributed": true,
+     "text": "In short, there is no surplus cash in PUB.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Surpluses invested in water infrastructure",
+   "summary": "Over the same period, much of the accumulated surpluses was used to invest in water infrastructure, so PPE grew correspondingly.",
+   "sentences": [
+    {
+     "sid": "s00036",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "In fact, over that same period of time, a large part of the accumulated surpluses has been used to invest in water infrastructure, and that is why the PPE has grown correspondingly from $3.9 billion to $7.1 billion.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "PUB charges, grants for drainage",
+   "summary": "PUB charges consumers for water treatment and operations, while Government grants finance drainage and sewage systems not charged directly to consumers.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "For the water treatment plants, water works, water operations, indeed, PUB charges consumers, rightfully so, and then recovers the costs in order to continue to finance future investments.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "But there is another part of infrastructure which is not charged directly to consumers, and that is our drainage systems, sewage systems, which are an essential part of our water system.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00044",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "And PUB continues to receive Government grants in order to finance that part of the water system.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Government grants for drainage and sewage",
+   "summary": "The Government continues to fund significant drainage and sewage assets through grants to PUB.",
+   "sentences": [
+    {
+     "sid": "s00047",
+     "speaker": "Mr Low Thia Khiang",
+     "attributed": true,
+     "text": "It was increased significantly, I think, a few years ago, if I remember correctly.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00048",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "But there are significant amounts of drainage assets and sewage assets, as part of our water system, which the Government continues to fund through grants to PUB.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-18",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-07-09"
+  ],
+  "report_ids": [
+   "oral-answer-18"
+  ],
+  "sentences_total": 51,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 4,
+  "selection_share": 0.2353,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 5,
+   "turns_total": 12,
+   "coverage": 0.4167,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:00:57"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2824,
+   "completion_tokens": 247,
+   "estimated": false,
+   "cost_usd": 0.000465
+  }
+ }
+}

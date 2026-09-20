@@ -1,0 +1,125 @@
+{
+ "title": "Interest in Singapore Savings Bond",
+ "what_it_is": "Interest in Singapore Savings Bond",
+ "sections": [
+  {
+   "label": "Savings Bonds programme launch results",
+   "summary": "Since September 2015, around 35,000 individuals have invested S$970 million into 14 Savings Bonds issues.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Since the launch of the programme in September 2015, around 35,000 individuals, from all age groups, have invested S$970 million into 14 Savings Bonds issues.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Savings Bonds withdrawal and interest rates",
+   "summary": "Investors can withdraw money with interest monthly without penalty, and interest rates have declined due to lower global bond yields.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Although Savings Bonds mature in 10 years, an investor can withdraw some or all of the money invested, with interest, in any given month without penalty.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Over the past several months, Savings Bond interest rates have declined due to lower global bond yields.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MAS public education outreach",
+   "summary": "MAS reaches out through publicity campaigns and community outreach, working with partners to educate the public about Savings Bonds.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "MAS has been reaching out to the public through publicity campaigns and community outreach activities.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "In particular, MAS has been working with partners, such as MoneySENSE, the Institute of Financial Literacy and grassroots organisations, to educate the public about Savings Bonds.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Saving virtue and publicity timing",
+   "summary": "Saving is a good virtue, and another publicity effort is intended but must be timed properly, such as after the US Presidential Election.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Saving is, indeed, a good virtue and I hope you can play your part, too, and explain to the young.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "We intend to launch another publicity effort, but this has to be timed properly, such as waiting until the US Presidential Election is over!",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1407",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-11-10"
+  ],
+  "report_ids": [
+   "oral-answer-1407"
+  ],
+  "sentences_total": 24,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.2917,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:30:01"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1397,
+   "completion_tokens": 224,
+   "estimated": false,
+   "cost_usd": 0.000258
+  }
+ }
+}

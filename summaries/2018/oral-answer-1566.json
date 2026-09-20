@@ -1,0 +1,133 @@
+{
+ "title": "Singapore's Medical Inflation Rate",
+ "what_it_is": "Singapore's Medical Inflation Rate",
+ "sections": [
+  {
+   "label": "Singapore healthcare inflation rates",
+   "summary": "Singapore's average annual healthcare inflation was 2.4% between 2011 and 2016, falling to about 1.2% between 2013 and 2016 after policy measures.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Between 2011 and 2016, Singapore's average annual healthcare inflation rate was 2.4% compared to the Organisation for Economic Co-operation and Development (OECD) average of 1.6%.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Recent policy measures, such as the Pioneer Generation Package, MediShield Life subsidies and the Community Health Assist Scheme (CHAS), have helped to bring it down to about 1.2% between 2013 and 2016.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "National healthcare spending increase",
+   "summary": "National healthcare spending rose over 60% from $11.5 billion in 2011 to $18.8 billion in 2015, and further increases are inevitable with an ageing population.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In Singapore, our national healthcare spending has increased by more than 60% from $11.5 billion in 2011 to $18.8 billion in 2015, as we built more healthcare facilities and hired more healthcare workers to meet our growing healthcare needs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "With an ageing population, it is inevitable that our total spending on healthcare will increase further.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "To keep our overall healthcare costs sustainable in the future, we have to focus on ways to transform our healthcare system and prevent healthcare costs from rising too quickly.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Thirdly, we are moving beyond quality to value for patients to deliver appropriate care to meet their needs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Senior Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The above shifts are important to keep our increases in healthcare spending at a more sustainable level as we consider different options to fund our future healthcare and long-term care needs.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MOH medical inflation methodology",
+   "summary": "MOH measures healthcare inflation as growth of prices paid for healthcare-related goods and services, after considering Government subsidies.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "Dr Chia Shi-Lu (Tanjong Pagar)",
+     "attributed": true,
+     "text": "So, what methodology does MOH look at in order to follow medical inflation in Singapore?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "I explained in my main answer that healthcare inflation measures the growth of prices paid for a wide range of healthcare-related goods and services, and this is after we have considered Government subsidies.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1566",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-01-09"
+  ],
+  "report_ids": [
+   "oral-answer-1566"
+  ],
+  "sentences_total": 35,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.2571,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:36:57"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1889,
+   "completion_tokens": 214,
+   "estimated": false,
+   "cost_usd": 0.000324
+  }
+ }
+}

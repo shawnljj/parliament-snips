@@ -1,0 +1,158 @@
+{
+ "title": "Ministry of Finance",
+ "what_it_is": "Ministry of Finance",
+ "sections": [
+  {
+   "label": "Singapore position of strength",
+   "summary": "Singapore is in a position of strength and can make substantial investments to meet economic and social needs.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "Today, Singapore is in a position of strength and able to make substantial investments to meet our economic and social needs.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Slower growth expected",
+   "summary": "Global economic weakness and a more mature economy will mean slower growth.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "Global economic weakness, coupled with a more mature economy, will mean slower growth.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Building revenues for ageing population",
+   "summary": "Over the longer term, Government revenues should be built up to meet higher spending needs of an ageing population.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "Over the longer term, we should build up Government revenues to meet the higher spending needs of an ageing population.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Silver Support Scheme income supplement",
+   "summary": "The Silver Support Scheme will provide an income supplement for the bottom 20%-30% of elderly Singaporeans.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "The Silver Support Scheme will provide an income supplement for the bottom 20%-30% of elderly Singaporeans.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Investments in environment and transport",
+   "summary": "Singapore will enhance its living environment and support economic vibrancy through investments in greenery, housing, public transport, digital services and regional growth clusters.",
+   "sentences": [
+    {
+     "sid": "s00040",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We will enhance Singapore's living environment and support economic vibrancy through continued investments in greenery, housing and public transport.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00041",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We are improving bus services and expanding our rail network.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00042",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "While we do this, we will also make better use of our existing transportation infrastructure through the development of regional growth clusters that bring jobs closer to homes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00044",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "To improve the delivery of services to Singaporeans, we will provide better and more integrated services digitally, including through mobile platforms.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Co-creating solutions with citizens",
+   "summary": "Singapore will increase opportunities for public collaboration and share more data so the private sector and public can create innovative applications.",
+   "sentences": [
+    {
+     "sid": "s00047",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "As part of our efforts to co-create solutions with citizens, we will increase opportunities for collaboration with the public through various platforms.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00048",
+     "speaker": "The Minister for Finance (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We will share more data so that the private sector and the public can help create innovative applications to meet economic and social needs.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-247",
+  "group": "budget",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-15"
+  ],
+  "report_ids": [
+   "president-address-247"
+  ],
+  "sentences_total": 48,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.2083,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:31:03"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2297,
+   "completion_tokens": 308,
+   "estimated": false,
+   "cost_usd": 0.000408
+  }
+ }
+}

@@ -1,0 +1,165 @@
+{
+ "title": "Ministry of Health",
+ "what_it_is": "Ministry of Health",
+ "sections": [
+  {
+   "label": "Healthcare system major shifts",
+   "summary": "The healthcare system is embarking on major shifts Beyond Healthcare to Health, Beyond Hospital to Community, and Beyond Quality to Value, and promoting Successful Ageing.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "To achieve this, we are embarking on major shifts in our healthcare system to move Beyond Healthcare to Health, Beyond Hospital to Community, and Beyond Quality to Value; and to promote and enable Successful Ageing in Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Strengthening primary care foundation",
+   "summary": "With Sengkang General and Community Hospitals completing this year, primary care is strengthened through new and expanded polyclinics and more Primary Care Networks.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "Even as we build more hospital capacity with the completion of Sengkang General and Community Hospitals this year, we need to strengthen our primary care foundation by building new polyclinics, expanding existing ones, and establishing more Primary Care Networks comprising general practitioners.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reviewing healthcare financing policies",
+   "summary": "MOH will review healthcare financing policies to support new care models and community care integration, including targeted subsidies and changes to MediShield Life and MediSave.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "MOH will review healthcare financing policies to support new care models and to better integrate care in the community.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00021",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "This includes more targeted Government subsidies to better direct support towards those in greater need, as well as timely and appropriate changes to MediShield Life and to MediSave usage and coverage.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Silver Generation Office and ElderShield review",
+   "summary": "The Silver Generation Office and Community Networks for Seniors expansion will integrate health and social services, and the ElderShield review will strengthen long-term care support.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "The formation of the Silver Generation Office and nationwide expansion of the Community Networks for Seniors will further facilitate better integration of health and social services and encourage more Singaporeans to volunteer and contribute towards successful ageing efforts.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00034",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We will complete the review of ElderShield and strengthen the social safety net for long-term care.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Health IT and research investment",
+   "summary": "The Health IT Master Plan will be updated and aligned to priorities, leveraging data analytics, artificial intelligence, robotics and technology, and investing in health and biomedical research.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We will update and align our Health Information Technology (IT) Master Plan to our priorities.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00039",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We will leverage new developments in data analytics, artificial intelligence, robotics and other technological fields to transform how we work and deliver care.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We will also continue to invest in health and biomedical research that can yield benefits for Singaporeans and our healthcare system.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Stakeholder participation and collaboration",
+   "summary": "MOH will facilitate participation and collaboration among all stakeholders, confident the plans help Singaporeans stay healthy and keep quality healthcare accessible, affordable and sustainable.",
+   "sentences": [
+    {
+     "sid": "s00043",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "MOH will facilitate participation and collaboration among all stakeholders.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00044",
+     "speaker": "The Minister for Health (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "We are confident that our plans will help Singaporeans stay healthy and active at all ages, while ensuring that quality healthcare remains accessible, affordable and sustainable.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-23",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-23"
+  ],
+  "sentences_total": 45,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 6,
+  "selection_share": 0.2444,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:07:48"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2317,
+   "completion_tokens": 363,
+   "estimated": false,
+   "cost_usd": 0.000426
+  }
+ }
+}

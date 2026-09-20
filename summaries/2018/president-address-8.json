@@ -1,0 +1,159 @@
+{
+ "title": "Ministry of National Development",
+ "what_it_is": "Ministry of National Development",
+ "sections": [
+  {
+   "label": "Housing supply and inclusive home",
+   "summary": "The Government will taper new flat building to a sustainable level while maintaining sufficient supply for young families, seniors and singles.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "In the second half of this term of Government, we will build on the progress we have achieved so far to build a more inclusive home.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "We are tapering the building of new flats to a more sustainable level, but we will continue to maintain a sufficient supply to meet the housing needs of Singaporeans, from young families to seniors and singles.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Shorter waiting times and Tengah",
+   "summary": "Construction of some new flats was brought forward to shorten waiting times to about two to three years, with 3,000 such flats launched in 2018 and 2019.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "But we have brought forward the construction of some of these new flats so that the waiting times can be shortened to about two to three years.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "We will launch a total of 3,000 such flats with shorter waiting times in 2018 and 2019 and will explore doing more in the future.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "In the second half of 2018, we will launch the first batch of flats in the new HDB town of Tengah.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Built environment industry transformation",
+   "summary": "The Government will work with the built environment industry to raise productivity and develop innovative urban solutions, targeting 40% adoption of productive construction methods by 2020.",
+   "sentences": [
+    {
+     "sid": "s00035",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Fourth, we will work closely with the built environment industry on its transformation, to raise productivity and to develop innovative urban solutions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00036",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "We target to double the adoption of productive construction methods from the current 20% to 40% of all new projects by 2020.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Regional centres and district infrastructure",
+   "summary": "New regional centres in Jurong and Woodlands and clusters like Jurong Innovation District and Punggol Digital District will get district-level infrastructure and advanced technologies.",
+   "sentences": [
+    {
+     "sid": "s00044",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Within Singapore, we are developing new regional centres in Jurong and Woodlands, as well as new clusters outside of the downtown core, for example, the Jurong Innovation District and Punggol Digital District.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00046",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Where possible, we will introduce district-level infrastructure, such as common services tunnel, district cooling, and pneumatic waste conveyance systems in these new developments for greater resource efficiencies.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00047",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "We will also see how best to deploy advanced technologies, such as real-time integrated facility management, autonomous vehicles and smart energy grids.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Parks and green corridors",
+   "summary": "By 2030, 90% of Singaporeans will live within a 10-minute walk of a park, and green corridors will expand from 310 km to 400 km.",
+   "sentences": [
+    {
+     "sid": "s00050",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "By 2030, 90% of Singaporeans will live within a 10-minute walk of a park, and our network of green corridors will be expanded from 310 km to 400 km.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-8",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-8"
+  ],
+  "sentences_total": 58,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.1897,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:07:26"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2768,
+   "completion_tokens": 322,
+   "estimated": false,
+   "cost_usd": 0.000478
+  }
+ }
+}

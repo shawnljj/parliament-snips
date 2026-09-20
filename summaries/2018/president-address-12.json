@@ -1,0 +1,145 @@
+{
+ "title": "Prime Minister's Office (Strategy Group)",
+ "what_it_is": "Prime Minister's Office (Strategy Group)",
+ "sections": [
+  {
+   "label": "Strategy Group coordinates Public Service",
+   "summary": "The Strategy Group coordinates and organises the Public Service to implement the Government's strategic priorities for the best outcomes for Singapore and Singaporeans.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of Strategy Group (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The Strategy Group coordinates and organises the Public Service to implement the strategic priorities of the Government in order to achieve the best outcomes for Singapore and Singaporeans.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cross-cutting medium- to long-term priorities",
+   "summary": "The Strategy Group identifies cross-cutting medium- to long-term priorities and organises Government agencies' efforts to collectively address them.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of Strategy Group (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The Strategy Group identifies these cross-cutting medium- to long-term priorities and organises the efforts of Government agencies to collectively address them.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Population policy as cross-cutting issue",
+   "summary": "Population policy is one cross-cutting issue that will define this phase of nation-building.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of Strategy Group (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Our population policy is one such cross-cutting issue that will define this phase of nation-building.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Three broad population strategies",
+   "summary": "Fertility rates and openness to contributors shape future society, so Government will focus on three broad strategies for the population profile.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of Strategy Group (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "In the long term, our fertility rates and our openness to others who are willing and able to contribute to Singapore will shape the type of society that future generations of Singaporeans will live in.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00021",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of Strategy Group (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "We will thus focus on three broad strategies across the Government to maintain a population profile that improves the lives of each generation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of Strategy Group (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "First, we will develop and implement policies to enable all Singaporeans to age with purpose and dignity.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of Strategy Group (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Second, we will make Singapore a great place for families, where marriage and parenthood are achievable, enjoyable and celebrated.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of Strategy Group (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Third, we will maintain a careful balance in our foreign worker as well as immigrant flows.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Strategy Group coordinates climate action",
+   "summary": "The Strategy Group will coordinate Singapore's domestic and international actions against climate change impact and support global emissions reduction efforts.",
+   "sentences": [
+    {
+     "sid": "s00031",
+     "speaker": "The Deputy Prime Minister and Minister-in-charge of Strategy Group (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The Strategy Group will coordinate Singapore’s domestic and international actions to protect ourselves against the impact of climate change and support international efforts to reduce global greenhouse gas emissions.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-12",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-12"
+  ],
+  "sentences_total": 41,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 5,
+  "selection_share": 0.2195,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:07:57"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1790,
+   "completion_tokens": 273,
+   "estimated": false,
+   "cost_usd": 0.000327
+  }
+ }
+}

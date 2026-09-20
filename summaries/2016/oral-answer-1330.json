@@ -1,0 +1,140 @@
+{
+ "title": "Assessment of Safety Risks of Defects Found on 26 MRT Trains",
+ "what_it_is": "Assessment of Safety Risks of Defects Found on 26 MRT Trains",
+ "sections": [
+  {
+   "label": "Hairline cracks and commuter safety",
+   "summary": "The hairline cracks do not compromise commuter safety, as trains are designed with a large safety margin of three.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "The hairline cracks do not compromise the safety of commuters.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "The trains are designed with a large safety margin of three.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Crack cause, assessment and repair",
+   "summary": "Cracks did not reduce the safety margin; an independent assessor confirmed the trains safe, and Kawasaki-Sifang will replace car-bodies, traced to a batch of aluminium.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "The cracks have not reduced the safety margin.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "But to be absolutely sure, the Land Transport Authority (LTA) had appointed an independent assessor, TUV Rheinland and the assessors confirmed that the trains are entirely safe to operate.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Page: 24 Kawasaki-Sifang decided that the most effective repair method was to replace the entire car-body.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "This is because the bolster, where the hairline cracks are found, is welded to the car-body.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "As Kawasaki-Sifang does not have the necessary facilities in Singapore to refit the trains with new car-bodies, the trains have to be shipped back to Kawasaki-Sifang's manufacturing base in China.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "The cause of the cracks was traced to a specific batch of aluminium material used for the manufacturing of the train bolsters only.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bolster origin and manufacturer decision",
+   "summary": "One bolster is made in Japan and one in China, but the manufacturers themselves decided to use new bolsters from Japan.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "One is made in Japan and one is made in China.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "But the decision − using new bolsters from Japan − is made by the manufacturers themselves.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1330",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-08-16"
+  ],
+  "report_ids": [
+   "oral-answer-1330"
+  ],
+  "sentences_total": 24,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.4167,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:57:47"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1398,
+   "completion_tokens": 204,
+   "estimated": false,
+   "cost_usd": 0.000253
+  }
+ }
+}

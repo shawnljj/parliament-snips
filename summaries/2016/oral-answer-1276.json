@@ -1,0 +1,120 @@
+{
+ "title": "Online Voting Using SingPass for Singaporeans based Overseas",
+ "what_it_is": "Online Voting Using SingPass for Singaporeans based Overseas",
+ "sections": [
+  {
+   "label": "Internet voting feasibility study",
+   "summary": "The Elections Department studied Internet voting for overseas Singaporeans and found challenges including authentication, impersonation, secrecy, reliability, security and auditing, so paper ballot voting remains simplest and most transparent.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister, Prime Minister's Office (Mr Chan Chun Sing) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The Elections Department has studied the feasibility of Internet voting for overseas Singaporeans.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister, Prime Minister's Office (Mr Chan Chun Sing) (for the Prime Minister)",
+     "attributed": true,
+     "text": "While Internet voting may appeal to some, it has various challenges, like difficulties in authenticating voters, preventing impersonation and ensuring voting secrecy.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister, Prime Minister's Office (Mr Chan Chun Sing) (for the Prime Minister)",
+     "attributed": true,
+     "text": "In addition, there are system reliability issues and security risks, such as vulnerability to hacking and cyberattacks.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister, Prime Minister's Office (Mr Chan Chun Sing) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Auditing the voting results in the event of a petition to the Election Judge is also more challenging and potentially problematic.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister, Prime Minister's Office (Mr Chan Chun Sing) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The use of SingPass can only overcome the difficulties with authentication partially but not the other challenges with Internet voting.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister, Prime Minister's Office (Mr Chan Chun Sing) (for the Prime Minister)",
+     "attributed": true,
+     "text": "For now, voting by paper ballot at polling stations is still the simplest and most transparent method of voting that can ensure the integrity and secrecy of our voting process.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SingPass password and token risks",
+   "summary": "Someone obtaining a password or token means the method is not foolproof, and SingPass cannot entirely overcome these risks.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "If somebody is able to get his hands on the password or, for that matter, the token, then it is not a foolproof method.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "There are risks involved in all these, which SingPass itself, Page: 8 while it is an improvement over the past, will not be able to overcome entirely.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1276",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-04-06"
+  ],
+  "report_ids": [
+   "oral-answer-1276"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.5333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:14:36"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1208,
+   "completion_tokens": 153,
+   "estimated": false,
+   "cost_usd": 0.000212
+  }
+ }
+}

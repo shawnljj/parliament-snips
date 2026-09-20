@@ -1,0 +1,158 @@
+{
+ "title": "New Technologies in Home Team to Detect and Deter Crime",
+ "what_it_is": "New Technologies in Home Team to Detect and Deter Crime",
+ "sections": [
+  {
+   "label": "Police cameras in HDB blocks",
+   "summary": "Police cameras are installed at HDB block lift and staircase landings and carparks, with all 10,000 blocks to be completed this year, and more cameras are being studied.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Home Affairs (Mr Desmond Lee) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "One example is the installation of police cameras at the ground-floor lift and staircase landings of Housing and Development Board (HDB) blocks and multi-storey carparks to deter crime in our estates.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Home Affairs (Mr Desmond Lee) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Installation in all 10,000 blocks should be completed by this year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Home Affairs (Mr Desmond Lee) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "We will study the feasibility of installing more police cameras in our estates and other public areas to enhance security.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Smartphone app sends photos",
+   "summary": "An app lets the public send relevant photos and videos to the Police using smartphones.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Home Affairs (Mr Desmond Lee) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Tapping on the many smartphones in Singapore, the app makes it easy for the public to send relevant photos and videos to the Police.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "In-vehicle cameras recording overnight",
+   "summary": "Many car owners across Singapore have joined a scheme keeping their in-vehicle cameras recording overnight.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Minister of State for Home Affairs (Mr Desmond Lee) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Many car owners across Singapore have joined the scheme, keeping their in-vehicle cameras recording overnight.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Next-Gen FRC and drones",
+   "summary": "Police officers will get next-generation fast response cars with more sophisticated technology, and unmanned aerial vehicles or drones are being explored for situational pictures.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "The Senior Minister of State for Home Affairs (Mr Desmond Lee) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "On the ground, our police officers will be provided with the next-generation fast response cars (Next-Gen FRC) that are equipped with more sophisticated technology.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Senior Minister of State for Home Affairs (Mr Desmond Lee) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "We are also exploring the use of unmanned aerial vehicles (UAV) or drones to provide a more comprehensive situational picture in public order incidents or during the management of major events.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Video-trawling identifies objects and persons",
+   "summary": "Video-trawling technologies can identify objects and persons of interest from hours of video footage in minutes.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Senior Minister of State for Home Affairs (Mr Desmond Lee) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Video-trawling technologies can allow us to identify, in a matter of minutes, objects and persons of interest from hours of video footage.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Smaller bin openings and surveillance",
+   "summary": "Reducing bin opening size to reduce large bags being deposited is suggested, and rolling out more surveillance in estates and public areas is being studied.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Mr Christopher de Souza (Holland-Bukit Timah)",
+     "attributed": true,
+     "text": "Also, could we reduce the size of the opening of bins, so as to reduce the risks of large bags being deposited into them, especially in crowded areas?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00026",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "We are, at the moment, studying the possibility of rolling out more of such surveillance throughout our estates and public areas to enable us to deter crime and to take action when incidents unfold.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-502",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-27"
+  ],
+  "report_ids": [
+   "oral-answer-502"
+  ],
+  "sentences_total": 28,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.3571,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 5,
+   "coverage": 0.6,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:25:53"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1643,
+   "completion_tokens": 332,
+   "estimated": false,
+   "cost_usd": 0.000323
+  }
+ }
+}

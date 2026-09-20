@@ -1,0 +1,147 @@
+{
+ "title": "Selective Relaxation on Total Debt Servicing Ratio Restrictions",
+ "what_it_is": "Selective Relaxation on Total Debt Servicing Ratio Restrictions",
+ "sections": [
+  {
+   "label": "Total Debt Servicing Ratio framework",
+   "summary": "Under the TDSR framework, a borrower's monthly loan instalments should not exceed 60% of monthly income, applying to any property loan.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Under the Total Debt Servicing Ratio (TDSR) framework, a borrower's monthly loan instalments should not exceed 60% of his monthly income.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The 60% threshold applies to any property loan regardless of whether it is a loan for purchasing a property or a loan secured on an unencumbered property.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Exceptional TDSR exceedance approvals",
+   "summary": "Current rules are the default, but financial institutions may approve property loans exceeding the 60% TDSR in exceptional cases via credit committees.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Therefore, it is more prudent to have our current rules as the default position.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "However, financial institutions may approve property loan applications where the borrowers' TDSR exceed Page: 12 60% in exceptional cases.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Such exceptions must be approved by the financial institutions' credit committees, in line with the policies set by their board of directors.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MAS review of TDSR concerns",
+   "summary": "MAS should review TDSR as some face hardship; TDSR does not apply to company-named loans, and assets and income streams are considered.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Ms Sylvia Lim (Aljunied)",
+     "attributed": true,
+     "text": "So, perhaps, MAS should review this because I think there is some ground concern and some people are having a hard time now.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "There are some circumstances, for example, if the borrower runs a company, is a sole proprietor or SME boss and the loan is raised in the name of the company, actually the TDSR does not apply.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "For others, there are also some circumstances, such as they hold other assets, debentures, bonds, coins, gold and so on.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "MAS and the banks do take into account that this can also be income-generating and can also be counted as income stream.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Lastly, there are others, maybe the cases that the Member has encountered, where they need to reduce their fully-paid-for property to re-mortgage.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "We have received similar feedback and will study them carefully.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1406",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-11-10"
+  ],
+  "report_ids": [
+   "oral-answer-1406"
+  ],
+  "sentences_total": 25,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 3,
+  "selection_share": 0.44,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:29:59"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1546,
+   "completion_tokens": 209,
+   "estimated": false,
+   "cost_usd": 0.000275
+  }
+ }
+}

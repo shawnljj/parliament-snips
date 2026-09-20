@@ -1,0 +1,125 @@
+{
+ "title": "Prime Minister's Office (Smart Nation Programme Office)",
+ "what_it_is": "Prime Minister's Office (Smart Nation Programme Office)",
+ "sections": [
+  {
+   "label": "Smart Nation Programme Office coordination",
+   "summary": "The SNPO under PMO coordinates infrastructure, policies, ecosystem and capabilities to achieve a Smart Nation.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "The Smart Nation Programme Office (SNPO) under PMO coordinates the overall development of infrastructure, policies, ecosystem and capabilities, to achieve a Smart Nation.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public transport and housing technology",
+   "summary": "Data from bus and taxi sensors is shared with commuters, autonomous vehicle solutions are being tested, and technologies are piloted in Yuhua housing estate.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "For example, in public transport and the enhancement of the commuting experience, we have begun to collect more data through the use of bus and taxi sensors and we are sharing these with commuters to empower them to plan their trips.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "For the longer term, we have begun to experiment with future modes of public transport provision, including autonomous vehicle solutions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Another area is the use of technology and innovation in our homes and housing estates, to help achieve resource savings, create a more liveable environment and support ageing in place.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "We are working with industry to pilot some of these technologies in the Yuhua housing estate, with a view to more widespread deployment in due course.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore test-beds established",
+   "summary": "Test-beds have been established in Singapore for smart home solutions, autonomous driving and outdoor sensor connectivity.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "To this end, various test-beds have already been established in Singapore: for smart home solutions, autonomous driving, outdoor sensor connectivity and others.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Open Government data push",
+   "summary": "A key thrust is making Government data open, shareable and machine readable without compromising personal data protection or national security.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "A key thrust of this is our push to make Government data open, shareable and machine readable as much as possible, without compromising personal data protection or national security.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-263",
+  "group": "budget",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-15"
+  ],
+  "report_ids": [
+   "president-address-263"
+  ],
+  "sentences_total": 20,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.35,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:31:33"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1337,
+   "completion_tokens": 218,
+   "estimated": false,
+   "cost_usd": 0.000248
+  }
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "title": "Police Training for Handling of Persons with Mental Illness",
+ "what_it_is": "Police Training for Handling of Persons with Mental Illness",
+ "sections": [
+  {
+   "label": "Police officer training courses",
+   "summary": "Police officers undergo a three-month Police Basic Officer Course, then a customised vocation-based course, with patrol officers attending a three-month NPC GRF course.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "All Police officers undergo a three-month Police Basic Officer Course when they first join the Force.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "After the basic three-month course, officers attend a customised course based on their vocation.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "Those deployed to patrol duties attend a three-month Neighbourhood Police Centre Ground Response Force (NPC GRF) course.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Police handling mental health cases",
+   "summary": "SPF works with IMH and AIC on persons with mental health conditions, liaising with AIC or arresting under the Mental Health Care and Treatment Act for IMH assessment.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "In addition to training, SPF works closely with agencies, such as the Institute of Mental Health (IMH) and the Agency for Integrated Care (AIC), to manage persons who may have mental health conditions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "When our frontline officers suspect that a person is suffering from mental health conditions but the person does not pose any danger to himself or others, they will liaise with AIC to follow up on the case.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "In cases where our officers take the view that the person is of unsound mind and poses a danger either to himself or to someone else, Police officers may arrest him under the Mental Health Care and Treatment Act for referral to IMH for expert medical assessment.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1240",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-03-14"
+  ],
+  "report_ids": [
+   "oral-answer-1240"
+  ],
+  "sentences_total": 11,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.5455,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:21:06"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1061,
+   "completion_tokens": 144,
+   "estimated": false,
+   "cost_usd": 0.000189
+  }
+ }
+}

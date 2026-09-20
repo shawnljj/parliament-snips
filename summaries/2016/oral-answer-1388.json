@@ -1,0 +1,145 @@
+{
+ "title": "Readiness of Singapore Telecommunications Companies to Thwart Cyberattacks",
+ "what_it_is": "Readiness of Singapore Telecommunications Companies to Thwart Cyberattacks",
+ "sections": [
+  {
+   "label": "Telco cyberattack readiness and CSA",
+   "summary": "The Minister was asked about telco and essential infrastructure readiness against cyberattacks and how Government can support companies; CSA was formed and eleven critical sectors identified.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Desmond Choo",
+     "attributed": true,
+     "text": "asked the Minister for Communications and Information in light of the recent cyberattacks on one of our telcos (a) how ready are our telcos and essential infrastructure in meeting such cyberattacks; and (b) and how can the Government better support our companies to improve their readiness.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "We formed the Cybersecurity Agency of Singapore (CSA) last year and the Prime Minister launched Singapore's Cybersecurity Strategy last month.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "Eleven critical sectors that provide essential services have been identified and CSA works closely with Government agencies and operators in these sectors to strengthen the cyber resilience of their Critical Information Infrastructure (CII).",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "IMDA Internet infrastructure code compliance",
+   "summary": "IMDA requires Internet service providers to comply with the Secure and Resilient Internet Infrastructure Code of Practice as a licence condition.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "Besides aligning with national level plans, IMDA requires Internet service providers (ISPs) to comply with the Secure and Resilient Internet Infrastructure Code of Practice as part of their licence conditions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "ISG-CERT advisories to ISPs",
+   "summary": "IMDA, through ISG-CERT, issued advisories to local ISPs on measures such as beefing up Domain Name Server capacity and monitoring traffic from identified network ports.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "IMDA, through ISG-CERT, has issued advisories to local ISPs on measures to take to mitigate similar attacks, such as beefing up Domain Name Server capacity, and monitoring and placing limits, if needed, on traffic coming from identified network ports.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CSA support for SME cyber readiness",
+   "summary": "CSA will work with chambers and trade associations to help SMEs understand their cyber readiness and available solutions, and a starter kit was launched.",
+   "sentences": [
+    {
+     "sid": "s00031",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "On the first question as to whether there are additional measures to help our companies to level up, the answer is yes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00032",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "CSA will work with the various chambers and trade associations to help our SMEs to understand what are their states of cyber readiness and what are the solutions available out there.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00033",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "We have recently launched a starter kit for companies to see what are the things they need to put in place, the necessary defences of their IT systems.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Studying suggested cyber exercises",
+   "summary": "The kind of exercises the Member suggested is something that can be studied.",
+   "sentences": [
+    {
+     "sid": "s00039",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "The kind of exercises that the Member suggested is something we can study.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1388",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-11-09"
+  ],
+  "report_ids": [
+   "oral-answer-1388"
+  ],
+  "sentences_total": 40,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 5,
+  "selection_share": 0.225,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:30:30"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2326,
+   "completion_tokens": 299,
+   "estimated": false,
+   "cost_usd": 0.000409
+  }
+ }
+}

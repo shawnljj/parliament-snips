@@ -1,0 +1,152 @@
+{
+ "title": "Impact of Exposure to Haze",
+ "what_it_is": "Impact of Exposure to Haze",
+ "sections": [
+  {
+   "label": "Haze long-term health data",
+   "summary": "No local or international data exists on long-term health effects of short-term episodic haze exposure, and researching it would be highly challenging.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Leon Perera",
+     "attributed": true,
+     "text": "asked\tthe Minister for Health (a) whether he can provide data on the long-term impact of Singaporean children's exposure to haze in terms of the likelihood of developing respiratory illnesses, including chronic conditions such as asthma, later in life; and (b) what is the estimated healthcare cost of this impact.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "There is currently no data both locally or internationally, that looks into the long-term health effect of short-term, episodic exposure to the haze.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Researching this would be highly challenging as any results would be based on observational studies only which would not be able to show a definite cause-and-effect relationship.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Overseas long-term exposure studies",
+   "summary": "Overseas studies on continuous long-term air pollutant exposure over several years showed lung function abnormalities in children and later adulthood.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "However, overseas studies on long-term health impact have been based on long-term exposures, which are different from the pattern of exposure here.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "These studies showed that continuous, long-term exposure to air pollutants over several years may result in lung function abnormalities in children and subsequently, in adulthood.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Haze Subsidy Scheme",
+   "summary": "The Haze Subsidy Scheme assists children, the elderly and lower- to middle-income Singaporeans with outpatient haze-related treatments, with over $3.3 million in 2015 subsidies.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "First, the Haze Subsidy Scheme (HSS) assists children, the elderly and the lower- to middle-income Singaporeans with their outpatient haze-related medical treatments.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We provided subsidies of more than $3.3 million in 2015 which helped with over 77,000 haze-related attendances.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Air purifiers for schools",
+   "summary": "Two days ago, a MOE colleague outlined providing air purifiers to all primary and secondary schools to enhance schoolchildren's well-being.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Two days ago, my colleague from MOE outlined the move to provide air purifiers to all primary and secondary schools to further enhance the well-being of our schoolchildren.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "ASEAN haze agreement and monitoring",
+   "summary": "The ASEAN Agreement on Transboundary Haze Pollution is the key framework for collective action, and Singapore led the ASEAN Haze Monitoring System.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The ASEAN Agreement on Transboundary Haze Pollution is the key framework for ASEAN Member States to work collectively and take concerted action against haze.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00026",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Singapore has also led the development of the ASEAN Haze Monitoring System which would help to increase transparency and accountability of errant companies that are responsible for the forest fires.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1187",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-29"
+  ],
+  "report_ids": [
+   "oral-answer-1187"
+  ],
+  "sentences_total": 31,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.3226,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:24:46"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1955,
+   "completion_tokens": 303,
+   "estimated": false,
+   "cost_usd": 0.000359
+  }
+ }
+}

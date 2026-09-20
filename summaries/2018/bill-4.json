@@ -1,0 +1,150 @@
+{
+ "title": "Customs (Amendment) Bill",
+ "what_it_is": "Customs (Amendment) Bill",
+ "sections": [
+  {
+   "label": "Customs Amendment Bill 2018 aims",
+   "summary": "The Customs (Amendment) Bill 2018 aims to support fuel tax policy changes, improve Customs operational efficiency, and provide legal clarity on current policies.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Since then, we have carried out another review, and the Customs (Amendment) Bill 2018, or the Bill in short, aims to support policy changes on fuel taxes, improve Customs’ operational efficiency, and provide legal clarity on current policies.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Diesel taxes restructured in Budget 2017",
+   "summary": "Diesel taxes were restructured in Budget 2017 with a volume-based duty on automotive diesel, industrial diesel, and the diesel component in biodiesel.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Diesel taxes were restructured in Budget 2017, with the introduction of a volume-based duty on automotive diesel, industrial diesel, and the diesel component in biodiesel.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Recovery time limits for duties",
+   "summary": "The time limit for recovering short-levied and erroneously refunded duties, taxes or charges is extended from one to five years, with no limit for fraud and willful default.",
+   "sentences": [
+    {
+     "sid": "s00035",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "First, we will extend the time limit for the recovery of short-levied and erroneously refunded duties, taxes or other charges from one to five years, and remove the time limit for the recovery of duties due to fraud and willful default.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Refund claim submission time limits",
+   "summary": "The time limit for submitting claims for refund of overpaid or erroneously collected duties, taxes or charges is extended from one to five years.",
+   "sentences": [
+    {
+     "sid": "s00040",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Second, we will extend the time limit for submission of claims for refund of duties, taxes or other charges overpaid or erroneously collected from one to five years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Currently, Customs is unable to accept claims for refunds made more than one year after overpayment or erroneous collection.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Director-General of Customs delegation powers",
+   "summary": "The Director-General of Customs will be allowed to delegate powers granted by the Act without needing the Minister for Finance's approval.",
+   "sentences": [
+    {
+     "sid": "s00045",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Third, we will allow the Director-General of Customs (DG-Customs) to delegate powers granted to him by the Act, without needing to seek the approval of the Minister for Finance.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Duties and GST in Free Trade Zone",
+   "summary": "Clarity will be provided that customs or excise duties and import GST are collected on goods used or consumed in a Free Trade Zone.",
+   "sentences": [
+    {
+     "sid": "s00053",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "First, we will provide clarity that there will be collection of customs or excise duties and import GST on goods used or consumed in a Free Trade Zone (FTZ).",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Customs reimposing duties on goods",
+   "summary": "Customs may reimpose duties on goods that cease to be duty-exempt, based on value at importation or when exemptions cease.",
+   "sentences": [
+    {
+     "sid": "s00059",
+     "speaker": "The Second Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Second, Customs will be given the flexibility to reimpose duties on goods which cease to be duty-exempt, based on the value at the time of importation or at the time the exemptions cease.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-4",
+  "group": "bill",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-07-09"
+  ],
+  "report_ids": [
+   "bill-4"
+  ],
+  "sentences_total": 67,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 7,
+  "selection_share": 0.1194,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 7,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:00:55"
+  },
+  "usage": {
+   "calls": 4,
+   "prompt_tokens": 3319,
+   "completion_tokens": 431,
+   "estimated": false,
+   "cost_usd": 0.000585
+  }
+ }
+}

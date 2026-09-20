@@ -1,0 +1,120 @@
+{
+ "title": "Collection of Signatures at Public Place for Parliamentary Petitions",
+ "what_it_is": "Collection of Signatures at Public Place for Parliamentary Petitions",
+ "sections": [
+  {
+   "label": "Parliamentary petition signature collection venues",
+   "summary": "Asks whether Police will favourably consider applications to collect petition signatures in public places, and how citizens can legally sign outside Speakers' Corner.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Pritam Singh",
+     "attributed": true,
+     "text": "asked the Minister for Home Affairs (a) whether the Police will favourably consider an application to collect signatures for the purposes of a Parliamentary petition on any given matter in a public place; and (b) how and at which public venues other than Speakers' Corner can citizens legally make arrangements to sign a Parliamentary petition as the Parliamentary Standing Orders require a physical signature.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Such events can be held at the Speakers' Corner.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "And those who wish to hold such events outside the Speakers’ Corner will have to apply for a permit.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Parliamentary Secretary to the Minister for Home Affairs (Mr Amrin Amin) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "A Police permit is not required for public assemblies at the Speakers' Corner which meets the conditions set out in the Public Order (Unrestricted Area) Order 2016.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Pritam Singh (Aljunied)",
+     "attributed": true,
+     "text": "Can he please share details on how the Police exercises its discretion in requiring some calls for signatures for the purposes of a petition to go ahead without a permit, while requiring a permit in other instances, and I am referring to episodes outside of the Speakers' Corner.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "I think in those cases, it is fact-sensitive.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Permit requirements and Police investigations",
+   "summary": "States permit requirements are set out in the Act, and Police generally act on information received and investigate before deciding actions.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "On when the permit is or when the permit is not required is clearly set out in the Act provisions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Amrin Amin",
+     "attributed": true,
+     "text": "As I mentioned, the Police will generally act on information received and conduct investigations before deciding on what actions to take.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1526",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-02-05"
+  ],
+  "report_ids": [
+   "oral-answer-1526"
+  ],
+  "sentences_total": 13,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.6154,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 5,
+   "turns_total": 6,
+   "coverage": 0.8333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:34:22"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1224,
+   "completion_tokens": 138,
+   "estimated": false,
+   "cost_usd": 0.00021
+  }
+ }
+}

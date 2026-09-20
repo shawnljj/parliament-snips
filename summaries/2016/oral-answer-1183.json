@@ -1,0 +1,165 @@
+{
+ "title": "Demand and Supply of Heavy Vehicle Parking Lots",
+ "what_it_is": "Demand and Supply of Heavy Vehicle Parking Lots",
+ "sections": [
+  {
+   "label": "Heavy vehicle parking lots supply",
+   "summary": "There are more heavy vehicle lots than heavy vehicles, with 76% provided by the private sector and the rest by URA and HDB.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Assoc Prof Fatimah Lateef",
+     "attributed": true,
+     "text": "asked\tthe Minister for National Development (a) how does the current number of heavy vehicle parking lots measure up with the current number of such vehicles and the demand for these lots; and (b) whether there are plans to review the location and availability of such lots.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for National Development (for the Minister for National Development) (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "There are more lots than there are heavy vehicles.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for National Development (for the Minister for National Development) (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "Seventy six percent of the lots are provided by the private sector, with the rest by URA and HDB.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for National Development (for the Minister for National Development) (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We recognise that there is demand for more public heavy vehicle parks near housing estates as drivers prefer to park near where they live.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Vehicle Parking Certificate requirements",
+   "summary": "A Vehicle Parking Certificate must be produced before a heavy vehicle is registered, before road tax is renewed, and before ownership is transferred.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Assoc Prof Fatimah Lateef (Marine Parade)",
+     "attributed": true,
+     "text": "We understand the disamenities that can arise from heavy vehicles parking close to residential areas, but perhaps a review targeted to specific areas would be useful as well.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "And the Vehicle Parking Certificate (VPC), to that effect, needs to be produced before: one, a heavy vehicle is registered; two, before road tax is renewed; and three, before the ownership of the heavy vehicle is transferred.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Co-locating heavy vehicle parks",
+   "summary": "Since 2014, successful tenderers of selected Government Land Sale sites for industrial development must build and co-locate a multi-storey heavy vehicle park.",
+   "sentences": [
+    {
+     "sid": "s00036",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "The Member may like to know that since two years ago, since 2014, successful tenderers of selected Government Land Sale sites for industrial development have been required to build and to co-locate a multi-storey heavy vehicle park with their industrial development because it then supplements the spaces in that area.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bicycle racks at heavy vehicle parks",
+   "summary": "URA is looking at putting bicycle racks at public heavy vehicle parks at the fringes of residential estates so drivers can cycle home.",
+   "sentences": [
+    {
+     "sid": "s00043",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "For public heavy vehicle parks that are at the fringes of residential estates, URA is looking at putting bicycle racks to enable the drivers to cycle home, if they wish to.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Heavy vehicle ownership by companies",
+   "summary": "About 92% of all heavy vehicles are owned by companies, with the remainder owned by individuals, and associations will also be looked at.",
+   "sentences": [
+    {
+     "sid": "s00058",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "About 92% of all heavy vehicles are owned by companies with the remainder being owned by individuals, maybe they are sole proprietors or otherwise.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00060",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "Apart from working with businesses, we will also look at associations to see how they can come in and play a part.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Heavy vehicle and lot numbers",
+   "summary": "There are about 30,000-plus heavy vehicles and 40,000-plus lots.",
+   "sentences": [
+    {
+     "sid": "s00067",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "As I said, there are about 30,000-plus vehicles and 40,000-plus lots.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1183",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-29"
+  ],
+  "report_ids": [
+   "oral-answer-1183"
+  ],
+  "sentences_total": 69,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.1594,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 6,
+   "turns_total": 10,
+   "coverage": 0.6,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:24:35"
+  },
+  "usage": {
+   "calls": 4,
+   "prompt_tokens": 3431,
+   "completion_tokens": 354,
+   "estimated": false,
+   "cost_usd": 0.000579
+  }
+ }
+}

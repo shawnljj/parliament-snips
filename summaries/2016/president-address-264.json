@@ -1,0 +1,134 @@
+{
+ "title": "Prime Minister's Office (Public Service Division)",
+ "what_it_is": "Prime Minister's Office (Public Service Division)",
+ "sections": [
+  {
+   "label": "Public Service capabilities and partnerships",
+   "summary": "The Public Service Division will help agencies build capabilities, strengthen community partnerships, use technology, and develop and retain officers.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The Public Service Division will help public agencies and officers build capabilities and strengthen partnerships with Singaporeans.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Our Ministries and agencies will strengthen community partnerships, so that Singaporeans can work with the Public Service to innovate and deliver better solutions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Singaporeans can also offer their views and ideas to help the Public Service in developing, reviewing and implementing policies.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "We will also draw from more diverse groups of individuals to serve on our boards, councils and advisory panels.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "To enable a smoother experience when Singaporeans interact with different Government agencies, our Ministries and agencies will improve coordination and collaboration across agencies and integrate frontline operations across agencies where possible.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "To serve Singaporeans better as we move towards a Smart Nation, the Public Service will make better use of technology, such as data analytics and automated systems, to better understand citizens' needs, improve public services and raise productivity and efficiency.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The Public Service will also strengthen its core of engineering expertise and engineers so that it can better plan for, deliver and maintain public infrastructure in a systematic, integrated and sustainable way.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The Public Service will continue to recruit officers who are committed to the ethos of Public Service and seek to develop and retain them, by providing meaningful and fulfilling careers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "We will continue to develop officers to their full potential, based on performance and potential, rather than academic qualifications or divisional status.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Market-competitive public officer salaries",
+   "summary": "The Public Service will maintain market-competitive salaries to recruit and retain good quality public officers.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The Public Service will also maintain its policy of paying market-competitive salaries to recruit and retain public officers of good quality to serve Singaporeans well.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-264",
+  "group": "budget",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-15"
+  ],
+  "report_ids": [
+   "president-address-264"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.3846,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:31:25"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1545,
+   "completion_tokens": 135,
+   "estimated": false,
+   "cost_usd": 0.000254
+  }
+ }
+}

@@ -1,0 +1,144 @@
+{
+ "title": "Ministry of Foreign Affairs",
+ "what_it_is": "Ministry of Foreign Affairs",
+ "sections": [
+  {
+   "label": "MFA three key thrusts",
+   "summary": "MFA will focus on maintaining Singapore's relevance, creating overseas opportunities for Singaporeans, and supporting nationals abroad.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "In this challenging environment, MFA will focus our efforts on three key thrusts: (a) maintaining Singapore's relevance to the world and expanding its international space; (b) creating opportunities overseas for Singaporeans through economic, cultural and public diplomacy; and (c) supporting our nationals living and travelling abroad through community outreach and consular assistance.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore ASEAN Chair 2018",
+   "summary": "Singapore will assume the role of ASEAN Chair in 2018.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Singapore will assume the role of ASEAN Chair in 2018.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "China bilateral cooperation developments",
+   "summary": "New partnership, a Chongqing project and a free trade agreement upgrade will add impetus to cooperation with China.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "The establishment of the \"All-Round Cooperative Partnership Progressing with the Times\" with China, the third Government-to-Government project in Chongqing and the upgrade of the China-Singapore Free Trade Agreement will add new impetus to our bilateral cooperation with China.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SCP training and Sustainable Development Programme",
+   "summary": "Over 100,000 foreign officials trained since 1992; Singapore will implement the Sustainable Development Programme with UN agencies.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Since its inception in 1992, more than 100,000 foreign officials have been trained in a range of SCP courses with various partner countries and international organisations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00031",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Singapore will work towards implementing the new Sustainable Development Programme, which was announced during the 2015 UN Sustainable Development Summit, by partnering relevant UN agencies to provide technical assistance programmes in a wide range of fields, including public sector leadership, sustainable cities, urbanisation, as well as water and sanitation solutions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "IAI programme and TPP ratification",
+   "summary": "Singapore will enhance the IAI programme in four countries and work to expedite TPP ratification.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "To this end, Singapore will do its part by enhancing the Initiative for ASEAN Integration (IAI) programme in Cambodia, Laos, Myanmar and Vietnam to accelerate their economic integration into ASEAN, thereby opening up new opportunities for Singaporeans in these countries.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00035",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Singapore will work towards expediting the ratification and bringing into force the TPP, the largest regional free trade agreement.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Expanding relations in emerging markets",
+   "summary": "Singapore will continue to expand political relations and economic space in new emerging markets.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Singapore will continue to expand our political relations and economic space in new emerging markets in Africa, Central Asia, Latin America, Middle East, Russia and Turkey.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-248",
+  "group": "budget",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-15"
+  ],
+  "report_ids": [
+   "president-address-248"
+  ],
+  "sentences_total": 48,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 6,
+  "selection_share": 0.1667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:30:44"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2850,
+   "completion_tokens": 302,
+   "estimated": false,
+   "cost_usd": 0.000484
+  }
+ }
+}

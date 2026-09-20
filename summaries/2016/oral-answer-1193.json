@@ -1,0 +1,139 @@
+{
+ "title": "Inconsistent MRT Fare-pricing along Downtown Line",
+ "what_it_is": "Inconsistent MRT Fare-pricing along Downtown Line",
+ "sections": [
+  {
+   "label": "PTC fare route calculation",
+   "summary": "The Public Transport Council computes fares using the route with the shortest travel time.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "To compute the fare, the Public Transport Council (PTC) uses the route which enables the shortest time of travel.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fares for seniors and disabled",
+   "summary": "PTC uses the NSEW Lines routing so seniors and disabled pay $0.88 instead of $0.92, applying a lower-fare principle.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Fares from Bukit Panjang to Newton or Bugis for these two vulnerable groups are currently $0.88 based on the NSEW Lines routing.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Had PTC used the DTL2 routing, our seniors and disabled would have had to pay a higher fare of $0.92.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "PTC has, therefore, applied an additional fare charging principle: it will use the route for fare calculation only if all commuters will enjoy lower or the same fares.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Distance-based fare calculation",
+   "summary": "Most journeys use distance-based fares, but PTC uses old NSEW Line routing for some station pairs to avoid higher fares.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Actually, 99% of the journeys will be based on the distance approach to calculating fares.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "For example, for an adult commuter travelling between Farrer Park and Newton, their fares have come down from $1.09 to $0.93.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "DTL2 has saved them both time and cost.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "However, for a few station pairs, such as Bukit Panjang-Newton and Bukit Panjang-Bugis, PTC has used the old NSEW Line routing to compute the fares so as to ensure that no commuters need to pay higher fares as a result of DTL2.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fare framework inconsistency",
+   "summary": "PTC's approach creates some inconsistency and anomaly in the fare framework.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Understandably, this approach by PTC gives rise to some inconsistency, some anomaly, in the fare framework.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1193",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-29"
+  ],
+  "report_ids": [
+   "oral-answer-1193"
+  ],
+  "sentences_total": 27,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:24:51"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1582,
+   "completion_tokens": 221,
+   "estimated": false,
+   "cost_usd": 0.000283
+  }
+ }
+}

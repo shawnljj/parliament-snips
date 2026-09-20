@@ -1,0 +1,159 @@
+{
+ "title": "Cause of Electricity Disruption on 18 September 2018",
+ "what_it_is": "Cause of Electricity Disruption on 18 September 2018",
+ "sections": [
+  {
+   "label": "Power disruption questions to Minister",
+   "summary": "Questions ask the Minister for Trade and Industry about the root cause of the 18 September 2018 power disruption and follow-up measures.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Mr Liang Eng Hwa",
+     "attributed": true,
+     "text": "asked the Minister for Trade and Industry (a) what is the root cause of the major disruption to power supply in Singapore on 18 September 2018; and (b) what are the follow-up actions and measures that will be put in place to minimise the risks of recurrence.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Assoc Prof Daniel Goh Pei Siong",
+     "attributed": true,
+     "text": "asked the Minister for Trade and Industry what caused the power failure on 18 September 2018 and how many homes were affected by the blackout.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Senoko unit trip and affected consumers",
+   "summary": "A Senoko Energy unit tripped, causing protection devices to disconnect about 146,500 consumers, of whom 130,535 were households.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "However, a unit at Senoko Energy Pte Ltd tripped a few seconds later, due to failure of a different equipment component.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "This led to a further shortfall in supply from the operating plants to meet demand, which caused the protection devices in the power system to kick in as designed and automatically disconnected electricity to about 146,500 consumers to rebalance the system.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "Out of these 146,500 consumers who were affected, 130,535 were households.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "EMA energy storage consultation and policy",
+   "summary": "EMA completed consultation on energy storage regulation and will publish a policy paper by the fourth quarter of 2018.",
+   "sentences": [
+    {
+     "sid": "s00045",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "EMA recently completed a round of industry consultation on the regulatory framework for energy storage systems and will publish a policy paper to provide clarity on the regulatory framework by the fourth quarter of 2018.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00046",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "We will ensure that we incorporate all the lessons from this incident to ensure continued high standards of reliability for our power systems.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Possible penalties for SembCorb or Senoko",
+   "summary": "The Minister will await investigations but may impose penalties on SembCorb or Senoko if found at fault.",
+   "sentences": [
+    {
+     "sid": "s00049",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "So, I would not jump the gun to draw any conclusion until the investigations are completed.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00050",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "But that said, we will not hesitate to take any regulatory actions against SembCorb or Senoko if they are found to be at fault, including imposing a financial penalty under section 14 of the Electricity Act, which is a financial penalty of up to 10% of the licensee's annual turnover or $1 million, whichever is higher; and also requiring the gencos to tighten their standard operating procedures (SOPs), where necessary.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Spare capacity and equipment fault cause",
+   "summary": "The Minister states there is enough spare generator capacity and the trip was due to equipment fault, not excessive demand.",
+   "sentences": [
+    {
+     "sid": "s00065",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "Suffice to say that we have enough spare capacity in the number of generators that we have to meet consumer demand.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00066",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "Certainly, the trip on that night was not due to excessive consumer demand, but due to equipment fault.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-81",
+  "group": "oral",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-10-01"
+  ],
+  "report_ids": [
+   "oral-answer-81"
+  ],
+  "sentences_total": 68,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.1618,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 5,
+   "turns_total": 9,
+   "coverage": 0.5556,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:52:15"
+  },
+  "usage": {
+   "calls": 5,
+   "prompt_tokens": 4148,
+   "completion_tokens": 303,
+   "estimated": false,
+   "cost_usd": 0.000666
+  }
+ }
+}

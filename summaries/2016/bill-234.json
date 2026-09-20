@@ -1,0 +1,139 @@
+{
+ "title": "Fire Safety (Amendment) Bill",
+ "what_it_is": "Fire Safety (Amendment) Bill",
+ "sections": [
+  {
+   "label": "Pipeline owner definition clarified",
+   "summary": "The Bill amends the definition of \"pipeline owner\" so SCDF licenses the party owning or leasing and managing the piperack or pipetrack as single licensee for all pipelines in a corridor.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "The Senior Minister of State for Home Affairs (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "To ensure that these pipelines are properly managed, SCDF's intent is to clarify the definition of \"pipeline owner\" under the Act, so that in the situation where there are multiple pipelines in a pipeline corridor, SCDF will only license one appropriate party for all the pipelines within that corridor.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Senior Minister of State for Home Affairs (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "The Bill amends part (a) of the definition of \"pipeline owner\" in section 2(1) of the Act so that the party who owns or leases, and has management and control of the piperack or pipetrack will now be licensed as the \"pipeline owner\".",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "The Senior Minister of State for Home Affairs (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "This will allow SCDF to license the owner of the pipeline corridor as the single licensee Page: 31 responsible for all the pipelines in the corridor.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Definition part (b) applies",
+   "summary": "The Bill clarifies that part (b) of the \"pipeline owner\" definition applies where the party who owns or leases and uses the pipelines is licensed.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "The Senior Minister of State for Home Affairs (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "The Bill will, therefore, clarify that part (b) of the definition of \"pipeline owner\" applies for such cases and the party who owns or leases and uses the pipelines will be licensed as the \"pipeline owner\".",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SCDF single licensee policy intent",
+   "summary": "SCDF's policy intent has always been that where multiple pipelines run together in a pipeline corridor, one appropriate party should be licensed as the \"pipeline owner\".",
+   "sentences": [
+    {
+     "sid": "s00044",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "SCDF's policy intent has always been that where there are multiple pipelines that run together in a pipeline corridor, one appropriate party should be licensed as the \"pipeline owner\".",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Single party accountable per segment",
+   "summary": "Different parties own and manage different parts of the pipeline network, so the appropriate licensee differs, but where pipelines run together a single party should be accountable for that segment.",
+   "sentences": [
+    {
+     "sid": "s00048",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "As such, there are unlikely to be significant commercial implications arising from the proposed legislative changes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00050",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "The answer is: different parts of the pipeline network are owned and managed by different parties and, accordingly, the appropriate licensee for each part will necessarily be different.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00051",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "We want to ensure that where pipelines run together, there is a single party that is accountable for that segment of the pipelines, rather than having different licensees being responsible for different pipelines that, in effect, run parallel to each other and lying side by side.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00052",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "However, where some pipelines branch off into an adjacent corridor owned and managed by another party, then that party is the most appropriate person to be licensed for that segment of pipelines running along his corridor.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-234",
+  "group": "bill",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-11-10"
+  ],
+  "report_ids": [
+   "bill-234"
+  ],
+  "sentences_total": 58,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.1552,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 3,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T19:29:43"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2948,
+   "completion_tokens": 279,
+   "estimated": false,
+   "cost_usd": 0.000491
+  }
+ }
+}

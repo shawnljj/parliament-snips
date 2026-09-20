@@ -1,0 +1,147 @@
+{
+ "title": "Ministry of Education",
+ "what_it_is": "Ministry of Education",
+ "sections": [
+  {
+   "label": "Education levelling-up support programmes",
+   "summary": "Education is a leveller; school-based levelling-up programmes, financial support, Student Care Centres and special educational needs support will be strengthened.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Acting Minister for Education (Schools) (Mr Ng Chee Meng)",
+     "attributed": true,
+     "text": "Beyond imbuing values and imparting knowledge and skills, education is a critical leveller of societal gaps, so that no child gets left behind.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Acting Minister for Education (Schools) (Mr Ng Chee Meng)",
+     "attributed": true,
+     "text": "We will continue to strengthen our school-based levelling-up programmes to support academically weaker students and provide financial support for students from financially challenged families to cope with the costs of education.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Acting Minister for Education (Schools) (Mr Ng Chee Meng)",
+     "attributed": true,
+     "text": "We will also expand Student Care Centres to provide an after-school environment conducive to learning for more students from a less advantaged background.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "The Acting Minister for Education (Schools) (Mr Ng Chee Meng)",
+     "attributed": true,
+     "text": "We will step up efforts to support children with special educational needs through school-based programmes, specialised services, special education schools and programmes in collaboration with employers to smoothen transition from school to work.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Industry attachments and university places",
+   "summary": "Industry attachments and the SkillsFuture Earn and Learn Programme will be emphasised, and publicly-funded university cohort participation will rise from 32% to 40% by 2020.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "The Acting Minister for Education (Schools) (Mr Ng Chee Meng)",
+     "attributed": true,
+     "text": "Accordingly, we will place greater emphasis on industry attachments, as well as other learning formats, such as the SkillsFuture Earn and Learn Programme – a modern apprenticeship programme.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00030",
+     "speaker": "The Acting Minister for Education (Schools) (Mr Ng Chee Meng)",
+     "attributed": true,
+     "text": "We will increase cohort participation rates for publicly-funded University places from 32% today to 40% by 2020.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00032",
+     "speaker": "The Acting Minister for Education (Schools) (Mr Ng Chee Meng)",
+     "attributed": true,
+     "text": "NUS has the NUS Overseas Colleges to nurture entrepreneurs; Yale-NUS' Liberal Arts Programmes cater to students with broad thirst for knowledge; NTU and SUTD are developing new generations of engineers through their Renaissance Engineering and innovation and design-centric programmes respectively; SMU offers many double major programmes and is strengthening its emphasis on inter-disciplinary learning; and SIT and UniSIM will launch more applied degree programmes, with a strong nexus with industry, to develop talent with specialised skills and an ability to innovate.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Lifelong learning and SkillsFuture Credit",
+   "summary": "Lifelong learning will be overseen by MOE, with more part-time programmes, modular courses, ECG, learning portfolios and SkillsFuture Credit.",
+   "sentences": [
+    {
+     "sid": "s00039",
+     "speaker": "The Acting Minister for Education (Schools) (Mr Ng Chee Meng)",
+     "attributed": true,
+     "text": "Whatever highest qualification a student leaves the education system with, we want him or her to continue the journey of education through his or her lifetime – learn the latest technology and thinking, practise his or her trade to perfection, plug into and acquire auxiliary know-how.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00040",
+     "speaker": "The Acting Minister for Education (Schools) (Mr Ng Chee Meng)",
+     "attributed": true,
+     "text": "We will increase the number of part-time programmes and skills-based modular courses at the post-Secondary education institutions to facilitate this lifelong learning process.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "The Acting Minister for Education (Schools) (Mr Ng Chee Meng)",
+     "attributed": true,
+     "text": "The enhanced ECG, individual learning portfolios and enablers, such as the SkillsFuture Credit, will better empower individuals to take charge of their own skills improvement journey.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00042",
+     "speaker": "The Acting Minister for Education (Schools) (Mr Ng Chee Meng)",
+     "attributed": true,
+     "text": "To make the learning experience seamless, lifelong learning will be overseen by MOE.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-246",
+  "group": "budget",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-15"
+  ],
+  "report_ids": [
+   "president-address-246"
+  ],
+  "sentences_total": 46,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 3,
+  "selection_share": 0.2391,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:30:50"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2779,
+   "completion_tokens": 217,
+   "estimated": false,
+   "cost_usd": 0.00045
+  }
+ }
+}

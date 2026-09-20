@@ -1,0 +1,159 @@
+{
+ "title": "Ministry of Trade and Industry",
+ "what_it_is": "Ministry of Trade and Industry",
+ "sections": [
+  {
+   "label": "Trade agreements and WTO support",
+   "summary": "Singapore supports the WTO and pursues regional and bilateral trade agreements while deepening ASEAN linkages.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We have to navigate this complex economic environment deftly, by continuing to muster support from like-minded countries for an open and connected world, while seizing opportunities to deepen our linkages with growing markets in the Association of Southeast Asian Nations (ASEAN) and beyond.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "That is why we support the World Trade Organisation and why we continue to pursue and develop regional agreements, such as the Comprehensive and Progressive Trans-Pacific Partnership and the Regional Comprehensive Economic Partnership, as well as bilateral Free Trade and Investment agreements.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Launchpad and Infrastructure Office",
+   "summary": "An Infrastructure Office was set up to bring partners together to identify opportunities and facilitate investments and financing.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We will strengthen our value proposition as a launchpad to help enterprises coming through Singapore connect with the region and the world.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00025",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We have established an Infrastructure Office to bring together local and international partners across the value chain to identify opportunities and facilitate investments and financing.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Enterprise Singapore working with enterprises",
+   "summary": "Enterprise Singapore will work with all enterprises who want to grow and transform.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "Enterprise Singapore (ESG) will work with all enterprises who want to grow and transform.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Industry Transformation Maps and transformation",
+   "summary": "MTI will work with enterprises, Trade Associations and Chambers, unions and workers on transformation and growth.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We want enterprises in Singapore, local and foreign, big and small, to be best-in-class, and to have deep capabilities that the world wants.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00039",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "That is why we are pressing on with the Industry Transformation Maps.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "MTI will work with our enterprises, Trade Associations and Chambers, unions and workers to champion transformation and growth across our economy and to create good jobs and opportunities for our people.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Digital skills, talent and innovation hubs",
+   "summary": "Workers will be equipped to be digitally confident, Singapore stays open to talent, and the Global Innovation Alliance strengthens innovation hub linkages.",
+   "sentences": [
+    {
+     "sid": "s00046",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "As we deploy technology and build new capabilities, we will also equip our workers to be digitally confident, so that they have the skills and the capabilities to take advantage of opportunities in the future economy.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00047",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We will remain open to talent from around the world that complements our local workforce and raises our competitiveness, especially in new growth areas.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00048",
+     "speaker": "The Minister for Trade and Industry (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "Through the Global Innovation Alliance, we will strengthen our linkages to innovation hubs across the world.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-15",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-15"
+  ],
+  "sentences_total": 53,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.2075,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:07:36"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2542,
+   "completion_tokens": 259,
+   "estimated": false,
+   "cost_usd": 0.000428
+  }
+ }
+}

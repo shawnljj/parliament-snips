@@ -1,0 +1,132 @@
+{
+ "title": "Ministry of Defence",
+ "what_it_is": "Ministry of Defence",
+ "sections": [
+  {
+   "label": "Regional military modernisation and threats",
+   "summary": "Many regional countries are modernising militaries amid nationalism, maritime disputes, terrorism and cyber attacks, with attacks in Sydney, Paris and Ankara highlighting Singapore's security challenges.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "Many countries in our region are modernising their militaries against a backdrop of growing nationalism, difficult maritime and territorial disputes and persistent threats from terrorists and cyber attacks.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "In the past year, attacks in Sydney, Paris and Ankara underscore the challenges of keeping Singapore safe and secure.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SAF new fighting concepts",
+   "summary": "The SAF will develop new fighting concepts and pursue technological advancements such as unmanned systems and robotics to become more potent and flexible.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "To guard against the wider range of threats, the SAF will develop new fighting concepts and pursue technological advancements in areas, such as unmanned systems and robotics, to make the SAF more potent and flexible.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NS committee recommendations implemented",
+   "summary": "Over the past year, half of the 30 recommendations made by the Committee to Strengthen NS were implemented.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "Over the past year, half of the 30 recommendations made by the Committee to Strengthen NS (CSNS) were implemented.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore maritime security and ADMM-Plus",
+   "summary": "Singapore, not a South China Sea claimant, wants claims settled peacefully under international law, and will co-host the ADMM-Plus exercise and use other platforms to foster regional security.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "Singapore is not a claimant in the South China Sea territorial disputes, but our interest is to ensure all claims are settled peacefully and in accordance with international law.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "In May this year, Singapore will co-host the ADMM-Plus Maritime Security and Counter Terrorism Exercise involving all 10 ASEAN countries and eight key partners.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "The exercise will strengthen the region's capability in combating terrorism and practise the Code for Unplanned Encounters at Sea to reduce the risks of maritime incidents.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00042",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "We will also leverage on operational platforms, such as the Information Fusion Centre and the Changi Regional Humanitarian Assistance and Disaster Relief (HADR) Coordination Centre, as well as use our Chairmanship of the ADMM in 2018, to foster a rules-based security architecture that underpins the peace and stability in our region.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-245",
+  "group": "budget",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-01-15"
+  ],
+  "report_ids": [
+   "president-address-245"
+  ],
+  "sentences_total": 43,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.186,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:31:07"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2390,
+   "completion_tokens": 258,
+   "estimated": false,
+   "cost_usd": 0.000407
+  }
+ }
+}

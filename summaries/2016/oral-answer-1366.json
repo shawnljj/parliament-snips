@@ -1,0 +1,119 @@
+{
+ "title": "Non-payment of Taxi Fare",
+ "what_it_is": "Non-payment of Taxi Fare",
+ "sections": [
+  {
+   "label": "Taxi fare evasion cases",
+   "summary": "About 150 taxi fare evasion cases occur monthly out of about 700,000 trips, with 65% involving unidentified evaders that are challenging to resolve.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "The number of taxi fare evasion cases is about 150 every month, out of about 700,000 taxi trips.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "Sixty-five percent of fare evasion cases involved unidentified fare evaders, which are very challenging to resolve.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fare evasion penalties and recovery",
+   "summary": "LTA recovered fares in about half of referred cases, and from May higher penalties apply, including fines, jail and mandatory restitution to taxi drivers.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "The Land Transport Authority (LTA) was able to recover fares for about half of all cases referred to it for investigation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "To further deter fare evasion, we introduced higher penalties for fare evaders in May this year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "If found guilty, fare evaders are liable to a fine of up to $1,000 for first-timers, while subsequent offenders may be fined up to $2,000, or jailed up to six months, or both.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "It is also mandatory for offenders to make restitution payment to taxi drivers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Court cases success rate",
+   "summary": "Where cases go all the way to the Court, the success rate is about 85%.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "Where it requires us to go all the way to the Court, the success rate is about 85%.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1366",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-11-07"
+  ],
+  "report_ids": [
+   "oral-answer-1366"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2692,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T21:52:17"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1544,
+   "completion_tokens": 189,
+   "estimated": false,
+   "cost_usd": 0.000269
+  }
+ }
+}

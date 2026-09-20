@@ -1,0 +1,132 @@
+{
+ "title": "Ministry of Home Affairs",
+ "what_it_is": "Ministry of Home Affairs",
+ "sections": [
+  {
+   "label": "Terrorism threat to Singapore",
+   "summary": "The terrorism threat to Singapore remains at a high level, and counter-terrorism capabilities will continue to be strengthened.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "The terrorism threat to Singapore continues to be at a high level.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We will continue to strengthen our counter-terrorism capabilities.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "New security legislation introduced",
+   "summary": "New legislation such as the Infrastructure Protection Act and the Public Order and Security (Special Powers) Act was introduced to help law enforcement agencies.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "To enable our law enforcement agencies to protect Singaporeans and deal with security threats more effectively, we have introduced new legislation, such as the Infrastructure Protection Act and the Public Order and Security (Special Powers) Act.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Save-A-Life AED and CPR initiative",
+   "summary": "SCDF will install AEDs in all HDB estates by 2019, train more people in CPR and AED use, and expand the CFR scheme.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "As part of the Save-A-Life initiative, SCDF will install Automated External Defibrillators (AEDs) in all Housing and Development Board estates by 2019, and pilot them in private condominiums.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "SCDF will collaborate with the Ministry of Health to train more people in cardiopulmonary resuscitation (CPR) and the use of AEDs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00044",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "SCDF will expand the CFR scheme to include response to other incidents, such as rubbish fires.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Ex-offender employability and transnational crime",
+   "summary": "SCORE will launch initiatives to enhance ex-offenders' employability, and Singapore will work with international partners on transnational crimes, drug trafficking and terrorism.",
+   "sentences": [
+    {
+     "sid": "s00047",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "The Singapore Corporation of Rehabilitative Enterprises (SCORE) will launch several initiatives to enhance the employability of ex-offenders, such as training to equip inmates with vocational skills in prevailing demand by potential employers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00048",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We will work with our international network of partners, including multilateral organisations, such as the International Criminal Police Organization, the Association of Southeast Asian Nations and the United Nations, to deal with transnational crimes, drug trafficking and terrorism.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-4",
+  "group": "budget",
+  "year": "2018",
+  "sitting_dates": [
+   "2018-05-07"
+  ],
+  "report_ids": [
+   "president-address-4"
+  ],
+  "sentences_total": 49,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.1633,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:07:46"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2325,
+   "completion_tokens": 256,
+   "estimated": false,
+   "cost_usd": 0.000397
+  }
+ }
+}

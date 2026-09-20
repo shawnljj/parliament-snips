@@ -1,0 +1,158 @@
+{
+ "title": "Cybersecurity Measures to Ensure Banking System Integrity",
+ "what_it_is": "Cybersecurity Measures to Ensure Banking System Integrity",
+ "sections": [
+  {
+   "label": "MAS cybersecurity expectations for FIs",
+   "summary": "MAS cites the Bangladesh Bank incident and expects financial institutions to build capabilities protecting critical systems and sensitive information.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The recent incident at the Bangladesh Bank is a timely reminder that cyberattacks can be very costly.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong) (for the Prime Minister)",
+     "attributed": true,
+     "text": "MAS and financial institutions (FIs) in Singapore take cybersecurity very seriously and we have been paying close attention to global developments in cyber threats.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong) (for the Prime Minister)",
+     "attributed": true,
+     "text": "MAS expects our FIs institutions to build strong and effective capabilities to safeguard the integrity and availability of their critical systems and services and to protect customer and other sensitive information from unauthorised access.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MAS cyber resilience supervision",
+   "summary": "MAS assesses financial institutions' cyber resilience through onsite and offsite supervision.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong) (for the Prime Minister)",
+     "attributed": true,
+     "text": "MAS assesses the FIs' cyber resilience through both onsite and offsite supervision.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "ABS cyber security committee",
+   "summary": "The Association of Banks in Singapore Standing Committee on Cyber Security was set up in 2013 as an industry collaboration platform.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The Association of Banks in Singapore Standing Committee on Cyber Security (SCCS) was set up in 2013 and has since served as a useful platform for industry collaboration.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MAS, FIs, CSA collaboration",
+   "summary": "MAS and major financial institutions work with the Cyber Security Agency on national cybersecurity and critical information infrastructure protection initiatives.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong) (for the Prime Minister)",
+     "attributed": true,
+     "text": "At the national level, MAS and major FIs work closely with the Cyber Security Agency (CSA) to support our national initiatives on cybersecurity and critical information infrastructure protection.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cybersecurity manpower and education needs",
+   "summary": "Cybersecurity will become an emerging threat across companies, industries and the public sector, with CSA examining manpower needs and educational institutions stepping up provisions.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "The reality is that cybersecurity will become an emerging threat which all companies and all industries including in the public sector, will have \tPage: 36 to deal with.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "There will be more requirements for skilled people in this area and so our CSA is, indeed, looking at our manpower needs for the future, and our educational institutions, including our tertiary institutions, are stepping up provisions in this area as well.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "FAST audits and resilience assurance",
+   "summary": "Noting FAST resembles SWIFT, which hackers infiltrated to steal $81 million from Bangladesh Bank, the speaker assures audits and tests are done for a resilient system.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "I understand that FAST is very similar to SWIFT, which was the software or network which was infiltrated by the hackers to steal the $81 million from the Bank of Bangladesh.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "So, I would like to assure the Member that these audits and tests are being done and we are always making sure that we have a resilient system that will be able to withstand cyberattacks.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1310",
+  "group": "oral",
+  "year": "2016",
+  "sitting_dates": [
+   "2016-07-11"
+  ],
+  "report_ids": [
+   "oral-answer-1310"
+  ],
+  "sentences_total": 24,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.4167,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 6,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:00:44"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1612,
+   "completion_tokens": 320,
+   "estimated": false,
+   "cost_usd": 0.000315
+  }
+ }
+}
