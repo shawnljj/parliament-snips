@@ -1,0 +1,145 @@
+{
+ "title": "Rental of 31 Ridout Road",
+ "what_it_is": "Rental of 31 Ridout Road",
+ "sections": [
+  {
+   "label": "Ridout Road asking rent",
+   "summary": "A property agent showed black and white properties nearby and indicated an asking rent of $19,000 for 31 Ridout Road.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "The property agent showed her several black and white properties in the vicinity and indicated an asking rent of $19,000 for 31 Ridout Road.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Offer with repair conditions",
+   "summary": "They offered $19,000 but wanted essential repairs and toilet upgrading done by the landlord's managing agent before taking over.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "So, we went into this with our eyes open.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00021",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "We said okay, we will offer $19,000, but we wanted essential repairs of the house to be conducted and upgrading of the toilets, and for these to be done by the landlord, the managing agent, before we took over the property.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tenant-funded improvement works",
+   "summary": "They agreed to bear toilet upgrading costs and have spent over $200,000 on improvements that cannot be recovered when the tenancy expires.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Subsequently, we agreed to bear the cost of improving, upgrading the toilets at our expense.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "In fact, we have since spent more than $200,000 on a variety of improvement works to the property and we also know that all this money that has been spent cannot be recovered when the tenancy expires.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tenancy signed, prior bids",
+   "summary": "Colliers sent a standard 3+2+2 year tenancy agreement signed by his wife, and they were unaware of the guide rent and two prior bids.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Anyway, Colliers subsequently sent a standard tenancy agreement for 3+2+2 years and this was signed, I think, in October 2019 by my wife.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00030",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "I should say, right up to this point, we were not aware of the guide rent, we were not even aware that there had been two prior bids in July and August 2018, and the two prior bids were at $12,000 and at $5,000.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Renewal and government counterparty",
+   "summary": "In 2022 his wife requested and was granted a 3+2 year renewal, and they knew the Government of Singapore was the ultimate counterparty.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "In 2022, my wife requested and was granted a renewal for a second term, this time of 3+2 years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00036",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "My wife and I were acutely aware that although we were dealing with Colliers' property agent, the ultimate counterparty to our tenancy agreement was the Government of Singapore.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "ministerial-statement-2199",
+  "group": "statement",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-07-03"
+  ],
+  "report_ids": [
+   "ministerial-statement-2199"
+  ],
+  "sentences_total": 40,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 5,
+  "selection_share": 0.225,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:58:53"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1943,
+   "completion_tokens": 300,
+   "estimated": false,
+   "cost_usd": 0.000356
+  }
+ }
+}

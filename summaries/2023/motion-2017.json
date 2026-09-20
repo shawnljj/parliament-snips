@@ -1,0 +1,107 @@
+{
+ "title": "Simultaneous Debate on Motions",
+ "what_it_is": "Simultaneous Debate on Motions",
+ "sections": [
+  {
+   "label": "Concurrent debate on housing Motions",
+   "summary": "The House is moving that two Motions on public housing, by Minister Desmond Lee and Mr Leong Mun Wai, be debated concurrently but voted on separately.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The Motion standing in the name of the Minister for National Development – Affordable and Accessible Housing: that this House affirms the importance of keeping public housing affordable and accessible while protecting the interests of current and future generations of Singaporeans, and endorses the commitment of the Government to these twin goals.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The Motion standing in the name of Mr Leong Mun Wai – Public Housing Policies: that this House calls upon the Government to review its public housing policies in order to deliver affordable and accessible HDB flats to all Singaporeans, strengthen the owner-occupation intent of public housing, protect retirement adequacy and keep public housing inclusive for every Singaporean of each generation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Given the subject matter of the two Motions, I am in today's Business Motion, moving that the two Motions be considered together and debated concurrently.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "A concurrent or simultaneous debate will allow Members to address both Motions in a single speech and enable the issues raised in the two Motions to be considered holistically.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Minister Desmond Lee and Mr Leong Mun Wai, as movers of the respective Motions, will each, as is usual, have the right to speak to move their Motions and to reply at the end of the debate to close their Motions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "To be clear and for avoidance of doubt, it is only the debate that is concurrent.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The Motions remain as two separate Motions and at the end of the debate, the vote on the two Motions will be taken separately.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-2017",
+  "group": "motion",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-02-06"
+  ],
+  "report_ids": [
+   "motion-2017"
+  ],
+  "sentences_total": 12,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.5833,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:02:12"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1186,
+   "completion_tokens": 101,
+   "estimated": false,
+   "cost_usd": 0.000194
+  }
+ }
+}

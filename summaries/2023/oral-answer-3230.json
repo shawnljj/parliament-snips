@@ -1,0 +1,151 @@
+{
+ "title": "Myocarditis Cases amongst Applicants for Vaccine Injury Financial Assistance Programme",
+ "what_it_is": "Myocarditis Cases amongst Applicants for Vaccine Injury Financial Assistance Programme",
+ "sections": [
+  {
+   "label": "Myocarditis cases and VIFAP questions",
+   "summary": "Questions ask about myocarditis symptom timing after vaccination, VIFAP referrals, outcomes, and April 2023 updates on cardiac condition applications and retrospective reviews.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Dr Tan Wu Meng",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) among the myocarditis cases which have been diagnosed in Singapore patients after receiving COVID-19 vaccinations, how many of these cases have reported the initial symptoms within (i) one day, (ii) two days and (iii) one week of the vaccination; (b) how many of these cases have been referred to the Vaccine Injury Financial Assistance Programme (VIFAP); and (c) what are the VIFAP outcomes for such cases.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "Dr Tan Wu Meng",
+     "attributed": true,
+     "text": "asked the Minister for Health whether there is updated information as of April 2023 on (i) the number of Vaccine Injury Financial Assistance Programme (VIFAP) applications that have been received for persons presenting with cardiac conditions after COVID-19 vaccination and (ii) the number of such VIFAP cases that have undergone further retrospective review in light of subsequent updated information on COVID-19 vaccination side effects including myocarditis.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Infection wave peak",
+   "summary": "The wave peaked about two weeks ago at an estimated 4,000 infection cases per day.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "By all indications, the wave peaked about two weeks ago, at an estimated 4,000 infection cases per day.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Declining senior vaccination uptake",
+   "summary": "The proportion of seniors aged 60 and above updated with vaccinations has been declining despite vaccination benefits.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Unfortunately, despite the benefits of vaccinations, the proportion amongst seniors aged 60 and above who are updated with their vaccinations have been declining.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Severe adverse reaction incidence",
+   "summary": "Severe adverse reactions occur at about seven in 100,000 doses, and one in 100,000 doses with bivalent mRNA formulations.",
+   "sentences": [
+    {
+     "sid": "s00049",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "The incidence of severe adverse reactions is very low in Singapore, at about seven in 100,000 doses, and it is even lower at one in 100,000 doses with the latest bivalent mRNA formulations.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Myocarditis and pericarditis reports",
+   "summary": "As of 27 April 2023, over 17 million doses were administered and 160 myocarditis and pericarditis reports were linked to vaccines.",
+   "sentences": [
+    {
+     "sid": "s00060",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "As of 27 April 2023, out of more than 17 million COVID-19 vaccine doses administered in Singapore, there were 160 reports of myocarditis and pericarditis linked to the vaccines.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "VIFAP assessment and case reviews",
+   "summary": "VIFAP applications are assessed by an independent group of doctors, and old cases will be relooked at if new causal findings emerge.",
+   "sentences": [
+    {
+     "sid": "s00072",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "VIFAP applications have to be based on scientific and medical assessment.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00073",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "That is why we have an independent group of doctors who assess the VIFAP applications.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00074",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "And of course, if there are new understandings and/or new findings establishing the causal links of adverse reactions versus vaccines, old cases will be relooked at.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3230",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-05-09"
+  ],
+  "report_ids": [
+   "oral-answer-3230"
+  ],
+  "sentences_total": 74,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 6,
+  "selection_share": 0.1216,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 4,
+   "turns_total": 5,
+   "coverage": 0.8,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:04:15"
+  },
+  "usage": {
+   "calls": 5,
+   "prompt_tokens": 3950,
+   "completion_tokens": 354,
+   "estimated": false,
+   "cost_usd": 0.000652
+  }
+ }
+}

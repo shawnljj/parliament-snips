@@ -1,0 +1,140 @@
+{
+ "title": "Ministry of Home Affairs",
+ "what_it_is": "Ministry of Home Affairs",
+ "sections": [
+  {
+   "label": "Gallup Law and Order ranking",
+   "summary": "Singapore was ranked first in Gallup's Global Law and Order Report in 2022, the seventh time since 2015.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "In 2022, we were ranked first in Gallup’s Global Law and Order Report, for the seventh time since 2015.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Updating laws against emerging threats",
+   "summary": "Singapore will update laws on gambling, online criminal activity, scams, money mules, Singpass abuse and racial harmony.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We will update our laws to deal with emerging threats.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We have consolidated gambling-related legislation under the Gambling Control Act, and formed the new Gambling Regulatory Authority, to enable a more holistic and coherent approach to gambling regulation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "In the near term, we will introduce new legislation to better protect Singaporeans from online criminal activity, including scams and malicious cyber activity.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We will strengthen the ability of our law enforcement agencies to deal with money mules who assist in the laundering of scam proceeds and to curb abuse of Singpass credentials to perpetrate scams.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We will also introduce the Maintenance of Racial Harmony Act, to encourage moderation and tolerance among different racial groups, and to signal the overriding importance of racial harmony to Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Drug outreach, ex-offender reintegration, international cooperation",
+   "summary": "CNB broadened anti-drug outreach, YRSG supports ex-offender reintegration, and closer international work is needed against transnational crimes.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "The Central Narcotics Bureau, together with the National Council Against Drug Abuse, has broadened its community outreach through collaborations with various organisations and enhanced training for volunteers and advocates under the A3 (Anti-Drug Abuse Advocacy) Network.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "SPS and Yellow Ribbon Singapore (YRSG) will better support the rehabilitation and reintegration of ex-offenders by expanding collaborations with community partners to help ex-offenders through training and employment assistance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00044",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "To enhance ex-offenders’ career prospects, YRSG has shifted from a training and job placement model to one that emphasises skills for long-term career development, through career coaching, partnerships with stakeholders, and enhanced access to career resources.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00045",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "Given the rising volume and complexity of transnational crimes and security threats, including scams and terrorism, it is imperative we work more closely with the international community.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2142",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-10"
+  ],
+  "report_ids": [
+   "president-address-2142"
+  ],
+  "sentences_total": 47,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.2128,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:16:09"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2475,
+   "completion_tokens": 207,
+   "estimated": false,
+   "cost_usd": 0.000404
+  }
+ }
+}

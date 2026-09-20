@@ -1,0 +1,113 @@
+{
+ "title": "MediFund Financial Support for Different Members of a Household",
+ "what_it_is": "MediFund Financial Support for Different Members of a Household",
+ "sections": [
+  {
+   "label": "MediFund eligibility for family members",
+   "summary": "There are no stipulations that a patient cannot qualify for MediFund if any family member is already receiving MediFund support.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Assoc Prof Jamus Jerome Lim",
+     "attributed": true,
+     "text": "asked the Minister for Health whether there are any stipulations that a household already receiving financial support from MediFund for one family member is no longer eligible for such support for other family members.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "There are no stipulations that a patient cannot qualify for MediFund if any family member is already receiving MediFund support.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MediFund committee discretion and guidelines",
+   "summary": "MOH provides operational guidelines to MediFund committees and institutions, but committees have full discretion and assess families' means holistically on a case-by-case basis.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "In respect of that, the Ministry of Health (MOH) provides operational guidelines to the MediFund committees and the MediFund-approved institutions to facilitate their management of MediFund, so that there is some sort of consistency in the decision-making.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "But actually, the MediFund committees have full discretion over the assessment of the applications.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "In such situations, what they will do is assess the families' means and ability to pay for the patient's medical bills holistically.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "They will take into account the different income as well as other Government grants and support provided to the family.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "So, it is a holistic approach and I believe that is something that will be done on a case-by-case basis.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3163",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-21"
+  ],
+  "report_ids": [
+   "oral-answer-3163"
+  ],
+  "sentences_total": 10,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.7,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:19:48"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1019,
+   "completion_tokens": 142,
+   "estimated": false,
+   "cost_usd": 0.000182
+  }
+ }
+}

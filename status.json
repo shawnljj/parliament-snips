@@ -1,11 +1,12 @@
 {
  "project": "parsnips",
- "written_at": "2026-09-20T14:03:56+08:00",
+ "written_at": "2026-09-20T14:06:41+08:00",
  "by": "tools/write_status.py",
  "status": "working",
  "changed_since_last": [
-  "949 briefs live across 3 year(s)",
-  "8 year(s) have datasets but no briefs yet: 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023"
+  "1430 briefs live across 4 year(s)",
+  "7 year(s) have datasets but no briefs yet: 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+  "1 unpushed commit(s)"
  ],
  "corpus": {
   "2016": {
@@ -37,7 +38,7 @@
    "dataset_items": 415
   },
   "2023": {
-   "briefs": 0,
+   "briefs": 481,
    "dataset_items": 485
   },
   "2024": {
@@ -54,6 +55,12 @@
   }
  },
  "gates": [
+  {
+   "name": "check_selection",
+   "scope": "summaries/2023",
+   "result": "PASS",
+   "defects": 0
+  },
   {
    "name": "check_selection",
    "scope": "summaries/2024",
@@ -78,8 +85,8 @@
  "needs_decision": null,
  "severity": "low",
  "git": {
-  "unpushed_commits": 0,
-  "dirty_files": 42,
-  "last_commit": "438c810 Keep the corpus at 2016+: revert the 2015 experiment, and bring PLAN.md up to date"
+  "unpushed_commits": 1,
+  "dirty_files": 2,
+  "last_commit": "1ef402d A status artifact, so COS can monitor without project context"
  }
 }

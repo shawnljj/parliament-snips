@@ -1695,6 +1695,25 @@ def main(argv=None):
     if pub + wh:
         print(f"per item: {tin/(pub+wh):,.0f} in / {tout/(pub+wh):,.0f} out tokens, "
               f"{dt/(pub+wh):.1f}s")
+
+    # REFRESH THE STATUS ARTIFACT, so it can never be forgotten after a run. COS reads
+    # status.json and nothing else, and a status file that only updates when someone
+    # remembers to run the generator is worse than none -- COS would report "all fine" from
+    # a stale file. Written here, at the one place every generation passes through.
+    # Best-effort: a failure to write status must not fail a run that published fine.
+    try:
+        import subprocess
+        st = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                          "tools", "write_status.py")
+        if os.path.exists(st):
+            r = subprocess.run([sys.executable, st], capture_output=True, text=True,
+                               timeout=1800)
+            if r.returncode == 0:
+                print("status artifact refreshed")
+            else:
+                print(f"status artifact NOT refreshed: {(r.stderr or '')[:120]}")
+    except Exception as exc:                                  # noqa: BLE001
+        print(f"status artifact NOT refreshed: {type(exc).__name__}")
     return 0
 
 

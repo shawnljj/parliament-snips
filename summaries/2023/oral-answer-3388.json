@@ -1,0 +1,120 @@
+{
+ "title": "Incidents of Pet Abductions Reported and Outcomes",
+ "what_it_is": "Incidents of Pet Abductions Reported and Outcomes",
+ "sections": [
+  {
+   "label": "NParks on community cat cases",
+   "summary": "NParks has not encountered such cases in two years and will investigate abuse or mistreatment of community cats.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Over the past two years, the National Parks Board (NParks) has not encountered any such cases.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "As for community cats, they live in the open and move about freely, making it challenging to trace their exact whereabouts.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "It may have succumbed to other health and safety risks from its environment, such as exposure to the elements, road traffic accidents and diseases.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "That said, where there are reasonable grounds to believe that a community cat has been abused or mistreated, NParks will investigate and take the appropriate enforcement action.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "NParks will continue to work with stakeholders, including community caregivers and animal welfare groups, to promote the welfare of pet and community animals.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Community cat taken by resident",
+   "summary": "Dr Tan asked about recourse when a known community cat with no official owner is taken away by another resident.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Mr Louis Ng Kok Kwang",
+     "attributed": true,
+     "text": "Dr Tan had a resident who had a community cat which was taken away by another resident who was not from Clementi.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Louis Ng Kok Kwang",
+     "attributed": true,
+     "text": "Dr Tan was wanting to ask whether there is any recourse or approach to be taken when there is a community cat which is known to the community, but there are no official owners and there are eyewitnesses sharing that the cat was being taken away and there are concerns about this and the cat appears to be distressed as well.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "That said, in the circumstances that the Member has raised, where there are reasonable grounds to believe that the community cat has been abused, mistreated or is in distress, please let NParks know, NParks will investigate and take the appropriate enforcement action.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3388",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-11-22"
+  ],
+  "report_ids": [
+   "oral-answer-3388"
+  ],
+  "sentences_total": 13,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.6154,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:27:53"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1266,
+   "completion_tokens": 133,
+   "estimated": false,
+   "cost_usd": 0.000214
+  }
+ }
+}

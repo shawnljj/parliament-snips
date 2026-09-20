@@ -1,0 +1,126 @@
+{
+ "title": "Constitution of the Republic of Singapore (Amendment) Bill",
+ "what_it_is": "Constitution of the Republic of Singapore (Amendment) Bill",
+ "sections": [
+  {
+   "label": "Second Reading vote requirement",
+   "summary": "A vote is taken to ascertain the Second Reading is supported by at least two-thirds of Elected and Non-Constituency Members, which is 63 Members.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "The Question is, \"That the Bill be now read a Second time.\" Pursuant to Article 5(2) of the Constitution, a vote is taken to ascertain that the Second Reading of the Bill is supported by the votes of not less than two-thirds of the total number of Elected and Non-Constituency Members of Parliament, which is 63 Members.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Second Reading carried, Third Reading vote",
+   "summary": "The Second Reading was carried with 67 Ayes, zero Noes and zero Abstentions, and a vote is taken on the Third Reading.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "I will proceed to declare the voting results now.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "There are 67 \"Ayes\"; zero \"Noes\"; zero \"Abstentions\".",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "The Second Reading of the Bill has been carried by the votes of not less than two-thirds of the total number of Elected and Non-Constituency Members of Parliament.    .",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "The Question is, \"That the Bill be now read a Third time.\" Pursuant to Article 5(2) of the Constitution, a vote is taken to ascertain that the Third Reading of the Bill is supported by the votes of not less than two-thirds of the total number of Elected and Non-Constituency Members of Parliament, which is 63 Members.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Third Reading carried",
+   "summary": "The Third Reading was carried with 67 Ayes, zero Noes and zero Abstentions, supported by at least two-thirds of Elected and Non-Constituency Members.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "I will proceed to declare the voting results now.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "There are 67 \"Ayes\"; zero \"Noes\"; zero \"Abstentions\".",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Speaker",
+     "attributed": true,
+     "text": "The Third Reading of the Bill has been carried by the votes of not less than two-thirds of the total number of Elected and Non-Constituency Members of Parliament.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-627",
+  "group": "bill",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-21"
+  ],
+  "report_ids": [
+   "bill-627"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.5333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 4,
+   "turns_total": 8,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:19:19"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1291,
+   "completion_tokens": 203,
+   "estimated": false,
+   "cost_usd": 0.000238
+  }
+ }
+}

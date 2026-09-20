@@ -1,0 +1,65 @@
+{
+ "title": "Continuous Monitoring of Vital Signs of Babies Admitted to Neonatal Intensive Care Units at Hospitals",
+ "what_it_is": "Continuous Monitoring of Vital Signs of Babies Admitted to Neonatal Intensive Care Units at Hospitals",
+ "sections": [
+  {
+   "label": "Hospital monitoring for higher risk infants",
+   "summary": "Singapore General Hospital and National University Hospital are reviewing and enhancing monitoring measures for higher risk infants not admitted to the NICU.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In addition to KK Women's and Children's Hospital, Singapore General Hospital and the National University Hospital are also reviewing and enhancing their monitoring measures for higher risk infants, who are not admitted to the NICU but may benefit from closer monitoring.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3052",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-02-14"
+  ],
+  "report_ids": [
+   "oral-answer-3052"
+  ],
+  "sentences_total": 3,
+  "sentences_selected": 1,
+  "sentences_in_sections": 1,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 1,
+   "sentences_selected": 1,
+   "turns_cited": 1,
+   "turns_total": 3,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:55:09"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 735,
+   "completion_tokens": 62,
+   "estimated": false,
+   "cost_usd": 0.00012
+  }
+ }
+}

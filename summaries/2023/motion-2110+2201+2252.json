@@ -1,0 +1,144 @@
+{
+ "title": "Rearrangement of Business",
+ "what_it_is": "Rearrangement of Business",
+ "sections": [
+  {
+   "label": "Motions on Iswaran suspension",
+   "summary": "Ms Poa moves to suspend Minister Iswaran without allowance and seeks leave to amend the PPIPA for possible back pay.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "In her first Motion titled \"Suspension of Member\", she is moving to suspend Minister Iswaran from service of Parliament with the consequence that no Member of Parliament (MP) allowance shall be paid to him for the period of suspension.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Her second Motion is for leave to introduce a Bill to amend the Parliament (Privileges, Immunities and Powers) Act of 1962, or the PPIPA.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Specifically, she is seeking to amend the Act to allow Parliament to back pay Mr Iswaran should he be subsequently cleared of any wrongdoing and resume his official duties.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "This being an amendment of a Bill by a Private Member, leave of Parliament to introduce the Bill is necessary under Standing Order 66(1).",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "I have separately filed a Motion titled \"Consideration of Matters Regarding Member of Parliament\" which deals with Members' standard of conduct, calls for firm and fair dealings with Members under investigation for wrongdoing and proposes that the matters relating to Mr Iswaran be considered when the outcome of the investigation is known.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Revising Order of Business",
+   "summary": "The speaker moves to revise the Order of Business so Ms Poa's Bill motion follows the two other motions.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "This, in turn, will depend on the outcome of my Motion and Ms Poa's other Motion, which I will be asking to be debated simultaneously.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "I am, therefore, moving to revise the Order of Business such that Ms Poa's Motion for leave to bring in a Bill to amend the PPIPA will be taken immediately after the proceedings on my Motion and Ms Poa's other Motion have concluded.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Josephine Teo absence and Bill order",
+   "summary": "Minister Josephine Teo has leave to be absent, and the speaker moves to revise the Order of Business for two Bills.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Minister Josephine Teo has sought and obtained leave from Speaker for absence from Parliament for today and tomorrow, as she has to travel overseas on official Government business.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Based on current progress, there is a possibility that we will complete the other Government Bills by tomorrow.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00021",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "So as not to hold back the Parliamentary agenda, which is heavy, and to provide certainty in timetabling, I would like to move that we revise the Order of Business to allow the Second Reading of the Maintenance of Parents Bill to go before the Second Reading of the Online Criminal Harms Bill.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-2110+2201+2252",
+  "group": "motion",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-20",
+   "2023-07-03",
+   "2023-09-19"
+  ],
+  "report_ids": [
+   "motion-2110",
+   "motion-2201",
+   "motion-2252"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 3,
+  "selection_share": 0.4348,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:24:01"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1738,
+   "completion_tokens": 185,
+   "estimated": false,
+   "cost_usd": 0.000295
+  }
+ }
+}

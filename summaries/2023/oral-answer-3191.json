@@ -1,0 +1,158 @@
+{
+ "title": "Assessment of Whether Leaked Classified US Military and Intelligence Documents Relate to Singapore",
+ "what_it_is": "Assessment of Whether Leaked Classified US Military and Intelligence Documents Relate to Singapore",
+ "sections": [
+  {
+   "label": "US leaks and Singapore information",
+   "summary": "Two leaked items on MINDEF were not sensitive and already public: SAF's SPYDER system and a British support unit in Sembawang.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Mr Gerald Giam Yean Song",
+     "attributed": true,
+     "text": "asked the Minister for Defence (a) whether any of the apparently classified US military and intelligence documents that appeared online addresses Singapore; (b) how does the Government ensure that information and intelligence that it shares with other countries are not compromised by those countries; and (c) in the event of a leak of information, whether the Ministry has damage assessment and mitigation protocols in place to protect related sources, information and intelligence.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Heng Chee How",
+     "attributed": true,
+     "text": "There were two pieces of information related to the Ministry of Defence (MINDEF) contained in those \"leaks\", but they are not sensitive and they are information that is already in the public domain, namely, that the Singapore Armed Forces (SAF) uses the SPYDER air defence system and that a British Defence Singapore Support Unit is located in Sembawang to provide support services to visiting vessels from Australia, New Zealand and Britain as members of the Five Power Defence Arrangements.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Storage of highly classified information",
+   "summary": "Highly classified information is stored in air-gap systems with only internal connectivity and strict access and monitoring protocols.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Mr Heng Chee How",
+     "attributed": true,
+     "text": "At the highest level of security, highly classified information is stored in air-gap systems with only internal connectivity and strict protocols for access and monitoring.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Processes after security breaches",
+   "summary": "Established processes investigate security breaches to ascertain the information compromised and the extent of damage incurred.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Mr Heng Chee How",
+     "attributed": true,
+     "text": "When security breaches occur, there are established processes in place to thoroughly investigate and ascertain the information compromised and the extent of the damage incurred.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Human vulnerability and vetting",
+   "summary": "The human element is an acknowledged source of vulnerability, and there is a system of vetting and re-vetting.",
+   "sentences": [
+    {
+     "sid": "s00027",
+     "speaker": "Mr Heng Chee How",
+     "attributed": true,
+     "text": "On the human front, as I explained in my answer, this is also an acknowledged source of vulnerability.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Mr Heng Chee How",
+     "attributed": true,
+     "text": "And as the Member himself has also mentioned, there is a system of vetting and re-vetting.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Sharing information with foreign governments",
+   "summary": "Information sharing with foreign governments is done through government-to-government agreements, and breaches are specifically investigated to establish vulnerabilities and additional measures.",
+   "sentences": [
+    {
+     "sid": "s00040",
+     "speaker": "Mr Heng Chee How",
+     "attributed": true,
+     "text": "On the first one relating to the sharing of information with foreign governments, these are done through government-to-government agreements, such as the one that we have with the US.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "Mr Heng Chee How",
+     "attributed": true,
+     "text": "Certainly, wherever there are instances or incidents of a breach and so on, then these are all very specifically investigated in order to establish what might be the vulnerability, and what might be the additional measures that must be put in place in order to minimise the risk of such recurrence.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "ST Engineering and MINDEF contracts",
+   "summary": "ST Engineering serves MINDEF and SAF under a commercial arrangement, and MINDEF assesses a provider's cybersecurity standards before awarding a contract.",
+   "sentences": [
+    {
+     "sid": "s00049",
+     "speaker": "Mr Heng Chee How",
+     "attributed": true,
+     "text": "ST Engineering, where it provides a service to MINDEF and SAF, would be doing so under a commercial arrangement.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00050",
+     "speaker": "Mr Heng Chee How",
+     "attributed": true,
+     "text": "And as part of my explanation earlier, I have also explained that MINDEF takes it very seriously, how we assess a provider, in terms of the standards of its cybersecurity in deciding whether or not to award a contract, of whatever classification that will be appropriate to that vendor.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3191",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-21"
+  ],
+  "report_ids": [
+   "oral-answer-3191"
+  ],
+  "sentences_total": 51,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.1961,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 5,
+   "turns_total": 9,
+   "coverage": 0.5556,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:08:25"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 3172,
+   "completion_tokens": 331,
+   "estimated": false,
+   "cost_usd": 0.000537
+  }
+ }
+}

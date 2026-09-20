@@ -1,0 +1,146 @@
+{
+ "title": "Ministry of Social and Family Development",
+ "what_it_is": "Ministry of Social and Family Development",
+ "sections": [
+  {
+   "label": "Caring and inclusive society support",
+   "summary": "The Government will build a caring and inclusive society with support from individuals, families, communities and public, people and private sectors, implementing the Singapore Made For Families 2025 plan and FFL presence in all towns by 2025.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Social and Family Development (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "We will build a more caring and inclusive society, drawing on the strengths of individuals and families, the social capital within our communities, and resources from the public, people and private sectors, to provide a tapestry of support to uplift those in need.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Social and Family Development (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "We will implement the Singapore Made For Families 2025 plan, which outlines the efforts of the Government, community partners, and businesses to create a Singapore where all families are valued and supported.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Social and Family Development (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "FFL will establish a presence in all towns by 2025 in partnership with Family Service Centres (FSCs).",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Preschool places by 2025",
+   "summary": "By 2025, 80% of pre-schoolers can have a place in a Government-supported preschool with affordable fees.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Social and Family Development (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "By 2025, 80% of pre-schoolers can have a place in a Government-supported preschool with affordable fees.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Preschool participation for lower-income children",
+   "summary": "The Government will close the preschool participation gap for children from lower-income families, scale up KidSTART nation-wide by 2026 and facilitate priority enrolment in Anchor Operator Preschools and MOE Kindergartens by age three.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "The Minister for Social and Family Development (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "We will close the gap in preschool participation rates of children from lower-income families with their peers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00024",
+     "speaker": "The Minister for Social and Family Development (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "We will scale up KidSTART nation-wide by 2026 and facilitate priority enrolment for children from lower-income families in Anchor Operator Preschools and MOE Kindergartens by age three.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Social service sector jobs and families",
+   "summary": "The Government will enhance skills training, guide SSAs to pay competitively through updated NCSS Sector Salary Guidelines, improve working conditions, partner businesses on ESG social impact, and strengthen collaborations with IHLs and academics to train professionals and research, to create a Singapore made for families.",
+   "sentences": [
+    {
+     "sid": "s00039",
+     "speaker": "The Minister for Social and Family Development (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "To grow the attractiveness of social service sector jobs, we will enhance skills training, guide SSAs to pay competitively through the updated NCSS Sector Salary Guidelines, and improve working conditions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "The Minister for Social and Family Development (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "MSF will partner businesses to strengthen the social impact in their Environmental, Social, and Governance policies.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00042",
+     "speaker": "The Minister for Social and Family Development (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "We will also strengthen collaborations with IHLs and academics to train social service professionals, and to undertake research to inform our policies and practices.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "The Minister for Social and Family Development (Mr Masagos Zulkifli B M M)",
+     "attributed": true,
+     "text": "We will create a Singapore made for families, give every child a good start, and help every family achieve stability, self-reliance and social mobility.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2133",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-10"
+  ],
+  "report_ids": [
+   "president-address-2133"
+  ],
+  "sentences_total": 44,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.2273,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:16:17"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2368,
+   "completion_tokens": 319,
+   "estimated": false,
+   "cost_usd": 0.000421
+  }
+ }
+}

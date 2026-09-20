@@ -1,0 +1,134 @@
+{
+ "title": "Correlation between Tightening of Foreign Worker Quotas and Hiring of Singaporeans at Higher Pay",
+ "what_it_is": "Correlation between Tightening of Foreign Worker Quotas and Hiring of Singaporeans at Higher Pay",
+ "sections": [
+  {
+   "label": "Foreign workforce policy impact studies",
+   "summary": "Internal studies find tightening lower-skilled foreign worker access helps local employment more than tightening higher-skilled access, informing quota and levy policy.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "To ensure good employment outcomes for Singaporeans, it is important that our policies enable firms to access foreign workers who can complement the local workforce, so that firms can grow and can create more opportunities for locals.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "To support policymaking, the Government regularly conducts impact assessment studies on a range of policies, and of course, this includes foreign workforce policies.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "One key finding of our internal studies on foreign workforce policies is that tightening access to lower-skilled foreign workers is more likely to have a positive impact on local employment outcomes, compared to tightening access to higher-skilled foreign workers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "This is because businesses will then be able to substitute lower-skilled but cheaper foreign workers with locals, and therefore, improve their production processes accordingly.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "This has informed our approach of remaining open to high-quality, foreign professionals, while maintaining a disciplined stance in regulating the number of Work Permit holders through quotas and also levies.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "It is important to note that these studies are but just one input to the policymaking process.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "These studies have their limitations, for example, they are unable to account for less quantifiable effects of having foreigners in our workforce, such as the knowledge spillovers to locals and other network effects.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tightening lower-skilled worker limits",
+   "summary": "Studies show tightening lower-skilled access yields substitution up to a point, beyond which economic and industry progress suffer; higher-skilled findings cannot be inferred.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "The first point, in terms of the studies' findings for low-skilled workers, is that up to a certain point, the studies have shown that, if you tighten at the lower-skilled segment, the net result is that we do get substitution and our locals can take on these jobs, but at slightly higher levels.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "Because of the size of our population and the size of our workforce, up to a point, if you continue to tighten, it can actually have a worse-off effect for the development of our country, in terms of our economic progress, as well as industry development.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "For the higher-skilled, again, you cannot infer from the studies that for higher-skilled workers, we are not doing enough to produce high calibre, local Singapore talent.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3108",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-02-27"
+  ],
+  "report_ids": [
+   "oral-answer-3108"
+  ],
+  "sentences_total": 22,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.4545,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:44:22"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1838,
+   "completion_tokens": 153,
+   "estimated": false,
+   "cost_usd": 0.0003
+  }
+ }
+}

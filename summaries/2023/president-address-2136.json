@@ -1,0 +1,140 @@
+{
+ "title": "Ministry of Communications and Information",
+ "what_it_is": "Ministry of Communications and Information",
+ "sections": [
+  {
+   "label": "Digital connectivity and enterprise plans",
+   "summary": "MCI will develop a Digital Connectivity Blueprint, invest in research and innovation, and support business digitalisation under a new Digital Enterprise Blueprint.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Communications and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "MCI will work with partners to develop a new Digital Connectivity Blueprint for strategic, sustainable, and future-ready digital infrastructure.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Communications and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We will also continue investing in research and innovation, including in quantum technologies and artificial intelligence, as part of Singapore’s Research, Innovation, and Enterprise 2025 Plan.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Communications and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "MCI will continue to support digital transformation of our businesses, particularly to help Small-Medium Enterprises improve their productivity and access new markets.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Communications and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "MCI will also refresh the schemes to help firms improve their cybersecurity posture and raise their overall digital maturity.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Communications and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "These will be brought together under the new Digital Enterprise Blueprint, a comprehensive guide to the Government’s support for enterprise digitalisation.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Online safety and cybersecurity protection",
+   "summary": "MCI will protect users from harmful online content and, with CSA, enhance protection of critical systems and raise cybersecurity posture.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for Communications and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "MCI will continue to protect users from harmful online content, with codes of practice for social media services and app stores, and advisory guidelines for the protection of personal data.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Communications and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "Through the Singapore Cybersecurity Strategy 2021, MCI and the Cyber Security Agency of Singapore will also enhance efforts to protect our critical information infrastructure and other important systems and entities from cyber threats, and raise the cybersecurity posture of companies and individuals through the Cybersecurity Labelling Scheme and Cybersecurity Trust and Essentials Mark certification programmes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Digital inclusion and media content",
+   "summary": "MCI will expand digital inclusion through subsidised access, training, outreach and partnerships, and support quality news and accessible television.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "The Minister for Communications and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "MCI will expand its digital inclusion efforts by: (a) providing subsidised devices and internet access under the DigitalAccess@Home and Mobile Access for Seniors schemes; (b) offering tailored training and assistance for the elderly and other groups through the Info-communications Media Development Authority’s SG Digital Office; (c) organising outreach efforts under the National Library Board’s Libraries and Archives Blueprint 2025; and (d) mounting people, private and public partnerships under the Digital for Life movement.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00027",
+     "speaker": "The Minister for Communications and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "MCI will support the creation and delivery of high-quality news and content across various media platforms and languages to the public.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00028",
+     "speaker": "The Minister for Communications and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "We will also continue efforts to implement subtitling or sign language interpretations for more free-to-air television programmes.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2136",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-10"
+  ],
+  "report_ids": [
+   "president-address-2136"
+  ],
+  "sentences_total": 29,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.3448,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:16:38"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1883,
+   "completion_tokens": 192,
+   "estimated": false,
+   "cost_usd": 0.000317
+  }
+ }
+}

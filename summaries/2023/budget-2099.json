@@ -1,0 +1,158 @@
+{
+ "title": "Committee of Supply – Head F (Parliament)",
+ "what_it_is": "Committee of Supply – Head F (Parliament)",
+ "sections": [
+  {
+   "label": "Budget cut for Parliament debate",
+   "summary": "The Chairman moves to reduce Head F of the Estimates by $100, with the cut concerning Parliament as an effective and respected political arena.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Cheng Hsing Yao (Nominated Member)",
+     "attributed": true,
+     "text": "Chairman, I beg to move, \"That the total sum to be allocated for Head F of the Estimates be reduced by $100.\" Chairman, my cut is about how to ensure that our Parliament will always be an effective and respected political arena.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Divisive issues in Singapore",
+   "summary": "Singapore will have to continue dealing with divisive issues such as wealth, foreigners, race and religion.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr Cheng Hsing Yao (Nominated Member)",
+     "attributed": true,
+     "text": "In Singapore, we will have to continue to deal with all sorts of divisive issues, such as on wealth, foreigners, as well as race and religion.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Four principles for parliamentary debate",
+   "summary": "Four principles are proposed to guide parliamentary debate: being factually accurate, highlighting benefits and trade-offs, being constructive, and avoiding polarisation.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Mr Cheng Hsing Yao (Nominated Member)",
+     "attributed": true,
+     "text": "We can promote critical thinking among our populace, but not cynicism.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Cheng Hsing Yao (Nominated Member)",
+     "attributed": true,
+     "text": "I would thus like to propose four principles to guide how issues should be brought up and debated within our Parliament: one, being factually accurate; two, highlight both benefits and trade-offs; three, being constructive; and four, avoid creating polarisation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Mr Cheng Hsing Yao (Nominated Member)",
+     "attributed": true,
+     "text": "I hope that the Singapore Parliament will always remain functional and respected by our people.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Lying and half-truths in Parliament",
+   "summary": "Lying in Parliament erodes trust and debilitates democracy, and half-truths, misleading statements and innuendos must also be guarded against.",
+   "sentences": [
+    {
+     "sid": "s00041",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Lying in Parliament, or to any Committee of Parliament, erodes trust and debilitates our democracy.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00042",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "What is less obvious, but equally dangerous and which we must also guard against, are half-truths, misleading statements and innuendos which suggest false things without actually saying so.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "US Capitol attack example",
+   "summary": "The US Capitol attack on 6 January 2021 is cited as perhaps the most shocking example.",
+   "sentences": [
+    {
+     "sid": "s00052",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Perhaps, the most shocking example of this was the US Capitol attack on 6 January 2021.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Unity, diversity and avoiding populism",
+   "summary": "People must be brought forward in unity even with diversity, and one more principle is added: do what is right and avoid populism.",
+   "sentences": [
+    {
+     "sid": "s00057",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "We must always strive to bring people forward in unity, even with diversity.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00058",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "I would add one more point to Mr Cheng's four principles, which is that we should consistently endeavour to do what is right and avoid a descent into populism.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "budget-2099",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-06"
+  ],
+  "report_ids": [
+   "budget-2099"
+  ],
+  "sentences_total": 67,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.1493,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:27:10"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2933,
+   "completion_tokens": 342,
+   "estimated": false,
+   "cost_usd": 0.000506
+  }
+ }
+}

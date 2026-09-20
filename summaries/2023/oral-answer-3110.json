@@ -1,0 +1,113 @@
+{
+ "title": "Social Worker Caseload at Family Service Centres",
+ "what_it_is": "Social Worker Caseload at Family Service Centres",
+ "sections": [
+  {
+   "label": "Social worker caseload ratio",
+   "summary": "The Minister was asked about average and median social worker to caseload ratios at family service centres for FY2021/2022, and said he had no specific answers.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Louis Ng Kok Kwang",
+     "attributed": true,
+     "text": "asked the Minister for Social and Family Development for FY2021/2022, what is the average and median social worker to caseload ratio at family service centres.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "One, it seems like the caseload has dropped, so could I ask what efforts the Ministry of Social and Family Development (MSF) has put in, in terms of reducing the amount of work for our social workers?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "And two, whether there is also a similar reduction in the amount of administrative work that social workers are doing in the last FY?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "I do not have specific answers to those points raised.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Family service centre work quality",
+   "summary": "The speaker says some family service centres perform better than others, wants to uplift their work quality, and notes social workers' load is one factor being looked at.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "It is that kind of place where you want to come to work and really feel sad that it is a Friday and you are going for your weekend.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "We are not there yet, but I can say that some of the FSCs are doing far better than others and we really want to uplift their quality of work.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "Certainly, the load with which our social workers are facing is one of the many factors that we are looking at.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3110",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-02-28"
+  ],
+  "report_ids": [
+   "oral-answer-3110"
+  ],
+  "sentences_total": 12,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.5833,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 3,
+   "turns_total": 3,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:41:36"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1040,
+   "completion_tokens": 151,
+   "estimated": false,
+   "cost_usd": 0.000188
+  }
+ }
+}

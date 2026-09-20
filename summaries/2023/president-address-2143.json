@@ -1,0 +1,160 @@
+{
+ "title": "Ministry of Sustainability and the Environment",
+ "what_it_is": "Ministry of Sustainability and the Environment",
+ "sections": [
+  {
+   "label": "Carbon tax and GreenGov.SG",
+   "summary": "The carbon tax will rise to $50-$80 per tonne by 2030, with support schemes and GreenGov.SG driving public sector net-zero emissions around 2045.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "To accelerate our low-carbon transition, the carbon tax will be raised progressively from $5 per tonne now to $50 – $80 per tonne by 2030.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "To ensure an inclusive transition, we will continue supporting enterprises and households to become more energy-efficient and reduce their carbon footprint, through schemes like the Energy Efficiency Fund and Climate Friendly Households Programme.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "Through GreenGov.SG, MSE will drive public sector efforts to achieve net-zero emissions around 2045, five years ahead of our national target.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "The Government will publish an annual GreenGov.SG report and Statutory Boards will disclose their environmental sustainability efforts, progress, and plans.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Food resilience and consultations",
+   "summary": "Solutions will be developed through public consultations, and food resilience increased by diversifying imports and producing 30% of nutritional needs locally by 2030.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "We will develop solutions collaboratively through public consultations and dialogue sessions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "We will increase our food resilience by diversifying our food import sources and continuing to ramp up local food production capabilities and capacity to produce 30% of our nutritional needs by 2030.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public health and innovation",
+   "summary": "Singapore will safeguard public health through vector control and risk surveillance, and pilot, test-bed and implement innovative technologies and research programmes.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "We will continue to safeguard Singapore’s public health through vector control and risk surveillance.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00023",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "We will continue to pilot, evaluate and scale new innovative solutions, such as Project Wolbachia.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "We have introduced or stepped-up research and development programmes in areas such as decarbonisation, agri-food production, urban heat mitigation, coastal protection, and vector control, in partnership with both local and foreign companies and Institutes of Higher Learning.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00026",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "We will test-bed and implement innovative technologies, such as solar panels on reservoirs, and synergistic waste-to-energy at the Tuas Nexus.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Community-led sustainability initiatives",
+   "summary": "The Green Action for Communities movement brings community leaders and residents together, and the SG Eco Fund supports community-led environmental sustainability projects.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "For example, the Green Action for Communities movement brings together community leaders and residents to co-create and co-implement sustainability initiatives that impact their communities directly.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00031",
+     "speaker": "The Minister for Sustainability and the Environment (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "We will also continue to support community-led environmental sustainability projects through the SG Eco Fund.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2143",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-10"
+  ],
+  "report_ids": [
+   "president-address-2143"
+  ],
+  "sentences_total": 33,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 4,
+  "selection_share": 0.3636,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:16:35"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1864,
+   "completion_tokens": 250,
+   "estimated": false,
+   "cost_usd": 0.000331
+  }
+ }
+}

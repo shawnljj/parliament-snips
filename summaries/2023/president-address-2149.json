@@ -1,0 +1,154 @@
+{
+ "title": "Prime Minister's Office (Public Service Division) (Science and Technology Policy and Plans Office)",
+ "what_it_is": "Prime Minister's Office (Public Service Division) (Science and Technology Policy and Plans Office)",
+ "sections": [
+  {
+   "label": "Public Service transformation and workforce",
+   "summary": "The Public Service Division is reorganising service delivery around citizens, streamlining regulatory processes, and shifting HR to competencies and continuous learning.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "The Public Service Division is committed to advancing a Public Service that can always be trusted to deliver excellent service and a better future for Singapore, by building future-ready organisations, new and more agile capabilities, and a strong and diverse leadership with development opportunities for all our officers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We are reorganising our service delivery across different service delivery platforms, including physical centres, call centres and digital platforms, around citizens rather than only around agencies.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We are also streamlining and redesigning regulatory processes to make it easier for businesses.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We are organising information on GoBusiness so enterprises can access services and resources in an integrated and business-centred way.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "For example, first-time prospective business owners can now register their business through a step-by-step guided journey on the GoBusiness platform.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "In a fast-changing environment, the Public Service needs to develop a workforce that can learn, unlearn and relearn, so as to continue serving Singapore better.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We are shifting our HR system so that it is anchored on competencies and skills, with more emphasis placed on competency development for officers, and with the use of competencies to guide how we recruit, reward and recognise officers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We are also instilling a mindset of continuous growth among public officers, to support their longer-term employability and contribution.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We are concurrently helping officers build new skills and experiences throughout their careers, through training and development opportunities that take the form of structured job rotations, attachments to the private sector, cross-agency projects and short-term immersions with other Government agencies.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Science and Technology Policy coordination",
+   "summary": "The Science and Technology Policy and Plans Office coordinates S&T capabilities across Government in robotics, modelling, and low-carbon solutions via Centres of Excellence.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "The Science and Technology Policy and Plans Office coordinates the development of S&T capabilities across the Government in areas like robotics and automation, modelling and simulation, and low-carbon and sustainability solutions, with experts residing in Centres of Excellence that support technology adoption and demand aggregation in these areas across the Public Service.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Leadership development approaches",
+   "summary": "Leadership development approaches are being transformed with leadership competencies, 360-degree feedback, job rotations and mentoring, extended to more leaders.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We are also transforming our leadership development approaches to better prepare in-service leaders to lead their teams and organisations.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "These initiatives, which include the introduction of leadership competencies, 360-degree feedback exercises, job rotations and a stronger mentoring culture, are being extended to more leaders in the Public Service, including professional and specialist leaders and middle managers.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2149",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-10"
+  ],
+  "report_ids": [
+   "president-address-2149"
+  ],
+  "sentences_total": 21,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 3,
+  "selection_share": 0.5714,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:16:50"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1583,
+   "completion_tokens": 191,
+   "estimated": false,
+   "cost_usd": 0.000275
+  }
+ }
+}

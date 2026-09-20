@@ -1,0 +1,99 @@
+{
+ "title": "Revision of MediSave Limit to Allow Cancer Patients to Pay for Non-subsidised Drugs",
+ "what_it_is": "Revision of MediSave Limit to Allow Cancer Patients to Pay for Non-subsidised Drugs",
+ "sections": [
+  {
+   "label": "Financial assistance and CPF withdrawal",
+   "summary": "Subsidised patients can seek medical social worker help for bills, and terminally ill patients may withdraw CPF and MediSave in a lump sum, keeping $5,000.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Subsidised patients being treated in public health care institutions can also approach the medical social workers to apply for financial assistance if they are unable to afford their healthcare bills.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Under the CPF Reduced Life Expectancy scheme, terminally ill patients may also withdraw their CPF savings including MediSave savings in a lump sum, subject to retaining a minimum balance of $5,000.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cancer insurance and rare cancer subsidies",
+   "summary": "An MP asks if insurers must appeal to MOH for grandfathering terminal patients, and if MOH can separate rare cancers for case-by-case subsidy evaluation.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Ms Ng Ling Ling (Ang Mo Kio)",
+     "attributed": true,
+     "text": "One, the scenario I asked in my Parliamentary Question, if a patient which is at stage 4 or which is terminal, is the insurance company that is providing Integrated Plans (IPs) for cancer coverage, obliged to appeal to MOH for grandfathering, if the patient is supported by an oncologist's clinical recommendation that the patient should continue on this cancer treatment or drug, even though it is outside of the drug list?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Ms Ng Ling Ling (Ang Mo Kio)",
+     "attributed": true,
+     "text": "My second supplementary question is that for very rare cancer such as that of appendicitis, they are dropped into a general cancer category in CDL with the lowest subsidy caps.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Ms Ng Ling Ling (Ang Mo Kio)",
+     "attributed": true,
+     "text": "Can MOH consider to separate rare cancers out, for a clinical panel to evaluate them on a case by case basis for the cap?",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3254",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-05-10"
+  ],
+  "report_ids": [
+   "oral-answer-3254"
+  ],
+  "sentences_total": 13,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.3846,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:59:42"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1202,
+   "completion_tokens": 147,
+   "estimated": false,
+   "cost_usd": 0.000209
+  }
+ }
+}

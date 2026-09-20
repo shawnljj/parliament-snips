@@ -1,0 +1,114 @@
+{
+ "title": "Ministry of Finance",
+ "what_it_is": "Ministry of Finance",
+ "sections": [
+  {
+   "label": "Government spending and revenue plans",
+   "summary": "Government spending is expected to rise to around 19-20% of GDP in FY2026-FY2030, driven by healthcare and social spending, with revenue measures taken to close the funding gap.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Looking to the medium-term, we expect annual Government spending to increase to around 19% – 20% of GDP in Financial Year (FY)2026 – FY2030, and possibly exceed 20% of GDP by FY2030.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "The key drivers of growing expenditure are healthcare and social spending, such as moves to uplift lower-wage workers and strengthen early childhood education.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "To close the funding gap, MOF has taken steps to strengthen our revenue position at Budget 2022 and Budget 2023, so that rising Government spending can be balanced by total revenue in the coming years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "We have also enhanced the progressivity of our system of taxes and transfers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Beyond what we have factored into our projections, the Government may need to spend more, for example, to enhance Singapore’s economic competitiveness, social inclusion and mobility, or national resilience.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "If this were to happen, we would require more revenue, or a reallocation of existing funds to the new priority areas.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "MOF will continue to ensure sound and stable public finances for Singapore, through a sustainable mix of taxes on income, consumption and assets.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "The Deputy Prime Minister and Minister for Finance (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "We will uphold a fiscal system that is fair and progressive, where everyone contributes, but those who are better off will contribute more; where everyone benefits from Government spending, and those with greater needs will benefit more.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2147",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-10"
+  ],
+  "report_ids": [
+   "president-address-2147"
+  ],
+  "sentences_total": 31,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.2581,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:16:40"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1651,
+   "completion_tokens": 113,
+   "estimated": false,
+   "cost_usd": 0.000263
+  }
+ }
+}

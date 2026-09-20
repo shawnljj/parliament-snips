@@ -1,0 +1,114 @@
+{
+ "title": "Civil List",
+ "what_it_is": "Civil List",
+ "sections": [
+  {
+   "label": "President's Office Civil List increase",
+   "summary": "The President's Office proposes raising Class II and Class III Civil List sums, leaving Class I and Class IV unchanged, to cover manpower and IT costs.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "The President's Office has been able to manage within its budget by re-allocating savings across expenditure across Classes II, III and IV.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "To enable the President's Office to continue to meet its expenditure needs, I propose to vary the sums in Class II and Class III of the Civil List.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "The provisions for Class I expenditures relating to the President's salary and entertainment allowance and Class IV expenditures concerning special services will remain unchanged.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "The proposed increase more than 10 years later is to cater for increases in expenditure on manpower, including the Civil Service salary adjustments announced last year.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "Therefore, I propose an increase from $4,532,400, to $6,696,700 for Class II expenditures.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "For Class III expenditures, which provide for the expenses of household, I propose an increase from $2,762,300 to $3,342,200.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "This is to cater for higher IT costs, including IT security.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "We expect this round of increase to be sufficient for up to FY2025.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-2104",
+  "group": "motion",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-06"
+  ],
+  "report_ids": [
+   "motion-2104"
+  ],
+  "sentences_total": 11,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.7273,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:27:30"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 948,
+   "completion_tokens": 98,
+   "estimated": false,
+   "cost_usd": 0.00016
+  }
+ }
+}

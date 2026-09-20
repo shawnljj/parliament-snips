@@ -1,0 +1,153 @@
+{
+ "title": "Average Duration Between Identification of Mosquito Breeding Site and Issuance of Fine",
+ "what_it_is": "Average Duration Between Identification of Mosquito Breeding Site and Issuance of Fine",
+ "sections": [
+  {
+   "label": "NEA fine issuance time",
+   "summary": "NEA took on average about five months over the last three years to issue a fine after detecting a breeding site.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Mr Baey Yam Keng) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "For the last three years, the National Environment Agency (NEA) took, on average, about five months to issue a fine after detection of the breeding site.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Mosquito breeding fines to households",
+   "summary": "From 2020, NEA fined about 22,400 households for mosquito breeding, with four fines, 0.02%, issued to wrong households due to administrative errors.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Mr Baey Yam Keng) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "From 2020 to date, NEA has issued fines to about 22,400 households for mosquito breeding offences.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Mr Baey Yam Keng) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "Of these, there were four instances, or 0.02% of the total, where fines were issued to the wrong household due to administrative errors.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Detection and first-time offender fines",
+   "summary": "The slip shows detection occurred, and there is no practice where first-time offenders will not be fined.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "With this slip, it is very clear, in black and white, that there has been detection.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00034",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "There is no practice where first-time offenders will not be fined.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Notification slips and NEA contact",
+   "summary": "Notification slips may go to wrong addresses or disappear, but provide a contact number for households to reach NEA for investigations.",
+   "sentences": [
+    {
+     "sid": "s00047",
+     "speaker": "Mr Saktiandi Supaat",
+     "attributed": true,
+     "text": "I am wondering whether there would be instances where the notification slips would be sent to the wrong addresses or may have actually flown away or disappeared if it is hung on the door.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00048",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "I need to confirm this, but I am quite sure it is not in the letter box, because NEA would not have access to the letter boxes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00049",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "So, in cases where the household is not occupied at the point in time, I believe it is placed under the door.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00051",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "Hence, the rightful party may not know that inspection was conducted and some breeding was found.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00052",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "But the slip will provide a contact number for the household to call, to ask for more details, verification or provide information that will help NEA in its investigations or to refute that the item where the breeding was found does not belong to them.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00053",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "So, there is a channel for members of the public to get in touch with NEA to assist in its investigations.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3357",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-10-04"
+  ],
+  "report_ids": [
+   "oral-answer-3357"
+  ],
+  "sentences_total": 53,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 4,
+  "selection_share": 0.2075,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 4,
+   "turns_total": 6,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:36:49"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2597,
+   "completion_tokens": 246,
+   "estimated": false,
+   "cost_usd": 0.000432
+  }
+ }
+}

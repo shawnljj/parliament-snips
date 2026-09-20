@@ -1,0 +1,148 @@
+{
+ "title": "Reviewing Need for SG Arrival Card for Returning Singaporeans and Residents",
+ "what_it_is": "Reviewing Need for SG Arrival Card for Returning Singaporeans and Residents",
+ "sections": [
+  {
+   "label": "SG Arrival Card disease control",
+   "summary": "MOH implemented the digital SG Arrival Card so all travellers submit a health declaration to guard against importing diseases like Yellow Fever, MERS and Ebola.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "In the course of the COVID-19 pandemic, the Ministry of Health (MOH) reviewed our need for data collection at the borders and we decided to implement the digital SG Arrival Card system for purposes of disease control.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Specifically, we want to guard against importing infectious diseases of concern, such as Yellow Fever, Middle East Respiratory Syndrome (MERS) and Ebola.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "First, previously, only foreigners are required to submit health information on a physical card.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Now, all travellers are required to submit a health declaration because all travellers are subject to the risk of infectious diseases – not just the foreign travellers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Third, the information required has been streamlined and simplified to only three questions to ascertain the risk of a traveller being infected with the current diseases of concern.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Travellers at risk of Yellow Fever infection and do not have a valid relevant vaccination certificate are assessed and may be quarantined to protect against the risk of importation of Yellow Fever in Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Permanent border health declaration feature",
+   "summary": "Travellers suspected of infection may be referred for assessment and isolation, and MOH deems the health declaration a permanent feature to keep diseases from becoming endemic.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Travelers suspected of being infected can be referred for further medical assessment and isolation if necessary.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "These are dynamic information, based on their recent travel history and how they feel, and therefore, not captured in existing Government systems.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Liang Eng Hwa (Bukit Panjang)",
+     "attributed": true,
+     "text": "Meaning, if we were to stand down and then we need to re-activate it again, can the Ministry do it in a very expeditious way?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "We reviewed this and we deemed this as a permanent feature.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Yellow Fever, MERS – they have all become endemic diseases in their parts of the world.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "We do not want them to become endemic diseases in our part of the world, which therefore means that this is quite a permanent feature, that as of now, we feel is necessary, to prevent such diseases from coming into Singapore.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3030",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-02-06"
+  ],
+  "report_ids": [
+   "oral-answer-3030"
+  ],
+  "sentences_total": 21,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 2,
+  "selection_share": 0.5714,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:02:09"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1474,
+   "completion_tokens": 157,
+   "estimated": false,
+   "cost_usd": 0.00025
+  }
+ }
+}

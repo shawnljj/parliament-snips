@@ -1,0 +1,126 @@
+{
+ "title": "Ensuring Government Web Services and Data Hosted on Commercial Data Centres are Assured of Availability and Data Security",
+ "what_it_is": "Ensuring Government Web Services and Data Hosted on Commercial Data Centres are Assured of Availability and Data Security",
+ "sections": [
+  {
+   "label": "Microsoft data centre service degradation",
+   "summary": "The recent service degradation at a Microsoft data centre had limited impact on Government services, and GovTech is working with Microsoft to restore affected services and prevent similar occurrences.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The recent service degradation at a Microsoft data centre had limited impact on Government services.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Nonetheless, GovTech has been working with Microsoft to fully restore affected services and prevent similar occurrences in future.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cloud provider procurement criteria",
+   "summary": "Cloud services providers must meet criteria for availability, resilience and security regardless of ownership and data centre location, and had met the 99.9% availability requirement before this incident.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "To qualify for Government procurement, cloud services providers must meet our criteria for availability, resilience and security.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The same criteria apply regardless of the service provider’s ownership and location of data centres.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Prior to this incident, cloud service providers had been able to meet our requirement to be available at least 99.9% of the time.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "70% Government services on cloud",
+   "summary": "Plans are only for 70% of Government services to be on cloud providers by 2023, the target is on track, and some services are planned to be controlled directly by the Government.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "To be clear, our plans are only for 70% of Government services to be on cloud providers by 2023.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We are on track to meet that target.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "And so, already, we have plans and we have planned for some of our services to be controlled by the Government directly.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3074",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-02-22"
+  ],
+  "report_ids": [
+   "oral-answer-3074"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.3478,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:53:44"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1409,
+   "completion_tokens": 221,
+   "estimated": false,
+   "cost_usd": 0.000259
+  }
+ }
+}

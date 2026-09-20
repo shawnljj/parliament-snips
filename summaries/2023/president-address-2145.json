@@ -1,0 +1,132 @@
+{
+ "title": "Prime Minister's Office (National Security Coordination Secretariat)",
+ "what_it_is": "Prime Minister's Office (National Security Coordination Secretariat)",
+ "sections": [
+  {
+   "label": "Emerging national security risks",
+   "summary": "NSCS works with government agencies to identify, assess and address cross-cutting medium-term national security risks, including new risks from geopolitical contestation, climate change and digitalisation.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "Even as we face established security threats, such as terrorism, foreign subversion and espionage, new risks are emerging, driven by trends, such as growing geopolitical contestation, climate change and accelerating digitalisation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "These risks include disruptions in supply chains and resources, extreme weather events that jeopardise critical infrastructure and lives, and the rapid and widespread digital transmission of disinformation that can exploit fissures in our society.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "The National Security Coordination Secretariat (NSCS) works with government agencies to identify, assess, and address cross-cutting medium-term national security risks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Global supply disruption resilience",
+   "summary": "NSCS will work with agencies to mitigate risks to essential supplies and strengthen resilience against global supply disruptions, such as those from the Russia-Ukraine conflict.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "For example, the Russia-Ukraine conflict upended global supply chains and energy supplies, even as the world was still reeling from COVID-19 disruptions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "NSCS will work with agencies to mitigate risks to the flow of essential supplies, and to strengthen our resilience against global supply disruptions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Studying interdependencies and mitigation plans",
+   "summary": "NSCS will work with government agencies to study these interdependencies and develop mitigation plans for such risks.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "NSCS will work with government agencies to study these interdependencies and develop mitigation plans for such risks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Strategies and social resilience",
+   "summary": "NSCS will work with government agencies to develop strategies to address these risks and strengthen social resilience, supporting capability development with resources and funding, including national security research.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "NSCS will work with government agencies to develop strategies to address these risks and strengthen social resilience.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "The Senior Minister and Coordinating Minister for National Security (Mr Teo Chee Hean)",
+     "attributed": true,
+     "text": "NSCS will support agencies’ capability development with resources and funding, including for national security research.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2145",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-10"
+  ],
+  "report_ids": [
+   "president-address-2145"
+  ],
+  "sentences_total": 24,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:16:52"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1318,
+   "completion_tokens": 257,
+   "estimated": false,
+   "cost_usd": 0.000256
+  }
+ }
+}

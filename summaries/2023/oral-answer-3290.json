@@ -1,0 +1,140 @@
+{
+ "title": "Cost of Running Day Activity Centre Services for Adults with Disabilities",
+ "what_it_is": "Cost of Running Day Activity Centre Services for Adults with Disabilities",
+ "sections": [
+  {
+   "label": "Government funding to DACs",
+   "summary": "Government funding to DACs is tiered by care needs and means-tested by income, averaging about $14,000 per client in FY2022.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Social and Family Development (Mr Eric Chua) (for the Minister for Social and Family Development)",
+     "attributed": true,
+     "text": "Government funding to DACs is tiered according to the care needs of clients.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Social and Family Development (Mr Eric Chua) (for the Minister for Social and Family Development)",
+     "attributed": true,
+     "text": "Government funding to DACs is also means-tested, depending on each client’s income level.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Social and Family Development (Mr Eric Chua) (for the Minister for Social and Family Development)",
+     "attributed": true,
+     "text": "In FY2022, the average amount of Government grants provided to DACs was about $14,000 per client.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Costs and funding concerns",
+   "summary": "Costs can reach about $30,000 yearly, and full means-testing discourages average and higher-income households, so alternate models were suggested.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Ms Denise Phua Lay Peng (Jalan Besar)",
+     "attributed": true,
+     "text": "Although the average grant is about $14,000, some of the costs can go up to about $30,000 per year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Ms Denise Phua Lay Peng (Jalan Besar)",
+     "attributed": true,
+     "text": "The funding is completely means-tested and, therefore, average and higher-income households are often discouraged from using the services.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Ms Denise Phua Lay Peng (Jalan Besar)",
+     "attributed": true,
+     "text": "And later on, there will be more costs.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Ms Denise Phua Lay Peng (Jalan Besar)",
+     "attributed": true,
+     "text": "So, the Ministry should really study alternate models, such as providing a universal base subsidy, with additional means-testing subsidy.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fee cap and Enabling Services Hub",
+   "summary": "The fee cap is between $20 and $710, and this year the Enabling Services Hub will be piloted.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "The fee cap is anywhere between $20 and $710.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "Of course, there is much more that can be done.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00026",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "This year, we will be piloting the Enabling Services Hub.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3290",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-07-06"
+  ],
+  "report_ids": [
+   "oral-answer-3290"
+  ],
+  "sentences_total": 29,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.3448,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:51:32"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1447,
+   "completion_tokens": 201,
+   "estimated": false,
+   "cost_usd": 0.000259
+  }
+ }
+}

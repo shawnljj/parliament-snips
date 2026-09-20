@@ -1,0 +1,134 @@
+{
+ "title": "Actions by Hospitals against Patients who Abuse or Harass Healthcare Workers",
+ "what_it_is": "Actions by Hospitals against Patients who Abuse or Harass Healthcare Workers",
+ "sections": [
+  {
+   "label": "Patient abuse consequences question",
+   "summary": "A question asks about consequences for patients who abuse healthcare workers, how these are made known, premature discharges, and patient well-being.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "",
+     "attributed": false,
+     "text": "The following question stood in the name of  Mr Gerald Giam Yean Song –  15 To ask the Minister for Health (a) what is the range of consequences that public healthcare institutions (PHIs) can impose on patients who abuse or harass healthcare workers; (b) how are these specific consequences made known to patients, apart from general notices that abuse of staff is not tolerated; (c) in each of the last three years, how many times have patients been prematurely discharged due to such behaviour; and (d) how do PHIs ensure the well-being of such patients.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "This will be completed in the second half of 2023 and will include guidelines to help institutions protect staff from abuse and harassment while fulfilling the duty of care for patients in need.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In particular, as explained during the announcement of the policy on 17 March this year, for patients who require urgent care, care will be delivered regardless.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Likewise, patients will only be discharged when clinically assessed to be ready to do so.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public healthcare abuse policies",
+   "summary": "Public healthcare clusters have policies to handle abuse, including warnings, refusing unreasonable requests, and discharging abusive patients clinically assessed as ready.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "At this juncture, our public healthcare clusters have policies in place to handle abuse cases.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "The staff are trained to assess and de-escalate potential conflicts and manage abusive situations and, in the event of an incident, they know how to activate protocols to escalate when patients or caregivers turn abusive.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "Signs are displayed at the premises to prominently remind visitors to treat healthcare staff with respect and, where necessary, security officers' or Police intervention would be sought.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "So, at the moment, there are some measures that the hospitals have put in place, including issuing a warning, disengaging by refusing unreasonable requests or discharging abusive patients who are clinically assessed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "But generally, the hospitals do not do this.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "Hence, there is actually a need to come up with this framework, and this is the framework we are working on to provide something that is standardised for all the public healthcare institutions to apply, where there is a commonsensical approach to deal with such situations of extreme cases where there is a need to actually deny service to them.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3190",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-21"
+  ],
+  "report_ids": [
+   "oral-answer-3190"
+  ],
+  "sentences_total": 25,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.4,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:08:39"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1741,
+   "completion_tokens": 154,
+   "estimated": false,
+   "cost_usd": 0.000287
+  }
+ }
+}

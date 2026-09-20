@@ -1,0 +1,79 @@
+{
+ "title": "Adjournment of Debate",
+ "what_it_is": "Adjournment of Debate",
+ "sections": [
+  {
+   "label": "Naming date of resumption",
+   "summary": "The Speaker names the date of resumption in place of Mr Pillai, who is in an ongoing Court hearing and has no objections.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "Ordinarily the mover of the Motion would be the person to name the date of resumption.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "But Mr Pillai is engaged in a Court hearing which is still ongoing and he is not able to be here at this present time.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "So, I have discussed with him what to do in that event and he has no objections to my naming the date in his place.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-2164",
+  "group": "motion",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-19"
+  ],
+  "report_ids": [
+   "motion-2164"
+  ],
+  "sentences_total": 4,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.75,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:08:47"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 636,
+   "completion_tokens": 70,
+   "estimated": false,
+   "cost_usd": 0.000109
+  }
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "title": "Ministry of Education",
+ "what_it_is": "Ministry of Education",
+ "sections": [
+  {
+   "label": "Full Subject-Based Banding and education access",
+   "summary": "Full Subject-Based Banding will be implemented in secondary schools next year, with expanded admission routes and more preschool investment.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "Full Subject-Based Banding will be fully implemented in secondary schools next year and will allow every student to learn subjects at a level that caters to their strengths and learning needs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "Our schools are building partnerships with their stakeholders to offer niche areas of excellence to cater to students’ diverse interests.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We will also continue to expand admission routes to schools and Institutes of Higher Learning to recognise the different strengths and abilities of our students.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "Every child should have access to quality education, according to their needs, regardless of their starting point in life.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We will continue to invest more in preschool education, especially for children from disadvantaged families.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SkillsFuture and Special Educational Needs support",
+   "summary": "SkillsFuture will be strengthened for lifelong upskilling, mid-career workers supported, and SEN students and SPED sector aided.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "To enable Singaporeans to seize new opportunities and stay employable, we will strengthen our SkillsFuture movement to better support continual upskilling and reskilling across an individual’s lifetime.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "This includes making training accessible for adult learners, developing new andragogical approaches, and working closely with companies, unions, and training institutions to tighten the nexus between business needs, workers’ skills and training.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "We will provide stronger support for mid-career workers, in particular, to reduce their opportunity cost for training should they require a substantial skills reboot.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "Second, we will strengthen support for students with Special Educational Needs (SEN).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "MOE will work with Social Service Agencies to improve remuneration and career progression in the SPED sector.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "AI adaptive learning platforms",
+   "summary": "AI-powered adaptive learning platforms will let advanced learners stretch themselves and free teachers' time for students with greater needs.",
+   "sentences": [
+    {
+     "sid": "s00028",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing)",
+     "attributed": true,
+     "text": "For example, adaptive learning platforms, powered by Artificial Intelligence, will allow more advanced learners to stretch themselves, while freeing up time for our teachers to focus on students with greater learning needs.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2134",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-10"
+  ],
+  "report_ids": [
+   "president-address-2134"
+  ],
+  "sentences_total": 32,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 3,
+  "selection_share": 0.3438,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:16:42"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1663,
+   "completion_tokens": 189,
+   "estimated": false,
+   "cost_usd": 0.000286
+  }
+ }
+}

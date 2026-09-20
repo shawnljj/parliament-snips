@@ -1,0 +1,140 @@
+{
+ "title": "Results from Measures to Reduce Waiting Time for Admissions to Public Hospitals",
+ "what_it_is": "Results from Measures to Reduce Waiting Time for Admissions to Public Hospitals",
+ "sections": [
+  {
+   "label": "Hospital bed waiting times",
+   "summary": "The Minister for Health was asked about waiting time results, longest projected bed waits, mobilising private hospitals, and care for patients not admitted within a day.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Dr Lim Wee Kiak",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) when can the results from the measures announced to reduce waiting time for admissions to public hospitals be expected; (b) what is the longest projected waiting time for beds; (c) when will the Ministry start to mobilise private hospitals and healthcare facilities; and (d) what steps have been taken to ensure that patients who are not admitted within a day receive timely and quality care.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "This translates into 15% more utilisation of hospital beds and is the key driver for longer waiting times for admission.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The patients who need longer stays are older with co-morbidities and complex conditions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The situation is aggravated by healthcare infrastructure projects being delayed due to COVID-19.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We are actively working on increasing acute bed capacity, community hospital bed capacity and Transition Care Facilities to address the capacity constraint.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For non-life-threatening patients who require admissions, hospitals will activate inpatient teams to start investigations and treatments in the EDs, even before a ward bed is available.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "If need be, we will tap on the capacity of private hospitals, as we did during COVID-19.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cause of care increase",
+   "summary": "The main cause of the increase is the increase in the complexity of care.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The main cause of the increase is the increase in the complexity of care.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Longer recovery, 15% increase",
+   "summary": "Patients are more unwell and take longer to recover, so 6.1 days to seven days is a 15% increase.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "They are more unwell and it takes longer for them to recover.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "So, 6.1 days to seven days is a 15% increase.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3288",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-07-05"
+  ],
+  "report_ids": [
+   "oral-answer-3288"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.3846,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:54:14"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1488,
+   "completion_tokens": 188,
+   "estimated": false,
+   "cost_usd": 0.000261
+  }
+ }
+}

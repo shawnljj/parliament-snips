@@ -1,0 +1,126 @@
+{
+ "title": "Measures to Mitigate Risks of Data Compromise via Public Charging Stations and Wifi Access Points",
+ "what_it_is": "Measures to Mitigate Risks of Data Compromise via Public Charging Stations and Wifi Access Points",
+ "sections": [
+  {
+   "label": "Wi-fi and charging station safety",
+   "summary": "Wi-fi access points use the Wireless@SGx network and comply with IMDA standards, while charging stations only transmit power, not data.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "Wi-fi access points at transport nodes operate via the Wireless@SGx network and comply with prevailing standards by the Infocomm Media Development Authority.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "Charging stations, which are provided by public transport operators (PTOs), can only transmit power, and not data, to and from devices.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "Specifically, the USB ports in public transport nodes already have their data transmission pins removed.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cyber hygiene reminders and advisory",
+   "summary": "Signs remind users to practise good cyber hygiene, and the public is encouraged to refer to a joint advisory on protecting mobile devices.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "The charging stations are accompanied by signs reminding users to practise good cyber hygiene, such as using their own power plugs and cables.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "In addition, members of the public are encouraged to refer to the joint advisory by the Cyber Security Agency of Singapore and Singapore Police Force on 18 April 2023 on protecting mobile devices from malicious wireless and wired connections.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Daily inspections of transport facilities",
+   "summary": "PTO staff conduct daily inspections of facilities including buses and transport nodes, with charging points part of the regular inspection regime.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "The PTO staff conduct inspections of the various facilities, including the buses and the transport nodes, on a daily basis.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "As part of the protocol, this includes the charging points as well.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "So, it is not specifically just about these charging points for these USB ports; it is part of the larger regular inspection regime that they have and conduct.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3238",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-05-09"
+  ],
+  "report_ids": [
+   "oral-answer-3238"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.5333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:04:48"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1171,
+   "completion_tokens": 193,
+   "estimated": false,
+   "cost_usd": 0.000218
+  }
+ }
+}

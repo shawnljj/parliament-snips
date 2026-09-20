@@ -1,0 +1,126 @@
+{
+ "title": "Queries into and Lessons from Recent Billion-dollar Money Laundering Case",
+ "what_it_is": "Queries into and Lessons from Recent Billion-dollar Money Laundering Case",
+ "sections": [
+  {
+   "label": "Suspicious transaction reports and money laundering",
+   "summary": "Questions ask how many suspicious transaction reports were made, how many led to SPF investigations, and about new anti-money laundering initiatives and tax incentives.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Ms Ng Ling Ling",
+     "attributed": true,
+     "text": "asked the Minister for Home Affairs (a) how many suspicious transaction reports have been made by financial institutions about suspicious activities in each of the past three years; and (b) how many of such reports have resulted in the Singapore Police Force (SPF) mounting a formal investigation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Mark Lee",
+     "attributed": true,
+     "text": "asked the Minister for Home Affairs in light of the recent case of money laundering activities where an estimated value of about $1 billion in assets are seized (a) what new anti-money laundering initiatives does the Government plan to introduce; and (b) how will the Government ensure that these measures do not inadvertently impede legitimate businesses in Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Ms Usha Chandradas",
+     "attributed": true,
+     "text": "asked the Minister for Home Affairs (a) what is the extent to which anti-money laundering checks are conducted on entities before the granting of incentives under section 13D, 13O or 13U of the Income Tax Act 1947; and (b) whether such incentives have been granted to any entities that are associated with the money-laundering case reported on 15 August 2023.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Enhancing anti-money laundering capabilities",
+   "summary": "Questions ask how the Ministry's agencies enhanced AML capabilities, further improvements, plans for non-banking industries, and deeper foreign collaboration.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Mr Derrick Goh",
+     "attributed": true,
+     "text": "asked the Minister for Home Affairs (a) how have the Ministry’s agencies enhanced their AML capabilities; (b) what further improvements will be made; (c) whether there are plans to (i) strengthen the requirements and capabilities of non-banking industries for customer due diligence measures to prevent criminals from converting illegal proceeds into assets and (ii) enhance reporting of suspicious transactions by these industries for timelier intervention; and (d) how will collaboration with foreign authorities be deepened to detect and stem the movement of illegal proceeds into Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "FATF compliance and anti-money laundering reviews",
+   "summary": "Questions ask about FATF recommendations 22 and 23 compliance, investigations and convictions under section 67, and reviews of AML laws and CEA measures.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Ms Joan Pereira",
+     "attributed": true,
+     "text": "asked the Minister for Home Affairs whether Singapore is working towards full compliance on recommendations 22 and 23 of the Financial Action Task Force for designated non-financial businesses and professions such as real estate agents, dealers of precious metals and stones, legal and accounting professionals and trust and company service providers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Assoc Prof Razwana Begum Abdul Rahim",
+     "attributed": true,
+     "text": "asked the Minister for Home Affairs (a) in the last three years, how many individuals or entities have been investigated for failure to perform customer due diligence measures and internal control measures as per section 67 of the Corruption, Drug Trafficking and Other Serious Crimes (Confiscation of Benefits) Act 1992; and (b) arising from these investigations, how many individuals or entities have been convicted.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Ms Hany Soh",
+     "attributed": true,
+     "text": "asked the Minister for Home Affairs in view of the high-value assets seized during the anti-money laundering operation conducted on 15 August 2023, whether the Ministry will review current anti-money laundering laws to determine whether any amendments or enhancements are required to prevent similar cases in future.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Ms Hany Soh",
+     "attributed": true,
+     "text": "asked the Minister for Home Affairs in view of the high-value real estate properties seized during the anti-money laundering operation conducted on 15 August 2023, whether the Council of Estate Agencies (CEA) has reviewed the Customer Due Diligence measures that salespersons are required to undertake on their customers to determine whether the measures are sufficiently robust to prevent recurrences.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3322",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-09-18"
+  ],
+  "report_ids": [
+   "oral-answer-3322"
+  ],
+  "sentences_total": 36,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2222,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 8,
+   "turns_total": 34,
+   "coverage": 0.2353,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:44:39"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 3629,
+   "completion_tokens": 213,
+   "estimated": false,
+   "cost_usd": 0.000568
+  }
+ }
+}

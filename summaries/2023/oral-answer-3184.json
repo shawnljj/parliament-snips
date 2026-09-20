@@ -1,0 +1,127 @@
+{
+ "title": "Number and Percentage of Childcare Centres and Kindergartens Affected by Hand, Foot and Mouth Disease Each Year",
+ "what_it_is": "Number and Percentage of Childcare Centres and Kindergartens Affected by Hand, Foot and Mouth Disease Each Year",
+ "sections": [
+  {
+   "label": "HFMD clusters in preschools",
+   "summary": "HFMD is mild and self-limiting with no severe cases since 2019; reported preschool clusters fell in 2020 and 2021 and rose in 2022.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "HFMD is a mild and self-limiting illness and there were no reported severe HFMD cases since 2019.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Based on data from 2018 to 2022, the annual number of preschools with HFMD clusters ranged from 352 to 1,073 for childcare centres and 34 to 152 for kindergartens, accounting for about 23% to 66% of childcare centres and 11% to 37% of kindergartens.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The numbers of reported clusters in childcare centres and kindergartens had decreased in 2020 and 2021, likely influenced by COVID-19-related community safe management measures.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Although the numbers of reported clusters had increased in 2022, it is too soon to determine whether this reflects a rising trend beyond that seen in 2019, before the COVID-19 pandemic.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "HFMD outbreak control measures",
+   "summary": "Preschool closure is one strategy; control relies on early detection, isolation and hygiene, with MOH working with ECDA and MOE.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Closure of preschools is only one of the strategies and one of the tools when an outbreak occurs of HFMD or other mild, self-limiting, low severity diseases which are common in the community.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The key to controlling spread is through early detection, isolation, maintaining high standards of personal and environmental hygiene – washing hands, covering the mouth and nose, avoiding sharing food and drinks or personal items.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "At MOH, we work closely with the Early Childhood Development Agency (ECDA) and the Ministry of Education to monitor outbreaks of infectious diseases in preschools.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We provide public health advice, including on how to prevent infection and implement control measures.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We will continue to work with ECDA and the relevant agencies on the issues of how to support the preschool sector, as well as the parents to deal with clusters and outbreaks of diseases such as HFMD.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3184",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-22"
+  ],
+  "report_ids": [
+   "oral-answer-3184"
+  ],
+  "sentences_total": 13,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.6923,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:17:28"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1359,
+   "completion_tokens": 158,
+   "estimated": false,
+   "cost_usd": 0.000235
+  }
+ }
+}

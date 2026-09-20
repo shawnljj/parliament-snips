@@ -1,0 +1,146 @@
+{
+ "title": "Conducting Island-wide Noise Management Studies in Areas Affected by Multiple Construction Projects",
+ "what_it_is": "Conducting Island-wide Noise Management Studies in Areas Affected by Multiple Construction Projects",
+ "sections": [
+  {
+   "label": "MRT noise study and construction",
+   "summary": "LTA studied islandwide MRT noise in 2018 and assessed Ang Mo Kio Avenue 6 in 2019, with contractors required to mitigate construction noise.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The Land Transport Authority (LTA) conducted an islandwide noise measurement study in 2018, for the specific purpose of identifying locations near above-ground Mass Rapid Transit (MRT) stations where the noise level exceeded the National Environment Agency's (NEA's) recommended threshold.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "NEA requires LTA's contractors to carry out localised noise impact assessments prior to the commencement of all major infrastructure projects.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "LTA conducted a noise impact assessment at Ang Mo Kio Avenue 6 in 2019 prior to the commencement of North-South Corridor (NSC) construction works.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "These include erecting noise barriers and noise enclosures, installing mufflers on machineries, using rubber mallets for hammering and carrying out noisier works in the day.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "However, safety critical works, such as the construction of diaphragm walls, have to be conducted continuously, which could include working through the night.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Noise barriers along MRT lines",
+   "summary": "MOT is asked whether it will consider building noise barriers along MRT lines near residential projects, with contractors required to mitigate noise.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "Will the Ministry of Transport (MOT) also consider constructing noise barriers along the MRT lines near these residential projects?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "And all contractors are required to mitigate the impact of the noise and not exceed the levels stipulated.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Noise barriers at construction sites",
+   "summary": "Noise barriers are erected at source at construction sites near residential developments, including Nuovo condominium.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "To do this, we erect noise barriers at source, at the construction site near to these residential developments, including those cited by the Member – Nuovo condominium, for instance.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Rail noise barriers construction",
+   "summary": "The 2018 noise impact assessment identified MRT stretches exceeding NEA recommended levels, and noise barriers will be constructed there for rail noise.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "With regard to construction of noise barriers along MRT lines, the noise impact assessment studies, for instance, that we did in 2018, was to look at certain stretches along the MRT lines and identify where the noise exceeds the recommended level by NEA.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "For those stretches, noise barriers will be constructed – that is for rail noise.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3134",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-03"
+  ],
+  "report_ids": [
+   "oral-answer-3134"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.4348,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:30:28"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1660,
+   "completion_tokens": 247,
+   "estimated": false,
+   "cost_usd": 0.000302
+  }
+ }
+}

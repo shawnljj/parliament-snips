@@ -1,0 +1,120 @@
+{
+ "title": "Sustainability Audit for Singapore's F1 Grand Prix and Other Events",
+ "what_it_is": "Sustainability Audit for Singapore's F1 Grand Prix and Other Events",
+ "sections": [
+  {
+   "label": "F1 Singapore Grand Prix carbon footprint",
+   "summary": "The Formula 1 Singapore Grand Prix's carbon footprint was first measured in 2022, with energy use at 96.1% of emissions, published by Singapore GP Pte Ltd on 8 September 2023.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "The Formula 1 Singapore Grand Prix's carbon footprint was measured for the first time in 2022.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "Energy use made up the majority of emissions at 96.1%, while the remaining 3.9% were Scope 3 emissions from transport, waste and water.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "These findings were published in the Environmental, Social and Governance report by the race promoter, Singapore GP Pte Ltd or SGP on 8 September 2023.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "A similar audit will be conducted for the race this year.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Race and MICE sustainability targets",
+   "summary": "Singapore GP Pte Ltd aims to halve race energy emissions by 2028 and switched to LED track lighting, while STB and SACEOS will track MICE waste and carbon emissions from this year.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "SGP aims to halve the energy emissions from the race by 2028.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "The race promoter has also switched to energy-efficient LED track lightings which reduces electricity use by at least 30% compared to the previous metal-halide bulbs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "For the MICE industry, the Singapore Tourism Board (STB) \tand Singapore Association of Convention and Exhibition Organisers and Suppliers (SACEOS) are working with event organisers to start tracking the industry’s waste and carbon emissions from this year onwards.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "This is one of the targets that we have set under the MICE Sustainability Roadmap that was launched last year.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3333",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-09-19"
+  ],
+  "report_ids": [
+   "oral-answer-3333"
+  ],
+  "sentences_total": 17,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4706,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 3,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:41:29"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1317,
+   "completion_tokens": 183,
+   "estimated": false,
+   "cost_usd": 0.000236
+  }
+ }
+}

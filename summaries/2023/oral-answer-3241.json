@@ -1,0 +1,151 @@
+{
+ "title": "Impact on Patient Waiting Times and Service Standards with Shift to Capitation Model in Financing Public Healthcare Clusters",
+ "what_it_is": "Impact on Patient Waiting Times and Service Standards with Shift to Capitation Model in Financing Public Healthcare Clusters",
+ "sections": [
+  {
+   "label": "Capitation model questions to Health Minister",
+   "summary": "Questions ask whether capitation will lengthen hospital waits, how service quality is ensured, and what benchmarks apply, plus updates on pay-for-performance and bundled payment pilots.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Yip Hon Weng",
+     "attributed": true,
+     "text": "asked the Minister for Health with the Ministry’s shift to the capitation model in financing public healthcare clusters, where each cluster gets a fixed sum of money per person living in an area within the cluster (a) whether this will result in longer waiting times for patients to receive treatments in our hospitals; (b) how will the Ministry ensure that service quality to patients is not compromised; and (c) what are the benchmarks and performances standards set out for service quality under this model.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "Mr Yip Hon Weng",
+     "attributed": true,
+     "text": "asked the Minister for Health with the shift towards the capitation model in financing public healthcare clusters, where each cluster gets a fixed sum of money per person living in an area within the cluster, whether the Ministry can update on its pilots of using other models to finance the clusters such as the pay-for-performance, which rewards good performance in key priority areas, and bundled payments, where funding is based on a patient's entire care episode.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Capitation funding for three clusters",
+   "summary": "From 1 April 2023, three healthcare clusters moved to a capitation funding model, each with about 1.5 million assigned residents.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "From 1 April 2023, we transited to a capitation funding model for our three healthcare clusters.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Each has a population of about 1.5 million residents assigned under them.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Rates based on population mean",
+   "summary": "Rates are set on a mean basis for a large population but factor in variance in disease and disease progression among individual patients.",
+   "sentences": [
+    {
+     "sid": "s00043",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "While the rates are set on the basis of a mean because they are covering a large population base, it does take into account the great variance on an individual basis around disease and disease progression where some patients will do very well, short stays, minimal intervention and some will require a lot more, and that has been factored in to the calculations around the funding mechanism.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Residents keep choice of cluster",
+   "summary": "Capitation does not restrict where residents receive care; they may use all three clusters, with MOH handling back-end transfer payments.",
+   "sentences": [
+    {
+     "sid": "s00051",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "And as I explained in my main answer, the answer to his last question, it does not restrict the choice of where a resident or a patient can receive their care from.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00052",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "They can access care services from across the three clusters, even if they have been assigned as part of a population base for one cluster, MOH will work with the clusters and the administrative side of the healthcare system to do back-end transfer payments so that the residents do not have to worry about this and they will have that choice of where to receive their healthcare maintained.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Capitation allocates healthcare budget",
+   "summary": "Capitation concerns how the available healthcare budget is allocated to clusters, priority areas, diseases or care models at a big-picture level.",
+   "sentences": [
+    {
+     "sid": "s00066",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "When we talk about capitation, it is about how we take the budget that is available for healthcare and decide what are the allocations to each of the clusters, what are the allocations to each of the priority areas or the diseases or the care models, at a big picture level.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Healthier SG charging differs from capitation",
+   "summary": "The charging model for individual patients under Healthier SG is not the capitation model.",
+   "sentences": [
+    {
+     "sid": "s00070",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The charging model for individual patients under Healthier SG is not what we are doing with capitation.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3241",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-05-10"
+  ],
+  "report_ids": [
+   "oral-answer-3241"
+  ],
+  "sentences_total": 74,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 6,
+  "selection_share": 0.1216,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 6,
+   "turns_total": 12,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:59:07"
+  },
+  "usage": {
+   "calls": 5,
+   "prompt_tokens": 4644,
+   "completion_tokens": 359,
+   "estimated": false,
+   "cost_usd": 0.000751
+  }
+ }
+}

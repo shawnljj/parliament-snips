@@ -1,0 +1,126 @@
+{
+ "title": "COVID-19 (Temporary Measures) (Amendment) Bill",
+ "what_it_is": "COVID-19 (Temporary Measures) (Amendment) Bill",
+ "sections": [
+  {
+   "label": "COVID-19 public health measures extension",
+   "summary": "The extension allows targeted public health measures to prevent and control COVID-19 and react swiftly to new dangerous variants.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The extension will continue to allow targeted public health measures to be implemented for the purposes of preventing and controlling the spread of COVID-19 so that we can react swiftly to new and dangerous COVID-19 variants should they emerge.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "DORSCON Green and lifted requirements",
+   "summary": "Last month Singapore stepped down to DORSCON Green and lifted the last legal COVID-19 community measures, including mask-wearing on public transport and in indoor healthcare and residential care settings.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Last month, we stepped down to DORSCON Green and lifted the last of the legal requirements for COVID-19 community measures, namely mask-wearing on public transport and indoor healthcare and residential care settings.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Part 7 CTMA and IDA review",
+   "summary": "Part 7 of the CTMA complements the IDA, and MOH is reviewing the IDA to incorporate Part 7 provisions before revoking Part 7.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Part 7 of the CTMA was put in place to complement the Infectious Diseases Act (IDA), the main legislation used to control and prevent infectious diseases in Singapore.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Now that we are heading into endemic COVID-19 new normal and are at DORSCON Green, we should work towards stepping down Part 7 of the CTMA and rely on the IDA to manage new variants of concern or new pandemics.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "To do so, the MOH commenced a review to enhance the IDA, including incorporating provisions under Part 7 of the CTMA into the IDA so that the IDA is more robust and affords us the agility to be able to cater to different situation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We intend to table the amendments to IDA in this House in the second half of this year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Once the amendments to the IDA are passed, Part 7 of the CTMA will be revoked.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In the meantime, this last extension of Part 7 of the CTMA allows us to continue to maintain a posture of preparedness should there be a need to deal with a dangerous COVID-19 variant, swiftly activate control measures to safeguard public health and protect our healthcare system.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-623",
+  "group": "bill",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-06"
+  ],
+  "report_ids": [
+   "bill-623"
+  ],
+  "sentences_total": 22,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.3636,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:27:23"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1479,
+   "completion_tokens": 211,
+   "estimated": false,
+   "cost_usd": 0.000266
+  }
+ }
+}

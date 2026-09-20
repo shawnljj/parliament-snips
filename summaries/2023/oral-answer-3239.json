@@ -1,0 +1,120 @@
+{
+ "title": "Device Management Application and Antivirus Software in Government-issued Mobile Devices",
+ "what_it_is": "Device Management Application and Antivirus Software in Government-issued Mobile Devices",
+ "sections": [
+  {
+   "label": "Mobile device security controls",
+   "summary": "Technical controls for mobile devices include remote data removal, VPN access, email screening, restrictions on classified information, and regular officer training.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Technical controls include the installation of Mobile Device Management software, which allow for remote removal of data from compromised devices.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Connectivity to the Government network must be done via a virtual private network.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Emails are screened by a security application that blocks emails containing suspicious attachments.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "As a policy, such devices cannot be used to process and store highly classified information that may cause serious damage to national interests.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "We also educate public officers through regular training so that they are aware of cybersecurity risks, including rogue apps or spoof websites.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "People and process factors",
+   "summary": "Technical solutions can be weakened by inappropriate behaviour, so process and people factors must be emphasised to secure the space.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Every single one of these technical software solutions can be weakened by inappropriate behaviour.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "So, the key is really to make sure that our public officers understand what they are allowed to do and how what they do exposes themselves as well as our systems to risks, and to make sure that their behaviour is not compromised.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The short answer is, we do have technical solutions to each of the issue that he has brought up, but what we really need to emphasise is the process and people factors in order to make sure that we secure this space.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3239",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-05-09"
+  ],
+  "report_ids": [
+   "oral-answer-3239"
+  ],
+  "sentences_total": 18,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4444,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:04:38"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1325,
+   "completion_tokens": 139,
+   "estimated": false,
+   "cost_usd": 0.000224
+  }
+ }
+}

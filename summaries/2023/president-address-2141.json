@@ -1,0 +1,131 @@
+{
+ "title": "Ministry of Foreign Affairs",
+ "what_it_is": "Ministry of Foreign Affairs",
+ "sections": [
+  {
+   "label": "Russia invasion of Ukraine reminder",
+   "summary": "Russia's invasion of Ukraine reminds that independence, sovereignty and territorial integrity must never be taken for granted.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Russia’s invasion of its neighbour Ukraine is a striking reminder that we must never take our independence, sovereignty and territorial integrity for granted.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "US-China superpower rivalry",
+   "summary": "Superpower rivalry between the US and China continues to sharpen, with increasing risks of mishaps and geopolitical miscalculations.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Superpower rivalry between the United States (US) and China continues to sharpen, with increasing risks of mishaps and geopolitical miscalculations.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "UN marine biodiversity negotiations",
+   "summary": "Negotiations under Singapore's Presidency concluded on a new UN Agreement on Marine Biological Diversity of Areas Beyond National Jurisdiction.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "For example, we have just successfully concluded negotiations under Singapore’s Presidency on a new United Nations Agreement on Marine Biological Diversity of Areas Beyond National Jurisdiction.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MFA consular services plan",
+   "summary": "MFA will meet increased demand and deliver consular services promptly and effectively using technology and a new corps of professional first responders.",
+   "sentences": [
+    {
+     "sid": "s00031",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "MFA will meet this increased demand and deliver consular services to all Singaporeans promptly and effectively, by harnessing technology as well as through a new corps of professional first responders trained to provide 24/7 consular response and assistance to Singaporeans.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore resilience and unity",
+   "summary": "With citizen understanding, trust and support, Singapore will chart its own course, safeguard resilience and unity, and navigate challenges and opportunities.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "With understanding, trust, and support from our citizens, Singapore will be on a stronger footing to chart our own course and act in our best interests.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00035",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "Despite the fraught external environment, we have invaluable strengths, including our reputation for stability and policy consistency, as well as high levels of public trust and support — which we do not take for granted.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00036",
+     "speaker": "The Minister for Foreign Affairs (Dr Vivian Balakrishnan)",
+     "attributed": true,
+     "text": "We will continue to safeguard and shore up our resilience and unity as Singaporeans, in Singapore or overseas, to navigate the challenges and seize the opportunities ahead.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2141",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-10"
+  ],
+  "report_ids": [
+   "president-address-2141"
+  ],
+  "sentences_total": 36,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 5,
+  "selection_share": 0.1944,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:16:21"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2183,
+   "completion_tokens": 276,
+   "estimated": false,
+   "cost_usd": 0.000383
+  }
+ }
+}

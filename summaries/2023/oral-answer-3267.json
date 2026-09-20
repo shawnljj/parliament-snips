@@ -1,0 +1,113 @@
+{
+ "title": "Strengthening ActiveSG's Booking Software System",
+ "what_it_is": "Strengthening ActiveSG's Booking Software System",
+ "sections": [
+  {
+   "label": "SportSG online booking system safeguards",
+   "summary": "SportSG enhanced its online booking system with a web application firewall and upgraded reCAPTCHA software to identify bots and prevent their bookings.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Culture, Community and Youth (Mr Eric Chua) (for the Minister Culture, Community and Youth)",
+     "attributed": true,
+     "text": "First, SportSG has enhanced its online booking system, including using a web application firewall and upgrading its reCAPTCHA software to better identify bots and prevent them from making bookings.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SportSG scripter and on-seller penalties",
+   "summary": "SportSG suspended over 270 scripters and 180 on-seller accounts in two years and introduced harsher penalties from 1 July this year.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Culture, Community and Youth (Mr Eric Chua) (for the Minister Culture, Community and Youth)",
+     "attributed": true,
+     "text": "Third, SportSG has suspended more than 270 scripters and 180 on-seller accounts over the past two years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Culture, Community and Youth (Mr Eric Chua) (for the Minister Culture, Community and Youth)",
+     "attributed": true,
+     "text": "To further deter these activities, harsher penalties have been introduced from 1 July this year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Culture, Community and Youth (Mr Eric Chua) (for the Minister Culture, Community and Youth)",
+     "attributed": true,
+     "text": "First-time offenders will now have their accounts suspended for up to six months, an increase from the previous three months, while a second infringement will result in a permanent termination of the account, rather than a six-month suspension.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Culture, Community and Youth (Mr Eric Chua) (for the Minister Culture, Community and Youth)",
+     "attributed": true,
+     "text": "With the measures that SportSG has put in place, the volume of feedback regarding the use of bots and on-selling has reduced significantly.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Culture, Community and Youth (Mr Eric Chua) (for the Minister Culture, Community and Youth)",
+     "attributed": true,
+     "text": "Offenders may use improved bot technologies to try to circumvent the safeguards but we will continue to enhance our systems and adopt best practices for better detection and prevention.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Culture, Community and Youth (Mr Eric Chua) (for the Minister Culture, Community and Youth)",
+     "attributed": true,
+     "text": "We will also not hesitate to employ even stronger penalties against offenders if warranted.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3267",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-07-04"
+  ],
+  "report_ids": [
+   "oral-answer-3267"
+  ],
+  "sentences_total": 13,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.5385,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:55:59"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1115,
+   "completion_tokens": 147,
+   "estimated": false,
+   "cost_usd": 0.000197
+  }
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "title": "Distinction between Social and Illegal Carpooling",
+ "what_it_is": "Distinction between Social and Illegal Carpooling",
+ "sections": [
+  {
+   "label": "Social and stranger carpooling rules",
+   "summary": "Social carpooling among friends needs no payment, but stranger carpooling must use licensed operators who verify licences and cap two daily cost-recovery trips.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "A shared journey involving friends or colleagues, where typically no payment is required, is considered a social carpooling trip.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "However, if the carpooling is among strangers, that is, the passenger does not know the driver, then, in the interest of both drivers and passengers, this must be done via licensed carpooling operators, for example, by booking GrabHitch or RydePool services; or through other smaller operators.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "In such cases, operators are required to verify drivers' licences and enforce a maximum of two carpool journeys a day at cost recovery.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Illegal carpooling trips matched through other platforms, such as Telegram chatgroups, do not have such safeguards.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Transport (Dr Amy Khor Lean Suan) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The Land Transport Authority (LTA) has been taking enforcement action against drivers providing illegal carpooling services under section 101(1) of the Road Traffic Act, and will continue to monitor and conduct enforcement checks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "LTA enforcement against illegal carpooling",
+   "summary": "LTA enforces only against drivers who complete stranger carpooling trips for a fee matched outside licensed operators, requiring evidence of such trips.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "LTA will only take enforcement actions against drivers who are found to have completed these carpooling trips with strangers for a fee that are matched through other channels besides the carpooling operators.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "When we conduct operations, we need to get evidence that these completed trips are actually between strangers and are for a fee through a channel that is not through the carpooling operators, before we take action.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Basically, if the driver provides trips through these chatgroups, has a valid vocational licence and drives a public service vehicle, then, that is not illegal and it is allowed.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3103",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-02-27"
+  ],
+  "report_ids": [
+   "oral-answer-3103"
+  ],
+  "sentences_total": 19,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4211,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:44:25"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1486,
+   "completion_tokens": 158,
+   "estimated": false,
+   "cost_usd": 0.000252
+  }
+ }
+}

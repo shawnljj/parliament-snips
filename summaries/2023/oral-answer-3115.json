@@ -1,0 +1,153 @@
+{
+ "title": "Complaints Received Relating to Second-hand Smoke from Neighbours",
+ "what_it_is": "Complaints Received Relating to Second-hand Smoke from Neighbours",
+ "sections": [
+  {
+   "label": "Smoking-in-homes feedback numbers",
+   "summary": "NEA received about 400 smoking-in-homes feedback instances in 2019, about 2,000 each in 2020 and 2021, and about 900 in 2022.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Amy Khor Lean Suan) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "The National Environment Agency (NEA) received about 400 instances of feedback on smoking in homes in 2019.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Amy Khor Lean Suan) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "In 2020 and 2021, the number increased to about 2,000 each year, as more people worked from home during the COVID-19 pandemic.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Amy Khor Lean Suan) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "Feedback on smoking in homes has since decreased to about 900 instances in 2022.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Unique versus repeat complaints",
+   "summary": "Of the 900 feedback instances, 622 are unique feedback, though repeat and first-time complaint numbers are unavailable.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "Is there a specific number of complaints we need to receive, like high-rise littering, before something changes?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "I do not have the number of repeat complaints and first-time complaints, but of the 900 instances of feedback, 622 are actually unique feedback.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tobacco tax and smoking feedback",
+   "summary": "Tobacco tax will increase, and 900 of 21,300 smoking feedback instances in 2022 concerned homes.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "On the national level, we have done many things, just at this Budget, we have announced that there will be an increase in tobacco tax, and we hope that that would deter smoking and reduce the prevalence of second-hand smoke too; amongst others, legal age limit and so on.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "I think we also need to, not to trivialise the issue because it is serious, but we need to put this in context and have a proper perspective.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "And that is, 900 is out of 21,300 smoking feedback for 2022.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Enforcement, legislation, second-hand smoke deaths",
+   "summary": "Enforcement may not be effective, legislation for smoking at homes is being considered, and one person dies every other day from second-hand smoke.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "It cannot be that we spent an inordinate amount of expenses and effort when enforcement may not be effective.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "So, we continue to look at what else we can do, including legislation for smoking at homes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Mr Louis Ng Kok Kwang",
+     "attributed": true,
+     "text": "I mean, to put things into perspective, every other day, one person in Singapore dies that is attributed to second-hand smoke.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3115",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-02-28"
+  ],
+  "report_ids": [
+   "oral-answer-3115"
+  ],
+  "sentences_total": 31,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 4,
+  "selection_share": 0.3548,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 4,
+   "turns_total": 7,
+   "coverage": 0.5714,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:41:24"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1773,
+   "completion_tokens": 259,
+   "estimated": false,
+   "cost_usd": 0.000321
+  }
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "title": "Impact of Writ of Election on Validity of Appointment as Grassroot Adviser",
+ "what_it_is": "Impact of Writ of Election on Validity of Appointment as Grassroot Adviser",
+ "sections": [
+  {
+   "label": "GRA appointment term and duties",
+   "summary": "A GRA's term is set by PA, not tied to Parliament, and GRAs keep working and considering appeals after a Writ of Election.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Culture, Community and Youth (Mr Edwin Tong Chun Fai)",
+     "attributed": true,
+     "text": "The term of a GRA's appointment is determined by PA and is not tied to the term of Parliament.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Culture, Community and Youth (Mr Edwin Tong Chun Fai)",
+     "attributed": true,
+     "text": "As with all Government agencies, which continue to function after a Writ of Election is issued, GRAs continue to discharge their responsibilities.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Culture, Community and Youth (Mr Edwin Tong Chun Fai)",
+     "attributed": true,
+     "text": "In this period of time, Government agencies also continue to receive and will duly consider appeals made by members of the public, or those made on their behalf.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Appeals by non-Members of Parliament",
+   "summary": "Such persons are not Members of Parliament, so any appeal they file is treated as a request made on behalf of another member of public.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Mr Edwin Tong Chun Fai",
+     "attributed": true,
+     "text": "So, to that extent, they are not Members of Parliament.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mr Edwin Tong Chun Fai",
+     "attributed": true,
+     "text": "Therefore, the appeal, if any is filed by that person, it will be treated as a request made on behalf of another member of public.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3175",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-21"
+  ],
+  "report_ids": [
+   "oral-answer-3175"
+  ],
+  "sentences_total": 10,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:19:44"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 926,
+   "completion_tokens": 134,
+   "estimated": false,
+   "cost_usd": 0.000167
+  }
+ }
+}

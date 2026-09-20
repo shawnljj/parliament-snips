@@ -1,0 +1,153 @@
+{
+ "title": "Scaling Up Polyclinics' Capacity to Accommodate More Walk-in Patients with Urgent Conditions",
+ "what_it_is": "Scaling Up Polyclinics' Capacity to Accommodate More Walk-in Patients with Urgent Conditions",
+ "sections": [
+  {
+   "label": "Walk-in patients and polyclinic expansion",
+   "summary": "Urgent walk-in patients are attended to, others may book or go to a GP, and more polyclinics are opening.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "As for walk-in patients without appointments, those requiring urgent medical attention will be attended to, those not requiring urgent medical attention may be asked to book an appointment or seek treatment at a nearby general practitioner (GP) clinic.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We are continuing to expand our network of polyclinics.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We opened Bukit Panjang, Eunos and Kallang Polyclinics in end 2021 and another two polyclinics in Sembawang and Tampines North are slated to open later this year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Khatib Polyclinic will open in 2024 and Serangoon and Tengah Polyclinics in 2025.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Triage of walk-in patients",
+   "summary": "Walk-in patients are triaged and assessed, including their frailty, age and mobility.",
+   "sentences": [
+    {
+     "sid": "s00032",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "As I mentioned in my original answer, the walk-in residents, the walk-in patients are triaged and assessed, and part of that assessment will, indeed, be their state of frailty, and their age and their mobility are considered as part of that assessment.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Seniors and online appointment booking",
+   "summary": "Some elderly residents struggle with online booking, slots fill quickly, and seniors form a high proportion of polyclinic workload.",
+   "sentences": [
+    {
+     "sid": "s00036",
+     "speaker": "Dr Tan Wu Meng (Jurong)",
+     "attributed": true,
+     "text": "Some may be quite elderly, less able to go online, less able to quickly click to secure the appointment when the bookings open.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00037",
+     "speaker": "Dr Tan Wu Meng (Jurong)",
+     "attributed": true,
+     "text": "I have residents who tell me that, for some polyclinics, the online slots are used up within half an hour of the online booking starting on some days.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00039",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "For his first supplementary question, I do not have the data with me about the proportions of seniors that are attending now as compared to historical data.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "I would be happy to provide it if he would like to file a separate Parliamentary Question.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00041",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "But, in general, as I engage with the polyclinic staff and the clinicians who provide these services, it is quite clear that a very high proportion of their workload is, indeed, the seniors.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Integrating CHAS GP clinics online",
+   "summary": "A suggestion to integrate CHAS GP clinics into an online booking system will be studied to improve access to primary care.",
+   "sentences": [
+    {
+     "sid": "s00044",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "On his suggestion about integration of the CHAS GP clinics into an online booking system, it is a suggestion worth studying and we will, indeed, look to see how we can improve access to primary care services for residents.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3218",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-05-08"
+  ],
+  "report_ids": [
+   "oral-answer-3218"
+  ],
+  "sentences_total": 44,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 4,
+  "selection_share": 0.25,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 4,
+   "turns_total": 10,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:07:32"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2758,
+   "completion_tokens": 238,
+   "estimated": false,
+   "cost_usd": 0.000453
+  }
+ }
+}

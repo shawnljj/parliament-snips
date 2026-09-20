@@ -1,0 +1,165 @@
+{
+ "title": "Ministry of Health",
+ "what_it_is": "Ministry of Health",
+ "sections": [
+  {
+   "label": "Communicable Diseases Agency setup",
+   "summary": "MOH will set up a Communicable Diseases Agency to oversee disease preparedness, prevention, control, surveillance, risk assessment and outbreak response.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "MOH will strengthen our capabilities and structures by setting up a Communicable Diseases Agency to oversee disease preparedness, prevention and control, surveillance, risk assessment, and outbreak response.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "More public hospital beds",
+   "summary": "In the next few years, 1,900 more public hospital beds will be added, from 11,000 beds today.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "In the next few years, we will add 1,900 (or about 20%) more public hospital beds, from 11,000 beds today.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Growing healthcare workforce",
+   "summary": "Nursing and support care manpower will increase 40%, from 49,000 to 69,000 by 2030, through local training and foreign healthcare workers.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We will continue to develop our healthcare workforce.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We plan to increase our nursing and support care manpower by 40%, from 49,000 now to 69,000 by 2030, by building a stronger local pipeline through pre-employment training and mid-career conversions, and complementing our local core with foreign healthcare workers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Healthier SG enrolment start",
+   "summary": "Enrolment into Healthier SG will start in July 2023, kickstarting dedicated patient-doctor relationships throughout society.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Enrolment into Healthier SG will start in July 2023, and this will kickstart the development of strong and dedicated patient-doctor relationships throughout society.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Senior-friendly environment and palliative care",
+   "summary": "The built environment, housing, Active Ageing Centres and palliative care support will be strengthened so seniors can age and pass on at home.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Broadly, our built environment must be made more senior-friendly, with new housing options such as Community Care Apartments, and existing common spaces such as void decks, parks, and coffee shops transformed into conducive environments for seniors.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00039",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Our network of Active Ageing Centres will need to be expanded, and their operations remodelled, so that they can become nodes for seniors to make friends, volunteer, participate in active ageing programmes, and receive support for maintaining good health.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "As seniors approach end-of-life, we will seek to fulfil the wishes of the great majority to pass on in the comfort of their homes, surrounded by their loved ones.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00041",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We will therefore strengthen support for palliative care by enhancing clinical protocols in hospitals to enable more seamless care transitions, upskilling healthcare workers, and engaging Singaporeans in conversations on their preferences.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Rethink healthcare financing policies",
+   "summary": "Costly new medical technology deployed in specific circumstances would require a rethink of healthcare financing, especially medical insurance and MediShield Life.",
+   "sentences": [
+    {
+     "sid": "s00048",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Even as new medical technology becomes established, it will likely be costly and deployed only in specific circumstances.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00049",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "This would require a rethink of our healthcare financing policies, especially the role of medical insurance and MediShield Life.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2131",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-10"
+  ],
+  "report_ids": [
+   "president-address-2131"
+  ],
+  "sentences_total": 51,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 6,
+  "selection_share": 0.2157,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:15:50"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2758,
+   "completion_tokens": 347,
+   "estimated": false,
+   "cost_usd": 0.000483
+  }
+ }
+}

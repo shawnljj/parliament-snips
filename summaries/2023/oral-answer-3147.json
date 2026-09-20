@@ -1,0 +1,134 @@
+{
+ "title": "Implementation of Recommendations by 2021 National Wellness Committee on Junior Doctors",
+ "what_it_is": "Implementation of Recommendations by 2021 National Wellness Committee on Junior Doctors",
+ "sections": [
+  {
+   "label": "Junior doctors' well-being efforts",
+   "summary": "MOH states it continues efforts to improve and retain doctors, citing the National Wellness Committee for Junior Doctors, Chief Wellness Officers and the Hospital Clinician scheme.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Nevertheless, we continue to make efforts to improve the well-being of our doctors and to retain them in public service, including the formation of the National Wellness Committee for Junior Doctors (NWC-JD) which has been studying initiatives to promote and improve the well-being of junior doctors in the public healthcare system.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The committee is conducting a series of in-depth small group discussions with junior and senior doctors.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Through these, we have sought to validate the approach to key concerns such as the need to improve career pathways, address work hours and improve work conditions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The committee is concluding its engagements with stakeholders and finalising its recommendations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Early initiatives already in place include the appointment of Chief Wellness Officers in our public healthcare clusters.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "These officers have a responsibility to enhance the well-being of all healthcare staff.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We have also begun to expand and refine career pathways, such as the introduction of the Hospital Clinician scheme to provide doctors with more diverse career options.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Conducive work environment for junior doctors",
+   "summary": "MOH is asked whether it will consider reducing paperwork and streamlining admin processes, and says it monitors workload via electronic logging and surveys.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "Will the Ministry of Health (MOH) consider initiatives, such as reducing paperwork and streamlining some of the admin processes, to make a more conducive work environment for our junior doctors?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We are doing electronic logging and surveys to monitor the workload of junior doctors.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "However, the issue goes beyond just the simple redistribution of workload or the simplistic hiring of more manpower.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3147",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-20"
+  ],
+  "report_ids": [
+   "oral-answer-3147"
+  ],
+  "sentences_total": 24,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.4167,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 7,
+   "coverage": 0.4286,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:24:06"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1523,
+   "completion_tokens": 154,
+   "estimated": false,
+   "cost_usd": 0.000256
+  }
+ }
+}

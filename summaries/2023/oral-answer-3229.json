@@ -1,0 +1,127 @@
+{
+ "title": "Reviewing Income Criteria for Student Care Fee Assistance to Reduce Out-of-pocket Expenses",
+ "what_it_is": "Reviewing Income Criteria for Student Care Fee Assistance to Reduce Out-of-pocket Expenses",
+ "sections": [
+  {
+   "label": "SCFA subsidies and fees",
+   "summary": "ComCare families get maximum SCFA subsidies; median SCFA family pays $29 per child, highest subsidy pays $5, while SCC median fee is $295.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Social and Family Development (Mr Eric Chua) (for the Minister for Social and Family Development)",
+     "attributed": true,
+     "text": "Families receiving ComCare Financial Assistance automatically qualify for maximum SCFA subsidies.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Social and Family Development (Mr Eric Chua) (for the Minister for Social and Family Development)",
+     "attributed": true,
+     "text": "Around three in five families on SCFA receive maximum subsidies.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Social and Family Development (Mr Eric Chua) (for the Minister for Social and Family Development)",
+     "attributed": true,
+     "text": "The median family receiving the SCFA pays out-of-pocket fees of $29 per child.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Social and Family Development (Mr Eric Chua) (for the Minister for Social and Family Development)",
+     "attributed": true,
+     "text": "Those receiving the highest subsidy pay as low as $5.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Social and Family Development (Mr Eric Chua) (for the Minister for Social and Family Development)",
+     "attributed": true,
+     "text": "The median fee for SCCs without assistance is $295 and has remained stable over the past few years.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SCFA review and startup grant",
+   "summary": "SCFA was last enhanced in 2020 and is reviewed periodically; per capita income is considered for larger families, and a startup grant covers initial enrolment costs.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "To the first point, the SCFA was last enhanced in 2020 and we do review it from time to time.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "For larger families, we do look at the per capita income condition, so that each family, if they do qualify, they can qualify for higher subsidies where plausible.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "The Member rightly said that the SCFA is not meant for enrichment.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Eric Chua",
+     "attributed": true,
+     "text": "There is perhaps one component that I did not mention and that is the startup grant, and that helps the families to pay for initial enrolment costs – things like buying a mattress, putting in centre deposits, buying uniforms, for instance.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3229",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-05-09"
+  ],
+  "report_ids": [
+   "oral-answer-3229"
+  ],
+  "sentences_total": 19,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.4737,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:04:45"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1242,
+   "completion_tokens": 161,
+   "estimated": false,
+   "cost_usd": 0.000219
+  }
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "title": "Cost, Lifespan and Expected Outcomes for Installation of Next Generation ERP 2.0 System On-Board Units in Vehicles",
+ "what_it_is": "Cost, Lifespan and Expected Outcomes for Installation of Next Generation ERP 2.0 System On-Board Units in Vehicles",
+ "sections": [
+  {
+   "label": "ERP 2.0 data and charging questions",
+   "summary": "Questions ask the Minister for Transport about ERP 2.0 data usage, crime-fighting use, privacy, and distance-based charging start date and pricing.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Ms He Ting Ru",
+     "attributed": true,
+     "text": "asked the Minister for Transport in relation to the introduction of ERP 2.0 (a) whether there have been any updated considerations and measures put in place (i) to balance the usage of data, in particular geo location data and (ii) on the usage of this data to fight crime, weighed against concerns about data security and privacy; and (b) if so, what are they.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Chua Kheng Wee Louis",
+     "attributed": true,
+     "text": "asked the Minister for Transport (a) when does the Government intend to commence the implementation of distance-based charging under the new satellite-based Electronic Road Pricing system; (b) what are the factors under consideration to determine such a start date; and (c) whether the pricing mechanism for distance-based charging has been determined.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "LTA ERP 2.0 replacement assessment",
+   "summary": "LTA assessed that replacing the current ERP system with ERP 2.0 based on GNSS technology is less costly than extending the existing system.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "The Land Transport Authority (LTA) had assessed that it is less costly to replace the current ERP system with ERP 2.0 based on Global Navigation Satellite System (GNSS) technology, compared to extending the existing system.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "No immediate distance-based charging plans",
+   "summary": "LTA has no immediate plans to introduce distance-based charging.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "LTA has no immediate plans to introduce distance-based charging.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "OBU one-way communication design",
+   "summary": "The OBU is designed for one-way communication to ensure better security.",
+   "sentences": [
+    {
+     "sid": "s00050",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "The OBU is also designed for one-way communication to ensure better security.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Mobile interface for OBU display",
+   "summary": "LTA developed a mobile interface letting motorists opt out of the OBU touchscreen and use smartphones for information display.",
+   "sentences": [
+    {
+     "sid": "s00054",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "For the third function, LTA has taken on board earlier feedback and a mobile interface has since been developed, allowing motorists to opt out of installing the accompanying touchscreen of the OBU and use their smartphones for information display.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3366",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-11-06"
+  ],
+  "report_ids": [
+   "oral-answer-3366"
+  ],
+  "sentences_total": 55,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 5,
+  "selection_share": 0.1091,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:35:16"
+  },
+  "usage": {
+   "calls": 5,
+   "prompt_tokens": 3398,
+   "completion_tokens": 283,
+   "estimated": false,
+   "cost_usd": 0.000555
+  }
+ }
+}

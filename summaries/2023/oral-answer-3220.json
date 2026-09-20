@@ -1,0 +1,140 @@
+{
+ "title": "Display Bus Stop Codes to Help Commuters Identify Bus Stops in Advance of Arriving",
+ "what_it_is": "Display Bus Stop Codes to Help Commuters Identify Bus Stops in Advance of Arriving",
+ "sections": [
+  {
+   "label": "Bus accessibility and wayfinding measures",
+   "summary": "LTA has fitted new public buses with the Passenger Information Display System since 2018 and added other navigation aids and inclusive commuting efforts.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Since 2018, the Land Transport Authority (LTA) has fitted all new public buses with the Passenger Information Display System (PIDS), which displays and announces the name of the upcoming bus stop, including references to nearby landmarks or the road.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Other measures to make navigation easier include the installation of tactile ground surface indicators, Braille signages for the visually impaired and murals to assist commuters with dementia.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "New bus interchanges also have enhanced signages with bigger fonts and brighter lighting for improved readability and better wayfinding.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Besides infrastructure enhancements, the Caring SG Commuters Committee has been promoting a more inclusive and caring commuting culture, to encourage commuters to assist fellow passengers who may require help with navigation.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bus stop information display question",
+   "summary": "A question asks whether bus stop name and code can be placed on bus shelter address plates, and the reply says information is already displayed at bus stops.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
+     "attributed": true,
+     "text": "So, my question to the Senior Minister of State is: can the bus stop name and code be placed on the bus stop bus shelter address plates, instead of what is right now on the bus shelter address plates which is actually not very meaningful to the commuters themselves?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "Certainly, I think we will look at different ways to improve the visibility and how the information is being displayed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "I just want to clarify that, today, as he acknowledged, the information – the name, the alphanumeric code and the five-digit code – they are all displayed at the bus stops.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "And depending on, from your perspective as a commuter, different people would require the information in different ways and use it differently to help with their navigation.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Toa Payoh Crest postal code",
+   "summary": "The passage states that it is part of Toa Payoh Crest and has a six-digit postal code of 311130, and both sets of information are useful.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "It is part of Toa Payoh Crest but it also has a six-digit postal code which is 311130.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "So, I think both sets of information are useful and they are used for different purposes.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3220",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-05-08"
+  ],
+  "report_ids": [
+   "oral-answer-3220"
+  ],
+  "sentences_total": 19,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.5263,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:07:49"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1519,
+   "completion_tokens": 207,
+   "estimated": false,
+   "cost_usd": 0.000271
+  }
+ }
+}

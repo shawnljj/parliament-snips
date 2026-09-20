@@ -1,0 +1,99 @@
+{
+ "title": "Average Wait Time for Walk-in Patients at Polyclinics and Number of Patients Turned Away",
+ "what_it_is": "Average Wait Time for Walk-in Patients at Polyclinics and Number of Patients Turned Away",
+ "sections": [
+  {
+   "label": "Polyclinic walk-in waiting and turn-aways",
+   "summary": "The Ministry does not track patients turned away from polyclinics or the proportion above 55, and polyclinics operate on an appointment basis with triage for walk-ins.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "",
+     "attributed": false,
+     "text": "The following question stood in the name of Mr Saktiandi Supaat – 16 To ask the Minister for Health (a) what is the current average waiting time for a walk-in patient at a polyclinic; (b) what is the current average number of people who are turned away each day on the basis that there are no more queue numbers issued even if they have arrived within the polyclinic’s opening hours; (c) of which, what proportion is above the age of 55 years old; and (d) if any of the foregoing data is unavailable, whether the Ministry will consider collecting them.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We currently do not track the number of patients turned away from the polyclinics, nor the proportion above 55 years of age.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Given their high volumes, the polyclinics generally operate on an appointment basis to optimise capacity, patient waiting times and manpower allocation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For walk-in patients who are unable to get a same day appointment, the polyclinics will triage based on medical needs.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Developing more polyclinics by 2030",
+   "summary": "More polyclinics are being developed, on track to meet the target of 32 polyclinics by 2030.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "To meet anticipated healthcare needs, we are developing more polyclinics and are on track to meet our target of 32 polyclinics by 2030.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3167",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-21"
+  ],
+  "report_ids": [
+   "oral-answer-3167"
+  ],
+  "sentences_total": 7,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.7143,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 2,
+   "turns_total": 2,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:19:46"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1032,
+   "completion_tokens": 142,
+   "estimated": false,
+   "cost_usd": 0.000184
+  }
+ }
+}

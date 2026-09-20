@@ -1,0 +1,141 @@
+{
+ "title": "Rationale for Requiring Both Employers and Doctors to Submit Incident Report after Diagnosis of Occupational Disease",
+ "what_it_is": "Rationale for Requiring Both Employers and Doctors to Submit Incident Report after Diagnosis of Occupational Disease",
+ "sections": [
+  {
+   "label": "Occupational disease reporting rationale",
+   "summary": "Doctors and employers must both report occupational diseases because diagnosed workers may have left the job, while only employers report workplace injuries.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Louis Ng Kok Kwang",
+     "attributed": true,
+     "text": "asked the Minister for Manpower what is the rationale for requiring both employers and doctors to submit an incident report after an occupational disease has been diagnosed but requiring only the employer to report a death or injury arising from a work-related or workplace accident.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Manpower (Mr Zaqy Mohamad) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "This is because unlike workplace injuries, a person diagnosed with an OD may have already moved on from the job that caused the OD or be working for a different employer, or may not be working at all, at the time of diagnosis.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Manpower (Mr Zaqy Mohamad) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "Requiring doctors to submit such incident reports ensures that these cases are not missed out, helps to expedite the work injury claims process and safeguards employees' interests, as insurers and MOM are informed in a timely manner.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Manpower (Mr Zaqy Mohamad) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "On the other hand, there is no need for doctors to report workplace injuries as the link between the injury, the workplace accident and the employment relationship is generally more direct.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Under-reporting workplace injuries enforcement",
+   "summary": "MOM mandates reporting from day one, penalties apply, loopholes are closed, and the public can report cases.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "Can I just ask how is MOM making sure that there is no under-reporting of workplace injuries?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Mr Zaqy Mohamad",
+     "attributed": true,
+     "text": "They could also be jailed up to six months or receive a fine of up to $10,000, if they do not report.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Zaqy Mohamad",
+     "attributed": true,
+     "text": "So, the laws are there, mandating reporting of injuries as well as ODs.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mr Zaqy Mohamad",
+     "attributed": true,
+     "text": "And at the same time, I think the Member is also aware that when we amended Work Injury Compensation Act (WICA), for example, we have now closed some of these loopholes, where now you have to report from day one of your medical certificate (MC) as opposed to in the past you could – there were some doctors who gamed – some employees who gamed when they did not have to report short duration MCs for example.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Zaqy Mohamad",
+     "attributed": true,
+     "text": "We have closed the loopholes as and when we find them and we would like to work with non-governmental organisations (NGOs), members of the public or even employees themselves, who could also report to us some of these cases so that we can better understand if there are any loopholes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Zaqy Mohamad",
+     "attributed": true,
+     "text": "But at this moment, it does not look as such because we have closed as many loopholes as possible and reporting is mandated from day one.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Zaqy Mohamad",
+     "attributed": true,
+     "text": "I assure the Member that the process is in place, but what is more important is that we want to keep the process lean so that it reduce the amount of duplication.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3144",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-06"
+  ],
+  "report_ids": [
+   "oral-answer-3144"
+  ],
+  "sentences_total": 17,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 2,
+  "selection_share": 0.6471,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 4,
+   "turns_total": 6,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:27:25"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1632,
+   "completion_tokens": 142,
+   "estimated": false,
+   "cost_usd": 0.000268
+  }
+ }
+}

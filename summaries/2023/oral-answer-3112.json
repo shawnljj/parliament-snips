@@ -1,0 +1,146 @@
+{
+ "title": "Average Timespan of Manually-handled Court Case Compared to One Managed Under Intergrated Case Management System",
+ "what_it_is": "Average Timespan of Manually-handled Court Case Compared to One Managed Under Intergrated Case Management System",
+ "sections": [
+  {
+   "label": "ICMS criminal cases and maintenance",
+   "summary": "About 184,000 criminal cases were filed yearly from 2018 to 2022 on ICMS, which undergoes weekly and monthly maintenance.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Law (Ms Rahayu Mahzam) (for the Minister for Law)",
+     "attributed": true,
+     "text": "An average of around 184,000 criminal cases were filed each year from 2018 to 2022 on ICMS.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Law (Ms Rahayu Mahzam) (for the Minister for Law)",
+     "attributed": true,
+     "text": "The ICMS currently undergoes scheduled weekly and monthly maintenance, which takes about four or 10 hours, respectively.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Manual case management on 7 and 8 February 2023",
+   "summary": "Average manual case management time was not tracked; under 1% of 2,037 scheduled cases on 7 and 8 February 2023 were adjourned.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Law (Ms Rahayu Mahzam) (for the Minister for Law)",
+     "attributed": true,
+     "text": "The average time to manage these cases manually on 7 and 8 February 2023, as compared to the average time if the cases had been managed under ICMS, was not specifically tracked.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Law (Ms Rahayu Mahzam) (for the Minister for Law)",
+     "attributed": true,
+     "text": "Only 16 of the 2,037 criminal cases scheduled on 7 and 8 February 2023, that is, less than 1% of the scheduled cases, had to be adjourned.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "ICMS maintenance downtime hours",
+   "summary": "Weekly maintenance takes four hours and monthly 10 hours, about 328 downtime hours or 3.7% of a year.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "Actually, it is four hours for the weekly maintenance and 10 hours for the monthly one, which are done during times when the Courts are not in operation.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "That takes about 328 hours of downtime, out of a total of 8,760 hours in a year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "So, it is about only 3.7% of the hours in a year.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Improving and integrating CCMS",
+   "summary": "Suggestions on integrating the Criminal Case Management System (CCMS) will be taken back and looked into.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "I think it is something that we want to continually improve on.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00031",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "There are suggestions made on the integration of the Criminal Case Management System (CCMS).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00032",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "That is something we can take back and look into.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3112",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-02-28"
+  ],
+  "report_ids": [
+   "oral-answer-3112"
+  ],
+  "sentences_total": 32,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.3125,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:41:27"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1597,
+   "completion_tokens": 255,
+   "estimated": false,
+   "cost_usd": 0.000295
+  }
+ }
+}

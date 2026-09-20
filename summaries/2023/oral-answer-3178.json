@@ -1,0 +1,132 @@
+{
+ "title": "Provision of School Bus Services",
+ "what_it_is": "Provision of School Bus Services",
+ "sections": [
+  {
+   "label": "School bus demand and driver shortage",
+   "summary": "Demand for school bus services is stable, but providers report a shortage of bus drivers and rising fuel prices.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Education (Ms Gan Siow Huang) (for the Minister for Education)",
+     "attributed": true,
+     "text": "The demand for school bus services has been relatively stable, as we continue to have 98% of our Primary 1 students obtaining a place either in a primary school of their choice or within two kilometres of their residence.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Education (Ms Gan Siow Huang) (for the Minister for Education)",
+     "attributed": true,
+     "text": "However, based on our engagement with some school bus service providers, they have provided feedback on a shortage of bus drivers, with the post-COVID-19 reopening of the economy being a factor.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Education (Ms Gan Siow Huang) (for the Minister for Education)",
+     "attributed": true,
+     "text": "This was also compounded by the rising fuel prices which have affected the viability of some of these providers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "School bus fares and subsidies",
+   "summary": "Bus fares rose up to 10% in 2023, and MOE enhanced the school bus subsidy from 60% to 65% since January 2023.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister of State for Education (Ms Gan Siow Huang) (for the Minister for Education)",
+     "attributed": true,
+     "text": "For most MOE schools, the bus fares have gone up by up to 10% in 2023 compared to 2022, while special education (SPED) schools have generally seen a higher increase due to the smaller pool of bus operators who are able to meet their more complex needs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister of State for Education (Ms Gan Siow Huang) (for the Minister for Education)",
+     "attributed": true,
+     "text": "To better ensure affordability of transport costs to school for lower-income students, MOE has enhanced the school bus subsidy from 60% of monthly school bus fares to 65% since January 2023.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Enabling Transport Subsidy for SPED students",
+   "summary": "Eligible SPED students taking school bus services can apply for the Enabling Transport Subsidy, increased from 1 July 2022.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister of State for Education (Ms Gan Siow Huang) (for the Minister for Education)",
+     "attributed": true,
+     "text": "Likewise, for SPED schools, eligible students taking school bus services can apply for the Enabling Transport Subsidy, administered by SG Enable, which was increased from 1 July 2022 to help defray the cost of school bus fares.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Training for SPED school bus operators",
+   "summary": "MOE does not provide training to SPED school bus operators; schools specify required skills and services in contracts.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "As to the training, MOE does not provide training to the school bus operators of SPED schools.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00030",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "Instead, what our schools normally do is specify in the contracts what kind of skills and services they require the school bus operators to be equipped with, either for the drivers or the minders in the buses.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3178",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-22"
+  ],
+  "report_ids": [
+   "oral-answer-3178"
+  ],
+  "sentences_total": 30,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.2667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:17:14"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1821,
+   "completion_tokens": 250,
+   "estimated": false,
+   "cost_usd": 0.000325
+  }
+ }
+}

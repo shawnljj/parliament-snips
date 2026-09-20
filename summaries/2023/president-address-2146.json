@@ -1,0 +1,145 @@
+{
+ "title": "Ministry of Culture, Community and Youth",
+ "what_it_is": "Ministry of Culture, Community and Youth",
+ "sections": [
+  {
+   "label": "Sports Hub and Kallang Alive",
+   "summary": "The Government takes over ownership of the Sports Hub and rejuvenates the Kallang Alive precinct, giving Singaporeans greater access to sports facilities and events.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Culture, Community and Youth (Mr Edwin Tong Chun Fai)",
+     "attributed": true,
+     "text": "Singaporeans will enjoy greater access to world-class sports facilities and marquee sports, lifestyle and entertainment events with the Government taking over ownership of the Sports Hub and rejuvenating the Kallang Alive precinct.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Student programmes and ActiveSG credits",
+   "summary": "Programmes like Strategic Partnership Co-Curricular Activities let students from different schools join activities, and ActiveSG members aged four to 12 get an extra $100 in credits.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Culture, Community and Youth (Mr Edwin Tong Chun Fai)",
+     "attributed": true,
+     "text": "Programmes, such as Strategic Partnership Co-Curricular Activities, allow students from different schools to participate in activities, such as athletics, water polo and ethnic dance.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Culture, Community and Youth (Mr Edwin Tong Chun Fai)",
+     "attributed": true,
+     "text": "We are also topping up the accounts of ActiveSG members aged four to 12 years with an additional $100 of ActiveSG credits, so children can interact and bond outside of school.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Corporate Volunteer Scheme and Mentoring SG",
+   "summary": "MCCY extends and enhances the Corporate Volunteer Scheme for tax deductions, and the Mentoring SG office is set up to grow the mentoring movement nationally.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "The Minister for Culture, Community and Youth (Mr Edwin Tong Chun Fai)",
+     "attributed": true,
+     "text": "MCCY is also extending and enhancing the Corporate Volunteer Scheme (previously known as the Business and IPC Partnership Scheme) so businesses can continue to enjoy tax deductions when their employees volunteer at an Institution of a Public Character.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00027",
+     "speaker": "The Minister for Culture, Community and Youth (Mr Edwin Tong Chun Fai)",
+     "attributed": true,
+     "text": "The Mentoring SG office has been set up to grow awareness of mentoring, match individuals and organisations to suitable mentoring opportunities, and build capabilities to grow the mentoring movement at the national level.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Citizens' Panels, AfAs and youth engagement",
+   "summary": "MCCY offers platforms like Citizens' Panels and Alliances for Action for policy co-development, with at least 35 AfAs formed since 2019, and encourages youth civic discourse.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "The Minister for Culture, Community and Youth (Mr Edwin Tong Chun Fai)",
+     "attributed": true,
+     "text": "MCCY, together with the rest of the Government, will offer opportunities for Singaporeans to co-develop policies and solutions on salient national-level issues through platforms, such as Citizens’ Panels and Alliances for Action (AfAs).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00034",
+     "speaker": "The Minister for Culture, Community and Youth (Mr Edwin Tong Chun Fai)",
+     "attributed": true,
+     "text": "At least 35 AfAs have been formed since 2019.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00036",
+     "speaker": "The Minister for Culture, Community and Youth (Mr Edwin Tong Chun Fai)",
+     "attributed": true,
+     "text": "MCCY will encourage more youths to engage in constructive civic discourse, take action to make change, and contribute to policy co-creation through platforms such as the Youth Circles and programmes such as the Youth Action Challenge.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Forward Singapore engagement priorities",
+   "summary": "Through the Forward Singapore engagements, Singaporeans have shared that they care about deepening inclusiveness, promoting fairness and growing a culture of giving back.",
+   "sentences": [
+    {
+     "sid": "s00040",
+     "speaker": "The Minister for Culture, Community and Youth (Mr Edwin Tong Chun Fai)",
+     "attributed": true,
+     "text": "Through the Forward Singapore engagements, Singaporeans have shared that they care about deepening inclusiveness, promoting fairness and growing a culture of giving back.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2146",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-10"
+  ],
+  "report_ids": [
+   "president-address-2146"
+  ],
+  "sentences_total": 41,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 5,
+  "selection_share": 0.2195,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:16:05"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2417,
+   "completion_tokens": 330,
+   "estimated": false,
+   "cost_usd": 0.000431
+  }
+ }
+}

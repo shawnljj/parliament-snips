@@ -1,0 +1,112 @@
+{
+ "title": "Feasibility of Seaweed Production in Singapore’s Waters",
+ "what_it_is": "Feasibility of Seaweed Production in Singapore’s Waters",
+ "sections": [
+  {
+   "label": "Seaweed production feasibility plans",
+   "summary": "The Government has no plans to allocate sea space for seaweed production but will consider industry proposals for new food types.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Leon Perera",
+     "attributed": true,
+     "text": "asked the Minister for Sustainability and the Environment (a) what is the Government doing to explore the feasibility of seaweed production in Singapore’s waters; (b) whether the Ministry includes the local production of seaweed as part of its 30 by 30 agri-food strategy; and (c) whether the Ministry includes seaweed farms as part of its sea space lease provision.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Koh Poh Koon) (for the Minister of Sustainability and the Environment)",
+     "attributed": true,
+     "text": "We currently do not have plans to allocate sea space for seaweed production.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Koh Poh Koon) (for the Minister of Sustainability and the Environment)",
+     "attributed": true,
+     "text": "Nevertheless, we are prepared to consider proposals from the industry on new food types, including seaweed, that will help us contribute to our \"30 by 30\" goal.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Imported seaweed versus vegetable volumes",
+   "summary": "Annual imported seaweed volume has been under 1,000 tonnes, compared to 544,000 tonnes of vegetables imported per year.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "In fact, the annual volume of imported seaweed has been less than 1,000 tonnes, compared to vegetables where we have to import 544,000 tonnes per year.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Studying seaweed biodiversity impact",
+   "summary": "Differences in water temperature, nutrients and biodiversity mean agencies and experts must study how introducing seaweed or seagrass affects the ecosystem.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "What is suitably grown in other coastal areas in other parts of the world may well be different here because the water temperature is different, the water nutrients are different, the kind of biodiversity here is also different and we do have to understand by introducing a certain variety of seaweed or sea grass here, how they can impact the biodiversity and the micro ecosystem here, that can impact also the other type of organisms like fish.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "So, it is something that the agencies together with the experts have to study, to make sure that in trying to experiment something new, we do not introduce dangers to our own shores and create more problems in our ecosystem and biodiversity.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3018",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-01-10"
+  ],
+  "report_ids": [
+   "oral-answer-3018"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.4,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:03:36"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1398,
+   "completion_tokens": 174,
+   "estimated": false,
+   "cost_usd": 0.000244
+  }
+ }
+}

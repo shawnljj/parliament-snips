@@ -1,0 +1,72 @@
+{
+ "title": "Parliament (Privileges, Immunities and Powers) Act 1962",
+ "what_it_is": "Parliament (Privileges, Immunities and Powers) Act 1962",
+ "sections": [
+  {
+   "label": "MP suspension back payment",
+   "summary": "The amendment allows back payment so MPs can be suspended before the legal process ends, avoiding penalising innocent MPs.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Ms Hazel Poa (Non-Constituency Member)",
+     "attributed": true,
+     "text": "Without this amendment to allow back payment, we would be unable to suspend any MP until the full process of the law has been completed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "Ms Hazel Poa (Non-Constituency Member)",
+     "attributed": true,
+     "text": "It would be unfair if MPs eventually found innocent were to be penalised.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-intro-2257",
+  "group": "bill",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-09-19"
+  ],
+  "report_ids": [
+   "bill-intro-2257"
+  ],
+  "sentences_total": 4,
+  "sentences_selected": 2,
+  "sentences_in_sections": 2,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 2,
+   "sentences_selected": 2,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:41:44"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 642,
+   "completion_tokens": 63,
+   "estimated": false,
+   "cost_usd": 0.000108
+  }
+ }
+}

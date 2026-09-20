@@ -1,0 +1,146 @@
+{
+ "title": "Spate of Home Fires Related to Electrical Appliances and Devices",
+ "what_it_is": "Spate of Home Fires Related to Electrical Appliances and Devices",
+ "sections": [
+  {
+   "label": "Residential fires and causes",
+   "summary": "Residential fires fell from 1,235 in 2018 to 934 in 2022, mainly from unattended cooking, lighted materials and electrical origin, which stayed 250 to 300 yearly.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "The number of fires in residential premises has been steadily decreasing, from 1,235 cases in 2018, to 934 cases in 2022.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "The main causes of these fires were unattended cooking, the indiscriminate disposal of lighted materials, such as cigarette butts, and fires of electrical origin that could be caused by faulty electrical appliances or wirings.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "The number of residential fires of electrical origin has remained constant from 2018 to 2022, ranging between 250 and 300 cases annually.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Home Fire Alarm Devices and prevention",
+   "summary": "Since June 2018 SCDF requires Home Fire Alarm Devices in new residential premises, and homeowners can prevent electrical fires by using certified equipment and switching off appliances.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "For example, since June 2018, SCDF has required all new residential premises to be installed with Home Fire Alarm Devices (HFADs).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "Homeowners also have a critical role to play.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "They can prevent household electrical fires by only using electrical equipment that are certified safe such as UL2272 certified PMDs and plugs bearing the safety mark, switching off appliances when not in use and ensuring that wires are in good condition.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Residential fire numbers 2018 and 2020",
+   "summary": "The number of residential fires was 1,235 in 2018 and went down further to 253 in 2020.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "The number of residential fires, for 2018, as I shared earlier was 1,235.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "For 2020, it went down further to 253.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fire causes and prevention advice",
+   "summary": "Fire causes remained similar, such as unattended cooking and appliance overloading, and prevention includes not leaving cooking unattended, keeping stoves clean, extinguishing embers and not charging unattended.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "For the data over the years that I shared earlier, the reasons and the causes of fires remained similar, such as unattended cooking and the appliances that we use, there may be overloading.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00031",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "But most importantly, some of the things that we should do are: do not leave cooking unattended; keep stove tops, cooker hoods and ovens clean and free of grease; and also, we should not throw burning embers or cigarette butts into rubbish chutes without first fully extinguishing them; and do not leave batteries or devices to charge unattended.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3025",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-01-10"
+  ],
+  "report_ids": [
+   "oral-answer-3025"
+  ],
+  "sentences_total": 37,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.2703,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:03:04"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 2054,
+   "completion_tokens": 281,
+   "estimated": false,
+   "cost_usd": 0.000366
+  }
+ }
+}

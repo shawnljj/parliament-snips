@@ -1,0 +1,147 @@
+{
+ "title": "Discounts in Ticket Prices to Attractions for Residents",
+ "what_it_is": "Discounts in Ticket Prices to Attractions for Residents",
+ "sections": [
+  {
+   "label": "Attraction pricing for locals and tourists",
+   "summary": "Ministry says admission pricing is decided by operators, and some attractions offer locals cheaper tickets, passes or free admission.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Assoc Prof Jamus Jerome Lim",
+     "attributed": true,
+     "text": "asked the Minister for Trade and Industry whether the Ministry provides guidelines or subsidies for entry pricing for major attractions for tourists relative to Singapore residents and, if so, whether steeper discounts for residents are possible.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Minister for Trade and Industry )",
+     "attributed": true,
+     "text": "However, admission pricing is, ultimately, a decision to be undertaken by the operators themselves.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Minister for Trade and Industry )",
+     "attributed": true,
+     "text": "Some attractions have differentiated pricing or seasonal discounts for locals, vis-à-vis tourists.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Minister for Trade and Industry )",
+     "attributed": true,
+     "text": "Aquarium, ArtScience Museum and the Mandai Wildlife Parks all offer cheaper, single-entry tickets to locals.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Minister for Trade and Industry )",
+     "attributed": true,
+     "text": "These attractions also typically offer seasonal or annual passes to locals.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Minister for Trade and Industry )",
+     "attributed": true,
+     "text": "And other attractions, such as the National Museum of Singapore and the National Gallery, also offer free admission to locals.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "STB has no subsidy plans",
+   "summary": "Singapore Tourism Board currently has no plans to provide guidelines for direct subsidies on attraction admission prices.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "Well, at this moment, Singapore Tourism Board (STB) does not have plans to provide guidelines for direct subsidies pertaining to admission prices for Singapore's attractions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SingaporeRediscover voucher scheme results",
+   "summary": "About 1.9 million Singaporeans used SRVs, generating $300 million in redemptions and about $100 million in ancillary spending.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "Just to give Members some data, about 1.9 million Singaporeans used their SRVs, generating about $300 million in voucher redemptions, including $180 million in vouchers and about $120 million in out-of-pocket top-ups for the SRVs bookings.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "The scheme also assisted and helped many of our retail, food and beverage and transport in about $100 million dollars' worth of ancillary spending.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "Although the scheme has ended, we urge the Member, and many Singaporeans, to continue supporting our local businesses and exploring our country.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "We have many new developments coming up, including Bird Paradise in the second quarter of this year.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3042",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-02-07"
+  ],
+  "report_ids": [
+   "oral-answer-3042"
+  ],
+  "sentences_total": 17,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 3,
+  "selection_share": 0.6471,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:55:52"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1393,
+   "completion_tokens": 188,
+   "estimated": false,
+   "cost_usd": 0.000248
+  }
+ }
+}

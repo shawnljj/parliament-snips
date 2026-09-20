@@ -1,0 +1,146 @@
+{
+ "title": "Prime Minister's Office (National Research Foundation)",
+ "what_it_is": "Prime Minister's Office (National Research Foundation)",
+ "sections": [
+  {
+   "label": "Biomedical sector jobs and GDP",
+   "summary": "The biomedical sector supports 25,000 jobs and makes up almost 4% of GDP.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic Policies (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "The biomedical sector supports 25,000 jobs and makes up almost 4% of our GDP.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Global-Asia R&D node growth",
+   "summary": "Singapore will strengthen its position as a Global-Asia node for R&D and innovation, building on Business Expenditure on Research & Development growth from about S$1.9 billion in 2000 to about S$6.6 billion in 2020.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic Policies (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We will also strengthen Singapore's position as an attractive Global-Asia node for businesses to conduct research and development (R&D) and innovation, tapping on our diverse workforce, vibrant RIE ecosystem, and connections to fast-growing markets.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic Policies (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "This will build on the growth in Singapore's Business Expenditure on Research & Development, which has risen from about S$1.9 billion in 2000 to about S$6.6 billion in 2020.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Startup venture capital funding growth",
+   "summary": "Venture capital funding raised in Singapore rose more than 20-fold, from about S$500 million in 2011 to about S$11 billion in 2022.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic Policies (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "Our startup ecosystem continues to grow, with a more than 20-fold increase in venture capital funding raised in Singapore, from about S$500 million in 2011 to about S$11 billion in 2022.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Researcher numbers and talent programmes",
+   "summary": "Public and industry researchers more than doubled from 20,000 in 2000 to 46,000 in 2020, and Singapore is expanding collaborations and talent programmes.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic Policies (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "The number of public and industry researchers in Singapore more than doubled from 20,000 in 2000 to 46,000 in 2020.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00032",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic Policies (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "As a small nation and global city, we must remain open to top international talent.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00033",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic Policies (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We are expanding our global collaborations in research and innovation to address complex problems that cannot be solved by one country alone, including through the Campus for Research Excellence and Technological Enterprise (CREATE), a collaborative research hub with foreign universities and international research organisations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00034",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic Policies (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We will also continue to enhance the porosity of research talent across academia, public research institutes and industry, for instance, by seconding public researchers to local enterprises.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00035",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic Policies (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "We are working with industry to enhance their research capacity, through initiatives such as the Industrial Postgraduate Programme which provide opportunities for postgraduate students to undertake industrial R&D projects with companies.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00036",
+     "speaker": "The Deputy Prime Minister and Coordinating Minister for Economic Policies (Mr Heng Swee Keat)",
+     "attributed": true,
+     "text": "To grow the pool of deep-tech talent with Innovation & Enterprise and technology commercialisation skills, we also have on-the-job training programmes, which are accessible to mid-career professionals.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2139",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-10"
+  ],
+  "report_ids": [
+   "president-address-2139"
+  ],
+  "sentences_total": 38,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.2632,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:16:13"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2421,
+   "completion_tokens": 287,
+   "estimated": false,
+   "cost_usd": 0.000419
+  }
+ }
+}

@@ -1,0 +1,351 @@
+{
+ "title": "Technical Issues with Electronic Registration System for Polling that Resulted in Removal of Voter Names from Registers of Electors",
+ "what_it_is": "Technical Issues with Electronic Registration System for Polling that Resulted in Removal of Voter Names from Registers of Electors",
+ "sections": [
+  {
+   "label": "Voters wrongly removed from registers",
+   "summary": "Questions asked the Prime Minister about voters wrongly removed from the Registers of Electors after GE2020 and steps to prevent recurrence.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Mr Pritam Singh",
+     "attributed": true,
+     "text": "asked the Prime Minister in view of the Elections Department’s press statement dated 24 August 2023 regarding the wrongful removal of names from the Registers of Electors after General Election 2020 (a) how many times has this happened in the aftermath of past elections or by-elections; and (b) what steps will be taken to prevent a re-occurrence.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Ms He Ting Ru",
+     "attributed": true,
+     "text": "asked the Prime Minister regarding voters who were removed from the electoral register due to an error (a) what was the total number of voters affected; (b) whether there was any individual notification exercise to expunged voters in reminding them to add their name back to the register since the last such exercise in 2019; and (c) why was a tally of the number of NRICs scanned and the number of votes collected after the last general election not conducted as a first instance check.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Mr Liang Eng Hwa",
+     "attributed": true,
+     "text": "asked the Prime Minister (a) what are the reasons resulting in the names of about 200 Singaporeans not being reflected in the Registers of Electors eligible to vote at Presidential Election 2023 despite voting in General Election 2020; and (b) what are measures taken to prevent such recurrence.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Non-voters in past elections",
+   "summary": "ELD recorded about 111,000, 155,000 and 147,000 non-voters for GE2020, GE2015 and GE2011 respectively.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "For GE2020, GE2015 and GE2011, ELD recorded about 111,000, 155,000 and 147,000 non-voters respectively.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Voters restoring names",
+   "summary": "From October 2020 to the Writ in August, some 32,000 voters checked and restored their names.",
+   "sentences": [
+    {
+     "sid": "s00028",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "From October 2020 to the day of the Writ in August this year, some 32,000 voters checked and restored their names.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Voters without poll cards",
+   "summary": "After the PE2023 Writ and up to Polling Day, 1,093 Singaporeans told ELD they did not receive poll cards despite voting in GE2020.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "After the Writ was issued for PE2023 and up to Polling Day, 1,093 Singaporeans informed the ELD that they did not receive their poll card even though they said that they had voted in GE2020.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NRIC details not captured",
+   "summary": "ELD concluded the most probable cause was that affected voters' NRIC details were not captured properly by the electronic registration system introduced from GE2020.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "ELD has investigated this and concluded that the most probable cause of the error was that the NRIC details of these affected voters had not been captured properly by the electronic registration system, which was only introduced from GE2020.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Missed registration step and new system",
+   "summary": "Officials may have missed a step clearing queues in GE2020, and PE2023 used a new electronic registration system with a simplified process.",
+   "sentences": [
+    {
+     "sid": "s00044",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "However, the record of this voter would not have been captured.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00045",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "It is likely that in their effort to clear the queues at some polling stations quickly in GE2020, some election officials might have missed out this step.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00047",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "For PE2023, we implemented a new electronic registration system with a simplified process.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Informing voters on non-voter list",
+   "summary": "ELD will individually inform Singaporeans on the non-voter list by mail and SG Notify in Singpass to verify their status and restore names if needed.",
+   "sentences": [
+    {
+     "sid": "s00051",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "Going forward, besides making a public call for voters to check their status when the non-voter list is published for verification, ELD will institute an additional measure to individually inform Singaporeans on the non-voter list via mail and through SG Notify in Singpass to verify their status, and to restore their names to the Registers if need be.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Device connectivity loss during polling",
+   "summary": "ELD's preliminary investigations found a 30% average loss in device connectivity in the first hour of polling, reduced to 16% by 10.00 am.",
+   "sentences": [
+    {
+     "sid": "s00054",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "Based on ELD’s preliminary investigations, there was a 30% average loss in device connectivity in the first hour of polling and this reduced to 16% by 10.00 am.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Stress testing transaction volumes",
+   "summary": "ELD stress tests a certain volume of transactions within a certain time, and stress tested the scenario of 52% voting in the first four hours.",
+   "sentences": [
+    {
+     "sid": "s00089",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "In ELD's stress tests, they stress test a certain volume of transactions within a certain amount of time.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00090",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "So, this election, notwithstanding the fact that within the first four hours, 52% of the people have voted compared to 32% in the last GE, we had stress tested that scenario.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Increasing memory and computing power",
+   "summary": "After 8.30 am, ELD technical officers increased memory and computing power capacity, clearing the backlog in about an hour plus.",
+   "sentences": [
+    {
+     "sid": "s00095",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "When ELD technical officers realised this, after 8.30 am when this thing happened, they quickly increased the memory and computing power capacity, and this helped us to quickly resolve the issue.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00097",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "But with the quick discovery of this problem, the ELD officers were able to quickly increase the computing power and also the memory in order to clear the backlog.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00098",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "But once the backlog had set in, it took us about an hour plus to clear the backlog and return the clearance speed to normal.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Clearing queues in first four hours",
+   "summary": "For this PE, by about 10.00 am, ELD had cleared all queues and cleared 52% of voters within the first four hours.",
+   "sentences": [
+    {
+     "sid": "s00102",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "Which is why, for this particular PE, even though there were 52% of the voters voting in the first four hours, by about 10.00 am in the morning, we had pretty much managed to clear all the queues and clear 52% of the voters within the first four hours.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Restoring left-out voters' names",
+   "summary": "All 1,093 voters left out or not registered properly for PE2023 have had their names restored to the Registers.",
+   "sentences": [
+    {
+     "sid": "s00105",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "First, let me assure Mr Pritam Singh all the 1,093 voters who were left out or not registered properly for PE2023, all their names have been restored to the Registers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Non-voters and election penalties",
+   "summary": "The Election Acts requires non-voters' names be expunged from Registers, with a $50 penalty to restore unless a valid reason is given.",
+   "sentences": [
+    {
+     "sid": "s00112",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "Precisely because voting is compulsory, the Election Acts requires that the names of the non-voters be expunged from the Registers if they did not vote.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00113",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "And a penalty of $50 must be paid for one's name to be restored if he or she does not provide a valid reason for not voting.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00114",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "The penalty is waived if the voter is able to provide a valid reason such as being overseas on Polling Day.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Polling station voter error rate",
+   "summary": "A typical polling station has about 2,500 voters, and the average error is about one per polling station.",
+   "sentences": [
+    {
+     "sid": "s00152",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "Just now, I have explained that a typical polling station will have about, say, 2,500 voters.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00153",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "And the error, as what we have described just now, on average, is about one per polling station, which means about one in 2,500.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Error margin and election results",
+   "summary": "ELD's error is less than one in 2,000, and this margin does not call into question recent election results.",
+   "sentences": [
+    {
+     "sid": "s00157",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "That is the winning margin, the closest ever.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00158",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "But our error, the closest ever, is more like one in 2,000 – or rather, less than one in 2,000.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00159",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "So, I just want to assure the public that ELD has gone through the records and, while there is a margin of error, this margin of error is nowhere to the extent that it will call into question any of the election results that we had in recent memories.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "ELD communication and non-voter reminders",
+   "summary": "ELD has been forthright, will reconcile the 111,000 after the 32,000, and will send non-voters individual reminders.",
+   "sentences": [
+    {
+     "sid": "s00164",
+     "speaker": "Mr Pritam Singh",
+     "attributed": true,
+     "text": "I think it is important to also assure members of the public that ELD has been quite forthright in its communication with me.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00165",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "So, 111,000 after the 32,000 – we will do the reconciliation again this time – exactly like what I said, we will send all those on the non-voters' list an individual reminder henceforth to remind them to make the check.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3327",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-09-19"
+  ],
+  "report_ids": [
+   "oral-answer-3327"
+  ],
+  "sentences_total": 168,
+  "sentences_selected": 29,
+  "sentences_in_sections": 29,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 6,
+  "sections_total": 16,
+  "selection_share": 0.1726,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 16,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 29,
+   "sentences_selected": 29,
+   "turns_cited": 10,
+   "turns_total": 17,
+   "coverage": 0.5882,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:40:47"
+  },
+  "usage": {
+   "calls": 9,
+   "prompt_tokens": 9447,
+   "completion_tokens": 981,
+   "estimated": false,
+   "cost_usd": 0.001597
+  }
+ }
+}

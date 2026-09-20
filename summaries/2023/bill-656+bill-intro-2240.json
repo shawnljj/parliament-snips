@@ -1,0 +1,128 @@
+{
+ "title": "Society of Saint Maur Incorporation (Amendment) Bill",
+ "what_it_is": "Society of Saint Maur Incorporation (Amendment) Bill",
+ "sections": [
+  {
+   "label": "1923 Convent Ordinance incorporation",
+   "summary": "The 1923 Ordinance incorporated The Lady Superior in Penang of the Society of Saint Maur as a corporation sole with perpetual succession.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "The Ordinance was enacted in 1923 to incorporate The Lady Superior in Penang of the Society of Saint Maur and her successors as a corporation sole, to allow for perpetual succession under the name, “The Lady Superior of the Convent of the Holy Infant Jesus in Penang”.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "IJ Sisters in Singapore",
+   "summary": "The IJ Sisters arrived in Singapore in 1854 and founded 11 Convent of the Holy Infant Jesus schools, an orphanage, home and children's centre.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "Arising from this mission, the IJ Sisters arrived in Singapore in 1854 and went on to found 11 Convent of the Holy Infant Jesus schools for girls in Singapore as well as an orphanage, home and children’s centre.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bill updates Ordinance name references",
+   "summary": "The Bill updates the Ordinance's name references, removes the Penang reference, refers to the Singapore-appointed Lady Superior, and removes spent Schedules.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "The Bill updates the name references in the Ordinance, given historical developments and current conventions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "Following Singapore’s Independence in 1965, and the eventual reorganisation of the IJ Sisters, the IJ Sisters now have a Lady Superior in Singapore and a Lady Superior in Malaysia.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "The amendment gives recognition to this independence and allows the IJ Sisters in Singapore to grow with its own distinct identity.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "The reference to “Penang” in the corporation’s name will thus be removed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "The Bill also makes further amendments so that the references to the “Lady Superior in Penang of the Society of Saint Maur” in the Ordinance refer to the Lady Superior who is appointed for Singapore and not any other successor of the Lady Superior.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "The Bill also removes the Schedules as they are spent; they contain listings of properties that were vested in the corporation by sections 6 and 7 of the Ordinance in 1923.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-656+bill-intro-2240",
+  "group": "bill",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-08-03",
+   "2023-09-19"
+  ],
+  "report_ids": [
+   "bill-intro-2240",
+   "bill-656"
+  ],
+  "sentences_total": 18,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.4444,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 3,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:47:02"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1337,
+   "completion_tokens": 203,
+   "estimated": false,
+   "cost_usd": 0.000244
+  }
+ }
+}

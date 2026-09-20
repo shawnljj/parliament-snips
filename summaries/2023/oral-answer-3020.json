@@ -1,0 +1,126 @@
+{
+ "title": "Sufficiency of Over-the-counter Medicine Supplies in Singapore",
+ "what_it_is": "Sufficiency of Over-the-counter Medicine Supplies in Singapore",
+ "sections": [
+  {
+   "label": "MOH medicine stock monitoring",
+   "summary": "MOH monitors medicine stocks, keeps stockpiles for higher acuity patients, and may impose sales limits during global shortages.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "At the same time, MOH also monitors the stock levels of commonly used medicines and medical supplies, especially when there are exceptional surges in demand or disruptions to supply.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "In addition, MOH maintains stockpiles of key medicines and medical supplies to be prioritised for the higher acuity patients in our public healthcare institutions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "In extreme situations, where there may be global shortages, MOH will take additional measures such as imposing sales limits to prevent hoarding and ensure that the medicines and medical supplies are fairly distributed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Towards the year end of 2022, due to higher incidents of viral infections, there were temporary localised shortages of specific brands of medicines used to treat fever, coughs and cold.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "In the past couple of weeks, demand has moderated and stock levels have improved.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Adequate supplies and national stockpiles",
+   "summary": "Supplies were more than adequate and national stockpiles, including vendors' stocks, stayed within policy thresholds.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The supplies were more than adequate and, certainly, our national stockpiles, which include what the vendors have, have remained within our policy thresholds all the way along.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We have a fairly granular live view of the stocks held by the vendors, as well as in our national stockpile.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Localised supply issues managed",
+   "summary": "Localised short-term supply issues were largely managed through the vendors' own stockpiles.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The localised short-term supply issues were largely managed through the vendors' own stockpiles.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3020",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-01-10"
+  ],
+  "report_ids": [
+   "oral-answer-3020"
+  ],
+  "sentences_total": 30,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 7,
+   "coverage": 0.4286,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:03:24"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1830,
+   "completion_tokens": 182,
+   "estimated": false,
+   "cost_usd": 0.000307
+  }
+ }
+}

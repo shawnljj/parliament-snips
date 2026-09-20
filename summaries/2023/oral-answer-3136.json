@@ -1,0 +1,151 @@
+{
+ "title": "Average Rate of Increase in Property Tax for Private Residential Properties and Proposal to Reduce These for Properties Occupied by Elderly Retirees",
+ "what_it_is": "Average Rate of Increase in Property Tax for Private Residential Properties and Proposal to Reduce These for Properties Occupied by Elderly Retirees",
+ "sections": [
+  {
+   "label": "Property tax as wealth tax",
+   "summary": "Property tax is the primary means of taxing wealth.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "Property tax, or PT, is our primary means of taxing wealth.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Higher PT rates announced",
+   "summary": "Budget 2022 announced raised PT rates for higher-end owner-occupied residential properties with AVs above $30,000 in 2023 and 2024.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "As announced in Budget 2022, PT rates have been raised for higher-end owner-occupied residential properties, with AVs above $30,000 in 2023 and 2024.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Median PT growth rate",
+   "summary": "Median PT for owner-occupied private residential properties grew at a CAGR of around 7% from 2020 to 2023.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "The median PT for owner-occupied private residential properties in Singapore, grew at a compound annual growth rate (CAGR) of around 7% from 2020 to 2023.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "IRAS computing annual value",
+   "summary": "IRAS generally excludes very high and outlier rentals when computing AV.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "The way that IRAS goes about computing AV is that they will, generally, exclude very high and outlier rentals that the properties may fetch.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Assets as wealth proxy",
+   "summary": "Property is an asset, and a person's assets are a proxy measurement of the person's wealth.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "Property is an asset, and I hope Mr Lim agrees with me on that.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00039",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "So, I think we do need to consider that a person's assets are a proxy measurement of the person's wealth.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Helping retirees beyond property tax",
+   "summary": "Retirees who cannot earn much income should be helped in other ways, not through lower PT, such as age-based polyclinic subsidies.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "We do understand that they are retirees, they may not be able to earn a lot of income because they are not working.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00043",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "So, the way to help them is not to have a lower PT, because that is something that we need to put in place as part of our fair and progressive tax system, but to find other ways of helping them.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00045",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "In our polyclinics, for example, we do not means test based on your property type, but when you go to a polyclinic, we look at your age and seniors do receive additional subsidies.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3136",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-03"
+  ],
+  "report_ids": [
+   "oral-answer-3136"
+  ],
+  "sentences_total": 45,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.2,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 3,
+   "turns_total": 10,
+   "coverage": 0.3,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:30:20"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2525,
+   "completion_tokens": 307,
+   "estimated": false,
+   "cost_usd": 0.000439
+  }
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "title": "Bank Accounts Frozen for Suspected Involvement in Scam Activities",
+ "what_it_is": "Bank Accounts Frozen for Suspected Involvement in Scam Activities",
+ "sections": [
+  {
+   "label": "Frozen bank account tracking",
+   "summary": "SPF does not track whether a frozen account is the owner's only account, court applications, or unfreezing times, and unfreezes accounts no longer needed.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Home Affairs (Ms Sun Xueling) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "SPF does not track whether the frozen bank account is the owner's only bank account.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for Home Affairs (Ms Sun Xueling) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Persons whose bank accounts are frozen can make an application to the Courts to withdraw money for reasonable living or other legitimate expenses.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister of State for Home Affairs (Ms Sun Xueling) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "SPF does not collect information on the number of such applications to the Courts.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister of State for Home Affairs (Ms Sun Xueling) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "SPF would unfreeze frozen bank accounts when they are subsequently found not to be involved in criminal activity and are no longer required for the purposes of investigation, trial or other Court proceedings.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister of State for Home Affairs (Ms Sun Xueling) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "SPF does not track the time taken to unfreeze bank accounts after investigations have been completed.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Court application for basic expenses",
+   "summary": "Under section 35(8) of the Criminal Procedure Code, account holders may apply to the Courts to access funds for basic expenses.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "Under section 35(8) of the Criminal Procedure Code, the account holder can submit an application to the Courts to access their funds for the payment of basic expenses, including any payment for foodstuff, rent, the discharge of a mortgage, medicine, medical treatment, taxes, insurance premiums and public utility charges, amongst others.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3325",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-09-18"
+  ],
+  "report_ids": [
+   "oral-answer-3325"
+  ],
+  "sentences_total": 14,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4286,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:44:44"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1313,
+   "completion_tokens": 144,
+   "estimated": false,
+   "cost_usd": 0.000224
+  }
+ }
+}

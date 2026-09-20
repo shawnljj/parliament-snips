@@ -1,0 +1,147 @@
+{
+ "title": "Revision to Advisories on COVID-19 Vaccinations and Other Measures",
+ "what_it_is": "Revision to Advisories on COVID-19 Vaccinations and Other Measures",
+ "sections": [
+  {
+   "label": "HSA approves Pfizer XBB vaccine",
+   "summary": "HSA approved Pfizer's monovalent XBB 1.5 vaccine for ages six months and above, and the updated Comirnaty vaccine could arrive by end-October.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Recently, the Health Sciences Authority (HSA) has approved the monovalent XBB 1.5 vaccine from Pfizer for patients aged six months and above and is reviewing other XBB.1.5 vaccines.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The updated Comirnaty vaccine could arrive in Singapore by end-October.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Booster recommendations and vaccine charges",
+   "summary": "MOH recommends boosters for seniors 60 and above, aged care residents and medically vulnerable persons, with free vaccines and no plans to charge.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "It is, therefore, important for us to maintain our resilience.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "That is why MOH strongly recommends that seniors aged 60 years and above, as well as residents living in aged care facilities and medically vulnerable persons, continue to receive a booster dose of the updated vaccine one year after their last booster dose.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Healthy persons aged 12 to 59 may also receive the additional dose in 2023, which remains free under NVP, if they choose to.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "There are no plans to charge for COVID-19 vaccines because vaccines still play a critical role in keeping COVID-19 at bay.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Mr Saktiandi Supaat (Bishan-Toa Payoh)",
+     "attributed": true,
+     "text": "I am glad to hear the Senior Minister of State mention that there are no plans to charge for booster shots going forward and that those aged 12 to 59 would still be advised to take their vaccines.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "So, there is really insufficient data to commit to a long-term vaccination strategy at this time.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public education on vaccination importance",
+   "summary": "The strategy core is educating the public, engaging their fears and concerns, and explaining the importance of vaccination for COVID-19 and other diseases.",
+   "sentences": [
+    {
+     "sid": "s00028",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The core of the strategy is educating the public, engaging them on their fears and concerns and explaining to them the importance of vaccination and not just for COVID-19 but for many other diseases.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00029",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Vaccination works and it is an important part of how we defend ourselves against infectious diseases.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00030",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We will continue to provide public health education materials, engage the public on their fears and concerns, and we hope that the Members of this House will help us in doing so.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3329",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-09-19"
+  ],
+  "report_ids": [
+   "oral-answer-3329"
+  ],
+  "sentences_total": 30,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 3,
+  "selection_share": 0.3667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 4,
+   "turns_total": 7,
+   "coverage": 0.5714,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:41:16"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1835,
+   "completion_tokens": 210,
+   "estimated": false,
+   "cost_usd": 0.000316
+  }
+ }
+}

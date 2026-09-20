@@ -1,0 +1,119 @@
+{
+ "title": "Lessons from Incident where 10,000 Voters in Tanjong Pagar Received Two Poll Cards",
+ "what_it_is": "Lessons from Incident where 10,000 Voters in Tanjong Pagar Received Two Poll Cards",
+ "sections": [
+  {
+   "label": "Mailed test print poll cards",
+   "summary": "Toppan mistakenly mailed test print poll cards with actual poll cards to 4,803 households, affecting 9,822 voters in Tanjong Pagar GRC, due to human error.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing) (for the Prime Minister)",
+     "attributed": true,
+     "text": "During the recent Presidential Election, the Elections Department (ELD)'s contracted commercial printer Toppan had mistakenly mailed test prints of poll cards, together with the actual poll cards, to 4,803 households, affecting 9,822 voters in Tanjong Pagar Group Representation Constituency (GRC).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Due to a human error, test print data was pooled together with production print data during the actual printing to generate poll cards for voters in Tanjong Pagar GRC.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Safeguards and printer checks",
+   "summary": "Voters with two poll cards can vote once as identification is verified, and ELD will require the printer to tighten quality assurance and conduct joint checks and audits.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Processes are also in place to ensure that the voters with two poll cards can only vote once as all voters must produce their NRIC or valid passport as proof of identification, which is verified against the polling station registers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing) (for the Prime Minister)",
+     "attributed": true,
+     "text": "ELD will require the printer to tighten its internal quality assurance processes to ensure that the test print poll cards are not mailed out in future elections.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Beyond this, ELD and the printer will conduct joint checks to ensure that all test print poll cards are destroyed before the production of actual poll cards.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Education (Mr Chan Chun Sing) (for the Prime Minister)",
+     "attributed": true,
+     "text": "ELD and the printer will also perform a sampling audit to check that the details in the poll cards are accurate.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Duplicate poll card voting impact",
+   "summary": "No one was unable to vote because they received a duplicate poll card.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "On the third issue, no, we do not believe that anybody was not able to vote because they received a duplicate poll card.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3326",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-09-18"
+  ],
+  "report_ids": [
+   "oral-answer-3326"
+  ],
+  "sentences_total": 24,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2917,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:44:41"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1501,
+   "completion_tokens": 198,
+   "estimated": false,
+   "cost_usd": 0.000266
+  }
+ }
+}

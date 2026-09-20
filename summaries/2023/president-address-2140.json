@@ -1,0 +1,125 @@
+{
+ "title": "Ministry of Defence",
+ "what_it_is": "Ministry of Defence",
+ "sections": [
+  {
+   "label": "New SAF platforms and DIS",
+   "summary": "New aerial, maritime and land platforms will be introduced, and the Digital and Intelligence Service will expand digital capabilities against cyber and information threats.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "New and more advanced aerial, maritime, and land platforms will be introduced.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "These include a new fleet of twelve F-35B Joint Strike Fighter aircraft and four Invincible-class submarines by the early 2030s, as well as next-generation Howitzers and Armoured Tracked Carriers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "The newly formed Digital and Intelligence Service (DIS) will expand the SAF’s digital capabilities and play a critical role in Singapore’s national defence against cyber and information threats.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SAFTI City Phase 1",
+   "summary": "Phase 1 of SAFTI City will be operationalised from 2024 to support training in complex urban environments.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "Phase 1 of SAFTI City will be operationalised from 2024 to support training in complex urban environments.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Multilateral defence platforms and cooperation",
+   "summary": "Trust, dialogue and cooperation will be built through multilateral platforms, and the ADMM Cybersecurity and Information Centre of Excellence was launched.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "We will build trust, facilitate constructive dialogue, and encourage practical cooperation through multilateral platforms including the Association of Southeast Asian Nations (ASEAN) Defence Ministers’ Meeting (ADMM) and ADMM-Plus, Shangri-La Dialogue, and Singapore Defence Technology Summit.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00030",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "We have launched the ADMM Cybersecurity and Information Centre of Excellence to promote research and information sharing on emerging cybersecurity and information threats.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Safeguarding security and sovereignty",
+   "summary": "Working together and remaining committed to national defence will continue to safeguard security, sovereignty and way of life.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "By working together and remaining committed to the defence of our nation, we will continue to safeguard our security, sovereignty and way of life.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2140",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-10"
+  ],
+  "report_ids": [
+   "president-address-2140"
+  ],
+  "sentences_total": 38,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.1842,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:16:33"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2102,
+   "completion_tokens": 225,
+   "estimated": false,
+   "cost_usd": 0.000357
+  }
+ }
+}

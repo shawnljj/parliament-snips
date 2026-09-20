@@ -1,0 +1,140 @@
+{
+ "title": "Number of Fatalities and Injuries from Falls onto LRT Tracks",
+ "what_it_is": "Number of Fatalities and Injuries from Falls onto LRT Tracks",
+ "sections": [
+  {
+   "label": "Punggol Cove LRT incident, platform gaps",
+   "summary": "A tragic incident occurred at Punggol Cove LRT station; LTA says space and technical constraints prevent installing auto doors at the platform gap.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Ms Yeo Wan Ling (Pasir Ris-Punggol)",
+     "attributed": true,
+     "text": "As you may know, we had a very tragic incident that occurred at the Punggol Cove LRT station a few weeks ago and our Punggol community is distraught about the loss.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Ms Yeo Wan Ling (Pasir Ris-Punggol)",
+     "attributed": true,
+     "text": "Since 2018, glass panels have been installed at our LRT platforms, but the gap is left where the door should be.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Ms Yeo Wan Ling (Pasir Ris-Punggol)",
+     "attributed": true,
+     "text": "The Land Transport Authority (LTA) has told me that there are space and technical constraints on the platform preventing the installation of auto doors.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "LRT station safety measures",
+   "summary": "Since 2018 fixed barriers, tactile warning studs, emergency telephones, stop plungers, signages and announcements were installed; platform screen doors need more space than LRT stations have.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "I note the concerns of the residents and understandably so.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "So, as the Member has noted, since 2018, we have installed fixed barriers at all LRT stations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "In addition, we have also installed a line of tactile warning studs along the station platform to warn commuters that they are approaching the edge of the platform.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "In addition, there are emergency telephones for commuters to communicate with the stationmasters, as well as emergency stop plungers, which allow commuters to stop the trains in the case of emergency.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "We have also actually increased the signages and announcements in our LRT stations to remind commuters of safety practices within the station as well as signages to warn people, to remind people, to stay behind the yellow lines.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "We had studied – as the Member said – the feasibility of installing platform screen doors at our LRT stations and as she has noted, for LRT stations they have much smaller space than MRT stations and installing platform screen doors require additional space for power communication, signal control rooms and so on.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reviewing platform screen door feasibility",
+   "summary": "The Member is assured that feasibility of platform screen doors will continue to be looked into, taking into account new technologies.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Nonetheless, let me assure the Member that we will continue to look into the feasibility of platform screen doors taking into account any new technologies that may come into the market.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3242",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-05-10"
+  ],
+  "report_ids": [
+   "oral-answer-3242"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.6667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 3,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:59:40"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1393,
+   "completion_tokens": 211,
+   "estimated": false,
+   "cost_usd": 0.000254
+  }
+ }
+}

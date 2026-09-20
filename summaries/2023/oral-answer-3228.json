@@ -1,0 +1,78 @@
+{
+ "title": "Impact of \"Bilge Dumping\" by Tankers",
+ "what_it_is": "Impact of \"Bilge Dumping\" by Tankers",
+ "sections": [
+  {
+   "label": "No illegal oil discharge incidents",
+   "summary": "MPA has not detected incidents of ships deliberately and illegally discharging oil from engine rooms in the last five years.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "MPA has not detected incidents involving ships deliberately and illegally discharging oil from their engine room in the last five years.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Measures against illegal oily discharge",
+   "summary": "MPA has implemented measures to monitor and ensure ships in Singapore waters do not illegally discharge oily wastewater into port waters.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "MPA also has implemented measures to monitor and ensure that ships in our waters are not illegally discharging oily wastewater into Singapore port waters.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3228",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-05-09"
+  ],
+  "report_ids": [
+   "oral-answer-3228"
+  ],
+  "sentences_total": 5,
+  "sentences_selected": 2,
+  "sentences_in_sections": 2,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 2,
+   "sentences_selected": 2,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:04:50"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 794,
+   "completion_tokens": 109,
+   "estimated": false,
+   "cost_usd": 0.000142
+  }
+ }
+}

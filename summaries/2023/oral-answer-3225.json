@@ -1,0 +1,138 @@
+{
+ "title": "Reports of Unauthorised Bank Transaction taking Place despite Absence of Alerts on Customer's Telephone Records",
+ "what_it_is": "Reports of Unauthorised Bank Transaction taking Place despite Absence of Alerts on Customer's Telephone Records",
+ "sections": [
+  {
+   "label": "Police reports and FIDReC cases",
+   "summary": "The Singapore Police Force has received no such report since 2021, and FIDReC knows of two disputed SMS OTP cases since July 2022.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The Singapore Police Force has not received any such report since 2021.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The Financial Industry Disputes Resolution Centre (FIDReC) is aware of two cases since July 2022 where the use or receipt of SMS OTP by the customer is disputed.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MAS fair treatment expectation",
+   "summary": "MAS expects banks to treat customers fairly in all disputes over unauthorised transactions.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "MAS expects banks to treat customers fairly in all cases of disputes over unauthorised transactions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "FIDReC dispute and legal options",
+   "summary": "Customers may lodge disputes with FIDReC, and if unsatisfied with its outcome, may seek legal advice on going to Court.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Any customer may, if they wish, lodge the dispute with FIDReC for mediation and adjudication.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "If they are not satisfied with the FIDReC outcome, they can consider seeking legal advice on whether to pursue their case in Court.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Banks exploring biometric authentication",
+   "summary": "Banks are exploring expanding biometric technology with liveness test alongside passwords and OTP for authentication.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "Banks are also exploring expanding the use of biometric technology with liveness test in addition to passwords and OTP as a means of authentication.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MAS work on authentication measures",
+   "summary": "MAS is working with banks on various authentication measures, including SMS OTP, and they are experimenting with different users as technology evolves.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
+     "attributed": true,
+     "text": "When is MAS going to require the banks to use more secure methods besides SMS OTP, for example, using the app-based OTPs?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "The short answer is that MAS is working with the banks on a variety of authentication measures, including SMS OTP, and they are experimenting with different users as the technology evolves.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3225",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-05-08"
+  ],
+  "report_ids": [
+   "oral-answer-3225"
+  ],
+  "sentences_total": 27,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 5,
+  "selection_share": 0.2963,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 4,
+   "turns_total": 8,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:07:47"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1657,
+   "completion_tokens": 282,
+   "estimated": false,
+   "cost_usd": 0.000311
+  }
+ }
+}

@@ -1,0 +1,151 @@
+{
+ "title": "Data Security Incident Involving Personal Data of Members of Shopping Loyalty Programme",
+ "what_it_is": "Data Security Incident Involving Personal Data of Members of Shopping Loyalty Programme",
+ "sections": [
+  {
+   "label": "MBS breach notification to PDPC",
+   "summary": "MBS found the breach on 20 October 2023 and notified PDPC on 24 October 2023, meeting the guide's notification timeframes.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Communications and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "MBS discovered the data breach on 20 October 2023, and notified the Personal Data Protection Commission (PDPC) on 24 October 2023.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Communications and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "This meets the timeframes for notification to PDPC as set out in the earlier mentioned guide.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "PDPC investigation into incident",
+   "summary": "PDPC is investigating the incident to determine whether there was significant harm and whether affected individuals were notified in a timely manner.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Communications and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "With that as background, let me assure the Member that PDPC is conducting investigations into this incident.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Communications and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "It will ascertain whether there was significant harm to affected individuals and correspondingly, whether affected individuals were notified in a timely manner.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Investigation findings made public",
+   "summary": "The findings of the investigations will be made public.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "The first is on whether the findings of its investigations will be made public – the answer is yes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reports from affected members",
+   "summary": "The PDPC received reports from two affected members.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "The PDPC received reports from two of those members who were affected.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Data types revealed to members",
+   "summary": "MBS told affected members the revealed personal data included name, contact information, country of residence, membership number and tier.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "As to how these affected members were being assisted by MBS, I think, in the first place, it is most important for the members to know what types of data have been accessed or revealed as a result of this breach.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00026",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "And so, when MBS notified the affected members, it did clarify that the types of personal data that were revealed, included the name, contact information, country of residence and membership number as well as tier.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "PDPC advisory guideline on enforcement",
+   "summary": "PDPC issued an advisory guideline stating that failure to safeguard large volumes of sensitive personal data can be an aggravating factor in calculating penalties.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "In addition, the PDPC has issued an advisory guideline on enforcement for data protection provisions that makes clear that failure to put in place adequate safeguards for large volumes of sensitive personal data can be taken as an aggravating factor in calculating the level of penalties to be imposed on an organisation.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3383",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-11-22"
+  ],
+  "report_ids": [
+   "oral-answer-3383"
+  ],
+  "sentences_total": 33,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 6,
+  "selection_share": 0.2727,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:27:23"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1841,
+   "completion_tokens": 310,
+   "estimated": false,
+   "cost_usd": 0.000345
+  }
+ }
+}

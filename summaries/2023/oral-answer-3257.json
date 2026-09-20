@@ -1,0 +1,120 @@
+{
+ "title": "Rejection of Referred Patients whose Residential Addresses Fall Outside Healthcare Cluster",
+ "what_it_is": "Rejection of Referred Patients whose Residential Addresses Fall Outside Healthcare Cluster",
+ "sections": [
+  {
+   "label": "Hospital referrals and patient prioritisation",
+   "summary": "Public hospitals do not reject polyclinic referrals by address, but may reject inappropriate referrals and prioritise patients by medical need.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Public hospitals do not reject patients referred by polyclinics based on their residential address.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Public hospitals may occasionally reject patients if the referrals are inappropriate, such as to a specialty that the hospital does not provide.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Patients are also prioritised based on their medical condition and need.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "In rare situations, if the hospital is not able to provide an appointment within the time demanded by the urgency of the case, the hospitals will then inform the patients and refer the polyclinics to direct the referral to a more appropriate institution, for example, one where there are more timely slots available.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Resident choice in healthcare enrolment",
+   "summary": "Residents can choose where to enrol for Healthier SG and seek specialty care, with appeal routes available.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Yes, residents can continue to exercise choice about where they enrol for Healthier SG.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Yes, resident can exercise choice about where they seek specialty care at the public hospitals, with the caveat that the service is available at that hospital.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Sometimes, it is not widely known how sub-specialty services are divided amongst our public healthcare institutions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "And three, yes, if there are any issues with this, there are routes for appeal that residents and MPs on their behalf can pursue.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3257",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-07-03"
+  ],
+  "report_ids": [
+   "oral-answer-3257"
+  ],
+  "sentences_total": 20,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.4,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:58:56"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1525,
+   "completion_tokens": 136,
+   "estimated": false,
+   "cost_usd": 0.000252
+  }
+ }
+}

@@ -1,0 +1,140 @@
+{
+ "title": "Analysis of Government's COVID-19 Procurement and Expenditure",
+ "what_it_is": "Analysis of Government's COVID-19 Procurement and Expenditure",
+ "sections": [
+  {
+   "label": "COVID-19 emergency procurement spending",
+   "summary": "From January 2020 to July 2022, agencies used Emergency Procurement; of $72.3 billion COVID-19 spending, 90% was support, and $8 billion procurement had no related-party contracts.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "Speaker, from January 2020 to July 2022, agencies adopted Emergency Procurement procedures to directly contract with suppliers instead of going through open sourcing.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "Of the $72.3 billion COVID-19 pandemic-related spending, about 90% was not for procurement of goods and services, but to provide support for families, workers and businesses.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "Of the $8 billion of procurement, none were made without a quote, and about $1.1 billion was made with a single quote, for the purchase of testing and swabbing services, as well as food and medical supplies.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "For those procurement contracts that were entered into with single quotes, no procurement was made to related parties, which refers to companies that are directly owned by the Ministries or Statutory Boards.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "All procurement transactions are further subjected to independent checks by agencies’ internal audit teams and the Auditor-General’s Office (AGO).",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Audits cover value-for-money",
+   "summary": "Audits by the Auditor-General's Office and internal audits will cover both proper procedures and value-for-money.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "The second question on whether the audits would cover not just to make sure that the transactions were done in accordance with proper procedures – I think that was what the Member was saying – but also to ensure value-for-money, yes, I think the audits, both the AGO's and also the internal audits, will look to cover both areas.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Government COVID-19 expenditure breakdown",
+   "summary": "The $72.3 billion was Government expenditure, with 90% for support and $8 billion for procurement.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Mr Gerald Giam Yean Song",
+     "attributed": true,
+     "text": "Was that part of the $72.3 billion or was that something that Temasek incurred on their own?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "So, what I cited earlier in terms of the $72.3 billion, I mentioned in my reply that the bulk of it, 90%, was not meant for procurement, but as support – Job Support Scheme, the COVID-19 relief grants and so on and so forth – that we give to families, workers and businesses.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "The $8 billion – I have given Mr Giam a breakdown of which are single quotes.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "This is Government expenditure, this is from the Government.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3117",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-03-01"
+  ],
+  "report_ids": [
+   "oral-answer-3117"
+  ],
+  "sentences_total": 19,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.5263,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 6,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:37:13"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1631,
+   "completion_tokens": 205,
+   "estimated": false,
+   "cost_usd": 0.000286
+  }
+ }
+}

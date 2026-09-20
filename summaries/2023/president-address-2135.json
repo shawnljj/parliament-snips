@@ -1,0 +1,166 @@
+{
+ "title": "Ministry of Manpower",
+ "what_it_is": "Ministry of Manpower",
+ "sections": [
+  {
+   "label": "COMPASS for Employment Pass applications",
+   "summary": "From September 2023, the Complementarity Assessment Framework will be rolled out for new Employment Pass applications.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "From September 2023, we will roll out the Complementarity Assessment Framework (COMPASS) for new Employment Pass (EP) applications.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Progressive Wages for lower-wage workers",
+   "summary": "By July 2023, up to nine in ten lower-wage workers will benefit from Progressive Wages.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "By July 2023, up to nine in ten lower-wage workers will benefit from Progressive Wages (PWs).",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Platform workers injury compensation and CPF",
+   "summary": "Platform companies will be required to provide platform workers with work injury compensation and CPF contributions.",
+   "sentences": [
+    {
+     "sid": "s00032",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "A substantial group of workers provide services, such as deliveries and vehicle rides, via digital platforms.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00033",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "We have accepted the recommendations of the Advisory Committee on Platform Workers and will require platform companies to provide platform workers with work injury compensation and Central Provident Fund (CPF) contributions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CPF monthly salary ceiling raise",
+   "summary": "The CPF monthly salary ceiling will be raised to keep pace with rising incomes, helping middle-income workers save more.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "We will bolster retirement adequacy and make sure the CPF system continues to work for the broad majority of Singaporeans.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00039",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "We will raise the CPF monthly salary ceiling to keep pace with rising incomes, which will help middle-income workers save more during their working years.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fair hiring, workplace fairness and safety",
+   "summary": "Employers must advertise jobs on MyCareersFuture and fairly consider candidates; workplace fairness legislation, FWA guidelines and a 2028 safety target are set.",
+   "sentences": [
+    {
+     "sid": "s00043",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "Employers must pay attention to fair consideration when hiring.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00044",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "We will require employers, by law, to advertise jobs on MyCareersFuture and fairly consider all candidates, before applying for an EP or S Pass.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00045",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "We will enact workplace fairness legislation to provide stronger protection against workplace discrimination and enable workers to seek redress for harm done.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00047",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "By 2024, we will introduce Tripartite Guidelines on Flexible Work Arrangements (FWAs) to help employers and employees adopt FWAs in a win-win manner.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00048",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "Even one workplace death is one too many.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00049",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "We remain committed to advancing workplace safety and health, and will strive towards our 2028 target to reduce the workplace fatal injury rate to below 1.0 per 100,000 workers.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "president-address-2135",
+  "group": "budget",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-04-10"
+  ],
+  "report_ids": [
+   "president-address-2135"
+  ],
+  "sentences_total": 51,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 5,
+  "selection_share": 0.2353,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:15:58"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2468,
+   "completion_tokens": 287,
+   "estimated": false,
+   "cost_usd": 0.000426
+  }
+ }
+}

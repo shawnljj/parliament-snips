@@ -1,0 +1,126 @@
+{
+ "title": "Balance in MediSave Amounts Following Death of CPF Account Holders",
+ "what_it_is": "Balance in MediSave Amounts Following Death of CPF Account Holders",
+ "sections": [
+  {
+   "label": "MediSave balances at death",
+   "summary": "Among Singaporeans who died aged 85 or older between 2017 and 2021, most had $10,000 or less left in MediSave.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For Singaporeans who passed away aged 85 or older, between 2017 and 2021, about two in 10 had $1,000 or less; five in 10 had between $1,000 and $10,000; about one in 10 had between $10,000 and $20,000, $20,000 and $30,000, and more than $30,000 left in their MediSave accounts, at the point of death respectively.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MediSave balances and terminal withdrawal",
+   "summary": "The reply says most people aged 65 and above do not have excessively high MediSave amounts, and terminally ill patients may withdraw lump sums.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "I note the concern, but there was a Parliamentary Question that had been raised previously.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "And insofar as to those who are 65 years old and above, the amount left in their MediSave is also not that high.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "So, although we do see some with large amounts left, in general, we believe a larger number do not have excessively high amounts, of more than $10,000.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "The second thing is that we allow MediSave to be withdrawn in a lump sum for those who are terminally ill, up to a minimum balance of $5,000, under the Central Provident Fund (CPF) Board's Reduced Life Expectancy Terminally Ill scheme.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Flexi-MediSave age and limits",
+   "summary": "Flexi-MediSave age was lowered to 60 in 2018 and its yearly withdrawal limit raised to $300 in 2021, with continued review.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "For example, we have lowered the age for Flexi-MediSave from 65 to 60 in 2018, and we also increase the withdrawal limit from $200 to $300 per year in 2021, so that more can use Flexi-MediSave for outpatient treatments.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "This is all the top of the MediSave 500/700 that was also enhanced for chronic treatments, specifically.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "But I note the concerns and we will continue to review the use of MediSave to strike the balance between affordability and ensuring that Singaporeans have sufficient savings for healthcare needs in old age.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3107",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-02-27"
+  ],
+  "report_ids": [
+   "oral-answer-3107"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.5333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T13:44:28"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1618,
+   "completion_tokens": 209,
+   "estimated": false,
+   "cost_usd": 0.000285
+  }
+ }
+}

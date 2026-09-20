@@ -1,0 +1,127 @@
+{
+ "title": "Recourse for Patients Provided with Outdated Information on Eligibility for On-panel Benefits for Hospitalisation Expense Claims under Integrated Shield Plan",
+ "what_it_is": "Recourse for Patients Provided with Outdated Information on Eligibility for On-panel Benefits for Hospitalisation Expense Claims under Integrated Shield Plan",
+ "sections": [
+  {
+   "label": "Panel benefits dispute data and redress",
+   "summary": "Asks whether data exists since 2021 on disputes over inaccurate hospital information on panel benefits, and what redress avenues exist.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Dr Tan Wu Meng",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) whether data is available since 2021 on how many cases have been raised to the authorities involving disputes on whether a hospital has provided inaccurate or outdated information at the material time on whether a patient qualifies for on-panel benefits when claiming for hospitalisation expenses under an Integrated Shield Plan; and (b) what avenues for redress and dispute resolution are available to affected individuals.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "However, we are aware of a few cases where medical providers have conveyed information that may have led patients into thinking that their medical bill would qualify for panel benefits or be fully covered by insurance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Failing which, they may consider filing their dispute with the Clinical Claims Resolution Process (CCRP), which helps to resolve clinical matters pertaining to Integrated Shield Plan (IP) claims or seek mediation with the healthcare institutions facilitated by MOH Holdings' Healthcare Mediation Unit.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Mediation and dispute resolution avenues",
+   "summary": "Patients may seek mediation, then recourse through the Consumers Association or Small Claims Tribunals, and stakeholders should keep panel information updated.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "For disputes involving miscommunication between the patients and medical providers, the patients may consider writing in to MOH Holdings Healthcare Mediation Unit for mediation services, if they are not able to resolve the matter with the provider.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "And if they are then still not able to resolve that through mediation, the other possible avenues include recourse through the Consumers Association of Singapore as well as the Small Claims Tribunals.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "It is a situation where there was a misunderstanding on the doctor's part and also a miscommunication on the hospital's part.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "This is a good opportunity to remind all stakeholders to play their part in helping patients make informed decisions about their panel benefits.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "The hospitals that wish to inform patients of the doctor's panel status should ensure that information that they have provided is updated and the doctors should also inform patients of any changes in their panel status as soon as possible.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "The insurance company and their agents should also remind policyholders to first check the panel status of the doctor before going for the treatment and explain the implications of the insurance coverage.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3355",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-10-04"
+  ],
+  "report_ids": [
+   "oral-answer-3355"
+  ],
+  "sentences_total": 27,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T12:36:56"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1717,
+   "completion_tokens": 141,
+   "estimated": false,
+   "cost_usd": 0.00028
+  }
+ }
+}

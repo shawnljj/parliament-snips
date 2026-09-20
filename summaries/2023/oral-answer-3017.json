@@ -1,0 +1,79 @@
+{
+ "title": "Misuse of Drugs Act 1973 Proviso to Commit for Treatment a Person Reasonably Suspected to be Casual Drug User",
+ "what_it_is": "Misuse of Drugs Act 1973 Proviso to Commit for Treatment a Person Reasonably Suspected to be Casual Drug User",
+ "sections": [
+  {
+   "label": "Drug test and CNB powers",
+   "summary": "Section 34(1) of the MDA requires the Director of CNB to have reasonable suspicion of drug addiction before committing a person to medical examination or observation.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "This is regardless of the person’s drug-taking habits, or whether he is a drug addict or not.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "However, if the urine or hair test result is negative for a controlled drug, section 34(1) of the MDA requires the Director of CNB to have a reasonable suspicion that a person is a drug addict before committing him to a medical examination or observation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Home Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim) (for the Minister for Home Affairs)",
+     "attributed": true,
+     "text": "Only if the medical examination or observation shows the person to have signs or symptoms consistent with drug abuse, can the Director of the CNB subject him to supervision, or commit him to a DRC.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-3017",
+  "group": "oral",
+  "year": "2023",
+  "sitting_dates": [
+   "2023-01-10"
+  ],
+  "report_ids": [
+   "oral-answer-3017"
+  ],
+  "sentences_total": 4,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.75,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:03:49"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 815,
+   "completion_tokens": 75,
+   "estimated": false,
+   "cost_usd": 0.000135
+  }
+ }
+}
