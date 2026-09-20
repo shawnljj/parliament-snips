@@ -1,0 +1,158 @@
+{
+ "title": "Probe into Network Hardware Issues that Caused System Outage at Polyclinics on 27 August 2022",
+ "what_it_is": "Probe into Network Hardware Issues that Caused System Outage at Polyclinics on 27 August 2022",
+ "sections": [
+  {
+   "label": "Questions on healthcare IT outage",
+   "summary": "Questions asked the Minister for Health about the 27 August 2022 network hardware issues, IHiS budget and capabilities, and safeguards against future disruptions.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Dr Tan Wu Meng",
+     "attributed": true,
+     "text": "asked the Minister for Health in respect of network hardware issues affecting the IT systems of public healthcare institutions on 27 August 2022 (a) whether a cyber attack has been ruled out; (b) what are the root causes of the outage; (c) whether existing redundancy measures are sufficient to maintain provision of healthcare services; (d) what lessons have been learned; and (e) what is being done to improve resilience against such incidents.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Dr Tan Wu Meng",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what are the budget, headcount and deliverables of the Integrated Health Information Systems (IHiS); (b) how do these benchmark against best-in-class international healthcare institutions and top technology-sector firms; and (c) what is being done to strengthen the capabilities of IHiS systems, processes and staff.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Dr Wan Rizal",
+     "attributed": true,
+     "text": "asked the Minister for Health with regard to the network hardware issues that caused a system outage at some polyclinics on 27 August 2022, what are the safeguards in place or that will be implemented to prevent disruptions in the future.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "IT applications affected",
+   "summary": "26 IT applications were affected, including electronic medical records, appointment, pharmacy and laboratory systems.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "In total, 26 IT applications were affected, including the electronic medical records, appointment, pharmacy and laboratory systems.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Patient wait times",
+   "summary": "Patients at affected institutions experienced longer wait times of up to one hour.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Patients experienced longer wait times ranging up to one hour at the affected institutions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cause of outages",
+   "summary": "The main cause of the outages were failures of hardware devices in data centres.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The main cause of the outages were failures of hardware devices in our data centres.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Benchmarking and service agreements",
+   "summary": "IHiS takes reference from technology and healthcare technology industries, with service level agreements on uptime and usability benchmarked against best-in-class worldwide, and bugs not previously described elsewhere.",
+   "sentences": [
+    {
+     "sid": "s00060",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We do indeed take reference from other parts of the technology industry and healthcare technology industry.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00061",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "There are service level agreements about the uptime availability, as well as the user interface usability for the products that IHiS manages and these are indeed benchmarked against best-in-class around the world.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00063",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The bugs that we have detected as part of these incidents have not previously been described before in other parts of the world.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Business continuity drills",
+   "summary": "Business continuity and disaster recovery plans are drilled regularly in healthcare units and teams.",
+   "sentences": [
+    {
+     "sid": "s00075",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Yes, business continuity plans, disaster recovery plans, are drilled regularly in the healthcare units and teams.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2870",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-09-12"
+  ],
+  "report_ids": [
+   "oral-answer-2870"
+  ],
+  "sentences_total": 79,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 6,
+  "selection_share": 0.1266,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 6,
+   "turns_total": 9,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:30:31"
+  },
+  "usage": {
+   "calls": 5,
+   "prompt_tokens": 4048,
+   "completion_tokens": 320,
+   "estimated": false,
+   "cost_usd": 0.000656
+  }
+ }
+}

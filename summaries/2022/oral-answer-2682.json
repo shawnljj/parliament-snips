@@ -1,0 +1,132 @@
+{
+ "title": "Enhancing Security of Digital Banking Following Recent Scams",
+ "what_it_is": "Enhancing Security of Digital Banking Following Recent Scams",
+ "sections": [
+  {
+   "label": "Phishing scams and banking security",
+   "summary": "Questions ask what actions will help phishing victims, enhance digital banking security, and whether one-time passwords will be reconsidered.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "",
+     "attributed": false,
+     "text": "The following question stood in the name of  Ms Tin Pei Ling –  7 To ask the Prime Minister in view of the recent phishing scams affecting several OCBC customers (a) what other actions will be taken to help victims who have lost their life savings through phishing scams; (b) what will be done to enhance digital banking security across all banks in Singapore; and (c) whether there will be a rethink of the use of one-time passwords for banking transactions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Dr Tan Wu Meng",
+     "attributed": true,
+     "text": "asked the Prime Minister with regard to phishing scams where fake messages have been inserted into SMS threads used by banks (a) whether the Government has data on (i) the number of customers who were affected (ii) their total losses (iii) the amount of funds recovered or reinstated and (iv) the number of customers who experienced delays in escalating this issue with their banks; (b) if so, what are they respectively since 2020; and (c) whether MAS will review how the interests of customers can be better balanced and safeguarded.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Yip Hon Weng",
+     "attributed": true,
+     "text": "asked the Prime Minister (a) whether he can provide an update on the review of the liability framework on scam payment transactions; (b) whether the SMS SenderID protection registry will be mandated for all banks and, if so, when; and (c) whether MAS will consider mandating banks to have a dedicated 24-hour hotline manned by relevant personnel to respond to calls expediently about ongoing fraudulent activities.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SMS phishing scams impersonating banks",
+   "summary": "Questions ask about further safeguards, the number of similar scams over five years, and public outreach programmes.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Miss Cheng Li Hui",
+     "attributed": true,
+     "text": "asked the Prime Minister with regard to the recent spate of SMS phishing scams impersonating local banks (a) whether there are plans to introduce further safeguards in addition to the new requirements announced by MAS and the Association of Banks in Singapore on 19 January 2022; (b) what is the number of similar scams that are reported over the last five years; and (c) whether the Government will consider any outreach programme to educate the public.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "OCBC SMS scams and compensation",
+   "summary": "Questions ask about recovering monies, locating perpetrators, mandating bank measures, and compensating scam victims.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Mr Dennis Tan Lip Fong",
+     "attributed": true,
+     "text": "asked the Prime Minister with regard to the recent spate of OCBC scams via SMS notifications, what efforts has the Government taken to (i) assist in the recovery of monies lost to the perpetrators and (ii) locate the perpetrators with the assistance of foreign authorities with the view to bringing them to justice.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Leon Perera",
+     "attributed": true,
+     "text": "asked the Prime Minister (a) whether MAS can mandate banks to (i) proactively monitor, flag out and pause transactions that have a significant likelihood of being connected with scams, based on clearly defined criteria, until verification of the customer's identity and (ii) provide customers with the option of setting a default cooling-off period for transactions beyond a specified quantum; and (b) in the ongoing review of the liability framework on fraudulent transactions, whether affected consumers can be assured of full compensation if they did not act with gross negligence.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Gerald Giam Yean Song",
+     "attributed": true,
+     "text": "asked the Prime Minister whether financial institutions can be legally required to make at least a partial compensation to victims of online scams in order to place a greater onus on them to take all possible technical and customer education measures to prevent their customers from falling victim to scams.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Scam-related crime and police resources",
+   "summary": "Questions ask about the number of scam-related crimes, more investigative resources, and SPF work with banks.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "Mr Ang Wei Neng",
+     "attributed": true,
+     "text": "asked the Minister for Home Affairs (a) in the past five years, what is the number of scam-related crime; (b) whether the Ministry has plans to devote more resources to investigate scam-related crime; and (c) how is SPF working with banks and other agencies to reduce scam-related crime in Singapore.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2682",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-02-14"
+  ],
+  "report_ids": [
+   "oral-answer-2682"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.3077,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 8,
+   "turns_total": 26,
+   "coverage": 0.3077,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:24:22"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 3338,
+   "completion_tokens": 231,
+   "estimated": false,
+   "cost_usd": 0.000532
+  }
+ }
+}

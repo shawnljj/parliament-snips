@@ -1,0 +1,113 @@
+{
+ "title": "Resignation Rate among Singaporean Employees in Last Two Years",
+ "what_it_is": "Resignation Rate among Singaporean Employees in Last Two Years",
+ "sections": [
+  {
+   "label": "Singapore resignation rate during COVID-19",
+   "summary": "Singapore's resignation rate stayed low during COVID-19, falling from 1.8% in Q3 2019 to 1.6% in Q3 2021, below the 2018-2019 quarterly average of 1.8%.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "The resignation rate in Singapore has remained consistently low throughout the COVID-19 pandemic.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "It is down from 1.8% in the third quarter of 2019 to 1.6% in the third quarter of 2021.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "This figure is also below the pre-COVID-19 quarterly average of 1.8% in 2018 and 2019.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Resignation rates and hybrid work",
+   "summary": "As the economy recovers, resignation rates are expected to rise, with higher rates already seen in growth sectors, while tripartite partners promote hybrid work resources like IHRP's Playbook.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "Nevertheless, as the economy recovers, we expect the resignation rate to go back up as more workers seek out better opportunities.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "This is to be expected in well-functioning labour markets.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "We have already observed higher resignation rates in growth sectors such as Financial Services, Professional Services, Information and Communications, and Health and Social Services, where recruitment rates have also increased in tandem.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "To help both employers and employees adapt to remote working arrangements, we are working with tripartite partners and the Human Resource (HR) community to promote resources and tools, such as the Institute for Human Resource Professionals' or IHRP's Playbook on Hybrid Workplaces, which guides companies on implementing effective hybrid work arrangements and enhancing employee engagement.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2719",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-02-18"
+  ],
+  "report_ids": [
+   "oral-answer-2719"
+  ],
+  "sentences_total": 14,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:19:38"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1215,
+   "completion_tokens": 180,
+   "estimated": false,
+   "cost_usd": 0.000221
+  }
+ }
+}

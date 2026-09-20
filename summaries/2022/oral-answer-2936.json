@@ -1,0 +1,133 @@
+{
+ "title": "Measures to Reduce and Compensate for Attrition of Doctors in Public Sector",
+ "what_it_is": "Measures to Reduce and Compensate for Attrition of Doctors in Public Sector",
+ "sections": [
+  {
+   "label": "Doctor supply and attrition",
+   "summary": "Singapore admitted 40 more medical students yearly in 2020 and 2021, with about 200 overseas locals returning annually and doctor attrition of 3% to 5% from 2019 to 2021.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In 2020 and 2021, we admitted another 40 medical students each year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "While our main source of doctors will continue to be our local medical schools, about 200 locals who study or practise medicine overseas return to Singapore annually.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Most of them study or work in Australia, the United Kingdom or Ireland.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Currently, the top five countries that our foreign doctors are recruited from are India, Malaysia, Myanmar, the Philippines and the United Kingdom.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The attrition rate of doctors from the public healthcare sector into private practice is acceptable and it ranges from 3% to 5% in the time period 2019 to 2021.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Medical student standards unchanged",
+   "summary": "The passage states that standards for medical students should not be altered in some way.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "On the first point of whether those standards for medical students should be altered in some way, I think he would agree with me that it should not.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Safety standards for medical graduates",
+   "summary": "Medical graduates must meet the same safety requirements as other local university graduates before full registration, and these standards should not be reduced.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "In order to serve the mission to the public, we should hold them to the same safety requirements as any other graduate from a local university going out into medical practice.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "And so, there is a standard set of approaches in order to make sure that they are safe to practise before they get fully registered.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "And I am sure the Member would agree – we should not reduce those standards.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2936",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-11-07"
+  ],
+  "report_ids": [
+   "oral-answer-2936"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.3913,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:18:27"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1423,
+   "completion_tokens": 198,
+   "estimated": false,
+   "cost_usd": 0.000255
+  }
+ }
+}

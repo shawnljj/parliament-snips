@@ -1,0 +1,139 @@
+{
+ "title": "Successful Implementation of Age Verification for Joining Social Media Platforms",
+ "what_it_is": "Successful Implementation of Age Verification for Joining Social Media Platforms",
+ "sections": [
+  {
+   "label": "Age verification and underage accounts",
+   "summary": "Users declare birth date at registration, and some social media services use AI, machine learning and facial recognition to detect and remove underage accounts.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "Users have to declare their birth date at the point of registration.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "As false declarations may be made, some social media services have made efforts to develop technologies, including a combination of Artificial Intelligence (AI), machine learning and facial recognition algorithms for proactive detection and the removal of accounts held by underage users, or acting on user reports against such accounts by suspending them.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "Age verification, to a high degree of certainty, is technically difficult and the technology continues to evolve.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Online safety measures and Code",
+   "summary": "MCI engages international counterparts and will introduce a proposed Code of Practice for Online Safety requiring social media services to mitigate harmful content, with safeguards for young users.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "MCI has frequent engagements with our international counterparts on issues related to online safety, especially for young users.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "We will be introducing measures, including a proposed Code of Practice for Online Safety.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "The Code will require social media services with significant reach, or impact, to put in place systems and processes to mitigate exposure to harmful content for users in Singapore, with additional safeguards for young users.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "We will continue to monitor global developments as well as consult extensively, including on the issue of age verification, as we consider additional measures where viable and appropriate.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Internet filtering services for parents",
+   "summary": "Internet service providers offering residential services are required to offer residential and mobile Internet filtering services to help parents ensure children have safe Internet access.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The first is a requirement that Internet service providers are required when they offer residential services, to offer residential and mobile Internet filtering services to help parents ensure that children have safe access to the Internet, with several initiatives to provide resources and support to parents – I described one in my original answer.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MOE resources for parents",
+   "summary": "MOE works with parents to provide online resources, parenting kits and articles giving them skills, knowledge and tools to guide children and manage their online habits.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "MOE also works with parents – and not just with the children – to provide online resources, parenting kits and articles to give them the skills, knowledge and tools to be able to help guide their children and better manage their children's online habits.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2914",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-10-05"
+  ],
+  "report_ids": [
+   "oral-answer-2914"
+  ],
+  "sentences_total": 20,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.45,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:20:13"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1539,
+   "completion_tokens": 251,
+   "estimated": false,
+   "cost_usd": 0.000286
+  }
+ }
+}

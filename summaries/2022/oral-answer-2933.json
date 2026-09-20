@@ -1,0 +1,133 @@
+{
+ "title": "Impact of Normalisation of Global Supply Chains on Singapore's Seaport",
+ "what_it_is": "Impact of Normalisation of Global Supply Chains on Singapore's Seaport",
+ "sections": [
+  {
+   "label": "Port capacity and container throughput",
+   "summary": "MPA, PSA and unions added berths, workers and equipment; Singapore handled a record 37.5 million TEUs in 2021 and operates at about 85% of 44 million TEU capacity.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "MPA worked closely with PSA and the unions to open additional berths and yards, and deployed more port workers and equipment to handle surges in container volumes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Our port handled a record high container throughput of 37.5 million 20-foot equivalent units (TEUs) in 2021.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Our container port is currently operating at about 85% of its maximum handling capacity of 44 million TEUs per annum.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "There is enough buffer to meet short-term increases in demand from shipping lines.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Transport (Mr Chee Hong Tat) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "As more berths at Tuas Port are completed, our handling capacity will increase further and provide sufficient capacity to handle future growth in volumes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tuas Port technology and manpower",
+   "summary": "At Tuas Port, technology including autonomous vehicles and productivity improvements lets one crane operator run multiple quay cranes and reduces manpower needs.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "At Tuas Port, for example, we are not only going to make it a more sustainable and more efficient port, we are also deploying technology that will reduce the need for manpower, for example, drivers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "We use autonomous vehicles to help us to transport the cargo within the port.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "We use productivity improvements so that one crane operator is able to operate multiple quay cranes at the same time.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Shipping network effect",
+   "summary": "More ships calling and more shipping lines hubbing at Singapore create a network effect.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "Because the more ships call at Singapore, the more shipping lines hub at Singapore, there is a network effect.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2933",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-10-20"
+  ],
+  "report_ids": [
+   "oral-answer-2933"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.3462,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:19:21"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1557,
+   "completion_tokens": 200,
+   "estimated": false,
+   "cost_usd": 0.000274
+  }
+ }
+}

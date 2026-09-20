@@ -1,0 +1,138 @@
+{
+ "title": "International Development Association (Amendment) Bill",
+ "what_it_is": "International Development Association (Amendment) Bill",
+ "sections": [
+  {
+   "label": "Singapore contributions to IDA",
+   "summary": "Singapore has contributed to IDA's replenishments since 2002 as a member of IDA.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (on behalf of the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "As a member of IDA, Singapore has contributed to IDA's replenishments since 2002.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "IDA cap and section 4",
+   "summary": "The current cap is US$1.3 million, about S$1.85 million, and section 4 amendments require Parliament's approval for every additional IDA subscription.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (on behalf of the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "The current cap is US$1.3 million, equivalent to about S$1.85 million.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (on behalf of the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "The amendments to section 4 will require the Government to seek Parliament's approval for every additional subscription to IDA, instead of approving the cap for the cumulative amount of contributions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Next IDA subscription approval",
+   "summary": "If Parliament approves this Bill, the Government plans to separately seek Parliament's approval for the next IDA subscription in 2023.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "The Senior Minister of State for Finance (Mr Chee Hong Tat) (on behalf of the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "If Parliament approves this Bill, we plan to separately seek Parliament's approval for our next subscription to IDA in 2023.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "World Bank loans to Singapore",
+   "summary": "As a Third World country in early Independence, Singapore benefited from World Bank loans for nation-building and key infrastructure such as its port.",
+   "sentences": [
+    {
+     "sid": "s00035",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "As Prof Hoon shared in his speech, when Singapore was a Third World country in the early years of our Independence, we had benefited from loans provided by the World Bank to finance our nation-building and key infrastructure, such as our port.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore support for World Bank",
+   "summary": "Singapore will support the World Bank in assisting disadvantaged economies, and IDA will help neighbours like Laos and Cambodia.",
+   "sentences": [
+    {
+     "sid": "s00039",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "As a responsible member of the international community, Singapore will continue to do our part to support the World Bank in assisting disadvantaged economies finance their long-term development needs, including initiatives to mitigate the effects of climate change, and to build stronger resilience against future pandemics and natural disasters.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "Within our region, IDA will also help some of our neighbours like Laos and Cambodia.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "As Prof Hoon Hian Teck said, a stable and economically vibrant ASEAN will benefit all countries in the region, including Singapore.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-596",
+  "group": "bill",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-10-20"
+  ],
+  "report_ids": [
+   "bill-596"
+  ],
+  "sentences_total": 41,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 5,
+  "selection_share": 0.1951,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 3,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:19:08"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2279,
+   "completion_tokens": 291,
+   "estimated": false,
+   "cost_usd": 0.000401
+  }
+ }
+}

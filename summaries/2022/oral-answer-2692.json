@@ -1,0 +1,152 @@
+{
+ "title": "Number of Firms in Built Environment Sector that have Ceased Operations in Recent Years",
+ "what_it_is": "Number of Firms in Built Environment Sector that have Ceased Operations in Recent Years",
+ "sections": [
+  {
+   "label": "Built environment firm insolvency",
+   "summary": "MP asks about built environment firm insolvencies, COTMA relief expiry and transitional measures, and unforeseen circumstances for extension.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Saktiandi Supaat",
+     "attributed": true,
+     "text": "asked the Minister for National Development (a) how many firms in the built environment sector have ceased operations in 2021 due to insolvency, as compared to 2018 to 2020; (b) given the intention for the extended relief periods under the COVID-19 (Temporary Measures) Act 2020 (COTMA) to expire in Q1 2022, whether the Government is considering any transitional measures to prevent firms from suffering a hard landing; and (c) what are the examples of “unforeseen circumstances” which would see a further extension of the relief period under COTMA.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "This includes the $1.36 billion Construction Support Package to help firms in the construction industry cope with the cost of implementing safe management measures at worksites, as well as to co-share prolongation costs for public sector projects.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Construction firm closures 2021",
+   "summary": "About 2,200 construction firms ceased operations in 2021, comparable to annual wind-ups from 2018 to 2020.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "About 2,200 construction firms ceased operations in 2021, which is comparable to the average number of firms that wound up annually between 2018 and 2020.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "There were 2,187 firms that wound up in 2018; 2,347 firms that wound up in 2019; and 2,027 firms that wound up in 2020.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "COTMA relief end dates",
+   "summary": "Barring unforeseen circumstances, COTMA Part 2 and Part 8B reliefs end 28 February 2022, while Part 10A extends to 31 March 2022.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "The Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "As such, barring any unforeseen circumstances, such as a severe industry-wide disruption to construction works caused by COVID-19, the reliefs under COTMA Part 2 and Part 8B will end on 28 February 2022.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Part 10A of COTMA has been extended until 31 March 2022.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "The Minister of State for National Development (Mr Tan Kiat How) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "This Part pertains to the co-sharing of cost increases attributed to foreign Work Permit holder salaries.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Government construction output share",
+   "summary": "The Government accounts for almost 60% of total construction output in Singapore and works closely with the industry.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Especially since the Government accounts for almost 60% of the total construction output in Singapore, we have been working very closely with the industry.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Worker reallocation mechanisms",
+   "summary": "Mechanisms including the Manpower Exchange exist to allocate or share workers with firms that are growing.",
+   "sentences": [
+    {
+     "sid": "s00031",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "For instance, if one firm decides to wind up or decide to shed workers, how can the workers be so allocated or shared with other firms which may be growing their business?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00032",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "There are certain mechanisms in place, including the Manpower Exchange.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2692",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-02-15"
+  ],
+  "report_ids": [
+   "oral-answer-2692"
+  ],
+  "sentences_total": 34,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.2941,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:22:12"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 2084,
+   "completion_tokens": 291,
+   "estimated": false,
+   "cost_usd": 0.000373
+  }
+ }
+}

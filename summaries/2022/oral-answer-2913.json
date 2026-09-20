@@ -1,0 +1,126 @@
+{
+ "title": "Ratio of Bicycle Parking Lots Per MRT Station",
+ "what_it_is": "Ratio of Bicycle Parking Lots Per MRT Station",
+ "sections": [
+  {
+   "label": "Bicycle parking lot numbers",
+   "summary": "LTA does not use a fixed ratio for bicycle parking per MRT station, providing capacity based on assessed demand plus a buffer.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "In general, we do not look at a single fixed or target ratio for bicycle parking lots per MRT station.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The number of lots ranges for different stations due to the different levels of demand near these transport nodes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Transport (Mr Baey Yam Keng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Based on this assessed demand, LTA aims to provide sufficient parking capacity plus a built-in buffer, to address the trends of cyclist behaviour and needs in different parts of Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Sengkang and Buangkok parking utilisation",
+   "summary": "A 2022 survey found bicycle parking utilisation of about 65% at Sengkang and 77% at Buangkok MRT stations.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "In particular for Mr Louis Chua's area, based on a survey in 2022, the bicycle parking at Sengkang and Buangkok MRT stations has utilisation rates of about 65% and 77% respectively.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MRT station bicycle parking parameters",
+   "summary": "LTA published planning parameters for new MRT stations, with first mile station provision ranging between 250 and 800 lots.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "LTA has published broad planning parameters for MRT stations under the Walking and Cycling Design Guide, which will be applied for new MRT stations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "So, whether that station is a first mile or last mile station, whether it is near to, for example, foreign workers dormitories, the range of parking lot provisions will have a certain spectrum.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "So, for example, the range for first mile station is between 250 and 800; it is quite a big range depending on each locality.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "LTA will continue to monitor the usage and to promote active mobility, so the provision for such infrastructure such as bicycle parking lots is critical and we will continue to work towards our vision of a car-lite Society.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2913",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-10-05"
+  ],
+  "report_ids": [
+   "oral-answer-2913"
+  ],
+  "sentences_total": 21,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.381,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:20:22"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1528,
+   "completion_tokens": 195,
+   "estimated": false,
+   "cost_usd": 0.000269
+  }
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "title": "Number of Foreign Remote Employees Hired by Companies Based in Singapore and Breakdown by Industries",
+ "what_it_is": "Number of Foreign Remote Employees Hired by Companies Based in Singapore and Breakdown by Industries",
+ "sections": [
+  {
+   "label": "Foreign remote employees not tracked",
+   "summary": "MOM does not track foreign remote employees hired by Singapore-based companies, and COVID-19 has made remote working more commonplace.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "MOM does not track the number of foreign remote employees hired by Singapore-based companies.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "COVID-19 has led to remote working becoming more commonplace.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "This may prompt many companies to consider offshoring activities to lower cost locations, particularly for lower value-added work.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore as trade and investment location",
+   "summary": "As an open economy, Singapore must remain the preferred location for trade and investment and move up the value chain.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "As an open economy that taps into the world market, we must continue to ensure that Singapore remains the preferred location for trade and investment, and we need to continue to move up the value chain.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Foreign manpower policies and offshoring",
+   "summary": "MOM updates foreign workforce policies to balance a diverse foreign workforce with a strong Singaporean Core, or firms may offshore work.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "It is critical that Singapore remains open to global trade and be welcoming to foreign manpower that complements our local workforce.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "This is why MOM regularly updates our foreign workforce policies to ensure a high-quality and diverse foreign workforce together with a strong Singaporean Core.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Manpower (Dr Tan See Leng)",
+     "attributed": true,
+     "text": "If we do not strike the right balance, firms will not only offshore the lower value-added work but may also have to bring the higher value-added work elsewhere where they can form the best team.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CPF contributions and levies review",
+   "summary": "The answer is no, but if companies change contracts to attract levies and CPF contributions out of Singapore, this will be reviewed.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "I have covered in an earlier Parliamentary Question reply with regard to the types of employees who would require CPF contributions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "However, if these companies should change the context of the contracts and the agreements that would attract levies and CPF contributions out of Singapore, we will review this.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "But, at this point in time, to both his questions, the answer is no.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2740",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-02-28"
+  ],
+  "report_ids": [
+   "oral-answer-2740"
+  ],
+  "sentences_total": 20,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 4,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:18:11"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1318,
+   "completion_tokens": 234,
+   "estimated": false,
+   "cost_usd": 0.00025
+  }
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "title": "Data on Families Owning More than One Car",
+ "what_it_is": "Data on Families Owning More than One Car",
+ "sections": [
+  {
+   "label": "Multiple car ownership percentages",
+   "summary": "About 12% of these households own two cars and less than 3% own three or more cars.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr S Iswaran)",
+     "attributed": true,
+     "text": "Of these, about 12% own two cars and less than 3% own three or more cars.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Car ownership and COE prices",
+   "summary": "Multiple car ownership has been relatively stable or declining, demand remains unabated while supply is constrained, so curbing ownership beyond the first car may not dampen COE prices.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "If we look at the facts, the proportion that has been accounted for by households in these various categories has been relatively stable over time.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "If anything, in fact, multiple car ownership amongst individuals has shown probably a bit of a declining trend; firstly.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "Demand remains unabated, whereas supply is constrained, because we have a zero-growth policy and the supply is determined by de-registrations – which are in part affected by the 10-year cycle because of the historical pattern of car registrations and also because of current economic environment in people's decisions on the margin – whether they want to de-register or extend their COEs on the cars that they already have.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "So, on balance, I would say that it does not necessarily follow that any effort to curb car ownership beyond the first car in any household will necessarily have a dampening effect on COE prices, which is the second point that the Member raised.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Supply side affects COE prices",
+   "summary": "Any baseline argument must be made consistently across a 10-year cycle, and it is more the supply side affecting overall COE prices.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "So, if the baseline argument is to be made, it must be made consistently across a 10-year cycle.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "And the fact is, it is not so much that part of the equation, but more the supply side that has been affecting the overall prices of the COEs because of what we have seen.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Multiple car owners in public housing",
+   "summary": "Households owning multiple cars are not just those in private residential housing; a distinct proportion also live in public housing.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "So, there is a certain equity argument that is being advanced as well.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "I would point out that households that own multiple cars are not just those that live in private residential housing.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Mr S Iswaran",
+     "attributed": true,
+     "text": "There is actually a distinct proportion that also live in public housing.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2988",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-11-29"
+  ],
+  "report_ids": [
+   "oral-answer-2988"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.3846,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:06:19"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1742,
+   "completion_tokens": 244,
+   "estimated": false,
+   "cost_usd": 0.000312
+  }
+ }
+}

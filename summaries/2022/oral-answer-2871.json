@@ -1,0 +1,126 @@
+{
+ "title": "Data on Nurses' Shift Rosters in General and Intensive Care Wards",
+ "what_it_is": "Data on Nurses' Shift Rosters in General and Intensive Care Wards",
+ "sections": [
+  {
+   "label": "Nurse base salary increases",
+   "summary": "Base salaries of public healthcare nurses were raised by 5% to 14% over two phases in July 2021 and 2022.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "Our most recent review saw the base salaries of nurses in the public healthcare sector enhanced between 5% and 14%, which was implemented over two phases in July 2021 and 2022.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Committees on healthcare staff issues",
+   "summary": "A staff well-being committee, a task force on abuse of healthcare workers, and a workgroup on junior doctors were set up.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "We have accepted that there are some difficulties and I have explained in previous Sittings in response to Mr Louis Ng's questions about the efforts that we have been taking.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "There is a staff well-being committee that has been set up to look into different areas and different aspects of the work and to see how we can improve and fill in some of these gaps.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "We have set up a task force, looking at issues relating to abuse of healthcare workers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "We also have the workgroup looking into the issues relating to the junior doctors.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Competition from other countries",
+   "summary": "Singapore faces competition from other countries and is watching closely to develop strategies to make healthcare jobs more attractive.",
+   "sentences": [
+    {
+     "sid": "s00039",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "And actually, he has hit the nail on the head.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00040",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "These are some of the issues that we are facing because we are facing competition from other countries.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "We are watching closely and trying to see how we can come up with strategies where we can overcome and make jobs more attractive and for healthcare workers to want to come and work in Singapore.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2871",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-09-12"
+  ],
+  "report_ids": [
+   "oral-answer-2871"
+  ],
+  "sentences_total": 41,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.1951,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:30:49"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2273,
+   "completion_tokens": 186,
+   "estimated": false,
+   "cost_usd": 0.00037
+  }
+ }
+}

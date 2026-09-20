@@ -1,0 +1,127 @@
+{
+ "title": "Reviews on Necessity of TraceTogether and SafeEntry Scans",
+ "what_it_is": "Reviews on Necessity of TraceTogether and SafeEntry Scans",
+ "sections": [
+  {
+   "label": "TraceTogether and SafeEntry verification checks",
+   "summary": "TraceTogether and SafeEntry enable verification checks at venues with vaccination-differentiated measures, protecting unvaccinated persons, with rules regularly reviewed.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "TraceTogether and SafeEntry enable verification checks into venues or activities where vaccination-differentiated safe management measures (VDS) are in force.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "This is necessary to protect unvaccinated persons who remain at higher risk of severe disease.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We aim to keep rules and requirements simple, and we regularly review the need for these.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Phasing out TraceTogether and SafeEntry",
+   "summary": "Contact tracing may have saved about 290 deaths and avoided 144,000 cases; systems will stand down when VDS is no longer needed.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "If we extrapolate that approach to our situation here, the estimate is that between September 2021 and January 2022, comparing similar data-sets over about those four, five months, the contact tracing approach that we have taken in Singapore may have saved about 290 deaths and slowed down the progression to avoid about 144,000 cases.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "When will we no longer need such an approach, when will we phase out and what may the criteria be, it is a bit too early to tell.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We need to wait until we no longer need VDS, we need to wait until we are quite sure that the pandemic and COVID-19 is no longer epidemic but is endemic.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "It is very hard to say with some degree of certainty what that date will be.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "But I think we have explained before that as long as we need the measures in place – the public health measures, the VDS – then, today, the easiest way and the least burdensome way and the cheapest way for businesses, for us to roll out these measures, is to continue with the TraceTogether and SafeEntry systems that we have in place, rather than standing up a whole new system and a whole new infrastructure in order to get those outcomes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "So, when we no longer need those measures, then we would stand down the systems.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2756",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-03-03"
+  ],
+  "report_ids": [
+   "oral-answer-2756"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.3913,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:07:56"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1701,
+   "completion_tokens": 154,
+   "estimated": false,
+   "cost_usd": 0.000281
+  }
+ }
+}

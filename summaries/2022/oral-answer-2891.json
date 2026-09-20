@@ -1,0 +1,144 @@
+{
+ "title": "Implications of Study on Excess Mortality During COVID-19 Pandemic",
+ "what_it_is": "Implications of Study on Excess Mortality During COVID-19 Pandemic",
+ "sections": [
+  {
+   "label": "Excess mortality COVID-19 study",
+   "summary": "Asked whether excess mortality from COVID-19 will be studied further and what is done to identify preventable causes.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Dr Tan Wu Meng",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) whether there will be a continued, further and deeper study of excess mortality from the COVID-19 pandemic including the impact of COVID-19's long-term effects and how this may contribute to excess mortality; and (b) what is being done to identify potentially preventable causes of excess mortality.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Excess deaths rate 2020-2022",
+   "summary": "Between January 2020 and June 2022, deaths rose 24.9 per 100,000 persons per year against 2019 baseline.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Between January 2020 and June 2022, there was an increase of 24.9 deaths per 100,000 persons per year, using the pre-COVID-19 year of 2019 as the baseline.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Unvaccinated share of COVID-19 deaths",
+   "summary": "In first half of 2022, about 5% of eligible population were not fully vaccinated but contributed 28% of COVID-19 deaths.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "In the first half of 2022, about 5% of the eligible population are not fully vaccinated, but they contributed to 28% of COVID-19 deaths.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "COVID-19 death rates comparison",
+   "summary": "This group's observed COVID-19 death rate was about two in 1,000 versus 0.3 in 1,000 population-wide.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "For this group, the observed rate of COVID-19 deaths in these individuals was about two in 1,000, compared to 0.3 in 1,000 observed in the whole population.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Drivers of excess deaths",
+   "summary": "Numbers not compiled, but literature and experience show vaccination status and age are the two main drivers of excess deaths.",
+   "sentences": [
+    {
+     "sid": "s00041",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Maybe that is something they can look into but, so far, we have not compiled those numbers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00042",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "But if we look at the literature and our own experience, the two main drivers of excess deaths have been, first, are you vaccinated?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Second, your age, and that will continue to be the case.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Booster rate and living with virus",
+   "summary": "Moving forward, booster rate matters and counting boosters should stop, moving to living with the virus like influenza.",
+   "sentences": [
+    {
+     "sid": "s00059",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Moving forward, it is more the booster rate and we should move to a stage where we stop counting the number of boosters, such as booster one, two, three and so on, but move to a concept where we really live with the virus closer to how we live with influenza.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2891",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-10-03"
+  ],
+  "report_ids": [
+   "oral-answer-2891"
+  ],
+  "sentences_total": 61,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 6,
+  "selection_share": 0.1311,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 4,
+   "turns_total": 6,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:26:26"
+  },
+  "usage": {
+   "calls": 4,
+   "prompt_tokens": 3349,
+   "completion_tokens": 352,
+   "estimated": false,
+   "cost_usd": 0.000567
+  }
+ }
+}

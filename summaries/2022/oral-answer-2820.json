@@ -1,0 +1,99 @@
+{
+ "title": "Plans for Relaxation of Vaccination-differentiated Measures and Use of TraceTogether Data",
+ "what_it_is": "Plans for Relaxation of Vaccination-differentiated Measures and Use of TraceTogether Data",
+ "sections": [
+  {
+   "label": "COVID-19 endemic plans and TraceTogether",
+   "summary": "MPs asked the Minister for Health about medium-term plans for relaxing vaccination-differentiated measures, whether COVID-19 positive status will be treated differently from influenza or pneumonia, TraceTogether data use for contact tracing, and timelines for abolishing establishment-entry TraceTogether protocols and maintaining vaccination-differentiated measures after borders open further.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Assoc Prof Jamus Jerome Lim",
+     "attributed": true,
+     "text": "asked the Minister for Health in light of the move to living with COVID-19 as an endemic disease (a) what are the medium-term plans for the relaxation of vaccination-differentiated measures; and (b) whether COVID-19 positive status will be treated differently from other endemic diseases, such as influenza or pneumonia.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "Assoc Prof Jamus Jerome Lim",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) to what extent is TraceTogether data still utilised for contact tracing and COVID-19 management purposes for establishments with a high volume of irregular visitors, such as malls and public attractions; and (b) whether there is any update on the timeline and milestones for the abolition of establishment-entry TraceTogether protocols, given the commencement of streamlined COVID-19 measures.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Leong Mun Wai",
+     "attributed": true,
+     "text": "asked the Minister for Health whether the Government intends to maintain Vaccination-differentiated Safe Management Measures (VDS) even after the borders are opened further following the scrapping of the Vaccinated Travel Lanes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "TraceTogether and SafeEntry use",
+   "summary": "The Minister for Health said TraceTogether and SafeEntry use is currently largely driven by vaccine-differentiated measures, and future contact tracing using these tools will be informed by the variant or epidemic wave.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The use of TraceTogether and Safe Entry as a platform is, currently, largely driven by the need for vaccine-differentiated measures.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Certainly, if we need to step up contact tracing again in the face of an increasing public health risk, the way in which we do that using TraceTogether, SafeEntry, automatic warnings, targeted warnings will be informed by the characteristics of the variant or the wave of the epidemic at that time.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2820",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-04-05"
+  ],
+  "report_ids": [
+   "oral-answer-2820"
+  ],
+  "sentences_total": 10,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 4,
+   "turns_total": 6,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:44:31"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1235,
+   "completion_tokens": 182,
+   "estimated": false,
+   "cost_usd": 0.000224
+  }
+ }
+}

@@ -1,0 +1,113 @@
+{
+ "title": "Support for Home-based Persons with Motor Neurone Diseases",
+ "what_it_is": "Support for Home-based Persons with Motor Neurone Diseases",
+ "sections": [
+  {
+   "label": "MND transport and home care",
+   "summary": "Wheelchair-bound MND patients can use private ambulances, and NNI offers video consultations and home nursing care for stable patients.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Wheelchair-bound MND patients can tap on private ambulances for transportation between their home and the clinic.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Special transport arrangements may need to be planned for more severe MND patients who are bedridden, on tube feeding and portable ventilator support.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Those facing financial difficulties may be referred to a medical social worker for help with their medical and transport costs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The National Neuroscience Institute (NNI) also provides follow-up video consultations for some less mobile MND patients to reduce their need to travel to clinic for consultation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Home-based nursing care has also been available for stable MND patients not on ventilation support through the NNI Community Health Programme since November 2020.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MND home ventilation support",
+   "summary": "MND patients needing respiratory support can use the MOH-funded HVRSS, which provides home ventilation, caregiver training and follow-up.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In addition, MND patients needing respiratory support can tap on the the Ministry of Health (MOH)-funded national Home Ventilator and Respiratory Support Service (HVRSS).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The HVRSS team from Tan Tock Seng Hospital (TTSH) provides home-based ventilation support, caregiver training and routine follow-up for chronic conditions, including blood tests, care coordination and referrals to other specialists, thus minimising clinic visits for the patient.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2893",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-10-03"
+  ],
+  "report_ids": [
+   "oral-answer-2893"
+  ],
+  "sentences_total": 11,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.6364,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 1,
+   "turns_total": 3,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:26:37"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1125,
+   "completion_tokens": 143,
+   "estimated": false,
+   "cost_usd": 0.000198
+  }
+ }
+}

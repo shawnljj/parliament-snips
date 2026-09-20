@@ -1,0 +1,158 @@
+{
+ "title": "Adjustments to CPF Interest Rates Given Inflation",
+ "what_it_is": "Adjustments to CPF Interest Rates Given Inflation",
+ "sections": [
+  {
+   "label": "OA interest rate peg",
+   "summary": "OA savings are liquid and its interest rate is pegged to three local banks' fixed deposit and savings rates, last changed in 1999.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "Ordinary Account (OA) savings is in a liquid account that can be withdrawn at any time for home purchases, for the servicing mortgage loans or other specified purposes, such as investments.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "Thus, the OA interest rate is pegged to the three-month average fixed deposit and savings rates of our three major local banks, which are DBS, UOB and OCBC.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "The formula was last changed in 1999 when the ratio of fixed deposits to savings was updated from 50/50 to 80/20.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "OA and SMRA floor rates",
+   "summary": "OA and SMRA interest rates are maintained at 2.5% and 4% respectively as these are below the effective floor rates.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "As these are below the effective floor rates for these accounts, the interest rates for the OA and SMRA are maintained at 2.5% and 4% respectively.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Extra interest on CPF balances",
+   "summary": "The Government will continue paying 1% extra interest on the first $60,000 of members' combined CPF balances, with those 55 and above earning up to 6%.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "The Government will continue to pay the 1% of extra interest on the first $60,000 of members' combined CPF balances, 55 and above can earn up to 6%.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CPF interest rates by age",
+   "summary": "Members below 55 can earn up to 5%, while members aged 55 and above can earn up to 6%.",
+   "sentences": [
+    {
+     "sid": "s00048",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "Members below aged 55 can earn up to 5%, while members aged 55 and above can earn up to 6%.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Peg to 10-year SGS",
+   "summary": "Rates are pegged to the 10-year Singapore Government Securities plus 1%.",
+   "sentences": [
+    {
+     "sid": "s00052",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "To his point about the longer-term returns as to whether we can peg it, if you look at where we are today, we peg the rates to the 10-year Singapore Government Securities plus 1%.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Average delta of CPF rates",
+   "summary": "The average incremental difference CPF has paid is 0.9%, and since 1 July 1999 the OA average delta is 1.8%, double the SMRA.",
+   "sentences": [
+    {
+     "sid": "s00055",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "The average delta, that means the incremental difference that CPF has paid is 0.9%.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00056",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "For the Ordinary Account, the interest rate peg has been below the legislated minimum floor of 2.5% because, if you appreciate the fact that for the Ordinary Account, we pegged it to the prevailing interest rates of the three local banks – DBS, UOB and OCBC.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00057",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "So, using the peg with our legislative minimum floor of 2.5%, since 1 July 1999, the average delta is double that of the SMRA, which is at 1.8%.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2861",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-08-02"
+  ],
+  "report_ids": [
+   "oral-answer-2861"
+  ],
+  "sentences_total": 65,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.1538,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 8,
+   "coverage": 0.25,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:31:36"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 3179,
+   "completion_tokens": 364,
+   "estimated": false,
+   "cost_usd": 0.000547
+  }
+ }
+}

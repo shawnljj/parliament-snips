@@ -1,0 +1,119 @@
+{
+ "title": "Effects of COVID-19 Vaccines on Younger Children and Decision to Extend Vaccination to Them",
+ "what_it_is": "Effects of COVID-19 Vaccines on Younger Children and Decision to Extend Vaccination to Them",
+ "sections": [
+  {
+   "label": "COVID-19 vaccination for children",
+   "summary": "Questions were asked on vaccinating children below 12, and about 123,000 children aged five to 11 had received a dose or booked appointments.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Dr Lim Wee Kiak",
+     "attributed": true,
+     "text": "asked the Minister for Health with the US Food and Drug Administration granting emergency authorisation to the COVID-19 vaccine by Pfizer-BioNTech for children aged five to 11 years (a) whether the Ministry will bring forward its proposed vaccination for children below 12 years of age; and (b) in the past one year, how many children below 12 years of age (i) were infected (ii) have recovered and (iii) are still hospitalised, respectively.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "Mr Yip Hon Weng",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) whether any local research is being done on possible side effects of mRNA COVID-19 vaccinations for children aged five to 11; (b) what are the protocols in place to manage any potential short- and long-term post-vaccination side effects in children, especially that of heart inflammation; and (c) whether children are covered under the Vaccine Injury Financial Assistance Programme for COVID-19 Vaccination (VIFAP).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Dennis Tan Lip Fong",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) what are the potential risks or side effects of taking COVID-19 vaccination for persons (i) between ages 12 and 18 and (ii) ages below 12; (b) whether the Government will consider not mandating vaccination for these groups of persons until more is known about the possible risks or side effects of the vaccination on them; and (c) whether there are plans to offer Sinovac or Sinopharm vaccines for children.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "As of 7 January, about 123,000 children aged five to 11 have received at least one dose of the vaccine or booked their vaccination appointments.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "In 2021, there were 15,540 children below the age of 12 who were infected with COVID-19, of which 3,145 had ever been in a hospital or a COVID-19 facility.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Myocarditis incidence rate",
+   "summary": "The incidence of myocarditis is about one in a million doses.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The incidence of myocarditis, which is what many parents are most concerned about, is about one in a million doses.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "No child myocarditis reports",
+   "summary": "As of 7 January 2022, MOH had received no report of serious adverse events or myocarditis from vaccination in children in Singapore.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "As of 7 January 2022, MOH has not received any report of serious adverse events or myocarditis from vaccination in children in Singapore since the rollout of the national vaccination programme to children aged five to 11.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2664",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-01-10"
+  ],
+  "report_ids": [
+   "oral-answer-2664"
+  ],
+  "sentences_total": 35,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 4,
+   "turns_total": 4,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:33:57"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2714,
+   "completion_tokens": 188,
+   "estimated": false,
+   "cost_usd": 0.000433
+  }
+ }
+}

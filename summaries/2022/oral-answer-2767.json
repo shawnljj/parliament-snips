@@ -1,0 +1,146 @@
+{
+ "title": "Correlation between PSLE Results and Socio-economic Status in Past Two Years",
+ "what_it_is": "Correlation between PSLE Results and Socio-economic Status in Past Two Years",
+ "sections": [
+  {
+   "label": "Socio-economic background and PSLE results",
+   "summary": "In Singapore, there is some correlation between socio-economic background and PSLE results.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Second Minister for Education (Dr Mohamad Maliki Bin Osman) (for the Minister for Education)",
+     "attributed": true,
+     "text": "In Singapore, there is similarly some correlation between socio-economic background and PSLE results.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MOE support for higher-needs students",
+   "summary": "MOE pays close attention to this issue and provides significantly more support to students with higher needs.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Second Minister for Education (Dr Mohamad Maliki Bin Osman) (for the Minister for Education)",
+     "attributed": true,
+     "text": "MOE pays close attention to this issue and provides significantly more support to students with higher needs.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "UPLIFT and support for students in need",
+   "summary": "UPLIFT was launched to enhance upstream wraparound support for students with needs beyond academic support, and schools with more students in need receive more manpower and funds.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Second Minister for Education (Dr Mohamad Maliki Bin Osman) (for the Minister for Education)",
+     "attributed": true,
+     "text": "Some students also have needs that extend beyond academic support.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Second Minister for Education (Dr Mohamad Maliki Bin Osman) (for the Minister for Education)",
+     "attributed": true,
+     "text": "This is why we have launched the Uplifting Pupils in Life and Inspiring Families Taskforce (UPLIFT), which I currently chair, to enhance our upstream wraparound support for such students.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Second Minister for Education (Dr Mohamad Maliki Bin Osman) (for the Minister for Education)",
+     "attributed": true,
+     "text": "Schools with a higher proportion of students in need also receive more manpower and funds to support whole-school interventions for their students.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Second Minister for Education (Dr Mohamad Maliki Bin Osman) (for the Minister for Education)",
+     "attributed": true,
+     "text": "OECD’s PISA study, for example, has found that compared to other high-performing systems, Singapore’s students from the bottom-25% of socio-economic background not only outperform their international counterparts of similar socio-economic background, but also out-perform the OECD average in all core domains assessed in PISA.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Correlation stability and UPLIFT outcomes",
+   "summary": "The correlation has been stable over the last five years, and UPLIFT, started in 2018, has had encouraging initial outcomes that are being tracked and monitored.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "Dr Mohamad Maliki Bin Osman",
+     "attributed": true,
+     "text": "On the correlation, it has been stable over the last five years – it has not been going up, not going down.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Dr Mohamad Maliki Bin Osman",
+     "attributed": true,
+     "text": "On the outcomes of UPLIFT, I hope Mr Ng will give us some time.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Dr Mohamad Maliki Bin Osman",
+     "attributed": true,
+     "text": "We just started in 2018 and the initial outcomes have been quite encouraging.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Dr Mohamad Maliki Bin Osman",
+     "attributed": true,
+     "text": "We are tracking and monitoring different components of the programme.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2767",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-03-07"
+  ],
+  "report_ids": [
+   "oral-answer-2767"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.3846,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:00:59"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1649,
+   "completion_tokens": 250,
+   "estimated": false,
+   "cost_usd": 0.000301
+  }
+ }
+}

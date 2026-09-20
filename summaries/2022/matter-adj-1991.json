@@ -1,0 +1,165 @@
+{
+ "title": "Building Harmonious Communities through Responsible Use of Common Spaces in Public Housing Estates",
+ "what_it_is": "Building Harmonious Communities through Responsible Use of Common Spaces in Public Housing Estates",
+ "sections": [
+  {
+   "label": "Current measures insufficient",
+   "summary": "The current measures are described as insufficient and not working.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "Our current measures are insufficient and not working.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Non-resident rooftop access rules",
+   "summary": "Non-residents must register and pay a $6 fee to access the 50th storey rooftop via a turnstile gantry, limited to 200 visitors daily.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "Non-residents need to register and pay a $6 fee to access the 50th storey rooftop via a turnstile gantry.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00026",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "Visitor numbers are limited to 200 per day.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Sky garden patrols stepped up",
+   "summary": "After residents' feedback on the larger-than-expected SkyVille turnout on New Year's Eve 2020, the task force stepped up patrols, especially Friday and Saturday nights.",
+   "sentences": [
+    {
+     "sid": "s00055",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann)",
+     "attributed": true,
+     "text": "To address residents' feedback following the larger-than-expected turnout observed at SkyVille on New Year's Eve 2020, the task force ramped up its surveillance and regulation of the sky gardens by stepping up its patrols, especially on Friday and Saturday nights.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Crowds reduced steadily",
+   "summary": "Crowds reduced steadily from about 80 at peak to 30 towards the end of November 2021.",
+   "sentences": [
+    {
+     "sid": "s00063",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann)",
+     "attributed": true,
+     "text": "Crowds also reduced steadily, from about 80 at its peak to 30 towards the end of November 2021.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Sky gardens closed nightly",
+   "summary": "Since then, the sky gardens have been closed nightly, with no access permitted after 10 pm.",
+   "sentences": [
+    {
+     "sid": "s00067",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann)",
+     "attributed": true,
+     "text": "Since then, the sky gardens have been closed nightly, with no access permitted after 10 pm.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "HDB monitoring sky gardens",
+   "summary": "HDB will work with the Member and agencies to monitor the situation, take action on disamenities, study better sky garden design, and monitor year-end crowding.",
+   "sentences": [
+    {
+     "sid": "s00079",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann)",
+     "attributed": true,
+     "text": "HDB will continue to work with the Member and agencies, such as Town Councils and NEA to monitor the situation and take action to minimise any disamenities.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00080",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann)",
+     "attributed": true,
+     "text": "In particular, we appreciate the efforts expended by the Member and her ground volunteers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00081",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann)",
+     "attributed": true,
+     "text": "We will also take in her feedback and study new ways to design sky gardens better in the future, to pre-empt disamenities, while keeping them open and inclusive.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00082",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann)",
+     "attributed": true,
+     "text": "Notwithstanding the improvement seen on New Year's Eve 2021 and throughout 2022, I understand the Member is concerned about whether the crowding seen on New Year's Eve 2020 will recur.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00083",
+     "speaker": "The Senior Minister of State for National Development (Ms Sim Ann)",
+     "attributed": true,
+     "text": "I will be glad to join her again in monitoring the sky gardens under her charge during the upcoming year-end festive period.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "matter-adj-1991",
+  "group": "adjournment",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-11-08"
+  ],
+  "report_ids": [
+   "matter-adj-1991"
+  ],
+  "sentences_total": 86,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.1279,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 2,
+   "turns_total": 3,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:15:38"
+  },
+  "usage": {
+   "calls": 5,
+   "prompt_tokens": 4131,
+   "completion_tokens": 356,
+   "estimated": false,
+   "cost_usd": 0.000678
+  }
+ }
+}

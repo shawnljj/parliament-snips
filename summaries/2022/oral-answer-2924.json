@@ -1,0 +1,147 @@
+{
+ "title": "Efficacy of Bivalent COVID-19 Vaccines Compared with Original Boosters",
+ "what_it_is": "Efficacy of Bivalent COVID-19 Vaccines Compared with Original Boosters",
+ "sections": [
+  {
+   "label": "Bivalent COVID-19 vaccines rollout",
+   "summary": "Bivalent Moderna/Spikevax started 14 October 2022, Pfizer-BioNTech/Comirnaty expected by year end, prioritising those aged 50 and above.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Nevertheless, I thought it would be useful to answer them and take some supplementary questions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We have started using the bivalent Moderna/Spikevax vaccine on 14 October 2022, and there is another bivalent vaccine – the Pfizer-BioNTech/Comirnaty – which is expected to be available by the end of this year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Bivalent vaccines provide better protection against newer COVID-19 variants compared to the original vaccines and we recommend individuals who are eligible to take it.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "We are prioritising persons aged 50 and above for the additional booster dose with the bivalent vaccine as they are at higher risk of severe disease from infection.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "And I hope we will secure them in a matter of weeks.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Those who are eligible and have recently recovered from a COVID-19 infection are recommended to receive the bivalent vaccine three months after the infection.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Vaccination access points",
+   "summary": "11 JTVCs and VCs, 221 participating Public Health Preparedness Clinics and 20 polyclinics provide sufficient access to vaccinations.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Currently, we have 11 JTVCs and VCs and, together with our network of 221 participating Public Health Preparedness Clinics and 20 polyclinics, they provide sufficient convenience and access to vaccinations.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Booster timing recommendations",
+   "summary": "Bivalent vaccine recommended five months after second booster, with minimum protection of three mRNA doses and boosters every five to 12 months.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "The answer is yes, five months after their second booster, they are recommended to take their bivalent vaccine.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "As I had explained earlier, we have moved to a new system where we have stopped counting the number of booster shots we take.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "So, what we are recommending now is: one, please attain your minimum protection, which is, three doses of an mRNA vaccine; and two, beyond that, take an additional latest vaccine five months after your last shot and no longer than 12 months – so, five to 12 months.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Essentially, for most people, it works out to taking a booster shot every year.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2924",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-10-20"
+  ],
+  "report_ids": [
+   "oral-answer-2924"
+  ],
+  "sentences_total": 32,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 3,
+  "selection_share": 0.3438,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:19:16"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1787,
+   "completion_tokens": 212,
+   "estimated": false,
+   "cost_usd": 0.00031
+  }
+ }
+}

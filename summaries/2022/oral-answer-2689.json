@@ -1,0 +1,79 @@
+{
+ "title": "Increasing Penalty for Those Who Circumvent Anti-SMS Spoofing and Do Not Call Registries",
+ "what_it_is": "Increasing Penalty for Those Who Circumvent Anti-SMS Spoofing and Do Not Call Registries",
+ "sections": [
+  {
+   "label": "Unsolicited SMS job scams",
+   "summary": "Questions ask how many cases were prosecuted under the Spam Control Act and Personal Data Protection Act for unsolicited job-offer SMSes, and what other actions combat them.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Mr Saktiandi Supaat",
+     "attributed": true,
+     "text": "asked the Minister for Communications and Information (a) in the past two years, how many cases have been prosecuted under the Spam Control Act 2007 and the Personal Data Protection Act 2012 in connection with unsolicited SMSes offering job opportunities; and (b) what other actions are being taken to combat the problem of such unsolicited SMSes in addition to the establishment of the Do Not Call registry in 2014.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Edward Chia Bing Hui",
+     "attributed": true,
+     "text": "asked the Prime Minister (a) what is the uniqueness of the recent phishing scam via SMS notifications which avoided rapid detection; (b) whether other technology solutions, such as artificial intelligence, will be used by MAS and the Police to support our banks to trace the funds; (c) whether the bank’s full goodwill payouts to all affected customers will be a guideline for future settlements of such occurrences; and (d) how will MAS be working with banks from other jurisdictions to enable systems-level responses for future scams.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Mr Sharael Taha",
+     "attributed": true,
+     "text": "asked the Prime Minister with regard to the recent phishing scams via SMS notification (a) whether OCBC Bank’s goodwill payouts will set precedence for such future occurrences; (b) how will the Ministry ensure that these payouts do not lead to complacency towards being vigilant to phishing scams; and (c) whether such goodwill payouts will encourage scammers to focus more on Singapore banks.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2689",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-02-15"
+  ],
+  "report_ids": [
+   "oral-answer-2689"
+  ],
+  "sentences_total": 5,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.6,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 3,
+   "turns_total": 5,
+   "coverage": 0.6,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:22:27"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1218,
+   "completion_tokens": 83,
+   "estimated": false,
+   "cost_usd": 0.000194
+  }
+ }
+}

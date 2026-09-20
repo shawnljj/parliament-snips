@@ -1,0 +1,140 @@
+{
+ "title": "Measures to Prevent Examination Paper Leaks at Institutes of Higher Learning",
+ "what_it_is": "Measures to Prevent Examination Paper Leaks at Institutes of Higher Learning",
+ "sections": [
+  {
+   "label": "Exam paper access safeguards",
+   "summary": "IHLs use protocols such as password-protected digital copies and secure storage to prevent unauthorised access or premature release of examination papers.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "IHLs have protocols to prevent unauthorised access or premature release of examination papers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "These include password-protecting digital copies of the examination papers and only releasing the password to students just before the scheduled examination time, hosting e-assessments on internal platforms with controlled access and storing printed copies in secure locations with restricted access.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "NTU's preliminary assessment is that the premature online release of the test paper was due to human error on the part of an administrative staff.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NTU remedial action and past leaks",
+   "summary": "NTU held a retest with reduced topics and extended counselling, and five isolated exam paper leaks occurred over three years.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "NTU undertook remedial action to ensure a fair assessment process for all students by having a retest with reduced examinable topics and extended counselling support to affected students.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "Dr Tan had filed a Parliamentary Question for the 29 November Sitting and asked whether there had been similar occurrences over the past three years.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "There were five isolated incidents within this period where examination papers were leaked ahead of time, affecting a small minority of the undergraduate student population for the more serious cases.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NTU investigation and further safeguards",
+   "summary": "NTU is still investigating the recent case and considering further safeguards to prevent human errors affecting future examinations.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "Dr Tan Wu Meng (Jurong)",
+     "attributed": true,
+     "text": "The Minister of State mentioned that the IHL ascertained the cause of the mistake as human error.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00039",
+     "speaker": "Dr Tan Wu Meng (Jurong)",
+     "attributed": true,
+     "text": "Can I ask whether there has been a deeper dive into whether there were measures to intercept human errors before it led to an impact for many exam candidates?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "Dr Tan Wu Meng (Jurong)",
+     "attributed": true,
+     "text": "For example, did the web portal have safeguards so that an online exam needed to be uploaded in an encrypted or password-protected format?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00042",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "For this case which occurred quite recently, NTU is still in the process of conducting its investigation and is also looking at further safeguards that it could consider to prevent such human errors from affecting future examinations.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2976",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-11-28"
+  ],
+  "report_ids": [
+   "oral-answer-2976"
+  ],
+  "sentences_total": 42,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.2381,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 9,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:10:54"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2392,
+   "completion_tokens": 193,
+   "estimated": false,
+   "cost_usd": 0.000389
+  }
+ }
+}

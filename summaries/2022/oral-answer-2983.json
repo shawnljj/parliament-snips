@@ -1,0 +1,86 @@
+{
+ "title": "Spouses of HDB Flat or Executive Condominium Owners who Have Bought Private Properties",
+ "what_it_is": "Spouses of HDB Flat or Executive Condominium Owners who Have Bought Private Properties",
+ "sections": [
+  {
+   "label": "HDB data limitations on occupants",
+   "summary": "HDB lacks data on occupants of spouses' EC units and on whether occupiers bought private property in their own or joint names.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Second Minister for National Development (Ms Indranee Rajah) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "As such, HDB does not have data of all who are currently occupants of the EC unit that their spouse is an owner of.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Second Minister for National Development (Ms Indranee Rajah) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "As for those registered as occupiers of their spouse's HDB flat, HDB's data only captures whether they proceeded to purchase a private property after fulfilling the requisite Minimum Occupation Period.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for National Development (Ms Indranee Rajah) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "However, HDB does not capture whether they purchased the private property in their own name or jointly with others.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Second Minister for National Development (Ms Indranee Rajah) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "As such, HDB is unable to provide the specific information that the Member had asked for.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2983",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-11-29"
+  ],
+  "report_ids": [
+   "oral-answer-2983"
+  ],
+  "sentences_total": 6,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.6667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:06:40"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 787,
+   "completion_tokens": 79,
+   "estimated": false,
+   "cost_usd": 0.000132
+  }
+ }
+}

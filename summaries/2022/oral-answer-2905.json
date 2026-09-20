@@ -1,0 +1,99 @@
+{
+ "title": "Net Loss for Central Weave BTO Development at Ang Mo Kio",
+ "what_it_is": "Net Loss for Central Weave BTO Development at Ang Mo Kio",
+ "sections": [
+  {
+   "label": "CPF housing grants and land cost",
+   "summary": "Extending CPF housing grants to eligible buyers is estimated to raise the loss by $20 million to about $270 million, with land cost about $500 million.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "If we consider the Central Provident Fund (CPF) housing grants that HDB will extend to eligible buyers, the loss will increase further by an estimated $20 million, to about $270 million.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "The estimated land cost for the project is about $500 million.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "HDB Homeownership Programme deficit",
+   "summary": "HDB recorded a $3.85 billion deficit for its Homeownership Programme in FY2021/2022, averaging about $2.68 billion yearly from 2019 to 2021.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "For the Financial Year (FY) 2021/2022, for example, HDB recorded a deficit of $3.85 billion for its Homeownership Programme.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "The average deficit incurred by HDB in the last three years from 2019 to 2021 was about $2.68 billion a year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "So, claims that HDB profits from the development and sale of HDB flats are false.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2905",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-10-04"
+  ],
+  "report_ids": [
+   "oral-answer-2905"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:24:43"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1130,
+   "completion_tokens": 154,
+   "estimated": false,
+   "cost_usd": 0.000201
+  }
+ }
+}

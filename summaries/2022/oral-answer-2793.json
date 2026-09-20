@@ -1,0 +1,100 @@
+{
+ "title": "Expected Hospital Bed Occupancy Rates over Next Five Years",
+ "what_it_is": "Expected Hospital Bed Occupancy Rates over Next Five Years",
+ "sections": [
+  {
+   "label": "Hospital bed occupancy rate",
+   "summary": "A sustained bed occupancy rate below 85% is recommended to ensure patient safety and sufficient capacity for sudden demand increases.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "A sustained BOR of less than 85% in the hospitals is, generally, recommended by academic communities and the healthcare authorities, overseas and here, to ensure patient safety.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Sustained BORs above the 85% threshold may increase the risk of poor clinical outcomes due to the reduced access to hospital care.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Based on our experience, operating with a BOR of less than 85% has allowed for hospitals to have sufficient bed capacity to respond to sudden increases in bed demands, for example, during mass casualty situations and pandemics.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "While there may be temporary increases over the recommended annual average BOR of 85%, our public healthcare institutions (PHIs) have mitigated the risks by managing patient flows, introducing measures, such as the use of telehealth technologies, to reduce the need for in-person consultations and right-siting care into the community and ambulatory settings.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Leon Perera (Aljunied)",
+     "attributed": true,
+     "text": "For example, setting up augmented facilities within the same building or transferring patients to the private sector, or any other types of steps when that happens.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "There have been for many years and those plans have been activated a number of times, including in the COVID-19 pandemic.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2793",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-03-10"
+  ],
+  "report_ids": [
+   "oral-answer-2793"
+  ],
+  "sentences_total": 8,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.75,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:50:54"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1086,
+   "completion_tokens": 79,
+   "estimated": false,
+   "cost_usd": 0.000174
+  }
+ }
+}

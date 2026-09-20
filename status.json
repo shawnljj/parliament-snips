@@ -1,12 +1,12 @@
 {
  "project": "parsnips",
- "written_at": "2026-09-20T14:06:41+08:00",
+ "written_at": "2026-09-20T15:34:37+08:00",
  "by": "tools/write_status.py",
  "status": "working",
  "changed_since_last": [
-  "1430 briefs live across 4 year(s)",
-  "7 year(s) have datasets but no briefs yet: 2016, 2017, 2018, 2019, 2020, 2021, 2022",
-  "1 unpushed commit(s)"
+  "1842 briefs live across 5 year(s)",
+  "6 year(s) have datasets but no briefs yet: 2016, 2017, 2018, 2019, 2020, 2021",
+  "2 unpushed commit(s)"
  ],
  "corpus": {
   "2016": {
@@ -34,7 +34,7 @@
    "dataset_items": 352
   },
   "2022": {
-   "briefs": 0,
+   "briefs": 412,
    "dataset_items": 415
   },
   "2023": {
@@ -55,6 +55,12 @@
   }
  },
  "gates": [
+  {
+   "name": "check_selection",
+   "scope": "summaries/2022",
+   "result": "PASS",
+   "defects": 0
+  },
   {
    "name": "check_selection",
    "scope": "summaries/2023",
@@ -85,8 +91,8 @@
  "needs_decision": null,
  "severity": "low",
  "git": {
-  "unpushed_commits": 1,
-  "dirty_files": 2,
-  "last_commit": "1ef402d A status artifact, so COS can monitor without project context"
+  "unpushed_commits": 2,
+  "dirty_files": 3,
+  "last_commit": "2fa8822 Wire the status artifact in: auto-write on every run, and point COS at it"
  }
 }

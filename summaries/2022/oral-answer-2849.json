@@ -1,0 +1,160 @@
+{
+ "title": "Monitoring of and Measures to Minimise Spread of Monkeypox and Emerging Communicable Diseases in Singapore",
+ "what_it_is": "Monitoring of and Measures to Minimise Spread of Monkeypox and Emerging Communicable Diseases in Singapore",
+ "sections": [
+  {
+   "label": "smallpox vaccine effectiveness and risks",
+   "summary": "The smallpox vaccine is up to 85% effective against monkeypox but has significant side effects, and for the general population risks outweigh benefits.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Also, the issue of the smallpox vaccine was addressed in the answer yesterday.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "It is up to 85% effective in preventing monkeypox, but has significant side effects.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "And for the general population, the risks of complications outweigh the benefits because the general population is at low risk of being infected.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "monkeypox spread and risk factors",
+   "summary": "Monkeypox is spreading slowly, with 3,411 cases worldwide in 49 countries and one case in Singapore, mainly spreading through age and prolonged physical contact.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "With respect to what is now the main factor for the spread, I would point out that it is spreading very slowly.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "There was a total of 3,411 cases, I think, the last time WHO reported on this around the world in 49 countries.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "We only had one case here in Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The main reason for why it spreads to certain individuals is a combination of age as well as prolonged and extensive physical contact.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "smallpox vaccination availability in Singapore",
+   "summary": "Smallpox vaccination is available in Singapore and can be used for high-risk healthcare workers or laboratory personnel handling such pathogens.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Smallpox vaccination is available in Singapore and can be used, for example, for healthcare workers who are at high risk or laboratory personnel who are handling such pathogens.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "advisory for susceptible community groups",
+   "summary": "There is no evidence monkeypox is sexually transmitted, and no specific advice for the disproportionately affected group beyond general advice on contact, signs, isolation and contact tracing.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "Mr Zhulkarnain Abdul Rahim (Chua Chu Kang)",
+     "attributed": true,
+     "text": "So, my question is, given the risk factors involved, what would be the advisory and efforts for us to reach out to groups of the community that are more susceptible than others?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00027",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "There is no current evidence to suggest that the disease is sexually transmitted.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "And as I have mentioned earlier, it is prolonged and extensive physical contact.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00029",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "So, while the reported population does appear to be disproportionately men, and men who self-identify as men having sex with men, there is no specific advice for that community over and above the general advice around not coming into contact with persons who are demonstrating the signs of infection, taking appropriate steps yourself if you have signs of the infection and seeking medical care, isolating yourself to prevent further spread, and then participating in the contact tracing process.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2849",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-07-05"
+  ],
+  "report_ids": [
+   "oral-answer-2849"
+  ],
+  "sentences_total": 30,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 4,
+  "selection_share": 0.4,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 4,
+   "turns_total": 10,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:35:27"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1901,
+   "completion_tokens": 257,
+   "estimated": false,
+   "cost_usd": 0.000338
+  }
+ }
+}

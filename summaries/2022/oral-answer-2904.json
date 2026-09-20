@@ -1,0 +1,158 @@
+{
+ "title": "Funding and Implementation Details for Beverage Container Return Scheme",
+ "what_it_is": "Funding and Implementation Details for Beverage Container Return Scheme",
+ "sections": [
+  {
+   "label": "Beverage container return scheme questions",
+   "summary": "Questions ask about the scheme's projected costs, return points at hawker centres and food courts, and how NEA will ensure efficient operation.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Mr Ang Wei Neng",
+     "attributed": true,
+     "text": "asked the Minister for Sustainability and the Environment (a) what is the projected cost per annum for the new proposed beverage container return scheme; (b) whether NEA will consider setting up return points at hawker centres, food courts and canteens of significant size; and (c) how will NEA ensure that the non-profit administrator of the proposed scheme will operate the container return scheme efficiently and effectively.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Liang Eng Hwa",
+     "attributed": true,
+     "text": "asked the Minister for Sustainability and the Environment with regard to the model in which the beverage container return scheme will be implemented (a) what is (i) the envisaged scale in its implementation and (ii) its projected initial and recurring costs under this model; and (b) whether the Ministry has considered other non-monetary related schemes to achieve the same outcome that is expected under this model.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Scheme coverage estimate",
+   "summary": "The scheme is estimated to cover more than one billion beverage containers in Singapore each year.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "With these proposed parameters, the scheme is estimated to cover more than one billion beverage containers in Singapore each year.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Supermarket return points mandate",
+   "summary": "A survey of 1,000 households found supermarkets most preferred, so large supermarkets over 200 square metres are proposed to set up return points.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Based on a survey conducted with 1,000 households, supermarkets were among the most preferred return locations across all the age segments and are a major sales channel for prepackaged beverages.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00034",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "We have thus proposed that large supermarkets with a total floor area of more than 200 square metres be mandated to set up return points.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Stallholder deposit example",
+   "summary": "Stallholders could serve beverages in containers and charge a deposit, with customers returning empty containers at designated points to claim refunds.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "For example, stallholders could serve the customer the beverage with its container and charge the deposit, in which case, the customers can take away the empty beverage containers and return them at designated return points to claim the refund on their deposit.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "REACH consultation period",
+   "summary": "The ongoing REACH consultation is open until 14 October this year, and all stakeholders and members of the public are encouraged to give feedback.",
+   "sentences": [
+    {
+     "sid": "s00049",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "The ongoing REACH consultation will be open until 14 October this year and we encourage and welcome all stakeholders and members of the public, as well as Members in this House, to give their feedback.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NEA oversight of scheme operator",
+   "summary": "NEA has regulatory oversight and will require the scheme operator to track and report outcomes, fees and return targets.",
+   "sentences": [
+    {
+     "sid": "s00055",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "So, as I have noted, NEA has regulatory oversight over the scheme operator.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00056",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "So, it will require the scheme operator to regularly track as well as report on the scheme outcomes and related fees, for instance, the producer fees and the return targets.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00057",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "In fact, we will set a return target for the scheme operator, and we will work with the future scheme operator to evaluate the effectiveness of the scheme outcomes as well as further refinements to the scheme.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2904",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-10-04"
+  ],
+  "report_ids": [
+   "oral-answer-2904"
+  ],
+  "sentences_total": 70,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.1429,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 7,
+   "coverage": 0.5714,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:24:23"
+  },
+  "usage": {
+   "calls": 5,
+   "prompt_tokens": 4223,
+   "completion_tokens": 342,
+   "estimated": false,
+   "cost_usd": 0.000687
+  }
+ }
+}

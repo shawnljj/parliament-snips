@@ -1,0 +1,126 @@
+{
+ "title": "Insurance Claims Declined due to Difference in Definition of Medical Terms",
+ "what_it_is": "Insurance Claims Declined due to Difference in Definition of Medical Terms",
+ "sections": [
+  {
+   "label": "IP claim dispute recourse options",
+   "summary": "MOH does not track IP appeals; policyholders may use the Clinical Claims Resolution Process or FIDReC for disputes.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Deputy Speaker, MOH does not track the number of appeals made by Integrated Shield Plan (IP) policyholders against an insurer’s interpretation of definition of medical terminologies.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Policyholders who feel that their claims have been unfairly rejected and are unable to reach a satisfactory resolution with their insurer may seek recourse from the Clinical Claims Resolution Process (CCRP) if the IP claim disputes are clinical in nature.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Health (Ms Rahayu Mahzam) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Policyholders may also approach the Financial Industry Disputes Resolution Centre (FIDReC) for assistance with other types of disputes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MOH and MAS insurer oversight",
+   "summary": "MOH and MAS expect IP insurers to treat policyholders fairly and investigate unfair claims, asking insurers to review cases and compensate.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "MOH and the Monetary Authority of Singapore (MAS) work very closely in exercising regulatory oversight over the IP insurers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "And MOH and MAS expect IP insurers to treat the policyholders fairly.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "So, when MAS is alerted of any unfair claims or mishandling of practices through its own ongoing supervision of insurers or through complaints received, it will investigate and take the necessary action to pursue this matter with the insurers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "And part of it is to also ask the insurers to review past cases and compensate the policyholder when necessary.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MOH review of referred cases",
+   "summary": "MOH will look at specific cases referred to it and see how to improve processes for policyholder claims.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "On his point about whether we will be looking into this, if there are specific cases that can be referred to MOH, we will definitely take a look and see how we can improve the processes to facilitate the claims made by policyholders.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2959",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-11-09"
+  ],
+  "report_ids": [
+   "oral-answer-2959"
+  ],
+  "sentences_total": 30,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:12:00"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1684,
+   "completion_tokens": 187,
+   "estimated": false,
+   "cost_usd": 0.000288
+  }
+ }
+}

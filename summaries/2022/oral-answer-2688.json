@@ -1,0 +1,106 @@
+{
+ "title": "Breakdown on Financial Aid Per Capita Provided to Students in Tertiary Institutions",
+ "what_it_is": "Breakdown on Financial Aid Per Capita Provided to Students in Tertiary Institutions",
+ "sections": [
+  {
+   "label": "Government bursary support levels",
+   "summary": "Highest bursary support goes to households earning up to $2,750 monthly, with amounts varying by institution and programme.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Education (Ms Gan Siow Huang) (for the Minister for Education)",
+     "attributed": true,
+     "text": "The highest level of Government bursary support is for Singaporean students with gross monthly household income up to $2,750 or household per capita income up to $690.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Education (Ms Gan Siow Huang) (for the Minister for Education)",
+     "attributed": true,
+     "text": "Autonomous University graduates from these households, including those from Yale-NUS College, can each receive an annual bursary of $6,200.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for Education (Ms Gan Siow Huang) (for the Minister for Education)",
+     "attributed": true,
+     "text": "For students enrolled in NUS and NTU general courses, this is equivalent to about 75% of annual tuition fees.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister of State for Education (Ms Gan Siow Huang) (for the Minister for Education)",
+     "attributed": true,
+     "text": "Those enrolled in diploma programmes at the Polytechnics would each receive an annual bursary of $2,750, which is around 90% of annual tuition fees.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister of State for Education (Ms Gan Siow Huang) (for the Minister for Education)",
+     "attributed": true,
+     "text": "Those enrolled in Higher Nitec and Nitec programmes at the ITE receive an annual cash bursary of $1,500, on top of having their annual tuition fees fully covered.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Private education institutions excluded",
+   "summary": "Private education institutions are not part of the public education system, so Government assistance is not extended to their students.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister of State for Education (Ms Gan Siow Huang) (for the Minister for Education)",
+     "attributed": true,
+     "text": "Private education institutions (PEIs) are not part of the public education system and hence Government assistance is not extended to students at these institutions.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2688",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-02-14"
+  ],
+  "report_ids": [
+   "oral-answer-2688"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 1,
+   "turns_total": 3,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:24:35"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1182,
+   "completion_tokens": 128,
+   "estimated": false,
+   "cost_usd": 0.000201
+  }
+ }
+}

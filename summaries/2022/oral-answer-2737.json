@@ -1,0 +1,79 @@
+{
+ "title": "Profile of Persons whose COVID-19 Vaccination Status Had Lapsed on 14 February 2022",
+ "what_it_is": "Profile of Persons whose COVID-19 Vaccination Status Had Lapsed on 14 February 2022",
+ "sections": [
+  {
+   "label": "Booster uptake among seniors",
+   "summary": "MOH cannot ascertain why some are unboosted, many overseas, most unboosted Singaporeans are seniors 60 and above, and it will keep encouraging boosters.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "The Ministry of Health (MOH) is unable to ascertain the reasons for them not getting their boosters, but indications are that many of them are overseas.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "As for the Singaporeans who are not boosted, the majority are seniors aged 60 years and above.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "MOH will continue to encourage individuals to come forward and take their booster shots when they are eligible, using SMS reminders, making vaccination as convenient as possible and, also importantly, deploying Mobile Vaccination Teams to the heartlands to reach out especially to seniors.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2737",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-02-28"
+  ],
+  "report_ids": [
+   "oral-answer-2737"
+  ],
+  "sentences_total": 5,
+  "sentences_selected": 3,
+  "sentences_in_sections": 3,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.6,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 3,
+   "sentences_selected": 3,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:18:18"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 812,
+   "completion_tokens": 82,
+   "estimated": false,
+   "cost_usd": 0.000137
+  }
+ }
+}

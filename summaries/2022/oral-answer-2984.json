@@ -1,0 +1,112 @@
+{
+ "title": "Data for Full-time Trained and Untrained School Counsellors",
+ "what_it_is": "Data for Full-time Trained and Untrained School Counsellors",
+ "sections": [
+  {
+   "label": "School counsellor deployment numbers",
+   "summary": "All primary, secondary, JC and CI schools have one or two school counsellors, with about 410 deployed currently.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "As I mentioned earlier on, all our Primary school, Secondary school, Junior College (JC) and Centralised Institutes (CI) schools are resource with one or two school counsellors.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "And in total, we have about 410 school counsellors deployed in our schools currently.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Flexi-adjunct and teacher-counsellors",
+   "summary": "About 120 flexi-adjunct counsellors are engaged, over 700 teachers trained as teacher-counsellors, aiming for over 1,000.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "Overall, about 120 flexi-adjunct school counsellors are engaged in our schools.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "MOE has also provided further training to over 700 teachers, who are then deployed as teacher-counsellors in our schools to work alongside the school counsellors.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "Currently, there are about two to three teacher-counsellors in each school and we aim to increase the number of teacher-counsellors to over 1,000 over the next few years.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Reduced duties for teacher-counsellors",
+   "summary": "Schools can reduce teaching or CCA duties for teacher-counsellors to give them more time with students.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "Schools does have the flexibility to reduce teaching or CCA duties for teacher-counsellors to provide them more time to spend with their students if they need to.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2984",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-11-29"
+  ],
+  "report_ids": [
+   "oral-answer-2984"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.2308,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:06:25"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1502,
+   "completion_tokens": 195,
+   "estimated": false,
+   "cost_usd": 0.000265
+  }
+ }
+}

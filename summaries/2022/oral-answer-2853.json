@@ -1,0 +1,159 @@
+{
+ "title": "Causes of Time Lags in Data Used to Determine Eligibility for GSTV – U-Save Rebates",
+ "what_it_is": "Causes of Time Lags in Data Used to Determine Eligibility for GSTV – U-Save Rebates",
+ "sections": [
+  {
+   "label": "U-Save rebate errors",
+   "summary": "A time lag affected about 3,100 households, and 23 U-Save rebates went to households with no Singaporean Citizens due to database errors.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "The Minister, Prime Minister's Office (Ms Indranee Rajah) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "While we try to strive to keep our data updated as soon as possible, there are practical constraints.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "The Minister, Prime Minister's Office (Ms Indranee Rajah) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "This time lag issue affected about 3,100 households, or about 0.3% of all households living in HDB flats.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "The Minister, Prime Minister's Office (Ms Indranee Rajah) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "There were another 23 cases of U-Save rebates given even though there were no Singaporean Citizens in the household, due to errors in agencies' databases.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Recovery and process tightening",
+   "summary": "MOF has begun recovering rebates from ineligible households and is working with data agencies to tighten processes using latest data.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "The Minister, Prime Minister's Office (Ms Indranee Rajah) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "MOF has commenced recovery of the rebates given to ineligible households.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "The Minister, Prime Minister's Office (Ms Indranee Rajah) (for the Deputy Prime Minister and Minister for Finance)",
+     "attributed": true,
+     "text": "We are working with data agencies to tighten our operational processes to ensure the use of latest available data to administer the GSTV – U-Save scheme.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Questions on clawback and households",
+   "summary": "The Member asks how many households had amounts clawed back and whether further action will identify other households beyond the 3,166.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "Ms He Ting Ru (Sengkang)",
+     "attributed": true,
+     "text": "How many households have actually had the amounts clawed backed from them?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00039",
+     "speaker": "Ms He Ting Ru (Sengkang)",
+     "attributed": true,
+     "text": "And the last point: there were 3,166 ineligible households identified.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "Ms He Ting Ru (Sengkang)",
+     "attributed": true,
+     "text": "Is there any further action that will be taken to identify whether there are any other households involved in this or is the number of households already taken as 3,166?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "ICA holds living status information",
+   "summary": "The agency holding information on living status, whether a person is born or has passed on, is ICA.",
+   "sentences": [
+    {
+     "sid": "s00046",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "The process is the agency that has the information on living status, whether you are born, or whether you have passed on, is ICA.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Recovery figures not yet available",
+   "summary": "The Minister does not have exact recovery figures as the process is ongoing, but assures recovery is being done as soon as possible.",
+   "sentences": [
+    {
+     "sid": "s00056",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "The Member asked if I have the exact figures now, how many have been recovered or not?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00057",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "I do not have the exact figures at the moment, it is still in process, but I think the Member can have the assurance of knowing that we are doing this as soon as we can.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2853",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-08-01"
+  ],
+  "report_ids": [
+   "oral-answer-2853"
+  ],
+  "sentences_total": 57,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.193,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:34:18"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2954,
+   "completion_tokens": 294,
+   "estimated": false,
+   "cost_usd": 0.000496
+  }
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "title": "Simultaneous Debate on Motions",
+ "what_it_is": "Simultaneous Debate on Motions",
+ "sections": [
+  {
+   "label": "Two Motions on Committee findings",
+   "summary": "The First Motion covers findings on former MP Ms Raeesah Khan; the Second covers Mr Pritam Singh, Mr Faisal Manap and Ms Sylvia Lim, and the mover asks that both be debated together.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The First Motion deals with the Committee’s findings and recommendations in respect of the conduct of former Workers’ Party Member of Parliament (MP) Ms Raeesah Khan which I had previously referred to the Committee.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The Second Motion deals with the Committee’s findings and recommendations in respect of the conduct of the Leader of the Opposition, Mr Pritam Singh, and Workers’ Party MPs Mr Faisal Manap and Ms Sylvia Lim, which arose in the course of the Committee’s inquiry.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Given that both Motions arise out of the same report and, further, given that the facts and matters pertaining to the Motions are interlinked and the same set of evidence applies to both, I wish to move that the two Motions be considered together and debated concurrently.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Separate votes on Motions",
+   "summary": "Only the debate is concurrent; the two Motions remain separate and votes on them will be taken separately at the end of the debate.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "To be clear, and for avoidance of doubt, it is only the debate that is to be concurrent.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Leader of the House (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "The Motions remain as two separate Motions and, at the end of the debate, the votes on the two Motions will be taken separately.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-1808",
+  "group": "motion",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-02-15"
+  ],
+  "report_ids": [
+   "motion-1808"
+  ],
+  "sentences_total": 8,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.625,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:22:23"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 963,
+   "completion_tokens": 150,
+   "estimated": false,
+   "cost_usd": 0.000177
+  }
+ }
+}

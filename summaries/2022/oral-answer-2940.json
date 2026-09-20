@@ -1,0 +1,153 @@
+{
+ "title": "HDB Flat Lessees Who Concurrently Own One or More Private Residential Properties",
+ "what_it_is": "HDB Flat Lessees Who Concurrently Own One or More Private Residential Properties",
+ "sections": [
+  {
+   "label": "HDB owners buying private property",
+   "summary": "MOP-fulfilled citizen households may buy private property without selling their HDB flat, but pay at least 17% ABSD; about 3% own private property.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "Singapore Citizen households who have fulfilled the Minimum Occupation Period, or MOP, of their HDB flat may buy private residential property without selling their HDB flat.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "Flat owners who do not dispose of their HDB flat will be subject to Additional Buyer’s Stamp Duty, or ABSD, of at least 17% on the purchase of their second and subsequent residential property.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "As at October 2022, about 3% of HDB flat owners own at least one private residential property.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "This proportion has fallen by about 0.3 percentage points in the last three years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "Of these, about 45% are not living in their HDB flats, as they have rented out their whole flat.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Forward Singapore housing views",
+   "summary": "Views from Singaporeans under Forward Singapore, especially on the public housing social compact, will be studied carefully.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "Mr Yip Hon Weng had also called for this last month.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for National Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "We have been gathering views from Singaporeans as part of Forward Singapore, particularly around the social compact on public housing, and will study these as well as other views and ideas carefully.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Property market cooling measures",
+   "summary": "Prices have risen in the last two years, and measures in December last year and September this year cool the market by moderating demand.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "They have been going up in the last two years for the reasons I mentioned in the last Parliamentary Sitting.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00026",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "We have taken measures – both in December last year and September this year – to cool the property market by moderating demand and let the measures work their way through the market.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Million-dollar resale flats",
+   "summary": "Million-dollar flats made up about 1% of all resale transactions in the last two years.",
+   "sentences": [
+    {
+     "sid": "s00031",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "That also adds to the impact we have seen on the resale market.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00032",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "And million-dollar flats make up, in the last two years, about 1% of all resale transactions.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2940",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-11-07"
+  ],
+  "report_ids": [
+   "oral-answer-2940"
+  ],
+  "sentences_total": 35,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 4,
+  "selection_share": 0.3143,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:18:17"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1848,
+   "completion_tokens": 239,
+   "estimated": false,
+   "cost_usd": 0.000326
+  }
+ }
+}

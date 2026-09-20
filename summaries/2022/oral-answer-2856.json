@@ -1,0 +1,128 @@
+{
+ "title": "Evidence of Community Spread of Local Monkeypox Cases and Vaccines to Protect Vulnerable Groups",
+ "what_it_is": "Evidence of Community Spread of Local Monkeypox Cases and Vaccines to Protect Vulnerable Groups",
+ "sections": [
+  {
+   "label": "Monkeypox cases and contact tracing",
+   "summary": "Reported monkeypox cases were mild, isolated, and their 45 close contacts showed no further spread; smallpox vaccine was offered to close contacts.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "None of these cases are linked to each other.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "All the cases have had mild symptoms and are clinically stable; they were promptly isolated until non-infectious; contact tracing was initiated and 45 close contacts were identified.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "All close contacts who remained in Singapore are well and 11 of them have completed their quarantine.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Thus far, none of the local contacts had developed symptoms compatible with monkeypox nor tested positive for monkeypox.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "There is, therefore, no evidence of further spread in the community from the reported cases.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Close contacts were offered the smallpox vaccine as post-exposure prophylaxis, which is reported to be 85% effective at preventing monkeypox infection.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "To date, 11 close contacts have taken up the smallpox vaccine.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "However, and as recommended by WHO, mass population-wide vaccination with the smallpox vaccine is currently not recommended as a preventive strategy for monkeypox as the benefits do not outweigh the risk.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Individuals who are at higher risk of infection due to exposure to confirmed cases or their specimens, including healthcare and laboratory personnel, may be offered the smallpox vaccines to protect them from getting infected.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "There is an adequate supply of smallpox vaccines.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2856",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-08-01"
+  ],
+  "report_ids": [
+   "oral-answer-2856"
+  ],
+  "sentences_total": 20,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 1,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 1,
+   "turns_total": 4,
+   "coverage": 0.25,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:34:23"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1358,
+   "completion_tokens": 104,
+   "estimated": false,
+   "cost_usd": 0.000219
+  }
+ }
+}

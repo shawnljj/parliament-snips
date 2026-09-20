@@ -1,0 +1,126 @@
+{
+ "title": "Trend of Corporate Bad Debts due to Rising Interest Rates and Assistance for SMEs to Access Capital for Growth",
+ "what_it_is": "Trend of Corporate Bad Debts due to Rising Interest Rates and Assistance for SMEs to Access Capital for Growth",
+ "sections": [
+  {
+   "label": "Corporate and SME NPL ratios",
+   "summary": "Corporate NPL ratio fell from 3.1% in June 2021 to 2.5% in June 2022, and the SME ratio fell from 2.8% to 2.4%.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Culture, Community and Youth and Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The proportion of non-performing loans (NPL) for the corporate sector has, in fact, fallen over the past year – from 3.1% in June 2021 to 2.5% in June 2022, based on latest available data.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Culture, Community and Youth and Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The NPL ratio within the SME segment also fell from 2.8% to 2.4% over the same period.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SME loan volume growth",
+   "summary": "SME loan volumes grew 11.5% year-on-year in August 2022, compared to 7.2% growth in broader corporate loans.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for Culture, Community and Youth and Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "SME loan volumes expanded by 11.5% on a year-on-year basis in August 2022, compared to the broader corporate loan growth of 7.2%.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Corporate liquidity and support schemes",
+   "summary": "MAS stress tests show most SGX-listed firms hold sufficient liquidity and would be resilient, while various schemes help SMEs.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "The first is that most Singapore-listed firms continue to hold sufficient liquidity as of the first half of 2022 and these are liquid assets, such as cash and cash equivalents, that are exceeding their short-term liabilities.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "And MAS has conducted stress tests on these balance sheets of SGX-listed firms which show that most corporates will be resilient to further interest rate increases and earnings shocks.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "In the unlisted sector itself, most firms also either have healthy debt servicing ability or sufficient cash holdings to cover the short-term financing or operational needs, but MAS and the Government will monitor this very closely and adjust where necessary.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "Some of these include Enterprise Singapore's Enterprise Financing Scheme which help businesses access and tap into funding and also co-sharing loan default risks.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "SMEs can also tap on a variety of schemes, such as the Productivity Solutions Grant, Energy Efficiency Grant and SkillsFuture Subsidy, to help them transform their businesses in light of many different challenges afoot.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2931",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-10-20"
+  ],
+  "report_ids": [
+   "oral-answer-2931"
+  ],
+  "sentences_total": 19,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.4211,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:19:30"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1500,
+   "completion_tokens": 217,
+   "estimated": false,
+   "cost_usd": 0.000271
+  }
+ }
+}

@@ -1,0 +1,140 @@
+{
+ "title": "Regulating Imposition of Credit Card Fees by Banks",
+ "what_it_is": "Regulating Imposition of Credit Card Fees by Banks",
+ "sections": [
+  {
+   "label": "MAS credit card fee disclosure",
+   "summary": "MAS requires banks to disclose late payment fees and interest charges, and ABS's Code specifies communication of principal terms and conditions.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "MAS does not interfere in these decisions, but expects all banks to deal fairly with their customers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "In this regard, MAS requires banks to clearly and conspicuously disclose late payment fees and interest charges in credit card statements, including how such charges are computed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Where a customer has not paid the prior month’s credit card bill in full, the bank is required to provide in the current month’s statement a projection of the length of time and the total amount, including principal, interest, fees and charges, that the customer will take to fully pay off the entire outstanding balance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The Association of Banks in Singapore’s Code of Consumer Banking Practice further specifies when and how banks can effectively communicate to customers, relevant information on a broader range of principal terms and conditions, including annual fees, repayment grace periods and interest rates.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Regulating credit card annual fees",
+   "summary": "A question asks whether MAS can regulate credit card annual fees so those genuinely needing a card avoid paying them.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Mr Lim Biow Chuan (Mountbatten)",
+     "attributed": true,
+     "text": "This also means that if the consumer is not savvy enough, then they will have to pay for the credit card fees.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Lim Biow Chuan (Mountbatten)",
+     "attributed": true,
+     "text": "So, my question to the Minister of State is whether MAS can regulate the imposition of this annual fee by the credit card companies so that those who genuinely need a credit card do not have to pay the annual fee.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fee waiver criteria and terms",
+   "summary": "Consumers can call in to an automated service, but fee waivers differ across products and issuers, so consumers should note terms and conditions.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "I think there are a few new initiatives where you can also call in and there is an automated service.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "However, consumers also must be mindful that not all fee waivers will always be granted.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "The criteria for these kinds of waivers, of course, differ across credit card products as well as issuers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "So, before taking up or signing up for a credit card, consumers should take note of the relevant terms and conditions, such as the expiry period of guaranteed fee waivers and the quantum of fees that are chargeable.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2733",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-02-18"
+  ],
+  "report_ids": [
+   "oral-answer-2733"
+  ],
+  "sentences_total": 18,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.5556,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:19:25"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1491,
+   "completion_tokens": 189,
+   "estimated": false,
+   "cost_usd": 0.000262
+  }
+ }
+}

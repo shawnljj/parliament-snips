@@ -1,0 +1,93 @@
+{
+ "title": "IT System Outages in Local Public Healthcare Institutions and Measures to Ensure Resiliency under Healthier SG",
+ "what_it_is": "IT System Outages in Local Public Healthcare Institutions and Measures to Ensure Resiliency under Healthier SG",
+ "sections": [
+  {
+   "label": "Healthcare IT outage and continuity plans",
+   "summary": "The Minister was asked about IT outage incidences, capacity for Healthier SG enhancements, and support during outages; institutions have business continuity plans.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Dr Lim Wee Kiak",
+     "attributed": true,
+     "text": "asked the Minister for Health (a) in the past three years, how many incidences of IT system outage have occurred at local public healthcare institutions; (b) what measures are being taken to ensure that the national healthcare IT system will have adequate capacity for the planned system enhancements under Healthier SG; and (c) what helplines or support will be available to affected persons in case of an IT system outage or malfunction, especially for doctors and patients.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We are also reviewing our downtime and business processes to minimise the impact during outages.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Our public healthcare institutions have business continuity plans that are activated in case of emergencies.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Each institution's business continuity plan is supported by solutions with appropriate functionality and can be used when key applications are unavailable to allow public healthcare institutions to continue with the delivery of patient care services.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For example, users would be able to view a patient's historical clinical information but may not be able to enter new clinical information into the system during the downtime.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2991",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-11-29"
+  ],
+  "report_ids": [
+   "oral-answer-2991"
+  ],
+  "sentences_total": 6,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.8333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 2,
+   "turns_total": 2,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:06:34"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 902,
+   "completion_tokens": 81,
+   "estimated": false,
+   "cost_usd": 0.000149
+  }
+ }
+}

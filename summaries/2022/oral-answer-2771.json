@@ -1,0 +1,133 @@
+{
+ "title": "Monitoring of Manpower Policies in Hospitals with Respect To Rest and Leave Days of Nurses and Doctors",
+ "what_it_is": "Monitoring of Manpower Policies in Hospitals with Respect To Rest and Leave Days of Nurses and Doctors",
+ "sections": [
+  {
+   "label": "Rest days for uncovered healthcare workers",
+   "summary": "For healthcare workers not covered by the Employment Act, rest day provisions and work hour limits are set out in public healthcare clusters' employment contracts.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "For those healthcare workers that are not covered by the Employment Act, their rest day provisions and work hour limits are set out in public healthcare clusters’ employment contracts.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Overtime pay and days off",
+   "summary": "Employers accord overtime pay as required by section 38 of the Act, and public healthcare clusters have allowed staff to take days off, including annual leave, whenever possible.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Whenever there is essential and urgent need that requires overtime work, employers will accord overtime pay as required by section 38 of the Act.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Public healthcare clusters have allowed staff to rest and recharge by taking days off, including taking annual leave, whenever possible.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Questions on overtime and retention",
+   "summary": "The passage asks about nurses' and doctors' overtime hours, MOH studying resignation rates among experienced healthcare workers, and MOH retention efforts, with a fuller response in the coming COS.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "In terms of overtime hours, how much are the nurses working overtime, the doctors as well during the past few months or two years in this pandemic?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "Two, I think it is really a manpower crunch.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "So, is MOH also studying the resignation rate, especially among the experienced healthcare workers, whom I understand are, leaving more as compared to the junior staff?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "And also, what is MOH doing to try and retain these workers?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "As I have said, this is a crisis of a generation and it is the truth that many of our healthcare workers are going above and beyond their call of duty, extended hours, also in the primary care sector, our GPs as well.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "In MOH's Committee of Supply (COS) in the next few days, we will be giving a fuller response on some of the strategies that MOH will look at to support our healthcare staff and also to look at boosting our manpower resources over the coming decade.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2771",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-03-07"
+  ],
+  "report_ids": [
+   "oral-answer-2771"
+  ],
+  "sentences_total": 18,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:01:07"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1385,
+   "completion_tokens": 217,
+   "estimated": false,
+   "cost_usd": 0.000255
+  }
+ }
+}

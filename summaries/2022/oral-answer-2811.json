@@ -1,0 +1,140 @@
+{
+ "title": "Shutdown of Anti-SMS Spoofing Registry",
+ "what_it_is": "Shutdown of Anti-SMS Spoofing Registry",
+ "sections": [
+  {
+   "label": "SMS Sender ID Registry questions",
+   "summary": "Questions ask why the anti-SMS spoofing registry shut, whether agencies had time, and how the new SSIR is superior and aligned internationally.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Yip Hon Weng",
+     "attributed": true,
+     "text": "asked the Minister for Communications and Information (a) why was the anti-SMS spoofing registry shut just about over a month after Government agencies announced their intent to join the registry; (b) whether adequate time was given for the agencies to assess the new decision; (c) what are the ways by which the full-fledged Singapore SMS Sender ID Registry will be superior; (d) how will it put us in line with international practices; and (e) what is the timeline for banks, Government agencies and interested organisations to be fully onboarded.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "It replaced the SMS SenderID Registry pilot, which was started by IMDA and MAS in August 2021 and that pilot was done in collaboration with the UK Mobile Ecosystem Forum (MEF).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "Under the previous MEF model, spoofed SMSes that use a registered Sender ID will still be received by consumers until the Sender ID owner confirms that the spoofed SMSes are not legitimate and should be blocked.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "The new SSIR takes a more proactive approach.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "It can block spoofed SMSes upfront and provide a greater control over anti-spoof measures that better protect Singaporeans.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore national SMS Sender ID Registry",
+   "summary": "Singapore is among the first countries with a national SMS Sender ID Registry, and 25 organisations joined SSIR as of 30 March 2022.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "Internationally, Singapore is one of the first few countries to have implemented a national SMS Sender ID Registry to better prevent spoofed SMSes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Communications and Information (Dr Janil Puthucheary) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "As of 30 March 2022, 25 organisations, including banks and Government agencies, have joined SSIR.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SSIR fees and Sender IDs",
+   "summary": "Organisations pay a one-time $500 set-up fee and $1,000 per 10 Sender IDs, with over 1,000 protected Sender IDs as of 30 March.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Specifically, organisations would pay a one-time set-up fee of $500 and $1,000 for every 10 Sender IDs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "Having said that, so far, as of 30 March, there are more than 1,000 protected SMS Sender IDs in the registry already.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "So, IMDA will monitor the landscape to study if the registration of SMS Sender IDs should be mandatory or if there should be another framework in place.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2811",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-04-04"
+  ],
+  "report_ids": [
+   "oral-answer-2811"
+  ],
+  "sentences_total": 17,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.5882,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:47:19"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1494,
+   "completion_tokens": 220,
+   "estimated": false,
+   "cost_usd": 0.000271
+  }
+ }
+}

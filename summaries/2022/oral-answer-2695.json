@@ -1,0 +1,113 @@
+{
+ "title": "Actions to Verify Vaccinations or ART Results Administered by Clinics Linked to Alleged Vaccine Fraud Case",
+ "what_it_is": "Actions to Verify Vaccinations or ART Results Administered by Clinics Linked to Alleged Vaccine Fraud Case",
+ "sections": [
+  {
+   "label": "False vaccination records investigations",
+   "summary": "MOH lodged a police complaint over false vaccination and ART records, and will correct national systems once records are verified false.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "MOH had lodged a complaint with the Singapore Police Force as soon as our investigations against the alleged errant clinic detected false vaccination and false positive ART results.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Both MOH and the Police are working closely to establish the false records in the clinical database.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Investigations are ongoing but once the records are verified to be false, MOH will make the correction on our national systems immediately and these patients will have their vaccination or recovered status correctly recorded.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Patients who have obtained falsified vaccination status or false positive ART results and have had the false data uploaded to our national systems will also be referred to the Police for investigations.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Systems for clinical results",
+   "summary": "The systems gathering clinical results and information include audits and licence issuing governance processes, and appear to be working well.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The short answer is that we are always looking at the systems that we have in place to gather information for clinical results and information that is useful for us to fight the pandemic and to secure our public health systems.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "So, some of these include audits, some of these are about how we look after the licence issuing governance processes of the professionals at the clinical sites involved.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "But, so far, the system appears to be working well.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2695",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-02-15"
+  ],
+  "report_ids": [
+   "oral-answer-2695"
+  ],
+  "sentences_total": 10,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.7,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:22:25"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1119,
+   "completion_tokens": 127,
+   "estimated": false,
+   "cost_usd": 0.000192
+  }
+ }
+}

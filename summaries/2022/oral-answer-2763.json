@@ -1,0 +1,133 @@
+{
+ "title": "Improving Information Sharing and Integration of Processes between Healthcare Clusters to Enhance Patient Experience",
+ "what_it_is": "Improving Information Sharing and Integration of Processes between Healthcare Clusters to Enhance Patient Experience",
+ "sections": [
+  {
+   "label": "National Electronic Health Record systems",
+   "summary": "The NEHR shares patient summary records across care providers, with plans to expand coverage and add common pharmacy, billing and HealthHub digital services.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The National Electronic Health Record (NEHR) system enables sharing of patient summary health records across care providers, including the three public healthcare clusters.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We will progressively build up its coverage to include information from more healthcare providers to support care continuity.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "A common pharmacy system for the three public healthcare clusters is underway, to allow consolidation of patient information, which allows providers to have a more holistic view of patients' medications and facilitate the filling of prescriptions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "MOH and the healthcare clusters are also developing a national charging and billing system to streamline processes and enable a more consistent experience for patients.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Common digital services across the clusters, such as the scheduling of appointments and bill payments, are available on the national HealthHub mobile app and web portal.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Health (Dr Janil Puthucheary) (for the Minister for Health)",
+     "attributed": true,
+     "text": "HealthHub also displays personal health records drawn from national systems, including for example, the COVID-19 vaccination records and COVID-19 test results.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Integrating healthcare into LifeSG",
+   "summary": "The question asks whether the Ministry will consider integrating all healthcare functionalities into the LifeSG app, which already has over 70 Government services.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "Will the Ministry consider integrating all healthcare functionalities into the LifeSG app, since more than 70 Government services are on that app already?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Other portals for Government engagement",
+   "summary": "The passage states there are other portals and means for citizens to engage with Government, and that this engagement differs from engaging a healthcare provider.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "There are other portals and means through which citizens engage with Government.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "And the engagement with Government is different from the engagement with your healthcare provider.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2763",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-03-04"
+  ],
+  "report_ids": [
+   "oral-answer-2763"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.3913,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:04:26"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1451,
+   "completion_tokens": 197,
+   "estimated": false,
+   "cost_usd": 0.000258
+  }
+ }
+}

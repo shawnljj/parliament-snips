@@ -1,0 +1,144 @@
+{
+ "title": "Impact of Rising Interest Rate Outlook on Household Debt Situation in Singapore",
+ "what_it_is": "Impact of Rising Interest Rate Outlook on Household Debt Situation in Singapore",
+ "sections": [
+  {
+   "label": "Household debt servicing and mortgages",
+   "summary": "Median Total Debt Servicing Ratio was 43% last year and delinquent mortgages were under 1%.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The overall debt servicing ability of households has remained manageable, with the median Total Debt Servicing Ratio (TDSR) at 43% last year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Second, the credit profile of mortgages is still healthy, with the proportion of delinquent mortgages at less than 1%.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MAS mortgage stress tests",
+   "summary": "MAS stress tests suggest the median household mortgage servicing ratio stays manageable even with higher interest rates or lower incomes.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "MAS’ stress tests suggest that the median household mortgage servicing ratio will remain manageable even under scenarios of significantly higher interest rates or lower incomes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "TDSR interest rate floor",
+   "summary": "The interest rate for calculating loan repayments under TDSR is the higher of 3.5% or the prevailing market rate.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The interest rate used to calculate loan repayments under TDSR is the higher of 3.5% or the prevailing market rate.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Expected rise in domestic rates",
+   "summary": "Households and businesses should expect higher domestic rates and increased financing costs.",
+   "sentences": [
+    {
+     "sid": "s00031",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "Accordingly, households and businesses should expect a pick-up in domestic rates and its attendant increase in financing costs.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Credit card balances and charge-offs",
+   "summary": "Credit card balances fell from 2.5% of GDP in Q4 2019 to 2.1% in Q4 2021, and charge-off rates fell from 6.3% to 4.4%.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "As a share of GDP, outstanding credit card balances have come down from 2.5% in Q4 2019, to 2.1% in Q4 2021.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00040",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "The charge-off rate decreased further from 6.3% in Q4 2019, to 4.4% in Q4 2021.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Caution urged on home purchases",
+   "summary": "Home buyers are urged to exercise caution in home purchases and financial prudence given potential interest rate rises.",
+   "sentences": [
+    {
+     "sid": "s00045",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "First, I think it is quite important that we urge all home buyers to exercise caution in their home purchases and in making these decisions, and also in financial prudence of how much they can borrow and their own balance sheets, given potential rise in interest rates.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2800",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-04-04"
+  ],
+  "report_ids": [
+   "oral-answer-2800"
+  ],
+  "sentences_total": 48,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 6,
+  "selection_share": 0.1667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 7,
+   "coverage": 0.4286,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:46:57"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2677,
+   "completion_tokens": 338,
+   "estimated": false,
+   "cost_usd": 0.000469
+  }
+ }
+}

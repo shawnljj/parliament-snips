@@ -1,0 +1,112 @@
+{
+ "title": "Minimum Household Income Required to Employ Migrant Domestic Worker",
+ "what_it_is": "Minimum Household Income Required to Employ Migrant Domestic Worker",
+ "sections": [
+  {
+   "label": "MDW eligibility assessment factors",
+   "summary": "MOM assesses MDW eligibility using employer income, accommodation ability and household caregiving needs.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "MOM assesses an applicant's eligibility to employ a migrant domestic worker (MDW) based on various factors, such as the income of the prospective employer, the ability to provide proper and safe accommodation for the domestic worker and the caregiving needs of the household.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MDW renewal application assessments",
+   "summary": "Renewals consider employer track records like salary or levy defaults; about 2,000 cases, or 1%, were rejected yearly over five years.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "In assessing renewal applications, we also consider the track records of the employers, such as whether they previously defaulted on salary or levy payment.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "Hence, we do not have a rigid income criterion and do not just reject applications solely on that alone.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "Over the past five years, an average of about 2,000 cases, or about 1% of all the applications each year, were rejected after taking the various factors into consideration.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Financial ability and applicant discussion",
+   "summary": "MOM considers various forms of financial ability and has been in discussion with the referred resident's applicant.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "Indeed, we do consider various forms of financial ability for the applicant to be able to hire an MDW.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "And in the case of the resident who was referred to MOM, we have actually been in discussion with the applicant.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-2821",
+  "group": "oral",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-04-05"
+  ],
+  "report_ids": [
+   "oral-answer-2821"
+  ],
+  "sentences_total": 18,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T14:44:28"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1320,
+   "completion_tokens": 168,
+   "estimated": false,
+   "cost_usd": 0.000232
+  }
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "title": "Proceedings on Ministerial Statement",
+ "what_it_is": "Proceedings on Ministerial Statement",
+ "sections": [
+  {
+   "label": "Ukraine statement before Budget debate",
+   "summary": "The Ministerial Statement on Ukraine's security crisis should be heard before the Budget debate begins.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "Ordinarily, the Budget debate takes precedence over other business.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "However, given that the Ministerial Statement seeks to update Members on the Singapore Government's position on the urgent situation in Ukraine, a serious security crisis which has implications for the international order, global economic outlook and also for our national economy, it would be good for Members to hear from the Minister for Foreign Affairs before the commencement of the Budget debate.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-1828",
+  "group": "motion",
+  "year": "2022",
+  "sitting_dates": [
+   "2022-02-28"
+  ],
+  "report_ids": [
+   "motion-1828"
+  ],
+  "sentences_total": 3,
+  "sentences_selected": 2,
+  "sentences_in_sections": 2,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.6667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 2,
+   "sentences_selected": 2,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T15:18:16"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 651,
+   "completion_tokens": 56,
+   "estimated": false,
+   "cost_usd": 0.000107
+  }
+ }
+}
