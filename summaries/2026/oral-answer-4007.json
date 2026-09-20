@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Graduate underemployment and employment rates",
-   "summary": "In 2025, time-related underemployment among resident graduates aged 25 to 29 was 0.8% for overseas university graduates and 0.7% for local autonomous university graduates, with around nine in 10 employed.",
+   "summary": "Resident graduates aged 25 to 29 from overseas universities had a 0.8% underemployment rate in 2025, slightly above the 0.7% for local autonomous university graduates, with around nine in 10 employed.",
    "sentences": [
     {
      "sid": "s00002",
@@ -31,7 +31,7 @@
   },
   {
    "label": "Graduate employment rate differential",
-   "summary": "In 2025, employment rates for local autonomous and overseas university graduates were above 90%, with a differential of just slightly over 1%.",
+   "summary": "In 2025, employment rates for local autonomous universities and overseas universities graduates were above 90%, with a differential of just slightly over 1%.",
    "sentences": [
     {
      "sid": "s00019",
@@ -63,14 +63,14 @@
    ]
   },
   {
-   "label": "Firm hiring and wage expectations",
+   "label": "Firms' hiring and wage expectations",
    "summary": "The share of firms expecting to hire in the next three months edged down from 44% in September 2025 to 43% in December 2025, while those expecting to raise wages rose from 19% to about 26%.",
    "sentences": [
     {
      "sid": "s00030",
      "speaker": "Dr Tan See Leng",
      "attributed": true,
-     "text": "Another slight note of optimism, the share of firms expecting to hire in the next three months only edged down slightly – from 44% in September 2025, to 43% in December 2025.",
+     "text": "Another slight note of optimism, the share of firms expecting to hire in the next three months only edged down slightly – from 44% in September 2025, to 43% in December 2025.",
      "added_for_context": false
     },
     {
@@ -119,14 +119,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:41:27"
+   "checked_at": "2026-09-20T10:58:48"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1947,
-   "completion_tokens": 294,
+   "prompt_tokens": 1952,
+   "completion_tokens": 297,
    "estimated": false,
-   "cost_usd": 0.000355
+   "cost_usd": 0.000356
   }
  }
 }

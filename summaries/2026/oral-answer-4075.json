@@ -3,15 +3,15 @@
  "what_it_is": "Setting Up Helpline and Oversight for Tripartite Framework for the Prevention of Abuse and Harassment in Healthcare",
  "sections": [
   {
-   "label": "Healthcare abuse reporting helpline oversight",
-   "summary": "Asked whether MOH will consider an independent centralised helpline or oversight under the Tripartite Framework for non-police abuse cases in public healthcare.",
+   "label": "Healthcare abuse reporting helpline proposal",
+   "summary": "A Member asked whether MOH will consider a centralised helpline or oversight under the Tripartite Framework for non-police abuse cases in public healthcare.",
    "sentences": [
     {
      "sid": "s00001",
      "speaker": "Mr Dennis Tan Lip Fong",
      "attributed": true,
-     "text": "asked the Coordinating Minister for Social Policies and Minister for Health whether the Ministry will consider establishing an independent and centralised helpline or oversight under the Tripartite Framework for the Prevention of Abuse and Harassment in Healthcare to enhance follow-up and accountability of internal reporting of abuse in all public healthcare institutions for all non-police cases.",
-     "added_for_context": true
+     "text": "asked the Coordinating Minister for Social Policies and Minister for Health whether the Ministry will consider establishing an independent and centralised helpline or oversight under the Tripartite Framework for the Prevention of Abuse and Harassment in Healthcare to enhance follow-up and accountability of internal reporting of abuse in all public healthcare institutions for all non-police cases.",
+     "added_for_context": false
     },
     {
      "sid": "s00002",
@@ -30,8 +30,8 @@
    ]
   },
   {
-   "label": "Internal hospital abuse case process",
-   "summary": "MOH and Government take a zero-tolerance stance against abuse of healthcare workers, and hospitals keep incident management internal to assess perpetrators.",
+   "label": "Internal hospital abuse processes",
+   "summary": "MOH and the Government take a zero-tolerance stance against abuse of healthcare workers, and hospitals keep incident management internal to assess perpetrators.",
    "sentences": [
     {
      "sid": "s00008",
@@ -51,7 +51,7 @@
      "sid": "s00011",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
-     "text": "The reason why it is important for the hospital to have an internal process is because the incident management itself does involve making an assessment on the perpetrator – sometimes, the perpetrator himself is the patient.",
+     "text": "The reason why it is important for the hospital to have an internal process is because the incident management itself does involve making an assessment on the perpetrator – sometimes, the perpetrator himself is the patient.",
      "added_for_context": false
     },
     {
@@ -72,14 +72,14 @@
   },
   {
    "label": "Post-incident management and escalation",
-   "summary": "Post-incident management emphasises the institution's zero-tolerance stance, and staff can escalate fairness concerns to MOH for a separate independent review.",
+   "summary": "Hospitals are told to emphasise zero tolerance in post-incident management, and staff can escalate concerns to MOH for an independent review.",
    "sentences": [
     {
      "sid": "s00020",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "The third is the post-incidence management and this is where the zero-tolerance stance by the institution is something that we emphasise to management within the hospitals.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00021",
@@ -134,14 +134,14 @@
    "coverage": 0.6,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:14:51"
+   "checked_at": "2026-09-20T10:32:02"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1815,
+   "prompt_tokens": 1819,
    "completion_tokens": 201,
    "estimated": false,
-   "cost_usd": 0.00031
+   "cost_usd": 0.000311
   }
  }
 }

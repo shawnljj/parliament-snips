@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "HCG applicant age breakdown",
-   "summary": "Most HCG applicants were aged 70 and above, and MOH does not collect applicants' specific conditions.",
+   "summary": "Most HCG applicants were aged 70 and above, and the Ministry of Health does not collect information on their specific conditions.",
    "sentences": [
     {
      "sid": "s00002",
@@ -23,8 +23,8 @@
    ]
   },
   {
-   "label": "HCG mental health eligibility question",
-   "summary": "A Member asks whether HCG can extend to care recipients with diagnosed mental health conditions, noting HCG is means-tested for those unable to perform ADLs.",
+   "label": "Extending HCG to mental health conditions",
+   "summary": "A Member asks whether HCG can be extended to care recipients with diagnosed mental health conditions, noting HCG is means-tested and for those unable to perform ADLs.",
    "sentences": [
     {
      "sid": "s00009",
@@ -51,39 +51,46 @@
   },
   {
    "label": "Autism and intellectual disability caregivers",
-   "summary": "Caregivers of those with autism, intellectual disability or mental health conditions satisfy HCG requirements if recipients cannot perform ADLs.",
+   "summary": "Caregivers of those with autism, intellectual disability or mental health conditions satisfy HCG requirements if the care recipient cannot perform ADLs.",
    "sentences": [
     {
      "sid": "s00014",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
      "text": "When the Member asked the question about the caregivers of those with autism or intellectual disability, as well as those with mental health conditions, actually, if they meet the criteria of not being able to perform the ADLs, they will satisfy the requirement of HCG.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "HCG requirements and intent",
+   "label": "HCG requirements and greater needs",
    "summary": "HCG has certain requirements and is intended to help those with the most or greater needs regarding ADLs.",
    "sentences": [
     {
-     "sid": "s00020",
-     "speaker": "",
-     "attributed": false,
-     "text": "I want to assure the Member that, at the moment, yes, HCG has certain requirements.",
+     "sid": "s00019",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "So, it may not just be from the HCG.",
      "added_for_context": true
     },
     {
+     "sid": "s00020",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "I want to assure the Member that, at the moment, yes, HCG has certain requirements.",
+     "added_for_context": false
+    },
+    {
      "sid": "s00021",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
      "text": "It is meant and intended to help those with the most or greater needs with regard to ADLs.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "ADL certification and eligibility",
+   "label": "ADL eligibility and doctor certification",
    "summary": "A care recipient permanently unable to perform daily activities, certified by a doctor, would be eligible to apply.",
    "sentences": [
     {
@@ -98,13 +105,6 @@
      "speaker": "Ms Rahayu Mahzam",
      "attributed": true,
      "text": "So, if, let us say, the care recipient is not able to perform those daily activities permanently and the doctor certifies that he or she is not able to do so, then they would be eligible to apply for this.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00033",
-     "speaker": "Ms Rahayu Mahzam",
-     "attributed": true,
-     "text": "In those cases, perhaps that could be surfaced to us and we will see where we could streamline that a bit better.",
      "added_for_context": false
     }
    ]
@@ -141,19 +141,19 @@
    "sections_without_sentences": [],
    "sentences_published": 11,
    "sentences_selected": 11,
-   "turns_cited": 5,
-   "turns_total": 8,
-   "coverage": 0.625,
+   "turns_cited": 4,
+   "turns_total": 7,
+   "coverage": 0.5714,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:50:16"
+   "checked_at": "2026-09-20T11:07:47"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1956,
-   "completion_tokens": 279,
+   "prompt_tokens": 1947,
+   "completion_tokens": 290,
    "estimated": false,
-   "cost_usd": 0.000352
+   "cost_usd": 0.000354
   }
  }
 }

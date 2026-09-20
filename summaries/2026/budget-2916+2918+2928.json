@@ -3,9 +3,16 @@
  "what_it_is": "Committee of Supply – Head O (Ministry of Health)",
  "sections": [
   {
-   "label": "Middle-income family healthcare costs",
-   "summary": "A middle-income family still pays over $12,000 per year even with the latest subsidies, before transport, home care, medications and lost caregiver income.",
+   "label": "Dementia day care costs",
+   "summary": "Dementia day care costs about $63 per session, and a middle-income family still pays over $12,000 yearly after subsidies, before other costs.",
    "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "Dementia day care costs about $63 per session.",
+     "added_for_context": false
+    },
     {
      "sid": "s00007",
      "speaker": "Ms Mariam Jaafar (Sembawang)",
@@ -17,13 +24,13 @@
   },
   {
    "label": "Prevention share of healthcare budget",
-   "summary": "Singapore invests 6% of its healthcare Budget in population-level prevention, with plans to double it.",
+   "summary": "Singapore invests 6% of its healthcare Budget in population-level prevention, with plans to double.",
    "sentences": [
     {
      "sid": "s00017",
      "speaker": "Ms Mariam Jaafar (Sembawang)",
      "attributed": true,
-     "text": "Singapore is investing in population-level prevention – 6 % of our healthcare Budget, with plans to double.",
+     "text": "Singapore is investing in population-level prevention – 6 % of our healthcare Budget, with plans to double.",
      "added_for_context": false
     }
    ]
@@ -43,7 +50,7 @@
   },
   {
    "label": "MediSave flex withdrawal limit proposal",
-   "summary": "Noting Singaporeans face long-term costs even with subsidies, the passage proposes MediSave flex with an annual withdrawal limit linked to balances and an upper cap.",
+   "summary": "A proposal for MediSave flex links the annual withdrawal limit to balances, with an upper cap to maintain sustainability.",
    "sentences": [
     {
      "sid": "s00036",
@@ -62,21 +69,8 @@
    ]
   },
   {
-   "label": "Study recalibrating S+3M",
-   "summary": "The passage asks whether the Ministry will commit to studying and reporting, ideally before the next Budget, how S+3M can be recalibrated for chronic and preventive care.",
-   "sentences": [
-    {
-     "sid": "s00054",
-     "speaker": "Ms Mariam Jaafar (Sembawang)",
-     "attributed": true,
-     "text": "Will the Ministry commit to studying and reporting, ideally before the next Budget, how S+3M can be recalibrated to better support chronic and preventive care?",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Chronic disease screening participation rate",
-   "summary": "Only about six in 10 eligible residents participate regularly in recommended chronic disease screenings.",
+   "summary": "Only about six in 10 eligible residents regularly participate in recommended chronic disease screenings.",
    "sentences": [
     {
      "sid": "s00058",
@@ -89,13 +83,13 @@
   },
   {
    "label": "Opt-out screenings and health coaching",
-   "summary": "The speaker proposes moving to opt-out screenings and proactive personalised health coaching supported by digital nudges, noting opt-in assumes time, awareness and confidence not everyone has.",
+   "summary": "A proposal to move to opt-out screenings and proactive, personalised health coaching supported by digital nudges.",
    "sentences": [
     {
      "sid": "s00061",
      "speaker": "Ms Mariam Jaafar",
      "attributed": true,
-     "text": "Opt-in assumes time, awareness and confidence – luxuries not everyone has.",
+     "text": "Opt-in assumes time, awareness and confidence – luxuries not everyone has.",
      "added_for_context": true
     },
     {
@@ -108,8 +102,8 @@
    ]
   },
   {
-   "label": "Opt-out preventive programmes question",
-   "summary": "The question asks whether the Ministry will consider making key preventive programmes opt-out and how it will embed preventive defaults across Government.",
+   "label": "Opt-out preventive programmes",
+   "summary": "The Ministry is asked to consider making key preventive programmes opt-out and to outline cross-Government work to embed preventive defaults in daily life.",
    "sentences": [
     {
      "sid": "s00067",
@@ -121,8 +115,8 @@
    ]
   },
   {
-   "label": "Singapore health data foundations",
-   "summary": "Singapore has laid strong foundations: HEALIX analytics, NEHR patient records, the Health Information Bill, and early AI pilots easing clinician workload and improving outcomes.",
+   "label": "Singapore healthcare data foundations",
+   "summary": "Singapore's foundations include HEALIX analytics, the NEHR aggregating patient records, the Health Information Bill, and AI pilots easing clinician workload and improving outcomes.",
    "sentences": [
     {
      "sid": "s00089",
@@ -134,8 +128,8 @@
    ]
   },
   {
-   "label": "Healthcare AI roadmap and MediSave limits",
-   "summary": "The question asks for a roadmap with timelines for data access, validation standards and talent, and notes MediSave and IP withdrawal limits have not risen for close to 10 years.",
+   "label": "Healthcare AI roadmap and MediSave",
+   "summary": "The Ministry is asked to outline a roadmap with timelines for data access, validation standards and talent, and MediSave figures are cited.",
    "sentences": [
     {
      "sid": "s00101",
@@ -162,14 +156,14 @@
      "sid": "s00104",
      "speaker": "Mr Pritam Singh (Aljunied)",
      "attributed": true,
-     "text": "With close to 70% of locals holding an Integrated Shield Plan (IP), there has been no increase for close to 10 years since the introduction of MediShield Life with respect to the maximum amount one could use from MediSave to service IP premiums, or what is referred to as annual withdrawal limits.",
+     "text": "With close to 70% of locals holding an Integrated Shield Plan (IP), there has been no increase for close to 10 years since the introduction of MediShield Life with respect to the maximum amount one could use from MediSave to service IP premiums, or what is referred to as annual withdrawal limits.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Healthcare workforce growth projection",
-   "summary": "The Ministry has shared that the healthcare workforce is projected to grow by 20% from 129,000 in 2024 to about 156,000 in 2030.",
+   "summary": "The Ministry shared that the healthcare workforce is projected to grow by 20% from 129,000 in 2024 to about 156,000 in 2030.",
    "sentences": [
     {
      "sid": "s00109",
@@ -181,8 +175,8 @@
    ]
   },
   {
-   "label": "Concern over policyholder conversion strain",
-   "summary": "There are deep concerns that 100,000 policyholders converting yearly from private to public healthcare coverage may significantly strain the public healthcare system.",
+   "label": "Concerns over policyholder conversion",
+   "summary": "There are deep concerns that 100,000 policyholders converting yearly from private to public healthcare may significantly strain the public healthcare system.",
    "sentences": [
     {
      "sid": "s00114",
@@ -195,13 +189,13 @@
   },
   {
    "label": "Surgery, chemotherapy and reconstruction coverage",
-   "summary": "She had surgery, complications, continued chemotherapy and reconstruction, but parts of her reconstruction were deemed cosmetic and not covered.",
+   "summary": "She faced surgery, complications and continued chemotherapy, and parts of her reconstruction were not covered because it was deemed cosmetic.",
    "sentences": [
     {
      "sid": "s00132",
      "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
      "attributed": true,
-     "text": "She faced surgery, complications of surgery and continued chemotherapy for her condition.",
+     "text": "She faced surgery, complications of surgery and continued chemotherapy for her condition.",
      "added_for_context": true
     },
     {
@@ -214,8 +208,8 @@
    ]
   },
   {
-   "label": "Hereditary risk assessment and financing prevention",
-   "summary": "She asks how hereditary risk assessment and genetic counselling can be integrated into primary care and Healthier SG, and whether financing of preventive procedures and reconstruction will be reviewed.",
+   "label": "Hereditary risk and preventive financing",
+   "summary": "Asks how to integrate hereditary risk assessment and genetic counselling into primary care and Healthier SG, and whether financing of medically indicated preventive procedures will be reviewed.",
    "sentences": [
     {
      "sid": "s00140",
@@ -234,28 +228,28 @@
    ]
   },
   {
-   "label": "Precision medicine and functional health markers",
-   "summary": "She asks about the Ministry's pathway to evaluate precision and longevity-related medicine, and how Healthier SG can add metabolic, cognitive and frailty indicators.",
+   "label": "Precision medicine and Healthier SG markers",
+   "summary": "Asks for the Ministry's pathway to adopt precision and longevity medicine evidence, and how Healthier SG can add functional health markers.",
    "sentences": [
     {
      "sid": "s00153",
      "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
      "attributed": true,
-     "text": "First, what is the Ministry's pathway to evaluate and adopt emerging evidence in precision and longevity-related medicine with clear safeguards for safety and value?",
+     "text": "First, what is the Ministry's pathway to evaluate and adopt emerging evidence in precision and longevity-related medicine with clear safeguards for safety and value?",
      "added_for_context": false
     },
     {
      "sid": "s00154",
      "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
      "attributed": true,
-     "text": "Second, how can Healthier SG progressively add functional health markers, including metabolic, cognitive and frailty indicators, so that prevention becomes personalised and not just generic?",
+     "text": "Second, how can Healthier SG progressively add functional health markers, including metabolic, cognitive and frailty indicators, so that prevention becomes personalised and not just generic?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Cancer Drug List and integrated plan riders",
-   "summary": "The Cancer Drug List has about 394 subsidised drugs, and from April new integrated plan riders cannot cover the minimum deductible, with co-payment capped at $6,000 yearly and premiums about 30% lower.",
+   "label": "Cancer Drug List and rider changes",
+   "summary": "States the Cancer Drug List has about 394 subsidised drugs, and from April new integrated plan riders cannot cover the minimum deductible, with co-payment capped at $6,000 yearly and premiums about 30% lower.",
    "sentences": [
     {
      "sid": "s00160",
@@ -281,8 +275,8 @@
    ]
   },
   {
-   "label": "Parents losing benefits when moving in",
-   "summary": "When children bring ageing parents into their homes, the parents often lose benefits such as CHAS, Silver Support or other subsidies.",
+   "label": "Parents lose benefits when moving in",
+   "summary": "States that when children bring ageing parents into their homes, the parents often lose benefits such as CHAS, Silver Support or other subsidies.",
    "sentences": [
     {
      "sid": "s00180",
@@ -294,8 +288,8 @@
    ]
   },
   {
-   "label": "Independent assessment for seniors moving in",
-   "summary": "Seniors moving into an adult child's home for caregiving should be assessed independently instead of being lumped into the entire household.",
+   "label": "Independent assessment for caregiving seniors",
+   "summary": "States that seniors moving into an adult child's home for caregiving should be assessed independently instead of being lumped into the entire household.",
    "sentences": [
     {
      "sid": "s00184",
@@ -307,8 +301,21 @@
    ]
   },
   {
-   "label": "MediSave balances and claim limits",
-   "summary": "Minister Tan See Leng reported MediSave balances exceed Retirement Accounts, and proposed carrying over unspent limits and age-tiered claim limits.",
+   "label": "MediSave annual withdrawal limits",
+   "summary": "States that MediSave currently faces annual withdrawal limits of several types of care.",
+   "sentences": [
+    {
+     "sid": "s00194",
+     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
+     "attributed": true,
+     "text": "MediSave currently faces annual withdrawal limits of several types of care.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MediSave and Retirement Account balances",
+   "summary": "Minister Tan See Leng reported MediSave balances exceed Retirement Accounts, and proposed carrying over unspent limits and tiered claim limits by age.",
    "sentences": [
     {
      "sid": "s00199",
@@ -335,26 +342,13 @@
   },
   {
    "label": "Flexible MediSave withdrawals for seniors",
-   "summary": "The Ministry should allow more flexible MediSave withdrawals at public healthcare institutions for patients over 60 with significant balances.",
+   "summary": "The Ministry should allow more flexible MediSave withdrawals at public healthcare institutions for patients over 60 with significant MediSave balances.",
    "sentences": [
     {
      "sid": "s00216",
      "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
      "attributed": true,
      "text": "The Ministry should allow for more flexible MediSave withdrawals at public healthcare institutions for patients over 60, especially for those with significant MediSave balances.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Custodial care and step-down facilities",
-   "summary": "The question asks whether plans exist to develop more custodial care and step-down facilities so IMH beds are reserved for full clinical expertise.",
-   "sentences": [
-    {
-     "sid": "s00229",
-     "speaker": "Mr Patrick Tay Teck Guan (Pioneer)",
-     "attributed": true,
-     "text": "My third question is whether there are plans to develop more custodial care and step-down facilities – sheltered homes, supported living – so that IMH’s beds are reserved for those who need its full clinical expertise?",
      "added_for_context": false
     }
    ]
@@ -373,8 +367,8 @@
    ]
   },
   {
-   "label": "Sustaining demand and national strategy",
-   "summary": "The question is whether the system can sustain demand ahead, and the National Mental Health and Well-being Strategy was launched.",
+   "label": "Sustaining mental health demand",
+   "summary": "The question is whether the system can sustain demand ahead; the National Mental Health and Well-being Strategy was launched and services expanded.",
    "sentences": [
     {
      "sid": "s00237",
@@ -389,12 +383,19 @@
      "attributed": true,
      "text": "We launched the National Mental Health and Well-being Strategy.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00239",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "We expanded community services and strengthened primary care.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Mental Health Office role and mandate",
-   "summary": "The question asks the Minister to elaborate on the role and mandate of the Mental Health Office.",
+   "label": "Mental Health Office role",
+   "summary": "A question asks the Minister to elaborate on the role and mandate of the Mental Health Office.",
    "sentences": [
     {
      "sid": "s00246",
@@ -406,8 +407,8 @@
    ]
   },
   {
-   "label": "MOH projecting mental health manpower",
-   "summary": "The passage asks how MOH is projecting manpower needs for clinical psychologists and allied mental health professionals over the next five to 10 years.",
+   "label": "Projecting mental health manpower needs",
+   "summary": "A question asks how MOH projects manpower needs for clinical psychologists and allied mental health professionals over five to 10 years.",
    "sentences": [
     {
      "sid": "s00250",
@@ -419,16 +420,9 @@
    ]
   },
   {
-   "label": "AI role in mental healthcare",
-   "summary": "The passage asks how MOH views AI's role in mental healthcare, what safeguards are needed, and for an update and commitment to fixed timelines to regulate mental health professionals.",
+   "label": "Mental health professional regulation timelines",
+   "summary": "The passage asks whether the Ministry will give an update and commit to fixed timelines to regulate mental health professionals.",
    "sentences": [
-    {
-     "sid": "s00257",
-     "speaker": "Dr Wan Rizal (Jalan Besar)",
-     "attributed": true,
-     "text": "Could the Minister share how MOH is thinking about the role of AI in mental healthcare and what safeguards may be needed to ensure that technology compliments, rather than replaces, trained professionals?",
-     "added_for_context": false
-    },
     {
      "sid": "s00259",
      "speaker": "Ms He Ting Ru (Sengkang)",
@@ -439,8 +433,21 @@
    ]
   },
   {
-   "label": "Mental health share of healthcare expenditure",
-   "summary": "The passage states MOH dedicated around 3% of healthcare expenditure to mental health between 2020 and 2022, and asks if this increased and projected amounts.",
+   "label": "Therapy and counselling qualification costs",
+   "summary": "The passage states most therapy and counselling qualifications require minimum supervision hours and practicums costing over $200 an hour.",
+   "sentences": [
+    {
+     "sid": "s00262",
+     "speaker": "Ms He Ting Ru (Sengkang)",
+     "attributed": true,
+     "text": "Most therapy and counselling qualifications require minimum supervision hours and practicums costing upwards of $200 an hour, which can be difficult for fresh graduates and mid-career entrants.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MOH mental health expenditure share",
+   "summary": "The passage states MOH dedicated around 3% of healthcare expenditure to mental health treatment, promotion and prevention between 2020 and 2022.",
    "sentences": [
     {
      "sid": "s00279",
@@ -448,19 +455,12 @@
      "attributed": true,
      "text": "Between 2020 and 2022, MOH dedicated around 3% of its healthcare expenditure towards mental health treatment, promotion and prevention.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00280",
-     "speaker": "Ms He Ting Ru (Sengkang)",
-     "attributed": true,
-     "text": "Has this amount increased, and what are the projected amounts going forward?",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Cohort smoking ban policies",
-   "summary": "The passage states Maldives' policy has come into effect and the UK Bill is set for implementation at the start of 2027, citing a Nottingham University study on a cohort ban.",
+   "label": "Maldives and UK tobacco bans",
+   "summary": "The passage states Maldives' policy is in effect, the UK Bill is set for 2027, and studies suggest a cohort ban hastens low smoking prevalence.",
    "sentences": [
     {
      "sid": "s00287",
@@ -479,8 +479,8 @@
    ]
   },
   {
-   "label": "Atopic eczema and reporting framework",
-   "summary": "The passage states one in five children and one in 10 adults in Singapore have atopic eczema, and asks about adding it to the Chronic Disease Management Programme and a tiered reporting framework.",
+   "label": "Atopic eczema coverage and reporting",
+   "summary": "The passage states eczema prevalence in Singapore and asks about adding it to the Chronic Disease Management Programme and a tiered reporting framework.",
    "sentences": [
     {
      "sid": "s00299",
@@ -506,22 +506,23 @@
    ]
   },
   {
-   "label": "Single coordination point for care",
-   "summary": "The passage states Minister Ong spoke about a single coordination point for care and 85 sub-regions coordinating across several services with One Care Plan.",
+   "label": "Dental, audiology and podiatry access",
+   "summary": "The passage asks the Ministry to ramp up dental, audiology and podiatry facilities in senior-heavy estates and introduce related tertiary courses.",
    "sentences": [
     {
-     "sid": "s00309",
+     "sid": "s00317",
      "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
      "attributed": true,
-     "text": "Minister Ong has spoken about a single coordination point for care and 85 sub-regions, which will soon provide coordination across Regional Health System, Home Personal Care Plus, Singapore Counselling Centre, Drug Rehabilitation Centre and Active Ageing Centres with One Ring to Rule… excuse me, One Care Plan to coordinate them all.",
+     "text": "Yet, access to specialised help remains a hurdle.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00318",
+     "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
+     "attributed": true,
+     "text": "I ask the Ministry to ramp up dental, audiology and podiatry facilities, specifically to estates with high concentrations of seniors.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Audiology and podiatry courses",
-   "summary": "A request for the Ministry to consider degree or diploma courses in audiology and podiatry in tertiary institutions.",
-   "sentences": [
+    },
     {
      "sid": "s00320",
      "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
@@ -533,7 +534,7 @@
   },
   {
    "label": "Value of informal caregiving",
-   "summary": "A Duke-NUS study estimated informal caregiving time for seniors aged 75 and above requiring human assistance at about $1.28 billion a year.",
+   "summary": "A Duke-NUS study estimated informal caregiving time for seniors aged 75 and above requiring human assistance at about $1.28 billion yearly.",
    "sentences": [
     {
      "sid": "s00348",
@@ -545,8 +546,8 @@
    ]
   },
   {
-   "label": "Long-term care financing and carer passport",
-   "summary": "Budget 2026 tops up the Long-term Care Support Fund by $400 million, and the Minister was asked to study a UK carer passport.",
+   "label": "Budget 2026 long-term care financing",
+   "summary": "Budget 2026 strengthens long-term care financing with a $400 million top-up to the Long-term Care Support Fund for CareShield Life subsidies.",
    "sentences": [
     {
      "sid": "s00351",
@@ -554,19 +555,12 @@
      "attributed": true,
      "text": "Budget 2026 strengthens long-term care financing, including a $400 million top-up to the Long-term Care Support Fund to fund additional subsidies from CareShield Life enhancements.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00352",
-     "speaker": "Mr Fadli Fawzi (Aljunied)",
-     "attributed": true,
-     "text": "But financing alone will not solve the recognition and navigation problem, so I asked the Minister to study and pilot a simple tool used in parts of the United Kingdom (UK) – a carer passport.",
-     "added_for_context": false
     }
    ]
   },
   {
    "label": "Caregiver passport pilot proposal",
-   "summary": "The caregiver passport should involve caregivers in care planning and linkage, with two to three precinct pilots of about 100 caregivers each.",
+   "summary": "The speaker proposes caregiver passport precinct pilots and asks MOH about a recognition pilot fund and low-burden verification model.",
    "sentences": [
     {
      "sid": "s00355",
@@ -588,25 +582,39 @@
      "attributed": true,
      "text": "First, will MOH seed a caregiver recognition pilot fund to support these pilots, including evaluation, so we can scale up works?",
      "added_for_context": false
+    },
+    {
+     "sid": "s00358",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "attributed": true,
+     "text": "Second, will MOH support a low burden verification model during pilots, such as self-declaration with validation through healthcare or social service touchpoints?",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Triple wins programme aims",
-   "summary": "The programme aims for triple wins: children's academic success, older adults' well-being, and stronger communities through connecting generations.",
+   "label": "Experience Corps inter-generational volunteering",
+   "summary": "Prof Linda Fried co-designed Experience Corps, an inter-generational volunteer programme engaging seniors as tutors and mentors, aiming for triple wins.",
    "sentences": [
+    {
+     "sid": "s00365",
+     "speaker": "Mr Eric Chua (Queenstown)",
+     "attributed": true,
+     "text": "I recently met Prof Linda Fried, distinguished geriatrician, epidemiologist and the first female Dean at Columbia University's Mailman School of Public Health.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00366",
+     "speaker": "Mr Eric Chua (Queenstown)",
+     "attributed": true,
+     "text": "She is also a trailblazer for co-designing Experience Corps, an inter-generational volunteer programme that engages seniors in their fifties as tutors and mentors for children in public elementary schools, while promoting the health and well-being of the volunteers themselves.",
+     "added_for_context": false
+    },
     {
      "sid": "s00367",
      "speaker": "Mr Eric Chua (Queenstown)",
      "attributed": true,
      "text": "The programme aims for \"triple wins\": first, to help children succeed academically, especially in early literacy; two, boost the physical, mental and social well-being of older adults; and three, strengthen communities by connecting generations.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00369",
-     "speaker": "Mr Eric Chua (Queenstown)",
-     "attributed": true,
-     "text": "Volunteers experience reduced depression, enhanced cognitive function and stronger social connections.",
      "added_for_context": false
     }
    ]
@@ -625,8 +633,8 @@
    ]
   },
   {
-   "label": "Singapore seniors pandemic mental health study",
-   "summary": "A peer-reviewed Singapore study of adults aged 21 to 89 found seniors reported significantly lower depression, anxiety and stress than younger adults during the 2020 pandemic lockdown.",
+   "label": "Seniors' lower distress during lockdown",
+   "summary": "A Singapore study of adults aged 21 to 89 found seniors reported significantly lower depression, anxiety and stress than younger adults during the 2020 lockdown.",
    "sentences": [
     {
      "sid": "s00381",
@@ -638,8 +646,8 @@
    ]
   },
   {
-   "label": "Speaker on behavioural addiction attention",
-   "summary": "The speaker rises to ask whether sufficient attention is paid to a possibly emerging behavioural addiction, particularly among young people, and public health's role.",
+   "label": "Behavioural addiction among young people",
+   "summary": "The speaker asks whether sufficient attention is paid to a behavioural addiction emerging among young people and public health's role.",
    "sentences": [
     {
      "sid": "s00405",
@@ -658,8 +666,8 @@
    ]
   },
   {
-   "label": "Community help for compulsive sexual behaviours",
-   "summary": "Community organisations observed rising help-seeking for compulsive sexual behaviours, with post-pandemic online pornography cases more than doubling and some teenagers as young as 12.",
+   "label": "Rise in compulsive sexual behaviours",
+   "summary": "Community organisations report increased help-seeking for compulsive sexual behaviours, with online pornography cases more than doubling post-pandemic and some teenagers as young as 12.",
    "sentences": [
     {
      "sid": "s00440",
@@ -692,7 +700,7 @@
    ]
   },
   {
-   "label": "Youth arrests for sexual crimes 2024",
+   "label": "Youth arrested for sexual crimes",
    "summary": "In 2024, more than 460 youths aged 19 and below were arrested for sexual crimes.",
    "sentences": [
     {
@@ -705,8 +713,8 @@
    ]
   },
   {
-   "label": "Call for national pornography study",
-   "summary": "Much understanding is extrapolated from international research and community case reports, and the speaker calls for a rigorous interdisciplinary national study on problematic pornography use.",
+   "label": "National study on pornography use",
+   "summary": "The speaker calls for a rigorous, interdisciplinary national study on problematic pornography use in Singapore, noting understanding is extrapolated from international research and community reports.",
    "sentences": [
     {
      "sid": "s00469",
@@ -725,7 +733,7 @@
    ]
   },
   {
-   "label": "Review digital and sexuality education",
+   "label": "Review digital sexuality education",
    "summary": "The speaker calls for a review of Singapore's digital and sexuality education frameworks.",
    "sentences": [
     {
@@ -738,8 +746,8 @@
    ]
   },
   {
-   "label": "Community addiction services funding",
-   "summary": "Funding and capacity for community addiction services are being expanded to keep pace with rising demand for behavioural addiction counselling.",
+   "label": "Fund community addiction services",
+   "summary": "The speaker calls for expanded funding and capacity for community addiction services so the support ecosystem keeps pace with rising demand.",
    "sentences": [
     {
      "sid": "s00477",
@@ -758,7 +766,7 @@
    ]
   },
   {
-   "label": "Singapore becoming super-aged society",
+   "label": "Singapore super-aged society",
    "summary": "Singapore is expected to become a super-aged society this year as citizens aged 65 and above reach 21%.",
    "sentences": [
     {
@@ -771,8 +779,8 @@
    ]
   },
   {
-   "label": "Scaling up home care technology",
-   "summary": "A question asks if the Ministry can elaborate on plans to scale up technology deployment through Enhanced Home Personal Care and other programmes.",
+   "label": "Technology deployment and disability",
+   "summary": "The speaker asks if the Ministry could elaborate on scaling up technology deployment through Enhanced Home Personal Care and other programmes.",
    "sentences": [
     {
      "sid": "s00504",
@@ -791,7 +799,7 @@
    ]
   },
   {
-   "label": "Enhanced caregiver support since 2019",
+   "label": "Caregiver support enhancements",
    "summary": "Launched in 2019, caregiver support has been enhanced in respite care, subsidy levels and the Home Caregiving Grant.",
    "sentences": [
     {
@@ -804,8 +812,8 @@
    ]
   },
   {
-   "label": "Expanding Home Caregiving Grant eligibility",
-   "summary": "A question asks whether the means-tested Home Caregiving Grant will be expanded to caregivers of family members needing one to two ADL.",
+   "label": "Expanding Home Caregiving Grant",
+   "summary": "The speaker asks whether the Ministry will consider expanding the means-tested Home Caregiving Grant to caregivers of those needing one to two ADL.",
    "sentences": [
     {
      "sid": "s00516",
@@ -817,8 +825,8 @@
    ]
   },
   {
-   "label": "Dementia and osteoporosis rates above 70",
-   "summary": "Based on 2023 data, 11% of those above 70 have dementia and 16% have osteoporosis.",
+   "label": "Dementia and osteoporosis rates",
+   "summary": "Based on 2023 data, 11% of those above 70 have dementia and 16% above 70 have osteoporosis.",
    "sentences": [
     {
      "sid": "s00524",
@@ -830,22 +838,22 @@
    ]
   },
   {
-   "label": "Pre-dementia screening and bone density",
-   "summary": "Pre-dementia screening and Bone Density Tests allow early detection, timely intervention and better long-term planning, and the Ministry said Care Protocols for Dementia and Osteoporosis were being developed under Healthier SG.",
+   "label": "Screening, Healthier SG, help-seeking",
+   "summary": "Pre-dementia screening and Bone Density Tests allow early detection, timely intervention and better planning, and the Ministry indicated Care Protocols were being developed under Healthier SG.",
    "sentences": [
     {
      "sid": "s00529",
      "speaker": "Mr Alex Yeo (Potong Pasir)",
      "attributed": true,
      "text": "Pre-dementia screening and Bone Density Tests allow for: one, early detection; two, timely intervention which can slow down the progression; and three, better long-term planning, which gives our seniors and their families the time and opportunity to make necessary adjustments.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00530",
      "speaker": "Mr Alex Yeo (Potong Pasir)",
      "attributed": true,
      "text": "I had asked a Parliamentary Question in September 2025 on whether the Ministry had plans to include as part of the Healthier SG Programme, screenings for pre-dementia and osteoporosis.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00531",
@@ -865,7 +873,7 @@
   },
   {
    "label": "Healthier SG mental health protocols",
-   "summary": "In the Committee of Supply 2025 debates it was announced that Healthier SG care protocols for major depressive disorder and general anxiety disorder would be rolled out.",
+   "summary": "In Committee of Supply 2025 debates, it was announced that Healthier SG care protocols for major depressive disorder and general anxiety disorder would be rolled out.",
    "sentences": [
     {
      "sid": "s00535",
@@ -878,7 +886,7 @@
   },
   {
    "label": "Social prescribing referral options",
-   "summary": "Social prescribing is already part of the system under Healthier SG, but referral options remain narrow, largely involving Active Ageing Centres and Sports SG.",
+   "summary": "The speaker welcomes social prescribing under Healthier SG but says referral options remain narrow, largely Active Ageing Centres and Sports SG, while the ecosystem is wide.",
    "sentences": [
     {
      "sid": "s00554",
@@ -897,21 +905,21 @@
    ]
   },
   {
-   "label": "Minister on social determinants",
-   "summary": "The Minister said in Geneva in May 2023 that 60% of health is socially determined, in homes and communities, and the ask is to scale the Living Asset Map across all three clusters.",
+   "label": "SingHealth social prescribing centre",
+   "summary": "SingHealth Community Hospitals are the world's first WHO Collaborating Centre for Social Prescribing, and the Minister said 60% of health is socially determined.",
    "sentences": [
+    {
+     "sid": "s00558",
+     "speaker": "Dr Haresh Singaraju (Nominated Member)",
+     "attributed": true,
+     "text": "SingHealth Community Hospitals are the world's first World Health Organization Collaborating Centre for Social Prescribing with trained well being coordinators and proven outcomes.",
+     "added_for_context": false
+    },
     {
      "sid": "s00560",
      "speaker": "Dr Haresh Singaraju (Nominated Member)",
      "attributed": true,
      "text": "The Minister himself said in Geneva in May 2023, that 60% of health is socially determined, not in hospitals, but in homes and in communities.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00561",
-     "speaker": "Dr Haresh Singaraju (Nominated Member)",
-     "attributed": true,
-     "text": "My first ask follows from his words: scale the Living Asset Map across all three clusters.",
      "added_for_context": false
     }
    ]
@@ -931,7 +939,7 @@
   },
   {
    "label": "Publishing patient engagement data",
-   "summary": "The passage asks to publish how many enrolled patients stay and how many actively engaged through follow-ups, screenings and care team visits.",
+   "summary": "The speaker asks whether figures will be published on how many enrolled patients stay and how many actively engage through follow-ups, screenings and care team visits.",
    "sentences": [
     {
      "sid": "s00574",
@@ -943,8 +951,8 @@
    ]
   },
   {
-   "label": "AI-assisted imaging and remote monitoring",
-   "summary": "AI-assisted imaging, predictive analytics, earlier risk stratification and remote monitoring allow intervention before deterioration becomes crisis.",
+   "label": "AI tools under Healthier SG",
+   "summary": "AI-assisted imaging, predictive analytics, earlier cardiovascular risk stratification and remote monitoring of chronic conditions allow intervention before deterioration becomes crisis.",
    "sentences": [
     {
      "sid": "s00610",
@@ -956,8 +964,8 @@
    ]
   },
   {
-   "label": "Rehabilitation sensor and robotic technologies",
-   "summary": "Sensor-guided therapy and robotic technologies, including exoskeleton-assisted gait training for selected patients, can safely increase therapy intensity in early recovery.",
+   "label": "Rehabilitation robotics and sensor therapy",
+   "summary": "Sensor-guided therapy and robotic technologies, including exoskeleton-assisted gait training for selected patients, can safely and consistently increase therapy intensity in early recovery.",
    "sentences": [
     {
      "sid": "s00618",
@@ -969,8 +977,8 @@
    ]
   },
   {
-   "label": "Embedding functional indicators alongside utilisation metrics",
-   "summary": "Scaling AI and rehabilitation technologies should continue embedding functional indicators alongside utilisation metrics.",
+   "label": "Functional indicators for scaling AI",
+   "summary": "As AI and rehabilitation technologies scale, functional indicators such as mobility, independence, caregiver burden, re-admission reduction and return-to-community participation should be embedded alongside utilisation metrics.",
    "sentences": [
     {
      "sid": "s00626",
@@ -983,7 +991,7 @@
   },
   {
    "label": "Scaling sustainable healthcare technologies",
-   "summary": "Scaling technologies must improve independence, strengthen professional capability and remain financially sustainable in a super-aged society, extending mobility, confidence and participation.",
+   "summary": "In healthcare, scaling technologies must demonstrably improve independence, strengthen professional capability and remain financially sustainable in a super-aged society, extending years of mobility, confidence and participation.",
    "sentences": [
     {
      "sid": "s00629",
@@ -996,14 +1004,14 @@
      "sid": "s00630",
      "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
      "attributed": true,
-     "text": "As Singaporeans live longer, our ambition must be clear – not merely to extend years of life, but to extend years of mobility, confidence and participation.",
+     "text": "As Singaporeans live longer, our ambition must be clear – not merely to extend years of life, but to extend years of mobility, confidence and participation.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Healthier SG frailty and functional health protocols",
-   "summary": "Healthier SG Care Protocols on frailty and functional health, such as osteoporosis and dementia, are progressing well and roll out in 2028.",
+   "label": "Healthier SG frailty care protocols",
+   "summary": "Healthier SG Care Protocols related to frailty and functional health, such as for osteoporosis and dementia, are progressing well and would be rolled out in 2028.",
    "sentences": [
     {
      "sid": "s00636",
@@ -1015,8 +1023,8 @@
    ]
   },
   {
-   "label": "Enhanced community health posts in Woodlands",
-   "summary": "NHG Health is progressively enhancing 11 CHPs across Woodlands Town, offering walk-in services including health advice, assessments and social prescriptions.",
+   "label": "Enhancing CHPs in Woodlands",
+   "summary": "NHG Health has been progressively enhancing 11 CHPs across Woodlands Town since the start of this year to bring care directly into the community.",
    "sentences": [
     {
      "sid": "s00646",
@@ -1031,19 +1039,12 @@
      "attributed": true,
      "text": "I am pleased to announce that NHG Health has been progressively enhancing 11 CHPs across Woodlands Town since the start of this year.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00649",
-     "speaker": "The Minister of State for Health (Ms Rahayu Mahzam)",
-     "attributed": true,
-     "text": "All residents, including non-seniors, can walk-in to these enhanced CHPs to access services such as: general health advice, basic health assessments and social prescriptions which include linking up residents with community programmes and resources, support for preventive health and disease management; including health coaching, medication review and chronic disease and frailty management programmes, and support for caregivers and post-discharge follow-ups for patients returning home from hospitals.",
-     "added_for_context": false
     }
    ]
   },
   {
    "label": "Woodlands Hospital community care initiative",
-   "summary": "Woodlands Hospital will launch an initiative from end of this month providing specialist-supported care through enhanced CHPs and teleconsultation.",
+   "summary": "Woodlands Hospital will launch an initiative starting end of this month to provide specialist-supported care through enhanced CHPs in Woodlands and direct teleconsultation with individuals.",
    "sentences": [
     {
      "sid": "s00656",
@@ -1055,8 +1056,8 @@
    ]
   },
   {
-   "label": "Estimated specialist visit savings",
-   "summary": "NHG Health estimates this will save about 500 physical specialist outpatient clinic visits.",
+   "label": "NHG Health visit savings",
+   "summary": "NHG Health estimates the initiative will save about 500 physical specialist outpatient clinic visits, expected to increase as it expands.",
    "sentences": [
     {
      "sid": "s00665",
@@ -1064,12 +1065,19 @@
      "attributed": true,
      "text": "NHG Health estimates this will save about 500 physical specialist outpatient clinic visits.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00666",
+     "speaker": "The Minister of State for Health (Ms Rahayu Mahzam)",
+     "attributed": true,
+     "text": "This is expected to increase further as the initiative expands.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Exercise sessions and Healthy 365 app",
-   "summary": "From April 2026 more residents can join workout sessions in community locations, with HPB enhancing the Healthy 365 app from June 2026.",
+   "label": "Workout sessions and Healthy 365 app",
+   "summary": "From April 2026 more residents can join workout sessions in community locations, and HPB will add wayfinding and gamification to Healthy 365 from June 2026.",
    "sentences": [
     {
      "sid": "s00675",
@@ -1102,7 +1110,7 @@
    ]
   },
   {
-   "label": "Declining prevalence rate",
+   "label": "Declining prevalence rates",
    "summary": "Prevalence has declined over the years to 8.4% in 2024 and about 5% in young adults aged 18 to 29.",
    "sentences": [
     {
@@ -1116,17 +1124,17 @@
   },
   {
    "label": "Woodlands mosques CHP partnership",
-   "summary": "An Nur Mosque and Yusof Ishak Mosque in Woodlands will partner with NHG Health to provide CHP services by September 2026.",
+   "summary": "Two Woodlands mosques, An Nur Mosque and Yusof Ishak Mosque, will partner with NHG Health to provide CHP services by September 2026.",
    "sentences": [
     {
-     "sid": "s00705",
+     "sid": "s00706",
      "speaker": "The Minister of State for Health (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "For many in our community, the mosque is such a setting that provides this support.",
      "added_for_context": true
     },
     {
-     "sid": "s00706",
+     "sid": "s00707",
      "speaker": "The Minister of State for Health (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "I am therefore pleased to announce that the two mosques in Woodlands, An Nur Mosque and Yusof Ishak Mosque, will be partnering with NHG Health to provide CHP services by September 2026.",
@@ -1136,24 +1144,24 @@
   },
   {
    "label": "Jom Check! health screening trial",
-   "summary": "Since May 2025 HPB has trialed Jom Check! with healthcare partners, organising 16 sessions islandwide reaching more than 300 residents.",
+   "summary": "Since May 2025 HPB has trialed Jom Check! with healthcare partners, organising 16 islandwide sessions reaching more than 300 residents.",
    "sentences": [
     {
-     "sid": "s00710",
+     "sid": "s00711",
      "speaker": "The Minister of State for Health (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "By bringing healthcare services to familiar settings frequented by our community, and partnering with religious and community leaders, healthcare will become more accessible to our community To further encourage health screening among our Malay/Muslim community, since May 2025, the HPB has trialed the Jom Check!",
      "added_for_context": false
     },
     {
-     "sid": "s00712",
+     "sid": "s00713",
      "speaker": "The Minister of State for Health (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "This is done in collaboration with many healthcare partners.",
      "added_for_context": true
     },
     {
-     "sid": "s00713",
+     "sid": "s00714",
      "speaker": "The Minister of State for Health (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "So far, 16 sessions have been organised islandwide, reaching more than 300 residents.",
@@ -1163,10 +1171,10 @@
   },
   {
    "label": "Healthier SG enrolment rate",
-   "summary": "About 57% of eligible residents have enrolled into Healthier SG.",
+   "summary": "Today, about 57% of eligible residents have enrolled into Healthier SG.",
    "sentences": [
     {
-     "sid": "s00717",
+     "sid": "s00718",
      "speaker": "The Minister of State for Health (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "Today, about 57% of eligible residents have enrolled into Healthier SG.",
@@ -1175,11 +1183,11 @@
    ]
   },
   {
-   "label": "Obesity rate in community",
+   "label": "Obesity rate in Singapore",
    "summary": "Thirty-two percent, about one in three people, is obese, a rise of nearly 10 percentage points from 24% in 2020.",
    "sentences": [
     {
-     "sid": "s00721",
+     "sid": "s00722",
      "speaker": "The Minister of State for Health (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "Thirty-two percent, or about one in three people in our community, is obese, a rise of nearly 10 percentage points from 24% in 2020.",
@@ -1189,10 +1197,10 @@
   },
   {
    "label": "Focus Area Five participation",
-   "summary": "Through Focus Area Five, more than 90,000 people participated in various programmes in 2025.",
+   "summary": "Through Focus Area Five's efforts, more than 90,000 people participated in various programmes in 2025.",
    "sentences": [
     {
-     "sid": "s00732",
+     "sid": "s00733",
      "speaker": "The Minister of State for Health (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "Through the efforts of Focus Area Five (FA5), more than 90,000 people have participated in various programmes in 2025.",
@@ -1201,18 +1209,31 @@
    ]
   },
   {
-   "label": "Singapore super-aged society",
-   "summary": "Singapore has crossed 21% and is now a super-aged society.",
+   "label": "Super-aged society forecast",
+   "summary": "In April 2023, he informed the House that Singapore would become a super-aged society in 2026, this year.",
    "sentences": [
     {
-     "sid": "s00742",
+     "sid": "s00740",
+     "speaker": "The Coordinating Minister for Social Policies and Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "Mr Chairman, three years ago, in April 2023, I informed the House that Singapore would become a super-aged society in 2026 – this year.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore now super-aged",
+   "summary": "Singapore should have crossed 21% by now, and as he speaks, Singapore is a super-aged society.",
+   "sentences": [
+    {
+     "sid": "s00744",
      "speaker": "The Coordinating Minister for Social Policies and Minister for Health (Mr Ong Ye Kung)",
      "attributed": true,
      "text": "So, we should have crossed 21% by now.",
      "added_for_context": true
     },
     {
-     "sid": "s00743",
+     "sid": "s00745",
      "speaker": "The Coordinating Minister for Social Policies and Minister for Health (Mr Ong Ye Kung)",
      "attributed": true,
      "text": "So, as I speak, Singapore is a super-aged society.",
@@ -1221,51 +1242,38 @@
    ]
   },
   {
-   "label": "Early actions on demographic transition",
-   "summary": "Early actions include raising GST, retirement and re-employment ages, age-friendly streets and apartments, and financial security measures.",
+   "label": "Hospital beds and costs",
+   "summary": "The MOH Addendum set a target of adding 2,800 more public acute and community hospital beds between 2025 and 2030, but meeting demand will cost more.",
    "sentences": [
     {
-     "sid": "s00747",
-     "speaker": "The Coordinating Minister for Social Policies and Minister for Health (Mr Ong Ye Kung)",
-     "attributed": true,
-     "text": "More importantly, we foresaw this demographic transition years ago and took as many early actions as we can.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00748",
-     "speaker": "The Coordinating Minister for Social Policies and Minister for Health (Mr Ong Ye Kung)",
-     "attributed": true,
-     "text": "This includes raising the Goods and Services Tax to strengthen our fiscal position; increasing the retirement and re-employment ages; building many more age-friendly streets and 2-room Flexi and senior apartments; and bolstering financial security for seniors through Silver Support, Central Provident Fund (CPF) LIFE and MediShield Life.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Target for more hospital beds",
-   "summary": "The MOH Addendum set a target of adding 2,800 more public acute and community hospital beds between 2025 and 2030.",
-   "sentences": [
-    {
-     "sid": "s00754",
+     "sid": "s00756",
      "speaker": "The Coordinating Minister for Social Policies and Minister for Health (Mr Ong Ye Kung)",
      "attributed": true,
      "text": "At the Opening of this term of Parliament, the MOH Addendum set out the target of adding 2,800 more public acute and community hospital beds between 2025 and 2030.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00757",
+     "speaker": "The Coordinating Minister for Social Policies and Minister for Health (Mr Ong Ye Kung)",
+     "attributed": true,
+     "text": "However, meeting rising demand and running a larger system will cost more.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Who pays national healthcare",
-   "summary": "National healthcare expenditure is ultimately paid by the people through charges, taxes, insurance premiums and medical security contributions.",
+   "label": "Who pays healthcare bill",
+   "summary": "National healthcare expenditure is the hospital bill of the nation, ultimately paid by the people through charges, taxes, premiums and medical security contributions.",
    "sentences": [
     {
-     "sid": "s00760",
+     "sid": "s00762",
      "speaker": "The Coordinating Minister for Social Policies and Minister for Health (Mr Ong Ye Kung)",
      "attributed": true,
-     "text": "National healthcare expenditure – that is the hospital bill of the nation.",
-     "added_for_context": false
+     "text": "National healthcare expenditure – that is the hospital bill of the nation.",
+     "added_for_context": true
     },
     {
-     "sid": "s00761",
+     "sid": "s00763",
      "speaker": "The Coordinating Minister for Social Policies and Minister for Health (Mr Ong Ye Kung)",
      "attributed": true,
      "text": "That bill, remember this, is always and ultimately paid by the people, whether through healthcare charges, through taxes, through insurance premiums, through medical security contributions.",
@@ -1274,14 +1282,14 @@
    ]
   },
   {
-   "label": "Healthcare spending in developed economies",
-   "summary": "Developed economies typically spend around 9% to 12% of GDP on healthcare, while the US spends 17%.",
+   "label": "Healthcare spending share of GDP",
+   "summary": "Developed economies typically spend 9% to 12% of GDP on healthcare, while the US spends 17%.",
    "sentences": [
     {
-     "sid": "s00769",
+     "sid": "s00771",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
-     "text": "Developed economies, shown by the different dots on screen, typically spend around 9% to 12% of gross domestic product (GDP) on healthcare, with the United States (US) – outlier in the other direction – spending 17%.",
+     "text": "Developed economies, shown by the different dots on screen, typically spend around 9% to 12% of gross domestic product (GDP) on healthcare, with the United States (US) – outlier in the other direction – spending 17%.",
      "added_for_context": false
     }
    ]
@@ -1291,21 +1299,21 @@
    "summary": "The Government health budget is about 2.7% of GDP this year and is expected to rise to about 3.5% by 2030.",
    "sentences": [
     {
-     "sid": "s00791",
+     "sid": "s00793",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "The Government health budget today is about 2.7% of GDP this year, and it is expected to rise to about 3.5% of GDP by 2030.",
      "added_for_context": false
     },
     {
-     "sid": "s00792",
+     "sid": "s00794",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "This 0.8 percentage point increase is actually very significant.",
      "added_for_context": true
     },
     {
-     "sid": "s00793",
+     "sid": "s00795",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "It means increasing the Government's health budget from about $22.5 billion this year to about $30 billion in 2030.",
@@ -1314,21 +1322,21 @@
    ]
   },
   {
-   "label": "Budget share for aged care",
-   "summary": "The budget is 1.5 times that of 2021, with acute hospital care's share falling and aged care funding rising from 11% to 13%.",
+   "label": "Health budget shares shift",
+   "summary": "The budget is 1.5 times that of 2021, with acute hospital care share falling and population health share growing from 14% to 19%.",
    "sentences": [
     {
-     "sid": "s00811",
+     "sid": "s00813",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
-     "text": "The budget is 1.5 times that of 2021, but the share of acute hospital care has fallen, from three-quarters to almost two-thirds – the remaining one-third going to aged care and population health.",
+     "text": "The budget is 1.5 times that of 2021, but the share of acute hospital care has fallen, from three-quarters to almost two-thirds – the remaining one-third going to aged care and population health.",
      "added_for_context": false
     },
     {
-     "sid": "s00812",
+     "sid": "s00815",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
-     "text": "Specifically, the share of funding for aged care rose from 11% to 13% – that is the green portion – between 2021 and 2024.",
+     "text": "Over the same period, the share for population health grew from 14% to 19%.",
      "added_for_context": false
     }
    ]
@@ -1338,14 +1346,14 @@
    "summary": "Training time for clinical psychologists will be reduced from seven to eight years to about five years.",
    "sentences": [
     {
-     "sid": "s00820",
+     "sid": "s00822",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "It is a key agenda, including how we will significantly shorten the time to train clinical psychologists.",
      "added_for_context": true
     },
     {
-     "sid": "s00821",
+     "sid": "s00823",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "We are taking seven to eight years currently; we will reduce it to about five years.",
@@ -1355,24 +1363,24 @@
   },
   {
    "label": "AI chronic disease risk tool",
-   "summary": "An AI tool identifying high risk of chronic diseases within three years will be rolled out to doctors for Healthier SG enrolees from early 2027.",
+   "summary": "An AI risk assessment tool identifying high risk of chronic diseases within three years will be rolled out to doctors for Healthier SG enrolees from early 2027.",
    "sentences": [
     {
-     "sid": "s00840",
+     "sid": "s00842",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "With this model, by reviewing an individual's current health status, it can identify if he/she has a high risk – high risk defined by 75% or above – of developing chronic diseases, such as diabetes or high cholesterol, within the next three years.",
      "added_for_context": false
     },
     {
-     "sid": "s00842",
+     "sid": "s00844",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "Many of these cases can be prevented if early actions were taken, such as through lifestyle adjustments and medication.",
      "added_for_context": true
     },
     {
-     "sid": "s00843",
+     "sid": "s00845",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "This AI risk assessment tool will be rolled out to doctors for all Healthier SG enrolees from early 2027.",
@@ -1381,25 +1389,25 @@
    ]
   },
   {
-   "label": "Subsidised genetic testing for HBOC",
-   "summary": "From December, subsidised genetic testing will be offered to at-risk individuals for HBOC, and to immediate family members if they test positive.",
+   "label": "Subsidised HBOC genetic testing",
+   "summary": "From December, subsidised genetic testing for HBOC will be offered to at risk individuals and their immediate family members if positive, with over 2,000 eligible annually.",
    "sentences": [
     {
-     "sid": "s00863",
+     "sid": "s00865",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "From December this year, we will offer subsidised genetic testing to at risk individuals for HBOC, such as individuals with a family history of HBOC.",
      "added_for_context": false
     },
     {
-     "sid": "s00865",
+     "sid": "s00867",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "And if they test positive, we will also offer the test to their immediate family members – cascade testing.",
      "added_for_context": true
     },
     {
-     "sid": "s00866",
+     "sid": "s00868",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "We expect over 2,000 individuals to be eligible for the test annually.",
@@ -1409,17 +1417,17 @@
   },
   {
    "label": "Coverage for HBOC preventive surgeries",
-   "summary": "MediShield Life and MediSave will be extended later this year to cover preventive surgeries for HBOC.",
+   "summary": "Preventive breast, fallopian tube and ovary surgeries for HBOC meet the criteria, so MediShield Life and MediSave coverage will be extended later this year.",
    "sentences": [
     {
-     "sid": "s00883",
+     "sid": "s00885",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "Risk-reducing mastectomies for breast cancer prevention, and the removal of both fallopian tubes and ovaries for ovarian cancer prevention, fall within these criteria.",
      "added_for_context": false
     },
     {
-     "sid": "s00884",
+     "sid": "s00886",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "We will therefore extend MediShield Life and MediSave to cover preventive surgeries for HBOC later this year.",
@@ -1429,10 +1437,10 @@
   },
   {
    "label": "Out-of-pocket costs after subsidies",
-   "summary": "After subsidies, MediShield Life and MediSave, nine in 10 Singaporeans pay less than $500 out-of-pocket for subsidised in-patient bills.",
+   "summary": "After subsidies, MediShield Life and MediSave, nine in 10 Singaporeans pay under $500 out-of-pocket for subsidised in-patient bills.",
    "sentences": [
     {
-     "sid": "s00895",
+     "sid": "s00897",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "With this design, after subsidies, MediShield Life and MediSave, nine in 10 Singaporeans pay less than $500 out-of-pocket for their subsidised in-patient bills.",
@@ -1441,18 +1449,18 @@
    ]
   },
   {
-   "label": "Changes to MediSave500/700 scheme",
-   "summary": "After increasing the Flexi-MediSave limit for seniors and doubling the annual limit for diagnostic scans, further changes will be made to the MediSave500/700 scheme.",
+   "label": "Further MediSave500/700 scheme changes",
+   "summary": "After raising the Flexi-MediSave limit for seniors and doubling the diagnostic scan limit, further changes will be made to the MediSave500/700 scheme.",
    "sentences": [
     {
-     "sid": "s00911",
+     "sid": "s00913",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "For example, we recently increased the Flexi-MediSave limit for seniors, and we doubled the annual limit for diagnostic scans.",
      "added_for_context": false
     },
     {
-     "sid": "s00912",
+     "sid": "s00914",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "This time, we will make further changes to the MediSave500/700 scheme.",
@@ -1461,32 +1469,32 @@
    ]
   },
   {
-   "label": "Raising MediSave limits and CDMP conditions",
-   "summary": "MediSave limits will rise from $500/$700 to $700/$1,000, and the CDMP list will include hyperthyroidism and hypothyroidism.",
+   "label": "Higher MediSave limits and CDMP expansion",
+   "summary": "MediSave limits rise from $500/$700 to $700/$1,000, benefiting over 910,000 patients, and the CDMP list adds hyperthyroidism and hypothyroidism.",
    "sentences": [
     {
-     "sid": "s00915",
+     "sid": "s00917",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "Today, individuals with a simple chronic condition can use up to $500 a year, while those with complex chronic conditions can withdraw up to $700 per year.",
      "added_for_context": false
     },
     {
-     "sid": "s00916",
+     "sid": "s00918",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "To provide more support for preventive and chronic care in the community, we will raise MediSave limits from $500/$700 to $700/$1,000.",
      "added_for_context": false
     },
     {
-     "sid": "s00917",
+     "sid": "s00919",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "This will benefit over 910,000 patients who currently tap on the scheme, roughly 20% of whom have annual bills exceeding the withdrawal limits.",
      "added_for_context": false
     },
     {
-     "sid": "s00918",
+     "sid": "s00920",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "We will also expand the list of conditions covered under the CDMP to include hyperthyroidism and hypothyroidism.",
@@ -1495,72 +1503,78 @@
    ]
   },
   {
-   "label": "Raising annual MediSave withdrawal limits",
-   "summary": "To make chronic disease medical expenses more affordable, the annual MediSave withdrawal limit will rise from $500 to $700 next year, and from $700 to $1,000 for complex conditions.",
+   "label": "Renaming the MediSave scheme",
+   "summary": "The scheme will be renamed the MediSave Chronic and Preventive Care Scheme to reflect its scope of coverage.",
    "sentences": [
     {
-     "sid": "s00948",
+     "sid": "s00923",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
-     "text": "First, to make medical expenses for chronic diseases more affordable, we will raise the annual MediSave withdrawal limit from $500 to $700 starting next year, whilst the annual limit for chronic disease patients with more complex conditions will be raised from $700 to $1,000.",
+     "text": "Every time you change the limit, you change the name.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00924",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "We will rename it to \"MediSave Chronic and Preventive Care Scheme\", to reflect its scope of coverage.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Robotic surgery cost caution",
-   "summary": "Singapore is cautious about promoting robotic surgery, weighing cost effectiveness and patient affordability, and will adopt long-term policies with quality teams and cost-effective technology.",
+   "label": "Caution on robotic surgery costs",
+   "summary": "Robotic surgery is costly and often borne by patients, raising premiums, so Singapore is cautious in promoting it, weighing cost effectiveness and affordability.",
    "sentences": [
     {
-     "sid": "s00965",
+     "sid": "s00967",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "For example, in the Chinese hospitals I visited, some traditional surgeries have already been replaced by robotic surgery.",
      "added_for_context": true
     },
     {
-     "sid": "s00966",
+     "sid": "s00968",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "However, robotic surgery is very costly, and these expenses are often borne by the patients themselves, causing medical insurance premiums to increase.",
      "added_for_context": false
     },
     {
-     "sid": "s00967",
+     "sid": "s00969",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "Therefore, in Singapore, we are very cautious when promoting robotic surgery or any other technology.",
      "added_for_context": false
     },
     {
-     "sid": "s00968",
-     "speaker": "Mr Ong Ye Kung",
-     "attributed": true,
-     "text": "We must consider both cost effectiveness and patient affordability.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00969",
-     "speaker": "Mr Ong Ye Kung",
-     "attributed": true,
-     "text": "From Hippocrates to Hua Tuo (華佗), to AI and robotic surgery, the medical field has been advancing rapidly.",
-     "added_for_context": true
-    },
-    {
      "sid": "s00970",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
-     "text": "We will take a multi-pronged approach to adopt long-term policies and make use of high-quality medical teams and cost-effective technology to bring better medical services to our people. : Mr Chairman, when I informed the House three years ago that we would be a super-aged society this year, it was not to instil fear, but to prepare ourselves.",
+     "text": "We must consider both cost effectiveness and patient affordability.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Healthier longer lives",
-   "summary": "What matters is that Singaporeans are not just living longer but living healthier for longer.",
+   "label": "Super-aged society preparation",
+   "summary": "The speaker says informing the House three years ago about becoming a super-aged society was to prepare, not instil fear.",
    "sentences": [
     {
-     "sid": "s00980",
+     "sid": "s00973",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "(In English): Mr Chairman, when I informed the House three years ago that we would be a super-aged society this year, it was not to instil fear, but to prepare ourselves.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Living healthier for longer",
+   "summary": "The passage states what matters is that Singaporeans are not just living longer but living healthier for longer.",
+   "sentences": [
+    {
+     "sid": "s00983",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "What matters is that Singaporeans are not just living for longer; we are living healthier for longer.",
@@ -1569,18 +1583,18 @@
    ]
   },
   {
-   "label": "Hospital Clinician as PD",
-   "summary": "Under the new care team model, a trained and assessed competent Hospital Clinician may take on the PD role to supervise, oversee and coordinate care.",
+   "label": "New care team model",
+   "summary": "Under the new care team model, a trained and assessed competent Hospital Clinician may take on the PD role.",
    "sentences": [
     {
-     "sid": "s00990",
+     "sid": "s00993",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "Under the new care team model, a PD need not be a specialist.",
      "added_for_context": false
     },
     {
-     "sid": "s00991",
+     "sid": "s00994",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "Once they are trained and assessed to be competent, a Hospital Clinician may take on the role of a PD to supervise, oversee and coordinate care, incorporating the inputs of various healthcare professionals.",
@@ -1589,11 +1603,11 @@
    ]
   },
   {
-   "label": "Heartland dental care subsidies",
-   "summary": "CHAS dental subsidies were enhanced and polyclinic dental services expanded with community dental partners to bring affordable dental care closer to seniors' homes.",
+   "label": "Heartland dental services subsidies",
+   "summary": "CHAS dental subsidies were enhanced and dental services expanded at polyclinics with community partnerships to bring affordable dental care closer.",
    "sentences": [
     {
-     "sid": "s00997",
+     "sid": "s01000",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "In response to Mr Cai Yinzhou's query on the provision of specialist dental, audiology and podiatry services in the heartlands, we recently enhanced Community Health Assist Scheme (CHAS) subsidies for dental care and are expanding dental services at polyclinics and strengthening partnerships with community dental providers – moves that will bring affordable dental care closer to where our seniors live.",
@@ -1602,24 +1616,18 @@
    ]
   },
   {
-   "label": "Podiatry and foot screening",
-   "summary": "Podiatry services are at selected polyclinics, while foot screening for diabetes patients is at all polyclinics and Healthier SG GPs through Primary Care Networks.",
+   "label": "Life expectancy and healthcare expenditure",
+   "summary": "Life expectancy is about 86 years, ahead of many countries, while national healthcare expenditure is 4.4% of GDP.",
    "sentences": [
     {
-     "sid": "s01000",
+     "sid": "s01020",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
-     "text": "Additionally, while podiatry services are available at selected polyclinics, foot screening services for patients with diabetes are available at all polyclinics as well as Healthier SG GPs through their respective Primary Care Networks.",
+     "text": "Our life expectancy is about 86 years, as reported by the Institute for Health Metrics and Evaluation, ahead of many other countries, such as Japan, Switzerland, Australia, South Korea, the United Kingdom (UK) and the US.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Healthcare expenditure share of GDP",
-   "summary": "National healthcare expenditure is 4.4% of GDP, less than half of what other countries spent.",
-   "sentences": [
+    },
     {
-     "sid": "s01018",
+     "sid": "s01021",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "On the other hand, our national healthcare expenditure is at 4.4% of our GDP, which is less than half of what other countries spent.",
@@ -1628,11 +1636,11 @@
    ]
   },
   {
-   "label": "Hospitals tapping extra facilities",
+   "label": "Hospitals augmenting capacity",
    "summary": "Hospitals can tap facilities like Transitional Care Facilities and Mobile Inpatient Care @ Home to augment overall capacity if required.",
    "sentences": [
     {
-     "sid": "s01022",
+     "sid": "s01025",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "If required, hospitals can also tap on facilities, like the Transitional Care Facilities and the Mobile Inpatient Care @ Home, to augment overall capacity.",
@@ -1641,31 +1649,18 @@
    ]
   },
   {
-   "label": "IMH national psychiatric services centre",
-   "summary": "IMH will continue as national centre for psychiatric services, focusing on quaternary care for patients with more complex mental health needs.",
+   "label": "Healthcare workforce growth by 2030",
+   "summary": "The healthcare workforce is broadly adequate now but must grow 20% by 2030 to meet projected manpower demand.",
    "sentences": [
     {
-     "sid": "s01026",
-     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
-     "attributed": true,
-     "text": "With the increased demand in mental health services, the Institute of Mental Health (IMH) will continue to serve as national centre for psychiatric services and focus on providing quaternary care to patients with more complex mental health needs.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Growing healthcare workforce by 2030",
-   "summary": "The current healthcare workforce is broadly adequate, but must grow by 20% by 2030 to meet projected manpower demand.",
-   "sentences": [
-    {
-     "sid": "s01031",
+     "sid": "s01034",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "Our current healthcare workforce is broadly adequate for the population's healthcare demand.",
      "added_for_context": true
     },
     {
-     "sid": "s01032",
+     "sid": "s01035",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "We will need to grow our healthcare workforce by 20% by 2030 to meet the projected manpower demand.",
@@ -1674,14 +1669,21 @@
    ]
   },
   {
-   "label": "Accelerated pathway for clinical psychologists",
-   "summary": "With MOE and NUS, eligible undergraduates get an accelerated pathway to specialise in Clinical Psychology at Master's level, first intake 2026.",
+   "label": "Accelerated clinical psychology pathway",
+   "summary": "An accelerated undergraduate-to-Masters pathway in Clinical Psychology, with first intake in 2026, can be completed in five years.",
    "sentences": [
     {
-     "sid": "s01036",
+     "sid": "s01039",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
-     "text": "To Dr Wan Rizal's query on strengthening the local pipeline of clinical psychologists while maintaining professional standards, we have worked with the Ministry of Education and NUS to offer eligible undergraduate students an accelerated pathway to specialise in Clinical Psychology at Master's level, with the first intake in 2026.",
+     "text": "To Dr Wan Rizal's query on strengthening the local pipeline of clinical psychologists while maintaining professional standards, we have worked with the Ministry of Education and NUS to offer eligible undergraduate students an accelerated pathway to specialise in Clinical Psychology at Master's level, with the first intake in 2026.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01040",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
+     "attributed": true,
+     "text": "Unlike the current training model, where an undergraduate needs at least seven years to be qualified as a clinical psychologist, this includes four years for their Bachelor's degree in Psychology, followed by one or two years of work experience before enrolling in the two-year Master of Psychology (Clinical) programme, this new accelerated pathway for undergraduate-to-Masters pathway can be completed in five years.",
      "added_for_context": false
     }
    ]
@@ -1691,7 +1693,7 @@
    "summary": "In 2025, salaries of allied health professionals, pharmacists and administrative, ancillary and support staff in public healthcare institutions rose by up to 7%.",
    "sentences": [
     {
-     "sid": "s01048",
+     "sid": "s01051",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "In 2025, we have also increased the salaries of allied health professionals (AHPs), pharmacists and administrative, ancillary and support staff in public healthcare institutions by up to 7%.",
@@ -1700,51 +1702,32 @@
    ]
   },
   {
-   "label": "Shared competencies in allied health training",
-   "summary": "With IHLs, shared competencies are being built across allied health training programmes, rolled out progressively from Academic Year 2027 students.",
+   "label": "Registering higher risk psychologist sub-disciplines",
+   "summary": "Five higher risk psychologist sub-disciplines will be registered, with detailed registration schedule, requirements and roadmaps announced by early 2027.",
    "sentences": [
     {
-     "sid": "s01055",
-     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
-     "attributed": true,
-     "text": "For AHPs, we are working with IHLs to build up shared competencies across relevant allied health training programmes to better support a team-based shared-care model.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s01056",
-     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
-     "attributed": true,
-     "text": "These will be rolled out progressively, starting with students who begin their studies from Academic Year 2027 onwards.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Registering higher risk psychologists",
-   "summary": "Five higher risk sub-disciplines of psychologists will be registered to ensure high standards of practice, ethics and professional conduct.",
-   "sentences": [
-    {
-     "sid": "s01063",
+     "sid": "s01066",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "Ms He Ting Ru has asked for an update on the regulation of mental health professionals.",
      "added_for_context": true
     },
     {
-     "sid": "s01064",
+     "sid": "s01067",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "We will be registering five higher risk sub-disciplines of psychologists to ensure high standards of practice, ethics and professional conduct so that our people receive safer and higher quality psychological services.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Registration schedule announcement timeline",
-   "summary": "The detailed registration schedule, requirements and roadmaps will be announced by early 2027.",
-   "sentences": [
+    },
     {
-     "sid": "s01067",
+     "sid": "s01068",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
+     "attributed": true,
+     "text": "These are clinical, clinical neuropsychology, counselling, educational and forensic psychologists.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01070",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "The detailed registration schedule, requirements and roadmaps will be announced by early 2027.",
@@ -1753,11 +1736,11 @@
    ]
   },
   {
-   "label": "Expanding CREST and COMIT",
+   "label": "Expanding CREST and COMIT by 2030",
    "summary": "By 2030, the number of CREST and COMIT will be expanded to 75 and 35 respectively.",
    "sentences": [
     {
-     "sid": "s01077",
+     "sid": "s01080",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "By 2030, we will expand the number of CREST and COMIT to 75 and 35 respectively.",
@@ -1766,11 +1749,11 @@
    ]
   },
   {
-   "label": "Training frontline personnel and volunteers",
-   "summary": "Over 160,000 frontline personnel and volunteers were trained under the National Mental Health Competency Training Framework to identify and guide individuals in mental distress.",
+   "label": "Training community mental health personnel",
+   "summary": "Through the National Mental Health Competency Training Framework, over 160,000 frontline personnel and volunteers have been trained to identify and guide individuals in mental distress.",
    "sentences": [
     {
-     "sid": "s01088",
+     "sid": "s01091",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "Fourth, we are enhancing capabilities of community service providers through the National Mental Health Competency Training Framework and have trained over 160,000 frontline personnel and volunteers to identify and guide individuals in mental distress to support avenues.",
@@ -1779,11 +1762,11 @@
    ]
   },
   {
-   "label": "No wrong door approach",
-   "summary": "A \"no wrong door\" approach facilitates access to services and right-siting care in primary and community settings, encouraging early help-seeking while avoiding over-medicalising mental health needs.",
+   "label": "no wrong door approach",
+   "summary": "Adopting a no wrong door approach facilitates access to services and right-siting care in primary and community settings, encouraging early help-seeking in non-stigmatising environments while avoiding over-medicalising mental health needs.",
    "sentences": [
     {
-     "sid": "s01093",
+     "sid": "s01096",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "Adopting a \"no wrong door\" approach to facilitate access to services and right-siting care in primary and community settings encourage individuals to seek help early in non-stigmatising environments while avoiding over-medicalising mental health needs.",
@@ -1792,39 +1775,39 @@
    ]
   },
   {
-   "label": "National Addiction Management Service and ageing",
-   "summary": "The National Addiction Management Service provides treatment and assistance for addictions, and by 2030 one in four Singaporeans will be 65 and older.",
+   "label": "National Addiction Management Service",
+   "summary": "The National Addiction Management Service within IMH provides treatment and assistance for addictions and specialises in addiction medicine research, including intoxicating substance use, Internet and gaming.",
    "sentences": [
     {
-     "sid": "s01097",
+     "sid": "s01100",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "The National Addiction Management Service, situated within the IMH, was established to provide treatment and assistance for individuals seeking help for addictions.",
      "added_for_context": false
     },
     {
-     "sid": "s01098",
+     "sid": "s01101",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "The National Addiction Management Service specialises in addiction medicine research, which includes intoxicating substance use and emerging areas of concern such as Internet and gaming.",
      "added_for_context": false
     },
     {
-     "sid": "s01099",
+     "sid": "s01102",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "MOH, together with the Ministry of Social and Family Development, and National Council of Social Service, and other stakeholders across sectors, will continue to develop and enhance access to addictions services in the community.",
      "added_for_context": false
     },
     {
-     "sid": "s01100",
+     "sid": "s01103",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon)",
      "attributed": true,
      "text": "As we navigate the road ahead and future challenges together, these three pillars will work in tandem to strengthen the core foundation of our healthcare system.",
      "added_for_context": false
     },
     {
-     "sid": "s01102",
+     "sid": "s01105",
      "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How)",
      "attributed": true,
      "text": "By 2030, one in four Singaporeans will be 65 years and older, and one in four of them will be aged 80 and above.",
@@ -1833,11 +1816,11 @@
    ]
   },
   {
-   "label": "Chronic disease among seniors",
+   "label": "seniors with chronic disease",
    "summary": "If half of seniors have at least one chronic disease, close to half a million will need care in 2030, up from about 400,000 last year.",
    "sentences": [
     {
-     "sid": "s01109",
+     "sid": "s01112",
      "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How)",
      "attributed": true,
      "text": "If half of our seniors have at least one chronic disease, we will have to care for close to half a million of them in 2030, up from about 400,000 of them last year.",
@@ -1847,10 +1830,10 @@
   },
   {
    "label": "SGO preventive health visits",
-   "summary": "Since 2022, SGO has started preventive health visits, engaged over 600,000 seniors and connected those with needs to services.",
+   "summary": "Since 2022, SGO has started preventive health visits, engaged more than 600,000 seniors and connected those with needs to services like AACs, SCCs and community mental health services.",
    "sentences": [
     {
-     "sid": "s01118",
+     "sid": "s01121",
      "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How)",
      "attributed": true,
      "text": "Since 2022, SGO has started preventive health visits, engaged more than 600,000 seniors and connected those with needs to services like AACs, Senior Care Centres (SCCs) and community mental health services.",
@@ -1859,31 +1842,31 @@
    ]
   },
   {
-   "label": "LifeSG app and AAC network",
-   "summary": "Seniors who have not used the service can check the LifeSG app, and the AAC network grew from 154 to over 230 centres, serving around 100,000 seniors.",
+   "label": "long-term care subsidies threshold",
+   "summary": "Long-term care subsidies and grants are being enhanced, with the per capita household income threshold raised this year from $3,600 to $4,800.",
    "sentences": [
     {
-     "sid": "s01121",
+     "sid": "s01129",
      "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How)",
      "attributed": true,
-     "text": "For seniors who have not yet availed themselves to this service, please check out the LifeSG app.",
+     "text": "We are enhancing long-term care subsidies and grants.",
      "added_for_context": true
     },
     {
-     "sid": "s01122",
+     "sid": "s01130",
      "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How)",
      "attributed": true,
-     "text": "We have also grown the AAC network from 154 centres to over 230 over the last two years, now serving around 100,000 seniors.",
+     "text": "This year, we will raise the per capita household income (PCHI) threshold from $3,600 to $4,800.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Enhanced Home Personal Care service",
-   "summary": "From 1 April, more than 5,600 eligible seniors and caregivers can benefit from enhanced Home Personal Care with respite care, medication reminders and monitoring.",
+   "label": "enhanced Home Personal Care service",
+   "summary": "From 1 April, more than 5,600 eligible seniors and their caregivers can benefit from the enhanced Home Personal Care service, featuring home-based respite care, medication reminders and 24/7 technology-enabled monitoring for fall detection and incident reporting.",
    "sentences": [
     {
-     "sid": "s01130",
+     "sid": "s01133",
      "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How)",
      "attributed": true,
      "text": "From 1 April, more than 5,600 eligible seniors and their caregivers can benefit from the enhanced Home Personal Care service, featuring home-based respite care, medication reminders and 24/7 technology-enabled monitoring for fall detection and incident reporting.",
@@ -1893,10 +1876,10 @@
   },
   {
    "label": "Seniors needing daily activity help",
-   "summary": "By 2030, around 100,000 seniors will need help with at least one daily activity like eating or showering.",
+   "summary": "By 2030, around 100,000 seniors will need help with at least one daily activity such as eating or showering.",
    "sentences": [
     {
-     "sid": "s01154",
+     "sid": "s01157",
      "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How)",
      "attributed": true,
      "text": "By 2030, around 100,000 seniors will need help with at least one daily activity like eating or showering.",
@@ -1905,11 +1888,11 @@
    ]
   },
   {
-   "label": "Single assessment for long-term care",
-   "summary": "From next month, seniors requiring multiple long-term care services will need only one comprehensive assessment by Integrated Community Care Providers using a standardised tool.",
+   "label": "Single comprehensive assessment for seniors",
+   "summary": "From next month, seniors needing multiple long-term care services will need only one comprehensive assessment by Integrated Community Care Providers using a standardised tool.",
    "sentences": [
     {
-     "sid": "s01163",
+     "sid": "s01166",
      "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How)",
      "attributed": true,
      "text": "From next month, seniors requiring multiple long-term care services will need only one comprehensive assessment done by the Integrated Community Care Providers using a standardised, internationally-recognised tool.",
@@ -1922,10 +1905,10 @@
    "summary": "The National Electronic Health Record Connect Grant will be launched and opened for application in July this year.",
    "sentences": [
     {
-     "sid": "s01175",
+     "sid": "s01178",
      "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How)",
      "attributed": true,
-     "text": "Third, we will launch the National Electronic Health Record (NEHR) Connect Grant and open it for application in July this year.",
+     "text": "Third, we will launch the National Electronic Health Record\t(NEHR) Connect Grant and open it for application in July this year.",
      "added_for_context": false
     }
    ]
@@ -1935,7 +1918,7 @@
    "summary": "MOH will set aside up to $45 million for this.",
    "sentences": [
     {
-     "sid": "s01179",
+     "sid": "s01182",
      "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How)",
      "attributed": true,
      "text": "MOH will set aside up to $45 million for this.",
@@ -1944,11 +1927,11 @@
    ]
   },
   {
-   "label": "GPs viewing patient records",
-   "summary": "From July this year, GPs can view patients' health records documented by specialists, hospitals and other medical institutions in their computer systems.",
+   "label": "GPs viewing patients' health records",
+   "summary": "From July this year, GPs can view patients' health records previously documented by specialists, hospitals and other medical institutions in their computer systems.",
    "sentences": [
     {
-     "sid": "s01197",
+     "sid": "s01200",
      "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How)",
      "attributed": true,
      "text": "From July this year, GPs can view patients' health records previously documented by specialists, hospitals and other medical institutions in their computer systems.",
@@ -1957,25 +1940,18 @@
    ]
   },
   {
-   "label": "Connected health system for seniors",
-   "summary": "Services will expand so every senior can receive care and support, supported by the Health Information Act and digital health priorities.",
+   "label": "Connected secure health system",
+   "summary": "Through the Health Information Act and other digital health priorities, a more connected, responsive and secure health system is being built to support healthcare transformation.",
    "sentences": [
     {
-     "sid": "s01202",
+     "sid": "s01207",
      "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How)",
      "attributed": true,
-     "text": "We will also continue to expand these services, so that every senior can receive the care and support they need.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s01203",
-     "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How)",
-     "attributed": true,
-     "text": "We want our treasures – our seniors at home – to live happily and age well at home. : Through the Health Information Act and other digital health priorities, we are building a more connected, responsive and secure health system.",
+     "text": "(In English): Through the Health Information Act and other digital health priorities, we are building a more connected, responsive and secure health system.",
      "added_for_context": false
     },
     {
-     "sid": "s01204",
+     "sid": "s01208",
      "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How)",
      "attributed": true,
      "text": "This is in support of our broader healthcare transformation to anchor care in the community with more coordinated services that wrap around our seniors.",
@@ -1984,18 +1960,51 @@
    ]
   },
   {
-   "label": "MediSave use for chronic care",
-   "summary": "The Minister was asked how much MediSave is used for chronic and preventive care and whether modelling was done.",
+   "label": "Woodlands pilot agency collaboration",
+   "summary": "A Member asks how MOH works with other agencies on the Woodlands pilot.",
    "sentences": [
     {
-     "sid": "s01221",
+     "sid": "s01212",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "One is to Minister of State Rahayu on the Woodlands pilot.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01213",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "My clarification is how is MOH also working with other agencies to get the most out of this pilot?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "AI topic clarification",
+   "summary": "A Member seeks a clarification from the Minister on the AI topic.",
+   "sentences": [
+    {
+     "sid": "s01218",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "My second clarification is for the Minister on the AI topic.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MediSave chronic preventive care",
+   "summary": "A Member asks how much MediSave is used for chronic and preventive care and whether modelling was done.",
+   "sentences": [
+    {
+     "sid": "s01225",
      "speaker": "Ms Mariam Jaafar (Sembawang)",
      "attributed": true,
      "text": "The Minister shared data on the healthcare expenditure on preventive care, for example, but how much of MediSave is used today for chronic and preventive care?",
      "added_for_context": false
     },
     {
-     "sid": "s01222",
+     "sid": "s01226",
      "speaker": "Ms Mariam Jaafar (Sembawang)",
      "attributed": true,
      "text": "And has the Ministry done any modelling on if we made MediSave chronic, MediSave preventive care, based on balances, how would that actually impact the sustainability?",
@@ -2004,64 +2013,25 @@
    ]
   },
   {
-   "label": "Distribution of balances",
-   "summary": "Two in 10 have less than $1,000, five in 10 have $1,000 to $10,000, and three in 10 have more than $10,000.",
-   "sentences": [
-    {
-     "sid": "s01234",
-     "speaker": "Mr Ong Ye Kung",
-     "attributed": true,
-     "text": "Two in 10 have less than $1,000; five in 10 have $1,000 to $10,000; three in 10 have more than $10,000.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Halal and healthy food choices",
-   "summary": "The Ministry will sit together and work with other agencies, including the National Environment Agency, on halal and healthy food choices.",
-   "sentences": [
-    {
-     "sid": "s01245",
-     "speaker": "Mr Ong Ye Kung",
-     "attributed": true,
-     "text": "On more halal food choices, healthy choices, let us sit together and see whether we can work together with other agencies, including the National Environment Agency.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Trust in care providers",
-   "summary": "The question asks how the Ministry will help the national effort to get patients and citizens to understand and trust care providers.",
-   "sentences": [
-    {
-     "sid": "s01250",
-     "speaker": "Dr Haresh Singaraju (Nominated Member)",
-     "attributed": true,
-     "text": "How exactly will the Ministry help in terms of the national effort to get patients and citizens to understand and trust the care that these providers provide?",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Osteoporosis and hereditary cancer coverage",
-   "summary": "The Member welcomes care protocols for osteoporosis such as frailty from 2028 and hereditary cancers being included as part of coverage.",
+   "summary": "A Member welcomes osteoporosis care protocols from 2028 and hereditary cancers being included in coverage.",
    "sentences": [
     {
-     "sid": "s01269",
+     "sid": "s01273",
      "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
      "attributed": true,
      "text": "Chairman, I would like to ask two clarifications.",
      "added_for_context": true
     },
     {
-     "sid": "s01270",
+     "sid": "s01274",
      "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
      "attributed": true,
      "text": "I really welcome the care protocols for osteoporosis, such as frailty, from 2028.",
      "added_for_context": false
     },
     {
-     "sid": "s01271",
+     "sid": "s01275",
      "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
      "attributed": true,
      "text": "Really, I think a lot of the physicians will welcome that hereditary cancers will now be included as part of the coverage.",
@@ -2070,18 +2040,18 @@
    ]
   },
   {
-   "label": "HBOC and MediShield Life modelling",
-   "summary": "Modelling was done because risk-reducing mastectomy saves future treatment costs, and the impact on MediShield Life is negligible.",
+   "label": "HBOC risk-reducing mastectomy modelling",
+   "summary": "The Minister says modelling was done and risk-reducing mastectomy's impact on MediShield Life is negligible.",
    "sentences": [
     {
-     "sid": "s01276",
+     "sid": "s01280",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "On HBOC, I hope I get the Member's question right.",
      "added_for_context": true
     },
     {
-     "sid": "s01277",
+     "sid": "s01281",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "We actually did the modelling because risk-reducing mastectomy saves future treatment costs and overall, actually, the impact on MediShield Life is quite negligible, which is why we are prepared to do this.",
@@ -2090,18 +2060,18 @@
    ]
   },
   {
-   "label": "One doctor, one GP",
-   "summary": "The Member urges sticking to one doctor, one GP as family doctor, and asks new towns like Tengah to enrol as many people as possible for Healthier SG.",
+   "label": "Healthier SG enrolment in Tengah",
+   "summary": "A speaker urges enrolling as many people as possible in Healthier SG in new towns like Tengah.",
    "sentences": [
     {
-     "sid": "s01286",
+     "sid": "s01290",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "We got to stick to one doctor, one GP, where he becomes our family doctor, advises us on the health of our family.",
      "added_for_context": true
     },
     {
-     "sid": "s01287",
+     "sid": "s01291",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "So, a new town, like Tengah, please go for it and get as many people as we can, enrol for Healthier SG.",
@@ -2110,11 +2080,11 @@
    ]
   },
   {
-   "label": "Health programmes in Tengah town",
-   "summary": "The Ministry is happy to work with Dr Choo and other agencies to see what other health programmes can be implemented in Tengah town.",
+   "label": "Tengah town health programmes",
+   "summary": "They will work with Dr Choo and other agencies to see what other health programmes can be implemented in Tengah town.",
    "sentences": [
     {
-     "sid": "s01291",
+     "sid": "s01295",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "Beyond that, we will be more than happy to work with Dr Choo, with other agencies, to see what other health programmes we can implement in the Tengah town.",
@@ -2123,11 +2093,11 @@
    ]
   },
   {
-   "label": "Initial intake phase numbers",
-   "summary": "The initial phase of intake will only be about 10.",
+   "label": "Initial course intake",
+   "summary": "The initial phase of intake for the course will only be about 10.",
    "sentences": [
     {
-     "sid": "s01303",
+     "sid": "s01307",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "The course, I think the initial phase of intake will only be about for 10.",
@@ -2136,32 +2106,32 @@
    ]
   },
   {
-   "label": "Psychologist numbers and registration",
-   "summary": "There is no accurate count of psychologists, but the Singapore Psychological Society has about 1,700 members, mostly practising clinically, taken as a ballpark for registration.",
+   "label": "Number of psychologists",
+   "summary": "There is no accurate number of psychologists, but the Singapore Psychological Society has about 1,700 members, mostly practising clinically, used as a ballpark for registration.",
    "sentences": [
     {
-     "sid": "s01308",
+     "sid": "s01312",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "So, we do not really have an accurate number how many psychologists there are out there.",
      "added_for_context": true
     },
     {
-     "sid": "s01309",
+     "sid": "s01313",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "But offhand, the Singapore Psychological Society has about 1,700 members.",
      "added_for_context": false
     },
     {
-     "sid": "s01310",
+     "sid": "s01314",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "Most of them are also practising in the clinical space.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
-     "sid": "s01311",
+     "sid": "s01315",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "So, if we take that as a ballpark, that is roughly probably the numbers that we are going to start with when we formally do the registration.",
@@ -2171,17 +2141,17 @@
   },
   {
    "label": "Entry criteria and course subsidies",
-   "summary": "They must minimally meet entry criteria, which cannot be lowered, while other support like course fee subsidies will largely align with what IHLs have today.",
+   "summary": "They must minimally meet entry criteria, which cannot be lowered, while other support measures like course fee subsidies will be in line with what IHLs have today.",
    "sentences": [
     {
-     "sid": "s01314",
+     "sid": "s01318",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "But I would say, minimally, they will have to meet entry criteria, because that standard is not something we can lower.",
      "added_for_context": true
     },
     {
-     "sid": "s01315",
+     "sid": "s01319",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "But beyond that, other support measures, like whether there will be subsidies for the course fees, it will largely, my understanding is, it will be in line with what the IHLs have today.",
@@ -2190,58 +2160,45 @@
    ]
   },
   {
-   "label": "Annual review and MediSave focus",
-   "summary": "The review happens every year, the wish list will be reviewed entirely next time, and MediSave's focus is acknowledged amid tension between lumpy episodes and recurrent expenses.",
+   "label": "Checking psychologist registration",
+   "summary": "Before registration, a detailed list of specialists or psychologists is hard to provide, so individuals can check whether one is registered with the Singapore Psychological Society.",
    "sentences": [
     {
-     "sid": "s01334",
-     "speaker": "Mr Ong Ye Kung",
+     "sid": "s01322",
+     "speaker": "Dr Koh Poh Koon",
      "attributed": true,
-     "text": "We review this every year and the next time, we will review the wish list entirely.",
+     "text": "In the meantime, before registration, it will be very hard for us to provide a detailed list of the individual specialists or psychologists.",
      "added_for_context": true
     },
     {
-     "sid": "s01335",
-     "speaker": "Mr Ong Ye Kung",
+     "sid": "s01323",
+     "speaker": "Dr Koh Poh Koon",
      "attributed": true,
-     "text": "But to manage the Member's expectation a little bit, the focus of MediSave, I totally get the tension between big lumpy episodes versus recurrent expenses.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Medium-term Healthier SG impact",
-   "summary": "Medium-term, they hope to make some impact on enrolment into Healthier SG, follow-up with check-ups, screening rate and vaccination rate.",
-   "sentences": [
-    {
-     "sid": "s01339",
-     "speaker": "Mr Ong Ye Kung",
-     "attributed": true,
-     "text": "Medium-term, we are hoping to make some impact in terms of enrolment into Healthier SG, follow up with the check-ups, rate of screening, rate of vaccinations.",
+     "text": "But perhaps, what they can do is to check whether this individual is registered, at least for the moment, with the Singapore Psychological Society.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Audiologist certification standards",
-   "summary": "A qualified audiologist in Singapore needs higher certification as a diploma may not suffice, and while an in-between may be sought, standards cannot be sacrificed.",
+   "summary": "A qualified audiologist in Singapore needs a higher level of certification as a diploma may not be enough, and they will see if there is an in-between without sacrificing standards.",
    "sentences": [
     {
-     "sid": "s01355",
+     "sid": "s01359",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "In general, a qualified audiologist in Singapore needs a higher level of certification because a diploma level may not be quite enough to perform the task.",
      "added_for_context": false
     },
     {
-     "sid": "s01356",
+     "sid": "s01360",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "So, we will look and see whether there is a way to actually find an in-between.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
-     "sid": "s01357",
+     "sid": "s01361",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "But ultimately, we cannot sacrifice standards just to meet the needs of people who want to take a shorter course to get there.",
@@ -2250,31 +2207,38 @@
    ]
   },
   {
-   "label": "Tracking one's own life",
-   "summary": "The passage states that tracking realistically cannot be done because it is your life.",
+   "label": "Support and funding for participation",
+   "summary": "Tracking cannot be done because it is your life, while support and funding are provided to ease AAC participation.",
    "sentences": [
     {
-     "sid": "s01361",
+     "sid": "s01365",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "Realistically, it cannot be tracked, because it is your life.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01366",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "We are there to provide the support, the funding, to make it as easy as you can come to the AAC to participate.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Social prescriptions in Healthier SG",
-   "summary": "Social prescriptions are part of the One Care Assessment Plan under Healthier SG, where the care plan includes the social prescription.",
+   "summary": "Social prescriptions are part of the Healthier SG care plan, which includes the social prescription.",
    "sentences": [
     {
-     "sid": "s01366",
+     "sid": "s01370",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "One of the questions was, whether social prescriptions are part of the One Care Assessment Plan.",
      "added_for_context": true
     },
     {
-     "sid": "s01367",
+     "sid": "s01371",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "That is actually part of the Healthier SG, where the care plan also includes the social prescription.",
@@ -2284,20 +2248,40 @@
   },
   {
    "label": "Integrated Community Care Provider rollout",
-   "summary": "The Integrated Community Care Provider framework is starting to roll out this year and over coming years across 84 sub-regions in Singapore.",
+   "summary": "The Integrated Community Care Provider framework is rolling out from this year across 84 sub-regions, bringing together different parties and partners.",
    "sentences": [
     {
-     "sid": "s01370",
+     "sid": "s01374",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "Mr Cai also asked if the the Integrated Community Care Provider and Agency for Integrated Care could cater for different sorts of activities, like faith-based volunteering or maybe for seniors who are interested in gardening as a social activity.",
      "added_for_context": true
     },
     {
-     "sid": "s01371",
+     "sid": "s01375",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
-     "text": "I would say that we are just starting to roll out the the Integrated Community Care Provider framework starting this year and over the coming years, and this is a non-trivial exercise across 84 sub-regions in Singapore – bringing together different parties and partners.",
+     "text": "I would say that we are just starting to roll out the the Integrated Community Care Provider framework starting this year and over the coming years, and this is a non-trivial exercise across 84 sub-regions in Singapore – bringing together different parties and partners.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Caregiver passport suggestion to MOH",
+   "summary": "A Member asks MOH to confirm whether it will take up the caregiver passport suggestion and any considerations preventing adoption.",
+   "sentences": [
+    {
+     "sid": "s01382",
+     "speaker": "Mr Fadli Fawzi (Aljunied)",
+     "attributed": true,
+     "text": "I would like him to confirm whether MOH will take up my suggestion of a caregiver passport and whether MOH has any considerations which may prevent the suggestion from being adopted.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01383",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "I mentioned in my speech the different Ministries' efforts to support caregivers, and we understand the challenges that caregivers face, juggling between work and care.",
      "added_for_context": false
     }
    ]
@@ -2307,27 +2291,27 @@
    "summary": "The information came from online resources about a UK ground-up initiative where parties from hospitals to supermarkets show care for caregivers.",
    "sentences": [
     {
-     "sid": "s01385",
+     "sid": "s01389",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "I must caveat to say that the information I got was what I could glean from online resources.",
      "added_for_context": true
     },
     {
-     "sid": "s01386",
+     "sid": "s01390",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
-     "text": "It is a ground-up initiative in the UK and it is a way for the different parties involved ranging from hospitals to supermarkets he mentioned supermarkets earlier – to show care and support for caregivers.",
+     "text": "It is a ground-up initiative in the UK and it is a way for the different parties involved ranging from hospitals to supermarkets he mentioned supermarkets earlier – to show care and support for caregivers.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "KPIs for mental health services",
-   "summary": "The passage asks what KPIs the Senior Minister of State Koh could share, such as wait times, care continuity and crisis presentations.",
+   "label": "KPIs for care wait times",
+   "summary": "A Member asks Senior Minister of State Koh to share KPIs such as reduced wait times, improved care continuity and reduced crisis presentations.",
    "sentences": [
     {
-     "sid": "s01399",
+     "sid": "s01403",
      "speaker": "Dr Wan Rizal (Jalan Besar)",
      "attributed": true,
      "text": "What would the Senior Minister of State Koh be able to share what are their KPIs, for example, whether there is a reduction in average wait times, improve care continuity, reduce crisis presentations?",
@@ -2336,45 +2320,45 @@
    ]
   },
   {
-   "label": "Psychologist retention and First Stops",
-   "summary": "The passage asks about psychologist retention levels and states that First Stops for Mental Health, like mindline.sg, remove barriers to first contact.",
+   "label": "First Stops for Mental Health",
+   "summary": "First Stops for Mental Health, such as the 24-hour anonymous mindline.sg, removes barriers to seeking first contact for advice and help.",
    "sentences": [
     {
-     "sid": "s01404",
-     "speaker": "Dr Wan Rizal (Jalan Besar)",
-     "attributed": true,
-     "text": "Are there any retention levels for psychologists specifically?",
-     "added_for_context": false
-    },
-    {
-     "sid": "s01405",
+     "sid": "s01409",
      "speaker": "Dr Wan Rizal (Jalan Besar)",
      "attributed": true,
      "text": "For example, specialist track, progression and the public sector pay competitiveness.",
      "added_for_context": true
     },
     {
-     "sid": "s01406",
+     "sid": "s01410",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
-     "text": "But what is important is that putting forth the First Stops for Mental Health, which is accessible – for example, mindline.sg is 24 hours and is accessible and it is anonymous – would really remove the key barriers that are holding everyone back from seeking at least the first contact point to get some advice and seek further help.",
+     "text": "But what is important is that putting forth the First Stops for Mental Health, which is accessible – for example, mindline.sg is 24 hours and is accessible and it is anonymous – would really remove the key barriers that are holding everyone back from seeking at least the first contact point to get some advice and seek further help.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Online counselling suicide risk protocol",
-   "summary": "Counsellors who assess suicide risk try to convince the person to seek care, with a protocol to fast track them to a psychiatrist or IMH A&E.",
+   "label": "High-risk individuals prioritised for care",
+   "summary": "High-risk individuals are always prioritised, with counsellors urging at-risk persons to step forward and a protocol to fast track them to immediate care.",
    "sentences": [
     {
-     "sid": "s01418",
+     "sid": "s01421",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "Again and following from the train of thought, I would want to assure the Member that those who are deemed to be high risk will always be prioritised.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01422",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "So, for example, if they receive counselling online or through a phone call and the counsellor assesses that this individual is at risk of suicide ideation, they will try their very best to convince the individual to step forward and receive care.",
      "added_for_context": true
     },
     {
-     "sid": "s01419",
+     "sid": "s01423",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "And if the person is prepared to come forth, there will be a protocol to fast track them to make sure that they receive immediate attention from a qualified psychiatrist or even present at the A&E in IMH, where care can be immediately rendered.",
@@ -2383,18 +2367,18 @@
    ]
   },
   {
-   "label": "Registration for higher risk psychologists",
-   "summary": "Registration gives formal recognition to those practising in higher risk sub-sectors in psychology and ensures quality, standards and support.",
+   "label": "Registration for higher risk psychology sub-sectors",
+   "summary": "Registration starts by giving formal recognition to those practising in higher risk psychology sub-sectors and ensuring quality, standards and support.",
    "sentences": [
     {
-     "sid": "s01425",
+     "sid": "s01429",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "I think let us take one step at a time.",
      "added_for_context": true
     },
     {
-     "sid": "s01426",
+     "sid": "s01430",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "We are starting with registration to give formal recognition to those who are practising in higher risk sub-sectors in psychology and making sure that the quality, the standards and the support is given to them to deliver the care that the clients and the patients need.",
@@ -2403,31 +2387,18 @@
    ]
   },
   {
-   "label": "Carry over of unused annual limits",
-   "summary": "The Member suggests allowing carry over of unused annual limits for up to three years to balance prudent drawdown with flexible usage for lumpy needs.",
-   "sentences": [
-    {
-     "sid": "s01432",
-     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
-     "attributed": true,
-     "text": "At the same time, I am keenly aware of what Minister mentioned about the inherent tension between current and future usage, and that is why my suggestion to allow a carry over of unused annual limits for just up to three years, may actually balance the prudent drawdown constraints, while also permitting a flexible usage to meet lumpy needs.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Annual scheme review and flexibility",
-   "summary": "The scheme is reviewed every year, and the suggestion on creating more flexibility will be taken into account.",
+   "summary": "The scheme is reviewed every year, and the suggestion to create more flexibility will be taken into account.",
    "sentences": [
     {
-     "sid": "s01435",
+     "sid": "s01439",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "As I say, we review the scheme every year.",
      "added_for_context": true
     },
     {
-     "sid": "s01436",
+     "sid": "s01440",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "I do want to see how we can create more flexibility and we will take your suggestion into account.",
@@ -2440,14 +2411,14 @@
    "summary": "This has been done over the last two years, serving about 100,000 seniors now, with more wanted in a few aspects.",
    "sentences": [
     {
-     "sid": "s01440",
+     "sid": "s01444",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "We have done so over the last two years.",
      "added_for_context": true
     },
     {
-     "sid": "s01441",
+     "sid": "s01445",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "We serve about 100,000 seniors now and we want to do more in a few aspects.",
@@ -2456,34 +2427,14 @@
    ]
   },
   {
-   "label": "Engaging seniors since 2022",
+   "label": "Engaging over 600,000 seniors since 2022",
    "summary": "Since 2022, they have engaged more than 600,000 seniors.",
    "sentences": [
     {
-     "sid": "s01452",
+     "sid": "s01456",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "As I mentioned, since 2022, they have engaged more than 600,000 seniors.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Seniors discharged from hospitals",
-   "summary": "The referral process with the ICCP addresses making sure discharged seniors are not left alone or forgotten.",
-   "sentences": [
-    {
-     "sid": "s01458",
-     "speaker": "Mr Tan Kiat How",
-     "attributed": true,
-     "text": "For seniors who are discharged from public health institutions, that is, hospitals, how can we make sure that those seniors are not left alone, are not forgotten?",
-     "added_for_context": true
-    },
-    {
-     "sid": "s01459",
-     "speaker": "Mr Tan Kiat How",
-     "attributed": true,
-     "text": "That is where the referral process comes in with the ICCP.",
      "added_for_context": false
     }
    ]
@@ -2493,7 +2444,7 @@
    "summary": "The rider covers deductibles and the 5% co-payment.",
    "sentences": [
     {
-     "sid": "s01474",
+     "sid": "s01478",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "The rider covers deductibles and the 5% co-payment.",
@@ -2502,11 +2453,11 @@
    ]
   },
   {
-   "label": "New lower-cost riders suitability",
-   "summary": "A question asks whether new April riders covering less co-payment at lower cost are more suitable.",
+   "label": "New lower-cost riders suitability question",
+   "summary": "The speaker asks whether new April riders covering less co-payment at lower cost are more suitable for them.",
    "sentences": [
     {
-     "sid": "s01478",
+     "sid": "s01482",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "If I need a rider, will the new riders that the insurance companies are introducing in April, where you cover less of co-payment but at a much lower cost, are they more suitable for me?",
@@ -2515,55 +2466,56 @@
    ]
   },
   {
-   "label": "Riders, co-payment and premiums",
-   "summary": "Without a rider you co-pay 10%; riders may suit those wanting protection against large private hospital co-payments, but premiums rise with age.",
+   "label": "Rider, co-payment exposure and MediShield",
+   "summary": "Without a rider, patients co-pay 10% uncapped, but MediShield Life, subsidies and MediFund protect those in subsidised public care.",
    "sentences": [
     {
-     "sid": "s01483",
+     "sid": "s01485",
+     "speaker": "Ms Sylvia Lim",
+     "attributed": true,
+     "text": "To follow up with the Minister, is it not the case that if you do not have a rider, there is an exposure that the patient will have to pay hospitalisation bills at 10% without any cap?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01487",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "If you are talking about riders, if you do not have a rider at all, yes, you do co-pay the 10%.",
      "added_for_context": false
     },
     {
-     "sid": "s01484",
+     "sid": "s01488",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "If you are considering, I go to a private hospital where my bill may run up to hundreds of thousands of dollars and I want to protect myself against that 10% co-payment, yes, a rider may be suitable for you.",
      "added_for_context": false
     },
     {
-     "sid": "s01485",
+     "sid": "s01489",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "But do remember, as you get older, in your 70s, in your 80s, premium runs up to $10,000 a year.",
      "added_for_context": false
     },
     {
-     "sid": "s01486",
+     "sid": "s01490",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "Without that rider, you are saving that premium.",
      "added_for_context": true
     },
     {
-     "sid": "s01487",
+     "sid": "s01491",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
      "text": "But if you are always seeking care in a subsidised public health setting, MediShield Life kicks in, plus subsidies, it is very unlikely you are exposed to tens, hundreds of thousands of dollars of exposure should you fall sick.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Withdrawal of amendment",
-   "summary": "The speaker seeks to withdraw their amendment.",
-   "sentences": [
+    },
     {
-     "sid": "s01494",
-     "speaker": "Ms Mariam Jaafar",
+     "sid": "s01493",
+     "speaker": "Mr Ong Ye Kung",
      "attributed": true,
-     "text": "With that, I seek to withdraw my amendment.",
+     "text": "Remember, that in a public health institution, when you cannot afford it, there is MediFund that you can always apply for.",
      "added_for_context": false
     }
    ]
@@ -2583,13 +2535,13 @@
    "budget-2918",
    "budget-2928"
   ],
-  "sentences_total": 1494,
+  "sentences_total": 1498,
   "sentences_selected": 244,
   "sentences_in_sections": 244,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 42,
-  "sections_total": 143,
-  "selection_share": 0.1633,
+  "sections_total": 135,
+  "selection_share": 0.1629,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -2598,24 +2550,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 143,
+   "sections_total": 135,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 244,
    "sentences_selected": 244,
-   "turns_cited": 44,
+   "turns_cited": 40,
    "turns_total": 60,
-   "coverage": 0.7333,
+   "coverage": 0.6667,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:13:35"
+   "checked_at": "2026-09-20T10:30:38"
   },
   "usage": {
-   "calls": 65,
-   "prompt_tokens": 63085,
-   "completion_tokens": 8289,
+   "calls": 64,
+   "prompt_tokens": 62698,
+   "completion_tokens": 7886,
    "estimated": false,
-   "cost_usd": 0.011153
+   "cost_usd": 0.010986
   }
  }
 }

@@ -3,14 +3,14 @@
  "what_it_is": "Review of Singapore's Water Security Due to Rising Demands from Data Centres, Urban Expansion and Climate Variability",
  "sections": [
   {
-   "label": "Water security and Four National Taps",
-   "summary": "Singapore has diversified water supply through the Four National Taps, including weather-resilient desalinated water and NEWater, strengthening water security amid climate change.",
+   "label": "Singapore water security and energy costs",
+   "summary": "Minister cites Four National Taps, climate change planning, and efforts to cut water production energy costs amid volatile energy prices.",
    "sentences": [
     {
      "sid": "s00001",
      "speaker": "Ms He Ting Ru",
      "attributed": true,
-     "text": "asked the Minister for Sustainability and the Environment with rising water demands from data centres, urban expansion and climate variability affecting local reservoirs (a) what is the latest assessment of Singapore's water insecurity risks, particularly ahead of the 2061 Johor Water Agreement expiry; and (b) what accelerated measures are being planned to ensure the Four National Taps meet future needs without compromising food production or household supply.",
+     "text": "asked the Minister for Sustainability and the Environment with rising water demands from data centres, urban expansion and climate variability affecting local reservoirs (a) what is the latest assessment of Singapore's water insecurity risks, particularly ahead of the 2061 Johor Water Agreement expiry; and (b) what accelerated measures are being planned to ensure the Four National Taps meet future needs without compromising food production or household supply.",
      "added_for_context": true
     },
     {
@@ -33,13 +33,14 @@
      "attributed": true,
      "text": "With the background that water scarcity has been intensified by climate change and the estimate is that there would be possible implications of up to 6% of gross domestic product (GDP) by 2050, an impact on the GDP, and also, given that the World Bank has recently stated that the water will shift from a background resource to a binding constraint, then also, bearing in mind that if there is not good water management, there will also be constriction or a negative impact on the economic growth and given our expected increase in demands, including plans to build databanks and climate change driven increases, how is this systemic risk framing being incorporated into our fiscal and also forward estimates for public infrastructure demand planning parameters?",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Energy cost of desalinated water",
-   "summary": "Energy is a driver of water production cost, and PUB focuses on new technology to reduce energy use and overall water production costs.",
-   "sentences": [
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Ms He Ting Ru (Sengkang)",
+     "attributed": true,
+     "text": "The current one in the Middle East has driven up the cost of energy, and the cost of oil and natural gas has been extremely volatile.",
+     "added_for_context": false
+    },
     {
      "sid": "s00007",
      "speaker": "Ms He Ting Ru (Sengkang)",
@@ -48,10 +49,10 @@
      "added_for_context": false
     },
     {
-     "sid": "s00008",
-     "speaker": "Ms He Ting Ru (Sengkang)",
+     "sid": "s00009",
+     "speaker": "Ms Grace Fu Hai Yien",
      "attributed": true,
-     "text": "And how are we responding to this prolonged energy price volatility, to moderate impact that the energy cost is having on our desalination cost modelling?",
+     "text": "In Singapore, I would like to think that we have planned ahead, and we are always looking at the impact of climate change, as I have mentioned in my answer, and incorporating the impact of climate change in our long-term planning for our water infrastructure.",
      "added_for_context": false
     },
     {
@@ -59,7 +60,7 @@
      "speaker": "Ms Grace Fu Hai Yien",
      "attributed": true,
      "text": "With regard to cost of energy, it is definitely a driver that we have always paid attention to.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00011",
@@ -97,12 +98,12 @@
    "oral-answer-4152"
   ],
   "sentences_total": 13,
-  "sentences_selected": 10,
-  "sentences_in_sections": 10,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
-  "sections_total": 2,
-  "selection_share": 0.7692,
+  "sentences_added_for_context": 3,
+  "sections_total": 1,
+  "selection_share": 0.8462,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -111,24 +112,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 2,
+   "sections_total": 1,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 10,
-   "sentences_selected": 10,
+   "sentences_published": 11,
+   "sentences_selected": 11,
    "turns_cited": 4,
    "turns_total": 4,
    "coverage": 1.0,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:51:58"
+   "checked_at": "2026-09-20T10:09:05"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1527,
-   "completion_tokens": 154,
+   "prompt_tokens": 1576,
+   "completion_tokens": 97,
    "estimated": false,
-   "cost_usd": 0.000257
+   "cost_usd": 0.000248
   }
  }
 }

@@ -3,30 +3,9 @@
  "what_it_is": "Video Consultations for Non-emergency Acute Conditions at All Polyclinics",
  "sections": [
   {
-   "label": "Polyclinic video consultations availability",
-   "summary": "Not all polyclinics offer video consultations for non-emergency acute conditions; SingHealth Polyclinics runs a pilot with no immediate broad expansion plans.",
+   "label": "Teleconsultations for acute symptoms",
+   "summary": "Teleconsultations for common acute symptoms with medical certificate issuance are not typically offered, and there are no immediate plans for broad expansion across all polyclinics.",
    "sentences": [
-    {
-     "sid": "s00001",
-     "speaker": "Mr David Hoe",
-     "attributed": true,
-     "text": "asked the Coordinating Minister for Social Policies and Minister for Health (a) whether all polyclinics currently offer video consultations for non-emergency acute conditions in a primary care setting; (b) if not, whether there are plans for polyclinics not offering such telemedicine services to introduce them; and (c) if so, what are the expected timelines for implementation in these polyclinics.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00002",
-     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
-     "attributed": true,
-     "text": "This ensures adequate clinical evaluation of medical conditions.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00004",
-     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
-     "attributed": true,
-     "text": "At the point of teleconsultation, if new or worsening conditions are identified, the video consultation will not proceed and the patient will be advised to seek an in-person consultation instead.",
-     "added_for_context": false
-    },
     {
      "sid": "s00005",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
@@ -44,7 +23,7 @@
    ]
   },
   {
-   "label": "All clusters offer follow-up video",
+   "label": "Video consultation at polyclinics",
    "summary": "All three polyclinic clusters currently offer video consultation for follow-up of acute conditions.",
    "sentences": [
     {
@@ -57,8 +36,8 @@
    ]
   },
   {
-   "label": "Risk stratification in video care",
-   "summary": "Video consultations risk stratify patients so care is not compromised; SingHealth's first-attendance acute video service remains a pilot with no expansion plans.",
+   "label": "Risk stratification in teleconsultation",
+   "summary": "Risk stratification ensures patient care is not compromised, and SingHealth Polyclinics' acute video consultation for first attendance remains a pilot with no expansion plans.",
    "sentences": [
     {
      "sid": "s00016",
@@ -77,8 +56,8 @@
    ]
   },
   {
-   "label": "MOH monitoring SingHealth pilot",
-   "summary": "MOH monitors the SingHealth Polyclinics pilot to learn lessons and assess wider implementation; the pilot has a cut-off age of 18 years old.",
+   "label": "Pilot monitoring and age criteria",
+   "summary": "MOH is monitoring the SingHealth Polyclinics pilot to assess wider implementation, and the pilot has a cut-off age of 18 years old.",
    "sentences": [
     {
      "sid": "s00022",
@@ -109,12 +88,12 @@
    "oral-answer-4026"
   ],
   "sentences_total": 34,
-  "sentences_selected": 10,
-  "sentences_in_sections": 10,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
+  "sentences_added_for_context": 1,
   "sections_total": 4,
-  "selection_share": 0.2941,
+  "selection_share": 0.2059,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -126,21 +105,21 @@
    "sections_total": 4,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 10,
-   "sentences_selected": 10,
-   "turns_cited": 3,
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
    "turns_total": 4,
-   "coverage": 0.75,
+   "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:39:47"
+   "checked_at": "2026-09-20T10:57:18"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2474,
-   "completion_tokens": 251,
+   "prompt_tokens": 2352,
+   "completion_tokens": 242,
    "estimated": false,
-   "cost_usd": 0.000417
+   "cost_usd": 0.000397
   }
  }
 }

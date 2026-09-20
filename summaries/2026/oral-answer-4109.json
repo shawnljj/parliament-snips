@@ -4,13 +4,13 @@
  "sections": [
   {
    "label": "PSLE placement and SES gap",
-   "summary": "Ministry has not studied and does not plan to study whether PSLE-based secondary school placement amplifies the socio-economic performance gap.",
+   "summary": "Ministry has not studied and does not plan to study whether PSLE-based secondary school placement amplifies the SES-performance gap, focusing instead on supporting all students.",
    "sentences": [
     {
      "sid": "s00001",
      "speaker": "Assoc Prof Kenneth Goh",
      "attributed": true,
-     "text": "asked the Minister for Education regarding the Organisation for Economic Cooperation and Development (OECD) findings linking earlier academic sorting to stronger socio-economic status (SES) performance associations (a) whether the Ministry has assessed whether PSLE-based school placement at age 12 amplifies the SES-performance gap; (b) if so, what that assessment found; and (c) if no such assessment exists, whether the Ministry intends to conduct one.",
+     "text": "asked the Minister for Education regarding the Organisation for Economic Cooperation and Development (OECD) findings linking earlier academic sorting to stronger socio-economic status (SES) performance associations (a) whether the Ministry has assessed whether PSLE-based school placement at age 12 amplifies the SES-performance gap; (b) if so, what that assessment found; and (c) if no such assessment exists, whether the Ministry intends to conduct one.",
      "added_for_context": true
     },
     {
@@ -51,9 +51,16 @@
    ]
   },
   {
-   "label": "Review and public engagement",
-   "summary": "The Ministry is reviewing the matter and will engage the public in education conversations, updating when ready.",
+   "label": "Posting Groups and social mixing",
+   "summary": "Posting Groups and Full Subject-Based Banding allow more students to experience social mixing; a review is ongoing with public engagement.",
    "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Ms Jasmin Lau",
+     "attributed": true,
+     "text": "In response to his first question, yesterday, I did explain how our system of Posting Groups and Full Subject-Based Banding now do allow many more of our students to experience social mixing in our schools.",
+     "added_for_context": false
+    },
     {
      "sid": "s00013",
      "speaker": "Ms Jasmin Lau",
@@ -72,20 +79,13 @@
   },
   {
    "label": "Primary school academic intervention",
-   "summary": "Primary schools provide targeted academic intervention, including learning support, reading remediation and mathematics support, for students needing help with foundational skills.",
+   "summary": "Primary schools provide targeted academic intervention for students needing support in reading, literacy and numeracy.",
    "sentences": [
     {
      "sid": "s00024",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
      "text": "For instance, primary schools do provide very targeted academic intervention for students who need more support to strengthen their foundational skills in reading, literacy and numeracy.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00025",
-     "speaker": "Ms Jasmin Lau",
-     "attributed": true,
-     "text": "This includes learning support programmes, reading remediation programmes and learning support for mathematics.",
      "added_for_context": false
     }
    ]
@@ -127,14 +127,14 @@
    "coverage": 0.6667,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:01:39"
+   "checked_at": "2026-09-20T10:18:54"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1744,
-   "completion_tokens": 183,
+   "prompt_tokens": 1772,
+   "completion_tokens": 190,
    "estimated": false,
-   "cost_usd": 0.000295
+   "cost_usd": 0.000301
   }
  }
 }

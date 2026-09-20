@@ -3,14 +3,14 @@
  "what_it_is": "Constraints that Prevent Scaling of Hydrokinetic Turbine Arrays in Singapore Strait",
  "sections": [
   {
-   "label": "Tidal energy plans and maritime constraints",
-   "summary": "The Government was asked about tidal energy plans and maritime constraints, and stated limited sea space limits domestic tidal energy to under 1% of Singapore's energy needs.",
+   "label": "Tidal energy sea space limits",
+   "summary": "Government cites limited sea space from ports, anchorage and shipping lanes, estimating domestically harnessable tidal energy at under 1% of Singapore's needs.",
    "sentences": [
     {
      "sid": "s00001",
      "speaker": "Dr Neo Kok Beng",
      "attributed": true,
-     "text": "asked the Deputy Prime Minister and Minister for Trade and Industry in light of the National University of Singapore (NUS) March 2026 research indicating that tidal energy could meet about 22% of Singapore's electricity demand (a) what is the Government's plan or strategy regarding tidal energy; and (b) what maritime constraints prevent the scaling of hydrokinetic turbine arrays in the Singapore Strait.",
+     "text": "asked the Deputy Prime Minister and Minister for Trade and Industry in light of the National University of Singapore (NUS) March 2026 research indicating that tidal energy could meet about 22% of Singapore's electricity demand (a) what is the Government's plan or strategy regarding tidal energy; and (b) what maritime constraints prevent the scaling of hydrokinetic turbine arrays in the Singapore Strait.",
      "added_for_context": true
     },
     {
@@ -66,12 +66,12 @@
    "coverage": 1.0,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:52:09"
+   "checked_at": "2026-09-20T10:09:17"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 827,
-   "completion_tokens": 76,
+   "prompt_tokens": 829,
+   "completion_tokens": 74,
    "estimated": false,
    "cost_usd": 0.000137
   }

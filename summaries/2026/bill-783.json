@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Supply Bill appropriations approval",
-   "summary": "The Supply Bill seeks legislative approval for appropriations from the Consolidated Fund and Development Fund for the 2026-2027 financial year.",
+   "summary": "The Supply Bill seeks legislative approval for appropriations from the Consolidated Fund and Development Fund for the 2026-2027 financial year, as approved in the Estimates.",
    "sentences": [
     {
      "sid": "s00001",
@@ -66,14 +66,14 @@
    "coverage": 1.0,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:06:47"
+   "checked_at": "2026-09-20T10:23:52"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 759,
-   "completion_tokens": 69,
+   "completion_tokens": 75,
    "estimated": false,
-   "cost_usd": 0.000126
+   "cost_usd": 0.000127
   }
  }
 }

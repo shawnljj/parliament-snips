@@ -3,7 +3,7 @@
  "what_it_is": "Protections for Platform Workers Affected by Food Delivery Platform Company's Exit from Singapore",
  "sections": [
   {
-   "label": "Delivery riders platform exit help",
+   "label": "Delivery riders affected by platform exit",
    "summary": "This refers to a report on help for delivery riders affected by a food delivery platform company's exit.",
    "sentences": [
     {
@@ -16,8 +16,8 @@
    ]
   },
   {
-   "label": "NTUC platform worker support measures",
-   "summary": "This states NTUC led discussions on payment and incentive principles, and that operators, WSG, NTUC and unions offered job matching, coaching and assistance schemes.",
+   "label": "Support for platform workers' transition",
+   "summary": "NTUC led discussions on earnings transparency and principles, while WSG, NTUC and unions offered job matching, coaching and assistance to platform workers.",
    "sentences": [
     {
      "sid": "s00010",
@@ -38,7 +38,7 @@
      "speaker": "Mr Shawn Huang Wei Zhong",
      "attributed": true,
      "text": "Some of these things were discussed: for example, fair earnings, visibility on structural changes, incentive schemes.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00013",
@@ -100,7 +100,7 @@
   "sentences_selected": 10,
   "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
+  "sentences_added_for_context": 3,
   "sections_total": 2,
   "selection_share": 0.5,
   "generated_by": "stage2b_select + stage2c_sections",
@@ -121,14 +121,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:01:56"
+   "checked_at": "2026-09-20T10:19:07"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1574,
-   "completion_tokens": 146,
+   "prompt_tokens": 1575,
+   "completion_tokens": 139,
    "estimated": false,
-   "cost_usd": 0.000261
+   "cost_usd": 0.000259
   }
  }
 }

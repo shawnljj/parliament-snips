@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "PHC Driver's Vocational Licences",
-   "summary": "PHC Driver's Vocational Licences have stayed roughly the same for years, with no plans to constrain total driver numbers.",
+   "summary": "The number of PHC Driver's Vocational Licences has been roughly maintained for the past few years, with no plans to constrain the total number of drivers.",
    "sentences": [
     {
      "sid": "s00003",
@@ -24,7 +24,7 @@
   },
   {
    "label": "Taxi and point-to-point population",
-   "summary": "The point-to-point population rose from 28,000 to about 70,000, with 400,000 rides a day, and no intention to curtail numbers.",
+   "summary": "The taxi or point-to-point population rose from 28,000 ten years ago to around 70,000 today, with about 400,000 rides a day, and there is no intention to curtail the number.",
    "sentences": [
     {
      "sid": "s00007",
@@ -51,7 +51,7 @@
   },
   {
    "label": "Transient employment and driver numbers",
-   "summary": "Transient employment lets people earn income between jobs, and numbers have not been intentionally restricted, with the market deciding.",
+   "summary": "Transient employment lets people earn income between jobs, and the numbers have not been intentionally restricted, with the market deciding.",
    "sentences": [
     {
      "sid": "s00017",
@@ -120,14 +120,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:15:04"
+   "checked_at": "2026-09-20T10:32:12"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1425,
-   "completion_tokens": 201,
+   "prompt_tokens": 1427,
+   "completion_tokens": 219,
    "estimated": false,
-   "cost_usd": 0.000256
+   "cost_usd": 0.000261
   }
  }
 }

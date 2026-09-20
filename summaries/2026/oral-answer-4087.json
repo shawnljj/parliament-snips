@@ -3,8 +3,8 @@
  "what_it_is": "Facilitating Adoption of AI in Energy Generation Sector",
  "sections": [
   {
-   "label": "AI in energy and VPPs",
-   "summary": "EMA launched a VPP regulatory sandbox in 2025 and uses AI for solar forecasting, while Enterprise Singapore supports an AI tool for SMEs.",
+   "label": "AI in energy sector",
+   "summary": "EMA launched a VPP regulatory sandbox, uses AI for solar forecasting, and Enterprise Singapore supports an AI cost and carbon reduction programme for SMEs.",
    "sentences": [
     {
      "sid": "s00002",
@@ -28,13 +28,6 @@
      "added_for_context": false
     },
     {
-     "sid": "s00005",
-     "speaker": "The Minister of State for Trade and Industry (Ms Gan Siow Huang) (for the Deputy Prime Minister and Minister for Trade and Industry)",
-     "attributed": true,
-     "text": "The Government is committed to helping businesses and households improve energy conservation and efficiency, including through AI-enabled solutions.",
-     "added_for_context": false
-    },
-    {
      "sid": "s00006",
      "speaker": "The Minister of State for Trade and Industry (Ms Gan Siow Huang) (for the Deputy Prime Minister and Minister for Trade and Industry)",
      "attributed": true,
@@ -52,7 +45,7 @@
   },
   {
    "label": "Skills Framework for Energy and Power",
-   "summary": "The Skills Framework for Energy and Power was developed by SkillsFuture Singapore, Workforce Singapore and EMA with industry and union partners.",
+   "summary": "The Skills Framework for Energy and Power, developed by SkillsFuture Singapore, Workforce Singapore and EMA with industry and union partners, maps key roles and competencies including digital and data skills.",
    "sentences": [
     {
      "sid": "s00013",
@@ -64,8 +57,8 @@
    ]
   },
   {
-   "label": "Studying other countries' AI solutions",
-   "summary": "The Government recognises AI as a strong enabler in the power sector and is studying AI solutions other countries deployed for generation and grid.",
+   "label": "Studying AI solutions from other countries",
+   "summary": "Singapore recognises AI as a strong power sector enabler and is studying AI solutions other countries deployed, such as predictive maintenance and machine learning for operational efficiency.",
    "sentences": [
     {
      "sid": "s00019",
@@ -79,6 +72,13 @@
      "speaker": "Ms Gan Siow Huang",
      "attributed": true,
      "text": "We are studying various AI solutions, which other countries have deployed for both energy generation and the grid network.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "Some examples include the use of AI for predictive maintenance of energy assets and the application of machine learning to enhance the operational efficiency of both traditional and renewable energy sources.",
      "added_for_context": false
     }
    ]
@@ -120,14 +120,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:06:35"
+   "checked_at": "2026-09-20T10:23:40"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1426,
-   "completion_tokens": 198,
+   "prompt_tokens": 1438,
+   "completion_tokens": 210,
    "estimated": false,
-   "cost_usd": 0.000255
+   "cost_usd": 0.00026
   }
  }
 }

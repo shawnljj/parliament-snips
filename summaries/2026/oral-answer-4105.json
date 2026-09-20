@@ -3,8 +3,8 @@
  "what_it_is": "Haj Arrangements and Contingency Plans for Singapore Pilgrims Given Present Security Situation and Travel Disruptions in Middle East",
  "sections": [
   {
-   "label": "MUIS haj arrangements and contingency plans",
-   "summary": "MUIS coordinates with Saudi authorities, AMTAS and travel agents on safe haj travel and develops contingency plans for disruptions.",
+   "label": "MUIS haj coordination and contingency plans",
+   "summary": "MUIS coordinates with Saudi authorities, AMTAS and travel agents on flights, transport and contingency plans for a safe haj.",
    "sentences": [
     {
      "sid": "s00002",
@@ -38,7 +38,7 @@
   },
   {
    "label": "Priority for affected pilgrims",
-   "summary": "Affected pilgrims will be given priority, subject to Saudi Arabia's annual quota.",
+   "summary": "Affected pilgrims will be given priority, subject to Saudi Arabia's annual haj quota.",
    "sentences": [
     {
      "sid": "s00014",
@@ -51,7 +51,7 @@
   },
   {
    "label": "Deferment and refunds if haj disrupted",
-   "summary": "If haj is cancelled or disrupted, affected pilgrims may defer to later seasons and refunds will be explored.",
+   "summary": "If haj is cancelled or disrupted, MUIS will work with AMTAS on deferment, possible refunds and keeping pilgrims informed.",
    "sentences": [
     {
      "sid": "s00019",
@@ -120,14 +120,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:01:53"
+   "checked_at": "2026-09-20T10:19:05"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1632,
-   "completion_tokens": 184,
+   "prompt_tokens": 1634,
+   "completion_tokens": 193,
    "estimated": false,
-   "cost_usd": 0.00028
+   "cost_usd": 0.000283
   }
  }
 }

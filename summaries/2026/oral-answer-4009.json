@@ -30,14 +30,14 @@
      "sid": "s00013",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
-     "text": "At this moment, our requirement for mandatory retrenchment is for companies that retrench five or more workers to notify MOM – and not specific to company size per se.",
+     "text": "At this moment, our requirement for mandatory retrenchment is for companies that retrench five or more workers to notify MOM – and not specific to company size per se.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Tripartite deliberation on retrenchment benefits",
-   "summary": "Tripartite partners deliberated minimum quantum and mandatory retrenchment benefits and concluded a balanced approach protects workers while providing businesses flexibility.",
+   "summary": "Tripartite partners deliberated minimum quantum and mandatory retrenchment benefits extensively and concluded a balanced approach protects workers while giving businesses flexibility.",
    "sentences": [
     {
      "sid": "s00025",
@@ -56,7 +56,7 @@
    ]
   },
   {
-   "label": "Tripartite guidelines on retrenchment benefit norms",
+   "label": "Tripartite guidelines on retrenchment benefits",
    "summary": "Tripartite partners agreed to issue guidelines stipulating prevailing norms for retrenchment benefit quantum, and most employees already receive benefits in line with these guidelines.",
    "sentences": [
     {
@@ -69,8 +69,8 @@
    ]
   },
   {
-   "label": "Retrenchment benefit norms in unionised companies",
-   "summary": "For unionised companies with a collective agreement, the prevailing norm is one month per year of service, with retrenched workers getting at least two weeks or more.",
+   "label": "Unionised companies retrenchment benefit norm",
+   "summary": "For unionised companies with a collective agreement, the prevailing norm is one month per year of service.",
    "sentences": [
     {
      "sid": "s00040",
@@ -78,26 +78,12 @@
      "attributed": true,
      "text": "In general, for unionised companies, if they have a collective agreement, the prevailing norm in unionised companies with a collective agreement is one month per year of service.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00041",
-     "speaker": "Dr Koh Poh Koon",
-     "attributed": true,
-     "text": "So, depending on whether the worker is a union member, whether this company is unionised, workers who were retrenched could get at least two weeks, maybe even more, per year of service.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00042",
-     "speaker": "Dr Koh Poh Koon",
-     "attributed": true,
-     "text": "And there are instances in which certain companies actually value their long-term workers who may have been with them for longer and give in excess of a month per year, up to a month and a half, sometimes with a lot more ex gratia as well.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Multinational companies setting retrenchment benefit caps",
-   "summary": "A supplementary question notes anecdotally that some multinational companies set retrenchment benefit caps.",
+   "label": "Multinational companies retrenchment benefit caps",
+   "summary": "A supplementary question notes anecdotally that some multinational companies set retrenchment benefit caps lower than the TAMEM benchmark.",
    "sentences": [
     {
      "sid": "s00049",
@@ -111,6 +97,13 @@
      "speaker": "Mr Patrick Tay Teck Guan (Pioneer)",
      "attributed": true,
      "text": "I have noticed anecdotally some multinational companies set retrenchment benefit caps.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00051",
+     "speaker": "Mr Patrick Tay Teck Guan (Pioneer)",
+     "attributed": true,
+     "text": "They are lower than the prescribed benchmark set in TAMEM.",
      "added_for_context": false
     }
    ]
@@ -128,12 +121,12 @@
    "oral-answer-4009"
   ],
   "sentences_total": 55,
-  "sentences_selected": 11,
-  "sentences_in_sections": 11,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 3,
+  "sentences_added_for_context": 2,
   "sections_total": 6,
-  "selection_share": 0.2,
+  "selection_share": 0.1818,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -145,21 +138,21 @@
    "sections_total": 6,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 11,
-   "sentences_selected": 11,
+   "sentences_published": 10,
+   "sentences_selected": 10,
    "turns_cited": 4,
    "turns_total": 10,
    "coverage": 0.4,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:41:16"
+   "checked_at": "2026-09-20T10:58:38"
   },
   "usage": {
    "calls": 4,
-   "prompt_tokens": 3577,
-   "completion_tokens": 379,
+   "prompt_tokens": 3509,
+   "completion_tokens": 372,
    "estimated": false,
-   "cost_usd": 0.000607
+   "cost_usd": 0.000595
   }
  }
 }

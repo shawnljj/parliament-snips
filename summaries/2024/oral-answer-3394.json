@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Long Island reclamation environmental studies",
-   "summary": "Before Long Island reclamation, environmental studies, nature-based solutions, and public engagement will be conducted, with coastal protection and land creation as key considerations.",
+   "summary": "Environmental studies, nature-based solutions and public feedback will precede Long Island reclamation, which integrates coastal protection with reclamation.",
    "sentences": [
     {
      "sid": "s00006",
@@ -37,7 +37,7 @@
    ]
   },
   {
-   "label": "Long Island planning timeline",
+   "label": "Long Island implementation timeline",
    "summary": "Planning and implementing Long Island will take a few decades given its scale.",
    "sentences": [
     {
@@ -51,7 +51,7 @@
   },
   {
    "label": "Sand procurement tender requirements",
-   "summary": "JTC and other agencies procure sand commercially, with tender specifications requiring operators to comply with source country rules and regulations.",
+   "summary": "JTC and other agencies procure sand commercially, with tender specifications requiring operators to comply with source country rules.",
    "sentences": [
     {
      "sid": "s00038",
@@ -64,14 +64,14 @@
      "sid": "s00039",
      "speaker": "Mr Desmond Lee",
      "attributed": true,
-     "text": "There are requirements in the specifications for tender that the operators who import the sand comply with certain rules and regulations, particularly those of the source country.",
+     "text": "There are requirements in the specifications for tender that the operators who import the sand comply with certain rules and regulations, particularly those of the source country.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Sand procurement compliance monitoring",
-   "summary": "Tender specifications require compliance with local laws and standards, and agencies receive information from various sources on non-compliance.",
+   "summary": "Tender and contractual requirements demand compliance with local laws and standards, and agencies receive information on non-compliance.",
    "sentences": [
     {
      "sid": "s00047",
@@ -91,7 +91,7 @@
   },
   {
    "label": "Site-specific surveys and sea-level rise",
-   "summary": "Site-specific surveys started in 2021, with sea levels expected to rise up to 1.15 metres by end of century above mean sea levels.",
+   "summary": "Site-specific surveys began in 2021, with sea levels expected to rise up to 1.15 metres by end of century.",
    "sentences": [
     {
      "sid": "s00058",
@@ -111,7 +111,7 @@
   },
   {
    "label": "Long Wall coastal protection concept",
-   "summary": "The Long Wall concept involves a 14-kilometre wall about three metres tall with 12 pumping stations and tidal gates from city to East Coast.",
+   "summary": "The Long Wall concept involves a 14-kilometre wall about three metres tall with 12 pumping stations and tidal gates.",
    "sentences": [
     {
      "sid": "s00070",
@@ -123,8 +123,8 @@
    ]
   },
   {
-   "label": "Long Island purpose and sand",
-   "summary": "Passage states Long Island's purposes: coastal protection, water resilience, more land, keeping East Coast Park, and raises sand import law concerns.",
+   "label": "Long Island project purposes",
+   "summary": "The passage states Long Island's purposes: coastal protection, water resilience, more land, and keeping East Coast Park largely as it is.",
    "sentences": [
     {
      "sid": "s00075",
@@ -139,19 +139,18 @@
      "attributed": true,
      "text": "But broadly, the purpose of \"Long Island\" is: first and foremost, coastal protection; second, enhance our water resilience; third, create more land and opportunities for future generations of Singaporeans; and lastly, to keep the East Coast Park largely as it is.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Commercial operators sand obligations",
+   "summary": "Commercial operators have obligations under source countries' laws and the procurement framework for procuring sand.",
+   "sentences": [
     {
-     "sid": "s00078",
-     "speaker": "Mr Louis Ng Kok Kwang",
+     "sid": "s00083",
+     "speaker": "Mr Desmond Lee",
      "attributed": true,
-     "text": "If I could go back just to the issue of sand again.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00079",
-     "speaker": "Mr Louis Ng Kok Kwang",
-     "attributed": true,
-     "text": "I understand that with the sand imports, we are reliant on compliance with the local laws, but I think the concern is that the local laws might not be as strong as we hope for them to be.",
+     "text": "Commercial operators have an obligation, both under the laws of the source countries, as well as the procurement framework under which we procure sand.",
      "added_for_context": false
     }
    ]
@@ -169,12 +168,12 @@
    "oral-answer-3394"
   ],
   "sentences_total": 84,
-  "sentences_selected": 16,
-  "sentences_in_sections": 16,
+  "sentences_selected": 15,
+  "sentences_in_sections": 15,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 4,
-  "sections_total": 7,
-  "selection_share": 0.1905,
+  "sentences_added_for_context": 3,
+  "sections_total": 8,
+  "selection_share": 0.1786,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -183,24 +182,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 7,
+   "sections_total": 8,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 16,
-   "sentences_selected": 16,
+   "sentences_published": 15,
+   "sentences_selected": 15,
    "turns_cited": 5,
    "turns_total": 15,
    "coverage": 0.3333,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T15:28:34"
+   "checked_at": "2026-09-20T11:14:21"
   },
   "usage": {
    "calls": 5,
-   "prompt_tokens": 4649,
-   "completion_tokens": 413,
+   "prompt_tokens": 4633,
+   "completion_tokens": 430,
    "estimated": false,
-   "cost_usd": 0.000767
+   "cost_usd": 0.000769
   }
  }
 }

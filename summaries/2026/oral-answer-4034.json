@@ -4,13 +4,13 @@
  "sections": [
   {
    "label": "Support for chronically ill workers",
-   "summary": "The Ministry will consider wage offsets or other support to encourage hiring of chronically ill persons, who may request flexible work schedules or workplace adjustments.",
+   "summary": "The Minister was asked whether wage offsets or other support could be extended to encourage hiring chronically ill persons such as kidney dialysis patients.",
    "sentences": [
     {
      "sid": "s00001",
      "speaker": "Assoc Prof Terence Ho",
      "attributed": true,
-     "text": "asked the Minister for Manpower whether the Ministry will consider extending wage offsets or other forms of support to encourage the hiring of chronically ill persons, such as kidney dialysis patients, who may not meet the prevailing definition of persons with disability.",
+     "text": "asked the Minister for Manpower whether the Ministry will consider extending wage offsets or other forms of support to encourage the hiring of chronically ill persons, such as kidney dialysis patients, who may not meet the prevailing definition of persons with disability.",
      "added_for_context": true
     },
     {
@@ -37,9 +37,16 @@
    ]
   },
   {
-   "label": "Employment support beyond FWAs",
-   "summary": "Individuals can tap on employment support including job matching and career advisory services from Workforce Singapore and the National Trades Union Congress' Employment and Employability Institute.",
+   "label": "Employment support for chronic conditions",
+   "summary": "The Government recognises the importance of supporting all workers, including those with chronic conditions, to remain employed through FWAs and other employment support.",
    "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Manpower (Mr Shawn Huang Wei Zhong) (for the Minister of Manpower)",
+     "attributed": true,
+     "text": "The Government recognises the importance of supporting all workers, including those managing chronic conditions, to remain in employment.",
+     "added_for_context": false
+    },
     {
      "sid": "s00008",
      "speaker": "The Senior Parliamentary Secretary to the Minister for Manpower (Mr Shawn Huang Wei Zhong) (for the Minister of Manpower)",
@@ -51,7 +58,7 @@
   },
   {
    "label": "Enabling Employment Credit and inclusive hiring",
-   "summary": "The Enabling Employment Credit is mainly for people with more permanent disabilities, and tripartite partners are working to raise employer awareness on inclusive hiring.",
+   "summary": "The Enabling Employment Credit is mainly for persons with more permanent disabilities, and tripartite partners are working to raise employer awareness on inclusive hiring.",
    "sentences": [
     {
      "sid": "s00012",
@@ -65,6 +72,13 @@
      "speaker": "Mr Shawn Huang Wei Zhong",
      "attributed": true,
      "text": "With regard to the newspaper article in terms of the higher unemployment, we are also working together with tripartite partners to make sure that these arrangements are made available to raise awareness among employers on how they can do better inclusive hiring, and also working, for example, with the National Kidney Foundation's chief executive officer Yen Tan, in terms of understanding the potential employers' needs as well.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Shawn Huang Wei Zhong",
+     "attributed": true,
+     "text": "And that is where the matching can work to enhance their employability.",
      "added_for_context": false
     }
    ]
@@ -82,12 +96,12 @@
    "oral-answer-4034"
   ],
   "sentences_total": 15,
-  "sentences_selected": 7,
-  "sentences_in_sections": 7,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 1,
   "sections_total": 3,
-  "selection_share": 0.4667,
+  "selection_share": 0.6,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -99,21 +113,21 @@
    "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 7,
-   "sentences_selected": 7,
+   "sentences_published": 9,
+   "sentences_selected": 9,
    "turns_cited": 3,
    "turns_total": 5,
    "coverage": 0.6,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:38:00"
+   "checked_at": "2026-09-20T10:55:28"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1353,
-   "completion_tokens": 192,
+   "prompt_tokens": 1390,
+   "completion_tokens": 197,
    "estimated": false,
-   "cost_usd": 0.000243
+   "cost_usd": 0.00025
   }
  }
 }

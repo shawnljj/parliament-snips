@@ -50,8 +50,8 @@
    ]
   },
   {
-   "label": "Foreign headcount and recipe authenticity",
-   "summary": "Giving more headcount could affect recipe authenticity, and smaller operators may need to rethink business models and use resources like central kitchens.",
+   "label": "Headcount, authenticity and business models",
+   "summary": "More headcount could be considered but may affect recipe authenticity, and smaller operators may need to rethink business models and use resources like the Productivity Solutions Grant.",
    "sentences": [
     {
      "sid": "s00035",
@@ -64,7 +64,7 @@
      "sid": "s00036",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
-     "text": "But that will mean that the authenticity of the recipe could be impacted – that hawkers are selling a particular ethnic dish that is now not even cooked by the actual ethnicity, for example.",
+     "text": "But that will mean that the authenticity of the recipe could be impacted – that hawkers are selling a particular ethnic dish that is now not even cooked by the actual ethnicity, for example.",
      "added_for_context": false
     },
     {
@@ -85,7 +85,7 @@
      "sid": "s00040",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
-     "text": "See how they can leverage on the rest of the resources the Government has put forth – Productivity Solutions Grant, working with central kitchen, for example – so that some of the backend operations that are very labour-intensive can be outsourced, while they focus on actually preparing the meals, making sure that it is authentic.",
+     "text": "See how they can leverage on the rest of the resources the Government has put forth – Productivity Solutions Grant, working with central kitchen, for example – so that some of the backend operations that are very labour-intensive can be outsourced, while they focus on actually preparing the meals, making sure that it is authentic.",
      "added_for_context": false
     }
    ]
@@ -127,14 +127,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:23:32"
+   "checked_at": "2026-09-20T10:40:42"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2348,
-   "completion_tokens": 205,
+   "prompt_tokens": 2356,
+   "completion_tokens": 210,
    "estimated": false,
-   "cost_usd": 0.000386
+   "cost_usd": 0.000389
   }
  }
 }

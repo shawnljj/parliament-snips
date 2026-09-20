@@ -3,14 +3,14 @@
  "what_it_is": "Reasons for Decline in Cancer Mortality despite Rising Diagnoses",
  "sections": [
   {
-   "label": "Cancer mortality decline and prevention",
-   "summary": "Ministry credits universal healthcare access for lowering cancer mortality, but says more work is needed on prevention, vaccination and screening.",
+   "label": "Cancer mortality decline policies",
+   "summary": "The Ministry says lower cancer mortality has benefited all patients, with more work needed on prevention and early detection.",
    "sentences": [
     {
      "sid": "s00001",
      "speaker": "Mr Yip Hon Weng",
      "attributed": true,
-     "text": "asked the Coordinating Minister for Social Policies and Minister for Health regarding the 21% decline in cancer mortality since 2012 despite rising diagnoses (a) what specific policy decisions or healthcare investments does the Ministry assess as most responsible for this improvement; and (b) how has the Ministry ensured these benefits reached lower-income and less health-literate Singaporeans equally.",
+     "text": "asked the Coordinating Minister for Social Policies and Minister for Health regarding the 21% decline in cancer mortality since 2012 despite rising diagnoses (a) what specific policy decisions or healthcare investments does the Ministry assess as most responsible for this improvement; and (b) how has the Ministry ensured these benefits reached lower-income and less health-literate Singaporeans equally.",
      "added_for_context": true
     },
     {
@@ -30,8 +30,8 @@
    ]
   },
   {
-   "label": "Subsidy access gap and drug pricing",
-   "summary": "Ministry does not publish thresholds, says its subsidy framework supports lower-income groups, and reports price reductions of about 30% to 60%.",
+   "label": "Subsidy access gap and CDL",
+   "summary": "The Ministry does not publish thresholds, says its subsidy framework supports lower-income groups, and reports price reductions.",
    "sentences": [
     {
      "sid": "s00006",
@@ -71,8 +71,8 @@
    ]
   },
   {
-   "label": "Ensuring effective drugs available",
-   "summary": "The Ministry says it cannot stop this from happening but can ensure the most clinically and cost effective drugs are available to all.",
+   "label": "Availability of effective drugs",
+   "summary": "The Ministry says it can ensure the most clinically and cost effective drugs are available to all.",
    "sentences": [
     {
      "sid": "s00015",
@@ -127,14 +127,14 @@
    "coverage": 1.0,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:38:02"
+   "checked_at": "2026-09-20T10:55:31"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1284,
-   "completion_tokens": 185,
+   "prompt_tokens": 1286,
+   "completion_tokens": 165,
    "estimated": false,
-   "cost_usd": 0.000232
+   "cost_usd": 0.000226
   }
  }
 }

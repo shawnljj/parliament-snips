@@ -4,20 +4,20 @@
  "sections": [
   {
    "label": "Haze effects on seniors",
-   "summary": "An MP asks whether the Ministry has seen more medical consultations for haze-induced symptoms and whether seniors are more prone to respiratory exacerbations during haze.",
+   "summary": "MP asks whether haze has increased medical consultations and worsened respiratory conditions in seniors, and how Community Health Posts can support them during haze.",
    "sentences": [
     {
      "sid": "s00001",
      "speaker": "Ms Hany Soh",
      "attributed": true,
-     "text": "asked the Coordinating Minister for Social Policies and Minister for Health whether the Ministry has observed an increase in medical consultations due to haze-induced symptoms from year to date.",
+     "text": "asked the Coordinating Minister for Social Policies and Minister for Health whether the Ministry has observed an increase in medical consultations due to haze-induced symptoms from year to date.",
      "added_for_context": false
     },
     {
      "sid": "s00002",
      "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
      "attributed": true,
-     "text": "I understand from a few seniors whom I have interacted with in Woodgrove recently that a number of their peers were unable to join them for their regular outdoor qigong and brisk walking activities due to respiratory-related health conditions lately.",
+     "text": "I understand from a few seniors whom I have interacted with in Woodgrove recently that a number of their peers were unable to join them for their regular outdoor qigong and brisk walking activities due to respiratory-related health conditions lately.",
      "added_for_context": false
     },
     {
@@ -31,14 +31,14 @@
      "sid": "s00004",
      "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
      "attributed": true,
-     "text": "Also, how can initiatives, such as the Community Health Posts, which are intended to bring healthcare closer to residents, especially our seniors, be further enhanced to better support them during the haze periods?",
+     "text": "Also, how can initiatives, such as the Community Health Posts, which are intended to bring healthcare closer to residents, especially our seniors, be further enhanced to better support them during the haze periods?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Community Health Posts for seniors",
-   "summary": "Community Health Posts give seniors immediate community access to healthcare at Active Ageing Centres, with regular engagements, telemedicine, medical services and medication.",
+   "label": "Community Health Posts support",
+   "summary": "Community Health Posts give seniors immediate community access to healthcare at Active Ageing Centres, with regular engagements, telemedicine, and services, serving as touchpoints in crises.",
    "sentences": [
     {
      "sid": "s00009",
@@ -107,14 +107,14 @@
    "coverage": 1.0,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:05:25"
+   "checked_at": "2026-09-20T10:22:27"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1166,
-   "completion_tokens": 145,
+   "prompt_tokens": 1174,
+   "completion_tokens": 147,
    "estimated": false,
-   "cost_usd": 0.000204
+   "cost_usd": 0.000206
   }
  }
 }

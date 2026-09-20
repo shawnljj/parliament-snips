@@ -3,7 +3,7 @@
  "what_it_is": "Updated Assessment on Impact on Singapore's Economy and Businesses from New 15% Tariffs",
  "sections": [
   {
-   "label": "US section 122 tariff on imports",
+   "label": "US section 122 tariff",
    "summary": "The US imposed a 10% section 122 tariff on all imports for 150 days, with limited expected impact on Singapore.",
    "sentences": [
     {
@@ -43,8 +43,8 @@
    ]
   },
   {
-   "label": "Tariffs' impact on Singapore economy",
-   "summary": "The tariffs' impact on Singapore's economy has thus far been assessed as rather limited.",
+   "label": "Tariff impact on Singapore",
+   "summary": "The tariffs' impact on Singapore's economy has been assessed as rather limited.",
    "sentences": [
     {
      "sid": "s00028",
@@ -57,13 +57,13 @@
   },
   {
    "label": "SBF playbook and further measures",
-   "summary": "SBF published a playbook guiding companies on risk-mapping, supply chain reconfiguration, digitalising and innovating, and further measures may be rolled out.",
+   "summary": "SBF published a playbook guiding companies on risk-mapping, supply chain reconfiguration and digitalising, and further measures may be rolled out.",
    "sentences": [
     {
      "sid": "s00031",
      "speaker": "Ms Gan Siow Huang",
      "attributed": true,
-     "text": "For example, SBF has published a playbook to guide companies on key actions to take, such as how to sense-make the impact through risk-mapping, to take action, such as re-configuring their supply chains, and also planning ahead by digitalising and innovating to build long-term resilience.",
+     "text": "For example, SBF has published a playbook to guide companies on key actions to take, such as how to sense-make the impact through risk-mapping, to take action, such as re-configuring their supply chains, and also planning ahead by digitalising and innovating to build long-term resilience.",
      "added_for_context": true
     },
     {
@@ -76,28 +76,21 @@
    ]
   },
   {
-   "label": "Safeguarding and expanding economic space",
-   "summary": "Singapore will safeguard and expand economic space by deepening, diversifying and defending economic interests and trade linkages, including with emerging markets.",
+   "label": "Trade links and FTAs",
+   "summary": "Singapore pursues closer trade relations with emerging markets and digital and green economy agreements, encouraging businesses to tap its 29 FTAs.",
    "sentences": [
-    {
-     "sid": "s00035",
-     "speaker": "Ms Gan Siow Huang",
-     "attributed": true,
-     "text": "I actually suggest that she refer to my speech in the Ministry of Trade and Industry's (MTI's) Committee of Supply (COS).",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00036",
-     "speaker": "Ms Gan Siow Huang",
-     "attributed": true,
-     "text": "But just to highlight a few key points, Singapore will continue to safeguard and expand our economic space by deepening, diversifying and also defending our economic interest, and also our trade linkages with all our trading partners.",
-     "added_for_context": false
-    },
     {
      "sid": "s00038",
      "speaker": "Ms Gan Siow Huang",
      "attributed": true,
      "text": "In addition to strengthening trade links with key trading partners, we are also pursuing closer trade relations with emerging markets, such as Latin America, South Asia, Middle East and Africa, and also furthering our cooperation in growth areas through digital and green economy agreements, such as the EU-Singapore Digital Trade Agreement.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00039",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "We encourage businesses to continue tapping on our 29 Free Trade Agreements, including the Comprehensive and Progressive Agreement for Trans-Pacific Partnership, and the Regional Comprehensive Economic Partnership.",
      "added_for_context": false
     }
    ]
@@ -115,12 +108,12 @@
    "oral-answer-4078"
   ],
   "sentences_total": 41,
-  "sentences_selected": 10,
-  "sentences_in_sections": 10,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
+  "sentences_added_for_context": 1,
   "sections_total": 5,
-  "selection_share": 0.2439,
+  "selection_share": 0.2195,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -132,21 +125,21 @@
    "sections_total": 5,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 10,
-   "sentences_selected": 10,
+   "sentences_published": 9,
+   "sentences_selected": 9,
    "turns_cited": 3,
    "turns_total": 8,
    "coverage": 0.375,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:10:09"
+   "checked_at": "2026-09-20T10:27:13"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2815,
-   "completion_tokens": 303,
+   "prompt_tokens": 2779,
+   "completion_tokens": 292,
    "estimated": false,
-   "cost_usd": 0.000479
+   "cost_usd": 0.000471
   }
  }
 }

@@ -2,12 +2,12 @@
  "date": "2026-08-04",
  "coverage": {
   "date": "2026-08-04",
-  "collected": 198,
+  "collected": 199,
   "max_result": 198,
-  "ratio": 1.0,
+  "ratio": 1.005,
   "enumeration": "linear+sections",
-  "words": 101369,
-  "turns": 563,
+  "words": 101434,
+  "turns": 565,
   "speaker_attribution": 0.986,
   "empty_reports": 2
  },
@@ -5521,37 +5521,6 @@
    ]
   },
   {
-   "report_id": "written-answer-na-24019",
-   "report_type": "Written Answers to Questions for Oral Answer Not Answered by End of Question Time",
-   "group": "written",
-   "title": "Temporary Housing Support for Subtenants in HDB Flats Who Are Displaced Due To Fires",
-   "sitting_date": "4-8-2026",
-   "parliament_no": "15",
-   "sitting_no": "33",
-   "volume_no": "96",
-   "report_version": "sprs3",
-   "mp_names": "Ms Lee Hui Ying,Mr Chee Hong Tat",
-   "words": 141,
-   "turns": [
-    {
-     "speaker": "Ms Lee Hui Ying",
-     "text": "asked the Minister for National Development (a) what temporary housing support is available for subtenants in HDB flats who are displaced as a result of HDB fires; and (b) whether there are plans to review or enhance assistance for fire-affected Singaporean residents who are not registered flat owners.",
-     "lang": "English",
-     "is_procedural": false,
-     "time": null,
-     "words": 48
-    },
-    {
-     "speaker": "Mr Chee Hong Tat",
-     "text": "In the event of a fire in a Housing and Development (HDB) block, HDB offers temporary accommodation to affected flat owners and HDB rental tenants whose homes were damaged. For tenants who are renting a flat or bedroom from an HDB flat owner, HDB will assess their household circumstances, including whether they have alternative temporary housing options. Where necessary, HDB will provide them with temporary accommodation on a case-by-case basis. HDB will continue to exercise flexibility in assisting affected residents, including tenants who are renting a flat or bedroom from HDB flat owners.",
-     "lang": "English",
-     "is_procedural": false,
-     "time": null,
-     "words": 93
-    }
-   ]
-  },
-  {
    "report_id": "written-answer-na-23994",
    "report_type": "Written Answers to Questions for Oral Answer Not Answered by End of Question Time",
    "group": "written",
@@ -6199,6 +6168,37 @@
      "is_procedural": false,
      "time": null,
      "words": 71
+    }
+   ]
+  },
+  {
+   "report_id": "written-answer-na-24084",
+   "report_type": "Written Answers to Questions for Oral Answer Not Answered by End of Question Time",
+   "group": "written",
+   "title": "Persons Who Receive Negative Results under Pre-marriage Long-term Visit Pass Assessment",
+   "sitting_date": "4-8-2026",
+   "parliament_no": "15",
+   "sitting_no": "33",
+   "volume_no": "96",
+   "report_version": "sprs3",
+   "mp_names": "Ms Denise Phua Lay Peng,Mr K Shanmugam",
+   "words": 124,
+   "turns": [
+    {
+     "speaker": "Ms Denise Phua Lay Peng",
+     "text": "asked the Senior Minister, Coordinating Minister for National Security and Minister for Home Affairs (a) what is the number of persons who have received a negative assessment under the Pre-Marriage Long-Term Visit Pass Assessment since its implementation; and (b) whether there is any recourse available for persons who have received a negative assessment but nevertheless choose to proceed with the marriage.",
+     "lang": "English",
+     "is_procedural": false,
+     "time": null,
+     "words": 61
+    },
+    {
+     "speaker": "Mr K Shanmugam",
+     "text": "Since the Pre-Marriage Long-Term Visit Pass (LTVP) Assessment (PMLA) was implemented in 2015, about 4,300 applications were processed by the Immigration and Checkpoints Authority annually, of which approximately 950 applications received a negative assessment. While couples may marry even with a negative PMLA assessment, they are unlikely to be successful in their LTVP application unless there is a material change in their circumstances.",
+     "lang": "English",
+     "is_procedural": false,
+     "time": null,
+     "words": 63
     }
    ]
   },
@@ -7291,6 +7291,37 @@
      "is_procedural": true,
      "time": null,
      "words": 83
+    }
+   ]
+  },
+  {
+   "report_id": "written-answer-na-23955",
+   "report_type": "Written Answers to Questions for Oral Answer Not Answered by End of Question Time",
+   "group": "written",
+   "title": "Minimum and Mean Number of Years of Non-contribution to CPF for Members who Turned 55 in 2025 and who Do Not Fulfil Basic Retirement Sum",
+   "sitting_date": "4-8-2026",
+   "parliament_no": "15",
+   "sitting_no": "33",
+   "volume_no": "96",
+   "report_version": "sprs3",
+   "mp_names": "Mr Sanjeev Kumar Tiwari,Ms Jasmin Lau",
+   "words": 82,
+   "turns": [
+    {
+     "speaker": "Mr Sanjeev Kumar Tiwari",
+     "text": "asked the Acting Minister for Manpower in respect of Singaporean CPF members who turned 55 in 2025 and who do not meet the Basic Retirement Sum, what the (i) minimum and (ii) mean number of years of non-contribution to CPF are.",
+     "lang": "English",
+     "is_procedural": false,
+     "time": null,
+     "words": 41
+    },
+    {
+     "speaker": "Ms Jasmin Lau",
+     "text": "For Singaporean Central Provident Fund (CPF) members who turned 55 in 2025 and did not meet the Basic Retirement Sum, the minimum and mean number of years of non-contribution to CPF, from age 25 to 55, were zero and 16 respectively.",
+     "lang": "English",
+     "is_procedural": false,
+     "time": null,
+     "words": 41
     }
    ]
   },

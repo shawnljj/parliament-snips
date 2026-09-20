@@ -4,13 +4,13 @@
  "sections": [
   {
    "label": "Singapore Haj quota and arrangements",
-   "summary": "Singapore has a 900-place Haj quota, requested more places, and MUIS runs a first-come queue with priority for pilgrims aged 70 and above.",
+   "summary": "Singapore has 900 Haj places, requested more from Saudi Arabia, uses a MUIS queue with priority for pilgrims aged 70 and above, and faces new health certificate rules from 2026.",
    "sentences": [
     {
      "sid": "s00001",
      "speaker": "Ms Yeo Wan Ling",
      "attributed": true,
-     "text": "asked the Acting Minister-in-charge of Muslim Affairs how Singapore builds on its established working relationship with the Saudi authorities in managing Haj arrangements, including addressing considerations around (i) quota allocation, (ii) queue arrangements and (iii) health requirements for senior pilgrims.",
+     "text": "asked the Acting Minister-in-charge of Muslim Affairs how Singapore builds on its established working relationship with the Saudi authorities in managing Haj arrangements, including addressing considerations around (i) quota allocation, (ii) queue arrangements and (iii) health requirements for senior pilgrims.",
      "added_for_context": true
     },
     {
@@ -35,13 +35,6 @@
      "added_for_context": false
     },
     {
-     "sid": "s00005",
-     "speaker": "The Acting Minister-in-charge of Muslim Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim)",
-     "attributed": true,
-     "text": "Places are allocated on a first come, first served basis for fairness and transparency.",
-     "added_for_context": false
-    },
-    {
      "sid": "s00006",
      "speaker": "The Acting Minister-in-charge of Muslim Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim)",
      "attributed": true,
@@ -59,7 +52,7 @@
   },
   {
    "label": "Saudi Haj quota formula",
-   "summary": "Saudi Arabia sets each country's Haj quota at 0.1% of its Muslim population, giving Singapore 900 places for Haj 2026.",
+   "summary": "Saudi Arabia sets each country's Haj quota at 0.1% of its Muslim population, giving Singapore 900 places for Haj 2026, while Singapore requests additional quota.",
    "sentences": [
     {
      "sid": "s00014",
@@ -73,6 +66,13 @@
      "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
      "attributed": true,
      "text": "So, Singapore was allocated 900 places for Haj 2026.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "Having said that, over the years, if you look back and up to today, Singapore has proactively engaged Saudi Arabia to request for additional Haj quota.",
      "added_for_context": false
     }
    ]
@@ -114,14 +114,14 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:47:03"
+   "checked_at": "2026-09-20T11:04:29"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1405,
-   "completion_tokens": 156,
+   "prompt_tokens": 1421,
+   "completion_tokens": 169,
    "estimated": false,
-   "cost_usd": 0.00024
+   "cost_usd": 0.000246
   }
  }
 }

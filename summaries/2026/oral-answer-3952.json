@@ -3,35 +3,35 @@
  "what_it_is": "Managing Healthcare Insurance Premiums",
  "sections": [
   {
-   "label": "Integrated Shield Plan rider questions",
-   "summary": "Questions asked the Coordinating Minister for Social Policies and Minister for Health about new Integrated Shield Plan rider requirements, premiums, regulation and support measures.",
+   "label": "Questions on Integrated Shield Plan riders",
+   "summary": "Questions ask whether out-of-pocket costs will be capped, older policies retained, coverage protected, families supported, and dual regulation established.",
    "sentences": [
     {
      "sid": "s00001",
      "speaker": "Mr Yip Hon Weng",
      "attributed": true,
-     "text": "asked the Coordinating Minister for Social Policies and Minister for Health regarding the new Integrated Shield Plan rider requirements (a) whether there will be an absolute cap on patients' out-of-pocket costs; (b) whether insurers can retain older policies with higher coverage; and (c) what measures will be implemented to prevent insurers from unilaterally reducing coverage for ageing policyholders on existing plans.",
+     "text": "asked the Coordinating Minister for Social Policies and Minister for Health regarding the new Integrated Shield Plan rider requirements (a) whether there will be an absolute cap on patients' out-of-pocket costs; (b) whether insurers can retain older policies with higher coverage; and (c) what measures will be implemented to prevent insurers from unilaterally reducing coverage for ageing policyholders on existing plans.",
      "added_for_context": false
     },
     {
      "sid": "s00002",
      "speaker": "Ms Poh Li San",
      "attributed": true,
-     "text": "asked the Coordinating Minister for Social Policies and Minister for Health in view of the Ministry’s move to curb rising healthcare insurance premiums by April 2026, how will families facing hefty medical bills be supported if their out-of-pocket expenses for co-payments become unaffordable.",
+     "text": "asked the Coordinating Minister for Social Policies and Minister for Health in view of the Ministry’s move to curb rising healthcare insurance premiums by April 2026, how will families facing hefty medical bills be supported if their out-of-pocket expenses for co-payments become unaffordable.",
      "added_for_context": false
     },
     {
      "sid": "s00003",
      "speaker": "Dr Hamid Razak",
      "attributed": true,
-     "text": "asked the Coordinating Minister for Social Policies and Minister for Health regarding the new Integrated Shield Plan rider (a) whether the policy design anticipates that policyholders will continue to access private healthcare despite higher cost-sharing; (b) if so, what is the policy basis; and (c) what contingency measures have been developed to support restructured hospitals should there be increased patient volume due to shifts from private to public healthcare.",
+     "text": "asked the Coordinating Minister for Social Policies and Minister for Health regarding the new Integrated Shield Plan rider (a) whether the policy design anticipates that policyholders will continue to access private healthcare despite higher cost-sharing; (b) if so, what is the policy basis; and (c) what contingency measures have been developed to support restructured hospitals should there be increased patient volume due to shifts from private to public healthcare.",
      "added_for_context": false
     },
     {
      "sid": "s00004",
      "speaker": "Mr Kenneth Tiong Boon Kiat",
      "attributed": true,
-     "text": "asked the Coordinating Minister for Social Policies and Minister for Health given that the Monetary Authority of Singapore primarily regulates solvency, whether the Ministry intends to establish a dual-regulation framework to oversee the (i) healthcare outcomes (ii) panel selection criteria and (iii) loss-ratio efficiency of private insurers to ensure they align with national health goals.",
+     "text": "asked the Coordinating Minister for Social Policies and Minister for Health given that the Monetary Authority of Singapore primarily regulates solvency, whether the Ministry intends to establish a dual-regulation framework to oversee the (i) healthcare outcomes (ii) panel selection criteria and (iii) loss-ratio efficiency of private insurers to ensure they align with national health goals.",
      "added_for_context": false
     }
    ]
@@ -51,13 +51,13 @@
   },
   {
    "label": "IP premium growth and cancellations",
-   "summary": "IP premiums for private hospital grew about 17% annually for three years, and about 100,000 policyholders yearly cancel or downgrade IP rider policies.",
+   "summary": "Private hospital IP premiums grew about 17% annually for three years, and about 100,000 policyholders yearly cancel or downgrade IP rider policies.",
    "sentences": [
     {
      "sid": "s00015",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
-     "text": "IP premiums for private hospital have been growing at an average rate of 17% annually for the past three years – it is double that of IP premiums and even higher compared to MediShield Life premiums.",
+     "text": "IP premiums for private hospital have been growing at an average rate of 17% annually for the past three years – it is double that of IP premiums and even higher compared to MediShield Life premiums.",
      "added_for_context": false
     },
     {
@@ -84,7 +84,7 @@
   },
   {
    "label": "MOH and MAS oversight",
-   "summary": "MOH and MAS work closely together in regulatory oversight of IP insurers to protect policyholders' interests and ensure products are sustainable.",
+   "summary": "MOH and MAS work closely together in regulatory oversight of IP insurers to protect policyholders and ensure products are sustainable.",
    "sentences": [
     {
      "sid": "s00045",
@@ -96,8 +96,8 @@
    ]
   },
   {
-   "label": "IP requirements and market intervention",
-   "summary": "Requirements cover key IP and rider parameters like co-payment and deductible, with intervention only for serious market failure, as in tightening IP rider design.",
+   "label": "Requirements and market intervention",
+   "summary": "Requirements cover IP and rider parameters like co-payment and deductible, with intervention only for serious market failure, as in tightening IP rider design.",
    "sentences": [
     {
      "sid": "s00048",
@@ -210,7 +210,7 @@
   },
   {
    "label": "Regulation of clinical effectiveness and safety",
-   "summary": "Regulation covers clinical effectiveness, safety, and key parameters that make the system sustainable without market failure.",
+   "summary": "Regulation covers clinical effectiveness, safety, and key parameters that make the system sustainable with no market failure.",
    "sentences": [
     {
      "sid": "s00122",
@@ -254,18 +254,18 @@
    "sentences_published": 21,
    "sentences_selected": 21,
    "turns_cited": 8,
-   "turns_total": 16,
-   "coverage": 0.5,
+   "turns_total": 15,
+   "coverage": 0.5333,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:53:20"
+   "checked_at": "2026-09-20T11:10:47"
   },
   "usage": {
    "calls": 7,
-   "prompt_tokens": 6744,
-   "completion_tokens": 686,
+   "prompt_tokens": 6760,
+   "completion_tokens": 681,
    "estimated": false,
-   "cost_usd": 0.001136
+   "cost_usd": 0.001137
   }
  }
 }

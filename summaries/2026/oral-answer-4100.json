@@ -4,13 +4,13 @@
  "sections": [
   {
    "label": "Safeguards for citizen data with vendors",
-   "summary": "The Government applies risk-based safeguards, technical controls, governance and contracts to protect citizen data used by vendors from foreign disclosure demands.",
+   "summary": "Establishes risk-based safeguards, including technical controls, data residency and contracts, to protect citizen data from foreign government disclosure demands.",
    "sentences": [
     {
      "sid": "s00001",
      "speaker": "Mr Low Wu Yang Andre",
      "attributed": true,
-     "text": "asked the Minister for Digital Development and Information (a) whether the whole-of-Government data architecture permits proprietary artificial intelligence (AI) or data analytics platforms from foreign-headquartered vendors to process citizen data; and (b) if so, what legal and technical safeguards ensure that such data cannot be compelled for disclosure by a foreign government under that government's domestic laws.",
+     "text": "asked the Minister for Digital Development and Information (a) whether the whole-of-Government data architecture permits proprietary artificial intelligence (AI) or data analytics platforms from foreign-headquartered vendors to process citizen data; and (b) if so, what legal and technical safeguards ensure that such data cannot be compelled for disclosure by a foreign government under that government's domestic laws.",
      "added_for_context": true
     },
     {
@@ -46,7 +46,7 @@
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister for Digital Development and Information)",
      "attributed": true,
      "text": "This is coupled with proper governance frameworks and contractual agreements on how the data can be accessed, used, stored and retained.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00007",
@@ -58,8 +58,8 @@
    ]
   },
   {
-   "label": "Foreign laws can override contracts",
-   "summary": "Some jurisdictions' laws with extraterritorial reach can override contractual obligations, so the Government also relies on technical controls and governance frameworks.",
+   "label": "Foreign laws overriding contracts",
+   "summary": "States that foreign laws with extraterritorial reach can override contracts, so the Government also relies on technical controls and governance frameworks.",
    "sentences": [
     {
      "sid": "s00014",
@@ -73,7 +73,7 @@
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
      "text": "Such legislation or regulations can override contractual obligations.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00016",
@@ -121,12 +121,12 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:05:20"
+   "checked_at": "2026-09-20T10:22:23"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1433,
-   "completion_tokens": 148,
+   "prompt_tokens": 1435,
+   "completion_tokens": 147,
    "estimated": false,
    "cost_usd": 0.000242
   }

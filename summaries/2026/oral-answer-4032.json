@@ -3,7 +3,7 @@
  "what_it_is": "Structural Unemployment Risks for Singaporean PMETs Aged 40s and 50s",
  "sections": [
   {
-   "label": "Mid-career workforce support programmes",
+   "label": "Workforce upskilling and career transition programmes",
    "summary": "WSG and SSG programmes support mid-career jobseekers and mature workers, with over $10 billion invested in local workforce initiatives over five years.",
    "sentences": [
     {
@@ -28,23 +28,23 @@
    "sentences": [
     {
      "sid": "s00012",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "The Senior Minister of State for Manpower (Dr Koh Poh Koon) (for the Minister for Manpower)",
+     "attributed": true,
      "text": "The Tripartite Workgroup on Senior Employment is studying recommendations to provide better support across a senior's career journey, including during mid-career transitions and later-career stages.",
      "added_for_context": false
     },
     {
      "sid": "s00013",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "The Senior Minister of State for Manpower (Dr Koh Poh Koon) (for the Minister for Manpower)",
+     "attributed": true,
      "text": "Its recommendations will be released in the second half of this year.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Helping workers pivot earlier",
-   "summary": "The Tripartite Workgroup for Senior Employment is looking at helping professionals still in employment understand where to pivot and acquire skills, going upstream to the 40s.",
+   "label": "Helping employed professionals pivot early",
+   "summary": "The Tripartite Workgroup for Senior Employment is looking at helping professionals still in employment understand where to pivot and guide their skills acquisition from their 40s.",
    "sentences": [
     {
      "sid": "s00027",
@@ -70,7 +70,7 @@
    ]
   },
   {
-   "label": "NTUC lateral movement practice",
+   "label": "NTUC facilitating lateral movements across sectors",
    "summary": "NTUC has a practice of helping workers potentially displaced from one union sector reach across unions in adjacent sectors through an internal arrangement.",
    "sentences": [
     {
@@ -83,21 +83,14 @@
    ]
   },
   {
-   "label": "Awareness and career employment services",
-   "summary": "The aim is more worker awareness of opportunities in adjacent sectors and a system to gain skills to pivot, through more support in career employment services.",
+   "label": "Tight labour market due to resource constraints",
+   "summary": "The labour market is tight not because of facilitating lateral movements, but because of resource constraints in Singapore.",
    "sentences": [
     {
-     "sid": "s00042",
+     "sid": "s00041",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
-     "text": "But despite that tightness, I think the key thing is to make sure that there is more awareness amongst the workers themselves where opportunities may lie in adjacent sectors and have a system to help them gain the necessary skills so they can pivot across.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00043",
-     "speaker": "Dr Koh Poh Koon",
-     "attributed": true,
-     "text": "That would be something that we hope to also do, through injecting a lot more support and services in some of our career employment services that we are thinking about, so that, as an ecosystem, we have a more comprehensive way to help – whether they are engineers, IT professionals or PMEs in different sectors as well, to be able to pivot across when opportunities arise.",
+     "text": "The labour market is tight not because we want to facilitate lateral movements, but it is tight because we have resource constraints in Singapore.",
      "added_for_context": false
     }
    ]
@@ -115,12 +108,12 @@
    "oral-answer-4032"
   ],
   "sentences_total": 44,
-  "sentences_selected": 10,
-  "sentences_in_sections": 10,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
+  "sentences_added_for_context": 1,
   "sections_total": 5,
-  "selection_share": 0.2273,
+  "selection_share": 0.2045,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -132,21 +125,21 @@
    "sections_total": 5,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 10,
-   "sentences_selected": 10,
-   "turns_cited": 3,
-   "turns_total": 6,
-   "coverage": 0.5,
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:37:46"
+   "checked_at": "2026-09-20T10:55:17"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2970,
-   "completion_tokens": 316,
+   "prompt_tokens": 2884,
+   "completion_tokens": 314,
    "estimated": false,
-   "cost_usd": 0.000504
+   "cost_usd": 0.000492
   }
  }
 }

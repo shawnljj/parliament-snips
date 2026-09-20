@@ -3,8 +3,8 @@
  "what_it_is": "Barrier-free Access on Public Footpaths for Mobility Scooters and Motorised Wheelchairs",
  "sections": [
   {
-   "label": "Footpath width and encumbrances",
-   "summary": "Public paths are kept free of encumbrances, new footpaths must meet minimum widths, and old footpaths are widened unless site constraints exist.",
+   "label": "Footpath width and clearance standards",
+   "summary": "Public paths must be free of obstructions, with new footpaths meeting minimum clear widths and old ones widened where possible.",
    "sentences": [
     {
      "sid": "s00002",
@@ -45,7 +45,7 @@
   },
   {
    "label": "Path widening constraints in private estates",
-   "summary": "Path widening is usually done with other estate improvement works, faces constraints in private estates, and follows a calibrated approach based on user volume.",
+   "summary": "Path widening is usually done with other estate improvement works and faces constraints in private estates, so a calibrated approach is taken.",
    "sentences": [
     {
      "sid": "s00010",
@@ -65,7 +65,7 @@
      "sid": "s00012",
      "speaker": "Mr Baey Yam Keng",
      "attributed": true,
-     "text": "We do take a calibrated approach, looking at the volume of users – whether motorists on the roads or pedestrians and riders on the footpaths.",
+     "text": "We do take a calibrated approach, looking at the volume of users – whether motorists on the roads or pedestrians and riders on the footpaths.",
      "added_for_context": false
     }
    ]
@@ -107,14 +107,14 @@
    "coverage": 0.3333,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:23:34"
+   "checked_at": "2026-09-20T10:40:44"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1308,
-   "completion_tokens": 152,
+   "prompt_tokens": 1311,
+   "completion_tokens": 143,
    "estimated": false,
-   "cost_usd": 0.000226
+   "cost_usd": 0.000224
   }
  }
 }

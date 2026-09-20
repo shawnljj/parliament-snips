@@ -30,55 +30,49 @@
    ]
   },
   {
-   "label": "Dynamic traffic light systems",
-   "summary": "Authorities study configuration and volumes, use dynamic systems tracking traffic, and work on cameras to track pedestrian volume for adjusting timings.",
+   "label": "Dynamic traffic and pedestrian signal systems",
+   "summary": "Dynamic systems track traffic volume, and pedestrian cameras and button presses are being explored to adjust traffic light timings.",
    "sentences": [
-    {
-     "sid": "s00017",
-     "speaker": "Mr Baey Yam Keng",
-     "attributed": true,
-     "text": "We look at the configuration, the volume of pedestrians and traffic, so that we are able to achieve an optimal situation to balance the different needs.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00018",
-     "speaker": "Mr Baey Yam Keng",
-     "attributed": true,
-     "text": "We do have dynamic systems that are able to track traffic volume.",
-     "added_for_context": false
-    },
     {
      "sid": "s00019",
      "speaker": "Mr Baey Yam Keng",
      "attributed": true,
+     "text": "We do have dynamic systems that are able to track traffic volume.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
      "text": "We are working on a better system where at certain junctions we might want to install cameras at the pedestrian waiting area to track pedestrian volume and whether we are able to build that capability to also incorporate pedestrian data to adjust traffic lights timings dynamically.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Customised crossing light timings",
-   "summary": "Some crossings change faster, low-volume ones stay green for traffic until pressed, and technology data helps customise crossings.",
-   "sentences": [
+    },
     {
      "sid": "s00022",
      "speaker": "Mr Baey Yam Keng",
      "attributed": true,
-     "text": "For some, it does turn faster; and for some, there are some crossings where the lights do not usually change because it has a very low pedestrian crossing volume.",
+     "text": "As for the green man, the Member was talking about pressing the button, whether that activates it faster.",
      "added_for_context": false
     },
     {
      "sid": "s00023",
      "speaker": "Mr Baey Yam Keng",
      "attributed": true,
-     "text": "And therefore, the lights are green in favour of the traffic, and unless someone presses it and then, it will turn red or have the green man turned on for the pedestrian.",
+     "text": "For some, it does turn faster; and for some, there are some crossings where the lights do not usually change because it has a very low pedestrian crossing volume.",
      "added_for_context": false
     },
     {
      "sid": "s00024",
      "speaker": "Mr Baey Yam Keng",
      "attributed": true,
-     "text": "We will customise it for the need of the particular crossing and where possible, we use technology data from the Electronic Road Pricing (ERP) 2.0 system to allow us to better assess the different needs and then to achieve a more optimal situation for all.",
+     "text": "And therefore, the lights are green in favour of the traffic, and unless someone presses it and then, it will turn red or have the green man turned on for the pedestrian.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "We will customise it for the need of the particular crossing and where possible, we use technology data from the Electronic Road Pricing (ERP) 2.0 system to allow us to better assess the different needs and then to achieve a more optimal situation for all.",
      "added_for_context": false
     }
    ]
@@ -95,13 +89,13 @@
   "report_ids": [
    "oral-answer-4082"
   ],
-  "sentences_total": 24,
+  "sentences_total": 25,
   "sentences_selected": 9,
   "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 1,
-  "sections_total": 3,
-  "selection_share": 0.375,
+  "sections_total": 2,
+  "selection_share": 0.36,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -110,7 +104,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 3,
+   "sections_total": 2,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 9,
@@ -120,14 +114,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:06:32"
+   "checked_at": "2026-09-20T10:23:38"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1579,
-   "completion_tokens": 191,
+   "prompt_tokens": 1588,
+   "completion_tokens": 144,
    "estimated": false,
-   "cost_usd": 0.000275
+   "cost_usd": 0.000263
   }
  }
 }

@@ -3,7 +3,7 @@
  "what_it_is": "Committee of Supply – Head Q (Ministry of Digital Development and Information)",
  "sections": [
   {
-   "label": "Budget cut motion for Head Q",
+   "label": "Budget cut motion Head Q",
    "summary": "A motion is moved to reduce the total sum allocated for Head Q of the Estimates by $100.",
    "sentences": [
     {
@@ -16,7 +16,7 @@
    ]
   },
   {
-   "label": "AI and data centre investments",
+   "label": "Global AI investment ambitions",
    "summary": "India aims to attract up to US$200 billion in AI and data centre investments, while the Middle East and EU secure sovereign compute capacity.",
    "sentences": [
     {
@@ -29,7 +29,20 @@
    ]
   },
   {
-   "label": "National AI Council announcement welcomed",
+   "label": "Singapore's AI competitive strengths",
+   "summary": "Singapore cannot compete on population or compute scales but can compete on precision, trust, regulatory credibility and deep sectoral integration.",
+   "sentences": [
+    {
+     "sid": "s00029",
+     "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
+     "attributed": true,
+     "text": "Singapore cannot compete on population or compute scales, but we can compete on precision, trust, regulatory credibility and deep sectoral integration.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Leveraging governance and AI Council",
    "summary": "The speaker asks how to leverage high-trust governance, regulatory credibility and deep sectoral concentration, and welcomes the National AI Council announcement.",
    "sentences": [
     {
@@ -49,8 +62,8 @@
    ]
   },
   {
-   "label": "Four key sectors for AI Missions",
-   "summary": "A question asks how the Government determined the four key sectors for the national AI Missions.",
+   "label": "Selecting national AI Mission sectors",
+   "summary": "The speaker asks how the Government determined the four key sectors for the national AI Missions.",
    "sentences": [
     {
      "sid": "s00045",
@@ -62,44 +75,124 @@
    ]
   },
   {
-   "label": "Sovereign AI compute capacity",
-   "summary": "A question asks how much sovereign AI compute capacity is held.",
+   "label": "Three enablers for AI advantage",
+   "summary": "Three enablers must move together for Singapore to harness AI: workforce capabilities, enterprise adoption including SMEs, and strong ethical governance.",
    "sentences": [
     {
-     "sid": "s00051",
-     "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
+     "sid": "s00054",
+     "speaker": "Mr Sharael Taha",
      "attributed": true,
-     "text": "How much of sovereign AI compute capacity do we have?",
+     "text": "If Singapore is to harness AI as a strategic advantage, three enablers must move together – deep and broad workforce capabilities, widespread enterprise adoption, including SMEs and strong ethical governance.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "QKD maturity and PQC priority",
-   "summary": "The conclusion states QKD is not yet sufficiently mature and serves only niche use cases, with migration to post quantum cryptography having priority.",
+   "label": "SME AI adoption constraints",
+   "summary": "Three constraints persist for SMEs: cost of talent, lack of validated use cases and integration complexity.",
    "sentences": [
     {
-     "sid": "s00066",
-     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "sid": "s00060",
+     "speaker": "Mr Sharael Taha",
      "attributed": true,
-     "text": "Their conclusion: QKD is not yet sufficiently mature and can only serve niche use cases.",
+     "text": "For SMEs, three constraints persist: cost of talent, lack of validated use cases and integration complexity.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "AI capabilities as a service",
+   "summary": "CTO-as-a-Service would evolve into AI capabilities as a service, with pooled AI engineers deployed across SME clusters for hands-on implementation.",
+   "sentences": [
+    {
+     "sid": "s00063",
+     "speaker": "Mr Sharael Taha",
+     "attributed": true,
+     "text": "First, evolve our CTO-as-a-Service into AI capabilities as a service, where pooled AI engineers deployed across SME clusters can deploy solutions for hands-on implementation.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore cyberattacks and ransomware",
+   "summary": "The 2018 SingHealth cyberattack compromised 1.5 million patients' data, and 255 firms linked to critical infrastructures were allegedly targeted, with ransomware disrupting healthcare clusters and vendors.",
+   "sentences": [
+    {
+     "sid": "s00084",
+     "speaker": "Mr Sharael Taha",
+     "attributed": true,
+     "text": "The 2018 SingHealth cyberattack compromised the data of 1.5 million patients.",
      "added_for_context": false
     },
     {
-     "sid": "s00067",
-     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "sid": "s00085",
+     "speaker": "Mr Sharael Taha",
      "attributed": true,
-     "text": "They said: \"Migration to post quantum cryptography (PQC) has priority over the use of QKD\".",
+     "text": "More recently, it was reported that 255 firms linked to Singapore's critical infrastructures were allegedly targeted and ransomware incidents have disrupted healthcare clusters and third party vendors.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Foreign PQC deadlines",
+   "label": "Digital conflict and national survival",
+   "summary": "Escalating digital conflict makes resilience necessary, as intrusions with dormant malicious code could disrupt telecommunications, payment and transport systems and cripple SAF mobilisation.",
+   "sentences": [
+    {
+     "sid": "s00098",
+     "speaker": "Mr Sharael Taha",
+     "attributed": true,
+     "text": "In a world of escalating digital conflict, resilience is not optional.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00099",
+     "speaker": "Mr Sharael Taha",
+     "attributed": true,
+     "text": "Trust in our digital economy depends on our ability to defend it.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00100",
+     "speaker": "Mr Sharael Taha",
+     "attributed": true,
+     "text": "We must ensure that as Singapore digitises at scale, our cybersecurity posture strengthens at equal speed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00101",
+     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
+     "attributed": true,
+     "text": "Such intrusions are a stark reminder that the digital battle space has expanded into a theatre of strategic sabotage, APT actors, prepositioned malicious code to sit dormant for years, designed to be activated during a crisis to trigger power failures or disrupt transport and payment systems.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00102",
+     "speaker": "Mr Gerald Giam Yean Song (Aljunied)",
+     "attributed": true,
+     "text": "For Singapore, this poses a direct threat to our national survival as a coordinated disruption to civilian telecommunications, payment systems and transport networks would directly cripple the Singapore Armed Force's ability to mobilise and deploy troops at speed.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Joint assessment of Quantum Key Distribution",
+   "summary": "In January 2024, cybersecurity agencies of France, Germany, the Netherlands and Sweden jointly assessed Quantum Key Distribution.",
+   "sentences": [
+    {
+     "sid": "s00109",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "In January 2024, the cybersecurity agencies of France, Germany, the Netherlands and Sweden jointly assessed Quantum Key Distribution (QKD).",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Post-quantum cryptography deadlines",
    "summary": "Australia's deadline to cease classical public key cryptography is 2030, Japan's is 2035, and 18 EU states signed a PQC commitment last November.",
    "sentences": [
     {
-     "sid": "s00072",
+     "sid": "s00116",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "Australia's deadline to cease classical public key cryptography is in 2030; Japan, 2035; 18 EU states signed a PQC commitment last November.",
@@ -108,45 +201,25 @@
    ]
   },
   {
-   "label": "National Quantum Safe Network expansion",
-   "summary": "Without PQC, adversaries harvest today and decrypt tomorrow; Singapore is expanding the National Quantum Safe Network with dedicated QKD fibre but has no PQC migration deadline.",
-   "sentences": [
-    {
-     "sid": "s00077",
-     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
-     "attributed": true,
-     "text": "Without PQC, adversaries harvest today and decrypt tomorrow.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00078",
-     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
-     "attributed": true,
-     "text": "We are expanding the National Quantum Safe Network with dedicated QKD fibre, yet have no PQC migration deadline.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Quantum budget and Grok images",
-   "summary": "A question asks when Singapore will set a PQC migration deadline and how the quantum safe budget splits between QKD and PQC; IMDA engaged with X over Grok's non consensual intimate images.",
+   "summary": "A question asks about quantum safe budget split and a PQC migration deadline, and IMDA engaged X over Grok's non consensual intimate images.",
    "sentences": [
     {
-     "sid": "s00082",
+     "sid": "s00126",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "Will the Minister disclose how the quantum safe budget breaks down between QKD and PQC, and when Singapore will set a PQC migration deadline?",
      "added_for_context": false
     },
     {
-     "sid": "s00084",
+     "sid": "s00128",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "The Infocomm Media Development Authority (IMDA) has been engaging with X over Grok's generation of non consensual intimate images that were distributed en masse on the X platform.",
      "added_for_context": false
     },
     {
-     "sid": "s00085",
+     "sid": "s00129",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "IMDA said that X has taken measures to address the issue, including stopping Grok from producing such content.",
@@ -155,31 +228,31 @@
    ]
   },
   {
-   "label": "Addictive social media design",
-   "summary": "Infinite scroll, autoplay videos and algorithmic feeds are attention-capture dark patterns exploiting children's developing brains, and the European Commission preliminarily found TikTok's addictive design a legal violation.",
+   "label": "TikTok addictive design finding",
+   "summary": "The European Commission preliminarily found TikTok's addictive design a legal violation, and TikTok is designated under Singapore's code of practice.",
    "sentences": [
     {
-     "sid": "s00102",
-     "speaker": "Ms He Ting Ru (Sengkang)",
-     "attributed": true,
-     "text": "On social media platforms, infinite scroll, autoplay videos and algorithmic feeds are attention-capture dark patterns designed to maximise engagement by exploiting reward-seeking and eroding self-regulation in children whose brains are still developing.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00103",
+     "sid": "s00147",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "Last month, the European Commission made a preliminary finding that TikTok's addictive design itself is a legal violation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00148",
+     "speaker": "Ms He Ting Ru (Sengkang)",
+     "attributed": true,
+     "text": "TikTok is designated under our own code of practice, and the commission found that its screen time tools and parental controls do not effectively address these risks.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Code of practice design risk assessment",
+   "label": "Code design risk assessment",
    "summary": "A question asks whether the code of practice requires designated services to submit a design risk assessment covering recommendation systems, auto play and scroll architecture.",
    "sentences": [
     {
-     "sid": "s00108",
+     "sid": "s00152",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "One, does the code of practice require designated services to submit a design risk assessment, covering recommendation systems, auto play and scroll architecture?",
@@ -188,39 +261,39 @@
    ]
   },
   {
-   "label": "AI videos on leadership",
-   "summary": "Publicly indefensible positions should not be undertaken and decisions must stand to public scrutiny; a 5 February Lianhe Zaobao article documented AI-generated videos claiming Prime Minister Lawrence Wong is being forced out.",
+   "label": "AI videos on Lawrence Wong",
+   "summary": "A Lianhe Zaobao article documented AI-generated videos claiming Prime Minister Lawrence Wong is being forced out amid internal power struggles.",
    "sentences": [
     {
-     "sid": "s00125",
+     "sid": "s00169",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "Publicly indefensible positions and actions should not be undertaken.",
      "added_for_context": true
     },
     {
-     "sid": "s00126",
+     "sid": "s00170",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "Therefore, these decisions must be ready to stand to public scrutiny at any time.",
      "added_for_context": false
     },
     {
-     "sid": "s00127",
+     "sid": "s00171",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "Knowledge of this possibility encourages greater prudence and responsibility.",
      "added_for_context": false
     },
     {
-     "sid": "s00128",
+     "sid": "s00172",
      "speaker": "Mr Fadli Fawzi (Aljunied)",
      "attributed": true,
      "text": "A 5 February article in Lianhe Zaobao documented a surge of sensational videos claiming that Prime Minister Lawrence Wong is being forced out and that intense internal power struggles are unfolding.",
      "added_for_context": true
     },
     {
-     "sid": "s00129",
+     "sid": "s00173",
      "speaker": "Mr Fadli Fawzi (Aljunied)",
      "attributed": true,
      "text": "These videos are entirely generated using AI within minutes, at a cost reportedly as low as US$1 or US$2 per 20-minute video.",
@@ -229,11 +302,11 @@
    ]
   },
   {
-   "label": "POFMA and AI misinformation videos",
-   "summary": "Asks why POFMA was not used against those behind AI-generated misinformation videos.",
+   "label": "POFMA use against videos",
+   "summary": "A question asks why POFMA was not used against those behind the AI-generated videos, given the scale and sophistication of AI misinformation.",
    "sentences": [
     {
-     "sid": "s00133",
+     "sid": "s00177",
      "speaker": "Mr Fadli Fawzi (Aljunied)",
      "attributed": true,
      "text": "Given the scale and sophistication of AI-generated misinformation, why was the Protection from Online Falsehoods and Manipulation Act (POFMA) not used against those behind these videos?",
@@ -242,24 +315,24 @@
    ]
   },
   {
-   "label": "Albatross File declassification",
-   "summary": "States the Albatross File declassification shows why a Freedom of Information Act and automatic declassification are necessary.",
+   "label": "Media literacy for seniors",
+   "summary": "A question asks what structured long-term programmes the Ministry will develop to strengthen media literacy and critical thinking, especially among seniors.",
    "sentences": [
     {
-     "sid": "s00148",
+     "sid": "s00180",
      "speaker": "Mr Fadli Fawzi (Aljunied)",
      "attributed": true,
-     "text": "The recent declassification of the Albatross File illustrates why a Freedom of Information Act and automatic declassification is necessary.",
+     "text": "What structured long-term programmes will the Ministry develop to strengthen media literacy and critical thinking, especially among vulnerable populations such as seniors?",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Automatic declassification after 25 years",
-   "summary": "Says government data and records informing public debate should be automatically declassified after 25 years, subject to national security concerns.",
+   "summary": "Government data that could inform public debate should be automatically declassified and made public after 25 years, subject to national security concerns.",
    "sentences": [
     {
-     "sid": "s00152",
+     "sid": "s00196",
      "speaker": "Mr Fadli Fawzi (Aljunied)",
      "attributed": true,
      "text": "Any data or records held by the Government that could inform public debate should also be automatically declassified and made available to the public after 25 years, subject of course to legitimate national security concerns.",
@@ -268,11 +341,11 @@
    ]
   },
   {
-   "label": "Shifting burden of proof",
-   "summary": "States a Freedom of Information Act and automatic declassification would shift the burden of proof from citizens to the Government.",
+   "label": "Freedom of Information Act burden shift",
+   "summary": "A Freedom of Information Act and automatic declassification would shift the burden of proof from citizens to the Government.",
    "sentences": [
     {
-     "sid": "s00156",
+     "sid": "s00200",
      "speaker": "Mr Fadli Fawzi (Aljunied)",
      "attributed": true,
      "text": "A Freedom of Information Act and automatic declassification would shift the burden of proof from citizens to the Government.",
@@ -281,11 +354,18 @@
    ]
   },
   {
-   "label": "Employers survey on AI hiring",
-   "summary": "States that in a survey of 250 local employers, 80% acknowledged AI has already reduced their entry-level hiring.",
+   "label": "AI impact on graduate hiring",
+   "summary": "A survey of 250 local employers found 80% acknowledged AI has already reduced their entry-level hiring.",
    "sentences": [
     {
-     "sid": "s00187",
+     "sid": "s00230",
+     "speaker": "Mr Abdul Muhaimin Abdul Malik (Sengkang)",
+     "attributed": true,
+     "text": "In this context, I am concerned about how today's fresh graduates are already being impacted, and the long-term compounding implications this has on our national talent pipeline.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00231",
      "speaker": "Mr Abdul Muhaimin Abdul Malik (Sengkang)",
      "attributed": true,
      "text": "In a survey of 250 local employers, 80% acknowledged that AI has already reduced their entry-level hiring.",
@@ -294,25 +374,18 @@
    ]
   },
   {
-   "label": "Conditions for AI subsidy schemes",
-   "summary": "Suggests two conditions for AI-related roles and subsidy schemes, including structured declarations on AI's impact on HR decisions.",
+   "label": "Declaration on AI HR impact",
+   "summary": "Companies should be required to submit a structured declaration detailing how AI transformation efforts are expected to impact HR decisions, particularly entry-level roles.",
    "sentences": [
     {
-     "sid": "s00190",
-     "speaker": "Mr Abdul Muhaimin Abdul Malik (Sengkang)",
-     "attributed": true,
-     "text": "From the Enterprise Innovation Scheme to the Productivity Solutions Grant, in exchange for the Government's support, stronger guardrails need to be established to prevent this support from accelerating the displacement of entry-level ones.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00191",
+     "sid": "s00235",
      "speaker": "Mr Abdul Muhaimin Abdul Malik (Sengkang)",
      "attributed": true,
      "text": "Broadly, I suggest two conditions to be added for all AI-related roles and subsidy schemes.",
      "added_for_context": false
     },
     {
-     "sid": "s00192",
+     "sid": "s00236",
      "speaker": "Mr Abdul Muhaimin Abdul Malik (Sengkang)",
      "attributed": true,
      "text": "First, at the minimum, companies should be required to submit a structured declaration detailing how their AI transformation efforts are expected to impact HR decisions, particularly for entry-level roles.",
@@ -321,11 +394,11 @@
    ]
   },
   {
-   "label": "Entry-level roles and development",
-   "summary": "Companies should commit to sustained entry-level roles and structured development opportunities for entry-level staff.",
+   "label": "Commitment to entry-level roles",
+   "summary": "Companies should be required to commit to a sustained level of entry-level roles and ensure structured development opportunities for entry level highest.",
    "sentences": [
     {
-     "sid": "s00195",
+     "sid": "s00239",
      "speaker": "Mr Abdul Muhaimin Abdul Malik (Sengkang)",
      "attributed": true,
      "text": "Second, companies should be required to commit to a sustained level of entry-level roles and ensure structured development opportunities for entry level highest.",
@@ -335,10 +408,10 @@
   },
   {
    "label": "Defining AI and automation expenditure",
-   "summary": "MDDI is asked whether it would work with MTI and other agencies to define AI and automation expenditure clearly in operational terms.",
+   "summary": "MDDI should work with MTI and other agencies to ensure AI and automation expenditure is defined clearly in operational terms.",
    "sentences": [
     {
-     "sid": "s00209",
+     "sid": "s00253",
      "speaker": "Mr Mark Lee (Nominated Member)",
      "attributed": true,
      "text": "Would MDDI work with MTI and other agencies to ensure that \"AI and automation expenditure\" is defined clearly in operational terms?",
@@ -347,11 +420,11 @@
    ]
   },
   {
-   "label": "Upfront support and performance-linked incentives",
-   "summary": "The Government is asked to consider strengthening upfront support and introducing performance-linked incentives of up to 80% to 90% of qualifying transformation costs.",
+   "label": "Upfront support and performance incentives",
+   "summary": "Asks whether the Government would consider stronger upfront support and performance-linked incentives of up to 80% to 90% of qualifying transformation costs.",
    "sentences": [
     {
-     "sid": "s00214",
+     "sid": "s00258",
      "speaker": "Mr Mark Lee (Nominated Member)",
      "attributed": true,
      "text": "Would the Government consider strengthening upfront support to meaningfully reduce early-stage exposure, and then introduce performance-linked incentives where firms that demonstrate sustained productivity gains receive enhanced support, potentially up to 80% to 90% of qualifying transformation costs?",
@@ -361,10 +434,10 @@
   },
   {
    "label": "Unified communication architecture for enterprises",
-   "summary": "MDDI is asked to consider strengthening a unified communication architecture so enterprises see one coherent transformation pathway rather than multiple agencies.",
+   "summary": "Asks whether MDDI would consider strengthening a unified communication architecture so enterprises see one coherent transformation pathway.",
    "sentences": [
     {
-     "sid": "s00223",
+     "sid": "s00267",
      "speaker": "Mr Mark Lee (Nominated Member)",
      "attributed": true,
      "text": "Would MDDI consider strengthening a unified communication architecture, so enterprises see one coherent transformation pathway, rather than through multiple agencies?",
@@ -374,10 +447,10 @@
   },
   {
    "label": "National AI Council and Missions",
-   "summary": "Budget 2026 sets a direction of a National AI Council chaired by the Prime Minister and national AI Missions across four sectors.",
+   "summary": "Budget 2026 sets a direction of a National AI Council chaired by the Prime Minister and national AI Missions.",
    "sentences": [
     {
-     "sid": "s00233",
+     "sid": "s00277",
      "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
      "attributed": true,
      "text": "Budget 2026 sets a clear direction: a National AI Council chaired by the Prime Minister and national AI Missions to drive real outcomes across advanced manufacturing, connectivity, finance and healthcare.",
@@ -390,7 +463,7 @@
    "summary": "Budget measures such as expanding the Enterprise Innovation Scheme to support qualifying AI expenditures can spur uptake.",
    "sentences": [
     {
-     "sid": "s00236",
+     "sid": "s00280",
      "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
      "attributed": true,
      "text": "Budget measures, such as expanding the Enterprise Innovation Scheme to support qualifying AI expenditures can spur uptake.",
@@ -399,51 +472,63 @@
    ]
   },
   {
-   "label": "Workforce AI training plans",
-   "summary": "The Ministry is asked about plans to equip the workforce with AI skills, tie training to productivity and business outcomes, and encourage employer buy-in.",
+   "label": "Youths concerned about AI displacement",
+   "summary": "Young professionals and youths preparing for their first jobs are concerned their jobs will be displaced by AI.",
    "sentences": [
     {
-     "sid": "s00260",
+     "sid": "s00295",
+     "speaker": "Ms Cassandra Lee (West Coast-Jurong West)",
+     "attributed": true,
+     "text": "On displacement, young professionals and youths preparing for their first jobs are concerned that their jobs will be displaced by AI.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Time-poor workforce upskilling",
+   "summary": "Many in the workforce are willing to upskill but are time-poor.",
+   "sentences": [
+    {
+     "sid": "s00300",
+     "speaker": "Ms Cassandra Lee (West Coast-Jurong West)",
+     "attributed": true,
+     "text": "Many of those in the workforce are willing to upskill but they are time-poor.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Workforce AI skills plans",
+   "summary": "The Ministry is asked about its plans to equip the workforce with confidence and skills to use AI in their domain expertise.",
+   "sentences": [
+    {
+     "sid": "s00304",
      "speaker": "Ms Cassandra Lee (West Coast-Jurong West)",
      "attributed": true,
      "text": "What are the Ministry's plans to equip the workforce with the relevant confidence and skills needed to leverage AI in their respective domain expertise?",
      "added_for_context": false
-    },
-    {
-     "sid": "s00261",
-     "speaker": "Ms Cassandra Lee (West Coast-Jurong West)",
-     "attributed": true,
-     "text": "What are the Ministry's plans to ensure that workforce training can be closely tied to improved productivity and business outcomes?",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00262",
-     "speaker": "Ms Cassandra Lee (West Coast-Jurong West)",
-     "attributed": true,
-     "text": "What are the Ministry's plans to encourage greater employer buy-in and support to facilitate employee training?",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Reducing SME AI uncertainty",
-   "summary": "The question asks how the Ministry will reduce uncertainty for SMEs adopting AI.",
+   "label": "SMEs employ most workers",
+   "summary": "SMEs employ the majority of the workforce, with nearly half in small and micro enterprises.",
    "sentences": [
     {
-     "sid": "s00270",
+     "sid": "s00310",
      "speaker": "Ms Cassandra Lee (West Coast-Jurong West)",
      "attributed": true,
-     "text": "In particular, I ask: how will the Ministry reduce uncertainty for SMEs adopting AI?",
+     "text": "As we all know, SMEs employ the majority of our workforce, with nearly half in small and micro enterprises.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Champions of AI coordination",
+   "label": "Champions of AI alongside schemes",
    "summary": "The question asks how the Champions of AI programme will sit alongside the Enterprise Innovation Scheme and Productivity Solutions Grant, which are run by different statutory boards and Ministries.",
    "sentences": [
     {
-     "sid": "s00273",
+     "sid": "s00317",
      "speaker": "Ms Cassandra Lee (West Coast-Jurong West)",
      "attributed": true,
      "text": "How will the Champions of AI programme sit alongside schemes like the Enterprise Innovation Scheme and the Productivity Solutions Grant, given that they are administered by different statutory boards under different Ministries?",
@@ -453,24 +538,24 @@
   },
   {
    "label": "IT firms and AI know-how",
-   "summary": "The question asks whether MDDI can work with top AI firms and hyperscalers to transfer know-how to local IT services firms, and whether GovTech can adopt these approaches and require Government IT service companies to do the same.",
+   "summary": "The passage asks whether MDDI can work with top AI firms and hyperscalers to transfer know-hows to local firms, and whether GovTech can embrace these approaches and require IT service companies in Government work to do the same.",
    "sentences": [
     {
-     "sid": "s00281",
+     "sid": "s00325",
      "speaker": "Mr Kwek Hian Chuan Henry (Kebun Baru)",
      "attributed": true,
      "text": "Singapore's IT services firms are the delivery layer between our national AI strategy and real-world outcomes.",
      "added_for_context": false
     },
     {
-     "sid": "s00283",
+     "sid": "s00327",
      "speaker": "Mr Kwek Hian Chuan Henry (Kebun Baru)",
      "attributed": true,
      "text": "Can MDDI work with the top AI firms and hyperscalers already based here to transfer such know-hows to our local firms?",
      "added_for_context": false
     },
     {
-     "sid": "s00285",
+     "sid": "s00329",
      "speaker": "Mr Kwek Hian Chuan Henry (Kebun Baru)",
      "attributed": true,
      "text": "Can the Government Technology Agency of Singapore (GovTech) also move quickly to embrace these approaches, while adhering to cybersecurity and regulatory requirements, and progressively require IT service companies involved in Government work to do the same?",
@@ -483,7 +568,7 @@
    "summary": "Public Service Media face significant headwinds: declining circulation in a fragmented media space, a rapidly evolving advertising model and growing disinformation from overseas.",
    "sentences": [
     {
-     "sid": "s00290",
+     "sid": "s00334",
      "speaker": "Mr Kwek Hian Chuan Henry (Kebun Baru)",
      "attributed": true,
      "text": "Yet, our Public Service Media face significant headwinds, declining circulation in a fragmented media space, a rapidly evolving advertising model and growing disinformation from overseas.",
@@ -492,24 +577,24 @@
    ]
   },
   {
-   "label": "Public Service Media financial viability",
-   "summary": "The question asks how it helps Public Service Media stay financially viable so similar painful restructuring can be forestalled here.",
+   "label": "Local content and algorithms",
+   "summary": "The question asks whether the same can be done so that local content quality is not buried by algorithms favouring overseas programming.",
    "sentences": [
     {
-     "sid": "s00294",
+     "sid": "s00345",
      "speaker": "Mr Kwek Hian Chuan Henry (Kebun Baru)",
      "attributed": true,
-     "text": "How does it do so to help them stay financially viable, so we can forestall similar painful restructuring here?",
+     "text": "Can we do the same, so that the quality of local content is not buried by algorithms favouring overseas programming?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Fake reports about Lee and Wong",
-   "summary": "The passage states that many people read fake online reports claiming Senior Minister Lee publicly disagreed with Prime Minister Wong.",
+   "label": "Fake reports about leaders",
+   "summary": "Many people read fake online reports claiming Senior Minister Lee publicly disagreed with Prime Minister Wong.",
    "sentences": [
     {
-     "sid": "s00309",
+     "sid": "s00353",
      "speaker": "Ms Tin Pei Ling (Marine Parade-Braddell Heights)",
      "attributed": true,
      "text": "Most recently, many of us would have read about the fake reports online claiming that Senior Minister Lee publicly disagreed with Prime Minister Wong.",
@@ -518,38 +603,45 @@
    ]
   },
   {
-   "label": "AI worsening threat to infrastructure",
-   "summary": "AI worsens the threat because it can generate convincing content at scale, iterate rapidly and probe critical information infrastructure.",
+   "label": "AI threat and Public Service Media",
+   "summary": "AI worsens the threat by generating convincing content at scale and probing critical information infrastructure, and the question asks how Government will strengthen Public Service Media against fake news.",
    "sentences": [
     {
-     "sid": "s00312",
+     "sid": "s00356",
      "speaker": "Ms Tin Pei Ling (Marine Parade-Braddell Heights)",
      "attributed": true,
      "text": "AI worsens the threat because it can generate convincing content at scale, iterate rapidly and be used to probe and undermine our critical information infrastructure.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00358",
+     "speaker": "Ms Tin Pei Ling (Marine Parade-Braddell Heights)",
+     "attributed": true,
+     "text": "First, how will the Government support and strengthen our Public Service Media so it can more effectively in countering fake news and misinformation in an increasingly noisy information environment?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Singapore AI governance and global role",
-   "summary": "The passage asks what more the Government will do on global AI governance, standards, certification, coordination and capacity building, building on Singapore's frameworks.",
+   "label": "Singapore global AI governance role",
+   "summary": "Singapore led with the Model AI Governance Framework and work on Generative and Agentic AI, and the question asks what more Government will do on global AI governance.",
    "sentences": [
     {
-     "sid": "s00325",
+     "sid": "s00369",
      "speaker": "Ms Tin Pei Ling (Marine Parade-Braddell Heights)",
      "attributed": true,
      "text": "Singapore has led with the Model AI Governance Framework of January 2019, a world first, and followed up with work on Generative and Agentic AI.",
      "added_for_context": false
     },
     {
-     "sid": "s00327",
+     "sid": "s00371",
      "speaker": "Ms Tin Pei Ling (Marine Parade-Braddell Heights)",
      "attributed": true,
      "text": "Internationally, we could forge norms that prevent regulatory arbitrage and ensure cross‑border accountability.",
      "added_for_context": true
     },
     {
-     "sid": "s00328",
+     "sid": "s00372",
      "speaker": "Ms Tin Pei Ling (Marine Parade-Braddell Heights)",
      "attributed": true,
      "text": "Hence, building on existing frameworks, what more will the Government do to strengthen Singapore's role in global AI governance, standards, certification, international coordination and capacity building, to preserve human agency while responsibly constraining AI agency?",
@@ -559,31 +651,31 @@
   },
   {
    "label": "Four AI safety proposals",
-   "summary": "The passage proposes a national AI safety curriculum, AI-specific online harms under the OSC, a public-private anti-scam taskforce and community digital safety ambassadors.",
+   "summary": "Four proposals: a national AI safety curriculum, OSC incorporating AI-specific risks, a public-private AI anti-scam taskforce, and community-based digital safety ambassadors.",
    "sentences": [
     {
-     "sid": "s00339",
+     "sid": "s00383",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "One, introduce a national AI safety curriculum across digital literacy programmes for different age groups and life stages.",
      "added_for_context": false
     },
     {
-     "sid": "s00340",
+     "sid": "s00384",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "Two, the Online Safety Commission (OSC) can incorporate AI-specific risks into its categories of online harms by recognising AI-generated impersonations such as deepfakes and mass production of inauthentic materials to enable victims to seek timely remedies.",
      "added_for_context": false
     },
     {
-     "sid": "s00341",
+     "sid": "s00385",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "Three, establish a public-private AI anti-scam taskforce to stay ahead of evolving threats and coordinate responses.",
      "added_for_context": false
     },
     {
-     "sid": "s00342",
+     "sid": "s00386",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "Four, leveraging the base of Digital Ambassadors, develop a network of community-based digital safety ambassadors focused on AI risks in senior activity centres, schools and social service settings.",
@@ -592,18 +684,18 @@
    ]
   },
   {
-   "label": "Targeted rules for high-risk AI",
-   "summary": "The passage states frontier AI models pose a different category of risk and argues for targeted requirements for high-risk or high-impact AI systems.",
+   "label": "Targeted rules for frontier AI",
+   "summary": "Frontier AI models pose a different category of risk, so Singapore should move toward targeted requirements for high-risk or high-impact AI systems rather than broad, one-size-fits-all.",
    "sentences": [
     {
-     "sid": "s00356",
+     "sid": "s00400",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "And frontier AI models, the most powerful and unpredictable, pose a different category of risk altogether.",
      "added_for_context": true
     },
     {
-     "sid": "s00357",
+     "sid": "s00401",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "That is why I believe Singapore should move toward targeted requirements for high‑risk or high‑impact AI systems rather than broad, one‑size‑fits‑all.",
@@ -612,39 +704,46 @@
    ]
   },
   {
-   "label": "SMEs, workers and AI adoption",
-   "summary": "The passage asks how SMEs can tap champions for governance support and sets out worker skill maps, training, Budget investment and cyber resilience support.",
+   "label": "SME AI adoption and workforce support",
+   "summary": "The passage asks how SMEs can tap champions for governance support and sets out role-specific skill maps, training, and Budget and Cyber Resilience Centre support for AI adoption.",
    "sentences": [
     {
-     "sid": "s00377",
+     "sid": "s00421",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "Can MDDI share how SMEs can tap these champions for governance support, workflow redesign and to fully leverage national compute and enterprise schemes?",
      "added_for_context": false
     },
     {
-     "sid": "s00379",
+     "sid": "s00422",
+     "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
+     "attributed": true,
+     "text": "The workforce transformation roadmaps must go beyond broad skills.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00423",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "Workers need role‑specific skill maps to show how tasks will change with AI, clear pathways to move from today's roles to tomorrow's AI‑enabled, and hands‑on training tied to tools that SMEs are actually adopting.",
      "added_for_context": false
     },
     {
-     "sid": "s00380",
+     "sid": "s00424",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "When workers see how AI makes work easier and raises productivity, adoption becomes natural.",
      "added_for_context": true
     },
     {
-     "sid": "s00381",
+     "sid": "s00425",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "I welcome the Budget's investment in local AI developers and testbeds and the role of Government procurement in helping them scale.",
      "added_for_context": false
     },
     {
-     "sid": "s00382",
+     "sid": "s00426",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "And as AI becomes more embedded in operations, the new Cyber Resilience Centre and enhanced SME support will give businesses the confidence to adopt AI safely.",
@@ -653,32 +752,32 @@
    ]
   },
   {
-   "label": "National AI Impact Programme for SMEs",
-   "summary": "MDDI is creating the National AI Impact Programme, aiming to support 10,000 local enterprises to integrate AI over three years.",
+   "label": "National AI Impact Programme",
+   "summary": "MDDI is creating the National AI Impact Programme, which aims to support 10,000 local enterprises to integrate AI over three years.",
    "sentences": [
     {
-     "sid": "s00417",
+     "sid": "s00462",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "At stake are our entrepreneurs' hopes and dreams, workers' livelihoods and their communities' progress.",
      "added_for_context": true
     },
     {
-     "sid": "s00418",
+     "sid": "s00463",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
-     "text": "This is why MDDI is creating the National AI Impact Programme – to turn AI's possibilities into reality for the many, not the few.",
+     "text": "This is why MDDI is creating the National AI Impact Programme – to turn AI's possibilities into reality for the many, not the few.",
      "added_for_context": false
     },
     {
-     "sid": "s00419",
+     "sid": "s00464",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "Today, 15% of SMEs and about seven in 10 workers use AI in some way.",
      "added_for_context": false
     },
     {
-     "sid": "s00421",
+     "sid": "s00466",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "Over the next three years, the National AI Impact Programme aims to support 10,000 local enterprises to integrate AI into their business processes.",
@@ -691,21 +790,21 @@
    "summary": "Peak sales rose 30%, and AI tools make up 30% of digital solutions on IMDA's SMEs Go Digital platform.",
    "sentences": [
     {
-     "sid": "s00428",
+     "sid": "s00473",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "As a result, peak sales went up by 30%.",
      "added_for_context": false
     },
     {
-     "sid": "s00429",
+     "sid": "s00474",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "There are now many AI tools that improve business operations in simple, effective ways.",
      "added_for_context": true
     },
     {
-     "sid": "s00430",
+     "sid": "s00475",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "They make up 30% of the digital solutions on IMDA's SMEs Go Digital platform today.",
@@ -714,11 +813,11 @@
    ]
   },
   {
-   "label": "Mocha Chai GenAI sound tool",
-   "summary": "After IMDA's Digital Leaders Programme, Mocha Chai built a GenAI tool generating sound effects, cutting weeks of work to a day.",
+   "label": "Mocha Chai GenAI tool",
+   "summary": "After IMDA's Digital Leaders Programme, Mocha Chai created a GenAI tool that generates sound effects, cutting weeks of work to a day.",
    "sentences": [
     {
-     "sid": "s00439",
+     "sid": "s00484",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "After joining IMDA's Digital Leaders Programme and building up their tech capabilities, Mocha Chai created a new GenAI tool that analyses video footage and automatically generates matching sound effects, reducing weeks of work to just a day.",
@@ -727,18 +826,18 @@
    ]
   },
   {
-   "label": "Digital Leaders Accelerator Bootcamp launch",
-   "summary": "MDDI is enhancing the Digital Leaders Programme and launching a Digital Leaders Accelerator Bootcamp for change management skills and confidence.",
+   "label": "Digital Leaders Accelerator Bootcamp",
+   "summary": "IMDA is enhancing the Digital Leaders Programme and launching a Digital Leaders Accelerator Bootcamp to build skills and confidence in change management.",
    "sentences": [
     {
-     "sid": "s00444",
+     "sid": "s00489",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "Often, the technology is ready, but people are not.",
      "added_for_context": true
     },
     {
-     "sid": "s00445",
+     "sid": "s00490",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "This is why we are enhancing the Digital Leaders Programme and launching a new Digital Leaders Accelerator Bootcamp to build skills and confidence in change management and not just tech capabilities.",
@@ -747,11 +846,11 @@
    ]
   },
   {
-   "label": "Supporting 100,000 AI bilingual workers",
+   "label": "Supporting AI bilingual workers",
    "summary": "The Government will support 100,000 workers to become AI bilingual.",
    "sentences": [
     {
-     "sid": "s00463",
+     "sid": "s00508",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "For a start, the Government will support 100,000 workers to become AI bilingual.",
@@ -760,11 +859,11 @@
    ]
   },
   {
-   "label": "Expanding TeSA for AI bilingual workers",
-   "summary": "IMDA will work with agencies and professional bodies to expand TeSA and develop AI bilingual workers in key domains.",
+   "label": "Expanding TeSA programme",
+   "summary": "IMDA will work with agencies and professional bodies to expand its TeSA programme to develop AI bilingual workers in key domains.",
    "sentences": [
     {
-     "sid": "s00466",
+     "sid": "s00511",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "IMDA will work with relevant agencies and professional bodies to expand its TeSA programme, to develop AI bilingual workers in key domains.",
@@ -777,7 +876,7 @@
    "summary": "A new Model Governance Framework for Agentic AI will help organisations manage systems that act with greater independence while ensuring human oversight.",
    "sentences": [
     {
-     "sid": "s00473",
+     "sid": "s00518",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "Our new Model Governance Framework for Agentic AI will help organisations manage systems that can act with greater independence, while ensuring human oversight.",
@@ -786,41 +885,41 @@
    ]
   },
   {
-   "label": "Cybersecurity plans for CII owners",
+   "label": "Singapore chairmanship of UN working group",
+   "summary": "Singapore recently concluded its chairmanship of the Second UN Open-Ended Working Group on security of and in the use of info-comm technologies.",
+   "sentences": [
+    {
+     "sid": "s00529",
+     "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
+     "attributed": true,
+     "text": "On the diplomatic front, Singapore recently concluded our chairmanship of the Second UN Open-Ended Working Group on security of and in the use of info-comm technologies.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Review of cybersecurity standards and tools",
    "summary": "Cybersecurity standards and requirements for CII owners will be reviewed, advanced tools provided, and workforce capabilities built with partners.",
    "sentences": [
     {
-     "sid": "s00489",
+     "sid": "s00534",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "First, we will review our cybersecurity standards and requirements for CII owners.",
      "added_for_context": false
     },
     {
-     "sid": "s00490",
+     "sid": "s00535",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "Second, we will provide CII owners with advanced tools, so that they are equipped to deal with advanced threats and.",
      "added_for_context": false
     },
     {
-     "sid": "s00491",
+     "sid": "s00536",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "Third, we will work with partners to build up capabilities in our cybersecurity workforce.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Public Service Media reach",
-   "summary": "Public Service Media entities reach over 90% of Singaporeans.",
-   "sentences": [
-    {
-     "sid": "s00499",
-     "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
-     "attributed": true,
-     "text": "Our Public Service Media entities reach over 90% of Singaporeans.",
      "added_for_context": false
     }
    ]
@@ -830,7 +929,7 @@
    "summary": "CNA will set up a digital verification team.",
    "sentences": [
     {
-     "sid": "s00503",
+     "sid": "s00548",
      "speaker": "The Minister for Digital Development and Information (Mrs Josephine Teo)",
      "attributed": true,
      "text": "For example, CNA will set up a digital verification team.",
@@ -839,11 +938,11 @@
    ]
   },
   {
-   "label": "Review of cybersecurity standards scope",
-   "summary": "CSA is reviewing the scope of current cybersecurity standards and obligations and may include non-CII systems interconnected with CII systems.",
+   "label": "CSA review of cybersecurity standards scope",
+   "summary": "CSA is reviewing the scope of current cybersecurity standards and obligations and may include non-CII systems such as networks interconnected with CII systems.",
    "sentences": [
     {
-     "sid": "s00519",
+     "sid": "s00564",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
      "text": "CSA is therefore reviewing the scope of the current cybersecurity standards and obligations, and may include non-CII systems, such as networks that are interconnected with the CII systems.",
@@ -853,10 +952,10 @@
   },
   {
    "label": "IMDA enhancing telecommunications cybersecurity regulations",
-   "summary": "IMDA will be enhancing its cybersecurity regulations for telecommunications operators given recent waves of attacks.",
+   "summary": "IMDA will be enhancing its cybersecurity regulations for telecommunications operators given the recent waves of attacks.",
    "sentences": [
     {
-     "sid": "s00522",
+     "sid": "s00567",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
      "text": "For example, IMDA will be enhancing its cybersecurity regulations for the telecommunications operators, given the recent waves of attacks.",
@@ -865,65 +964,52 @@
    ]
   },
   {
-   "label": "Helping CII owners fight APTs",
-   "summary": "CSA will share classified threat intelligence and deploy proprietary threat detection tools to CII owners to help them detect and respond to APTs.",
+   "label": "Sharing government expertise with CII owners",
+   "summary": "The Government will share classified threat intelligence and proprietary threat detection systems with CII owners to help them counter APTs.",
    "sentences": [
     {
-     "sid": "s00541",
+     "sid": "s00584",
+     "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
+     "attributed": true,
+     "text": "Typically, national security is the exclusive domain of governments, such as developing cutting-edge technological systems and training skilled operators to deal with various threat scenarios.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00585",
+     "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
+     "attributed": true,
+     "text": "We have decided to avail some of the Government’s expertise to the private sector, to level the playing field between the defenders and the attackers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00586",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
      "text": "We will help our CII owners “level up” and hold their own in a fight against APTs.",
      "added_for_context": true
     },
     {
-     "sid": "s00542",
+     "sid": "s00587",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
      "text": "We will selectively share classified threat intelligence with our CII owners so that they are better able to spot and respond swiftly to threats that are attacking their systems.",
      "added_for_context": false
     },
     {
-     "sid": "s00543",
+     "sid": "s00588",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
      "text": "We will equip CII owners with proprietary threat detection systems to strengthen their abilities to detect malicious activities in their networks, especially those of state-sponsored APTs.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00544",
-     "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
-     "attributed": true,
-     "text": "These proprietary tools complement commercial threat detection systems used by our CII owners today.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00545",
-     "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
-     "attributed": true,
-     "text": "We have started deploying these tools in selected CII owners and will progressively deploy them across the rest.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "More Leadership Programme runs",
-   "summary": "CSA will conduct more runs of the Leadership Programme over the next few years following positive participant feedback.",
+   "label": "Minimum cybersecurity requirements for routers",
+   "summary": "CSA and IMDA intend to raise minimum cybersecurity requirements for all routers sold in Singapore to CLS Level 2.",
    "sentences": [
     {
-     "sid": "s00561",
-     "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
-     "attributed": true,
-     "text": "In view of the participants' positive feedback, CSA will conduct more runs of the Leadership Programme over the next few years.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Raising router cybersecurity requirements",
-   "summary": "CSA and IMDA intend to raise minimum cybersecurity requirements for all routers sold in Singapore to CLS Level 2 equivalent.",
-   "sentences": [
-    {
-     "sid": "s00576",
+     "sid": "s00621",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
      "text": "CSA and IMDA therefore intend to raise the minimum cybersecurity requirements for all routers sold in Singapore to the equivalent of CLS Level 2.",
@@ -932,11 +1018,11 @@
    ]
   },
   {
-   "label": "IP cameras CLS Level 2",
-   "summary": "CSA will explore requiring IP cameras to meet CLS Level 2, similar to home routers, to better protect citizens.",
+   "label": "IP camera cybersecurity requirements",
+   "summary": "CSA will explore requiring IP cameras to meet CLS Level 2, similar to home routers.",
    "sentences": [
     {
-     "sid": "s00580",
+     "sid": "s00625",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
      "text": "To better protect citizens, CSA will explore requiring IP cameras to meet CLS Level 2, similar to home routers.",
@@ -945,11 +1031,11 @@
    ]
   },
   {
-   "label": "Cyber Trust Mark for vendors",
+   "label": "Cyber Trust Mark for government vendors",
    "summary": "GovTech will require Government vendors managing critical systems and sensitive government data to meet Cyber Trust Mark requirements.",
    "sentences": [
     {
-     "sid": "s00584",
+     "sid": "s00629",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
      "text": "GovTech will require Government vendors that manage critical systems and sensitive government data to meet Cyber Trust Mark requirements.",
@@ -958,14 +1044,34 @@
    ]
   },
   {
-   "label": "Quantum-Safe Handbook and Index",
-   "summary": "In October 2025, CSA released a Quantum-Safe Handbook and Quantum Readiness Index to raise awareness of associated risks.",
+   "label": "Progressive implementation over two years",
+   "summary": "Consultations with relevant stakeholders are ongoing and the measures will be implemented progressively over the next two years.",
    "sentences": [
     {
-     "sid": "s00598",
+     "sid": "s00632",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
-     "text": "In October 2025, CSA released a Quantum-Safe Handbook and Quantum Readiness Index to raise awareness of the associated risks.",
+     "text": "Consultations with relevant stakeholders are ongoing and these measures will be implemented progressively over the next two years.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Training and quantum-safe networks",
+   "summary": "The Government is working with industry experts on training and deploying two quantum-safe networks through the NQSN+ initiative.",
+   "sentences": [
+    {
+     "sid": "s00644",
+     "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
+     "attributed": true,
+     "text": "We are working with industry experts to better support organisations in their efforts, including through training.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00645",
+     "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
+     "attributed": true,
+     "text": "We are also deploying two quantum-safe networks nationwide through the National Quantum Safe Network Plus (NQSN+) initiative.",
      "added_for_context": false
     }
    ]
@@ -975,14 +1081,14 @@
    "summary": "Scribe is used in over 100 social service agencies and all public healthcare institutions, saving 36 minutes per conversation on documentation.",
    "sentences": [
     {
-     "sid": "s00638",
+     "sid": "s00683",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
      "text": "Scribe is now used in over 100 social service agencies and all public healthcare institutions.",
      "added_for_context": false
     },
     {
-     "sid": "s00639",
+     "sid": "s00684",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
      "text": "On average, 36 minutes are saved on documentation per conversation.",
@@ -992,17 +1098,17 @@
   },
   {
    "label": "Enhanced Vaping Information System launch",
-   "summary": "Their enhanced Vaping Information System went live in three weeks, while a system built from scratch would have taken months.",
+   "summary": "The enhanced Vaping Information System went live in three weeks, while a system built from scratch would have taken months.",
    "sentences": [
     {
-     "sid": "s00650",
+     "sid": "s00695",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
      "text": "By doing this, their enhanced Vaping Information System was live in just three weeks.",
      "added_for_context": false
     },
     {
-     "sid": "s00651",
+     "sid": "s00696",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
      "text": "A system built from scratch, would have taken months.",
@@ -1011,11 +1117,11 @@
    ]
   },
   {
-   "label": "GovTech piloting agentic AI coding tools",
+   "label": "GovTech agentic AI coding tools pilot",
    "summary": "GovTech is piloting agentic AI coding tools internally and plans to expand these capabilities across Government.",
    "sentences": [
     {
-     "sid": "s00659",
+     "sid": "s00704",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
      "text": "GovTech is also piloting agentic AI coding tools internally and plans to expand these capabilities across Government.",
@@ -1028,7 +1134,7 @@
    "summary": "Oobee has scanned over 1,600 websites since 2023.",
    "sentences": [
     {
-     "sid": "s00664",
+     "sid": "s00709",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
      "text": "Oobee has scanned over 1,600 websites since 2023.",
@@ -1037,51 +1143,31 @@
    ]
   },
   {
-   "label": "Scam protection and government calls",
-   "summary": "Steps taken include unifying Government SMS under the gov.sg sender ID, and OGP and IMDA are developing systems for agencies to make calls with a common prefix.",
+   "label": "SIM card limit and scam analytics",
+   "summary": "IMDA implemented a limit of 10 postpaid SIM cards per person across all telcos, and the Government will apply analytics to SIM card registration data to detect and disrupt scam activities.",
    "sentences": [
     {
-     "sid": "s00669",
-     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
-     "attributed": true,
-     "text": "Mr Sharael Taha asked about our efforts to protect citizens from scams.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00670",
-     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
-     "attributed": true,
-     "text": "We have already taken steps, for example, by unifying SMS messages from Government under the \"gov.sg\" sender ID.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00671",
-     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
-     "attributed": true,
-     "text": "For citizens to easily identify and trust calls from the Government, OGP and IMDA are developing systems for agencies to make calls with numbers that start with a common prefix.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Postpaid SIM card limit",
-   "summary": "IMDA, in consultation with the Singapore Police Force, recently implemented a limit of 10 postpaid SIM cards per person across all telcos.",
-   "sentences": [
-    {
-     "sid": "s00674",
+     "sid": "s00719",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
      "text": "To address this, IMDA, in consultation with the Singapore Police Force, recently implemented a limit of 10 postpaid SIM cards per person across all telcos.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00720",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
+     "attributed": true,
+     "text": "The Government will also apply analytics to SIM card registration data, within strict legal safeguards, to proactively detect and disrupt potential scam activities.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Institute of Digital Government",
+   "label": "Institute of Digital Government establishment",
    "summary": "MDDI will establish the Institute of Digital Government together with the Civil Service College.",
    "sentences": [
     {
-     "sid": "s00689",
+     "sid": "s00734",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
      "text": "MDDI will establish the Institute of Digital Government together with the Civil Service College.",
@@ -1090,79 +1176,92 @@
    ]
   },
   {
-   "label": "Nurse registration process streamlined",
-   "summary": "MDDI is rebuilding the Professional Registration System to automate checks, cutting foreign nurse registration from up to six months to 30 days.",
+   "label": "SupportGoWhere consolidates government schemes",
+   "summary": "The SupportGoWhere portal consolidates Government schemes across 31 agencies.",
    "sentences": [
     {
-     "sid": "s00717",
+     "sid": "s00753",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
+     "attributed": true,
+     "text": "Take the SupportGoWhere portal, which consolidates Government schemes across 31 agencies.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Streamlining healthcare professional registration",
+   "summary": "Processes are simplified and the Professional Registration System rebuilt, cutting foreign nurse registration from up to six months to 30 days.",
+   "sentences": [
+    {
+     "sid": "s00762",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
      "text": "Lengthy manual registration processes to bring in nurses can become a bottleneck that delays care.",
      "added_for_context": true
     },
     {
-     "sid": "s00718",
+     "sid": "s00763",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
      "text": "And that is why we are simplifying our processes and rebuilding the Professional Registration System to streamline and automate routine checks for our healthcare professionals.",
      "added_for_context": false
     },
     {
-     "sid": "s00719",
+     "sid": "s00764",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
      "text": "We have reduced processing time for foreign nurse registrations from up to six months to 30 days.",
      "added_for_context": false
     },
     {
-     "sid": "s00720",
+     "sid": "s00765",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
      "text": "For patients and families waiting for care, this can mean earlier treatment, earlier support and less anxiety.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00767",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
+     "attributed": true,
+     "text": "All of us working in Government must ask ourselves: if we are responsible for a policy, is it being delivered in the simplest way possible?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Singaporeans expect best digital experiences",
-   "summary": "Singaporeans increasingly compare government digital services to the best digital experiences in their daily lives, a standard MDDI must meet.",
+   "label": "Singaporeans compare digital experiences",
+   "summary": "Singaporeans increasingly compare Government to the best digital experiences in their daily lives, not just to other governments.",
    "sentences": [
     {
-     "sid": "s00727",
+     "sid": "s00772",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
      "attributed": true,
      "text": "Increasingly, Singaporeans compare us to the best digital experiences in their daily lives, not just to governments elsewhere.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00728",
-     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau)",
-     "attributed": true,
-     "text": "That is the standard and it is our responsibility to meet it.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Online Safety Commission established",
-   "summary": "Under the Online Safety (Relief and Accountability) Act, a new Online Safety Commission will be set up by the first half of this year.",
+   "summary": "The Online Safety (Relief and Accountability) Act establishes the Online Safety Commission, set up by the first half of this year, supporting victims of five online harms.",
    "sentences": [
     {
-     "sid": "s00737",
+     "sid": "s00782",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "As part of the Online Safety (Relief and Accountability) Act, we will establish a new agency, the Online Safety Commission (OSC).",
      "added_for_context": false
     },
     {
-     "sid": "s00738",
+     "sid": "s00783",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "The OSC will be set up by the first half of this year.",
      "added_for_context": false
     },
     {
-     "sid": "s00739",
+     "sid": "s00784",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "It will begin by supporting victims of five highly prevalent and severe online harms: online harassment; intimate image abuse; image-based child abuse; doxxing; and online stalking.",
@@ -1172,10 +1271,10 @@
   },
   {
    "label": "App store age assurance measures",
-   "summary": "From the end of this month, designated app stores must implement age assurance to stop under-18s accessing age-inappropriate apps.",
+   "summary": "From the end of this month, designated app stores must implement age assurance measures to prevent under-18 users accessing age-inappropriate apps.",
    "sentences": [
     {
-     "sid": "s00752",
+     "sid": "s00797",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "From the end of this month, designated app stores will have to implement age assurance measures to prevent users who are under 18 from accessing and downloading age-inappropriate apps.",
@@ -1184,11 +1283,11 @@
    ]
   },
   {
-   "label": "Age assurance for social media",
+   "label": "Extending age assurance to social media",
    "summary": "As MDDI studies the impact of social media bans, it plans to extend age assurance requirements to designated social media services.",
    "sentences": [
     {
-     "sid": "s00756",
+     "sid": "s00801",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "As MDDI continues to study the impact of social media bans, we plan to extend age assurance requirements to designated social media services.",
@@ -1201,7 +1300,7 @@
    "summary": "MDDI and MOE launched the Smart Nation Educator Fellowship last year, with 58 fellows in the inaugural run.",
    "sentences": [
     {
-     "sid": "s00787",
+     "sid": "s00832",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "Last year, MDDI and MOE launched the Smart Nation Educator Fellowship, and 58 fellows attended the inaugural run.",
@@ -1214,14 +1313,14 @@
    "summary": "IMDA and MOE are updating the Code for Fun programme to integrate AI skills for all students, available to all schools in 2027.",
    "sentences": [
     {
-     "sid": "s00800",
+     "sid": "s00845",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "IMDA is working with MOE to update the Code for Fun programme in our primary and secondary schools to integrate AI skills as core baseline capabilities for all students.",
      "added_for_context": false
     },
     {
-     "sid": "s00801",
+     "sid": "s00846",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "We will make this available to all schools in 2027.",
@@ -1234,7 +1333,7 @@
    "summary": "IMDA's DigitalAccess@Home scheme will continue supporting lower-income families with subsidised broadband and computing devices.",
    "sentences": [
     {
-     "sid": "s00805",
+     "sid": "s00850",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "For lower-income families, IMDA's DigitalAccess@Home scheme will continue to support them with subsidised broadband and computing devices.",
@@ -1247,7 +1346,7 @@
    "summary": "NLB will roll out new resource packages and outreach programmes under SURE to build information literacy skills.",
    "sentences": [
     {
-     "sid": "s00810",
+     "sid": "s00855",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "NLB will roll out new resource packages and outreach programmes under SURE to build information literacy skills.",
@@ -1260,14 +1359,14 @@
    "summary": "M³ launched Langkah Digital, led by Yayasan MENDAKI, designed around three elements: Kenal, Guna, Yakin.",
    "sentences": [
     {
-     "sid": "s00823",
+     "sid": "s00869",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "To work towards making our vision of an AI-Confident Malay/Muslim community a reality, M³ has launched Langkah Digital, led by Yayasan MENDAKI.",
      "added_for_context": false
     },
     {
-     "sid": "s00824",
+     "sid": "s00870",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "As I announced last month, Langkah Digital is designed around three key elements – Kenal, Guna, Yakin.",
@@ -1277,10 +1376,10 @@
   },
   {
    "label": "AI workshops community participation",
-   "summary": "12 AI-related workshops and events have been rolled out in the community, reaching over 400 participants.",
+   "summary": "Twelve AI-related workshops and events have been rolled out in the community, reaching over 400 participants.",
    "sentences": [
     {
-     "sid": "s00834",
+     "sid": "s00880",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "Although I just launched the programme last month, I am heartened that we have rolled out 12 AI-related workshops and events in the community so far, reaching over 400 participants.",
@@ -1289,11 +1388,18 @@
    ]
   },
   {
-   "label": "Exhibition visitor understanding survey",
-   "summary": "Over 130,000 visited since December and 96% said they left with a deeper understanding of Singapore's path.",
+   "label": "SG60 book and exhibition",
+   "summary": "NLB and MDDI launched a book and exhibition on The Albatross File, visited by over 130,000 since December.",
    "sentences": [
     {
-     "sid": "s00853",
+     "sid": "s00898",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
+     "attributed": true,
+     "text": "To mark Singapore's 60 years of Independence, NLB and MDDI launched a book and exhibition on The Albatross File, which documents the events, personalities and debates surrounding Singapore's journey to Independence.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00900",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "Since December, over 130,000 have visited; 96% said they left with a deeper understanding of the path Singapore took.",
@@ -1302,31 +1408,25 @@
    ]
   },
   {
-   "label": "Albatross File editorial notes",
-   "summary": "The editorial notes of The Albatross File: Inside Separation state nothing material to understanding the separation was held back.",
+   "label": "Freedom of Information Act proposal",
+   "summary": "Documents were published in full without redaction, and Mr Fadli raised a Freedom of Information Act proposal.",
    "sentences": [
     {
-     "sid": "s00860",
+     "sid": "s00908",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
-     "text": "As stated in the editorial notes of The Albatross File: Inside Separation, nothing material to the understanding of the separation was held back.",
+     "text": "The documents published were reproduced in full, without redaction.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Freedom of Information Act proposal",
-   "summary": "Mr Fadli proposed a Freedom of Information Act to automatically declassify and publicly release records after 25 years, which could lead to more opacity.",
-   "sentences": [
+    },
     {
-     "sid": "s00863",
+     "sid": "s00910",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "Mr Fadli also raised the proposal for a Freedom of Information Act to automatically declassify records and release them publicly after 25 years.",
      "added_for_context": false
     },
     {
-     "sid": "s00865",
+     "sid": "s00912",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "In fact, implementing an Freedom of Information Act could lead unintentionally to more opacity.",
@@ -1335,45 +1435,31 @@
    ]
   },
   {
-   "label": "Transparency and governance trade-offs",
-   "summary": "A Freedom of Information Act can hinder governance because sensitive issues go undocumented, so transparency should lead to good governance and an informed citizenry.",
+   "label": "Transparency for good governance",
+   "summary": "A Freedom of Information Act can hinder governance, so transparency should prioritise good governance and an informed citizenry.",
    "sentences": [
     {
-     "sid": "s00869",
-     "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
-     "attributed": true,
-     "text": "In every system that goes down this path, what happens is that people watch what they put in writing and talk without committing to paper.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00870",
+     "sid": "s00917",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "It's a thoroughly bad way of analysing complex issues.\" In other words, a Freedom of Information Act can hinder rather than facilitate governance because issues deemed too sensitive are simply not documented.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00871",
-     "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
-     "attributed": true,
-     "text": "Therefore, our starting point should be prioritising transparency that leads to good governance and an informed citizenry instead of transparency for its own sake.",
      "added_for_context": true
     },
     {
-     "sid": "s00872",
+     "sid": "s00918",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
-     "text": "We already have a mechanism for members of the public to request access to Government records for reference or research, which historians and researchers have used to nominate documents for review.",
+     "text": "Therefore, our starting point should be prioritising transparency that leads to good governance and an informed citizenry instead of transparency for its own sake.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "SG60 Heart&Soul Experience",
-   "summary": "The SG60 Heart&Soul Experience, visited by two million visitors in the second half of last year, let Singaporeans express hopes and dreams for Singapore.",
+   "summary": "The SG60 Heart&Soul Experience drew two million visitors and let Singaporeans express hopes and dreams for Singapore.",
    "sentences": [
     {
-     "sid": "s00875",
+     "sid": "s00922",
      "speaker": "The Minister of State for Digital Development and Information (Ms Rahayu Mahzam)",
      "attributed": true,
      "text": "The SG60 Heart&Soul Experience, which was visited by two million visitors in the second half of last year, allowed Singaporeans to express their hopes and dreams for Singapore.",
@@ -1382,25 +1468,39 @@
    ]
   },
   {
-   "label": "NAIC and NAIS 2.0 questions",
-   "summary": "Questions were raised on the NAIC's authority and integration with MTI and MDDI, and on progress and lessons from NAIS 2.0.",
+   "label": "NAIC role and NAIS 2.0",
+   "summary": "A Member asked about NAIC's authority and integration with MTI and MDDI, and about progress on NAIS 2.0.",
    "sentences": [
     {
-     "sid": "s00887",
+     "sid": "s00932",
+     "speaker": "The Chairman",
+     "attributed": true,
+     "text": "I will prioritise Members who have filed cuts according to the amount of time they have filed.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00933",
+     "speaker": "Mr Sharael Taha",
+     "attributed": true,
+     "text": "I believe the Minister did not get an opportunity to address my cut on the role of NAIC.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00934",
      "speaker": "Mr Sharael Taha",
      "attributed": true,
      "text": "Will it have execution authority or oversee cross-Ministry implementation or remain advisory?",
      "added_for_context": false
     },
     {
-     "sid": "s00888",
+     "sid": "s00935",
      "speaker": "Mr Sharael Taha",
      "attributed": true,
      "text": "And how will the NAIC integrate economic strategy under MTI with digital governance under MDDI to ensure a coordinated delivery?",
      "added_for_context": false
     },
     {
-     "sid": "s00889",
+     "sid": "s00936",
      "speaker": "Mr Sharael Taha",
      "attributed": true,
      "text": "Also, on NAIS 2.0, what progress has been made and what did we learn from implementing NAIS 2.0 that will shape our current plans?",
@@ -1409,18 +1509,18 @@
    ]
   },
   {
-   "label": "Trusted AI certification regime question",
-   "summary": "Asks whether a formal trusted AI certification regime will be considered for high-risk AI systems in finance, healthcare and aviation.",
+   "label": "Trusted AI certification and NAIS 2.0",
+   "summary": "A Member asked about a trusted AI certification regime and what was learned from NAIS 2.0, launched December 2023.",
    "sentences": [
     {
-     "sid": "s00892",
+     "sid": "s00939",
      "speaker": "Mr Sharael Taha",
      "attributed": true,
      "text": "Will we consider establishing a formal trusted AI certification regime for high-risk AI systems deployed in finance, healthcare and aviation?",
      "added_for_context": false
     },
     {
-     "sid": "s00894",
+     "sid": "s00941",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
      "text": "Perhaps to address Mr Sharael Taha's question on what we have learned from the implementation of NAIS 2.0, the Prime Minister launched NAIS 2.0 in December 2023.",
@@ -1429,86 +1529,92 @@
    ]
   },
   {
-   "label": "Lorong AI growth",
-   "summary": "Lorong AI moved faster and grew bigger than expected, hosting about 150 events with around 4,000 people last year.",
+   "label": "Lorong AI growth and Kampong AI",
+   "summary": "Lorong AI hosted about 150 events with 4,000 people last year, giving confidence to do Kampong AI.",
    "sentences": [
     {
-     "sid": "s00909",
+     "sid": "s00956",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
      "text": "It turned out to move a lot faster and grow a lot bigger than we expected.",
      "added_for_context": true
     },
     {
-     "sid": "s00910",
+     "sid": "s00957",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
      "text": "I think last year, Lorong AI hosted something like 150 events with about 4,000 people.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Microsoft and Google DeepMind offices",
-   "summary": "Microsoft set up a research entity in Singapore last year, and Google DeepMind decided to open an office here.",
-   "sentences": [
-    {
-     "sid": "s00925",
-     "speaker": "Mrs Josephine Teo",
-     "attributed": true,
-     "text": "Microsoft has been in Singapore for years, but it was only last year that they set up a research entity here.",
-     "added_for_context": false
     },
     {
-     "sid": "s00926",
+     "sid": "s00958",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
-     "text": "Then Google DeepMind decided to open an office here.",
+     "text": "Because of that, we have the confidence to do Kampong AI.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "National AI Council and trust institutions",
-   "summary": "The Prime Minister chairs the National AI Council, and a digital trust centre and online safety centre have been set up.",
+   "label": "JTC and NAIC purpose",
+   "summary": "Without JTC's involvement this growth could not have come about, and the NAIC exists to do these things.",
    "sentences": [
     {
-     "sid": "s00947",
+     "sid": "s00989",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "If JTC has not been seized with this idea, then this growth could not have quite come about.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00990",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "So, the NAIC is precisely to do these things.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Prime Minister chairs National AI Council",
+   "summary": "The Prime Minister chairing the National AI Council indicates keenness to make AI transformation real for all Singaporeans.",
+   "sentences": [
+    {
+     "sid": "s00994",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
      "text": "Our Prime Minister has many things on his plate.",
      "added_for_context": true
     },
     {
-     "sid": "s00948",
+     "sid": "s00995",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
      "text": "He advises us on a whole range of things, but to chair the National AI Council is a very strong indication that we are keen on making AI transformation real for all Singaporeans and not just something that just continues to exist as a vision.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "AI safety and online safety institutions",
+   "summary": "A digital trust centre as designated AI Safety Institute and a Centre of Advanced Technologies for Online Safety have been set up.",
+   "sentences": [
     {
-     "sid": "s00950",
-     "speaker": "Mrs Josephine Teo",
-     "attributed": true,
-     "text": "Very quickly, Mr Chairman, I think there was also a question about trust and regulatory credibility, and whether we will set up institutions to do that.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00951",
+     "sid": "s00998",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
      "text": "For example, quite apart from introducing model governance frameworks, we have set up a digital trust centre that is our designated AI Safety Institute.",
      "added_for_context": false
     },
     {
-     "sid": "s00952",
+     "sid": "s00999",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
      "text": "We also have the Centre of Advanced Technologies for Online Safety.",
      "added_for_context": false
     },
     {
-     "sid": "s00953",
+     "sid": "s01000",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
      "text": "These are institutions that have grown within academic organisations, but we will look for opportunities to collaborate with industry, with academia, to see how we can institutionalise this capability and turn it into an advantage for Singapore.",
@@ -1517,31 +1623,32 @@
    ]
   },
   {
-   "label": "Access to National AI Impact Programme",
-   "summary": "Citizens will access the National AI Impact Programme not solely through channels MDDI and IMDA oversee.",
+   "label": "Intermediaries and Productivity Solutions Grant",
+   "summary": "Intermediaries' interest is welcomed, with enterprise solutions largely offered through the Productivity Solutions Grant, about 30% AI-enabled.",
    "sentences": [
     {
-     "sid": "s00960",
+     "sid": "s01009",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
-     "text": "Mr Chairman, in terms of how citizens are going to access the National AI Impact Programme, it again will not be solely through the channels that MDDI and IMDA oversee.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Productivity Solutions Grant AI solutions",
-   "summary": "About 30% of Productivity Solutions Grant solutions are now AI-enabled.",
-   "sentences": [
+     "text": "There is very strong interest from these intermediaries to get the word out and we welcome their interest.",
+     "added_for_context": true
+    },
     {
-     "sid": "s00964",
+     "sid": "s01010",
+     "speaker": "Mrs Josephine Teo",
+     "attributed": true,
+     "text": "We already have existing programmes that serve as a useful base so, for example, the enterprise solutions will very largely be offered through the Productivity Solutions Grant scheme.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01011",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
      "text": "The Productivity Solutions Grant is well known to many of our enterprises.",
      "added_for_context": true
     },
     {
-     "sid": "s00965",
+     "sid": "s01012",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
      "text": "I mentioned in my earlier speech that about 30% of the solutions are now AI-enabled.",
@@ -1550,18 +1657,18 @@
    ]
   },
   {
-   "label": "Accountancy and legal professions start",
-   "summary": "For individuals, the effort starts with accountancy and legal professions, then extends to fields like HR, which has 50,000 practitioners.",
+   "label": "Starting with accountancy and legal",
+   "summary": "For individuals, work will start with the accountancy and legal professions, then extend to fields like HR.",
    "sentences": [
     {
-     "sid": "s00968",
+     "sid": "s01015",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
      "text": "For individuals, I mentioned that we will start, initially, with the accountancy and legal professions and then look to extend towards fields like human resources (HR).",
      "added_for_context": false
     },
     {
-     "sid": "s00969",
+     "sid": "s01016",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
      "text": "HR, for example, easily has 50,000 members, 50,000 practitioners.",
@@ -1571,17 +1678,17 @@
   },
   {
    "label": "Elections online advertising legislation",
-   "summary": "There are instances where existing legislation, laws and measures are not enough, so the ELIONA legislation was introduced.",
+   "summary": "The passage states that where existing legislation, laws and measures are not enough, the Elections (Integrity of Online Advertising), or ELIONA, legislation was introduced.",
    "sentences": [
     {
-     "sid": "s00982",
+     "sid": "s01029",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
      "text": "But there will be instances where existing legislation, existing laws, existing measures are not enough.",
      "added_for_context": true
     },
     {
-     "sid": "s00983",
+     "sid": "s01030",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
      "text": "So, for example, we introduced the Elections (Integrity of Online Advertising), or ELIONA, legislation.",
@@ -1590,39 +1697,39 @@
    ]
   },
   {
-   "label": "AI translation for mother tongue languages",
-   "summary": "The National Translation Committee works with GovTech and A*STAR on LLMs to translate English public materials into Malay, Mandarin and Tamil.",
+   "label": "AI translation for public services",
+   "summary": "The National Translation Committee is working with GovTech and A*STAR on LLMs to fine-tune a local-context model for translating English public materials into Malay, Mandarin and Tamil.",
    "sentences": [
     {
-     "sid": "s00996",
+     "sid": "s01043",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
      "text": "The National Translation Committee has been working with GovTech and Agency for Science, Technology and Research (A*STAR) on a number of LLMs and to fine tune a model for a local context.",
      "added_for_context": false
     },
     {
-     "sid": "s00997",
+     "sid": "s01044",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
      "text": "One of the objectives is to, hopefully, have a model which we can use by the later part of this year, to allow greater inclusivity and accessibility for those not speaking English to access our public-facing websites and other materials.",
      "added_for_context": false
     },
     {
-     "sid": "s00998",
+     "sid": "s01045",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
-     "text": "And to support Public Service agencies translate many of the material, which is in English, into different mother tongue languages – Malay, Mandarin, Tamil – much more easily.",
+     "text": "And to support Public Service agencies translate many of the material, which is in English, into different mother tongue languages – Malay, Mandarin, Tamil – much more easily.",
      "added_for_context": false
     },
     {
-     "sid": "s00999",
+     "sid": "s01046",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
      "text": "And how can we do so across the board, at-scale, across the Public Service?",
      "added_for_context": true
     },
     {
-     "sid": "s01000",
+     "sid": "s01047",
      "speaker": "The Senior Minister of State for Digital Development and Information (Mr Tan Kiat How)",
      "attributed": true,
      "text": "So, we are developing an AI tool for that and we hope to share more details in the later part of the year, but this is just one specific example how we are using AI technology.",
@@ -1632,65 +1739,64 @@
   },
   {
    "label": "Optimising speed security cost trust",
-   "summary": "One dimension cannot be optimised over another; Singapore must optimise across speed, security, cost and trust.",
+   "summary": "The passage states that one dimension cannot be optimised over another, and that Singapore must optimise across all dimensions: speed, security, cost and trust.",
    "sentences": [
     {
-     "sid": "s01029",
+     "sid": "s01076",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
      "text": "And so, we cannot afford to optimise one dimension over another.",
      "added_for_context": true
     },
     {
-     "sid": "s01030",
+     "sid": "s01077",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
-     "text": "It is very educational, and I hope more Singaporeans can understand that we must optimise across all dimensions – speed, security, cost and trust.",
+     "text": "It is very educational, and I hope more Singaporeans can understand that we must optimise across all dimensions – speed, security, cost and trust.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Thanks to MDDI team and Members",
-   "summary": "The speaker thanks ministers, the MDDI team, the GPC and Members for 25 cuts and over three hours of debate, and seeks leave to withdraw the amendment.",
+   "label": "Thanks to MDDI and Members",
+   "summary": "The speaker thanks Minister Josephine Teo, Senior Minister of State Tan Kiat How, Minister of State Rahayu, Minister of State Jasmin Lau, the MDDI Permanent Secretary and team, and GPC and Members.",
    "sentences": [
     {
-     "sid": "s01033",
+     "sid": "s01080",
      "speaker": "Mr Sharael Taha",
      "attributed": true,
      "text": "Mr Chairman, I would like to take this opportunity to thank Minister Josephine Teo, Senior Minister of State Tan Kiat How, Minister of State Rahayu, Minister of State Jasmin Lau and the Permanent Secretary of MDDI, and the whole MDDI team for the responses and the great work that they do.",
      "added_for_context": false
     },
     {
-     "sid": "s01034",
+     "sid": "s01081",
      "speaker": "Mr Sharael Taha",
      "attributed": true,
      "text": "I would also like to thank our GPC and fellow Members for submitting 25 cuts and with more than three hours of debate, leaving no stone unturned; and I am quite sure quite a few of us would like to ask a few more supplementary questions.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "MDDI tasks and amendment withdrawal",
+   "summary": "The passage states MDDI must drive innovation, safeguard trust, develop skills, protect the vulnerable and secure national competitiveness, and the speaker seeks leave to withdraw an amendment.",
+   "sentences": [
     {
-     "sid": "s01036",
-     "speaker": "Mr Sharael Taha",
-     "attributed": true,
-     "text": "Frontier models double in capacity within short cycles, agentic systems are emerging with autonomous decision-making capacity, and geopolitical contentions affect — The Chairman: Mr Sharael Taha.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s01038",
+     "sid": "s01085",
      "speaker": "Mr Sharael Taha",
      "attributed": true,
      "text": "— MDDI must juggle many things at once, drive innovation, safeguard trust, develop the deep and broad-based skill sets, protect the vulnerable and secure national competitiveness.",
      "added_for_context": false
     },
     {
-     "sid": "s01039",
+     "sid": "s01086",
      "speaker": "Mr Sharael Taha",
      "attributed": true,
      "text": "That is no small task, and I would like to thank our team in MDDI for doing all of that.",
      "added_for_context": true
     },
     {
-     "sid": "s01040",
+     "sid": "s01087",
      "speaker": "Mr Sharael Taha",
      "attributed": true,
      "text": "And with that, Mr Chairman, I seek leave to withdraw my amendment.",
@@ -1710,13 +1816,13 @@
   "report_ids": [
    "budget-2895"
   ],
-  "sentences_total": 1040,
-  "sentences_selected": 166,
-  "sentences_in_sections": 166,
+  "sentences_total": 1087,
+  "sentences_selected": 176,
+  "sentences_in_sections": 176,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 23,
-  "sections_total": 89,
-  "selection_share": 0.1596,
+  "sentences_added_for_context": 24,
+  "sections_total": 95,
+  "selection_share": 0.1619,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -1725,24 +1831,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 89,
+   "sections_total": 95,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 166,
-   "sentences_selected": 166,
-   "turns_cited": 22,
+   "sentences_published": 176,
+   "sentences_selected": 176,
+   "turns_cited": 25,
    "turns_total": 43,
-   "coverage": 0.5116,
+   "coverage": 0.5814,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:23:20"
+   "checked_at": "2026-09-20T10:40:31"
   },
   "usage": {
-   "calls": 45,
-   "prompt_tokens": 41634,
-   "completion_tokens": 5109,
+   "calls": 48,
+   "prompt_tokens": 43816,
+   "completion_tokens": 5487,
    "estimated": false,
-   "cost_usd": 0.007259
+   "cost_usd": 0.007671
   }
  }
 }

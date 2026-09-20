@@ -3,7 +3,7 @@
  "what_it_is": "Strengthening Return to Work Pathways",
  "sections": [
   {
-   "label": "Major workplace injuries in Singapore",
+   "label": "Singapore major workplace injuries 2025",
    "summary": "Singapore recorded 660 major workplace injuries in 2025.",
    "sentences": [
     {
@@ -16,7 +16,7 @@
    ]
   },
   {
-   "label": "Ontario and Germany return-to-work practices",
+   "label": "Ontario and Germany return-to-work",
    "summary": "Ontario's board returns nine in 10 injured workers to work within a year, and Germany requires reintegration processes after six weeks' absence.",
    "sentences": [
     {
@@ -50,7 +50,7 @@
   },
   {
    "label": "Proposed Back-to-Work pathway",
-   "summary": "The speaker proposes a dedicated Back-to-Work pathway for workers unable to return to previous jobs due to illness or injury.",
+   "summary": "A dedicated Back-to-Work pathway is proposed with skills training, career coaching, job matching and transitional employment for workers unable to return to previous jobs.",
    "sentences": [
     {
      "sid": "s00054",
@@ -58,12 +58,26 @@
      "attributed": true,
      "text": "By drawing inspiration from these programmes, I propose that we develop a dedicated Back-to-Work pathway that supports workers who are unable to return to their previous jobs due to illness or injury.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00055",
+     "speaker": "Mr Melvin Yong Yik Chye (Radin Mas)",
+     "attributed": true,
+     "text": "Facilitated transition into suitable new roles will provide stricken family breadwinners with much needed assurance and hope of reskilling, that is aligned with their new health conditions.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00056",
+     "speaker": "Mr Melvin Yong Yik Chye (Radin Mas)",
+     "attributed": true,
+     "text": "This pathway should include: targeted skills training aligned with medical capacity; career coaching and confidence rebuilding, job matching with supportive employers; and transitional employment opportunities.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Time-bound wage support scheme proposal",
-   "summary": "The speaker suggests a time-bound wage support scheme to help employers reintegrate workers recovering from serious health conditions, noting no dedicated funding mechanism exists.",
+   "label": "Time-bound wage support scheme",
+   "summary": "The Government is urged to consider a time-bound wage support scheme to help employers reintegrate workers recovering from serious health conditions.",
    "sentences": [
     {
      "sid": "s00063",
@@ -78,19 +92,12 @@
      "attributed": true,
      "text": "I therefore suggest that the Government consider introducing a time-bound wage support scheme to help employers reintegrate workers recovering from serious health conditions.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00065",
-     "speaker": "Mr Melvin Yong Yik Chye (Radin Mas)",
-     "attributed": true,
-     "text": "Unlike support for persons with disabilities, there is currently no dedicated funding mechanism to incentivise employers to provide workplace accommodations for workers returning to work after serious non-work-related illnesses or medical conditions.",
-     "added_for_context": false
     }
    ]
   },
   {
    "label": "MediSave for return-to-work expenses",
-   "summary": "The passage proposes allowing MediSave use for return-to-work-related expenses such as assessments of a worker's condition and fitness for work.",
+   "summary": "MediSave would be allowed for return-to-work-related expenses such as assessments of a worker's condition and fitness for work.",
    "sentences": [
     {
      "sid": "s00068",
@@ -116,7 +123,7 @@
   },
   {
    "label": "Pilot workers returning to work",
-   "summary": "A pilot enrolled 3,700 workers, and coordinators' workflows and support orchestration enabled 95% to return to work successfully.",
+   "summary": "A pilot enrolled 3,700 workers, and coordinators' workflows and support orchestration enabled 95% to return to work.",
    "sentences": [
     {
      "sid": "s00103",
@@ -149,7 +156,7 @@
   },
   {
    "label": "Review and AfA-SHEL launch",
-   "summary": "The Ministry will review Singapore's return-to-work landscape and launch AfA-SHEL with NTUC and SNEF in the second half of 2026.",
+   "summary": "The Ministry will review the return-to-work landscape and launch AfA-SHEL with NTUC and SNEF in the second half of 2026.",
    "sentences": [
     {
      "sid": "s00122",
@@ -182,7 +189,7 @@
    ]
   },
   {
-   "label": "Sitting time announcement",
+   "label": "Sitting time change announcement",
    "summary": "Pursuant to Standing Order 2(3)(a), the Sitting tomorrow will commence at 12.00 pm.",
    "sentences": [
     {
@@ -207,12 +214,12 @@
    "matter-adj-2955"
   ],
   "sentences_total": 132,
-  "sentences_selected": 18,
-  "sentences_in_sections": 18,
+  "sentences_selected": 19,
+  "sentences_in_sections": 19,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 1,
+  "sentences_added_for_context": 2,
   "sections_total": 11,
-  "selection_share": 0.1364,
+  "selection_share": 0.1439,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -224,21 +231,21 @@
    "sections_total": 11,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 18,
-   "sentences_selected": 18,
+   "sentences_published": 19,
+   "sentences_selected": 19,
    "turns_cited": 3,
    "turns_total": 3,
    "coverage": 1.0,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:04:39"
+   "checked_at": "2026-09-20T10:21:46"
   },
   "usage": {
    "calls": 7,
-   "prompt_tokens": 5861,
+   "prompt_tokens": 5894,
    "completion_tokens": 639,
    "estimated": false,
-   "cost_usd": 0.000999
+   "cost_usd": 0.001004
   }
  }
 }

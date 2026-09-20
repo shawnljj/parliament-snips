@@ -3,8 +3,8 @@
  "what_it_is": "Safety Standards in Case of EV or EV Charger Fires at HDB Car Parks",
  "sections": [
   {
-   "label": "EV fire safety in HDB car parks",
-   "summary": "Measures ensure HDB car parks meet safety standards for EV fires, including hose reels, fire engine access and ventilation, and EV chargers must comply with Technical Reference 25.",
+   "label": "HDB car park EV fire safety",
+   "summary": "HDB car parks have fire safety provisions like hose reels, fire engine access and ventilation, and EV chargers must meet Technical Reference 25.",
    "sentences": [
     {
      "sid": "s00001",
@@ -37,8 +37,8 @@
    ]
   },
   {
-   "label": "Hose reels, access, ventilation, TR25",
-   "summary": "Hose reels, fire engine access and ventilation help in a fire, and HDB car parks must comply with Technical Reference 25 specifications and safety requirements.",
+   "label": "HDB car park fire safety provisions",
+   "summary": "Hose reels, fire engine access and ventilation help in a fire, and HDB car parks must comply with Technical Reference 25 requirements.",
    "sentences": [
     {
      "sid": "s00008",
@@ -50,8 +50,8 @@
    ]
   },
   {
-   "label": "LTA and SCDF review fire safety",
-   "summary": "The Land Transport Authority and SCDF regularly review fire safety requirements through their multi-agency EV Battery Safety Taskforce to support EV adoption in Singapore.",
+   "label": "EV Battery Safety Taskforce review",
+   "summary": "The Land Transport Authority and SCDF regularly review fire safety requirements through their multi-agency EV Battery Safety Taskforce.",
    "sentences": [
     {
      "sid": "s00012",
@@ -99,14 +99,14 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:53:43"
+   "checked_at": "2026-09-20T10:10:47"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1222,
-   "completion_tokens": 209,
+   "completion_tokens": 186,
    "estimated": false,
-   "cost_usd": 0.00023
+   "cost_usd": 0.000223
   }
  }
 }

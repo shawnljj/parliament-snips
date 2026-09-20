@@ -58,7 +58,7 @@
   },
   {
    "label": "Cautious posture, no vaccine procurement",
-   "summary": "The posture differs from COVID, so procuring vaccine targets now is premature; incoming symptomatic individuals get containment, isolation, supportive care and 14-day monitoring.",
+   "summary": "The posture differs from COVID, so procuring vaccine targets now is premature; instead, symptomatic arrivals are contained, isolated, given supportive care and monitored for 14 days.",
    "sentences": [
     {
      "sid": "s00021",
@@ -127,14 +127,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:40:06"
+   "checked_at": "2026-09-20T10:57:29"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1749,
-   "completion_tokens": 206,
+   "prompt_tokens": 1754,
+   "completion_tokens": 209,
    "estimated": false,
-   "cost_usd": 0.000303
+   "cost_usd": 0.000304
   }
  }
 }

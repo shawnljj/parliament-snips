@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Precautionary health measures for travellers and workers",
-   "summary": "Singapore issued clinical guidance, held a webinar, adjusted the Health Declaration Card, activated temperature screening, and disseminated precautionary health measures to migrant workers and employers.",
+   "summary": "Clinical guidance, a webinar, an adjusted Health Declaration Card, temperature screening and CDA announcements to employers and workers were issued, with CDA monitoring India and globally.",
    "sentences": [
     {
      "sid": "s00002",
@@ -30,8 +30,8 @@
    ]
   },
   {
-   "label": "Enhanced electronic health declaration card",
-   "summary": "The SG Arrival Card prompts travellers who click yes to symptoms to enter their previous travel destination, including West Bengal.",
+   "label": "Enhanced SG Arrival Card travel prompts",
+   "summary": "Travellers who click yes to symptoms on the SG Arrival Card are prompted for previous travel destinations including West Bengal; those who click no are not.",
    "sentences": [
     {
      "sid": "s00009",
@@ -58,7 +58,7 @@
   },
   {
    "label": "SG Arrival Card data and Nipah research",
-   "summary": "SG Arrival declaration card information is piped into CDA for contact tracing, and a question is asked about Nipah virus diagnostic kits, vaccines and bio-safety 4 laboratory capacity.",
+   "summary": "SG Arrival declaration card information is piped into CDA for contact tracing, and a question is asked on Nipah diagnostic kits, vaccines and bio-safety 4 laboratory capacity.",
    "sentences": [
     {
      "sid": "s00015",
@@ -113,14 +113,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:40:15"
+   "checked_at": "2026-09-20T10:57:37"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1464,
-   "completion_tokens": 217,
+   "prompt_tokens": 1465,
+   "completion_tokens": 228,
    "estimated": false,
-   "cost_usd": 0.000266
+   "cost_usd": 0.000269
   }
  }
 }

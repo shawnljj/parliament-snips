@@ -3,7 +3,7 @@
  "what_it_is": "Inter-agency Coordination to Support Timely Deployment of EV Charging Infrastructure in New Housing Estates",
  "sections": [
   {
-   "label": "EV charging point deployment targets",
+   "label": "EV charging points deployment target",
    "summary": "Government targets 60,000 EV charging points by 2030, with 30,500 deployed as of March 2026, and a fast charging hub in every HDB town by end 2027.",
    "sentences": [
     {
@@ -18,6 +18,13 @@
      "speaker": "The Senior Minister of State for Transport (Ms Sun Xueling) (for the Minister for Transport)",
      "attributed": true,
      "text": "As of March 2026, there are 30,500 EV charging points deployed in Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Ms Sun Xueling) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "We are on track to achieving our 2030 target in tandem with the growing demand for EVs.",
      "added_for_context": false
     },
     {
@@ -37,8 +44,8 @@
    ]
   },
   {
-   "label": "EV chargers in Tengah BTO estates",
-   "summary": "Two Tengah multi-storey car parks have EV chargers, eight more are being deployed, and from recent TOPs EVe deploys chargers when residents collect keys.",
+   "label": "Tengah EV chargers and new BTOs",
+   "summary": "Two Tengah multi-storey car parks have EV chargers, eight more are being deployed, and from recent TOPs EVe works with HDB to deploy chargers at key collection.",
    "sentences": [
     {
      "sid": "s00014",
@@ -52,13 +59,13 @@
      "speaker": "Ms Sun Xueling",
      "attributed": true,
      "text": "We have taken into account the feedback from Tengah residents and are improving the process for new Build-To-Order (BTO) estates.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00016",
      "speaker": "Ms Sun Xueling",
      "attributed": true,
-     "text": "So, for instance, starting from BTOs that obtained Temporary Occupation Permit (TOP) since last month, there is now a new arrangement, where LTA subsidiary EVe works closely with HDB to start deploying EV chargers from the point that residents start collecting their keys – so, at the point of TOP.",
+     "text": "So, for instance, starting from BTOs that obtained Temporary Occupation Permit (TOP) since last month, there is now a new arrangement, where LTA subsidiary EVe works closely with HDB to start deploying EV chargers from the point that residents start collecting their keys – so, at the point of TOP.",
      "added_for_context": false
     },
     {
@@ -83,12 +90,12 @@
    "oral-answer-4136"
   ],
   "sentences_total": 17,
-  "sentences_selected": 8,
-  "sentences_in_sections": 8,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 0,
+  "sentences_added_for_context": 1,
   "sections_total": 2,
-  "selection_share": 0.4706,
+  "selection_share": 0.5294,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -100,21 +107,21 @@
    "sections_total": 2,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 8,
-   "sentences_selected": 8,
+   "sentences_published": 9,
+   "sentences_selected": 9,
    "turns_cited": 2,
    "turns_total": 4,
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:53:40"
+   "checked_at": "2026-09-20T10:10:44"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1396,
-   "completion_tokens": 175,
+   "prompt_tokens": 1419,
+   "completion_tokens": 179,
    "estimated": false,
-   "cost_usd": 0.000244
+   "cost_usd": 0.000249
   }
  }
 }

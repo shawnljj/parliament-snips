@@ -3,7 +3,7 @@
  "what_it_is": "Remaining Vacancies in Secondary Schools following DSA Exercise and Affiliated Admissions",
  "sections": [
   {
-   "label": "Affiliated school reserved places",
+   "label": "Affiliated school non-affiliated places",
    "summary": "MOE requires affiliated secondary schools to reserve at least 20% of Secondary 1 places for non-affiliated students in each posting group.",
    "sentences": [
     {
@@ -58,8 +58,8 @@
    ]
   },
   {
-   "label": "Posting group score variance",
-   "summary": "The speaker asks about high variance within a posting group, citing reports of differences up to 10 points.",
+   "label": "Posting group point variance",
+   "summary": "The speaker asks about high variance, citing reports of differences up to 10 points within a posting group.",
    "sentences": [
     {
      "sid": "s00012",
@@ -72,7 +72,7 @@
      "sid": "s00013",
      "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
      "attributed": true,
-     "text": "I ask this because I understand the principle behind wanting to encourage affiliated students to attend their given secondary school, but I have seen reports that this difference can be quite wide – as much as 10 points within the given posting group – which seems to undermine this principle of meritocracy.",
+     "text": "I ask this because I understand the principle behind wanting to encourage affiliated students to attend their given secondary school, but I have seen reports that this difference can be quite wide – as much as 10 points within the given posting group – which seems to undermine this principle of meritocracy.",
      "added_for_context": false
     }
    ]
@@ -114,14 +114,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:41:48"
+   "checked_at": "2026-09-20T10:59:07"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1447,
-   "completion_tokens": 142,
+   "prompt_tokens": 1450,
+   "completion_tokens": 144,
    "estimated": false,
-   "cost_usd": 0.000242
+   "cost_usd": 0.000243
   }
  }
 }

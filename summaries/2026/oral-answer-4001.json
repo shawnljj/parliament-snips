@@ -10,21 +10,21 @@
      "sid": "s00002",
      "speaker": "Ms Nadia Ahmad Samdin",
      "attributed": true,
-     "text": "asked the Minister for Sustainability and the Environment (a) how will transparency and authenticity of the food safety grading under the new Safety Assurance for Food Establishment (SAFE) framework be assured, given that physical decals will be replaced by digital disclosures from 19 January 2026 onwards; and (b) how will consumers who are less digitally savvy still be able to easily access the food safety grading information.",
+     "text": "asked the Minister for Sustainability and the Environment (a) how will transparency and authenticity of the food safety grading under the new Safety Assurance for Food Establishment (SAFE) framework be assured, given that physical decals will be replaced by digital disclosures from 19 January 2026 onwards; and (b) how will consumers who are less digitally savvy still be able to easily access the food safety grading information.",
      "added_for_context": false
     },
     {
      "sid": "s00003",
      "speaker": "Mr Yip Hon Weng",
      "attributed": true,
-     "text": "asked the Minister for Sustainability and the Environment regarding the new Safety Assurance for Food Establishments (SAFE) framework (a) whether the shift to self-regulation and reduction in regular inspections is being driven by manpower constraints; (b) what is the revised inspection frequency; and (c) whether relying on track records risk making the system reactive, where food safety standards may slip unnoticed until a major lapse occurs.",
+     "text": "asked the Minister for Sustainability and the Environment regarding the new Safety Assurance for Food Establishments (SAFE) framework (a) whether the shift to self-regulation and reduction in regular inspections is being driven by manpower constraints; (b) what is the revised inspection frequency; and (c) whether relying on track records risk making the system reactive, where food safety standards may slip unnoticed until a major lapse occurs.",
      "added_for_context": false
     },
     {
      "sid": "s00004",
      "speaker": "Ms Poh Li San",
      "attributed": true,
-     "text": "asked the Minister for Sustainability and the Environment with the new food grading system announced on 7 January 2026 (a) how will small businesses with limited resources be assisted to meet the additional requirements; and (b) what is the transition duration as well as the resources required by SFA to complete inspections under the new grading system.",
+     "text": "asked the Minister for Sustainability and the Environment with the new food grading system announced on 7 January 2026 (a) how will small businesses with limited resources be assisted to meet the additional requirements; and (b) what is the transition duration as well as the resources required by SFA to complete inspections under the new grading system.",
      "added_for_context": false
     },
     {
@@ -45,7 +45,7 @@
   },
   {
    "label": "FSMS, AFHO and Grade C",
-   "summary": "Establishments must implement an FSMS and appoint an AFHO; major lapses or 12 demerit points downgrade them to Grade C.",
+   "summary": "Establishments must implement an FSMS and appoint an AFHO; those convicted or suspended after 12 demerit points are downgraded to Grade C.",
    "sentences": [
     {
      "sid": "s00014",
@@ -78,7 +78,7 @@
   },
   {
    "label": "Risk-based inspection frequency",
-   "summary": "The risk-based regime allows more frequent inspections for outlets found to be higher risk or performing poorly.",
+   "summary": "Under the risk-based regime, inspections can be done more frequently for higher-risk or poorly performing outlets.",
    "sentences": [
     {
      "sid": "s00043",
@@ -179,14 +179,14 @@
    "coverage": 0.6364,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:41:11"
+   "checked_at": "2026-09-20T10:58:33"
   },
   "usage": {
    "calls": 6,
-   "prompt_tokens": 4883,
-   "completion_tokens": 416,
+   "prompt_tokens": 4891,
+   "completion_tokens": 418,
    "estimated": false,
-   "cost_usd": 0.0008
+   "cost_usd": 0.000802
   }
  }
 }

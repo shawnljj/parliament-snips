@@ -3,14 +3,21 @@
  "what_it_is": "Proposal for Long-stay or Retirement-residency Pathway for Singaporeans Wishing to Age in Malaysia",
  "sections": [
   {
-   "label": "Eldercare in Malaysia for Singaporeans",
-   "summary": "Asked whether Government will engage Malaysia on an affordable long-stay or retirement-residency pathway, given the revised Malaysia My Second Home scheme targets investors; focus is on eldercare in Singapore.",
+   "label": "Retirement pathway in Malaysia",
+   "summary": "Asked whether Government will engage Malaysia on an affordable long-stay or retirement-residency pathway for Singaporeans who wish to age in Malaysia.",
    "sentences": [
     {
      "sid": "s00001",
      "speaker": "Mr Kenneth Tiong Boon Kiat",
      "attributed": true,
-     "text": "asked the Coordinating Minister for Social Policies and Minister for Health whether the Government will engage Malaysia to establish an affordable long-stay or retirement-residency pathway for Singaporeans who wish to age in Malaysia and access more affordable eldercare there, in view that the revised Malaysia My Second Home scheme now targets investors rather than retirees through high fixed deposits and property purchase.",
+     "text": "asked the Coordinating Minister for Social Policies and Minister for Health whether the Government will engage Malaysia to establish an affordable long-stay or retirement-residency pathway for Singaporeans who wish to age in Malaysia and access more affordable eldercare there, in view that the revised Malaysia My Second Home scheme now targets investors rather than retirees through high fixed deposits and property purchase.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Mr Tan Kiat How) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "Some countries may offer a lifestyle service for foreigners to retire in their countries.",
      "added_for_context": false
     },
     {
@@ -23,8 +30,8 @@
    ]
   },
   {
-   "label": "Sarawak second home scheme expansion",
-   "summary": "Asked whether Government will negotiate for expansion of Sarawak's no-investment residency to West Malaysia; reply respects Singaporeans' choices and Malaysia's policies, prioritising Singaporeans and eldercare.",
+   "label": "Sarawak second home scheme",
+   "summary": "Asked whether Government will negotiate expansion of Sarawak's no-investment residency scheme to West Malaysia.",
    "sentences": [
     {
      "sid": "s00007",
@@ -65,7 +72,7 @@
      "sid": "s00013",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
-     "text": "We are always constantly bringing new partners into the community and enhancing our Active Ageing Centres to make sure that our seniors age well in our neighbourhoods.",
+     "text": "We are always constantly bringing new partners into the community and enhancing our Active Ageing Centres to make sure that our seniors age well in our neighbourhoods.",
      "added_for_context": true
     },
     {
@@ -90,12 +97,12 @@
    "oral-answer-4179"
   ],
   "sentences_total": 14,
-  "sentences_selected": 9,
-  "sentences_in_sections": 9,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 2,
   "sections_total": 2,
-  "selection_share": 0.6429,
+  "selection_share": 0.7143,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -107,21 +114,21 @@
    "sections_total": 2,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 9,
-   "sentences_selected": 9,
+   "sentences_published": 10,
+   "sentences_selected": 10,
    "turns_cited": 4,
    "turns_total": 4,
    "coverage": 1.0,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:42:25"
+   "checked_at": "2026-09-20T09:59:03"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1352,
-   "completion_tokens": 171,
+   "prompt_tokens": 1371,
+   "completion_tokens": 140,
    "estimated": false,
-   "cost_usd": 0.000237
+   "cost_usd": 0.000231
   }
  }
 }

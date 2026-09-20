@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "New purposeful endangerment offence",
-   "summary": "The Bill creates an offence of deliberately using a motor vehicle to endanger life or safety, causing death or grievous hurt.",
+   "summary": "The Bill creates an offence where a driver deliberately uses a motor vehicle to endanger life or safety, causing death or grievous hurt.",
    "sentences": [
     {
      "sid": "s00011",
@@ -17,7 +17,7 @@
   },
   {
    "label": "Penalty for death caused",
-   "summary": "Where death is caused, the offender faces imprisonment up to 15 years, and is liable to fine or caning, or both.",
+   "summary": "Where death is caused, the offender faces imprisonment of up to 15 years, and is liable to fine or caning, or both.",
    "sentences": [
     {
      "sid": "s00025",
@@ -30,7 +30,7 @@
   },
   {
    "label": "Dangerous driving grievous hurt penalties",
-   "summary": "For dangerous driving causing grievous hurt, maximum imprisonment rises from five to seven years, and from 10 to 13 years for repeat offenders.",
+   "summary": "For dangerous driving causing grievous hurt, maximum imprisonment rises from five to seven years for first-time offenders and 10 to 13 years for repeat offenders.",
    "sentences": [
     {
      "sid": "s00037",
@@ -42,7 +42,7 @@
    ]
   },
   {
-   "label": "Increased maximum uplift terms",
+   "label": "Uplifts for serious offenders",
    "summary": "Maximum uplift for serious offenders rises from one year to one and a half years, and for serious repeat offenders from two to three and a half years.",
    "sentences": [
     {
@@ -62,8 +62,21 @@
    ]
   },
   {
+   "label": "Drink-driving violations detected",
+   "summary": "Over the past five years, the Traffic Police detected between 1,500 and 1,800 drink-driving violations annually.",
+   "sentences": [
+    {
+     "sid": "s00048",
+     "speaker": "The Second Minister for Home Affairs (Ms Sim Ann)",
+     "attributed": true,
+     "text": "Over the past five years, the Traffic Police detected between 1,500 and 1,800 drink-driving violations annually.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
    "label": "Tightened prescribed alcohol limits",
-   "summary": "Clauses 11 and 19 lower the prescribed breath alcohol limit to 15 microgrammes and the blood limit to 30 milligrammes.",
+   "summary": "Clauses 11 and 19 lower prescribed alcohol limits to 15 microgrammes per 100 millilitres of breath and 30 milligrammes per 100 millilitres of blood.",
    "sentences": [
     {
      "sid": "s00051",
@@ -75,8 +88,8 @@
    ]
   },
   {
-   "label": "Driving with drugs present offence",
-   "summary": "The Bill introduces an offence of driving with controlled drugs, psychoactive substances or intoxicating substances present in one's blood.",
+   "label": "New drug driving offence",
+   "summary": "The Bill introduces a new offence of driving with controlled drugs, psychoactive substances or intoxicating substances present in one's blood.",
    "sentences": [
     {
      "sid": "s00066",
@@ -88,34 +101,21 @@
    ]
   },
   {
-   "label": "New offence for specified substances",
-   "summary": "Clause 11 creates a new offence under section 67(1)(c) of the RTA for driving with a specified substance in the blood, without proving impairment.",
+   "label": "Statutory defence for lawful consumption",
+   "summary": "The Bill provides a statutory defence where the substance was lawfully consumed or administered and the person did not know it could impair driving.",
    "sentences": [
     {
-     "sid": "s00076",
-     "speaker": "The Second Minister for Home Affairs (Ms Sim Ann)",
-     "attributed": true,
-     "text": "Clause 11 therefore introduces a new offence under the new section 67(1)(c) of the RTA, where a person who drives or attempts to drive with the presence of a specified substance in his blood will commit an offence, without separately proving that he was impaired whilst driving.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Removal of preliminary breath test",
-   "summary": "Clause 14 of the Bill removes the requirement to administer a preliminary breath test, streamlining the drink-driving enforcement process.",
-   "sentences": [
-    {
-     "sid": "s00083",
+     "sid": "s00080",
      "speaker": "Ms Sim Ann",
      "attributed": true,
-     "text": "First, clause 14 of the Bill removes the requirement to administer a preliminary breath test, streamlining the drink-driving enforcement process.",
+     "text": "The Bill provides a statutory defence where the substance was lawfully consumed by or administered; and the person did not know or have reason to believe that consuming it could impair his or her driving.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Handheld Breath Evidential Analyser use",
-   "summary": "Clause 14 supports the Traffic Police's use of a Handheld Breath Evidential Analyser to obtain evidential-grade breath test results on the spot.",
+   "summary": "Clause 14 supports Traffic Police use of a Handheld Breath Evidential Analyser to obtain evidential-grade breath test results on the spot.",
    "sentences": [
     {
      "sid": "s00089",
@@ -140,21 +140,21 @@
    ]
   },
   {
-   "label": "Amendment to section 65B",
-   "summary": "Clause 10 amends section 65B to remove the element stating that the driver must be operating the device.",
+   "label": "Holding mobile device while driving",
+   "summary": "A driver who holds a mobile communication device in his hand while the vehicle is in motion will commit an offence.",
    "sentences": [
     {
-     "sid": "s00107",
+     "sid": "s00108",
      "speaker": "Ms Sim Ann",
      "attributed": true,
-     "text": "Clause 10 therefore amends section 65B to remove the element stating that the driver must be operating the device.",
+     "text": "A driver who holds a mobile communication device in his hand while the vehicle is in motion will commit an offence.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "New section 81A computer program",
-   "summary": "Clause 21 introduces section 81A, allowing a computer program to assess evidence and automatically issue notices for driver particulars.",
+   "label": "Computer program issuing driver particulars notice",
+   "summary": "Clause 21 introduces section 81A, allowing a computer program to assess evidence and automatically issue a notice for driver particulars.",
    "sentences": [
     {
      "sid": "s00113",
@@ -162,31 +162,11 @@
      "attributed": true,
      "text": "Clause 21 introduces a new section 81A, which allows a computer program to assess whether there is sufficient evidence that a traffic offence was committed and if so, automatically issue a notice to require the vehicle owner to provide the particulars of the driver at the time of the alleged offence.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00114",
-     "speaker": "Ms Sim Ann",
-     "attributed": true,
-     "text": "This enables the Traffic Police to significantly scale up the enforcement of traffic violations and eliminate manual processes, by using video analytics in traffic enforcement cameras.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Revoking misidentification notices",
-   "summary": "The new section lets drivers apply to revoke a notice if the vehicle was misidentified or the alleged offence did not occur.",
-   "sentences": [
-    {
-     "sid": "s00117",
-     "speaker": "Ms Sim Ann",
-     "attributed": true,
-     "text": "To further safeguard against system errors, the new section allows drivers to apply to revoke the notice if they believe that the relevant vehicle was misidentified or where the alleged offence did not occur.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Calculating driving disqualification periods",
+   "label": "Driving disqualification period calculation",
    "summary": "The Bill amends RTA provisions to make clear how driving disqualification periods are calculated.",
    "sentences": [
     {
@@ -199,18 +179,38 @@
    ]
   },
   {
+   "label": "Tightening demerit points regime",
+   "summary": "The Driver Improvement Points System will be tightened from January 2027, lowering the suspension threshold to 18 points and lengthening suspension periods.",
+   "sentences": [
+    {
+     "sid": "s00130",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "Alongside these amendments, we announced last week that we will tighten the Driver Improvement Points System, commonly known as the demerit points regime, to be implemented from January 2027.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00131",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "The two key changes are the lowering of the suspension threshold from 24 demerit points to 18 and lengthening the suspension periods for errant drivers who meet this lowered threshold.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
    "label": "New dangerous driving offence",
    "summary": "A new offence covers dangerous driving to endanger another person on purpose causing death or grievous hurt, with mandatory imprisonment of up to 15 years.",
    "sentences": [
     {
-     "sid": "s00127",
+     "sid": "s00154",
      "speaker": "Mr Vikram Nair (Sembawang)",
      "attributed": true,
      "text": "One of these is a new offence of dangerous driving to endanger another person on purpose that causes death or grievous hurt.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
-     "sid": "s00128",
+     "sid": "s00155",
      "speaker": "Mr Vikram Nair (Sembawang)",
      "attributed": true,
      "text": "This new offence is understandably a serious one with mandatory imprisonment of up to 15 years.",
@@ -219,31 +219,31 @@
    ]
   },
   {
-   "label": "Mobile phone driving components",
-   "summary": "The components required are now two instead of three: the driver must be holding his mobile phone and the vehicle must be in motion.",
+   "label": "Mobile phone driving components reduced",
+   "summary": "The offence now has two components instead of three: the driver must be holding his mobile phone and the vehicle must be in motion.",
    "sentences": [
     {
-     "sid": "s00138",
+     "sid": "s00165",
      "speaker": "Mr Vikram Nair (Sembawang)",
      "attributed": true,
-     "text": "Previously, there were three components that needed to be made out, but now there are only two – that the driver must be holding his mobile phone and the vehicle must be in motion.",
+     "text": "Previously, there were three components that needed to be made out, but now there are only two – that the driver must be holding his mobile phone and the vehicle must be in motion.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Alcohol and drug offence revisions",
-   "summary": "Alcohol-related offences reduce the alcohol level required, while drug impairment offences no longer require proving impairment or a minimum blood threshold.",
+   "label": "Alcohol and drug driving offences",
+   "summary": "Alcohol-related offences lower the required alcohol level, while drug impairment offences no longer require proving impairment or a minimum blood threshold.",
    "sentences": [
     {
-     "sid": "s00144",
+     "sid": "s00171",
      "speaker": "Mr Vikram Nair (Sembawang)",
      "attributed": true,
      "text": "Next, there is a revision of offences, first of all, in relation to alcohol-related offences, to reduce the level of alcohol required to make out a drunk driving offence, which I completely agree with.",
      "added_for_context": true
     },
     {
-     "sid": "s00145",
+     "sid": "s00172",
      "speaker": "Mr Vikram Nair (Sembawang)",
      "attributed": true,
      "text": "But separately, in relation to offences dealing with impairment for those who drive under the influence of controlled drugs, psychoactive or intoxicating substances, there is no longer a requirement to actually prove impairment nor is there a minimum threshold for the level of these substances found in a person's blood.",
@@ -252,58 +252,52 @@
    ]
   },
   {
-   "label": "Risk of RTA offences",
-   "summary": "The question asks whether these people are now at risk of RTA offences since neither intoxication nor an intoxicating blood level is required.",
-   "sentences": [
-    {
-     "sid": "s00151",
-     "speaker": "Mr Vikram Nair (Sembawang)",
-     "attributed": true,
-     "text": "Would these people now be at risk of committing offences under the RTA since there is now neither a requirement for intoxication nor a requirement for an intoxicating level to be found in the blood?",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Disqualification period and human review",
-   "summary": "The speaker seeks clarification on when the disqualification period runs for suspended drivers and on human review of offences or notices.",
+   "summary": "The passage notes human review of notices and asks the Minister to clarify why disqualification runs only after a prison sentence for an unrelated offence.",
    "sentences": [
     {
-     "sid": "s00154",
+     "sid": "s00181",
      "speaker": "Mr Vikram Nair (Sembawang)",
      "attributed": true,
      "text": "The assurance that these offences or these notices will be subject to a human review is also useful, certainly in the beginning when this is being rolled out.",
      "added_for_context": true
     },
     {
-     "sid": "s00155",
+     "sid": "s00182",
      "speaker": "Mr Vikram Nair (Sembawang)",
      "attributed": true,
      "text": "I do have a final clarification of when the disqualification period will run and in particular, those who are suspended will have the disqualification run only from the time they have finished serving a prison sentence, assuming that sentence is for an unrelated offence.",
      "added_for_context": false
     },
     {
-     "sid": "s00156",
+     "sid": "s00183",
      "speaker": "Mr Vikram Nair (Sembawang)",
      "attributed": true,
      "text": "I would just like the Minister to clarify what is the policy intent behind this.",
      "added_for_context": false
     },
     {
-     "sid": "s00157",
+     "sid": "s00184",
      "speaker": "Mr Vikram Nair (Sembawang)",
      "attributed": true,
      "text": "Because if the idea of a disqualification is to keep the driver off the road for a certain period of time, why does it matter whether a driver is kept off the road because of a prison sentence or for some other reason?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00185",
+     "speaker": "Mr Vikram Nair (Sembawang)",
+     "attributed": true,
+     "text": "If the aim is to keep the person off the road, I think it does not really matter what the reason is.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Traffic fatality and violation rates",
-   "summary": "Singapore's traffic fatality rate increased by about 24% while traffic violations rose by approximately 38%.",
+   "label": "Traffic fatalities and violations rise",
+   "summary": "Singapore's traffic fatality rate rose about 24% and traffic violations rose about 38%.",
    "sentences": [
     {
-     "sid": "s00161",
+     "sid": "s00188",
      "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
      "attributed": true,
      "text": "Singapore's traffic fatality rate increased by about 24%, while traffic violations rose by approximately 38%.",
@@ -312,11 +306,11 @@
    ]
   },
   {
-   "label": "Maximum penalty and lifetime disqualification",
-   "summary": "The maximum penalty is raised to 15 years, with default lifetime driving disqualification and possible vehicle forfeiture.",
+   "label": "Higher penalties and disqualification",
+   "summary": "Raising the maximum penalty to 15 years, default lifetime disqualification and vehicle forfeiture express deterrence and accountability.",
    "sentences": [
     {
-     "sid": "s00167",
+     "sid": "s00194",
      "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
      "attributed": true,
      "text": "Elevating the maximum penalty to 15 years, instituting a default lifetime driving disqualification and empowering the Courts to order the forfeiture of the vehicle used in offence are appropriate expressions of deterrence and accountability.",
@@ -325,11 +319,11 @@
    ]
   },
   {
-   "label": "Minister on local studies",
+   "label": "No local studies conducted",
    "summary": "In a written reply, the Minister stated that no such local studies have been conducted.",
    "sentences": [
     {
-     "sid": "s00177",
+     "sid": "s00204",
      "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
      "attributed": true,
      "text": "In a written reply, the Minister stated that no such local studies have been conducted.",
@@ -338,11 +332,11 @@
    ]
   },
   {
-   "label": "Drivers using multiple applications",
+   "label": "Drivers using multiple apps",
    "summary": "Some drivers operate multiple ride hailing or delivery applications at once, often using several mounted devices in the vehicle.",
    "sentences": [
     {
-     "sid": "s00188",
+     "sid": "s00215",
      "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
      "attributed": true,
      "text": "To maximise their earning, some drivers or many drivers simultaneously operate multiple ride hailing or delivery applications, often using several mounted devices within the vehicle.",
@@ -352,17 +346,17 @@
   },
   {
    "label": "Regulating in-vehicle screens and apps",
-   "summary": "The speaker asks whether MHA and LTA will consider standards for infotainment systems and restrict complex touchscreen or app functions while driving.",
+   "summary": "It asks whether MHA and LTA will consider standards for infotainment systems and restricting touchscreen or app functions while driving.",
    "sentences": [
     {
-     "sid": "s00199",
+     "sid": "s00226",
      "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
      "attributed": true,
      "text": "In the interest of proactive road safety, will MHA work with the Land Transport Authority (LTA) to consider standards of governing pre-installed infotainment systems, vehicle mobile application control functions and increasingly screen-dependent cockpit designs?",
      "added_for_context": false
     },
     {
-     "sid": "s00200",
+     "sid": "s00227",
      "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
      "attributed": true,
      "text": "Will the Government look into whether we need to require certain complex touchscreen interactions or app-based functions to be automatically restricted while a vehicle is in motion, in the interest of driving safety?",
@@ -371,11 +365,11 @@
    ]
   },
   {
-   "label": "Vehicle-type approval framework review",
-   "summary": "LTA is asked to consider whether Singapore's vehicle-type approval framework should evolve to address risks from large, complex in-vehicle displays.",
+   "label": "Vehicle-type approval for large displays",
+   "summary": "It asks whether LTA will consider if Singapore's vehicle-type approval framework should evolve to address large, complex in-vehicle displays.",
    "sentences": [
     {
-     "sid": "s00205",
+     "sid": "s00232",
      "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
      "attributed": true,
      "text": "Against this backdrop, will the LTA consider whether Singapore's vehicle-type approval framework should evolve to better address the risk posed by increasingly large and complex in-vehicle displays?",
@@ -384,18 +378,18 @@
    ]
   },
   {
-   "label": "Vehicle design and road safety",
-   "summary": "A speaker urges MHA and LTA to study new technologies' impact on driving safety and review vehicle standards so driving functions do not rely excessively on touchscreens.",
+   "label": "Road safety and vehicle design",
+   "summary": "Speaker urges MHA and LTA to study new technologies' impact on driving safety and review vehicle standards so driving functions do not rely excessively on touchscreens.",
    "sentences": [
     {
-     "sid": "s00211",
+     "sid": "s00238",
      "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
      "attributed": true,
      "text": "I believe that road safety depends not only on how drivers drive, but also on vehicle design.",
      "added_for_context": true
     },
     {
-     "sid": "s00212",
+     "sid": "s00239",
      "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
      "attributed": true,
      "text": "Therefore, I urge MHA and LTA to study the impact of these new technologies on driving safety and to review vehicle standards when appropriate, so as to ensure that important driving functions do not rely excessively on touchscreens, safeguarding the safety of road users.",
@@ -404,11 +398,11 @@
    ]
   },
   {
-   "label": "Maximum penalties stated",
+   "label": "Maximum penalty for offence",
    "summary": "The penalty reaches up to 15 years of imprisonment, caning and lifetime disqualification.",
    "sentences": [
     {
-     "sid": "s00219",
+     "sid": "s00246",
      "speaker": "Dr Wan Rizal (Jalan Besar)",
      "attributed": true,
      "text": "The penalty reaches up to 15 years of imprisonment, caning and lifetime disqualification.",
@@ -421,7 +415,7 @@
    "summary": "Clauses 7 and 8 increase penalties for dangerous and careless driving causing grievous hurt.",
    "sentences": [
     {
-     "sid": "s00222",
+     "sid": "s00249",
      "speaker": "Dr Wan Rizal (Jalan Besar)",
      "attributed": true,
      "text": "Clauses 7 and 8 also increase penalties for dangerous and careless driving causing grievous hurt.",
@@ -430,18 +424,31 @@
    ]
   },
   {
-   "label": "Demerit points deduction",
-   "summary": "A one-time deduction of demerit points ensures motorists do not face suspensions or revocations when the revised Driver Improvement Points System takes effect on 1 January 2027.",
+   "label": "New offence for specified substances",
+   "summary": "Clauses 11 and 13 create a new offence for any specified substance found in a driver's blood.",
    "sentences": [
     {
-     "sid": "s00248",
+     "sid": "s00266",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "Clauses 11 and 13 create a new offence for any specified substance found in a driver's blood.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "One-time demerit points deduction",
+   "summary": "Ministry addressed concerns with a one-time demerit points deduction so motorists avoid suspensions or revocations when the revised Driver Improvement Points System starts 1 January 2027.",
+   "sentences": [
+    {
+     "sid": "s00275",
      "speaker": "Dr Wan Rizal (Jalan Besar)",
      "attributed": true,
      "text": "I am glad that the Ministry addressed the concerns by providing a one-time deduction of demerit points.",
      "added_for_context": true
     },
     {
-     "sid": "s00249",
+     "sid": "s00276",
      "speaker": "Dr Wan Rizal (Jalan Besar)",
      "attributed": true,
      "text": "This will ensure that motorists do not face suspensions or revocations when the revised Driver Improvement Points System becomes effective on 1 January 2027.",
@@ -450,24 +457,11 @@
    ]
   },
   {
-   "label": "Annual notice figures",
-   "summary": "MHA is asked whether it will publish annual figures on notices issued, notices challenged and notices revoked on review.",
+   "label": "Monitoring platform worker costs",
+   "summary": "Speaker requests the Ministry actively monitor implementation, such as via account suspensions, and whether costs are quietly passed to Platform Workers through fare adjustments.",
    "sentences": [
     {
-     "sid": "s00258",
-     "speaker": "Dr Wan Rizal (Jalan Besar)",
-     "attributed": true,
-     "text": "Third, will MHA publish annual figures on notices issued, the notices challenged and notices revoked on review?",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Monitoring implementation and fare adjustments",
-   "summary": "Requests the Ministry to actively monitor implementation, for example via account suspensions, and whether costs are passed to Platform Workers through fare adjustments.",
-   "sentences": [
-    {
-     "sid": "s00263",
+     "sid": "s00290",
      "speaker": "Dr Wan Rizal (Jalan Besar)",
      "attributed": true,
      "text": "If so, I request that the Ministry actively monitor the implementation, for example via account suspensions, and whether those costs are quietly passed down to Platform Workers by way of fare adjustments.",
@@ -476,105 +470,99 @@
    ]
   },
   {
-   "label": "Medication risk for drivers",
-   "summary": "Urges the Ministry to work with pharmacies, doctors and Malay/Muslim organisations so information is presented plainly, early and to those most affected.",
+   "label": "Medication, driving and livelihoods",
+   "summary": "The Bill introduces new offences on substances in a driver's blood, and drivers taking prescribed medication should not risk losing their livelihood.",
    "sentences": [
     {
-     "sid": "s00278",
+     "sid": "s00302",
      "speaker": "Dr Wan Rizal (Jalan Besar)",
      "attributed": true,
-     "text": "A driver who takes medication as prescribed by his doctor should not face the risk of losing his livelihood because of the very medication that keeps him alive.",
+     "text": "They take medication every day in order to continue working and supporting their families.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00303",
+     "speaker": "Dr Wan Rizal (Jalan Besar)",
+     "attributed": true,
+     "text": "This Bill introduces new offences relating to certain substances in a driver's blood.",
      "added_for_context": false
     },
     {
-     "sid": "s00279",
+     "sid": "s00305",
      "speaker": "Dr Wan Rizal (Jalan Besar)",
      "attributed": true,
-     "text": "I urge the Ministry to work not only with pharmacies and doctors, but also with Malay/Muslim organisations so that this information is presented in plain and simple language, that is conveyed early and to those who are most affected.",
+     "text": "A driver who takes medication as prescribed by his doctor should not face the risk of losing his livelihood because of the very medication that keeps him alive.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "New road laws and enforcement",
-   "summary": "The Bill penalises deliberate endangerment, makes standards stricter and modernises enforcement, while noting rising traffic fatalities and violations.",
+   "summary": "The Bill penalises deliberate endangerment, tightens standards and modernises enforcement, while the speaker asks for communication, livelihood responsibility and transparency.",
    "sentences": [
     {
-     "sid": "s00284",
+     "sid": "s00311",
      "speaker": "Dr Wan Rizal (Jalan Besar)",
      "attributed": true,
-     "text": "It names and significantly penalises deliberate endangerment, it makes standard stricter for every driver and it modernises how we enforce our roads.",
+     "text": "It names and significantly penalises deliberate endangerment, it makes standard stricter for every driver and it modernises how we enforce our roads.",
      "added_for_context": true
     },
     {
-     "sid": "s00285",
+     "sid": "s00312",
      "speaker": "Dr Wan Rizal (Jalan Besar)",
      "attributed": true,
      "text": "I ask that we: first, communicate the new laws and compliance clearly to the workers most affected before the enforcement begins; to take responsibility for the livelihood risk the Bill creates for compliant drivers and build in the transparency from day one; the implementation to support enforcement technology that we deploy to expand the enforcement power.",
      "added_for_context": false
     },
     {
-     "sid": "s00287",
+     "sid": "s00314",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "As MHA itself noted, the road safety situation is worsening significantly, with the traffic fatality rate increasing 24% between 2021 and 2025, while traffic violations rose by about 38%.",
      "added_for_context": false
     },
     {
-     "sid": "s00288",
+     "sid": "s00315",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "I also noted that generally, the Singapore situation is also worse than some other comparable cities, with our traffic fatality rate in 2025 at 2.44 per 100,000 population.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00316",
+     "speaker": "Ms He Ting Ru (Sengkang)",
+     "attributed": true,
+     "text": "This is more than 150% higher than in Tokyo and almost double Hong Kong's.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Silver Road and pedestrian survival",
-   "summary": "The Silver Road scheme reduced incidents involving elderly pedestrians by 80%, and a pedestrian hit at 50 km/h has a 40% chance of dying versus 13% at 30 km/h.",
+   "label": "Silver Road scheme results",
+   "summary": "The Silver Road scheme was found to have reduced incidents involving elderly pedestrians by 80%.",
    "sentences": [
     {
-     "sid": "s00315",
+     "sid": "s00342",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "The Silver Road scheme was found to have resulted in the reduction of incidents involving elderly pedestrians by 80%.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00317",
-     "speaker": "Ms He Ting Ru (Sengkang)",
-     "attributed": true,
-     "text": "A pedestrian hit by vehicle travelling at 50 kilometres per hour (km/h) has a 40% chance of dying compared with 13% when the vehicle is travelling at 30 km/h.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Traffic signal speed study",
-   "summary": "An MIT mobility initiative study found adjusting traffic signals so only speed-limit-obeying drivers get green lights was 99% effective at inducing speed reductions.",
+   "label": "New alcohol limits and Vision Zero",
+   "summary": "The new limits are about 1.5 standard drinks for men and one for women within three hours of driving, and a Vision Zero policy is proposed.",
    "sentences": [
     {
-     "sid": "s00322",
-     "speaker": "Ms He Ting Ru (Sengkang)",
-     "attributed": true,
-     "text": "A recent Massachusetts Institute of Technology mobility initiative study noted that adjusting traffic signals so that only drivers obeying the speed limits will come across green lights was, \"99% effective to reliably induce speed reductions,\" and was such that most drivers do not even notice them.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Alcohol limits and Vision Zero",
-   "summary": "New permissible alcohol levels are roughly 1.5 standard drinks for men and one for women within three hours of driving, and a Vision Zero movement is called for.",
-   "sentences": [
-    {
-     "sid": "s00333",
+     "sid": "s00360",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "The new limits are that permissible alcohol levels are roughly equivalent to 1.5 standard drinks for men and one standard drink for women consumed within three hours of driving.",
      "added_for_context": false
     },
     {
-     "sid": "s00335",
+     "sid": "s00362",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "Another new norm we need to move towards is a policy call that introduces a Vision Zero movement for our road safety.",
@@ -583,24 +571,31 @@
    ]
   },
   {
-   "label": "Helsinki road death prevention",
-   "summary": "Helsinki achieved a full year without road deaths across 2024 and 2025 through lower speed limits, safer street designs, strong enforcement and improved pedestrian infrastructure.",
+   "label": "Helsinki road deaths example",
+   "summary": "Helsinki achieved a full year without road deaths across 2024 and 2025 through lower speed limits, safer designs, enforcement and pedestrian infrastructure.",
    "sentences": [
     {
-     "sid": "s00339",
+     "sid": "s00366",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "After all, Helsinki achieved a full year without road deaths across 2024 and 2025 through lower speed limits, safer street designs, strong enforcement and improved pedestrian infrastructure.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00367",
+     "speaker": "Ms He Ting Ru (Sengkang)",
+     "attributed": true,
+     "text": "It is time for us to set our own North Star in our own attempt to do so.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "New purposeful endangerment offence",
+   "label": "Purposeful endangerment offence welcomed",
    "summary": "The speaker welcomes the new offence of purposeful endangerment using a motor vehicle under the proposed section 63A.",
    "sentences": [
     {
-     "sid": "s00352",
+     "sid": "s00379",
      "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
      "attributed": true,
      "text": "In particular, I welcome the introduction of the new offence of purposeful endangerment using a motor vehicle under the proposed section 63A.",
@@ -613,7 +608,7 @@
    "summary": "The Bill removes the need to prove that the driver was operating a phone.",
    "sentences": [
     {
-     "sid": "s00358",
+     "sid": "s00385",
      "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
      "attributed": true,
      "text": "The Bill removes the need to prove that the driver was operating a phone.",
@@ -623,17 +618,17 @@
   },
   {
    "label": "Stronger Traffic Police powers",
-   "summary": "The speaker supports giving the Traffic Police stronger powers to intervene where there are reasonable grounds that a driver poses an ongoing danger to other road users.",
+   "summary": "The speaker supports giving the Traffic Police stronger powers to intervene where reasonable grounds show a driver poses ongoing danger.",
    "sentences": [
     {
-     "sid": "s00365",
+     "sid": "s00392",
      "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
      "attributed": true,
      "text": "But because it has the potential to prevent greater tragedy.",
      "added_for_context": true
     },
     {
-     "sid": "s00366",
+     "sid": "s00393",
      "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
      "attributed": true,
      "text": "I support giving the Traffic Police stronger powers to intervene where there are reasonable grounds that a driver poses an ongoing danger to other road users.",
@@ -642,24 +637,24 @@
    ]
   },
   {
-   "label": "Licence suspension means lost income",
-   "summary": "For many of these Singaporeans, suspension of a driving licence means suspension of their income.",
+   "label": "Safeguards for suspension powers",
+   "summary": "The question asks the Minister to elaborate on safeguards ensuring suspension powers remain proportionate, transparent and timely.",
    "sentences": [
     {
-     "sid": "s00372",
+     "sid": "s00400",
      "speaker": "Dr Hamid Razak (West Coast-Jurong West)",
      "attributed": true,
-     "text": "For many of these Singaporeans, suspension of a driving licence means suspension of their income.",
+     "text": "Could the Minister therefore elaborate on the safeguards that will ensure that these suspension powers remain proportionate, transparent and timely?",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Lower alcohol limits",
-   "summary": "The Bill lowers the prescribed breath alcohol limit from 35 to 15 microgrammes per 100 millilitres of breath and the blood alcohol limit from 80 to 30 milligrammes per 100 millilitres of blood.",
+   "summary": "The Bill lowers the breath alcohol limit from 35 to 15 microgrammes and the blood alcohol limit from 80 to 30 milligrammes.",
    "sentences": [
     {
-     "sid": "s00396",
+     "sid": "s00423",
      "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
      "attributed": true,
      "text": "The Bill lowers the prescribed breath alcohol limit from 35 to 15 microgrammes of alcohol in 100 millilitres of breath and the blood alcohol limit from 80 to 30 milligrammes of alcohol in 100 millilitres of blood.",
@@ -668,11 +663,11 @@
    ]
   },
   {
-   "label": "New drug presence offence",
-   "summary": "The Bill creates an offence where a controlled drug, psychoactive substance or intoxicating substance is present in a driver's blood, regardless of quantity or observed impairment.",
+   "label": "Offence for substances in blood",
+   "summary": "The Bill creates an offence where a controlled drug, psychoactive or intoxicating substance is present in the driver's blood.",
    "sentences": [
     {
-     "sid": "s00411",
+     "sid": "s00438",
      "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
      "attributed": true,
      "text": "The Bill creates an additional offence where a controlled drug or psychoactive substance or intoxicating substance is present in the driver's blood, regardless of the quantity detected or whether impairment was observed.",
@@ -681,66 +676,59 @@
    ]
   },
   {
-   "label": "Substances and analytical thresholds",
-   "summary": "The passage asks which substances and metabolites will be tested and at what analytical threshold they count as present.",
+   "label": "Defence for lawful use",
+   "summary": "The Bill already provides a defence for lawful use, including prescribed medication.",
    "sentences": [
     {
-     "sid": "s00414",
+     "sid": "s00445",
      "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
      "attributed": true,
-     "text": "It also makes the scientific and operational meaning of presence critical.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00415",
-     "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
-     "attributed": true,
-     "text": "So, I ask: which substances and metabolites will be tested and at what analytical threshold will they count as present?",
+     "text": "The Bill already provides a defence for lawful use, including prescribed medication.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Hospital breath specimens and guidance",
-   "summary": "The passage asks what training and guidance nurses taking forensic specimens will get, and calls for clear rules on drug presence and guidance for lawful medication.",
+   "label": "Forensic specimens and enforcement evidence",
+   "summary": "The passage asks what training nurses taking forensic specimens will receive and says enforcement needs evidence testing and clear drug-presence rules.",
    "sentences": [
     {
-     "sid": "s00428",
+     "sid": "s00455",
      "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
      "attributed": true,
      "text": "For hospital breath specimens, the person immediately responsible for the patient's care is expressly part of the statutory safety check.",
      "added_for_context": false
     },
     {
-     "sid": "s00430",
+     "sid": "s00457",
      "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
      "attributed": true,
      "text": "What training and professional guidance will be given to nurses involved in taking forensic specimens?",
      "added_for_context": false
     },
     {
-     "sid": "s00431",
+     "sid": "s00458",
      "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
      "attributed": true,
      "text": "Firm enforcement needs more than severe penalties though.",
      "added_for_context": true
     },
     {
-     "sid": "s00432",
+     "sid": "s00459",
      "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
      "attributed": true,
      "text": "It must be grounded in evidence testing that can withstand scrutiny.",
      "added_for_context": false
     },
     {
-     "sid": "s00433",
+     "sid": "s00460",
      "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
      "attributed": true,
      "text": "Clear rules on what constitutes drug presence and practical guidance for people taking lawful medication.",
      "added_for_context": false
     },
     {
-     "sid": "s00434",
+     "sid": "s00461",
      "speaker": "Mr Low Wu Yang Andre (Non-Constituency Member)",
      "attributed": true,
      "text": "We do owe innocent road users laws that can prevent avoidable harm and ward off the next tragedy.",
@@ -749,144 +737,144 @@
    ]
   },
   {
-   "label": "Rise in traffic fatalities",
+   "label": "Traffic and red-light accident rises",
    "summary": "Traffic fatalities rose to 147 last year from 139 in 2024, and red-light running accidents rose by more than a quarter.",
    "sentences": [
     {
-     "sid": "s00451",
+     "sid": "s00478",
      "speaker": "Ms Mariam Jaafar (Sembawang)",
      "attributed": true,
-     "text": "Traffic fatalities rose to 147 last year, up from 139 in 2024.",
+     "text": "Traffic fatalities rose to 147 last year, up from 139 in 2024.",
      "added_for_context": false
     },
     {
-     "sid": "s00452",
+     "sid": "s00479",
      "speaker": "Ms Mariam Jaafar (Sembawang)",
      "attributed": true,
-     "text": "Red-light running accidents rose by more than a quarter.",
+     "text": "Red-light running accidents rose by more than a quarter.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Suspension points threshold lowered",
+   "label": "Lower suspension points threshold 2027",
    "summary": "From January 2027, the threshold before a non-probationary motorist faces suspension falls from 24 to 18 points.",
    "sentences": [
     {
-     "sid": "s00465",
+     "sid": "s00492",
      "speaker": "Ms Mariam Jaafar (Sembawang)",
      "attributed": true,
-     "text": "From January 2027, the threshold before a non-probationary motorist faces suspension will fall from 24 to 18 points.",
+     "text": "From January 2027, the threshold before a non-probationary motorist faces suspension will fall from 24 to 18 points.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Immediate suspension for red-light speeding",
-   "summary": "A driver who beats a red light while speeding would be suspended immediately, and for a full-time private hire driver that suspension is a pause in income.",
-   "sentences": [
-    {
-     "sid": "s00469",
-     "speaker": "Ms Mariam Jaafar (Sembawang)",
-     "attributed": true,
-     "text": "A driver who beats a red light while speeding would, under the new regime, be suspended immediately, and for a full-time private hire driver, that suspension is not a pause in convenience, but a pause in income.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Spanish licence points mechanism",
-   "summary": "Spanish motorists start with 12 points and a clean three-year record credits back up to 15, prompting a request to consider a similar mechanism here.",
-   "sentences": [
-    {
-     "sid": "s00492",
-     "speaker": "Ms Mariam Jaafar (Sembawang)",
-     "attributed": true,
-     "text": "Spanish motorists start with 12 points, but a driver who maintains a clean record for three years is credited back up to 15 points – a genuine, earned buffer built directly into the licence, not a separate reward scheme sitting alongside it.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00493",
-     "speaker": "Ms Mariam Jaafar (Sembawang)",
-     "attributed": true,
-     "text": "I would ask the Minister whether a similar mechanism, where a sustained period without any offences restores the variable demerit points, could be considered here, either for all drivers, or at minimum for our vocational drivers, who face the sharpest livelihood consequences and have the most to gain from a system that rewards years of safe driving with real headroom, not just a certificate and goody bag.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "2025 traffic death figures",
-   "summary": "2025 figures show elderly pedestrians remain disproportionately represented in pedestrian fatalities, while motorcyclists and pillion riders account for more than half of all traffic deaths.",
+   "summary": "A driver who beats a red light while speeding would be suspended immediately, which for a full-time private hire driver pauses income.",
    "sentences": [
     {
      "sid": "s00496",
      "speaker": "Ms Mariam Jaafar (Sembawang)",
      "attributed": true,
-     "text": "The 2025 figures remind us that elderly pedestrians remain disproportionately represented in pedestrian fatalities, while motorcyclists and pillion riders continue to account for more than half of all traffic deaths.",
+     "text": "A driver who beats a red light while speeding would, under the new regime, be suspended immediately, and for a full-time private hire driver, that suspension is not a pause in convenience, but a pause in income.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Measures of success",
-   "summary": "Success will be measured by families not receiving late-night calls, children crossing safely, elderly pedestrians walking without incident, motorcyclists returning safely, and private hire drivers earning while driving safely.",
+   "label": "AI traffic data for hotspots",
+   "summary": "The passage asks how Traffic Police and LTA use or plan to use anonymised traffic data and AI-assisted analysis to spot hotspots and deploy enforcement.",
    "sentences": [
     {
-     "sid": "s00501",
+     "sid": "s00509",
      "speaker": "Ms Mariam Jaafar (Sembawang)",
      "attributed": true,
-     "text": "Its success will instead be measured by the family that never receives a late-night phone call, the child who crosses the road safely, the elderly pedestrian who walks to the Active Ageing Centre without incident, the motorcyclist who returns safely to loved ones at the end of the day, and I would add, the private hire driver who can keep earning a living while driving safely.",
+     "text": "Could the Minister share how the Traffic Police and LTA are using, or plan to use anonymised traffic data and artificial intelligence- (AI-) assisted analysis to spot emerging hotspots before they produce repeated accidents, and to deploy enforcement dynamically to where the risk is highest?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Spanish points and earned buffer",
+   "summary": "The passage describes Spain's licence points system and asks whether a similar mechanism restoring demerit points could be considered here.",
+   "sentences": [
+    {
+     "sid": "s00519",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "Spanish motorists start with 12 points, but a driver who maintains a clean record for three years is credited back up to 15 points – a genuine, earned buffer built directly into the licence, not a separate reward scheme sitting alongside it.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00520",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "I would ask the Minister whether a similar mechanism, where a sustained period without any offences restores the variable demerit points, could be considered here, either for all drivers, or at minimum for our vocational drivers, who face the sharpest livelihood consequences and have the most to gain from a system that rewards years of safe driving with real headroom, not just a certificate and goody bag.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Elderly and motorcyclist fatalities",
+   "summary": "The 2025 figures show elderly pedestrians remain disproportionately represented in pedestrian fatalities, while motorcyclists and pillion riders account for more than half of all traffic deaths.",
+   "sentences": [
+    {
+     "sid": "s00523",
+     "speaker": "Ms Mariam Jaafar (Sembawang)",
+     "attributed": true,
+     "text": "The 2025 figures remind us that elderly pedestrians remain disproportionately represented in pedestrian fatalities, while motorcyclists and pillion riders continue to account for more than half of all traffic deaths.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Penalty gap for road deaths",
-   "summary": "Attempted suicide was repealed in 2019, and the Bill raises the penalty for grievous hurt to seven years while killing stays at eight, a one-year gap given 149 road deaths in 2025.",
+   "summary": "The Bill raises the penalty for grievous hurt to seven years and leaves killing at eight, and the speaker asks why the eight-year ceiling was retained.",
    "sentences": [
     {
-     "sid": "s00511",
-     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
-     "attributed": true,
-     "text": "I note that we repealed attempted suicide in 2019.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00512",
+     "sid": "s00539",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "This Bill raises the penalty for grievous hurt to seven years and leaves killing at eight.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00540",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "This gap of one year seems small, given road deaths last year were the highest in a decade – with 149 in 2025.",
      "added_for_context": false
     },
     {
-     "sid": "s00513",
+     "sid": "s00541",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
-     "text": "This gap of one year seems small, given road deaths last year were the highest in a decade – with 149 in 2025.",
+     "text": "So, why did the Government choose to retain this eight-year ceiling for causing death?",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Driving without valid licence penalty",
-   "summary": "Driving without a valid licence carries up to three years jail, but in PP v Eng Kwan Meng Garrick the High Court set the starting point at three weeks.",
+   "summary": "Driving without a valid licence carries up to three years jail, but the High Court set a starting point of three weeks in PP v Eng Kwan Meng Garrick.",
    "sentences": [
     {
-     "sid": "s00517",
+     "sid": "s00544",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "First, driving without a valid licence carries up to three years jail.",
      "added_for_context": true
     },
     {
-     "sid": "s00518",
+     "sid": "s00545",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "This year, in PP v Eng Kwan Meng Garrick, our High Court set the starting point for a driver who had lost his licence completely and drove anyway, at three weeks.",
      "added_for_context": false
     },
     {
-     "sid": "s00519",
+     "sid": "s00546",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "But three weeks under a ceiling of three years tells us the ceiling is actually doing very little work.",
@@ -895,31 +883,31 @@
    ]
   },
   {
-   "label": "Brake check licence suspension",
-   "summary": "The speaker says using a vehicle to express rage is unacceptable, and asks whether the Deputy Commissioner of Police will immediately suspend a driver's licence for a brake check before Court proceedings.",
+   "label": "Brake check licence suspension question",
+   "summary": "The speaker says weaponising a vehicle is unacceptable and asks whether the Deputy Commissioner of Police will immediately suspend a driver's licence for a brake check before Court proceedings.",
    "sentences": [
     {
-     "sid": "s00534",
+     "sid": "s00561",
      "speaker": "Dr Neo Kok Beng (Nominated Member)",
      "attributed": true,
      "text": "Using the weaponisation of the vehicle to express your rage or whatever, is really not acceptable as it can cause dangerous accidents.",
      "added_for_context": true
     },
     {
-     "sid": "s00535",
+     "sid": "s00562",
      "speaker": "Dr Neo Kok Beng (Nominated Member)",
      "attributed": true,
-     "text": "However, when I look at the penalty, I am not too sure – maybe the Minister can clarify – that if a person or a driver has been identified and there is video evidence to show that this person has done a brake check, will the Deputy Commissioner of Police, who is in charge, do an immediate suspension of the driving licence before the Court proceedings?",
+     "text": "However, when I look at the penalty, I am not too sure – maybe the Minister can clarify – that if a person or a driver has been identified and there is video evidence to show that this person has done a brake check, will the Deputy Commissioner of Police, who is in charge, do an immediate suspension of the driving licence before the Court proceedings?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Highway code knowledge for road users",
-   "summary": "Asks whether the Minister would consider regulations ensuring cyclists and road users know the highway code.",
+   "label": "Highway code knowledge for cyclists",
+   "summary": "The speaker asks whether the Minister would consider regulations ensuring all cyclists or road users know the highway code.",
    "sentences": [
     {
-     "sid": "s00539",
+     "sid": "s00566",
      "speaker": "Dr Neo Kok Beng (Nominated Member)",
      "attributed": true,
      "text": "Would the Minister consider passing regulations that ensure that all cyclists or any road users have a knowledge of our highway code?",
@@ -929,50 +917,63 @@
   },
   {
    "label": "Grace period for mail offences",
-   "summary": "Suggests a grace period of a few days so offences committed in that time count as one offence.",
+   "summary": "The speaker suggests that if mail is used, a grace period of a couple of days, seven days or five working days could treat whatever offence committed as just one offence.",
    "sentences": [
     {
-     "sid": "s00552",
+     "sid": "s00579",
      "speaker": "Dr Neo Kok Beng (Nominated Member)",
      "attributed": true,
-     "text": "Another way is if we stick to the mail, then maybe we can consider that for a grace period of a couple of days – could be seven days or five working days – that whatever offence committed will be treated as just one offence.",
+     "text": "Another way is if we stick to the mail, then maybe we can consider that for a grace period of a couple of days – could be seven days or five working days – that whatever offence committed will be treated as just one offence.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Suspending licences after dangerous driving",
-   "summary": "Asks whether the Traffic Police can immediately suspend the licence of a driver involved in such behaviour pending legal proceedings.",
+   "label": "Cyclist road rules examination",
+   "summary": "Speaker asks the Minister to consider requiring all cyclists on public roads to pass an examination on road traffic rules or the Highway Code.",
    "sentences": [
     {
-     "sid": "s00556",
+     "sid": "s00585",
      "speaker": "Dr Neo Kok Beng (Nominated Member)",
      "attributed": true,
-     "text": "Not only can such acts lead to serious accidents, but a moving vehicle can undoubtedly become a lethal weapon.",
+     "text": "Bicycles are increasingly common on major roads, making road traffic and driving conditions more complex.",
      "added_for_context": true
     },
     {
-     "sid": "s00557",
+     "sid": "s00586",
      "speaker": "Dr Neo Kok Beng (Nominated Member)",
      "attributed": true,
-     "text": "I would therefore like to ask the Minister whether the Traffic Police can immediately and temporarily suspend the licence of the driver involved when such behaviour occurs, pending the completion of legal proceedings.",
+     "text": "I would therefore like the Minister to consider whether regulations can be introduced to require all cyclists on public roads to pass an examination on road traffic rules or the Highway Code.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "New South Wales AI cameras",
+   "summary": "New South Wales in Australia has deployed AI-powered roadside cameras to detect motorists using hand-held mobile phones while driving.",
+   "sentences": [
+    {
+     "sid": "s00622",
+     "speaker": "Mr Darryl David (Ang Mo Kio)",
+     "attributed": true,
+     "text": "The state of New South Wales in Australia, for example, has deployed AI-powered roadside cameras to detect motorists using hand-held mobile phones while driving.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Technology against distracted driving",
-   "summary": "Asks how Singapore will use technology to enforce against distracted driving and whether detection systems will be deployed more widely.",
+   "summary": "Speaker asks how Singapore intends to use technology against distracted driving and whether wider automated detection at high-risk locations or major expressways will be considered.",
    "sentences": [
     {
-     "sid": "s00597",
+     "sid": "s00625",
      "speaker": "Mr Darryl David (Ang Mo Kio)",
      "attributed": true,
      "text": "In light of this, could the Minister elaborate how Singapore intends to leverage technology to strengthen enforcement against distracted driving?",
      "added_for_context": false
     },
     {
-     "sid": "s00598",
+     "sid": "s00626",
      "speaker": "Mr Darryl David (Ang Mo Kio)",
      "attributed": true,
      "text": "Will Singapore consider wider deployment of automated or automatic detection systems at high-risk locations or along major expressways?",
@@ -981,31 +982,18 @@
    ]
   },
   {
-   "label": "Standards for digital evidence",
-   "summary": "Asks the Minister to clarify the standards governing collection, retention and verification of digital evidence.",
-   "sentences": [
-    {
-     "sid": "s00601",
-     "speaker": "Mr Darryl David (Ang Mo Kio)",
-     "attributed": true,
-     "text": "Could the Minister clarify the standards governing the collection, retention and verification of digital evidence?",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Mandatory programme for repeat offenders",
-   "summary": "Encourages the Government to introduce a mandatory distracted driving intervention programme for repeat offenders.",
+   "summary": "Speaker encourages the Government to consider a mandatory distracted driving intervention programme for repeat offenders, saying fines and demerit points alone cannot always correct such habits.",
    "sentences": [
     {
-     "sid": "s00613",
+     "sid": "s00641",
      "speaker": "Mr Darryl David (Ang Mo Kio)",
      "attributed": true,
      "text": "Such habits cannot always be corrected through fines and demerit points alone.",
      "added_for_context": true
     },
     {
-     "sid": "s00614",
+     "sid": "s00642",
      "speaker": "Mr Darryl David (Ang Mo Kio)",
      "attributed": true,
      "text": "I therefore encourage the Government to consider introducing a mandatory distracted driving intervention programme for repeat offenders.",
@@ -1014,24 +1002,25 @@
    ]
   },
   {
-   "label": "Distracted driving in driver curriculum",
-   "summary": "Asks whether distracted driving could be a compulsory module in the learner driver curriculum and Driver Improvement Points System courses.",
+   "label": "Demerit threshold impact on vocational drivers",
+   "summary": "Speaker notes the recent reduction in the demerit points threshold for licence suspension and tougher consequences for repeat offenders, and says these changes will disproportionately impact vocational drivers.",
    "sentences": [
     {
-     "sid": "s00618",
+     "sid": "s00649",
      "speaker": "Mr Darryl David (Ang Mo Kio)",
      "attributed": true,
-     "text": "Could distracted driving become a compulsory module within the learner driver curriculum before they are granted their driving license and likewise be incorporated into the Driver Improvement Points System courses?",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Impact on vocational drivers",
-   "summary": "States the changes will disproportionately affect vocational drivers, including bus captains, taxi and private hire drivers, and delivery and logistics workers.",
-   "sentences": [
+     "text": "By combining effective deterrence with meaningful education, we can reduce repeat offending and foster a stronger culture of responsible driving.",
+     "added_for_context": true
+    },
     {
-     "sid": "s00624",
+     "sid": "s00650",
+     "speaker": "Mr Darryl David (Ang Mo Kio)",
+     "attributed": true,
+     "text": "I understand why the Government has recently decided on a reduction in the demerit points threshold for licence suspension and the tougher consequences for repeat offenders.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00652",
      "speaker": "Mr Darryl David (Ang Mo Kio)",
      "attributed": true,
      "text": "At the same time, Sir, we should recognise that these changes will have a disproportionate impact on vocational drivers, including bus captains, taxi and private hire drivers and those in the delivery and logistics sectors.",
@@ -1040,18 +1029,18 @@
    ]
   },
   {
-   "label": "Mandatory road safety programme",
-   "summary": "Says drivers at nine demerit points could attend a mandatory road safety programme and get a one-time three-point reduction every two years.",
+   "label": "Road safety programme at nine points",
+   "summary": "Speaker suggests that at nine demerit points drivers attend a mandatory road safety programme and, on completion, receive a one-time three-point reduction once every two years.",
    "sentences": [
     {
-     "sid": "s00628",
+     "sid": "s00656",
      "speaker": "Mr Darryl David (Ang Mo Kio)",
      "attributed": true,
      "text": "For example, upon reaching nine demerit points, they could be required to attend a mandatory road safety programme focused on defensive driving, hazard awareness and responsible driving behaviour.",
      "added_for_context": false
     },
     {
-     "sid": "s00629",
+     "sid": "s00657",
      "speaker": "Mr Darryl David (Ang Mo Kio)",
      "attributed": true,
      "text": "Upon successful completion of this programme, they could receive a one-time reduction of three demerit points, available once every two years in line with the existing demerit point cycle.",
@@ -1060,44 +1049,31 @@
    ]
   },
   {
-   "label": "Maximum penalty for new offence",
-   "summary": "States the maximum penalty for the new offence of purposeful endangerment causing death or grievous hurt is 15 years' jail.",
+   "label": "Dangerous driving death penalty",
+   "summary": "The existing offence of dangerous driving causing death carries a maximum penalty of only eight years, almost half the new offence's penalty.",
    "sentences": [
     {
-     "sid": "s00644",
+     "sid": "s00679",
      "speaker": "Mr Xie Yao Quan (Jurong Central)",
      "attributed": true,
-     "text": "My starting point is this: the maximum penalty for the new offence of purposeful endangerment causing death or even grievous hurt is 15 years' jail.",
+     "text": "Yet, the existing offence of dangerous driving causing death still carries a maximum penalty of only eight years – almost half that of the new offence.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Penalty for dangerous driving death",
-   "summary": "States the existing offence of dangerous driving causing death carries a maximum penalty of only eight years.",
+   "label": "Proposed higher death penalty",
+   "summary": "Using 15 years for purposeful endangerment, the speaker says the discount for dangerous driving causing death should be no more than 30%, and wished its maximum had been revised to 11 years instead of eight.",
    "sentences": [
     {
-     "sid": "s00651",
-     "speaker": "Mr Xie Yao Quan (Jurong Central)",
-     "attributed": true,
-     "text": "Yet, the existing offence of dangerous driving causing death still carries a maximum penalty of only eight years – almost half that of the new offence.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Proposed 11-year maximum penalty",
-   "summary": "Proposes the discount be no more than 30% and the maximum penalty for dangerous driving causing death be revised to 11 years.",
-   "sentences": [
-    {
-     "sid": "s00664",
+     "sid": "s00692",
      "speaker": "Mr Xie Yao Quan (Jurong Central)",
      "attributed": true,
      "text": "Using the maximum penalty of 15 years' jail for the new offence of purposeful endangerment as a starting point, I think the discount for dangerous driving causing death, should be no more than 30%.",
      "added_for_context": true
     },
     {
-     "sid": "s00665",
+     "sid": "s00693",
      "speaker": "Mr Xie Yao Quan (Jurong Central)",
      "attributed": true,
      "text": "And so, I wish the maximum penalty for dangerous driving causing death had been revised upwards, to 11 years instead of eight.",
@@ -1106,67 +1082,87 @@
    ]
   },
   {
-   "label": "Dangerous driving grievous hurt penalties",
-   "summary": "The Bill raises the maximum sentence for dangerous driving causing grievous hurt from six to eight and a half years, responding to a High Court Judge's comment.",
+   "label": "Grievous hurt penalty comparison",
+   "summary": "The Bill proposes a higher maximum imprisonment penalty for dangerous driving causing grievous hurt, but it remains lower than that for causing death.",
    "sentences": [
     {
-     "sid": "s00678",
+     "sid": "s00700",
+     "speaker": "Mr Xie Yao Quan (Jurong Central)",
+     "attributed": true,
+     "text": "The culpability and harm from causing grievous hurt by dangerous driving may be not be less than causing death.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00701",
+     "speaker": "Mr Xie Yao Quan (Jurong Central)",
+     "attributed": true,
+     "text": "This Bill proposes a higher maximum imprisonment penalty for dangerous driving causing grievous hurt, but it is still lower than the maximum penalty for dangerous driving causing death.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Yoong case and penalties",
+   "summary": "Yoong was charged with dangerous driving causing grievous hurt while drink driving, sentenced to five years against a six-year maximum, and the Bill revises that maximum to eight and a half years.",
+   "sentences": [
+    {
+     "sid": "s00706",
      "speaker": "Mr Xie Yao Quan (Jurong Central)",
      "attributed": true,
      "text": "Yoong was charged with dangerous driving causing grievous hurt while drink driving.",
      "added_for_context": true
     },
     {
-     "sid": "s00679",
+     "sid": "s00707",
      "speaker": "Mr Xie Yao Quan (Jurong Central)",
      "attributed": true,
      "text": "So, it was a serious offence of dangerous driving causing grievous hurt, and that carries a maximum penalty of six years' jail.",
      "added_for_context": false
     },
     {
-     "sid": "s00680",
+     "sid": "s00708",
      "speaker": "Mr Xie Yao Quan (Jurong Central)",
      "attributed": true,
      "text": "The High Court Judge sentenced Yoong eventually to five years, close to the maximum.",
      "added_for_context": false
     },
     {
-     "sid": "s00681",
+     "sid": "s00709",
      "speaker": "Mr Xie Yao Quan (Jurong Central)",
      "attributed": true,
      "text": "But in his judgment, he also noted, \"If anything, I wonder whether the maximum sentences prescribed are fully adequate for the worst type of incidents.",
      "added_for_context": true
     },
     {
-     "sid": "s00682",
+     "sid": "s00710",
      "speaker": "Mr Xie Yao Quan (Jurong Central)",
      "attributed": true,
      "text": "That is, however, a matter for the Legislature.\" Well, the Bill before the Legislature today provides one response to that, to the High Court Judge's comment, which is to revise the maximum sentence for these worst types of grievous hurt incidents upwards to eight and a half years from six.",
      "added_for_context": false
     },
     {
-     "sid": "s00683",
+     "sid": "s00711",
      "speaker": "Mr Xie Yao Quan (Jurong Central)",
      "attributed": true,
      "text": "My view, as a legislator, is that for the worst type of incidents, where \"worst\" means surviving may not be better off than death; where \"worst\" means the grievous injuries caused are no less harmful than outright death, the maximum penalty for grievous hurt ought to be on par with that for death, higher than eight and a half years.",
      "added_for_context": false
     },
     {
-     "sid": "s00684",
+     "sid": "s00712",
      "speaker": "Mr Xie Yao Quan (Jurong Central)",
      "attributed": true,
      "text": "Or indeed, we ought to harmonise the offence for grievous hurt and death into one, as the Bill is already proposing for the new offence of purposeful endangerment.",
      "added_for_context": false
     },
     {
-     "sid": "s00685",
+     "sid": "s00713",
      "speaker": "Mr Lee Hong Chuang (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "Last year, 149 people lost their lives on our roads, the highest number in a decade.",
      "added_for_context": false
     },
     {
-     "sid": "s00686",
+     "sid": "s00714",
      "speaker": "Mr Lee Hong Chuang (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "Between 2021 and 2025, traffic fatalities increased by 24%, while traffic violations rose by nearly 38%.",
@@ -1179,7 +1175,7 @@
    "summary": "Under the Bill, simply holding the phone while the vehicle is moving becomes an offence.",
    "sentences": [
     {
-     "sid": "s00695",
+     "sid": "s00723",
      "speaker": "Mr Lee Hong Chuang (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "Under the Bill, simply holding the phone while the vehicle is moving becomes an offence.",
@@ -1188,59 +1184,59 @@
    ]
   },
   {
-   "label": "Tougher penalties for grievous hurt driving",
-   "summary": "The speaker supports tougher penalties for dangerous and careless driving causing grievous hurt.",
+   "label": "Lowering legal alcohol limit",
+   "summary": "The speaker supports lowering the legal alcohol limit.",
    "sentences": [
     {
-     "sid": "s00700",
+     "sid": "s00732",
      "speaker": "Mr Lee Hong Chuang (Jurong East-Bukit Batok)",
      "attributed": true,
-     "text": "Second, I support the tougher penalties for dangerous and careless driving causing grievous hurt.",
+     "text": "Third, I support lowering the legal alcohol limit.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Vigilance to reduce road accidents",
-   "summary": "The law must stop dangerous conduct in time and the public must understand the risk, as accidents happen in a split second.",
+   "label": "Road accidents and vigilance",
+   "summary": "The law must stop dangerous conduct in time and the public must understand the risk, so vigilance can reduce avoidable injuries.",
    "sentences": [
     {
-     "sid": "s00738",
+     "sid": "s00766",
      "speaker": "Mr Lee Hong Chuang (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "Many road accidents happen in a split second.",
      "added_for_context": true
     },
     {
-     "sid": "s00739",
+     "sid": "s00767",
      "speaker": "Mr Lee Hong Chuang (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "It may be a moment of impulse, looking down at a mobile phone, or thinking that one has not drunk much and should be able to drive.",
      "added_for_context": false
     },
     {
-     "sid": "s00740",
+     "sid": "s00768",
      "speaker": "Mr Lee Hong Chuang (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "Therefore, the law must stop dangerous conduct in time and the public must also truly understand the risk.",
      "added_for_context": false
     },
     {
-     "sid": "s00741",
+     "sid": "s00769",
      "speaker": "Mr Lee Hong Chuang (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "Drivers must focus on driving; riders must pay attention to their surroundings and pedestrians should put down their phones and check the road carefully when crossing.",
      "added_for_context": false
     },
     {
-     "sid": "s00742",
+     "sid": "s00770",
      "speaker": "Mr Lee Hong Chuang (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "If each of us exercises a little more vigilance and think more of others, we can reduce injuries that could have been avoided otherwise.",
      "added_for_context": true
     },
     {
-     "sid": "s00743",
+     "sid": "s00771",
      "speaker": "Mr Lee Hong Chuang (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "We must remember that while roads can be travelled again, a life once lost cannot be restored.",
@@ -1249,85 +1245,105 @@
    ]
   },
   {
-   "label": "New offence for purposeful endangerment",
-   "summary": "The Bill creates a new offence for using a car to scare or hurt someone on purpose, with up to 15 years' jail, caning, a lifetime driving ban and vehicle forfeiture.",
+   "label": "New tougher offence for dangerous driving",
+   "summary": "Traffic deaths rose about 24% and offences about 38% from 2021 to 2025, so the Bill creates a new offence with up to 15 years' jail.",
    "sentences": [
     {
-     "sid": "s00747",
+     "sid": "s00775",
      "speaker": "Mr Gabriel Lam (Sembawang)",
      "attributed": true,
      "text": "Between 2021 and 2025, traffic deaths rose by about 24% and traffic offences by about 38%.",
      "added_for_context": false
     },
     {
-     "sid": "s00749",
+     "sid": "s00777",
      "speaker": "Mr Gabriel Lam (Sembawang)",
      "attributed": true,
      "text": "Today, when a driver uses a car to scare or hurt someone on purpose, but we cannot prove intent to kill, the charge is usually dangerous driving causing death, capped at eight years.",
      "added_for_context": true
     },
     {
-     "sid": "s00750",
+     "sid": "s00778",
      "speaker": "Mr Gabriel Lam (Sembawang)",
      "attributed": true,
      "text": "This Bill creates a new, tougher offence for exactly this conduct: up to 15 years' jail, caning at the Court's discretion, a lifetime driving ban, absent special reasons, and forfeiture of the vehicle.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00751",
-     "speaker": "Mr Gabriel Lam (Sembawang)",
-     "attributed": true,
-     "text": "A car is not a weapon for settling scores.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00752",
-     "speaker": "Mr Gabriel Lam (Sembawang)",
-     "attributed": true,
-     "text": "I also support the tougher penalties for dangerous driving causing serious injury, the maximum rising from five years to seven years for a first offence; and from 10 to 13 years for a repeat offence.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Time limit for issuing notices",
-   "summary": "The speaker asks the Ministry to prescribe a maximum period, such as 30 days from detection, within which a Notice must be issued to the vehicle owner.",
+   "label": "Stricter drink driving limits",
+   "summary": "The Bill sets stricter drink driving limits, lowering breath alcohol from 35 to 15 microgrammes and blood-alcohol from 80 to 30 milligrammes.",
    "sentences": [
     {
-     "sid": "s00769",
+     "sid": "s00783",
+     "speaker": "Mr Gabriel Lam (Sembawang)",
+     "attributed": true,
+     "text": "The larger increase belongs where the conduct is more dangerous, and the Bill gets that balance right.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00784",
+     "speaker": "Mr Gabriel Lam (Sembawang)",
+     "attributed": true,
+     "text": "I welcome, too, the stricter drink driving limits, breath alcohol falling from 35 to 15 microgrammes, blood-alcohol from 80 to 30 milligrammes, bringing us closer to Taiwan, Japan and South Korea.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Notice period for vehicle owners",
+   "summary": "A slow Notice can make an owner fail the 14-days test, so the Ministry should prescribe a maximum period of 30 days from detection.",
+   "sentences": [
+    {
+     "sid": "s00797",
      "speaker": "Mr Gabriel Lam (Sembawang)",
      "attributed": true,
      "text": "An owner who would have identified the driver promptly, had the Notice arrived promptly, can still fail the 14-days test simply because the Notice was slow and lose any real ability to catch or contest a mistake.",
      "added_for_context": true
     },
     {
-     "sid": "s00770",
+     "sid": "s00798",
      "speaker": "Mr Gabriel Lam (Sembawang)",
      "attributed": true,
-     "text": "I would ask the Ministry to close this imbalance directly; prescribing a maximum period – 30 days from detection would be a reasonable starting point, within which a Notice must be issued to the vehicle owner.",
+     "text": "I would ask the Ministry to close this imbalance directly; prescribing a maximum period – 30 days from detection would be a reasonable starting point, within which a Notice must be issued to the vehicle owner.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Rising traffic violations and fatalities",
-   "summary": "In the past five years, traffic violations rose 38% and fatality rates rose 24%, making roads more dangerous.",
+   "label": "Support for Road Traffic Bill amendments",
+   "summary": "Traffic violations rose 38% and fatality rates 24% in five years, so the speaker supports stiffer penalties for dangerous and careless driving causing grievous hurt.",
    "sentences": [
     {
-     "sid": "s00785",
+     "sid": "s00813",
      "speaker": "Ms Poh Li San (Sembawang West)",
      "attributed": true,
      "text": "Indeed, in the past five years, our roads have become more dangerous as traffic violations rose 38% and fatality rates rose 24%.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00814",
+     "speaker": "Ms Poh Li San (Sembawang West)",
+     "attributed": true,
+     "text": "We must not allow more innocent lives to be lost due to careless or reckless drivers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00815",
+     "speaker": "Ms Poh Li San (Sembawang West)",
+     "attributed": true,
+     "text": "Hence, I support the amendments to the Road Traffic Bill, to impose stiffer penalties on dangerous and careless driving causing grievous hurt, specifically due to drink driving and using mobile communication devices while driving.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "RTA amendments on mobile devices",
-   "summary": "The RTA amendments aim to deter mobile communication device use by letting Traffic Police enforce using cameras or public photographic or videographic evidence, increasing detection.",
+   "label": "Camera enforcement of mobile device offences",
+   "summary": "The RTA amendments let Traffic Police enforce mobile communication device offences using cameras or photographic or videographic evidence from the public.",
    "sentences": [
     {
-     "sid": "s00795",
+     "sid": "s00823",
      "speaker": "Ms Poh Li San (Sembawang West)",
      "attributed": true,
      "text": "The amendments to the RTA aim to deter the use of mobile communication devices by allowing the Traffic Police to enforce the offence using cameras or based on photographic or videographic evidence submitted by members of the public, which will increase the detection of such offences.",
@@ -1336,11 +1352,11 @@
    ]
   },
   {
-   "label": "Clarifying MHA position on devices",
-   "summary": "The question asks the Minister to clarify MHA's position on such mobile device use and whether it constitutes an offence.",
+   "label": "MHA position on mobile devices",
+   "summary": "The Minister is asked to clarify MHA's position on such mobile device use and whether it is an offence.",
    "sentences": [
     {
-     "sid": "s00802",
+     "sid": "s00830",
      "speaker": "Ms Poh Li San (Sembawang West)",
      "attributed": true,
      "text": "Can the Minister clarify MHA's position towards such use of mobile devices and if they would constitute an offence?",
@@ -1349,38 +1365,18 @@
    ]
   },
   {
-   "label": "Traffic Police photographic evidence enforcement",
-   "summary": "The amendments would allow the Traffic Police to enforce the offence using photographic or videographic evidence submitted by members of the public.",
+   "label": "Driving instructors and mobile devices",
+   "summary": "Driving instructors must set a good example, mobile devices must not be permitted during lessons, and the basic driving test should include mobile device questions.",
    "sentences": [
     {
-     "sid": "s00807",
-     "speaker": "Ms Poh Li San (Sembawang West)",
-     "attributed": true,
-     "text": "The amendments would allow the Traffic Police the enforcement of the offence using photographic or videographic evidence submitted by members of the public.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Driving instructor and curriculum measures",
-   "summary": "Driving instructors must set a good example, mobile device use by instructors and learner-drivers must not be permitted during lessons, the curriculum should include past accident examples, and the basic driving test should include mobile device use questions.",
-   "sentences": [
-    {
-     "sid": "s00821",
+     "sid": "s00849",
      "speaker": "Ms Poh Li San (Sembawang West)",
      "attributed": true,
      "text": "The driving instructors must set a good example and the use of mobile devices by both instructors and learner-drivers must not be permitted during driving lessons.",
      "added_for_context": false
     },
     {
-     "sid": "s00822",
-     "speaker": "Ms Poh Li San (Sembawang West)",
-     "attributed": true,
-     "text": "Also, the curriculum should include a module on examples of past accidents caused by the use of mobile devices, to let learner-drivers understand the extent of harm and damage that can result.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00823",
+     "sid": "s00851",
      "speaker": "Ms Poh Li San (Sembawang West)",
      "attributed": true,
      "text": "Lastly, the basic driving test should also include questions related to the \"dos\" and \"don'ts\" of mobile device use while driving.",
@@ -1389,11 +1385,31 @@
    ]
   },
   {
-   "label": "Support for stiffer penalties",
-   "summary": "The Member supports the amendments to impose stiffer penalties on dangerous and careless driving causing grievous hurt, specifically from drink-driving and mobile communication device use while driving.",
+   "label": "Pedestrians using mobile devices",
+   "summary": "Pedestrians are commonly seen looking at phones and wearing headphones while crossing roads, and stronger measures are needed to remind them not to use mobile devices.",
    "sentences": [
     {
-     "sid": "s00844",
+     "sid": "s00858",
+     "speaker": "Ms Poh Li San (Sembawang West)",
+     "attributed": true,
+     "text": "It is a common sight these days of pedestrians looking down at their mobile phones, wearing headphones and looking completely oblivious to the surroundings, while crossing the roads.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00859",
+     "speaker": "Ms Poh Li San (Sembawang West)",
+     "attributed": true,
+     "text": "We need stronger measures to remind pedestrians not to use their mobile communication devices while crossing the road.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Support for stiffer driving penalties",
+   "summary": "The speaker supports amendments imposing stiffer penalties for dangerous and careless driving causing grievous hurt, specifically from drink-driving and mobile device use while driving.",
+   "sentences": [
+    {
+     "sid": "s00872",
      "speaker": "Ms Poh Li San (Sembawang West)",
      "attributed": true,
      "text": "(In Mandarin): Mr Speaker, I support the amendments to the Bill, to impose stiffer penalties on dangerous and careless driving causing grievous hurt, specifically due to drink-driving and using mobile communication devices while driving.",
@@ -1402,32 +1418,32 @@
    ]
   },
   {
-   "label": "Road traffic fatalities and injuries",
-   "summary": "The Police's 2025 report shows road fatalities rose from 107 in 2021 to 149 in 2025 and injuries from 7,240 to 9,955.",
+   "label": "Road traffic fatality statistics",
+   "summary": "Police's Annual Road Traffic Situation Report 2025 shows road fatalities rose from 107 in 2021 to 149 in 2025, and injuries rose from 7,240 to 9,955.",
    "sentences": [
     {
-     "sid": "s00862",
+     "sid": "s00891",
      "speaker": "Mr Alex Yeo (Potong Pasir)",
      "attributed": true,
      "text": "According to the Police's Annual Road Traffic Situation Report 2025, fatalities on the roads rose from 107 in 2021 to 149 in 2025.",
      "added_for_context": false
     },
     {
-     "sid": "s00863",
+     "sid": "s00892",
      "speaker": "Mr Alex Yeo (Potong Pasir)",
      "attributed": true,
      "text": "The number of people injured on our roads rose from 7,240 to 9,955 in the same period.",
      "added_for_context": false
     },
     {
-     "sid": "s00865",
+     "sid": "s00894",
      "speaker": "Mr Alex Yeo (Potong Pasir)",
      "attributed": true,
      "text": "For example, while motorcycles formed only about 15% of our vehicle population in 2025, motorcyclists and their pillion riders were involved in 54.8% of all traffic accidents and accounted for about 53% of all traffic fatalities – more than half.",
      "added_for_context": false
     },
     {
-     "sid": "s00866",
+     "sid": "s00895",
      "speaker": "Mr Alex Yeo (Potong Pasir)",
      "attributed": true,
      "text": "Our seniors constitute 12.9% of our population in 2025, yet account for 75% of all pedestrian fatalities.",
@@ -1436,18 +1452,18 @@
    ]
   },
   {
-   "label": "Holding phone while driving",
-   "summary": "The Bill makes physically holding a phone an offence once the vehicle is moving, without proving the driver was using it.",
+   "label": "Holding a phone while driving",
+   "summary": "The Bill makes physically holding a phone an offence once the vehicle is moving, without needing to prove the driver was actually using it.",
    "sentences": [
     {
-     "sid": "s00907",
+     "sid": "s00936",
      "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
      "attributed": true,
      "text": "Drivers may need to change the Global Positioning System destination, inform someone that they are delayed or deal with an urgent matter before continuing their journey.",
      "added_for_context": true
     },
     {
-     "sid": "s00908",
+     "sid": "s00937",
      "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
      "attributed": true,
      "text": "However, once the vehicle is moving, this Bill makes the act of physically holding a phone an offence, without needing to prove that the driver was actually using it.",
@@ -1456,79 +1472,66 @@
    ]
   },
   {
-   "label": "De minimis principle question",
-   "summary": "The speaker asks whether section 95 of the Penal Code, the de minimis principle, applies to such situations.",
+   "label": "Breath and blood alcohol limits",
+   "summary": "The Bill lowers breath and blood alcohol limits and allows roadside evidential readings, and the speaker asks how measurement margin of error will be addressed.",
    "sentences": [
     {
-     "sid": "s00913",
-     "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
-     "attributed": true,
-     "text": "Should that one-second act alone make the driver a criminal?",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00914",
-     "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
-     "attributed": true,
-     "text": "I therefore ask the Minister whether section 95 of the Penal Code, which embodies the de minimis principle, will apply in such situations.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Alcohol limits and breath testing",
-   "summary": "The Bill lowers breath and blood alcohol limits and allows a roadside Handheld Breath Evidential Analyser evidential reading.",
-   "sentences": [
-    {
-     "sid": "s00932",
+     "sid": "s00961",
      "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
      "attributed": true,
      "text": "The Bill proposes to reduce the prescribed breath alcohol limit from 35 microgrammes to 15 microgrammes; and the blood alcohol limit from 80 milligrammes to 30 milligrammes.",
      "added_for_context": false
     },
     {
-     "sid": "s00934",
+     "sid": "s00963",
      "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
      "attributed": true,
      "text": "The Bill allows the Handheld Breath Evidential Analyser to produce an evidential reading at the roadside instead of requiring a second evidential test at the police lock-up.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00965",
+     "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
+     "attributed": true,
+     "text": "But convenience must never come at the expense of accuracy.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00966",
+     "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
+     "attributed": true,
+     "text": "I therefore ask the Minister how the margin of error for such measurements will be addressed, especially for the readings at or just above the legal limit?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Standalone road hogging offence",
-   "summary": "The speaker urges a standalone offence for persistent road hogging, listing objective factors and camera-based enforcement.",
+   "label": "Standalone offence for road hogging",
+   "summary": "The speaker urges creating a standalone road hogging offence targeting drivers who stay in the overtaking lane without overtaking and obstruct traffic.",
    "sentences": [
     {
-     "sid": "s00966",
+     "sid": "s00995",
      "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
      "attributed": true,
      "text": "It contributes to unnecessary lane changing, undertaking, sudden braking, tailgating, road rage and may even delay emergency vehicles trying to get through.",
      "added_for_context": true
     },
     {
-     "sid": "s00967",
+     "sid": "s00996",
      "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
      "attributed": true,
      "text": "I therefore urge the Government to consider creating a clear standalone offence for persistent road hogging.",
      "added_for_context": false
     },
     {
-     "sid": "s00968",
+     "sid": "s00997",
      "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
      "attributed": true,
      "text": "Such an offence should target drivers who remain unnecessarily in the overtaking lane despite having a safe opportunity to move left, who are not overtaking and who materially obstruct the lawful flow of traffic without reasonable justification.",
      "added_for_context": false
     },
     {
-     "sid": "s00969",
-     "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
-     "attributed": true,
-     "text": "Enforcement is increasingly feasible through cameras and technology, supported by human review.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00970",
+     "sid": "s00999",
      "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
      "attributed": true,
      "text": "Objective factors, such as how long the vehicle remained in the overtaking lane, whether it was overtaking, whether the adjacent lane was clear and whether traffic accumulated behind it, could all be considered before prosecution takes place.",
@@ -1537,38 +1540,38 @@
    ]
   },
   {
-   "label": "Drink and drug driving offences",
-   "summary": "Clauses 11, 13 and 19 change drink and drug driving laws and introduce an offence for specified substances in blood.",
+   "label": "Dangerous conduct and drink driving laws",
+   "summary": "The speaker says a clear line should separate dangerous conduct from momentary safety acts, and tougher drink driving laws need reliable science, enforcement and prevention.",
    "sentences": [
     {
-     "sid": "s00984",
-     "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
+     "sid": "s01002",
+     "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
      "attributed": true,
-     "text": "First, clauses 11, 13 and 19 which enact changes to drink driving and drug driving laws.",
+     "text": "We should draw a clear line between dangerous conduct and momentary acts done in the interest of safety.",
      "added_for_context": true
     },
     {
-     "sid": "s00985",
-     "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
+     "sid": "s01003",
+     "speaker": "Ms Diana Pang Li Yen (Marine Parade-Braddell Heights)",
      "attributed": true,
-     "text": "It also introduces a new offence for driving with specified controlled or psychoactive substances present in the blood.",
+     "text": "We should match tougher drink driving laws with reliable science, accurate enforcement and stronger prevention.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Holding mobile device while driving",
-   "summary": "The Bill makes it an offence simply to hold a mobile communication device while driving, removing the requirement that a driver be actively using its functions.",
+   "label": "Holding a mobile device while driving",
+   "summary": "The Bill removes the requirement that a driver be actively using a mobile device's functions, making it an offence simply to hold one while driving.",
    "sentences": [
     {
-     "sid": "s00994",
+     "sid": "s01023",
      "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
      "attributed": true,
      "text": "The Bill removes the requirement that a driver be actively using a mobile device's functions.",
      "added_for_context": true
     },
     {
-     "sid": "s00995",
+     "sid": "s01024",
      "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
      "attributed": true,
      "text": "It will now be an offence simply to hold a mobile communication device while driving.",
@@ -1577,11 +1580,11 @@
    ]
   },
   {
-   "label": "New driving offences and camera enforcement",
-   "summary": "The Bill creates a purposeful endangerment offence with up to 15 years' imprisonment, raises maximum sentences for dangerous and careless driving causing grievous hurt, and lets the Deputy Commissioner of Police authorise a computer program to assess camera evidence and issue Notices.",
+   "label": "New driving offences and penalties",
+   "summary": "The Bill introduces purposeful endangerment using a motor vehicle, raises maximum sentences for dangerous and careless driving causing grievous hurt, and empowers camera evidence assessment.",
    "sentences": [
     {
-     "sid": "s01002",
+     "sid": "s01031",
      "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
      "attributed": true,
      "text": "The Bill introduces a new offence of purposeful endangerment using a motor vehicle, with penalties of up to 15 years' imprisonment; it raises maximum sentences for dangerous and careless driving causing grievous hurt; and it empowers the Deputy Commissioner of Police to authorise a computer program to assess camera evidence and issue Notices to vehicle owners for certain strict liability offences.",
@@ -1591,72 +1594,86 @@
   },
   {
    "label": "Right to human review",
-   "summary": "The Bill gives vehicle owners the right to apply for a human review and revocation of an automated Notice.",
+   "summary": "The speaker welcomes the Bill's right to apply for human review of an automated Notice and asks the Ministry to assure this right is upheld and resourced.",
    "sentences": [
     {
-     "sid": "s01015",
+     "sid": "s01044",
      "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
      "attributed": true,
      "text": "It is a tenet of justice that every citizen has a right to be heard by another human being before consequences are imposed on them.",
      "added_for_context": true
     },
     {
-     "sid": "s01016",
+     "sid": "s01045",
      "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
      "attributed": true,
      "text": "It is for this reason that I am encouraged to see the Bill provide vehicle owners the right to apply for a human review and revocation of an automated Notice.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01047",
+     "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
+     "attributed": true,
+     "text": "I would ask the Ministry for an assurance.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01048",
+     "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
+     "attributed": true,
+     "text": "This right should not exist only at the Bill's passage, but that it must be actively upheld, resourced and protected against dilution by future policy or operational shifts made without this House's scrutiny.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Kinder driving culture and penalties",
-   "summary": "The Bill raises maximum penalties for careless and dangerous driving causing grievous hurt, tightens prescribed alcohol limits for drink driving, and makes holding a mobile communication device while a vehicle is moving an offence without proving operation.",
+   "label": "Road safety bill and driving culture",
+   "summary": "The Bill raises maximum penalties for careless and dangerous driving causing grievous hurt, tightens alcohol limits and bans drivers from holding a mobile device while moving.",
    "sentences": [
     {
-     "sid": "s01022",
+     "sid": "s01051",
      "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
      "attributed": true,
      "text": "I have met so many gracious people in our homes and in our hawker centres.",
      "added_for_context": true
     },
     {
-     "sid": "s01023",
+     "sid": "s01052",
      "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
      "attributed": true,
-     "text": "And yet, too often, that kampong spirit disappears the moment we step behind a wheel – the driver who tailgates a slower car; the motorist who refuses to give way to a pedestrian at a crossing; the road user who treats every journey as a race to be won, rather than a space to be shared.",
+     "text": "And yet, too often, that kampong spirit disappears the moment we step behind a wheel – the driver who tailgates a slower car; the motorist who refuses to give way to a pedestrian at a crossing; the road user who treats every journey as a race to be won, rather than a space to be shared.",
      "added_for_context": false
     },
     {
-     "sid": "s01025",
+     "sid": "s01054",
      "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
      "attributed": true,
      "text": "Our roads are not separate from our society, but are an extension of it.",
      "added_for_context": false
     },
     {
-     "sid": "s01026",
+     "sid": "s01055",
      "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
      "attributed": true,
      "text": "How we drive is how we treat one another when no one seems to be watching.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
-     "sid": "s01027",
+     "sid": "s01056",
      "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
      "attributed": true,
      "text": "This Bill should not just be a set of legal amendments, but a mark of growth for us as a society that wishes to build safer roads and a kinder driving culture.",
      "added_for_context": false
     },
     {
-     "sid": "s01029",
+     "sid": "s01058",
      "speaker": "Ms Elysa Chen (Bishan-Toa Payoh)",
      "attributed": true,
      "text": "Hopefully, in the future, instead of \"You think this is your grandfather's road?\", we can all say, \"This is our road\".",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
-     "sid": "s01030",
+     "sid": "s01059",
      "speaker": "Dr Charlene Chen (Tampines)",
      "attributed": true,
      "text": "It raises the maximum penalties for careless and dangerous driving causing grievous hurt, tightens the prescribed alcohol limits for drink driving and makes clear that when a vehicle is moving, it will be an offence for a driver simply to hold a mobile communication device without the need to prove that the driver was operating it.",
@@ -1665,11 +1682,11 @@
    ]
   },
   {
-   "label": "Mobile phone crash risk",
-   "summary": "The World Health Organization estimates that drivers using mobile phones are approximately four times as likely to be involved in a crash as drivers who are not using a phone.",
+   "label": "WHO mobile phone crash risk",
+   "summary": "The World Health Organization estimates drivers using mobile phones are about four times as likely to crash as drivers who are not.",
    "sentences": [
     {
-     "sid": "s01042",
+     "sid": "s01071",
      "speaker": "Dr Charlene Chen (Tampines)",
      "attributed": true,
      "text": "The World Health Organization estimates that drivers using mobile phones are approximately four times as likely to be involved in a crash as drivers who are not using a phone.",
@@ -1678,51 +1695,116 @@
    ]
   },
   {
-   "label": "Easier enforcement through evidence",
-   "summary": "The amendment makes it easier to enforce the rules, including through cameras and photographic or video evidence submitted by the public.",
+   "label": "Singapore road fatalities commentary",
+   "summary": "A Straits Times commentary by Krishnan Menon highlighted 149 road fatalities in Singapore in 2025, the highest in a decade, with failure to keep a proper lookout in 52% of accidents.",
    "sentences": [
     {
-     "sid": "s01047",
-     "speaker": "Dr Charlene Chen (Tampines)",
-     "attributed": true,
-     "text": "The amendment also makes it easier to enforce the rules, including through cameras, photographic or video evidence submitted by the public.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Road fatalities and handphone driving",
-   "summary": "A commentary highlighted 149 road fatalities in 2025 and that failure to keep a proper lookout was identified in 52% of accidents, as the handphone driving offence requirement changes.",
-   "sentences": [
-    {
-     "sid": "s01058",
+     "sid": "s01087",
      "speaker": "Dr Charlene Chen (Tampines)",
      "attributed": true,
      "text": "I was particularly struck by a recent Straits Times commentary by my colleague, Mr Krishnan Menon, from the Nanyang Centre for Marketing and Technology at the Nanyang Technological University.",
      "added_for_context": true
     },
     {
-     "sid": "s01059",
+     "sid": "s01088",
      "speaker": "Dr Charlene Chen (Tampines)",
      "attributed": true,
      "text": "He highlighted that Singapore recorded 149 road fatalities in 2025, the highest number in a decade, and that \"failure to keep a proper lookout\" was identified in 52% of accidents.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s01061",
-     "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
-     "attributed": true,
-     "text": "The requirement that the driver must also operate any of the device's communicative or other functions will no longer be needed to constitute the offence commonly known as \"handphone driving\".",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Criminalising holding device while driving",
-   "summary": "The member asks how the Ministry justifies criminalising holding a mobile communication device while driving but not eating, drinking or smoking.",
+   "label": "Distance covered at 90 km/h",
+   "summary": "A vehicle travelling at 90 km/h covers about 25 metres every second.",
    "sentences": [
     {
-     "sid": "s01068",
+     "sid": "s01091",
+     "speaker": "Dr Charlene Chen (Tampines)",
+     "attributed": true,
+     "text": "A vehicle travelling at 90 km/h covers about 25 metres every second.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Refreshing safe-driving education touchpoints",
+   "summary": "Safe-driving education should be refreshed at existing touchpoints such as vocational-licence renewals, remedial programmes and reinstatement after suspension or disqualification.",
+   "sentences": [
+    {
+     "sid": "s01110",
+     "speaker": "Dr Charlene Chen (Tampines)",
+     "attributed": true,
+     "text": "Safe-driving education should also be refreshed at existing touchpoints, such as vocational-licence renewals, remedial programmes and reinstatement after suspension or disqualification.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Trial on goals and competition",
+   "summary": "In a large randomised trial in the Proceedings of the National Academy of Sciences, weekly goals and social competition reduced handheld phone use by about 20% versus the control group.",
+   "sentences": [
+    {
+     "sid": "s01125",
+     "speaker": "Dr Charlene Chen (Tampines)",
+     "attributed": true,
+     "text": "In a large, randomised trial published in the Proceedings of the National Academy of Sciences, weekly goals and social competition reduced handheld phone use by about 20% relative to the control group.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Voluntary insurer driver feedback programmes",
+   "summary": "Insurers and fleet operators could pilot voluntary programmes giving drivers private feedback, weekly attentive-driving goals and small rewards for sustained improvement.",
+   "sentences": [
+    {
+     "sid": "s01128",
+     "speaker": "Dr Charlene Chen (Tampines)",
+     "attributed": true,
+     "text": "Insurers and fleet operators could pilot voluntary programmes offering drivers private feedback, weekly attentive-driving goals and small rewards for sustained improvement.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Bill message on phone use",
+   "summary": "The Bill sends a message that when a vehicle is moving, the phone should not be in the driver's hand.",
+   "sentences": [
+    {
+     "sid": "s01138",
+     "speaker": "Dr Charlene Chen (Tampines)",
+     "attributed": true,
+     "text": "The Bill sends an important and necessary message: when a vehicle is moving, the phone should not be in the driver's hand.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Handphone driving offence requirement removed",
+   "summary": "The requirement that the driver must also operate the device's communicative or other functions will no longer be needed for the handphone driving offence.",
+   "sentences": [
+    {
+     "sid": "s01142",
+     "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
+     "attributed": true,
+     "text": "The requirement that the driver must also operate any of the device's communicative or other functions will no longer be needed to constitute the offence commonly known as \"handphone driving\".",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Distinguishing holding phone from other activities",
+   "summary": "The question asks how the Ministry distinguishes holding a mobile communication device from everything else, and justifies criminalising that but not eating, drinking or smoking.",
+   "sentences": [
+    {
+     "sid": "s01148",
+     "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
+     "attributed": true,
+     "text": "Could the Ministry explain how, in the context of the mere physical act of holding an object, it distinguishes between a mobile communication device on the one hand and everything else on the other?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01149",
      "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
      "attributed": true,
      "text": "More specifically, how does the Ministry justify criminalising the mere act of holding a mobile communication device while driving, but not when a driver performs a more physically engaging activity, such as eating, drinking or smoking, which may likewise distract the driver's concentration on the road.",
@@ -1731,24 +1813,11 @@
    ]
   },
   {
-   "label": "Bill and Driver Improvement Points System",
-   "summary": "The Bill's passage and the Traffic Police's tightening of the Driver Improvement Points System from 1 January 2027 will mean more drivers caught, sanctioned and receiving demerit points.",
-   "sentences": [
-    {
-     "sid": "s01080",
-     "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
-     "attributed": true,
-     "text": "The passage of this Bill, coupled with the Traffic Police's announcement on 31 July 2026 that it will tighten the Driver Improvement Points System from 1 January 2027, will mean more drivers being caught and sanctioned, and therefore receiving more demerit points.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Suspended suspension for demerit points",
-   "summary": "The member asks whether the Ministry has considered or will consider a form of suspended suspension for motorists who accumulate the relevant number of demerit points.",
+   "summary": "The question asks whether the Ministry has considered or will consider a form of suspended suspension for motorists who accumulate the relevant number of demerit points.",
    "sentences": [
     {
-     "sid": "s01085",
+     "sid": "s01166",
      "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
      "attributed": true,
      "text": "In this vein, I ask whether the Ministry has considered, or will consider, a form of \"suspended suspension\" for motorists who accumulate the relevant number of demerit points.",
@@ -1757,32 +1826,32 @@
    ]
   },
   {
-   "label": "Public Defender's Office and RTA",
-   "summary": "The member asks whether the Government will review the Public Defender's Act to remove the RTA from excluded offences, and whether measures address phone distraction among other road users.",
+   "label": "Legal representation and other road users",
+   "summary": "The passage asks whether the Government would review the Public Defender's Act to remove the RTA from excluded offences, and whether the Ministry is studying phone distraction measures for other road users.",
    "sentences": [
     {
-     "sid": "s01094",
+     "sid": "s01175",
      "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
      "attributed": true,
      "text": "The Public Defender's Office under the Ministry of Law currently does not provide legal representation to persons charged under the RTA, even where the individual who is facing financial hardship faces a potential term of imprisonment.",
      "added_for_context": false
     },
     {
-     "sid": "s01095",
+     "sid": "s01176",
      "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
      "attributed": true,
      "text": "In view of the increased severity of the penalties under this Bill, would the Government consider reviewing the Public Defender's Act to remove the RTA from the list of excluded offences in the schedule?",
      "added_for_context": false
     },
     {
-     "sid": "s01097",
+     "sid": "s01178",
      "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
      "attributed": true,
      "text": "Pedestrians, cyclists and personal mobility device riders who are distracted by their mobile phones also contribute to accidents and near-misses on our roads and footpaths.",
      "added_for_context": false
     },
     {
-     "sid": "s01098",
+     "sid": "s01179",
      "speaker": "Ms Hany Soh (Marsiling-Yew Tee)",
      "attributed": true,
      "text": "I therefore ask whether the Ministry is also studying measures to address phone distraction among these other road users.",
@@ -1791,38 +1860,38 @@
    ]
   },
   {
-   "label": "Resident appealing traffic fine",
-   "summary": "The member says residents appeal traffic fines weekly, citing a Fengshan probationary driver and rider who could not afford the $200 fine and feared licence revocation.",
+   "label": "Fines and lower-income drivers",
+   "summary": "Fines can be the final burden for a sole breadwinner managing bills, arrears and family expenses, punishing lower-income offenders more heavily.",
    "sentences": [
     {
-     "sid": "s01121",
+     "sid": "s01208",
      "speaker": "Ms Hazlina Abdul Halim (East Coast)",
      "attributed": true,
-     "text": "Dare I say that every week when we meet our residents, we receive appeals for traffic fines.",
-     "added_for_context": false
+     "text": "When the driver is a sole breadwinner managing bills, arrears and other family expenses, the fine can be the straw that breaks the camel's back.",
+     "added_for_context": true
     },
     {
-     "sid": "s01123",
+     "sid": "s01209",
      "speaker": "Ms Hazlina Abdul Halim (East Coast)",
      "attributed": true,
-     "text": "Just yesterday alone, my Fengshan resident, a probationary driver and rider, Mr X, came to submit yet another appeal because he could not afford the $200 fine and was anxious that his licence may be revoked.",
+     "text": "We therefore should ask: how are fines actually punishing lower-income offenders more heavily than better-off offenders?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Income-based traffic fines study",
-   "summary": "A person may have a low salary but substantial assets, so the speaker asks MHA to consider studying income-based traffic fines.",
+   "label": "Studying income-based traffic fines",
+   "summary": "A person may have a low salary but substantial assets, so the speaker asks MHA to consider studying income-based traffic fines, not introduce them immediately.",
    "sentences": [
     {
-     "sid": "s01135",
+     "sid": "s01217",
      "speaker": "Ms Hazlina Abdul Halim (East Coast)",
      "attributed": true,
      "text": "A person may have a low salary but substantial assets.",
      "added_for_context": true
     },
     {
-     "sid": "s01136",
+     "sid": "s01218",
      "speaker": "Ms Hazlina Abdul Halim (East Coast)",
      "attributed": true,
      "text": "I am therefore not suggesting that Singapore should immediately introduce income-based traffic fines, but I ask for MHA to consider studying the consideration.",
@@ -1832,10 +1901,10 @@
   },
   {
    "label": "Instalment payment framework for fines",
-   "summary": "The passage asks whether a clearer and more accessible framework could exist for offenders facing genuine financial hardship to pay fines by instalments.",
+   "summary": "The passage asks whether a clearer, more accessible framework could let offenders facing genuine financial hardship pay fines by instalments.",
    "sentences": [
     {
-     "sid": "s01139",
+     "sid": "s01221",
      "speaker": "Ms Hazlina Abdul Halim (East Coast)",
      "attributed": true,
      "text": "Could there be a clearer and more accessible framework for offenders facing genuine financial hardship to pay their fines by instalments?",
@@ -1844,11 +1913,24 @@
    ]
   },
   {
-   "label": "Fines impact on lower-income individuals",
-   "summary": "The passage notes fines disproportionately impact lower-income individuals and those earning their livelihood on the roads, and voices concern over this Bill's amendments.",
+   "label": "Corrective courses and work orders",
+   "summary": "For suitable lower-level offences, MHA could consider corrective driving courses or corrective work orders alongside or instead of part of the financial penalty.",
    "sentences": [
     {
-     "sid": "s01148",
+     "sid": "s01225",
+     "speaker": "Ms Hazlina Abdul Halim (East Coast)",
+     "attributed": true,
+     "text": "For suitable lower-level offences, MHA could also consider corrective driving courses or corrective work orders to be imposed alongside or in limited cases instead of part of the financial penalty.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Disproportionate fine impact concern",
+   "summary": "The passage states fines disproportionately impact lower-income individuals and those earning their livelihood on the roads, voicing concern while supporting the Bill's amendments.",
+   "sentences": [
+    {
+     "sid": "s01230",
      "speaker": "Ms Hazlina Abdul Halim (East Coast)",
      "attributed": true,
      "text": "(In Malay): Notably, the impact of fines is disproportionate on individuals with lower-income and those who earn their livelihood on the roads While I support the intent of this Bill's amendments, I also voice my concern of the impact that will be felt by these groups.",
@@ -1858,10 +1940,10 @@
   },
   {
    "label": "Offence severity and offender income",
-   "summary": "Under such a system, the severity of the offence determines the scale of the penalty, while the offender's income determines the actual fine payable.",
+   "summary": "Under such a system, the offence's severity determines the penalty's scale, while the offender's income determines the actual fine payable.",
    "sentences": [
     {
-     "sid": "s01158",
+     "sid": "s01240",
      "speaker": "Ms Hazlina Abdul Halim (East Coast)",
      "attributed": true,
      "text": "Under such a system, the severity of the offence determines the scale of the penalty, while the offender's income determines the actual fine payable.",
@@ -1870,18 +1952,18 @@
    ]
   },
   {
-   "label": "Instalments and corrective measures",
-   "summary": "The passage suggests a clearer framework for paying fines in instalments and considering corrective driving courses or corrective work orders alongside or instead of financial penalties or demerit points.",
+   "label": "Fines, courses, work orders",
+   "summary": "Suggests a clearer framework for paying fines in instalments and considering corrective courses or work orders alongside penalties.",
    "sentences": [
     {
-     "sid": "s01164",
+     "sid": "s01246",
      "speaker": "Ms Hazlina Abdul Halim (East Coast)",
      "attributed": true,
      "text": "Among them, a clearer and more accessible framework to allow fines to be paid in instalments.",
      "added_for_context": false
     },
     {
-     "sid": "s01166",
+     "sid": "s01248",
      "speaker": "Ms Hazlina Abdul Halim (East Coast)",
      "attributed": true,
      "text": "MHA could also consider whether corrective driving courses or corrective work orders could be imposed alongside – or in limited cases, instead of – part of the financial penalty or demerit points.",
@@ -1890,31 +1972,37 @@
    ]
   },
   {
-   "label": "Causes of serious road accidents",
-   "summary": "The passage asks the Ministry to share the principal causes of serious road traffic accidents in Singapore and how many involve speeding, mobile phone use, impaired driving, fatigue, or failure to obey traffic signals.",
+   "label": "Deterrence culminating in prevention",
+   "summary": "States that deterrence is necessary but must ultimately culminate in prevention.",
    "sentences": [
     {
-     "sid": "s01179",
+     "sid": "s01255",
      "speaker": "Ms Valerie Lee (Pasir Ris-Changi)",
      "attributed": true,
-     "text": "More broadly though, could the Ministry share the principal causes of serious road traffic accidents in Singapore?",
-     "added_for_context": false
-    },
-    {
-     "sid": "s01180",
-     "speaker": "Ms Valerie Lee (Pasir Ris-Changi)",
-     "attributed": true,
-     "text": "How many involve speeding, mobile phone use, drink- or drug-impaired driving, fatigue, failure to obey traffic signals or other dangerous behaviour?",
+     "text": "Deterrence is necessary, but deterrence must ultimately culminate in prevention.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Public reports outcomes",
-   "summary": "MHA is asked how many public reports lead to warnings, investigations or prosecutions.",
+   "label": "Causes of serious road accidents",
+   "summary": "Asks whether the Ministry can share the principal causes of serious road traffic accidents in Singapore.",
    "sentences": [
     {
-     "sid": "s01192",
+     "sid": "s01262",
+     "speaker": "Ms Valerie Lee (Pasir Ris-Changi)",
+     "attributed": true,
+     "text": "More broadly though, could the Ministry share the principal causes of serious road traffic accidents in Singapore?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Outcomes of public reports",
+   "summary": "Asks MHA how many public reports ultimately result in warnings, investigations or prosecutions.",
+   "sentences": [
+    {
+     "sid": "s01275",
      "speaker": "Ms Valerie Lee (Pasir Ris-Changi)",
      "attributed": true,
      "text": "Could MHA share how many public reports ultimately result in warnings, investigations or prosecutions?",
@@ -1923,85 +2011,85 @@
    ]
   },
   {
-   "label": "Cyclist vulnerability to heavy vehicles",
-   "summary": "Investigations will establish the circumstances, and it is a sobering reminder of cyclists' vulnerability with heavy vehicles.",
+   "label": "Repeated operator safety breaches",
+   "summary": "Asks whether repeated unsafe driving or safety breaches by an operator or company point to a deeper management problem.",
    "sentences": [
     {
-     "sid": "s01200",
+     "sid": "s01291",
      "speaker": "Ms Valerie Lee (Pasir Ris-Changi)",
      "attributed": true,
-     "text": "While investigations will determine the precise circumstances, it is a sobering reminder of the vulnerability of cyclists when sharing the road with heavy vehicles.",
+     "text": "Where an individual driver commits an offence, that driver should be held accountable.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01292",
+     "speaker": "Ms Valerie Lee (Pasir Ris-Changi)",
+     "attributed": true,
+     "text": "But if the same operator or company repeatedly has vehicles associated with unsafe driving, poorly secured loads or other safety breaches, should we not also ask whether there is a deeper management problem?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Road safety and this Bill",
-   "summary": "The passage says road safety needs deterrence, technology, responsible operators and shared responsibility, and welcomes the Bill's enforcement changes.",
+   "label": "Safer roads through shared responsibility",
+   "summary": "States road safety is not just tougher laws and calls for stronger deterrence, smarter technology, responsible operators and shared responsibility.",
    "sentences": [
     {
-     "sid": "s01219",
+     "sid": "s01302",
      "speaker": "Ms Valerie Lee (Pasir Ris-Changi)",
      "attributed": true,
      "text": "Because ultimately, road safety is not just about tougher laws.",
      "added_for_context": true
     },
     {
-     "sid": "s01220",
+     "sid": "s01303",
      "speaker": "Ms Valerie Lee (Pasir Ris-Changi)",
      "attributed": true,
      "text": "It is about ensuring that our convenience never comes at the expense of someone else's safety.",
      "added_for_context": false
     },
     {
-     "sid": "s01221",
+     "sid": "s01304",
      "speaker": "Ms Valerie Lee (Pasir Ris-Changi)",
      "attributed": true,
      "text": "If we can combine stronger deterrence, smarter technology, responsible operators and a culture of shared responsibility, we will not only have a stronger road traffic regime, we will have safer roads.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "TVEC plans and signalling detection",
+   "summary": "MHA plans to increase TVECs on roads after a pilot detected over 67,000 traffic violations in 11 months, and a member asks about signalling detection.",
+   "sentences": [
     {
-     "sid": "s01223",
+     "sid": "s01317",
      "speaker": "Ms Joan Pereira (Tanjong Pagar)",
      "attributed": true,
-     "text": "I believe that this Bill will close enforcement gaps by making phone-holding while driving an offence regardless of proof of active use.",
-     "added_for_context": true
+     "text": "MHA recently shared that after the TVEC's successful pilot, where they detected more than 67,000 traffic violations over 11 months, they have plans to increase the number for TVECs on our roads in the future.",
+     "added_for_context": false
     },
     {
-     "sid": "s01224",
+     "sid": "s01318",
      "speaker": "Ms Joan Pereira (Tanjong Pagar)",
      "attributed": true,
-     "text": "I also welcome the lowering of the drink driving threshold to bring us in line with comparable jurisdictions and the recalibration of Driver Improvement Points System.",
+     "text": "Could the Ministry share more about these plans?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01319",
+     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
+     "attributed": true,
+     "text": "In addition, I seek clarification on whether these TVECs detect drivers' failures to signal and insufficient durations during signalling for lane changes.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "TVEC pilot and expansion",
-   "summary": "MHA shared that after the TVEC pilot detected over 67,000 traffic violations in 11 months, it plans more TVECs.",
+   "label": "Unsignalised crossings in School and Silver Zones",
+   "summary": "A member asks whether the Ministry will study converting higher-risk unsignalised crossings in School Zones or Silver Zones to such models.",
    "sentences": [
     {
-     "sid": "s01234",
-     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
-     "attributed": true,
-     "text": "MHA recently shared that after the TVEC's successful pilot, where they detected more than 67,000 traffic violations over 11 months, they have plans to increase the number for TVECs on our roads in the future.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "UK Pelican and Puffin crossings",
-   "summary": "The passage asks whether the Ministry will study UK Pelican and Puffin crossings for higher-risk unsignalised crossings in School or Silver Zones.",
-   "sentences": [
-    {
-     "sid": "s01242",
-     "speaker": "Ms Joan Pereira (Tanjong Pagar)",
-     "attributed": true,
-     "text": "The United Kingdom's Pelican crossing pairs zebra markings with a signal cycle that legally compels vehicles to stop; its newer Puffin crossing goes further, using sensors to hold the signal red for exactly as long as a slower-moving pedestrian needs.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s01243",
+     "sid": "s01326",
      "speaker": "Ms Joan Pereira (Tanjong Pagar)",
      "attributed": true,
      "text": "Will the Ministry consider studying these cases for converting our higher-risk unsignalised crossings in School Zones or Silver Zones to such models?",
@@ -2010,24 +2098,25 @@
    ]
   },
   {
-   "label": "Purposeful endangerment offence",
-   "summary": "The new offence of purposeful endangerment makes clear that a motor vehicle is not a weapon.",
+   "label": "Purposeful endangerment and impaired driving measures",
+   "summary": "The new offence of purposeful endangerment makes clear a motor vehicle is not a weapon, and stronger measures target drink and drug driving.",
    "sentences": [
     {
-     "sid": "s01254",
+     "sid": "s01338",
      "speaker": "Mr Jackson Lam (Nee Soon)",
      "attributed": true,
      "text": "First, the new offence of purposeful endangerment makes it clear that a motor vehicle is not a weapon.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Lower alcohol limits, specified substances",
-   "summary": "Lower alcohol limits and new provisions on specified substances reinforce the commitment to keep impaired drivers off the roads.",
-   "sentences": [
+    },
     {
-     "sid": "s01257",
+     "sid": "s01340",
+     "speaker": "Mr Jackson Lam (Nee Soon)",
+     "attributed": true,
+     "text": "Second, I welcome the stronger measures against drink and drug driving.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01341",
      "speaker": "Mr Jackson Lam (Nee Soon)",
      "attributed": true,
      "text": "Lower alcohol limits and new provisions on specified substances reinforce our commitment to keep impaired drivers off our roads.",
@@ -2040,23 +2129,10 @@
    "summary": "For lower-risk, first-time offenders with no immediate danger to public safety, the Ministry or officers could issue warnings where appropriate.",
    "sentences": [
     {
-     "sid": "s01265",
+     "sid": "s01349",
      "speaker": "Mr Jackson Lam (Nee Soon)",
      "attributed": true,
      "text": "For lower-risk, first-time offenders where there is no immediate danger to public safety, the Ministry or the officers could issue warnings where appropriate while helping motorists understand the new rules, especially for the cases where motorists are holding on to their devices.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Reviews and published data",
-   "summary": "The passage asks whether performances will be regularly reviewed and whether the Ministry will publish data on notices issued and revoked.",
-   "sentences": [
-    {
-     "sid": "s01269",
-     "speaker": "Mr Jackson Lam (Nee Soon)",
-     "attributed": true,
-     "text": "For example, will there be regular reviews of their performances and will the Ministry publish data on notices issued through automated systems and those later revoked after human review?",
      "added_for_context": false
     }
    ]
@@ -2066,7 +2142,7 @@
    "summary": "Last year, 149 people lost their lives on the roads, the highest number in a decade.",
    "sentences": [
     {
-     "sid": "s01276",
+     "sid": "s01360",
      "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
      "attributed": true,
      "text": "Last year, 149 people lost their lives on the roads – the highest number in a decade.",
@@ -2079,7 +2155,7 @@
    "summary": "Elderly pedestrian fatalities more than doubled last year.",
    "sentences": [
     {
-     "sid": "s01288",
+     "sid": "s01372",
      "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
      "attributed": true,
      "text": "Elderly pedestrian fatalities more than doubled last year.",
@@ -2088,11 +2164,11 @@
    ]
   },
   {
-   "label": "Motorcycle riders in accidents",
-   "summary": "Motorcycles make up about 15% of the vehicle population, but riders account for more than half of all traffic accidents.",
+   "label": "Motorcycle share of accidents",
+   "summary": "Motorcycles are about 15% of vehicles but riders account for more than half of all traffic accidents.",
    "sentences": [
     {
-     "sid": "s01296",
+     "sid": "s01380",
      "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
      "attributed": true,
      "text": "Though motorcycles make up only about 15% of our vehicle population, riders account for more than half of all traffic accidents.",
@@ -2101,39 +2177,98 @@
    ]
   },
   {
-   "label": "Mobile device driving enforcement",
-   "summary": "The passage calls for evolving enforcement to address distracted driving and cites 2025 road casualty and fatality statistics.",
+   "label": "Neurological impairment sentencing and caregiver support",
+   "summary": "The speaker asks whether permanent irreversible neurological impairment could be a distinct aggravating sentencing factor and whether longer-term rehabilitation and caregiver support are being reviewed.",
    "sentences": [
     {
-     "sid": "s01315",
+     "sid": "s01388",
+     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
+     "attributed": true,
+     "text": "It is that the person's life and the family's life, may never return to what it once was.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s01389",
+     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
+     "attributed": true,
+     "text": "This is why I ask whether permanent and irreversible neurological impairment could be recognised as a distinct aggravating factor in sentencing and whether the Government is reviewing longer-term rehabilitation and caregiver support for affected families.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Enforcement and mobile device offence",
+   "summary": "The speaker says enforcement must evolve for distracted driving and seeks clarification on making it an offence to hold a mobile communication device while the vehicle is in motion.",
+   "sentences": [
+    {
+     "sid": "s01399",
      "speaker": "Ms Lee Hui Ying (Nee Soon)",
      "attributed": true,
      "text": "Our current enforcement regime must evolve to meet the challenges of an increasingly distracted driving environment.",
      "added_for_context": true
     },
     {
-     "sid": "s01316",
+     "sid": "s01400",
      "speaker": "Ms Lee Hui Ying (Nee Soon)",
      "attributed": true,
      "text": "I wish to raise clarifications on the amendments, particularly to make it an offence for a driver to hold a mobile communication device while the vehicle is in motion.",
      "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Mobile phone accidents and summons",
+   "summary": "Between 2019 and 2023 no road traffic accidents had evidence directly attributing cause to mobile phone use, yet an average of 2,800 summons were issued annually between 2021 and 2025.",
+   "sentences": [
+    {
+     "sid": "s01415",
+     "speaker": "Ms Lee Hui Ying (Nee Soon)",
+     "attributed": true,
+     "text": "Between 2019 and 2023, there were no road traffic accidents where evidence directly attributed the cause to mobile phone use.",
+     "added_for_context": false
     },
     {
-     "sid": "s01318",
+     "sid": "s01416",
+     "speaker": "Ms Lee Hui Ying (Nee Soon)",
+     "attributed": true,
+     "text": "Yet, enforcement has been active, with an average of 2,800 summons issued annually between 2021 and 2025.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fatalities and violations increase",
+   "summary": "From 2021 to 2025, traffic fatalities increased by 24% while traffic violations rose by 38%.",
+   "sentences": [
+    {
+     "sid": "s01420",
+     "speaker": "Ms Lee Hui Ying (Nee Soon)",
+     "attributed": true,
+     "text": "From 2021 to 2025, traffic fatalities increased by 24% while traffic violations rose by 38%.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "2025 road deaths and fatality rate",
+   "summary": "Traffic Police statistics show 149 people died and 9,955 were injured in 2025, with the road fatality rate rising from 1.96 per 100,000 in 2021 to 2.44 in 2025.",
+   "sentences": [
+    {
+     "sid": "s01437",
      "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "Based on Traffic Police statistics, 149 people died and 9,955 were injured on Singapore roads in 2025.",
      "added_for_context": false
     },
     {
-     "sid": "s01319",
+     "sid": "s01438",
      "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "Our road fatality rate increased from 1.96 death per 100,000 people in 2021 to 2.44 in 2025.",
      "added_for_context": false
     },
     {
-     "sid": "s01320",
+     "sid": "s01439",
      "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "This is an increase of about 24% in four years.",
@@ -2142,31 +2277,25 @@
    ]
   },
   {
-   "label": "Drink driving alcohol limits",
-   "summary": "The Bill lowers prescribed alcohol limits for drink driving and impaired driving offences.",
+   "label": "Enforcement cameras and detection",
+   "summary": "The member asks whether Traffic Police will extend fixed and mobile enforcement cameras, including in neighbourhoods frequented by children and seniors.",
    "sentences": [
     {
-     "sid": "s01339",
+     "sid": "s01475",
      "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
      "attributed": true,
-     "text": "Second, the Bill makes substantial changes to drink driving and impaired driving by lowering prescribed alcohol limits.",
+     "text": "Separately, Government has also announced that the Driver Improvement Points System will be tightened from 1 January 2027.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Enforcement cameras in neighbourhoods",
-   "summary": "The passage asks whether Traffic Police will extend fixed and mobile enforcement cameras to neighbourhood roads frequented by children and seniors.",
-   "sentences": [
+    },
     {
-     "sid": "s01358",
+     "sid": "s01477",
      "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "I believe immediate priority should then be increased to the certainly of detection.",
      "added_for_context": true
     },
     {
-     "sid": "s01359",
+     "sid": "s01478",
      "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "So, against this backdrop, could the Minister also share whether the Traffic Police intends to extend the use of fixed and mobile enforcement cameras, including on roads within our neighbourhoods at location frequent by children and seniors?",
@@ -2176,10 +2305,10 @@
   },
   {
    "label": "Computer system accuracy standards",
-   "summary": "The passage asks what accuracy and validation standards a computer system must meet before official deployment.",
+   "summary": "The member asks what accuracy and validation standards a computer system must satisfy before official deployment.",
    "sentences": [
     {
-     "sid": "s01365",
+     "sid": "s01484",
      "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "Could also the Minister say what kind of accuracy and validation standards that a computer system must satisfy before it is officially deployed?",
@@ -2188,25 +2317,25 @@
    ]
   },
   {
-   "label": "Whole-of-government road death target",
-   "summary": "The passage asks the Government to consider a whole-of-government target for reducing road deaths and serious injuries with reporting.",
+   "label": "Target for reducing road deaths",
+   "summary": "The member asks Government to consider a whole-of-government target for reducing road deaths and serious injuries with public reporting.",
    "sentences": [
     {
-     "sid": "s01376",
+     "sid": "s01495",
      "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "A motorist should be able to return home without being intimidated by a larger vehicle.",
      "added_for_context": true
     },
     {
-     "sid": "s01377",
+     "sid": "s01496",
      "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "Therefore, my final ask is this: could the Government consider setting a whole-of-government target for reducing road deaths and serious injuries with clear responsibility across agencies and regular public reporting on progress and measures that are taken at high-risk location?",
      "added_for_context": false
     },
     {
-     "sid": "s01378",
+     "sid": "s01497",
      "speaker": "Mr David Hoe (Jurong East-Bukit Batok)",
      "attributed": true,
      "text": "Strong laws are necessary, but our wider objective must be to prevent collision, protect vulnerable road users, and make responsible behaviour the expected norm of every journey.",
@@ -2215,81 +2344,87 @@
    ]
   },
   {
-   "label": "Purposeful endangerment offence",
-   "summary": "The Bill creates a purposeful endangerment offence for drivers who deliberately endanger others, carrying up to 15 years' imprisonment.",
+   "label": "Offence of purposeful endangerment",
+   "summary": "The Bill creates a new offence of purposeful endangerment carrying up to 15 years' imprisonment, caning, lifetime disqualification and vehicle forfeiture.",
    "sentences": [
     {
-     "sid": "s01390",
+     "sid": "s01509",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "The Bill creates a new offence of purposeful endangerment where a driver deliberately targets and endangers another person, such as through brake checking, aggressive tailgating, or swerving, resulting in death or grievous hurt.",
+     "text": "The Bill creates a new offence of purposeful endangerment where a driver deliberately targets and endangers another person, such as through brake checking, aggressive tailgating, or swerving, resulting in death or grievous hurt.",
      "added_for_context": false
     },
     {
-     "sid": "s01391",
+     "sid": "s01510",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "This carries up to 15 years' imprisonment, possible caning, presumptive lifetime disqualification and vehicle forfeiture.",
+     "text": "This carries up to 15 years' imprisonment, possible caning, presumptive lifetime disqualification and vehicle forfeiture.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Impaired driving alcohol limits",
+   "label": "Lower alcohol limits",
    "summary": "The Bill lowers the prescribed breath alcohol limit from 35 to 15 microgrammes and the blood-alcohol limit from 80 to 30 milligrammes.",
    "sentences": [
     {
-     "sid": "s01397",
+     "sid": "s01516",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
      "text": "Second, Mr Speaker, Sir, the Bill strengthens our impaired driving framework.",
      "added_for_context": true
     },
     {
-     "sid": "s01398",
+     "sid": "s01517",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "It lowers the prescribed breath alcohol limit from 35 to 15 microgrammes, and the blood-alcohol limit from 80 to 30 milligrammes.",
+     "text": "It lowers the prescribed breath alcohol limit from 35 to 15 microgrammes, and the blood-alcohol limit from 80 to 30 milligrammes.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Safe Driver Code and automated notices",
-   "summary": "LTA should work with platforms on a Safe Driver Digital Interface Code, and the Bill allows a computer program to assess images and issue notices.",
+   "label": "Safe Driver Digital Interface Code",
+   "summary": "The member proposes LTA work with transport and delivery platforms on a Safe Driver Digital Interface Code covering notifications, voice interaction and safeguards.",
    "sentences": [
     {
-     "sid": "s01422",
+     "sid": "s01541",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "A single moment of distraction risks not only their lives, but the lives of their passengers and other road users.",
+     "text": "A single moment of distraction risks not only their lives, but the lives of their passengers and other road users.",
      "added_for_context": true
     },
     {
-     "sid": "s01423",
+     "sid": "s01542",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "I propose that LTA work with transport and delivery platforms on a Safe Driver Digital Interface Code, establishing principles for movement-sensitive notifications, voice interaction, response times and safeguards against penalising drivers who stop before responding.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s01425",
-     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
-     "attributed": true,
-     "text": "Fourth, Mr Speaker, Sir, the Bill allows an authorised computer program to assess recorded images or videos and automatically issue notices requiring vehicle owners to identify the drivers.",
+     "text": "I propose that LTA work with transport and delivery platforms on a Safe Driver Digital Interface Code, establishing principles for movement-sensitive notifications, voice interaction, response times and safeguards against penalising drivers who stop before responding.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Annual automated notice report",
-   "summary": "The Government should publish an annual report on automated notices, reviews, revocations, review times, causes of error and system improvements.",
+   "label": "AI-generated notices disclosure",
+   "summary": "Notices triggered by automated detection must clearly state they were generated by an AI system.",
    "sentences": [
     {
-     "sid": "s01434",
+     "sid": "s01550",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "Fourth, the Government should publish an annual report stating the number of automated notices, reviews, revocations, average review times, main causes of error and system improvements.",
+     "text": "First, notices triggered by automated detection must clearly state that they were generated by an AI system.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Annual automated notices report",
+   "summary": "The Government should publish an annual report on automated notices, reviews, revocations, review times, error causes and system improvements.",
+   "sentences": [
+    {
+     "sid": "s01553",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "Fourth, the Government should publish an annual report stating the number of automated notices, reviews, revocations, average review times, main causes of error and system improvements.",
      "added_for_context": false
     }
    ]
@@ -2299,14 +2434,14 @@
    "summary": "The Bill requires corporate vehicle owners to keep accurate records of permitted drivers, retained for 12 months.",
    "sentences": [
     {
-     "sid": "s01439",
+     "sid": "s01558",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "Lastly, Mr Speaker, Sir, the Bill requires corporate vehicle owners, including companies, partnerships and unincorporated bodies, to keep accurate records of who is permitted to drive, including their personal details, dates, and allocation periods.",
+     "text": "Lastly, Mr Speaker, Sir, the Bill requires corporate vehicle owners, including companies, partnerships and unincorporated bodies, to keep accurate records of who is permitted to drive, including their personal details, dates, and allocation periods.",
      "added_for_context": true
     },
     {
-     "sid": "s01440",
+     "sid": "s01559",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
      "text": "These records must be retained for 12 months.",
@@ -2316,54 +2451,46 @@
   },
   {
    "label": "Digital logbook template guidance",
-   "summary": "The Government should provide a digital logbook template and checklist before the rules take effect, with guidance on shared shifts and substitutions.",
+   "summary": "The Government should provide a digital logbook template and checklist with guidance before the rules take effect.",
    "sentences": [
     {
-     "sid": "s01444",
+     "sid": "s01563",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "To help them, the Government should provide a simple digital logbook template and checklist before these rules take effect, with guidance on handling shared shifts, temporary substitutions and changes in allocation.",
+     "text": "To help them, the Government should provide a simple digital logbook template and checklist before these rules take effect, with guidance on handling shared shifts, temporary substitutions and changes in allocation.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Safer system and protected lives",
-   "summary": "The speaker says the change will be measured in lives protected and calls for building a safer system and society.",
+   "label": "Lives protected by safer system",
+   "summary": "The benefits will be tragedies that never happen and lives of people protected, including children, seniors, riders, bus captains and families.",
    "sentences": [
     {
-     "sid": "s01467",
+     "sid": "s01586",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "It will be the tragedies that never happen: the dangerous distractions designed out, the medication risk caught before the journey begins and the enforcement error corrected before it becomes an injustice.",
+     "text": "It will be the tragedies that never happen: the dangerous distractions designed out, the medication risk caught before the journey begins and the enforcement error corrected before it becomes an injustice.",
      "added_for_context": true
     },
     {
-     "sid": "s01468",
+     "sid": "s01587",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "It will be measured in the lives of the people we protect: the child crossing safely to school; the senior reaching the market; the delivery rider and the bus captain finishing their daily shifts; and the families waiting at home at the end of the day, who are not left waiting.",
+     "text": "It will be measured in the lives of the people we protect: the child crossing safely to school; the senior reaching the market; the delivery rider and the bus captain finishing their daily shifts; and the families waiting at home at the end of the day, who are not left waiting.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Build safer system and society",
+   "summary": "The aim is not merely tougher laws but to build a safer system and a society that expects and protects.",
+   "sentences": [
     {
-     "sid": "s01469",
+     "sid": "s01590",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "But the refusal to accept preventable death begins with all of us.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s01470",
-     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
-     "attributed": true,
-     "text": "This is our next step along that road, in our own way and for our own people.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s01471",
-     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
-     "attributed": true,
-     "text": "Let us take it not merely to write tougher laws, but to build a safer system and with it, a society that expects and protects, nothing less.",
+     "text": "Let us take it not merely to write tougher laws, but to build a safer system and with it, a society that expects and protects, nothing less.",
      "added_for_context": false
     }
    ]
@@ -2373,7 +2500,7 @@
    "summary": "The Attorney-General's Chambers exercises prosecutorial discretion to determine the appropriate offence when facts satisfy more than one offence provision.",
    "sentences": [
     {
-     "sid": "s01476",
+     "sid": "s01595",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "If the facts and circumstances of a case can satisfy more than one offence provision, whether in the same Act or across different Acts, the Attorney-General's Chambers will exercise its prosecutorial discretion to determine the appropriate offence to prefer.",
@@ -2382,11 +2509,11 @@
    ]
   },
   {
-   "label": "Motor vehicle forfeiture order",
+   "label": "Forfeiture of motor vehicle",
    "summary": "On the Public Prosecutor's application, the Court is to order forfeiture of the motor vehicle unless the offender is not the owner and used it without consent.",
    "sentences": [
     {
-     "sid": "s01482",
+     "sid": "s01601",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "On the application of the Public Prosecutor, the Court is to make an order for the forfeiture of the motor vehicle unless the Court is satisfied that the person who has committed the offence is not the owner of the motor vehicle and the person who has committed the offence had used the motor vehicle without the owner's consent.",
@@ -2396,17 +2523,17 @@
   },
   {
    "label": "Offences allowing full penalty",
-   "summary": "Offences in the RTA and other statutes allow the Court to impose the full penalty beyond the Criminal Procedure Code limit, ensuring jurisdiction for sufficiently severe sentences.",
+   "summary": "Some RTA and other statute offences let the Court impose the full penalty beyond the Criminal Procedure Code limit, ensuring jurisdiction for sufficiently severe sentences.",
    "sentences": [
     {
-     "sid": "s01487",
+     "sid": "s01606",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "There are offences in the RTA and other statutes which allow the Court to impose the full penalty for the said offence, beyond the limit prescribed in the Criminal Procedure Code.",
      "added_for_context": true
     },
     {
-     "sid": "s01488",
+     "sid": "s01607",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "This is to ensure that the Courts have the jurisdiction to impose a sufficiently severe sentence if warranted on the facts.",
@@ -2419,7 +2546,7 @@
    "summary": "Severe grievous hurt, such as permanent vegetative state, can have consequences almost as serious as death, so penalties should be broadly similar.",
    "sentences": [
     {
-     "sid": "s01505",
+     "sid": "s01624",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "Notwithstanding, I agree that severe forms of grievous hurt, such as those where victims fall into a permanent vegetative state, can have consequences that are almost as serious as death and the penalties should therefore be broadly similar.",
@@ -2429,17 +2556,17 @@
   },
   {
    "label": "Presence-based offence scope",
-   "summary": "The new presence-based offence applies only to controlled drugs, psychoactive substances or intoxicating substances already covered under existing legislation.",
+   "summary": "The new presence-based offence is targeted and applies only to controlled drugs, psychoactive substances or intoxicating substances already covered under existing legislation.",
    "sentences": [
     {
-     "sid": "s01508",
+     "sid": "s01627",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "The new presence-based offence is a targeted one.",
      "added_for_context": true
     },
     {
-     "sid": "s01509",
+     "sid": "s01628",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "It applies only to controlled drugs, psychoactive substances or intoxicating substances already covered under existing legislation, namely the Misuse of Drugs Act, Tobacco and Vaporisers Control Act and the Intoxicating Substances Act.",
@@ -2448,111 +2575,99 @@
    ]
   },
   {
-   "label": "Presence of substances in blood",
-   "summary": "The presence of specified substances in a person's blood constitutes the offence.",
+   "label": "Breath analyser evidential standards",
+   "summary": "The Traffic Police and Home Team Science and Technology Agency will ensure deployed Handheld Breath Evidential Analyser models meet evidential grade standards through testing and certifications.",
    "sentences": [
     {
-     "sid": "s01519",
+     "sid": "s01645",
      "speaker": "Ms Sim Ann",
      "attributed": true,
-     "text": "As mentioned in my opening speech, the presence of specified substances in a person's blood constitutes the offence.",
+     "text": "The Traffic Police, with the support of the Home Team Science and Technology Agency, will ensure that the deployed Handheld Breath Evidential Analyser models meet evidential grade standards through testing and certifications in accordance with internationally recognised references, such as the International Organisation of Legal Metrology R126.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Handphone driving violations and enforcement",
-   "summary": "The amendment makes enforcement easier as handphone driving violations rose 40% from 3,014 in 2024 to 4,214 in 2025.",
+   "label": "Handphone driving enforcement amendment",
+   "summary": "The amendment eases enforcement as handphone driving violations rose 40% from 3,014 in 2024 to 4,214 in 2025, with Traffic Police using cameras.",
    "sentences": [
     {
-     "sid": "s01543",
+     "sid": "s01662",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "As Ms Elysa Chen noted, the World Health Organization has reported that drivers using mobile phones are approximately four times more likely to be involved in a crash than drivers not using a mobile phone.",
      "added_for_context": true
     },
     {
-     "sid": "s01544",
+     "sid": "s01663",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "We also note with concern that handphone driving violations are on an upward trend, with a 40% increase from 3,014 in 2024 to 4,214 in 2025.",
      "added_for_context": false
     },
     {
-     "sid": "s01545",
+     "sid": "s01664",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "We must move decisively against this undesirable driving behaviour and not wait until more accidents or fatalities have been caused.",
      "added_for_context": false
     },
     {
-     "sid": "s01547",
+     "sid": "s01666",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "The amendment will make enforcement easier, as the Traffic Police will no longer need to prove that the driver was operating the device for the offence to be made out.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Holding device while vehicle in motion",
-   "summary": "The Bill prohibits holding a mobile communication device if the vehicle is in motion.",
-   "sentences": [
+    },
     {
-     "sid": "s01552",
+     "sid": "s01667",
      "speaker": "Ms Sim Ann",
      "attributed": true,
-     "text": "The Bill makes it clear that if the vehicle is in motion, holding a mobile communication device is prohibited.",
+     "text": "The Traffic Police intends to leverage technological solutions, such as cameras, as far as possible, to detect and enforce against this offence.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Mounted devices and cognitive load",
-   "summary": "Use of a mounted device while a vehicle is in motion is not criminalised, as there are legitimate reasons such as navigation applications.",
+   "label": "Mounted devices and careless driving",
+   "summary": "Using a mounted device while in motion is not criminalised, but a distracted driver may be liable for careless or dangerous driving.",
    "sentences": [
     {
-     "sid": "s01558",
+     "sid": "s01677",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "Mr Dennis Tan asked how the use of multiple screens would impact cognitive load, and how Rule 126 of the Road Traffic (Motor Vehicles, Construction and Use) Rules would interact with the amendment to criminalise holding a phone while the vehicle is in motion.",
      "added_for_context": true
     },
     {
-     "sid": "s01559",
+     "sid": "s01678",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "We have not criminalised the use of a mounted device while a vehicle is in motion, as we appreciate that there are legitimate reasons to do so, such as using navigation applications.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Three distractions of handphone use",
-   "summary": "Handphone use while driving engages three distractions simultaneously: visual, manual and cognitive.",
-   "sentences": [
+    },
     {
-     "sid": "s01569",
+     "sid": "s01680",
      "speaker": "Ms Sim Ann",
      "attributed": true,
-     "text": "Handphone use while driving is especially dangerous because it engages three distractions simultaneously – visual, because it causes drivers to take their eyes off the road; manual, because it takes drivers' hands off the wheel; and cognitive, as it diverts mental attention away from driving.",
+     "text": "Depending on the facts of the case, for instance, if a driver were to use a mounted device, whether single or multiple, and becomes distracted to the point that it affects his driving behaviour, the driver may be liable for the offence of careless or dangerous driving.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Communicating new rules to drivers",
-   "summary": "The Government will work with industry stakeholders and partners to communicate the new rules ahead of operationalisation in early 2027.",
+   "summary": "The rules will be communicated clearly to drivers with industry stakeholders ahead of planned operationalisation in early 2027.",
    "sentences": [
     {
-     "sid": "s01587",
+     "sid": "s01706",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "Members have highlighted the need for the new rules to be communicated clearly to drivers.",
      "added_for_context": true
     },
     {
-     "sid": "s01588",
+     "sid": "s01707",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "We fully agree and will work with industry stakeholders and partners to achieve this ahead of the planned operationalisation of the amendments in early 2027.",
@@ -2565,7 +2680,7 @@
    "summary": "Today, action is taken for about four out of 10 public reports.",
    "sentences": [
     {
-     "sid": "s01613",
+     "sid": "s01732",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "Today, action is taken for about four out of 10 public reports.",
@@ -2575,10 +2690,10 @@
   },
   {
    "label": "Appeal processing times",
-   "summary": "Most appeals are handled within a month, while more complex appeals can take up to three months.",
+   "summary": "Most appeals are dealt with within a month, though more complex appeals can take up to three months.",
    "sentences": [
     {
-     "sid": "s01624",
+     "sid": "s01743",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "Most appeals are dealt with within a month, though more complex appeals can take up to three months to process.",
@@ -2587,18 +2702,18 @@
    ]
   },
   {
-   "label": "Notice to furnish particulars",
-   "summary": "Mr Gabriel Lam suggested a 30-day maximum for issuing notices to furnish particulars, and the speaker agrees notices should be issued as soon as possible.",
+   "label": "Notices to furnish particulars",
+   "summary": "The speaker agrees notices to furnish particulars should be issued as soon as possible so drivers can take immediate corrective action.",
    "sentences": [
     {
-     "sid": "s01627",
+     "sid": "s01746",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "Mr Gabriel Lam also suggested for the Traffic Police to prescribe a maximum period of 30 days from detection within which a notice to furnish particulars must be issued to the vehicle owner.",
      "added_for_context": true
     },
     {
-     "sid": "s01628",
+     "sid": "s01747",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "I agree that notices should be issued as soon as possible, so drivers can take immediate corrective action.",
@@ -2608,17 +2723,17 @@
   },
   {
    "label": "One-time demerit point deduction",
-   "summary": "A one-time demerit point deduction applies from 1 January 2027, up to six points for non-probationary and one point for probationary drivers, with first-time suspension reducible from four months to six weeks.",
+   "summary": "A one-time demerit point deduction from 1 January 2027 gives up to six points to non-probationary and one point to probationary drivers, and first-time suspended drivers may reduce suspension from four months to six weeks by completing a retraining course.",
    "sentences": [
     {
-     "sid": "s01645",
+     "sid": "s01764",
      "speaker": "Ms Sim Ann",
      "attributed": true,
-     "text": "Rather than have different rules for different types of drivers, we think it is better to apply the same one-time deduction of demerit points across the board come 1 January 2027 as a transitionary measure, so that no motorist will be closer to the suspension or revocation threshold simply due to the changes to Driver Improvement Points System taking effect, and these are up to six points for non-probationary drivers and up to one point for probationary drivers.",
+     "text": "Rather than have different rules for different types of drivers, we think it is better to apply the same one-time deduction of demerit points across the board come 1 January 2027 as a transitionary measure, so that no motorist will be closer to the suspension or revocation threshold simply due to the changes to Driver Improvement Points System taking effect, and these are up to six points for non-probationary drivers and up to one point for probationary drivers.",
      "added_for_context": false
     },
     {
-     "sid": "s01646",
+     "sid": "s01765",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "We have also taken in the union's feedback about vocational drivers' perspectives when refining the overall set of changes to the Driver Improvement Points System, including retaining one opportunity for all drivers being suspended for the first time to reduce the suspension period from four months to six weeks by completing the Driver Improvement Points System retraining course.",
@@ -2627,18 +2742,18 @@
    ]
   },
   {
-   "label": "Demerit point and suspension record removal",
-   "summary": "A motorist with no offences within 12 months of their last offence has their demerit point balance wiped, and 24 offence-free months after suspension removes suspension records.",
+   "label": "Demerit points and suspension records wiped",
+   "summary": "A motorist with no traffic offences within 12 months of their last offence has their entire demerit point balance wiped, and 24 offence-free months after suspension ends removes suspension records entirely.",
    "sentences": [
     {
-     "sid": "s01656",
+     "sid": "s01775",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "A motorist who commits no traffic offences within 12 months of their last offence will have their entire demerit point balance wiped from their record.",
      "added_for_context": false
     },
     {
-     "sid": "s01657",
+     "sid": "s01776",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "A motorist who remains offence-free for 24 months from the end of their suspension will have their suspension records removed entirely.",
@@ -2647,32 +2762,32 @@
    ]
   },
   {
-   "label": "Safe Driving Course review",
-   "summary": "The Safe Driving Course had low take-up and minimal impact on re-offending, and there are no immediate plans to adjust penalties and demerit points.",
+   "label": "Safe Driving Course review and penalties",
+   "summary": "The Safe Driving Course expunged four demerit points but had low take-up of 15% last year and marginal impact on re-offending, and there are no immediate plans to adjust offence penalties and demerit points.",
    "sentences": [
     {
-     "sid": "s01662",
+     "sid": "s01781",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "The Safe Driving Course was an early corrective course for eligible motorists who had incurred demerit points but had not yet reached the suspension threshold, and motorists who completed it would have four demerit points expunged from their driving records.",
      "added_for_context": false
     },
     {
-     "sid": "s01663",
+     "sid": "s01782",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "A review of data from 2023 to 2025 showed that the take-up rate of the Safe Driving Course was low – only 15% of those offered the Safe Driving Course last year took it up.",
      "added_for_context": false
     },
     {
-     "sid": "s01664",
+     "sid": "s01783",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "Its impact on improving driving behaviour was also minimal, with the difference in re-offending rates between Safe Driving Course and non-Safe Driving Course takers being marginal.",
      "added_for_context": false
     },
     {
-     "sid": "s01666",
+     "sid": "s01785",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "As for Mr David Hoe's question on whether there are any plans to adjust the penalties and demerit points for each offence under the Driver Improvement Points System regime, we have no immediate plans to do so but will continue to monitor the road safety trends and make adjustments where necessary.",
@@ -2681,25 +2796,32 @@
    ]
   },
   {
-   "label": "Explanation to Mr Kenneth Tiong",
-   "summary": "The explanation depends on each case's facts and circumstances, and those involved could also be liable under existing offences in other laws.",
+   "label": "Case-by-case applications and other laws",
+   "summary": "These applications can be case-by-case depending on facts and circumstances, and on their own they could also be liable for existing offences in other laws.",
    "sentences": [
     {
-     "sid": "s01677",
-     "speaker": "Ms Sim Ann",
+     "sid": "s01795",
+     "speaker": "Mr Kenneth Tiong Boon Kiat",
      "attributed": true,
-     "text": "I have given an explanation to Mr Kenneth Tiong.",
+     "text": "I appreciate that these applications can be case-by-case.",
      "added_for_context": true
     },
     {
-     "sid": "s01678",
+     "sid": "s01796",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "I have given an explanation to Mr Kenneth Tiong.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s01797",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "It depends on the facts and circumstances of each case.",
      "added_for_context": false
     },
     {
-     "sid": "s01679",
+     "sid": "s01798",
      "speaker": "Ms Sim Ann",
      "attributed": true,
      "text": "But on their own, currently, they could also be liable for existing offences in other laws.",
@@ -2721,13 +2843,13 @@
    "bill-803",
    "bill-804"
   ],
-  "sentences_total": 1680,
-  "sentences_selected": 263,
-  "sentences_in_sections": 263,
+  "sentences_total": 1799,
+  "sentences_selected": 277,
+  "sentences_in_sections": 277,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 48,
-  "sections_total": 144,
-  "selection_share": 0.1565,
+  "sentences_added_for_context": 54,
+  "sections_total": 148,
+  "selection_share": 0.154,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -2736,24 +2858,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 144,
+   "sections_total": 148,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 263,
-   "sentences_selected": 263,
-   "turns_cited": 31,
+   "sentences_published": 277,
+   "sentences_selected": 277,
+   "turns_cited": 32,
    "turns_total": 37,
-   "coverage": 0.8378,
+   "coverage": 0.8649,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:44:27"
+   "checked_at": "2026-09-20T10:01:11"
   },
   "usage": {
-   "calls": 81,
-   "prompt_tokens": 76151,
-   "completion_tokens": 8426,
+   "calls": 84,
+   "prompt_tokens": 80600,
+   "completion_tokens": 8776,
    "estimated": false,
-   "cost_usd": 0.01302
+   "cost_usd": 0.013741
   }
  }
 }

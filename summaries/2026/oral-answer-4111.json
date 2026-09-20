@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Alternative pathways for school leavers",
-   "summary": "MOE provides re-admission, bridging programmes, ITE General Education and SkillsFuture training for students leaving school early.",
+   "summary": "MOE provides re-admission, bridging programmes, ITE General Education and SkillsFuture training for students leaving school before completing national certifications.",
    "sentences": [
     {
      "sid": "s00001",
@@ -121,14 +121,14 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:01:34"
+   "checked_at": "2026-09-20T10:18:49"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1900,
-   "completion_tokens": 125,
+   "completion_tokens": 128,
    "estimated": false,
-   "cost_usd": 0.000301
+   "cost_usd": 0.000302
   }
  }
 }

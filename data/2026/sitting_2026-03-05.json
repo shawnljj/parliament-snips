@@ -2,14 +2,14 @@
  "date": "2026-03-05",
  "coverage": {
   "date": "2026-03-05",
-  "collected": 52,
+  "collected": 50,
   "max_result": 50,
-  "ratio": 1.04,
-  "enumeration": "linear+sections",
+  "ratio": 1.0,
+  "enumeration": "linear",
   "words": 84688,
   "turns": 324,
   "speaker_attribution": 0.991,
-  "empty_reports": 2
+  "empty_reports": 0
  },
  "reports": [
   {
@@ -3353,34 +3353,6 @@
      "words": 19
     }
    ]
-  },
-  {
-   "report_id": "attendance-05032026",
-   "report_type": "attendance",
-   "group": "other",
-   "title": "Attendance",
-   "sitting_date": "5-3-2026",
-   "parliament_no": null,
-   "sitting_no": null,
-   "volume_no": null,
-   "report_version": "sprs3",
-   "mp_names": null,
-   "words": 0,
-   "turns": []
-  },
-  {
-   "report_id": "ptba-05032026",
-   "report_type": "ptba",
-   "group": "other",
-   "title": "Permission to Members to be Absent",
-   "sitting_date": "5-3-2026",
-   "parliament_no": null,
-   "sitting_no": null,
-   "volume_no": null,
-   "report_version": "sprs3",
-   "mp_names": null,
-   "words": 0,
-   "turns": []
   }
  ]
 }

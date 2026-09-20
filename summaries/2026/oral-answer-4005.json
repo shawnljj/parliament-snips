@@ -4,13 +4,13 @@
  "sections": [
   {
    "label": "Secondary 1 posting tie-breakers",
-   "summary": "MOE applies tie-breakers in order of citizenship, school choice ranking and computerised balloting, and tracks top-choice placement rates.",
+   "summary": "MOE applies tie-breakers in order of citizenship, school choice ranking, then computerised balloting, and tracks top-choice placement rates.",
    "sentences": [
     {
      "sid": "s00002",
      "speaker": "The Minister for Education (Mr Desmond Lee)",
      "attributed": true,
-     "text": "Under the Achievement Levels (AL) scoring system, more students will have identical scores.",
+     "text": "Under the Achievement Levels (AL) scoring system, more students will have identical scores.",
      "added_for_context": false
     },
     {
@@ -51,8 +51,8 @@
    ]
   },
   {
-   "label": "Balloting rate variation factors",
-   "summary": "Balloting rates vary yearly depending on school choices, students' decisions and DSA numbers, and the Ministry will study suggestions.",
+   "label": "School balloting rate factors",
+   "summary": "Balloting rates vary yearly and depend on school choices, students' decisions, and DSA numbers and students admitted.",
    "sentences": [
     {
      "sid": "s00012",
@@ -114,12 +114,12 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:41:50"
+   "checked_at": "2026-09-20T10:59:10"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1323,
-   "completion_tokens": 147,
+   "prompt_tokens": 1325,
+   "completion_tokens": 146,
    "estimated": false,
    "cost_usd": 0.000226
   }

@@ -3,31 +3,130 @@
  "what_it_is": "Response to Risks from Frontier AI Models with Potential to Steal Data, Disrupt Critical Infrastructure and Exploit Software Vulnerabilities",
  "sections": [
   {
-   "label": "Frontier AI cybersecurity threats review",
-   "summary": "Asked what the Ministry assesses about cybersecurity threats from frontier AI models and whether Singapore's frameworks are being reviewed.",
+   "label": "AI cyber risk questions",
+   "summary": "A question asks the Minister for Digital Development and Information about AI-enabled cyber risks to Singapore's financial system and critical infrastructure.",
    "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "",
+     "attributed": false,
+     "text": "The following question stood in the name of  Mr Saktiandi Supaat –  5 To ask the Minister for Digital Development and Information (a) what is the Government's assessment of the risks from AI models claiming to be sufficiently advanced to steal data or disrupt critical infrastructure, to Singapore's financial system and critical infrastructure; (b) whether such AI-enabled cyber risks could constitute a new class of systemic financial risk; and (c) what early-warning indicators or triggers, if any, are being developed to detect such threats.",
+     "added_for_context": false
+    },
     {
      "sid": "s00002",
      "speaker": "Mr Edward Chia Bing Hui",
      "attributed": true,
-     "text": "asked the Minister for Digital Development and Information in light of recent reports on frontier AI models, such as Anthropic's Mythos with advanced capabilities to autonomously identify and exploit software vulnerabilities (a) what is the Ministry's assessment of the potential cybersecurity threats posed by such models; and (b) whether the Government is reviewing Singapore's current cybersecurity frameworks and safeguards to address these emerging risks.",
+     "text": "asked the Minister for Digital Development and Information in light of recent reports on frontier AI models, such as Anthropic's Mythos with advanced capabilities to autonomously identify and exploit software vulnerabilities (a) what is the Ministry's assessment of the potential cybersecurity threats posed by such models; and (b) whether the Government is reviewing Singapore's current cybersecurity frameworks and safeguards to address these emerging risks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Anthropic Mythos limited preview",
+   "summary": "Anthropic released Mythos only to a limited set of partners under a controlled preview, and no local bank is known to have access.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Anthropic has released it only to a limited set of partners under a controlled preview, and we are not aware of any local bank that has been granted access.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Deepfake CFO fraud case",
+   "summary": "In a 2024 case, criminals used an AI-generated deepfake video call to impersonate a CFO and trick an employee into transferring $25.6 million.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "In a 2024 case, criminals used an AI-generated deepfake video call to impersonate a multinational firm's chief financial officer and trick an employee into transferring $25.6 million to fraudulent accounts.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CSA letter to CII owners",
+   "summary": "The Cyber Security Agency of Singapore will issue a letter today to boards and senior leadership of all critical information infrastructure owners.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "The Cyber Security Agency of Singapore (CSA) will issue a letter to the boards and senior leadership of all critical information infrastructure (CII) owners today.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Securing Agentic AI addendum",
+   "summary": "CSA's addendum on Securing Agentic AI, launched in October last year, gives practical guidance on mapping workflows and applying controls across the life-cycle.",
+   "sentences": [
+    {
+     "sid": "s00046",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "CSA's addendum on Securing Agentic AI, launched in October last year, sets out practical guidance on mapping workflows and applying controls across the entire life-cycle.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CSA assessment and Mythos access",
+   "summary": "CSA leads assessment work with Government agencies and industry experts, reviews CII standards, and cannot test Mythos without direct access.",
+   "sentences": [
+    {
+     "sid": "s00052",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "To Mr Louis Chua's question on assessment capabilities, CSA leads this effort, working closely with relevant Government agencies and industry experts to exchange insights on the threats and mitigation measures.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00053",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "CSA is also reviewing standards and obligations for CII owners to account for the faster attack timelines.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00055",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "On Mythos specifically: without direct access, we cannot test the model ourselves.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CSA SG Cyber Safe SMEs",
+   "summary": "CSA's SG Cyber Safe programme provides accessible cyber-hygiene guidance to help SMEs.",
+   "sentences": [
+    {
+     "sid": "s00072",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "To help our SMEs, CSA's SG Cyber Safe programme provides accessible cyber-hygiene guidance.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Monitoring AI threats with partners",
-   "summary": "The Ministry says the capability is not an unprepared step jump and it monitors the space with international partners and agencies.",
+   "summary": "The Government has monitored this space and works with international partners on these threats.",
    "sentences": [
     {
-     "sid": "s00012",
+     "sid": "s00085",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "It is not suddenly a step jump or a discontinuous capability that we are not prepared for.",
      "added_for_context": true
     },
     {
-     "sid": "s00013",
+     "sid": "s00086",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "We have been monitoring this space for some time and are actively working with international partners, both technology companies developing those AI frontier models as well as governmental organisations, on these threats, including those from intelligence and security agencies.",
@@ -36,92 +135,98 @@
    ]
   },
   {
-   "label": "Supporting SME cybersecurity and AI",
-   "summary": "Resources help SMEs self-check systems, follow CSA guidelines, and bake cybersecurity hygiene into pre-approved SME Go Digital solutions.",
+   "label": "Supporting SMEs on cyber and AI",
+   "summary": "Resources support SMEs to self-check their systems and to deploy AI solutions safely.",
    "sentences": [
     {
-     "sid": "s00023",
+     "sid": "s00096",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
-     "text": "Thirdly, we are mindful that SMEs may not have such capabilities and we deployed different resources supporting them to: firstly do a self-check, a hygiene check, on their own systems through the various cyber essential marks and trust marks – they can look at the guidelines published by CSA; secondly, even as SMEs digitalise and adopt AI technology in their organisations, you want to make sure they are safe and there are guidelines in place for them to think about how to deploy AI solutions in their organisations and in their businesses.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00024",
-     "speaker": "Mr Tan Kiat How",
-     "attributed": true,
-     "text": "And through programmes like SMEs Go Digital, where we work with our industry partners providing these technology solutions and pre-approve them for support, we make sure those basic cybersecurity hygiene practices are baked into those systems.",
+     "text": "Thirdly, we are mindful that SMEs may not have such capabilities and we deployed different resources supporting them to: firstly do a self-check, a hygiene check, on their own systems through the various cyber essential marks and trust marks – they can look at the guidelines published by CSA; secondly, even as SMEs digitalise and adopt AI technology in their organisations, you want to make sure they are safe and there are guidelines in place for them to think about how to deploy AI solutions in their organisations and in their businesses.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Testing AI and open-source models",
-   "summary": "Capabilities were built up over time and Singapore works with AI labs and cybersecurity firms for early model access to test capabilities.",
+   "label": "Cybersecurity careers and talent pathways",
+   "summary": "CSA and agencies run schemes and work with institutes of higher learning on cybersecurity career pathways.",
    "sentences": [
     {
-     "sid": "s00046",
+     "sid": "s00106",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
-     "text": "And it is not just about a single model but broadly, even open-source models, we have built up capabilities over time and within matter of months because of how fast AI technology is developing.",
+     "text": "It is not just technical talent but actually, a lot of times, it is understanding the psyche of the bad actors and how do we put ourselves in those shoes and to detect those vulnerabilities.",
      "added_for_context": true
     },
     {
-     "sid": "s00047",
+     "sid": "s00107",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
-     "text": "We work closely with all AI labs, cybersecurity firms as well as different partners around the world to have early access, if we can, to different models and frontier models to test the capabilities.",
+     "text": "That is why over the years, CSA, together with various Government agencies, including our security agencies, have been putting in place different schemes and programmes to support Singaporeans who wish to have a career in cybersecurity.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00108",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "It is a rewarding career – you are doing good, making an impact and it is a meaningful career with good prospects.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00109",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "And we are working very closely with the institutes of higher learning, our different schools, to have those pathways, not just for fresh graduates but also mid-career individuals who want to transit to a cybersecurity career.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Visiting all 11 CII sectors",
-   "summary": "The Minister completed visits to all 11 critical information infrastructure sectors, where leadership is aware of risks and taking steps.",
+   "label": "Government access to Anthropic Mythos",
+   "summary": "The question asks whether the Government is working to gain direct access to the Anthropic Mythos model.",
    "sentences": [
     {
-     "sid": "s00052",
+     "sid": "s00114",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "In so doing, is the Government working to gain direct access to the Anthropic Mythos model to enable the Government to better strengthen its cybersecurity defences?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Visits to 11 CII sectors",
+   "summary": "The speaker has completed visits to all 11 critical information infrastructure sectors.",
+   "sentences": [
+    {
+     "sid": "s00125",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
-     "text": "In this House, during the Budget and Committee of Supply speeches, I shared with the House that I have been visiting every of the CII sectors – 11 critical information infrastructure sectors – over the past months and year.",
+     "text": "In this House, during the Budget and Committee of Supply speeches, I shared with the House that I have been visiting every of the CII sectors – 11 critical information infrastructure sectors – over the past months and year.",
      "added_for_context": true
     },
     {
-     "sid": "s00053",
+     "sid": "s00126",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "I am pleased to share with everyone that I have completed all 11.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00055",
-     "speaker": "Mr Tan Kiat How",
-     "attributed": true,
-     "text": "And I am very heartened that all the senior leadership, from chief executives to board members, are aware of the risks and are taking steps.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00056",
-     "speaker": "Mr Tan Kiat How",
-     "attributed": true,
-     "text": "They are putting in place, not just processes and investments to secure themselves and their systems, but also proactively thinking about how to secure their AI uses in their organisations.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Sharing threat intelligence with CII",
-   "summary": "Government and CSA will share selected threat intelligence with selected CII owners to better monitor and detect advanced persistent threat actors.",
+   "label": "Threat intelligence sharing with CII",
+   "summary": "Government and CSA will share selected threat intelligence with selected CII owners to help them monitor and detect threats.",
    "sentences": [
     {
-     "sid": "s00061",
+     "sid": "s00134",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "Lastly, I must also say that we have been working very closely with all of the CII sectors, I shared in this House during the Committee of Supply debates that the Government and CSA are leaning forward.",
      "added_for_context": true
     },
     {
-     "sid": "s00062",
+     "sid": "s00135",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "We will share selected threat intelligence information with selected CII owners so that they can better monitor and detect threats against them, especially from advanced persistent threat actors.",
@@ -141,13 +246,13 @@
   "report_ids": [
    "oral-answer-4126"
   ],
-  "sentences_total": 62,
-  "sentences_selected": 13,
-  "sentences_in_sections": 13,
+  "sentences_total": 135,
+  "sentences_selected": 22,
+  "sentences_in_sections": 22,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 5,
-  "sections_total": 6,
-  "selection_share": 0.2097,
+  "sections_total": 13,
+  "selection_share": 0.163,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -156,24 +261,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 6,
+   "sections_total": 13,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 13,
-   "sentences_selected": 13,
-   "turns_cited": 3,
+   "sentences_published": 22,
+   "sentences_selected": 22,
+   "turns_cited": 7,
    "turns_total": 10,
-   "coverage": 0.3,
+   "coverage": 0.7,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:59:36"
+   "checked_at": "2026-09-20T10:16:56"
   },
   "usage": {
-   "calls": 3,
-   "prompt_tokens": 3537,
-   "completion_tokens": 326,
+   "calls": 8,
+   "prompt_tokens": 6712,
+   "completion_tokens": 699,
    "estimated": false,
-   "cost_usd": 0.000586
+   "cost_usd": 0.001135
   }
  }
 }

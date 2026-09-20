@@ -1,0 +1,173 @@
+{
+ "item": {
+  "id": "oral-answer-784",
+  "year": "2015",
+  "title": "Results of Survey for Land Reclamation Project in Straits of Johor",
+  "group": "oral",
+  "tier": "small",
+  "source_words": 1037,
+  "prompt_chars": 6549,
+  "sentence_count": 29,
+  "chunk_count": 1,
+  "report_ids": [
+   "oral-answer-784"
+  ],
+  "sitting_dates": [
+   "2015-01-19"
+  ]
+ },
+ "verdict": {
+  "passed": false,
+  "verbatim_invariant": true,
+  "text_failures": [],
+  "text_failures_count": 0,
+  "schema_complete": true,
+  "missing_fields": [],
+  "sections_total": 1,
+  "sections_without_summary": [],
+  "sections_without_sentences": [],
+  "sentences_published": 11,
+  "sentences_selected": 11,
+  "turns_cited": 1,
+  "turns_total": 8,
+  "coverage": 0.125,
+  "min_coverage_required": 0.15,
+  "min_turns_required": 1,
+  "checked_at": "2026-09-20T13:11:35"
+ },
+ "attempt": {
+  "title": "Results of Survey for Land Reclamation Project in Straits of Johor",
+  "what_it_is": "Results of Survey for Land Reclamation Project in Straits of Johor",
+  "sections": [
+   {
+    "label": "Singapore Malaysia reclamation EIA concerns",
+    "summary": "Singapore seeks Malaysia's finalised EIA reports and information on Johor reclamation projects with potential transboundary impact.",
+    "sentences": [
+     {
+      "sid": "s00002",
+      "speaker": "The Second Minister for Foreign Affairs (Ms Grace Fu Hai Yien) (for the Minister for Foreign Affairs)",
+      "attributed": true,
+      "text": "Singapore remains committed to working with Malaysia to address our concerns over Malaysia's reclamation projects in the Straits of Johor that could have potential transboundary impact on Singapore.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00003",
+      "speaker": "The Second Minister for Foreign Affairs (Ms Grace Fu Hai Yien) (for the Minister for Foreign Affairs)",
+      "attributed": true,
+      "text": "As you are aware, we had on several occasions conveyed to Malaysia our concerns and requests for more information, including the Environmental Impact Assessment (EIA) reports, on these reclamation projects.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00005",
+      "speaker": "The Second Minister for Foreign Affairs (Ms Grace Fu Hai Yien) (for the Minister for Foreign Affairs)",
+      "attributed": true,
+      "text": "Malaysia had responded with some general information on the reclamation projects and promised to share all other information, including the EIA reports, once its internal processes are completed.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00006",
+      "speaker": "The Second Minister for Foreign Affairs (Ms Grace Fu Hai Yien) (for the Minister for Foreign Affairs)",
+      "attributed": true,
+      "text": "At the consultations, we exchanged views with Malaysia and sought further clarifications on these works.",
+      "added_for_context": true
+     },
+     {
+      "sid": "s00007",
+      "speaker": "The Second Minister for Foreign Affairs (Ms Grace Fu Hai Yien) (for the Minister for Foreign Affairs)",
+      "attributed": true,
+      "text": "We also reiterated to Malaysia that both countries are obliged under general international law and, in particular, the United Nations Convention on the Law of the Sea (UNCLOS), to undertake and share EIA reports on all works that could have transboundary impact, prior to the commencement of such works.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00008",
+      "speaker": "The Second Minister for Foreign Affairs (Ms Grace Fu Hai Yien) (for the Minister for Foreign Affairs)",
+      "attributed": true,
+      "text": "Singapore was informed that Malaysia's internal processes regarding the EIAs have yet to be completed.",
+      "added_for_context": true
+     },
+     {
+      "sid": "s00009",
+      "speaker": "The Second Minister for Foreign Affairs (Ms Grace Fu Hai Yien) (for the Minister for Foreign Affairs)",
+      "attributed": true,
+      "text": "We were also informed that Malaysia had ordered these reclamation works in Johor to be suspended.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00010",
+      "speaker": "The Second Minister for Foreign Affairs (Ms Grace Fu Hai Yien) (for the Minister for Foreign Affairs)",
+      "attributed": true,
+      "text": "Malaysian Deputy Minister of Natural Resources and Environment Dato' Sri Dr James Dawos Mamit subsequently said it would take at least three more months for the finalised EIA reports to be ready.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00012",
+      "speaker": "The Second Minister for Foreign Affairs (Ms Grace Fu Hai Yien) (for the Minister for Foreign Affairs)",
+      "attributed": true,
+      "text": "More recently, it was reported in the media that the reclamation projects have been approved by the Malaysian Department of Environment.",
+      "added_for_context": true
+     },
+     {
+      "sid": "s00013",
+      "speaker": "The Second Minister for Foreign Affairs (Ms Grace Fu Hai Yien) (for the Minister for Foreign Affairs)",
+      "attributed": true,
+      "text": "However, Singapore has yet to receive the Malaysian government's official response on this issue, including the finalised EIA reports.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00014",
+      "speaker": "The Second Minister for Foreign Affairs (Ms Grace Fu Hai Yien) (for the Minister for Foreign Affairs)",
+      "attributed": true,
+      "text": "We are seeking clarification from Malaysia and have reiterated our requests for Malaysia to provide the finalised EIA reports and all relevant information expeditiously, prior to the commencement of such works.",
+      "added_for_context": false
+     }
+    ]
+   }
+  ],
+  "_meta": {
+   "schema": 4,
+   "id": "oral-answer-784",
+   "group": "oral",
+   "year": "2015",
+   "sitting_dates": [
+    "2015-01-19"
+   ],
+   "report_ids": [
+    "oral-answer-784"
+   ],
+   "sentences_total": 29,
+   "sentences_selected": 11,
+   "sentences_in_sections": 11,
+   "sentences_skipped_within_selection": 0,
+   "sentences_added_for_context": 3,
+   "sections_total": 1,
+   "selection_share": 0.3793,
+   "generated_by": "stage2b_select + stage2c_sections",
+   "gate": {
+    "passed": false,
+    "verbatim_invariant": true,
+    "text_failures": [],
+    "text_failures_count": 0,
+    "schema_complete": true,
+    "missing_fields": [],
+    "sections_total": 1,
+    "sections_without_summary": [],
+    "sections_without_sentences": [],
+    "sentences_published": 11,
+    "sentences_selected": 11,
+    "turns_cited": 1,
+    "turns_total": 8,
+    "coverage": 0.125,
+    "min_coverage_required": 0.15,
+    "min_turns_required": 1,
+    "checked_at": "2026-09-20T13:11:35"
+   },
+   "usage": {
+    "calls": 2,
+    "prompt_tokens": 1885,
+    "completion_tokens": 98,
+    "estimated": false,
+    "cost_usd": 0.000291
+   }
+  }
+ }
+}

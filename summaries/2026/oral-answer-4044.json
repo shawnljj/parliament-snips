@@ -3,8 +3,8 @@
  "what_it_is": "Securing Singapore’s Critical Information Infrastructure Dependent on Satellite and Space Systems",
  "sections": [
   {
-   "label": "Satellite use and space security",
-   "summary": "Some enterprises use satellites as a secondary channel, so disruption impact is limited, and the Government will work with industry on space infrastructure security.",
+   "label": "Satellite use and cybersecurity",
+   "summary": "Some Singapore enterprises use satellites as a secondary channel, so disruption impact is limited, and the Government will work with industry on space infrastructure security.",
    "sentences": [
     {
      "sid": "s00002",
@@ -30,8 +30,8 @@
    ]
   },
   {
-   "label": "Internet traffic not satellite",
-   "summary": "More than 99% of Singapore's Internet traffic travels via non-satellite means.",
+   "label": "Internet traffic and submarine cables",
+   "summary": "Over 99% of Singapore's Internet traffic uses non-satellite means, and Singapore is a hub for submarine cables.",
    "sentences": [
     {
      "sid": "s00011",
@@ -39,12 +39,19 @@
      "attributed": true,
      "text": "More than 99% of our Internet traffic is via non-satellite means.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Tan Kiat How",
+     "attributed": true,
+     "text": "Unlike other, perhaps, larger countries, Singapore is a hub for submarine cables.",
+     "added_for_context": false
     }
    ]
   },
   {
    "label": "Nationwide standalone 5G rollout",
-   "summary": "About five years ago Singapore rolled out the 5G standalone network, likely among the first countries with nationwide standalone 5G coverage.",
+   "summary": "About five years ago Singapore rolled out its 5G standalone network, likely among the first countries with nationwide standalone 5G coverage.",
    "sentences": [
     {
      "sid": "s00018",
@@ -57,7 +64,7 @@
   },
   {
    "label": "International space cybersecurity standards",
-   "summary": "Singapore participates in international bodies setting space resilience and cybersecurity standards, which satellite operators and partners adopt for their use cases.",
+   "summary": "Singapore participates in international bodies setting space industry resilience and cybersecurity standards, and satellite operators adopt standards relevant to their use cases.",
    "sentences": [
     {
      "sid": "s00022",
@@ -71,13 +78,6 @@
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
      "text": "Satellite operators and their partners adopt cybersecurity and resilience standards relevant to their specific use cases, such as for information technology, aerospace and telecommunications.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00024",
-     "speaker": "Mr Tan Kiat How",
-     "attributed": true,
-     "text": "And users that transmit sensitive data would also adopt stringent data encryption policies to protect the data in transit.",
      "added_for_context": false
     }
    ]
@@ -119,14 +119,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:30:15"
+   "checked_at": "2026-09-20T10:47:42"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1479,
-   "completion_tokens": 232,
+   "prompt_tokens": 1476,
+   "completion_tokens": 241,
    "estimated": false,
-   "cost_usd": 0.000272
+   "cost_usd": 0.000274
   }
  }
 }

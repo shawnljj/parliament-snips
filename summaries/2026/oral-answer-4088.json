@@ -30,7 +30,7 @@
    ]
   },
   {
-   "label": "Trained teachers and SEN officers",
+   "label": "SEN teachers and officers",
    "summary": "Schools have Teachers Trained in Special Needs and SEN Officers, and MOE facilitates sharing of best practices.",
    "sentences": [
     {
@@ -71,7 +71,7 @@
   },
   {
    "label": "Flexibility in SEN training hours",
-   "summary": "The exact number of SEN training hours is not available, but teachers have flexibility to access additional modules.",
+   "summary": "The exact number of SEN training hours is not known, but teachers can access lessons and modules flexibly.",
    "sentences": [
     {
      "sid": "s00022",
@@ -119,11 +119,11 @@
    "coverage": 0.4,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:06:30"
+   "checked_at": "2026-09-20T10:23:35"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1735,
+   "prompt_tokens": 1736,
    "completion_tokens": 213,
    "estimated": false,
    "cost_usd": 0.000303

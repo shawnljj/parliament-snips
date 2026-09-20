@@ -42,12 +42,16 @@ INDEX = os.path.join(DATA, "sittings.json")
 STATUS = os.path.join(ROOT, "backfill_status.json")
 LOG = os.path.join(ROOT, "backfill.log")
 
-# Backfill floor. 2016 is the first year that is cleanly in the modern era: every
-# sampled 2016-03-01 row is sprs3 with null `reportContent`, and getHansardTopic
-# returns real content. Before that the API serves the legacy sprs2 shape, which is
-# deliberately out of scope -- legacy reports answer HTTP 400 from getHansardTopic
-# and carry their full text in `reportContent` on the listing instead. So from 2016
-# onward ONE code path works and no era branching is needed.
+# Backfill floor.
+#
+# SET BACK TO 2016 BY THE OWNER (2026-09-20), after 2015 was fetched and summarised.
+# The decision: keep the corpus to 2016 onward. 2015 data was measured to be the SAME
+# sprs3 era and parsed cleanly (23 sittings, 96.8% attribution, 0 pollution), so this is
+# a SCOPE choice rather than a technical limit -- do not re-open it on the grounds that
+# 2015 "works". It does. It is out of scope.
+#
+# 2015 artifacts produced during that experiment were removed: data/2015,
+# pipeline/dataset/2015, summaries/2015.
 FLOOR_YEAR = 2016
 
 # Verified sitting dates for 2026 (day-probe sweep, 16 Sep 2026).

@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "PARF rebate lowered for EVs",
-   "summary": "PARF rebate was lowered and its cap cut from $60,000 to $30,000 as EVs make early deregistration incentives less needed.",
+   "summary": "PARF rebate and its cap were lowered because EVs make early deregistration incentives less needed, with changes effective immediately.",
    "sentences": [
     {
      "sid": "s00005",
@@ -37,21 +37,21 @@
    ]
   },
   {
-   "label": "Affected car buyers with purchases",
-   "summary": "Fewer than 2,000 car buyers with committed purchases are estimated affected, mostly higher-end internal combustion engine car buyers.",
+   "label": "Vehicle taxes at registration point",
+   "summary": "Vehicle taxes and rebates are levied at registration, not sale, affecting fewer than 2,000 buyers with committed purchases.",
    "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "Vehicle taxes and rebates are also consistently levied at the point of registration, not the point of sale, to ensure all buyers in a specific COE bidding exercise are treated equally.",
+     "added_for_context": false
+    },
     {
      "sid": "s00012",
      "speaker": "Mr Jeffrey Siow",
      "attributed": true,
      "text": "Fewer than 2,000 car buyers with committed purchases are estimated to be affected.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00013",
-     "speaker": "Mr Jeffrey Siow",
-     "attributed": true,
-     "text": "These include mostly buyers of higher-end internal combustion engine cars.",
      "added_for_context": false
     },
     {
@@ -65,7 +65,7 @@
   },
   {
    "label": "Ownership and usage controls balance",
-   "summary": "Singapore needs a balance of ownership and usage controls, and PARF was adjusted because increased EV take-up made its original objective less relevant.",
+   "summary": "Singapore needs both ownership and usage controls for congestion, and PARF was adjusted because increased EV take-up made its original objective less relevant.",
    "sentences": [
     {
      "sid": "s00017",
@@ -134,14 +134,14 @@
    "coverage": 0.5714,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:14:53"
+   "checked_at": "2026-09-20T10:32:04"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1605,
-   "completion_tokens": 200,
+   "prompt_tokens": 1632,
+   "completion_tokens": 193,
    "estimated": false,
-   "cost_usd": 0.000281
+   "cost_usd": 0.000283
   }
  }
 }

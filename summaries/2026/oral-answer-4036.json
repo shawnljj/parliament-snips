@@ -3,11 +3,11 @@
  "what_it_is": "Redesigning Shelter Models to Better Meet Needs of Rough Sleepers",
  "sections": [
   {
-   "label": "MSF Street Count Rough Sleepers Survey",
-   "summary": "The 2025 MSF Street Count of Rough Sleepers Survey found most rough sleepers choose sheltered and well-lit locations.",
+   "label": "Rough sleepers survey locations",
+   "summary": "The 2025 MSF Street Count Survey found most rough sleepers choose sheltered and generally well-lit sleeping locations.",
    "sentences": [
     {
-     "sid": "s00004",
+     "sid": "s00003",
      "speaker": "Mr Eric Chua",
      "attributed": true,
      "text": "The 2025 Street Count of Rough Sleepers Survey by the Ministry of Social and Family Development (MSF) found that most rough sleepers choose to sleep in locations that are sheltered from the elements and are generally well-lit.",
@@ -16,11 +16,11 @@
    ]
   },
   {
-   "label": "Rough sleepers with homes",
+   "label": "Rough sleeping due to disagreements",
    "summary": "Many rough sleepers have homes but rough sleep due to disagreements with family, friends or co-tenants.",
    "sentences": [
     {
-     "sid": "s00007",
+     "sid": "s00006",
      "speaker": "Mr Eric Chua",
      "attributed": true,
      "text": "Many rough sleepers have homes to return to but rough sleep due to disagreements with family, friends or co-tenants.",
@@ -33,14 +33,14 @@
    "summary": "MSF redesigned shelter units with partitioned bed spaces, shelves and wardrobes, and announced a $450,000 PATH fund.",
    "sentences": [
     {
-     "sid": "s00011",
+     "sid": "s00010",
      "speaker": "Mr Eric Chua",
      "attributed": true,
      "text": "For example, to address the survey finding that lack of privacy and personal space were key barriers to rough sleepers moving into shelters, MSF has partnered our shelter operators and re-designed the units with partitioned bed spaces, shelves and wardrobes.",
      "added_for_context": false
     },
     {
-     "sid": "s00013",
+     "sid": "s00012",
      "speaker": "Mr Eric Chua",
      "attributed": true,
      "text": "MSF has also recently announced a $450,000 Partnership to Tackle Homelessness (PATH) fund and invites organisations to trial innovative solutions to address underlying causes of rough sleeping and help rough sleepers work towards housing stability.",
@@ -53,14 +53,14 @@
    "summary": "The prevalence rate is about 75%, and about three-quarters of rough sleepers do not wish to check into shelters.",
    "sentences": [
     {
-     "sid": "s00019",
+     "sid": "s00018",
      "speaker": "Mr Eric Chua",
      "attributed": true,
      "text": "The prevalence rate is about 75% based on the last street count.",
      "added_for_context": false
     },
     {
-     "sid": "s00020",
+     "sid": "s00019",
      "speaker": "Mr Eric Chua",
      "attributed": true,
      "text": "About three-quarters of rough sleepers on the streets today, they do not wish to check into the shelter because of rules, privacy, as I have mentioned, storage space and so on.",
@@ -70,17 +70,17 @@
   },
   {
    "label": "Transitional shelter bed utilisation",
-   "summary": "The Street Count Report mentioned 730 transitional shelter bed spaces, with utilisation about two thirds as of September last year.",
+   "summary": "The Street Count Report mentioned 730 transitional shelter bed spaces, with about 66% utilisation as of September last year.",
    "sentences": [
     {
-     "sid": "s00023",
+     "sid": "s00022",
      "speaker": "Mr Eric Chua",
      "attributed": true,
      "text": "In the Street Count Report, we mentioned 730 transitional shelter bed spaces.",
      "added_for_context": false
     },
     {
-     "sid": "s00024",
+     "sid": "s00023",
      "speaker": "Mr Eric Chua",
      "attributed": true,
      "text": "As of September last year, utilisation rate was about two thirds or 66%.",
@@ -100,13 +100,13 @@
   "report_ids": [
    "oral-answer-4036"
   ],
-  "sentences_total": 24,
+  "sentences_total": 23,
   "sentences_selected": 8,
   "sentences_in_sections": 8,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 0,
   "sections_total": 5,
-  "selection_share": 0.3333,
+  "selection_share": 0.3478,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -121,18 +121,18 @@
    "sentences_published": 8,
    "sentences_selected": 8,
    "turns_cited": 2,
-   "turns_total": 6,
-   "coverage": 0.3333,
+   "turns_total": 5,
+   "coverage": 0.4,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:30:40"
+   "checked_at": "2026-09-20T10:48:07"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1616,
-   "completion_tokens": 283,
+   "prompt_tokens": 1561,
+   "completion_tokens": 280,
    "estimated": false,
-   "cost_usd": 0.000305
+   "cost_usd": 0.000297
   }
  }
 }

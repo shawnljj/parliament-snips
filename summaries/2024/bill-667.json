@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Global investment screening frameworks",
-   "summary": "A 2023 UN report says at least 37 countries have introduced investment screening frameworks since the 1990s, with more countries recently acting.",
+   "summary": "A 2023 UN report says at least 37 countries have introduced investment screening frameworks since the 1990s, with more countries acting recently.",
    "sentences": [
     {
      "sid": "s00019",
@@ -24,7 +24,7 @@
   },
   {
    "label": "Significant Investments Review Bill purpose",
-   "summary": "The Bill complements existing sectoral safeguards by introducing a new investment management regime.",
+   "summary": "The Significant Investments Review Bill complements existing sectoral safeguards by introducing a new investment management regime.",
    "sentences": [
     {
      "sid": "s00026",
@@ -49,7 +49,7 @@
    ]
   },
   {
-   "label": "Few designations expected in Singapore",
+   "label": "Expected designations in Singapore",
    "summary": "Most entities in these sectors will be regulated, but Singapore expects to designate only a handful as most critical entities are already covered.",
    "sentences": [
     {
@@ -90,7 +90,7 @@
   },
   {
    "label": "Void transactions without approval",
-   "summary": "Clause 21 automatically renders transactions void if controllers proceed without the necessary prior approvals from the Minister.",
+   "summary": "Clause 21 automatically renders transactions void if controllers proceed without seeking the necessary prior approvals from the Minister.",
    "sentences": [
     {
      "sid": "s00066",
@@ -103,7 +103,7 @@
   },
   {
    "label": "Minister review of ownership transactions",
-   "summary": "Clause 32 lets the Minister review ownership or control transactions only if the entity acted against national security and the transaction occurred within two years prior.",
+   "summary": "Clause 32 lets the Minister review ownership or control transactions only if the entity acted against national security interests and the transaction occurred within two years prior.",
    "sentences": [
     {
      "sid": "s00098",
@@ -136,8 +136,8 @@
    ]
   },
   {
-   "label": "Maximum penalty for individuals and entities",
-   "summary": "Maximum penalties are based on the higher of an absolute quantum cap or transaction value, or for entities without transaction value, 10% of annual turnover.",
+   "label": "Maximum penalty calculation",
+   "summary": "Maximum penalties for individuals and entities are based on the higher of an absolute quantum cap or transaction value, or 10% of annual turnover for entities.",
    "sentences": [
     {
      "sid": "s00114",
@@ -156,7 +156,7 @@
    ]
   },
   {
-   "label": "Reconsideration and Reviewing Tribunal appeals",
+   "label": "Reconsideration and appeal processes",
    "summary": "Clauses 38 and 39 set out processes for parties to seek reconsideration from the Minister and make further appeals to an independent Reviewing Tribunal.",
    "sentences": [
     {
@@ -182,7 +182,7 @@
    ]
   },
   {
-   "label": "Entities critical to economy and society",
+   "label": "Entities critical to economy",
    "summary": "Such entities are critical to the economy and society, and may act detrimentally to national interest as owners or operators advance strategic or economic interests.",
    "sentences": [
     {
@@ -202,8 +202,8 @@
    ]
   },
   {
-   "label": "New laws protecting strategic assets",
-   "summary": "Rising geopolitical tensions and concerns over national economic security and strategic competition have led more countries to introduce legislation protecting strategically important technologies, assets and key infrastructures.",
+   "label": "New legislation protecting strategic assets",
+   "summary": "Rising geopolitical tensions and concerns over national economic security and strategic competition have led more countries to introduce new legislations protecting strategically important technologies, assets and key infrastructures.",
    "sentences": [
     {
      "sid": "s00135",
@@ -215,22 +215,23 @@
    ]
   },
   {
-   "label": "Bill objective for critical entities",
-   "summary": "The Bill aims to ensure critical entities continue providing their functions securely and reliably over time.",
+   "label": "Clarifications on designations and time bar",
+   "summary": "An MP seeks clarification on whether AI, data centre and emerging sector entities will be designated, and the rationale for the two-year time bar.",
    "sentences": [
     {
-     "sid": "s00145",
+     "sid": "s00147",
      "speaker": "Mr Liang Eng Hwa (Bukit Panjang)",
      "attributed": true,
-     "text": "The objective this Bill is to ensure that the critical entities continue providing their functions securely and reliably over time.",
+     "text": "Notwithstanding my support, I have a few clarifications to seek from the Minister.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00148",
+     "speaker": "Mr Liang Eng Hwa (Bukit Panjang)",
+     "attributed": true,
+     "text": "So, my question to the Minister is, whether entities, especially those in new or emerging sectors, like artificial intelligence (AI); or those providing services in certain sectors, such as data centres, will be designated under the Bill?",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Two-year time bar question",
-   "summary": "A question asks the Minister for the consideration behind the two-year time bar for entities acting against national security interest.",
-   "sentences": [
+    },
     {
      "sid": "s00149",
      "speaker": "Mr Liang Eng Hwa (Bukit Panjang)",
@@ -242,7 +243,7 @@
   },
   {
    "label": "Designated entities under investment regime",
-   "summary": "Under the new investment management regime, entities critical to Singapore's national security interests will be identified as designated entities and regulated.",
+   "summary": "Entities critical to Singapore's national security interests will be identified as designated entities and regulated, including those not covered by existing legislation.",
    "sentences": [
     {
      "sid": "s00152",
@@ -254,8 +255,21 @@
    ]
   },
   {
-   "label": "Public list of designated entities",
-   "summary": "A Member says making public the list of designated entities will signal that most of the market is open for investment.",
+   "label": "Singapore Airlines special share",
+   "summary": "Singapore Airlines has one non-tradeable special share issued to MOF, and certain undisclosed matters need MOF's prior written approval.",
+   "sentences": [
+    {
+     "sid": "s00165",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "For example, Singapore Airlines has one non-tradeable special share issued to the Ministry of Finance (MOF) and no resolution may be passed on certain undisclosed matters without prior written approval of the MOF.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Publishing list of designated entities",
+   "summary": "An MP cites MTI's November 2023 press release that only a handful of critical entities will be designated, and argues publishing the list would signal the market is open.",
    "sentences": [
     {
      "sid": "s00170",
@@ -270,25 +284,25 @@
      "attributed": true,
      "text": "While I can understand if the Government does not wish to disclose the identities of non-designated entities but which it is otherwise monitoring for national security concerns, making public the list of designated entities will signal to businesses that the vast majority of the market is open for investment and that the scope of SIRA is truly limited to just a handful of companies.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00173",
-     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
-     "attributed": true,
-     "text": "To be clear, I am not saying that SIRA is unnecessary because of existing control mechanisms, but on the contrary, I believe that the formalisation of SIRA will allow international businesses to have greater confidence in the regulatory environment in which investments into Singapore are made, with the scoping of provisions under SIRA providing greater regulatory certainty to businesses.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Five percent notification threshold rationale",
-   "summary": "A question asks the rationale for the 5% threshold at which acquirers of designated entities must notify the Minister.",
+   "label": "Notification thresholds and 5% rationale",
+   "summary": "The MP compares CFIUS and UK NSI Act notification thresholds and asks the rationale for the 5% threshold for acquirers of designated entities.",
    "sentences": [
     {
      "sid": "s00183",
      "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
      "attributed": true,
      "text": "Thirdly, on notification thresholds, CFIUS requires the authorities to be notified if a foreign party obtains 25% or more voting interest in critical technologies, critical infrastructure and sensitive personal data (TID) businesses; and a foreign government, except for Australia, Canada, and the UK, holds a 49% or more voting interest in the foreign party.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00184",
+     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
+     "attributed": true,
+     "text": "The UK NSI Act would apply for acquisitions of control over qualifying entities or assets where there could be a potential risk to national security, with control defined as: (a) an entity acquiring or increasing its interest to at least 25% or such that it crosses the 50% or 75% thresholds; (b) an entity acquiring voting rights in qualifying entity such that the acquirer could secure or prevent the passage of any class of resolutions; (c) an entity obtaining “material influence” over a qualifying entity.",
      "added_for_context": false
     },
     {
@@ -301,35 +315,16 @@
    ]
   },
   {
-   "label": "National security interests undefined",
-   "summary": "A Member observes that the phrase national security interests is not defined anywhere in the Bill.",
+   "label": "Courts' role and SIRA oversight",
+   "summary": "The Workers' Party cites Article 93 and distinguishes FICA from SIRA, asking why the courts' role is disallowed and urging justifiable, transparent implementation.",
    "sentences": [
     {
-     "sid": "s00189",
+     "sid": "s00199",
      "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
      "attributed": true,
-     "text": "The first thing I observed is that, even though the primary purpose of this Bill is to safeguard Singapore's national security interests, the phrase \"national security interests\" does not appear to be defined anywhere in the Bill.",
+     "text": "The Workers' Party believes in the important oversight mechanism played by the role of the courts and as my hon friend Ms He Ting Ru shared in 2021, such a clause offends Article 93 of the Constitution, which expressly states that \"judicial power of Singapore shall be vested in a Supreme Court and in such subordinate courts as may be provided by any written law for the time being in force\".",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Minister appoints and removes key officers",
-   "summary": "Clauses 27 and 28 empower the Minister to decide on appointing and to remove key officers of designated entities.",
-   "sentences": [
-    {
-     "sid": "s00193",
-     "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
-     "attributed": true,
-     "text": "Second, clause 27 empowers the Minister to decide on the appointment of key officers of designated entities, such as the chief executive officer, directors and chairpersons, and similarly, clause 28 empowers the Minister the remove such key officers.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "FICA, SIRA, courts and transparency",
-   "summary": "Speaker contrasts FICA and SIRA, asks why courts are excluded, and urges justifiable, transparent implementation with regular public accounting.",
-   "sentences": [
+    },
     {
      "sid": "s00200",
      "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
@@ -361,8 +356,8 @@
    ]
   },
   {
-   "label": "National security and economic interest balance",
-   "summary": "Speaker asks how the Bill balances national security and economic interest without harming Singapore's competitive business environment and trade obligations.",
+   "label": "National security and trade obligations",
+   "summary": "The Minister is asked how the Bill balances national security and economic interest and complies with Singapore's trade obligations.",
    "sentences": [
     {
      "sid": "s00208",
@@ -381,8 +376,8 @@
    ]
   },
   {
-   "label": "Significant investments and critical entity criteria",
-   "summary": "Speaker asks for a more comprehensive definition of significant investments and the criteria for designating entities as critical for national security.",
+   "label": "Significant investments and critical entities",
+   "summary": "The Minister is asked for a fuller definition of significant investments and the criteria for designating critical entities.",
    "sentences": [
     {
      "sid": "s00212",
@@ -414,8 +409,8 @@
    ]
   },
   {
-   "label": "Supporting Bill without knowing affected areas",
-   "summary": "Speaker states Parliament is asked to support the Bill without knowing which economic areas and companies are likely to be affected.",
+   "label": "Support without knowing affected areas",
+   "summary": "Parliament is asked to support the Bill without knowing which economic areas and companies are likely to be affected.",
    "sentences": [
     {
      "sid": "s00226",
@@ -427,21 +422,8 @@
    ]
   },
   {
-   "label": "Tribunal decisions final, judicial review ouster",
-   "summary": "Section 46 makes the Reviewing Tribunal's decision final and not challengeable in any other Court.",
-   "sentences": [
-    {
-     "sid": "s00232",
-     "speaker": "Mr Leong Mun Wai (Non-Constituency Member)",
-     "attributed": true,
-     "text": "Fourthly, while the decisions by a Minister would still be appealable to an independent Reviewing Tribunal, section 46 of the proposed Bill is a judicial review ouster clause, which provides that the Tribunal's decision is final and cannot be challenged, appealed against, reviewed, quashed or called into action in any other Court of law.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "PSP opposes Bill without amendments",
-   "summary": "PSP opposes the Bill unless the provisions discussed above are amended.",
+   "label": "PSP opposes the Bill",
+   "summary": "Without amendments to the provisions discussed, PSP opposes the Bill.",
    "sentences": [
     {
      "sid": "s00239",
@@ -453,8 +435,21 @@
    ]
   },
   {
-   "label": "PSP does not support Bill",
-   "summary": "PSP says focus should be on resilience of entities without the Singaporean Core, and does not support the Bill in its current form.",
+   "label": "Banking and e-payment outages",
+   "summary": "Banking and e-payment outages at banks such as DBS and OCBC occurred, and these banks would be prime candidates for designation.",
+   "sentences": [
+    {
+     "sid": "s00242",
+     "speaker": "Mr Leong Mun Wai (Non-Constituency Member)",
+     "attributed": true,
+     "text": "Recently, we have witnessed several banking and e-payment outages at banks, such as DBS and OCBC, which would be prime candidates to be designated as critical entities under the proposed Bill.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "PSP opposition to Bill",
+   "summary": "PSP says focus should be on resilience of entities without Singaporean Core oversight, and does not support the Bill in its current form.",
    "sentences": [
     {
      "sid": "s00250",
@@ -473,8 +468,8 @@
    ]
   },
   {
-   "label": "National security interest undefined in Bill",
-   "summary": "The Bill uses the term national security interest extensively but does not define it, and the term is unique to this Bill.",
+   "label": "Undefined national security interest term",
+   "summary": "The Bill uses the term national security interest extensively without defining it, and the term appears unique to this Bill.",
    "sentences": [
     {
      "sid": "s00258",
@@ -486,8 +481,8 @@
    ]
   },
   {
-   "label": "Clarification sought on national security interest",
-   "summary": "The speaker seeks clarification from the Minister on the definition of national security interest and whether it aligns with Minister Yaacob Ibrahim's definition of considerations of national interest.",
+   "label": "Clarification on national security interest",
+   "summary": "The speaker seeks clarification from the Minister on the definition of national security interest and whether it aligns with considerations of national interest.",
    "sentences": [
     {
      "sid": "s00269",
@@ -499,8 +494,8 @@
    ]
   },
   {
-   "label": "Share price effects and Bill's importance",
-   "summary": "The speaker asks how the Government will ameliorate adverse share price effects on designated entities, and says the Bill is an important chink in Singapore's armour.",
+   "label": "Share price and designated entities",
+   "summary": "The speaker asks how the Government will ameliorate adverse share price effects on designated entities, while calling the Bill an important chink in Singapore's armour.",
    "sentences": [
     {
      "sid": "s00276",
@@ -520,7 +515,7 @@
   },
   {
    "label": "Similar legislation in other countries",
-   "summary": "Similar legislation has been passed in many countries, including some OECD countries and China, with more nations expected to follow.",
+   "summary": "Similar legislation has been passed in many countries in recent years, including some OECD countries and China.",
    "sentences": [
     {
      "sid": "s00280",
@@ -528,29 +523,42 @@
      "attributed": true,
      "text": "Similar legislation had been passed in many countries in recent years, including a few Organisation for Economic Co-operation and Development (OECD) countries and China.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00281",
-     "speaker": "Mr Don Wee (Chua Chu Kang)",
-     "attributed": true,
-     "text": "More nations are expected to follow, as governments scrutinise inward foreign direct investments (FDIs) ever more rigorously to enhance economic resilience and national security.",
-     "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Criteria and threats clarification",
+   "summary": "The speaker asks whether the Minister can share selection criteria and examples of circumstances threatening national security and strategic interests.",
+   "sentences": [
     {
      "sid": "s00283",
      "speaker": "Mr Don Wee (Chua Chu Kang)",
      "attributed": true,
      "text": "The new Bill could plug the policy loopholes created by today's international strategic investment environment.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00284",
+     "speaker": "Mr Don Wee (Chua Chu Kang)",
+     "attributed": true,
+     "text": "However, since these institutions have not been identified, would the Minister be able to share more clearly the criteria for the selection or exclusion of these candidates and the components which buyers and sellers need to pay attention to?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00285",
+     "speaker": "Mr Don Wee (Chua Chu Kang)",
+     "attributed": true,
+     "text": "Will the Minister provide more information and examples of the circumstances under which our national security and strategic interests are threatened?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Concern about FDI impact",
-   "summary": "The speaker is concerned about the Bill's potential dampening impact on Singapore's foreign direct investment.",
+   "label": "FDI impact concern",
+   "summary": "The speaker notes the Bill was crafted with industry consultation but is concerned about its potential dampening impact on Singapore's FDI.",
    "sentences": [
     {
-     "sid": "s00293",
+     "sid": "s00294",
      "speaker": "Mr Don Wee (Chua Chu Kang)",
      "attributed": true,
      "text": "While I am glad to note that the Bill was crafted in consultation with industry representatives to take into account the potential impact on businesses and investors, I am concerned about the potential dampening impact on our FDI.",
@@ -559,11 +567,11 @@
    ]
   },
   {
-   "label": "EU member states measures",
-   "summary": "As of April 2023, 24 of 27 EU member states have introduced or are introducing similar measures.",
+   "label": "EU similar measures",
+   "summary": "As of April 2023, 24 of the 27 EU member states have introduced or are introducing similar measures.",
    "sentences": [
     {
-     "sid": "s00297",
+     "sid": "s00298",
      "speaker": "Mr Neil Parekh Nimil Rajnikant (Nominated Member)",
      "attributed": true,
      "text": "For example, as of April 2023, 24 out of the 27 member states of the European Union have already introduced or are in the process of introducing similar measures.",
@@ -572,32 +580,32 @@
    ]
   },
   {
-   "label": "Transaction limit and undesignation process",
+   "label": "Investment threshold and undesignation process",
    "summary": "The speaker suggests a S$400 million minimum transaction value and asks about the process for designated entities to be undesignated.",
    "sentences": [
     {
-     "sid": "s00317",
+     "sid": "s00318",
      "speaker": "Mr Neil Parekh Nimil Rajnikant (Nominated Member)",
      "attributed": true,
      "text": "To maintain the transparency, consistency and clarity that investors desire, perhaps a high-dollar limit for a minimum transaction value of S$400 million be established for such foreign investments to be included in this process.",
      "added_for_context": false
     },
     {
-     "sid": "s00319",
+     "sid": "s00320",
      "speaker": "Mr Neil Parekh Nimil Rajnikant (Nominated Member)",
      "attributed": true,
      "text": "In my view, in the current geopolitical environment, such a broader proposal for a more comprehensive Bill would be understood and readily accepted by foreign investors.",
      "added_for_context": true
     },
     {
-     "sid": "s00320",
+     "sid": "s00321",
      "speaker": "Mr Neil Parekh Nimil Rajnikant (Nominated Member)",
      "attributed": true,
      "text": "Also, many large institutional investors cannot invest in designated entities unless there is a clear mechanism for those designated entities to potentially regain their undesignated status.",
      "added_for_context": false
     },
     {
-     "sid": "s00321",
+     "sid": "s00322",
      "speaker": "Mr Neil Parekh Nimil Rajnikant (Nominated Member)",
      "attributed": true,
      "text": "Can the Minister perhaps share information on the process that is being established for such designated entities to be undesignated in the future?",
@@ -606,18 +614,18 @@
    ]
   },
   {
-   "label": "Office of Significant Investments Review framework",
-   "summary": "The Bill establishes the Office of Significant Investments Review and a framework to regulate significant investments in entities crucial to Singapore's national security.",
+   "label": "Office of Significant Investments Review",
+   "summary": "The Office of Significant Investments Review provides a one-stop touchpoint, and the Bill regulates significant investments in entities crucial to Singapore's national security.",
    "sentences": [
     {
-     "sid": "s00324",
+     "sid": "s00325",
      "speaker": "Mr Neil Parekh Nimil Rajnikant (Nominated Member)",
      "attributed": true,
      "text": "The establishment of the Office of Significant Investments Review also provides a very useful dedicated one-stop touchpoint for all stakeholders.",
      "added_for_context": true
     },
     {
-     "sid": "s00325",
+     "sid": "s00326",
      "speaker": "Assoc Prof Razwana Begum Abdul Rahim (Nominated Member)",
      "attributed": true,
      "text": "This Bill sets out a framework to regulate significant investments, whether originating locally or internationally, in entities deemed crucial to the national security interests of Singapore.",
@@ -626,11 +634,11 @@
    ]
   },
   {
-   "label": "Risk assessment tool proposal",
+   "label": "Cross-ministry risk assessment tool",
    "summary": "The speaker asks whether the Ministry will consider developing an evidence-based risk assessment tool for all Ministries to identify national security issues.",
    "sentences": [
     {
-     "sid": "s00346",
+     "sid": "s00347",
      "speaker": "Assoc Prof Razwana Begum Abdul Rahim (Nominated Member)",
      "attributed": true,
      "text": "In light of the above, will the Ministry consider developing an evidence-based robust and flexible risk assessment tool that can be used across all Ministries to identify what is and what is not an issue of national security?",
@@ -639,25 +647,25 @@
    ]
   },
   {
-   "label": "Australia investment screening guidelines",
-   "summary": "Australia uses publicly available sectoral guidance and national interests and national security tests in investment screening, and the speaker supports establishing such an office.",
+   "label": "Australia guidelines and office establishment",
+   "summary": "The speaker cites Australia's sectoral guidance and tests, supports the office's establishment, and asks if it will be under the Bill with legislated roles.",
    "sentences": [
     {
-     "sid": "s00350",
+     "sid": "s00351",
      "speaker": "Assoc Prof Razwana Begum Abdul Rahim (Nominated Member)",
      "attributed": true,
      "text": "Similar guidelines are currently in use in Australia, where they have established publicly available sectoral guidance.",
      "added_for_context": false
     },
     {
-     "sid": "s00351",
+     "sid": "s00352",
      "speaker": "Assoc Prof Razwana Begum Abdul Rahim (Nominated Member)",
      "attributed": true,
      "text": "They have also implemented national interests and national security tests as part of their investment screening policy.",
      "added_for_context": true
     },
     {
-     "sid": "s00352",
+     "sid": "s00353",
      "speaker": "Assoc Prof Razwana Begum Abdul Rahim (Nominated Member)",
      "attributed": true,
      "text": "I support the establishment of such an office and ask the Minister whether the office is to be established under the current Bill with its roles and function defined by legislation.",
@@ -666,31 +674,38 @@
    ]
   },
   {
-   "label": "Support for the Bill",
-   "summary": "The speaker quotes a remark that Singapore must have something special and be relied upon, and supports the Bill.",
+   "label": "Shareholdings combined with associates",
+   "summary": "Under section 16, a person's shareholdings are combined with associates' shareholdings to determine if notice or approval requirements are triggered.",
    "sentences": [
     {
-     "sid": "s00360",
+     "sid": "s00361",
      "speaker": "Assoc Prof Razwana Begum Abdul Rahim (Nominated Member)",
      "attributed": true,
      "text": "On that occasion, he noted, \"We must always have that something special that convinces the world that we are better bad than most and that Singapore can always be relied upon to deliver.\" Mr Speaker, clarifications notwithstanding, I support the Bill.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00363",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "Under section 16, a person's shareholdings are combined with their associates' shareholdings to determine if notice or approval requirements are triggered.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Differing notice requirements",
-   "summary": "Section 18(5) requires the accused to notify the Minister within seven days, while section 19(12)(c) requires only all reasonable steps to notify within seven days.",
+   "label": "Differing notification requirements compared",
+   "summary": "Section 18(5) requires notifying the Minister within seven days of contravening a notice requirement, while section 19(12)(c) requires only all reasonable steps.",
    "sentences": [
     {
-     "sid": "s00369",
+     "sid": "s00370",
      "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
      "attributed": true,
      "text": "Section 18(5) requires the accused to notify the Minister within seven days of contravening a notice requirement.",
      "added_for_context": false
     },
     {
-     "sid": "s00370",
+     "sid": "s00371",
      "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
      "attributed": true,
      "text": "Section 19(12)(c) only requires the accused to take \"all reasonable steps\" to notify the Minister within seven days of contravening a separate notice requirement.",
@@ -699,11 +714,11 @@
    ]
   },
   {
-   "label": "Unwinding transactions within two years",
+   "label": "Transactions unwound within two years",
    "summary": "The broad powers in this part of the Bill mean such transactions may be unwound within two years after they are concluded.",
    "sentences": [
     {
-     "sid": "s00375",
+     "sid": "s00376",
      "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
      "attributed": true,
      "text": "The broad powers in this part of the Bill mean that such transactions may be unwound within two years after they are concluded.",
@@ -712,71 +727,57 @@
    ]
   },
   {
-   "label": "Reviewing Tribunal and judicial review",
-   "summary": "Because judicial review is limited by section 46, the Reviewing Tribunal substantively performs the Supreme Court's function in reviewing the Minister's powers under the Bill.",
+   "label": "Bill balances security and business",
+   "summary": "Businesses appreciate the Bill strikes a reasonable balance between national security needs and business priorities, applying only to a handful of designated entities.",
    "sentences": [
     {
-     "sid": "s00380",
-     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "sid": "s00393",
+     "speaker": "Mr Mark Lee (Nominated Member)",
      "attributed": true,
-     "text": "As the scope of judicial review is limited by section 46, the Reviewing Tribunal substantively performs the function of the Supreme Court in reviewing the Minister's powers under this Bill.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Office of Significant Investments Review",
-   "summary": "The speaker calls the dedicated Office of Significant Investments Review a positive one-stop touchpoint and is glad the Bill's rules will not retroactively apply.",
-   "sentences": [
+     "text": "Businesses appreciate that the proposed Bill strikes a reasonable balance between national security needs and business priorities.",
+     "added_for_context": true
+    },
     {
      "sid": "s00394",
      "speaker": "Mr Mark Lee (Nominated Member)",
      "attributed": true,
-     "text": "In addition, the establishment of a dedicated Office of Significant Investments Review as a one-stop touchpoint is a positive move and will help to ensure that key issues and concerns are addressed expediently.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00395",
-     "speaker": "Mr Mark Lee (Nominated Member)",
-     "attributed": true,
-     "text": "I am glad that the Minister has made clear that the rules of this proposed Bill will not retroactively apply.",
+     "text": "It is not an omnibus legislation and will only be applied to a handful of designated entities critical to Singapore's national security interests.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Minister review notice period",
-   "summary": "Under section 32(3), a Minister may publish review notices within two years after a transaction, and may later order directions under section 32(5).",
+   "label": "Minister publishes notices to review",
+   "summary": "Under section 32(3), a Minister may publish notices to review transactions within two years after any transaction.",
    "sentences": [
-    {
-     "sid": "s00400",
-     "speaker": "Mr Mark Lee (Nominated Member)",
-     "attributed": true,
-     "text": "Under section 32(3), a Minister is allowed to publish notices to review transactions within a period of two years after any transaction.",
-     "added_for_context": false
-    },
     {
      "sid": "s00401",
      "speaker": "Mr Mark Lee (Nominated Member)",
      "attributed": true,
-     "text": "After such notice, the Minister may at any time thereafter order directions under section 32(5).",
-     "added_for_context": true
-    },
+     "text": "Under section 32(3), a Minister is allowed to publish notices to review transactions within a period of two years after any transaction.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Review of undesignated entities' ownership",
+   "summary": "Powers under the Bill allow review of ownership of entities even if they are not designated.",
+   "sentences": [
     {
-     "sid": "s00402",
+     "sid": "s00405",
      "speaker": "Mr Mark Lee (Nominated Member)",
      "attributed": true,
-     "text": "This means that businesses may be subjected to potential scrutiny and uncertainty for an indefinite, undefined time period even after transactions are completed.",
+     "text": "Second, there are powers under this Bill that allow for the review of ownership of entities even if they are not designated.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "No appeals against Special Administration Orders",
-   "summary": "The Act currently has no provision allowing appeals against Special Administration Orders, which may change a designated entity's management, business and property.",
+   "summary": "The Act currently has no provision allowing appeals against Special Administration Orders, which may significantly change a designated entity's management, affairs, business and property.",
    "sentences": [
     {
-     "sid": "s00410",
+     "sid": "s00411",
      "speaker": "Mr Mark Lee (Nominated Member)",
      "attributed": true,
      "text": "For instance, there is currently no provision within the Act that allows for appeals against Special Administration Orders, even though such orders may potentially result in significant changes in the management of the affairs, business and property of a designated entity.",
@@ -785,91 +786,66 @@
    ]
   },
   {
-   "label": "Bill's economic growth impact",
-   "summary": "The speaker acknowledges safeguarding national security but says the Bill's potential impact on economic growth, transparency and accountability must be thoroughly considered.",
+   "label": "UK investigated French state-owned acquisition",
+   "summary": "In 2023 the UK investigated a French state-owned company's subsidiary's proposed acquisition of two UK businesses over naval propulsion national security risks, approving it with conditions.",
    "sentences": [
     {
-     "sid": "s00416",
-     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
-     "attributed": true,
-     "text": "While acknowledging the imperative of safeguarding our national security, I believe in the critical need to thoroughly consider this Bill's potential impact on our economic growth, transparency and accountability.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Vague national security interests guidelines",
-   "summary": "The vague delineation of national security interests requires clear guidelines and a robust oversight mechanism.",
-   "sentences": [
-    {
-     "sid": "s00424",
-     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
-     "attributed": true,
-     "text": "The vague delineation of \"national security interests\" necessitates clear guidelines and a robust oversight mechanism.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "UK investigated French acquisition",
-   "summary": "In 2023, the UK government investigated the proposed acquisition of two UK businesses by a wholly-owned UK subsidiary of a French state-owned company.",
-   "sentences": [
-    {
-     "sid": "s00437",
+     "sid": "s00438",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
      "text": "For instance, in 2023, the UK government investigated the proposed acquisition of two UK businesses by a wholly-owned UK subsidiary of a French state-owned company.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Manpower for Office of Significant Investments Review",
-   "summary": "Sufficient manpower and resources are needed, and the Minister earlier mentioned an Office of Significant Investments Review will be set up.",
-   "sentences": [
-    {
-     "sid": "s00458",
-     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
-     "attributed": true,
-     "text": "We need to ensure that there is sufficient manpower and resources to facilitate this.",
-     "added_for_context": true
     },
     {
-     "sid": "s00459",
+     "sid": "s00439",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "I note that the Minister earlier mentioned that an Office of Significant Investments Review will be set up.",
+     "text": "The transaction was deemed a potential risk to national security.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00440",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "This was because of the critical national security and defence capabilities relating to naval propulsion systems delivered through the two UK entities.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00441",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "While the acquisition was eventually given the go-ahead, it was subject to various conditions, such as physical and information security requirements.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Openness to investments and security risk",
-   "summary": "The Bill is introduced to safeguard Singapore's national security interests, as its open investment environment leaves it vulnerable to malicious actors.",
+   "label": "Bill to safeguard Singapore national security",
+   "summary": "Countries embracing open investment face risks of malicious actors gaining control of critical entities, so this Bill is introduced to safeguard Singapore's national security interests.",
    "sentences": [
     {
-     "sid": "s00462",
+     "sid": "s00463",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
      "text": "In recent decades, countries have increasingly embraced openness to investments, fostering economic growth through joint ventures, local partnerships and mergers.",
      "added_for_context": true
     },
     {
-     "sid": "s00463",
+     "sid": "s00464",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
      "text": "However, with these investments comes the risk of malicious actors exerting undue influence over entities, compromising a nation's security interests.",
      "added_for_context": false
     },
     {
-     "sid": "s00464",
+     "sid": "s00465",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
      "text": "In Singapore's context, with an open investment environment, we remain vulnerable to the risk of malicious actors seeking to gain control of our critical entities.",
      "added_for_context": false
     },
     {
-     "sid": "s00465",
+     "sid": "s00466",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
      "text": "It is therefore imperative that we introduce this Bill to safeguard our national security interests.",
@@ -878,24 +854,24 @@
    ]
   },
   {
-   "label": "Clarifications on the Bill's impact",
-   "summary": "The speaker lists six earlier clarifications, covering foreign investment impact, guidelines, economic balance, minority shareholders, review process and resources.",
+   "label": "Clarifications on Bill's impact and oversight",
+   "summary": "The speaker lists clarifications on the Bill's impact on foreign investment, guidelines and oversight, economic balance, minority shareholders, review process and Office resources.",
    "sentences": [
     {
-     "sid": "s00470",
+     "sid": "s00471",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "In closing, I draw your attention to the earlier clarifications, namely: (a) the potential impact on foreign investment due to the Bill's broad definition of \"national security interests\"; (b) the necessity for clear guidelines and robust oversight mechanisms to ensure transparency and accountability in applying the Bill; (c) the delicate balance between national security and economic growth, and the risk of overly-stringent regulations hindering our long-term economic objectives; (d) the importance of safeguarding the rights and interests of minority shareholders within designated entities; (e) the imperative for a streamlined, efficient, and transparent review process that fosters trust and confidence in investors; and (f) the question of the adequate resources for the new Office of Significant Investments Review and the potential implications for national security considerations.",
+     "text": "In closing, I draw your attention to the earlier clarifications, namely: (a) the potential impact on foreign investment due to the Bill's broad definition of \"national security interests\"; (b) the necessity for clear guidelines and robust oversight mechanisms to ensure transparency and accountability in applying the Bill; (c) the delicate balance between national security and economic growth, and the risk of overly-stringent regulations hindering our long-term economic objectives; (d) the importance of safeguarding the rights and interests of minority shareholders within designated entities; (e) the imperative for a streamlined, efficient, and transparent review process that fosters trust and confidence in investors; and (f) the question of the adequate resources for the new Office of Significant Investments Review and the potential implications for national security considerations.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Australia rejected SGX-ASX takeover",
-   "summary": "In 2011, the Australian Treasurer rejected the Singapore Stock Exchange's takeover of ASX Limited, ruling it could undermine Australia's financial centre position.",
+   "summary": "In 2011 the Australian Treasurer rejected the Singapore Stock Exchange's takeover of ASX Limited, ruling it could undermine Australia's financial centre position and system stability.",
    "sentences": [
     {
-     "sid": "s00477",
+     "sid": "s00478",
      "speaker": "Ms Foo Mee Har (West Coast)",
      "attributed": true,
      "text": "If Members of this House remember in 2011, the Australian Treasurer rejected the takeover of ASX Limited by the Singapore Stock Exchange, ruling that the takeover could undermine Australia's position as a financial centre as well as jeopardise the stability of the country's financial system.",
@@ -904,58 +880,45 @@
    ]
   },
   {
-   "label": "Unclear criteria for national security interests",
-   "summary": "The Bill regulates significant investments to protect national security interests, but the specific criteria for national security interests are unclear.",
-   "sentences": [
-    {
-     "sid": "s00491",
-     "speaker": "Ms Foo Mee Har (West Coast)",
-     "attributed": true,
-     "text": "Second, the Bill seeks to protect the \"national security interests\" of Singapore by regulating significant investments in, and control of, critical entities.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00492",
-     "speaker": "Ms Foo Mee Har (West Coast)",
-     "attributed": true,
-     "text": "But like many speakers in this House, it is unclear what specific criteria, in regard to \"national security interests\", apply to entities under the Significant Investments Review Bill.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Request for guidance on sensitive areas",
-   "summary": "The speaker asks the Minister to state generally the sensitive areas the Bill may cover, such as critical infrastructure, advanced technologies, data and defence.",
+   "summary": "Investors need clearer definitions and guidance on how entities are designated, so the speaker asks the Minister to state sensitive areas the Bill may cover.",
    "sentences": [
     {
-     "sid": "s00495",
+     "sid": "s00496",
      "speaker": "Ms Foo Mee Har (West Coast)",
      "attributed": true,
      "text": "However, investors will need a clearer set of definitions and guidance to understand how entities are designated and classified in practice.",
      "added_for_context": true
     },
     {
-     "sid": "s00496",
+     "sid": "s00497",
      "speaker": "Ms Foo Mee Har (West Coast)",
      "attributed": true,
      "text": "So, I would like to ask the Minister whether the Government can provide further insights by stating, generally, sensitive areas that may be covered by the Bill such as critical infrastructure, advanced technologies, data and personal information, military and defence, public services and utilities or critical supply chain components.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00498",
+     "speaker": "Ms Foo Mee Har (West Coast)",
+     "attributed": true,
+     "text": "For example, the UK's NSI Act identifies 17 sensitive sectors where acquisitions need to be notified for national security reasons.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "CFIUS timeline and Reviewing Tribunal",
-   "summary": "CFIUS commits to a 45-day review period, while the Bill provides for a Reviewing Tribunal chaired by a Supreme Court judge.",
+   "summary": "The CFIUS commits to a timeline such as a 45-day review, and the Bill provides for a Reviewing Tribunal chaired by a Supreme Court judge.",
    "sentences": [
     {
-     "sid": "s00505",
+     "sid": "s00506",
      "speaker": "Ms Foo Mee Har (West Coast)",
      "attributed": true,
      "text": "For example, the CFIUS commits to a specific timeline for its review process, such as a 45-day review period, once a filing is accepted as complete.",
      "added_for_context": false
     },
     {
-     "sid": "s00507",
+     "sid": "s00508",
      "speaker": "Ms Foo Mee Har (West Coast)",
      "attributed": true,
      "text": "Currently, the Bill has provision for the setting up of a Reviewing Tribunal with members appointed by the President, at the advisement of the Cabinet, and the chairperson must be a Supreme Court judge.",
@@ -964,11 +927,11 @@
    ]
   },
   {
-   "label": "Number of critical entities",
-   "summary": "The Minister is asked how many critical entities the new regime will capture at the start and how the list may grow or change.",
+   "label": "Number of critical entities captured",
+   "summary": "The Minister is asked how many critical entities the new regime is expected to capture at the start and how the list may change.",
    "sentences": [
     {
-     "sid": "s00513",
+     "sid": "s00514",
      "speaker": "Ms Foo Mee Har (West Coast)",
      "attributed": true,
      "text": "Could the Minister clarify how many critical entities are expected to be captured under this new regime at the start and how the list may grow or change over time?",
@@ -977,18 +940,18 @@
    ]
   },
   {
-   "label": "Significant investments under Bill",
-   "summary": "The focus is on entities significant to Singapore's national security interests, rather than a more expansive approach used by other overseas investment screening regimes.",
+   "label": "Significant investments under the Bill",
+   "summary": "The Bill focuses on entities significant to Singapore's national security interests rather than a more expansive approach used by other regimes.",
    "sentences": [
     {
-     "sid": "s00540",
+     "sid": "s00541",
      "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
      "attributed": true,
      "text": "Mr Shawn Huang asked what constitutes \"significant investments\" under this Bill.",
      "added_for_context": true
     },
     {
-     "sid": "s00541",
+     "sid": "s00542",
      "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
      "attributed": true,
      "text": "We will focus on entities that would be significant to Singapore's national security interests, rather than to take a more expansive and comprehensive approach that other overseas investment screening regimes have adopted, as suggested by Mr Neil Parekh.",
@@ -997,84 +960,78 @@
    ]
   },
   {
-   "label": "Defining national security threats",
-   "summary": "Providing a specific definition of national security or examples of threats would constrain quick action on new risks and expose Singapore's vulnerabilities.",
+   "label": "National security scope in Bill",
+   "summary": "In the Bill, national security broadly covers areas critical to Singapore's sovereignty and security, including economic security and essential services.",
    "sentences": [
     {
-     "sid": "s00546",
+     "sid": "s00548",
      "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
      "attributed": true,
-     "text": "Providing a specific definition of \"national security\" or specific examples of such threats would not only constrain our ability to act quickly to address new risks that may emerge over time, but also expose Singapore's vulnerabilities.",
+     "text": "Having said that, broadly speaking, in the context of the Bill, national security would cover areas critical to Singapore's sovereignty and security, including our economic security and the continued delivery of our essential services.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Bill and sectoral legislation",
-   "summary": "The Bill is not omnibus legislation and does not supersede ownership and control provisions in sectoral legislation.",
+   "label": "Designating entities not sectors",
+   "summary": "The Government does not intend to designate specific sectors but will designate specific entities.",
    "sentences": [
     {
-     "sid": "s00550",
+     "sid": "s00559",
      "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
      "attributed": true,
-     "text": "The Bill is not an omnibus legislation and does not supersede ownership and control provisions in sectoral legislation.",
+     "text": "To reiterate, we do not intend to designate specific sectors, but rather, we will designate specific entities.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Consultation with designated entities",
-   "summary": "All entities considered for designation have been reached out to and are in close discussions to understand their perspectives and mitigate regulatory impact.",
+   "label": "Careful additions to entity list",
+   "summary": "The list of entities is not expected to expand significantly soon, and additions will be carefully considered based on national security interests.",
    "sentences": [
     {
-     "sid": "s00565",
-     "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
-     "attributed": true,
-     "text": "As mentioned in my Second Reading speech, we have reached out to all the entities that are being considered for designation and are in close discussions with them to understand their perspectives and explore ways to mitigate the regulatory impact on them.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Future expansion of entity list",
-   "summary": "The list of entities is not expected to significantly expand soon, and additions will be carefully considered based on necessity for Singapore's national security.",
-   "sentences": [
-    {
-     "sid": "s00569",
+     "sid": "s00570",
      "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
      "attributed": true,
      "text": "Nonetheless, we do not expect to significantly expand the list of entities in the near future.",
      "added_for_context": false
     },
     {
-     "sid": "s00570",
+     "sid": "s00571",
      "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
      "attributed": true,
      "text": "The addition of any entity to the list will be a carefully considered decision, which will continue to be based on whether designation is necessary in the interests of Singapore's national security.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00572",
+     "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "The Ministry will be judicious in exercising the powers under the Act and set out clear processes where possible, to minimise the overall impact on businesses and investors.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Conditions for exercising Bill powers",
-   "summary": "Two conditions must be met before powers under the Bill can be exercised: the entity acted against national security interests, and the transaction occurred within two years prior.",
+   "summary": "Two conditions must be met before the Bill's powers can be exercised: the entity acted against national security interests, and the ownership or control transaction occurred within the prior two years.",
    "sentences": [
     {
-     "sid": "s00615",
+     "sid": "s00616",
      "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
      "attributed": true,
      "text": "As mentioned in my Second Reading speech, two conditions must be met before powers under the Bill can be exercised.",
      "added_for_context": false
     },
     {
-     "sid": "s00616",
+     "sid": "s00617",
      "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
      "attributed": true,
      "text": "First, the entity must have acted against our national security interests and not merely pose potential threats to our national security.",
      "added_for_context": false
     },
     {
-     "sid": "s00617",
+     "sid": "s00618",
      "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
      "attributed": true,
      "text": "Second, the ownership or control transaction must have occurred within the two years prior to the above-mentioned action by the entity against our national security interests.",
@@ -1083,11 +1040,11 @@
    ]
   },
   {
-   "label": "Reviewing Tribunal information reliance",
-   "summary": "The Reviewing Tribunal will be able to rely on all available information in making its decision on the appeal.",
+   "label": "Reviewing Tribunal appeal information",
+   "summary": "The Reviewing Tribunal will be able to rely on all available information in deciding the appeal.",
    "sentences": [
     {
-     "sid": "s00645",
+     "sid": "s00646",
      "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
      "attributed": true,
      "text": "As such, the Reviewing Tribunal will be able to rely on all available information in making its decision on the appeal.",
@@ -1096,65 +1053,52 @@
    ]
   },
   {
-   "label": "Courts unsuitable as oversight body",
-   "summary": "Ill-intentioned parties may threaten national security via ownership and control transactions, and Courts are unsuitable as oversight given sensitive intelligence evidence.",
-   "sentences": [
-    {
-     "sid": "s00649",
-     "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
-     "attributed": true,
-     "text": "As Mr Chua himself has pointed out, there is the possibility of ill-intentioned parties threatening our national security interests via ownership and control transactions.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00650",
-     "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
-     "attributed": true,
-     "text": "It will not be suitable to make the Courts serve as an oversight body, given that decisions under the Bill may involve national security considerations and may, indeed, rely on evidence from intelligence sources that would be highly sensitive.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Office of Significant Investments Review",
-   "summary": "The Office of Significant Investments Review will be set up under MTI as the Competent Authority to administer and operationalise the Act.",
+   "summary": "An Office of Significant Investments Review under MTI will be set up as Competent Authority to administer and operationalise the Act.",
    "sentences": [
     {
-     "sid": "s00656",
+     "sid": "s00657",
      "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
      "attributed": true,
      "text": "Assoc Prof Razwana Begum had some queries about the implementation of the Act.",
      "added_for_context": true
     },
     {
-     "sid": "s00657",
+     "sid": "s00658",
      "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
      "attributed": true,
      "text": "We will set up the Office of Significant Investments Review under MTI, which will be the Competent Authority to administer and operationalise the Act.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00660",
+     "speaker": "The Minister for Trade and Industry (Mr Gan Kim Yong)",
+     "attributed": true,
+     "text": "The Bill will strengthen our position as a trusted hub for businesses to invest with confidence in a stable, safe and secure Singapore.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Citation year change and Sitting suspension",
-   "summary": "The citation year will change from 2023 to 2024, Mr Leong's dissent will be recorded, and the Sitting is suspended until 3.40 pm.",
+   "summary": "The citation year 2023 will be changed to 2024, Mr Leong's dissent will be recorded, and the Sitting is suspended until 3.40 pm.",
    "sentences": [
     {
-     "sid": "s00676",
+     "sid": "s00677",
      "speaker": "The Chairman",
      "attributed": true,
      "text": "The citation year \"2023\" will be changed to \"2024\", as indicated in the Order Paper Supplement.",
      "added_for_context": false
     },
     {
-     "sid": "s00677",
+     "sid": "s00678",
      "speaker": "Mr Speaker",
      "attributed": true,
      "text": "Mr Leong, we will have your dissent recorded.",
      "added_for_context": false
     },
     {
-     "sid": "s00678",
+     "sid": "s00679",
      "speaker": "Mr Speaker",
      "attributed": true,
      "text": "I suspend the Sitting and will take the Chair at 3.40 pm.",
@@ -1174,13 +1118,13 @@
   "report_ids": [
    "bill-667"
   ],
-  "sentences_total": 679,
-  "sentences_selected": 110,
-  "sentences_in_sections": 110,
+  "sentences_total": 680,
+  "sentences_selected": 108,
+  "sentences_in_sections": 108,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 15,
-  "sections_total": 65,
-  "selection_share": 0.162,
+  "sentences_added_for_context": 13,
+  "sections_total": 58,
+  "selection_share": 0.1588,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -1189,24 +1133,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 65,
+   "sections_total": 58,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 110,
-   "sentences_selected": 110,
+   "sentences_published": 108,
+   "sentences_selected": 108,
    "turns_cited": 17,
    "turns_total": 22,
    "coverage": 0.7727,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T15:27:03"
+   "checked_at": "2026-09-20T11:13:19"
   },
   "usage": {
-   "calls": 38,
-   "prompt_tokens": 34797,
-   "completion_tokens": 3741,
+   "calls": 37,
+   "prompt_tokens": 34604,
+   "completion_tokens": 3499,
    "estimated": false,
-   "cost_usd": 0.005919
+   "cost_usd": 0.005824
   }
  }
 }

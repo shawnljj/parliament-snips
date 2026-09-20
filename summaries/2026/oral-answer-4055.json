@@ -4,13 +4,20 @@
  "sections": [
   {
    "label": "Peer supporter training programmes",
-   "summary": "HPB, NCSS, MOM, WSH Council and AIC run peer supporter training, workplace champion and mental health awareness programmes.",
+   "summary": "Peer supporters are trained to recognise distress, listen, guide others to help, and practise self-care, with programmes from HPB, NCSS, MOM, WSH Council and AIC.",
    "sentences": [
     {
      "sid": "s00002",
      "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
      "attributed": true,
      "text": "Participants are trained to recognise peers in distress, provide active listening and guide them to seek help early.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
+     "attributed": true,
+     "text": "Peer supporters also learn to practise self-care and may seek help through their own organisations' Employee Assistance Programmes or counselling services.",
      "added_for_context": false
     },
     {
@@ -45,7 +52,7 @@
   },
   {
    "label": "Peer support as scaffold",
-   "summary": "Peer support is a scaffold for community needs, not meant to carry mental health care that professionals should do.",
+   "summary": "Peer support is a scaffold for community needs and is not meant to carry the burden of mental health care that professionals should do.",
    "sentences": [
     {
      "sid": "s00010",
@@ -65,33 +72,13 @@
   },
   {
    "label": "Peer support informal scaffold",
-   "summary": "Peer support is an informal scaffold around formal support and should not be burdened as part of formalised care.",
+   "summary": "Peer support is an informal scaffold around formal support levels and should not be burdened as part of the formalised care structure.",
    "sentences": [
     {
      "sid": "s00017",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
      "text": "As I said in my reply, peer support is meant to be an informal scaffold around formal levels of support and I think we should not put a burden on them to be part of the formalised care structure.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Reaching harder to reach persons",
-   "summary": "With no external manifestation visible, focus is on education and community care teams to reach and encourage those in need.",
-   "sentences": [
-    {
-     "sid": "s00021",
-     "speaker": "Dr Koh Poh Koon",
-     "attributed": true,
-     "text": "There is no external manifestation that you can see from far away.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00022",
-     "speaker": "Dr Koh Poh Koon",
-     "attributed": true,
-     "text": "And so, the focus for us would be to increase education and also to put forth our community care teams, so that those with needs in the community, especially the harder to reach ones, if we know who they are, we can then find a way to reach out to them and encourage them to step forward and seek care.",
      "added_for_context": false
     }
    ]
@@ -109,12 +96,12 @@
    "oral-answer-4055"
   ],
   "sentences_total": 24,
-  "sentences_selected": 10,
-  "sentences_in_sections": 10,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
-  "sections_total": 4,
-  "selection_share": 0.4167,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.375,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -123,24 +110,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 4,
+   "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 10,
-   "sentences_selected": 10,
+   "sentences_published": 9,
+   "sentences_selected": 9,
    "turns_cited": 2,
    "turns_total": 7,
    "coverage": 0.2857,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:28:06"
+   "checked_at": "2026-09-20T10:45:22"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1758,
-   "completion_tokens": 226,
+   "prompt_tokens": 1702,
+   "completion_tokens": 200,
    "estimated": false,
-   "cost_usd": 0.000309
+   "cost_usd": 0.000294
   }
  }
 }

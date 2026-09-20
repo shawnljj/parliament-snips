@@ -4,13 +4,13 @@
  "sections": [
   {
    "label": "Healthcare workforce sustainability strategy",
-   "summary": "Singapore adopts a multi-pronged workforce strategy, builds local healthcare workforce, recruits foreign workers, and diversifies recruitment sources with bilateral agreements.",
+   "summary": "Singapore uses a multi-pronged strategy: building local workforce, recruiting foreign workers in shortfall areas, and diversifying foreign recruitment sources.",
    "sentences": [
     {
      "sid": "s00001",
      "speaker": "Dr Choo Pei Ling",
      "attributed": true,
-     "text": "asked the Coordinating Minister for Social Policies and Minister for Health in light of global competition and rising domestic demand for healthcare manpower (a) how Singapore is strengthening long-term workforce sustainability while maintaining care standards; and (b) whether workforce planning assumptions are being reviewed to ensure resilience amid tightening regional labour markets.",
+     "text": "asked the Coordinating Minister for Social Policies and Minister for Health in light of global competition and rising domestic demand for healthcare manpower (a) how Singapore is strengthening long-term workforce sustainability while maintaining care standards; and (b) whether workforce planning assumptions are being reviewed to ensure resilience amid tightening regional labour markets.",
      "added_for_context": true
     },
     {
@@ -40,20 +40,27 @@
      "attributed": true,
      "text": "And to ensure resilience, we diversify the sources of foreign recruitment and secure government-to-government bilateral manpower cooperation agreements with regional countries.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00006",
-     "speaker": "The Senior Minister of State for Health (Dr Koh Poh Koon) (for the Coordinating Minister for Social Policies and Minister for Health)",
-     "attributed": true,
-     "text": "We will continue to invest in good preventive health and right-site patients to appropriate care settings to keep our healthcare system sustainable.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Foreign domestic workers in Singapore",
-   "summary": "Singapore has 300,000 foreign domestic workers, about one-fifth of the foreign workforce, many caring for seniors at home.",
+   "label": "Specialist and family medicine pathways",
+   "summary": "Doctors gain hospital career pathways and family medicine is designated a specialty to grow general practitioners; a question asks about foreign domestic workers joining community care.",
    "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "These are pegged similar to how a specialist would progress in the hospital and by doing so, we open up pathways for doctors even within the hospital setting to have fulfilling careers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "And in the primary care sector, we have also announced that we will grow the pool of family medicine specialists, designating family medicine as a specialty itself, so that we can then grow the pool of general practitioners who are prepared to train at a higher level and deliver care at a higher level of acuity in the community, and thereby aligning that with our overall transformation to community care settings and helping patients to accept their care in the community.",
+     "added_for_context": false
+    },
     {
      "sid": "s00026",
      "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
@@ -74,13 +81,14 @@
      "attributed": true,
      "text": "Many of them work in the homes in the care settings at home, taking care of seniors with a range of conditions as well, some more severe than others.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Foreign domestic workers care progression",
-   "summary": "The question asks whether foreign domestic workers can progress to community care sector care staff or nurse roles.",
-   "sentences": [
+    },
+    {
+     "sid": "s00030",
+     "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
+     "attributed": true,
+     "text": "Sometimes, after the seniors pass on, they are unable to continue taking care of another senior in another home setting.",
+     "added_for_context": false
+    },
     {
      "sid": "s00031",
      "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
@@ -103,12 +111,12 @@
    "oral-answer-4062"
   ],
   "sentences_total": 32,
-  "sentences_selected": 10,
-  "sentences_in_sections": 10,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 3,
-  "sections_total": 3,
-  "selection_share": 0.3125,
+  "sentences_added_for_context": 4,
+  "sections_total": 2,
+  "selection_share": 0.375,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -117,24 +125,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 3,
+   "sections_total": 2,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 10,
-   "sentences_selected": 10,
-   "turns_cited": 3,
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 4,
    "turns_total": 6,
-   "coverage": 0.5,
+   "coverage": 0.6667,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:18:35"
+   "checked_at": "2026-09-20T10:35:41"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2256,
-   "completion_tokens": 185,
+   "prompt_tokens": 2382,
+   "completion_tokens": 155,
    "estimated": false,
-   "cost_usd": 0.000368
+   "cost_usd": 0.000377
   }
  }
 }

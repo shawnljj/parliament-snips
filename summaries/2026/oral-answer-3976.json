@@ -3,8 +3,8 @@
  "what_it_is": "Implementing CPF Lifetime Retirement Investment Scheme to Enable CPF Members an Option for Higher Expected Returns",
  "sections": [
   {
-   "label": "CPF Investment Scheme funds",
-   "summary": "Members wanting higher returns can invest CPF savings through low-cost funds under the CPF Investment Scheme.",
+   "label": "CPF Investment Scheme low-cost funds",
+   "summary": "Members who wish to invest their CPF savings for potentially higher returns can do so through low-cost funds under the CPF Investment Scheme.",
    "sentences": [
     {
      "sid": "s00002",
@@ -16,9 +16,16 @@
    ]
   },
   {
-   "label": "Publicity for retirement products",
-   "summary": "Once details of further support for retirement planning products are finalised, publicity initiatives will be rolled out to educate CPF members.",
+   "label": "Publicity for retirement products support",
+   "summary": "When details of further support for planning retirement through products are finalised, publicity initiatives will be rolled out to educate CPF members.",
    "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "The straight answer is, of course, we will do that.",
+     "added_for_context": false
+    },
     {
      "sid": "s00009",
      "speaker": "Dr Tan See Leng",
@@ -30,7 +37,7 @@
   },
   {
    "label": "Safeguarding retirement adequacy",
-   "summary": "The speaker says the penultimate objective has always been to safeguard retirement adequacy.",
+   "summary": "The penultimate objective has always been to safeguard retirement adequacy.",
    "sentences": [
     {
      "sid": "s00012",
@@ -42,16 +49,9 @@
    ]
   },
   {
-   "label": "Market downturn and retirement adequacy",
-   "summary": "An investor liquidating investments during a market downturn could see asset value drop and retirement adequacy affected; details are in final stages.",
+   "label": "Looking forward and final stages",
+   "summary": "Looking forward is a more difficult endeavour, but the process is in the final stages.",
    "sentences": [
-    {
-     "sid": "s00015",
-     "speaker": "Dr Tan See Leng",
-     "attributed": true,
-     "text": "When we launch a particular product, any investor who had to liquidate his or her investment for retirement needs during a market downturn would have experienced, depending on how long he has been invested for, a significant drop in his asset value and that can impact adversely his retirement adequacy.",
-     "added_for_context": false
-    },
     {
      "sid": "s00017",
      "speaker": "Dr Tan See Leng",
@@ -69,14 +69,14 @@
    ]
   },
   {
-   "label": "Lifetime Retirement Investment Scheme update",
-   "summary": "The Lifetime Retirement Investment Scheme was accepted by the Government in 2016, and the speaker says details are close to being finalised.",
+   "label": "Lifetime Retirement Investment Scheme details",
+   "summary": "The Lifetime Retirement Investment Scheme was accepted by the Government in 2016, and details are close to being finalised with guidance from the CPF Advisory Panel.",
    "sentences": [
     {
      "sid": "s00022",
      "speaker": "Mr Chua Kheng Wee Louis (Sengkang)",
      "attributed": true,
-     "text": "After all, it was back in 2016 when the Lifetime Retirement Investment Scheme was being accepted by the Government, and while we may be considering a various range of options when it comes to investing one's CPF, whether the Lifetime Retirement Investment Scheme still features in it and whether we can still expect an update by this year.",
+     "text": "After all, it was back in 2016 when the Lifetime Retirement Investment Scheme was being accepted by the Government, and while we may be considering a various range of options when it comes to investing one's CPF, whether the Lifetime Retirement Investment Scheme still features in it and whether we can still expect an update by this year.",
      "added_for_context": true
     },
     {
@@ -85,25 +85,32 @@
      "attributed": true,
      "text": "I have shared earlier on that we are close to finalising the details.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "We will announce it at the appropriate time.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "We have taken guidance from the CPF Advisory Panel and we are in the process of studying how we can incorporate some of the features, because, obviously, a certain time has passed and the markets have also evolved.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Product construct and glide path",
-   "summary": "The product will weigh global equities against bonds and follow a glide path depending on when the member enters.",
+   "label": "Product weightages global equities bonds",
+   "summary": "The construct of the product will take into account different weightages on global equities versus bonds.",
    "sentences": [
     {
      "sid": "s00029",
      "speaker": "Dr Tan See Leng",
      "attributed": true,
      "text": "The construct of the product will take into account different weightages on global equities versus bonds.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00030",
-     "speaker": "Dr Tan See Leng",
-     "attributed": true,
-     "text": "It will also be a glide path, depending on when the member would enter into the particular product that we are looking at.",
      "added_for_context": false
     }
    ]
@@ -121,12 +128,12 @@
    "oral-answer-3976"
   ],
   "sentences_total": 33,
-  "sentences_selected": 10,
-  "sentences_in_sections": 10,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
+  "sentences_added_for_context": 3,
   "sections_total": 6,
-  "selection_share": 0.303,
+  "selection_share": 0.3333,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -138,19 +145,19 @@
    "sections_total": 6,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 10,
-   "sentences_selected": 10,
+   "sentences_published": 11,
+   "sentences_selected": 11,
    "turns_cited": 5,
    "turns_total": 8,
    "coverage": 0.625,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:46:37"
+   "checked_at": "2026-09-20T11:04:05"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1998,
-   "completion_tokens": 311,
+   "prompt_tokens": 1990,
+   "completion_tokens": 315,
    "estimated": false,
    "cost_usd": 0.000367
   }

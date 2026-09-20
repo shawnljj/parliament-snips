@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Support schemes for seniors",
-   "summary": "The passage describes the Lease Buyback Scheme, Enhancement for Active Seniors, GST Vouchers, Silver Support and other payments supporting seniors.",
+   "summary": "The passage describes the Lease Buyback Scheme, Enhancement for Active Seniors, GST Voucher scheme and Silver Support payments for seniors.",
    "sentences": [
     {
      "sid": "s00002",
@@ -47,19 +47,12 @@
      "attributed": true,
      "text": "This was recently enhanced in 2025, with eligible seniors receiving up to $1,080 each quarter, up from $900 previously.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00008",
-     "speaker": "The Senior Minister of State for Finance (Mr Jeffrey Siow) (for the Prime Minister and Minister for Finance)",
-     "attributed": true,
-     "text": "The Government has also from time to time provided additional support, such as Assurance Package payments, as well as property tax rebates.",
-     "added_for_context": false
     }
    ]
   },
   {
    "label": "Lease Buyback Scheme subscription rate",
-   "summary": "The passage states the group will be looked at closely and that Lease Buyback Scheme subscription has been going up.",
+   "summary": "The passage states the Lease Buyback Scheme subscription rate has been going up and that more will be done to encourage seniors.",
    "sentences": [
     {
      "sid": "s00014",
@@ -73,6 +66,13 @@
      "speaker": "Mr Jeffrey Siow",
      "attributed": true,
      "text": "But specific to the Lease Buyback Scheme, the subscription rate has, in fact, been going up.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "We will continue to do more to encourage seniors, who wish to take this opportunity to monetise their housing asset, to be able to do that, and to age in place at the same time.",
      "added_for_context": false
     }
    ]
@@ -114,14 +114,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:46:57"
+   "checked_at": "2026-09-20T11:04:24"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1351,
+   "prompt_tokens": 1366,
    "completion_tokens": 144,
    "estimated": false,
-   "cost_usd": 0.000229
+   "cost_usd": 0.000232
   }
  }
 }

@@ -3,8 +3,8 @@
  "what_it_is": "Number of Air-conditioned Classrooms in Schools and Schools that are Most Vulnerable to Urban Heat Island Effect",
  "sections": [
   {
-   "label": "New school green design",
-   "summary": "New schools are designed for Green Mark Platinum Super Low Energy certification, emphasising passive design to reduce heat gain and air-conditioning reliance.",
+   "label": "New school green certification",
+   "summary": "All new schools are designed for Green Mark Platinum Super Low Energy certification, emphasising passive design, less air-conditioning reliance and natural ventilation.",
    "sentences": [
     {
      "sid": "s00004",
@@ -16,8 +16,8 @@
    ]
   },
   {
-   "label": "School cooling measures by 2027",
-   "summary": "By 2027 all schools get more powerful fans and cool paint, with air-conditioning considered for enclosed classrooms and studies on rising temperatures.",
+   "label": "School heat adaptation measures",
+   "summary": "By 2027 all schools get more powerful classroom fans and cool paint, with air-conditioning considered for some enclosed classrooms and further measures studied.",
    "sentences": [
     {
      "sid": "s00008",
@@ -46,12 +46,26 @@
      "attributed": true,
      "text": "MOE is working with other agencies and researchers to study the effects of rising temperatures on student learning and well-being, including gathering more data on local conditions and their effects.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister of State for Education (Ms Jasmin Lau) (for the Minister for Education)",
+     "attributed": true,
+     "text": "As we gather more evidence on the local impact of rising temperatures on students, we will continue to refine our approach to achieve optimal thermal comfort across all schools in an environmentally sustainable manner.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "The Minister of State for Education (Ms Jasmin Lau) (for the Minister for Education)",
+     "attributed": true,
+     "text": "This includes exploring further heat adaptation and active cooling measures for classrooms, such as mixed mode air-conditioning.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Targeting cooling measures at schools",
-   "summary": "A 2024 NUS study found cognitive performance declines above a temperature threshold, but cooling measures will be targeted at schools with more discomfort.",
+   "label": "Study on temperature and cognition",
+   "summary": "A 2024 NUS study found cognitive performance declines above a temperature threshold, but cooling measures will be targeted at schools where students face more discomfort.",
    "sentences": [
     {
      "sid": "s00018",
@@ -89,12 +103,12 @@
    "oral-answer-4074"
   ],
   "sentences_total": 20,
-  "sentences_selected": 8,
-  "sentences_in_sections": 8,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 1,
+  "sentences_added_for_context": 2,
   "sections_total": 3,
-  "selection_share": 0.4,
+  "selection_share": 0.5,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -106,21 +120,21 @@
    "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 8,
-   "sentences_selected": 8,
+   "sentences_published": 10,
+   "sentences_selected": 10,
    "turns_cited": 2,
    "turns_total": 6,
    "coverage": 0.3333,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:15:01"
+   "checked_at": "2026-09-20T10:32:10"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1507,
-   "completion_tokens": 194,
+   "prompt_tokens": 1566,
+   "completion_tokens": 199,
    "estimated": false,
-   "cost_usd": 0.000265
+   "cost_usd": 0.000275
   }
  }
 }

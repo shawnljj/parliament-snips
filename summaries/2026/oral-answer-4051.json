@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "GenAI chatbots and mental health",
-   "summary": "GenAI chatbots are not appropriate replacements for qualified mental health care providers and may cause harm in crises.",
+   "summary": "GenAI chatbots are not appropriate replacements for qualified mental health providers and may cause harm, so individuals are encouraged to approach First Stop mental health services.",
    "sentences": [
     {
      "sid": "s00002",
@@ -30,8 +30,8 @@
    ]
   },
   {
-   "label": "App stores age assurance",
-   "summary": "Designated app stores must implement age assurance measures by 31 March this year.",
+   "label": "App store age assurance",
+   "summary": "Designated app stores are required to implement age assurance measures by 31 March this year.",
    "sentences": [
     {
      "sid": "s00011",
@@ -43,27 +43,28 @@
    ]
   },
   {
-   "label": "Data privacy and informed consent",
-   "summary": "Many online resources such as mindline.sg work on the basis of anonymity.",
+   "label": "Wysa rule-based mental health chatbot",
+   "summary": "Wysa is a specialised mental health chatbot that guides users through digital therapeutic exercises via a rule-based model validated by clinicians and clinically evaluated.",
    "sentences": [
     {
-     "sid": "s00019",
+     "sid": "s00024",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
-     "text": "On her first question on how can we assess data privacy and whether informed consent is needed, I think in the first instance, many of these resources we put online, such as mindline.sg, works on the basis of anonymity.",
+     "text": "It is a specialised mental health AI-enabled chatbot.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "This chatbot then guides users through digital therapeutic exercises such as mindfulness, deep breathing techniques, sleep hygiene practices that are inspired by cognitive behavioural therapy principles.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Wysa rule-based chatbot",
-   "summary": "Wysa supplements professional counselling as a 24/7 pocket therapist using a clinician-validated rule-based model, unlike GenAI chatbots.",
-   "sentences": [
+    },
     {
      "sid": "s00026",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
-     "text": "It aims to supplement our existing professional counselling and therapy services by serving as a 24/7 available pocket therapist that removes any barriers towards help seeking and signpost help seekers to local human-based resources.",
+     "text": "It aims to supplement our existing professional counselling and therapy services by serving as a 24/7 available pocket therapist that removes any barriers towards help seeking and signpost help seekers to local human-based resources.",
      "added_for_context": true
     },
     {
@@ -77,7 +78,7 @@
      "sid": "s00028",
      "speaker": "Dr Koh Poh Koon",
      "attributed": true,
-     "text": "It is not something like the chatbot itself can be extremely creative and come up with a new suggestions.",
+     "text": "It is not something like the chatbot itself can be extremely creative and come up with a new suggestions.",
      "added_for_context": true
     },
     {
@@ -109,12 +110,12 @@
    "oral-answer-4051"
   ],
   "sentences_total": 34,
-  "sentences_selected": 10,
-  "sentences_in_sections": 10,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
-  "sections_total": 4,
-  "selection_share": 0.2941,
+  "sentences_added_for_context": 3,
+  "sections_total": 3,
+  "selection_share": 0.3235,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -123,24 +124,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 4,
+   "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 10,
-   "sentences_selected": 10,
+   "sentences_published": 11,
+   "sentences_selected": 11,
    "turns_cited": 2,
    "turns_total": 4,
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:27:58"
+   "checked_at": "2026-09-20T10:45:14"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2328,
-   "completion_tokens": 222,
+   "prompt_tokens": 2324,
+   "completion_tokens": 197,
    "estimated": false,
-   "cost_usd": 0.000388
+   "cost_usd": 0.000381
   }
  }
 }

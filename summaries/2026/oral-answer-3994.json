@@ -3,8 +3,8 @@
  "what_it_is": "Policy on Optimal Class Sizes Given Increasingly Complex Challenges Faced by Teachers",
  "sections": [
   {
-   "label": "MOE class size approach",
-   "summary": "MOE's approach for class sizes is guided by students' learning needs.",
+   "label": "Class sizes and student needs",
+   "summary": "MOE's approach to class sizes is guided by students' learning needs, with smaller classes and more resources for students with greater needs.",
    "sentences": [
     {
      "sid": "s00002",
@@ -12,39 +12,39 @@
      "attributed": true,
      "text": "The Ministry of Education's (MOE's) approach for class sizes is guided by the learning needs of our students.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "More teaching resources are deployed for students with greater needs and hence, smaller class sizes for such students because they need more support and scaffolding.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "School counsellors and special education officers",
-   "summary": "Schools have counsellors and special education needs officers, whose numbers grew from around 800 to 1,300 over the past decade.",
+   "label": "School counsellors and SEN officers",
+   "summary": "Schools have counsellors and special education needs officers, and their numbers grew from around 800 to 1,300 over the past decade.",
    "sentences": [
     {
      "sid": "s00015",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
      "text": "Schools also have school counsellors to strengthen the social-emotional skills of our students and the special education needs officers to provide learning and behavioural support for our students who need it.",
      "added_for_context": true
     },
     {
      "sid": "s00016",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "The Minister for Education (Mr Desmond Lee)",
+     "attributed": true,
      "text": "We have grown the number of trained school counsellors and special education needs officers in schools from around 800 to 1,300 over the past decade.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00017",
-     "speaker": "",
-     "attributed": false,
-     "text": "We will continue to study the effectiveness of our approach, including on class sizes and are prepared to adjust our strategies where necessary to create conducive learning environments for our students.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Allied educators, edtech and human teaching",
-   "summary": "Shifting to focus on allied educator professions specialises support, edtech including AI in SLS gives extra scaffolding, but human-based teaching is irreplaceable.",
+   "label": "Allied educators, edtech and teachers",
+   "summary": "The shift to focusing on allied educator professions specialises support, and edtech including AI in SLS gives extra scaffolding, but human-based teaching remains irreplaceable.",
    "sentences": [
     {
      "sid": "s00030",
@@ -70,8 +70,8 @@
    ]
   },
   {
-   "label": "Resourcing schools and class size",
-   "summary": "The question asks about school resourcing, noting the Minister said class size and teacher-student ratio depend on school resources.",
+   "label": "Question on school resourcing",
+   "summary": "A question is raised about school resourcing, noting the Minister said class size and teacher-student ratio depend on whether the school has resources.",
    "sentences": [
     {
      "sid": "s00036",
@@ -91,13 +91,13 @@
   },
   {
    "label": "Optimising resources for holistic development",
-   "summary": "Resources are focused on students with greater needs, and Full Subject-Based Banding requires more resources to support students.",
+   "summary": "Resources are focused on students with greater needs, including Primary 1 and 2 students, those with special education needs, and Full Subject-Based Banding.",
    "sentences": [
     {
      "sid": "s00045",
      "speaker": "Mr Desmond Lee",
      "attributed": true,
-     "text": "How do we optimise between these three in order to achieve the goal of holistic development of our children and helping the most instrumental group – our teachers and our allied educators – to be able to manage their workload to work with meaning and impact, so that they can again help us to achieve holistic development of the next generation?",
+     "text": "How do we optimise between these three in order to achieve the goal of holistic development of our children and helping the most instrumental group – our teachers and our allied educators – to be able to manage their workload to work with meaning and impact, so that they can again help us to achieve holistic development of the next generation?",
      "added_for_context": true
     },
     {
@@ -117,21 +117,21 @@
    ]
   },
   {
-   "label": "Teachers teaching more classes",
-   "summary": "In some countries teachers teach many more classes, but in Singapore this would require increasing recruitment, increasing classes taught, and recalibrating other teacher duties.",
+   "label": "Reviews and future classroom needs",
+   "summary": "Ongoing and impending reviews, including the 2024 Reimagining the Teaching Profession Taskforce recommendations, require relooking at the future classroom and children's needs.",
    "sentences": [
     {
-     "sid": "s00051",
+     "sid": "s00061",
      "speaker": "Mr Desmond Lee",
      "attributed": true,
-     "text": "In some countries teachers teach many more classes, partially because of workload and resourcing.",
+     "text": "And, of course, more holistic support for children coming from families with greater challenges; how do we better support and integrate with the social services around us?",
      "added_for_context": true
     },
     {
-     "sid": "s00052",
+     "sid": "s00062",
      "speaker": "Mr Desmond Lee",
      "attributed": true,
-     "text": "But if in Singapore, if we were to do that, it would probably have to be a combination of three things: one, increasing recruitment; two, increasing the number of classes that teachers teach; and then, recalibrating the other things that teachers do – CCA, CCE, admin, class preparation, marking and so on.",
+     "text": "So, these are three of the many ongoing, as well as impending, reviews, including the 2024 Reimagining the Teaching Profession Taskforce recommendations that are still ongoing, in terms of application and implementation, that will require us to relook at how the classroom is like for the future and the kinds of needs that we will have to support our children.",
      "added_for_context": false
     }
    ]
@@ -168,19 +168,19 @@
    "sections_without_sentences": [],
    "sentences_published": 14,
    "sentences_selected": 14,
-   "turns_cited": 5,
-   "turns_total": 9,
-   "coverage": 0.5556,
+   "turns_cited": 4,
+   "turns_total": 8,
+   "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:44:49"
+   "checked_at": "2026-09-20T11:02:25"
   },
   "usage": {
    "calls": 4,
-   "prompt_tokens": 3900,
-   "completion_tokens": 351,
+   "prompt_tokens": 3920,
+   "completion_tokens": 380,
    "estimated": false,
-   "cost_usd": 0.000644
+   "cost_usd": 0.000655
   }
  }
 }

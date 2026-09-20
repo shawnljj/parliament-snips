@@ -3,8 +3,8 @@
  "what_it_is": "Probe into Social Media Posts that Targeted Singapore's Indian Community and Review of National Framework to Counter Such External Influences",
  "sections": [
   {
-   "label": "Blocking 14 online social media posts",
-   "summary": "The Government issued Disabling Directions under OCHA to block Singapore users' access to 14 online social media posts assessed to offend section 298A(a) of the Penal Code.",
+   "label": "Foreign content and investigations",
+   "summary": "The Member may withdraw the question; there is no evidence of a coordinated campaign, and investigations found content likely originated from a China-based platform.",
    "sentences": [
     {
      "sid": "s00003",
@@ -26,14 +26,13 @@
      "attributed": true,
      "text": "Investigations revealed that the content likely originated from a China-based platform, and was subsequently carried on other platforms and websites, including those in our local information space.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00007",
-     "speaker": "Mr Goh Pei Ming",
-     "attributed": true,
-     "text": "The content was assessed to constitute to an offence of knowingly promoting feelings of enmity, hatred or ill-will between different groups on grounds of race and doing acts prejudicial to the maintenance of harmony in Singapore under section 298A(a) of the Penal Code.",
-     "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "OCHA directions blocking posts",
+   "summary": "The Government issued Disabling Directions under the Online Criminal Harms Act to block Singapore users' access to 14 online social media posts.",
+   "sentences": [
     {
      "sid": "s00008",
      "speaker": "Mr Goh Pei Ming",
@@ -44,8 +43,21 @@
    ]
   },
   {
-   "label": "Increase in such posts",
-   "summary": "An increase in the number of such posts has been noticed, especially given the use of AI enabling their creation.",
+   "label": "Deepfake and AI content campaign",
+   "summary": "The Ministry of Home Affairs rolled out a 2025 campaign on deepfake videos, AI-generated content and other inauthentic posts used to influence overseas jurisdictions.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Mr Goh Pei Ming",
+     "attributed": true,
+     "text": "The Ministry of Home Affairs also rolled out a campaign in 2025 on the use of deepfake videos, AI-generated content and other inauthentic online posts to influence overseas jurisdictions to alert Singaporeans to this threat.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Increase in AI-generated posts",
+   "summary": "An increase in such posts has been noticed, especially given the use of AI enabling their creation.",
    "sentences": [
     {
      "sid": "s00024",
@@ -57,41 +69,35 @@
    ]
   },
   {
-   "label": "Government action against videos",
-   "summary": "The Government had to act decisively against these videos because they seek to undermine Singapore's cohesion and divide society by race.",
+   "label": "FICA and OCHA directions effectiveness",
+   "summary": "FICA online directions were first used in July 2024, other OCHA directions were used, and they have been generally effective as social media companies complied.",
    "sentences": [
     {
-     "sid": "s00038",
-     "speaker": "Mr Goh Pei Ming",
-     "attributed": true,
-     "text": "The Government had to act decisively against these videos because they seek to undermine Singapore's cohesion, and they seek to attack our multi-racial society and attempt to divide us based on our race.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Online directions under FICA and OCHA",
-   "summary": "Online directions under FICA were first used in July 2024, and other online directions under OCHA have been generally effective as social media companies complied.",
-   "sentences": [
-    {
-     "sid": "s00049",
+     "sid": "s00050",
      "speaker": "Mr Goh Pei Ming",
      "attributed": true,
      "text": "Our online directions under FICA were first issued or first used in July 2024.",
      "added_for_context": false
     },
     {
-     "sid": "s00050",
+     "sid": "s00051",
      "speaker": "Mr Goh Pei Ming",
      "attributed": true,
      "text": "We have also used other various online directions under OCHA.",
      "added_for_context": true
     },
     {
-     "sid": "s00051",
+     "sid": "s00052",
      "speaker": "Mr Goh Pei Ming",
      "attributed": true,
      "text": "They have been generally effective as the social media companies have worked with us and complied with the directions issued by the Government.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00053",
+     "speaker": "Mr Goh Pei Ming",
+     "attributed": true,
+     "text": "Of course, we will from time to time continue to review the laws to ensure that they are fit for purpose, to continue to be proactive in this space.",
      "added_for_context": false
     }
    ]
@@ -108,13 +114,13 @@
   "report_ids": [
    "oral-answer-4156"
   ],
-  "sentences_total": 54,
+  "sentences_total": 55,
   "sentences_selected": 10,
   "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 2,
-  "sections_total": 4,
-  "selection_share": 0.1852,
+  "sections_total": 5,
+  "selection_share": 0.1818,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -123,7 +129,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 4,
+   "sections_total": 5,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 10,
@@ -133,14 +139,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:48:33"
+   "checked_at": "2026-09-20T10:05:34"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2877,
-   "completion_tokens": 257,
+   "prompt_tokens": 2899,
+   "completion_tokens": 301,
    "estimated": false,
-   "cost_usd": 0.000475
+   "cost_usd": 0.00049
   }
  }
 }

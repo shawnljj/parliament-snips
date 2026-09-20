@@ -3,8 +3,8 @@
  "what_it_is": "Oversight of Wakaf Management",
  "sections": [
   {
-   "label": "Wakaf assets management and governance",
-   "summary": "Wakaf assets are managed by Warees Investments, a MUIS subsidiary, and appointed mutawallis, with governance mechanisms for financial sustainability, accountability and transparency.",
+   "label": "Wakaf asset governance and audit",
+   "summary": "Wakaf assets are managed by Warees Investments, MUIS subsidiary and mutawallis, with governance, audit requirements under AMLA and periodic MUIS checks.",
    "sentences": [
     {
      "sid": "s00002",
@@ -19,25 +19,19 @@
      "attributed": true,
      "text": "There are clear governance mechanisms in place to ensure that wakaf assets remain financially sustainable and are managed with accountability and transparency.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "MUIS Wakaf Disbursement Committee",
-   "summary": "The MUIS Wakaf Disbursement Committee, with MUIS Council members, monitors and reviews annual wakaf disbursements and recommends fund allocation per the wakif's intention.",
-   "sentences": [
+    },
     {
-     "sid": "s00006",
+     "sid": "s00005",
      "speaker": "The Acting Minister-in-charge of Muslim Affairs (Assoc Prof Dr Muhammad Faishal Ibrahim)",
      "attributed": true,
-     "text": "Third, the MUIS Wakaf Disbursement Committee, which comprises members from the MUIS Council, monitors and reviews annual wakaf disbursements, and makes recommendations on the allocation of wakaf funds, in accordance with the wakif’s intention.",
+     "text": "Second, Warees and the appointed mutawallis must comply with audit requirements set out under the AMLA, as well as undergo periodic checks by MUIS that religious guidance by the Fatwa Committee has been adhered to.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "Wakaf Revitalisation Scheme initiatives",
-   "summary": "For some wakaf properties, MUIS and Warees undertook asset enhancement and redevelopment under the Wakaf Revitalisation Scheme to optimise financial returns while sustaining heritage value.",
+   "summary": "MUIS and Warees have undertaken asset enhancement and redevelopment initiatives under the Wakaf Revitalisation Scheme for some wakaf properties.",
    "sentences": [
     {
      "sid": "s00010",
@@ -49,28 +43,28 @@
    ]
   },
   {
-   "label": "2024 wakaf disbursements and beneficiaries",
-   "summary": "In 2024, $11.3 million was disbursed to wakaf beneficiaries including benefactors' family members, mosques, madrasah, community organisations and charities, for purposes depending on the wakif's intention.",
+   "label": "Wakaf returns distributed to beneficiaries",
+   "summary": "Returns from building rentals and other wakaf income are distributed per the wakaf deed, with $11.3 million disbursed in 2024.",
    "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+     "attributed": true,
+     "text": "Essentially, the returns from the building rentals, as with any other forms of income generated from the wakaf assets are distributed to beneficiaries in accordance with the wakaf deed.",
+     "added_for_context": false
+    },
     {
      "sid": "s00018",
      "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
      "attributed": true,
      "text": "In 2024, a total of $11.3 million was disbursed to the wakaf beneficiaries, which include the family members of the benefactors, as well as mosques, madrasah, community organisations and charities.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00019",
-     "speaker": "Assoc Prof Dr Muhammad Faishal Ibrahim",
-     "attributed": true,
-     "text": "Depending on the intention of the wakif, these returns may be used to build and maintain mosques and madrasahs, support the poor and needy, and also, fund the development and welfare of the community.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Jamae Chulia restoration and future trust",
-   "summary": "The Jamae Chulia Mosque restoration is completed and the Jamae Chulia Heritage will be completed soon, and the speaker assures doing their best to hold the wakif's wishes in trust.",
+   "label": "Jamae Chulia restoration and future",
+   "summary": "Jamae Chulia Mosque restoration is completed, Jamae Chulia Heritage will be completed soon, and wakif intentions are held with trust.",
    "sentences": [
     {
      "sid": "s00035",
@@ -112,7 +106,7 @@
   "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 1,
-  "sections_total": 5,
+  "sections_total": 4,
   "selection_share": 0.2432,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -122,7 +116,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 5,
+   "sections_total": 4,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 9,
@@ -132,14 +126,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:30:09"
+   "checked_at": "2026-09-20T10:47:36"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2496,
-   "completion_tokens": 369,
+   "prompt_tokens": 2480,
+   "completion_tokens": 271,
    "estimated": false,
-   "cost_usd": 0.000453
+   "cost_usd": 0.000423
   }
  }
 }

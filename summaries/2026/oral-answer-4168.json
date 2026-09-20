@@ -3,8 +3,8 @@
  "what_it_is": "Deposits Collected under Beverage Container Return Scheme From Beverage Producers and Retailers",
  "sections": [
   {
-   "label": "Scheme transactions and containers returned",
-   "summary": "The Scheme has handled over one million successful transactions and 5.5 million beverage containers have been returned.",
+   "label": "Scheme transactions and containers",
+   "summary": "The Scheme has handled over one million successful transactions and 5.5 million beverage containers returned.",
    "sentences": [
     {
      "sid": "s00003",
@@ -16,9 +16,16 @@
    ]
   },
   {
-   "label": "Unredeemed deposits and BCRS reporting",
-   "summary": "Unredeemed deposits may be used by BCRS Ltd for scheme costs, and BCRS Ltd must submit an annual financial report to NEA.",
+   "label": "BCRS Ltd scheme finances",
+   "summary": "BCRS Ltd is a not-for-profit funded by producer fees and recyclables sales, may use unredeemed deposits, and reports annually to NEA.",
    "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Janil Puthucheary) (for the Minister for Sustainability and the Environment)",
+     "attributed": true,
+     "text": "On scheme finances, BCRS Ltd is a not-for-profit company funded through the producer fees as well as revenue from the sale of recyclables collected.",
+     "added_for_context": false
+    },
     {
      "sid": "s00008",
      "speaker": "The Senior Minister of State for Sustainability and the Environment (Dr Janil Puthucheary) (for the Minister for Sustainability and the Environment)",
@@ -63,22 +70,15 @@
    ]
   },
   {
-   "label": "Merchants joining the scheme",
-   "summary": "The scheme lets merchants take back beverage containers at scale, and several thousands have signed up.",
+   "label": "Merchants contacting NEA",
+   "summary": "Interested merchants are encouraged to contact NEA, and several thousands have already signed up.",
    "sentences": [
-    {
-     "sid": "s00024",
-     "speaker": "Dr Janil Puthucheary",
-     "attributed": true,
-     "text": "This scheme allows merchants to provide the drink to the consumer but take back the beverage container and to do this at scale.",
-     "added_for_context": true
-    },
     {
      "sid": "s00025",
      "speaker": "Dr Janil Puthucheary",
      "attributed": true,
      "text": "I would encourage merchants that are interested to contact NEA.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00026",
@@ -126,14 +126,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:42:03"
+   "checked_at": "2026-09-20T09:58:42"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1614,
-   "completion_tokens": 238,
+   "prompt_tokens": 1623,
+   "completion_tokens": 231,
    "estimated": false,
-   "cost_usd": 0.000293
+   "cost_usd": 0.000292
   }
  }
 }

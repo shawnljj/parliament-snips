@@ -3,66 +3,66 @@
  "what_it_is": "Percentage of Households with Utility Bill Arrears",
  "sections": [
   {
-   "label": "Utility bill arrears and support",
-   "summary": "Minister reports arrears fell from 0.5% to 0.2%, describes U-Save rebates, flow restrictors and Pay-As-You-Use, and asks about low-income families' higher utility use.",
+   "label": "Utility support for low-income households",
+   "summary": "The Government gives U-Save rebates, flow restrictors instead of water shut-off, and Pay-As-You-Use electricity to eligible HDB households with arrears, and asks about caregiving utility needs.",
    "sentences": [
     {
      "sid": "s00002",
-     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Ms Goh Hanyan) (for the",
-     "attributed": true,
-     "text": "Minister for Sustainability and the Environment): Sir, over the past five years, the percentage of households with utility bills in arrears for six months or more have decreased from about 0.5% to 0.2%.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00003",
-     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Ms Goh Hanyan) (for the",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Ms Goh Hanyan) (for the Minister for Sustainability and the Environment)",
      "attributed": true,
      "text": "The Government provides targeted support to those who may require assistance with their utility bills.",
      "added_for_context": false
     },
     {
-     "sid": "s00004",
-     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Ms Goh Hanyan) (for the",
+     "sid": "s00003",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Ms Goh Hanyan) (for the Minister for Sustainability and the Environment)",
      "attributed": true,
      "text": "Eligible lower- and middle-income Housing and Development Board households enjoy U-Save rebates to help offset utility expenses.",
      "added_for_context": false
     },
     {
-     "sid": "s00006",
-     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Ms Goh Hanyan) (for the",
+     "sid": "s00005",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Ms Goh Hanyan) (for the Minister for Sustainability and the Environment)",
      "attributed": true,
      "text": "For households with more severe arrears, water supply will not be shut off.",
      "added_for_context": false
     },
     {
-     "sid": "s00007",
-     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Ms Goh Hanyan) (for the",
+     "sid": "s00006",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Ms Goh Hanyan) (for the Minister for Sustainability and the Environment)",
      "attributed": true,
      "text": "Instead, flow restrictors are installed to reduce the rate of flow of water to these premises and normal flow of water will be restored once the arrears are paid off.",
      "added_for_context": false
     },
     {
-     "sid": "s00008",
-     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Ms Goh Hanyan) (for the",
+     "sid": "s00007",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Sustainability and the Environment (Ms Goh Hanyan) (for the Minister for Sustainability and the Environment)",
      "attributed": true,
      "text": "These households will also be offered the Pay-As-You-Use scheme for their electricity supply until outstanding arrears are settled.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Abdul Muhaimin Abdul Malik (Sengkang)",
+     "attributed": true,
+     "text": "Is the Ministry aware that low-income families caring for sick or disabled members at home, such as those requiring home oxygen or concentrators, electric suction machines, motorised wheelchairs on charge or frequent bathing due to incontinence, face structurally higher utility consumption that is not of their choosing?",
      "added_for_context": false
     },
     {
      "sid": "s00010",
      "speaker": "Mr Abdul Muhaimin Abdul Malik (Sengkang)",
      "attributed": true,
-     "text": "Is the Ministry aware that low-income families caring for sick or disabled members at home, such as those requiring home oxygen or concentrators, electric suction machines, motorised wheelchairs on charge or frequent bathing due to incontinence, face structurally higher utility consumption that is not of their choosing?",
+     "text": "Will the Ministry consider recognising caregiving needs as a distinct basis for enhanced utility support?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Further household circumstances classification",
-   "summary": "It states that looking at further circumstances of the household would require further gradation of that classification.",
+   "label": "Further household circumstances gradation",
+   "summary": "Looking at further circumstances of the household would necessitate further gradation of that classification.",
    "sentences": [
     {
-     "sid": "s00014",
+     "sid": "s00013",
      "speaker": "Ms Goh Hanyan",
      "attributed": true,
      "text": "If we are required to look at further circumstances of the household, this will then necessitate further gradation of that classification.",
@@ -82,13 +82,13 @@
   "report_ids": [
    "oral-answer-4065"
   ],
-  "sentences_total": 15,
+  "sentences_total": 14,
   "sentences_selected": 8,
   "sentences_in_sections": 8,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 0,
   "sections_total": 2,
-  "selection_share": 0.5333,
+  "selection_share": 0.5714,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -107,14 +107,14 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:18:49"
+   "checked_at": "2026-09-20T10:35:55"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1256,
-   "completion_tokens": 159,
+   "prompt_tokens": 1187,
+   "completion_tokens": 154,
    "estimated": false,
-   "cost_usd": 0.00022
+   "cost_usd": 0.000209
   }
  }
 }

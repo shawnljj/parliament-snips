@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "MOM on workplace psychological safety",
-   "summary": "MOM supports employers to assess and address workplace mental well-being holistically, rather than setting national psychological safety indicators, through tools like iWorkHealth.",
+   "summary": "MOM supports employers to assess and address workplace mental well-being holistically, citing iWorkHealth and the Tripartite Advisory, rather than national psychological safety indicators.",
    "sentences": [
     {
      "sid": "s00002",
@@ -94,14 +94,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:42:27"
+   "checked_at": "2026-09-20T09:59:05"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1045,
-   "completion_tokens": 93,
+   "prompt_tokens": 1046,
+   "completion_tokens": 96,
    "estimated": false,
-   "cost_usd": 0.000172
+   "cost_usd": 0.000173
   }
  }
 }

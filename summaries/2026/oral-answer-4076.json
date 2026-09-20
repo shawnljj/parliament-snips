@@ -3,8 +3,8 @@
  "what_it_is": "Investigations into Whether Singaporeans Served in Israeli Defence Forces",
  "sections": [
   {
-   "label": "No proof of Singaporeans in IDF",
-   "summary": "The Ministry has no substantiated information confirming any Singaporean has served or is serving in the IDF.",
+   "label": "Singaporeans in foreign armed conflicts",
+   "summary": "The Ministry says it has no substantiated information on Singaporeans in the IDF, and Singaporeans should not join foreign armed conflicts.",
    "sentences": [
     {
      "sid": "s00004",
@@ -12,13 +12,14 @@
      "attributed": true,
      "text": "The Ministry has no substantiated information confirming that any Singaporean has served, or is serving, in the IDF.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Penalties for foreign armed conflict",
-   "summary": "Singaporeans found fighting or planning to fight in foreign conflicts will be dealt with under laws including the Internal Security Act, and may lose citizenship.",
-   "sentences": [
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr K Shanmugam",
+     "attributed": true,
+     "text": "Our position has always been quite clear and publicly stated: Singaporeans should not participate in any foreign armed conflict not involving Singapore.",
+     "added_for_context": false
+    },
     {
      "sid": "s00007",
      "speaker": "Mr K Shanmugam",
@@ -43,27 +44,27 @@
    ]
   },
   {
-   "label": "Current legal framework adequate",
-   "summary": "The current legal framework, including the Internal Security Act, is adequate given the positions stated.",
+   "label": "Offence under Singapore law",
+   "summary": "The conduct is an offence under Singapore law and contrary to national interests, but may not be an offence in Israel or elsewhere.",
    "sentences": [
     {
-     "sid": "s00027",
+     "sid": "s00032",
      "speaker": "Mr K Shanmugam",
      "attributed": true,
-     "text": "In our view, given the positions we have stated, the current legal framework, including the Internal Security Act, is adequate.",
+     "text": "Because while it is an offence under Singapore law and we consider it to be contrary to our national interests, it may not be an offence in Israel, nor may it be an offence in other countries.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Action on credible foreign fighting information",
-   "summary": "Singapore has reached out without response, and will take action on credible information regardless of which side a person fights for.",
+   "label": "Reaching out for information",
+   "summary": "Getting information may be difficult, no response has been received, and action will be taken on credible information regardless of the conflict.",
    "sentences": [
     {
      "sid": "s00042",
      "speaker": "Mr K Shanmugam",
      "attributed": true,
-     "text": "And if so, then there will be difficulties in getting the information – not just by the Israeli government, but other governments too.",
+     "text": "And if so, then there will be difficulties in getting the information – not just by the Israeli government, but other governments too.",
      "added_for_context": true
     },
     {
@@ -85,7 +86,7 @@
      "speaker": "Mr K Shanmugam",
      "attributed": true,
      "text": "It does not matter to us whether you are fighting for Israel or Ukraine or Russia or some other Middle Eastern country or a terrorist organisation.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00046",
@@ -109,12 +110,12 @@
    "oral-answer-4076"
   ],
   "sentences_total": 46,
-  "sentences_selected": 10,
-  "sentences_in_sections": 10,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
-  "sections_total": 4,
-  "selection_share": 0.2174,
+  "sentences_added_for_context": 3,
+  "sections_total": 3,
+  "selection_share": 0.2391,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -123,24 +124,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 4,
+   "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 10,
-   "sentences_selected": 10,
-   "turns_cited": 3,
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 2,
    "turns_total": 12,
-   "coverage": 0.25,
+   "coverage": 0.1667,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:10:13"
+   "checked_at": "2026-09-20T10:27:17"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2495,
-   "completion_tokens": 233,
+   "prompt_tokens": 2537,
+   "completion_tokens": 196,
    "estimated": false,
-   "cost_usd": 0.000415
+   "cost_usd": 0.00041
   }
  }
 }

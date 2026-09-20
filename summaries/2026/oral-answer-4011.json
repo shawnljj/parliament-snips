@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "F&B cessations and heritage businesses",
-   "summary": "Government does not track cessation breakdown; F&B entities rose 42% net from 2015 to 2025, and heritage businesses are supported, including New Bahru.",
+   "summary": "Government does not track cessation breakdown by outlet type; F&B entities rose 42% net from 2015 to 2025, and Dr Syed Harun shared heritage business support efforts.",
    "sentences": [
     {
      "sid": "s00002",
@@ -33,19 +33,12 @@
      "attributed": true,
      "text": "Senior Parliamentary Secretary Dr Syed Harun, shared yesterday about our efforts to support heritage businesses under the Inter-agency Task Force for Heritage Businesses, Traditional Activities and Cultural Life.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00008",
-     "speaker": "The Minister of State for Trade and Industry (Mr Alvin Tan) (for the Deputy Prime Minister and Minister for Trade and Industry)",
-     "attributed": true,
-     "text": "An example is, of course, New Bahru, a creative cluster that blends heritage conservation with a curated mix of contemporary local F&B and lifestyle businesses.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Proactive help for independent operators",
-   "summary": "Asked whether SME Centres could proactively help independent operators before they fold, the Government said it does not track those data and will consider the suggestion.",
+   "label": "Support for independent and heritage operators",
+   "summary": "Data on independent operators is not tracked; the suggestion will be considered, and Budget 2023-2025 measures, the food services productivity report and Food X Programme help SMEs.",
    "sentences": [
     {
      "sid": "s00011",
@@ -60,13 +53,14 @@
      "attributed": true,
      "text": "We do not track those data, so we will take his suggestion into consideration.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Food services productivity support programmes",
-   "summary": "The food services productivity report lets SMEs benchmark against peers, and the Food X Programme lets them outsource operationally difficult or expensive parts of operations.",
-   "sentences": [
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "Every year, in Budget 2023, 2024, 2025, we have announced new measures to help SMEs.",
+     "added_for_context": false
+    },
     {
      "sid": "s00016",
      "speaker": "Mr Alvin Tan",
@@ -100,7 +94,7 @@
   "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 1,
-  "sections_total": 3,
+  "sections_total": 2,
   "selection_share": 0.45,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -110,7 +104,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 3,
+   "sections_total": 2,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 9,
@@ -120,14 +114,14 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:41:42"
+   "checked_at": "2026-09-20T10:59:02"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1538,
-   "completion_tokens": 210,
+   "prompt_tokens": 1530,
+   "completion_tokens": 171,
    "estimated": false,
-   "cost_usd": 0.000274
+   "cost_usd": 0.000262
   }
  }
 }

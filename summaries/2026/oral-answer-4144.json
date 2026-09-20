@@ -3,8 +3,8 @@
  "what_it_is": "Data on Drop-outs from SSG-funded Programmes and Appeals for Fee Waivers Upon Non-completion of Courses",
  "sections": [
   {
-   "label": "SkillsFuture course completion and waivers",
-   "summary": "Over 90% of learners completed SSG courses in 2025; SSG does not process fee waiver requests for non-completers, as waivers depend on learner-provider contracts.",
+   "label": "Course completion and fee waivers",
+   "summary": "In 2025 over 90% of learners completed SSG courses; SSG does not process fee waivers for non-completers, which depend on learner-provider contracts.",
    "sentences": [
     {
      "sid": "s00002",
@@ -99,14 +99,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:52:00"
+   "checked_at": "2026-09-20T10:09:08"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1285,
-   "completion_tokens": 206,
+   "prompt_tokens": 1286,
+   "completion_tokens": 203,
    "estimated": false,
-   "cost_usd": 0.000238
+   "cost_usd": 0.000237
   }
  }
 }

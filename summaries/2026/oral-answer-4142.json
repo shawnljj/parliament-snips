@@ -4,13 +4,13 @@
  "sections": [
   {
    "label": "Solar panels private buildings barriers",
-   "summary": "Singapore has reached two gigawatt-peak of installed solar capacity and targets three gigawatt-peak by 2030, with private residential solar installations rising from about 1,400 in 2020 to about 6,900 in 2025.",
+   "summary": "Asks about barriers to solar deployment in private residential and commercial spaces and whether more measures are considered.",
    "sentences": [
     {
      "sid": "s00003",
      "speaker": "Mr Edward Chia Bing Hui",
      "attributed": true,
-     "text": "asked the Deputy Prime Minister and Minister for Trade and Industry (a) what has the Ministry assessed to be the key barriers to deploy solar panels in private residential and commercial spaces, including spaces managed by Management Corporations Strata Titles; and (b) whether additional measures, such as grants, financing support, property tax reliefs or regulatory adjustments, are being considered to address these barriers.",
+     "text": "asked the Deputy Prime Minister and Minister for Trade and Industry (a) what has the Ministry assessed to be the key barriers to deploy solar panels in private residential and commercial spaces, including spaces managed by Management Corporations Strata Titles; and (b) whether additional measures, such as grants, financing support, property tax reliefs or regulatory adjustments, are being considered to address these barriers.",
      "added_for_context": true
     },
     {
@@ -30,8 +30,8 @@
    ]
   },
   {
-   "label": "Grant support for building owners",
-   "summary": "Eligible building owners can receive grant support of up to 50% of energy improvement works costs, capped at $1.2 million, depending on carbon abatement achieved.",
+   "label": "Grant support building owners",
+   "summary": "Eligible building owners can get grant support up to 50% of energy improvement costs, capped at $1.2 million.",
    "sentences": [
     {
      "sid": "s00011",
@@ -43,8 +43,21 @@
    ]
   },
   {
-   "label": "Simplified fire safety solar requirements",
-   "summary": "Simplified fire safety requirements exempt more than half of solar panel installations on metal-roofed buildings, letting eligible business owners save up to 30% on total construction costs.",
+   "label": "New buildings environmental code solar",
+   "summary": "New buildings must meet BCA Code standards, with solar recognised as an acceptable carbon-reduction measure.",
+   "sentences": [
+    {
+     "sid": "s00047",
+     "speaker": "Ms Gan Siow Huang",
+     "attributed": true,
+     "text": "New buildings are required to meet standards under the Building and Construction Authority's (BCA's) Code for Environmental Sustainability of Buildings, with solar being recognised as one of the acceptable carbon-reduction measures under the Code.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fire safety solar panel exemptions",
+   "summary": "Simplified fire safety requirements exempt over half of solar installations on metal-roofed buildings, saving up to 30% on construction costs.",
    "sentences": [
     {
      "sid": "s00055",
@@ -56,8 +69,8 @@
    ]
   },
   {
-   "label": "MCST solar approval and training",
-   "summary": "SkillsFuture Singapore partners Sembcorp Solar as a SkillsFuture Queen Bee since 2024, and feedback was received on MCST concerns including the high approval threshold, with exploration of reducing it from 75% to possibly 50%.",
+   "label": "Solar training and MCST approvals",
+   "summary": "SkillsFuture partners Sembcorp Solar to train workers, and MCST approval threshold may be reduced from 75% to 50%.",
    "sentences": [
     {
      "sid": "s00060",
@@ -71,7 +84,7 @@
      "speaker": "Ms Gan Siow Huang",
      "attributed": true,
      "text": "This is to uplift other companies in this sector in training their workers and for us to be able to generate that talent pipeline that is needed to sustain this ecosystem.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00062",
@@ -116,12 +129,12 @@
    "oral-answer-4142"
   ],
   "sentences_total": 68,
-  "sentences_selected": 11,
-  "sentences_in_sections": 11,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
-  "sections_total": 4,
-  "selection_share": 0.1618,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.1765,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -130,24 +143,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 4,
+   "sections_total": 5,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 11,
-   "sentences_selected": 11,
+   "sentences_published": 12,
+   "sentences_selected": 12,
    "turns_cited": 5,
    "turns_total": 10,
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:51:26"
+   "checked_at": "2026-09-20T10:08:36"
   },
   "usage": {
    "calls": 4,
-   "prompt_tokens": 3839,
-   "completion_tokens": 323,
+   "prompt_tokens": 3892,
+   "completion_tokens": 295,
    "estimated": false,
-   "cost_usd": 0.000628
+   "cost_usd": 0.000627
   }
  }
 }

@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "AI impact on PMET jobs",
-   "summary": "IHLs work with sector agencies and industry to keep curriculum relevant for the AI era, complemented by work-based learning like the AI Apprenticeship Programme.",
+   "summary": "IHLs work with sector agencies and industry partners to keep curriculum relevant for the AI era, complemented by work-based learning programmes.",
    "sentences": [
     {
      "sid": "s00003",
@@ -31,7 +31,7 @@
   },
   {
    "label": "GRIT Programme for graduates",
-   "summary": "Amid 2025 economic uncertainties, the Government introduced the GRIT Programme to help young graduates gain industry experience and move to permanent employment.",
+   "summary": "In view of heightened economic uncertainties in 2025, the Government introduced the GRIT Programme to support young graduates.",
    "sentences": [
     {
      "sid": "s00009",
@@ -44,7 +44,7 @@
   },
   {
    "label": "MOM monitoring AI impact",
-   "summary": "MOM is monitoring and observing trends and getting feedback from employers on AI's impact.",
+   "summary": "MOM is currently monitoring and observing as well as getting feedback from employers on impact or trends.",
    "sentences": [
     {
      "sid": "s00013",
@@ -56,8 +56,8 @@
    ]
   },
   {
-   "label": "WSG maps and reskilling programmes",
-   "summary": "WSG's Jobs Transformation Maps guide employers and workers on AI reshaping roles, while the AI Apprenticeship Programme and reskilling programmes like TeSA and Career Conversion Programmes provide support.",
+   "label": "WSG Jobs Transformation Maps",
+   "summary": "WSG's Jobs Transformation Maps guide employers and workers on how AI reshapes roles, enabling early job redesign rather than elimination of positions.",
    "sentences": [
     {
      "sid": "s00017",
@@ -119,14 +119,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:45:00"
+   "checked_at": "2026-09-20T11:02:36"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1599,
-   "completion_tokens": 255,
+   "prompt_tokens": 1600,
+   "completion_tokens": 231,
    "estimated": false,
-   "cost_usd": 0.000295
+   "cost_usd": 0.000289
   }
  }
 }

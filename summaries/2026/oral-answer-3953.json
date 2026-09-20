@@ -4,34 +4,34 @@
  "sections": [
   {
    "label": "Questions on GIC and Temasek",
-   "summary": "Questions ask whether GIC and Temasek returns underperformed, affect the Net Investment Returns Contribution, and whether their mandates should be reviewed.",
+   "summary": "Questions ask whether GIC and Temasek returns underperformed, whether passive investing was assessed, and whether mandates need review.",
    "sentences": [
     {
      "sid": "s00002",
      "speaker": "Mr Shawn Loh",
      "attributed": true,
-     "text": "asked the Prime Minister and Minister for Finance (a) whether the investment returns of GIC and Temasek Holdings have underperformed the Government's expectation; (b) if so, whether there is an impact on the Government's Net Investment Returns Contribution to the Budget; and (c) what steps have been taken to ensure that the investment entities have incentives that are aligned to achieve better performance.",
+     "text": "asked the Prime Minister and Minister for Finance (a) whether the investment returns of GIC and Temasek Holdings have underperformed the Government's expectation; (b) if so, whether there is an impact on the Government's Net Investment Returns Contribution to the Budget; and (c) what steps have been taken to ensure that the investment entities have incentives that are aligned to achieve better performance.",
      "added_for_context": false
     },
     {
      "sid": "s00003",
      "speaker": "Mr Shawn Loh",
      "attributed": true,
-     "text": "asked the Prime Minister and Minister for Finance (a) whether the Government has assessed the merits of a low-cost passive index-tracking investment approach for its investments; (b) whether the Government has compared this to GIC and Temasek Holdings’ active and more costly investment management approaches; and (c) if so, what are the considerations in deciding to give GIC and Temasek Holdings the investment mandates to choose the latter approach.",
+     "text": "asked the Prime Minister and Minister for Finance (a) whether the Government has assessed the merits of a low-cost passive index-tracking investment approach for its investments; (b) whether the Government has compared this to GIC and Temasek Holdings’ active and more costly investment management approaches; and (c) if so, what are the considerations in deciding to give GIC and Temasek Holdings the investment mandates to choose the latter approach.",
      "added_for_context": false
     },
     {
      "sid": "s00005",
      "speaker": "Mr Fadli Fawzi",
      "attributed": true,
-     "text": "asked the Prime Minister and Minister for Finance (a) whether the difference between GIC's investment returns and the interest payments made by the Government to the CPF Board on Special Singapore Government Securities has narrowed in tandem with the underperformance of GIC relative to other major sovereign wealth funds; and (b) if so, how will this impact the Government's fiscal position or rate of reserves accumulation.",
+     "text": "asked the Prime Minister and Minister for Finance (a) whether the difference between GIC's investment returns and the interest payments made by the Government to the CPF Board on Special Singapore Government Securities has narrowed in tandem with the underperformance of GIC relative to other major sovereign wealth funds; and (b) if so, how will this impact the Government's fiscal position or rate of reserves accumulation.",
      "added_for_context": false
     },
     {
      "sid": "s00007",
      "speaker": "Mr Liang Eng Hwa",
      "attributed": true,
-     "text": "asked the Prime Minister and Minister for Finance (a) in view of the fragmenting global geopolitical environment and its associated investment risks, whether the Government sees the need to review the current investment mandates of both GIC and Temasek; and (b) whether the emerging investment landscape is assessed to be conducive to sustaining a steady Net Investment Returns Contribution in the next decade.",
+     "text": "asked the Prime Minister and Minister for Finance (a) in view of the fragmenting global geopolitical environment and its associated investment risks, whether the Government sees the need to review the current investment mandates of both GIC and Temasek; and (b) whether the emerging investment landscape is assessed to be conducive to sustaining a steady Net Investment Returns Contribution in the next decade.",
      "added_for_context": false
     }
    ]
@@ -51,7 +51,7 @@
   },
   {
    "label": "Temasek returns and assessment",
-   "summary": "Temasek reported 8% per annum Total Shareholder Return over 20 years in US dollar terms, and the Government assesses both entities' returns as reasonable.",
+   "summary": "Temasek reported 8% per annum Total Shareholder Return over 20 years, and the Government assesses both entities' returns as reasonable.",
    "sentences": [
     {
      "sid": "s00029",
@@ -83,8 +83,8 @@
    ]
   },
   {
-   "label": "NIRC basis and smoothing",
-   "summary": "Net Investment Returns taken into the Budget are based on long-term expected returns, not fluctuating year-to-year returns, and the asset base is smoothed over the long term.",
+   "label": "NIRC based on long-term returns",
+   "summary": "Net Investment Returns taken into the Budget are based on long-term expected returns, and the asset base is smoothed over the long term.",
    "sentences": [
     {
      "sid": "s00053",
@@ -103,7 +103,7 @@
    ]
   },
   {
-   "label": "GIC returns and asset disclosure",
+   "label": "GIC returns disclosure and assets",
    "summary": "GIC discloses five-, 10- and 20-year returns, but total assets under management are not disclosed to avoid speculative attacks on the Singapore dollar.",
    "sentences": [
     {
@@ -116,7 +116,7 @@
    ]
   },
   {
-   "label": "Disclosure within overall investment system",
+   "label": "Disclosure in overall investment system",
    "summary": "The principle is that entities' disclosures should be part of an overall system enabling them to maximise long-term returns.",
    "sentences": [
     {
@@ -142,6 +142,19 @@
    ]
   },
   {
+   "label": "GIC risk-adjusted outperformance",
+   "summary": "GIC returns were less volatile and outperformed the reference portfolio on a risk-adjusted basis, achieving higher returns per unit of volatility.",
+   "sentences": [
+    {
+     "sid": "s00081",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "At the same time, GIC returns were much less volatile in the same timeframe and in fact, have outperformed the reference portfolio on a risk adjusted basis, given that it has achieved higher returns per unit of volatility.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
    "label": "Benchmarks and unique context",
    "summary": "Investment entities should have clear benchmarks and consider Singapore's context, including Budget returns and CPF interest obligations.",
    "sentences": [
@@ -155,21 +168,8 @@
    ]
   },
   {
-   "label": "Threshold for NIRC framework review",
-   "summary": "The question asks what level of long-term returns should trigger a Government review of the NIRC framework's sustainability.",
-   "sentences": [
-    {
-     "sid": "s00104",
-     "speaker": "Mr Shawn Loh (Jalan Besar)",
-     "attributed": true,
-     "text": "What level of long-term investment returns should be the threshold which triggers a Government review of the NIRC framework to look at its sustainability, based on new structural trends in the global investment climate?",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Alpha from GIC and Temasek",
-   "summary": "The question asks how the Government is convinced GIC and Temasek's active approach gives deserved alpha, amid challenging returns.",
+   "label": "Alpha from active investment",
+   "summary": "A Member asked how the Government is convinced GIC and Temasek's active approach gives alpha, and noted returns are more challenging.",
    "sentences": [
     {
      "sid": "s00107",
@@ -189,7 +189,7 @@
   },
   {
    "label": "Riding out market fluctuations",
-   "summary": "The system lets Singapore ride out year-to-year fluctuations and sustained global under-performance due to its large asset base and long-term view.",
+   "summary": "The system lets Singapore ride out year-to-year fluctuations and sustained global under-performance due to a large asset base and long-term view.",
    "sentences": [
     {
      "sid": "s00111",
@@ -202,7 +202,7 @@
   },
   {
    "label": "GIC track record and de-risking",
-   "summary": "The GIC team's track record under its mandate shows it can de-risk during periods of distress such as COVID.",
+   "summary": "The GIC team's track record shows it can fulfil its mandate, and it has de-risked during periods of distress such as COVID.",
    "sentences": [
     {
      "sid": "s00118",
@@ -221,35 +221,41 @@
    ]
   },
   {
-   "label": "No direction on investment focus",
-   "summary": "The entity decides its own investment focus and local investing, as the government will not direct those decisions.",
+   "label": "Government and investment entities relationship",
+   "summary": "The relationship between the Government and investment entities is structured at a broad level to enable sustainable returns and preserve the asset base.",
    "sentences": [
     {
      "sid": "s00136",
      "speaker": "Mr Jeffrey Siow",
      "attributed": true,
      "text": "On the first question, I think we do not work on the basis of individual investment decisions.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00138",
-     "speaker": "Mr Jeffrey Siow",
-     "attributed": true,
-     "text": "And so, insofar as requiring them to have a specific investment focus or to invest locally, I think that is something as an entity, they need to decide and in light of the mandate that we have given them, to see whether that it is the most preferred strategy.",
      "added_for_context": true
     },
     {
-     "sid": "s00139",
+     "sid": "s00137",
      "speaker": "Mr Jeffrey Siow",
      "attributed": true,
-     "text": "So, we will not direct it personally or directly, but we would leave them to make those decisions.",
+     "text": "I think we want to structure how the relationship between the Government and our investment entities, structure them at the broad level to enable them to fulfil this mandate of achieving sustainable returns, preserving our asset base, while giving them, as commercial entities, the freedom to do the things that they need to do.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Temasek portfolio sustainable returns",
-   "summary": "For Temasek's total asset portfolio, generating sustainable returns as a portfolio would be a good outcome.",
+   "label": "Carving out Temasek TPC entity",
+   "summary": "Whether to carve out a separate entity to evaluate the performance of the parts of Temasek looking after TPCs must be taken in context of Temasek's evolving capabilities.",
+   "sentences": [
+    {
+     "sid": "s00140",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "As to whether or not we should carve them out separately to have a separate entity and evaluate the performance of the parts of Temasek that looks after our TPCs, I think we have to take this in context of how Temasek has evolved its capabilities over time.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Temasek total portfolio returns",
+   "summary": "As long as Temasek's total portfolio of assets can generate sustainable returns as a portfolio, that will be a good outcome.",
    "sentences": [
     {
      "sid": "s00144",
@@ -277,7 +283,7 @@
   "sentences_in_sections": 24,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 3,
-  "sections_total": 15,
+  "sections_total": 16,
   "selection_share": 0.1579,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -287,7 +293,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 15,
+   "sections_total": 16,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 24,
@@ -297,14 +303,14 @@
    "coverage": 0.5556,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:53:12"
+   "checked_at": "2026-09-20T11:10:38"
   },
   "usage": {
    "calls": 9,
-   "prompt_tokens": 8591,
-   "completion_tokens": 888,
+   "prompt_tokens": 8659,
+   "completion_tokens": 954,
    "estimated": false,
-   "cost_usd": 0.001451
+   "cost_usd": 0.001479
   }
  }
 }

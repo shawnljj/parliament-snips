@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "SAF support for NSFs",
-   "summary": "The SAF identifies NSFs with psychosocial stressors through touchpoints like Basic Military Training, surveys and commander interviews, and provides support or referrals.",
+   "summary": "The SAF identifies NSFs with psychosocial stressors through touchpoints and provides support or referrals to services.",
    "sentences": [
     {
      "sid": "s00004",
@@ -38,7 +38,7 @@
   },
   {
    "label": "Continuity of support after NS",
-   "summary": "It works with MSF's Social Service Offices and Family Service Centres to ensure continuity of support for NSFs after they complete National Service.",
+   "summary": "It works with MSF's Social Service Offices and Family Service Centres to ensure continuity of support after NS.",
    "sentences": [
     {
      "sid": "s00010",
@@ -57,8 +57,8 @@
    ]
   },
   {
-   "label": "Case Connect pilot with MSF",
-   "summary": "MINDEF is piloting Case Connect with MSF and social service offices to manage cases jointly, and will study better integration with the public health system.",
+   "label": "MINDEF pilots Case Connect",
+   "summary": "MINDEF is piloting Case Connect with MSF and social service offices for joint case management.",
    "sentences": [
     {
      "sid": "s00020",
@@ -113,14 +113,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:01:45"
+   "checked_at": "2026-09-20T10:18:59"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1653,
-   "completion_tokens": 204,
+   "prompt_tokens": 1657,
+   "completion_tokens": 179,
    "estimated": false,
-   "cost_usd": 0.000289
+   "cost_usd": 0.000282
   }
  }
 }

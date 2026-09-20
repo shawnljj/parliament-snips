@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "S$NEER appreciating path",
-   "summary": "The S$NEER has gradually appreciated against its trade-weighted basket since October 2021, consistent with each quarterly policy stance, and this will continue after the April statement.",
+   "summary": "The S$NEER has gradually appreciated against its trade-weighted basket since October 2021, consistent with each quarterly policy stance, and this trend continues after the April policy statement.",
    "sentences": [
     {
      "sid": "s00002",
@@ -31,7 +31,7 @@
   },
   {
    "label": "MAS currency basket weights",
-   "summary": "MAS periodically reviews and updates its currency basket weights to reflect Singapore's evolving trade patterns, and no single currency dominates the S$NEER basket.",
+   "summary": "MAS periodically reviews and updates its currency basket weights to reflect Singapore's evolving trade patterns, and no single currency dominates or unduly affects broad stability.",
    "sentences": [
     {
      "sid": "s00008",
@@ -50,21 +50,8 @@
    ]
   },
   {
-   "label": "US dollar global role",
-   "summary": "The US dollar remains the central currency in the international monetary and financial system and the world's dominant reserve currency.",
-   "sentences": [
-    {
-     "sid": "s00012",
-     "speaker": "Mr Alvin Tan",
-     "attributed": true,
-     "text": "With regards to the US dollar, I know there have been many discussions regarding its role as an international currency, but if you look at the facts, the US dollar continues to remain the central currency in the international monetary and financial system and continues to be the world's dominant reserve currency.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Trade invoicing currencies",
-   "summary": "Most global trade is invoiced in a few currencies, with the US dollar at about 40% of global exports and the Renminbi below 2%.",
+   "label": "Trade invoicing and S$NEER",
+   "summary": "Most global trade is invoiced in few currencies like the US dollar and Euro, while the S$NEER is weighted against major trading partners' currencies and has appreciated since October 2021.",
    "sentences": [
     {
      "sid": "s00015",
@@ -86,6 +73,13 @@
      "attributed": true,
      "text": "Our monetary policy instrument, the S$NEER, is weighted against a basket of currencies of our major trading partners, and the Singapore dollar has been on an appreciating path since we tightened monetary policy in October 2021.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Alvin Tan",
+     "attributed": true,
+     "text": "And that has the effect of dampening imported inflation in Singapore and a downstream impact on our economy.",
+     "added_for_context": false
     }
    ]
   }
@@ -106,7 +100,7 @@
   "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 1,
-  "sections_total": 4,
+  "sections_total": 3,
   "selection_share": 0.4737,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -116,7 +110,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 4,
+   "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 9,
@@ -126,14 +120,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:51:50"
+   "checked_at": "2026-09-20T10:08:57"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1519,
-   "completion_tokens": 252,
+   "prompt_tokens": 1479,
+   "completion_tokens": 221,
    "estimated": false,
-   "cost_usd": 0.000283
+   "cost_usd": 0.000269
   }
  }
 }

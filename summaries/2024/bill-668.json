@@ -3,8 +3,8 @@
  "what_it_is": "Statutes (Miscellaneous Amendments) Bill",
  "sections": [
   {
-   "label": "Business names and property tax amendments",
-   "summary": "Clause 2(b) lets the Registrar restore cancelled business name registrations for Medisave non-compliance, while clauses 6(a) to (j) amend property tax objection and Valuation Review Board provisions.",
+   "label": "Business names registration restoration",
+   "summary": "Clause 2(b) lets the Registrar of Business Names restore a registration cancelled for failure to make Medisave contributions.",
    "sentences": [
     {
      "sid": "s00001",
@@ -54,6 +54,13 @@
      "attributed": true,
      "text": "Taken together, these amendments will align the VRB provisions with other tax Boards of Review provisions to allow greater flexibility and ensure that tax appeals are resolved in a more timely and efficient manner.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Chairman",
+     "attributed": true,
+     "text": "The citation year \"2023\" will be changed to \"2024\", as indicated in the Order Paper Supplement.",
+     "added_for_context": false
     }
    ]
   }
@@ -70,12 +77,12 @@
    "bill-668"
   ],
   "sentences_total": 13,
-  "sentences_selected": 7,
-  "sentences_in_sections": 7,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 0,
   "sections_total": 1,
-  "selection_share": 0.5385,
+  "selection_share": 0.6154,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -87,21 +94,21 @@
    "sections_total": 1,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 7,
-   "sentences_selected": 7,
-   "turns_cited": 1,
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
    "turns_total": 2,
-   "coverage": 0.5,
+   "coverage": 1.0,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T15:28:44"
+   "checked_at": "2026-09-20T11:14:35"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1398,
-   "completion_tokens": 110,
+   "prompt_tokens": 1421,
+   "completion_tokens": 96,
    "estimated": false,
-   "cost_usd": 0.000227
+   "cost_usd": 0.000226
   }
  }
 }

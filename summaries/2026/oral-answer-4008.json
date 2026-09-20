@@ -3,9 +3,16 @@
  "what_it_is": "ComCare Applications Rejected Due to Applicants' Non-compliance with Employment Action Plans",
  "sections": [
   {
-   "label": "Social Service Office action plans",
-   "summary": "SSO officers develop action plans with clients, which can be reviewed, and MSF family coaches get community help; non-compliant ComCare applicants are not tracked.",
+   "label": "ComCare denials and action plans",
+   "summary": "MSF says it does not track ComCare applicants denied for not complying with employment action plans, which can be reviewed.",
    "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Kenneth Tiong Boon Kiat",
+     "attributed": true,
+     "text": "asked the Minister for Social and Family Development (a) in the past three years, how many ComCare applications were denied citing non-compliance with employment action plans; (b) whether applicants are given the opportunity to provide evidence of their engagement with partner agencies before such denials; and (c) whether the Ministry will ensure applicants are heard before being denied on such grounds.",
+     "added_for_context": false
+    },
     {
      "sid": "s00002",
      "speaker": "The Minister of State for Social and Family Development (Mr Zhulkarnain Abdul Rahim) (for the Minister for Social and Family Development)",
@@ -18,13 +25,20 @@
      "speaker": "The Minister of State for Social and Family Development (Mr Zhulkarnain Abdul Rahim) (for the Minister for Social and Family Development)",
      "attributed": true,
      "text": "Clients are informed at the very outset that they must adhere to these action plans.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00004",
      "speaker": "The Minister of State for Social and Family Development (Mr Zhulkarnain Abdul Rahim) (for the Minister for Social and Family Development)",
      "attributed": true,
      "text": "However, should they face genuine difficulties meeting them or if they need more time, the action plans can be reviewed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Social and Family Development (Mr Zhulkarnain Abdul Rahim) (for the Minister for Social and Family Development)",
+     "attributed": true,
+     "text": "Based on the household's adherence to action plans and progress towards self-reliance, the amount and duration of the SMTA may be adjusted while ensuring dependants' basic needs are being met.",
      "added_for_context": false
     },
     {
@@ -44,8 +58,8 @@
    ]
   },
   {
-   "label": "SSO appeal and SMTA assistance",
-   "summary": "SSO is considering an appeal for a known family helped with food rations, milk powder and diapers, and every SMTA applicant will get financial assistance.",
+   "label": "SSO considering appeal",
+   "summary": "The Social Service Office is aware of this case and is currently considering the appeal.",
    "sentences": [
     {
      "sid": "s00016",
@@ -53,32 +67,31 @@
      "attributed": true,
      "text": "For this particular case, SSO is aware and is currently considering the appeal.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00017",
-     "speaker": "Mr Zhulkarnain Abdul Rahim",
-     "attributed": true,
-     "text": "And actually, for this particular family, it is a known family and the family coach has helped the family in other ways as well, including provision of food rations, infant milk powder and diapers.",
-     "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "SMTA review and assistance",
+   "summary": "SSO reviews SMTA with the Social Assistance Officer, who interviews applicants and gathers information to ensure assistance meets basic needs.",
+   "sentences": [
     {
      "sid": "s00019",
      "speaker": "Mr Zhulkarnain Abdul Rahim",
      "attributed": true,
      "text": "SSO reviews it with the help of the Social Assistance Officer (SAO), who has embarked and partnered with the applicant family on the action plan, which would help them to improve their financial situation.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00020",
      "speaker": "Mr Zhulkarnain Abdul Rahim",
      "attributed": true,
      "text": "And so, the SAO will contact the applicants for an interview and at the stage of assessment of the SMTA, the SAO will also get information from the family coach, from other sources of information as well, to ensure that they look at the entire assistance that is required by the family.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
      "sid": "s00021",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "Mr Zhulkarnain Abdul Rahim",
+     "attributed": true,
      "text": "And rest assured, for the Member, that every applicant for SMTA will be able to get financial assistance by SSOs and we will look at how to help them meet their basic living needs and also journey with them on this journey for self-reliance so that they can improve their financial situation.",
      "added_for_context": false
     }
@@ -97,12 +110,12 @@
    "oral-answer-4008"
   ],
   "sentences_total": 23,
-  "sentences_selected": 10,
-  "sentences_in_sections": 10,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
-  "sections_total": 2,
-  "selection_share": 0.4348,
+  "sentences_added_for_context": 3,
+  "sections_total": 3,
+  "selection_share": 0.4783,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -111,24 +124,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 2,
+   "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 10,
-   "sentences_selected": 10,
+   "sentences_published": 11,
+   "sentences_selected": 11,
    "turns_cited": 3,
-   "turns_total": 5,
-   "coverage": 0.6,
+   "turns_total": 4,
+   "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:41:39"
+   "checked_at": "2026-09-20T10:59:00"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1690,
-   "completion_tokens": 161,
+   "prompt_tokens": 1767,
+   "completion_tokens": 179,
    "estimated": false,
-   "cost_usd": 0.000282
+   "cost_usd": 0.000298
   }
  }
 }

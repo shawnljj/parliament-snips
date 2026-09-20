@@ -3,8 +3,8 @@
  "what_it_is": "Mandatory Government Security Vetting for Personnel with Access to Singapore’s Critical Information Infrastructure",
  "sections": [
   {
-   "label": "CII access management controls",
-   "summary": "The Cybersecurity Act requires CII owners to implement access management controls, monitor for anomalies, and investigate unauthorised activity to mitigate insider threats.",
+   "label": "Cybersecurity Act CII access controls",
+   "summary": "The Cybersecurity Act requires CII owners to implement access management controls, monitor for anomalies, and investigate unauthorised activity.",
    "sentences": [
     {
      "sid": "s00002",
@@ -30,21 +30,21 @@
    ]
   },
   {
-   "label": "Security vetting not silver bullet",
-   "summary": "The passage states that security vetting is not assumed to be a silver bullet.",
+   "label": "Assuming everyone an insider threat",
+   "summary": "Defending against many insider threats requires assuming every person with system access could pose an insider threat.",
    "sentences": [
     {
-     "sid": "s00013",
+     "sid": "s00012",
      "speaker": "Mrs Josephine Teo",
      "attributed": true,
-     "text": "Second, we also do not assume that security vetting is a silver bullet.",
+     "text": "If you want to be able to defend against as many insider threats as possible, you have to assume that every single person that has access to the system could pose an insider threat.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Zero trust access controls",
-   "summary": "Cybersecurity uses zero trust, with least privileged access, verification of users, and monitoring for suspicious behaviour beyond granted privileges.",
+   "label": "Zero trust and least privilege",
+   "summary": "Zero trust means designing least privileged access, verifying users, and monitoring for suspicious behaviour beyond granted privileges.",
    "sentences": [
     {
      "sid": "s00016",
@@ -70,8 +70,8 @@
    ]
   },
   {
-   "label": "Vetting still exists",
-   "summary": "The passage states that overcoming this becomes easiest and that it is not the case that there is no vetting.",
+   "label": "Vetting and overcoming controls",
+   "summary": "That becomes the easiest thing to overcome, and it is not the case that there is no vetting.",
    "sentences": [
     {
      "sid": "s00029",
@@ -126,14 +126,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:01:37"
+   "checked_at": "2026-09-20T10:18:52"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1700,
-   "completion_tokens": 224,
+   "prompt_tokens": 1721,
+   "completion_tokens": 221,
    "estimated": false,
-   "cost_usd": 0.000301
+   "cost_usd": 0.000303
   }
  }
 }

@@ -3,8 +3,8 @@
  "what_it_is": "Dispute Resolution for Complaints on Second-hand Smoke from Neighbours' Own Homes",
  "sections": [
   {
-   "label": "Repeat feedback and advisories",
-   "summary": "About 30% of 2025 feedback cases came from repeat providers; NEA issues advisories with agencies or Town Councils, and most cases did not recur.",
+   "label": "NEA feedback on smoking",
+   "summary": "NEA issues advisories to surrounding residential units for repeat feedback cases, and most cases did not recur after advisories.",
    "sentences": [
     {
      "sid": "s00002",
@@ -44,8 +44,8 @@
    ]
   },
   {
-   "label": "Smoking prohibitions and second-hand smoke",
-   "summary": "With about 49,000 prohibited smoking spaces, the issue is smoke from a home pervading a neighbour's home, and work with HPB and HDB is suggested.",
+   "label": "Smoking prohibitions and neighbour smoke",
+   "summary": "With about 49,000 prohibited smoking spaces, the issue is smoke from a home pervading a neighbour's home.",
    "sentences": [
     {
      "sid": "s00022",
@@ -128,14 +128,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:53:29"
+   "checked_at": "2026-09-20T10:10:33"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1571,
-   "completion_tokens": 165,
+   "prompt_tokens": 1572,
+   "completion_tokens": 143,
    "estimated": false,
-   "cost_usd": 0.000266
+   "cost_usd": 0.00026
   }
  }
 }

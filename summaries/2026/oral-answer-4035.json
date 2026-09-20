@@ -4,48 +4,42 @@
  "sections": [
   {
    "label": "Housing wealth inequality and mobility questions",
-   "summary": "Questions ask whether owner-occupied and private housing wealth are differentiated in inequality measures, and what sustains upward mobility.",
+   "summary": "Questions ask whether owner-occupied and private housing wealth are differentiated in inequality measurement and what sustains upward mobility rates.",
    "sentences": [
     {
      "sid": "s00001",
      "speaker": "Assoc Prof Kenneth Goh",
      "attributed": true,
-     "text": "asked the Prime Minister and Minister for Finance (a) whether the Ministry differentiates between wealth held in owner-occupied public housing and privately-owned housing in measuring household wealth inequality, given the differences in liquidity and ease of deployment arising from resale conditions and use-of-proceeds rules; and (b) if so, how this is taken into account in assessing households' economic resilience and in the computation of wealth Gini coefficient.",
+     "text": "asked the Prime Minister and Minister for Finance (a) whether the Ministry differentiates between wealth held in owner-occupied public housing and privately-owned housing in measuring household wealth inequality, given the differences in liquidity and ease of deployment arising from resale conditions and use-of-proceeds rules; and (b) if so, how this is taken into account in assessing households' economic resilience and in the computation of wealth Gini coefficient.",
      "added_for_context": false
     },
     {
      "sid": "s00002",
      "speaker": "Ms Mariam Jaafar",
      "attributed": true,
-     "text": "asked the Prime Minister and Minister for Finance in respect of the Ministry's Occasional Paper on income growth, inequality and social mobility trends which indicated that three in four children born into the bottom 20 percent of households in the late 1970s and 1980s moved to higher income tiers as adults, what measures are in place to sustain or improve these upward mobility rates for today's and future cohorts.",
+     "text": "asked the Prime Minister and Minister for Finance in respect of the Ministry's Occasional Paper on income growth, inequality and social mobility trends which indicated that three in four children born into the bottom 20 percent of households in the late 1970s and 1980s moved to higher income tiers as adults, what measures are in place to sustain or improve these upward mobility rates for today's and future cohorts.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Survey-based wealth measurement approach",
-   "summary": "Singapore relies primarily on survey-based approaches and has no plans to seek powers for more granular asset disclosures for inequality measurement.",
+   "label": "No new asset disclosure powers",
+   "summary": "There are no plans to seek powers for more granular asset disclosures, this is the first wealth Gini compilation, and the next survey is in 2028.",
    "sentences": [
-    {
-     "sid": "s00014",
-     "speaker": "Mr Jeffrey Siow",
-     "attributed": true,
-     "text": "Like many other advanced economies such as the United Kingdom (UK), Japan and Germany, we rely primarily on survey-based approaches.",
-     "added_for_context": true
-    },
     {
      "sid": "s00015",
      "speaker": "Mr Jeffrey Siow",
      "attributed": true,
      "text": "We have no plans at this point to seek additional legislative or administrative powers to require more granular asset disclosures solely for inequality measurement.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "This is our first compilation of the wealth Gini coefficient and we do not have a historical series.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Household Expenditure Survey 2028",
-   "summary": "The next cycle of the Household Expenditure Survey is planned for 2028.",
-   "sentences": [
+    },
     {
      "sid": "s00018",
      "speaker": "Mr Jeffrey Siow",
@@ -57,7 +51,7 @@
   },
   {
    "label": "Top wealth shares",
-   "summary": "The top 1% hold about 14% of total household wealth, and the top 5% hold about 33%.",
+   "summary": "The top 1% hold about 14% of total household wealth and the top 5% about 33%, comparable to similar advanced economies.",
    "sentences": [
     {
      "sid": "s00027",
@@ -65,25 +59,19 @@
      "attributed": true,
      "text": "The top 1% hold about 14% of total household wealth, while the top 5% holds about 33%.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Wealth taxation approach",
-   "summary": "Wealth is taxed in ways less susceptible to cross-border movement and tax planning while preserving competitiveness.",
-   "sentences": [
+    },
     {
-     "sid": "s00035",
+     "sid": "s00028",
      "speaker": "Mr Jeffrey Siow",
      "attributed": true,
-     "text": "Our approach is to tax wealth in ways that are less susceptible to cross-border movement and tax planning, while preserving competitiveness.",
+     "text": "These levels are broadly comparable to advanced economies with similar wealth Gini coefficients.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Inequality and mobility commitment",
-   "summary": "Tackling inequality and improving mobility requires sustained investment across generations, with fiscal measures reviewed and updated.",
+   "label": "Commitment on inequality and mobility",
+   "summary": "Tackling inequality and improving mobility requires sustained investment across generations, with fiscal measures reviewed and updated to remain effective and sustainable.",
    "sentences": [
     {
      "sid": "s00050",
@@ -110,7 +98,7 @@
   },
   {
    "label": "First wealth Gini measurement",
-   "summary": "The wealth Gini coefficient is being measured for the first time, using survey and administrative data, and can be improved over time.",
+   "summary": "The wealth Gini was measured using survey and administrative data for the first time, and wealth data depends on the five-yearly household expenditure survey.",
    "sentences": [
     {
      "sid": "s00060",
@@ -125,11 +113,25 @@
      "attributed": true,
      "text": "This is the first time we are measuring the wealth Gini coefficient and we are open to improving it over time.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00063",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "In terms of household income trends, we already publish that data regularly, annually, in the Key Household Income Trends Report.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00064",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "But for the wealth Gini coefficient and wealth data, it is dependent on the main source, which is the household expenditure survey, which we do every five years.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Using data for trending",
+   "label": "Looking at data trends",
    "summary": "The important part of using this data is to look at the trending.",
    "sentences": [
     {
@@ -142,49 +144,36 @@
    ]
   },
   {
-   "label": "Ageing, mobility and younger cohorts",
-   "summary": "Structural pressures on inequality will emerge as society ages and the economy matures, and there is not yet good data on younger Singaporeans.",
-   "sentences": [
-    {
-     "sid": "s00080",
-     "speaker": "Mr Jeffrey Siow",
-     "attributed": true,
-     "text": "As our society ages and new generations come onboard and the economy matures, structural pressures on inequality will naturally emerge and sustaining mobility will become more challenging.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00081",
-     "speaker": "Mr Jeffrey Siow",
-     "attributed": true,
-     "text": "So, to Ms Mariam's question on younger cohorts, we do not yet have good data on younger Singaporeans because they are still in the early stages of their careers and their earnings have not stabilised.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Support for bottom quintile families",
-   "summary": "Families in the bottom quintile have multiple needs, so a package of measures including enhanced ComLink+ is being worked on.",
+   "label": "Support for lower-income families",
+   "summary": "Families, especially in the bottom quintile, have multiple needs and require multiple support, so a package of measures including enhanced ComLink+ is being worked on.",
    "sentences": [
     {
      "sid": "s00084",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
      "text": "The families, in particular in the bottom quintile, have multiple needs and need multiple support.",
      "added_for_context": true
     },
     {
      "sid": "s00085",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
      "text": "And that is why we have been working on a package of various measures, including the enhancement of ComLink+ which the Prime Minister spoke about in his Budget Speech.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Property tax deferral for seniors",
-   "summary": "Asset rich but income poor seniors have deferral mechanisms for property tax payments, including extended interest-free instalments.",
+   "label": "Property tax and payment deferral",
+   "summary": "Investment and higher-value properties are taxed higher, single-property homeowners lower with rebates, and asset-rich income-poor seniors can defer property tax via interest-free instalments.",
    "sentences": [
+    {
+     "sid": "s00098",
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
+     "text": "Investment properties and higher-value properties are taxed higher and homeowners with only one property are taxed lower and they receive property tax rebates when necessary.",
+     "added_for_context": false
+    },
     {
      "sid": "s00099",
      "speaker": "Mr Jeffrey Siow",
@@ -209,27 +198,14 @@
    ]
   },
   {
-   "label": "No property investment simulations",
-   "summary": "No simulations have been done on separating investment property from owner-occupied property.",
+   "label": "No simulation on separating property investment",
+   "summary": "No simulations have been done on separating investment of property from owner-occupied property.",
    "sentences": [
     {
      "sid": "s00111",
      "speaker": "Mr Jeffrey Siow",
      "attributed": true,
      "text": "On whether or not we have done simulations on separating investment of property from owner-occupied property, we have not done so.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Tax burden work wealth",
-   "summary": "The speaker says they remain open on whether tax burden will shift from work to wealth taxation.",
-   "sentences": [
-    {
-     "sid": "s00114",
-     "speaker": "Mr Jeffrey Siow",
-     "attributed": true,
-     "text": "On tax burden, whether or not we will shift from work to wealth taxation, I think, we remain open.",
      "added_for_context": false
     }
    ]
@@ -251,7 +227,7 @@
   "sentences_in_sections": 22,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 6,
-  "sections_total": 13,
+  "sections_total": 9,
   "selection_share": 0.176,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -261,24 +237,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 13,
+   "sections_total": 9,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 22,
    "sentences_selected": 22,
-   "turns_cited": 8,
-   "turns_total": 12,
-   "coverage": 0.6667,
+   "turns_cited": 7,
+   "turns_total": 11,
+   "coverage": 0.6364,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:30:34"
+   "checked_at": "2026-09-20T10:48:01"
   },
   "usage": {
-   "calls": 8,
-   "prompt_tokens": 6102,
-   "completion_tokens": 676,
+   "calls": 7,
+   "prompt_tokens": 5910,
+   "completion_tokens": 545,
    "estimated": false,
-   "cost_usd": 0.001044
+   "cost_usd": 0.00098
   }
  }
 }

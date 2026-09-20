@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Preschool full-day operating hours",
-   "summary": "Full-day preschools must operate 7.00 am to 7.00 pm on weekdays, and about 20 now operate beyond 7.00 pm, down from 40 in 2021.",
+   "summary": "Full-day preschools must operate 7am to 7pm on weekdays, and about 20 now operate beyond 7pm, down from 40 in 2021.",
    "sentences": [
     {
      "sid": "s00002",
@@ -51,7 +51,7 @@
   },
   {
    "label": "Preschool extended hours business decision",
-   "summary": "Extending operating hours is left to preschool operators, who may charge for hours beyond 7.00 pm, and the number offering this has fallen.",
+   "summary": "Extending operating hours is left to preschool operators, who may charge for hours beyond 7pm, and fewer preschools offer this.",
    "sentences": [
     {
      "sid": "s00022",
@@ -92,7 +92,7 @@
   },
   {
    "label": "Long preschool hours and child outcomes",
-   "summary": "SG LEADS found that children staying in preschool beyond 40 hours and significantly beyond showed some impact on literacy and numeracy achievements.",
+   "summary": "SG LEADS found that children staying in preschool beyond 40 hours had some impact on their literacy and numeracy achievements.",
    "sentences": [
     {
      "sid": "s00034",
@@ -147,14 +147,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:30:12"
+   "checked_at": "2026-09-20T10:47:40"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1985,
-   "completion_tokens": 266,
+   "prompt_tokens": 1989,
+   "completion_tokens": 255,
    "estimated": false,
-   "cost_usd": 0.000352
+   "cost_usd": 0.00035
   }
  }
 }

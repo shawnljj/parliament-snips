@@ -3,7 +3,7 @@
  "what_it_is": "Proportion of Fires Arising from Electrical Sources and Cooking in Homes and Commercial Premises",
  "sections": [
   {
-   "label": "Residential and commercial fire causes",
+   "label": "Fires from cooking and electrical",
    "summary": "From 2023 to 2025, unattended cooking or electrical fires made up 68%, 65% and 59% of residential fires and 66%, 72% and 67% of commercial fires.",
    "sentences": [
     {
@@ -38,7 +38,7 @@
   },
   {
    "label": "AMD battery fires and compliance",
-   "summary": "The speaker says compliance is hard to ascertain after a fire, but AMD batteries are tracked and AMD fires are under 5% of all fires with disproportionate impact.",
+   "summary": "The speaker says compliance is hard to ascertain after a fire, but AMD batteries are tracked and their fires are under 5% yet disproportionately harmful.",
    "sentences": [
     {
      "sid": "s00014",
@@ -107,14 +107,14 @@
    "coverage": 0.3333,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:10:18"
+   "checked_at": "2026-09-20T10:27:22"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1443,
-   "completion_tokens": 166,
+   "completion_tokens": 163,
    "estimated": false,
-   "cost_usd": 0.000249
+   "cost_usd": 0.000248
   }
  }
 }

@@ -3,23 +3,29 @@
  "what_it_is": "Reasons for Attrition in Foster Parenting Scheme and Proposed Guidelines for Co-parenting Arrangements for Fostering",
  "sections": [
   {
-   "label": "Foster family recruitment and support",
-   "summary": "MSF partners organisations to recruit foster families, raised allowances for teenagers from October 2025, removed income and education requirements from July 2024, and about 6% of foster parents are deregistered yearly.",
+   "label": "Foster parent shortfall and attrition",
+   "summary": "Questions ask about the estimated shortfall of foster parents, recent attrition rates, reasons for attrition and planned programmes to address it.",
    "sentences": [
     {
-     "sid": "s00006",
-     "speaker": "Mr Goh Pei Ming",
+     "sid": "s00002",
+     "speaker": "Dr Neo Kok Beng",
      "attributed": true,
-     "text": "MSF has partnered fostering agencies, community organisations, religious groups and private organisations to raise awareness and recruit more foster families.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00007",
-     "speaker": "Mr Goh Pei Ming",
-     "attributed": true,
-     "text": "We have also strengthened support measures, such as increasing the fostering allowance for those caring for teenagers from October 2025, and removing the minimum household income and educational requirements for applicants from July 2024.",
+     "text": "asked the Minister for Social and Family Development (a) what the present estimated shortfall of foster parents is; and (b) what additional programmes are planned to address this shortfall, if any.",
      "added_for_context": false
     },
+    {
+     "sid": "s00003",
+     "speaker": "Dr Neo Kok Beng",
+     "attributed": true,
+     "text": "asked the Minister for Social and Family Development (a) what has been the attrition rate of foster parents in the last three years; (b) what are the reasons or issues for such attrition; and (c) how can these issues be resolved.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Foster parent attrition rate",
+   "summary": "About 6% of foster parents have been deregistered each year on average over the last three years.",
+   "sentences": [
     {
      "sid": "s00009",
      "speaker": "Mr Goh Pei Ming",
@@ -30,8 +36,8 @@
    ]
   },
   {
-   "label": "Fostering allowance and subsidies",
-   "summary": "Foster parents receive a monthly allowance of $1,100 to $1,800 based on the child's age and needs, and foster children are eligible for childcare, student care and medical subsidies.",
+   "label": "Fostering allowance amounts",
+   "summary": "Foster parents receive a monthly fostering allowance of $1,100 to $1,800 depending on the child's age and needs.",
    "sentences": [
     {
      "sid": "s00015",
@@ -39,19 +45,12 @@
      "attributed": true,
      "text": "Foster parents receive a monthly fostering allowance ranging from $1,100 to $1,800, depending on the child’s age and needs, to help defray childcare and other out-of-pocket expenses.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00016",
-     "speaker": "Mr Goh Pei Ming",
-     "attributed": true,
-     "text": "In addition, foster children are eligible for childcare, student care and medical subsidies.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Access to child's information",
-   "summary": "MSF is working to enhance foster parents' experience by giving them access to the foster child's education and healthcare information through HealthHub and Parents Gateway.",
+   "label": "Foster parents' digital access",
+   "summary": "MSF is working to enhance foster parents' experience by providing access to the foster child's education and healthcare information through HealthHub and Parents Gateway.",
    "sentences": [
     {
      "sid": "s00028",
@@ -71,7 +70,7 @@
   },
   {
    "label": "Monitoring after reintegration",
-   "summary": "Children are monitored for at least 12 months after reintegration, and longer if needed, depending on family circumstances and assessed risk level.",
+   "summary": "Children are monitored for at least 12 months after reintegration, and longer depending on family circumstances and assessed risk.",
    "sentences": [
     {
      "sid": "s00036",
@@ -83,8 +82,8 @@
    ]
   },
   {
-   "label": "Digital access for foster parents",
-   "summary": "The digital access being worked on will let foster parents access the appointment booking system and updates.",
+   "label": "Digital appointment booking access",
+   "summary": "The digital access being worked on will allow appointment booking and updates to be available for foster parents.",
    "sentences": [
     {
      "sid": "s00050",
@@ -108,12 +107,12 @@
    "oral-answer-4106"
   ],
   "sentences_total": 50,
-  "sentences_selected": 9,
-  "sentences_in_sections": 9,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
-  "sections_total": 5,
-  "selection_share": 0.18,
+  "sentences_added_for_context": 1,
+  "sections_total": 6,
+  "selection_share": 0.16,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -122,24 +121,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 5,
+   "sections_total": 6,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 9,
-   "sentences_selected": 9,
-   "turns_cited": 3,
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 5,
    "turns_total": 10,
-   "coverage": 0.3,
+   "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:01:25"
+   "checked_at": "2026-09-20T10:18:41"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2838,
-   "completion_tokens": 317,
+   "prompt_tokens": 2857,
+   "completion_tokens": 324,
    "estimated": false,
-   "cost_usd": 0.000486
+   "cost_usd": 0.000491
   }
  }
 }

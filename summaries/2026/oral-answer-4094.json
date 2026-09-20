@@ -3,7 +3,7 @@
  "what_it_is": "Reviewing Requirement for Advance Medical Directives to be Signed in Doctor's Presence",
  "sections": [
   {
-   "label": "Advance Medical Directive signatories",
+   "label": "Advance Medical Directive signings",
    "summary": "As of February 2026, more than 84,500 individuals have signed the Advance Medical Directive.",
    "sentences": [
     {
@@ -16,28 +16,8 @@
    ]
   },
   {
-   "label": "AMD confidentiality and search requests",
-   "summary": "Strict confidentiality of AMDs is maintained, and operational processes ensure doctors' AMD search requests receive prompt attention, including after office hours.",
-   "sentences": [
-    {
-     "sid": "s00007",
-     "speaker": "Ms Rahayu Mahzam",
-     "attributed": true,
-     "text": "Strict confidentiality of AMDs are maintained to ensure that the knowledge of an AMD does not inappropriately influence treatment decisions before a patient is certified terminally ill.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00008",
-     "speaker": "Ms Rahayu Mahzam",
-     "attributed": true,
-     "text": "We have established operational processes to ensure that AMD search requests made by doctors receive prompt attention, including after regular office hours.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
    "label": "Doctor presence and AMD review",
-   "summary": "A doctor is required because of clinical implications and to ensure soundness of mind, and the AMD process is being reviewed to increase uptake and simplify processes.",
+   "summary": "A doctor is required for clinical implications and soundness of mind, and the AMD process is being reviewed to increase uptake and simplify it.",
    "sentences": [
     {
      "sid": "s00017",
@@ -56,8 +36,8 @@
    ]
   },
   {
-   "label": "AMD Act safeguards and exceptions",
-   "summary": "The AMD Act contains exceptions and safeguards allowing a doctor to describe and explain the process as a concept, to protect against inappropriate use.",
+   "label": "AMD Act safeguards and protocols",
+   "summary": "The AMD Act has exceptions and safeguards against inappropriate use, and records show the directive has been properly exercised.",
    "sentences": [
     {
      "sid": "s00021",
@@ -72,12 +52,26 @@
      "attributed": true,
      "text": "This is governed by the AMD Act and within the Act, there are exceptions, safeguards that say that the doctor can talk about this as a concept, to describe and explain the process, with a view to protect against the inappropriate use of this matter.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "Also, in our assessment, in terms of how the protocols are put in place, we are very conscious that this is a very time-sensitive process in a directive.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "And from our records, it does appear that it has been properly exercised.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Doctors waiting to call Registrar",
-   "summary": "Doctors cannot ask the patient or family members and must wait to call the Registrar to obtain AMD information.",
+   "label": "Doctors waiting for Registrar information",
+   "summary": "Doctors cannot ask patients or family members and must wait to call the Registrar for information.",
    "sentences": [
     {
      "sid": "s00029",
@@ -97,7 +91,7 @@
   },
   {
    "label": "Prompt responses to search requests",
-   "summary": "Assessment shows there have been very prompt responses, even outside office hours, in following through with a search request.",
+   "summary": "Responses to requests for the search have been prompt, even outside office hours.",
    "sentences": [
     {
      "sid": "s00033",
@@ -109,8 +103,8 @@
    ]
   },
   {
-   "label": "Doctor conversations on AMD",
-   "summary": "The AMD Act's section 15(2) exception lets doctors discuss and explain advance medical directives with lucid patients.",
+   "label": "Doctor conversations with lucid patients",
+   "summary": "Nothing stops a doctor from talking with a conscious, lucid patient, and section 15(2) allows explaining AMD broadly.",
    "sentences": [
     {
      "sid": "s00037",
@@ -129,8 +123,8 @@
    ]
   },
   {
-   "label": "Feedback on concerns raised",
-   "summary": "The speaker notes concerns, will take the feedback to colleagues, and see if areas can be sharpened further.",
+   "label": "Feedback on concerns",
+   "summary": "The speaker notes concerns and will take the feedback back to colleagues to see if areas can be sharpened further.",
    "sentences": [
     {
      "sid": "s00041",
@@ -165,7 +159,7 @@
   "sentences_in_sections": 14,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 6,
-  "sections_total": 8,
+  "sections_total": 7,
   "selection_share": 0.3333,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -175,7 +169,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 8,
+   "sections_total": 7,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 14,
@@ -185,14 +179,14 @@
    "coverage": 0.5714,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:04:55"
+   "checked_at": "2026-09-20T10:22:01"
   },
   "usage": {
    "calls": 4,
-   "prompt_tokens": 3079,
-   "completion_tokens": 423,
+   "prompt_tokens": 3069,
+   "completion_tokens": 361,
    "estimated": false,
-   "cost_usd": 0.00055
+   "cost_usd": 0.000531
   }
  }
 }

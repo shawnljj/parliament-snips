@@ -3,8 +3,21 @@
  "what_it_is": "More Outcome-based Work Arrangements, Rather Than Time-based Models",
  "sections": [
   {
-   "label": "Tripartite Guidelines on Flexible Work Requests",
-   "summary": "The Tripartite Guidelines on Flexible Work Arrangement Requests sets out the process for workers to request flexible work arrangements and for employers to consider requests on reasonable business grounds.",
+   "label": "Outcome-based work arrangements benefit",
+   "summary": "Both employers and employees may benefit from outcome-based work arrangements where the job's nature allows.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Parliamentary Secretary to the Minister for Manpower (Mr Shawn Huang Wei Zhong) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "Both employers and employees may benefit from outcome-based work arrangements, where the nature of the job allows.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tripartite Guidelines on flexible work requests",
+   "summary": "The Tripartite Guidelines on Flexible Work Arrangement Requests sets out the process for workers to request flexible work arrangements and for employers to consider them on reasonable business grounds.",
    "sentences": [
     {
      "sid": "s00006",
@@ -12,19 +25,12 @@
      "attributed": true,
      "text": "The Tripartite Guidelines on Flexible Work Arrangement Requests sets out the process for workers to formally request for flexible work arrangements and for employers to consider these requests on reasonable business grounds.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00007",
-     "speaker": "The Senior Parliamentary Secretary to the Minister for Manpower (Mr Shawn Huang Wei Zhong) (for the Minister for Manpower)",
-     "attributed": true,
-     "text": "As part of implementation, employers and workers should mutually agree on the outcomes and how to track them.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Tripartite Advisory on Workplace Mental Health",
-   "summary": "The Tripartite Advisory on Mental Health and Well-being at Workplaces sets out good practices for employers supporting worker well-being, including reasonable expectations of after-hours work communications.",
+   "label": "Tripartite Advisory on workplace mental health",
+   "summary": "The Tripartite Advisory on Mental Health and Well-being at Workplaces sets out good practices for employers supporting workers' well-being, including reasonable after-hours work communication expectations.",
    "sentences": [
     {
      "sid": "s00011",
@@ -36,8 +42,8 @@
    ]
   },
   {
-   "label": "Flexible Work Arrangements Survey Results",
-   "summary": "There is no specific study measuring outcomes between flexible work arrangements and key performance, but NTUC and worker survey results rank flexible work arrangements first in preferred requirements.",
+   "label": "Survey on flexible work arrangement preference",
+   "summary": "No specific study measures outcomes between flexible work arrangements and key performance, but NTUC and worker survey results rank flexible work arrangements first in preferred requirements.",
    "sentences": [
     {
      "sid": "s00016",
@@ -72,7 +78,7 @@
   "sentences_in_sections": 5,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 1,
-  "sections_total": 3,
+  "sections_total": 4,
   "selection_share": 0.1389,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -82,7 +88,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 3,
+   "sections_total": 4,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 5,
@@ -92,14 +98,14 @@
    "coverage": 0.2857,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:18:39"
+   "checked_at": "2026-09-20T10:35:44"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2084,
-   "completion_tokens": 206,
+   "prompt_tokens": 2088,
+   "completion_tokens": 243,
    "estimated": false,
-   "cost_usd": 0.000349
+   "cost_usd": 0.00036
   }
  }
 }

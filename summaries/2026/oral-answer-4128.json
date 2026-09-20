@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Police handling obscene material reports",
-   "summary": "Police investigate obscene material reports, may notify parents of young victims, offer victim care, and direct online service providers to block access.",
+   "summary": "Police investigate obscene material reports, may notify parents, offer victim care, and direct online service providers to block access.",
    "sentences": [
     {
      "sid": "s00002",
@@ -37,8 +37,8 @@
    ]
   },
   {
-   "label": "Arrestable offences and blocking images",
-   "summary": "Police action on intimate image circulation depends on case facts, and Police may direct online service providers to block obscene images.",
+   "label": "Police classification of arrestable offences",
+   "summary": "Police action depends on case facts, and Police may direct online service providers to block obscene images.",
    "sentences": [
     {
      "sid": "s00012",
@@ -107,14 +107,14 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:53:37"
+   "checked_at": "2026-09-20T10:10:41"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1365,
-   "completion_tokens": 142,
+   "prompt_tokens": 1366,
+   "completion_tokens": 134,
    "estimated": false,
-   "cost_usd": 0.000231
+   "cost_usd": 0.000229
   }
  }
 }

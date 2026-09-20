@@ -3,8 +3,8 @@
  "what_it_is": "Impact of Energy Crisis on Hiring Prospects",
  "sections": [
   {
-   "label": "Firms' hiring intention survey",
-   "summary": "MOM's survey shows firms intending to hire fell from 54.6% in February 2026 to 44.6% in March 2026, with early signs of stabilisation in April.",
+   "label": "Firms' hiring intention proportion fell",
+   "summary": "MOM's survey shows the proportion of firms intending to hire in the next three months fell from 54.6% in February 2026 to 44.6% in March 2026.",
    "sentences": [
     {
      "sid": "s00009",
@@ -12,19 +12,12 @@
      "attributed": true,
      "text": "Based on the Ministry of Manpower's (MOM's) survey, the proportion of firms intending to hire in the next three months, fell from 54.6% in February 2026 to 44.6% in March 2026.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00010",
-     "speaker": "Dr Tan See Leng",
-     "attributed": true,
-     "text": "Although expectations remain below February's levels, there were early signs of stabilisation in April.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Work Pass policy calibration",
-   "summary": "The Ministry was asked whether it intends to further calibrate Work Pass policies if Singaporeans, particularly mid-career PMETs, face weaker hiring, and said it has not seen shifts in firms' hiring preferences.",
+   "label": "Work Pass calibration and PMET hiring",
+   "summary": "Asked whether Work Pass policies will be further calibrated if Singaporeans, particularly mid-career PMETs, face weaker hiring, the Ministry says it has not seen shifts in firms' hiring preferences and resident employment grew in Q1 2026.",
    "sentences": [
     {
      "sid": "s00015",
@@ -39,11 +32,18 @@
      "attributed": true,
      "text": "We have not seen any shifts at the moment in firms' hiring preferences.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Dr Tan See Leng",
+     "attributed": true,
+     "text": "Our resident employment continued to grow in the first quarter of 2026, and we just released the report about a week ago.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Employment Pass and S Pass salaries",
+   "label": "Higher Employment Pass and S Pass salaries",
    "summary": "At Budget and the Committee of Supply this year, an increase in Employment Pass and S Pass qualifying salaries was announced, taking effect from January 2027.",
    "sentences": [
     {
@@ -56,7 +56,7 @@
    ]
   },
   {
-   "label": "Crisis and structural shifts",
+   "label": "Crisis accelerating global structural shifts",
    "summary": "The view is that the crisis is likely to accelerate existing structural shifts already underway in the entire global economy.",
    "sentences": [
     {
@@ -69,14 +69,14 @@
    ]
   },
   {
-   "label": "Singapore as trusted hub",
-   "summary": "Singapore's strategic position, goodwill, trust, credibility and reputation will be tested by the crisis, and prevailing would consolidate its position as a trusted hub; the Prime Minister committed to no export restriction, sectors will remain relevant, and decarbonisation targets remain.",
+   "label": "Singapore as trusted hub, no export restriction",
+   "summary": "Singapore's strategic position, goodwill and credibility mean the crisis will test it, and prevailing would consolidate its trusted hub position; the Prime Minister committed to no export restriction, sectors stay relevant, and decarbonisation targets remain.",
    "sentences": [
     {
      "sid": "s00042",
      "speaker": "Dr Tan See Leng",
      "attributed": true,
-     "text": "For Singapore, because we stand at a very strategic crossroad between the East and the West, I believe that given the decades of goodwill, the trust, the credibility and our reputation that we have built as a very reliable partner to many countries, this crisis will test us and if we are able to prevail, I think, it would cement, reinforce and consolidate our position as a trusted hub.",
+     "text": "For Singapore, because we stand at a very strategic crossroad between the East and the West, I believe that given the decades of goodwill, the trust, the credibility and our reputation that we have built as a very reliable partner to many countries, this crisis will test us and if we are able to prevail, I think, it would cement, reinforce and consolidate our position as a trusted hub.",
      "added_for_context": true
     },
     {
@@ -103,7 +103,7 @@
    ]
   },
   {
-   "label": "Economic Strategy Review report",
+   "label": "Economic Strategy Review report draft",
    "summary": "The speaker read the draft of the Economic Strategy Review report, which is going to be released soon.",
    "sentences": [
     {
@@ -159,14 +159,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:51:30"
+   "checked_at": "2026-09-20T10:08:40"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 3110,
-   "completion_tokens": 388,
+   "prompt_tokens": 3129,
+   "completion_tokens": 397,
    "estimated": false,
-   "cost_usd": 0.000544
+   "cost_usd": 0.000549
   }
  }
 }

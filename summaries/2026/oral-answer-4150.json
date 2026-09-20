@@ -3,7 +3,7 @@
  "what_it_is": "Tighter Controls and Real-time Anomaly Detection for SIM Card Purchases, Re-registration Patterns and GSM Gateway Misuse",
  "sections": [
   {
-   "label": "Scam mule SIM card limits",
+   "label": "SIM card limits and scam mules",
    "summary": "Scam mules are barred from new mobile lines since 1 October 2025, and from 28 February 2026 each person is limited to 10 postpaid SIM cards across all telcos.",
    "sentences": [
     {
@@ -30,7 +30,7 @@
    ]
   },
   {
-   "label": "Gateway device SIM slot rule",
+   "label": "Gateway device import approval",
    "summary": "Gateway devices with five or more SIM card slots are prohibited without IMDA's prior approval for import since 1 February 2025.",
    "sentences": [
     {
@@ -56,21 +56,21 @@
    ]
   },
   {
-   "label": "SMS first contact cases drop",
+   "label": "SMS first-contact cases decrease",
    "summary": "Cases with SMS as the first contact method decreased about 65%, from 1,285 cases in 2024 to 450 cases in 2025.",
    "sentences": [
     {
      "sid": "s00035",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
-     "text": "The number of cases with short message service (SMS) as the first contact method has also decreased about 65% – from 1,285 cases in 2024, to 450 cases in 2025.",
+     "text": "The number of cases with short message service (SMS) as the first contact method has also decreased about 65% – from 1,285 cases in 2024, to 450 cases in 2025.",
      "added_for_context": false
     }
    ]
   },
   {
    "label": "SIMCardHowMany checking tool",
-   "summary": "IMDA and GovTech jointly developed SIMCardHowMany, a tool allowing mobile phone users to check the number of postpaid SIM cards registered under their names.",
+   "summary": "IMDA and GovTech jointly developed SIMCardHowMany, which lets mobile phone users check the number of postpaid SIM cards registered under their names.",
    "sentences": [
     {
      "sid": "s00039",
@@ -80,10 +80,10 @@
      "added_for_context": false
     },
     {
-     "sid": "s00040",
+     "sid": "s00041",
      "speaker": "Mr Tan Kiat How",
      "attributed": true,
-     "text": "This allows the members of the public to check their registered SIM cards included within the postpaid limit of 10 SIM cards.",
+     "text": "Persons who discover discrepancies or suspects that postpaid SIM cards have been fraudulently registered under their names should inform their telcos immediately.",
      "added_for_context": false
     }
    ]
@@ -125,12 +125,12 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:51:41"
+   "checked_at": "2026-09-20T10:08:49"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 2042,
-   "completion_tokens": 324,
+   "prompt_tokens": 2050,
+   "completion_tokens": 321,
    "estimated": false,
    "cost_usd": 0.000377
   }

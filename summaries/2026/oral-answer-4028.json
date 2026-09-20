@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "PPHS supply and allocation priority",
-   "summary": "HDB met its 4,000-unit PPHS target at end-2025, with priority tiers and recent invitation rates for flat selection.",
+   "summary": "HDB met its 4,000-unit PPHS target by end-2025, with priority tiers and recent invitation rates for flat selection.",
    "sentences": [
     {
      "sid": "s00003",
@@ -37,7 +37,7 @@
    ]
   },
   {
-   "label": "Steady state and SERS flats",
+   "label": "PPHS steady state and SERS flats",
    "summary": "About 4,000 flats is assessed as the right steady state, alongside Shorter Waiting Time flats and limited SERS vacant flats.",
    "sentences": [
     {
@@ -71,14 +71,21 @@
    ]
   },
   {
-   "label": "PPHS ramp-up due to COVID",
-   "summary": "The PPHS ramp-up came about because of the housing crunch due to the COVID period and building programme difficulties.",
+   "label": "PPHS ramp-up and steady state",
+   "summary": "The PPHS ramp-up followed the COVID housing crunch, and with building caught up, a steady state is anticipated.",
    "sentences": [
     {
      "sid": "s00018",
      "speaker": "Ms Indranee Rajah",
      "attributed": true,
      "text": "The PPHS ramp-up came about really because of the housing crunch due to the COVID period and the difficulties in meeting our building programme.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "But we have caught up with the building programme, we are having more of the Shorter Waiting Time flats, and so, we anticipate we should be able to get to a steady state for the PPHS flats.",
      "added_for_context": false
     }
    ]
@@ -96,12 +103,12 @@
    "oral-answer-4028"
   ],
   "sentences_total": 20,
-  "sentences_selected": 9,
-  "sentences_in_sections": 9,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 1,
+  "sentences_added_for_context": 2,
   "sections_total": 3,
-  "selection_share": 0.45,
+  "selection_share": 0.5,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -113,21 +120,21 @@
    "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 9,
-   "sentences_selected": 9,
+   "sentences_published": 10,
+   "sentences_selected": 10,
    "turns_cited": 2,
    "turns_total": 5,
    "coverage": 0.4,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:40:20"
+   "checked_at": "2026-09-20T10:57:42"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1349,
-   "completion_tokens": 197,
+   "prompt_tokens": 1395,
+   "completion_tokens": 199,
    "estimated": false,
-   "cost_usd": 0.000244
+   "cost_usd": 0.000251
   }
  }
 }

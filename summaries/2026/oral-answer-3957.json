@@ -45,7 +45,7 @@
   },
   {
    "label": "AVS and AWG collaboration",
-   "summary": "AVS and the AWGs discuss and collaborate, and TNRM protocols are being refined.",
+   "summary": "AVS and the AWGs discuss and collaborate, which is why TNRM protocols are being refined.",
    "sentences": [
     {
      "sid": "s00021",
@@ -78,7 +78,7 @@
      "sid": "s00027",
      "speaker": "Mr Alvin Tan",
      "attributed": true,
-     "text": "That is above our target of 70% and that has resulted in a reduction of 80% of feedback cases.",
+     "text": "That is above our target of 70% and that has resulted in a reduction of 80% of feedback cases.",
      "added_for_context": false
     }
    ]
@@ -120,14 +120,14 @@
    "coverage": 0.3333,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:53:37"
+   "checked_at": "2026-09-20T11:11:03"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1841,
-   "completion_tokens": 214,
+   "prompt_tokens": 1844,
+   "completion_tokens": 216,
    "estimated": false,
-   "cost_usd": 0.000318
+   "cost_usd": 0.000319
   }
  }
 }

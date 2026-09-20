@@ -23,8 +23,8 @@
    ]
   },
   {
-   "label": "Renters short of 95-year lease",
-   "summary": "Long-term HDB renters with good income fall a few years short of the 95-year lease requirement, and MND and HDB will consider ways to help them.",
+   "label": "Helping long-term HDB renters",
+   "summary": "Long-term HDB renters with good income fall a few years short of the 95-year lease requirement, and MND and HDB will review ways to help them.",
    "sentences": [
     {
      "sid": "s00010",
@@ -59,7 +59,7 @@
      "speaker": "Mr Chee Hong Tat",
      "attributed": true,
      "text": "But I would say that in helping them, we got to be also mindful that we are helping them not just to find a house for the immediate period, but also for a home that can last them for life.",
-     "added_for_context": false
+     "added_for_context": true
     },
     {
      "sid": "s00016",
@@ -93,7 +93,7 @@
   "sentences_selected": 9,
   "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 2,
+  "sentences_added_for_context": 3,
   "sections_total": 2,
   "selection_share": 0.5294,
   "generated_by": "stage2b_select + stage2c_sections",
@@ -114,14 +114,14 @@
    "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:41:52"
+   "checked_at": "2026-09-20T10:59:12"
   },
   "usage": {
    "calls": 2,
    "prompt_tokens": 1341,
-   "completion_tokens": 148,
+   "completion_tokens": 142,
    "estimated": false,
-   "cost_usd": 0.000229
+   "cost_usd": 0.000228
   }
  }
 }

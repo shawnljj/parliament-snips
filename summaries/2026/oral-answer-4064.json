@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "CDC Vouchers and caregiver support",
-   "summary": "The CDC Vouchers Scheme helps all Singaporean households with daily expenses and is complemented by other support schemes, including caregiver subsidies and concessions.",
+   "summary": "The CDC Vouchers Scheme helps all Singaporean households with daily expenses and is complemented by other support schemes for caregivers and families.",
    "sentences": [
     {
      "sid": "s00002",
@@ -45,7 +45,7 @@
   },
   {
    "label": "Multi-generation households and CDC vouchers",
-   "summary": "A daughter living with a senior parent and her own children cannot appeal for CDC vouchers because they are related, and such households may have eight to nine people.",
+   "summary": "A daughter caring full-time for a senior parent lives with her family, and such related households cannot appeal for CDC vouchers.",
    "sentences": [
     {
      "sid": "s00009",
@@ -79,7 +79,7 @@
   },
   {
    "label": "Calibrating vouchers for larger households",
-   "summary": "If data shows more such households, one way is to look at household size and calibrate the quantum of CDC vouchers for larger households.",
+   "summary": "If data shows more such households, a calibrated approach to CDC voucher quantum for larger households could be considered.",
    "sentences": [
     {
      "sid": "s00015",
@@ -127,14 +127,14 @@
    "coverage": 0.6667,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:18:44"
+   "checked_at": "2026-09-20T10:35:50"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1415,
-   "completion_tokens": 209,
+   "prompt_tokens": 1417,
+   "completion_tokens": 193,
    "estimated": false,
-   "cost_usd": 0.000257
+   "cost_usd": 0.000252
   }
  }
 }

@@ -2,12 +2,12 @@
  "date": "2026-01-12",
  "coverage": {
   "date": "2026-01-12",
-  "collected": 138,
+  "collected": 136,
   "max_result": 139,
-  "ratio": 0.993,
+  "ratio": 0.978,
   "enumeration": "linear+sections",
-  "words": 90682,
-  "turns": 431,
+  "words": 90069,
+  "turns": 426,
   "speaker_attribution": 0.981,
   "empty_reports": 2
  },
@@ -1764,45 +1764,6 @@
    ]
   },
   {
-   "report_id": "written-answer-na-21439",
-   "report_type": "Written Answers to Questions for Oral Answer Not Answered by End of Question Time",
-   "group": "written",
-   "title": "Maintenance, Performance Optimisation and Control Deactivations of Electric Public Bus Fleets in Absence of \"Over-the-air\" Updates",
-   "sitting_date": "12-1-2026",
-   "parliament_no": "15",
-   "sitting_no": "12",
-   "volume_no": "96",
-   "report_version": "sprs3",
-   "mp_names": "Mr Jeffrey Siow,Mr Melvin Yong Yik Chye,Ms Joan Pereira",
-   "words": 396,
-   "turns": [
-    {
-     "speaker": "Ms Joan Pereira",
-     "text": "asked the Acting Minister for Transport regarding the electric public bus fleets from a Chinese manufacturer (a) how does the Land Transport Authority (LTA) independently ensure that (i) the remote controls have been deactivated and (ii) vehicle maintenance and performance is optimised in the absence of over-the-air updates; and (b) what measures and resources have been allocated to boost the cybersecurity of such buses.",
-     "lang": "English",
-     "is_procedural": false,
-     "time": null,
-     "words": 64
-    },
-    {
-     "speaker": "Mr Melvin Yong Yik Chye",
-     "text": "asked the Acting Minister for Transport in view of the growing adoption of electric vehicles in Singapore, including the transition to electric buses, what safeguards, if any, are put in place before any over-the-air updates by the various manufacturers are sent to these electric vehicles.",
-     "lang": "English",
-     "is_procedural": false,
-     "time": null,
-     "words": 45
-    },
-    {
-     "speaker": "Mr Jeffrey Siow",
-     "text": "The Land Transport Authority (LTA) adopts a risk-tiered approach in dealing with cybersecurity for private and public connected vehicles.  For all passengers and goods vehicles, in accordance with the Road Traffic Act, motor dealers have to declare if there are Over-The-Air (OTA) capabilities during the vehicle approval process. When Original Equipment Manufacturers (OEMs) want to deploy significant OTA modifications to vehicles that impact a registered vehicle's safe operations or alter its specifications, such as changes to adaptive cruise control features, they need prior approval from LTA.  Public electric buses are an essential public transport service. Hence, cybersecurity vulnerabilities carry higher risk and impact on public safety and service continuity. In addition to the requirements stipulated under the Road Traffic Act, LTA requires all electric buses in its fleet to comply with the United Nations Economic Commission for Europe Regulation Nos 155 and 156 (R155 and R156). These international standards require OEMs to implement certified cybersecurity controls to prevent, detect and respond to cyber threats across the vehicle lifecycle and ensure OTA updates are secure, authenticated, traceable and recoverable.  LTA has also conducted technical reviews with OEMs of public buses, who have provided assurance that they do not possess remote command capabilities. LTA will conduct additional independent technical assessments to verify this. Any software updates or changes needed today are executed by authorised personnel, on-site at the bus depot using a wired connection, only after LTA has verified the purpose of the updates and given approval.  OTA updates for electric public buses are becoming increasingly prevalent, and they are necessary to patch vehicle software vulnerabilities promptly. LTA is collaborating closely with Government cybersecurity agencies to study how to transit from wired to OTA updates safely for these buses.",
-     "lang": "English",
-     "is_procedural": false,
-     "time": null,
-     "words": 287
-    }
-   ]
-  },
-  {
    "report_id": "written-answer-na-21434",
    "report_type": "Written Answers to Questions for Oral Answer Not Answered by End of Question Time",
    "group": "written",
@@ -2404,37 +2365,6 @@
      "is_procedural": false,
      "time": null,
      "words": 188
-    }
-   ]
-  },
-  {
-   "report_id": "written-answer-na-21408",
-   "report_type": "Written Answers to Questions for Oral Answer Not Answered by End of Question Time",
-   "group": "written",
-   "title": "Holding Preschool Operators Accountable for Deployment of Staff Not Qualified for Child-minding Duties and Adequacy of Current Measures",
-   "sitting_date": "12-1-2026",
-   "parliament_no": "15",
-   "sitting_no": "12",
-   "volume_no": "96",
-   "report_version": "sprs3",
-   "mp_names": "Mr Abdul Muhaimin Abdul Malik,Mr Masagos Zulkifli B M M",
-   "words": 253,
-   "turns": [
-    {
-     "speaker": "Mr Abdul Muhaimin Abdul Malik",
-     "text": "asked the Minister for Social and Family Development (a) how are preschool operators held accountable when child abuse incidents arise from deployment of staff who is unqualified for child-minding duties; (b) what penalties or corrective actions will apply for such cases; (c) whether the Ministry will review the adequacy of current safeguards in preschools; and (d) if so, when will findings of such a review be published.",
-     "lang": "English",
-     "is_procedural": false,
-     "time": null,
-     "words": 67
-    },
-    {
-     "speaker": "Mr Masagos Zulkifli B M M",
-     "text": "Preschools are responsible for ensuring the safety of children under their care and must comply with requirements under the Early Childhood Development Centre Act and Regulations and other prevailing legislation. Operators must seek the Early Childhood Development Agency's (ECDA's) approval for all staff whom they wish to deploy to work in a preschool. They must also establish the necessary systems and processes to ensure child safety, including appropriate deployment and supervision of all staff. ECDA will take action against errant operators, considering the facts of each case. This may include imposing financial penalties, directing the operator to submit and implement a corrective action plan, shortening or revocation of the preschool’s licence. For errant staff, ECDA can impose administrative actions like stern reminders, coupled with a requirement to undergo retraining or cancel approval for the individual to be deployed in the preschool. Child safety and well-being is a key priority for the Ministry for Social and Family Development and ECDA and have been strengthening safeguards for child safety in preschools over the years. We will continue to review and enhance our safeguards and enforcement measures as necessary.",
-     "lang": "English",
-     "is_procedural": false,
-     "time": null,
-     "words": 186
     }
    ]
   },
@@ -3874,6 +3804,37 @@
    ]
   },
   {
+   "report_id": "written-answer-21307",
+   "report_type": "Written Answers to Questions",
+   "group": "written",
+   "title": "Processing Times for Work Injury Compensation Claims Made by Platform Workers and Top Three Reasons for Rejections of Claims",
+   "sitting_date": "12-1-2026",
+   "parliament_no": "15",
+   "sitting_no": "12",
+   "volume_no": "96",
+   "report_version": "sprs3",
+   "mp_names": "Dr Tan See Leng,Ms Yeo Wan Ling",
+   "words": 163,
+   "turns": [
+    {
+     "speaker": "Ms Yeo Wan Ling",
+     "text": "asked the Minister for Manpower in 2025 (a) what is the average processing time for work injury compensation claims by platform workers to receive payout compensation; (b) whether the Ministry tracks the reasons for the rejection of such claims; and (c) if so, what are the top three reasons.",
+     "lang": "English",
+     "is_procedural": false,
+     "time": null,
+     "words": 49
+    },
+    {
+     "speaker": "Dr Tan See Leng",
+     "text": "On average, work injury compensation claims by platform workers are processed within six months from the date of incident report submitted to the Ministry. Under the Work Injury Compensation Regulations, upon the processing of the claim and assuming there are no outstanding notices of objection, the designated insurer must pay out any compensation within 21 days. The main reason for rejection of claims in 2025 was that the injury or disease did not arise out of and in the course of platform work. For example, if the worker was injured while running personal errands in between platform work tasks, this would not be deemed a work injury and would hence be ineligible for claims.",
+     "lang": "English",
+     "is_procedural": false,
+     "time": null,
+     "words": 114
+    }
+   ]
+  },
+  {
    "report_id": "written-answer-21311",
    "report_type": "Written Answers to Questions",
    "group": "written",
@@ -4238,6 +4199,37 @@
    ]
   },
   {
+   "report_id": "written-answer-21309",
+   "report_type": "Written Answers to Questions",
+   "group": "written",
+   "title": "Update Code of Ethics and Professional Client Care for Property Agents to Declare Use of AI-edited Images and Videos of Property Listings",
+   "sitting_date": "12-1-2026",
+   "parliament_no": "15",
+   "sitting_no": "12",
+   "volume_no": "96",
+   "report_version": "sprs3",
+   "mp_names": "Mr Melvin Yong Yik Chye,Mr Chee Hong Tat",
+   "words": 144,
+   "turns": [
+    {
+     "speaker": "Mr Melvin Yong Yik Chye",
+     "text": "asked the Minister for National Development whether the Council for Estate Agencies has any plans to update the Code of Ethics and Professional Client Care to specifically require property agents to declare images and videos portrayed on property listings that have been edited by artificial intelligence.",
+     "lang": "English",
+     "is_procedural": false,
+     "time": null,
+     "words": 46
+    },
+    {
+     "speaker": "Mr Chee Hong Tat",
+     "text": "The Council for Estate Agencies (CEA) Code of Ethics and Professional Client Care requires property agents to ensure that all materials that advertise or promote a property accurately describe the property. In line with this, agents should provide sufficient disclaimers to inform consumers of the use of artificial intelligence (AI) to alter or enhance images or videos, to avoid misleading them. CEA is reviewing its regulatory guidelines to provide clarity to the real estate agency industry on the use of AI in property advertisements. This review aims to balance consumer protection with support for industry innovation and development.",
+     "lang": "English",
+     "is_procedural": false,
+     "time": null,
+     "words": 98
+    }
+   ]
+  },
+  {
    "report_id": "written-answer-21278",
    "report_type": "Written Answers to Questions",
    "group": "written",
@@ -4296,68 +4288,6 @@
      "is_procedural": false,
      "time": null,
      "words": 109
-    }
-   ]
-  },
-  {
-   "report_id": "written-answer-21269",
-   "report_type": "Written Answers to Questions",
-   "group": "written",
-   "title": "Codification of \"Agony of the Moment\" Defence in Penal Code 1871 for Negligent Driving Prosecutions",
-   "sitting_date": "12-1-2026",
-   "parliament_no": "15",
-   "sitting_no": "12",
-   "volume_no": "96",
-   "report_version": "sprs3",
-   "mp_names": "Ms Diana Pang Li Yen,Mr K Shanmugam",
-   "words": 138,
-   "turns": [
-    {
-     "speaker": "Ms Diana Pang Li Yen",
-     "text": "asked the Coordinating Minister for National Security and Minister for Home Affairs whether the common law principle of the \"agony of the moment\" defence will be codified in the Penal Code 1871 for negligent driving prosecutions of motorists who have little or no time to react to sudden and unforeseeable pedestrian or cyclist actions.",
-     "lang": "English",
-     "is_procedural": false,
-     "time": null,
-     "words": 54
-    },
-    {
-     "speaker": "Mr K Shanmugam",
-     "text": "The standard of care required under the relevant offences in the Road Traffic Act and the Penal Code is that of a reasonable and prudent driver. This already includes an assessment of whether the driver was reacting reasonably to a circumstance for which he or she was not responsible. Where the driver acted reasonably, no offence of negligent driving would be disclosed. There is therefore no need to codify the common law concept of \"agony of the moment\" as a defence to negligent driving.",
-     "lang": "English",
-     "is_procedural": false,
-     "time": null,
-     "words": 84
-    }
-   ]
-  },
-  {
-   "report_id": "written-answer-21267",
-   "report_type": "Written Answers to Questions",
-   "group": "written",
-   "title": "Existing Limits and Proposed Standards for Regulation of Emergency Vehicle Siren Noise Levels",
-   "sitting_date": "12-1-2026",
-   "parliament_no": "15",
-   "sitting_no": "12",
-   "volume_no": "96",
-   "report_version": "sprs3",
-   "mp_names": "Ms Valerie Lee,Mr K Shanmugam",
-   "words": 133,
-   "turns": [
-    {
-     "speaker": "Ms Valerie Lee",
-     "text": "asked the Coordinating Minister for National Security and Minister for Home Affairs (a) what are the existing regulations or limits governing siren noise levels for emergency vehicles; and (b) whether the Ministry will consider setting or reviewing such limits to ensure that sirens are calibrated solely to effectively alert other road users while minimising noise impact, especially in residential areas.",
-     "lang": "English",
-     "is_procedural": false,
-     "time": null,
-     "words": 60
-    },
-    {
-     "speaker": "Mr K Shanmugam",
-     "text": "Emergency vehicles, such as ambulances, fire engines and Police vehicles, are equipped with sirens that meet the SAE J1849 international standard, which sets the minimum sound level required to ensure that they are audible enough to be effective as warning devices. These sirens are necessary to ensure that emergency services are able to respond promptly to situations where there may be a threat to life or property. They are only activated when necessary.",
-     "lang": "English",
-     "is_procedural": false,
-     "time": null,
-     "words": 73
     }
    ]
   },

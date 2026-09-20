@@ -4,11 +4,11 @@
  "sections": [
   {
    "label": "Arts gross floor area",
-   "summary": "NAC tracks 94,000 square metres of arts gross floor area, a 42% increase since 2010.",
+   "summary": "NAC tracks total arts gross floor area at 94,000 square metres, a 42% increase since 2010.",
    "sentences": [
     {
      "sid": "s00004",
-     "speaker": "The Minister of State for Culture, Community and Youth (Mr Baey Yam Keng) (for the Minister for",
+     "speaker": "The Minister of State for Culture, Community and Youth (Mr Baey Yam Keng) (for the Minister for Culture, Community and Youth)",
      "attributed": true,
      "text": "Today, the total arts gross floor area tracked by NAC currently stands at 94,000 square metres, which is a 42% increase since 2010.",
      "added_for_context": false
@@ -17,48 +17,55 @@
   },
   {
    "label": "Goodman Arts Centre units and rates",
-   "summary": "Goodman Arts Centre has 77 units; rate increases are deferred in 2026, with rates reviewed at year-end for 2027.",
+   "summary": "Goodman Arts Centre has 77 units, and rate increases are deferred in 2026, with review at year end for 2027.",
    "sentences": [
     {
      "sid": "s00008",
-     "speaker": "The Minister of State for Culture, Community and Youth (Mr Baey Yam Keng) (for the Minister for",
+     "speaker": "The Minister of State for Culture, Community and Youth (Mr Baey Yam Keng) (for the Minister for Culture, Community and Youth)",
      "attributed": true,
      "text": "The Goodman Arts Centre provides a total of 77 units across both short-term venues and longer-term housing options.",
      "added_for_context": false
     },
     {
      "sid": "s00009",
-     "speaker": "The Minister of State for Culture, Community and Youth (Mr Baey Yam Keng) (for the Minister for",
+     "speaker": "The Minister of State for Culture, Community and Youth (Mr Baey Yam Keng) (for the Minister for Culture, Community and Youth)",
      "attributed": true,
      "text": "This includes 26 Project Studios for flexible short-term tenancies of up to 12 months for artists who have project-specific needs and 51 units under the Framework for Arts Spaces scheme which supports arts groups up to nine years and is subvented by NAC at up to 80%.",
      "added_for_context": false
     },
     {
      "sid": "s00010",
-     "speaker": "The Minister of State for Culture, Community and Youth (Mr Baey Yam Keng) (for the Minister for",
+     "speaker": "The Minister of State for Culture, Community and Youth (Mr Baey Yam Keng) (for the Minister for Culture, Community and Youth)",
      "attributed": true,
      "text": "The rental rates for Project Studios were last reviewed in 2012 and the Arts House Group, the appointed operator for the Goodman Arts Centre, has absorbed rising operational costs since then.",
      "added_for_context": false
     },
     {
      "sid": "s00011",
-     "speaker": "The Minister of State for Culture, Community and Youth (Mr Baey Yam Keng) (for the Minister for",
+     "speaker": "The Minister of State for Culture, Community and Youth (Mr Baey Yam Keng) (for the Minister for Culture, Community and Youth)",
      "attributed": true,
      "text": "Although the Arts House Group had begun to engage arts tenants on a rate increase for greater sustainability, it will defer rate increases in 2026 to support arts tenants during this period of heightened economic uncertainty arising from the conflict in the Middle East.",
      "added_for_context": false
     },
     {
      "sid": "s00012",
-     "speaker": "The Minister of State for Culture, Community and Youth (Mr Baey Yam Keng) (for the Minister for",
+     "speaker": "The Minister of State for Culture, Community and Youth (Mr Baey Yam Keng) (for the Minister for Culture, Community and Youth)",
      "attributed": true,
      "text": "NAC and the Arts House Group will review the rates at the end of this year for 2027.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister of State for Culture, Community and Youth (Mr Baey Yam Keng) (for the Minister for Culture, Community and Youth)",
+     "attributed": true,
+     "text": "In parallel, NAC is studying the sector's longer-term needs and has been engaging and consulting the arts sector on their spatial needs and affordability of arts spaces.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Study on arts spaces provision",
-   "summary": "A study on improving arts spaces provision is ongoing, with findings and recommendations to be shared when ready.",
+   "label": "Affordable arts spaces study",
+   "summary": "A study on improving arts spaces provision was announced last year and is ongoing.",
    "sentences": [
     {
      "sid": "s00017",
@@ -72,13 +79,6 @@
      "speaker": "Mr Baey Yam Keng",
      "attributed": true,
      "text": "We have announced last year that we are doing a study on how the arts spaces provision can be better improved and the study is ongoing.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00019",
-     "speaker": "Mr Baey Yam Keng",
-     "attributed": true,
-     "text": "We will be sharing the findings and recommendations when we are ready.",
      "added_for_context": false
     }
    ]
@@ -116,18 +116,18 @@
    "sentences_published": 9,
    "sentences_selected": 9,
    "turns_cited": 2,
-   "turns_total": 5,
-   "coverage": 0.4,
+   "turns_total": 4,
+   "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:01:59"
+   "checked_at": "2026-09-20T10:19:13"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1465,
-   "completion_tokens": 189,
+   "prompt_tokens": 1483,
+   "completion_tokens": 185,
    "estimated": false,
-   "cost_usd": 0.000258
+   "cost_usd": 0.000259
   }
  }
 }

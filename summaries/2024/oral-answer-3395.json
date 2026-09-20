@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Workplace safety penalties and fatality rate",
-   "summary": "The Workplace Safety and Health Act sets maximum fines of $500,000 for organisations and $200,000 for individuals, with up to two years' imprisonment, and the workplace fatality rate improved from 3.1 in 2006 to around 1.0, with a target below 1.0 by 2028.",
+   "summary": "The Workplace Safety and Health Act sets maximum fines of $500,000 for organisations and $200,000 for individuals, with up to two years' imprisonment, and the fatality rate improved from 3.1 in 2006 to around 1.0, with a target below 1.0 by 2028.",
    "sentences": [
     {
      "sid": "s00005",
@@ -64,7 +64,7 @@
    ]
   },
   {
-   "label": "CEs and board directors training",
+   "label": "CE and board training under MAST",
    "summary": "Under MAST, CEs and board of directors must attend courses, as external audits are not sufficient and ownership is needed at senior management level.",
    "sentences": [
     {
@@ -127,14 +127,14 @@
    "coverage": 0.2,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T15:28:39"
+   "checked_at": "2026-09-20T11:14:25"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2938,
+   "prompt_tokens": 2948,
    "completion_tokens": 257,
    "estimated": false,
-   "cost_usd": 0.000483
+   "cost_usd": 0.000485
   }
  }
 }

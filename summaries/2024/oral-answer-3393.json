@@ -3,21 +3,28 @@
  "what_it_is": "Measures to Develop Baseline Artificial Intelligence Literacy of Students",
  "sections": [
   {
-   "label": "AI Student Outreach Programme questions",
-   "summary": "An MP asks about applicant numbers, applicant breakdown by institution type, and plans to increase take-up of the Artificial Intelligence Student Outreach Programme.",
+   "label": "AI literacy and coding questions",
+   "summary": "Questions ask about AI literacy programmes, AI coding plans, launch timing, and whether teachers or third parties run them.",
    "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Ong Hua Han",
+     "attributed": true,
+     "text": "asked the Minister for Education (a) what other programmes beyond the artificial intelligence (AI)-enabled tools on Singapore Student Learning Space will be put in place to develop baseline AI literacy of students; (b) whether there are plans to launch AI coding programmes in the curriculum; (c) if so, when will such programmes be targeted to be launched; and (d) whether such programmes will be run by teachers or third party service providers.",
+     "added_for_context": false
+    },
     {
      "sid": "s00002",
      "speaker": "Mr Ong Hua Han",
      "attributed": true,
-     "text": "asked the Minister for Education (a) how many students have applied to join the Artificial Intelligence Student Outreach Programme; (b) what is the respective percentage of applicants who are from (i) secondary schools (ii) polytechnics (iii) Integrated Programme schools and (iv) junior colleges; and (c) whether there are plans to increase the take-up rate of the programme.",
+     "text": "asked the Minister for Education (a) how many students have applied to join the Artificial Intelligence Student Outreach Programme; (b) what is the respective percentage of applicants who are from (i) secondary schools (ii) polytechnics (iii) Integrated Programme schools and (iv) junior colleges; and (c) whether there are plans to increase the take-up rate of the programme.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "2023 programme applicant breakdown",
-   "summary": "In 2023, close to 17,000 students applied, with 11% from polytechnics, 52% from secondary schools, 11% from IP schools and 3% from junior colleges.",
+   "label": "AI programme applicant breakdown",
+   "summary": "In 2023, close to 17,000 students applied, with 52% secondary, 11% polytechnic, 11% IP, 3% junior college, and 23% others.",
    "sentences": [
     {
      "sid": "s00009",
@@ -25,27 +32,20 @@
      "attributed": true,
      "text": "In 2023, close to 17,000 students applied to join the programme, with the breakdown of applicants as follows: (a) 11% from the polytechnics; (b) 52% from the secondary schools; (c) 11% from the IP schools; and (d) 3% from the junior colleges.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "Students from the autonomous universities and the Institute of Technical Education make up the remaining 23% of applicants.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "AI tools and governance in IHLs",
-   "summary": "IHLs use AI tools in specific domains, have governance frameworks for ethical AI use, and working adults can take AI-related SkillsFuture courses.",
+   "label": "SkillsFuture AI courses for adults",
+   "summary": "Working adults can take AI-related SkillsFuture courses to become smart and secure AI users in their industries.",
    "sentences": [
-    {
-     "sid": "s00014",
-     "speaker": "Mr Chan Chun Sing",
-     "attributed": true,
-     "text": "The IHLs also incorporate the use of AI tools in specific domains to ensure students understand the risks that AI poses, such as the potential to perpetuate misinformation.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00015",
-     "speaker": "Mr Chan Chun Sing",
-     "attributed": true,
-     "text": "They also have governance frameworks to ensure the ethical and responsible use of AI.",
-     "added_for_context": false
-    },
     {
      "sid": "s00016",
      "speaker": "Mr Chan Chun Sing",
@@ -56,8 +56,8 @@
    ]
   },
   {
-   "label": "AI adaptive learning system for mathematics",
-   "summary": "An AI-enabled adaptive learning system for mathematics has been available on the Singapore Student Learning Space for Primary 5 topics since 2023, with more topics to come.",
+   "label": "AI adaptive learning for mathematics",
+   "summary": "An AI-enabled adaptive learning system for mathematics has been available on the Singapore Student Learning Space for Primary 5 topics since 2023.",
    "sentences": [
     {
      "sid": "s00030",
@@ -70,7 +70,7 @@
   },
   {
    "label": "Habits beyond school premises",
-   "summary": "The speaker hopes these habits apply beyond school premises throughout students' lives and says Mr Ong's suggestion will be taken into account.",
+   "summary": "The hope is that these habits apply beyond school premises and throughout students' lives, and Mr Ong's suggestion will be considered.",
    "sentences": [
     {
      "sid": "s00042",
@@ -89,8 +89,35 @@
    ]
   },
   {
-   "label": "Ethical AI learning with technical use",
-   "summary": "MOE agrees learning to use AI is important but ethical use is more important, and will always couple technical AI learning with ethical AI learning.",
+   "label": "AI refining designs and prompts",
+   "summary": "With AI, designs can be refined in perhaps half the time, and students learnt to sharpen the prompts needed to start the process.",
+   "sentences": [
+    {
+     "sid": "s00048",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "First, with AI, they can refine the designs very quickly – using, perhaps, half the time that they used to, using the previous method.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00049",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "But the second thing that they have also learnt and very importantly, is how to sharpen – as the Member said – the prompt required in order to start the whole process.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00050",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "If the prompts are not well-crafted, then, you could be doing things very fast, but not necessarily down the correct path.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Ethical AI use importance",
+   "summary": "Learning to use AI is important, but learning to use AI ethically is even more important.",
    "sentences": [
     {
      "sid": "s00060",
@@ -98,45 +125,38 @@
      "attributed": true,
      "text": "First, we certainly agree that learning to use AI is important, but learning to use AI ethically is even more important.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00061",
-     "speaker": "Mr Chan Chun Sing",
-     "attributed": true,
-     "text": "For us, from MOE's position, we will always couple the learning of the technical use of AI with the ethical use of AI.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Mathematics and logical thinking importance",
-   "summary": "The passage states that mathematics, logical thinking and computational skills are very important.",
+   "label": "Students critiquing AI product",
+   "summary": "Teachers wanted students to know the AI's sources and critique the AI product, understanding its upside, downside and potential biases.",
    "sentences": [
     {
-     "sid": "s00075",
+     "sid": "s00068",
      "speaker": "Mr Chan Chun Sing",
      "attributed": true,
-     "text": "For example, the importance of mathematics, logical thinking, computational skills – these are very important.",
+     "text": "After they crafted the essay, the teachers wanted the students to: first, know the sources of information that the AI draws upon; then, the teachers encouraged the students to critique the AI product so that they can understand the upside and the downside of the product and also, the potential biases that that algorithm has generated.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "PISA results and computational thinking",
-   "summary": "Students did well in PISA in logical thinking and computational thinking traits.",
+   "label": "PISA logical thinking results",
+   "summary": "In recent PISA results, students did well in logical thinking and computational thinking traits.",
    "sentences": [
     {
      "sid": "s00078",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
      "text": "Even in the recent Programme for International Student Assessment (PISA) results, we are glad that our students have done well in terms of their ability to think logically and to exhibit traits of computational thinking.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Equal opportunities and deepfake education",
-   "summary": "The passage asks whether opportunities are evenly available across socio-economic backgrounds and whether youths are educated about deepfake risks.",
+   "label": "Opportunities across socio-economic backgrounds",
+   "summary": "The Member asked whether the described opportunities are evenly available to students across households of diverse socio-economic backgrounds.",
    "sentences": [
     {
      "sid": "s00093",
@@ -144,25 +164,11 @@
      "attributed": true,
      "text": "Can the Minister assure us that the opportunities he described in his answer are evenly available for students across households of diverse social economic backgrounds?",
      "added_for_context": false
-    },
-    {
-     "sid": "s00095",
-     "speaker": "Dr Tan Wu Meng (Jurong)",
-     "attributed": true,
-     "text": "Recently, the Prime Minister, himself, mentioned the risk of deepfake videos.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00096",
-     "speaker": "Dr Tan Wu Meng (Jurong)",
-     "attributed": true,
-     "text": "Are we educating our younger generation to be mindful of deepfakes, the risk of being tricked as well as the risk of deepfake technology being abused against peers in unethical ways?",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Home access and digital divide",
+   "label": "Home learning access and digital divide",
    "summary": "MOE ensured students have laptops, tablets, computers and bandwidth at home, running online and offline systems to avoid a digital divide.",
    "sentences": [
     {
@@ -189,8 +195,8 @@
    ]
   },
   {
-   "label": "Trusted information sources",
-   "summary": "The passage states work is ongoing with MCI and other Ministries, with trusted information sources at the core of the democratic system.",
+   "label": "Working with MCI and Ministries",
+   "summary": "The answer is yes, and they are working closely with MCI and other Ministries to do this.",
    "sentences": [
     {
      "sid": "s00124",
@@ -198,12 +204,25 @@
      "attributed": true,
      "text": "The answer is yes, we are working closely with MCI and other Ministries to do this.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Trust in information, MOE MCI",
+   "summary": "The speaker says reasoned debate and elections require trustworthy information, and that MOE and MCI will work with stakeholders to develop a framework.",
+   "sentences": [
     {
-     "sid": "s00126",
+     "sid": "s00127",
      "speaker": "Mr Chan Chun Sing",
      "attributed": true,
-     "text": "At the crux of it is whether we can have trusted sources of information, which goes to the core of our democratic system.",
+     "text": "We cannot have reasoned debate, elections and so forth, if we cannot trust the information that we are accessing.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00128",
+     "speaker": "Mr Chan Chun Sing",
+     "attributed": true,
+     "text": "So, I think this requires a whole-of-nation effort and, definitely, MOE and MCI will be working closely with all our stakeholders to develop the framework that the Member suggested.",
      "added_for_context": false
     }
    ]
@@ -221,12 +240,12 @@
    "oral-answer-3393"
   ],
   "sentences_total": 128,
-  "sentences_selected": 20,
-  "sentences_in_sections": 20,
+  "sentences_selected": 21,
+  "sentences_in_sections": 21,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 3,
-  "sections_total": 11,
-  "selection_share": 0.1562,
+  "sections_total": 13,
+  "selection_share": 0.1641,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -235,24 +254,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 11,
+   "sections_total": 13,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 20,
-   "sentences_selected": 20,
-   "turns_cited": 8,
-   "turns_total": 15,
-   "coverage": 0.5333,
+   "sentences_published": 21,
+   "sentences_selected": 21,
+   "turns_cited": 9,
+   "turns_total": 14,
+   "coverage": 0.6429,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T15:27:38"
+   "checked_at": "2026-09-20T11:14:06"
   },
   "usage": {
-   "calls": 7,
-   "prompt_tokens": 6477,
-   "completion_tokens": 648,
+   "calls": 8,
+   "prompt_tokens": 6834,
+   "completion_tokens": 730,
    "estimated": false,
-   "cost_usd": 0.001088
+   "cost_usd": 0.001161
   }
  }
 }

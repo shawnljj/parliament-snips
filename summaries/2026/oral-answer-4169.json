@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "SWDA fraud detection and ETSS errors",
-   "summary": "SWDA investigates potential gaming, will make Police reports, and has fixed the IT system and procedures behind erroneous ETSS disbursements.",
+   "summary": "SWDA investigates potential gaming, will make Police reports, rectified erroneous ETSS system logic and revised procedures, with no adverse impact on recipients.",
    "sentences": [
     {
      "sid": "s00003",
@@ -59,7 +59,7 @@
   },
   {
    "label": "ETSS grant and over-disbursement amounts",
-   "summary": "Total ETSS grant disbursed was $4.32 million, with about $2.24 million over-disbursed, as $2.08 million would have been eligible under SkillsFuture Mid-Career Enhanced Subsidy.",
+   "summary": "Total ETSS grant disbursed was $4.32 million, over-disbursement about $2.24 million, as affected companies could have received $2.08 million under SkillsFuture Mid-Career Enhanced Subsidy.",
    "sentences": [
     {
      "sid": "s00015",
@@ -114,14 +114,14 @@
    "coverage": 0.2857,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:42:10"
+   "checked_at": "2026-09-20T09:58:50"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1635,
-   "completion_tokens": 172,
+   "prompt_tokens": 1637,
+   "completion_tokens": 175,
    "estimated": false,
-   "cost_usd": 0.000277
+   "cost_usd": 0.000278
   }
  }
 }

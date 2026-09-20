@@ -3,8 +3,21 @@
  "what_it_is": "Singapore's Vaccine Safety and Efficacy Validation Process, and Submission for Moderna’s mRNA Influenza Vaccine",
  "sections": [
   {
-   "label": "Product approval methodology and standards",
-   "summary": "Singapore's approval system uses expert scientific review of data on quality, safety, efficacy, follow-up and manufacturing standards.",
+   "label": "Moderna mRNA influenza vaccine submission",
+   "summary": "Asks whether HSA received a recent Moderna mRNA influenza vaccine submission and how far Singapore's validation is independent of US and European standards.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Yip Hon Weng",
+     "attributed": true,
+     "text": "asked the Coordinating Minister for Social Policies and Minister for Health (a) whether the Health Sciences Authority (HSA) has received a recent submission for Moderna’s mRNA influenza vaccine; and (b) to what extent Singapore’s safety and efficacy validation process remains independent of the US and European standards.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore vaccine approval methodology",
+   "summary": "Describes Singapore's expert panel review of quality, safety, efficacy, Phase 3 trials, post-market follow-up, GMP compliance and stability data.",
    "sentences": [
     {
      "sid": "s00006",
@@ -70,12 +83,12 @@
    "oral-answer-4057"
   ],
   "sentences_total": 12,
-  "sentences_selected": 7,
-  "sentences_in_sections": 7,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 1,
-  "sections_total": 1,
-  "selection_share": 0.5833,
+  "sections_total": 2,
+  "selection_share": 0.6667,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -84,24 +97,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 1,
+   "sections_total": 2,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 7,
-   "sentences_selected": 7,
-   "turns_cited": 2,
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
    "turns_total": 4,
-   "coverage": 0.5,
+   "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:23:36"
+   "checked_at": "2026-09-20T10:40:47"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1281,
-   "completion_tokens": 85,
+   "prompt_tokens": 1348,
+   "completion_tokens": 147,
    "estimated": false,
-   "cost_usd": 0.000203
+   "cost_usd": 0.00023
   }
  }
 }

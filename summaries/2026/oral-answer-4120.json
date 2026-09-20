@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "HDB rental shop vacancy rates",
-   "summary": "HDB rental shop vacancy rates have stayed low and stable for five years, with churn and trade mix controls ensuring a variety of shops for residents.",
+   "summary": "HDB rental shop vacancy rates have stayed low and stable over five years, with churn and trade mix controls ensuring a variety of shops for residents.",
    "sentences": [
     {
      "sid": "s00002",
@@ -66,11 +66,11 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:02:13"
+   "checked_at": "2026-09-20T10:19:26"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 762,
+   "prompt_tokens": 764,
    "completion_tokens": 78,
    "estimated": false,
    "cost_usd": 0.000129

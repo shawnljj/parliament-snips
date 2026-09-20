@@ -3,8 +3,8 @@
  "what_it_is": "Take-up Rate of SkillsFuture-supported AI-related Training Course",
  "sections": [
   {
-   "label": "AI training subsidies and courses",
-   "summary": "The Government encourages upskilling, supports Singaporeans with course fee subsidies and SkillsFuture Credit, and notes AI courses cost a few hundred to a few thousand dollars after funding.",
+   "label": "AI training and upskilling support",
+   "summary": "The Government encourages lifelong learning and supports Singaporeans with course fee subsidies and SkillsFuture Credit, though AI courses still cost hundreds to thousands of dollars.",
    "sentences": [
     {
      "sid": "s00003",
@@ -30,8 +30,8 @@
    ]
   },
   {
-   "label": "Reviewing AI course signposting",
-   "summary": "The Government will review course signposting and curation, work with industry to map tasks to courses, and track deployment with economic agencies and industry.",
+   "label": "Reviewing AI course signposting and tracking",
+   "summary": "The Government will review course signposting and curation, work with industry to map tasks to courses, and track worker deployment with economic agencies and industry.",
    "sentences": [
     {
      "sid": "s00013",
@@ -44,7 +44,7 @@
      "sid": "s00014",
      "speaker": "Dr Janil Puthucheary",
      "attributed": true,
-     "text": "We are working with the industry to look to see how we develop the list of tasks and map them to the courses – to address his first point.",
+     "text": "We are working with the industry to look to see how we develop the list of tasks and map them to the courses – to address his first point.",
      "added_for_context": false
     },
     {
@@ -114,12 +114,12 @@
    "coverage": 0.8333,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:44:57"
+   "checked_at": "2026-09-20T11:02:33"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1641,
-   "completion_tokens": 159,
+   "prompt_tokens": 1643,
+   "completion_tokens": 158,
    "estimated": false,
    "cost_usd": 0.000274
   }

@@ -4,19 +4,19 @@
  "sections": [
   {
    "label": "Government oversight of Temasek",
-   "summary": "The Government ensures Temasek has a competent board but does not influence its individual investment decisions, and Temasek does not use a conventional reference portfolio.",
+   "summary": "The Government ensures Temasek has a competent board but does not influence its individual investment decisions, and Temasek has no specific reference portfolio.",
    "sentences": [
     {
      "sid": "s00007",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
      "text": "The Government ensures that Temasek has a competent board to oversee its management but does not otherwise influence or direct Temasek's individual investment decisions.",
      "added_for_context": false
     },
     {
      "sid": "s00008",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
      "text": "With regard to Question No 14 on whether Temasek has any performance benchmarks, I had addressed this in the earlier reply; but in short, Temasek does not operate against a specific conventional reference portfolio as it is a direct investor, an investor that is bottom-up.",
      "added_for_context": false
     }
@@ -24,12 +24,12 @@
   },
   {
    "label": "No strategic development requirement",
-   "summary": "Beyond appropriate oversight, Temasek is not required to pursue specific strategic or economic development strategies.",
+   "summary": "Beyond oversight of its investments, Temasek is not required to pursue specific strategic or economic development strategies.",
    "sentences": [
     {
      "sid": "s00013",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
      "text": "Beyond exercising the appropriate oversight over its investments, there is no requirement for Temasek to pursue specific strategic or economic development strategies.",
      "added_for_context": false
     }
@@ -41,16 +41,16 @@
    "sentences": [
     {
      "sid": "s00022",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "Mr Jeffrey Siow",
+     "attributed": true,
      "text": "Ultimately, the Government holds the board of Temasek accountable for delivering good long-term returns on its overall portfolio and that is on the basis of net portfolio performance, after deducting all investment fees and expenses.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Unlisted assets and risk premium",
-   "summary": "Unlisted assets should by definition generate higher returns because they carry a risk premium.",
+   "label": "Listed versus unlisted asset returns",
+   "summary": "Unlisted assets should generate higher returns due to a risk premium, and are valued at book value less potential impairment.",
    "sentences": [
     {
      "sid": "s00036",
@@ -58,32 +58,19 @@
      "attributed": true,
      "text": "As for the difference between listed and unlisted assets, well, unlisted assets, by definition, should generate higher returns because they have a risk premium associated with them.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Global benchmark matches Temasek returns",
-   "summary": "The ACWI IMI global benchmark returned about 7% over 20 years, matching Temasek's 20-year return of 7%.",
-   "sentences": [
-    {
-     "sid": "s00047",
-     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
-     "attributed": true,
-     "text": "If you take a global benchmark, such as the ACWI IMI over a very long term, say 20 years, the returns are more or less about 7%.",
-     "added_for_context": true
     },
     {
-     "sid": "s00048",
-     "speaker": "Assoc Prof Jamus Jerome Lim (Sengkang)",
+     "sid": "s00038",
+     "speaker": "Mr Jeffrey Siow",
      "attributed": true,
-     "text": "And this, as it turns out, matches Temasek's 20-year return of 7%.",
+     "text": "What they do is they value them at the book value, less, I think, the impairment that comes with these assets, the potential impairment.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Comparison of 20-year shareholder returns",
-   "summary": "Both achieved 20-year annualised total shareholder returns of about 8%.",
+   "label": "Twenty-year shareholder returns comparison",
+   "summary": "Both have achieved 20-year annualised total shareholder returns of about 8%.",
    "sentences": [
     {
      "sid": "s00056",
@@ -95,8 +82,8 @@
    ]
   },
   {
-   "label": "Dividend spending and asset management",
-   "summary": "The passage states that the exact spending of dividends and the proportion of listed or unlisted assets managed will not be addressed.",
+   "label": "Dividends and asset proportion limits",
+   "summary": "The Government will not go into how dividends are spent or what proportion of listed or unlisted assets Temasek should manage.",
    "sentences": [
     {
      "sid": "s00064",
@@ -120,12 +107,12 @@
    "oral-answer-3954"
   ],
   "sentences_total": 65,
-  "sentences_selected": 9,
-  "sentences_in_sections": 9,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 1,
-  "sections_total": 7,
-  "selection_share": 0.1385,
+  "sentences_added_for_context": 0,
+  "sections_total": 6,
+  "selection_share": 0.1231,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -134,24 +121,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 7,
+   "sections_total": 6,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 9,
-   "sentences_selected": 9,
-   "turns_cited": 4,
-   "turns_total": 9,
-   "coverage": 0.4444,
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 8,
+   "coverage": 0.375,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:53:34"
+   "checked_at": "2026-09-20T11:11:01"
   },
   "usage": {
-   "calls": 4,
-   "prompt_tokens": 3569,
-   "completion_tokens": 379,
+   "calls": 3,
+   "prompt_tokens": 3363,
+   "completion_tokens": 327,
    "estimated": false,
-   "cost_usd": 0.000606
+   "cost_usd": 0.000562
   }
  }
 }

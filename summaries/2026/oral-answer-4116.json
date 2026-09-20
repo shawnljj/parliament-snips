@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "BTO completion and key collection",
-   "summary": "In 2025 about 30% of BTO blocks completed early, HDB notifies buyers at three junctures, and key collection deferrals may be provided.",
+   "summary": "In 2025 about 30% of BTO blocks completed early, with HDB notifying buyers at three junctures and requiring key collection within a month.",
    "sentences": [
     {
      "sid": "s00002",
@@ -100,12 +100,12 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:02:09"
+   "checked_at": "2026-09-20T10:19:20"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1282,
-   "completion_tokens": 141,
+   "prompt_tokens": 1283,
+   "completion_tokens": 140,
    "estimated": false,
    "cost_usd": 0.000219
   }

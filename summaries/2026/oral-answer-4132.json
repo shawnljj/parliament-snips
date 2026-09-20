@@ -3,8 +3,21 @@
  "what_it_is": "Regulating Young People's Access to Social Media Given Negligent Finding on Meta and Alphabet In US",
  "sections": [
   {
-   "label": "Social media restrictions for young people",
-   "summary": "The Ministry engages digital service providers and prepares parent advisories, but a US judgment held Google and Meta responsible for addictive platforms harming a young plaintiff.",
+   "label": "Regulating young people's social media access",
+   "summary": "Asked whether the Government will consider regulating young people's social media access, including a potential ban, after a US Court found Meta and Alphabet negligent.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Vikram Nair",
+     "attributed": true,
+     "text": "asked the Minister for Digital Development and Information in light of the US Court's finding that Meta and Alphabet were negligent in designing platforms that harmed young people, whether the Government will consider action to regulate young people's access to social media platforms, including a potential ban on such use.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Calls for harder stance on social media",
+   "summary": "Says the Ministry is engaging digital service providers and preparing parent advisories, but calls for a harder stance restricting social media for young people.",
    "sentences": [
     {
      "sid": "s00004",
@@ -30,35 +43,8 @@
    ]
   },
   {
-   "label": "Targeting specific harms and design features",
-   "summary": "The approach targets specific harms and design features producing them, calibrated by user age, which is more demanding than a blanket ban.",
-   "sentences": [
-    {
-     "sid": "s00015",
-     "speaker": "Ms Rahayu Mahzam",
-     "attributed": true,
-     "text": "There are certain dimensions of it that causes the harm.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00016",
-     "speaker": "Ms Rahayu Mahzam",
-     "attributed": true,
-     "text": "And so, our approach targets the specific harms and the specific design features that produce them, and so this is also calibrated by the age of the user.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00017",
-     "speaker": "Ms Rahayu Mahzam",
-     "attributed": true,
-     "text": "And this is actually more demanding, more rigorous than a blanket ban.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Extending age assurance and design measures",
-   "summary": "The Code of Practice for Online Safety exists, action was taken against X and TikTok, and age assurance measures will extend to designated social media services and design features.",
+   "label": "Existing online safety measures and enforcement",
+   "summary": "States there is a Code of Practice for Online Safety, age assurance for apps, annual reporting, action against X and TikTok, and plans to extend age assurance.",
    "sentences": [
     {
      "sid": "s00022",
@@ -72,6 +58,13 @@
      "speaker": "Ms Rahayu Mahzam",
      "attributed": true,
      "text": "We already have the Code of Practice for Online Safety, for the social media services.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Ms Rahayu Mahzam",
+     "attributed": true,
+     "text": "We introduced age assurance for apps and we also have the annual reporting that the designated social media services have to provide to us.",
      "added_for_context": false
     },
     {
@@ -92,7 +85,7 @@
   },
   {
    "label": "Ban decision not foreclosed",
-   "summary": "A ban decision is not foreclosed, as the government will do whatever it takes to protect young ones.",
+   "summary": "States the Government is not foreclosing a decision on a ban and will do whatever it takes to protect young ones.",
    "sentences": [
     {
      "sid": "s00031",
@@ -116,12 +109,12 @@
    "oral-answer-4132"
   ],
   "sentences_total": 41,
-  "sentences_selected": 11,
-  "sentences_in_sections": 11,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 3,
+  "sentences_added_for_context": 2,
   "sections_total": 4,
-  "selection_share": 0.2683,
+  "selection_share": 0.2439,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -133,21 +126,21 @@
    "sections_total": 4,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 11,
-   "sentences_selected": 11,
-   "turns_cited": 2,
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
    "turns_total": 4,
-   "coverage": 0.5,
+   "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:53:24"
+   "checked_at": "2026-09-20T10:10:29"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1867,
-   "completion_tokens": 247,
+   "prompt_tokens": 1893,
+   "completion_tokens": 255,
    "estimated": false,
-   "cost_usd": 0.000331
+   "cost_usd": 0.000336
   }
  }
 }

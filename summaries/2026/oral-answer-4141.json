@@ -3,8 +3,8 @@
  "what_it_is": "Installing Solar-powered Fans at Bus Stops to Improve Commuter Comfort",
  "sections": [
   {
-   "label": "Solar fans at bus stops",
-   "summary": "LTA trials found fans have limited impact on ambient temperature, so there are no plans to install solar-powered fans at bus stops.",
+   "label": "No solar fans at bus stops",
+   "summary": "LTA has no plans to install solar-powered fans at bus stops, citing limited fan impact and shading, and will study other options including green roofs.",
    "sentences": [
     {
      "sid": "s00002",
@@ -37,7 +37,7 @@
    ]
   },
   {
-   "label": "Options need commercial viability",
+   "label": "Options must be viable",
    "summary": "Options worldwide are being looked at, but they need to be commercially viable and available.",
    "sentences": [
     {
@@ -50,28 +50,8 @@
    ]
   },
   {
-   "label": "Mist fans cost and deployment",
-   "summary": "Mist in fans is at an early stage, requires underground water piping, sounds expensive, and may not be deployable across Singapore bus stops.",
-   "sentences": [
-    {
-     "sid": "s00017",
-     "speaker": "Mr Baey Yam Keng",
-     "attributed": true,
-     "text": "So, it is probably still at an early stage and I understand that it will also require some underground water piping to include mist in the fans.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00018",
-     "speaker": "Mr Baey Yam Keng",
-     "attributed": true,
-     "text": "So, this sounds quite expensive and I am not sure whether we will be able to do it and deploy across Singapore at bus stops.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Green roof deployment requirements",
-   "summary": "Green roofs require reinforced roof structures and maintenance access, so they are normally done during scheduled bus stop refurbishment.",
+   "label": "Green roof structural requirements",
+   "summary": "Green roof deployment requires reinforced roof structures and maintenance access, so it is done during scheduled bus stop refurbishment.",
    "sentences": [
     {
      "sid": "s00022",
@@ -90,14 +70,14 @@
    ]
   },
   {
-   "label": "Greening all new bus stops",
-   "summary": "A Member asks for confirmation of plans to green roof all new bus stops, saying greening may not be practical across all bus stops.",
+   "label": "Greening not practical everywhere",
+   "summary": "A Member asks whether all new bus stops will have green roofs, and says greening bus stop roofs may not be practical across all bus stops.",
    "sentences": [
     {
      "sid": "s00031",
      "speaker": "Mr Dennis Tan Lip Fong (Hougang)",
      "attributed": true,
-     "text": "Can I seek the Minister of State's confirmation whether there is actually a plan to green roof all the new bus stops from now on?",
+     "text": "Can I seek the Minister of State's confirmation whether there is actually a plan to green roof all the new bus stops from now on?",
      "added_for_context": true
     },
     {
@@ -105,6 +85,26 @@
      "speaker": "Mr Baey Yam Keng",
      "attributed": true,
      "text": "I would say that the greening of bus stop roofs may not be something that is practical across all bus stops.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Conditions and rejuvenation schedule",
+   "summary": "Conditions must be favourable for a green roof to succeed, and it will be done alongside the regular bus stop rejuvenation schedule.",
+   "sentences": [
+    {
+     "sid": "s00036",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "So, we will have to look at the conditions, whether they are favourable for a green roof to succeed and flourish.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00037",
+     "speaker": "Mr Baey Yam Keng",
+     "attributed": true,
+     "text": "And then, as I said, it will also be done in tandem with the regular schedule of bus stop rejuvenation.",
      "added_for_context": false
     }
    ]
@@ -146,12 +146,12 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:51:44"
+   "checked_at": "2026-09-20T10:08:52"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1919,
-   "completion_tokens": 277,
+   "prompt_tokens": 1917,
+   "completion_tokens": 278,
    "estimated": false,
    "cost_usd": 0.000346
   }

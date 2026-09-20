@@ -3,7 +3,7 @@
  "what_it_is": "Data for Posting Results of PSLE Students in UPLIFT Programme",
  "sections": [
   {
-   "label": "ComLink+ children school outcomes",
+   "label": "ComLink+ families school outcomes",
    "summary": "In 2023 and 2024, about 70% of ComLink+ families with school-going children had all children attending school regularly and progressing to post-secondary institutions.",
    "sentences": [
     {
@@ -11,13 +11,6 @@
      "speaker": "The Minister for Education (Mr Desmond Lee)",
      "attributed": true,
      "text": "According to the latest available data, in 2023 and 2024, about 70% of ComLink+ families with school-going children had all children attending school regularly and progressing to post-secondary education institutions.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00003",
-     "speaker": "The Minister for Education (Mr Desmond Lee)",
-     "attributed": true,
-     "text": "More detailed data is publicly available in the Ministry of Social and Family Development’s (MSF's) “Supporting Lower-Income Households Trends Report”.",
      "added_for_context": false
     },
     {
@@ -30,8 +23,8 @@
    ]
   },
   {
-   "label": "MSF data and wrap-around support",
-   "summary": "The MSF data results from holistic wrap-around support integrating agencies, SSAs, community groups and corporates, with family coaches and school colleagues.",
+   "label": "MSF data on ComLink children",
+   "summary": "The data results from holistic wrap-around support integrating agencies, SSAs, community groups and corporates, with family coaches and school colleagues supporting children and linking with family agencies.",
    "sentences": [
     {
      "sid": "s00014",
@@ -44,21 +37,21 @@
      "sid": "s00015",
      "speaker": "Mr Desmond Lee",
      "attributed": true,
-     "text": "I would say that it is a result of the efforts to provide holistic wrap-around through integration of support from various agencies and SSAs, as well as community groups and corporates.",
+     "text": "I would say that it is a result of the efforts to provide holistic wrap-around through integration of support from various agencies and SSAs, as well as community groups and corporates.",
      "added_for_context": false
     },
     {
      "sid": "s00016",
      "speaker": "Mr Desmond Lee",
      "attributed": true,
-     "text": "It is more data driven, there is a family coach, there are colleagues in the schools brought in, such as special education needs officers, student welfare officers and so on, better to support the children, but also link up with the agencies and SSAs supporting the family.",
+     "text": "It is more data driven, there is a family coach, there are colleagues in the schools brought in, such as special education needs officers, student welfare officers and so on, better to support the children, but also link up with the agencies and SSAs supporting the family.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Community groups, UPLIFT and holistic support",
-   "summary": "Members can link community groups to ComLink Alliance Working Groups, and UPLIFT support provides holistic development, not only academics.",
+   "label": "Community groups and UPLIFT support",
+   "summary": "Community groups provide homework club and mentoring support, Members can link them to ComLink Alliance Working Groups, and UPLIFT provides holistic development and enrichment, not only academics.",
    "sentences": [
     {
      "sid": "s00021",
@@ -117,12 +110,12 @@
    "oral-answer-4016"
   ],
   "sentences_total": 28,
-  "sentences_selected": 12,
-  "sentences_in_sections": 12,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 4,
   "sections_total": 3,
-  "selection_share": 0.4286,
+  "selection_share": 0.3929,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -134,21 +127,21 @@
    "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 12,
-   "sentences_selected": 12,
+   "sentences_published": 11,
+   "sentences_selected": 11,
    "turns_cited": 2,
    "turns_total": 4,
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:40:03"
+   "checked_at": "2026-09-20T10:57:26"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1910,
-   "completion_tokens": 210,
+   "prompt_tokens": 1883,
+   "completion_tokens": 217,
    "estimated": false,
-   "cost_usd": 0.000326
+   "cost_usd": 0.000324
   }
  }
 }

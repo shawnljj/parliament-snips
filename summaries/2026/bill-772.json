@@ -3,8 +3,8 @@
  "what_it_is": "Public Sector (Governance) (Amendment) Bill",
  "sections": [
   {
-   "label": "Digital Government Transactions and Support",
-   "summary": "About 99% of Government transactions are completed digitally, enabling automatic support like U-Save rebates, CDC vouchers, Workfare top-ups and Majulah package.",
+   "label": "Digital government support disbursement",
+   "summary": "About 99% of Government transactions with citizens and businesses are completed digitally, enabling automatic support like U-Save rebates, CDC vouchers and Workfare top-ups.",
    "sentences": [
     {
      "sid": "s00005",
@@ -33,11 +33,18 @@
      "attributed": true,
      "text": "And for our seniors, the Majulah package supports their healthcare and retirement, and the Senior Employment Credit supports their employment at the workplace.",
      "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister of State for Digital Development and Information)",
+     "attributed": true,
+     "text": "When support had to be rolled out quickly and at scale, for example through the Jobs Growth Incentive, the Government could calculate and disburse assistance more efficiently, without placing additional burden on Singaporeans and businesses during this difficult period.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "PSGA Data Sharing Safeguards",
+   "label": "PSGA data sharing safeguards",
    "summary": "Under the amended PSGA, public agencies may share data with trusted external partners only when three safeguards are met.",
    "sentences": [
     {
@@ -57,8 +64,8 @@
    ]
   },
   {
-   "label": "Capability Support and Criminal Offences",
-   "summary": "The Government will work with partners needing capability support, and the Bill introduces criminal offences for individuals in external organisations.",
+   "label": "Criminal offences for external organisations",
+   "summary": "The Bill introduces criminal offences for individuals in external organisations, with help for smaller partners to meet requirements.",
    "sentences": [
     {
      "sid": "s00074",
@@ -77,8 +84,8 @@
    ]
   },
   {
-   "label": "Equal Penalties for External Individuals",
-   "summary": "Individuals in external organisations face the same penalties as public officers for misusing shared data under the expanded PSGA offences.",
+   "label": "Equal penalties for external organisations",
+   "summary": "Individuals in external organisations face the same penalties public officers face for misusing shared data under the expanded PSGA offences.",
    "sentences": [
     {
      "sid": "s00081",
@@ -90,8 +97,21 @@
    ]
   },
   {
-   "label": "Health Information Bill Framework",
-   "summary": "The Government will introduce a Health Information Bill setting out a framework governing information contributed to and accessed from the NEHR.",
+   "label": "MOE data use check",
+   "summary": "As the PSGA was not explicit that MOE's data could be used for other purposes, MOE spent an extra month checking the threshold.",
+   "sentences": [
+    {
+     "sid": "s00089",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister of State for Digital Development and Information)",
+     "attributed": true,
+     "text": "As the PSGA was not explicit that the data MOE had could be used for other purposes, MOE spent an extra month checking if this new use met the threshold for public interest or consent exclusions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Health Information Bill framework",
+   "summary": "The Government will introduce a Health Information Bill setting out a framework for the National Electronic Health Record, complementary to the PSGA.",
    "sentences": [
     {
      "sid": "s00094",
@@ -99,12 +119,19 @@
      "attributed": true,
      "text": "The Government will also be introducing a Health Information Bill (HIB), which will set out a framework governing information contributed to and accessed from the National Electronic Health Record (NEHR).",
      "added_for_context": false
+    },
+    {
+     "sid": "s00096",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister of State for Digital Development and Information)",
+     "attributed": true,
+     "text": "Both the PSGA and the HIB are complementary Bills.",
+     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Cybersecurity Terms and MHA Exception",
-   "summary": "Cybersecurity and data security safeguards matching the HIB will be required through Terms of Use for external partners, with one exception for MHA.",
+   "label": "Cybersecurity safeguards for external partners",
+   "summary": "External partners must meet cybersecurity and data security safeguards through Terms of Use, with one exception for MHA.",
    "sentences": [
     {
      "sid": "s00101",
@@ -123,54 +150,48 @@
    ]
   },
   {
-   "label": "NEHR data shared under PSGA",
-   "summary": "NEHR information for such assessments would be shared under the PSGA for public safety reasons.",
+   "label": "MHA consent and data assessments",
+   "summary": "MHA will seek consent and conduct personal data protection impact assessments, which cannot be waived without consulting MOH.",
    "sentences": [
     {
-     "sid": "s00107",
+     "sid": "s00108",
      "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister of State for Digital Development and Information)",
      "attributed": true,
-     "text": "NEHR information for such assessments would be shared under the PSGA for public safety reasons.",
+     "text": "MHA will seek consent from personnel and conduct personal data protection impact assessments.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00109",
+     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister of State for Digital Development and Information)",
+     "attributed": true,
+     "text": "Both requirements cannot be waived without consulting the Ministry of Health (MOH) first.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Amendments enable support for vulnerable Singaporeans",
-   "summary": "The proposed amendments maintain commitment to protect data while enabling vulnerable Singaporeans to receive faster, targeted and more coordinated support.",
+   "label": "Data sharing benefits for residents",
+   "summary": "Information sharing supports GST Vouchers, Workfare Income Supplement, and business schemes for vulnerable workers.",
    "sentences": [
     {
-     "sid": "s00118",
-     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister of State for Digital Development and Information)",
+     "sid": "s00128",
+     "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
      "attributed": true,
-     "text": "With the proposed amendments, we maintain our commitment to protect data, while addressing the reality that effective service delivery requires trusted partnerships beyond public agencies.",
+     "text": "They are lived realities for our residents and businesses.",
      "added_for_context": true
     },
     {
-     "sid": "s00119",
-     "speaker": "The Minister of State for Digital Development and Information (Ms Jasmin Lau) (for the Minister of State for Digital Development and Information)",
-     "attributed": true,
-     "text": "These amendments will enable vulnerable Singaporeans to receive faster, targeted and more coordinated support, when they need it most.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Debate on oversight and data sharing",
-   "summary": "The debate centred on balancing central oversight with Statutory Board autonomy, whole-of-Government coordination, legal basis for data sharing and consistent governance standards.",
-   "sentences": [
-    {
-     "sid": "s00123",
+     "sid": "s00129",
      "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
      "attributed": true,
-     "text": "Much of that debate centred on how to strike the right balance between central oversight and the operational autonomy of Statutory Boards; how to enable effective whole-of-Government coordination; how to provide a clear legal basis for data sharing across agencies; and how to apply governance standards consistently across public bodies.",
+     "text": "We see this in the seamless sharing of information at the backend: whether in the delivery of the Goods and Services Tax Vouchers (GSTV) and Workfare Income Supplement, or in businesses applying for schemes such as the Enabling Employment Credit and Senior Employment Credit to support vulnerable workers, and many more examples shared by Minister of State earlier.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Bill extends PSGA data sharing",
-   "summary": "The Bill seeks to extend the PSGA's benefits by enabling trusted data sharing with external partners.",
+   "label": "Extending PSGA benefits externally",
+   "summary": "The Bill seeks to extend PSGA benefits by enabling trusted data sharing with external partners.",
    "sentences": [
     {
      "sid": "s00140",
@@ -189,8 +210,8 @@
    ]
   },
   {
-   "label": "Thresholds before data leave public sector",
-   "summary": "It asks what thresholds, principles and public-interest considerations must be met before data move beyond the public sector.",
+   "label": "Thresholds and healthcare data scope",
+   "summary": "Questions cover what thresholds, principles and public-interest considerations apply, and the scope of healthcare data sharing.",
    "sentences": [
     {
      "sid": "s00146",
@@ -198,48 +219,62 @@
      "attributed": true,
      "text": "What thresholds, what principles and public-interest considerations must be met before data move beyond the public sector?",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "GPC recognises many data types",
-   "summary": "The GPC recognises there are many types of data, from anonymised and aggregated to business, economic and sensitive data.",
-   "sentences": [
+    },
     {
-     "sid": "s00154",
+     "sid": "s00148",
      "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
      "attributed": true,
-     "text": "In our deliberations, the GPC recognises that there are many types of data; ranging from anonymised and aggregated data, to business and economic, and sensitive data relating to personal data and critical infrastructure.",
+     "text": "Second, the scope of data sharing, particularly in relation to healthcare data.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Bill extends data sharing externally",
-   "summary": "The Bill seeks to extend benefits through data sharing with organisations outside the public sector.",
+   "label": "Appointing and assessing external partners",
+   "summary": "Once data-sharing is deemed appropriate, the question is how external partners are appointed and assessed.",
    "sentences": [
     {
-     "sid": "s00167",
+     "sid": "s00152",
      "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
      "attributed": true,
-     "text": "Ms Jessica Tan and Mr Henry Kwek will address this.",
-     "added_for_context": true
-    },
+     "text": "Third, once data-sharing is deemed appropriate, how do we appoint and assess external partners?",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Extending data sharing to external partners",
+   "summary": "The Bill extends Public Sector (Governance) Act benefits by sharing data with external partners while protecting Singaporeans' data and requiring high standards.",
+   "sentences": [
     {
      "sid": "s00168",
      "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
      "attributed": true,
+     "text": "(In Malay):   There have been many benefits brought by the Public Sector (Governance) Act in strengthening the Government's service delivery.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00169",
+     "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
+     "attributed": true,
      "text": "This Bill seeks to extend those benefits through data sharing with external partners, namely organisations outside the public sector.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00170",
+     "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
+     "attributed": true,
+     "text": "In this endeavour, it is important for us to enhance our capability to share data securely, protect the data of Singaporeans and ensure that the selected external partners comply with the same high standards that citizens expect from the Government.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Standards for external partners",
-   "summary": "It asks what equivalent standards will be required of external partners as data sharing is extended.",
+   "label": "Standards required of external partners",
+   "summary": "The passage asks what equivalent standards will be required of external partners as data sharing is extended to them.",
    "sentences": [
     {
-     "sid": "s00177",
+     "sid": "s00178",
      "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
      "attributed": true,
      "text": "As we extend data sharing to external partners, what equivalent standards will be required of them?",
@@ -248,11 +283,11 @@
    ]
   },
   {
-   "label": "Differentiated data standards",
-   "summary": "It asks whether standards can differ based on the classification and sensitivity of data shared.",
+   "label": "Differentiated standards by data sensitivity",
+   "summary": "The passage asks whether differentiated standards can apply based on the classification and sensitivity of data shared.",
    "sentences": [
     {
-     "sid": "s00186",
+     "sid": "s00187",
      "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
      "attributed": true,
      "text": "Can there be differentiated standards based on the classification and sensitivity of data shared?",
@@ -261,52 +296,46 @@
    ]
   },
   {
-   "label": "Assurance beyond self-declaration",
-   "summary": "It states assurance cannot rest solely on self-declaration, especially for sensitive data.",
+   "label": "Support, retention and accountability for partners",
+   "summary": "The passage seeks clarification on funding support, data retention, secure deletion, audit trails and how equivalence, compliance and accountability are assured.",
    "sentences": [
     {
-     "sid": "s00190",
+     "sid": "s00195",
      "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
      "attributed": true,
-     "text": "Assurance cannot rest solely on self-declaration, especially when dealing with sensitive data.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Clarifications on external data sharing",
-   "summary": "It seeks clarification on funding, retention, deletion, responsibility and resourcing for external partners sharing data.",
-   "sentences": [
-    {
-     "sid": "s00196",
-     "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
-     "attributed": true,
-     "text": "In this regard, I seek clarification on whether the Government would consider providing support through targeted funding or capability-building programmes to help such partners strengthen their digital resilience.",
+     "text": "Some social service organisations, for example, are exceptionally effective at engaging vulnerable seniors or families in need; yet, may not have the resource or technical capability to immediately meet stringent digital standards.",
      "added_for_context": false
     },
     {
      "sid": "s00197",
      "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
      "attributed": true,
+     "text": "In this regard, I seek clarification on whether the Government would consider providing support through targeted funding or capability-building programmes to help such partners strengthen their digital resilience.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00198",
+     "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
+     "attributed": true,
      "text": "As we approach the Budget period, this may be a timely area for consideration, ensuring that trust and inclusion advance together.",
      "added_for_context": true
     },
     {
-     "sid": "s00198",
+     "sid": "s00199",
      "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
      "attributed": true,
      "text": "I seek clarification on how long external partners may retain this data shared, how proper care, retention and eventual secure deletion of data would be enforced, whether responsibility for ensuring data wiping rests with the individual Ministries or centrally and whether Ministries are adequately resourced to manage these audit trails over time.",
      "added_for_context": false
     },
     {
-     "sid": "s00199",
+     "sid": "s00200",
      "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
      "attributed": true,
      "text": "The question before us is how equivalence is assured, how compliance is enforced and how accountability is maintained when trust is delegated.",
      "added_for_context": false
     },
     {
-     "sid": "s00200",
+     "sid": "s00201",
      "speaker": "Mr Sharael Taha (Pasir Ris-Changi)",
      "attributed": true,
      "text": "These clarifications are intended to ensure that we scale data sharing not just efficiently, but responsibly – delivering the best public good while safeguarding the data, privacy and trust of Singaporeans.",
@@ -315,14 +344,34 @@
    ]
   },
   {
-   "label": "Bill expands data sharing powers",
-   "summary": "The Bill moves from public-agency sharing to authorising data use, sharing with non-public persons and re-identification via Ministerial directions.",
+   "label": "Expanded data sharing through Ministerial directions",
+   "summary": "The Bill expands data sharing to authorise data use, sharing with non-public sector persons and re-identification of anonymised information through Ministerial directions.",
    "sentences": [
     {
-     "sid": "s00207",
+     "sid": "s00208",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "The Bill before us today moves us from a framework that, on the whole, allowed data to be shared between public agencies and subject to rules and regulations about such sharing and use, to one which expands the sharing of data expressly authorising: one, the use of data; two, the sharing of data with non-public sector persons; and three, even the re-identification of previously anonymised information – all through Ministerial directions and further authorisations, that is, data sharing and use directions given by a Minister.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Agencies' difficulties in last five years",
+   "summary": "The passage asks the Minister to clarify how many times in the last five years agencies ran into difficulties providing necessary services.",
+   "sentences": [
+    {
+     "sid": "s00211",
+     "speaker": "Ms He Ting Ru (Sengkang)",
+     "attributed": true,
+     "text": "In this regard, I understand that there will be grounds and limited instances in which data will be shared.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00212",
+     "speaker": "Ms He Ting Ru (Sengkang)",
+     "attributed": true,
+     "text": "However, for a full understanding of the difficulties faced, could the Minister clarify, in the last five years, how many times have agencies run into difficulties in providing necessary services to the community?",
      "added_for_context": false
     }
    ]
@@ -332,7 +381,7 @@
    "summary": "The Bill's amendments let Ministers issue data sharing and use directions and authorise sharing data with non-public sector persons.",
    "sentences": [
     {
-     "sid": "s00220",
+     "sid": "s00221",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "Under the proposed amendments to this Bill, Ministers will be able to issue data sharing and use directions, and be allowed to further authorise sharing of data with non-public sector persons.",
@@ -345,7 +394,7 @@
    "summary": "The question asks what oversight mechanisms ensure a direction is not overly broad or made erroneously.",
    "sentences": [
     {
-     "sid": "s00224",
+     "sid": "s00225",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "Could the Minister thus clarify, what would be the oversight mechanisms to be applied in ensuring that a direction is not overly broad nor made erroneously?",
@@ -355,10 +404,10 @@
   },
   {
    "label": "Commercially sensitive data consideration",
-   "summary": "The question asks whether and how data sharing and use directions require consideration of commercially sensitive data.",
+   "summary": "The question asks whether and how data sharing and use directions will explicitly require consideration of commercially sensitive data.",
    "sentences": [
     {
-     "sid": "s00232",
+     "sid": "s00233",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "Could the Minister thus clarify about whether and how the proposed data sharing and use directions will explicitly require consideration and evaluation of data that could be commercially sensitive?",
@@ -368,10 +417,10 @@
   },
   {
    "label": "Assessment factors for authorisation",
-   "summary": "The question asks whether the Minister must assess listed factors and whether they are documented in writing.",
+   "summary": "The question asks whether the Minister must assess listed factors and whether they are documented in writing for each authorisation.",
    "sentences": [
     {
-     "sid": "s00235",
+     "sid": "s00236",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "For instance, must the Minister assess the sensitivity classification of the data, the proportionality between privacy, intrusion and public benefit, whether less intrusive alternatives exist and the data recipients' security posture, and are these factors documented in writing for each authorisation?",
@@ -381,10 +430,10 @@
   },
   {
    "label": "Re-identification, concerns, breaches, redress",
-   "summary": "The question asks about instances leading to re-identification, avenues to raise concerns, breach communication, and individual redress.",
+   "summary": "The question asks what instances lead to re-identification, avenues to raise concerns, how breaches are communicated, and how individuals seek redress.",
    "sentences": [
     {
-     "sid": "s00240",
+     "sid": "s00241",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "Can the Minister thus clarify: one, what instances would lead to re-identification; two, what avenues exists to raise concerns; three, how will breaches by non-public sector persons be communicated, particularly to affected citizens; and four, how can individuals seek redress in this system that has an increasing number of third-party partners or contractors?",
@@ -394,31 +443,31 @@
   },
   {
    "label": "Strengthening governance of expanded powers",
-   "summary": "The question asks the Minister to consider Parliament updates, clearer recourse for Singaporeans, and safeguarding sensitive information.",
+   "summary": "The speaker asks the Minister to consider how Parliament is updated, how Singaporeans get recourse, and how sensitive information is safeguarded.",
    "sentences": [
     {
-     "sid": "s00246",
+     "sid": "s00247",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "However, I hope that as we expand the executive's discretion about the use of our data out of necessity, we strengthen rather than dilute the governance framework around these increased powers.",
      "added_for_context": true
     },
     {
-     "sid": "s00247",
+     "sid": "s00248",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "Thus, could the Minister consider, first, how Parliament can be kept updated and meaningfully informed about the use of these powers.",
      "added_for_context": false
     },
     {
-     "sid": "s00248",
+     "sid": "s00249",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "Second, how Singaporeans can have clearer avenues for recourse.",
-     "added_for_context": true
+     "added_for_context": false
     },
     {
-     "sid": "s00249",
+     "sid": "s00250",
      "speaker": "Ms He Ting Ru (Sengkang)",
      "attributed": true,
      "text": "And finally, how can commercial and personal sensitive information be more explicitly safeguarded, even if the use and sharing of such data is subject to Ministerial discretion.",
@@ -427,11 +476,11 @@
    ]
   },
   {
-   "label": "Data sharing tied to purposes",
+   "label": "Data sharing public interest purposes",
    "summary": "The amendment Bill requires any data sharing with external partners to remain tied to the seven public interest purposes in the PSGA.",
    "sentences": [
     {
-     "sid": "s00264",
+     "sid": "s00265",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "Under the amendment Bill, any sharing of data with external partners must still be tied to the same seven public interest purposes set out in PSGA.",
@@ -444,7 +493,7 @@
    "summary": "The amendment Bill requires any sharing with external partners to be backed by a Ministerial direction.",
    "sentences": [
     {
-     "sid": "s00269",
+     "sid": "s00270",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "Under the amendment Bill, any sharing with external partners must be backed by a Ministerial direction.",
@@ -453,18 +502,18 @@
    ]
   },
   {
-   "label": "Penalties for external partners",
-   "summary": "The Bill holds external partners receiving public sector data to the same criminal penalties as public officers for misuse, with fines up to $5,000, imprisonment up to two years, or both.",
+   "label": "Criminal penalties for external partners",
+   "summary": "The amendment Bill holds external partners receiving public sector data to the same criminal penalties as public officers for misuse, with fines up to $5,000, imprisonment up to two years, or both.",
    "sentences": [
     {
-     "sid": "s00276",
+     "sid": "s00277",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "The amendment Bill addresses the gap without adding unnecessary compliance burdens for partners, requiring external partners who receive public sector data to be held to the same criminal penalties as public officers if they misuse it, whether through unauthorised disclosure, improper use or re-identifying anonymised information without approval.",
      "added_for_context": false
     },
     {
-     "sid": "s00277",
+     "sid": "s00278",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "These offences carry the same penalties already set out in the PSGA, which are fines of up to $5,000, imprisonment of up to two years, or both.",
@@ -473,25 +522,45 @@
    ]
   },
   {
-   "label": "Risk-based data security approach",
-   "summary": "The speaker suggests agencies adopt a risk-based approach, with deeper technical assessments for higher-risk data flows and a lighter touch for lower-risk projects.",
+   "label": "Question on regular audits",
+   "summary": "A Member asks whether agencies must conduct regular audits to confirm Ministerial direction obligations are met throughout the partnership.",
    "sentences": [
     {
-     "sid": "s00292",
+     "sid": "s00287",
+     "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
+     "attributed": true,
+     "text": "I am glad to hear the Minister of State say in her speech that before sharing data, agencies are responsible for assessing whether each partner has the systems, processes and competencies to handle Government data securely.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00288",
+     "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
+     "attributed": true,
+     "text": "I would suggest and would like to ask if the agencies are also required to conduct regular audits to confirm that the obligations in the Ministerial directions are being met in practice throughout the partnership.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Risk-based data security approach",
+   "summary": "The Member suggests agencies adopt a risk-based approach, with deeper technical assessments for higher-risk data flows and lighter treatment for lower-risk projects, recognising independent certifications or existing audits.",
+   "sentences": [
+    {
+     "sid": "s00293",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "What I am suggesting is not imposing additional burdens.",
      "added_for_context": true
     },
     {
-     "sid": "s00293",
+     "sid": "s00294",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
-     "text": "But I suggest that perhaps we consider not imposing a one‑size‑fits‑all data security burden – I believe the Minister of State did touch on this point – but perhaps that agencies could adopt a risk‑based approach that looks at higher‑risk data flows, undergoing deeper technical assessments, and at lower‑risk or time‑limited projects with a lighter touch.",
+     "text": "But I suggest that perhaps we consider not imposing a one‑size‑fits‑all data security burden – I believe the Minister of State did touch on this point – but perhaps that agencies could adopt a risk‑based approach that looks at higher‑risk data flows, undergoing deeper technical assessments, and at lower‑risk or time‑limited projects with a lighter touch.",
      "added_for_context": false
     },
     {
-     "sid": "s00295",
+     "sid": "s00296",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "Where appropriate, agencies can also recognise independent certifications or existing audits rather than duplicating effort.",
@@ -500,11 +569,11 @@
    ]
   },
   {
-   "label": "Intent of the PSGA",
+   "label": "PSGA intent on secure data use",
    "summary": "The intent of the PSGA is not to prevent the use of data but how to use it securely.",
    "sentences": [
     {
-     "sid": "s00298",
+     "sid": "s00299",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "At the end of the day, the intent of the PSGA is not to prevent the use of data but how to use it securely.",
@@ -513,31 +582,51 @@
    ]
   },
   {
-   "label": "Trust at the heart of the Bill",
-   "summary": "The speaker says the Bill's heart is a promise that Singaporeans' trust will be honoured when they share their information.",
+   "label": "Data breach damage and trust",
+   "summary": "The passage states that once a data breach happens the damage is done, and the Bill centres on honouring trust when Singaporeans share information.",
    "sentences": [
     {
-     "sid": "s00301",
+     "sid": "s00302",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
      "text": "Because once a data breach happens, the damage is already done.",
      "added_for_context": true
     },
     {
-     "sid": "s00302",
+     "sid": "s00303",
      "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
      "attributed": true,
-     "text": "We must remember that at the heart of the Bill is a simple promise – that when Singaporeans share their information, that their trust will be honoured.",
+     "text": "We must remember that at the heart of the Bill is a simple promise – that when Singaporeans share their information, that their trust will be honoured.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Expedited COVID-19 Bill passage",
-   "summary": "The backlash led to the expedited passage in February 2021 of a Bill restricting access to seven serious offence categories.",
+   "label": "PSGA safeguards and TraceTogether access",
+   "summary": "The passage says proactive safeguards make PSGA safeguards real, and notes Singaporeans learned in January 2021 that Police had access to TraceTogether data under the Criminal Procedure Code.",
    "sentences": [
     {
-     "sid": "s00314",
+     "sid": "s00308",
+     "speaker": "Ms Jessica Tan Soon Neo (East Coast)",
+     "attributed": true,
+     "text": "When agencies and external organisations take that proactive approach and put the safeguards in place, the safeguards in the PSGA then become safeguards in practice rather than just on paper, serving Singaporeans effectively and giving Singaporeans confidence that their information is protected every day.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00310",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "In January 2021, Singaporeans learned that Police had access to TraceTogether data under the Criminal Procedure Code.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Expedited COVID-19 Amendment Bill passage",
+   "summary": "The backlash led to expedited passage in February 2021 of the COVID-19 (Temporary Measures) (Amendment) Bill restricting access to seven serious offence categories.",
+   "sentences": [
+    {
+     "sid": "s00315",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "The backlash led to the expedited passage in February 2021 of the COVID-19 (Temporary Measures) (Amendment) Bill restricting access to seven serious offence categories.",
@@ -546,11 +635,11 @@
    ]
   },
   {
-   "label": "Data flow to private companies",
-   "summary": "Data can now flow to private companies, contractors and vendors, and a power to re-identify anonymised information is introduced.",
+   "label": "Data flow and re-identification power",
+   "summary": "The passage states data can now flow to private companies, contractors and vendors, and introduces a power to re-identify anonymised information.",
    "sentences": [
     {
-     "sid": "s00320",
+     "sid": "s00321",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "Data can now flow to private companies, contractors and vendors, and introduces a power to re-identify anonymised information.",
@@ -559,11 +648,11 @@
    ]
   },
   {
-   "label": "Citizen rights under Bill",
-   "summary": "Under this Bill, a citizen has no right to know when their data is shared with a private company.",
+   "label": "Citizens' data sharing rights",
+   "summary": "The passage states citizens have no right to know when data is shared with a private company, no mechanism to find which companies hold it, and no way to ensure benefit from its value.",
    "sentences": [
     {
-     "sid": "s00324",
+     "sid": "s00325",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "Under this Bill, a citizen has no right to know when their data is shared with a private company, no mechanism to find out which companies hold their data and no way to ensure they benefit from the value that data creates.",
@@ -572,18 +661,18 @@
    ]
   },
   {
-   "label": "Call for formal public review",
-   "summary": "The passage asks whether the Minister would commit to a formal public review within five years.",
+   "label": "Proposed formal public review",
+   "summary": "The passage asks whether committing to a review now is better than legislating later, and whether the Minister would commit to a formal public review within five years.",
    "sentences": [
     {
-     "sid": "s00344",
+     "sid": "s00345",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "Would it not be better to commit to a review now, than to legislate in the possible crisis of confidence later?",
      "added_for_context": true
     },
     {
-     "sid": "s00345",
+     "sid": "s00346",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
      "text": "So, question three: would the Minister commit to a formal public review within five years, including the directions issued, the data shared and whether the safeguards have been adequate?",
@@ -592,52 +681,59 @@
    ]
   },
   {
-   "label": "TraceTogether and PSGA data governance",
-   "summary": "TraceTogether showed non-transparency about data sharing has costs, and the PSGA establishes the framework for data governance across public agencies.",
+   "label": "Data sharing transparency commitments",
+   "summary": "Speaker says data sharing needs transparency, citing TraceTogether, and asks for a public register, benefit tracking, five-year review and accountability fixes.",
    "sentences": [
+    {
+     "sid": "s00359",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
+     "attributed": true,
+     "text": "Data will flow to where it creates value.",
+     "added_for_context": true
+    },
     {
      "sid": "s00360",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
-     "text": "TraceTogether taught us that non-transparency about data sharing has costs.",
+     "text": "But we should learn the lessons of TraceTogether.",
      "added_for_context": false
     },
     {
      "sid": "s00361",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
-     "text": "Transparency is what makes data sharing sustainable in the long term.",
+     "text": "TraceTogether taught us that non-transparency about data sharing has costs.",
      "added_for_context": false
     },
     {
      "sid": "s00362",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
-     "text": "So, we will continue to ask for three commitments: a public register, a mechanism to track and report citizen benefit, and a formal review within five years.",
+     "text": "Transparency is what makes data sharing sustainable in the long term.",
      "added_for_context": false
     },
     {
      "sid": "s00363",
      "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
-     "text": "And I have flagged two gaps in organisational accountability that should be addressed.",
+     "text": "So, we will continue to ask for three commitments: a public register, a mechanism to track and report citizen benefit, and a formal review within five years.",
      "added_for_context": false
     },
     {
-     "sid": "s00365",
-     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
+     "sid": "s00364",
+     "speaker": "Mr Kenneth Tiong Boon Kiat (Aljunied)",
      "attributed": true,
-     "text": "The PSGA establishes the overarching framework for data governance across public agencies, including provisions for sharing health data beyond clinical care – for policy planning, service delivery and community outreach.",
+     "text": "And I have flagged two gaps in organisational accountability that should be addressed.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Three layers of safeguards",
-   "summary": "The Bill provides three layers of safeguards for data sharing with external partners, including Ministerial authorisation and criminal penalties for misuse.",
+   "label": "Safeguards for external data sharing",
+   "summary": "The Bill provides three safeguards for data sharing with external partners: Ministerial authorisation, terms of use with data protection requirements, and criminal penalties for misuse.",
    "sentences": [
     {
-     "sid": "s00374",
+     "sid": "s00375",
      "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
      "attributed": true,
      "text": "The Bill provides three layers of safeguards for data sharing with external partners – Ministerial authorisation, terms of use which impose data protection requirements and criminal penalties for misuse.",
@@ -646,51 +742,72 @@
    ]
   },
   {
-   "label": "Health data sharing safeguards",
-   "summary": "Speaker notes the Bill requires individual consent and a Personal Data Protection Impact Assessment for such requests, with MOH oversight, and urges further commitments.",
+   "label": "Health information requests safeguards",
+   "summary": "Speaker notes consent and impact assessment requirements for public sector health information requests, HIB's NEHR prohibition, and urges rarer requests, scrutiny, review and annual reports.",
    "sentences": [
     {
-     "sid": "s00383",
+     "sid": "s00379",
+     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
+     "attributed": true,
+     "text": "A particularly sensitive area involves requests for health information by public sector agencies for employment or insurance purposes.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00380",
+     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
+     "attributed": true,
+     "text": "It is comforting to know that when public sector agencies request health information from MOH for employment or insurance purposes under PSGA, they must first seek consent from individuals and conduct a Personal Data Protection Impact Assessment.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00382",
+     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
+     "attributed": true,
+     "text": "The HIB prohibits NEHR access for employment or insurance purposes to prevent discrimination.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00384",
      "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
      "attributed": true,
      "text": "I note that the Bill requires individual consent and a Personal Data Protection Impact Assessment for such requests, with MOH oversight.",
      "added_for_context": true
     },
     {
-     "sid": "s00384",
+     "sid": "s00385",
      "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
      "attributed": true,
      "text": "But I urge the Government to go further – commit that such requests will be rare and exceptional, subject them to close scrutiny and independent review, and publish annual reports detailing the number and nature of such requests to ensure transparency and accountability.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00385",
-     "speaker": "Dr Choo Pei Ling (Chua Chu Kang)",
-     "attributed": true,
-     "text": "To further enhance trust, I propose that the Government jointly maintain a public register of all use cases where health data has been shared under PSGA for non-health purposes.",
-     "added_for_context": false
     }
    ]
   },
   {
-   "label": "Bill strengthens government help delivery",
-   "summary": "The Bill strengthens the Government's ability to deliver help that is effective, timely and dignified.",
+   "label": "Examples of improved outcomes",
+   "summary": "Speaker asks the Minister of State to share concrete examples across Government of how the Bill will improve outcomes for Singaporeans.",
    "sentences": [
     {
-     "sid": "s00393",
+     "sid": "s00410",
      "speaker": "Mr Kwek Hian Chuan Henry (Kebun Baru)",
      "attributed": true,
-     "text": "At its core, this Bill strengthens the Government’s ability to deliver help that is effective, timely and dignified.",
+     "text": "First, can the Minister of State share a range of concrete examples across the Government of how this Bill will improve outcomes for Singaporeans beyond what she has shared earlier?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Purpose limitation and data minimisation",
-   "summary": "The speaker asks how the Government will ensure purpose limitation and data minimisation in data sharing.",
+   "label": "Principles for sharing data",
+   "summary": "Speaker asks what key principles decide what to share, with whom and how much, and how purpose limitation and data minimisation will be ensured.",
    "sentences": [
     {
      "sid": "s00414",
+     "speaker": "Mr Kwek Hian Chuan Henry (Kebun Baru)",
+     "attributed": true,
+     "text": "What are the key principles for deciding what to share, with whom and how much?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00415",
      "speaker": "Mr Kwek Hian Chuan Henry (Kebun Baru)",
      "attributed": true,
      "text": "How will the Government ensure purpose limitation and data minimisation is done, so that we share what is needed and not more than what is needed, and not longer than what is needed?",
@@ -699,32 +816,24 @@
    ]
   },
   {
-   "label": "Cybersecurity expectations for partners",
-   "summary": "The speaker asks about the Government's approach to cybersecurity expectations, baseline and higher standards, support, and fair assessment of responsibility after incidents.",
+   "label": "Cybersecurity expectations across partners",
+   "summary": "Speaker asks the Minister of State for the Government's approach to setting cybersecurity expectations that are robust, clear and workable across different partners.",
    "sentences": [
-    {
-     "sid": "s00421",
-     "speaker": "Mr Kwek Hian Chuan Henry (Kebun Baru)",
-     "attributed": true,
-     "text": "With that in mind, I would like to ask the Minister of State the Government’s approach to setting cybersecurity expectations that are robust but also clear and workable across different partners?",
-     "added_for_context": false
-    },
     {
      "sid": "s00422",
      "speaker": "Mr Kwek Hian Chuan Henry (Kebun Baru)",
      "attributed": true,
-     "text": "For example, what is the baseline standard for all partners and what higher standards must apply for more sensitive data and what support will be given to help partners meet these standards?",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00423",
-     "speaker": "Mr Kwek Hian Chuan Henry (Kebun Baru)",
-     "attributed": true,
-     "text": "And the next point, and an important point, if a serious incident happens despite reasonable safeguards by these partners, given how widespread cybersecurity breaches are globally, how will the Government assess responsibility in a way that is fair, firm and predictable so that our partners have clarity and confidence to work with us?",
+     "text": "With that in mind, I would like to ask the Minister of State the Government’s approach to setting cybersecurity expectations that are robust but also clear and workable across different partners?",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Public Service Governance Bill data sharing",
+   "summary": "The Public Service (Governance) Bill lets public agencies share and use data across agencies and with non-public sector partners.",
+   "sentences": [
     {
-     "sid": "s00425",
+     "sid": "s00426",
      "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
      "attributed": true,
      "text": "As Minister of State Jasmin Lau shared, I note that in tandem with the HIB, the Public Service (Governance) Bill complements and allows the Government to deliver better social services to Singaporeans nationwide, by permitting public agencies to share and use data across agencies, as well as with non-public sector partners.",
@@ -733,11 +842,11 @@
    ]
   },
   {
-   "label": "Safeguards for non-public sector data",
-   "summary": "The speaker asks the Minister to clarify safeguards ensuring data shared with non-public sector organisations is safe from cyberattacks and breaches.",
+   "label": "Safeguards for shared data",
+   "summary": "The Member asks the Minister what safeguards will protect data shared with non-public sector organisations from cyberattacks and breaches.",
    "sentences": [
     {
-     "sid": "s00431",
+     "sid": "s00432",
      "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
      "attributed": true,
      "text": "First, I would like to ask the Minister to clarify what safeguards will be put in place to ensure that data shared with non-public sector organisations is safe from malicious third-party cyberattacks and data breaches.",
@@ -747,17 +856,17 @@
   },
   {
    "label": "External partners maintaining safeguards",
-   "summary": "The speaker asks how external partners will be expected to keep up and maintain safeguards before receiving shared data from public agencies.",
+   "summary": "The Member asks how external partners will be expected to keep up and maintain safeguards before receiving shared data from public agencies.",
    "sentences": [
     {
-     "sid": "s00436",
+     "sid": "s00437",
      "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
      "attributed": true,
      "text": "As hackers use sophisticated techniques to evade detection, they lurk in networks to spy over the long term, to steal sensitive information or disrupt essential services, among other objectives.",
      "added_for_context": true
     },
     {
-     "sid": "s00437",
+     "sid": "s00438",
      "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
      "attributed": true,
      "text": "Therefore, my question is, how will external partners be expected to keep up and maintain safeguards, before they can receive shared data from public agencies?",
@@ -766,90 +875,71 @@
    ]
   },
   {
-   "label": "PDPA financial penalties",
-   "summary": "Under the PDPA, the Personal Data Protection Commission can impose financial penalties for intentional or negligent contraventions.",
+   "label": "Offence for improper data disclosure",
+   "summary": "The amendment states it is an offence for employees or officers of non-public sector organisations to improperly disclose or use data.",
    "sentences": [
     {
-     "sid": "s00447",
+     "sid": "s00443",
      "speaker": "Mr Cai Yinzhou (Bishan-Toa Payoh)",
      "attributed": true,
-     "text": "For example, under the PDPA, the Personal Data Protection Commission can impose financial penalties against an organisation for intentional or negligent contraventions of PDPA.",
+     "text": "The amendment currently states that it is an offence for organisations to carry out improper disclosure or use of data/information by individual employees or officers of non-public sector organisations.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Bill addresses data sharing blind spot",
-   "summary": "The Bill seeks to address a blind spot by enabling responsible data sharing beyond the public sector.",
+   "label": "Ministerial authorisation for sharing information",
+   "summary": "Under amended sections 4(5) to 4(8), a public agency may share information with non-public sector persons only with further Ministerial authorisation.",
    "sentences": [
     {
-     "sid": "s00454",
+     "sid": "s00458",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "It is people, especially the vulnerable, who fall through the cracks.",
-     "added_for_context": true
+     "text": "Under the amended sections 4(5) to 4(8), a public agency may share information with non-public sector persons only with further authorisation from the Minister.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Auditable register and penalties",
+   "summary": "The Member asks about an auditable register of authorisations and whether penalties of up to $5,000 or two years' imprisonment deter negligence.",
+   "sentences": [
+    {
+     "sid": "s00490",
+     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
+     "attributed": true,
+     "text": "Third, could the Government consider maintaining an auditable register of future authorisations, with anonymised statistics published annually?",
+     "added_for_context": false
     },
     {
-     "sid": "s00455",
-     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
-     "attributed": true,
-     "text": "This Bill seeks to address that blind spot by enabling responsible data sharing beyond the public sector.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Offences for unauthorised data disclosure",
-   "summary": "The Bill introduces offences for unauthorised disclosure of non-personal data by employees of external partners, with penalties.",
-   "sentences": [
-    {
-     "sid": "s00491",
+     "sid": "s00492",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
      "text": "The Bill introduces offences for unauthorised disclosure of non-personal data by employees of external partners, with penalties of up to $5,000 or two years' imprisonment.",
      "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Megan Khung's death",
-   "summary": "Four-year-old Megan Khung did not die because no one cared.",
-   "sentences": [
+    },
     {
-     "sid": "s00501",
+     "sid": "s00493",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
-     "text": "Four-year-old Megan Khung did not die because no one cared.",
+     "text": "Where large datasets are mishandled, will these penalties sufficiently deter negligence?",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "System saw parts, not whole",
-   "summary": "Each saw a part of the picture, but the system never saw clearly, early enough or as one.",
+   "label": "External partners data standards",
+   "summary": "PAP MPs stressed external partners must meet the same high standards as the Government, with public interest tests, oversight and accountability, and alignment with the upcoming HIB.",
    "sentences": [
     {
-     "sid": "s00504",
-     "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
-     "attributed": true,
-     "text": "Each saw a part of the picture, but the system never saw clearly, early enough or as one.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "External partners must meet standards",
-   "summary": "PAP MPs stressed external partners must meet the same high standards as the Government, with public interest tests and oversight.",
-   "sentences": [
-    {
-     "sid": "s00511",
+     "sid": "s00512",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
      "text": "Many PAP MPs today have rightly stressed that when data leaves the public sector, external partners must meet the same high standards as the Government.",
      "added_for_context": false
     },
     {
-     "sid": "s00512",
+     "sid": "s00513",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
      "text": "With clear public interest tests, stronger oversight and firm accountability, including how this Bill aligns with the HIB that is upcoming.",
@@ -858,25 +948,25 @@
    ]
   },
   {
-   "label": "Data use commitment",
-   "summary": "The commitment is to use data to protect and share data to connect, not to stigmatise or surveil.",
+   "label": "Commitment on data use",
+   "summary": "The commitment is to use data to protect, not stigmatise, and to share data to connect, not surveil.",
    "sentences": [
     {
-     "sid": "s00515",
+     "sid": "s00516",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
      "text": "So, let us be clear about our commitment.",
      "added_for_context": true
     },
     {
-     "sid": "s00516",
+     "sid": "s00517",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
      "text": "We will use data to protect, not to stigmatise.",
      "added_for_context": false
     },
     {
-     "sid": "s00517",
+     "sid": "s00518",
      "speaker": "Mr Yip Hon Weng (Yio Chu Kang)",
      "attributed": true,
      "text": "We will share data to connect, not to surveil.",
@@ -885,35 +975,60 @@
    ]
   },
   {
-   "label": "Further authorisation for external sharing",
-   "summary": "A second layer of checks, further authorisation, is added for sharing with external partners, requiring deliberation and Minister sign off.",
+   "label": "Clear public service objective",
+   "summary": "Data will only be shared when there is a clear public service objective.",
    "sentences": [
     {
-     "sid": "s00556",
+     "sid": "s00526",
+     "speaker": "Ms Jasmin Lau",
+     "attributed": true,
+     "text": "Likewise, data will only be shared when there is a clear public service objective.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Further authorisation second layer",
+   "summary": "The Bill adds a second layer of checks called the further authorisation for cases of sharing with external partners.",
+   "sentences": [
+    {
+     "sid": "s00557",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
      "text": "What we are adding is a second layer of checks referred to as the \"further authorisation\" in the Bill for cases of sharing with external partners.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00558",
-     "speaker": "Ms Jasmin Lau",
-     "attributed": true,
-     "text": "Before data is shared with external partners, it must go through careful deliberation within the Public Service, culminating in a sign off by the Minister or his or her delegate.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00559",
-     "speaker": "Ms Jasmin Lau",
-     "attributed": true,
-     "text": "Each authorisation must clearly state the purpose for sharing the scope of data to be shared and the specific external parties receiving the data.",
-     "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Authorisation states purpose and parties",
+   "summary": "Each authorisation must clearly state the purpose for sharing, the scope of data to be shared, and the specific external parties receiving the data.",
+   "sentences": [
     {
      "sid": "s00560",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
-     "text": "To Mr Yip's question on the delegation of Minister's authorisation, delegation if done, will only be to the senior leadership level of the Public Service.",
+     "text": "Each authorisation must clearly state the purpose for sharing the scope of data to be shared and the specific external parties receiving the data.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Assessing external partner safeguards",
+   "summary": "Public agencies must assess the external partner's ability to meet the Terms of Use and impose them, including data security and protection safeguards.",
+   "sentences": [
+    {
+     "sid": "s00564",
+     "speaker": "Ms Jasmin Lau",
+     "attributed": true,
+     "text": "Even if there is a valid purpose and proper authorisation, public agencies must assess the external partner's ability to meet the requirements in the Terms of Use and impose these terms on them.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00565",
+     "speaker": "Ms Jasmin Lau",
+     "attributed": true,
+     "text": "These Terms of Use will include data security and protection safeguards, such as using anti-malware software with up-to-date signatures and performing regular vulnerability assessments.",
      "added_for_context": false
     }
    ]
@@ -923,7 +1038,7 @@
    "summary": "Where identifiable personal data is not needed, anonymised data will be provided to external partners instead.",
    "sentences": [
     {
-     "sid": "s00574",
+     "sid": "s00575",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
      "text": "The starting point is this: where identifiable personal data is not needed, anonymised data will be provided to external partners instead.",
@@ -933,10 +1048,10 @@
   },
   {
    "label": "Health information employment insurance rules",
-   "summary": "Health information used for employment and insurance purposes has additional requirements to seek consent and conduct a data protection impact assessment.",
+   "summary": "Health information used for employment and insurance purposes has additional Public Service requirements to seek consent and conduct a data protection impact assessment under the PSGA.",
    "sentences": [
     {
-     "sid": "s00577",
+     "sid": "s00578",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
      "text": "In the instance of health information, which Dr Choo had asked about, for health information that is used for employment and insurance purposes in particular, there will be additional requirements under the Public Service's rules to seek consent and to conduct a personal data protection impact assessment under the PSGA.",
@@ -945,11 +1060,24 @@
    ]
   },
   {
-   "label": "Tiering cybersecurity requirements",
-   "summary": "Tiering cybersecurity requirements so smaller entities face less stringent standards is not advisable.",
+   "label": "Re-identification for public sector objectives",
+   "summary": "Re-identification of anonymised data can be allowed only when it meets public sector objectives.",
    "sentences": [
     {
-     "sid": "s00595",
+     "sid": "s00582",
+     "speaker": "Ms Jasmin Lau",
+     "attributed": true,
+     "text": "Re-identification of anonymised data can be allowed only when it meets public sector objectives.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tiering cybersecurity requirements not advisable",
+   "summary": "Tiering cybersecurity requirements so that smaller entities face less stringent standards is not advisable, though well-intentioned.",
+   "sentences": [
+    {
+     "sid": "s00596",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
      "text": "While well-intentioned, tiering cybersecurity requirements so that smaller entities face less stringent standards is not advisable.",
@@ -958,24 +1086,25 @@
    ]
   },
   {
-   "label": "PDPC financial penalties",
-   "summary": "The Personal Data Protection Commission can impose financial penalties on organisations for intentional or negligent contraventions.",
+   "label": "Bill amends PDPA offences",
+   "summary": "The Bill amends the PDPA so offences relating to personal data still apply, covering all Government-shared data under PDPA or PSGA penalties.",
    "sentences": [
     {
-     "sid": "s00605",
+     "sid": "s00611",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
-     "text": "The Personal Data Protection Commission (PDPC) can impose financial penalties on organisations for intentional or negligent contraventions.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Penalties aligned with PDPA and PSGA",
-   "summary": "Penalties are aligned with current PDPA offences for external partners and PSGA offences for public officials.",
-   "sentences": [
+     "text": "The Bill amends the PDPA to make clear that offences relating to personal data under the PDPA will still apply so that individuals that intentionally carry out unauthorised actions can be taken to task.",
+     "added_for_context": true
+    },
     {
-     "sid": "s00613",
+     "sid": "s00612",
+     "speaker": "Ms Jasmin Lau",
+     "attributed": true,
+     "text": "And this means that all data shared by Government, be it personal or non-personal data, is covered either by PDPA or PSGA in terms of penalties for misuse.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00614",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
      "text": "The penalties are aligned with current PDPA offences for external partners and PSGA offences for public officials.",
@@ -984,24 +1113,31 @@
    ]
   },
   {
-   "label": "Liability assessed in context",
-   "summary": "Liability is assessed by looking at all facts and circumstances, including the incident's nature, safeguards, and parties' actions and response.",
+   "label": "Significant data incident notification requirements",
+   "summary": "Public agencies must be accountable for significant data incidents, and affected individuals will be notified unless it would adversely impact public interest.",
    "sentences": [
     {
-     "sid": "s00623",
+     "sid": "s00618",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
-     "text": "Liability is assessed in context: we look at all of the facts and the circumstances, and we consider the nature of the incident, whether reasonable safeguards were in place, and the actions of the parties involved, including their response to the incident.",
+     "text": "When significant data incidents occur, we have strict requirements for public agencies to be accountable to the public and to affected individuals.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00619",
+     "speaker": "Ms Jasmin Lau",
+     "attributed": true,
+     "text": "And when incidents are likely to result in significant harm or impact on individuals or entities, affected individuals will be notified, except where it would adversely impact public interest.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Parliament restricted TraceTogether data use",
-   "summary": "Parliament passed the COVID-19 (Temporary Measures) (Amendment) Bill to restrict the use of TraceTogether data to serious offences.",
+   "label": "TraceTogether data use restricted",
+   "summary": "Parliament passed a Bill amending the COVID-19 (Temporary Measures) Act to restrict TraceTogether data use to serious offences.",
    "sentences": [
     {
-     "sid": "s00629",
+     "sid": "s00630",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
      "text": "Parliament subsequently passed the COVID-19 (Temporary Measures) (Amendment) Bill to restrict the use of TraceTogether data to serious offences.",
@@ -1010,31 +1146,45 @@
    ]
   },
   {
-   "label": "Opting out causes incomplete data",
-   "summary": "Allowing individuals to opt out would lead to incomplete data, fundamentally undermining planning, policy formulation and service delivery.",
+   "label": "Clarifying non-personal data liability",
+   "summary": "A member asks whether organisational statutory liability exists for non-personal data and requests a public register of Ministerial directions.",
    "sentences": [
     {
-     "sid": "s00637",
-     "speaker": "Ms Jasmin Lau",
+     "sid": "s00655",
+     "speaker": "Mr Kenneth Tiong Boon Kiat",
      "attributed": true,
-     "text": "Allowing individuals to opt out would lead to incomplete data, which will fundamentally undermine our ability to plan, formulate policies and deliver services.",
+     "text": "I just want to clarify, because I think she may have misunderstood what was my fifth question.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00656",
+     "speaker": "Mr Kenneth Tiong Boon Kiat",
+     "attributed": true,
+     "text": "I was saying that there is no organisational statutory liability for those handling non-personal data, and I think she made some references to contractual obligations as well as something about personal — so, I just want to clarify that it is organisational statutory liability for non-personal data, does it exist or not?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00657",
+     "speaker": "Mr Kenneth Tiong Boon Kiat",
+     "attributed": true,
+     "text": "Another thing I would like to bring up, which I do not think she has answered, is my request for a public register of all these Ministerial directions.",
      "added_for_context": false
     }
    ]
   },
   {
-   "label": "Australia principle and existing PDPA",
-   "summary": "Australia does it as a sound legislative principle, and organisations misusing data face the existing PDPA and Terms of Use.",
+   "label": "Organisations liable for data misuse",
+   "summary": "A member says organisations are liable for data misuse under the existing PDPA and Terms of Use, citing Australia as an example.",
    "sentences": [
     {
-     "sid": "s00660",
+     "sid": "s00661",
      "speaker": "Mr Kenneth Tiong Boon Kiat",
      "attributed": true,
      "text": "Australia does it, and I think it is quite a sound legislative principle. so, these are my supplementary questions for now.",
      "added_for_context": true
     },
     {
-     "sid": "s00661",
+     "sid": "s00662",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
      "text": "I spent quite a bit of time just now explaining how organisations will be liable if they misuse data: there is an existing PDPA, as well as Terms of Use.",
@@ -1043,48 +1193,14 @@
    ]
   },
   {
-   "label": "Public register and PSGA objectives",
-   "summary": "The public register will be considered as experience with the Bill grows, and the PSGA only allows data sharing for Public Service objectives.",
+   "label": "Public register considered later",
+   "summary": "A speaker says the public register will be considered as feasible as more experience with the Bill is gained.",
    "sentences": [
-    {
-     "sid": "s00664",
-     "speaker": "Ms Jasmin Lau",
-     "attributed": true,
-     "text": "On the point about public register, I think I mentioned in my speech, that we will consider what is possible, what is feasible, as we get more experience with the Bill.",
-     "added_for_context": false
-    },
     {
      "sid": "s00665",
      "speaker": "Ms Jasmin Lau",
      "attributed": true,
-     "text": "The reason why I said that the Member may have misunderstood was that the point raised earlier was about whether our citizens will benefit from the data sharing.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00666",
-     "speaker": "Ms Jasmin Lau",
-     "attributed": true,
-     "text": "I needed to clarify that the PSGA only allows for data sharing for Public Service objectives.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Five-year review period request",
-   "summary": "A Member asks the Minister of State to respond on the five-year review period point and says the Government will review what is feasible as experience with the Bill grows.",
-   "sentences": [
-    {
-     "sid": "s00669",
-     "speaker": "Mr Kenneth Tiong Boon Kiat",
-     "attributed": true,
-     "text": "And second of all, could the Minister of State respond on my five-year review period point, please.",
-     "added_for_context": true
-    },
-    {
-     "sid": "s00670",
-     "speaker": "Ms Jasmin Lau",
-     "attributed": true,
-     "text": "And I think on the second question, we have said that we will review what is feasible as we gain more experience with this Bill.",
+     "text": "On the point about public register, I think I mentioned in my speech, that we will consider what is possible, what is feasible, as we get more experience with the Bill.",
      "added_for_context": false
     }
    ]
@@ -1101,13 +1217,13 @@
   "report_ids": [
    "bill-772"
   ],
-  "sentences_total": 674,
-  "sentences_selected": 103,
-  "sentences_in_sections": 103,
+  "sentences_total": 675,
+  "sentences_selected": 117,
+  "sentences_in_sections": 117,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 19,
-  "sections_total": 61,
-  "selection_share": 0.1528,
+  "sentences_added_for_context": 22,
+  "sections_total": 64,
+  "selection_share": 0.1733,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -1116,24 +1232,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 61,
+   "sections_total": 64,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 103,
-   "sentences_selected": 103,
-   "turns_cited": 15,
+   "sentences_published": 117,
+   "sentences_selected": 117,
+   "turns_cited": 13,
    "turns_total": 19,
-   "coverage": 0.7895,
+   "coverage": 0.6842,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:52:47"
+   "checked_at": "2026-09-20T11:10:14"
   },
   "usage": {
    "calls": 32,
-   "prompt_tokens": 29274,
-   "completion_tokens": 3302,
+   "prompt_tokens": 29767,
+   "completion_tokens": 3697,
    "estimated": false,
-   "cost_usd": 0.005023
+   "cost_usd": 0.005203
   }
  }
 }

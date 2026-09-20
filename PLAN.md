@@ -320,6 +320,15 @@ those reports answer HTTP 400 from `getHansardTopic` and carry their text in
 `reportContent` on the search listing instead. Verified by probing the boundary:
 `2012-03-01` is sprs2; the `2013-02-04` and `2016-03-01` samples are sprs3.
 
+> **SCOPE DECISION, RE-AFFIRMED 20 Sep 2026.** 2015 was fetched, parsed and summarised
+> during a floor experiment — 23 sittings, 96.8% attribution, zero pollution classes, and
+> 228 briefs that passed every check. The measurement showed 2015 is the SAME `sprs3` era
+> as 2016, so the original "legacy sprs2, HTTP 400" reasoning did not hold for it.
+> **The owner's decision is to keep the corpus at 2016 onward anyway.** This is a scope
+> choice, not a technical limit: do not re-open it on the grounds that 2015 works. It does.
+> It is out of scope. The 2015 artifacts were removed (`data/2015`, `pipeline/dataset/2015`,
+> `summaries/2015`) and the manifest is back to 331 sittings.
+
 ---
 
 ## 5. The summary pipeline (the part that needs real care)
@@ -429,14 +438,31 @@ one — which is why §6b exists.
 | **2b. Storage** | Year shards + stable keys + manifest, ready for ~400 sittings | ✅ **Done** |
 | **3. Summarise** | 291 briefs / 4,614 verified points across 2026, every point quote-checked | ✅ **Done** |
 | **4. Site v2** | Mobile-first sitting pages, section rail, scroll memory, collapsible cards | ✅ **Done** |
-| **5. Depth** | 2016–2025 backfill, one batch per year, modern-first | **Next** |
-| **5b. Model choice** | Pick a smaller LOCAL model for bulk summarisation — see §6b. Deliberately deferred until the fetch finishes | **Blocked on 5** |
-| **6. Automate** | GH Actions cron → auto-detect, fetch, summarise, deploy | Then |
-| **7. Polish** | Topic threads across sittings, MP pages, RSS, OG images | Later |
+| **5. Depth** | 2016–2026 backfill **complete: 331 sittings in the manifest** | ✅ **Done** |
+| **5b. Model choice** | Settled by measurement: `deepseek-v4.1-flash:cloud`. Local models disqualified — see §6b | ✅ **Done** |
+| **6. Verbatim-verified pipeline** | Selection-by-sentence-id (schema 4). Every published sentence byte-identical to the record; a gate proves it. See §6c | ✅ **Done** |
+| **7. Corpus generation** | Briefs for 2024, 2025, 2026 and 2015-experiment. **2023 in progress; 2016–2022 pending** | 🔄 **In progress** |
+| **8. Automate** | GH Actions cron → auto-detect, fetch, summarise, deploy | Then |
+| **9. Polish** | Topic threads across sittings, MP pages, RSS, OG images | Later |
 
-> **Phase 5b is deferred on purpose, not forgotten.** No model benchmarking or
-> summarisation runs until the 2016–2025 download is complete. The rationale and the
-> measured figures are in **§6b — Choosing a model for the full corpus** below.
+### Where the corpus actually stands (measured 2026-09-20)
+
+| Year | Sittings | Dataset items | Briefs published | Verification |
+|---|---|---|---|---|
+| 2026 | 23 | 291 | **287** (4 withheld) | PASS — 0 defects |
+| 2025 | 26 | — | **294** (7 withheld) | PASS — 0 defects |
+| 2024 | 30 | 369 | **364** (5 withheld) | PASS — 0 defects |
+| 2023 | 39 | 485 | *running* | — |
+| 2016–2022 | 198 | 2,196 | **pending** | — |
+
+**Total live: 949 briefs, 34,746 published sentences.** Every year must pass
+`python3 tools/check_selection.py summaries/<year> <year>` with **0 defects** before it ships.
+
+> **Phase 5b is settled, not forgotten.** The model question was answered by measurement
+> rather than deferred: `deepseek-v4.1-flash:cloud` is the pipeline model. The local-model
+> idea was tested and rejected — `llama3.2:3b` gave **1–8 points on identical input**, and
+> `qwen3:4b` is a reasoning model (547 tokens for a 12-char reply, 143s/item). Full figures
+> in **§6b** and `MODELS.md`.
 
 ### What already runs
 ```bash

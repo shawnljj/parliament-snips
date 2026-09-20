@@ -3,7 +3,7 @@
  "what_it_is": "Reviewing Income Eligibility Thresholds for Financial Assistance Schemes given Cost-of-Living Pressures",
  "sections": [
   {
-   "label": "ComCare benchmark and support",
+   "label": "ComCare income benchmark and support",
    "summary": "The $800 benchmark is indicative, not a qualifying criterion, and ComCare rates are adjusted for inflation, with other support like the Assurance Package.",
    "sentences": [
     {
@@ -44,16 +44,22 @@
    ]
   },
   {
-   "label": "ComCare rates and payments",
-   "summary": "ComCare rates were reviewed a year ago with inflation assumptions, and CDC vouchers and the Cost-of-Living Special Payment are enhanced.",
+   "label": "Basis of assistance reviews",
+   "summary": "Reviews consider data on expenditure for basic living needs, projected inflation and views from social service professionals working with low-income families.",
    "sentences": [
     {
-     "sid": "s00014",
+     "sid": "s00011",
      "speaker": "Mr Zhulkarnain Abdul Rahim",
      "attributed": true,
-     "text": "As mentioned in yesterday's clarification by my colleague, Minister of State Goh Pei Ming yesterday during the Ministerial Statement relating to the Middle East conflict, it was clarified that the ComCare assistance rates were reviewed only a year ago and MSF had already factored in some inflation assumptions so that the threshold is still within the buffer.",
+     "text": "Our reviews take into consideration data on expenditure for basic living needs, projected inflation and also views from social service professionals who work closely with our low-income families.",
      "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "CDC vouchers and Cost-of-Living Payment",
+   "summary": "CDC vouchers of $500 will be brought forward to June 2026, and eligible Singaporeans can receive up to $400 to $600 in September 2026.",
+   "sentences": [
     {
      "sid": "s00016",
      "speaker": "Mr Zhulkarnain Abdul Rahim",
@@ -87,7 +93,7 @@
   "sentences_in_sections": 8,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 0,
-  "sections_total": 2,
+  "sections_total": 3,
   "selection_share": 0.4444,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -97,7 +103,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 2,
+   "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 8,
@@ -107,14 +113,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:02:07"
+   "checked_at": "2026-09-20T10:19:18"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1344,
-   "completion_tokens": 149,
+   "prompt_tokens": 1312,
+   "completion_tokens": 207,
    "estimated": false,
-   "cost_usd": 0.00023
+   "cost_usd": 0.000242
   }
  }
 }

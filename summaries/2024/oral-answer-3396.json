@@ -3,14 +3,28 @@
  "what_it_is": "Impact of Houthis' Attacks in Red Sea on Singapore's Maritime Security",
  "sections": [
   {
-   "label": "Houthi attacks on merchant ships",
-   "summary": "As of 7 January 2024, Yemen-based Houthi forces unlawfully attacked 15 merchant ships in the Red Sea using missiles, drones and hijack attempts.",
+   "label": "Houthi attacks on Red Sea shipping",
+   "summary": "A question asks whether Houthi attacks on Red Sea shipping affect Singapore's maritime security and whether the SAF will join a multinational initiative.",
    "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "",
+     "attributed": false,
+     "text": "The following question stood in the name of  Mr Desmond Choo –   9 To ask the Minister for Defence (a) whether the Houthis' attacks on shipping in the Red Sea impacts Singapore's maritime security; and (b) noting that the US and other nations have announced the creation of a multinational maritime security initiative to secure the Red Sea, whether the SAF will be contributing to this effort.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
+     "attributed": true,
+     "text": "It is a major Sea Line of Communications (SLOC) with approximately 12% of global trade by volume and 30% of global container traffic.",
+     "added_for_context": false
+    },
     {
      "sid": "s00003",
      "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
      "attributed": true,
-     "text": "As of 7 January 2024, the Yemen-based Houthi forces have unlawfully attacked 15 merchant ships in the Red Sea through firing of missiles, drones and hijack attempts.",
+     "text": "As of 7 January 2024, the Yemen-based Houthi forces have unlawfully attacked 15 merchant ships in the Red Sea through firing of missiles, drones and hijack attempts.",
      "added_for_context": false
     }
    ]
@@ -29,7 +43,7 @@
    ]
   },
   {
-   "label": "SAF deployments to CTF 153",
+   "label": "SAF deployments for CTF 153",
    "summary": "The SAF will deploy planners, an Information Fusion Centre team, and a Senior National Representative to the Combined Maritime Forces in Bahrain.",
    "sentences": [
     {
@@ -42,27 +56,21 @@
    ]
   },
   {
-   "label": "SAF medical team deployment",
-   "summary": "The SAF has accepted the offer and plans are underway to deploy a medical team to aid civilian casualties there.",
-   "sentences": [
-    {
-     "sid": "s00034",
-     "speaker": "The Minister for Defence (Dr Ng Eng Hen)",
-     "attributed": true,
-     "text": "The SAF has accepted the offer and plans are underway to deploy this medical team to aid civilian casualties there.",
-     "added_for_context": false
-    }
-   ]
-  },
-  {
-   "label": "Red Sea contribution and diplomacy",
-   "summary": "Singapore's CTF 153 contribution is consistent with its principles, littoral states have primary responsibility, and it encourages diplomatic solutions and watches the humanitarian situation.",
+   "label": "Red Sea contribution principles",
+   "summary": "The contribution to CTF 153 focuses on keeping sea lines of communication free, while littoral states hold primary responsibility and diplomatic solutions are encouraged.",
    "sentences": [
     {
      "sid": "s00038",
      "speaker": "Dr Ng Eng Hen",
      "attributed": true,
      "text": "As I took pains to elaborate, our contribution to CTF 153 has been consistent with the principles that we have articulated.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00039",
+     "speaker": "Dr Ng Eng Hen",
+     "attributed": true,
+     "text": "In other words, it is focused primarily on keeping key sea lines of communication free, which is in our interest because if the same thing happens, as it did in the Straits of Malacca, we would want the international community for assistance as well, if that was necessary.",
      "added_for_context": false
     },
     {
@@ -77,13 +85,6 @@
      "speaker": "Dr Ng Eng Hen",
      "attributed": true,
      "text": "That is why we encourage the littoral states and other countries, to work towards a diplomatic solution so that the Red Sea problem can be mitigated.",
-     "added_for_context": false
-    },
-    {
-     "sid": "s00043",
-     "speaker": "",
-     "attributed": false,
-     "text": "Apart from that, we are also watching, as I said, the humanitarian situation unfolding and where we can contribute and, we think, meaningfully, we will do so.",
      "added_for_context": false
     }
    ]
@@ -101,12 +102,12 @@
    "oral-answer-3396"
   ],
   "sentences_total": 43,
-  "sentences_selected": 8,
-  "sentences_in_sections": 8,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 0,
-  "sections_total": 5,
-  "selection_share": 0.186,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.2093,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -115,24 +116,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 5,
+   "sections_total": 4,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 8,
-   "sentences_selected": 8,
+   "sentences_published": 9,
+   "sentences_selected": 9,
    "turns_cited": 3,
-   "turns_total": 5,
-   "coverage": 0.6,
+   "turns_total": 4,
+   "coverage": 0.75,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T15:28:42"
+   "checked_at": "2026-09-20T11:14:33"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2442,
-   "completion_tokens": 297,
+   "prompt_tokens": 2555,
+   "completion_tokens": 245,
    "estimated": false,
-   "cost_usd": 0.000425
+   "cost_usd": 0.000426
   }
  }
 }

@@ -4,13 +4,13 @@
  "sections": [
   {
    "label": "CPF and Silver Support thresholds",
-   "summary": "The passage states increases to CPF contribution thresholds, household income thresholds, quarterly payments, and the number of seniors benefiting.",
+   "summary": "The passage states increases to CPF contribution thresholds, qualifying income thresholds, quarterly payments, and the number of seniors benefiting.",
    "sentences": [
     {
      "sid": "s00003",
      "speaker": "The Minister for Manpower (Dr Tan See Leng)",
      "attributed": true,
-     "text": "In 2021, the total Central Provident Fund (CPF) contribution (TCC) threshold, which reflects the income that seniors earned during their working years, was doubled from $70,000 to $140,000.",
+     "text": "In 2021, the total Central Provident Fund (CPF) contribution (TCC) threshold, which reflects the income that seniors earned during their working years, was doubled from $70,000 to $140,000.",
      "added_for_context": false
     },
     {
@@ -38,7 +38,7 @@
   },
   {
    "label": "Fiscal sustainability and elderly support schemes",
-   "summary": "The passage states that fiscal sustainability and prudence are balanced with top-ups and various support schemes for elderly Singaporeans.",
+   "summary": "The passage states that support schemes for elderly Singaporeans are balanced with fiscal sustainability and prudence, with top-ups and targeted support.",
    "sentences": [
     {
      "sid": "s00034",
@@ -114,14 +114,14 @@
    "coverage": 0.3333,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:50:10"
+   "checked_at": "2026-09-20T11:07:41"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2398,
-   "completion_tokens": 148,
+   "prompt_tokens": 2403,
+   "completion_tokens": 151,
    "estimated": false,
-   "cost_usd": 0.000377
+   "cost_usd": 0.000379
   }
  }
 }

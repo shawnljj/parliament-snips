@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Posting Groups and Full SBB",
-   "summary": "Posting Groups guide Secondary 1 subject levels, and Full SBB places students in mixed form classes with common subjects and teacher support.",
+   "summary": "Posting Groups guide Secondary 1 entry, and under Full Subject-Based Banding students are placed in mixed form classes for about a third of curriculum time.",
    "sentences": [
     {
      "sid": "s00002",
@@ -26,14 +26,13 @@
      "attributed": true,
      "text": "Under our Full Subject-Based Banding (Full SBB), our secondary school students are placed in mixed form classes, where they spend around a third of their curriculum time taking common subjects, such as Art and Character Citizenship Education with peers from different subject levels and combinations.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00005",
-     "speaker": "The Minister of State for Education (Ms Jasmin Lau) (for the Minister for Education)",
-     "attributed": true,
-     "text": "This approach gives students more opportunities than under the previous streaming system to interact with and to learn with classmates with different strengths and interests.",
-     "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Support for Full SBB teachers",
+   "summary": "MOE provides teachers resources and professional development, including termly check-in surveys, to support students in Full SBB schools.",
+   "sentences": [
     {
      "sid": "s00007",
      "speaker": "The Minister of State for Education (Ms Jasmin Lau) (for the Minister for Education)",
@@ -58,8 +57,8 @@
    ]
   },
   {
-   "label": "Emotional well-being in mixed classes",
-   "summary": "Support for mixed form classes focuses on tools and strategies to monitor students' emotional well-being and peer support networks.",
+   "label": "Student emotional well-being support",
+   "summary": "MOE focuses on giving teachers tools and strategies to understand and monitor students' emotional well-being and peer support networks in mixed form classes.",
    "sentences": [
     {
      "sid": "s00015",
@@ -83,6 +82,19 @@
      "added_for_context": false
     }
    ]
+  },
+  {
+   "label": "Sharing best practices across teaching",
+   "summary": "MOE will share these best practices across the teaching profession so teachers are more equipped to manage mixed form classes in future.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Ms Jasmin Lau",
+     "attributed": true,
+     "text": "MOE will help to share these best practices across the teaching profession, so that across the board, our teachers are more equipped in future to deal with and manage mixed form classes, regardless of how every mixed form class looks like in future.",
+     "added_for_context": false
+    }
+   ]
   }
  ],
  "_meta": {
@@ -101,7 +113,7 @@
   "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 2,
-  "sections_total": 2,
+  "sections_total": 4,
   "selection_share": 0.5,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -111,7 +123,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 2,
+   "sections_total": 4,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 10,
@@ -121,14 +133,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:05:15"
+   "checked_at": "2026-09-20T10:22:17"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1534,
-   "completion_tokens": 146,
+   "prompt_tokens": 1576,
+   "completion_tokens": 246,
    "estimated": false,
-   "cost_usd": 0.000256
+   "cost_usd": 0.00029
   }
  }
 }

@@ -57,7 +57,7 @@
    ]
   },
   {
-   "label": "Full NRIC numbers and consultation",
+   "label": "Full NRIC numbers for identification",
    "summary": "Agencies are starting to use full NRIC numbers where individuals must be identified accurately, and the Government will consult the public on private sector guidelines.",
    "sentences": [
     {
@@ -113,14 +113,14 @@
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:45:03"
+   "checked_at": "2026-09-20T11:02:38"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1348,
+   "prompt_tokens": 1350,
    "completion_tokens": 209,
    "estimated": false,
-   "cost_usd": 0.000247
+   "cost_usd": 0.000248
   }
  }
 }

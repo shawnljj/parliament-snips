@@ -3,34 +3,34 @@
  "what_it_is": "Enhancing Screening Process for Those Applying for Licences under Massage Establishment Act",
  "sections": [
   {
-   "label": "ME licence responsible officers fitness",
-   "summary": "The Police can refuse an ME licence if responsible officers, including business partners, governing body members or directors, are not fit and proper.",
+   "label": "ME licence responsible officers",
+   "summary": "The Police can refuse an ME licence if responsible officers, including partners, governing body members or directors, are not fit and proper.",
    "sentences": [
     {
      "sid": "s00002",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "The Senior Minister of State for Home Affairs (Ms Sim Ann) (for the Coordinating Minister for National Security and Minister for Home Affairs)",
+     "attributed": true,
      "text": "Responsible officers include business partners if the business entity is a partnership, members of the governing body if it is an unincorporated association and directors or officers holding similar managerial executive positions if it is a corporate body.",
      "added_for_context": false
     },
     {
      "sid": "s00003",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "The Senior Minister of State for Home Affairs (Ms Sim Ann) (for the Coordinating Minister for National Security and Minister for Home Affairs)",
+     "attributed": true,
      "text": "If these persons are not fit and proper, the Police can refuse to grant an ME licence.",
      "added_for_context": false
     },
     {
      "sid": "s00004",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "The Senior Minister of State for Home Affairs (Ms Sim Ann) (for the Coordinating Minister for National Security and Minister for Home Affairs)",
+     "attributed": true,
      "text": "In assessing the fitness and propriety of a person to be granted a ME licence, the Police would consider, but is not limited to, criminal antecedents, past breaches of ME regulations, if the person is facing ongoing investigations and if granting the person a licence is likely to affect law and order or give rise to social disamenity.",
      "added_for_context": false
     },
     {
      "sid": "s00005",
-     "speaker": "",
-     "attributed": false,
+     "speaker": "The Senior Minister of State for Home Affairs (Ms Sim Ann) (for the Coordinating Minister for National Security and Minister for Home Affairs)",
+     "attributed": true,
      "text": "If the Police assess that a person's association with others who had previously breached ME licensing conditions could cause law and order concerns, the Police can also refuse to grant an ME licence.",
      "added_for_context": false
     }
@@ -73,14 +73,14 @@
    "coverage": 0.3333,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:52:07"
+   "checked_at": "2026-09-20T10:09:14"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 924,
-   "completion_tokens": 79,
+   "prompt_tokens": 954,
+   "completion_tokens": 77,
    "estimated": false,
-   "cost_usd": 0.000151
+   "cost_usd": 0.000155
   }
  }
 }

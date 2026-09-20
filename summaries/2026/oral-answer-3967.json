@@ -4,7 +4,7 @@
  "sections": [
   {
    "label": "Dengue decrease and Wolbachia expansion",
-   "summary": "Dengue fell due to no major local outbreaks, global decline and stakeholder efforts, with Project Wolbachia expanding to 800,000 households by end-2026.",
+   "summary": "Dengue fell due to no major local outbreaks, global decline in 2025 and stakeholder efforts, with Project Wolbachia expanding to 800,000 households by end-2026.",
    "sentences": [
     {
      "sid": "s00002",
@@ -58,7 +58,7 @@
   },
   {
    "label": "Global and local dengue decline",
-   "summary": "Global dengue cases fell from 14.4 million to five million in 2025, and locally there were no clusters.",
+   "summary": "Global dengue cases fell from 14.4 million to five million in 2025, and locally there is an absence of clusters.",
    "sentences": [
     {
      "sid": "s00023",
@@ -70,14 +70,28 @@
    ]
   },
   {
-   "label": "Expansion pace and finite resources",
-   "summary": "Finite resources and how quickly mosquito populations can be suppressed influence the pace of expansion.",
+   "label": "Expansion pace and site selection",
+   "summary": "Finite resources and mosquito suppression speed influence expansion pace, and new sites will be announced later.",
    "sentences": [
     {
      "sid": "s00031",
      "speaker": "Ms Goh Hanyan",
      "attributed": true,
      "text": "Resources are finite and so the pace of expansion is also influenced by how quickly mosquito populations can be suppressed, which depends on the local mosquito situation and prevalence of mosquito breeding habitats.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00033",
+     "speaker": "Ms Goh Hanyan",
+     "attributed": true,
+     "text": "And then, on a forward-looking basis, figuring out which sites, then, have a higher incidence and also, the local population of these mosquitoes, for us to decide when the sites will be expanded into.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00034",
+     "speaker": "Ms Goh Hanyan",
+     "attributed": true,
+     "text": "So, in due course, we will be announcing where the new sites will be as we lead up to further expansions towards the end of the year.",
      "added_for_context": false
     }
    ]
@@ -95,12 +109,12 @@
    "oral-answer-3967"
   ],
   "sentences_total": 34,
-  "sentences_selected": 8,
-  "sentences_in_sections": 8,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
   "sentences_skipped_within_selection": 0,
-  "sentences_added_for_context": 1,
+  "sentences_added_for_context": 2,
   "sections_total": 4,
-  "selection_share": 0.2353,
+  "selection_share": 0.2941,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -112,21 +126,21 @@
    "sections_total": 4,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 8,
-   "sentences_selected": 8,
+   "sentences_published": 10,
+   "sentences_selected": 10,
    "turns_cited": 2,
    "turns_total": 4,
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:50:23"
+   "checked_at": "2026-09-20T11:07:52"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1907,
-   "completion_tokens": 238,
+   "prompt_tokens": 1980,
+   "completion_tokens": 251,
    "estimated": false,
-   "cost_usd": 0.000334
+   "cost_usd": 0.000347
   }
  }
 }

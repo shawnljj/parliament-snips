@@ -3,8 +3,8 @@
  "what_it_is": "Civil List",
  "sections": [
   {
-   "label": "Civil List Class 2 increase",
-   "summary": "No change is proposed for Class 1, while Class 2 expenditures for the President's personal staff would rise from $6,696,700 to $7,318,000.",
+   "label": "Class 1 expenditures unchanged",
+   "summary": "No change is proposed for Class 1 expenditures, including the President's salary and allowance.",
    "sentences": [
     {
      "sid": "s00005",
@@ -12,14 +12,13 @@
      "attributed": true,
      "text": "To be clear, no change is proposed for Class 1 expenditures, that is to say, no change is proposed in this Motion to the President's salary and allowance.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00006",
-     "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
-     "attributed": true,
-     "text": "The proposed changes are in Class 2, Class 3 and Class 4 of the Civil List to enable the President's office to continue to meet its expenditure needs.",
-     "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "Class 2 staff salaries increase",
+   "summary": "Class 2 expenditures for the President's personal staff are proposed to increase from $6,696,700 to $7,318,000.",
+   "sentences": [
     {
      "sid": "s00008",
      "speaker": "The Second Minister for Finance (Ms Indranee Rajah)",
@@ -30,8 +29,8 @@
    ]
   },
   {
-   "label": "Civil List Class 3 and 4 increases",
-   "summary": "Class 3 household expenses would increase from $3,342,200 to $4,542,000, and Class 4 expenditures from $550,000 to $1,288,000.",
+   "label": "Class 3 and Class 4 increases",
+   "summary": "Class 3 household expenses are proposed to rise from $3,342,200 to $4,542,000, and Class 4 from $550,000 to $1,288,000.",
    "sentences": [
     {
      "sid": "s00012",
@@ -62,12 +61,12 @@
    "motion-2938"
   ],
   "sentences_total": 17,
-  "sentences_selected": 5,
-  "sentences_in_sections": 5,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 0,
-  "sections_total": 2,
-  "selection_share": 0.2941,
+  "sections_total": 3,
+  "selection_share": 0.2353,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
    "passed": true,
@@ -76,24 +75,24 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 2,
+   "sections_total": 3,
    "sections_without_summary": [],
    "sections_without_sentences": [],
-   "sentences_published": 5,
-   "sentences_selected": 5,
+   "sentences_published": 4,
+   "sentences_selected": 4,
    "turns_cited": 1,
    "turns_total": 2,
    "coverage": 0.5,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:06:39"
+   "checked_at": "2026-09-20T10:23:45"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1114,
-   "completion_tokens": 160,
+   "prompt_tokens": 1083,
+   "completion_tokens": 186,
    "estimated": false,
-   "cost_usd": 0.000201
+   "cost_usd": 0.000204
   }
  }
 }

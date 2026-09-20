@@ -3,8 +3,8 @@
  "what_it_is": "Financial Assistance for Parents Whose Infants are Enrolled in ECDA's Childminding Pilot Programme",
  "sections": [
   {
-   "label": "Childminding Pilot subsidies and CDA use",
-   "summary": "Government subsidies and CDA funds make Childminding Pilot infant services cost around $700 monthly, with over 80% of families using CDA monies.",
+   "label": "Childminding Pilot subsidies and costs",
+   "summary": "Government subsidies and CDA funds make Childminding Pilot infant services cost parents around $700 monthly, below usual $1,200 to $2,800 rates.",
    "sentences": [
     {
      "sid": "s00002",
@@ -38,7 +38,7 @@
   },
   {
    "label": "Childminding Pilot scope and subsidies",
-   "summary": "The Childminding Pilot runs at two centres for up to 100 infants, offering supply-side subsidies and CDA monies, while low-income families get more support in preschools.",
+   "summary": "The Childminding Pilot runs at two centres for up to 100 infants, with supply-side subsidies and CDA monies, while low-income families get more support in government preschools.",
    "sentences": [
     {
      "sid": "s00011",
@@ -121,11 +121,11 @@
    "coverage": 0.3333,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T22:30:17"
+   "checked_at": "2026-09-20T10:47:45"
   },
   "usage": {
    "calls": 2,
-   "prompt_tokens": 1584,
+   "prompt_tokens": 1586,
    "completion_tokens": 168,
    "estimated": false,
    "cost_usd": 0.000269

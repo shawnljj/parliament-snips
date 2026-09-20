@@ -2,12 +2,12 @@
  "date": "2026-03-02",
  "coverage": {
   "date": "2026-03-02",
-  "collected": 63,
+  "collected": 64,
   "max_result": 63,
-  "ratio": 1.0,
+  "ratio": 1.016,
   "enumeration": "linear+sections",
-  "words": 90524,
-  "turns": 347,
+  "words": 90443,
+  "turns": 350,
   "speaker_attribution": 0.991,
   "empty_reports": 2
  },
@@ -1715,7 +1715,7 @@
    "volume_no": "96",
    "report_version": "sprs3",
    "mp_names": "Assoc Prof Jamus Jerome Lim (Sengkang),Mr Speaker,The Senior Minister of State for Education (Dr Janil Puthucheary),Mr Shawn Loh,Dr Hamid Razak,Dr Janil Puthucheary,Dr Wan Rizal (Jalan Besar),Mr Shawn Loh (Jalan Besar)",
-   "words": 3124,
+   "words": 3119,
    "turns": [
     {
      "speaker": "Mr Shawn Loh",
@@ -1775,11 +1775,19 @@
     },
     {
      "speaker": "Mr Speaker",
-     "text": "Mr Loh. \t \tMr Shawn Loh (Jalan Besar): Thank you, Mr Speaker. First, I declare that I am the advisor to the Education Services Union that looks after the affected teachers. Second, I declare that I am the advisor to the Singapore Teachers Union that looks after the teachers who stepped in to help. And third, I declare that Hong Wen school, which is one of the affected schools, is in my constituency. And to that end, I asked not one, not two, but three Parliamentary Questions (PQs) on the matter. When I visited Hong Wen school the day after the closure, I was glad to see the parents' support group and the teachers coming in to make sure the kids had the continuity of care. They told me that the incident was regrettable, but possibly preventable. So, my two supplementary questions, Mr Speaker, are about how we can prevent these incidents from happening again. First on MOE's due diligence, both before an operator is appointed and during the operations. What levels of safeguards can we expect MOE to implement to ensure that operators with financial standing are appointed? And during operations, that they continue to be in good financial standing, so that we are assured of the sustainability of the operations. This is conceptually no different from how other Government procurement entities, such as those in the built environment sector, look at the largest contractors and vendors of the Government. The second and final question is on MOE's whistle-blowing policies. Because parents in our Whampoa and Boon Keng estates told me that they had given feedback about the deteriorating quality of the SCC last year. So, when MOE said that they only found out about it in February this year, the parents told me that this did not gel with the feedback they had given. Whistle-blowing allows us to have this early signal, so I hope that MOE could also consider how we could look at early signals to avoid a situation where MOE and parents and children and staff are caught off guard in the future.",
+     "text": "Mr Loh.",
      "lang": "English",
      "is_procedural": false,
      "time": null,
-     "words": 347
+     "words": 2
+    },
+    {
+     "speaker": "Mr Shawn Loh (Jalan Besar)",
+     "text": "Thank you, Mr Speaker. First, I declare that I am the advisor to the Education Services Union that looks after the affected teachers. Second, I declare that I am the advisor to the Singapore Teachers Union that looks after the teachers who stepped in to help. And third, I declare that Hong Wen school, which is one of the affected schools, is in my constituency. And to that end, I asked not one, not two, but three Parliamentary Questions (PQs) on the matter. When I visited Hong Wen school the day after the closure, I was glad to see the parents' support group and the teachers coming in to make sure the kids had the continuity of care. They told me that the incident was regrettable, but possibly preventable. So, my two supplementary questions, Mr Speaker, are about how we can prevent these incidents from happening again. First on MOE's due diligence, both before an operator is appointed and during the operations. What levels of safeguards can we expect MOE to implement to ensure that operators with financial standing are appointed? And during operations, that they continue to be in good financial standing, so that we are assured of the sustainability of the operations. This is conceptually no different from how other Government procurement entities, such as those in the built environment sector, look at the largest contractors and vendors of the Government. The second and final question is on MOE's whistle-blowing policies. Because parents in our Whampoa and Boon Keng estates told me that they had given feedback about the deteriorating quality of the SCC last year. So, when MOE said that they only found out about it in February this year, the parents told me that this did not gel with the feedback they had given. Whistle-blowing allows us to have this early signal, so I hope that MOE could also consider how we could look at early signals to avoid a situation where MOE and parents and children and staff are caught off guard in the future.",
+     "lang": "English",
+     "is_procedural": false,
+     "time": null,
+     "words": 340
     },
     {
      "speaker": "Dr Janil Puthucheary",
@@ -2196,37 +2204,6 @@
      "is_procedural": false,
      "time": null,
      "words": 247
-    }
-   ]
-  },
-  {
-   "report_id": "written-answer-na-22408",
-   "report_type": "Written Answers to Questions for Oral Answer Not Answered by End of Question Time",
-   "group": "written",
-   "title": "Threat Assessment of Coordinated Deepfake or Synthetic Media Campaigns that Target Singapore Given Advances in GenAI",
-   "sitting_date": "2-3-2026",
-   "parliament_no": "15",
-   "sitting_no": "22",
-   "volume_no": "96",
-   "report_version": "sprs3",
-   "mp_names": "Dr Choo Pei Ling,Mrs Josephine Teo",
-   "words": 310,
-   "turns": [
-    {
-     "speaker": "Dr Choo Pei Ling",
-     "text": "asked the Minister for Digital Development and Information (i) whether the Government assesses that advances in generative AI have materially increased the risk of coordinated deepfake or synthetic media campaigns targeting Singapore; and (ii) how Singapore's national detection and response capabilities are being strengthened to mitigate such risks.",
-     "lang": "English",
-     "is_procedural": false,
-     "time": null,
-     "words": 48
-    },
-    {
-     "speaker": "Mrs Josephine Teo",
-     "text": "The Government shares the Member's concern that generative AI can be exploited by bad actors to spread falsehoods, conduct hostile information operations and manipulate public opinion through convincing deepfakes produced at scale. We have introduced safeguards to moderate these risks. The Protection from Online Falsehoods and Manipulation Act allows the Government to correct AI-generated falsehoods against the public interest and counteract coordinated inauthentic behaviour. Under the Broadcasting Act, the Infocomm Media Development Authority can direct online communication services to disable Singapore users' access to egregious content, including content that is AI-generated. Our elections laws prohibit deepfakes that misrepresent election candidates. The Foreign Interference (Countermeasures) Act also provides the Government with powers to deal with AI-generated online content or accounts that are part of a hostile information campaign, such as by preventing such content from being viewed in Singapore. We employ a variety of detection tools and techniques, from commercial products to in-house technology, and continuously review our capabilities to detect and respond to malicious AI-generated content. We also set up the Centre for Advanced Technologies in Online Safety to strengthen Singapore's technological capabilities to combat online harms and threats. These efforts are extensive but not enough. We also need our citizens to be vigilant and discerning. This is why we continue with public education initiatives, such as through the National Library Board's S.U.R.E. (Source, Understand, Research, Evaluate) programme. Ahead of the 2025 General Elections, the Ministry of Home Affairs also launched a public education campaign that highlighted how deepfake videos and AI-generated posts had been used in influence operations targeting other countries.",
-     "lang": "English",
-     "is_procedural": false,
-     "time": null,
-     "words": 262
     }
    ]
   },
@@ -2975,6 +2952,37 @@
    ]
   },
   {
+   "report_id": "written-answer-22451",
+   "report_type": "Written Answers to Questions",
+   "group": "written",
+   "title": "Faster Response Targets for LTA Online Contact Form in Comparison with other Government Benchmarks and Standards across Agencies",
+   "sitting_date": "2-3-2026",
+   "parliament_no": "15",
+   "sitting_no": "22",
+   "volume_no": "96",
+   "report_version": "sprs3",
+   "mp_names": "Mr Jeffrey Siow,Mr David Hoe",
+   "words": 141,
+   "turns": [
+    {
+     "speaker": "Mr David Hoe",
+     "text": "asked the Acting Minister for Transport in view that the Land Transport Authority's (LTA's) online contact form states that replies to complex cases may take 14 to 20 days (a) whether the Ministry considers this response time adequate and aligned with the Government's public service standards; (b) how LTA's response timeliness compares with other whole-of-Government benchmarks; and (c) whether the Ministry will consider reviewing this service standard, including faster response targets.",
+     "lang": "English",
+     "is_procedural": false,
+     "time": null,
+     "words": 71
+    },
+    {
+     "speaker": "Mr Jeffrey Siow",
+     "text": "Government agencies are expected to reply within 15 working days. More than 60% of feedback received by the Land Transport Authority (LTA) is resolved within five working days, while more than 93% of all feedback are closed within 14 working days. For complex cases where replies cannot be provided within this timeframe, LTA will acknowledge the feedback within the 15 days and keep the feedback provider informed of the progress.",
+     "lang": "English",
+     "is_procedural": false,
+     "time": null,
+     "words": 70
+    }
+   ]
+  },
+  {
    "report_id": "written-answer-na-22406",
    "report_type": "Written Answers to Questions for Oral Answer Not Answered by End of Question Time",
    "group": "written",
@@ -3561,6 +3569,37 @@
      "is_procedural": false,
      "time": null,
      "words": 59
+    }
+   ]
+  },
+  {
+   "report_id": "written-answer-22450",
+   "report_type": "Written Answers to Questions",
+   "group": "written",
+   "title": "Update on Rectification Status of Singaporean Vehicles Affected by Defective Takata Airbag",
+   "sitting_date": "2-3-2026",
+   "parliament_no": "15",
+   "sitting_no": "22",
+   "volume_no": "96",
+   "report_version": "sprs3",
+   "mp_names": "Mr Jeffrey Siow,Ms Elysa Chen",
+   "words": 93,
+   "turns": [
+    {
+     "speaker": "Ms Elysa Chen",
+     "text": "asked the Acting Minister for Transport (a) whether the Land Transport Authority has the latest data on the number of vehicles in Singapore fitted with defective Takata airbags that have yet to be rectified; (b) if so, how many; and (c) how does this compare with the total number of vehicles identified as affected by the recall.",
+     "lang": "English",
+     "is_procedural": false,
+     "time": null,
+     "words": 57
+    },
+    {
+     "speaker": "Mr Jeffrey Siow",
+     "text": "As of February 2026, about 215,000 vehicles in Singapore are affected by the Takata airbag recall. More than 90% of affected vehicles have been rectified and about 16,000 vehicles are in the process of being rectified.",
+     "lang": "English",
+     "is_procedural": false,
+     "time": null,
+     "words": 36
     }
    ]
   },

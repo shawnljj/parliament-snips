@@ -17,7 +17,7 @@
   },
   {
    "label": "SIMFONI model adaptation and safeguards",
-   "summary": "SIMFONI models are adapted from international models using de-identified local data, with an independent unit testing before deployment.",
+   "summary": "SIMFONI models are adapted from international models using de-identified local data, with an independent unit testing them before deployment.",
    "sentences": [
     {
      "sid": "s00006",
@@ -30,7 +30,7 @@
      "sid": "s00007",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
-     "text": "They are adapted using local patient data, they are de-identified, in a secure national platform with well-established processes, expertise and safeguards.",
+     "text": "They are adapted using local patient data, they are de-identified, in a secure national platform with well-established processes, expertise and safeguards.",
      "added_for_context": false
     },
     {
@@ -43,8 +43,8 @@
    ]
   },
   {
-   "label": "Healthcare use-case approach",
-   "summary": "Working in healthcare, especially a public essential service, requires a careful use-case approach.",
+   "label": "Careful use-case approach in healthcare",
+   "summary": "Healthcare is not simple, especially a public essential service, so a careful use-case approach is needed.",
    "sentences": [
     {
      "sid": "s00017",
@@ -63,23 +63,22 @@
    ]
   },
   {
-   "label": "Balanced approach to data and safeguards",
-   "summary": "A balanced approach is needed: use data with precautions, as TRUST data has been used incident-free, rather than distrusting the system.",
+   "label": "Distrust and scoping down data",
+   "summary": "Distrusting the system, scoping down data and requiring everyone's consent before use would make it a non-starter.",
    "sentences": [
     {
      "sid": "s00040",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
-     "text": "If we start off thinking that we distrust this system entirely and therefore, let us scope down the data to be used to train models – even though we know the data is essential to train models that can improve healthcare, save lives, operate everything better and maybe help us address some of our very stark challenges of an ageing population with rising patient load – and if we accept that, but yet at the same time distrust the system and say, \"Let's scope down the data, let's not believe that they can really be anonymised and de-dentified because there can be leaks and traceability\", and \"Let's seek everyone's consent before we can use\", then it is a non-starter.",
+     "text": "If we start off thinking that we distrust this system entirely and therefore, let us scope down the data to be used to train models – even though we know the data is essential to train models that can improve healthcare, save lives, operate everything better and maybe help us address some of our very stark challenges of an ageing population with rising patient load – and if we accept that, but yet at the same time distrust the system and say, \"Let's scope down the data, let's not believe that they can really be anonymised and de-dentified because there can be leaks and traceability\", and \"Let's seek everyone's consent before we can use\", then it is a non-starter.",
      "added_for_context": false
-    },
-    {
-     "sid": "s00041",
-     "speaker": "Mr Ong Ye Kung",
-     "attributed": true,
-     "text": "I think just take a balanced approach: recognise that this is a breakthrough technology that can do a lot of good, but to do so, we will need to use the data that we have and take the necessary precautions.",
-     "added_for_context": false
-    },
+    }
+   ]
+  },
+  {
+   "label": "TRUST data use and safeguards balance",
+   "summary": "TRUST data has been used incident-free, anonymised and de-identified by international standards, balancing technology use with safeguards.",
+   "sentences": [
     {
      "sid": "s00043",
      "speaker": "Mr Ong Ye Kung",
@@ -95,6 +94,13 @@
      "added_for_context": false
     },
     {
+     "sid": "s00045",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "I think we make sure it is anonymised and de-identified by international standards.",
+     "added_for_context": false
+    },
+    {
      "sid": "s00046",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
@@ -105,7 +111,7 @@
      "sid": "s00047",
      "speaker": "Mr Ong Ye Kung",
      "attributed": true,
-     "text": "But we must strike a balance between leveraging that technology, but putting in place the safeguards.",
+     "text": "But we must strike a balance between leveraging that technology, but putting in place the safeguards.",
      "added_for_context": false
     }
    ]
@@ -127,7 +133,7 @@
   "sentences_in_sections": 12,
   "sentences_skipped_within_selection": 0,
   "sentences_added_for_context": 4,
-  "sections_total": 4,
+  "sections_total": 5,
   "selection_share": 0.24,
   "generated_by": "stage2b_select + stage2c_sections",
   "gate": {
@@ -137,7 +143,7 @@
    "text_failures_count": 0,
    "schema_complete": true,
    "missing_fields": [],
-   "sections_total": 4,
+   "sections_total": 5,
    "sections_without_summary": [],
    "sections_without_sentences": [],
    "sentences_published": 12,
@@ -147,14 +153,14 @@
    "coverage": 0.4286,
    "min_coverage_required": 0.15,
    "min_turns_required": 1,
-   "checked_at": "2026-09-19T21:41:57"
+   "checked_at": "2026-09-20T09:58:37"
   },
   "usage": {
    "calls": 3,
-   "prompt_tokens": 2604,
-   "completion_tokens": 241,
+   "prompt_tokens": 2595,
+   "completion_tokens": 293,
    "estimated": false,
-   "cost_usd": 0.000432
+   "cost_usd": 0.000445
   }
  }
 }
