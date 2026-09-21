@@ -3090,11 +3090,18 @@ details.brief[open]>.briefsum{border-bottom:1px solid var(--line)}
    sections, full-bleed headings, and one heading indented by its card -- and two heading levels
    that rendered identically. Both are settled the same way:
 
-     * Both levels sit on the wrap's content edge. A section heading spans the wrap
-       DELIBERATELY: the column rules bound the two columns only where columns exist (inside
-       .dsec), and a heading over a full-bleed section that stopped at the text column's edge
-       would read as a column of its own, which it is not. What tells a reader that these are
-       the page's spine is TYPOGRAPHY AND RULE WEIGHT, not indentation.
+     * SECTION HEADINGS sit on the wrap's content edge, and span the wrap DELIBERATELY: the
+       column rules bound the two columns only where columns exist (inside .dsec), and a heading
+       over a full-bleed section that stopped at the text column's edge would read as a column of
+       its own, which it is not. What tells a reader that these are the page's spine is
+       TYPOGRAPHY AND RULE WEIGHT, not indentation.
+       THE ONE EXCEPTION, stated rather than left to be discovered: `.method` is a padded CARD
+       (padding 28px 30px), and its heading sits on the CARD's content edge -- x=245 at 1440
+       against the wrap's 214, i.e. inset by exactly the card's 30px padding + 1px border. That is
+       a fourth treatment only if you count the card's own box as a third: the heading is on the
+       edge of the surface it sits on, which is the same rule as the other 8, applied one level
+       down. The gate asserts the inset equals the card's padding (measured 0px of drift), so the
+       exception cannot silently become an arbitrary offset.
 
      * `.sec-head` is the section level. This rule set already existed but was DEAD -- defined
        in this stylesheet and used by 0 of 332 generated pages, while the live markup wrote
@@ -3297,7 +3304,23 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
     padding:0 2px;width:auto;min-width:24px;height:var(--rail-tick-h,22px);
     display:flex;align-items:center;justify-content:flex-end;
     gap:var(--rail-dot-gap,5px);cursor:pointer}
-.section-rail-tick-mark{display:block;width:6px;height:6px;border-radius:50%;
+/* ONE BOX, EVERY LEVEL -- and why that is not a detail.
+   The mark is the FIRST item of a `justify-content:flex-start` flex row on desktop and of a
+   flex-end row on a phone, so it is the mark's OWN BOX that decides where the dot lands: a
+   narrower box moves the dot's centre while every layout edge stays put. The box used to be
+   level-dependent (6px here, 8px at level 2), which was invisible while every tick was level 2
+   and became a defect the moment the real levels arrived (D17): the two group-label dots sat
+   1px off the 7-dot column at 1024/1280/1440/1920 -- measured `dotXs=[1240, 1239] spread=1` --
+   and 1.4px off the shared left edge at 390/760. The project's own D3 acceptance number, from
+   the upstream column task, is "9 dots at 1 x, spread 0.00px", so this is a regression against a
+   stated number, not a nit.
+   The level is therefore painted, not laid out: the box is 8px at EVERY level -- which is also
+   what `--rail-dot:8px` above has always declared the dot column to be -- and level 3 shrinks
+   the PAINTED dot with a transform, which is centre-anchored by definition. Rest state is
+   pixel-identical to before (8px section dot, 6px group dot); only the box changed. The white
+   halo the box-shadow draws scales with it, so a group dot's halo is 2.25px instead of 3px,
+   which is the intended reading: a smaller dot has a smaller halo. */
+.section-rail-tick-mark{display:block;width:8px;height:8px;border-radius:50%;
     background:#c4cfc7;box-shadow:0 0 0 3px rgba(251,251,250,.9);
     transition:width .2s ease,height .2s ease,background .2s ease,transform .2s ease}
   /* Expand the HIT AREA independently of the visible dot. The column can only be
@@ -3306,7 +3329,25 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
      the target approaches 44px without changing what is drawn. */
 .section-rail-tick::before{content:'';position:absolute;left:-8px;right:-8px;
     top:-8px;bottom:-8px}
-.section-rail-tick.level-2 .section-rail-tick-mark{width:8px;height:8px}
+/* There is deliberately no `.level-2 .section-rail-tick-mark` size rule any more: with the box
+   at 8px for every level it would be a no-op, and a no-op rule that looks like it decides a size
+   is how the level-dependent box got in. The base rule IS the size; `.level-3` is the only
+   override, and it paints rather than lays out. */
+/* THE LEVEL IS PAINTED, NOT LAID OUT. The box above is now 8px at every level (see its own
+   comment), so the size difference between a section tick and a group-label tick is a transform
+   on the painted dot -- centre-anchored, therefore column-safe at every width and every state.
+   0.75 of 8px is the 6px a level-3 dot has always drawn, and the halo is scaled up to 4px so
+   that 0.75 of it is still the 3px white ring the level-2 dot has: the rest state is
+   pixel-identical to the pre-D17 build, with the dot's x now shared with the other 7. */
+.section-rail-tick.level-3 .section-rail-tick-mark{transform:scale(.75);
+    box-shadow:0 0 0 4px rgba(251,251,250,.9)}
+  /* The active/pending multipliers are RELATIVE TO THE TICK'S OWN DOT, so a level-3 tick
+     composes them with its own 0.75 (1.35 x 0.75 = 1.0125, 1.25 x 0.75 = 0.9375). Without
+     these two the later, equally-specific `.is-active`/`.is-pending` rules would win and the
+     active group dot would jump to a full 10.8px -- larger than the section dot -- while the
+     column stayed right. The state is still carried by colour in both cases. */
+.section-rail-tick.level-3.is-active .section-rail-tick-mark{transform:scale(1.0125)}
+.section-rail-tick.level-3.is-pending .section-rail-tick-mark{transform:scale(.9375)}
   /* Always-visible name for section ticks, and the number for oral-answer ticks.
      Both sit to the LEFT of the dot so the dot column stays aligned. */
 .section-rail-name{order:-1;font:600 9.5px/1.15 var(--mono);color:var(--dim);
@@ -3417,7 +3458,8 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
    painted over the summary column (209px of cover at 1024, 99px at 1280, 19px at 1440) and
    above it, drifted into empty margin (221px clear at 1920, 541px at 2560). right is now
    --rail-right, derived from the container, so the rail's distance from the content is
-   CONSTANT -- 10px -- at every width. Level-2 ticks are small, level-3 largest. */
+   CONSTANT -- 10px -- at every width: section ticks carry the larger dot (8px), group-label
+   ticks the smaller one (6px painted, from the same 8px box -- see the mark rules). */
 @media (min-width:761px){
   /* THE DESKTOP LAYER RETUNE. The conflict is between the rail and the fixed BOTTOM chrome --
      the progress bar (44) and the resume toast (45) -- both of which are display:none on a phone.
@@ -3451,13 +3493,20 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   /* The dot must not shrink once the label shares the row: with a fixed-width name the flex
      algorithm would otherwise steal from the dot rather than the label. */
   .section-rail-tick .section-rail-tick-mark{flex:none}
+  /* One PITCH, not one per level. `.level-2{height:8px}`/`.level-3{height:6px}` made the rows
+     2px different heights -- nothing was ever styled at level 3 before, so nobody saw it -- and
+     the track pays for it with an uneven column: measured on the shipped build,
+     centre-to-centre pitch ran [21,21,21,21,22,22,22,22]px at 1024/1280/1440/1920, i.e. the
+     rail's own spacing changing for reasons no reader can see. The tick is a row, and a row's
+     height should be the same for every row. The dots are what carry the level now (see the
+     mark rules above), and the dot BOX is the largest dot, so the row height is that box. The
+     phone never used these rules: its tick is a full 44px touch target. */
+  .section-rail-tick.level-2,.section-rail-tick.level-3{height:8px}
   /* The name column exists only where the margin can hold one. Below 1200px the rail is the bare
      dot strip -- so the chip is display:none here and switched on in the block below, rather
      than being given a zero width, which would leave its 4px of chip padding either side as an
      8px sliver of background beside every dot. */
   .section-rail-name{position:static;flex:none;order:0;display:none}
-  .section-rail-tick.level-2{height:8px}
-  .section-rail-tick.level-3{height:6px}
   /* The preview bubble and the Go chip. They are position:fixed, and the rail's own
      transform:translateY(-50%) makes THE RAIL their containing block -- so `right` here would be
      an offset inside the rail, not from the viewport edge.

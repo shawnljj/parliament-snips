@@ -15,7 +15,14 @@ Two things this must do that the earlier probes could not:
      D3  the 9 dots must share ONE x (baseline spread 75px).
      D4  the fill must sit on that same dot column (baseline was 23.3px off).
      D5  the rail box must no longer be a 468px box around 188px of content, centred on nothing.
-   Both builds are measured so the "before" column comes from the same instrument.
+   python3 tools/check_rail_geometry.py <url> [baseline-url] [widths]
+
+EXIT CODE: 0 only when D1, D3 and D4 hold on the FIRST build at every width. The second build (a
+baseline) is reported and never asserted -- its defects are the point of showing it next to the
+fixed one. D5 is printed as a measurement (box vs track height) and is not asserted: the acceptance
+number for it is a shape, and the audit stated the pre-fix value (468px around 188px) rather than a
+threshold. This exit code was added when a handoff summarised this tool's output as "D1/D3/D4/D5
+OK" while its own saved log printed `D3 ... SAWTOOTH` at four widths.
 """
 import json
 import sys
@@ -141,7 +148,17 @@ def measure(base, w, h, port, page="/sittings/2026-08-04.html", drive=True):
         c.close()
 
 
-def report(label, d):
+def report(label, d, fails=None):
+    """Print one build's D1/D3/D4/D5 and, when `fails` is given, record the failures.
+
+    THE EXIT CODE EXISTS NOW, and that is a correction from the round-1 review of t_a15acd97:
+    this tool was a pure report, and a handoff summarised its output as "D1/D3/D4/D5 OK" while the
+    tool's own saved log printed `D3 ... SAWTOOTH` at all four widths. A report cannot disagree
+    with a summary; a gate can. The threshold for each check is the one the printer already
+    stated in words, so nothing new is being asserted -- the words just became fatal.
+
+    `fails` is None for a baseline build, whose defects are the point of showing it.
+    """
     g = d["geom"]
     print(f"  {label}: viewport={g['vw']} overflowX={g['overflowX']}")
     cr = g["contentRight"]
@@ -149,19 +166,35 @@ def report(label, d):
         cl = round(g["rail"]["x"] - cr, 2)
         # --rail-clear is measured to the DOT's outer edge, which is --rail-pad inside the box.
         dotCl = (round(g["dotLeft"] - cr, 2) if g.get("dotLeft") is not None else None)
+        good = cl >= 0
         print(f"    D1 rail.x={g['rail']['x']} contentRight={cr} boxClearance={cl} "
               f"dotClearance={dotCl} "
-              f"{'OK (right of content)' if cl >= 0 else 'OVERLAPS CONTENT by ' + str(-cl) + 'px'}")
+              f"{'OK (right of content)' if good else 'OVERLAPS CONTENT by ' + str(-cl) + 'px'}")
+        if fails is not None and not good:
+            fails.append(f"D1 {label} rail overlaps the content by {-cl}px at {g['vw']}px")
     elif g["rail"]:
         print(f"    D1 rail={g['rail']} contentRight={cr} (sumcol absent)")
+    single = len(g["dotXsDistinct"]) <= 1
     print(f"    D3 dotXs={g['dotXsDistinct']} spread={g['dotSpread']} "
-          f"{'OK (single column)' if len(g['dotXsDistinct']) <= 1 else 'SAWTOOTH'}")
+          f"{'OK (single column)' if single else 'SAWTOOTH'}")
+    if fails is not None and g["tickCount"] and not single:
+        fails.append(f"D3 {label} dot column sawtoothed: {g['dotXsDistinct']} "
+                     f"spread {g['dotSpread']}px at {g['vw']}px")
     if g["fill"] and g["dotXsDistinct"]:
         fillCx = g["fill"]["x"] + g["fill"]["w"] / 2
         off = round(fillCx - g["dotXsDistinct"][0], 2)
+        # THE PHONE IS EXCLUDED AND THAT IS MEASURED, not a convenience: below 761px the fill is
+        # `left:50%` of the TRACK (the base rule) and sits 6px off the dot column -- identically on
+        # the pristine control build, so it is pre-existing and out of the desktop column work's
+        # scope. Above 761px the fill's left is derived from the dot column and must be exact.
+        scoped = g["vw"] >= 761
+        good4 = abs(off) <= 0.51
         print(f"    D4 fill x={g['fill']['x']}..{g['fill']['r']} centre={fillCx} "
               f"dotColumnX={g['dotXsDistinct'][0]} offset={off} "
-              f"{'OK (on the dot column)' if abs(off) <= 0.51 else 'OFF THE COLUMN'}")
+              f"{'OK (on the dot column)' if good4 else 'OFF THE COLUMN'}"
+              f"{'' if scoped else ' (phone: left:50% of the track, pre-existing)'}")
+        if fails is not None and scoped and not good4:
+            fails.append(f"D4 {label} fill {off}px off the dot column at {g['vw']}px")
     if g["rail"]:
         print(f"    D5 rail box h={g['rail']['h']} track h={g['track']['h'] if g['track'] else None} "
               f"top={g['railStyle']['top']} transform={g['railStyle']['transform']}")
@@ -196,12 +229,21 @@ def main():
     b = sys.argv[2] if len(sys.argv) > 2 else None
     widths = [int(x) for x in (sys.argv[3] if len(sys.argv) > 3
                                else "1024,1280,1440,1920").split(",")]
+    fails = []
     for i, w in enumerate(widths):
         print(f"===== {w}px")
-        report("WORKTREE", measure(a, w, 900, 9600 + i * 2))
+        report("WORKTREE", measure(a, w, 900, 9600 + i * 2), fails=fails)
         if b:
             report("BASELINE", measure(b, w, 900, 9601 + i * 2))
+    print()
+    if fails:
+        print(f"{len(fails)} FAILURE(S):")
+        for f in fails:
+            print("  -", f)
+        return 1
+    print("D1/D3/D4 all hold on the build under test.")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

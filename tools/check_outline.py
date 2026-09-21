@@ -24,6 +24,25 @@ Seven assertions, one per defect:
   D16  no `<li>` outside a list, on the sample page AND across every built page.
   D17  the rail renders more than one level, and the level-3 ticks are the group labels.
 
+Plus a guard the round-1 review asked for, from a regression this pass introduced and fixed:
+
+  D3   ONE dot column. Every tick's mark box is the same size, so every tick that is not in a
+       transient state has exactly one dot x -- and it is the x the fill rides. The regression
+       was real and measured: rendering the real level activated
+       `.section-rail-tick.level-3 .section-rail-tick-mark{width:6px}` (the base rule was 6px and
+       only level 2 widened it), and because the mark is the first item of a
+       `justify-content:flex-start` flex row, the narrower BOX moved the dot's centre 1px left
+       while every layout edge stayed put: `dotXs=[1240, 1239] spread=1` at 1024/1280/1440/1920
+       and 1.4px of left-edge spread at 390/760, against the upstream task's stated acceptance
+       number of "9 dots at 1 x, spread 0.00px".
+
+       NOTE the measurement that half of this assertion uses. Once the level is carried by a
+       transform the rendered rect is level-dependent ON PURPOSE (a group dot IS smaller), so the
+       test is: the CENTRES share one x (rendered), the offsetWidth/offsetHeight LAYOUT boxes are
+       identical (a transform does not touch layout), and the rendered width has at most the two
+       values the two levels are meant to draw. The layout half is what fails when someone
+       reintroduces a per-level width, which is exactly how this regressed.
+
 Usage:
     python3 -m http.server 8461 --directory site/dist &
     python3 tools/check_outline.py http://127.0.0.1:8461
@@ -159,6 +178,54 @@ PROBE = r"""
                    isGroupLabel: /^(Bills|Debates and other business)$/.test(
                      (t.getAttribute('aria-label') || '').replace(/^Go to /, '')) });
   });
+
+  /* D3 -- ONE dot column. Two measurements, because they fail in different ways:
+       (a) the CENTRE of every mark's box, excluding the ticks whose dot is scaled by a
+           transient state (.is-active/.is-pending) -- that scale is centre-anchored, so it
+           cannot move a dot off the column, but it does inflate the box and would make a
+           column test fail for the wrong reason;
+       (b) the LAYOUT box itself -- left edge and width -- which must be level-independent.
+           This is the half that regressed: at 1440 the box lefts were [1236, 1234.6] and the
+           widths [8, 6], so the two group dots sat 1.4px left of the shared edge and 1px left
+           of the shared centre. A centre-only test would have caught it; a box test names why. */
+  const railTicks = [].slice.call(document.querySelectorAll('.section-rail-tick'));
+  const marks = railTicks.map(function (t) {
+    const m = t.querySelector('.section-rail-tick-mark');
+    return m ? { el: m, tick: t, box: (function () { const r = m.getBoundingClientRect();
+                  return { x: px(r.left), w: px(r.width), cx: px(r.left + r.width / 2) }; })(),
+                 /* THE LAYOUT BOX, which a transform does not touch. This is the half that
+                    regressed: a per-level `width` used to move the dot by moving the box, and a
+                    rect cannot tell that apart from a legitimate painted scale. offsetWidth and
+                    offsetLeft are relative to the tick (a mark's offsetParent is its own
+                    `position:relative` tick), so they are comparable across ticks and are
+                    exactly what a reintroduced per-level width would change. */
+                 lw: m.offsetWidth, lh: m.offsetHeight, lx: m.offsetLeft, ly: m.offsetTop } : null;
+  }).filter(Boolean);
+  const transient = m => m.tick.classList.contains('is-active')
+                       || m.tick.classList.contains('is-pending');
+  const restCx = [], allW = [], layoutSize = [], layoutX = [], layoutY = [];
+  const uniqOf = (arr, key) => { const u = []; arr.forEach(function (v) {
+    const k = key ? key(v) : v;
+    if (!u.some(function (y) { return (key ? key(y) : y) === k; })) u.push(v); }); return u; };
+  marks.forEach(function (m) {
+    if (!transient(m)) restCx.push(m.box.cx);
+    allW.push(m.box.w);
+    layoutSize.push(m.lw + 'x' + m.lh);
+    layoutX.push(m.lx);
+    layoutY.push(m.ly);
+  });
+  const fillEl = q('.section-rail-fill');
+  const fillCx = fillEl ? px(fillEl.getBoundingClientRect().left
+                             + fillEl.getBoundingClientRect().width / 2) : null;
+  out.D3 = { dotXs: uniqOf(restCx), boxWs: allW,
+             layoutSizes: uniqOf(layoutSize), layoutX: uniqOf(layoutX),
+             layoutY: uniqOf(layoutY),
+             spread: (uniqOf(restCx).length > 1
+                      ? px(Math.max.apply(null, restCx) - Math.min.apply(null, restCx)) : 0),
+             transientTicks: marks.filter(transient).length, tickCount: marks.length,
+             fillCx: fillCx,
+             fillCentreOffset: (fillCx !== null && restCx.length
+                                ? px(fillCx - restCx[0]) : null) };
   return JSON.stringify(out);
 })()
 """
@@ -212,7 +279,7 @@ def main():
         sys.exit("no Chromium browser found")
     base = sys.argv[1] if len(sys.argv) > 1 else "http://127.0.0.1:8461"
     widths = [int(x) for x in (sys.argv[2] if len(sys.argv) > 2
-                               else "1024,1280,1440,1920").split(",")]
+                               else "390,760,1024,1280,1440,1920").split(",")]
     fails, lines = [], []
 
     def ok(cond, msg):
@@ -225,20 +292,46 @@ def main():
         try:
             c.call("Emulation.setDeviceMetricsOverride", width=w, height=900,
                    deviceScaleFactor=1, mobile=False)
-            c.eval(f"location.replace({json.dumps(base + SITTING)})")
+            c.eval("location.replace(%s)" % json.dumps(base + SITTING))
             time.sleep(2.6)
+            # The rail is DORMANT while the lede is on screen (`.section-rail.is-dormant` is
+            # display:none), so a dot-column measurement taken at scrollY=0 would read nine
+            # boxes of 0x0 and pass vacuously. Every rail probe in this repo scrolls to
+            # mid-document first; this one has to as well now that it measures the dots.
+            c.eval("window.scrollTo(0, Math.round((document.documentElement.scrollHeight"
+                   " - window.innerHeight) * 0.5))")
+            time.sleep(1.0)
             d = json.loads(c.eval(PROBE))
         finally:
             c.close()
 
         lines.append(f"\n===== {w}px  (wrap content {d['wrapLeft']}..{d['wrapRight']})")
+        # WIDTH SCOPE. This is a DESKTOP-layout card (audit D9-D17 are stated at
+        # 1024/1280/1440/1920), so the desktop-only assertions are scoped to min-width:761px and
+        # the phone widths are run for the rail assertions, which are width-independent. Three
+        # items are measured at 390/760 and are PRE-EXISTING on the control build -- byte-identical
+        # there, so they are not this card's to fix and failing on them would make the gate lie
+        # about what it guards:
+        #   * D9   brief titles sit at x=30 against a wrap content edge of 16 (`article.brief`
+        #          carries its own inset on a phone). Same on the pristine build.
+        #   * D12  `.dek{max-width:56ch}` is 529.1px against 312px available at 390, and
+        #          `.vs-text` is 745.8px against 204px at 760 -- both dead on the control too.
+        #   * D3   the phone fill rides `left:50%` of the TRACK, not the dot column: measured
+        #          -6px on the pristine build, the round-1 build and this one. The fill's
+        #          derived left (--rail-pad + --rail-dot/2) only exists inside min-width:761px.
+        desktop = w >= 761
         # -- D9
         off = [h for h in d["headings"]
                if abs(h["x"] - d["wrapLeft"]) > 1.5 and h["cardInset"] is None]
         carded = [h for h in d["headings"] if h["cardInset"] is not None]
-        ok(not off, f"D9 every heading on the wrap's content edge "
-                    f"({len(d['headings'])} headings; off-edge: "
-                    f"{[(h['text'], h['x']) for h in off]})")
+        if desktop:
+            ok(not off, f"D9 every heading on the wrap's content edge "
+                        f"({len(d['headings'])} headings; off-edge: "
+                        f"{[(h['text'], h['x']) for h in off]})")
+        else:
+            lines.append(f"  INFO  D9 (phone) {len(off)} heading(s) inset from the wrap edge: "
+                         f"{[(h['text'][:22], h['x']) for h in off]} -- pre-existing, "
+                         f"byte-identical on the control")
         ok(all(abs(h["cardInset"]) < 1.5 for h in carded),
            f"D9 the {len(carded)} heading(s) inside a padded card are inset by exactly that "
            f"card's padding, not by a magic offset "
@@ -267,9 +360,14 @@ def main():
            f"elements on page {d['D11']['usedOnPage']})")
         # -- D12
         dead = [x for x in d["D12"] if x["dead"]]
-        ok(not dead, f"D12 no text element declares a max-width wider than it can ever be "
-                     f"({len(d['D12'])} checked; dead: "
-                     f"{[(x['sel'], x['maxWidth'], x['available']) for x in dead]})")
+        if desktop:
+            ok(not dead, f"D12 no text element declares a max-width wider than it can ever be "
+                         f"({len(d['D12'])} checked; dead: "
+                         f"{[(x['sel'], x['maxWidth'], x['available']) for x in dead]})")
+        else:
+            lines.append(f"  INFO  D12 (phone) {len(dead)} dead max-width(s): "
+                         f"{[(x['sel'], x['maxWidth'], x['available']) for x in dead]} "
+                         f"-- pre-existing on the control, tablet-and-below only")
         # -- D14
         ok(d["D14"]["overlapsBar"] == 0,
            f"D14 the resume toast clears the progress bar (toast bottom "
@@ -286,6 +384,39 @@ def main():
         ok(labels and all(t["level"] == 3 for t in labels),
            f"D17 the group labels are the level-3 ticks "
            f"({[(t['label'], t['level']) for t in labels]})")
+        # -- D3 (the round-1 review's required guard)
+        g3 = d["D3"]
+        if g3["tickCount"] < 2:
+            ok(False, f"D3 the rail rendered {g3['tickCount']} tick(s) -- nothing to align")
+        else:
+            ok(len(g3["dotXs"]) <= 1 and g3["spread"] <= 0.01,
+               f"D3 the {g3['tickCount']} dots share ONE x "
+               f"(x={g3['dotXs']} spread={g3['spread']}px; "
+               f"{g3['transientTicks']} transient tick(s) excluded from the column test)")
+            ok(len(g3["layoutSizes"]) == 1,
+               f"D3 every mark's LAYOUT box is identical at every level -- the level is painted, "
+               f"not laid out (layout sizes: {g3['layoutSizes']}; rendered widths include the "
+               f"transient scale: {sorted(set(g3['boxWs']))})")
+            ok(len(g3["layoutX"]) == 1,
+               f"D3 every mark starts at the same offset in its tick "
+               f"(offsetLeft: {g3['layoutX']}; offsetTop: {g3['layoutY']})")
+            # The FILL assertion is desktop-only, and that is a measured scope rather than a
+            # convenience: above 761px the fill's `left` is derived from the dot column
+            # (--rail-pad + --rail-dot/2, see the desktop block's comment), while below it the
+            # base rule's `left:50%` centres the fill on the TRACK. Measured, that is 6px off the
+            # dot column -- on the PRISTINE control build, on round 1, and here, unchanged. So it
+            # is pre-existing and out of this card's width scope; asserting it on a phone would
+            # report someone else's defect as a regression of mine.
+            if desktop:
+                ok(g3["fillCentreOffset"] is not None
+                   and abs(g3["fillCentreOffset"]) <= 0.51,
+                   f"D3 the progress fill rides that same column "
+                   f"(fill centre {g3['fillCx']} vs dot {g3['dotXs']}, "
+                   f"offset {g3['fillCentreOffset']}px)")
+            else:
+                lines.append(f"  INFO  D3 (phone) fill centre {g3['fillCx']} vs dot "
+                             f"{g3['dotXs']}, offset {g3['fillCentreOffset']}px -- the phone "
+                             f"fill uses left:50% of the track; unchanged on the control")
 
     lines.append("\n===== the whole corpus (static scan)")
     cs = corpus_scan()
