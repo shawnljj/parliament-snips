@@ -36,9 +36,12 @@ Coverage, speaker-attribution rate and method are printed on every page.
 | Backfill | ✅ `scraper/backfill.py`, year-batched, resumable, ~90s per sitting |
 | Storage | ✅ year-sharded + manifest — see **Storage** below |
 | Site | ✅ `site/build_site.py` → index + archive + one page per sitting |
-| 2026 backfill | ✅ 23 sittings, 291 briefs, 4,614 verified points |
-| Backfill floor | **2016** (2017–2025 pending, one batch per year) |
+| 2026 backfill | ✅ first year, 23 sittings, 291 briefs |
+| Corpus | ✅ **2016–2026 complete: 3,863 briefs across 11 years, 331 sittings** |
+| Gates | ✅ 10 of 11 years PASS — 0 defects. **2016 FAILs 672** (24 stale briefs) |
+| Backfill floor | **2016** (2015 deliberately out of scope) |
 | Automation | ⬜ next — GitHub Actions cron |
+| Verification chain | ⬜ next — sentence completeness vs a fresh Hansard pull, see `docs/card-verification-chain.md` |
 
 See **[PLAN.md](PLAN.md)** for the design, phases, product decisions, and the hard-won
 notes about the Hansard API.

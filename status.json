@@ -1,12 +1,12 @@
 {
  "project": "parsnips",
- "written_at": "2026-09-20T22:40:42+08:00",
+ "written_at": "2026-09-21T11:07:12+08:00",
  "by": "tools/write_status.py",
  "status": "failed",
  "changed_since_last": [
-  "3520 briefs live across 10 year(s)",
-  "1 year(s) have datasets but no briefs yet: 2017",
-  "1 year(s) FAIL their gates: 2016"
+  "3863 briefs live across 11 year(s)",
+  "1 year(s) FAIL their gates: 2016",
+  "5 unpushed commit(s)"
  ],
  "corpus": {
   "2016": {
@@ -14,7 +14,7 @@
    "dataset_items": 354
   },
   "2017": {
-   "briefs": 0,
+   "briefs": 343,
    "dataset_items": 345
   },
   "2018": {
@@ -60,6 +60,12 @@
    "scope": "summaries/2016",
    "result": "FAIL",
    "defects": 672
+  },
+  {
+   "name": "check_selection",
+   "scope": "summaries/2017",
+   "result": "PASS",
+   "defects": 0
   },
   {
    "name": "check_selection",
@@ -121,8 +127,8 @@
  "needs_decision": "1 year(s) fail check_selection (2016). Fix before shipping, or accept the defects.",
  "severity": "high",
  "git": {
-  "unpushed_commits": 0,
-  "dirty_files": 835,
-  "last_commit": "48ca778 Ship 2019: 299 briefs, and the corpus passes 100,000 sentences"
+  "unpushed_commits": 5,
+  "dirty_files": 3,
+  "last_commit": "038c52e Card: test 1, sentence completeness against a fresh Hansard pull"
  }
 }

@@ -47,6 +47,8 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--backup", default=None,
                     help="where to move replaced files (default: <scratch>/replaced)")
+    ap.add_argument("--no-status", action="store_true",
+                    help="skip refreshing status.json after promoting")
     args = ap.parse_args()
 
     if not os.path.isdir(args.src):
@@ -132,7 +134,32 @@ def main():
         wrote += 1
 
     print(f"\npromoted {wrote} brief(s); {moved} replaced file(s) moved to {backup}")
+
+    # Promotion changes the corpus, so the status artifact is now stale. This is the
+    # ONLY step that adds briefs without build_briefs.py's status refresh, which is
+    # exactly how status.json came to report 2017 as empty while 343 briefs sat on
+    # disk. Same best-effort contract as build_briefs.py: a failure to write status
+    # must not fail a promotion that published fine.
+    if wrote and not args.no_status:
+        _refresh_status()
     return 0
+
+
+def _refresh_status():
+    import subprocess
+    script = os.path.join(ROOT, "tools", "write_status.py")
+    if not os.path.exists(script):
+        print("status artifact NOT refreshed: tools/write_status.py missing")
+        return
+    try:
+        r = subprocess.run([sys.executable, script], capture_output=True, text=True,
+                           timeout=1800)
+        if r.returncode == 0:
+            print("status artifact refreshed")
+        else:
+            print(f"status artifact NOT refreshed: {(r.stderr or '')[:120]}")
+    except Exception as exc:                                  # noqa: BLE001
+        print(f"status artifact NOT refreshed: {type(exc).__name__}")
 
 
 if __name__ == "__main__":

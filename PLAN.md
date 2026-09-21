@@ -441,22 +441,35 @@ one — which is why §6b exists.
 | **5. Depth** | 2016–2026 backfill **complete: 331 sittings in the manifest** | ✅ **Done** |
 | **5b. Model choice** | Settled by measurement: `deepseek-v4.1-flash:cloud`. Local models disqualified — see §6b | ✅ **Done** |
 | **6. Verbatim-verified pipeline** | Selection-by-sentence-id (schema 4). Every published sentence byte-identical to the record; a gate proves it. See §6c | ✅ **Done** |
-| **7. Corpus generation** | Briefs for 2024, 2025, 2026 and 2015-experiment. **2023 in progress; 2016–2022 pending** | 🔄 **In progress** |
+| **7. Corpus generation** | All 11 years 2016–2026 briefed: **3,863 briefs**. Regenerate-and-promote loop per year | ✅ **Done** |
+| **7b. Verification chain** | Test 1 (sentence completeness vs a fresh Hansard pull) not yet built — see `docs/card-verification-chain.md` | ⬜ **Next** |
 | **8. Automate** | GH Actions cron → auto-detect, fetch, summarise, deploy | Then |
 | **9. Polish** | Topic threads across sittings, MP pages, RSS, OG images | Later |
 
-### Where the corpus actually stands (measured 2026-09-20)
+### Where the corpus actually stands (measured 2026-09-21)
 
 | Year | Sittings | Dataset items | Briefs published | Verification |
 |---|---|---|---|---|
-| 2026 | 23 | 291 | **287** (4 withheld) | PASS — 0 defects |
-| 2025 | 26 | — | **294** (7 withheld) | PASS — 0 defects |
-| 2024 | 30 | 369 | **364** (5 withheld) | PASS — 0 defects |
-| 2023 | 39 | 485 | *running* | — |
-| 2016–2022 | 198 | 2,196 | **pending** | — |
+| 2016 | 29 | 354 | **349** | **FAIL — 672 defects** (24 stale briefs) |
+| 2017 | 25 | 345 | **343** | PASS — 0 defects |
+| 2018 | 32 | 366 | **362** | PASS — 0 defects |
+| 2019 | 28 | 301 | **299** | PASS — 0 defects |
+| 2020 | 34 | 333 | **326** | PASS — 0 defects |
+| 2021 | 30 | 352 | **346** | PASS — 0 defects |
+| 2022 | 35 | 415 | **412** | PASS — 0 defects |
+| 2023 | 39 | 485 | **481** | PASS — 0 defects |
+| 2024 | 30 | 369 | **364** | PASS — 0 defects |
+| 2025 | 26 | 301 | **294** | PASS — 0 defects |
+| 2026 | 23 | 291 | **287** | PASS — 0 defects |
 
-**Total live: 949 briefs, 34,746 published sentences.** Every year must pass
+**Total live: 3,863 briefs, 134,500 published sentences.** Every year must pass
 `python3 tools/check_selection.py summaries/<year> <year>` with **0 defects** before it ships.
+
+> **This table was previously wrong by 4×.** It read "949 briefs, 34,746 sentences" with
+> 2016–2022 marked *pending* and 2023 *running*, while all eleven years had in fact
+> shipped. The figures above are recomputed from `summaries/` — do not hand-edit them;
+> they come from `tools/write_status.py` and are checked by `tools/check_artifacts.py`.
+
 
 > **Phase 5b is settled, not forgotten.** The model question was answered by measurement
 > rather than deferred: `deepseek-v4.1-flash:cloud` is the pipeline model. The local-model
