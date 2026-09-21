@@ -1,0 +1,21 @@
+======================================================================
+STATIC: the boundary in the generated stylesheet, the pages and the generator
+======================================================================
+  min-width  = [700, 761, 1200]
+  max-width  = [760]
+  intersection = []
+  desktop break = min-width:761px  phone break = max-width:760px  (complements: True)
+  JS matchMedia gates on the page = ['max-width:760px', 'min-width:761px']
+  JS matchMedia gates in the generator = ['max-width:760px', 'min-width:761px']
+
+======================================================================
+LIVE: 761 / 760 / 759 in a real browser
+======================================================================
+  761px  grid=True tracks=[263, 416] readingCol=263 wrapContent=713
+        rail_layer(pad/z)=0px/24 pbar=True jumpOpen=True overflowX=False
+  760px  grid=False tracks=[] readingCol=None wrapContent=682
+        rail_layer(pad/z)=8px/70 pbar=False jumpOpen=False overflowX=False
+  759px  grid=False tracks=[] readingCol=None wrapContent=681
+        rail_layer(pad/z)=8px/70 pbar=False jumpOpen=False overflowX=False
+
+PASS: one breakpoint at 761px. At 760px exactly one layout is live (the phone's), the reading column is never the collapsed 204px, and the grid, the rail, the pbar and the page's own JS all switch on the same number.
