@@ -277,7 +277,7 @@ edit, and can exceed filesystem limits (Vercel git unpack fails with
 | six-record Budget debate | `budget-2857+2859+2861+2867+2871+2873.json` |
 
 Longest key 41 chars including year and extension; the longest title-slug filename
-was 105. Verified: 291 briefs → 291 distinct keys, 0 collisions.
+was 105. Verified: 287 briefs → 287 distinct keys, 0 collisions.
 
 **Shard by year, not parliament.** A batch operates on a year, so year is the grain
 that makes "which files belong to this batch" a directory listing. Parliament number
@@ -322,7 +322,7 @@ those reports answer HTTP 400 from `getHansardTopic` and carry their text in
 
 > **SCOPE DECISION, RE-AFFIRMED 20 Sep 2026.** 2015 was fetched, parsed and summarised
 > during a floor experiment — 23 sittings, 96.8% attribution, zero pollution classes, and
-> 228 briefs that passed every check. The measurement showed 2015 is the SAME `sprs3` era
+> 228 briefs that passed every check. The measurement showed 2015 is the SAME `sprs3` era  <!-- artifacts-check: historical -->
 > as 2016, so the original "legacy sprs2, HTTP 400" reasoning did not hold for it.
 > **The owner's decision is to keep the corpus at 2016 onward anyway.** This is a scope
 > choice, not a technical limit: do not re-open it on the grounds that 2015 works. It does.
@@ -436,7 +436,7 @@ one — which is why §6b exists.
 | **1b. First page** | 5 Aug 2026 fully parsed at 159/167 (95%) and rendered to a working sitting page | ✅ **Done** |
 | **2. Backfill** | All 23 sittings of 2026: 1,959,951 words, 97% attribution | ✅ **Done** |
 | **2b. Storage** | Year shards + stable keys + manifest, ready for ~400 sittings | ✅ **Done** |
-| **3. Summarise** | 291 briefs / 4,614 verified points across 2026, every point quote-checked | ✅ **Done** |
+| **3. Summarise** | 287 briefs across 2026, every published sentence quote-checked | ✅ **Done** |
 | **4. Site v2** | Mobile-first sitting pages, section rail, scroll memory, collapsible cards | ✅ **Done** |
 | **5. Depth** | 2016–2026 backfill **complete: 331 sittings in the manifest** | ✅ **Done** |
 | **5b. Model choice** | Settled by measurement: `deepseek-v4.1-flash:cloud`. Local models disqualified — see §6b | ✅ **Done** |
@@ -465,7 +465,7 @@ one — which is why §6b exists.
 **Total live: 3,863 briefs, 134,500 published sentences.** Every year must pass
 `python3 tools/check_selection.py summaries/<year> <year>` with **0 defects** before it ships.
 
-> **This table was previously wrong by 4×.** It read "949 briefs, 34,746 sentences" with
+> **This table was previously wrong by 4×.** It read "949 briefs, 34,746 sentences" with  <!-- artifacts-check: historical -->
 > 2016–2022 marked *pending* and 2023 *running*, while all eleven years had in fact
 > shipped. The figures above are recomputed from `summaries/` — do not hand-edit them;
 > they come from `tools/write_status.py` and are checked by `tools/check_artifacts.py`.
@@ -542,7 +542,7 @@ So 8B is a reasonable target and 4B is worth benchmarking.
 
 ### The real constraint is input size, not parameter count
 
-Measured across the 291 existing 2026 briefs (`_meta.source_words`):
+Measured across the 2026 briefs at the time (`_meta.source_words`, a schema-3 field that no longer exists):
 
 | | |
 |---|---|

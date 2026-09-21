@@ -52,7 +52,7 @@ invented threshold is worse than a missing one: it makes a real question look se
 
 > **O-16 was wrong in the first draft of this file, and the way it was wrong is
 > instructive.** It read "`selection_share` ≤ 0.60" and was measured against the raw
-> `selection_share` field, which reported **379 briefs over 0.6** and looked like a
+> `selection_share` field, which reported **379 briefs over 0.6** and looked like a  <!-- artifacts-check: historical -->
 > real defect. It was not: `selection_share` counts *selected + context-repaired*
 > sentences, and the cap governs **selection only** — `sentences_added_for_context`
 > is added afterwards, by design, so a section's argument is not stranded mid-sentence.
@@ -97,7 +97,7 @@ invented threshold is worse than a missing one: it makes a real question look se
 |---|---|---|---|---|---|---|
 | O-32 | N-1 | Correctness over completeness — publish less | 0 wrong briefs published to satisfy a count | corpus | human | held |
 | O-33 | N-2 | No fabricated content, ever | 0 non-verbatim published sentences | corpus | det | same as O-6 |
-| O-34 | N-3 | Numbers the system reports are computed from data | 0 hand-written figures in docs | `docs/`, `*.md` | det | **FAILS: PLAN.md says 949 briefs; real is 3,863** ✗ |
+| O-34 | N-3 | Numbers the system reports are computed from data | 0 hand-written figures in docs | `docs/`, `*.md` | det | **3 drift findings open** (was 4; PLAN.md's 949-brief figure fixed 2026-09-21) |
 | O-35 | N-4 | Polite to the source: rate-limited, cached, fetched once | 0 re-fetches of an already-fetched sitting | `data/`, logs | det | held |
 | O-36 | N-5 | Runs need no owner attention | 0 runs blocked awaiting input | run logs | det | held |
 
@@ -108,12 +108,12 @@ invented threshold is worse than a missing one: it makes a real question look se
 **11 of 37 objectives cannot currently be scored.** They have no check anywhere in
 `tools/`. That is the real backlog: not missing features, but unmeasured requirements.
 
-**Four objectives are currently FAILING:**
+**Four objectives are currently FAILING:**  <!-- artifacts-check: historical -->
 
 - **O-6** — 2016: 672 defects (text shifted one sid)
 - **O-9** — 9 dataset items with content, no brief and no withheld record
 - **O-27** — the same 9 are invisible on the site
-- **O-34** — `PLAN.md` reports 949 briefs; the corpus is 3,863
+- **O-34** — three drifted figures remain in `sdlc/1-objectives.md` and `PLAN.md`; the 4x-wrong corpus total in `PLAN.md` was corrected 2026-09-21. `tools/check_artifacts.py` now reports them by line.  <!-- artifacts-check: historical -->
 
 **Three are open questions, not objectives:**
 

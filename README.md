@@ -36,7 +36,7 @@ Coverage, speaker-attribution rate and method are printed on every page.
 | Backfill | ✅ `scraper/backfill.py`, year-batched, resumable, ~90s per sitting |
 | Storage | ✅ year-sharded + manifest — see **Storage** below |
 | Site | ✅ `site/build_site.py` → index + archive + one page per sitting |
-| 2026 backfill | ✅ first year, 23 sittings, 291 briefs |
+| 2026 backfill | ✅ first year, 23 sittings, 287 briefs |
 | Corpus | ✅ **2016–2026 complete: 3,863 briefs across 11 years, 331 sittings** |
 | Gates | ✅ 10 of 11 years PASS — 0 defects. **2016 FAILs 672** (24 stale briefs) |
 | Backfill floor | **2016** (2015 deliberately out of scope) |

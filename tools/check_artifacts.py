@@ -80,6 +80,53 @@ def briefs_on_disk():
     return out
 
 
+def _flag_stated_brief_counts(problems, doc, text):
+    """Flag a stated brief count that matches NEITHER the corpus total nor its year.
+
+    A doc phrase like "291 briefs" is legitimate in two shapes: the whole corpus
+    ("3,863 briefs"), or one year inside a table row ("| 2026 | 23 | 291 | 287 |").
+    The previous version compared every hit against the corpus total only, so it
+    flagged correct per-year figures and missed nothing -- noise that would train a
+    reader to ignore the check. This accepts either meaning and only reports a number
+    that is true of neither.
+
+    Prose that says "N briefs" without a year nearby is compared against the total.
+    """
+    real_total = sum(briefs_on_disk().values())
+    lines = text.splitlines()
+    for i, line in enumerate(lines):
+        # A line may legitimately state a figure that is not current: a historical
+        # record ("228 briefs passed every check" about the 2015 experiment), or a
+        # quotation of a stale figure while correcting it. Such a line carries an
+        # explicit marker so the exemption is visible in the source, not implied by a
+        # heuristic. Without a way to say "this number is deliberately historical",
+        # the check reports noise and a reader learns to ignore it.
+        if "artifacts-check: historical" in line:
+            continue
+        for m in re.finditer(r"(\d[\d,]*)\s+briefs", line):
+            claimed = int(m.group(1).replace(",", ""))
+            if claimed <= 100 or claimed == real_total:
+                continue
+            # A four-digit number in the corpus's own year range is a year being read
+            # as a count: "the 291 existing 2026 briefs" must not be parsed as a claim
+            # of 2,026 briefs.
+            if 2000 <= claimed <= 2100:
+                continue
+            # A year in the same line means the number may be that year's count.
+            years = re.findall(r"\b(20\d{2})\b", line)
+            if any(briefs_on_disk().get(y) == claimed for y in years):
+                continue
+            # Or the number may be one year's count stated without naming the year
+            # ("287 briefs across 2026" on the row above). Accept any single year's
+            # figure: the target of this check is a stale TOTAL like "949", not a
+            # correct per-year number.
+            if claimed in set(briefs_on_disk().values()):
+                continue
+            problems.append(("DRIFT", doc,
+                             f"line {i + 1}: states {claimed:,} briefs; {real_total:,} "
+                             f"on disk and no year matches {claimed:,}"))
+
+
 def dataset_on_disk():
     out = {}
     for d in sorted(glob.glob(os.path.join(ROOT, "pipeline", "dataset", "20*"))):
@@ -183,29 +230,16 @@ def main():
         notes.append(f"objectives: {len(ids)} declared")
 
         # A stated count must match the files.
-        for m in re.finditer(r"(\d[\d,]*)\s+briefs", text):
-            claimed = int(m.group(1).replace(",", ""))
-            real = sum(briefs_on_disk().values())
-            if claimed != real and claimed > 100:
-                problems.append(("DRIFT", "sdlc/1-objectives.md",
-                                 f"states {claimed:,} briefs; {real:,} on disk"))
-                break
+        _flag_stated_brief_counts(problems, "sdlc/1-objectives.md", text)
 
     # ---------------------------------------------------------------- stale docs
-    for doc, pattern in (("PLAN.md", r"(\d[\d,]*)\s+briefs"),
-                         ("README.md", r"(\d[\d,]*)\s+briefs")):
+    for doc in ("PLAN.md", "README.md"):
         p = os.path.join(ROOT, doc)
         if not os.path.exists(p):
             continue
         with open(p, encoding="utf-8") as fh:
             text = fh.read()
-        real = sum(briefs_on_disk().values())
-        for m in re.finditer(pattern, text):
-            claimed = int(m.group(1).replace(",", ""))
-            if claimed > 100 and claimed != real:
-                problems.append(("DRIFT", doc,
-                                 f"states {claimed:,} briefs; {real:,} on disk"))
-                break
+        _flag_stated_brief_counts(problems, doc, text)
 
     # ---------------------------------------------------------------- report
     if a.json:
