@@ -1,0 +1,36 @@
+--- archive 1280px  http://127.0.0.1:8483/sittings/index.html
+    .pbar present=True data-page=None script=False maxScroll=2770
+    y=0      text='0%'     aria='0'      fill=''       display=block
+    y=693    text='0%'     aria='0'      fill=''       display=block
+    y=1385   text='0%'     aria='0'      fill=''       display=block
+    y=2078   text='0%'     aria='0'      fill=''       display=block
+    y=2770   text='0%'     aria='0'      fill=''       display=block
+    VERDICT: FAIL -- renders and reads '0' at the foot
+--- archive 1440px  http://127.0.0.1:8483/sittings/index.html
+    .pbar present=True data-page=None script=False maxScroll=2770
+    y=0      text='0%'     aria='0'      fill=''       display=block
+    y=693    text='0%'     aria='0'      fill=''       display=block
+    y=1385   text='0%'     aria='0'      fill=''       display=block
+    y=2078   text='0%'     aria='0'      fill=''       display=block
+    y=2770   text='0%'     aria='0'      fill=''       display=block
+    VERDICT: FAIL -- renders and reads '0' at the foot
+--- sitting 1280px  http://127.0.0.1:8483/sittings/2026-08-04.html
+    .pbar present=True data-page='2026-08-04' script=True maxScroll=210423
+    y=0      text='0%'     aria='0'      fill=''       display=block
+    y=52606  text='25%'    aria='25'     fill='25%'    display=block
+    y=105212 text='50%'    aria='50'     fill='50%'    display=block
+    y=157817 text='75%'    aria='75'     fill='75%'    display=block
+    y=210423 text='100%'   aria='100'    fill='100%'   display=block
+    VERDICT: reaches 100% at the foot. OK
+--- sitting 1440px  http://127.0.0.1:8483/sittings/2026-08-04.html
+    .pbar present=True data-page='2026-08-04' script=True maxScroll=210423
+    y=0      text='0%'     aria='0'      fill=''       display=block
+    y=52606  text='25%'    aria='25'     fill='25%'    display=block
+    y=105212 text='50%'    aria='50'     fill='50%'    display=block
+    y=157817 text='75%'    aria='75'     fill='75%'    display=block
+    y=210423 text='100%'   aria='100'    fill='100%'   display=block
+    VERDICT: reaches 100% at the foot. OK
+
+2 FAILURE(S):
+  - archive 1280px: bar reads '0' at the foot (scrollY 2770 of 2770)
+  - archive 1440px: bar reads '0' at the foot (scrollY 2770 of 2770)

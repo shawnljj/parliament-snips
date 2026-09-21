@@ -1,0 +1,14 @@
+--- archive 1280px at scrollY=2770 (after max 2770 landed 2770 | before max 2770 landed 2770)
+    differing pixels: 0 across 0 row(s) of 900
+    IDENTICAL: the page body is pixel-identical with the chrome suppressed
+--- archive 1440px at scrollY=2770 (after max 2770 landed 2770 | before max 2770 landed 2770)
+    differing pixels: 0 across 0 row(s) of 900
+    IDENTICAL: the page body is pixel-identical with the chrome suppressed
+--- sitting 1280px at scrollY=210423 (after max 210423 landed 210423 | before max 210423 landed 210423)
+    differing pixels: 0 across 0 row(s) of 900
+    IDENTICAL: the page body is pixel-identical with the chrome suppressed
+--- sitting 1440px at scrollY=210423 (after max 210423 landed 210423 | before max 210423 landed 210423)
+    differing pixels: 0 across 0 row(s) of 900
+    IDENTICAL: the page body is pixel-identical with the chrome suppressed
+
+OK: with the bottom chrome suppressed, the page body is pixel-identical before and after at the same scroll offset.
