@@ -57,7 +57,9 @@ Every claim below is a logged run under `docs/layout-qa/d15/`, not an assertion.
 | The D15 check is not vacuous | `qa_defects.py` on the pre-change build | **FAILS** there with `reads '0%' / aria-valuenow='0' at the foot (scrollY=2770 of 2770)` at both widths; passes here |
 | No console, overflow or layout-shift regression | `qa_console.py` | **exit 0** — silent console, no horizontal overflow, no top-bar shift at all 8 widths |
 | The column guides still hold | `check_column_guides.py` | **exit 0** — every guide on a column edge, bounded, painted under the text |
-| The phone/tablet frames are unchanged | `qa_pixels.py` vs the same build with the guide rules off, and `qa_pixels.py` at 390/759 against the pre-change build | **exit 0** both ways: 390 → 0 / 329 160 px, 759 → 0 / 640 596 px |
+| The rail is unchanged | `check_rail_geometry.py` (merged vs pre-change, both measured) | **exit 0** — D1/D3/D4/D5 all OK (dot clearance 10px, 1 x for the dots, fill offset 0.0px) |
+| The phone/tablet frames are unchanged | `qa_pixels.py` against the pre-change build at 390/759 | **exit 0** — 390 → 0 / 329 160 px, 759 → 0 / 640 596 px |
+| The guides render (the other pixel pairing) | `qa_pixels.py` merged vs the same build with the guide rules off | **exit 0** — 760 → 866 px, 761 → 410 px, 1024/1280/1440/1920 → 634 px |
 
 ### The `qa_pixels.py` row, corrected
 
