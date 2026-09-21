@@ -21,6 +21,10 @@ Seven assertions, one per defect:
   D14  the resume toast clears the progress bar at every desktop width, measured on the REAL
        toast element constructed with the real class -- the toast needs a saved scroll position
        to exist, so it is otherwise only ever reasoned about from the CSS.
+       SCOPE, stated because the round-1 review was right to object to it: this item PASSES on a
+       pristine build of 0eff07b (the base already sets bottom:38px inside min-width:761px), so it
+       is a REGRESSION GUARD, not evidence that this card fixed anything. Measured, the control
+       fails 6 items per desktop width and 5 per phone width and D14 is not among them.
   D16  no `<li>` outside a list, on the sample page AND across every built page.
   D17  the rail renders more than one level, and the level-3 ticks are the group labels.
 
@@ -369,10 +373,12 @@ def main():
                          f"{[(x['sel'], x['maxWidth'], x['available']) for x in dead]} "
                          f"-- pre-existing on the control, tablet-and-below only")
         # -- D14
+        # A REGRESSION GUARD, not a fix (see the module docstring): the control passes this one.
         ok(d["D14"]["overlapsBar"] == 0,
            f"D14 the resume toast clears the progress bar (toast bottom "
            f"{d['D14']['box']['bottom']}, gap to bar {d['D14']['gapToBar']}px, "
-           f"bottom:{d['D14']['bottom']} overlap {d['D14']['overlapsBar']}px)")
+           f"bottom:{d['D14']['bottom']} overlap {d['D14']['overlapsBar']}px) "
+           f"[regression guard: PASSES on the pristine control too]")
         # -- D16
         ok(d["D16"]["liOutsideList"] == 0,
            f"D16 no bare <li> on the sample page ({d['D16']['liOutsideList']} of "
