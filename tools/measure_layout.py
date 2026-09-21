@@ -328,6 +328,9 @@ def main():
     ap.add_argument("url")
     ap.add_argument("--out", default="docs/layout-audit")
     ap.add_argument("--widths", default="1024,1280,1440,1920")
+    ap.add_argument("--prefix", default="before",
+                    help="screenshot name prefix; use a second --out with 'after' so an "
+                         "after-state run does not overwrite the baseline capture")
     ap.add_argument("--height", type=int, default=900)
     ap.add_argument("--port", type=int, default=9344)
     ap.add_argument("--scroll-frac", type=float, default=0.25,
@@ -349,7 +352,7 @@ def main():
             time.sleep(2.5)                       # fonts, layout, the rail's first sync
             top = _probe(c)
 
-            with open(os.path.join(args.out, f"before-{w}.png"), "wb") as fh:
+            with open(os.path.join(args.out, f"{args.prefix}-{w}.png"), "wb") as fh:
                 fh.write(base64.b64decode(
                     c.call("Page.captureScreenshot", format="png")["result"]["data"]))
 
@@ -360,7 +363,7 @@ def main():
             time.sleep(1.6)
             scrolled = _probe(c)
 
-            with open(os.path.join(args.out, f"before-{w}-scrolled.png"), "wb") as fh:
+            with open(os.path.join(args.out, f"{args.prefix}-{w}-scrolled.png"), "wb") as fh:
                 fh.write(base64.b64decode(
                     c.call("Page.captureScreenshot", format="png")["result"]["data"]))
 

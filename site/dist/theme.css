@@ -36,8 +36,10 @@
 .dsec.hide-ctx .ctx{display:none}
 
 /* A section is the sticky card's containing block, so the card releases exactly when
-   the section ends -- no JavaScript, and the requirement is met by layout alone. */
-.dsec{margin:0 0 30px;
+   the section ends -- no JavaScript, and the requirement is met by layout alone.
+   The section gap is a token because the column guides are drawn per section: it is what
+   the vertical rules break on, so it has to agree with the grid they are drawn from. */
+.dsec{margin:0 0 var(--col-section-gap);
   scroll-margin-top:calc(var(--topbar-h) + var(--sticky-gap) + 8px)}
 /* Pinned BELOW the sticky top bar: at top:0 the bar covered the card's first line for
    the entire time its section was in view. */
@@ -158,8 +160,8 @@
    still the phone, so there is one source of truth.
    ============================================================ */
 @media (min-width:760px){
-  .dsec{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,26rem);
-    gap:34px;align-items:start;
+  .dsec{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,var(--col-sum));
+    gap:var(--col-gap);align-items:start;
     scroll-margin-top:calc(var(--topbar-h) + var(--sticky-gap) + 8px)}
   /* the summary is the SECOND column visually but the FIRST in the DOM, so on mobile it
      reads above the sentences and here it sits to their right. */
@@ -173,6 +175,60 @@
   .dsec > .vslist,.dsec > .gapd,.dsec > .gapbody{grid-column:1;grid-row:1}
   .vs-text{max-width:74ch}
   .sumtext{font-size:14px}
+  /* ============================================================
+     COLUMN BOUNDARY GUIDES. Vertical hairlines on the column edges,
+     so the reading column and the summary column read as bounded
+     rather than as text floating in whitespace (audit D7, D8).
+
+     They are ::before/::after ON THE GRID CONTAINER, which is what
+     makes them land exactly on the grid: no arithmetic, no magic
+     offsets. The content box of .dsec is exactly track1 + gap +
+     track2, so
+        left:0                        -> the text column's left edge
+        right:calc(100% - track1)     -> the text column's right edge
+        left:calc(100% - track2 - w)  -> the summary column's left edge
+        right:0                       -> the summary column's right edge
+     are all four edges, expressed in the grid's own terms.
+     Two pseudo-elements give four rules: ::before is the box the
+     text column's two edges are drawn on, ::after the box the
+     summary column's two edges are drawn on. The two boxes are
+     flush, so all four are exactly 1px (--col-rule-w) wide.
+
+     WHY PER SECTION AND NOT ONE FULL-HEIGHT RULE. The columns exist
+     only inside .dsec. Between the sections the page is full-bleed
+     prose -- .railhead section headings, .vs-text intro paragraphs,
+     the whole Oral answers / Everything else / How-this-page-was-made
+     blocks, the footer -- which spans both columns (audit D9: 1012px
+     against a 562px track). A rule that ran the full scroll height
+     would cut through every one of those. The guide therefore marks
+     what it is a guide TO: it appears where the two columns exist and
+     stops where they stop. That is also what makes it align by
+     construction instead of by calculation.
+
+     Drawn as an inset box-shadow rather than a border: .dsec is a
+     grid container whose tracks are minmax(0, 1fr), and a border
+     would shrink the content box under border-box sizing and pull
+     the text column off the 562px the audit measured. A shadow
+     paints outside the layout box and changes nothing.
+
+     PAINT ORDER. The guides carry z-index:-1, so they paint below
+     the in-flow content of the page: text is never tinted by a rule
+     passing over it, and .sumcol (sticky, i.e. a positioned
+     z-index:auto box) paints over its own column's left rule exactly
+     where the summary card is -- so the accent border-left the card
+     already has stays the visible edge there, and the hairline
+     supplies the column edge in the whitespace above and below it,
+     which is the gap audit D8 describes. Below the desktop
+     breakpoint the whole block is skipped, so the phone and tablet
+     layouts have no guides and are untouched. */
+  .dsec::before,.dsec::after{content:"";pointer-events:none;position:relative;z-index:-1;
+    align-self:stretch;justify-self:stretch}
+  .dsec::before{grid-column:1;grid-row:1;
+    box-shadow:inset var(--col-rule-w) 0 0 0 var(--col-rule),
+      inset calc(-1 * var(--col-rule-w)) 0 0 0 var(--col-rule)}
+  .dsec::after{grid-column:2;grid-row:1;
+    box-shadow:inset var(--col-rule-w) 0 0 0 var(--col-rule),
+      inset calc(-1 * var(--col-rule-w)) 0 0 0 var(--col-rule)}
 }
 
 :root{
@@ -184,13 +240,28 @@
      --sticky-gap is the air between them: at zero the card butts against the bar and
      reads as cramped, even though nothing is actually covered. */
   --topbar-h:60px; --sticky-gap:14px;
+  /* THE COLUMN MODEL, in one place (docs/layout-audit/AUDIT.md §5). Every one of these was
+     hard-coded at its use site -- 1060px at the wrap, 24px at its padding, 26rem at the
+     summary track, 34px at the grid gap, 30px at the section margin. A vertical rule has to
+     LAND on a column edge, and a number that only appears at its use site gives a rule
+     nothing to be derived from. --col-sum is the summary track's MAXIMUM: minmax(300px,26rem)
+     resolves to this at every desktop width, because the wrap is never narrow enough for the
+     track to shrink below it. */
+  --col-wrap:1060px; --col-pad:24px; --col-sum:26rem; --col-gap:34px;
+  --col-section-gap:30px;
+  /* The guides themselves. --col-rule resolves to the hairline colour already used by every
+     horizontal rule on the page (.vs, .spk, .gapd, .runfull .ctx, .supp), so a vertical rule
+     is the same weight and the same ink as the ones beside it and no new colour is
+     introduced. There is one theme in this stylesheet (see the audit's note); this is the
+     only token set it would have to be redefined in. */
+  --col-rule:var(--line); --col-rule-w:1px;
   --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);
   font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
   -webkit-font-smoothing:antialiased}
-.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+.wrap{max-width:var(--col-wrap);margin:0 auto;padding:0 var(--col-pad)}
 a{color:inherit;text-decoration:none}
 h1,h2,h3{line-height:1.2;margin:0}
 
