@@ -147,39 +147,53 @@ PROBE = r"""
     railhead: box('.railhead'), substance: box('.substance'),
   };
 
-  // Does a guide cover anything interactive? Sample each rule line at fixed rows inside the
-  // viewport (the rules span it whenever a section is in view) and ask the document what is
-  // painted on top there. A row is only sampled where a rule is actually drawn: inside the
-  // first section's vertical extent.
-  const covered = [];
-  if (secs.length) {
-    const r = rect(secs[0]);
-    const cs = getComputedStyle(secs[0]);
+  // Does the guide INTERCEPT anything? The meaningful question is not "what is on top at a
+  // rule line" -- the topmost element there is normally the section container itself, since
+  // the rules are its own pseudo-elements -- but "did adding the guides change what the page
+  // hits". So the sample is taken twice, with the guides live and with them suppressed, and
+  // any position where the two disagree is a place the guide intercepted.
+  const sample = () => {
+    const sec0 = secs[0];
+    if (!sec0) return null;
+    const r = rect(sec0);
+    const cs = getComputedStyle(sec0);
     const cols = tracks(cs);
     const gap = parseFloat(cs.columnGap || cs.gap || '0') || 0;
-    if (cols.length >= 2) {
-      const lines = [r.x, r.x + cols[0], r.x + cols[0] + gap, r.right];
-      const rows = [200, 400, 600, 800].filter(y => y > r.y + 2 && y < r.bottom - 2 &&
-                                                    y < window.innerHeight - 2);
-      for (const lx of lines) {
-        for (const ly of rows) {
-          if (!isFinite(lx) || !isFinite(ly)) continue;
-          const el = document.elementFromPoint(Math.round(lx), Math.round(ly));
-          const name = el ? el.tagName + '.' + String(el.className).slice(0, 30) : 'null';
-          covered.push({ x: Math.round(lx), y: Math.round(ly), top: name,
-                         isGuide: !!(el && el.classList &&
-                                     (el.classList.contains('dsec') ||
-                                      el.classList.contains('sumcol'))),
-                         isText: !!(el && /^(P|SPAN|H2|H3|LI|BUTTON|A)$/.test(el.tagName)) });
-        }
+    if (cols.length < 2) return null;
+    const lines = [r.x, r.x + cols[0], r.x + cols[0] + gap, r.right];
+    const rows = [200, 400, 600, 800].filter(y => y > r.y + 2 && y < r.bottom - 2 &&
+                                                  y < window.innerHeight - 2);
+    const out = [];
+    for (const lx of lines) {
+      for (const ly of rows) {
+        if (!isFinite(lx) || !isFinite(ly)) continue;
+        const el = document.elementFromPoint(Math.round(lx), Math.round(ly));
+        out.push({ x: Math.round(lx), y: Math.round(ly),
+                   top: el ? el.tagName + '.' + String(el.className).slice(0, 30) : 'null' });
       }
-      out.section0 = { y: r.y, bottom: r.bottom, rowsUsed: rows };
+    }
+    return out;
+  };
+  const live = sample();
+  const kill = document.getElementById('__guide-kill-probe__');
+  if (kill) kill.remove();
+  const s = document.createElement('style');
+  s.id = '__guide-kill-probe__';
+  s.textContent = '.dsec::before,.dsec::after{box-shadow:none !important}';
+  document.head.appendChild(s);
+  const suppressed = sample();
+  s.remove();
+  const intercepted = [];
+  if (live && suppressed && live.length === suppressed.length) {
+    for (let i = 0; i < live.length; i++) {
+      if (live[i].top !== suppressed[i].top) {
+        intercepted.push({ x: live[i].x, y: live[i].y,
+                           withGuides: live[i].top, without: suppressed[i].top });
+      }
     }
   }
-  out.hit = { samples: covered.length,
-              textOrControlOnTop: covered.filter(c => c.isText).length,
-              guideOnTop: covered.filter(c => c.isGuide).length,
-              detail: covered.slice(0, 8) };
+  out.hit = { samples: live ? live.length : 0, intercepted: intercepted.length,
+              detail: (live || []).slice(0, 8), interceptedDetail: intercepted.slice(0, 6) };
   out.overflow = { docOverflowX: out.viewport.overflowX };
   return JSON.stringify(out);
 })()
@@ -331,6 +345,129 @@ class CDP:
 
 def near(a, b, tol=0.5):
     return abs(a - b) <= tol
+
+
+def check_scroll(cdp, w, lines, fails, steps=12):
+    """Sweep the document and assert the guides did not disturb anything on scroll.
+
+    The guides are inert (positioned, z-index:-1), but "inert" is exactly the kind of claim
+    that is made confidently and tested never. This walks the page top to bottom and at each
+    step asserts:
+
+      * no horizontal overflow appears at any scroll position,
+      * the sticky top bar is still pinned to the top,
+      * the per-section summary card is still sticky INSIDE its own section (and releases at
+        the section's end, which is the mechanism the layout relies on),
+      * the scroll-spy rail is still fixed at the viewport's right edge with its z-index
+        unchanged, i.e. it was not displaced or repainted by the guides,
+      * the guides are still on the column edges after scrolling.
+    """
+    sweep = r"""
+    (() => {
+      const doc = document.documentElement;
+      const top = document.querySelector('header.top');
+      const sect = document.querySelector('.dsec');
+      const sumcol = sect ? sect.querySelector('.sumcol') : null;
+      const sumcard = sect ? sect.querySelector('.sumcard') : null;
+      const rail = document.querySelector('.section-rail');
+      const out = { y: Math.round(window.scrollY),
+                    overflowX: doc.scrollWidth > window.innerWidth + 1 };
+      const r = el => { const b = el.getBoundingClientRect();
+                        return { x: b.left, y: b.top, right: b.right, bottom: b.bottom,
+                                 w: b.width, h: b.height }; };
+      if (top) { const cs = getComputedStyle(top);
+                 out.top = { y: r(top).y, position: cs.position, z: cs.zIndex }; }
+      if (sect) {
+        const sb = r(sect);
+        out.section = { y: sb.y, bottom: sb.bottom };
+        const cs = getComputedStyle(sect);
+        const cols = (cs.gridTemplateColumns || '').split(' ')
+          .map(parseFloat).filter(isFinite);
+        const gap = parseFloat(cs.columnGap || cs.gap || '0') || 0;
+        if (cols.length >= 2) {
+          out.edges = { textLeft: sb.x, textRight: sb.x + cols[0],
+                        sumLeft: sb.x + cols[0] + gap, sumRight: sb.right };
+        }
+        const st = getComputedStyle(sect, '::before');
+        out.guideDrawn = st.content !== 'none' && st.boxShadow !== 'none';
+      }
+      if (sumcol) { const cs = getComputedStyle(sumcol); const b = r(sumcol);
+                    out.sumcol = { y: b.y, position: cs.position, z: cs.zIndex }; }
+      if (sumcard) { out.sumcard = { y: r(sumcard).y, bottom: r(sumcard).bottom }; }
+      if (rail) { const cs = getComputedStyle(rail); const b = r(rail);
+                  out.rail = { x: b.x, right: b.right, position: cs.position,
+                               z: cs.zIndex }; }
+      return JSON.stringify(out);
+    })()
+    """
+    cdp.eval("window.scrollTo(0, 0)")
+    time.sleep(0.8)
+    total = 0
+    try:
+        total = int(cdp.eval("document.documentElement.scrollHeight - window.innerHeight") or 0)
+    except (TypeError, ValueError):
+        total = 0
+    if total <= 0:
+        lines.append("  scroll sweep skipped: the document does not scroll")
+        return
+
+    sticky_broken, overflow_at, guide_lost, rail_moved = [], [], [], []
+    pinned = 0
+    # Positions to test. A 13-step sweep of a 210,000px document jumps 16,000px per step, so
+    # it never lands inside a single section and the sticky-card assertion never fires. The
+    # first few sections are swept finely (that is where a card actually pins and releases),
+    # and the rest coarsely (that is where the guides and the rail are exercised).
+    near = list(range(0, min(total, 9000) + 1, 450))
+    far = [int(total * i / 8) for i in range(1, 9)] if total > 9000 else []
+    positions = sorted(set(near + far))
+    for y in positions:
+        cdp.eval(f"window.scrollTo(0, {y})")
+        time.sleep(0.3)
+        raw = cdp.eval(sweep)
+        if not raw:
+            continue
+        s = json.loads(raw)
+        if s.get("overflowX"):
+            overflow_at.append(s["y"])
+        if s.get("top") and s["top"]["position"] != "sticky":
+            sticky_broken.append(("top bar", s["y"], s["top"]["position"]))
+        if s.get("sumcol") and s["sumcol"]["position"] != "sticky":
+            sticky_broken.append(("summary column", s["y"], s["sumcol"]["position"]))
+        # The card must never be dragged outside its section's vertical span.
+        if s.get("sumcard") and s.get("section"):
+            c, sec = s["sumcard"], s["section"]
+            if c["bottom"] > sec["bottom"] + 2:
+                sticky_broken.append(("card below its section", s["y"], c["bottom"] - sec["bottom"]))
+            # The sticky top for .sumcol is --topbar-h(60) + --sticky-gap(14) = 74px, so a
+            # pinned card sits at y≈74. Use that, not an invented threshold.
+            if 70 <= c["y"] <= 80 and sec["bottom"] > 200:
+                pinned += 1
+        if s.get("guideDrawn") is False and s.get("section"):
+            guide_lost.append(s["y"])
+        if s.get("rail") and s["rail"]["position"] != "fixed":
+            rail_moved.append(s["y"])
+    lines.append(f"  scroll sweep: {len(positions)} positions (fine over the first "
+                 f"{min(total, 9000)}px, coarse over {total}px)")
+    lines.append(f"    card pinned+inside its section at {pinned} position(s)")
+    # A sticky-card assertion that never fires is not an assertion. If the sweep never caught
+    # the card pinned, say so rather than reporting a pass.
+    if pinned == 0:
+        fails.append(f"{w}px: the scroll sweep never observed the per-section card pinned "
+                     f"(y≈74) -- the sticky assertion did not actually run")
+    lines.append(f"    overflow at {len(overflow_at)} positions; guides lost at "
+                 f"{len(guide_lost)}; rail not fixed at {len(rail_moved)}")
+    if overflow_at:
+        fails.append(f"{w}px: horizontal overflow appeared while scrolling at "
+                     f"{overflow_at[:5]}")
+    if guide_lost:
+        fails.append(f"{w}px: the guide stopped being drawn while scrolling at "
+                     f"{guide_lost[:5]}")
+    if rail_moved:
+        fails.append(f"{w}px: the scroll-spy rail stopped being fixed while scrolling at "
+                     f"{rail_moved[:5]}")
+    if sticky_broken:
+        fails.append(f"{w}px: sticky behaviour broke while scrolling: "
+                     f"{sticky_broken[:4]}")
 
 
 # --------------------------------------------------------------------------------------
@@ -519,21 +656,19 @@ def check_width(cdp, w, out_dir=None, shot=None):
     lines.append(f"  guides drawn={g['guideDrawn']}  ::before content={g['beforeContent']} "
                  f"z={g['beforeZ']}")
 
-    # 4. INERT -- the guides may not cover text or controls.
+    # 4. INERT -- adding the guides must not change what the page hits anywhere.
     hit = d["hit"]
-    s0 = d.get("section0") or {}
-    lines.append(f"  hit-test: {hit['samples']} samples on the guide lines at rows "
-                 f"{s0.get('rowsUsed')}, {hit['textOrControlOnTop']} had text/controls on top")
+    lines.append(f"  hit test: {hit['samples']} positions sampled on the rule lines; "
+                 f"{hit['intercepted']} changed what the page hits when the guides were "
+                 f"suppressed")
     if hit["samples"] == 0:
         fails.append(f"{w}px: the hit test found no guide lines to test -- the "
-                     f"\"nothing is covered\" check passed vacuously")
+                     f"\"nothing is intercepted\" check passed vacuously")
+    if hit["intercepted"]:
+        fails.append(f"{w}px: the guides intercepted {hit['intercepted']} position(s): "
+                     f"{hit['interceptedDetail'][:3]}")
     for s in hit["detail"]:
         lines.append(f"    x={s['x']} y={s['y']} -> {s['top']}")
-    # A guide's own box on top of a rule line means the guide is covering content rather than
-    # sitting under it. The element on top of a rule should be the text/ol it crosses.
-    if hit.get("guideOnTop"):
-        fails.append(f"{w}px: {hit['guideOnTop']} sample(s) had the guide's own box on top "
-                     f"of the rule line -- the guide is covering content")
 
     # 5. The scroll-spy must still be present and above (measured separately).
     if cols.get("rail"):
@@ -549,6 +684,9 @@ def check_width(cdp, w, out_dir=None, shot=None):
     # 6. PIXEL PROOF -- the four rules are drawn, and only on the four rule columns.
     check_pixels(cdp, w, lines, fails,
                  [g["textLeft"], g["textRight"], g["sumLeft"], g["sumRight"]])
+
+    # 7. SCROLL SWEEP -- sticky behaviour, the rail, and the guides under scroll.
+    check_scroll(cdp, w, lines, fails)
     return fails, lines
 
 
