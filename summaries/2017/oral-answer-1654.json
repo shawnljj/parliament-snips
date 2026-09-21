@@ -1,0 +1,148 @@
+{
+ "title": "Link between Better Air Quality and Reduction in Healthcare Costs",
+ "what_it_is": "Link between Better Air Quality and Reduction in Healthcare Costs",
+ "sections": [
+  {
+   "label": "Air quality healthcare cost study",
+   "summary": "Minister was asked whether a study will quantify healthcare savings from incremental air quality improvements, citing past studies and existing measures.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Leon Perera",
+     "attributed": true,
+     "text": "asked\tthe Minister for the Environment and Water Resources whether the Ministry will consider conducting a study to quantify the savings in healthcare costs that can be obtained from various possible levels of incremental improvements in air quality in the short, mid and long term.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for the Environment and Water Resources (Dr Amy Khor Lean Suan) (for the Minister for the Environment and Water Resources)",
+     "attributed": true,
+     "text": "There have been several studies estimating costs associated with air pollution.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for the Environment and Water Resources (Dr Amy Khor Lean Suan) (for the Minister for the Environment and Water Resources)",
+     "attributed": true,
+     "text": "The World Bank and the Institute for Health Metrics and Evaluation published a study in 2016 which estimated the economic costs attributable to air pollution across various countries.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for the Environment and Water Resources (Dr Amy Khor Lean Suan) (for the Minister for the Environment and Water Resources)",
+     "attributed": true,
+     "text": "Locally, a study was published in 2013 by Prof Euston Quah and Assoc Prof Chia Wai-Mun to estimate the economic cost of particulate air pollution (PM10) on public health in Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for the Environment and Water Resources (Dr Amy Khor Lean Suan) (for the Minister for the Environment and Water Resources)",
+     "attributed": true,
+     "text": "To address this public health concern, my Ministry included in the Sustainable Singapore Blueprint 2015 a set of Air Quality Targets which we aim to achieve by 2020.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for the Environment and Water Resources (Dr Amy Khor Lean Suan) (for the Minister for the Environment and Water Resources)",
+     "attributed": true,
+     "text": "To date, we have already initiated several measures to reduce the emission of pollutants.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for the Environment and Water Resources (Dr Amy Khor Lean Suan) (for the Minister for the Environment and Water Resources)",
+     "attributed": true,
+     "text": "We have recently tightened the emission standards for industries.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for the Environment and Water Resources (Dr Amy Khor Lean Suan) (for the Minister for the Environment and Water Resources)",
+     "attributed": true,
+     "text": "We have also introduced measures to manage the emissions from vehicles.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Minister of State for the Environment and Water Resources (Dr Amy Khor Lean Suan) (for the Minister for the Environment and Water Resources)",
+     "attributed": true,
+     "text": "These include stricter standards for fuel quality and emissions standards for new vehicles, as well as incentive schemes to encourage the purchase of new and cleaner vehicle models.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Senior Minister of State for the Environment and Water Resources (Dr Amy Khor Lean Suan) (for the Minister for the Environment and Water Resources)",
+     "attributed": true,
+     "text": "We will continue to review these measures as we work towards our 2020 Air Quality Targets.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "WHO guidelines and local constraints",
+   "summary": "WHO acknowledges guidelines must consider local constraints like mitigation costs, which Singapore includes in cost-benefit analysis when reviewing air pollution policies.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "WHO also acknowledges that when we set guidelines, we have to take into account local constraints, such as mitigation costs, for instance, accessibility, affordability and availability of the technologies.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Dr Amy Khor Lean Suan",
+     "attributed": true,
+     "text": "Hence, when we regularly review our policies as well as develop new policies in order to reduce air pollution and improve air quality, we take these into account as part of the cost-benefit analysis.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1654",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-03-01"
+  ],
+  "report_ids": [
+   "oral-answer-1654"
+  ],
+  "sentences_total": 21,
+  "sentences_selected": 12,
+  "sentences_in_sections": 12,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 4,
+  "sections_total": 2,
+  "selection_share": 0.5714,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 12,
+   "sentences_selected": 12,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:17:26"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1524,
+   "completion_tokens": 141,
+   "estimated": false,
+   "cost_usd": 0.000253
+  }
+ }
+}

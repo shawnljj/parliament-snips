@@ -1,0 +1,126 @@
+{
+ "title": "Change in Proportion of HDB Flats, Private Flats and Landed Properties",
+ "what_it_is": "Change in Proportion of HDB Flats, Private Flats and Landed Properties",
+ "sections": [
+  {
+   "label": "HDB and private property proportions",
+   "summary": "Private properties rose from 243,000 to 372,000 units, cutting HDB's share of dwelling units from 78% to 73%, with HDB projected near 72% in 2020.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "The number of private properties, inclusive of landed properties, increased from 243,000 to 372,000 units.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Consequently, the proportion of HDB flats out of the total dwelling units in Singapore decreased from 78% to 73%, while the proportion of private properties increased from 22% to 27%.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Over the coming years, the proportion of HDB flats to non-HDB flats is projected to remain stable.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Our projections are that in 2020, the proportion of HDB flats out of the total dwelling units in Singapore will remain at around 72%.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public housing households and dwelling units",
+   "summary": "Households in public housing remain at 80%, while public housing dwelling units fell from 78% to 72% between 2006 and 2016 as private housing grew.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "The proportion of households who live in public housing remains at 80% today.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "But the physical dwelling units, as I mentioned earlier, over that period of 2006 and 2016, have varied − more private housing and, therefore, the proportion decreased from 78% of public housing dwelling units to 72%.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Commitment to stable affordable public housing",
+   "summary": "The passage states that projecting demographic trends is very hard, but the commitment is to continue providing stable and affordable public housing for Singaporeans.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "I think it is very hard to project what demographic trends there will be.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "But our commitment, clearly, is to make sure that we continue to provide stable and affordable public housing for Singaporeans.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1719",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-05-08"
+  ],
+  "report_ids": [
+   "oral-answer-1719"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.5333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:56:34"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1143,
+   "completion_tokens": 221,
+   "estimated": false,
+   "cost_usd": 0.000222
+  }
+ }
+}

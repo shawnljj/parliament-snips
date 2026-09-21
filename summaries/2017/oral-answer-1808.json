@@ -1,0 +1,126 @@
+{
+ "title": "Development of Type 2 Diabetes",
+ "what_it_is": "Development of Type 2 Diabetes",
+ "sections": [
+  {
+   "label": "Social determinants of health",
+   "summary": "Social determinants such as education, income and employment affect health through lifestyle risk factors, disease detection, healthcare access and self-care, with lower income and education linked to higher diabetes prevalence.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Examples include educational level, economic status, employment, family background and community support.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Social determinants can affect health through their impact on modifiable lifestyle risk factors, early detection and intervention of diseases, accessibility and utilisation of healthcare services, as well as self-care ability.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Studies in other countries have shown that social determinants, such as lower income and educational levels, are associated with a higher prevalence of diabetes.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "NurtureSG child health habits",
+   "summary": "The NurtureSG Taskforce engaged community groups and Family Service Centres to recommend healthier food and more physical activity in schools and IHLs, with fee waivers and vouchers for needy students.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Recognising that the early years of a child's life are crucial to good health outcomes in his or her later life, the interagency NurtureSG Taskforce engaged community self-help groups and Family Service Centres to come up with recommendations aimed at fostering healthier habits from young.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "These include providing healthier food options in all schools and Institutes of Higher Learning (IHLs) to support our vision of \"Healthy Meals for Every Child\" and increasing opportunities for physical activity in preschools, mainstream schools and IHLs, with the aim of making healthy living more accessible for children of all social backgrounds.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Students under the Ministry of Education's Financial Assistance Scheme have their fees waived for health check-ups at HPB's Student Health Centre and are issued vouchers for spectacle frames and free lenses should they require visual aids.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Subsidised screening for lower income",
+   "summary": "Community Health Assist Scheme card holders get highly subsidised chronic disease screening under Screen for Life, as social isolation and poor health literacy can affect lifestyle changes and treatment adherence.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "To encourage earlier disease detection and intervention among the lower income, Community Health Assist Scheme card holders enjoy highly subsidised screening services for chronic diseases under the Screen for Life programme.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We recognise that social determinants, such as social isolation and poor health literacy, can affect a person's capacity and motivation to make appropriate lifestyle changes and adhere to treatment.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1808",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-11-06"
+  ],
+  "report_ids": [
+   "oral-answer-1808"
+  ],
+  "sentences_total": 20,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.4,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:44:57"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1481,
+   "completion_tokens": 227,
+   "estimated": false,
+   "cost_usd": 0.000271
+  }
+ }
+}

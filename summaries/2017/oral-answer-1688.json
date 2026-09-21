@@ -1,0 +1,153 @@
+{
+ "title": "Regular Information Collection and Publication of Freelance and Contract Work Data",
+ "what_it_is": "Regular Information Collection and Publication of Freelance and Contract Work Data",
+ "sections": [
+  {
+   "label": "Freelance and contract employment data",
+   "summary": "Data on freelance and contract workers seeking permanent full-time jobs is collected annually in the Labour Force in Singapore report, but not for term contract employees.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Leon Perera",
+     "attributed": true,
+     "text": "asked\tthe Minister for Manpower whether the Ministry can regularly collect and publish data on the percentage of the workforce who are engaged in freelance work or employed in contract positions and who are seeking employment in a permanent full-time job.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "This data is collected and released on an annual basis as part of the Labour Force in Singapore report.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "For term contract employees, we do not collect data on the proportion who are seeking permanent employment.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Own account workers data collection",
+   "summary": "Data on freelancers not freelancing by preference has been collected since last year and will be published annually; such workers can tap Adapt and Grow initiatives.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "As explained during the Committee of Supply debate in March, for own account workers, meaning the freelancers, we have started collecting data on the proportion who are not freelancing as their preferred choice since last year, and will do so and publish this on an annual basis.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "This additional information is useful to better understand how to support own account workers, who face unique issues different from those in employer-employee relationships.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Manpower (Mr Lim Swee Say)",
+     "attributed": true,
+     "text": "Those who prefer permanent employment, both contract workers and freelancers, can tap on the Adapt and Grow initiatives, where we will work with them to facilitate their pursuit of preferred employment options.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Part-time and freelancer preference data",
+   "summary": "Part-time worker preference data is collected and published, and freelancer preference data has been collected since last year, with 2016 data released in the Committee of Supply.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Mr Leon Perera (Non-Constituency Member)",
+     "attributed": true,
+     "text": "I believe for part-time employment, there is a similar metric that is currently collected and published on part-time workers who would like to work more hours or would like to work full-time.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Lim Swee Say",
+     "attributed": true,
+     "text": "It is that, for freelancers, we have started collecting the information since last year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Lim Swee Say",
+     "attributed": true,
+     "text": "I released the data in the Committee of Supply this year as far as freelancers are concerned, meaning we do release the proportion of freelancers who are freelancing not as their preferred choice.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Lim Swee Say",
+     "attributed": true,
+     "text": "That data has been made available for 2016 as I had released that in this House in the Committee of Supply.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "No additional term contract data",
+   "summary": "There is no intention to collect additional data on how many term contract workers would prefer full-time employment.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Mr Lim Swee Say",
+     "attributed": true,
+     "text": "With that in mind, we have no intention to collect additional data, in terms of how many of those on term contract would prefer to have full-time employment.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1688",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-04-03"
+  ],
+  "report_ids": [
+   "oral-answer-1688"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 4,
+  "selection_share": 0.4231,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 4,
+   "turns_total": 4,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:00:56"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1689,
+   "completion_tokens": 252,
+   "estimated": false,
+   "cost_usd": 0.000307
+  }
+ }
+}

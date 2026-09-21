@@ -1,0 +1,146 @@
+{
+ "title": "Decision to Cull Free-ranging Chickens at Sungei Api Api",
+ "what_it_is": "Decision to Cull Free-ranging Chickens at Sungei Api Api",
+ "sections": [
+  {
+   "label": "Free-ranging chickens at Sungei Api Api",
+   "summary": "Questions asked on complaints, culling numbers and whether AVA will vaccinate free-ranging chickens against bird flu instead of culling them.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Louis Ng Kok Kwang",
+     "attributed": true,
+     "text": "asked\tMinister for National Development (a) how many residents have complained about the free-ranging chickens at Sungei Api Api in the last year; (b) how many chickens have been culled at Sungei Api Api; and (c) whether AVA will consider vaccinating all free-ranging chickens against bird flu instead of culling them.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for National Development (Dr Koh Poh Koon) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Hence, AVA had taken actions to remove some of the free-roaming chickens to better manage the bird flu risk.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Vaccination of free-roaming chickens",
+   "summary": "Vaccinating free-roaming chickens alone may not effectively manage bird flu risk, as vaccinated chickens can still be infected by other strains and chicks remain unprotected.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for National Development (Dr Koh Poh Koon) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "The vaccination of free-roaming chickens alone may not be an effective solution to manage the bird flu risk.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister of State for National Development (Dr Koh Poh Koon) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "While bird flu vaccinations can provide some partial protection against certain strains, the vaccinated chickens can still be infected by other strains that are not covered by the vaccination, particularly since the free-roaming chickens are free to interact and make contact with other wildlife.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister of State for National Development (Dr Koh Poh Koon) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Moreover, the chickens will continue to reproduce in the wild and their chicks will not be protected by the same vaccination given to the adult chicken.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Further culling and Kelantan outbreak",
+   "summary": "Asked whether AVA plans further chicken culling elsewhere, noting a 5 March bird flu outbreak in Kelantan affecting six districts and over 30 areas.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "Lastly, is AVA planning any further culling operations for chickens in any other areas?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "We are in an area where we are at risk of bird flu and I think Members will remember the news last month, 5 March, that there was a bird flu outbreak close to home in Kelantan affecting six districts and 30-over areas within that district.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "To date, the Malaysian authorities have released a report to say they have culled 56,953 chickens.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "AVA assessment for reducing chickens",
+   "summary": "AVA assesses the ground rather than complaint numbers, and will act pre-emptively to reduce risk if numbers are high enough.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "In reducing the number of chickens, AVA takes an assessment on the ground, not necessarily based on the number of complaints or feedback per se.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "But if the numbers are high enough for us to take pre-emptive action, regardless of any number of feedback, we will have to take action to reduce the risk.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1704",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-04-04"
+  ],
+  "report_ids": [
+   "oral-answer-1704"
+  ],
+  "sentences_total": 21,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.4762,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 4,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:57:51"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1497,
+   "completion_tokens": 256,
+   "estimated": false,
+   "cost_usd": 0.000281
+  }
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "title": "Committee of Supply – Total Sums for Main Estimates, Development Estimates and Resolutions",
+ "what_it_is": "Committee of Supply – Total Sums for Main Estimates, Development Estimates and Resolutions",
+ "sections": [
+  {
+   "label": "Supply and Development Estimates resolutions",
+   "summary": "Two resolutions report sums to be supplied to the Government under the Main and Development Estimates for the 2017-2018 financial year.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "First resolution reported − [(proc text) \"That the sum of $87,564,044,800 shall be supplied to the Government under the Heads of Expenditure for the public services shown in the Main Estimates for the financial year 1 April 2017 to 31 March 2018, contained in Paper Cmd 8 of 2017.\" (proc text)] Second resolution reported − [(proc text) \"That the sum of $33,240,004,900 shall be supplied to the Government under the Heads of Expenditure for the public services shown in the Development Estimates for the financial year 1 April 2017 to 31 March 2018, contained in Paper Cmd 8 of 2017.\" (proc text)]",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "budget-2739",
+  "group": "budget",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-03-09"
+  ],
+  "report_ids": [
+   "budget-2739"
+  ],
+  "sentences_total": 1,
+  "sentences_selected": 1,
+  "sentences_in_sections": 1,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 1.0,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 1,
+   "sentences_selected": 1,
+   "turns_cited": 1,
+   "turns_total": 1,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:04:35"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 773,
+   "completion_tokens": 64,
+   "estimated": false,
+   "cost_usd": 0.000126
+  }
+ }
+}

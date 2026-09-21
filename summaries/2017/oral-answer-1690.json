@@ -1,0 +1,93 @@
+{
+ "title": "Ensuring Good Governance at Private Clinic Groups",
+ "what_it_is": "Ensuring Good Governance at Private Clinic Groups",
+ "sections": [
+  {
+   "label": "Clinic closure notice and patient transfer",
+   "summary": "Operators must notify MOH 30 days before ceasing or disposing of a clinic and transfer patients' medical information to another licensed clinic.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Where a licensed operator intends to cease operating, or let, sell or in any way dispose of its medical clinic, it is required to notify the Ministry of Health (MOH) of its intention in writing not less than 30 days before he takes such an action.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In order to ensure continuity of care for the clinic's patients, the operator must properly transfer its patients' medical information to another licensed clinic of the patients' choice.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Third Party Administrators (TPAs) provide a range of intermediary services to healthcare providers, such as helping them participate in employer medical benefit programmes, processing of medical claims and concierge services.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "These are private contractual arrangements between the TPA and healthcare providers which MOH does not directly intervene in.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "However, the Singapore Medical Council (SMC) has provided guidance to doctors on appropriate fee arrangements through its Ethical Code and Ethical Guidelines (ECEG) that emphasise on the ethical practice and appropriate care so that the well-being of the patients will not be compromised.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1690",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-04-03"
+  ],
+  "report_ids": [
+   "oral-answer-1690"
+  ],
+  "sentences_total": 8,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.625,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 1,
+   "turns_total": 3,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:01:08"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1030,
+   "completion_tokens": 87,
+   "estimated": false,
+   "cost_usd": 0.000169
+  }
+ }
+}

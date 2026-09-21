@@ -1,0 +1,159 @@
+{
+ "title": "Enhancing Fail-safe Redundancy in Internet Networks Given Digital Push with Smart Nation",
+ "what_it_is": "Enhancing Fail-safe Redundancy in Internet Networks Given Digital Push with Smart Nation",
+ "sections": [
+  {
+   "label": "Singapore submarine cable connectivity",
+   "summary": "Singapore has 19 cable systems linking it directly to over 33 countries, with multiple direct connections to key hubs.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "Singapore is a major Asia Pacific hub for submarine cables.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "We currently have 19 cable systems that connect us directly to more than 33 countries.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "We have multiple direct connections to key hubs, such as China, Europe, Japan and the United States, which enhance the resilience of our international Internet connectivity.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "The recent episode where our Internet links remained intact, despite damage to submarine cables caused by typhoons in Hong Kong and Macau in end-August 2017, is a good case in point.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Improving Internet connectivity redundancy",
+   "summary": "IMDA will work with agencies and operators to incentivise cable landings, ensure landing resources, protect cables and avoid disaster-prone areas.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "Nonetheless, Sir, it is important that we continue to find ways to improve the redundancy and diversity of our international Internet connectivity.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "We will continue encouraging new submarine cables to land in Singapore, especially if they will provide Singapore with alternative connectivity routes to key hubs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "To do so, IMDA will work with relevant Government agencies and submarine cable operators to incentivise the landing of submarine cables, ensure sufficient landing resources, protect submarine cables from damage in our busy shipping lanes, and route cables to avoid disaster-prone areas.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Telecom Service Resiliency Code",
+   "summary": "The Telecom Service Resiliency Code was last updated recently in 2016.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "One key measure is the Telecom Service Resiliency Code, which was last updated recently in 2016.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cable routing after Taiwan earthquake",
+   "summary": "After the December 2006 Taiwan earthquake, operators ensured not all cable systems pass through the same earthquake-prone areas near Taiwan and Japan.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "Following the Taiwan earthquake in December 2006, our operators have ensured that not all cable systems pass through the same earthquake-prone areas near Taiwan and Japan.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "IMDA code implementation and fourth operator",
+   "summary": "IMDA works closely to ensure operators implement the code, as systems grow more complex and a fourth operator is about to come in.",
+   "sentences": [
+    {
+     "sid": "s00027",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "So, IMDA works very closely, firstly, to make sure that they implement the code that I mentioned earlier.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "So, we continue to explore this because we know that the systems will be getting more complex and a fourth operator is about to come in.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1790",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-10-03"
+  ],
+  "report_ids": [
+   "oral-answer-1790"
+  ],
+  "sentences_total": 29,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.3793,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:46:30"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1670,
+   "completion_tokens": 277,
+   "estimated": false,
+   "cost_usd": 0.000311
+  }
+ }
+}

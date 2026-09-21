@@ -1,0 +1,146 @@
+{
+ "title": "Development of New Digital Identity System",
+ "what_it_is": "Development of New Digital Identity System",
+ "sections": [
+  {
+   "label": "Digital identity system development update",
+   "summary": "The Government plans a mobile software token-based authentication system and expanded MyInfo service in the first half of 2018.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Ms Tin Pei Ling",
+     "attributed": true,
+     "text": "asked the Prime Minister whether he can provide an update on the progress of the new digital identity system development in Singapore and how the Government intends to scale up on the use and applications of biometric elements.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Communications and Information and Education (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "It is essential to have a secure digital identity system to protect the integrity of these transactions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Communications and Information and Education (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "Our current digital identity system relies on the SingPass with 2-Factor Authentication.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Communications and Information and Education (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "The next step is to develop a mobile software token-based authentication system.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Communications and Information and Education (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "We will also remove the inconvenience of repeatedly entering the same data on multiple forms by expanding the MyInfo service for more digital services.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Communications and Information and Education (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "These will take place in the first half of 2018.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Digital signatures and biometric technologies",
+   "summary": "Services include digital signatures and document vaults, and biometric technologies such as facial recognition are being explored.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "The Senior Minister of State for Communications and Information and Education (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "These services include digital signatures and document vaults.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Senior Minister of State for Communications and Information and Education (Dr Janil Puthucheary) (for the Prime Minister)",
+     "attributed": true,
+     "text": "We are also exploring various forms of biometric technologies, such as facial recognition, to enhance the security for identification, authentication and authorisation.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Transition into biometric systems",
+   "summary": "For any transitions into biometric systems, no complete cut-over is being aimed for or planned.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "With respect to the first issue about the transition into biometric systems, for any of the transitions, we are not aiming for nor planning a complete cut-over.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Interoperable systems including PayNow",
+   "summary": "The various systems, including PayNow, are designed to be interoperable.",
+   "sentences": [
+    {
+     "sid": "s00026",
+     "speaker": "Dr Janil Puthucheary",
+     "attributed": true,
+     "text": "The various systems, including PayNow, are designed to be interoperable.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1783",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-10-03"
+  ],
+  "report_ids": [
+   "oral-answer-1783"
+  ],
+  "sentences_total": 30,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 3,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:46:38"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1409,
+   "completion_tokens": 213,
+   "estimated": false,
+   "cost_usd": 0.000257
+  }
+ }
+}

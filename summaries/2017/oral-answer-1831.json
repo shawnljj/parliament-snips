@@ -1,0 +1,128 @@
+{
+ "title": "Adequacy of Reserve Buses to Minimise Disruptions to Commuters Caught in Train Breakdowns",
+ "what_it_is": "Adequacy of Reserve Buses to Minimise Disruptions to Commuters Caught in Train Breakdowns",
+ "sections": [
+  {
+   "label": "Reserve buses and MRT disruptions",
+   "summary": "Minister states reserve bus fleets are not maintained purely for train disruptions, with off-duty buses, taxi alerts and operator plans used instead.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Miss Cheng Li Hui",
+     "attributed": true,
+     "text": "asked the Minister for Transport (a) how large is our reserve fleet of buses and drivers; (b) whether it is sufficient to minimise disruptions caused to commuters during MRT breakdowns; (c) whether there are plans to involve taxi companies and their network of taxis during such disruptions to minimise the impact on commuters; and (d) whether there is a system currently in place to hold the operators to task in cases of service disruption.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "It is not prudent use of resources to maintain a fleet of reserve buses and drivers to cater purely for train disruptions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "In the event of a prolonged disruption, operators will use buses that are off-duty or cross-deploy buses from less crowded services to provide bus-bridging services.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Taxi companies are also alerted to inform their drivers of high demand areas along the affected routes, so that more drivers can make their vehicles available in those areas.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "As part of their licences, rail operators are required to have a robust Rail Incident Management Plan, which includes accurate and timely information dissemination and the provision of bus bridging services.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "LTA will take regulatory action if there are failings in the implementation of this plan.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "That when we have a prolonged disruption, we will try to ease the pain by providing free buses for bridging.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "But it is never satisfactory because the bus capacity just cannot cope, especially if it happens during peak hours.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "The moment the MRT starts to run, the queue, even though it is for free buses, just disappears.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Therefore, our priority is straightforward − focus on the basic needs, ensure train reliability.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1831",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-11-07"
+  ],
+  "report_ids": [
+   "oral-answer-1831"
+  ],
+  "sentences_total": 12,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 1,
+  "selection_share": 0.8333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 2,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:43:13"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1159,
+   "completion_tokens": 96,
+   "estimated": false,
+   "cost_usd": 0.000189
+  }
+ }
+}

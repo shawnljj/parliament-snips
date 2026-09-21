@@ -1,0 +1,126 @@
+{
+ "title": "Investigations into Cyberattack on MINDEF's Systems",
+ "what_it_is": "Investigations into Cyberattack on MINDEF's Systems",
+ "sections": [
+  {
+   "label": "MINDEF I-net breach detection",
+   "summary": "MINDEF's I-net breach was detected on 1 February 2017, the affected server was taken offline, and forensics showed it occurred weeks earlier.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "The breach of MINDEF's I-net system was detected on 1 February 2017 and the affected server was taken offline.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Forensic investigations on the I-net system showed that the breach had occurred weeks before detection.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Agencies informed, personnel contacted",
+   "summary": "Other Government agencies were informed, the 854 affected personnel were contacted, and MINDEF/SAF will develop tools to enhance cyberattack response.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Other relevant Government agencies were also informed about the breach, and the 854 personnel, whose personal information was stolen, were contacted to take the necessary precautions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "As part of ongoing initiatives to strengthen our cyber systems, MINDEF/SAF will develop better assessment tools, data analytics and content scanning engines to enhance our response to cyberattacks.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Mitigation steps and lost information",
+   "summary": "MINDEF declined to comment on identifying the perpetrator, and stated that only NRIC, telephone numbers and dates of birth were lost, with no passwords.",
+   "sentences": [
+    {
+     "sid": "s00039",
+     "speaker": "Mr Dennis Tan Lip Fong (Non-Constituency Member)",
+     "attributed": true,
+     "text": "If so, has MINDEF taken any steps to mitigate this?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00040",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "I have to seek the Member's understanding that because this concerns a security issue, I would rather not comment about how we have identified the perpetrator and who it can be or who it is.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00041",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "For the second question, the information lost is basic, which are National Registration Identity Card, telephone numbers and dates of birth.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00042",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "No passwords were lost and I do not think that with this information, they can conduct further hacking.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1675",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-04-03"
+  ],
+  "report_ids": [
+   "oral-answer-1675"
+  ],
+  "sentences_total": 42,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.1905,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 7,
+   "coverage": 0.4286,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:00:47"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2269,
+   "completion_tokens": 213,
+   "estimated": false,
+   "cost_usd": 0.000377
+  }
+ }
+}

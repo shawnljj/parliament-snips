@@ -1,0 +1,127 @@
+{
+ "title": "Internet Disruptions Due to Cable Cuts",
+ "what_it_is": "Internet Disruptions Due to Cable Cuts",
+ "sections": [
+  {
+   "label": "Internet disruption reporting and cable cuts",
+   "summary": "IMDA has strict requirements and reports 26 Internet disruptions over three hours since 2013, 14 from cable cuts, with this incident caused by HDB project construction works.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "IMDA has put in place strict regulatory requirements to prevent such disruptions and ensure quick service recovery when disruptions occur.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "Based on reports made to IMDA under its Outage Reporting Code, 26 Internet disruptions lasting more than three hours have been reported since 2013.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "Of these, 14 were caused by cable cuts.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "This incident was caused by construction works undertaken by several contractors involved in a Housing and Development Board (HDB) project in the Jurong area.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "Investigations into past cable cut incidents revealed that most incidents occurred because contractors did not follow established standard operating procedures (SOPs).",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Worksite advisories and repair costs",
+   "summary": "IMDA circulates multilingual Dos and Don'ts at worksites, telco repair costs can exceed half a million dollars, and IMDA will work to minimise cable cut incidents.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "IMDA has also circulated \"Dos and Don'ts\" in multiple languages at worksites to alert workers on the need to exercise due care and caution when carrying out earthworks.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "I am told that the telecommunications companies' (telcos') repair costs alone can sometimes exceed half a million dollars.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "IMDA will continue to work closely with all parties involved to ensure that the number of such cable cut incidents is minimised.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "As to whether the company wants to do a gesture of goodwill, it is up to them.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1725",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-05-08"
+  ],
+  "report_ids": [
+   "oral-answer-1725"
+  ],
+  "sentences_total": 24,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.375,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 8,
+   "coverage": 0.25,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:56:22"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1440,
+   "completion_tokens": 168,
+   "estimated": false,
+   "cost_usd": 0.000249
+  }
+ }
+}

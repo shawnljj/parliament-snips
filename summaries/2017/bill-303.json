@@ -1,0 +1,151 @@
+{
+ "title": "Merchant Shipping (Wreck Removal) Bill",
+ "what_it_is": "Merchant Shipping (Wreck Removal) Bill",
+ "sections": [
+  {
+   "label": "Acceding to Wreck Removal Convention",
+   "summary": "Singapore is acceding to the Nairobi International Convention on the Removal of Wrecks, adopted by the IMO in 2007 and in force since 2015.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Coordinating Minister for Infrastructure and Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "Ensuring safety of navigation and sustainability of the marine environment is, therefore, of utmost importance to us.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Coordinating Minister for Infrastructure and Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "That is why we are acceding to the Nairobi International Convention on the Removal of Wrecks, which was adopted by the International Maritime Organization (IMO) in May 2007 and entered into force in April 2015.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Merchant Shipping Wreck Removal Bill",
+   "summary": "The Merchant Shipping (Wreck Removal) Bill seeks to give effect to the Convention.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Coordinating Minister for Infrastructure and Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "The Merchant Shipping (Wreck Removal) Bill seeks to give effect to the Convention.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Wreck Removal Certificate fee",
+   "summary": "The Wreck Removal Certificate fee will be $60, with subsidiary legislation and fees targeted for the third quarter of this year.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "The Coordinating Minister for Infrastructure and Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "The fee for the issuance and renewal of the Wreck Removal Certificate will be $60, similar to that for other certificates.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "The Coordinating Minister for Infrastructure and Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "We are targeting to introduce the relevant subsidiary legislation and fees in the third quarter of this year.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Rules for removing wrecks",
+   "summary": "The Convention will provide new international rules ensuring prompt and effective removal of wrecks beyond the territorial seas of signatory countries.",
+   "sentences": [
+    {
+     "sid": "s00032",
+     "speaker": "Mr Dennis Tan Lip Fong (Non-Constituency Member)",
+     "attributed": true,
+     "text": "The Wreck Removal Convention will provide new international rules that will ensure prompt and effective removal of wrecks located beyond the territorial seas of all signatory countries.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Owner duties and insurance",
+   "summary": "Registered owners must locate, mark and remove hazardous wrecks, and ships of 300 gross tonnage and above need conforming insurance and a Blue Card.",
+   "sentences": [
+    {
+     "sid": "s00035",
+     "speaker": "Mr Dennis Tan Lip Fong (Non-Constituency Member)",
+     "attributed": true,
+     "text": "Under the Convention, the registered owner of a ship is responsible for locating, marking and removing a wreck deemed to be a hazard in a state's Convention area.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00037",
+     "speaker": "Mr Dennis Tan Lip Fong (Non-Constituency Member)",
+     "attributed": true,
+     "text": "Under the Convention, ships of 300 gross tonnage and above which are registered with the ship registry of a State Party to the Convention or which is entering or leaving a port belonging to a state party, will need to have insurance arrangements in conformity with the requirements of the Convention, leading to an insurance certificate or what is called a Blue Card to be issued by insurers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Optional territorial sea clause",
+   "summary": "Article 3(2) is an optional clause letting state parties extend the Convention to wrecks within their territorial sea.",
+   "sentences": [
+    {
+     "sid": "s00043",
+     "speaker": "Mr Dennis Tan Lip Fong (Non-Constituency Member)",
+     "attributed": true,
+     "text": "The Convention also includes an optional clause at Article 3(2) enabling state parties to extend the coverage of the Convention to wrecks within their territorial sea.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-303",
+  "group": "bill",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-05-08"
+  ],
+  "report_ids": [
+   "bill-303"
+  ],
+  "sentences_total": 53,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 6,
+  "selection_share": 0.1698,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 3,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:56:08"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2778,
+   "completion_tokens": 339,
+   "estimated": false,
+   "cost_usd": 0.000484
+  }
+ }
+}

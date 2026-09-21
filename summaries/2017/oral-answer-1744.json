@@ -1,0 +1,106 @@
+{
+ "title": "Measures to Ensure Stable Motorcycle COE Prices",
+ "what_it_is": "Measures to Ensure Stable Motorcycle COE Prices",
+ "sections": [
+  {
+   "label": "Motorcycle ARF changes and COE supply",
+   "summary": "Feedback says the market is in flux after ARF changes; higher-end motorcycles cost more, lower-end ones are unaffected, and Category D COE contributions to the Open Category stopped in May.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The feedback was that the market is still in a state of flux and will take some time to stabilise following the recent Additional Registration Fee (ARF) changes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "These ARF changes will make higher end motorcycles more expensive.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "However, lower end motorcycles, which constitute more than 60% of the market, are unaffected and continue to attract an ARF of only 15% of the Open Market Value.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Furthermore, we had stopped the contribution of COEs from Category D to the Open Category since May, which will result in a larger supply of motorcycle COEs.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Motorcycle COE category splitting concerns",
+   "summary": "Motorcycles are in a separate COE category so buyers need not compete with car buyers, but splitting Category D further could shrink quotas and increase volatility in quota and prices.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "But let me reiterate that motorcycles currently are in a separate COE category so that motorcycle buyers need not compete with car buyers for COEs.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "However, splitting Category D further would result in a much smaller quota available in each sub-category and this may lead to more volatility in the quota as well as the prices.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1744",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-07-04"
+  ],
+  "report_ids": [
+   "oral-answer-1744"
+  ],
+  "sentences_total": 9,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.6667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:51:47"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1018,
+   "completion_tokens": 156,
+   "estimated": false,
+   "cost_usd": 0.000186
+  }
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "title": "Time between Polling and Awarding a Contract for HDB's Home Improvement Programme",
+ "what_it_is": "Time between Polling and Awarding a Contract for HDB's Home Improvement Programme",
+ "sections": [
+  {
+   "label": "HIP contract to polling timeline",
+   "summary": "The average time from HIP contract award to polling is about nine months, with residents given six weeks to opt and works usually starting four months after polling.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Second Minister for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "The average time taken between the award of an HIP contract to polling is about nine months.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Second Minister for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "After polling, residents are given six weeks to select and opt for the HIP works.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Second Minister for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Contractors will then prepare the materials before they start the HIP works, usually around four months after polling.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Hougang residents waiting for HIP",
+   "summary": "Electrical works are outside the house and distinct, and residents of Blocks 309 to 328 in Hougang Avenue 5 have waited 730 days since the HIP announcement.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr Png Eng Huat (Hougang)",
+     "attributed": true,
+     "text": "Whereas the electrical works, these are actually outside the house, so they are quite distinct.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Png Eng Huat (Hougang)",
+     "attributed": true,
+     "text": "I would also like to say that the residents of Blocks 309 to 328 in Hougang Avenue 5 have been waiting like 730 days since the announcement of the HIP.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Delay over electrical substations",
+   "summary": "Blocks 309 to 312, 314, 317 to 319 took longer from tender award to polling due to Working Committee issues over electrical substations, now resolved with polling soon.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "The one he talked about first – Blocks 309 to 312, 314, 317 to 319 – these have taken a bit longer after award of tender to the dictated date for polling because the Working Committee, including representatives from the Town Council, had some issues regarding, I am told, the electrical substations (ESS), either the location or they wanted the existing ones to be upgraded.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "And, as a result, a number of agencies have to be involved because this was something that they had to look into seriously.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "I am told that that has been resolved and that the poll will come soon.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Straw poll feedback purpose",
+   "summary": "The straw poll is indicative, gathers early feedback for the Working Committee and project team before finalising the package, and its results are not counted towards the actual poll.",
+   "sentences": [
+    {
+     "sid": "s00030",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "Yes, the straw poll is indicative, and it is to allow feedback to be gathered early so that changes can be taken on board by the Working Committee and the project team before you finalise the package and put it before your residents.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00031",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "The results of the straw poll are not counted towards the actual poll.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1737",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-07-04"
+  ],
+  "report_ids": [
+   "oral-answer-1737"
+  ],
+  "sentences_total": 31,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 4,
+  "selection_share": 0.3226,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 6,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:51:35"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1797,
+   "completion_tokens": 271,
+   "estimated": false,
+   "cost_usd": 0.000327
+  }
+ }
+}

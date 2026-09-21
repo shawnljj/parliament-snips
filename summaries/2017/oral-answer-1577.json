@@ -1,0 +1,107 @@
+{
+ "title": "Total Road Charges Paid by Singapore Vehicles to Malaysian Authority at Woodlands and Tuas Checkpoints",
+ "what_it_is": "Total Road Charges Paid by Singapore Vehicles to Malaysian Authority at Woodlands and Tuas Checkpoints",
+ "sections": [
+  {
+   "label": "Malaysia road charges matching policy",
+   "summary": "Singapore has a long-standing policy of matching levies, tolls or fees charged by Malaysia for road links, with details to be announced soon.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Ang Wei Neng",
+     "attributed": true,
+     "text": "asked\tthe Minister for Transport (a) what is the estimated amount of road charges (RM20 per vehicle) that Singapore vehicles have been paying to Malaysia since 1 November 2016 based on the number of Singapore vehicles leaving Woodlands and Tuas checkpoints; and (b) whether LTA intends to impose similar charges on foreign vehicles entering Woodlands and Tuas checkpoints in the near future.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "We have a long-standing policy of matching any levy, tolls or fees charged by Malaysia for using the road links between Singapore and Malaysia.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "This is to ensure that Malaysia takes into consideration our response whenever they raise their tolls or introduce a new levy.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "We will announce details of this matching charge soon.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Ang Wei Neng (Jurong)",
+     "attributed": true,
+     "text": "Since additional charges have been imposed, has the number of Singapore vehicles entering Malaysia reduced significantly over the same period of time over the last year or compared to the previous month?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "It is not noticeable, partly because it coincided with the December holiday period.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "Also the bulk of vehicles using the Causeway are motorcyclists.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1577",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-01-09"
+  ],
+  "report_ids": [
+   "oral-answer-1577"
+  ],
+  "sentences_total": 8,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 1,
+  "selection_share": 0.875,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 4,
+   "turns_total": 4,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:33:33"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 939,
+   "completion_tokens": 88,
+   "estimated": false,
+   "cost_usd": 0.000156
+  }
+ }
+}

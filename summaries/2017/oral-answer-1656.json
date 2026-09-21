@@ -1,0 +1,106 @@
+{
+ "title": "Correction of Information on Gov Factually Website",
+ "what_it_is": "Correction of Information on Gov Factually Website",
+ "sections": [
+  {
+   "label": "Factually clarifying government policy misperceptions",
+   "summary": "Factually clarifies common misperceptions of Government policy and inaccurate assertions on public concerns, addressing housing, economy, finance and Zika.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "Factually aims to clarify widespread or common misperceptions of Government policy or incorrect assertions on matters of public concern that can harm Singapore's social fabric.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "Over the years, the site has addressed inaccurate assertions about various matters, such as housing, the economy and finance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "During the Zika outbreak, we allayed public misperceptions about the virus.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for Communications and Information (Assoc Prof Dr Yaacob Ibrahim)",
+     "attributed": true,
+     "text": "Factually, as its name suggests, concerns itself with facts, not opinions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public engagement sessions raising concerns",
+   "summary": "Public engagement exercises and sessions are held periodically, and concerns raised by the public are looked into and clarified if misperceptions exist.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "In fact, periodically, we do public engagement exercises and sessions, and during these sessions, some concerns may be raised by members of the public and we will look into them.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "If we think there is enough of interest in that subject matter that has purveyed some misperceptions, we will clarify.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1656",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-03-01"
+  ],
+  "report_ids": [
+   "oral-answer-1656"
+  ],
+  "sentences_total": 11,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.5455,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:17:32"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 946,
+   "completion_tokens": 138,
+   "estimated": false,
+   "cost_usd": 0.000171
+  }
+ }
+}

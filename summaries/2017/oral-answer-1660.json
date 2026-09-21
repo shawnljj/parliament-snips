@@ -1,0 +1,93 @@
+{
+ "title": "Doll Found on Tracks of Dhoby Ghaut MRT Station",
+ "what_it_is": "Doll Found on Tracks of Dhoby Ghaut MRT Station",
+ "sections": [
+  {
+   "label": "Doll on Dhoby Ghaut tracks",
+   "summary": "Investigation found no evidence of a security breach after the doll was found on the tracks at Dhoby Ghaut station.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Leon Perera",
+     "attributed": true,
+     "text": "asked\tthe Minister for Transport (a) what is the outcome of the investigation into the doll found on the tracks at Dhoby Ghaut station on 31 January this year; (b) whether this incident was the result of a security breach; and (c) if so, what measures are being taken to ensure similar incidents do not occur again.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "They found no evidence of a security breach.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "They drew this conclusion after reviewing CCTV footages and making physical checks of the possible track access points.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "One possible explanation is that the doll was accidentally dropped by a commuter through the platform gap and then picked up and placed on the tunnel wall by a worker.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "If we are talking about identical incidents, then, this is the first time.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1660",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-03-02"
+  ],
+  "report_ids": [
+   "oral-answer-1660"
+  ],
+  "sentences_total": 7,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.7143,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:17:21"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 856,
+   "completion_tokens": 79,
+   "estimated": false,
+   "cost_usd": 0.000142
+  }
+ }
+}

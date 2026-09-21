@@ -1,0 +1,134 @@
+{
+ "title": "Decisions to Build Bukit Panjang LRT System",
+ "what_it_is": "Decisions to Build Bukit Panjang LRT System",
+ "sections": [
+  {
+   "label": "Bukit Panjang LRT faults overhaul",
+   "summary": "Bukit Panjang was picked in 1994 for the LRT pilot though built without LRT in mind, and a tender will be called to overhaul the LRT.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Second Minister for Transport (Mr Ng Chee Meng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Bukit Panjang was identified in 1994 for the pilot, even though it was planned and built without LRT in mind.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Second Minister for Transport (Mr Ng Chee Meng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "To accommodate the existing developments, the LRT had to take sharp turns over undulating terrain.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for Transport (Mr Ng Chee Meng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Over time, we discovered that this made the LRT prone to faults, especially power trips at the sharp bends, where the trains' collector shoes often dislodge from the power rail.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Second Minister for Transport (Mr Ng Chee Meng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "LTA and Singapore Mass Rapid Transit (SMRT) have put in significant efforts to improve system reliability, including detailed power rail checks, hotspot replacement and installation of an additional power source.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Second Minister for Transport (Mr Ng Chee Meng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "As the LRT is coming to the end of its design life, we will be calling a tender at the end of this year to overhaul the LRT.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Keppel tender and LRT design",
+   "summary": "The LRT was awarded to Keppel Integrated Engineering, the lowest bidder at about $35 million per kilometre, and its straight-line design was adapted to undulating terrain.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Mr Pritam Singh (Aljunied)",
+     "attributed": true,
+     "text": "The second question I have is with regard to tender selection when the Line was awarded to Keppel Integrated Engineering (KIE).",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Pritam Singh (Aljunied)",
+     "attributed": true,
+     "text": "It was reported that KIE was the lowest bidder and its price worked out to about $35 million per kilometre.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "As I have stated in my reply, this straight-line design of the LRT was adapted to undulating terrain and sharp turns, and this caused the power collector shoes to dislodge from the power rail.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "We have taken a look at the design considerations and this will be addressed in the upcoming tender to improve the reliability of the whole system.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "So, in the initial implementation of the LRT, we adapted a system that is usually for straight-line travel into a housing estate.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1766",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-10-02"
+  ],
+  "report_ids": [
+   "oral-answer-1766"
+  ],
+  "sentences_total": 18,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.5556,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:48:27"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1444,
+   "completion_tokens": 169,
+   "estimated": false,
+   "cost_usd": 0.000249
+  }
+ }
+}

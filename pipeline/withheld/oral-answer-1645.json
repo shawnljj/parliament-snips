@@ -1,0 +1,136 @@
+{
+ "item": {
+  "id": "oral-answer-1645",
+  "year": "2017",
+  "title": "Engineering Advancements in HDB Flats",
+  "group": "oral",
+  "tier": "small",
+  "source_words": 1033,
+  "prompt_chars": 7851,
+  "sentence_count": 35,
+  "chunk_count": 1,
+  "report_ids": [
+   "oral-answer-1645"
+  ],
+  "sitting_dates": [
+   "2017-02-20"
+  ]
+ },
+ "verdict": {
+  "passed": false,
+  "verbatim_invariant": true,
+  "text_failures": [],
+  "text_failures_count": 0,
+  "schema_complete": true,
+  "missing_fields": [],
+  "sections_total": 3,
+  "sections_without_summary": [],
+  "sections_without_sentences": [],
+  "sentences_published": 4,
+  "sentences_selected": 4,
+  "turns_cited": 1,
+  "turns_total": 8,
+  "coverage": 0.125,
+  "min_coverage_required": 0.15,
+  "min_turns_required": 1,
+  "checked_at": "2026-09-20T23:26:53"
+ },
+ "attempt": {
+  "title": "Engineering Advancements in HDB Flats",
+  "what_it_is": "Engineering Advancements in HDB Flats",
+  "sections": [
+   {
+    "label": "HDB concrete technology improvements",
+    "summary": "HDB keeps abreast of concrete technology improvements and introduces new materials after testing for performance and cost effectiveness.",
+    "sentences": [
+     {
+      "sid": "s00002",
+      "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+      "attributed": true,
+      "text": "To enhance a building's structural performance, HDB keeps abreast of improvements in concrete technology and introduces new materials after they have been tested for performance and cost effectiveness.",
+      "added_for_context": false
+     }
+    ]
+   },
+   {
+    "label": "Structural health monitoring sensors",
+    "summary": "About a decade ago, HDB began installing structural health monitoring sensors in key structural columns of new HDB developments.",
+    "sentences": [
+     {
+      "sid": "s00005",
+      "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+      "attributed": true,
+      "text": "About a decade ago, HDB also started installing structural health monitoring sensors in key structural columns of new HDB developments.",
+      "added_for_context": false
+     }
+    ]
+   },
+   {
+    "label": "UEM use and noise modelling",
+    "summary": "HDB used UEM in Punggol Treelodge planning and design, now uses it wider in Bidadari and Tengah, and uses noise modelling to guide block orientation and barriers.",
+    "sentences": [
+     {
+      "sid": "s00008",
+      "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+      "attributed": true,
+      "text": "HDB started using UEM some years back in the planning and design of the Build-To-Order (BTO) development known as Punggol Treelodge, and is now using UEM on a much wider scale in BTO projects in Bidadari and Tengah.",
+      "added_for_context": false
+     },
+     {
+      "sid": "s00010",
+      "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+      "attributed": true,
+      "text": "To mitigate noise impact in buildings, advanced noise modelling is used to guide the orientation of HDB blocks and the placement of physical barriers to enhance aural comfort.",
+      "added_for_context": false
+     }
+    ]
+   }
+  ],
+  "_meta": {
+   "schema": 4,
+   "id": "oral-answer-1645",
+   "group": "oral",
+   "year": "2017",
+   "sitting_dates": [
+    "2017-02-20"
+   ],
+   "report_ids": [
+    "oral-answer-1645"
+   ],
+   "sentences_total": 35,
+   "sentences_selected": 4,
+   "sentences_in_sections": 4,
+   "sentences_skipped_within_selection": 0,
+   "sentences_added_for_context": 0,
+   "sections_total": 3,
+   "selection_share": 0.1143,
+   "generated_by": "stage2b_select + stage2c_sections",
+   "gate": {
+    "passed": false,
+    "verbatim_invariant": true,
+    "text_failures": [],
+    "text_failures_count": 0,
+    "schema_complete": true,
+    "missing_fields": [],
+    "sections_total": 3,
+    "sections_without_summary": [],
+    "sections_without_sentences": [],
+    "sentences_published": 4,
+    "sentences_selected": 4,
+    "turns_cited": 1,
+    "turns_total": 8,
+    "coverage": 0.125,
+    "min_coverage_required": 0.15,
+    "min_turns_required": 1,
+    "checked_at": "2026-09-20T23:26:53"
+   },
+   "usage": {
+    "calls": 3,
+    "prompt_tokens": 2125,
+    "completion_tokens": 183,
+    "estimated": false,
+    "cost_usd": 0.000349
+   }
+  }
+ }
+}

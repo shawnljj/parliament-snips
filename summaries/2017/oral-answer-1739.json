@@ -1,0 +1,132 @@
+{
+ "title": "Adequacy of Energy Sources for Future Needs",
+ "what_it_is": "Adequacy of Energy Sources for Future Needs",
+ "sections": [
+  {
+   "label": "Energy demand drivers",
+   "summary": "Energy demand will vary with GDP and population growth rate.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Trade and Industry (Ms Sim Ann) (for the Minister for Trade and Industry (Industry))",
+     "attributed": true,
+     "text": "The actual energy demand will vary depending on GDP and population growth rate.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Industrial energy efficiency measures",
+   "summary": "Industry used 67% of energy in 2014 and improved efficiency 0.6% in 2015, with Government measures including an enhanced Energy Conservation Act, MEPS and a planned carbon tax.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Trade and Industry (Ms Sim Ann) (for the Minister for Trade and Industry (Industry))",
+     "attributed": true,
+     "text": "The industrial sector accounted for 67% of total energy consumption in 2014.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Trade and Industry (Ms Sim Ann) (for the Minister for Trade and Industry (Industry))",
+     "attributed": true,
+     "text": "In 2015, the industry achieved a 0.6% energy efficiency improvement rate, an increase from 0.4% in 2014.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Trade and Industry (Ms Sim Ann) (for the Minister for Trade and Industry (Industry))",
+     "attributed": true,
+     "text": "The Government will continue to work with the industry to achieve energy efficiency rates similar to the 1% to 2% per annum in leading developed countries.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Trade and Industry (Ms Sim Ann) (for the Minister for Trade and Industry (Industry))",
+     "attributed": true,
+     "text": "To this end, the MEWR has recently enhanced the Energy Conservation Act to strengthen energy efficiency practices among companies and plans to implement Minimum Energy Performance Standards (MEPS) for common industrial equipment.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Minister of State for Trade and Industry (Ms Sim Ann) (for the Minister for Trade and Industry (Industry))",
+     "attributed": true,
+     "text": "The Minister for Finance has also announced in this year's Budget Speech that the Government aims to implement a carbon tax from 2019.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Green Mark building target",
+   "summary": "The target is for 80% of all buildings to meet BCA's Green Mark standards by 2030.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "The Senior Minister of State for Trade and Industry (Ms Sim Ann) (for the Minister for Trade and Industry (Industry))",
+     "attributed": true,
+     "text": "Our target is to have 80% of all buildings achieve BCA's Green Mark standards by 2030.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Solar energy adoption plan",
+   "summary": "In 2014 a plan was announced to raise solar adoption to 350 MWp by 2020.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "The Senior Minister of State for Trade and Industry (Ms Sim Ann) (for the Minister for Trade and Industry (Industry))",
+     "attributed": true,
+     "text": "In 2014, we announced a plan to raise the adoption of solar energy in our system to 350 megawatt peak (MWp) by 2020.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1739",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-07-04"
+  ],
+  "report_ids": [
+   "oral-answer-1739"
+  ],
+  "sentences_total": 31,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.2581,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 1,
+   "turns_total": 4,
+   "coverage": 0.25,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:51:37"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1730,
+   "completion_tokens": 228,
+   "estimated": false,
+   "cost_usd": 0.000306
+  }
+ }
+}

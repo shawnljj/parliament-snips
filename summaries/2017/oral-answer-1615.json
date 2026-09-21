@@ -1,0 +1,141 @@
+{
+ "title": "Installation of Passenger Safety Features for Taxis and Private Hire Cars",
+ "what_it_is": "Installation of Passenger Safety Features for Taxis and Private Hire Cars",
+ "sections": [
+  {
+   "label": "Vehicle safety devices and features",
+   "summary": "Taxis and private hire cars face the same safety requirements as private cars, with seat belts mandatory but airbags not, though about 70% of taxis now have airbags.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Mr Ang Hin Kee",
+     "attributed": true,
+     "text": "asked\tthe Minister for Transport whether the Ministry will consider making it mandatory for all vehicles which provide hire and reward services to be installed with safety devices and safety features to avoid incidents that compromise road safety for their passengers and road users.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "We impose the same safety requirements on taxis and private hire cars as on private cars.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "Seat belts for the driver and front and back seat passengers are mandatory.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "However, we have not made airbags mandatory, as they are generally considered by the industry to be a supporting feature to supplement seat belts.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "If seat belts are used properly, the injury risks to passengers are already greatly reduced.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "There is no international agreement on norms on the installation of airbags.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "Nevertheless, all the taxi companies in Singapore have taken the initiative to procure taxis with airbags when expanding or renewing their fleet.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "Today, about 70% of all taxis in Singapore are equipped with airbags, compared to about 23% five years ago.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Airbags in new and old cars",
+   "summary": "New cars usually come with airbags, but retrofitting existing cars is technically and costlier, so old cars should be phased out over time.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "When operators renew or expand their fleet, new cars usually come with airbags.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "When we talk about retrofitting airbags into existing cars, then that is a different proposition as that comes with more technical and cost challenges.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "We should allow time to take its natural course so that old cars in our system will eventually be phased out and all new cars will have airbags.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1615",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-02-07"
+  ],
+  "report_ids": [
+   "oral-answer-1615"
+  ],
+  "sentences_total": 16,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 2,
+  "selection_share": 0.6875,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 3,
+   "turns_total": 5,
+   "coverage": 0.6,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:28:43"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1262,
+   "completion_tokens": 161,
+   "estimated": false,
+   "cost_usd": 0.000222
+  }
+ }
+}

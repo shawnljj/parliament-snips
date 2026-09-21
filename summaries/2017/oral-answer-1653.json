@@ -1,0 +1,106 @@
+{
+ "title": "Ban on Domestic Trade in Ivory",
+ "what_it_is": "Ban on Domestic Trade in Ivory",
+ "sections": [
+  {
+   "label": "Domestic ivory trade ban",
+   "summary": "The Minister was asked whether the Ministry will ban domestic ivory trade, the timeframe, and factors if not, with implementation details being worked out.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Louis Ng Kok Kwang",
+     "attributed": true,
+     "text": "asked\tthe Minister for National Development (a) whether the Ministry will implement a ban on the domestic trade in ivory; (b) if so, what is the timeframe for implementing the ban; and (c) if not, what factors does the Ministry take into account in not banning the domestic trade.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for National Development (Dr Koh Poh Koon) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "This is part of Singapore's broader commitment to tackle the illegal ivory trade and to support elephant conservation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for National Development (Dr Koh Poh Koon) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "The implementation details, including an engagement process with relevant stakeholders, are currently being worked out.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore ivory trade rules",
+   "summary": "Commercial import and export of ivory have been prohibited since 1990, non-commercial imports need AVA approval, and domestic buying and selling is permitted until a ban.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "In terms of local ivory trade, the commercial import and export of ivory have been prohibited since 1990.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "Non-commercial import and export of ivory, for example, for museum display and for research, are still permitted with the Agri-Food and Veterinary Authority of Singapore's (AVA's) approval and documentation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "Within Singapore, buying and selling of ivory is permitted until such a ban is in place.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1653",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-03-01"
+  ],
+  "report_ids": [
+   "oral-answer-1653"
+  ],
+  "sentences_total": 8,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.75,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:17:30"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 924,
+   "completion_tokens": 138,
+   "estimated": false,
+   "cost_usd": 0.000168
+  }
+ }
+}

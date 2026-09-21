@@ -1,0 +1,86 @@
+{
+ "title": "Traffic Signs Partly Covered by Trees and Shrubs",
+ "what_it_is": "Traffic Signs Partly Covered by Trees and Shrubs",
+ "sections": [
+  {
+   "label": "No-planting zones and road inspections",
+   "summary": "No-planting zones at crossings, monthly NParks inspections, and LTA road inspections at set intervals ensure visibility of crossings and signs.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "No-planting zones are also established around pedestrian crossings to ensure that motorists have a clear view of pedestrians.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "In addition, NParks conducts inspections at least once a month to make sure that greenery does not block the visibility of crossings and signs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "LTA inspects roads at regular intervals − weekly for expressways, every two weeks for major roads and every eight weeks for minor roads.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "During inspections, if LTA detects road defects, such as faded signs and signs blocked by trees or shrubs, LTA will rectify the defects and also alert NParks should there be any trees that obstruct the road signs.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1743",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-07-04"
+  ],
+  "report_ids": [
+   "oral-answer-1743"
+  ],
+  "sentences_total": 7,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.5714,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:51:51"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 873,
+   "completion_tokens": 84,
+   "estimated": false,
+   "cost_usd": 0.000146
+  }
+ }
+}

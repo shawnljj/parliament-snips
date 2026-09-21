@@ -1,0 +1,113 @@
+{
+ "title": "Childcare Centres at Places of Employment",
+ "what_it_is": "Childcare Centres at Places of Employment",
+ "sections": [
+  {
+   "label": "Workplace childcare centres and staff size",
+   "summary": "Asks how many employers provide onsite childcare centres and whether firms of a certain staff size will be encouraged to do so.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Er Dr Lee Bee Wah",
+     "attributed": true,
+     "text": "asked the Minister for Social and Family Development (a) how many places of employment provide childcare centres on their premises currently; and (b) whether the Ministry will consider encouraging companies of a certain staff size to provide onsite childcare facilities for their employees.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "These centres make up about a third of all childcare centres in Singapore.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Schemes for workplace childcare centres",
+   "summary": "Describes schemes giving developers and employers grants or floor area for childcare space, and 40,000 new preschool places by 2022.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "The Community and Sports Facilities Scheme, for instance, provides bonus gross floor area to developers who set aside space in commercial buildings for childcare centres.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "Another is the Enhanced Workplace Childcare Centre Scheme, where eligible workplace centres may receive a furnishing and equipment grant as well as a development grant to cover the costs of converting space in workplaces for childcare use.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "In addition, for new commercial developments, the Early Childhood Development Agency has worked with the Urban Redevelopment Authority to require the developer for selected Government Land Sale sites to provide space for childcare centres.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "As such, the Government will continue to ramp up the number of childcare places island-wide, mostly at new Housing and Development Board residential developments.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Social and Family Development (Mr Desmond Lee)",
+     "attributed": true,
+     "text": "Parents can look forward to over 40,000 new full-day preschool places by 2022.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1796",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-10-03"
+  ],
+  "report_ids": [
+   "oral-answer-1796"
+  ],
+  "sentences_total": 12,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 2,
+  "selection_share": 0.5833,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 2,
+   "turns_total": 2,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:46:52"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1066,
+   "completion_tokens": 138,
+   "estimated": false,
+   "cost_usd": 0.000188
+  }
+ }
+}

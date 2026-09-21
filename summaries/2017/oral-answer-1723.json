@@ -1,0 +1,139 @@
+{
+ "title": "Impact of Recent Price Increases on Cost of Living",
+ "what_it_is": "Impact of Recent Price Increases on Cost of Living",
+ "sections": [
+  {
+   "label": "2017 CPI inflation projection",
+   "summary": "MTI and MAS project CPI-All Items inflation to rise to 0.5% to 1.5% in 2017, driven mainly by higher electricity and energy prices.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Trade and Industry (Dr Koh Poh Koon) (for the Minister for Trade and Industry (Industry))",
+     "attributed": true,
+     "text": "For 2017, MTI and MAS have projected that the Consumer Price Index (CPI)-All Items inflation will pick up to 0.5% to 1.5%, from -0.5% in 2016.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Trade and Industry (Dr Koh Poh Koon) (for the Minister for Trade and Industry (Industry))",
+     "attributed": true,
+     "text": "The main driver of the pickup in inflation in 2017 is the expected increase in the prices of electricity and other energy-related components, such as petrol, on the back of a projected rise in global oil prices.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Administrative price adjustments impact",
+   "summary": "Administrative price adjustments, including water tariff and car park charge increases, will add around 0.2 percentage point to 2017 inflation.",
+   "sentences": [
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Trade and Industry (Dr Koh Poh Koon) (for the Minister for Trade and Industry (Industry))",
+     "attributed": true,
+     "text": "At the same time, administrative price adjustments, including the increases in water tariff and car park charges, will also contribute to a temporary increase in inflation, although I must say the impact is expected to be small.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Trade and Industry (Dr Koh Poh Koon) (for the Minister for Trade and Industry (Industry))",
+     "attributed": true,
+     "text": "MTI estimates that the various administrative price adjustments will collectively contribute around 0.2 percentage point to inflation in 2017.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Rebates excluded from CPI",
+   "summary": "The 0.2 percentage-point figure excludes rebates and subsidies; water tariffs rise in two tranches and U-Save rebates are not counted in CPI.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "On the question about whether the 0.2 percentage-point increase includes some of the rebates and Government subsidies, the answer is no.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "One, of course, is to stagger the price increases, and as Members would remember, the water tariffs are increased over two tranches: the first tranche will be in July this year, and the next increment will be in July next year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "The U-Save rebates are not taken into account in the CPI calculations, as these are actually given to households as a lump sum to be utilised over a few months.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Rebates reduce household impact",
+   "summary": "U-Save rebates are not captured in CPI adjustments, so households receiving rebates will feel a much smaller impact than reported.",
+   "sentences": [
+    {
+     "sid": "s00025",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "Therefore, when you look at the top-line adjustments for CPI, bear in mind that hidden behind it, there is also some form of U-Save rebates, for example, that are not captured in the adjustment.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00026",
+     "speaker": "Dr Koh Poh Koon",
+     "attributed": true,
+     "text": "So, for households that receive rebates, the impact for them will be much less than what is reported.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1723",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-05-08"
+  ],
+  "report_ids": [
+   "oral-answer-1723"
+  ],
+  "sentences_total": 31,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.2903,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:56:13"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 2018,
+   "completion_tokens": 261,
+   "estimated": false,
+   "cost_usd": 0.000356
+  }
+ }
+}

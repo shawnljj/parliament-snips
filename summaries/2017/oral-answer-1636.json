@@ -1,0 +1,132 @@
+{
+ "title": "Trends Involving Singaporeans Seeking Primary Healthcare Services at Polyclinics and Family Clinics",
+ "what_it_is": "Trends Involving Singaporeans Seeking Primary Healthcare Services at Polyclinics and Family Clinics",
+ "sections": [
+  {
+   "label": "GP and polyclinic visit data",
+   "summary": "Non-CHAS GP visits are not in MOH records; of recorded patients, 82% visited polyclinics and 36% GP clinics, with referrals making up 32% and 7% of new SOC attendances.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Non-CHAS visits to GPs are not included as the Ministry of Health (MOH) does not routinely collect such data from GPs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Of the patients included in our records, 82% visited polyclinics and 36% visited GP clinics.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Referrals from polyclinics and GPs make up 32% and 7% respectively of new attendances at our Specialist Outpatient Clinics (SOCs).",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Cardiology patients managed in primary care",
+   "summary": "Preliminary cardiology findings showed about 57% of heart patients previously referred to specialists can be safely managed mainly in primary care.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "On cardiology, for example, preliminary findings showed that about 57% of heart patients who previously would have been referred to specialists can be safely managed mainly in the primary care setting.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "More polyclinics and CHAS GP use",
+   "summary": "More polyclinics will be built in coming years while patients who qualify for CHAS are encouraged to use services provided by CHAS GPs.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "In the coming few years, we will be building more polyclinics.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "But at the same time, we are also encouraging patients who qualify for CHAS to utilise some of the services that are provided by the CHAS GP.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Family Medicine Clinics and primary care networks",
+   "summary": "Family Medicine Clinics show positive results but scalability is a challenge; MOH is trying a primary care network where GPs share processes, resources and ancillary support virtually.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "The Family Medicine Clinics have shown some positive results but, at the same time, we do understand that the scalability can be a challenge because of the fact that we need to mobilise the GPs, who are mainly in the solo practices, to come together to form a Family Medicine Centre.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "At the same time, MOH is trying out other initiatives and one of these initiatives that MOH will be embarking on is that of a primary care network, where a network of GPs can come together to provide team-based care on a virtual basis, where they will still practise at their own clinic premises but, at the same time, share processes, resources as well as other ancillary support.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1636",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-02-20"
+  ],
+  "report_ids": [
+   "oral-answer-1636"
+  ],
+  "sentences_total": 25,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.32,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:26:57"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1715,
+   "completion_tokens": 282,
+   "estimated": false,
+   "cost_usd": 0.000319
+  }
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "title": "Online Banking Licences for Internet Companies that Provide Mobile Payment Solutions",
+ "what_it_is": "Online Banking Licences for Internet Companies that Provide Mobile Payment Solutions",
+ "sections": [
+  {
+   "label": "Internet-only bank licensing framework",
+   "summary": "MAS' bank licensing framework can accommodate Internet-only banks, which operate within the same licensing and regulatory regime as conventional banks.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "MAS' existing bank licensing framework can accommodate Internet-only banks to operate in Singapore.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "As the risks posed by Internet-only banks are not fundamentally different from those posed by conventional banks, they will operate within the same licensing and regulatory regime as conventional banks.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "But most Internet companies will not require a banking licence unless they intend to take deposits and grant loans.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "If they are offering mainly payment solutions, depending on the specific type of payment service they provide, they may be subject to a narrow set of regulatory requirements pertinent to that payment service.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Activity-based payments regulatory framework",
+   "summary": "MAS has put out for consultation a new, streamlined activity-based regulatory framework for payments.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Education (Higher Education and Skills) and Second Minister for Defence (Mr Ong Ye Kung) (for the Prime Minister)",
+     "attributed": true,
+     "text": "To better calibrate its regulatory requirements to the various modes of innovative payment services, MAS has put out for consultation a new, streamlined activity-based regulatory framework for payments.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Central Addressing Scheme for FAST",
+   "summary": "By the end of this year, the industry will incorporate a Central Addressing Scheme into FAST, using a proxy such as NRIC or mobile number.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "What is not so convenient is that it is based on bank accounts.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "So, by the end of this year, the industry will be incorporating within FAST a Central Addressing Scheme (CAS).",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "What CAS allows FAST to do is to have a proxy for our bank accounts, using, say, our NRIC number or mobile phone number.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Ong Ye Kung",
+     "attributed": true,
+     "text": "Which means once this is in place, there is potential for us to make payments, not different from WeChat or Alipay.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1617",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-02-07"
+  ],
+  "report_ids": [
+   "oral-answer-1617"
+  ],
+  "sentences_total": 25,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.36,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:28:36"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1426,
+   "completion_tokens": 184,
+   "estimated": false,
+   "cost_usd": 0.000251
+  }
+ }
+}

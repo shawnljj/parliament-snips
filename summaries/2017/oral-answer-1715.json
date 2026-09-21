@@ -1,0 +1,132 @@
+{
+ "title": "Waiting Time for Dental Treatment at Polyclinics",
+ "what_it_is": "Waiting Time for Dental Treatment at Polyclinics",
+ "sections": [
+  {
+   "label": "Polyclinic dental capacity and waiting times",
+   "summary": "Polyclinics have expanded dental capacity, reviewed work processes and introduced measures to improve waiting times.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Our polyclinics have expanded dental capacity, reviewed work processes and introduced measures to improve waiting times.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "CHAS subsidised primary dental care",
+   "summary": "CHAS, introduced in 2012, improved accessibility of subsidised primary dental care through private clinics, with over 700 participating clinics and over 500,000 subsidised attendances in 2016.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The introduction of the Community Health Assist Scheme (CHAS) in 2012 has also improved the accessibility of subsidised primary dental care through private dental clinics.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Today, there are over 700 private dental clinics participating in CHAS, an increase from 290 in 2012.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In 2016, there were over 500,000 subsidised dental attendances at CHAS dental clinics.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Dental Centre Singapore waiting time",
+   "summary": "Specialty centres are being expanded and upgraded in response to long waiting times at the Dental Centre Singapore.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "With regard to the long waiting time at the Dental Centre Singapore, we are currently expanding and upgrading our specialty centres.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "National dental specialty centres and subsidised care",
+   "summary": "The NUH National University Centre for Oral Health will be completed in 2019, and subsidised specialist dental care is provided only at designated national dental specialty centres.",
+   "sentences": [
+    {
+     "sid": "s00024",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "In addition, the NUH National University Centre for Oral Health will be completed in 2019 and this will also increase the capacity of managing these patients.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Since 2011, the Ministry of Health (MOH) has put in place measures to offer root canal treatments, dentures, crowns and bridges at Khoo Teck Puat Hospital at subsidised rates limited to polyclinic referrals only.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00027",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "In fact, MOH takes reference from recommendations on national dental services strategy, and subsidised specialist dental care is only provided at designated national dental specialty centres, which include the National Dental Centre Singapore, NUH Dental Centre and some in Khoo Teck Puat Hospital.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1715",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-05-08"
+  ],
+  "report_ids": [
+   "oral-answer-1715"
+  ],
+  "sentences_total": 32,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.25,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 6,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:56:19"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1723,
+   "completion_tokens": 258,
+   "estimated": false,
+   "cost_usd": 0.000313
+  }
+ }
+}

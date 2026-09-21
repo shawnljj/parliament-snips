@@ -1,0 +1,120 @@
+{
+ "title": "Abandonment of Nursing Home Residents",
+ "what_it_is": "Abandonment of Nursing Home Residents",
+ "sections": [
+  {
+   "label": "Abandoned nursing home residents assistance",
+   "summary": "Asks about abandoned residents, unpaid bills, nursing home procedures, and Government assistance including subsidies, MediFund and legal recourse.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Leon Perera",
+     "attributed": true,
+     "text": "asked\tthe Minister for Health (a) for each year from 2011 till 2016, how many residents in nursing homes were abandoned by their next-of-kin and how many were unable to pay their bills; (b) what is the typical procedure that nursing home operators follow in such cases; and (c) how are the operators of nursing homes assisted by the Government in dealing with the cases.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "When families fail to visit, nursing home staff will try to re-establish contact.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The Government provides means-tested subsidies of up to 75% of nursing home costs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Residents who require additional assistance can tap on financial assistance schemes, such as MediFund.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Nursing homes can also provide assistance to eligible residents to seek legal recourse under the Maintenance of Parents Act if they wish to do so.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Financial assistance for nursing home costs",
+   "summary": "States Government provides means-tested financial assistance and MediFund for residents unable to pay nursing home costs.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "With regard to residents who are unable to pay for the nursing home cost, the Government does provide financial assistance for those who are eligible under the means testing regime.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "For those who cannot pay the remaining portions of their bills, they can also tap on MediFund as well.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "The Government cannot mandate filial piety but will definitely step in to help whenever possible.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1663",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-03-03"
+  ],
+  "report_ids": [
+   "oral-answer-1663"
+  ],
+  "sentences_total": 16,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:15:51"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1231,
+   "completion_tokens": 141,
+   "estimated": false,
+   "cost_usd": 0.000212
+  }
+ }
+}

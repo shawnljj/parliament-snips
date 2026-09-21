@@ -1,0 +1,86 @@
+{
+ "title": "Standing Orders Committee",
+ "what_it_is": "Standing Orders Committee",
+ "sections": [
+  {
+   "label": "Standing Orders amendments review",
+   "summary": "The House will make consequential amendments to the Standing Orders from the Elected Presidency constitutional amendments and conduct a general review, with written submissions due to the Clerk by 17 March 2017.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "First, to make consequential amendments to the Standing Orders arising from the constitutional amendments principally in relation to the Elected Presidency Scheme that were passed by this House last November.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "Second, to take the opportunity to do a more general review, to ensure that this House continues to have an efficient set of procedures to support its work.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "Members can make written submissions to the Standing Orders Committee if they have any amendments to propose.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "The submissions should be sent to the Clerk by Friday, 17 March 2017.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "motion-901",
+  "group": "motion",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-02-20"
+  ],
+  "report_ids": [
+   "motion-901"
+  ],
+  "sentences_total": 6,
+  "sentences_selected": 4,
+  "sentences_in_sections": 4,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.6667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 4,
+   "sentences_selected": 4,
+   "turns_cited": 1,
+   "turns_total": 2,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:27:12"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 722,
+   "completion_tokens": 90,
+   "estimated": false,
+   "cost_usd": 0.000126
+  }
+ }
+}

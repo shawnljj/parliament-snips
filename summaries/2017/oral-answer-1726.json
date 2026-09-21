@@ -1,0 +1,125 @@
+{
+ "title": "Managing Parking and Use of Bicycles from Bike-sharing Schemes",
+ "what_it_is": "Managing Parking and Use of Bicycles from Bike-sharing Schemes",
+ "sections": [
+  {
+   "label": "LTA bicycle parking zones",
+   "summary": "LTA has implemented 34 bicycle parking zones for 1,400 bicycles at MRT stations and plans 6,000 more lots and 500 city lots by 2019.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "On LTA's part, it has implemented 34 bicycle parking zones, which can accommodate 1,400 bicycles at Mass Rapid Transit (MRT) stations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "At the same time, LTA will continue with its ongoing plans to add 6,000 more bicycle lots at various MRT stations, and another 500 lots in the city area by 2019.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Impounding indiscriminately parked bicycles",
+   "summary": "LTA will impound bicycles not removed within half a day, levy a fee on bicycle-sharing companies, and fine the companies.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "If the indiscriminately parked bicycles are not removed within half a day, LTA will impound them, levy a fee on the bicycle-sharing companies for the resources used for the impounding, and fine the companies.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Notices and impounded bicycles",
+   "summary": "LTA served around 1,000 notices, impounded 200 bicycles, and about half were collected by the companies.",
+   "sentences": [
+    {
+     "sid": "s00016",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "LTA has served around 1,000 notices for indiscriminately parked bicycles, of which 200 bicycles have been impounded, and about half of the impounded bicycles have been collected by the companies.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Encouraging proper parking policies",
+   "summary": "The Ministry was asked to consider requiring companies to encourage proper parking before rapid expansion, and is working with operators on incentive and penalty systems.",
+   "sentences": [
+    {
+     "sid": "s00041",
+     "speaker": "Mr Ang Wei Neng",
+     "attributed": true,
+     "text": "Will the Ministry of Transport consider imposing a rule for the three companies to implement policies to encourage proper parking first, before LTA allows them to expand at such a great speed?",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00042",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "We do foresee that there may be a potential for new entrants in the future.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "We are also working with the bike-sharing operators to encourage them to come up with some form of incentive and penalty system so that they can modify or mould the behaviour of users, so that indiscriminate parking will be discouraged, just as the Member had mentioned, in his Town Council.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1726",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-07-03"
+  ],
+  "report_ids": [
+   "oral-answer-1726"
+  ],
+  "sentences_total": 43,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 4,
+  "selection_share": 0.1628,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 3,
+   "turns_total": 8,
+   "coverage": 0.375,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:54:32"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2347,
+   "completion_tokens": 249,
+   "estimated": false,
+   "cost_usd": 0.000398
+  }
+ }
+}

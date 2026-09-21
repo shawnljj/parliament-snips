@@ -1,0 +1,152 @@
+{
+ "title": "Limited Liability Partnerships (Amendment) Bill",
+ "what_it_is": "Limited Liability Partnerships (Amendment) Bill",
+ "sections": [
+  {
+   "label": "LLP controller registers required",
+   "summary": "LLPs, like companies, will be required to maintain registers of controllers at prescribed places.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Like companies, limited liability partnerships (LLPs), will be required to maintain registers of controllers at prescribed places.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Liquidator record retention period",
+   "summary": "The liquidator would be required to retain the LLP's records for at least five years instead of two.",
+   "sentences": [
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "First, to require the liquidator to retain the LLP's records for at least five years, instead of the current two.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "LLP transparency changes timeline",
+   "summary": "Transparency-related changes for LLPs are intended by 31 March 2017, with existing LLPs given 60 days to comply.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "As with the changes for companies, we intend to effect the transparency-related changes for LLPs by 31 March 2017.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Senior Minister of State for Finance (Ms Indranee Rajah)",
+     "attributed": true,
+     "text": "Existing LLPs will have 60 days after the laws are effected to comply with the new requirements.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "ACRA regulatory fee review",
+   "summary": "MOF and ACRA regularly review corporate regulations, and ACRA's 2014 fee review streamlined over 100 transactions, reducing business costs.",
+   "sentences": [
+    {
+     "sid": "s00040",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "He has also suggested that ACRA conduct another review of regulatory fees.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00041",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "We would like to assure Mr Louis Ng and the House that MOF and ACRA regularly review our corporate regulations to ensure that our regime is robust and yet business-friendly.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00043",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "In the fee review in 2014, ACRA also streamlined over 100 ad hoc and routine transactions, resulting in reduced costs to businesses.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Five-year retention period rationale",
+   "summary": "The five-year minimum retention period equals that for companies and reflects international standards and jurisdictions like Hong Kong and the United Kingdom.",
+   "sentences": [
+    {
+     "sid": "s00049",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "Mr Louis Ng has also asked for the rationale for the minimum retention period of five years.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00050",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "This period is equal to that for companies.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00051",
+     "speaker": "Ms Indranee Rajah",
+     "attributed": true,
+     "text": "In determining the period of retention, we took into account international standards, such as the Financial Action Task Force (FATF) and the Global Forum on Transparency and Exchange of Information for Tax Purposes standards, as well as the minimum retention period of five years in jurisdictions, such as Hong Kong and the United Kingdom.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "bill-295",
+  "group": "bill",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-03-10"
+  ],
+  "report_ids": [
+   "bill-295"
+  ],
+  "sentences_total": 51,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.1961,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 3,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:02:28"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2417,
+   "completion_tokens": 282,
+   "estimated": false,
+   "cost_usd": 0.000417
+  }
+ }
+}

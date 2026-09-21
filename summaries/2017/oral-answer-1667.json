@@ -1,0 +1,153 @@
+{
+ "title": "Setting up of Drone Port",
+ "what_it_is": "Setting up of Drone Port",
+ "sections": [
+  {
+   "label": "Drones for goods transport",
+   "summary": "The technology for transporting goods by drone in Singapore is not yet mature for safe, widespread deployment in a dense urban environment.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Transport (Mr Khaw Boon Wan)",
+     "attributed": true,
+     "text": "I think one practical way is for everyone to halve their speeches.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "We recognise the potential for drones to be deployed for a large variety of uses both in the public and private sectors.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "On the use of drones to transport goods within Singapore, the technology is not yet mature for safe, widespread deployment in a densely populated, urban environment.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "One example is the Skyways Project between CAAS and Airbus Helicopters on the use of drones for last-mile parcel delivery at the NUS campus.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Request for Proposal launch",
+   "summary": "A Request for Proposal for similar bright ideas will be launched very soon.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "Very soon, we will be launching a Request for Proposal for similar bright ideas.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Multi-agency drone committee",
+   "summary": "A multi-agency committee led by the ministry coordinates drone use, taps scale for purchases, and drafted drone regulations.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "The second question about whether there is any coordination or centralisation, the answer is yes, there is.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "There is a multi-agency committee, led by us, to explore how else we can make use of drones and also to see how we can tap on scale, especially when we want to purchase either equipment, drones or solutions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "Out of that inter-agency committee, we worked on the first draft for the regulation of drones.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Singapore drone regulatory framework",
+   "summary": "Singapore was among the first in the world to have a regulatory framework governing drones, which drew interest at an ICAO meeting.",
+   "sentences": [
+    {
+     "sid": "s00027",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "The Member was not in this House then, so he was not aware.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "We were among the first in the world to have a regulatory framework governing drones.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00030",
+     "speaker": "Mr Khaw Boon Wan",
+     "attributed": true,
+     "text": "Last year, when I was in Montreal for the ICAO meeting, our regulatory framework was a subject of great interest from many countries, because everyone is facing the same problem.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1667",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-03-08"
+  ],
+  "report_ids": [
+   "oral-answer-1667"
+  ],
+  "sentences_total": 32,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 4,
+  "selection_share": 0.3438,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 3,
+   "turns_total": 5,
+   "coverage": 0.6,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:06:58"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1555,
+   "completion_tokens": 219,
+   "estimated": false,
+   "cost_usd": 0.000279
+  }
+ }
+}

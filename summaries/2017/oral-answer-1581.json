@@ -1,0 +1,152 @@
+{
+ "title": "Measures to Improve Telecom Network Resilience Given Recent Service Disruptions",
+ "what_it_is": "Measures to Improve Telecom Network Resilience Given Recent Service Disruptions",
+ "sections": [
+  {
+   "label": "SingNet DHCP server disruption cause",
+   "summary": "Preliminary findings suggest the disruption was caused by a technical issue affecting SingNet's DHCP server.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "Preliminary findings so far suggest that the disruption was caused by a technical issue that affected SingNet's Dynamic Host Configuration Protocol (DHCP) server.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "IMDA investigation scope review",
+   "summary": "IMDA's investigation will also review whether the incident could have been avoided, whether Singtel took all necessary actions, and measures to prevent recurrence.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "Apart from determining the cause of the SingNet disruption, IMDA's investigation will also review: (a) whether the incident could have been avoided; (b) whether all necessary actions had been taken by Singtel to restore services expeditiously; and (c) the measures to ensure that such incidents do not happen again.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Fixed-line networks Audit Framework 2017",
+   "summary": "IMDA will be issuing a similar Audit Framework for fixed-line networks in 2017.",
+   "sentences": [
+    {
+     "sid": "s00020",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "IMDA will be issuing a similar Audit Framework for fixed-line networks in 2017.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SingNet StarHub QoS availability exceeded",
+   "summary": "Over the past year, SingNet and StarHub exceeded IMDA's QoS standard of more than 99.9% fixed-line broadband network availability.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "Nevertheless, over the past year, SingNet and StarHub have exceeded IMDA's Quality of Service (QoS) standard of more than 99.9% fixed-line broadband network availability.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Resolving disruptions and network resiliency",
+   "summary": "The speaker says resolving disruptions quickly matters most, Singtel worked hard to add resources, and IMDA works closely with companies to learn from incidents and improve network resiliency.",
+   "sentences": [
+    {
+     "sid": "s00042",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "On the first question as to whether or not 99.9% is too high, this is something we have just started.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00044",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "I agree with the Member that the most important thing is how we can resolve the disruption as quickly as possible.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00045",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "We have impressed upon the telecommunications companies and the ISPs that this is something that we want them to put in place quickly and ahead of time.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00046",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "As for the recent incident of Singtel, we are still investigating but we knew that they worked very hard to put in place additional resources so that they can deal with the demands of the customers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00048",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "The ability for the engineers and the experts to deal with the situation will depend on the complexity of the situation.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00049",
+     "speaker": "Assoc Prof Dr Yaacob Ibrahim",
+     "attributed": true,
+     "text": "But IMDA works closely with them to understand every incident, what we can learn from it and how we can use that as a learning experience to improve the resiliency of our network.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1581",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-01-09"
+  ],
+  "report_ids": [
+   "oral-answer-1581"
+  ],
+  "sentences_total": 52,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.1923,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 8,
+   "coverage": 0.25,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:33:18"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2713,
+   "completion_tokens": 300,
+   "estimated": false,
+   "cost_usd": 0.000464
+  }
+ }
+}

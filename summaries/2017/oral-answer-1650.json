@@ -1,0 +1,134 @@
+{
+ "title": "Complaints of Excessive Charging by Doctors in Private Practice",
+ "what_it_is": "Complaints of Excessive Charging by Doctors in Private Practice",
+ "sections": [
+  {
+   "label": "Bill feedback and medication assistance",
+   "summary": "MOH reports about 160 bill-related feedback cases yearly over two years, 23 overcharging emails in 2016, and cites the Medication Assistance Fund and ACE.",
+   "sentences": [
+    {
+     "sid": "s00021",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "On the first clarification on the data collected, I would like to inform the Member that due to the change in data collection system and the classification of bill-related feedback, we are unable to compare accurately the figures year-on-year over the past five years.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00022",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "However, for the data collected over the past two years, there was an average of about 160 cases of bill-related feedback from both the public as well as the private medical institutions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "In 2016, 23 cases received through emails were specific to overcharging, of which 90% are private medical institution related.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "For patients, especially PG patients who need to be on non-standard drugs and who cannot afford the cost of the medication, there is always the Medication Assistance Fund, which helps these eligible patients to pay for expensive drugs that are not in the standard list.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00027",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "I would also like to inform the Member that MOH has also set up an Agency for Care Effectiveness (ACE).",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00028",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "This agency issues guidelines on the use of cost-effective drugs for treatment of common medical conditions, and these will be implemented in time to come.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Community pharmacists and nurse practitioners",
+   "summary": "Pharmacists may already prescribe simple drugs, and nurse practitioners in polyclinics and hospitals already perform expanded roles for simple conditions.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "For the one on community pharmacists, yes, currently, pharmacists are already allowed to prescribe certain drugs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00034",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "For example, simple drugs like those for the treatment of common cold and running nose, community pharmacists are allowed to prescribe such drugs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00035",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "As to the suggestion of enhancing the role of nurse practitioners, we are already doing that.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00036",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Many nurse practitioners in the polyclinics, as well as in the hospitals, do perform these expanded role, part of which actually superimposes with those of a doctor's, for management of simple conditions.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1650",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-02-28"
+  ],
+  "report_ids": [
+   "oral-answer-1650"
+  ],
+  "sentences_total": 36,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.2778,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 2,
+   "turns_total": 8,
+   "coverage": 0.25,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:26:14"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2372,
+   "completion_tokens": 157,
+   "estimated": false,
+   "cost_usd": 0.000376
+  }
+ }
+}

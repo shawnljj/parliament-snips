@@ -1,0 +1,119 @@
+{
+ "title": "Incidence of Cracking or Popping of Floor Tiles in HDB Flats in Woodlands Town",
+ "what_it_is": "Incidence of Cracking or Popping of Floor Tiles in HDB Flats in Woodlands Town",
+ "sections": [
+  {
+   "label": "HDB tile data and anecdote",
+   "summary": "HDB does not track data for blocks built over 15 years ago, though residents report over 50% of units had popped tiles.",
+   "sentences": [
+    {
+     "sid": "s00005",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "For the blocks in question, because they were built more than 15 years ago, HDB does not keep track of the data.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Mr Vikram Nair",
+     "attributed": true,
+     "text": "Anecdotally, from what I understand from residents, I have been told that over the course of 15 years, more than 50% of the units have had their tiles popped.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Suggestion for one-off HDB grant",
+   "summary": "The speaker suggests HDB give residents a one-off grant to replace tiles themselves if it is a workmanship issue.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "Mr Vikram Nair",
+     "attributed": true,
+     "text": "Because I think this issue will continue to arise and continue to come up, if it is a workmanship issue and rather than HDB incurring the cost of replacing it each time, my suggestion would be for HDB to give a one-off grant to the residents to replace at their own cost and their own choice of the type of tiles.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "HDB 15-year defects liability period",
+   "summary": "HDB's practice goes beyond developers' one to three-year Defects Liability Period, covering cases surfaced within 15 years.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "Most developers would give a one-year Defects Liability Period (DLP), while others may give more, for example, three years of DLP, on a goodwill basis.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "HDB's practice goes way beyond that, to 15 years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "We do so for all such cases that are surfaced to our attention within the 15-year period, without us necessarily looking at the cost of it.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "As for the Member's suggestion, we take note of it.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1691",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-04-04"
+  ],
+  "report_ids": [
+   "oral-answer-1691"
+  ],
+  "sentences_total": 15,
+  "sentences_selected": 7,
+  "sentences_in_sections": 7,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.4667,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 7,
+   "sentences_selected": 7,
+   "turns_cited": 3,
+   "turns_total": 7,
+   "coverage": 0.4286,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:58:00"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1230,
+   "completion_tokens": 193,
+   "estimated": false,
+   "cost_usd": 0.000226
+  }
+ }
+}

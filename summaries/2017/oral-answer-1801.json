@@ -1,0 +1,138 @@
+{
+ "title": "Investigation into Chemical Odour from Pasir Gudang",
+ "what_it_is": "Investigation into Chemical Odour from Pasir Gudang",
+ "sections": [
+  {
+   "label": "Chemical stench from Pasir Gudang",
+   "summary": "Questions asked the Minister for the Environment and Water Resources about the September 2017 chemical stench from Pasir Gudang and Singapore's response.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "Ms Joan Pereira",
+     "attributed": true,
+     "text": "asked the Minister for the Environment and Water Resources with regard to the incident of a chemical stench from Pasir Gudang in September 2017 (a) what should Singaporeans do in the event of a similar incident; (b) how can they differentiate between gases which are toxic and non-toxic; (c) how can similar incidences be prevented; and (d) how well-prepared is Singapore to deal with a chemical gas attack by terrorists.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "Er Dr Lee Bee Wah",
+     "attributed": true,
+     "text": "asked the Minister for the Environment and Water Resources (a) whether he can provide an update on the source and causes of the chemical odour and smoke detected in various parts of Singapore on 25 September 2017; (b) whether there is a long-term impact on public safety and health; (c) whether there have been previous similar incidents; and (d) what is the Ministry doing to safeguard our interests.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Ms Sun Xueling",
+     "attributed": true,
+     "text": "asked the Minister for the Environment and Water Resources with regard to the odour detected by many residents, particularly those living in the northeastern part of Singapore, on 25 September 2017 (a) whether the Ministry can provide more timely updates so that residents can take necessary precautions to protect themselves; (b) whether our current detection methods extend beyond smoke particles to dangerous chemicals; and (c) what advice can the Ministry give to Singaporeans to protect themselves in the event of dangerous chemicals in the air.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "VOC levels on 25 September",
+   "summary": "Air monitoring sensors and air samples showed increased levels of some VOCs on the evening of 25 September, likely causing the smell.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "Both the air monitoring sensors and the air samples collected showed an increase in the levels of some VOCs in the evening of 25 September, which likely caused the smell experienced.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Pasir Gudang factory stop work order",
+   "summary": "The smell was traced to a Pasir Gudang factory, where DOE issued a stop work order and required remedial actions.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "The source of the smell was finally traced to a factory in Pasir Gudang.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "A stop work order was issued against the operator of that facility by DOE and the operator was required to carry out a list of remedial actions.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Air monitored for hazardous VOCs",
+   "summary": "Air is constantly monitored and tested for hazardous VOC levels to ensure it is not deleterious to long-term health.",
+   "sentences": [
+    {
+     "sid": "s00048",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "Yes, air is constantly monitored and tests are conducted for hazardous levels of VOCs to ensure that we are breathing air that will not be deleterious to our long-term health.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "VOC safety thresholds for occupational exposure",
+   "summary": "The safety threshold of most VOCs is available only for occupational exposure of at least around eight hours of hazardous levels.",
+   "sentences": [
+    {
+     "sid": "s00054",
+     "speaker": "Mr Masagos Zulkifli B M M",
+     "attributed": true,
+     "text": "The safety threshold of most VOCs is available only for occupational exposure, that means, when you are working in a situation where there are a lot of these VOCs, and you will be exposed to at least around eight hours of hazardous levels.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1801",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-11-06"
+  ],
+  "report_ids": [
+   "oral-answer-1801"
+  ],
+  "sentences_total": 55,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 5,
+  "selection_share": 0.1455,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 6,
+   "turns_total": 9,
+   "coverage": 0.6667,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:44:48"
+  },
+  "usage": {
+   "calls": 4,
+   "prompt_tokens": 3473,
+   "completion_tokens": 335,
+   "estimated": false,
+   "cost_usd": 0.00058
+  }
+ }
+}

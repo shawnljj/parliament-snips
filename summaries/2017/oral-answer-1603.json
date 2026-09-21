@@ -1,0 +1,99 @@
+{
+ "title": "Increasing Incidence of Drivers Going Against Traffic Flow",
+ "what_it_is": "Increasing Incidence of Drivers Going Against Traffic Flow",
+ "sections": [
+  {
+   "label": "Traffic Police accident data and road signs",
+   "summary": "Traffic Police do not generally track accidents by wrong-way driving cause, but fatal accident data show three in three years; LTA uses international standards and specialist engineers for road signs and markings.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "The Traffic Police does not generally track and categorise accidents by the cause of vehicles going against the flow of traffic.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "However, for fatal accidents specifically, their data show that three have occurred in the past three years as a result of this behaviour.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "The Land Transport Authority (LTA) takes reference from international standards in the design and installation of road signs and markings.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "In addition, LTA engages independent specialist road safety engineers to review the clarity and effectiveness of our road signs and markings for new roads and undertakes regular safety audits of existing roads.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Public feedback on specific roads",
+   "summary": "Public feedback is taken into account and specific roads residents have issues with are reviewed for better clarity and ease of use.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "On top of that, we also take into account public feedback and review specific roads that residents may have issues with, to lend better clarity and ease of use.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1603",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-02-06"
+  ],
+  "report_ids": [
+   "oral-answer-1603"
+  ],
+  "sentences_total": 11,
+  "sentences_selected": 5,
+  "sentences_in_sections": 5,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4545,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 5,
+   "sentences_selected": 5,
+   "turns_cited": 2,
+   "turns_total": 5,
+   "coverage": 0.4,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:30:13"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1041,
+   "completion_tokens": 142,
+   "estimated": false,
+   "cost_usd": 0.000186
+  }
+ }
+}

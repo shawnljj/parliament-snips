@@ -1,0 +1,141 @@
+{
+ "title": "Pricing Mechanism under Build-to-Order Flats and Sale of Balance Flats Exercises",
+ "what_it_is": "Pricing Mechanism under Build-to-Order Flats and Sale of Balance Flats Exercises",
+ "sections": [
+  {
+   "label": "BTO and SBF flat pricing",
+   "summary": "HDB explains that SBF prices may differ from BTO prices due to completion timing and market conditions, with discounts and grants for buyers.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Low Thia Khiang",
+     "attributed": true,
+     "text": "asked\tthe Minister for National Development what is the pricing mechanism of Build-To-Order (BTO) flats compared to unsold BTO flats released under a Sale of Balance Flats (SBF) exercise that results in the BTO price for the same flat exceeding the SBF price in some cases and not in others.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "However, the prices of SBF units may differ from that in the BTO exercise for several reasons.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "First, the SBF price may be slightly higher as the units are closer to completion.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Second, the SBF prices may also be updated if there is a change in prevailing market conditions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "For example, in cases where the prices of comparable resale flats in the vicinity have softened since the time of the BTO launch, the prices of balance flats may be lower than their original BTO prices.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "Regardless of whether the flats are sold under BTO or SBF exercises, HDB gives a generous market discount to ensure that new flats are affordable to buyers.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for National Development (Mr Lawrence Wong)",
+     "attributed": true,
+     "text": "On top of the subsidised prices, eligible first-timer families can also receive up to $80,000 in housing grants to help them purchase their flats.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "SBF price differences explained",
+   "summary": "Similar SBF and BTO units may differ in price if the market softened, with the SBF unit sold later at a lower price.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "Because if you take all of that aside, and you take, say, an SBF unit and a BTO unit in the same block, same floor, most of the time, they will be similar.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "But there may be instances, as I have explained earlier, where the SBF unit is sold at a later stage and if, indeed, the market has softened − it does not happen very often because our market is generally quite stable − but if indeed market conditions have softened, then HDB may sell that SBF unit at a later stage, due to market conditions, if the general market has softened, it may be sold at a slightly lower price than the original BTO price.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "That is the reason that I have stated earlier.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Lawrence Wong",
+     "attributed": true,
+     "text": "I think that is fair to all home buyers because the transaction is done at the point of sale.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1611",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-02-07"
+  ],
+  "report_ids": [
+   "oral-answer-1611"
+  ],
+  "sentences_total": 23,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 2,
+  "selection_share": 0.4783,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:28:27"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1604,
+   "completion_tokens": 151,
+   "estimated": false,
+   "cost_usd": 0.000267
+  }
+ }
+}

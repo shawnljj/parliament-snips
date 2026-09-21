@@ -1,0 +1,106 @@
+{
+ "title": "Foreign-registered Motorcycles or Scooters Used in Singapore for Delivery Services",
+ "what_it_is": "Foreign-registered Motorcycles or Scooters Used in Singapore for Delivery Services",
+ "sections": [
+  {
+   "label": "Foreign motorcycles for delivery services",
+   "summary": "Foreign-registered motorcycles and scooters may be used for delivery services if the rider has a valid work pass, complies with MOM regulations, and the vehicle is insured against third party bodily injury and death.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Foreign-registered motorcycles and scooters can be used in Singapore for delivery services, provided that the rider has a valid work pass and complies with MOM's work pass regulations and the vehicle is insured against third party bodily injury and death.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Drivers caught by LTA for using a vehicle without valid insurance can be fined up to $1,000 or imprisoned for up to three months, or both.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Insurance coverage for delivery riders",
+   "summary": "Drivers must ensure their motor insurance covers delivery use, often requiring insurance riders for commercial purposes, and employers must ensure employees have valid coverage.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "The drivers providing delivery services must ensure that their motor insurance policy provides coverage when the vehicle is used for delivery services.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "This will commonly require the purchase of additional insurance policy coverage, that is, insurance riders, for use of the motorcycle for commercial purposes.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Employers are also obliged to ensure that their delivery service employees have the valid insurance coverage.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "In addition, to further ensure that motorcyclists have valid motor insurance for delivery services, LTA, together with the General Insurance Association of Singapore, the Monetary Authority of Singapore, the Singapore Police Force and Workplace Safety and Health Council, will be issuing a joint advisory to the employers of these riders to remind them on the motor insurance requirements and the importance of safety.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1829",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-11-07"
+  ],
+  "report_ids": [
+   "oral-answer-1829"
+  ],
+  "sentences_total": 13,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4615,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:43:03"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1308,
+   "completion_tokens": 152,
+   "estimated": false,
+   "cost_usd": 0.000226
+  }
+ }
+}

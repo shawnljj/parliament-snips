@@ -1,0 +1,133 @@
+{
+ "title": "Video Recordings of Parliamentary Proceedings",
+ "what_it_is": "Video Recordings of Parliamentary Proceedings",
+ "sections": [
+  {
+   "label": "Public use of recordings",
+   "summary": "The public may use the recordings for personal and non-commercial purposes with proper attribution to Mediacorp.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Communications and Information (Mr Chee Hong Tat) (for the Minister for Communications and Information)",
+     "attributed": true,
+     "text": "The public can use the recordings for personal and non-commercial purposes with proper attribution to Mediacorp.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Parliament footage broadcast and viewing",
+   "summary": "Parliament footages are shown on television and CNA platforms, with online availability extended to six months, and copyright belongs to the Government.",
+   "sentences": [
+    {
+     "sid": "s00011",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "At the moment, the Parliament footages are shown on television under Parliament Highlights and within a few hours will be put on the CNA microsite.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "It has provided the footages online; used to be one month and it has been extended to six months.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "The people who watched a major Parliamentary speech like the Budget speech, the number of people who watched it live was only about 10%, compared to what was shown on free-to-air television on the news that evening.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00015",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "Less than 1% of the viewers watched the Budget live using web streaming.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "What I said in my reply earlier was that the copyright belongs to the Government and the Government then commissioned Mediacorp, as Singapore's national broadcaster, to cover the Parliament sittings and to show the footages on various platforms, including free-to-air television, Channel NewsAsia's Parliament microsite and Channel NewsAsia's Facebook page.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "I wish to clarify that is not true.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00020",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "I have also explained this during the Committee of Supply that the footages are all put up.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Purpose of editing footage",
+   "summary": "The editing that is done is not to remove certain parts of what was said.",
+   "sentences": [
+    {
+     "sid": "s00032",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "The editing that is done is not to remove certain parts of what was said.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1823",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-11-07"
+  ],
+  "report_ids": [
+   "oral-answer-1823"
+  ],
+  "sentences_total": 36,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 3,
+  "selection_share": 0.25,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:42:41"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1905,
+   "completion_tokens": 178,
+   "estimated": false,
+   "cost_usd": 0.000317
+  }
+ }
+}

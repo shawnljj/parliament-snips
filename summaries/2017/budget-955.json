@@ -1,0 +1,118 @@
+{
+ "title": "Acknowledgement to the Chair",
+ "what_it_is": "Acknowledgement to the Chair",
+ "sections": [
+  {
+   "label": "Members filed 545 cuts",
+   "summary": "Members filed 545 cuts this year, a 9% increase from last year and the highest in five years.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "In total, Members filed 545 cuts this year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00023",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "That is an increase of 9% from last year, and the highest in the past five years.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Budget and future position",
+   "summary": "The Budget will put us in a good position for the future if implemented well with the people's support.",
+   "sentences": [
+    {
+     "sid": "s00034",
+     "speaker": "The Leader of the House (Ms Grace Fu Hai Yien)",
+     "attributed": true,
+     "text": "The Budget will put us in a good position for the future if we can implement it well with the support of the people.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Budget backdrop and CFE programmes",
+   "summary": "The Budget was delivered amid global uncertainty from disruptive technologies, populism and protectionism, with Ministries expanding programmes guided by the CFE report.",
+   "sentences": [
+    {
+     "sid": "s00043",
+     "speaker": "Mdm Speaker",
+     "attributed": true,
+     "text": "The Budget was delivered against the backdrop of a world in the grips of growing uncertainty in the global economy brought about by disruptive technologies and innovation and the accompanying rise of populism and protectionist sentiments in a number of countries.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00045",
+     "speaker": "Mdm Speaker",
+     "attributed": true,
+     "text": "The front bench took pains to expand on their respective Ministries' plethora of programmes to prepare and assist Singaporeans to be future-ready to tackle the challenges ahead and chart the way forward, guided by the recommendations contained in the report of the CFE.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Lee Kuan Yew on trust",
+   "summary": "A 1981 quote from Mr Lee Kuan Yew says young leaders must translate figures and analyses into warm, simple, human terms.",
+   "sentences": [
+    {
+     "sid": "s00048",
+     "speaker": "Mdm Speaker",
+     "attributed": true,
+     "text": "For those in the front bench, it is always good to be reminded of what our founding Prime Minister, Mr Lee Kuan Yew, had in mind when he said in Parliament on 23 October 1981, and I quote, \"To be trusted by the people as the older leaders have been trusted, the young leaders must learn to translate these figures and hard-headed analyses of complex problems into warm, simple and human terms, terms which the ordinary people can understand\", unquote.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "budget-955",
+  "group": "budget",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-03-09"
+  ],
+  "report_ids": [
+   "budget-955"
+  ],
+  "sentences_total": 71,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 4,
+  "selection_share": 0.0845,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 4,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 2,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:04:21"
+  },
+  "usage": {
+   "calls": 4,
+   "prompt_tokens": 3732,
+   "completion_tokens": 238,
+   "estimated": false,
+   "cost_usd": 0.000589
+  }
+ }
+}

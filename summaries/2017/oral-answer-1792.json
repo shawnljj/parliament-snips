@@ -1,0 +1,158 @@
+{
+ "title": "Healthier Food without Higher Food Bills",
+ "what_it_is": "Healthier Food without Higher Food Bills",
+ "sections": [
+  {
+   "label": "HCS logo recognition and market share",
+   "summary": "A 2015 HPB survey found 70% of Singaporeans recognise the HCS logo and used it, and HCS market share rose from 15% in 2012 to 18% in 2016.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "In a 2015 survey by HPB, 70% of Singaporeans recognise the HCS logo and have used it to make healthier food choices.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The market share of HCS products has also increased from 15% in 2012 to 18% in 2016.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Healthier Ingredient and Dining schemes",
+   "summary": "HPB introduced HIDS and HDP to support industry players in providing healthier ingredients and products, increasing supply and variety of healthier food options.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "HPB has also introduced the Healthier Ingredient Development Scheme (HIDS) and the Healthier Dining Programme (HDP) to support industry players to provide healthier ingredients and products to increase the supply and variety of healthier food options for consumers.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Artificial sweeteners and school sales",
+   "summary": "International health authorities and medical professionals agree artificial sweeteners can be used in a balanced diet, but their sale in Singapore schools is not allowed.",
+   "sentences": [
+    {
+     "sid": "s00013",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "On artificial sweeteners, there is consensus amongst international health authorities and medical professionals that such sweeteners can be used as part of a balanced diet to help a gradual shift away from high sugar food and beverages.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "However, the sale of artificially sweetened food and beverage (F&B) is not allowed in schools in Singapore as we want to prevent children from developing a habit of consuming sweet-tasting food and drinks from a young age.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Rice preparation and glycemic index",
+   "summary": "Studies found cooking rice, cooling and reheating it increases resistant starch, which lowers the glycemic index for the same type and amount of rice.",
+   "sentences": [
+    {
+     "sid": "s00033",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "What the studies have found is that if we prepare our food, for example, if we cook the rice, leave it to cool and reheat it later, the amount of resistant starch in the rice will go up, and this helps to lower the glycemic index.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00034",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "So, for the same type of rice, the same amount of rice, we can actually lower the glycemic index by preparing it in a different way.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Healthier food cost and scale",
+   "summary": "The speaker is not familiar with Mr Chong's brand, but says healthier food sometimes costs more per unit due to lack of scale.",
+   "sentences": [
+    {
+     "sid": "s00048",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "I am not familiar with the brand that Mr Chong mentioned.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00049",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "But sometimes, the reason why certain types of healthier food cost more on a per unit basis is because there is lack of scale.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Scale lowering per unit cost",
+   "summary": "With scale, merchants can lower their per unit cost and pass this through to consumers as lower prices.",
+   "sentences": [
+    {
+     "sid": "s00055",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "With scale, the merchants are able to lower their per unit cost and this can then be passed through to consumers, in terms of lower prices.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1792",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-10-03"
+  ],
+  "report_ids": [
+   "oral-answer-1792"
+  ],
+  "sentences_total": 56,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 6,
+  "selection_share": 0.1786,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 6,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 7,
+   "coverage": 0.4286,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:46:23"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2916,
+   "completion_tokens": 364,
+   "estimated": false,
+   "cost_usd": 0.00051
+  }
+ }
+}

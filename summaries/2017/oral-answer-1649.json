@@ -1,0 +1,121 @@
+{
+ "title": "Funds for Culling Animals",
+ "what_it_is": "Funds for Culling Animals",
+ "sections": [
+  {
+   "label": "Dog, cat, monkey culling spending",
+   "summary": "The Minister is asked about culling spending, expected increases, research on culling effectiveness, and research into alternatives to culling.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Louis Ng Kok Kwang",
+     "attributed": true,
+     "text": "asked\tthe Minister for National Development (a) for each year in the past three years, how much does the Ministry spend on culling dogs, cats and monkeys respectively; (b) whether the Ministry expects an increase in culling expenditure in the next three years; (c) whether the Ministry has conducted scientific research on the effectiveness of culling on population control; and (d) whether the Ministry is conducting scientific research into measures other than culling to address the human-animal conflicts.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "It first undertakes a professional assessment of potential threats that animals might pose to public health and safety.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "If there are no significant public health and safety concerns, AVA will work with the public to mitigate any potential nuisance issues.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "If there are significant health and safety concerns, then AVA will have to act.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Where feasible, it will work with stakeholders, including the animal welfare groups and organisations like the Wildlife Reserves Singapore, to relocate or rehome these animals.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "Culling is used only as a last resort, a point which my colleague Minister of State Koh Poh Koon had made at the last Sitting.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "AVA does not track the expenditure it incurs on culling animals as this is only a very small part of AVA's overall work.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "For example, AVA engaged a team of local and overseas academics in November 2015 to start a three-year stray dog study.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "This study will estimate the stray dog population in Singapore, look at the ecological and biological aspects of stray dogs, and determine the efficacy of various population management options like sterilisation.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1649",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-02-28"
+  ],
+  "report_ids": [
+   "oral-answer-1649"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 9,
+  "sentences_in_sections": 9,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 1,
+  "sections_total": 1,
+  "selection_share": 0.3462,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 9,
+   "sentences_selected": 9,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:26:17"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1578,
+   "completion_tokens": 101,
+   "estimated": false,
+   "cost_usd": 0.000249
+  }
+ }
+}

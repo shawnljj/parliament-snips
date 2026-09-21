@@ -1,0 +1,140 @@
+{
+ "title": "Surge Pricing by Taxi Operators",
+ "what_it_is": "Surge Pricing by Taxi Operators",
+ "sections": [
+  {
+   "label": "Taxi surge pricing position",
+   "summary": "The Minister was asked about the Ministry's position on taxi surge pricing, preventing overcharging, and giving passengers prior information.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Saktiandi Supaat",
+     "attributed": true,
+     "text": "asked\tthe Minister for Transport (a) what is the Ministry's position on the practice of taxi operators adopting surge pricing during off-peak hours to reflect market demand; (b) what can it do to prevent overcharging; and (c) how can passengers be given prior information on when the taxi companies are imposing the surge pricing.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Second Minister for Transport (Mr Ng Chee Meng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "They felt they had to make this move in order to compete against private hire car services like Uber and Grab.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Second Minister for Transport (Mr Ng Chee Meng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The PTC was conscious that some commuters are uncomfortable but, on balance, allowed it.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Second Minister for Transport (Mr Ng Chee Meng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "We should not prevent the taxi industry from adapting to meet stiffer competition.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Metered fares and dynamic pricing notice",
+   "summary": "Metered fares remain an option, and taxi companies must give commuters at least one week's notice before starting dynamic pricing.",
+   "sentences": [
+    {
+     "sid": "s00009",
+     "speaker": "The Second Minister for Transport (Mr Ng Chee Meng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Metered fares will remain an option for commuters booking a taxi ride, if they are not so comfortable with dynamic pricing.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00010",
+     "speaker": "The Second Minister for Transport (Mr Ng Chee Meng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "The taxi companies are required under the law to give commuters sufficient notice, at least one week, before commencing dynamic pricing.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00011",
+     "speaker": "The Second Minister for Transport (Mr Ng Chee Meng) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Grab had announced on 22 March their plans to implement dynamic pricing, which happened on 29 March, and ComfortDelGro had announced their plans on 17 March.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Ambulance for critical emergencies",
+   "summary": "For critical situations an ambulance is advised, while street hails and app bookings on metered fares remain available for non-critical emergencies.",
+   "sentences": [
+    {
+     "sid": "s00017",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "If it is really a critical situation, my advice would be to call an ambulance.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00018",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "That is the best way to get to treatment fastest.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Ng Chee Meng",
+     "attributed": true,
+     "text": "But if it is not a critical emergency, then traditional options like street hails, bookings via apps on a metered fare basis still available.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1700",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-04-04"
+  ],
+  "report_ids": [
+   "oral-answer-1700"
+  ],
+  "sentences_total": 20,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.5,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:58:01"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1309,
+   "completion_tokens": 194,
+   "estimated": false,
+   "cost_usd": 0.000238
+  }
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "title": "Number of Complaints of Defects and Design Flaws for New Executive Condominiums",
+ "what_it_is": "Number of Complaints of Defects and Design Flaws for New Executive Condominiums",
+ "sections": [
+  {
+   "label": "MND does not track EC feedback",
+   "summary": "MND does not track EC feedback because buyers purchase directly from private developers, who handle defects during the 12-month Defects Liability Period.",
+   "sentences": [
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "MND does not track feedback received on ECs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "This is because buyers purchase their ECs directly from the private developers and, under the Sale and Purchase (S&P) Agreement signed between the EC developer and home buyers, the EC developer is responsible for all defects during the 12-month Defects Liability Period.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for National Development (Mr Desmond Lee) (for the Minister for National Development)",
+     "attributed": true,
+     "text": "The EC developer is also contractually obliged to attend to all feedback from buyers on the design, finishing, workmanship or other concerns pertaining to the development and respond to the buyers accordingly.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "1995 EC scheme for middle class",
+   "summary": "The 1995 EC scheme made private housing affordable for middle class Singaporeans, with restrictions like MOP and eligibility criteria on EC land sales.",
+   "sentences": [
+    {
+     "sid": "s00014",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "If you look at the 1995 debate during which the EC scheme was developed, it was to make private housing an option for middle class Singaporean households to be able to enter private housing in an affordable way.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "For EC land sales, unlike private housing land sales, we put in place restrictions, as the Member has mentioned − the MOP, the eligibility criteria to provide for middle income households the option to buy ECs.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "HDB conveys EC buyer concerns",
+   "summary": "HDB will convey EC buyers' concerns to EC developers for appropriate action, though contractual obligations rest on the developer.",
+   "sentences": [
+    {
+     "sid": "s00019",
+     "speaker": "Mr Desmond Lee",
+     "attributed": true,
+     "text": "While the contractual obligations are on the developer to address all the concerns the buyers have raised, when EC buyers raise concerns about EC units to HDB, HDB will certainly convey these concerns to the EC developers for them to take appropriate action.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1627",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-02-07"
+  ],
+  "report_ids": [
+   "oral-answer-1627"
+  ],
+  "sentences_total": 19,
+  "sentences_selected": 6,
+  "sentences_in_sections": 6,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 3,
+  "selection_share": 0.3158,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 6,
+   "sentences_selected": 6,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:28:32"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1402,
+   "completion_tokens": 189,
+   "estimated": false,
+   "cost_usd": 0.000249
+  }
+ }
+}

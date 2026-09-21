@@ -1,0 +1,120 @@
+{
+ "title": "Cases Referred by Polyclinics to Hospital A&E Departments",
+ "what_it_is": "Cases Referred by Polyclinics to Hospital A&E Departments",
+ "sections": [
+  {
+   "label": "Referral proportions to polyclinics and A&E",
+   "summary": "Referrals were about 1% of polyclinic attendances and 4% of A&E attendances over three years, with no statistics on procedure types.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Comparable figures for 2013 are not readily available.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "The proportion of such referrals to total polyclinic attendances has been fairly small and constant at about 1% in each of the three years.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Likewise, the proportion of such cases to total A&E attendances has been quite small and stable at about 4% over the same period.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Health (Dr Lam Pin Min) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We do not have statistics on how many of such referrals are for procedures that cannot be performed at the polyclinics.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Polyclinic minor surgical procedures list",
+   "summary": "Polyclinics publish minor surgical procedure lists online, but availability varies; new polyclinics will have dedicated space and non-urgent A&E referrals are discouraged.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "The answer to the first supplementary question is yes, the polyclinics do publish a list of minor surgical procedures that they are able to perform in the polyclinics and this information is available on the SingHealth polyclinics' as well as the National Healthcare Group polyclinics' websites.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "However, I would like to qualify that these minor surgical procedures may not be available in every polyclinic every day due to infrastructure and manpower constraints.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "Moving forward, all the new polyclinics that will be developed will have dedicated space catered for minor surgical procedures.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "In fact, we do not encourage polyclinic doctors to refer non-urgent cases to A&E.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1716",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-05-08"
+  ],
+  "report_ids": [
+   "oral-answer-1716"
+  ],
+  "sentences_total": 18,
+  "sentences_selected": 8,
+  "sentences_in_sections": 8,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 2,
+  "selection_share": 0.4444,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 8,
+   "sentences_selected": 8,
+   "turns_cited": 2,
+   "turns_total": 4,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:56:28"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1391,
+   "completion_tokens": 166,
+   "estimated": false,
+   "cost_usd": 0.000241
+  }
+ }
+}

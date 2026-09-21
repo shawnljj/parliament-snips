@@ -1,0 +1,152 @@
+{
+ "title": "Data on Online Retail Transactions",
+ "what_it_is": "Data on Online Retail Transactions",
+ "sections": [
+  {
+   "label": "Internet transactions with local and foreign entities",
+   "summary": "Over three years, local-entity Internet transactions totalled about $18.3 billion, around 74% of Internet transactions, while foreign-entity transactions were $6.4 billion.",
+   "sentences": [
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Trade and Industry (Ms Sim Ann) (for the Minister for Trade and Industry))",
+     "attributed": true,
+     "text": "Over the past three years, the total value of such transactions with local entities was about $18.3 billion, representing around 74% of total Internet transactions.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Trade and Industry (Ms Sim Ann) (for the Minister for Trade and Industry))",
+     "attributed": true,
+     "text": "Internet transactions with foreign entities amounted to $6.4 billion.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Retail Industry Transformation Map e-commerce target",
+   "summary": "The Retail Industry Transformation Map launched in September 2016 aims to grow e-commerce share of total retail receipts to 10% by 2020.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Trade and Industry (Ms Sim Ann) (for the Minister for Trade and Industry))",
+     "attributed": true,
+     "text": "Under the Retail Industry Transformation Map (ITM) launched in September 2016, we aim to grow the e-commerce share of total retail receipts to 10% by 2020.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "E-commerce share in China, UK, US",
+   "summary": "In 2014, studies indicated e-commerce accounted for about 10%, 13% and 6.5% of total retail sales in China, the UK and the US.",
+   "sentences": [
+    {
+     "sid": "s00032",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "If we want to make a comparison, in 2014, based on studies, we understand that e-commerce accounted for about 10%, 13% and 6.5% of total retail sales in China, the UK and the US respectively.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Retail ITM aims and retailer programmes",
+   "summary": "Under the retail ITM, the intention is to foster a vibrant retail scene, see strong local brand owners with global footprints, and strengthen Singapore-based retailers' competitiveness through programmes and strategies.",
+   "sentences": [
+    {
+     "sid": "s00038",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "As I mentioned earlier, under our retail ITM, our intention is to help foster a very vibrant Singapore retail scene and we want to see strong local brand owners with global footprints.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00039",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "In terms of strengthening the competitiveness of Singapore-based retailers' Singapore brands, vis-Ã-vis their global competitors, that is certainly a very important thrust of our work under the retail ITM.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00040",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "So, to this end, we have various programmes and strategies in place to help our retailers improve their capabilities.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Tracking and publishing retail sales data",
+   "summary": "A question asks whether the Ministry will regularly track and publish retail and e-commerce sales data, and the reply says such studies and figures are available and tracked for benchmarking.",
+   "sentences": [
+    {
+     "sid": "s00046",
+     "speaker": "Mr Leon Perera (Non-Constituency Member)",
+     "attributed": true,
+     "text": "Just a question to the Senior Minister of State: will the Ministry consider tracking and publishing retail sales and e-commerce sales data regularly – as the Senior Minister of State has alluded to, it is being done in the US and China – in the future since this may be very important for stakeholders to understand?",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00047",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "As I have mentioned, I believe that quite a number of such studies and figures are available being done by different organisations.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00048",
+     "speaker": "Ms Sim Ann",
+     "attributed": true,
+     "text": "These are all figures that we track because we do want to benchmark ourselves against the retail scene in different countries and to see where we stand.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1741",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-07-04"
+  ],
+  "report_ids": [
+   "oral-answer-1741"
+  ],
+  "sentences_total": 49,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 5,
+  "selection_share": 0.2041,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 5,
+   "turns_total": 10,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:51:29"
+  },
+  "usage": {
+   "calls": 3,
+   "prompt_tokens": 2733,
+   "completion_tokens": 349,
+   "estimated": false,
+   "cost_usd": 0.00048
+  }
+ }
+}

@@ -1,0 +1,134 @@
+{
+ "title": "Mandatory Reporting of Workers' Injuries by Doctors",
+ "what_it_is": "Mandatory Reporting of Workers' Injuries by Doctors",
+ "sections": [
+  {
+   "label": "Reporting work injuries to MOM",
+   "summary": "MP asks if doctors must report work injuries needing 24 hours hospitalisation or three days medical leave, noting employer voluntary reporting may under-report.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Louis Ng Kok Kwang",
+     "attributed": true,
+     "text": "asked\tthe Minister for Manpower whether the Ministry will consider requiring immediate reporting by doctors to the Ministry of work injuries that require 24 or more hours of hospitalisation or when three or more days of medical leave is required, considering that the current system relying on employers to report voluntarily may lead to the under-reporting of injuries.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Manpower (Mr Teo Ser Luck) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "It is an offence for employers not to notify the Ministry of Manpower (MOM) of the reportable accidents.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Manpower (Mr Teo Ser Luck) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "MOM has taken enforcement actions against errant employers for persistent late reporting of minor injuries after repeated reminders, or delayed reporting of a serious work injury.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Manpower (Mr Teo Ser Luck) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "Since 2014, seven such employers were taken to task.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister of State for Manpower (Mr Teo Ser Luck) (for the Minister for Manpower)",
+     "attributed": true,
+     "text": "Currently, injured employees, their dependants and representatives as well as doctors can submit an incident report directly to MOM online or in person if they are concerned that the employer may not report the accident.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "One, from 2010 to 2011, the number of reported cases of Occupational Diseases (OD) already almost doubled from 432 to 839 cases.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "Mr Louis Ng Kok Kwang (Nee Soon)",
+     "attributed": true,
+     "text": "As MOM noted, this rise was primarily due to efforts to address potential under reporting.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Doctors reporting occupational diseases",
+   "summary": "Doctors are required to report occupational diseases, and over 95% of injuries MOM sees are reported by employers.",
+   "sentences": [
+    {
+     "sid": "s00018",
+     "speaker": "Mr Teo Ser Luck",
+     "attributed": true,
+     "text": "Hence, it could be difficult for the employer to detect and be aware of an OD under such circumstances.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00019",
+     "speaker": "Mr Teo Ser Luck",
+     "attributed": true,
+     "text": "Therefore, we require the doctors to report ODs to give us a better picture of the occupational health situation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00021",
+     "speaker": "Mr Teo Ser Luck",
+     "attributed": true,
+     "text": "More than 95% of the cases for injuries that MOM sees are reported by employers today.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1638",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-02-20"
+  ],
+  "report_ids": [
+   "oral-answer-1638"
+  ],
+  "sentences_total": 22,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.4545,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 4,
+   "turns_total": 4,
+   "coverage": 1.0,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:27:02"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1412,
+   "completion_tokens": 146,
+   "estimated": false,
+   "cost_usd": 0.000239
+  }
+ }
+}

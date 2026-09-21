@@ -1,0 +1,159 @@
+{
+ "title": "Action to Protect Reputation of Police Force",
+ "what_it_is": "Action to Protect Reputation of Police Force",
+ "sections": [
+  {
+   "label": "Police reputation and false allegations",
+   "summary": "The Minister was asked whether Police will act to protect its reputation against false and malicious allegations, citing a survey where 91% of Singaporeans said Police showed core values.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Lim Biow Chuan",
+     "attributed": true,
+     "text": "asked\tthe Minister for Home Affairs whether the Police will consider taking action to protect its reputation when persons make false and malicious allegations against the Police.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "I refer Members to a recent Public Perception Survey where 91% of Singaporeans had said that Police had demonstrated the core values of courage, loyalty, integrity and fairness when interacting with them.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Police public response to false allegations",
+   "summary": "If an investigation concludes an allegation is false or unwarranted, the Police will, after assessment and if necessary, issue a public response saying it is untrue.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "If the conclusion of the investigation is that the allegation is false or unwarranted, then the first thing the Police will do after making an assessment, if necessary, is to issue a public response to say that this is untrue.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "TOC wheelchair man theft allegation",
+   "summary": "In a recent case, TOC alleged Police accused a wheelchair-bound man of motorcycle theft; Police corrected it within a day, and laws' adequacy is being considered.",
+   "sentences": [
+    {
+     "sid": "s00010",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "In a recent case, TOC alleged that Police officers had accused a wheelchair-bound man of motorcycle theft.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00012",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "The Police corrected the allegation within a day.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00014",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "The Member has asked what actions the Police can take.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00015",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "We are considering the adequacy of our laws to ensure sufficient protection against unfounded attacks on the reputation and integrity of our public institutions, like the Police.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Deliberate lies eroding public trust",
+   "summary": "If there is no wrongdoing and someone deliberately manufactures lies to pull down the institution, eroding public trust, everyone will be worse off.",
+   "sentences": [
+    {
+     "sid": "s00022",
+     "speaker": "The Minister for Home Affairs (Mr K Shanmugam)",
+     "attributed": true,
+     "text": "If there is no wrongdoing or misconduct and you deliberately accuse, to pull down the institution by manufacturing lies, and if public trust in Police is eroded and you can no longer enforce the rule of law effectively, all of us will be the worse for it.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Actively dealing with deliberate falsehoods",
+   "summary": "The Minister says this concerns deliberate falsehoods and malice, not errors, and that something will be done so those profiting feel the pain.",
+   "sentences": [
+    {
+     "sid": "s00032",
+     "speaker": "Mr K Shanmugam",
+     "attributed": true,
+     "text": "We are not talking about errors, we are talking about deliberate falsehoods, malice.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00033",
+     "speaker": "Mr K Shanmugam",
+     "attributed": true,
+     "text": "I agree with the Member, it has to be taken seriously, and I think the time has come for us not to simply rebut but to actually actively deal with it, so that the people who seek to profit from such conduct will actually feel the pain of it.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00034",
+     "speaker": "Mr K Shanmugam",
+     "attributed": true,
+     "text": "We are looking at it and something will be done.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1682",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-04-03"
+  ],
+  "report_ids": [
+   "oral-answer-1682"
+  ],
+  "sentences_total": 34,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 5,
+  "selection_share": 0.3235,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 5,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:00:54"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1681,
+   "completion_tokens": 319,
+   "estimated": false,
+   "cost_usd": 0.000325
+  }
+ }
+}

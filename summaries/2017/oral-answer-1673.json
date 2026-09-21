@@ -1,0 +1,140 @@
+{
+ "title": "MediSave Withdrawal Limit",
+ "what_it_is": "MediSave Withdrawal Limit",
+ "sections": [
+  {
+   "label": "MediSave withdrawal limit appeals",
+   "summary": "Appeals for MediSave withdrawals above the cap are considered case-by-case, about half approved, with limits set to cover most subsidised expenses.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Er Dr Lee Bee Wah",
+     "attributed": true,
+     "text": "asked\tthe Minister for Health (a) in the past three years, how many requests for MediSave withdrawals above the capped limit have been received; (b) of these, how many have been approved; and (c) whether the Ministry will review the cap on use of MediSave in line with the rise in medical cost.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "These appeals are considered on a case-by-case basis and about half of them were approved.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Factors taken into consideration in reviewing these appeals include whether there are special circumstances, such as more complex treatment than expected due to unforeseen complications, or the family facing difficulties due to exceptional circumstances like unemployment or retrenchment.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "MediSave withdrawal limits are set to be sufficient for the vast majority of subsidised healthcare expenses, after Government subsidies and MediShield Life payouts are taken into account.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "MediShield Life and MediSave coverage",
+   "summary": "From January to June 2016, MediShield Life and MediSave covered over 90% of post-subsidy bills, with MediFund for further help.",
+   "sentences": [
+    {
+     "sid": "s00007",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "From January to June 2016, MediShield Life and MediSave together were able to cover more than 90% of the post-subsidy bill for inpatient hospitalisation and day surgeries.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "Beyond Government subsidies, MediShield Life and MediSave, low-income Singaporeans who require further financial assistance can approach medical social workers at our public healthcare institutions to apply for MediFund.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Minister of State for Health (Mr Chee Hong Tat) (for the Minister for Health)",
+     "attributed": true,
+     "text": "We will also continue to consider appeals for usage of MediSave above the withdrawal limits.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Flexi-MediSave for those above 65",
+   "summary": "Flexi-MediSave was introduced for those above 65 to defray out-of-pocket expenses, and the limit can be reviewed from time to time.",
+   "sentences": [
+    {
+     "sid": "s00015",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "As for the Member's second point with regard to the limit for those who are aged above 65, I think that was why we introduced Flexi-MediSave.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00016",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "It is because we recognised that when people age and if they have sufficient balances in their MediSave, this is something which we want to help them with, to defray their out-of-pocket expenses.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00017",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "This limit is something which we can review from time to time to ensure the affordability of our healthcare services for Singaporeans.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1673",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-03-10"
+  ],
+  "report_ids": [
+   "oral-answer-1673"
+  ],
+  "sentences_total": 17,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 3,
+  "selection_share": 0.5882,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 3,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T23:02:32"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1454,
+   "completion_tokens": 219,
+   "estimated": false,
+   "cost_usd": 0.000265
+  }
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "title": "Impact of Zero Car Growth Policy on COE Prices",
+ "what_it_is": "Impact of Zero Car Growth Policy on COE Prices",
+ "sections": [
+  {
+   "label": "Zero car growth impact",
+   "summary": "The Minister answers questions on zero car growth, saying COE prices should not be significantly affected and public transport is being expanded.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Mr Saktiandi Supaat",
+     "attributed": true,
+     "text": "asked the Minister for Transport in light of the policy to cut car growth to zero by February 2018 (a) whether the Ministry has considered the impact of this policy on COE prices; (b) how will this impact transport inflation; (c) whether the public transport system and commuting infrastructure are ready to take on more passenger load; (d) whether zero growth will be imposed on non-Singapore registered cars on our roads; and (e) whether mitigating policies will be explored to mitigate the impact on segments of the population who still need cars as a mode of transportation.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "We do not expect this to affect the COE quota and, therefore, COE prices significantly, as the COE quota is largely determined by the number of vehicle deregistrations.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "We have invested heavily to build up our public transport system and will continue to do so.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00004",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "In the last five years, we have expanded our rail network by almost 30% to 230 kilometres.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "By 2030, eight in 10 households will be within a 10-minute walk to a train station.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "We have also expanded the fleet size for the existing Mass Rapid Transit (MRT) lines by close to 50%.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "Through the Bus Service Enhancement Programme and subsequently the Bus Contracting Model, we would have added 80 new bus routes and 1,000 new buses by the end of this year.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00008",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "There will be less need to own a car.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00009",
+     "speaker": "The Senior Minister of State for Transport (Dr Lam Pin Min) (for the Minister for Transport)",
+     "attributed": true,
+     "text": "We manage the number of foreign-registered vehicles via the Vehicle Entry Permit (VEP), which equalises the cost of owning and using a foreign-registered vehicle in Singapore, with that of owning and using a Singapore-registered vehicle.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Car ownership in land-scarce Singapore",
+   "summary": "The passage states that in land-scarce Singapore not everyone can own a car and prioritising COEs for a selected group is difficult.",
+   "sentences": [
+    {
+     "sid": "s00012",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "In land-scarce Singapore, unfortunately, we do not have the luxury of letting everyone own a car.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00013",
+     "speaker": "Dr Lam Pin Min",
+     "attributed": true,
+     "text": "It is also very difficult for the Government to consider alternative methods of prioritising COEs to favour a certain selected group.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-1804",
+  "group": "oral",
+  "year": "2017",
+  "sitting_dates": [
+   "2017-11-06"
+  ],
+  "report_ids": [
+   "oral-answer-1804"
+  ],
+  "sentences_total": 19,
+  "sentences_selected": 11,
+  "sentences_in_sections": 11,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 3,
+  "sections_total": 2,
+  "selection_share": 0.5789,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 11,
+   "sentences_selected": 11,
+   "turns_cited": 3,
+   "turns_total": 6,
+   "coverage": 0.5,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-20T22:44:56"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1644,
+   "completion_tokens": 148,
+   "estimated": false,
+   "cost_usd": 0.000272
+  }
+ }
+}
