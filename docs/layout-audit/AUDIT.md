@@ -331,7 +331,7 @@ leave it nothing else to do. *Change:* `render_brief_selected()` in `build_site.
 trailing gap marker inside the `<ol>`, or add it to the `grid-column:1` rule list.
 
 **D17 — 9 headings, 9 ticks, all one level.** `railCollect()` sets `var level = 2` for every
-tick (`build_site.py:2087` region, ~line 677). The `.level-3` CSS rules exist
+tick (`build_site.py:636`), so all nine ticks are `.level-2`. The `.level-3` CSS rules exist
 (`theme.css:759`) but are unreachable. Cosmetic, but it means the rail cannot express
 hierarchy, so a vertical rule will make the uniform tick column more conspicuous, not less.
 
