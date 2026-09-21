@@ -166,22 +166,71 @@ DEFECT_PROBE = r"""
 })()
 """
 
+# The archive probe AWAITS the frames for exactly the reason SITTING_PBAR_PROBE does (see the
+# long note below): pbarSync() runs inside the page's own requestAnimationFrame, so a read in
+# the same tick as scrollTo() returns the value from BEFORE the scroll. Getting that wrong here
+# made the option-2 branch of this file's own acceptance unpassable -- a correct, scroll-tracking
+# bar would have been reported as failing, because 'after' would always have shown the pre-scroll
+# value. The archive is gated today (option 1), so nothing was misreported; the probe is fixed
+# rather than left, because the card makes this file the acceptance pattern and an option-2
+# implementation must be able to pass it.
 ARCHIVE_PROBE = r"""
-(() => {
+(async () => {
   const px = v => Math.round(v * 100) / 100;
   const pbar = document.querySelector('.pbar');
   const body = document.body;
-  const before = pbar ? { text: pbar.textContent.trim(), aria: pbar.getAttribute('aria-valuenow'),
-                          display: getComputedStyle(pbar).display } : null;
+  const box = e => { const r = e.getBoundingClientRect();
+    return { y: px(r.top), bottom: px(r.bottom), h: px(r.height) }; };
+  const read = () => pbar ? { text: pbar.textContent.trim(),
+                              aria: pbar.getAttribute('aria-valuenow'),
+                              display: getComputedStyle(pbar).display,
+                              fillWidth: pbar.querySelector('.pbar-fill')
+                                 ? pbar.querySelector('.pbar-fill').style.width : null,
+                              box: box(pbar) } : null;
+  const frame = () => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+  const before = read();
   window.scrollTo(0, document.documentElement.scrollHeight);
-  const after = pbar ? { text: pbar.textContent.trim(), aria: pbar.getAttribute('aria-valuenow'),
-                         y: px(pbar.getBoundingClientRect().top) } : null;
-  return JSON.stringify({ url: location.href, hasDataPage: body.hasAttribute('data-page'),
+  await frame();
+  await new Promise(r => setTimeout(r, 150));
+  const after = read();
+  return JSON.stringify({ url: location.href,
+                          width: window.innerWidth, height: window.innerHeight,
+                          hasDataPage: body.hasAttribute('data-page'),
                           dataPage: body.getAttribute('data-page'),
+                          hasScript: !!document.querySelector('script'),
                           totopPresent: !!document.querySelector('.totop'),
                           railPresent: !!document.querySelector('.section-rail'),
+                          pbarPresent: !!pbar,
                           pbarBefore: before, pbarAfterScrollToBottom: after,
-                          scrollY: Math.round(window.scrollY) });
+                          scrollY: Math.round(window.scrollY),
+                          maxScroll: Math.round(document.documentElement.scrollHeight
+                                                - window.innerHeight) });
+})()
+"""
+
+# The sitting page's bar must keep working. This is the guard that gating the archive cannot
+# cost the sitting page its bar: scroll to the foot and it must read 100.
+#
+# It AWAITS the frames. pbarSync() runs inside the page's own requestAnimationFrame, so reading
+# the bar in the same tick as scrollTo() returns the PREVIOUS value -- on a perfectly working
+# bar that reads 0 at the foot, which is a measurement artefact and not the defect. Getting this
+# wrong once already produced a false "regression" verdict; the awaits are why it cannot again.
+SITTING_PBAR_PROBE = r"""
+(async () => {
+  const pbar = document.querySelector('.pbar');
+  const frame = () => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+  const at = () => pbar ? { text: (pbar.querySelector('.pbar-txt') || {}).textContent,
+                            aria: pbar.getAttribute('aria-valuenow'),
+                            display: getComputedStyle(pbar).display } : null;
+  const top = at();
+  window.scrollTo(0, document.documentElement.scrollHeight);
+  await frame();
+  await new Promise(r => setTimeout(r, 150));
+  const bottom = at();
+  return JSON.stringify({ url: location.href, present: !!pbar,
+                          maxScroll: Math.round(document.documentElement.scrollHeight
+                                                - window.innerHeight),
+                          atTop: top, atBottom: bottom });
 })()
 """
 
@@ -243,16 +292,68 @@ def main():
     print("=" * 78)
     print("D15 -- the archive page's progress bar")
     print("=" * 78)
-    c = CDP(CHROME, base + ARCHIVE, 1280, 900, 9870)
-    try:
-        c.call("Emulation.setDeviceMetricsOverride", width=1280, height=900,
-               deviceScaleFactor=1, mobile=False)
-        c.eval(f"location.replace({json.dumps(base + ARCHIVE)})")
-        time.sleep(2.6)
-        a = json.loads(c.eval(ARCHIVE_PROBE))
-    finally:
-        c.close()
-    print(json.dumps(a, indent=2))
+    for w in (1280, 1440):
+        c = CDP(CHROME, base + ARCHIVE, w, 900, 9870 + w)
+        try:
+            c.call("Emulation.setDeviceMetricsOverride", width=w, height=900,
+                   deviceScaleFactor=1, mobile=False)
+            c.eval(f"location.replace({json.dumps(base + ARCHIVE)})")
+            time.sleep(2.6)
+            a = json.loads(c.eval(ARCHIVE_PROBE))
+        finally:
+            c.close()
+        print(json.dumps(a, indent=2))
+        # ACCEPTANCE. The bar may be ABSENT, or it may be REAL (reads a value that tracks
+        # scroll and reaches 100 at the foot). What is forbidden is a bar that RENDERS and
+        # still reports 0 at the bottom of the page -- a numeric claim that is wrong. An
+        # element present but display:none is absent for this purpose: it claims nothing.
+        shown = bool(a["pbarPresent"] and a["pbarBefore"]
+                     and a["pbarBefore"]["display"] != "none")
+        if not a["pbarPresent"]:
+            print(f"  {w}px OK   option 1: no .pbar on the archive -- absent, so it claims nothing")
+        elif not shown:
+            print(f"  {w}px OK   option 1: .pbar present but display="
+                  f"{a['pbarBefore']['display']} -- it renders no claim")
+        else:
+            aria = a["pbarAfterScrollToBottom"]["aria"]
+            at_foot = a["scrollY"] >= a["maxScroll"] - 2
+            if not (at_foot and aria == "100"):
+                fails.append(
+                    f"D15 at {w}px: .pbar renders and reads "
+                    f"{a['pbarAfterScrollToBottom']['text']!r} / aria-valuenow={aria!r} at the "
+                    f"foot of the archive (scrollY={a['scrollY']} of {a['maxScroll']}) -- a "
+                    f"false progress claim; gate it or make it track scroll")
+            else:
+                # Print the settled reading, not just the verdict: the value below was taken
+                # after two frames plus a settle, so a reader can see it was not read in the
+                # same tick as scrollTo() (which would report the pre-scroll value).
+                print(f"  {w}px OK   option 2: bar tracks scroll and reads "
+                      f"{a['pbarAfterScrollToBottom']['text']!r} / aria-valuenow={aria!r} "
+                      f"at the foot (settled, scrollY={a['scrollY']} of {a['maxScroll']})")
+
+    # The other half of the acceptance: gating the archive must not cost the SITTING page its
+    # bar. Scroll a sitting page to its foot and it must still read 100.
+    for w in (1280, 1440):
+        c = CDP(CHROME, base + SITTING, w, 900, 9970 + w)
+        try:
+            c.call("Emulation.setDeviceMetricsOverride", width=w, height=900,
+                   deviceScaleFactor=1, mobile=False)
+            c.eval(f"location.replace({json.dumps(base + SITTING)})")
+            time.sleep(2.6)
+            s = json.loads(c.eval(SITTING_PBAR_PROBE))
+        finally:
+            c.close()
+        print(f"  sitting {w}px: present={s['present']} display="
+              f"{s['atTop']['display'] if s['atTop'] else None} atTop="
+              f"{s['atTop']['aria'] if s['atTop'] else None} atBottom="
+              f"{s['atBottom']['aria'] if s['atBottom'] else None}")
+        if not s["present"]:
+            fails.append(f"D15 regression at {w}px: the sitting page lost its .pbar")
+        elif s["atBottom"]["aria"] != "100":
+            fails.append(f"D15 regression at {w}px: sitting page .pbar reads "
+                         f"{s['atBottom']['aria']!r} at the foot, expected 100")
+        else:
+            print(f"  {w}px OK   the sitting page's bar still reaches 100% at the foot")
     print()
     if fails:
         print(f"{len(fails)} FAILURE(S):")

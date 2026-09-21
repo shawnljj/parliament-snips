@@ -1,0 +1,9 @@
+generated pages scanned : 339
+pages emitting a .pbar  : 332
+pages with .pbar but NO data-page and NO script (the D15 shape): 0
+
+archive (sittings/index.html): .pbar=False data-page=False script=False
+sitting pages with a .pbar : 331 (expected 331)
+
+OK: the archive has no progress bar, every other page keeps one, and no page renders a bar nothing drives.
+exit=0

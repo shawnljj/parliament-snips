@@ -1,0 +1,13 @@
+----- 1280px  sitting page (bar works)  scrollY=210423 of 210423
+  same-tick read (the old pattern) : before={'text': '0%', 'aria': '0'} sameTick={'text': '0%', 'aria': '0'}
+  settled read                     : settled={'text': '100%', 'aria': '100'}
+  ARCHIVE_PROBE as it now stands   : hasDataPage=True present=True before=0 after=100
+  1280px OK   the probe sees the settled 100; the option-2 branch of qa_defects.py can pass on a real bar
+----- 1440px  sitting page (bar works)  scrollY=210423 of 210423
+  same-tick read (the old pattern) : before={'text': '0%', 'aria': '0'} sameTick={'text': '0%', 'aria': '0'}
+  settled read                     : settled={'text': '100%', 'aria': '100'}
+  ARCHIVE_PROBE as it now stands   : hasDataPage=True present=True before=0 after=100
+  1440px OK   the probe sees the settled 100; the option-2 branch of qa_defects.py can pass on a real bar
+
+PASS: the probe awaits the frame, so it reads the settled value; the same-tick read still shows the stale one, which is the trap it exists to catch.
+exit=0

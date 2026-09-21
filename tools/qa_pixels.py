@@ -1,14 +1,23 @@
 #!/usr/bin/env python3
-"""Frame-level regression check: the MERGED tree against a pristine pre-change build.
+"""Frame-level regression check: the MERGED tree (guides ON) against a build with the guides OFF.
 
 tools/compare_mobile.py proves the phone/tablet computed styles and rects are identical, which is
 the stronger statement about CSS. This is the complementary one the audit's screenshot set
 implies: the actual PIXELS at each breakpoint, captured from two servers serving two real dists.
 
-  * at the phone and tablet widths the frames must be identical (0 changed pixels);
-  * at 760 the frames must differ (the guides are drawn there -- audit D6 is sidestepped, so a
-    guide appears over a genuinely broken 204px column);
-  * at 761 and 1024+ they must differ (the guides are live).
+WHAT THE TWO SIDES MUST BE -- this is a precondition, not a preference, and the tool now checks
+it before it compares anything:
+
+  * the "after" side is the merged tree, i.e. the guides DRAW there;
+  * the "before" side is a build with the guides OFF, and otherwise the same page geometry.
+
+Passing a "before" build that also carries the guides makes every width above 760 report 0
+changed pixels -- not a bug in the pages, but the absence of the variable this test exists to
+observe. The run then exits 1 with "UNEXPECTED", which reads like a regression and is not one.
+A "before" build can also be unusable for a second, unrelated reason: a dist whose sitting pages
+cannot expand their `skipped/*.json` payloads renders about 4x shorter (measured: 56 041 vs
+217 634 px at 1024), so every width is skipped as "not like-for-like". The preflight below
+reports which of these it is, instead of leaving it to be guessed.
 
 A difference below 760 would be a regression; no difference above it would mean nothing rendered.
 
@@ -18,7 +27,7 @@ self-check captures the SAME url twice and requires zero difference -- if that e
 comparison is not measuring the stylesheet.
 
 Usage:
-    python3 tools/qa_pixels.py http://127.0.0.1:8480 http://127.0.0.1:8481
+    python3 tools/qa_pixels.py <after-base-url> <before-base-url> [widths]
 """
 import base64
 import io
@@ -64,6 +73,42 @@ def shot(base, w, h, port, page="/sittings/2026-08-04.html", settle_ms=1200):
         c.close()
 
 
+GUIDE_PROBE = r"""(() => {
+  // Is a guide actually DRAWN here? Two independent facts, because either alone can lie:
+  // the declaration must resolve, and a rule must have a box to paint on. Measured rather than
+  // inferred from the stylesheet text: a rule can be present and still not draw.
+  const dsec = document.querySelector('.dsec');
+  const cs = dsec ? getComputedStyle(dsec) : null;
+  const before = dsec ? getComputedStyle(dsec, '::before') : null;
+  const w = cs ? cs.getPropertyValue('--col-rule-w').trim() : '';
+  const shadow = before ? (before.boxShadow || '') : '';
+  return JSON.stringify({
+    url: location.href,
+    dsecs: document.querySelectorAll('.dsec').length,
+    ruleWidth: w,
+    pseudoBoxShadow: shadow.slice(0, 80),
+    // The guides are an inset box-shadow built from --col-rule-w; with the token undefined the
+    // shadow resolves to none.
+    guideDrawn: !!(w && shadow && shadow !== 'none'),
+    gridTracks: cs ? (cs.gridTemplateColumns || 'none') : null,
+    scrollHeight: document.documentElement.scrollHeight,
+  });
+})()"""
+
+
+def guide_state(base, page="/sittings/2026-08-04.html", width=1024):
+    """Read whether the guides draw, and the page's scroll height, from a real page load."""
+    c = CDP(CHROME, base + page, width, 900, 9280)
+    try:
+        c.call("Emulation.setDeviceMetricsOverride", width=width, height=900,
+               deviceScaleFactor=1, mobile=False)
+        c.eval(f"location.replace({json.dumps(base + page)})")
+        time.sleep(1.8)
+        return json.loads(c.eval(GUIDE_PROBE))
+    finally:
+        c.close()
+
+
 def changed(a, b):
     if a.size != b.size:
         return None
@@ -82,6 +127,50 @@ def main():
     MUST_BE_SAME = {390, 759}
     fails = []
 
+    # Preflight: the two sides must differ in the guides and in nothing else that matters --
+    # but only for the widths where the guides are the thing being observed. Below 761 the
+    # guides do not draw by design, so "the two sides must differ" is not a precondition there;
+    # what is required is that they are the SAME page, or the frames are not comparable.
+    # Without this preflight the wrong "before" side reports 0 changed px above 760 and reads as
+    # a regression; with it, the run says which precondition failed. Done before the captures,
+    # because a wrong pairing is not worth 8 pairs of page loads.
+    desktop = [w for w in widths if w not in MUST_BE_SAME]
+    ga = guide_state(after)
+    gb = guide_state(before)
+    print(f"preflight  after : guides={ga['guideDrawn']} rule-w={ga['ruleWidth']!r} "
+          f"dsec={ga['dsecs']} tracks={ga['gridTracks']} h={ga['scrollHeight']}")
+    print(f"preflight  before: guides={gb['guideDrawn']} rule-w={gb['ruleWidth']!r} "
+          f"dsec={gb['dsecs']} tracks={gb['gridTracks']} h={gb['scrollHeight']}")
+    if desktop:
+        print(f"preflight: {len(desktop)} width(s) above the phone/tablet pair "
+              f"({','.join(str(w) for w in desktop)}) are compared, so the guides must be the "
+              f"only difference")
+    if ga["guideDrawn"] != gb["guideDrawn"] and not desktop:
+        print("preflight: the two sides differ in the guides, which is not observable at "
+              "390/759 by design; only the frame equality below is being asserted")
+    if desktop and not ga["guideDrawn"]:
+        fails.append(f"the AFTER side ({after}) does not draw the guides "
+                     f"(rule-w={ga['ruleWidth']!r}) -- this test observes the guides above 760, "
+                     f"so its 'after' side must be the tree that has them")
+    if desktop and gb["guideDrawn"]:
+        fails.append(f"the BEFORE side ({before}) ALSO draws the guides -- so there is no "
+                     f"difference above 760 for this test to find, and every desktop width will "
+                     f"report 0 changed px. Pass a build with the guides off.")
+    if ga["scrollHeight"] != gb["scrollHeight"]:
+        fails.append(f"the two sides are not the same page: scrollHeight {ga['scrollHeight']} "
+                     f"vs {gb['scrollHeight']} at 1024 -- they differ by more than the guides "
+                     f"(a different tree, or a dist missing the runtime-expanded "
+                     f"skipped/*.json payloads). Every width will be skipped as "
+                     f"'not like-for-like'.")
+    if fails:
+        print()
+        for f in fails:
+            print(f"  - {f}")
+        print()
+        print("Refusing to compare: fix the pairing above. Nothing was captured.")
+        return 2
+    print()
+
     # Self-check first: same URL, two sessions, must be pixel-identical.
     a1, s1 = shot(after, 1024, 900, 9301)
     a2, s2 = shot(after, 1024, 900, 9302)
@@ -94,6 +183,7 @@ def main():
     print()
 
     print(f"{'width':>6}  {'verdict':<34} changed px / total")
+    compared, same_count, diff_count = [], 0, 0
     for i, w in enumerate(widths):
         h = 844 if w < 800 else 900
         A, sa = shot(after, w, h, 9310 + i * 2)
@@ -117,6 +207,9 @@ def main():
         if not ok:
             fails.append(f"{w}px: {verdict} -- {n} px changed, expected "
                          f"{'identical' if want_same else 'different'}")
+        compared.append(w)
+        same_count += 1 if same else 0
+        diff_count += 0 if same else 1
         print(f"{w:>6}  {verdict:<34} {n} / {total}")
 
     print()
@@ -125,8 +218,22 @@ def main():
         for f in fails:
             print("  -", f)
         return 1
-    print("PASS: the phone and tablet frames are pixel-identical to the pre-change build, and "
-          "every desktop width differs (the guides are rendering).")
+    # Report only what was actually compared. The old wording asserted "every desktop width
+    # differs" unconditionally, which is a false claim when the run was given just the
+    # phone/tablet pair -- the same class of error as the defect this task is about.
+    n_same = len(MUST_BE_SAME & set(compared))
+    n_diff = len([w for w in compared if w not in MUST_BE_SAME])
+    parts = []
+    if n_same:
+        parts.append(f"{n_same} phone/tablet width(s) identical, as required")
+    if n_diff:
+        parts.append(f"{n_diff} width(s) above 760 differ, so the guides are rendering")
+    print("PASS: " + "; ".join(parts) + f". (compared: "
+          f"{','.join(str(w) for w in compared)}; identical={same_count} "
+          f"differing={diff_count})")
+    if not n_diff:
+        print("NOTE: no width above 760 was compared, so this run does NOT show that the "
+              "guides render. Pass the full width list for that.")
     return 0
 
 

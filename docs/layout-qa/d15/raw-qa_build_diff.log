@@ -1,0 +1,29 @@
+reference : ../t_2bd5daf9-ref/site/dist  (3848 files)
+new       : /Users/shawnlin/parsnips/.worktrees/t_2bd5daf9/site/dist  (3848 files)
+only in reference: 0
+only in new      : 0
+
+identical files (byte-for-byte): 3847 of 3848
+CHANGED files: 1
+
+  sittings/index.html: -6 +0 lines
+    -  <div class="pbar" role="progressbar" aria-label="Progress through this sitting"
+    -       aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    -    <span class="pbar-fill"></span>
+    -    <span class="pbar-txt">0%</span>
+    -  </div>
+    -
+
+VERDICT:
+  archive changed       : True
+  anything else changed : 0 other file(s)
+  archive: removed 5 lines, added 0
+    -   <div class="pbar" role="progressbar" aria-label="Progress through this sitting"
+    -        aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    -     <span class="pbar-fill"></span>
+    -     <span class="pbar-txt">0%</span>
+    -   </div>
+  reference-minus-pbar == new archive : True
+
+OK: the archive lost exactly its .pbar block, and no other page or byte moved.
+exit=0

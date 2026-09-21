@@ -2326,6 +2326,15 @@ def render_archive(sittings, *, css_href, home_href, archive_href, summaries=Non
     dates = [s["date"] for s in sittings]
     span = f"{pretty_date(dates[0])} &ndash; {pretty_date(dates[-1])}" if dates else "—"
 
+    # NO PROGRESS BAR ON THE ARCHIVE, deliberately (audit D15).
+    # The .pbar is a claim about how far through a PIECE OF READING the reader is, and it is
+    # computed from scrollY. The archive carries no data-page and no SCRIPT at all, so nothing
+    # ever writes or reads scroll state for it -- the emitted bar sat at its server-rendered 0%
+    # for the whole page, which is worse than no bar: it is a number, and the number was wrong.
+    # The archive is also short (~2770px of scroll at 1280) and already grouped into year
+    # disclosures, so there is nothing a progress meter would tell the reader. Gated here for
+    # the same reason .section-rail and .totop are absent from this page: this page has no
+    # scroll behaviour, so it gets no scroll chrome.
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2351,12 +2360,6 @@ def render_archive(sittings, *, css_href, home_href, archive_href, summaries=Non
   <section class="arch">
     {''.join(blocks) or '<p class="empty">No sittings yet.</p>'}
   </section>
-  <div class="pbar" role="progressbar" aria-label="Progress through this sitting"
-       aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-    <span class="pbar-fill"></span>
-    <span class="pbar-txt">0%</span>
-  </div>
-
   <footer><p>Parsnips &middot; an unofficial reader for the Official Report.
   Hansard is a public record; the full text is at sprs.parl.gov.sg.</p></footer>
 </main>
