@@ -1,9 +1,10 @@
 # Desktop column layout audit — Parsnips reading view
 
 **Prepared:** 2026-09-21 · **Task:** kanban `t_2264d837` (child of `t_a1329966`)
-**Page measured:** `/sittings/2026-08-04.html` (**172 `.dsec` sections, 9 rail ticks** — a
-mid-size page: the corpus runs from 0 to 823 sections, and 760px-plus pages are common).
-Cross-checked against `/index.html` (latest) and `/sittings/index.html` (archive).
+**Page measured:** `/sittings/2026-08-04.html` (**172 `.dsec` sections, 9 rail ticks**). For
+scale: across the 331 built sitting pages the section count runs **0–823, median 212**, and 200
+of 331 pages have at least 172 — so this is a fair mid-size sample, not a best or worst case.
+Cross-checked against `/index.html` (latest, 7 ticks) and `/sittings/index.html` (archive).
 **Method:** headless Chrome over CDP at 1024/1280/1440/1920 (+ a 760–2560 sweep). Every
 figure below is a measured `getBoundingClientRect()` value, reproducible with
 `python3 tools/measure_layout.py <url> --out docs/layout-audit`. Raw JSON:
