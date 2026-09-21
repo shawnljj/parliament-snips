@@ -47,6 +47,13 @@ Plus a guard the round-1 review asked for, from a regression this pass introduce
        values the two levels are meant to draw. The layout half is what fails when someone
        reintroduces a per-level width, which is exactly how this regressed.
 
+       THE SECOND SYMPTOM, and it needs its own assertion because it is not the same fact: the
+       tick ROW HEIGHT was also per-level (8px at level 2, 6px at level 3). The ticks are a column
+       with a fixed gap, so an uneven row height makes the row-to-row pitch alternate -- measured
+       on 85c079c6 at 1440: pitch [22, 20, 22, 20, 22, 22, 22, 22] against a flat 22 on the
+       control and on this build. Pinning only the mark box would leave the rhythm free to
+       regress the moment a level rule touched `height`, so D3 asserts the row height too.
+
 Usage:
     python3 -m http.server 8461 --directory site/dist &
     python3 tools/check_outline.py http://127.0.0.1:8461
@@ -207,7 +214,7 @@ PROBE = r"""
   }).filter(Boolean);
   const transient = m => m.tick.classList.contains('is-active')
                        || m.tick.classList.contains('is-pending');
-  const restCx = [], allW = [], layoutSize = [], layoutX = [], layoutY = [];
+  const restCx = [], allW = [], layoutSize = [], layoutX = [], layoutY = [], tickHeights = [];
   const uniqOf = (arr, key) => { const u = []; arr.forEach(function (v) {
     const k = key ? key(v) : v;
     if (!u.some(function (y) { return (key ? key(y) : y) === k; })) u.push(v); }); return u; };
@@ -217,13 +224,20 @@ PROBE = r"""
     layoutSize.push(m.lw + 'x' + m.lh);
     layoutX.push(m.lx);
     layoutY.push(m.ly);
+    /* THE TICK'S OWN ROW HEIGHT. This is the SECOND half of the round-1 symptom and it is not
+       the same fact as the mark's box: the rail is a column of ticks with a fixed gap between
+       them, so a per-level ROW height (8px for level 2, 6px for level 3) makes the row-to-row
+       pitch alternate between `gap + 8` and `gap + 6` -- measured at 1440, [22, 20, 22, 20, ...]
+       where this build is a flat 22. Pinning only the mark box would leave the rhythm free to
+       regress again the moment a level rule touches `height`. */
+    tickHeights.push(px(m.tick.getBoundingClientRect().height));
   });
   const fillEl = q('.section-rail-fill');
   const fillCx = fillEl ? px(fillEl.getBoundingClientRect().left
                              + fillEl.getBoundingClientRect().width / 2) : null;
   out.D3 = { dotXs: uniqOf(restCx), boxWs: allW,
              layoutSizes: uniqOf(layoutSize), layoutX: uniqOf(layoutX),
-             layoutY: uniqOf(layoutY),
+             layoutY: uniqOf(layoutY), tickHeights: uniqOf(tickHeights),
              spread: (uniqOf(restCx).length > 1
                       ? px(Math.max.apply(null, restCx) - Math.min.apply(null, restCx)) : 0),
              transientTicks: marks.filter(transient).length, tickCount: marks.length,
@@ -406,6 +420,10 @@ def main():
             ok(len(g3["layoutX"]) == 1,
                f"D3 every mark starts at the same offset in its tick "
                f"(offsetLeft: {g3['layoutX']}; offsetTop: {g3['layoutY']})")
+            ok(len(g3["tickHeights"]) == 1,
+               f"D3 every tick is the SAME ROW HEIGHT, so the tick rhythm is even -- a per-level "
+               f"row height makes the row-to-row pitch alternate (tick heights: "
+               f"{g3['tickHeights']}; distinct pitch = gap + height)")
             # The FILL assertion is desktop-only, and that is a measured scope rather than a
             # convenience: above 761px the fill's `left` is derived from the dot column
             # (--rail-pad + --rail-dot/2, see the desktop block's comment), while below it the
