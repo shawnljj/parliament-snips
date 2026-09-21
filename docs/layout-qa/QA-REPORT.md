@@ -9,26 +9,54 @@ branches conflict in three files; the resolution is described in §1 and is itse
 
 Reproduce with:
 
+The tools referred to below are the layout/QA suite in `tools/`. They are part of the
+change this report describes, so reproduce it from a tree that has them (card `t_35aed0dc`
+settled that they belong in `tools/`; the batch's own copy is frozen in
+`docs/layout-tools-path/tools/`).
+
+Everything below is run **from a scratch directory** — `$OUT` is not committed, and nothing
+here writes into a tracked `docs/` path, so this cannot collide with the committed capture
+set on merge.
+
 ```
-python3 site/build_site.py /tmp/qa-build          # regenerate dist from the generator
-python3 -m http.server 8480 --bind 127.0.0.1 --directory site/dist   # merged
+OUT=$(mktemp -d)                                  # capture set, not committed
+
+# the after side: the generator run on this tree
+python3 site/build_site.py $OUT/after/site/dist
+python3 -m http.server 8480 --bind 127.0.0.1 --directory $OUT/after/site/dist
+# the before side: a worktree at main (994a1dff), built the same way
 python3 -m http.server 8481 --bind 127.0.0.1 --directory <pristine>/site/dist
 
 python3 tools/measure_layout.py  http://127.0.0.1:8480/sittings/2026-08-04.html \
-        --out docs/layout-qa/after --prefix after --widths 1024,1280,1440,1920
+        --out $OUT/after --prefix after --widths 1024,1280,1440,1920
 python3 tools/check_column_guides.py http://127.0.0.1:8480/sittings/2026-08-04.html \
-        docs/layout-qa/after
-python3 tools/check_rail_geometry.py http://127.0.0.1:8480
+        $OUT/after
+python3 tools/check_rail_geometry.py http://127.0.0.1:8480 http://127.0.0.1:8481
 python3 tools/check_rail_preview.py  http://127.0.0.1:8480 http://127.0.0.1:8481
 python3 tools/compare_mobile.py      http://127.0.0.1:8480 http://127.0.0.1:8481 \
         390,740,759,760,761
+python3 tools/compare_renders.py     http://127.0.0.1:8480 http://127.0.0.1:8481
 python3 tools/qa_pixels.py           http://127.0.0.1:8480 http://127.0.0.1:8481
 python3 tools/qa_console.py          http://127.0.0.1:8480
 python3 tools/qa_defects.py          http://127.0.0.1:8480
 python3 tools/qa_gates.py            http://127.0.0.1:8480 http://127.0.0.1:8481
-python3 tools/qa_frames.py           http://127.0.0.1:8480 http://127.0.0.1:8481 \
-        docs/layout-qa/before-after
+python3 tools/qa_frames.py           http://127.0.0.1:8480 http://127.0.0.1:8481 $OUT/frames
 ```
+
+Corrections to the block as first written, each with the reason it was wrong:
+
+* `check_rail_geometry.py` takes **two** base urls (worktree, then baseline) and exits 0 either
+  way, so the one-url form silently measured only the after side while printing a report that
+  looks like a comparison.
+* `compare_renders.py` was missing entirely. Its default form reads `HEAD~1` for the pre-change
+  stylesheet, which is only the pre-change stylesheet in the tree whose HEAD changed it; run
+  from any other tree it refuses rather than reporting a false result (`t_01c45b8d`). Name both
+  builds explicitly, as above.
+* `--out docs/layout-qa/after` wrote the capture set into a tracked docs path. On `main` that
+  directory does not exist, so the block created it and the regenerated frames then collide
+  with this branch's committed set on merge. It writes to `$OUT` now.
+* two of the ten commands named tools that do not exist (see §5.2) — `qa_frames.py` exists and
+  works; `compare_renders.py` needed the path fix that has since been made.
 
 ---
 
@@ -239,11 +267,15 @@ column, not a new break. Noted rather than hidden.
    naively.** Both branches defined the same four column values under different names in the
    same `:root`. Resolved with `--content-max`/`--content-pad` as aliases (§1). Any future
    branch touching the column model should extend `--col-*` rather than adding a parallel set.
-2. **`tools/compare_renders.py` and `tools/qa_frames.py` hardcode the worktree path.**
-   `compare_renders.py` has `ROOT = "/Users/shawnlin/parsnips/.worktrees/t_b764176e"` at line
-   28, and `qa_frames.py` imports `SETTLE` from it. On the merged tree the path is still valid,
-   but the moment `t_b764176e`'s worktree is pruned the file breaks. Should be
-   `os.path.dirname(os.path.dirname(os.path.abspath(__file__)))` like every other tool.
+2. **`tools/compare_renders.py` hardcoded the worktree path — fixed in `t_01c45b8d`; and the
+   second half of this claim was wrong.** `compare_renders.py` had
+   `ROOT = "/Users/shawnlin/parsnips/.worktrees/t_b764176e"` at line 28, and now derives ROOT
+   from `__file__`. `qa_frames.py` does **not** import `SETTLE` from it, and never did — it
+   imports `CHROME, CDP` from `check_column_guides` and `SETTLE` from `qa_pixels`
+   (`qa_frames.py:19-20`); `git log -S compare_renders -- tools/qa_frames.py` is empty, and the
+   version committed at `82d4bb3` exits 0 with the stale worktree renamed aside. The two tools
+   did not break together, and `qa_frames.py` needed no change. See
+   `docs/layout-tools-path/VERIFICATION.md` §2.
 3. **`site/dist` on both branches is inconsistent with what the generator produces.**
    `site/build_site.py <tmp>` rewrites **27** files in `site/dist`: `pipeline/state.json`,
    `sittings/index.html`, and **25 of the 26** `sittings/2017-*.html` pages (the 26th,
