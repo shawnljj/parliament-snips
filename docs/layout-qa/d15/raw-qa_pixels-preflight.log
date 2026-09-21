@@ -1,0 +1,20 @@
+### A. wrong pairing: a 'before' that also draws the guides
+preflight  after : guides=True rule-w='1px' dsec=172 tracks=526px 416px h=217634
+preflight  before: guides=True rule-w='1px' dsec=172 tracks=526px 416px h=217634
+preflight: 6 width(s) above the phone/tablet pair (760,761,1024,1280,1440,1920) are compared, so the guides must be the only difference
+
+  - the BEFORE side (http://127.0.0.1:8483) ALSO draws the guides -- so there is no difference above 760 for this test to find, and every desktop width will report 0 changed px. Pass a build with the guides off.
+
+Refusing to compare: fix the pairing above. Nothing was captured.
+A exit=2
+
+### B. unusable pairing: a dist that cannot expand its skipped payloads
+preflight  after : guides=True rule-w='1px' dsec=172 tracks=526px 416px h=217634
+preflight  before: guides=True rule-w='1px' dsec=172 tracks=526px 416px h=56041
+preflight: 6 width(s) above the phone/tablet pair (760,761,1024,1280,1440,1920) are compared, so the guides must be the only difference
+
+  - the BEFORE side (http://127.0.0.1:8487) ALSO draws the guides -- so there is no difference above 760 for this test to find, and every desktop width will report 0 changed px. Pass a build with the guides off.
+  - the two sides are not the same page: scrollHeight 217634 vs 56041 at 1024 -- they differ by more than the guides (a different tree, or a dist missing the runtime-expanded skipped/*.json payloads). Every width will be skipped as 'not like-for-like'.
+
+Refusing to compare: fix the pairing above. Nothing was captured.
+B exit=2

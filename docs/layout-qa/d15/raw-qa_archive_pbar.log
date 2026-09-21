@@ -6,3 +6,4 @@ archive (sittings/index.html): .pbar=False data-page=False script=False
 sitting pages with a .pbar : 331 (expected 331)
 
 OK: the archive has no progress bar, every other page keeps one, and no page renders a bar nothing drives.
+exit=0

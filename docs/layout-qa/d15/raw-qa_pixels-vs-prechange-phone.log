@@ -1,0 +1,12 @@
+preflight  after : guides=True rule-w='1px' dsec=172 tracks=526px 416px h=217634
+preflight  before: guides=True rule-w='1px' dsec=172 tracks=526px 416px h=217634
+
+self-check (same url twice): 0 px differ  state {"y":0,"h":217634,"pw":1024} vs {"y":0,"h":217634,"pw":1024}
+
+ width  verdict                            changed px / total
+   390  IDENTICAL (as required)            0 / 329160
+   759  IDENTICAL (as required)            0 / 640596
+
+PASS: 2 phone/tablet width(s) identical, as required. (compared: 390,759; identical=2 differing=0)
+NOTE: no width above 760 was compared, so this run does NOT show that the guides render. Pass the full width list for that.
+exit=0

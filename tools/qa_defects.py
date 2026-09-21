@@ -166,8 +166,16 @@ DEFECT_PROBE = r"""
 })()
 """
 
+# The archive probe AWAITS the frames for exactly the reason SITTING_PBAR_PROBE does (see the
+# long note below): pbarSync() runs inside the page's own requestAnimationFrame, so a read in
+# the same tick as scrollTo() returns the value from BEFORE the scroll. Getting that wrong here
+# made the option-2 branch of this file's own acceptance unpassable -- a correct, scroll-tracking
+# bar would have been reported as failing, because 'after' would always have shown the pre-scroll
+# value. The archive is gated today (option 1), so nothing was misreported; the probe is fixed
+# rather than left, because the card makes this file the acceptance pattern and an option-2
+# implementation must be able to pass it.
 ARCHIVE_PROBE = r"""
-(() => {
+(async () => {
   const px = v => Math.round(v * 100) / 100;
   const pbar = document.querySelector('.pbar');
   const body = document.body;
@@ -179,8 +187,11 @@ ARCHIVE_PROBE = r"""
                               fillWidth: pbar.querySelector('.pbar-fill')
                                  ? pbar.querySelector('.pbar-fill').style.width : null,
                               box: box(pbar) } : null;
+  const frame = () => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
   const before = read();
   window.scrollTo(0, document.documentElement.scrollHeight);
+  await frame();
+  await new Promise(r => setTimeout(r, 150));
   const after = read();
   return JSON.stringify({ url: location.href,
                           width: window.innerWidth, height: window.innerHeight,
@@ -313,7 +324,12 @@ def main():
                     f"foot of the archive (scrollY={a['scrollY']} of {a['maxScroll']}) -- a "
                     f"false progress claim; gate it or make it track scroll")
             else:
-                print(f"  {w}px OK   option 2: bar tracks scroll and reads 100% at the foot")
+                # Print the settled reading, not just the verdict: the value below was taken
+                # after two frames plus a settle, so a reader can see it was not read in the
+                # same tick as scrollTo() (which would report the pre-scroll value).
+                print(f"  {w}px OK   option 2: bar tracks scroll and reads "
+                      f"{a['pbarAfterScrollToBottom']['text']!r} / aria-valuenow={aria!r} "
+                      f"at the foot (settled, scrollY={a['scrollY']} of {a['maxScroll']})")
 
     # The other half of the acceptance: gating the archive must not cost the SITTING page its
     # bar. Scroll a sitting page to its foot and it must still read 100.

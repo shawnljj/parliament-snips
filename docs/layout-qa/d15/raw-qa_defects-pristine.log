@@ -144,3 +144,4 @@ D15 -- the archive page's progress bar
 2 FAILURE(S):
   - D15 at 1280px: .pbar renders and reads '0%' / aria-valuenow='0' at the foot of the archive (scrollY=2770 of 2770) -- a false progress claim; gate it or make it track scroll
   - D15 at 1440px: .pbar renders and reads '0%' / aria-valuenow='0' at the foot of the archive (scrollY=2770 of 2770) -- a false progress claim; gate it or make it track scroll
+exit=1

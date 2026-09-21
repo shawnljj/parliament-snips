@@ -67,7 +67,7 @@ LIVE CHECKS (headless Chrome, sitting page)
 D15 -- the archive page's progress bar
 ==============================================================================
 {
-  "url": "http://127.0.0.1:8482/sittings/index.html",
+  "url": "http://127.0.0.1:8486/sittings/index.html",
   "width": 1280,
   "height": 900,
   "hasDataPage": false,
@@ -83,7 +83,7 @@ D15 -- the archive page's progress bar
 }
   1280px OK   option 1: no .pbar on the archive -- absent, so it claims nothing
 {
-  "url": "http://127.0.0.1:8482/sittings/index.html",
+  "url": "http://127.0.0.1:8486/sittings/index.html",
   "width": 1440,
   "height": 900,
   "hasDataPage": false,
@@ -104,3 +104,4 @@ D15 -- the archive page's progress bar
   1440px OK   the sitting page's bar still reaches 100% at the foot
 
 Ran to completion. Verdicts above; no assertion failed to execute.
+exit=0

@@ -26,3 +26,4 @@ VERDICT:
   reference-minus-pbar == new archive : True
 
 OK: the archive lost exactly its .pbar block, and no other page or byte moved.
+exit=0
