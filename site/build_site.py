@@ -1136,7 +1136,7 @@ SCRIPT = r"""
   // is fetched until the reader taps: the payload is 5x the selected text and a phone should
   // not pay for text it has not asked to see.
   function isWide() {
-    return window.matchMedia && window.matchMedia('(min-width: 760px)').matches;
+    return window.matchMedia && window.matchMedia('(min-width: 761px)').matches;
   }
 
   function fillInline(brief) {
@@ -2393,7 +2393,7 @@ STYLE = """
 .onlysel .osw-in:checked ~ .osw i::after{transform:translateX(16px)}
 .onlysel .osw-in:focus-visible ~ .osw i{outline:2.5px solid var(--accent);outline-offset:2px}
 .oshint{margin-left:14px;font-size:12px;color:var(--faint)}
-@media (min-width:760px){
+@media (min-width:761px){
   .onlysel{display:flex;align-items:baseline;gap:4px;flex-wrap:wrap}
 }
 /* When the switch is on the faded context goes, and the collapsed marker returns in its
@@ -2480,7 +2480,7 @@ STYLE = """
    This is the spike's design and the honest form: a reader sees what was passed over, in
    place. It costs 5x the selected text (median 549 KB per sitting), which a desktop
    connection carries and a phone should not. */
-@media (min-width:760px){
+@media (min-width:761px){
   .runfull{display:block}
   .gapi.run > .gapd{display:none}
   .runfull .ctx{display:grid;grid-template-columns:3.6rem minmax(0,1fr);gap:.5rem;
@@ -2497,7 +2497,7 @@ STYLE = """
 /* the inline (short-run) container follows the same rule */
 .ski{display:none}
 .ski-inline{display:block}
-@media (min-width:760px){
+@media (min-width:761px){
   .ski{display:block}
   .ski-inline{display:none}
 }
@@ -2523,10 +2523,19 @@ STYLE = """
 
 /* ============================================================
    DESKTOP: TWO PANELS. Summary beside its evidence, not above it.
-   Arrives at 760px and only ever adds; the base layer above is
+   Arrives at 761px and only ever adds; the base layer above is
    still the phone, so there is one source of truth.
-   ============================================================ */
-@media (min-width:760px){
+
+   WHY 761 AND NOT 760. The phone block is `max-width:760px` and
+   760 and 761 are adjacent integers, so the two are exact
+   complements: every width matches exactly one of them. The
+   previous 760/760 pair overlapped at exactly 760px (audit D6),
+   where the two-panel grid was live against the phone gutter and
+   the reading column collapsed to 204px. The rail and progress
+   bar were already on min-width:761px, so moving the grid to
+   match them is one breakpoint instead of two. See the note at
+   the rail's desktop layer below. */
+@media (min-width:761px){
   .dsec{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,var(--col-sum));
     gap:var(--col-gap);align-items:start;
     scroll-margin-top:calc(var(--topbar-h) + var(--sticky-gap) + 8px)}
@@ -3292,7 +3301,13 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
    painted over the summary column (209px of cover at 1024, 99px at 1280, 19px at 1440) and
    above it, drifted into empty margin (221px clear at 1920, 541px at 2560). right is now
    --rail-right, derived from the container, so the rail's distance from the content is
-   CONSTANT -- 10px -- at every width. Level-2 ticks are small, level-3 largest. */
+   CONSTANT -- 10px -- at every width. Level-2 ticks are small, level-3 largest.
+
+   THE DESKTOP LAYER IS min-width:761px, and this was the number that agreed with
+   the phone. The phone block is `max-width:760px`; `min-width:761px` is its exact
+   complement, so the rail, the progress bar, the jump list and the two-panel grid
+   all switch at the same width and the tablet is on one side of it or the other.
+   The grid used to switch at 760 and the rail at 761, which is audit D6. */
 @media (min-width:761px){
   /* THE DESKTOP LAYER RETUNE. The conflict is between the rail and the fixed BOTTOM chrome --
      the progress bar (44) and the resume toast (45) -- both of which are display:none on a phone.

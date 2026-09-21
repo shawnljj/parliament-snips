@@ -5,12 +5,13 @@ tools/compare_mobile.py proves the phone/tablet computed styles and rects are id
 the stronger statement about CSS. This is the complementary one the audit's screenshot set
 implies: the actual PIXELS at each breakpoint, captured from two servers serving two real dists.
 
-  * at the phone and tablet widths the frames must be identical (0 changed pixels);
-  * at 760 the frames must differ (the guides are drawn there -- audit D6 is sidestepped, so a
-    guide appears over a genuinely broken 204px column);
+  * at the phone and tablet widths the frames must be identical (0 changed pixels). 760 is a
+    PHONE width now (audit D6, fixed by t_bb9c77d0): the desktop layer is min-width:761px, so
+    760 and below take the phone path and must be byte-identical to the pre-change build;
   * at 761 and 1024+ they must differ (the guides are live).
 
-A difference below 760 would be a regression; no difference above it would mean nothing rendered.
+A difference at 760 or below would be a regression; no difference above it would mean nothing
+rendered.
 
 Determinism: the rail's bubble/pill and the resume toast are transient chrome, and the scroll-spy
 highlights whatever is nearest the reading line. Both are pinned off before capture, and a
@@ -79,7 +80,14 @@ def main():
     after, before = sys.argv[1], sys.argv[2]
     widths = [int(x) for x in (sys.argv[3] if len(sys.argv) > 3
                                else "390,759,760,761,1024,1280,1440,1920").split(",")]
-    MUST_BE_SAME = {390, 759}
+    MUST_BE_SAME = {390, 759, 760}
+    # 760 was the pre-fix breakpoint, so the pre-change build renders it as DESKTOP and this
+    # build renders it as PHONE (audit D6, fixed by t_bb9c77d0). A like-for-like pixel diff at
+    # 760 against that baseline is therefore not a regression test -- the layout is MEANT to
+    # change there -- and the page heights differ by design (66005 vs 499657). The real
+    # assertion for 760 is in tools/check_breakpoints.py: it must render as the PHONE width,
+    # matching 759. Here it is reported as a moved layout rather than failed.
+    LAYOUT_MOVED = {760}
     fails = []
 
     # Self-check first: same URL, two sessions, must be pixel-identical.
@@ -99,6 +107,10 @@ def main():
         A, sa = shot(after, w, h, 9310 + i * 2)
         B, sb = shot(before, w, h, 9311 + i * 2)
         if sa != sb:
+            if w in LAYOUT_MOVED:
+                print(f"{w:>6}  LAYOUT MOVED (phone now, was desktop) -- {sa} vs {sb}")
+                print(f"        asserted by tools/check_breakpoints.py, not by a pixel diff")
+                continue
             fails.append(f"{w}px: page state differs ({sa} vs {sb}) -- not like-for-like")
             print(f"{w:>6}  SKIPPED (state differs) {sa} vs {sb}")
             continue

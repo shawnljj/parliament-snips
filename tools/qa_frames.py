@@ -2,10 +2,11 @@
 """Capture the phone/tablet/breakpoint frames the QA report cites, from both builds.
 
 The audit's before set is desktop-only (1024/1280/1440/1920). The card also asks for the tablet
-and mobile breakpoints to be shown unchanged, and for 759/760/761 explicitly (audit D6 is the one
-width where "unchanged below the desktop breakpoint" is not a safe assumption). tools/qa_pixels.py
-already proves those frames with pixel counts; this writes the frames themselves so the numbers can
-be looked at.
+and mobile breakpoints to be shown unchanged, and for 759/760/761 explicitly (760 was the one
+width where "unchanged below the desktop breakpoint" was not a safe assumption; since the
+breakpoint was unified at min-width:761px -- audit D6, t_bb9c77d0 -- it is a phone width like
+759). tools/qa_pixels.py already proves those frames with pixel counts; this writes the frames
+themselves so the numbers can be looked at.
 
     python3 tools/qa_frames.py <after-base-url> <before-base-url> <out-dir>
 """

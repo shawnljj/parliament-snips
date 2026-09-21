@@ -29,9 +29,11 @@ tools/measure_layout.py, so no third-party dependency) and at each width checks:
                     no rule is silently not drawn). With the hit test showing text on top of
                     the rule, this is the proof that the rule tints neither the glyph nor the
                     line it crosses.
-  6. BREAKPOINTS    at 1920 / 761 / 760 the grid is live and a guide is drawn; at 759 / 390
-                    neither is. 760 is asserted explicitly because it is the width where this
-                    stylesheet's two breakpoints disagree (audit D6).
+  6. BREAKPOINTS    at 1920 / 761 the grid is live and a guide is drawn; at 760 / 759 / 390
+                    neither is. 760 is asserted explicitly because it is the boundary width:
+                    the desktop layer is `min-width:761px` and the phone block is
+                    `max-width:760px`, so exactly one of the two is live at 760 (audit D6,
+                    fixed by t_bb9c77d0).
 
 Usage:
 
@@ -718,20 +720,20 @@ def main():
             c.close()
 
     # Below the desktop breakpoint there must be NO guide at all -- and AT the breakpoint
-    # there must be one. 760 is checked explicitly because it is the width where this
-    # stylesheet's two breakpoints disagree (audit D6): min-width:760px and max-width:760px
-    # BOTH match at exactly 760, so the two-panel grid is live there while the phone padding
-    # is also live, and the reading column collapses to 204px.
+    # there must be one. 760 is checked explicitly because it is the boundary width of the
+    # unified breakpoint (audit D6, fixed by t_bb9c77d0): the desktop layer is
+    # `min-width:761px` and the phone block is `max-width:760px`, so at exactly 760 only the
+    # phone block matches. Before that fix both `min-width:760px` and `max-width:760px`
+    # matched at 760, so the two-panel grid was live while the phone padding was also live
+    # and the reading column collapsed to 204px.
     #
-    # This change SIDESTEPS D6 rather than fixing it, and states the consequence: the guides
-    # are drawn by the grid, so they appear wherever the grid appears -- including at 760px,
-    # where the columns are 204px and 416px. Marking the real (broken) columns is the honest
-    # rendering of a grid that is really there; suppressing the guide at 760 while the grid
-    # is live would be the guide lying about the layout. Fixing the breakpoint belongs to the
-    # task that owns it, and is flagged in the handoff.
+    # 760 is now a PHONE width like 759, so no guide is expected there. The guides are drawn
+    # by the grid, so they appear wherever the grid appears -- which is what makes asserting
+    # this here, rather than suppressing a guide at 760, the honest check: if the grid is
+    # live the guide is drawn on the real columns, and if it is not, no guide can appear.
     expectations = {
-        1920: (True, True), 761: (True, True), 760: (True, True),
-        759: (False, False), 390: (False, False),
+        1920: (True, True), 761: (True, True),
+        760: (False, False), 759: (False, False), 390: (False, False),
     }
     for i, w in enumerate([1920, 761, 760, 759, 390]):
         want_grid, want_guide = expectations[w]
