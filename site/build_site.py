@@ -597,9 +597,13 @@ SCRIPT = r"""
   // The rail is built at EVERY width now: on desktop it is the breakpoint navigator, on
   // mobile the same thing sized for a thumb. One system, so a fix to one is a fix to both.
   var RAIL_MQ = '(max-width: 760px)';
-  // Numbering for the level-3 ticks, so a dot has a stable identity that can be
-  // matched against the numbered jump list in the Oral answers section.
-  var railOrdinal = 0;
+  // Ordinal numbering for the level-3 ticks was removed with the level assignment below: it
+  // incremented a counter into `entry.ordinal`, and no element ever consumed it (the
+  // `.section-rail-num` span the stylesheet defines was never created), so the number the
+  // comment promised -- "a stable identity that can be matched against the numbered jump list
+  // in the Oral answers section" -- was never rendered. The intent is kept here as a note
+  // rather than as code: if a tick ever needs a visible number, it is a level-3 tick's, and
+  // that is the counter to bring back.
   var rail = null, railFill = null, railPill = null, railEntries = [], railActive = -1;
   var railPillTimer = null, railResizeTimer = null, pendingIndex = -1;
 
@@ -613,10 +617,32 @@ SCRIPT = r"""
     return text.length <= max ? text : text.slice(0, max).replace(/\s+$/, '') + '…';
   }
 
+  /* THE RAIL'S LEVELS, DERIVED FROM THE OUTLINE RATHER THAN HARD-CODED.
+     Every tick used to be assigned level 2, which made the rail's own `.level-3` rules
+     unreachable and, worse, said something false: it asserted that the four page sections
+     and the group labels nested under them are the same rank. The page's real outline is two
+     levels deep and the markup already knows it, so the level is read off the element:
+
+       level 2 -- a page section, or a brief's own title. These are the tick's destinations.
+       level 3 -- a group label INSIDE a section (`.railhead`, emitted as a child of
+                  `section.substance`). It belongs to the section above it, which is exactly the
+                  relationship the level exists to express.
+
+     `main h2` is the selector, which the comment below explains is a deliberate filter rather
+     than a mistake: the group labels are h2s and they are wanted; the oral-answer h3s are not,
+     because 16 more ticks for questions a reader reaches by scrolling the section they just
+     jumped to is not a map, it is noise. */
+  function railLevel(h) {
+    if (h.classList && h.classList.contains('railhead')) return 3;
+    var sec = h.parentElement;
+    // A group label's section, or a brief title's article: one step up is enough for both.
+    return (sec && sec.tagName === 'SECTION' && sec.parentElement
+            && sec.parentElement.tagName === 'SECTION') ? 3 : 2;
+  }
+
   function railCollect() {
     var seen = {};
     var out = [];
-    railOrdinal = 0;
     // FIRST LEVEL ONLY -- the top-level sections. Questions inside the Oral answers section
     // were tried as a second level and added 16 more ticks for little value: the reader
     // arrives at "Oral answers" and reads down, rather than picking question 11 of 16. The
@@ -632,13 +658,8 @@ SCRIPT = r"""
       if (seen[h.id]) return;
       seen[h.id] = 1;
       h.classList.add('has-section-anchor');
-      // One level, so one size: every tick is a top-level section.
-      var level = 2;
-      // Ordinal numbers the level-3 ticks in reading order, matching the
-      // numbered list the reader can open in the Oral answers section.
-      if (level === 3) railOrdinal += 1;
-      out.push({ el: h, id: h.id, label: label, level: level,
-                 ordinal: level === 3 ? railOrdinal : 0 });
+      var level = railLevel(h);
+      out.push({ el: h, id: h.id, label: label, level: level });
     });
     return out;
   }
@@ -932,6 +953,13 @@ SCRIPT = r"""
     var available = window.innerHeight - 140;              // leave breathing room
     // Gap tightens as ticks multiply, so a long page keeps a useful target size
     // rather than collapsing every tick to a sliver.
+    //
+    // DELIBERATELY NOT RETUNED FOR THE LEVEL-3 TICKS (D17). Giving the group labels their own
+    // level does not change how many ticks there are -- the labels were already ticks, they were
+    // just mislabelled as section-level. Measured: 9 ticks before the change, 9 after (7 of one
+    // level, 2 of the other). So the old thresholds still describe the same column of ticks, and
+    // changing them here would be a spacing change made for no reason and justified by a count
+    // that did not move.
     var gap = n > 16 ? 6 : (n > 10 ? 10 : 14);
     var h = Math.floor(available / n) - gap;
     h = Math.max(12, Math.min(44, h));
@@ -1855,6 +1883,20 @@ def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
         # this section: that is where the reader meets it. Emitting only the first such run
         # left the rest unaccounted for, so every remaining run before the next section's
         # first sentence is emitted in id order.
+        #
+        # INSIDE THE <ol>, NOT AFTER IT (audit D16). The marker used to be a SIBLING of the
+        # list, which was wrong twice over:
+        #   1. it is invalid markup -- a bare <li> with no list to belong to; and
+        #   2. it auto-placed into a SECOND GRID ROW of .dsec, because a direct child of a grid
+        #      container that no explicit rule names is auto-placed. Measured on the sample page
+        #      before the fix: .dsec resolved to rows [934.969px, 1341.88px] + a 34px row gap,
+        #      which is the section's whole 2310.84px height -- and the column guides are
+        #      pseudo-elements with grid-row:1, so the 1px rules painted over row 1 only and
+        #      stopped 1376px short of the section's bottom. The guide is supposed to bound the
+        #      two columns for the length of the section (D8); it was bounding the selected
+        #      sentences and leaving the faded context below them unbounded.
+        # Inside the <ol> there is no second row: the marker is a list item of the list it
+        # belongs to, the grid has one row per section, and the guides span the section.
         tail = ""
         last = sid_num(sents[-1].get("sid"))
         if last is not None:
@@ -1875,17 +1917,21 @@ def render_brief_selected(brief, sitting_dates=None, page_brief_ids=None):
         cards.append(
             f'<section class="dsec" id="sec-{n + 1}" data-brief="{esc(item_id)}">'
             f'{sum_html}'
-            f'<ol class="vslist">{"".join(rows)}</ol>'
-            f'{tail}'
+            f'<ol class="vslist">{"".join(rows)}{tail}</ol>'
             f'</section>')
 
-    # anything left is the record's tail; emit it after the last section. Without this the
-    # final sentences of an item were silently absent from the page.
+    # anything left is the record's tail; emit it as the last list item of the last section's
+    # list. Without this the final sentences of an item were silently absent from the page.
+    #
+    # APPENDED INTO THE <ol>, NOT AFTER THE SECTION'S MARKUP -- the same D16 correction as the
+    # per-section tail above, and it has to be done at the string level because the closing tag
+    # was already written. A second bare <li> here would put a stray grid row back into the
+    # last section of any item that has a record tail.
     leftover = "".join(
         (inline_rows(a, b) if b - a + 1 <= INLINE_MAX else skipped_rows(a, b))
         for a, b in runs if a not in emitted)
     if leftover and cards:
-        cards[-1] = cards[-1].replace("</section>", leftover + "</section>")
+        cards[-1] = cards[-1].replace("</ol>", leftover + "</ol>")
 
     # The collapse switch, built as its own string: Python 3.9 cannot nest a triple-quoted
     # f-string inside another, and an f-string expression may not contain a backslash.
@@ -2187,7 +2233,7 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
 
   {f'''
   <section class="substance" id="sec-briefs">
-    <h2>What the Government is doing</h2>
+    <div class="sec-head"><h2>What the Government is doing</h2></div>
     <p class="sub">What was decided or announced, who said it, and where it goes next.
     Every point carries the words it was taken from.</p>
     {brief_block(bills, "Bills")}
@@ -2195,14 +2241,14 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
     {proc_html}
   </section>''' if substantive else f'''
   <section class="substance" id="sec-briefs">
-    <h2>What the Government is doing</h2>
+    <div class="sec-head"><h2>What the Government is doing</h2></div>
     <p class="empty">This sitting's business was entirely procedural.</p>
     {proc_html}
   </section>'''}
 
   {f'''
   <section class="oral" id="sec-oral">
-    <h2>Oral answers</h2>
+    <div class="sec-head"><h2>Oral answers</h2></div>
     <p class="sub">{len(qa_rows)} questions put to Ministers, each paired with the
     response given. {MAPPING_NOTE} {oral_note}</p>
     <details class="qajump">
@@ -2216,7 +2262,7 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
   </section>''' if qa_rows else ''}
 
   <section class="everything" id="sec-rest">
-    <h2>Everything else</h2>
+    <div class="sec-head"><h2>Everything else</h2></div>
     <p class="sub">The rest of the sitting, grouped. {len(reports)} items.</p>
     {''.join(groups_html)}
   </section>
@@ -2239,7 +2285,7 @@ def render_sitting(sitting, *, css_href, home_href, archive_href, summaries=None
   </section>
 
   <section class="method" id="sec-method">
-    <h2>How this page was made</h2>
+    <div class="sec-head"><h2>How this page was made</h2></div>
     <p>Built from the official Hansard record (Parliament of Singapore Official Reports).
     No news reporting was used. Briefs are written by software from the transcript and
     every key point carries the verbatim words it was drawn from.</p>
@@ -2551,8 +2597,18 @@ STYLE = """
     height:fit-content;max-height:calc(100vh - var(--topbar-h) - var(--sticky-gap) - 20px);
     overflow-y:auto;overscroll-behavior:contain}
   .sumwrap{position:static;top:auto}
-  .dsec > .vslist,.dsec > .gapd,.dsec > .gapbody{grid-column:1;grid-row:1}
-  .vs-text{max-width:74ch}
+  /* ONE ROW PER SECTION, STATED RATHER THAN ASSUMED. Every child that belongs to the reading
+     column is named here, including the trailing gap marker (`li.gapi.run`), which is a list
+     item INSIDE `ol.vslist` as of the D16 fix and so is no longer a grid child at all.
+     The marker used to be a bare `<li>` sibling of the list, and because no rule named it, it
+     auto-placed into a SECOND ROW: measured, `.dsec` resolved to rows [934.969px, 1341.88px]
+     with a 34px row gap, which summed to the section's full 2310.84px height. The column
+     guides are grid items with `grid-row:1`, so they painted over row 1 only and stopped
+     1376px short of the section's bottom -- the faded context below the selected sentences had
+     no column boundary at all, which is the opposite of what D8 asked for.
+     `grid-row:1` on the marker is kept anyway: it costs nothing, and it means a future child
+     added to this list cannot silently reopen a second row. */
+  .dsec > .vslist,.dsec > .gapi,.dsec > .gapd,.dsec > .gapbody{grid-column:1;grid-row:1}
   .sumtext{font-size:14px}
   /* ============================================================
      COLUMN BOUNDARY GUIDES. Vertical hairlines on the column edges,
@@ -2575,14 +2631,25 @@ STYLE = """
 
      WHY PER SECTION AND NOT ONE FULL-HEIGHT RULE. The columns exist
      only inside .dsec. Between the sections the page is full-bleed
-     prose -- .railhead section headings, .vs-text intro paragraphs,
-     the whole Oral answers / Everything else / How-this-page-was-made
-     blocks, the footer -- which spans both columns (audit D9: 1012px
-     against a 562px track). A rule that ran the full scroll height
-     would cut through every one of those. The guide therefore marks
-     what it is a guide TO: it appears where the two columns exist and
-     stops where they stop. That is also what makes it align by
+     prose -- section headings, .vs-text intro paragraphs, the whole
+     Oral answers / Everything else / How-this-page-was-made blocks,
+     the footer -- which spans both columns (audit D9: 1012px against
+     a 562px track). A rule that ran the full scroll height would cut
+     through every one of those. The guide therefore marks what it is
+     a guide TO: it appears where the two columns exist and stops
+     where they stop. That is also what makes it align by
      construction instead of by calculation.
+
+     THE RULES BOUND THE COLUMNS; THE TEXT COLUMN BOUNDS THE READING
+     MEASURE (audit D12). `.vs-text{max-width:74ch}` used to sit in
+     this block. 74ch resolves to 745.78px, and the text track is
+     capped at 562px by minmax(0,1fr) inside a 1060px wrap, so the
+     limit could never bind: swept from 700px to 1920px, the element's
+     width runs 594 -> 204 -> 263 -> 402 -> 562 and never reaches its
+     own max-width. It is removed rather than kept as a "tablet
+     guard", because there is no band in which it guards anything --
+     it only binds in the 740..1010px range if the 74ch figure were
+     the narrower of the two, and it is not.
 
      Drawn as an inset box-shadow rather than a border: .dsec is a
      grid container whose tracks are minmax(0, 1fr), and a border
@@ -3030,9 +3097,60 @@ details.brief[open]>.briefsum{border-bottom:1px solid var(--line)}
 .statgrid h4{font-size:13px;font-weight:700;margin-bottom:14px;color:var(--dim)}
 .statnote{font:500 12px var(--mono);color:var(--faint);margin-top:18px}
 
-/* sections */
-.sec-head{margin:0 0 22px}
+/* ---- SECTION HEADINGS AND GROUP LABELS: the page's two authored levels ----
+   THE DECISION (audit D9, D10, D11). The page had three alignment stories -- 172 gridded
+   sections, full-bleed headings, and one heading indented by its card -- and two heading levels
+   that rendered identically. Both are settled the same way:
+
+     * SECTION HEADINGS sit on the wrap's content edge, and span the wrap DELIBERATELY: the
+       column rules bound the two columns only where columns exist (inside .dsec), and a heading
+       over a full-bleed section that stopped at the text column's edge would read as a column of
+       its own, which it is not. What tells a reader that these are the page's spine is
+       TYPOGRAPHY AND RULE WEIGHT, not indentation.
+       THE ONE EXCEPTION, stated rather than left to be discovered: `.method` is a padded CARD
+       (padding 28px 30px), and its heading sits on the CARD's content edge -- x=245 at 1440
+       against the wrap's 214, i.e. inset by exactly the card's 30px padding + 1px border. That is
+       a fourth treatment only if you count the card's own box as a third: the heading is on the
+       edge of the surface it sits on, which is the same rule as the other 8, applied one level
+       down. The gate asserts the inset equals the card's padding (measured 0px of drift), so the
+       exception cannot silently become an arbitrary offset.
+
+     * `.sec-head` is the section level. This rule set already existed but was DEAD -- defined
+       in this stylesheet and used by 0 of 332 generated pages, while the live markup wrote
+       bare `<h2>`. It was written for exactly this job, so it is wired up rather than deleted
+       (audit D11: "use it for D10, or delete it"). It is on the four page sections:
+       .substance, .oral, .everything, .method.
+
+     * `.railhead` is the GROUP level, subordinate to the section above it. It had NO rule at
+       all (audit D10, count 0), so it rendered at the UA's default h2 size -- measured, both
+       levels computed to 24px/700 and were indistinguishable. 24px was never an authored
+       value: nothing styled a desktop section heading, which is why they matched.
+       The three channels that separate them, in order of how much they carry:
+         - WEIGHT AND SIZE: the section is 26px/750, the label 15px/700.
+         - CASE AND TRACKING: the label is small, letterspaced and uppercased, the standard
+           way to mark a sub-label that is still semantically a heading.
+         - COLOUR: the label is --dim, the section --ink. NOT --faint, which is the obvious
+           choice and the wrong one: --faint measures 3.04:1 on white and 2.54:1 over a tinted
+           card, under the 4.5:1 that 15px/12px bold text requires, so it would trade D10 for
+           an unreadable label. --dim is 5.76:1 on white / 5.14:1 on a 4% tint while still
+           sitting at 3.09:1 against --ink -- subordinate AND legible.
+       The label also carries the same 1px rule as everything else on the page and 2px MORE
+       than the section heading, so the hairline reads as belonging to the group it opens
+       rather than floating above it.
+
+     This replaces an earlier set of rules for `.sec-head h2` (26px, -.022em, 750) that
+     matched this section's size by accident and had a `margin:0 0 22px` that would have added
+     22px of space under EVERY section heading.
+     The bottom margin is 16px (14px on a phone) because every section's heading is followed
+     immediately by its own `.sub` -- the two used to be 5px apart, and the rule that now closes
+     the heading needs the air beneath it. It was 26px while being written, which looked correct
+     with the heading alone and crowded once the `.sub` was under it. */
+.sec-head{margin:0 0 16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
 .sec-head h2{font-size:26px;letter-spacing:-.022em;font-weight:750}
+/* A group label, one level down and visually subordinate to the section heading above it. */
+.railhead{margin:30px 0 2px;padding-bottom:7px;border-bottom:1px solid var(--line);
+  color:var(--dim);
+  font-size:15px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
 .sub{color:var(--faint);font-size:14px;margin:9px 0 0}
 
 /* everything else -- collapsible group cards */
@@ -3060,7 +3178,13 @@ details.grp[open]>summary{border-bottom:1px solid var(--line)}
 /* method + footer */
 .method{margin:56px 0 0;padding:28px 30px;background:var(--accent-soft);
   border-radius:var(--radius);border:1px solid #cfe3d8}
-.method h2{font-size:17px;margin-bottom:14px}
+/* NO font-size OR margin-bottom HERE ANY MORE (audit D9). This heading used to be authored at
+   17px while the four section headings sat at the UA's default 24px -- which is precisely the
+   "one indented heading" part of D9. It is a `.sec-head` now, like the other three sections, and
+   this rule must not override that: `.method h2` and `.sec-head h2` have the SAME specificity
+   (0,1,1), so the later rule in the sheet wins, and that is this one. Leaving a font-size here
+   would silently keep this heading a different size from its peers while looking deliberate.
+   The panel's compactness is already carried by its padding (30px, and 15px on a phone). */
 .method p{font-size:14px;color:var(--dim);margin:0 0 12px}
 .method ul{margin:0;padding-left:20px;font-size:13.5px;color:var(--dim)}
 .method li{margin-bottom:6px}
@@ -3192,7 +3316,23 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
     padding:0 2px;width:auto;min-width:24px;height:var(--rail-tick-h,22px);
     display:flex;align-items:center;justify-content:flex-end;
     gap:var(--rail-dot-gap,5px);cursor:pointer}
-.section-rail-tick-mark{display:block;width:6px;height:6px;border-radius:50%;
+/* ONE BOX, EVERY LEVEL -- and why that is not a detail.
+   The mark is the FIRST item of a `justify-content:flex-start` flex row on desktop and of a
+   flex-end row on a phone, so it is the mark's OWN BOX that decides where the dot lands: a
+   narrower box moves the dot's centre while every layout edge stays put. The box used to be
+   level-dependent (6px here, 8px at level 2), which was invisible while every tick was level 2
+   and became a defect the moment the real levels arrived (D17): the two group-label dots sat
+   1px off the 7-dot column at 1024/1280/1440/1920 -- measured `dotXs=[1240, 1239] spread=1` --
+   and 1.4px off the shared left edge at 390/760. The project's own D3 acceptance number, from
+   the upstream column task, is "9 dots at 1 x, spread 0.00px", so this is a regression against a
+   stated number, not a nit.
+   The level is therefore painted, not laid out: the box is 8px at EVERY level -- which is also
+   what `--rail-dot:8px` above has always declared the dot column to be -- and level 3 shrinks
+   the PAINTED dot with a transform, which is centre-anchored by definition. Rest state is
+   pixel-identical to before (8px section dot, 6px group dot); only the box changed. The white
+   halo the box-shadow draws scales with it, so a group dot's halo is 2.25px instead of 3px,
+   which is the intended reading: a smaller dot has a smaller halo. */
+.section-rail-tick-mark{display:block;width:8px;height:8px;border-radius:50%;
     background:#c4cfc7;box-shadow:0 0 0 3px rgba(251,251,250,.9);
     transition:width .2s ease,height .2s ease,background .2s ease,transform .2s ease}
   /* Expand the HIT AREA independently of the visible dot. The column can only be
@@ -3201,7 +3341,25 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
      the target approaches 44px without changing what is drawn. */
 .section-rail-tick::before{content:'';position:absolute;left:-8px;right:-8px;
     top:-8px;bottom:-8px}
-.section-rail-tick.level-2 .section-rail-tick-mark{width:8px;height:8px}
+/* There is deliberately no `.level-2 .section-rail-tick-mark` size rule any more: with the box
+   at 8px for every level it would be a no-op, and a no-op rule that looks like it decides a size
+   is how the level-dependent box got in. The base rule IS the size; `.level-3` is the only
+   override, and it paints rather than lays out. */
+/* THE LEVEL IS PAINTED, NOT LAID OUT. The box above is now 8px at every level (see its own
+   comment), so the size difference between a section tick and a group-label tick is a transform
+   on the painted dot -- centre-anchored, therefore column-safe at every width and every state.
+   0.75 of 8px is the 6px a level-3 dot has always drawn, and the halo is scaled up to 4px so
+   that 0.75 of it is still the 3px white ring the level-2 dot has: the rest state is
+   pixel-identical to the pre-D17 build, with the dot's x now shared with the other 7. */
+.section-rail-tick.level-3 .section-rail-tick-mark{transform:scale(.75);
+    box-shadow:0 0 0 4px rgba(251,251,250,.9)}
+  /* The active/pending multipliers are RELATIVE TO THE TICK'S OWN DOT, so a level-3 tick
+     composes them with its own 0.75 (1.35 x 0.75 = 1.0125, 1.25 x 0.75 = 0.9375). Without
+     these two the later, equally-specific `.is-active`/`.is-pending` rules would win and the
+     active group dot would jump to a full 10.8px -- larger than the section dot -- while the
+     column stayed right. The state is still carried by colour in both cases. */
+.section-rail-tick.level-3.is-active .section-rail-tick-mark{transform:scale(1.0125)}
+.section-rail-tick.level-3.is-pending .section-rail-tick-mark{transform:scale(.9375)}
   /* Always-visible name for section ticks, and the number for oral-answer ticks.
      Both sit to the LEFT of the dot so the dot column stays aligned. */
 .section-rail-name{order:-1;font:600 9.5px/1.15 var(--mono);color:var(--dim);
@@ -3218,12 +3376,20 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
        always-on label overhangs the text column and paints over it. The transient pill
        (below) names the active section on demand instead. */
     display:none}
-.section-rail-num{order:-1;font:600 9px/1 var(--mono);color:var(--faint);
-    min-width:11px;text-align:right}
+  /* The number chip for oral-answer ticks is GONE. It was `.section-rail-num`, and no element in
+     any generated page ever carried the class: railBuild() creates exactly three children per
+     tick (mark, name, bubble). It was the visible half of the level-3 ordinal machinery that
+     D17 found unreachable, and with the level now derived it is still not wanted -- the rail
+     names a section, it does not number questions. Removed rather than left as a second dead
+     class, for the same reason audit D11 gives about `.sec-head`. */
 .section-rail-tick.level-2 .section-rail-name{color:var(--ink)}
 .section-rail-tick.is-active .section-rail-name{color:var(--accent)}
-.section-rail-tick.is-pending .section-rail-name,
-.section-rail-tick.is-pending .section-rail-num{color:var(--accent)}
+.section-rail-tick.is-pending .section-rail-name{color:var(--accent)}
+/* The GROUP level's name: quieter than a section's, because it is a label inside the section
+   above it rather than a destination of its own. --dim, not --faint, for the same reason the
+   `.railhead` above uses it: this is 9.5px text and --faint is 3.04:1, under AA, while --dim is
+   5.57:1 and still reads as the quieter of the two. */
+.section-rail-tick.level-3 .section-rail-name{color:var(--dim);font-weight:500}
 .section-rail-tick.is-active .section-rail-tick-mark{background:var(--accent);
     transform:scale(1.35)}
   /* A tick waiting to confirm: first tap names the section, second tap jumps. */
@@ -3304,7 +3470,8 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
    painted over the summary column (209px of cover at 1024, 99px at 1280, 19px at 1440) and
    above it, drifted into empty margin (221px clear at 1920, 541px at 2560). right is now
    --rail-right, derived from the container, so the rail's distance from the content is
-   CONSTANT -- 10px -- at every width. Level-2 ticks are small, level-3 largest.
+   CONSTANT -- 10px -- at every width: section ticks carry the larger dot (8px), group-label
+   ticks the smaller one (6px painted, from the same 8px box -- see the mark rules).
 
    THE DESKTOP LAYER IS min-width:761px, and this was the number that agreed with
    the phone. The phone block is `max-width:760px`; `min-width:761px` is its exact
@@ -3344,13 +3511,20 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   /* The dot must not shrink once the label shares the row: with a fixed-width name the flex
      algorithm would otherwise steal from the dot rather than the label. */
   .section-rail-tick .section-rail-tick-mark{flex:none}
+  /* One PITCH, not one per level. `.level-2{height:8px}`/`.level-3{height:6px}` made the rows
+     2px different heights -- nothing was ever styled at level 3 before, so nobody saw it -- and
+     the track pays for it with an uneven column: measured on the shipped build,
+     centre-to-centre pitch ran [21,21,21,21,22,22,22,22]px at 1024/1280/1440/1920, i.e. the
+     rail's own spacing changing for reasons no reader can see. The tick is a row, and a row's
+     height should be the same for every row. The dots are what carry the level now (see the
+     mark rules above), and the dot BOX is the largest dot, so the row height is that box. The
+     phone never used these rules: its tick is a full 44px touch target. */
+  .section-rail-tick.level-2,.section-rail-tick.level-3{height:8px}
   /* The name column exists only where the margin can hold one. Below 1200px the rail is the bare
      dot strip -- so the chip is display:none here and switched on in the block below, rather
      than being given a zero width, which would leave its 4px of chip padding either side as an
      8px sliver of background beside every dot. */
   .section-rail-name{position:static;flex:none;order:0;display:none}
-  .section-rail-tick.level-2{height:8px}
-  .section-rail-tick.level-3{height:6px}
   /* The preview bubble and the Go chip. They are position:fixed, and the rail's own
      transform:translateY(-50%) makes THE RAIL their containing block -- so `right` here would be
      an offset inside the rail, not from the viewport edge.
@@ -3413,8 +3587,18 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
     background:var(--accent);transition:width .12s linear}
   .pbar-txt{position:relative;display:block;text-align:center;color:#fff;
     mix-blend-mode:difference;font-weight:600}
-  /* The toast sits above the bar, not on it. */
-  .resume{bottom:38px}
+  /* The toast sits above the bar, not on it.
+     THIS IS THE ONLY PLACE `bottom` IS SET FOR .resume WHEN BOTH ARE LIVE, so it is also the
+     only place the coupling between the two can be stated. It used to be the bare literal
+     `38px`, which is the bar's 26px plus 12px of air held only in the author's head: change
+     --pbar-h and the toast silently lands back under the bar. Expressed against the token
+     instead, so the toast clears whatever height the bar is given.
+     (Audit D14 also reported that the desktop rule "never sets bottom", making the desktop
+     toast 16px and behind the bar. That is not what this stylesheet does: the base rule at the
+     foot of the file sets 16px for the PHONE, where .pbar is display:none, and this block --
+     which appears LATER in the sheet -- overrides it with 38px. Measured by constructing the
+     real toast: bottom 38px, toast/bar overlap 0px at 1024/1280/1440/1920.) */
+  .resume{bottom:calc(var(--pbar-h) + 12px)}
 }
 
 /* Touch targets: text stays compact, the tappable box grows to >=44px. */
@@ -3448,7 +3632,20 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   .lede h1{font-size:clamp(28px,8.4vw,34px);letter-spacing:-.03em}
   .dek{font-size:15px;line-height:1.5}
   .kicker{font-size:11px;margin-bottom:12px}
+  /* THE PHONE'S OUTLINE. This one `main h2` rule set every heading on the page to 19px, which
+     is why the phone had no outline either -- it was the same flat problem as desktop, arrived
+     at by a different route. The section/group split is now stated here too, at the phone's
+     scale, and `main h2` keeps the section size as the base it always set.
+     NOTHING BELOW THIS LINE CHANGES THE PHONE BY ACCIDENT: `.sec-head` and `.railhead` are new
+     class hooks, so before this change neither had any phone rule at all, and every heading
+     took 19px from the rule on this line. */
   main h2{font-size:19px;line-height:1.22;letter-spacing:-.02em}
+  /* SPECIFICITY, NOT TASTE: `.sec-head h2` (0,1,1) outranks `main h2` (0,0,2), so the desktop
+     26px would otherwise survive onto the phone and the section heading would be LARGER than
+     the phone was ever designed for. The size is restated here for that reason and no other. */
+  .sec-head{margin:0 0 14px;padding-bottom:10px}
+  .sec-head h2{font-size:19px}
+  .railhead{margin:22px 0 2px;padding-bottom:6px;font-size:12px;letter-spacing:.09em}
   .sub{font-size:13px;line-height:1.45;margin-top:6px}
   /* The brief title. 23px/1.62 wrapped to five lines; 17.5px/1.25 takes the
      same title to two or three. */
@@ -3513,7 +3710,11 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   .qajump .qw{margin-left:26px;width:calc(100% - 26px);white-space:normal}
   .qajump>summary{font-size:14px}
   .method{padding:18px 15px;margin-top:24px}
-  .method h2{font-size:16px;margin-bottom:11px}
+  /* REMOVED (audit D9/D10): `.method h2{font-size:16px;margin-bottom:11px}`. It was the phone
+     half of the same override the desktop rule above used to carry. The heading is a
+     `.sec-head` now, and `main h2` sets its size here; leaving this in place would keep the
+     phone's one panel heading a different size from the four page-section headings, which is
+     the flat/uneven outline D9 is about. */
   .method p,.method ul,.method li{font-size:13px}
   .stats-note{margin-top:26px;padding-top:15px}
   .statgrid{grid-template-columns:1fr;gap:16px}
