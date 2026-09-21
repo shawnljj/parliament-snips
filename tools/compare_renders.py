@@ -16,6 +16,22 @@ lands inside that window differs from one that does not. So before every capture
 transient rail overlays hidden and switches off transitions, which isolates the comparison to
 the stylesheet change. A self-check then captures the SAME url in two sessions and asserts zero
 difference -- if that ever fails, this comparison is not measuring what it claims to.
+
+USAGE. The after side is the tree this file lives in (ROOT/site/dist -- no other worktree is
+named anywhere, so this works from a pruned-away sibling as readily as from the one it was
+written in). The before side is either
+
+  (a) HEAD~1's theme.css, copied over a copy of the after dist: the default, and the only form
+      that varies exactly one thing (markup, JS and payloads stay byte-identical on both sides).
+      It is the PRE-CHANGE stylesheet only if this tree's HEAD is the commit that changed
+      theme.css, so the default refuses to run when HEAD~1 carries the same stylesheet; or
+
+  (b) an explicit pre-change build -- a directory or an http base url -- served as a real build
+      on both sides, the way tools/qa_pixels.py and tools/qa_frames.py already work.
+
+    python3 tools/compare_renders.py                                     # (a)
+    python3 tools/compare_renders.py site/dist <pristine>/site/dist      # (b)
+    python3 tools/compare_renders.py http://127.0.0.1:8477 http://127.0.0.1:8478
 """
 import base64
 import io
@@ -25,7 +41,11 @@ import sys
 import tempfile
 import time
 
-ROOT = "/Users/shawnlin/parsnips/.worktrees/t_b764176e"
+# This tool serves and screenshots the tree it LIVES in: ROOT/site/dist is the after side and
+# ROOT is the repo `git show HEAD~1:site/dist/theme.css` is read from. Deriving it from __file__
+# (the idiom every other tool in tools/ uses) is what keeps it working when some other
+# worktree -- the one it used to name -- is pruned, which is the normal end state of a card.
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import check_column_guides as C                                    # noqa: E402
 from PIL import Image, ImageChops                                  # noqa: E402
@@ -66,6 +86,12 @@ def prepare_old_tree(dest):
     new_css = open(os.path.join(src, "theme.css"), encoding="utf-8").read()
     print(f"  old theme.css {len(old_css)} chars, new {len(new_css)} chars, "
           f"differ={old_css != new_css}")
+    if old_css == new_css:
+        sys.exit("REFUSING: HEAD~1 carries the same theme.css as the working tree, so this "
+                 "tree's HEAD is not the commit that changed the stylesheet and the default "
+                 "would compare identical stylesheets and report the desktop widths as "
+                 "UNEXPECTED. Name the pre-change build instead:\n"
+                 "  python3 tools/compare_renders.py <after-dir|url> <before-dir|url>")
     # The HTML must be identical on both sides for this to be a stylesheet test.
     same_html = 0
     for rel in ("sittings/2026-08-04.html", "sittings/index.html", "index.html"):
@@ -80,7 +106,7 @@ def shot(url, w, port, h=900):
     try:
         c.call("Emulation.setDeviceMetricsOverride", width=w, height=h,
                deviceScaleFactor=1, mobile=False)
-        time.sleep(0.8)
+        time.sleep(1.5)                 # reflow at the new width before anything is pinned
         c.eval(SETTLE)
         time.sleep(1.2)                 # let the pinned state apply and any rAF settle
         data = c.call("Page.captureScreenshot", format="png")["result"]["data"]
@@ -92,29 +118,77 @@ def shot(url, w, port, h=900):
         c.close()
 
 
-def changed_px(a, b):
+def diff_stats(a, b):
+    """changed pixels, and the x columns they sit in (the guides are 1px columns).
+
+    The x histogram is what distinguishes "the stylesheet changed somewhere" from "a guide
+    column moved", which is the whole claim at stake above 760px.
+    """
     if a.size != b.size:
-        return None
-    d = ImageChops.difference(a, b)
-    return sum(1 for px in d.getdata() if px != (0, 0, 0))
+        return None, set()
+    d = ImageChops.difference(a, b).tobytes()          # RGB: 3 bytes per pixel
+    w = a.size[0]
+    xs = set()
+    changed = 0
+    for i in range(0, len(d), 3):
+        if d[i] or d[i + 1] or d[i + 2]:
+            changed += 1
+            xs.add((i // 3) % w)
+    return changed, xs
+
+
+def changed_px(a, b):
+    return diff_stats(a, b)[0]
+
+
+def serve(port, directory):
+    return subprocess.Popen([sys.executable, "-m", "http.server", str(port),
+                             "--bind", "127.0.0.1", "--directory", directory],
+                            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
+def as_base(arg):
+    """A build named as a directory (served here) or as an http base url (used as-is).
+
+    Returns (base_url, None) for a url and (None, absolute_dir) for a directory.
+    """
+    if arg.startswith("http"):
+        return arg.rstrip("/"), None
+    return None, os.path.abspath(arg)
 
 
 def main():
-    orig_dir = tempfile.mkdtemp(prefix="parsnips-original-", dir="/tmp")
-    print("preparing the previous-STYLESHEET tree in", orig_dir)
-    prepare_old_tree(orig_dir)
+    after_arg = sys.argv[1] if len(sys.argv) > 1 else None
+    before_arg = sys.argv[2] if len(sys.argv) > 2 else None
 
     servers = []
-    for port, directory in ((8477, os.path.join(ROOT, "site/dist")), (8478, orig_dir)):
-        p = subprocess.Popen([sys.executable, "-m", "http.server", str(port),
-                              "--bind", "127.0.0.1", "--directory", directory],
-                             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        servers.append(p)
+    if after_arg is None and before_arg is None:
+        # (a) HEAD~1's stylesheet over a copy of THIS tree's dist.
+        orig_dir = tempfile.mkdtemp(prefix="parsnips-original-", dir="/tmp")
+        print("preparing the previous-STYLESHEET tree in", orig_dir)
+        prepare_old_tree(orig_dir)
+        new_base, old_base = f"http://127.0.0.1:8477", f"http://127.0.0.1:8478"
+        servers.append(serve(8477, os.path.join(ROOT, "site", "dist")))
+        servers.append(serve(8478, orig_dir))
+    else:
+        if after_arg is None or before_arg is None:
+            sys.exit("give BOTH sides (after and before), or neither for the HEAD~1 default")
+        after_side = as_base(after_arg)
+        before_side = as_base(before_arg)
+        new_base = after_side[0] or "http://127.0.0.1:8477"
+        old_base = before_side[0] or "http://127.0.0.1:8478"
+        for port, side in ((8477, after_side), (8478, before_side)):
+            if side[1] is not None:
+                servers.append(serve(port, side[1]))
+        print(f"after  = {new_base}\nbefore = {old_base}")
     time.sleep(2.5)
 
     page = "sittings/2026-08-04.html"
-    new_url = f"http://127.0.0.1:8477/{page}"
-    old_url = f"http://127.0.0.1:8478/{page}"
+    new_url = f"{new_base}/{page}"
+    old_url = f"{old_base}/{page}"
+    print(f"new = {new_url}\nold = {old_url}")
+    if not new_url.startswith("http") or not old_url.startswith("http"):
+        sys.exit("both url arguments must be http base urls")
     fails = []
     try:
         # ---- self-check: is this method even repeatable? -------------------------------
@@ -127,7 +201,7 @@ def main():
             fails.append(f"self-check failed: two captures of the SAME page differ by "
                          f"{repeat} px, so this comparison cannot isolate the stylesheet")
 
-        print(f"\n{'width':>6}  {'verdict':<30} changed px / total")
+        print(f"\n{'width':>6}  {'verdict':<30} changed px / total   guide columns (x)")
         for w, must_be_same in ((390, True), (759, True), (760, False),
                                 (761, False), (1024, False), (1440, False)):
             a, sa = shot(old_url, w, 9983)
@@ -135,7 +209,7 @@ def main():
             if sa != sb:
                 fails.append(f"{w}px: page state differs ({sa} vs {sb}) -- "
                              f"the comparison is not like-for-like")
-            changed = changed_px(a, b)
+            changed, xs = diff_stats(a, b)
             if changed is None:
                 fails.append(f"{w}px: frame sizes differ {a.size} vs {b.size}")
                 continue
@@ -148,7 +222,16 @@ def main():
             if not ok:
                 fails.append(f"{w}px: {verdict} -- changed {changed} px, expected "
                              f"{'identical' if must_be_same else 'different'}")
-            print(f"{w:>6}  {verdict:<30} {changed} / {total}")
+            # The x histogram is evidence, not a verdict: it shows the desktop changes land on a
+            # handful of 1px columns (the guides) rather than across the layout. Only a frame
+            # that is mostly different is a hard failure -- that would mean the two sides are not
+            # the same page at all, which would make the same/differ verdicts meaningless.
+            cols = (f"{len(xs)} x, {min(xs)}..{max(xs)}" if xs else "none")
+            if changed > total * 0.2:
+                fails.append(f"{w}px: {changed}/{total} px differ ({100 * changed / total:.0f}%)"
+                             f" -- the two sides are not the same page; this is not a "
+                             f"stylesheet-level comparison")
+            print(f"{w:>6}  {verdict:<30} {changed} / {total}   {cols}")
     finally:
         for p in servers:
             p.kill()

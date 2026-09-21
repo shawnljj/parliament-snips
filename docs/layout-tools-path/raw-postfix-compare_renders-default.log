@@ -1,0 +1,5 @@
+preparing the previous-STYLESHEET tree in /tmp/parsnips-original-xo4xngsx
+  old theme.css 69657 chars, new 69657 chars, differ=False
+REFUSING: HEAD~1 carries the same theme.css as the working tree, so this tree's HEAD is not the commit that changed the stylesheet and the default would compare identical stylesheets and report the desktop widths as UNEXPECTED. Name the pre-change build instead:
+  python3 tools/compare_renders.py <after-dir|url> <before-dir|url>
+exit=1
