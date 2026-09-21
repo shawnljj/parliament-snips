@@ -1,0 +1,22 @@
+preparing the previous-STYLESHEET tree in /tmp/parsnips-original-6ascpmyx
+  old theme.css 69657 chars, new 69751 chars, differ=True
+  markup identical on both sides for 3/3 sampled pages
+new = http://127.0.0.1:8477/sittings/2026-08-04.html
+old = http://127.0.0.1:8478/sittings/2026-08-04.html
+
+self-check (same url, two sessions): 0 px differ  state {"y":0,"h":211323,"pw":1440} vs {"y":0,"h":211323,"pw":1440}
+
+ width  verdict                        changed px / total   guide columns (x)
+   390  IDENTICAL (as required)        0 / 351000   none
+   759  IDENTICAL (as required)        0 / 683100   none
+   760  UNEXPECTED                     0 / 684000   none
+   761  UNEXPECTED                     0 / 684900   none
+  1024  UNEXPECTED                     0 / 921600   none
+  1440  UNEXPECTED                     0 / 1296000   none
+
+4 FAILURE(S):
+  - 760px: UNEXPECTED -- changed 0 px, expected different
+  - 761px: UNEXPECTED -- changed 0 px, expected different
+  - 1024px: UNEXPECTED -- changed 0 px, expected different
+  - 1440px: UNEXPECTED -- changed 0 px, expected different
+compare_renders (form a) exit=1

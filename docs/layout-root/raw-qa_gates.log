@@ -1,0 +1,10 @@
+kind    tool                              after  pristine
+static  tools/check_artifacts.py              1         1
+static  tools/check_selection.py              1         1
+static  tools/check_year.py                   1         1
+live    tools/check_rail.py                   0         -
+live    tools/qa_console.py                   0         -
+live    tools/qa_defects.py                   0         -
+live    tools/qa_pixels.py                    0         -
+
+A non-zero that also happens on the pristine build is PRE-EXISTING and not a regression from this change.
