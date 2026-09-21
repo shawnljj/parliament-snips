@@ -751,18 +751,30 @@ SCRIPT = r"""
   }
 
   /* The bubble and Go chip are position:fixed so they escape the rail's narrow
-     column and paint above page content; that means JS has to say where. Centre
-     them on the tick and keep them above the fold. */
+     column and paint above page content; that means JS has to say where.
+
+     THE CONTAINING BLOCK IS THE RAIL, NOT THE VIEWPORT -- and that is a trap worth naming. The
+     rail carries transform:translateY(-50%), and a transformed element becomes the containing
+     block for its position:fixed descendants. So:
+       * `top` is measured from the RAIL's box top, not the viewport's -- the JS below converts;
+       * a `right:` here would be an offset inside the rail, not from the viewport edge, so the
+         CSS anchors the pair with right:100% and they grow LEFTWARDS into the gutter.
+     Clamping still happens in viewport terms first, so the bubble cannot leave the screen. */
   function railPlacePreview(btn) {
     var r = btn.getBoundingClientRect();
-    var cy = Math.round(r.top + r.height / 2);
+    var railBox = rail ? rail.getBoundingClientRect() : { top: 0, left: 0 };
     var bubble = btn.querySelector('.section-rail-bubble');
     var go = btn.querySelector('.section-rail-go');
-    var maxY = window.innerHeight - 8;
+    // The rail's own offset to the viewport, i.e. the coordinate change for `top`.
+    var railTop = railBox.top;
+    var cy = r.top + r.height / 2;
+    // Keep the pair inside the viewport: the bubble is ~31px tall, the Go chip 22px + 4 gap.
+    var minTop = 10 + railTop;
+    var maxTop = window.innerHeight - 10 - 31 - 22 - 4;
+    var bubbleTop = Math.min(Math.max(cy, minTop), Math.max(minTop, maxTop));
     if (bubble) {
-      bubble.style.top = cy + 'px';
-      // Nudge clear of the Go chip sitting just below it.
-      go.style.top = Math.min(maxY - 24, cy + Math.round(r.height / 2) + 4) + 'px';
+      bubble.style.top = (bubbleTop - railTop) + 'px';
+      go.style.top = (bubbleTop - railTop) + 30 + 'px';
     }
   }
 
@@ -2513,8 +2525,8 @@ STYLE = """
    still the phone, so there is one source of truth.
    ============================================================ */
 @media (min-width:760px){
-  .dsec{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,26rem);
-    gap:34px;align-items:start;
+  .dsec{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,var(--summary-col));
+    gap:var(--gutter);align-items:start;
     scroll-margin-top:calc(var(--topbar-h) + var(--sticky-gap) + 8px)}
   /* the summary is the SECOND column visually but the FIRST in the DOM, so on mobile it
      reads above the sentences and here it sits to their right. */
@@ -2539,19 +2551,102 @@ STYLE = """
      --sticky-gap is the air between them: at zero the card butts against the bar and
      reads as cramped, even though nothing is actually covered. */
   --topbar-h:60px; --sticky-gap:14px;
+  /* THE COLUMN GRID, NAMED. These values were hard-coded at every use site, which is
+     exactly why nothing could be aligned to the columns: there was no shared value to align
+     TO. --content-max/--content-pad are the container; --gutter/--summary-col are the .dsec
+     tracks. Everything that has to sit on the grid derives from these. */
+  --content-max:1060px; --content-pad:24px;
+  --gutter:34px; --summary-col:26rem;
+  /* BOTTOM-PINNED CHROME. The rail centres itself in the band between the top bar and the
+     progress bar, so it needs both heights to place itself rather than a guess. */
+  --pbar-h:26px; --rail-margin:16px;
+  /* THE RAIL, expressed in the CONTENT's coordinate system rather than the viewport's.
+     The rail reads [pad][dot][gap][label][pad], the DOT FIRST, and the DOT COLUMN is the anchor:
+     its left edge sits --rail-clear to the right of the content's right edge, and the label grows
+     rightwards into the margin. (Before, the label came first against justify-content:flex-end,
+     so each dot's x was whatever that tick's label happened to leave over.)
+       --rail-clear   air between the content's right edge and the dot column
+       --rail-dot     the dot column
+       --rail-dot-gap the space between the dot and its label
+       --rail-pad     the tick's horizontal padding (per side)
+       --rail-outer   the rail's own margin from the viewport edge, so the label is never clipped
+     Every width and offset below derives from these five. There is no second place to keep in
+     step by hand -- which is the actual defect being fixed: the previous rail had a `right` of
+     10px and a tick sized to its own label, and nothing tied either to the columns. */
+  --rail-clear:10px; --rail-dot:8px; --rail-dot-gap:5px;
+  --rail-pad:2px; --rail-outer:16px; --rail-track-pad:8px;
+  /* Distance from the viewport's right edge to the CONTENT's right edge:
+     (viewport - container)/2 + the container's own padding -- how far the wrap is inset from the
+     edge, which on a phone is just its padding. This one value IS the page's right margin, and
+     every right-edge element measures from it rather than being given its own offset.
+     NOTE: 100vw includes a classic scrollbar, so on a platform that reserves one this resolves a
+     few px wide -- which pulls right-edge chrome INWARDS, never out. */
+  --rail-inset:calc((100vw - min(var(--content-max), 100vw)) / 2 + var(--content-pad));
+  /* THE LABEL COLUMN, DERIVED FROM THE MARGIN, NOT SET. Solve the placement below for the widest
+     label whose RIGHT edge still leaves --rail-outer before the viewport edge. The label's right
+     edge is content_right + clear + label + dot + gap + pad, so the constraint is
+         label <= inset - outer - clear - dot - gap - pad
+     which is exactly what is written here. So the rail's clearance from the content is a CONSTANT
+     --rail-clear at every width, instead of depending on a chosen offset that can only be right
+     at one viewport.
+     On a phone this resolves negative and clamps to 0, leaving the bare dot strip with no
+     separate mobile rule. --rail-label-cap is a readability ceiling, not a layout one. */
+  --rail-label-cap:180px;
+  --rail-label-derive:clamp(0px, calc(var(--rail-inset) - var(--rail-outer) - var(--rail-clear)
+                                      - var(--rail-dot) - var(--rail-dot-gap) - var(--rail-pad)),
+                            var(--rail-label-cap));
+  /* The name column is OFF until the margin can hold a readable one, and the switch is the
+     min-width:1200px block below. --rail-label stays 0 here so the base rail is the dot strip --
+     which is also what a phone renders, so there is one shape below that breakpoint rather than
+     two. Keeping the derivation in a separate token is what lets the block turn the column on
+     WITHOUT re-stating any geometry: --rail-tick-w, --rail-box-w and --rail-right all reference
+     --rail-label, so setting it is enough (custom properties resolve lazily). */
+  --rail-label:0px;
+  /* THE BOX'S WIDTH, then the offset that places it. The width is the label plus its chrome,
+     and with the label off it is the dot column plus the tick's padding -- 12px, not the base
+     rule's 24px touch minimum. That minimum is a PHONE constraint: on a phone the rail is the
+     only navigation and a thumb has to hit it, so the tick keeps a 24px floor there. On desktop
+     the tick's own ::before still widens the hit area by 8px each way (see the base rule), so a
+     12px visible tick is a 28px target with a mouse -- and holding to 24px would push the rail
+     off the viewport at 1024, where the entire margin beside the content is the wrap's 24px of
+     padding. So: the floor is dropped on desktop and the clearance below becomes exact. */
+  --rail-tick-min:calc(var(--rail-dot) + var(--rail-pad) * 2);
+  /* With the label OFF the tick holds only the dot, so its width is the dot plus the tick's
+     padding -- the dot-gap has nothing to separate and must NOT be added. It used to be, which
+     made the box 5px wider than its own contents at 1024px; the clearance equation then had to
+     give 5px back out of a margin that is only the wrap's 24px of padding, so the dot measured
+     9px of clearance instead of 10. The min-width:1200px block redefines this with the gap once
+     there is a second item for the gap to separate. */
+  --rail-tick-w:var(--rail-tick-min);
+  --rail-box-w:var(--rail-tick-w);
+  /* The clearance equation solved for `right`, so the dot column lands exactly --rail-clear past
+     the content by construction. Width and offset share every token, so they cannot drift. */
+  --rail-right:max(0px, calc(var(--rail-inset) - var(--rail-clear) + var(--rail-pad)
+                             - var(--rail-box-w)));
+  /* Z-INDEX SCALE, in one place and ascending. Before this the values were literals at four use
+     sites: rail 70, bubble 90, rail-go 91 -- all three ABOVE the progress bar (44) and the resume
+     toast (45), so a preview could paint over the page's own bottom chrome. The rail belongs to
+     the content, so on DESKTOP it sits above the page but below every piece of fixed chrome.
+     THE BASE VALUES ARE THE PHONE'S. The conflict being fixed is between the rail and the pbar
+     and toast, and on a phone the pbar is display:none -- so retuning the rail's layer there
+     would change mobile stacking for no benefit. Keeping the original numbers at base and
+     retuning in the desktop block means the phone's computed styles are bit-for-bit what they
+     were, which is what "mobile unchanged" has to mean. */
+  --z-topbar:20; --z-rail:70; --z-rail-bubble:90; --z-rail-go:91;
+  --z-totop:40; --z-pbar:44; --z-resume:45;
   --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);
   font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
   -webkit-font-smoothing:antialiased}
-.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+.wrap{max-width:var(--content-max);margin:0 auto;padding:0 var(--content-pad)}
 a{color:inherit;text-decoration:none}
 h1,h2,h3{line-height:1.2;margin:0}
 
 /* top bar */
 .top{border-bottom:1px solid var(--line);background:rgba(251,251,250,.86);
-  backdrop-filter:blur(10px);position:sticky;top:0;z-index:20}
+  backdrop-filter:blur(10px);position:sticky;top:0;z-index:var(--z-topbar)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;
   height:var(--topbar-h)}
 .logo{font-weight:700;font-size:18px;letter-spacing:-.01em;display:flex;gap:8px;align-items:center}
@@ -2955,12 +3050,13 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
  enlarges the HIT AREA independently of the visible dot, so the target does not
  have to be sacrificed to fit the column. */
 .section-rail{display:block;position:fixed;top:50%;right:6px;transform:translateY(-50%);
-  z-index:70;padding:10px 0;pointer-events:none;max-width:calc(100vw - 12px)}
+  z-index:var(--z-rail);padding:10px 0;pointer-events:none;max-width:calc(100vw - 12px)}
 
 .section-rail{right:6px;transform:translateY(-50%)}
 .section-rail.is-dormant{display:none}
 .section-rail-track{position:relative;display:flex;flex-direction:column;
-    align-items:center;gap:var(--rail-gap,14px);padding:2px 8px;pointer-events:auto}
+    align-items:center;gap:var(--rail-gap,14px);padding:2px var(--rail-track-pad,8px);
+    pointer-events:auto}
   /* Ticks must not shrink. They are flex items in a fixed-height column, so the
      default flex-shrink:1 silently squeezed every computed height (a 40px
      request rendered at 25px). The JS sizes them to fit, so shrinking is not
@@ -2985,7 +3081,12 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
      highlight reflects the drag position, not a stray hover. */
 .section-rail.is-scrubbing{cursor:ns-resize}
 .section-rail.is-scrubbing .section-rail-tick{transition:none}
-  /* progress fill runs behind the ticks */
+  /* progress fill runs behind the ticks.
+     left:50% is correct for THIS layer: on a phone the tick holds only the dot (the name is
+     display:none below), so the track's centre IS the dot column. On desktop the tick grows
+     a label to the LEFT of the dot, which moves the track's centre off the dot column -- the
+     desktop block below re-derives this from the dot column instead. Measured before the
+     fix: fill x 1157.5 against the nearest dot column at 1181, i.e. 23.3px adrift. */
 .section-rail-fill{position:absolute;top:12px;bottom:12px;left:50%;width:2px;
     margin-left:-1px;border-radius:2px;background:#e2e8e3;overflow:hidden}
 .section-rail-fill::after{content:'';position:absolute;inset:0 0 auto 0;
@@ -2995,9 +3096,17 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   /* Ticks are laid out as a row: the dot, then its identity (a name for the
      section-level ticks, a number for the oral-answer ones). The rail answers
      "which section is this?" at rest rather than only after a gesture. */
+  /* WHY THE DOT COLUMN IS JAGGED, AND THE FIX. The tick is justify-content:flex-end with
+     the name in flow, so the dot's x was a function of how long that tick's label happened
+     to be -- measured, the 9 dots spanned 75px (1254,1181,1256,1247,1256,1256,1203,1212,
+     1235). Nothing anchored them. Giving the name a FIXED width (desktop block below) makes
+     flex-end pin the dot's right edge to the tick's right edge for every tick, whatever its
+     label, so all dots share one x -- and that x is the rail box's right edge, which is what
+     --rail-right positions. No order/margin trickery is needed. */
 .section-rail-tick{position:relative;appearance:none;border:0;background:transparent;
     padding:0 2px;width:auto;min-width:24px;height:var(--rail-tick-h,22px);
-    display:flex;align-items:center;justify-content:flex-end;gap:5px;cursor:pointer}
+    display:flex;align-items:center;justify-content:flex-end;
+    gap:var(--rail-dot-gap,5px);cursor:pointer}
 .section-rail-tick-mark{display:block;width:6px;height:6px;border-radius:50%;
     background:#c4cfc7;box-shadow:0 0 0 3px rgba(251,251,250,.9);
     transition:width .2s ease,height .2s ease,background .2s ease,transform .2s ease}
@@ -3063,7 +3172,7 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
     border:1px solid rgba(255,255,255,.14);
     box-shadow:0 12px 24px -14px rgba(20,24,29,.7);
     font-size:12px;font-weight:700;line-height:1.3;white-space:normal;
-    opacity:0;pointer-events:none;z-index:90;
+    opacity:0;pointer-events:none;z-index:var(--z-rail-bubble);
     transition:opacity .15s ease,transform .15s ease}
 .section-rail-tick.is-pending .section-rail-bubble{opacity:1;
     transform:translateY(-50%) scale(1)}
@@ -3071,7 +3180,7 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
 .section-rail-go{position:fixed;top:0;left:auto;right:10px;
     font:700 10px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;
     color:#fff;background:var(--accent);border-radius:6px;padding:6px 9px;
-    opacity:0;pointer-events:none;z-index:91;
+    opacity:0;pointer-events:none;z-index:var(--z-rail-go);
     transition:opacity .15s ease}
 .section-rail-tick.is-pending .section-rail-go{opacity:1}
 
@@ -3082,7 +3191,7 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
 }
 
 /* Back to top: a long page needs one, and it doubles as "you are deep in". */
-.totop{position:fixed;right:16px;bottom:16px;z-index:40;width:44px;height:44px;
+.totop{position:fixed;right:16px;bottom:16px;z-index:var(--z-totop);width:44px;height:44px;
   border-radius:50%;border:1px solid var(--line);background:var(--card);
   color:var(--accent);font-size:17px;line-height:1;cursor:pointer;
   box-shadow:0 2px 10px rgba(20,24,29,.12);opacity:0;visibility:hidden;
@@ -3093,7 +3202,7 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
 @media (max-width:760px){.totop{bottom:16px;right:14px}}
 
 /* "Resume where you left off" -- offered, never forced. Auto-dismisses. */
-.resume{position:fixed;left:16px;right:16px;bottom:16px;z-index:45;
+.resume{position:fixed;left:16px;right:16px;bottom:16px;z-index:var(--z-resume);
   display:flex;align-items:center;gap:10px;padding:12px 14px;
   background:var(--ink);color:#fff;border-radius:12px;font-size:13.5px;
   box-shadow:0 8px 26px rgba(20,24,29,.28)}
@@ -3104,14 +3213,100 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
 .resume .rno{background:none;border:0;color:#aeb8c2;font-size:18px;padding:0 6px}
 @media (min-width:761px){.resume{left:auto;right:16px;max-width:380px}}
 
-/* The section rail, on desktop: pinned to the right margin so it does not collide with the
-   summary column or the bottom progress bar. Level-1 ticks are small, level-3 largest. */
+/* The section rail, on desktop: anchored to the CONTENT's right edge, not the viewport's.
+   The rail used to sit at right:10px of the viewport while the content is a centred
+   1060px box, so the two coordinate systems crossed around 1500px: below that the rail
+   painted over the summary column (209px of cover at 1024, 99px at 1280, 19px at 1440) and
+   above it, drifted into empty margin (221px clear at 1920, 541px at 2560). right is now
+   --rail-right, derived from the container, so the rail's distance from the content is
+   CONSTANT -- 10px -- at every width. Level-2 ticks are small, level-3 largest. */
 @media (min-width:761px){
-  .section-rail{right:10px;top:50%;transform:translateY(-50%);height:52vh}
-  /* Desktop: the margin is empty, so EVERY tick keeps its name, laid out inline. */
-  .section-rail-name{display:inline-block;position:static;max-width:190px;font-size:10.5px}
+  /* THE DESKTOP LAYER RETUNE. The conflict is between the rail and the fixed BOTTOM chrome --
+     the progress bar (44) and the resume toast (45) -- both of which are display:none on a phone.
+     So the retune lives here, and the phone keeps the original 70/90/91 from :root. */
+  :root{--z-rail:24; --z-rail-bubble:26; --z-rail-go:26}
+  .section-rail{right:var(--rail-right);transform:translateY(-50%);
+    height:auto;max-height:calc(100vh - var(--topbar-h) - var(--pbar-h)
+                                - var(--rail-margin) * 2);
+    /* Centred on the BAND the rail indexes -- between the sticky top bar and the progress
+       bar -- rather than on the raw viewport with a 52vh box. Measured before: a 468px box
+       holding a 188px track, i.e. 280px of empty box centred on nothing in particular. Now
+       the box hugs its content (height:auto) and the band centres it. */
+    top:calc((100vh + var(--topbar-h) - var(--pbar-h)) / 2)}
+  /* The track's own horizontal padding goes to zero on desktop: the tick already carries
+     --rail-pad, and a second layer of padding would have to be added into --rail-box-w and the
+     clearance equation. Removing it keeps the placement to the one equation in :root, which is
+     what makes the clearance provably --rail-clear at every width. The phone keeps its 8px. */
+  .section-rail-track{padding:2px 0}
+  /* Desktop: the margin is empty, so every tick keeps its name, laid out inline.
+     THE D3 FIX, and it is two changes that have to happen together:
+       1. the name cell is a FIXED width (--rail-label, the same token the box's width is derived
+          from), so no tick's dot depends on how long its own label is;
+       2. the name is reset to `order:0`, putting the DOT FIRST in the row. The base rule puts
+          the name first because on a phone the dot is the rightmost thing in a narrow gutter.
+          With the dot leading and the label a fixed width, the dot column's left edge is the
+          box's left edge plus --rail-pad, at EVERY level -- which is exactly what --rail-right
+          places. Measured before the fix: a 75px spread across the 9 dots
+          (1254,1181,1256,1247,1256,1256,1203,1212,1235). */
+  .section-rail-tick{padding:0 var(--rail-pad);gap:var(--rail-dot-gap);justify-content:flex-start;
+    min-width:0;width:var(--rail-tick-w)}
+  /* The dot must not shrink once the label shares the row: with a fixed-width name the flex
+     algorithm would otherwise steal from the dot rather than the label. */
+  .section-rail-tick .section-rail-tick-mark{flex:none}
+  /* The name column exists only where the margin can hold one. Below 1200px the rail is the bare
+     dot strip -- so the chip is display:none here and switched on in the block below, rather
+     than being given a zero width, which would leave its 4px of chip padding either side as an
+     8px sliver of background beside every dot. */
+  .section-rail-name{position:static;flex:none;order:0;display:none}
   .section-rail-tick.level-2{height:8px}
   .section-rail-tick.level-3{height:6px}
+  /* The preview bubble and the Go chip. They are position:fixed, and the rail's own
+     transform:translateY(-50%) makes THE RAIL their containing block -- so `right` here would be
+     an offset inside the rail, not from the viewport edge.
+     They are anchored to the rail's LEFT edge instead (right:100%), so they grow LEFTWARDS into
+     the gutter and column. That is deliberate, and it is the only direction with room: the rail
+     now sits hard against the content's right edge with at most ~250px of margin beyond it, so a
+     bubble anchored rightwards left the viewport at 1024 and 1280 (measured x 1275..1555 against
+     a 1280px viewport). Growing leftwards always fits, because the bubble is narrower than the
+     page and there is a full column of room in that direction.
+     Overlapping content is the point of this preview -- it is a transient, high-z-index chip that
+     names the target without moving the reader, and the rail column is far too narrow to hold a
+     190px label. */
+  .section-rail-bubble,.section-rail-go{right:100%;left:auto}
+  .section-rail-bubble{margin-right:6px}
+  .section-rail-go{margin-right:6px}
+  /* The fill rides the DOT COLUMN. The dot is the tick's first item, --rail-pad in from the
+     tick's left edge, so the dot column's CENTRE is --rail-pad + --rail-dot/2 from the tick's
+     left edge -- and the box's left edge is the rail's left edge.
+     The base rule's `margin-left:-1px` is what centres the 2px bar on that point, so the `left`
+     here must NOT subtract a further 1px: doing so measured the bar's centre 1px left of the dot
+     column at every width. Previously the fill was left:50% of the TRACK, which is the dot
+     column only while the tick has no label; once the label is there it measured x 1157.5
+     against a dot column at 1181, i.e. 23.3px adrift and visibly crossing the labels mid-word. */
+  .section-rail-fill{left:calc(var(--rail-pad) + var(--rail-dot) / 2);right:auto}
+  .section-rail-pill{right:var(--rail-pad)}
+}
+
+/* WHERE THE NAME COLUMN IS TURNED ON. Below this the rail is the dot strip, and the only thing
+   that has to change to switch the labels on is --rail-label -- every width and offset derives
+   from it, so the block states no geometry of its own.
+   The threshold is measured, not chosen: --rail-label-derive passes 48px at 1186px of viewport,
+   and 48px is the narrowest label whose text survives the chip's 4px of padding. 1200px is the
+   round width above that, where the derived label is 55px. At the four widths this task is
+   verified at, the rail therefore reads: 1024 = dot strip; 1280 = 93px labels; 1440 = 173px;
+   1920 = 180px (the cap) with 249px of margin to spare. */
+@media (min-width:1200px){
+  :root{--rail-label:var(--rail-label-derive);
+    /* Now there IS a second item in the tick, so the gap between dot and label joins the width.
+       Redefined here rather than in the base rule because below 1200px there is no label and the
+       gap would be dead width -- see --rail-tick-w's comment in :root. */
+    --rail-tick-w:calc(var(--rail-label) + var(--rail-dot) + var(--rail-dot-gap)
+                       + var(--rail-pad) * 2)}
+  /* The name chip: a FIXED width, and the same token the box's width is derived from. This is
+     what makes every dot share one x -- see the desktop block above. */
+  .section-rail-name{display:inline-block;width:var(--rail-label);
+    max-width:var(--rail-label);font-size:10.5px;overflow:hidden;
+    text-overflow:ellipsis}
 }
 
 /* DESKTOP PROGRESS BAR: bottom-pinned, same ink and accent as the resume toast, because it
@@ -3120,9 +3315,9 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
    vertical space that a phone cannot spare. */
 .pbar{display:none}
 @media (min-width:761px){
-  .pbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:44;height:26px;
-    background:var(--ink);color:#fff;font-size:11px;line-height:26px;
-    letter-spacing:.06em;text-transform:uppercase}
+  .pbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:var(--z-pbar);
+    height:var(--pbar-h);background:var(--ink);color:#fff;font-size:11px;
+    line-height:var(--pbar-h);letter-spacing:.06em;text-transform:uppercase}
   .pbar-fill{position:absolute;left:0;top:0;bottom:0;width:0;
     background:var(--accent);transition:width .12s linear}
   .pbar-txt{position:relative;display:block;text-align:center;color:#fff;

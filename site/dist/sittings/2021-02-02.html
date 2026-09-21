@@ -960,18 +960,30 @@
   }
 
   /* The bubble and Go chip are position:fixed so they escape the rail's narrow
-     column and paint above page content; that means JS has to say where. Centre
-     them on the tick and keep them above the fold. */
+     column and paint above page content; that means JS has to say where.
+
+     THE CONTAINING BLOCK IS THE RAIL, NOT THE VIEWPORT -- and that is a trap worth naming. The
+     rail carries transform:translateY(-50%), and a transformed element becomes the containing
+     block for its position:fixed descendants. So:
+       * `top` is measured from the RAIL's box top, not the viewport's -- the JS below converts;
+       * a `right:` here would be an offset inside the rail, not from the viewport edge, so the
+         CSS anchors the pair with right:100% and they grow LEFTWARDS into the gutter.
+     Clamping still happens in viewport terms first, so the bubble cannot leave the screen. */
   function railPlacePreview(btn) {
     var r = btn.getBoundingClientRect();
-    var cy = Math.round(r.top + r.height / 2);
+    var railBox = rail ? rail.getBoundingClientRect() : { top: 0, left: 0 };
     var bubble = btn.querySelector('.section-rail-bubble');
     var go = btn.querySelector('.section-rail-go');
-    var maxY = window.innerHeight - 8;
+    // The rail's own offset to the viewport, i.e. the coordinate change for `top`.
+    var railTop = railBox.top;
+    var cy = r.top + r.height / 2;
+    // Keep the pair inside the viewport: the bubble is ~31px tall, the Go chip 22px + 4 gap.
+    var minTop = 10 + railTop;
+    var maxTop = window.innerHeight - 10 - 31 - 22 - 4;
+    var bubbleTop = Math.min(Math.max(cy, minTop), Math.max(minTop, maxTop));
     if (bubble) {
-      bubble.style.top = cy + 'px';
-      // Nudge clear of the Go chip sitting just below it.
-      go.style.top = Math.min(maxY - 24, cy + Math.round(r.height / 2) + 4) + 'px';
+      bubble.style.top = (bubbleTop - railTop) + 'px';
+      go.style.top = (bubbleTop - railTop) + 30 + 'px';
     }
   }
 
