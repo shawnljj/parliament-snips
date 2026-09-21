@@ -172,8 +172,18 @@
     height:fit-content;max-height:calc(100vh - var(--topbar-h) - var(--sticky-gap) - 20px);
     overflow-y:auto;overscroll-behavior:contain}
   .sumwrap{position:static;top:auto}
-  .dsec > .vslist,.dsec > .gapd,.dsec > .gapbody{grid-column:1;grid-row:1}
-  .vs-text{max-width:74ch}
+  /* ONE ROW PER SECTION, STATED RATHER THAN ASSUMED. Every child that belongs to the reading
+     column is named here, including the trailing gap marker (`li.gapi.run`), which is a list
+     item INSIDE `ol.vslist` as of the D16 fix and so is no longer a grid child at all.
+     The marker used to be a bare `<li>` sibling of the list, and because no rule named it, it
+     auto-placed into a SECOND ROW: measured, `.dsec` resolved to rows [934.969px, 1341.88px]
+     with a 34px row gap, which summed to the section's full 2310.84px height. The column
+     guides are grid items with `grid-row:1`, so they painted over row 1 only and stopped
+     1376px short of the section's bottom -- the faded context below the selected sentences had
+     no column boundary at all, which is the opposite of what D8 asked for.
+     `grid-row:1` on the marker is kept anyway: it costs nothing, and it means a future child
+     added to this list cannot silently reopen a second row. */
+  .dsec > .vslist,.dsec > .gapi,.dsec > .gapd,.dsec > .gapbody{grid-column:1;grid-row:1}
   .sumtext{font-size:14px}
   /* ============================================================
      COLUMN BOUNDARY GUIDES. Vertical hairlines on the column edges,
@@ -196,14 +206,25 @@
 
      WHY PER SECTION AND NOT ONE FULL-HEIGHT RULE. The columns exist
      only inside .dsec. Between the sections the page is full-bleed
-     prose -- .railhead section headings, .vs-text intro paragraphs,
-     the whole Oral answers / Everything else / How-this-page-was-made
-     blocks, the footer -- which spans both columns (audit D9: 1012px
-     against a 562px track). A rule that ran the full scroll height
-     would cut through every one of those. The guide therefore marks
-     what it is a guide TO: it appears where the two columns exist and
-     stops where they stop. That is also what makes it align by
+     prose -- section headings, .vs-text intro paragraphs, the whole
+     Oral answers / Everything else / How-this-page-was-made blocks,
+     the footer -- which spans both columns (audit D9: 1012px against
+     a 562px track). A rule that ran the full scroll height would cut
+     through every one of those. The guide therefore marks what it is
+     a guide TO: it appears where the two columns exist and stops
+     where they stop. That is also what makes it align by
      construction instead of by calculation.
+
+     THE RULES BOUND THE COLUMNS; THE TEXT COLUMN BOUNDS THE READING
+     MEASURE (audit D12). `.vs-text{max-width:74ch}` used to sit in
+     this block. 74ch resolves to 745.78px, and the text track is
+     capped at 562px by minmax(0,1fr) inside a 1060px wrap, so the
+     limit could never bind: swept from 700px to 1920px, the element's
+     width runs 594 -> 204 -> 263 -> 402 -> 562 and never reaches its
+     own max-width. It is removed rather than kept as a "tablet
+     guard", because there is no band in which it guards anything --
+     it only binds in the 740..1010px range if the 74ch figure were
+     the narrower of the two, and it is not.
 
      Drawn as an inset box-shadow rather than a border: .dsec is a
      grid container whose tracks are minmax(0, 1fr), and a border
@@ -651,9 +672,53 @@ details.brief[open]>.briefsum{border-bottom:1px solid var(--line)}
 .statgrid h4{font-size:13px;font-weight:700;margin-bottom:14px;color:var(--dim)}
 .statnote{font:500 12px var(--mono);color:var(--faint);margin-top:18px}
 
-/* sections */
-.sec-head{margin:0 0 22px}
+/* ---- SECTION HEADINGS AND GROUP LABELS: the page's two authored levels ----
+   THE DECISION (audit D9, D10, D11). The page had three alignment stories -- 172 gridded
+   sections, full-bleed headings, and one heading indented by its card -- and two heading levels
+   that rendered identically. Both are settled the same way:
+
+     * Both levels sit on the wrap's content edge. A section heading spans the wrap
+       DELIBERATELY: the column rules bound the two columns only where columns exist (inside
+       .dsec), and a heading over a full-bleed section that stopped at the text column's edge
+       would read as a column of its own, which it is not. What tells a reader that these are
+       the page's spine is TYPOGRAPHY AND RULE WEIGHT, not indentation.
+
+     * `.sec-head` is the section level. This rule set already existed but was DEAD -- defined
+       in this stylesheet and used by 0 of 332 generated pages, while the live markup wrote
+       bare `<h2>`. It was written for exactly this job, so it is wired up rather than deleted
+       (audit D11: "use it for D10, or delete it"). It is on the four page sections:
+       .substance, .oral, .everything, .method.
+
+     * `.railhead` is the GROUP level, subordinate to the section above it. It had NO rule at
+       all (audit D10, count 0), so it rendered at the UA's default h2 size -- measured, both
+       levels computed to 24px/700 and were indistinguishable. 24px was never an authored
+       value: nothing styled a desktop section heading, which is why they matched.
+       The three channels that separate them, in order of how much they carry:
+         - WEIGHT AND SIZE: the section is 26px/750, the label 15px/700.
+         - CASE AND TRACKING: the label is small, letterspaced and uppercased, the standard
+           way to mark a sub-label that is still semantically a heading.
+         - COLOUR: the label is --dim, the section --ink. NOT --faint, which is the obvious
+           choice and the wrong one: --faint measures 3.04:1 on white and 2.54:1 over a tinted
+           card, under the 4.5:1 that 15px/12px bold text requires, so it would trade D10 for
+           an unreadable label. --dim is 5.76:1 on white / 5.14:1 on a 4% tint while still
+           sitting at 3.09:1 against --ink -- subordinate AND legible.
+       The label also carries the same 1px rule as everything else on the page and 2px MORE
+       than the section heading, so the hairline reads as belonging to the group it opens
+       rather than floating above it.
+
+     This replaces an earlier set of rules for `.sec-head h2` (26px, -.022em, 750) that
+     matched this section's size by accident and had a `margin:0 0 22px` that would have added
+     22px of space under EVERY section heading.
+     The bottom margin is 16px (14px on a phone) because every section's heading is followed
+     immediately by its own `.sub` -- the two used to be 5px apart, and the rule that now closes
+     the heading needs the air beneath it. It was 26px while being written, which looked correct
+     with the heading alone and crowded once the `.sub` was under it. */
+.sec-head{margin:0 0 16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
 .sec-head h2{font-size:26px;letter-spacing:-.022em;font-weight:750}
+/* A group label, one level down and visually subordinate to the section heading above it. */
+.railhead{margin:30px 0 2px;padding-bottom:7px;border-bottom:1px solid var(--line);
+  color:var(--dim);
+  font-size:15px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
 .sub{color:var(--faint);font-size:14px;margin:9px 0 0}
 
 /* everything else -- collapsible group cards */
@@ -681,7 +746,13 @@ details.grp[open]>summary{border-bottom:1px solid var(--line)}
 /* method + footer */
 .method{margin:56px 0 0;padding:28px 30px;background:var(--accent-soft);
   border-radius:var(--radius);border:1px solid #cfe3d8}
-.method h2{font-size:17px;margin-bottom:14px}
+/* NO font-size OR margin-bottom HERE ANY MORE (audit D9). This heading used to be authored at
+   17px while the four section headings sat at the UA's default 24px -- which is precisely the
+   "one indented heading" part of D9. It is a `.sec-head` now, like the other three sections, and
+   this rule must not override that: `.method h2` and `.sec-head h2` have the SAME specificity
+   (0,1,1), so the later rule in the sheet wins, and that is this one. Leaving a font-size here
+   would silently keep this heading a different size from its peers while looking deliberate.
+   The panel's compactness is already carried by its padding (30px, and 15px on a phone). */
 .method p{font-size:14px;color:var(--dim);margin:0 0 12px}
 .method ul{margin:0;padding-left:20px;font-size:13.5px;color:var(--dim)}
 .method li{margin-bottom:6px}
@@ -839,12 +910,20 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
        always-on label overhangs the text column and paints over it. The transient pill
        (below) names the active section on demand instead. */
     display:none}
-.section-rail-num{order:-1;font:600 9px/1 var(--mono);color:var(--faint);
-    min-width:11px;text-align:right}
+  /* The number chip for oral-answer ticks is GONE. It was `.section-rail-num`, and no element in
+     any generated page ever carried the class: railBuild() creates exactly three children per
+     tick (mark, name, bubble). It was the visible half of the level-3 ordinal machinery that
+     D17 found unreachable, and with the level now derived it is still not wanted -- the rail
+     names a section, it does not number questions. Removed rather than left as a second dead
+     class, for the same reason audit D11 gives about `.sec-head`. */
 .section-rail-tick.level-2 .section-rail-name{color:var(--ink)}
 .section-rail-tick.is-active .section-rail-name{color:var(--accent)}
-.section-rail-tick.is-pending .section-rail-name,
-.section-rail-tick.is-pending .section-rail-num{color:var(--accent)}
+.section-rail-tick.is-pending .section-rail-name{color:var(--accent)}
+/* The GROUP level's name: quieter than a section's, because it is a label inside the section
+   above it rather than a destination of its own. --dim, not --faint, for the same reason the
+   `.railhead` above uses it: this is 9.5px text and --faint is 3.04:1, under AA, while --dim is
+   5.57:1 and still reads as the quieter of the two. */
+.section-rail-tick.level-3 .section-rail-name{color:var(--dim);font-weight:500}
 .section-rail-tick.is-active .section-rail-tick-mark{background:var(--accent);
     transform:scale(1.35)}
   /* A tick waiting to confirm: first tap names the section, second tap jumps. */
@@ -1028,8 +1107,18 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
     background:var(--accent);transition:width .12s linear}
   .pbar-txt{position:relative;display:block;text-align:center;color:#fff;
     mix-blend-mode:difference;font-weight:600}
-  /* The toast sits above the bar, not on it. */
-  .resume{bottom:38px}
+  /* The toast sits above the bar, not on it.
+     THIS IS THE ONLY PLACE `bottom` IS SET FOR .resume WHEN BOTH ARE LIVE, so it is also the
+     only place the coupling between the two can be stated. It used to be the bare literal
+     `38px`, which is the bar's 26px plus 12px of air held only in the author's head: change
+     --pbar-h and the toast silently lands back under the bar. Expressed against the token
+     instead, so the toast clears whatever height the bar is given.
+     (Audit D14 also reported that the desktop rule "never sets bottom", making the desktop
+     toast 16px and behind the bar. That is not what this stylesheet does: the base rule at the
+     foot of the file sets 16px for the PHONE, where .pbar is display:none, and this block --
+     which appears LATER in the sheet -- overrides it with 38px. Measured by constructing the
+     real toast: bottom 38px, toast/bar overlap 0px at 1024/1280/1440/1920.) */
+  .resume{bottom:calc(var(--pbar-h) + 12px)}
 }
 
 /* Touch targets: text stays compact, the tappable box grows to >=44px. */
@@ -1063,7 +1152,20 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   .lede h1{font-size:clamp(28px,8.4vw,34px);letter-spacing:-.03em}
   .dek{font-size:15px;line-height:1.5}
   .kicker{font-size:11px;margin-bottom:12px}
+  /* THE PHONE'S OUTLINE. This one `main h2` rule set every heading on the page to 19px, which
+     is why the phone had no outline either -- it was the same flat problem as desktop, arrived
+     at by a different route. The section/group split is now stated here too, at the phone's
+     scale, and `main h2` keeps the section size as the base it always set.
+     NOTHING BELOW THIS LINE CHANGES THE PHONE BY ACCIDENT: `.sec-head` and `.railhead` are new
+     class hooks, so before this change neither had any phone rule at all, and every heading
+     took 19px from the rule on this line. */
   main h2{font-size:19px;line-height:1.22;letter-spacing:-.02em}
+  /* SPECIFICITY, NOT TASTE: `.sec-head h2` (0,1,1) outranks `main h2` (0,0,2), so the desktop
+     26px would otherwise survive onto the phone and the section heading would be LARGER than
+     the phone was ever designed for. The size is restated here for that reason and no other. */
+  .sec-head{margin:0 0 14px;padding-bottom:10px}
+  .sec-head h2{font-size:19px}
+  .railhead{margin:22px 0 2px;padding-bottom:6px;font-size:12px;letter-spacing:.09em}
   .sub{font-size:13px;line-height:1.45;margin-top:6px}
   /* The brief title. 23px/1.62 wrapped to five lines; 17.5px/1.25 takes the
      same title to two or three. */
@@ -1128,7 +1230,11 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   .qajump .qw{margin-left:26px;width:calc(100% - 26px);white-space:normal}
   .qajump>summary{font-size:14px}
   .method{padding:18px 15px;margin-top:24px}
-  .method h2{font-size:16px;margin-bottom:11px}
+  /* REMOVED (audit D9/D10): `.method h2{font-size:16px;margin-bottom:11px}`. It was the phone
+     half of the same override the desktop rule above used to carry. The heading is a
+     `.sec-head` now, and `main h2` sets its size here; leaving this in place would keep the
+     phone's one panel heading a different size from the four page-section headings, which is
+     the flat/uneven outline D9 is about. */
   .method p,.method ul,.method li{font-size:13px}
   .stats-note{margin-top:26px;padding-top:15px}
   .statgrid{grid-template-columns:1fr;gap:16px}
