@@ -92,8 +92,9 @@ build, not a claim carried over from a parent's summary.
 | **D16** | 171 of 172 sections contain a bare `<li>` outside any `<ol>` | **STILL PRESENT.** `</ol><li` occurs **171 times** on one sitting page | Same as D9 |
 | **D17** | 9 headings, 9 ticks, all `level-2`; `.level-3` unreachable | **STILL PRESENT.** the only level assignment in `railCollect()` is `var level = 2` | Same as D9 |
 
-**Summary: 9 fixed (D1–D5, D7, D8, and the unlogged preview defect), 9 explicitly deferred
-(D6, D9–D17). No defect is silently absorbed, and every deferral was re-measured on the
+**Summary: 8 of the audit's 17 defects fixed (D1–D5, D7, D8), 9 explicitly deferred (D6,
+D9–D17), plus 1 defect the audit could not see (the heading preview) found and fixed by
+`t_140a0b87`. No defect is silently absorbed, and every deferral was re-measured on the
 merged tree rather than quoted from a parent's handoff.**
 
 ---
@@ -160,8 +161,8 @@ pre-change build so a pre-existing failure cannot read as a regression:
 | tool | merged | pristine | note |
 |---|---|---|---|
 | `tools/check_artifacts.py` | **1** | **1** | 11 `[ACCOUNTING]` problems, identical set on both — caused by gitignored `pipeline/dataset/*/` payloads counting as 0 in a checkout. Pre-existing |
-| `tools/check_selection.py` | **1** | **1** | pre-existing, identical |
-| `tools/check_year.py` | **1** | **1** | pre-existing, identical |
+| `tools/check_selection.py` | **1** | **1** | pre-existing, identical: `IndexError` — it requires a directory argument (`sys.argv[1]`), i.e. it is a per-batch inspection tool, not a repo-wide gate |
+| `tools/check_year.py` | **1** | **1** | pre-existing, identical: `NOT CORRECT YET — no current-pipeline briefs to check; 291 of 291 items still to summarise` |
 | `tools/check_rail.py` | **0** | — | pre-existing rail gate, green |
 | `tools/qa_console.py` | **0** | (below) | new in this task |
 | `tools/qa_defects.py` | **0** | — | new in this task |
@@ -177,8 +178,9 @@ repo, and the three project gates that exit 1 do so identically before and after
 **PASS, and the baseline is clean too.** `qa_console.py` installs its collector before the
 document loads, scrolls the whole page, drives all 9 rail ticks with real CDP mouse input, and
 clicks `.totop`: **0 errors, 0 unhandled rejections, 0 console.error, 0 console.warn at every
-width** (390/759/760/761/1024/1280/1440/1920). The pristine build is equally silent, so this
-is a genuine "no new errors" rather than an insensitive probe.
+width** (390/759/760/761/1024/1280/1440/1920). The pristine build was run on the same widths
+and is equally silent on all of them, so this is a genuine "no new errors" rather than an
+insensitive probe.
 
 ### "Capture an after screenshot set matching the audit's before set"
 
