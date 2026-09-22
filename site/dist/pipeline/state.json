@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "generated": "2026-09-20T19:25:29",
- "elapsed_secs": 68.3,
+ "generated": "2026-09-20T22:40:32",
+ "elapsed_secs": 66.5,
  "budget": {
   "small_chars": 24000,
   "chunk_chars": 24000
@@ -20,7 +20,7 @@
    "name": "Dataset",
    "llm": false,
    "state": "done",
-   "detail": "3911 of 3911 items addressable by sid"
+   "detail": "3910 of 3910 items addressable by sid"
   },
   {
    "n": 2,
@@ -45,8 +45,8 @@
   }
  ],
  "queue": {
-  "total": 3911,
-  "small": 3025,
+  "total": 3910,
+  "small": 3024,
   "heavy": 886,
   "by_group": {
    "budget": {
@@ -70,8 +70,8 @@
     "heavy": 50
    },
    "oral": {
-    "total": 2768,
-    "small": 2665,
+    "total": 2767,
+    "small": 2664,
     "heavy": 103
    },
    "adjournment": {
@@ -413,10 +413,10 @@
    "title": "Debate on Annual Budget Statement",
    "group": "budget",
    "tier": "heavy",
-   "source_words": 119315,
-   "prompt_chars": 836423,
-   "sentence_count": 4961,
-   "chunk_count": 35,
+   "source_words": 119357,
+   "prompt_chars": 855831,
+   "sentence_count": 5074,
+   "chunk_count": 36,
    "report_ids": [
     "budget-905",
     "budget-907",
@@ -480,9 +480,9 @@
    "title": "Constitution of the Republic of Singapore (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 116945,
-   "prompt_chars": 815296,
-   "sentence_count": 4644,
+   "source_words": 116986,
+   "prompt_chars": 834378,
+   "sentence_count": 4758,
    "chunk_count": 35,
    "report_ids": [
     "bill-223",
@@ -753,9 +753,9 @@
    "title": "38 Oxley Road",
    "group": "statement",
    "tier": "heavy",
-   "source_words": 68767,
-   "prompt_chars": 455937,
-   "sentence_count": 2645,
+   "source_words": 68784,
+   "prompt_chars": 456720,
+   "sentence_count": 2650,
    "chunk_count": 20,
    "report_ids": [
     "ministerial-statement-979",
@@ -1096,10 +1096,10 @@
    "title": "Aspirations of Singapore Women",
    "group": "motion",
    "tier": "heavy",
-   "source_words": 46117,
-   "prompt_chars": 323491,
-   "sentence_count": 1765,
-   "chunk_count": 14,
+   "source_words": 46141,
+   "prompt_chars": 343730,
+   "sentence_count": 1888,
+   "chunk_count": 15,
    "report_ids": [
     "motion-959",
     "motion-961",
@@ -1673,9 +1673,9 @@
    "title": "Committee of Supply − Head S (Ministry of Manpower)",
    "group": "budget",
    "tier": "heavy",
-   "source_words": 38209,
-   "prompt_chars": 249611,
-   "sentence_count": 1630,
+   "source_words": 38210,
+   "prompt_chars": 249645,
+   "sentence_count": 1631,
    "chunk_count": 11,
    "report_ids": [
     "budget-938"
@@ -1728,10 +1728,10 @@
    "title": "Staying United Against the Terrorism Threat",
    "group": "motion",
    "tier": "heavy",
-   "source_words": 37908,
-   "prompt_chars": 272032,
-   "sentence_count": 1574,
-   "chunk_count": 12,
+   "source_words": 37930,
+   "prompt_chars": 290496,
+   "sentence_count": 1679,
+   "chunk_count": 13,
    "report_ids": [
     "motion-1003",
     "motion-1005",
@@ -1833,9 +1833,9 @@
    "title": "Committee of Supply − Head T (Ministry of National Development)",
    "group": "budget",
    "tier": "heavy",
-   "source_words": 36254,
-   "prompt_chars": 248475,
-   "sentence_count": 1559,
+   "source_words": 36269,
+   "prompt_chars": 248542,
+   "sentence_count": 1558,
    "chunk_count": 11,
    "report_ids": [
     "budget-946"
@@ -2061,25 +2061,6 @@
    ]
   },
   {
-   "id": "budget-940+944",
-   "year": "2017",
-   "title": "Committee of Supply − Head K (Ministry of Education)",
-   "group": "budget",
-   "tier": "heavy",
-   "source_words": 34182,
-   "prompt_chars": 264553,
-   "sentence_count": 1452,
-   "chunk_count": 12,
-   "report_ids": [
-    "budget-940",
-    "budget-944"
-   ],
-   "sitting_dates": [
-    "2017-03-06",
-    "2017-03-07"
-   ]
-  },
-  {
    "id": "budget-1892",
    "year": "2022",
    "title": "Committee of Supply – Head O (Ministry of Health)",
@@ -2094,6 +2075,25 @@
    ],
    "sitting_dates": [
     "2022-03-09"
+   ]
+  },
+  {
+   "id": "budget-940+944",
+   "year": "2017",
+   "title": "Committee of Supply − Head K (Ministry of Education)",
+   "group": "budget",
+   "tier": "heavy",
+   "source_words": 34172,
+   "prompt_chars": 265194,
+   "sentence_count": 1453,
+   "chunk_count": 12,
+   "report_ids": [
+    "budget-940",
+    "budget-944"
+   ],
+   "sitting_dates": [
+    "2017-03-06",
+    "2017-03-07"
    ]
   },
   {
@@ -2154,9 +2154,9 @@
    "title": "Strengthening Singapore's Fight Against Drugs",
    "group": "motion",
    "tier": "heavy",
-   "source_words": 33687,
-   "prompt_chars": 231079,
-   "sentence_count": 1368,
+   "source_words": 33697,
+   "prompt_chars": 237093,
+   "sentence_count": 1402,
    "chunk_count": 10,
    "report_ids": [
     "motion-965",
@@ -2354,9 +2354,9 @@
    "title": "Committee of Supply − Head I (Ministry of Social and Family Development)",
    "group": "budget",
    "tier": "heavy",
-   "source_words": 32271,
-   "prompt_chars": 264688,
-   "sentence_count": 1463,
+   "source_words": 32282,
+   "prompt_chars": 265803,
+   "sentence_count": 1468,
    "chunk_count": 12,
    "report_ids": [
     "budget-1040"
@@ -2517,9 +2517,9 @@
    "title": "Committee of Supply ‒ Head V (Ministry of Trade and Industry)",
    "group": "budget",
    "tier": "heavy",
-   "source_words": 30902,
-   "prompt_chars": 236309,
-   "sentence_count": 1355,
+   "source_words": 30913,
+   "prompt_chars": 238147,
+   "sentence_count": 1369,
    "chunk_count": 10,
    "report_ids": [
     "budget-934"
@@ -2734,9 +2734,9 @@
    "title": "Town Councils (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 29905,
-   "prompt_chars": 195359,
-   "sentence_count": 1071,
+   "source_words": 29909,
+   "prompt_chars": 195581,
+   "sentence_count": 1072,
    "chunk_count": 9,
    "report_ids": [
     "bill-297",
@@ -2998,23 +2998,6 @@
    ]
   },
   {
-   "id": "budget-952",
-   "year": "2017",
-   "title": "Committee of Supply − Head O (Ministry of Health)",
-   "group": "budget",
-   "tier": "heavy",
-   "source_words": 28645,
-   "prompt_chars": 198901,
-   "sentence_count": 1197,
-   "chunk_count": 9,
-   "report_ids": [
-    "budget-952"
-   ],
-   "sitting_dates": [
-    "2017-03-09"
-   ]
-  },
-  {
    "id": "budget-2361",
    "year": "2024",
    "title": "Committee of Supply – Head V (Ministry of Trade and Industry)",
@@ -3029,6 +3012,23 @@
    ],
    "sitting_dates": [
     "2024-03-01"
+   ]
+  },
+  {
+   "id": "budget-952",
+   "year": "2017",
+   "title": "Committee of Supply − Head O (Ministry of Health)",
+   "group": "budget",
+   "tier": "heavy",
+   "source_words": 28633,
+   "prompt_chars": 198737,
+   "sentence_count": 1193,
+   "chunk_count": 9,
+   "report_ids": [
+    "budget-952"
+   ],
+   "sitting_dates": [
+    "2017-03-09"
    ]
   },
   {
@@ -3233,9 +3233,9 @@
    "title": "Committee of Supply − Head X (Ministry of Culture, Community and Youth)",
    "group": "budget",
    "tier": "heavy",
-   "source_words": 27371,
-   "prompt_chars": 188680,
-   "sentence_count": 1185,
+   "source_words": 27392,
+   "prompt_chars": 189898,
+   "sentence_count": 1196,
    "chunk_count": 8,
    "report_ids": [
     "budget-953"
@@ -3390,10 +3390,10 @@
    "title": "Committee of Supply − Head Q (Ministry of Communications and Information)",
    "group": "budget",
    "tier": "heavy",
-   "source_words": 26445,
-   "prompt_chars": 158749,
-   "sentence_count": 901,
-   "chunk_count": 7,
+   "source_words": 26461,
+   "prompt_chars": 196942,
+   "sentence_count": 1081,
+   "chunk_count": 9,
    "report_ids": [
     "budget-939"
    ],
@@ -3711,9 +3711,9 @@
    "title": "Retirement and Re-employment (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 24597,
-   "prompt_chars": 172353,
-   "sentence_count": 963,
+   "source_words": 24620,
+   "prompt_chars": 173640,
+   "sentence_count": 972,
    "chunk_count": 8,
    "report_ids": [
     "bill-276",
@@ -4232,9 +4232,9 @@
    "title": "Committee of Supply − Head U (Prime Minister's Office)",
    "group": "budget",
    "tier": "heavy",
-   "source_words": 22752,
-   "prompt_chars": 182134,
-   "sentence_count": 994,
+   "source_words": 22763,
+   "prompt_chars": 182171,
+   "sentence_count": 995,
    "chunk_count": 8,
    "report_ids": [
     "budget-922"
@@ -4269,9 +4269,9 @@
    "title": "Presidential Elections (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 22674,
-   "prompt_chars": 145309,
-   "sentence_count": 804,
+   "source_words": 22684,
+   "prompt_chars": 145912,
+   "sentence_count": 809,
    "chunk_count": 7,
    "report_ids": [
     "bill-282"
@@ -4834,9 +4834,9 @@
    "title": "Early Childhood Development Centres Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 20424,
-   "prompt_chars": 143502,
-   "sentence_count": 843,
+   "source_words": 20430,
+   "prompt_chars": 143548,
+   "sentence_count": 844,
    "chunk_count": 6,
    "report_ids": [
     "bill-290"
@@ -4936,9 +4936,9 @@
    "title": "Committee of Supply − Head N (Ministry of Foreign Affairs)",
    "group": "budget",
    "tier": "heavy",
-   "source_words": 19995,
-   "prompt_chars": 161033,
-   "sentence_count": 856,
+   "source_words": 19997,
+   "prompt_chars": 164281,
+   "sentence_count": 875,
    "chunk_count": 7,
    "report_ids": [
     "budget-923"
@@ -5162,9 +5162,9 @@
    "title": "Active Mobility Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 19252,
-   "prompt_chars": 131351,
-   "sentence_count": 754,
+   "source_words": 19260,
+   "prompt_chars": 131506,
+   "sentence_count": 756,
    "chunk_count": 6,
    "report_ids": [
     "bill-281"
@@ -5425,9 +5425,9 @@
    "title": "Administration of Muslim Law (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 18346,
-   "prompt_chars": 134035,
-   "sentence_count": 663,
+   "source_words": 18361,
+   "prompt_chars": 136060,
+   "sentence_count": 676,
    "chunk_count": 6,
    "report_ids": [
     "bill-311"
@@ -6078,9 +6078,9 @@
    "title": "Committee of Supply − Head J (Ministry of Defence)",
    "group": "budget",
    "tier": "heavy",
-   "source_words": 16934,
-   "prompt_chars": 125139,
-   "sentence_count": 740,
+   "source_words": 16932,
+   "prompt_chars": 125401,
+   "sentence_count": 742,
    "chunk_count": 6,
    "report_ids": [
     "budget-929"
@@ -6182,9 +6182,9 @@
    "title": "Massage Establishments Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 16026,
-   "prompt_chars": 112984,
-   "sentence_count": 648,
+   "source_words": 16030,
+   "prompt_chars": 113437,
+   "sentence_count": 652,
    "chunk_count": 5,
    "report_ids": [
     "bill-325"
@@ -6358,9 +6358,9 @@
    "title": "Parks and Trees (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 15641,
-   "prompt_chars": 110390,
-   "sentence_count": 606,
+   "source_words": 15647,
+   "prompt_chars": 110438,
+   "sentence_count": 607,
    "chunk_count": 5,
    "report_ids": [
     "bill-286"
@@ -6460,9 +6460,9 @@
    "title": "Road Traffic (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 15359,
-   "prompt_chars": 108383,
-   "sentence_count": 628,
+   "source_words": 15360,
+   "prompt_chars": 108453,
+   "sentence_count": 629,
    "chunk_count": 5,
    "report_ids": [
     "bill-287",
@@ -6513,15 +6513,32 @@
    "title": "Committee of Supply − Head L (Ministry of the Environment and Water Resources)",
    "group": "budget",
    "tier": "heavy",
-   "source_words": 15290,
-   "prompt_chars": 106568,
-   "sentence_count": 687,
+   "source_words": 15301,
+   "prompt_chars": 106609,
+   "sentence_count": 688,
    "chunk_count": 5,
    "report_ids": [
     "budget-1039"
    ],
    "sitting_dates": [
     "2017-03-08"
+   ]
+  },
+  {
+   "id": "bill-326",
+   "year": "2017",
+   "title": "Tobacco (Control of Advertisements and Sale) (Amendment) Bill",
+   "group": "bill",
+   "tier": "heavy",
+   "source_words": 15200,
+   "prompt_chars": 108230,
+   "sentence_count": 633,
+   "chunk_count": 5,
+   "report_ids": [
+    "bill-326"
+   ],
+   "sitting_dates": [
+    "2017-11-07"
    ]
   },
   {
@@ -6539,23 +6556,6 @@
    ],
    "sitting_dates": [
     "2024-11-11"
-   ]
-  },
-  {
-   "id": "bill-326",
-   "year": "2017",
-   "title": "Tobacco (Control of Advertisements and Sale) (Amendment) Bill",
-   "group": "bill",
-   "tier": "heavy",
-   "source_words": 15193,
-   "prompt_chars": 108005,
-   "sentence_count": 631,
-   "chunk_count": 5,
-   "report_ids": [
-    "bill-326"
-   ],
-   "sitting_dates": [
-    "2017-11-07"
    ]
   },
   {
@@ -6704,9 +6704,9 @@
    "title": "Building Maintenance and Strata Management (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 14709,
-   "prompt_chars": 103376,
-   "sentence_count": 573,
+   "source_words": 14710,
+   "prompt_chars": 103423,
+   "sentence_count": 574,
    "chunk_count": 5,
    "report_ids": [
     "bill-313"
@@ -6738,8 +6738,8 @@
    "title": "Securities and Futures (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 14640,
-   "prompt_chars": 113472,
+   "source_words": 14647,
+   "prompt_chars": 113473,
    "sentence_count": 577,
    "chunk_count": 5,
    "report_ids": [
@@ -6792,9 +6792,9 @@
    "title": "Committee of Supply − Head P (Ministry of Home Affairs)",
    "group": "budget",
    "tier": "heavy",
-   "source_words": 14499,
-   "prompt_chars": 102329,
-   "sentence_count": 705,
+   "source_words": 14502,
+   "prompt_chars": 102788,
+   "sentence_count": 708,
    "chunk_count": 5,
    "report_ids": [
     "budget-930"
@@ -7135,9 +7135,9 @@
    "title": "Singapore University of Social Sciences Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 13610,
-   "prompt_chars": 97563,
-   "sentence_count": 522,
+   "source_words": 13619,
+   "prompt_chars": 101981,
+   "sentence_count": 542,
    "chunk_count": 5,
    "report_ids": [
     "bill-308"
@@ -7306,9 +7306,9 @@
    "title": "Child Development Co-Savings (Amendment No 2) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 13198,
-   "prompt_chars": 91525,
-   "sentence_count": 554,
+   "source_words": 13199,
+   "prompt_chars": 91587,
+   "sentence_count": 555,
    "chunk_count": 4,
    "report_ids": [
     "bill-236"
@@ -7323,8 +7323,8 @@
    "title": "Public Order (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 13180,
-   "prompt_chars": 91975,
+   "source_words": 13185,
+   "prompt_chars": 91976,
    "sentence_count": 565,
    "chunk_count": 4,
    "report_ids": [
@@ -7375,9 +7375,9 @@
    "title": "Public Entertainments and Meetings (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 12984,
-   "prompt_chars": 94701,
-   "sentence_count": 503,
+   "source_words": 12990,
+   "prompt_chars": 94749,
+   "sentence_count": 504,
    "chunk_count": 4,
    "report_ids": [
     "bill-306"
@@ -7494,9 +7494,9 @@
    "title": "Workplace Safety and Health (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 12815,
-   "prompt_chars": 97709,
-   "sentence_count": 501,
+   "source_words": 12821,
+   "prompt_chars": 97858,
+   "sentence_count": 502,
    "chunk_count": 5,
    "report_ids": [
     "bill-324"
@@ -7580,9 +7580,9 @@
    "title": "Sale of Food (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 12668,
-   "prompt_chars": 75987,
-   "sentence_count": 410,
+   "source_words": 12677,
+   "prompt_chars": 91913,
+   "sentence_count": 472,
    "chunk_count": 4,
    "report_ids": [
     "bill-328"
@@ -7644,6 +7644,23 @@
    ]
   },
   {
+   "id": "bill-317",
+   "year": "2017",
+   "title": "Infrastructure Protection Bill",
+   "group": "bill",
+   "tier": "heavy",
+   "source_words": 12551,
+   "prompt_chars": 94697,
+   "sentence_count": 538,
+   "chunk_count": 4,
+   "report_ids": [
+    "bill-317"
+   ],
+   "sitting_dates": [
+    "2017-10-02"
+   ]
+  },
+  {
    "id": "bill-582",
    "year": "2022",
    "title": "Endangered Species (Import and Export) (Amendment) Bill",
@@ -7658,23 +7675,6 @@
    ],
    "sitting_dates": [
     "2022-07-04"
-   ]
-  },
-  {
-   "id": "bill-317",
-   "year": "2017",
-   "title": "Infrastructure Protection Bill",
-   "group": "bill",
-   "tier": "heavy",
-   "source_words": 12545,
-   "prompt_chars": 94648,
-   "sentence_count": 537,
-   "chunk_count": 4,
-   "report_ids": [
-    "bill-317"
-   ],
-   "sitting_dates": [
-    "2017-10-02"
    ]
   },
   {
@@ -7786,9 +7786,9 @@
    "title": "Computer Misuse and Cybersecurity (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 12001,
-   "prompt_chars": 88349,
-   "sentence_count": 476,
+   "source_words": 12002,
+   "prompt_chars": 88392,
+   "sentence_count": 477,
    "chunk_count": 4,
    "report_ids": [
     "bill-299"
@@ -7993,10 +7993,10 @@
    "title": "Planning (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 11460,
-   "prompt_chars": 68494,
-   "sentence_count": 379,
-   "chunk_count": 3,
+   "source_words": 11469,
+   "prompt_chars": 79022,
+   "sentence_count": 435,
+   "chunk_count": 4,
    "report_ids": [
     "bill-283",
     "bill-284"
@@ -8820,8 +8820,8 @@
    "title": "Civil Law (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 9556,
-   "prompt_chars": 69542,
+   "source_words": 9561,
+   "prompt_chars": 69543,
    "sentence_count": 352,
    "chunk_count": 3,
    "report_ids": [
@@ -8854,7 +8854,7 @@
    "title": "Monetary Authority of Singapore (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 9551,
+   "source_words": 9552,
    "prompt_chars": 69462,
    "sentence_count": 385,
    "chunk_count": 3,
@@ -9287,7 +9287,7 @@
    "group": "bill",
    "tier": "heavy",
    "source_words": 8439,
-   "prompt_chars": 59722,
+   "prompt_chars": 59732,
    "sentence_count": 346,
    "chunk_count": 3,
    "report_ids": [
@@ -9425,9 +9425,9 @@
    "title": "Travel Agents (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 8051,
-   "prompt_chars": 63279,
-   "sentence_count": 324,
+   "source_words": 8052,
+   "prompt_chars": 63404,
+   "sentence_count": 325,
    "chunk_count": 3,
    "report_ids": [
     "bill-327"
@@ -9646,7 +9646,7 @@
    "title": "Mediation Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 7627,
+   "source_words": 7632,
    "prompt_chars": 56352,
    "sentence_count": 281,
    "chunk_count": 3,
@@ -9953,9 +9953,9 @@
    "title": "Alleged Abuse of Power on 38 Oxley Road",
    "group": "statement",
    "tier": "heavy",
-   "source_words": 7271,
-   "prompt_chars": 47828,
-   "sentence_count": 351,
+   "source_words": 7272,
+   "prompt_chars": 47865,
+   "sentence_count": 352,
    "chunk_count": 2,
    "report_ids": [
     "ministerial-statement-977"
@@ -10023,7 +10023,7 @@
    "group": "bill",
    "tier": "heavy",
    "source_words": 7131,
-   "prompt_chars": 52558,
+   "prompt_chars": 52563,
    "sentence_count": 275,
    "chunk_count": 3,
    "report_ids": [
@@ -10551,7 +10551,7 @@
    "group": "bill",
    "tier": "heavy",
    "source_words": 6109,
-   "prompt_chars": 44447,
+   "prompt_chars": 44455,
    "sentence_count": 232,
    "chunk_count": 2,
    "report_ids": [
@@ -10874,9 +10874,9 @@
    "title": "Professional Engineers (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 5839,
-   "prompt_chars": 43688,
-   "sentence_count": 253,
+   "source_words": 5838,
+   "prompt_chars": 43735,
+   "sentence_count": 254,
    "chunk_count": 2,
    "report_ids": [
     "bill-314",
@@ -10892,8 +10892,8 @@
    "title": "Jurong Town Corporation (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 5810,
-   "prompt_chars": 29195,
+   "source_words": 5811,
+   "prompt_chars": 29196,
    "sentence_count": 147,
    "chunk_count": 2,
    "report_ids": [
@@ -11457,7 +11457,7 @@
    "group": "bill",
    "tier": "heavy",
    "source_words": 5213,
-   "prompt_chars": 35873,
+   "prompt_chars": 35878,
    "sentence_count": 185,
    "chunk_count": 2,
    "report_ids": [
@@ -12393,9 +12393,9 @@
    "title": "The Kwong-Wai-Shiu Free Hospital (Transfer of Undertaking and Dissolution) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 4620,
-   "prompt_chars": 30048,
-   "sentence_count": 171,
+   "source_words": 4626,
+   "prompt_chars": 30082,
+   "sentence_count": 172,
    "chunk_count": 2,
    "report_ids": [
     "bill-280",
@@ -13128,7 +13128,7 @@
    "group": "bill",
    "tier": "heavy",
    "source_words": 4404,
-   "prompt_chars": 31006,
+   "prompt_chars": 31007,
    "sentence_count": 167,
    "chunk_count": 2,
    "report_ids": [
@@ -13399,7 +13399,7 @@
    "title": "Community Sentencing and Other Rehabilitative Options",
    "group": "adjournment",
    "tier": "heavy",
-   "source_words": 4268,
+   "source_words": 4266,
    "prompt_chars": 31856,
    "sentence_count": 167,
    "chunk_count": 2,
@@ -13570,7 +13570,7 @@
    "group": "oral",
    "tier": "heavy",
    "source_words": 4212,
-   "prompt_chars": 27897,
+   "prompt_chars": 27902,
    "sentence_count": 185,
    "chunk_count": 2,
    "report_ids": [
@@ -13740,7 +13740,7 @@
    "group": "adjournment",
    "tier": "heavy",
    "source_words": 4152,
-   "prompt_chars": 31672,
+   "prompt_chars": 31673,
    "sentence_count": 168,
    "chunk_count": 2,
    "report_ids": [
@@ -14810,7 +14810,7 @@
    "title": "Help for Vendors Displaced by Closing of Sungei Road Hawking Zone",
    "group": "oral",
    "tier": "small",
-   "source_words": 3764,
+   "source_words": 3762,
    "prompt_chars": 23918,
    "sentence_count": 124,
    "chunk_count": 1,
@@ -15524,9 +15524,9 @@
    "title": "Goods and Services Tax (Amendment) Bill",
    "group": "bill",
    "tier": "heavy",
-   "source_words": 3480,
-   "prompt_chars": 24892,
-   "sentence_count": 132,
+   "source_words": 3481,
+   "prompt_chars": 24939,
+   "sentence_count": 133,
    "chunk_count": 2,
    "report_ids": [
     "bill-319"
@@ -16148,23 +16148,6 @@
    ]
   },
   {
-   "id": "oral-answer-1750",
-   "year": "2017",
-   "title": "Causes for Expressway Viaduct Collapse and Workplace Safety",
-   "group": "oral",
-   "tier": "small",
-   "source_words": 3232,
-   "prompt_chars": 19885,
-   "sentence_count": 114,
-   "chunk_count": 1,
-   "report_ids": [
-    "oral-answer-1750"
-   ],
-   "sitting_dates": [
-    "2017-08-01"
-   ]
-  },
-  {
    "id": "matter-adj-1759",
    "year": "2021",
    "title": "Prioritising Mental Health Care and Support for Singaporeans",
@@ -16179,6 +16162,23 @@
    ],
    "sitting_dates": [
     "2021-10-04"
+   ]
+  },
+  {
+   "id": "oral-answer-1750",
+   "year": "2017",
+   "title": "Causes for Expressway Viaduct Collapse and Workplace Safety",
+   "group": "oral",
+   "tier": "small",
+   "source_words": 3224,
+   "prompt_chars": 19813,
+   "sentence_count": 113,
+   "chunk_count": 1,
+   "report_ids": [
+    "oral-answer-1750"
+   ],
+   "sitting_dates": [
+    "2017-08-01"
    ]
   },
   {
@@ -17151,23 +17151,6 @@
    ]
   },
   {
-   "id": "bill-293",
-   "year": "2017",
-   "title": "Stamp Duties (Amendment) Bill",
-   "group": "bill",
-   "tier": "small",
-   "source_words": 2852,
-   "prompt_chars": 18608,
-   "sentence_count": 104,
-   "chunk_count": 1,
-   "report_ids": [
-    "bill-293"
-   ],
-   "sitting_dates": [
-    "2017-03-10"
-   ]
-  },
-  {
    "id": "oral-answer-1599",
    "year": "2017",
    "title": "Enforcement of Labour Court Orders on Errant Employers",
@@ -17182,6 +17165,23 @@
    ],
    "sitting_dates": [
     "2017-02-06"
+   ]
+  },
+  {
+   "id": "bill-293",
+   "year": "2017",
+   "title": "Stamp Duties (Amendment) Bill",
+   "group": "bill",
+   "tier": "small",
+   "source_words": 2850,
+   "prompt_chars": 18608,
+   "sentence_count": 104,
+   "chunk_count": 1,
+   "report_ids": [
+    "bill-293"
+   ],
+   "sitting_dates": [
+    "2017-03-10"
    ]
   },
   {
@@ -17343,7 +17343,7 @@
    "title": "Fair Pricing for Milk Powder",
    "group": "oral",
    "tier": "small",
-   "source_words": 2766,
+   "source_words": 2762,
    "prompt_chars": 21726,
    "sentence_count": 93,
    "chunk_count": 1,
@@ -17651,7 +17651,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 2700,
-   "prompt_chars": 16886,
+   "prompt_chars": 16887,
    "sentence_count": 99,
    "chunk_count": 1,
    "report_ids": [
@@ -17957,7 +17957,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 2591,
-   "prompt_chars": 18063,
+   "prompt_chars": 18064,
    "sentence_count": 106,
    "chunk_count": 1,
    "report_ids": [
@@ -18636,9 +18636,9 @@
    "title": "Committee of Supply ‒ Head B (Attorney-General's Chambers)",
    "group": "budget",
    "tier": "small",
-   "source_words": 2409,
-   "prompt_chars": 16459,
-   "sentence_count": 106,
+   "source_words": 2407,
+   "prompt_chars": 16373,
+   "sentence_count": 105,
    "chunk_count": 1,
    "report_ids": [
     "budget-932"
@@ -19027,7 +19027,7 @@
    "title": "Impact of Reforms at Family Justice Courts",
    "group": "oral",
    "tier": "small",
-   "source_words": 2315,
+   "source_words": 2313,
    "prompt_chars": 16836,
    "sentence_count": 91,
    "chunk_count": 1,
@@ -20422,7 +20422,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 1956,
-   "prompt_chars": 12866,
+   "prompt_chars": 12867,
    "sentence_count": 76,
    "chunk_count": 1,
    "report_ids": [
@@ -20456,7 +20456,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 1952,
-   "prompt_chars": 11535,
+   "prompt_chars": 11537,
    "sentence_count": 68,
    "chunk_count": 1,
    "report_ids": [
@@ -20694,7 +20694,7 @@
    "group": "bill",
    "tier": "small",
    "source_words": 1915,
-   "prompt_chars": 14059,
+   "prompt_chars": 14061,
    "sentence_count": 74,
    "chunk_count": 1,
    "report_ids": [
@@ -20762,7 +20762,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 1911,
-   "prompt_chars": 12418,
+   "prompt_chars": 12419,
    "sentence_count": 84,
    "chunk_count": 1,
    "report_ids": [
@@ -21170,7 +21170,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 1847,
-   "prompt_chars": 15493,
+   "prompt_chars": 15496,
    "sentence_count": 71,
    "chunk_count": 1,
    "report_ids": [
@@ -22462,7 +22462,7 @@
    "group": "bill",
    "tier": "small",
    "source_words": 1662,
-   "prompt_chars": 11434,
+   "prompt_chars": 11437,
    "sentence_count": 58,
    "chunk_count": 1,
    "report_ids": [
@@ -22820,7 +22820,7 @@
    "title": "Violations of Environmental Public Health Act by Food Courts",
    "group": "oral",
    "tier": "small",
-   "source_words": 1615,
+   "source_words": 1613,
    "prompt_chars": 10007,
    "sentence_count": 47,
    "chunk_count": 1,
@@ -23263,7 +23263,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 1553,
-   "prompt_chars": 9286,
+   "prompt_chars": 9287,
    "sentence_count": 54,
    "chunk_count": 1,
    "report_ids": [
@@ -24521,7 +24521,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 1421,
-   "prompt_chars": 9673,
+   "prompt_chars": 9675,
    "sentence_count": 54,
    "chunk_count": 1,
    "report_ids": [
@@ -25133,7 +25133,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 1373,
-   "prompt_chars": 10738,
+   "prompt_chars": 10739,
    "sentence_count": 54,
    "chunk_count": 1,
    "report_ids": [
@@ -26317,23 +26317,6 @@
    ]
   },
   {
-   "id": "oral-answer-1610",
-   "year": "2017",
-   "title": "Fair Process for Termination Due to Poor Performance and Recourse for Employees",
-   "group": "oral",
-   "tier": "small",
-   "source_words": 1290,
-   "prompt_chars": 8129,
-   "sentence_count": 50,
-   "chunk_count": 1,
-   "report_ids": [
-    "oral-answer-1610"
-   ],
-   "sitting_dates": [
-    "2017-02-07"
-   ]
-  },
-  {
    "id": "oral-answer-2228",
    "year": "2020",
    "title": "Impact of Home-Based Learning and School Closures on Students Applying to Secondary Schools under Direct School Admission",
@@ -26416,6 +26399,23 @@
    ],
    "sitting_dates": [
     "2020-02-04"
+   ]
+  },
+  {
+   "id": "oral-answer-1610",
+   "year": "2017",
+   "title": "Fair Process for Termination Due to Poor Performance and Recourse for Employees",
+   "group": "oral",
+   "tier": "small",
+   "source_words": 1285,
+   "prompt_chars": 8034,
+   "sentence_count": 49,
+   "chunk_count": 1,
+   "report_ids": [
+    "oral-answer-1610"
+   ],
+   "sitting_dates": [
+    "2017-02-07"
    ]
   },
   {
@@ -26606,23 +26606,6 @@
    ]
   },
   {
-   "id": "oral-answer-1821",
-   "year": "2017",
-   "title": "Rates of Return for GIC and Temasek Holdings",
-   "group": "oral",
-   "tier": "small",
-   "source_words": 1273,
-   "prompt_chars": 8045,
-   "sentence_count": 37,
-   "chunk_count": 1,
-   "report_ids": [
-    "oral-answer-1821"
-   ],
-   "sitting_dates": [
-    "2017-11-07"
-   ]
-  },
-  {
    "id": "oral-answer-3402",
    "year": "2024",
    "title": "Take-Up Rate Of SkillsFuture Credit",
@@ -26705,6 +26688,23 @@
    ],
    "sitting_dates": [
     "2016-02-29"
+   ]
+  },
+  {
+   "id": "oral-answer-1821",
+   "year": "2017",
+   "title": "Rates of Return for GIC and Temasek Holdings",
+   "group": "oral",
+   "tier": "small",
+   "source_words": 1268,
+   "prompt_chars": 8194,
+   "sentence_count": 36,
+   "chunk_count": 1,
+   "report_ids": [
+    "oral-answer-1821"
+   ],
+   "sitting_dates": [
+    "2017-11-07"
    ]
   },
   {
@@ -26986,7 +26986,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 1251,
-   "prompt_chars": 7163,
+   "prompt_chars": 7166,
    "sentence_count": 46,
    "chunk_count": 1,
    "report_ids": [
@@ -27258,7 +27258,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 1231,
-   "prompt_chars": 8685,
+   "prompt_chars": 8687,
    "sentence_count": 45,
    "chunk_count": 1,
    "report_ids": [
@@ -27768,7 +27768,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 1201,
-   "prompt_chars": 10280,
+   "prompt_chars": 10283,
    "sentence_count": 49,
    "chunk_count": 1,
    "report_ids": [
@@ -28227,7 +28227,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 1170,
-   "prompt_chars": 7082,
+   "prompt_chars": 7086,
    "sentence_count": 43,
    "chunk_count": 1,
    "report_ids": [
@@ -29059,7 +29059,7 @@
    "title": "Managing Parking and Use of Bicycles from Bike-sharing Schemes",
    "group": "oral",
    "tier": "small",
-   "source_words": 1120,
+   "source_words": 1118,
    "prompt_chars": 6946,
    "sentence_count": 43,
    "chunk_count": 1,
@@ -29173,23 +29173,6 @@
    ]
   },
   {
-   "id": "oral-answer-1777",
-   "year": "2017",
-   "title": "Update on Batch 10 of Estate Upgrading Programme",
-   "group": "oral",
-   "tier": "small",
-   "source_words": 1113,
-   "prompt_chars": 7154,
-   "sentence_count": 32,
-   "chunk_count": 1,
-   "report_ids": [
-    "oral-answer-1777"
-   ],
-   "sitting_dates": [
-    "2017-10-02"
-   ]
-  },
-  {
    "id": "oral-answer-3318",
    "year": "2023",
    "title": "Impact of Financial Product Marketing Tactics on Less Financially Literate Consumers",
@@ -29213,7 +29196,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 1112,
-   "prompt_chars": 8515,
+   "prompt_chars": 8517,
    "sentence_count": 38,
    "chunk_count": 1,
    "report_ids": [
@@ -29238,6 +29221,23 @@
    ],
    "sitting_dates": [
     "2026-03-03"
+   ]
+  },
+  {
+   "id": "oral-answer-1777",
+   "year": "2017",
+   "title": "Update on Batch 10 of Estate Upgrading Programme",
+   "group": "oral",
+   "tier": "small",
+   "source_words": 1111,
+   "prompt_chars": 7154,
+   "sentence_count": 32,
+   "chunk_count": 1,
+   "report_ids": [
+    "oral-answer-1777"
+   ],
+   "sitting_dates": [
+    "2017-10-02"
    ]
   },
   {
@@ -29400,7 +29400,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 1104,
-   "prompt_chars": 6104,
+   "prompt_chars": 6105,
    "sentence_count": 36,
    "chunk_count": 1,
    "report_ids": [
@@ -29785,23 +29785,6 @@
    ]
   },
   {
-   "id": "oral-answer-1760",
-   "year": "2017",
-   "title": "Noise Disturbances from Relocation of Paya Lebar Airbase",
-   "group": "oral",
-   "tier": "small",
-   "source_words": 1081,
-   "prompt_chars": 7172,
-   "sentence_count": 40,
-   "chunk_count": 1,
-   "report_ids": [
-    "oral-answer-1760"
-   ],
-   "sitting_dates": [
-    "2017-09-11"
-   ]
-  },
-  {
    "id": "oral-answer-2831",
    "year": "2022",
    "title": "Financially-distressed Consumers Seeking Debt Management Assistance and Respite Measures for Consumers and Businesses With Short-term Liquidity Issues",
@@ -29884,6 +29867,23 @@
    ],
    "sitting_dates": [
     "2016-11-09"
+   ]
+  },
+  {
+   "id": "oral-answer-1760",
+   "year": "2017",
+   "title": "Noise Disturbances from Relocation of Paya Lebar Airbase",
+   "group": "oral",
+   "tier": "small",
+   "source_words": 1076,
+   "prompt_chars": 7004,
+   "sentence_count": 39,
+   "chunk_count": 1,
+   "report_ids": [
+    "oral-answer-1760"
+   ],
+   "sitting_dates": [
+    "2017-09-11"
    ]
   },
   {
@@ -30007,6 +30007,23 @@
    ],
    "sitting_dates": [
     "2016-01-15"
+   ]
+  },
+  {
+   "id": "budget-933",
+   "year": "2017",
+   "title": "Committee of Supply − Head E (Judicature)",
+   "group": "budget",
+   "tier": "small",
+   "source_words": 1072,
+   "prompt_chars": 6708,
+   "sentence_count": 32,
+   "chunk_count": 1,
+   "report_ids": [
+    "budget-933"
+   ],
+   "sitting_dates": [
+    "2017-03-03"
    ]
   },
   {
@@ -30211,23 +30228,6 @@
    ],
    "sitting_dates": [
     "2024-04-02"
-   ]
-  },
-  {
-   "id": "budget-933",
-   "year": "2017",
-   "title": "Committee of Supply − Head E (Judicature)",
-   "group": "budget",
-   "tier": "small",
-   "source_words": 1062,
-   "prompt_chars": 6707,
-   "sentence_count": 32,
-   "chunk_count": 1,
-   "report_ids": [
-    "budget-933"
-   ],
-   "sitting_dates": [
-    "2017-03-03"
    ]
   },
   {
@@ -31784,7 +31784,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 994,
-   "prompt_chars": 7070,
+   "prompt_chars": 7071,
    "sentence_count": 37,
    "chunk_count": 1,
    "report_ids": [
@@ -32634,7 +32634,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 964,
-   "prompt_chars": 5627,
+   "prompt_chars": 5628,
    "sentence_count": 33,
    "chunk_count": 1,
    "report_ids": [
@@ -33382,7 +33382,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 938,
-   "prompt_chars": 6349,
+   "prompt_chars": 6350,
    "sentence_count": 33,
    "chunk_count": 1,
    "report_ids": [
@@ -33937,23 +33937,6 @@
    ]
   },
   {
-   "id": "oral-answer-1775",
-   "year": "2017",
-   "title": "Protection for Self-employed Persons who Offer Delivery Services",
-   "group": "oral",
-   "tier": "small",
-   "source_words": 920,
-   "prompt_chars": 5573,
-   "sentence_count": 28,
-   "chunk_count": 1,
-   "report_ids": [
-    "oral-answer-1775"
-   ],
-   "sitting_dates": [
-    "2017-10-02"
-   ]
-  },
-  {
    "id": "oral-answer-2765",
    "year": "2022",
    "title": "Number of Community Gardens at HDB Multi-Storey Car Park Rooftops and Implication for Singapore's \"30 by 30\" Food Security Goal",
@@ -34070,6 +34053,23 @@
    ],
    "sitting_dates": [
     "2026-05-07"
+   ]
+  },
+  {
+   "id": "oral-answer-1775",
+   "year": "2017",
+   "title": "Protection for Self-employed Persons who Offer Delivery Services",
+   "group": "oral",
+   "tier": "small",
+   "source_words": 918,
+   "prompt_chars": 5573,
+   "sentence_count": 28,
+   "chunk_count": 1,
+   "report_ids": [
+    "oral-answer-1775"
+   ],
+   "sitting_dates": [
+    "2017-10-02"
    ]
   },
   {
@@ -34260,23 +34260,6 @@
    ]
   },
   {
-   "id": "oral-answer-1774",
-   "year": "2017",
-   "title": "Strengthen Recruitment and Hiring Practices",
-   "group": "oral",
-   "tier": "small",
-   "source_words": 911,
-   "prompt_chars": 6303,
-   "sentence_count": 33,
-   "chunk_count": 1,
-   "report_ids": [
-    "oral-answer-1774"
-   ],
-   "sitting_dates": [
-    "2017-10-02"
-   ]
-  },
-  {
    "id": "oral-answer-16",
    "year": "2018",
    "title": "Short- and Longer-term Impact of Cancellation of High Speed Rail Project on Singapore Government’s Revenues and Expenditures",
@@ -34342,6 +34325,23 @@
    ],
    "sitting_dates": [
     "2024-09-09"
+   ]
+  },
+  {
+   "id": "oral-answer-1774",
+   "year": "2017",
+   "title": "Strengthen Recruitment and Hiring Practices",
+   "group": "oral",
+   "tier": "small",
+   "source_words": 909,
+   "prompt_chars": 6303,
+   "sentence_count": 33,
+   "chunk_count": 1,
+   "report_ids": [
+    "oral-answer-1774"
+   ],
+   "sitting_dates": [
+    "2017-10-02"
    ]
   },
   {
@@ -34965,7 +34965,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 887,
-   "prompt_chars": 6239,
+   "prompt_chars": 6240,
    "sentence_count": 35,
    "chunk_count": 1,
    "report_ids": [
@@ -37548,23 +37548,6 @@
    ]
   },
   {
-   "id": "oral-answer-1778",
-   "year": "2017",
-   "title": "Increase in ComCare Assistance Cases",
-   "group": "oral",
-   "tier": "small",
-   "source_words": 809,
-   "prompt_chars": 4894,
-   "sentence_count": 21,
-   "chunk_count": 1,
-   "report_ids": [
-    "oral-answer-1778"
-   ],
-   "sitting_dates": [
-    "2017-10-02"
-   ]
-  },
-  {
    "id": "oral-answer-1936",
    "year": "2019",
    "title": "Findings from Trial of Using Speed-tracking Devices for Heavy Vehicles",
@@ -37664,6 +37647,23 @@
    ],
    "sitting_dates": [
     "2025-09-26"
+   ]
+  },
+  {
+   "id": "oral-answer-1778",
+   "year": "2017",
+   "title": "Increase in ComCare Assistance Cases",
+   "group": "oral",
+   "tier": "small",
+   "source_words": 807,
+   "prompt_chars": 4895,
+   "sentence_count": 21,
+   "chunk_count": 1,
+   "report_ids": [
+    "oral-answer-1778"
+   ],
+   "sitting_dates": [
+    "2017-10-02"
    ]
   },
   {
@@ -38898,7 +38898,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 771,
-   "prompt_chars": 5222,
+   "prompt_chars": 5223,
    "sentence_count": 25,
    "chunk_count": 1,
    "report_ids": [
@@ -38966,7 +38966,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 769,
-   "prompt_chars": 5471,
+   "prompt_chars": 5473,
    "sentence_count": 24,
    "chunk_count": 1,
    "report_ids": [
@@ -39646,7 +39646,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 754,
-   "prompt_chars": 6390,
+   "prompt_chars": 6391,
    "sentence_count": 28,
    "chunk_count": 1,
    "report_ids": [
@@ -39799,7 +39799,7 @@
    "group": "motion",
    "tier": "small",
    "source_words": 750,
-   "prompt_chars": 6761,
+   "prompt_chars": 6762,
    "sentence_count": 30,
    "chunk_count": 1,
    "report_ids": [
@@ -41962,7 +41962,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 700,
-   "prompt_chars": 7379,
+   "prompt_chars": 7380,
    "sentence_count": 29,
    "chunk_count": 1,
    "report_ids": [
@@ -43016,7 +43016,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 676,
-   "prompt_chars": 6745,
+   "prompt_chars": 6746,
    "sentence_count": 30,
    "chunk_count": 1,
    "report_ids": [
@@ -44342,7 +44342,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 650,
-   "prompt_chars": 5439,
+   "prompt_chars": 5440,
    "sentence_count": 25,
    "chunk_count": 1,
    "report_ids": [
@@ -45447,7 +45447,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 625,
-   "prompt_chars": 5209,
+   "prompt_chars": 5210,
    "sentence_count": 21,
    "chunk_count": 1,
    "report_ids": [
@@ -45549,7 +45549,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 623,
-   "prompt_chars": 3668,
+   "prompt_chars": 3670,
    "sentence_count": 24,
    "chunk_count": 1,
    "report_ids": [
@@ -45889,7 +45889,7 @@
    "group": "motion",
    "tier": "small",
    "source_words": 616,
-   "prompt_chars": 4142,
+   "prompt_chars": 4143,
    "sentence_count": 17,
    "chunk_count": 1,
    "report_ids": [
@@ -46433,7 +46433,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 601,
-   "prompt_chars": 3965,
+   "prompt_chars": 3969,
    "sentence_count": 17,
    "chunk_count": 1,
    "report_ids": [
@@ -47946,7 +47946,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 572,
-   "prompt_chars": 4943,
+   "prompt_chars": 4944,
    "sentence_count": 25,
    "chunk_count": 1,
    "report_ids": [
@@ -47980,7 +47980,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 571,
-   "prompt_chars": 4263,
+   "prompt_chars": 4264,
    "sentence_count": 24,
    "chunk_count": 1,
    "report_ids": [
@@ -48048,7 +48048,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 569,
-   "prompt_chars": 3618,
+   "prompt_chars": 3620,
    "sentence_count": 24,
    "chunk_count": 1,
    "report_ids": [
@@ -48456,7 +48456,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 562,
-   "prompt_chars": 4088,
+   "prompt_chars": 4091,
    "sentence_count": 23,
    "chunk_count": 1,
    "report_ids": [
@@ -49000,7 +49000,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 554,
-   "prompt_chars": 3877,
+   "prompt_chars": 3878,
    "sentence_count": 22,
    "chunk_count": 1,
    "report_ids": [
@@ -49357,7 +49357,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 549,
-   "prompt_chars": 3965,
+   "prompt_chars": 3966,
    "sentence_count": 19,
    "chunk_count": 1,
    "report_ids": [
@@ -49827,23 +49827,6 @@
    ]
   },
   {
-   "id": "oral-answer-1681",
-   "year": "2017",
-   "title": "Enforcement Actions against Illegal Subletting or Overcrowding in HDB Flats",
-   "group": "oral",
-   "tier": "small",
-   "source_words": 543,
-   "prompt_chars": 3262,
-   "sentence_count": 17,
-   "chunk_count": 1,
-   "report_ids": [
-    "oral-answer-1681"
-   ],
-   "sitting_dates": [
-    "2017-04-03"
-   ]
-  },
-  {
    "id": "oral-answer-27",
    "year": "2018",
    "title": "Industrial Fire Trends and Spot Checks to Ensure Compliance to Safety Measures",
@@ -49946,6 +49929,23 @@
    ]
   },
   {
+   "id": "oral-answer-1681",
+   "year": "2017",
+   "title": "Enforcement Actions against Illegal Subletting or Overcrowding in HDB Flats",
+   "group": "oral",
+   "tier": "small",
+   "source_words": 541,
+   "prompt_chars": 3262,
+   "sentence_count": 17,
+   "chunk_count": 1,
+   "report_ids": [
+    "oral-answer-1681"
+   ],
+   "sitting_dates": [
+    "2017-04-03"
+   ]
+  },
+  {
    "id": "oral-answer-2317",
    "year": "2020",
    "title": "Percentage of Hawker Centres and Coffeeshops Ready to Implement Gender Ratio Requirement in Public Toilets",
@@ -50020,7 +50020,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 540,
-   "prompt_chars": 4647,
+   "prompt_chars": 4648,
    "sentence_count": 24,
    "chunk_count": 1,
    "report_ids": [
@@ -50547,7 +50547,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 528,
-   "prompt_chars": 4141,
+   "prompt_chars": 4142,
    "sentence_count": 22,
    "chunk_count": 1,
    "report_ids": [
@@ -51986,23 +51986,6 @@
    ]
   },
   {
-   "id": "oral-answer-1729",
-   "year": "2017",
-   "title": "Personal or Pecuniary Interests of Ministers and Senior Officeholders",
-   "group": "oral",
-   "tier": "small",
-   "source_words": 502,
-   "prompt_chars": 3193,
-   "sentence_count": 7,
-   "chunk_count": 1,
-   "report_ids": [
-    "oral-answer-1729"
-   ],
-   "sitting_dates": [
-    "2017-07-03"
-   ]
-  },
-  {
    "id": "oral-answer-2145",
    "year": "2020",
    "title": "Efforts to Combat Spread of COVID-19 on Public Buses and Trains",
@@ -52493,6 +52476,23 @@
    ],
    "sitting_dates": [
     "2023-11-22"
+   ]
+  },
+  {
+   "id": "oral-answer-1729",
+   "year": "2017",
+   "title": "Personal or Pecuniary Interests of Ministers and Senior Officeholders",
+   "group": "oral",
+   "tier": "small",
+   "source_words": 490,
+   "prompt_chars": 2828,
+   "sentence_count": 6,
+   "chunk_count": 1,
+   "report_ids": [
+    "oral-answer-1729"
+   ],
+   "sitting_dates": [
+    "2017-07-03"
    ]
   },
   {
@@ -53420,7 +53420,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 471,
-   "prompt_chars": 3351,
+   "prompt_chars": 3352,
    "sentence_count": 12,
    "chunk_count": 1,
    "report_ids": [
@@ -54893,6 +54893,23 @@
    ]
   },
   {
+   "id": "budget-927",
+   "year": "2017",
+   "title": "Supplementary Estimates of Expenditure for the Financial Year 1 April 2016 to 31 March 2017",
+   "group": "budget",
+   "tier": "small",
+   "source_words": 447,
+   "prompt_chars": 339,
+   "sentence_count": 3,
+   "chunk_count": 1,
+   "report_ids": [
+    "budget-927"
+   ],
+   "sitting_dates": [
+    "2017-03-03"
+   ]
+  },
+  {
    "id": "oral-answer-3069",
    "year": "2023",
    "title": "Development and Launch of mRNA-based Vaccines for Cancer in Singapore",
@@ -55128,23 +55145,6 @@
    ],
    "sitting_dates": [
     "2016-09-13"
-   ]
-  },
-  {
-   "id": "budget-927",
-   "year": "2017",
-   "title": "Supplementary Estimates of Expenditure for the Financial Year 1 April 2016 to 31 March 2017",
-   "group": "budget",
-   "tier": "small",
-   "source_words": 442,
-   "prompt_chars": 339,
-   "sentence_count": 3,
-   "chunk_count": 1,
-   "report_ids": [
-    "budget-927"
-   ],
-   "sitting_dates": [
-    "2017-03-03"
    ]
   },
   {
@@ -56839,7 +56839,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 404,
-   "prompt_chars": 2795,
+   "prompt_chars": 2796,
    "sentence_count": 11,
    "chunk_count": 1,
    "report_ids": [
@@ -57013,7 +57013,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 400,
-   "prompt_chars": 3518,
+   "prompt_chars": 3519,
    "sentence_count": 16,
    "chunk_count": 1,
    "report_ids": [
@@ -57846,7 +57846,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 382,
-   "prompt_chars": 2542,
+   "prompt_chars": 2543,
    "sentence_count": 11,
    "chunk_count": 1,
    "report_ids": [
@@ -57854,23 +57854,6 @@
    ],
    "sitting_dates": [
     "2017-02-20"
-   ]
-  },
-  {
-   "id": "oral-answer-1727",
-   "year": "2017",
-   "title": "Prosecution for Hirers of Bicycles Who Damage Bicycles Illegally",
-   "group": "oral",
-   "tier": "small",
-   "source_words": 382,
-   "prompt_chars": 2895,
-   "sentence_count": 15,
-   "chunk_count": 1,
-   "report_ids": [
-    "oral-answer-1727"
-   ],
-   "sitting_dates": [
-    "2017-07-03"
    ]
   },
   {
@@ -57939,6 +57922,23 @@
    ],
    "sitting_dates": [
     "2016-04-06"
+   ]
+  },
+  {
+   "id": "oral-answer-1727",
+   "year": "2017",
+   "title": "Prosecution for Hirers of Bicycles Who Damage Bicycles Illegally",
+   "group": "oral",
+   "tier": "small",
+   "source_words": 380,
+   "prompt_chars": 2896,
+   "sentence_count": 15,
+   "chunk_count": 1,
+   "report_ids": [
+    "oral-answer-1727"
+   ],
+   "sitting_dates": [
+    "2017-07-03"
    ]
   },
   {
@@ -58543,7 +58543,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 370,
-   "prompt_chars": 3799,
+   "prompt_chars": 3800,
    "sentence_count": 12,
    "chunk_count": 1,
    "report_ids": [
@@ -59053,7 +59053,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 359,
-   "prompt_chars": 2556,
+   "prompt_chars": 2557,
    "sentence_count": 13,
    "chunk_count": 1,
    "report_ids": [
@@ -59478,8 +59478,8 @@
    "group": "oral",
    "tier": "small",
    "source_words": 349,
-   "prompt_chars": 3318,
-   "sentence_count": 13,
+   "prompt_chars": 3315,
+   "sentence_count": 12,
    "chunk_count": 1,
    "report_ids": [
     "oral-answer-1392"
@@ -59495,7 +59495,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 349,
-   "prompt_chars": 3861,
+   "prompt_chars": 3864,
    "sentence_count": 12,
    "chunk_count": 1,
    "report_ids": [
@@ -61589,7 +61589,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 294,
-   "prompt_chars": 3768,
+   "prompt_chars": 3769,
    "sentence_count": 12,
    "chunk_count": 1,
    "report_ids": [
@@ -62348,6 +62348,23 @@
    ]
   },
   {
+   "id": "budget-921",
+   "year": "2017",
+   "title": "Estimates of Expenditure for the Financial Year 1 April 2017 to 31 March 2018",
+   "group": "budget",
+   "tier": "small",
+   "source_words": 276,
+   "prompt_chars": 1608,
+   "sentence_count": 9,
+   "chunk_count": 1,
+   "report_ids": [
+    "budget-921"
+   ],
+   "sitting_dates": [
+    "2017-03-02"
+   ]
+  },
+  {
    "id": "oral-answer-3151",
    "year": "2023",
    "title": "Sociological Factors Linked to Trend of Teens Being Detained Under Internal Security Act",
@@ -62532,23 +62549,6 @@
    ],
    "sitting_dates": [
     "2024-07-02"
-   ]
-  },
-  {
-   "id": "budget-921",
-   "year": "2017",
-   "title": "Estimates of Expenditure for the Financial Year 1 April 2017 to 31 March 2018",
-   "group": "budget",
-   "tier": "small",
-   "source_words": 271,
-   "prompt_chars": 1608,
-   "sentence_count": 9,
-   "chunk_count": 1,
-   "report_ids": [
-    "budget-921"
-   ],
-   "sitting_dates": [
-    "2017-03-02"
    ]
   },
   {
@@ -63204,7 +63204,7 @@
    "group": "oral",
    "tier": "small",
    "source_words": 259,
-   "prompt_chars": 1863,
+   "prompt_chars": 1864,
    "sentence_count": 6,
    "chunk_count": 1,
    "report_ids": [
@@ -63640,23 +63640,6 @@
    ]
   },
   {
-   "id": "oral-answer-1819",
-   "year": "2017",
-   "title": "Use of Steel Supplied by Company that Falsified Data",
-   "group": "oral",
-   "tier": "small",
-   "source_words": 248,
-   "prompt_chars": 2408,
-   "sentence_count": 9,
-   "chunk_count": 1,
-   "report_ids": [
-    "oral-answer-1819"
-   ],
-   "sitting_dates": [
-    "2017-11-07"
-   ]
-  },
-  {
    "id": "oral-answer-74",
    "year": "2018",
    "title": "Apps-based Operators or Operators Offering Courier Services Using Private-hire Vehicles and Taxis",
@@ -64065,6 +64048,23 @@
    ]
   },
   {
+   "id": "motion-901",
+   "year": "2017",
+   "title": "Standing Orders Committee",
+   "group": "motion",
+   "tier": "small",
+   "source_words": 235,
+   "prompt_chars": 915,
+   "sentence_count": 6,
+   "chunk_count": 1,
+   "report_ids": [
+    "motion-901"
+   ],
+   "sitting_dates": [
+    "2017-02-20"
+   ]
+  },
+  {
    "id": "oral-answer-1743",
    "year": "2017",
    "title": "Traffic Signs Partly Covered by Trees and Shrubs",
@@ -64232,23 +64232,6 @@
    ],
    "sitting_dates": [
     "2016-04-05"
-   ]
-  },
-  {
-   "id": "motion-901",
-   "year": "2017",
-   "title": "Standing Orders Committee",
-   "group": "motion",
-   "tier": "small",
-   "source_words": 230,
-   "prompt_chars": 914,
-   "sentence_count": 6,
-   "chunk_count": 1,
-   "report_ids": [
-    "motion-901"
-   ],
-   "sitting_dates": [
-    "2017-02-20"
    ]
   },
   {
@@ -66842,7 +66825,7 @@
    "group": "budget",
    "tier": "small",
    "source_words": 156,
-   "prompt_chars": 658,
+   "prompt_chars": 653,
    "sentence_count": 5,
    "chunk_count": 1,
    "report_ids": [

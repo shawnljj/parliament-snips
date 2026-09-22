@@ -128,13 +128,58 @@ def _flag_stated_brief_counts(problems, doc, text):
 
 
 def dataset_on_disk():
+    """Dataset items per year, from the CENSUS rather than the payload directories.
+
+    The payload directories are gitignored (~270 MB, deterministically regenerated in
+    ~70s by `python3 summariser/build_dataset.py`), so on a fresh clone they are simply
+    absent. Reading them here made every year report "349 published+withheld > 0 dataset
+    items" -- 11 problems on a clean checkout, caused by the check, not by the corpus.
+
+    pipeline/dataset/index.json IS committed and holds one entry per item with its year,
+    so it is the census that survives a clone. It is what this check should have used:
+    the dirs are absent on a clone by construction, and where they ARE present they are
+    a *rebuild*, so reading them made the check's answer depend on which artifacts
+    happened to be on the box. The index is the committed statement of the same set.
+    Where a payload dir IS present it wins, so a partial run -- an --limit build, or a
+    year mid-rebuild -- cannot make the index disagree silently.
+
+    NOT "verified equal to the payload dirs". Measured three ways
+    (`r4/probe_r4a.py`): a fresh `build_dataset.py --out` produces exactly the index's
+    set (11 years, 3,910 items, per-year id sets identical), and so does this worktree.
+    But a developer checkout that has carried the dirs across runs holds 3,912, because
+    `build_dataset.py` never prunes: 2017 keeps `oral-answer-1819` and 2018 keeps
+    `president-address-14`, two derived payloads with no summary, no withheld record and
+    no index entry. The count is therefore identical for a CLONE (which is the case this
+    check runs in, and the case that was broken) and 2 higher on a long-lived checkout.
+    `oral-answer-1819` is separately filed as a defect by 442d49e's own message, so a
+    stale file here is a known symptom, not a surprise.
+    """
     out = {}
+    idx = os.path.join(ROOT, "pipeline", "dataset", "index.json")
+    if os.path.exists(idx):
+        try:
+            with open(idx, encoding="utf-8") as fh:
+                for e in (json.load(fh).get("items") or []):
+                    y = e.get("year") or (str((e.get("sitting_dates") or [""])[0])[:4])
+                    if y:
+                        out[y] = out.get(y, 0) + 1
+        except (OSError, ValueError):
+            pass
     for d in sorted(glob.glob(os.path.join(ROOT, "pipeline", "dataset", "20*"))):
-        out[os.path.basename(d)] = len(glob.glob(os.path.join(d, "*.json")))
+        if os.path.isdir(d):
+            out[os.path.basename(d)] = len(glob.glob(os.path.join(d, "*.json")))
     return out
 
 
-def withheld_by_year():
+def withheld_ids_by_year():
+    """Withheld records as {year: {id, ...}}, so a double-count can be detected.
+
+    The accounting rule below sums published + withheld against the item count, which is
+    only correct while the two sets are DISJOINT. They are not: 7 items are recorded as
+    both (2026: matter-adj-3012, motion-3008+3010, oral-answer-4055/4066/4067/4115;
+    2023: oral-answer-3339). Summing then over-states the total -- that is the real
+    surplus behind the 2026 report, and it is a data-hygiene defect, not a build one.
+    """
     out = {}
     for p in glob.glob(os.path.join(ROOT, "pipeline", "withheld", "*.json")):
         try:
@@ -144,8 +189,41 @@ def withheld_by_year():
             continue
         y = (d.get("item") or {}).get("year")
         if y:
-            out[y] = out.get(y, 0) + 1
+            out.setdefault(y, set()).add(os.path.basename(p)[:-5])
     return out
+
+
+def published_ids(year):
+    return {os.path.basename(p)[:-5]
+            for p in glob.glob(os.path.join(ROOT, "summaries", year, "*.json"))}
+
+
+def _last_commit_ts(paths):
+    """Unix time of the newest commit that touched any of `paths`, or 0.
+
+    Used for freshness instead of mtime: a checkout rewrites mtimes in path order, so
+    mtime cannot tell "written before the corpus changed" from "checked out after it".
+    Commit order can.
+    """
+    try:
+        out = subprocess.run(["git", "log", "-1", "--format=%ct", "--"] + list(paths),
+                             cwd=ROOT, capture_output=True, text=True).stdout.strip()
+        return int(out) if out.isdigit() else 0
+    except (OSError, ValueError):
+        return 0
+
+
+def corpus_dirty_paths(paths):
+    try:
+        return bool(subprocess.run(
+            ["git", "status", "--porcelain", "--"] + list(paths),
+            cwd=ROOT, capture_output=True, text=True).stdout.strip())
+    except OSError:
+        return False
+
+
+def withheld_by_year():
+    return {y: len(ids) for y, ids in withheld_ids_by_year().items()}
 
 
 def main():
@@ -189,25 +267,89 @@ def main():
                                  f"{year} has {n} briefs and NO recorded gate verdict"))
 
         # Accounting: every dataset item is published or withheld.
-        for year in sorted(set(bd) | set(dd)):
+        #
+        # The two sets must be DISJOINT for a sum to mean anything. 7 items are recorded
+        # as both published and withheld, so summing counted them twice and invented a
+        # surplus that is not there. Use the union, and report the overlap separately as
+        # the data-hygiene defect it is.
+        wh_ids = withheld_ids_by_year()
+        for year in sorted(set(bd) | set(dd) | set(wh_ids)):
             items = dd.get(year, 0)
-            accounted = bd.get(year, 0) + wh.get(year, 0)
+            pub = published_ids(year)
+            wh = wh_ids.get(year, set())
+            doubled = pub & wh
+            accounted = len(pub | wh)
             # Not every item yields a brief (some have no summarisable content), so
             # only a SURPLUS is an error.
             if accounted > items:
-                problems.append(("ACCOUNTING", "status.json",
-                                 f"{year}: {accounted} published+withheld > {items} dataset items"))
+                # A withheld record for a year that is not in the corpus at all is not
+                # an accounting surplus, it is a leftover from a reverted run -- the
+                # 2015 experiment was reverted to 2016+ (438c810). Report it as what it
+                # is so the accounting rule stays trustworthy.
+                stray = sorted(wh - set(dd))
+                if stray and accounted - len(stray) <= items:
+                    problems.append(("ORPHAN", "pipeline/withheld",
+                                     f"{year}: {len(stray)} withheld record(s) for a year "
+                                     f"with no dataset items and no briefs: {stray}"))
+                else:
+                    problems.append(("ACCOUNTING", "status.json",
+                                     f"{year}: {accounted} accounted (published|withheld) "
+                                     f"> {items} dataset items"))
+            if doubled:
+                problems.append(("DOUBLE-COUNTED", "status.json",
+                                 f"{year}: {len(doubled)} item(s) recorded as both "
+                                 f"published and withheld: {sorted(doubled)}"))
 
         # Artifact freshness vs the thing it describes.
-        st_mtime = os.path.getmtime(os.path.join(ROOT, "status.json"))
-        data_mtime = newest_mtime(["summaries", "pipeline/dataset"])
-        if data_mtime > st_mtime + 1:
-            delta = data_mtime - st_mtime
+        #
+        # This was an mtime comparison, and mtime is the wrong instrument: `git clone` and
+        # `git checkout` write every file in path order within one second, so a pristine
+        # checkout can leave status.json 1-2s "older" than summaries/2026/ with nothing
+        # drifted, while a worktree checkout can leave it 42 minutes "older". Both are
+        # false positives, and a check that cries wolf on a fresh clone is a check people
+        # learn to ignore.
+        #
+        # The real question is "was status.json written before the corpus last changed",
+        # which git answers directly: the commit that last touched one side versus the
+        # other. That is what the rule was reaching for -- the observed case was 2017
+        # being promoted 11 seconds AFTER status.json was written, i.e. two commits in
+        # the wrong order.
+        st_commit = _last_commit_ts(["status.json"])
+        corpus_commit = _last_commit_ts(["summaries", "pipeline/dataset"])
+        if st_commit and corpus_commit and corpus_commit > st_commit:
+            delta = corpus_commit - st_commit
             problems.append(("STALE", "status.json",
-                             f"older than the corpus it describes by {delta:,.0f}s "
-                             f"— recompute with tools/write_status.py"))
+                             f"last updated {delta:,.0f}s BEFORE the commit that last "
+                             f"changed the corpus it describes — recompute with "
+                             f"tools/write_status.py"))
+        # A dirty corpus is the other way this drifts: files changed but nothing
+        # committed or recomputed yet.
+        elif corpus_dirty_paths(["summaries", "pipeline/dataset"]):
+            data_mtime = newest_mtime(["summaries", "pipeline/dataset"])
+            st_mtime = os.path.getmtime(os.path.join(ROOT, "status.json"))
+            if data_mtime > st_mtime + 60:
+                problems.append(("STALE", "status.json",
+                                 f"corpus is dirty and {data_mtime - st_mtime:,.0f}s newer "
+                                 f"than status.json — recompute with "
+                                 f"tools/write_status.py"))
 
-        # Gate scope must actually cover what shipped.
+        # ARTIFACT VERSUS MUTABLE INPUT. The freshness rule above compares status.json to
+        # the corpus. This compares it to the INPUT the corpus is derived from, which is
+        # the drift that matters here and that no mtime can see: pipeline/dataset/
+        # index.json is generated from data/, it is COMMITTED, and status.json is checked
+        # against it -- so if data/ changes after both, the chain is silently broken.
+        # Measured on the real repo: index.json is 8s NEWER than the newest data/ file
+        # while status.json is 10,332s OLDER, i.e. the corpus was refreshed without
+        # recomputing either the index or the status. Reported as a note, not a problem,
+        # because the fix is a two-command rebuild rather than a defect in the corpus.
+        data_mtime = newest_mtime(["data"])
+        idx_mtime = os.path.getmtime(os.path.join(ROOT, "pipeline", "dataset", "index.json")) \
+            if os.path.exists(os.path.join(ROOT, "pipeline", "dataset", "index.json")) else 0
+        if data_mtime and idx_mtime and abs(data_mtime - idx_mtime) > 3600:
+            notes.append(
+                f"pipeline/dataset/index.json and data/ are {abs(data_mtime - idx_mtime) / 3600:.1f}h "
+                f"apart; regenerate the index (`python3 summariser/build_dataset.py`) and "
+                f"status.json (`python3 tools/write_status.py`) together after a fetch")
         gated_pass = {str(g.get("scope", "")).split("/")[-1] for g in gates
                       if g.get("result") == "PASS"}
         gated_fail = {str(g.get("scope", "")).split("/")[-1] for g in gates
@@ -215,7 +357,9 @@ def main():
         notes.append(f"gates: {len(gated_pass)} PASS, {len(gated_fail)} FAIL "
                      f"({', '.join(sorted(gated_fail)) or 'none'})")
         notes.append(f"briefs on disk: {sum(bd.values()):,} across {len(bd)} years")
-        notes.append(f"withheld records: {sum(wh.values())}")
+        n_withheld = sum(len(v) for v in wh_ids.values())
+        notes.append(f"withheld records: {n_withheld} across "
+                     f"{len(wh_ids)} year(s)")
 
     # ---------------------------------------------------------------- objectives
     obj_path = os.path.join(ROOT, "sdlc", "1-objectives.md")
