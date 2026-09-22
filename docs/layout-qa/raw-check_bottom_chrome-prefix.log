@@ -1,0 +1,132 @@
+==============================================================================
+BOTTOM CHROME: back-to-top button + resume toast vs the desktop progress bar
+page: /sittings/2026-08-04.html   widths: [390, 759, 760, 761, 1024, 1280, 1440, 1920]   chrome: Google Chrome
+==============================================================================
+
+----- 390px  (phone)
+  .totop   box={'x': 332, 'y': 840, 'right': 376, 'bottom': 884, 'w': 44, 'h': 44}
+           css={'bottom': '16px', 'bottomPx': 16, 'right': '14px', 'rightPx': 14, 'width': '44px', 'widthPx': 44, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=False box=None  css={'display': 'none', 'height': 'auto', 'heightPx': None, 'bottom': 'auto', 'bottomPx': None, 'zIndex': 'auto'}
+  .resume  present=True css={'bottom': '16px', 'bottomPx': 16, 'right': '16px', 'rightPx': 16, 'width': '358px', 'widthPx': 358, 'left': '16px', 'maxWidth': 'none', 'zIndex': '45'}
+  --chrome-h='0px'  --pbar-h=''  scrollY=5000  overflowX=False
+  phone: bar hidden; button bottom 16px, toast bottom 16px, toast right 16px
+  toast vs button: overlap 42x44px (area 1848), gap 0px; button owns 0/9 of its own samples; toast controls resume 3/3, dismiss 3/3
+  hits, toast dismissed: bare-10px->BUTTON.totop on(TOTOP)  bare-1px->BUTTON.totop on(TOTOP)  bare-3px->BUTTON.totop on(TOTOP)  bare-6px->BUTTON.totop on(TOTOP)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->DIV.resume(RESUME)  totop-1px->DIV.resume(RESUME)  totop-3px->DIV.resume(RESUME)  totop-6px->DIV.resume(RESUME)
+
+----- 759px  (phone)
+  .totop   box={'x': 701, 'y': 840, 'right': 745, 'bottom': 884, 'w': 44, 'h': 44}
+           css={'bottom': '16px', 'bottomPx': 16, 'right': '14px', 'rightPx': 14, 'width': '44px', 'widthPx': 44, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=False box=None  css={'display': 'none', 'height': 'auto', 'heightPx': None, 'bottom': 'auto', 'bottomPx': None, 'zIndex': 'auto'}
+  .resume  present=True css={'bottom': '16px', 'bottomPx': 16, 'right': '16px', 'rightPx': 16, 'width': '727px', 'widthPx': 727, 'left': '16px', 'maxWidth': 'none', 'zIndex': '45'}
+  --chrome-h='0px'  --pbar-h=''  scrollY=5000  overflowX=False
+  phone: bar hidden; button bottom 16px, toast bottom 16px, toast right 16px
+  toast vs button: overlap 42x44px (area 1848), gap 0px; button owns 0/9 of its own samples; toast controls resume 3/3, dismiss 3/3
+  hits, toast dismissed: bare-10px->BUTTON.totop on(TOTOP)  bare-1px->BUTTON.totop on(TOTOP)  bare-3px->BUTTON.totop on(TOTOP)  bare-6px->BUTTON.totop on(TOTOP)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->DIV.resume(RESUME)  totop-1px->DIV.resume(RESUME)  totop-3px->DIV.resume(RESUME)  totop-6px->DIV.resume(RESUME)
+
+----- 760px  (phone)
+  .totop   box={'x': 702, 'y': 840, 'right': 746, 'bottom': 884, 'w': 44, 'h': 44}
+           css={'bottom': '16px', 'bottomPx': 16, 'right': '14px', 'rightPx': 14, 'width': '44px', 'widthPx': 44, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=False box=None  css={'display': 'none', 'height': 'auto', 'heightPx': None, 'bottom': 'auto', 'bottomPx': None, 'zIndex': 'auto'}
+  .resume  present=True css={'bottom': '16px', 'bottomPx': 16, 'right': '16px', 'rightPx': 16, 'width': '728px', 'widthPx': 728, 'left': '16px', 'maxWidth': 'none', 'zIndex': '45'}
+  --chrome-h='0px'  --pbar-h=''  scrollY=5000  overflowX=False
+  phone: bar hidden; button bottom 16px, toast bottom 16px, toast right 16px
+  toast vs button: overlap 42x44px (area 1848), gap 0px; button owns 0/9 of its own samples; toast controls resume 3/3, dismiss 3/3
+  hits, toast dismissed: bare-10px->BUTTON.totop on(TOTOP)  bare-1px->BUTTON.totop on(TOTOP)  bare-3px->BUTTON.totop on(TOTOP)  bare-6px->BUTTON.totop on(TOTOP)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->DIV.resume(RESUME)  totop-1px->DIV.resume(RESUME)  totop-3px->DIV.resume(RESUME)  totop-6px->DIV.resume(RESUME)
+
+----- 761px  (desktop)
+  .totop   box={'x': 701, 'y': 814, 'right': 745, 'bottom': 858, 'w': 44, 'h': 44}
+           css={'bottom': '42px', 'bottomPx': 42, 'right': '16px', 'rightPx': 16, 'width': '44px', 'widthPx': 44, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=True box={'x': 0, 'y': 874, 'right': 761, 'bottom': 900, 'w': 761, 'h': 26}  css={'display': 'block', 'height': '26px', 'heightPx': 26, 'bottom': '0px', 'bottomPx': 0, 'zIndex': '44'}
+  .resume  present=True css={'bottom': '38px', 'bottomPx': 38, 'right': '16px', 'rightPx': 16, 'width': '351.25px', 'widthPx': 351.25, 'left': '393.75px', 'maxWidth': '380px', 'zIndex': '45'}
+  --chrome-h='26px'  --pbar-h='26px'  scrollY=5000  overflowX=False
+  overlap=0px  clearance(bar top - button bottom)=16px
+  toast bottom=38px overlap=0px  clearance=12px
+  toast vs button: overlap 44x44px (area 1936), gap 0px; button owns 0/9 of its own samples; toast controls resume 3/3, dismiss 3/3
+  hits, toast dismissed: bare-10px->BUTTON.totop on(TOTOP)  bare-1px->BUTTON.totop on(TOTOP)  bare-3px->BUTTON.totop on(TOTOP)  bare-6px->BUTTON.totop on(TOTOP)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->BUTTON.rno(RESUME)  totop-1px->DIV.resume(RESUME)  totop-3px->DIV.resume(RESUME)  totop-6px->DIV.resume(RESUME)
+
+----- 1024px  (desktop)
+  .totop   box={'x': 964, 'y': 814, 'right': 1008, 'bottom': 858, 'w': 44, 'h': 44}
+           css={'bottom': '42px', 'bottomPx': 42, 'right': '16px', 'rightPx': 16, 'width': '44px', 'widthPx': 44, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=True box={'x': 0, 'y': 874, 'right': 1024, 'bottom': 900, 'w': 1024, 'h': 26}  css={'display': 'block', 'height': '26px', 'heightPx': 26, 'bottom': '0px', 'bottomPx': 0, 'zIndex': '44'}
+  .resume  present=True css={'bottom': '38px', 'bottomPx': 38, 'right': '16px', 'rightPx': 16, 'width': '350.594px', 'widthPx': 350.594, 'left': '657.406px', 'maxWidth': '380px', 'zIndex': '45'}
+  --chrome-h='26px'  --pbar-h='26px'  scrollY=5000  overflowX=False
+  overlap=0px  clearance(bar top - button bottom)=16px
+  toast bottom=38px overlap=0px  clearance=12px
+  toast vs button: overlap 44x44px (area 1936), gap 0px; button owns 0/9 of its own samples; toast controls resume 3/3, dismiss 3/3
+  hits, toast dismissed: bare-10px->BUTTON.totop on(TOTOP)  bare-1px->BUTTON.totop on(TOTOP)  bare-3px->BUTTON.totop on(TOTOP)  bare-6px->BUTTON.totop on(TOTOP)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->BUTTON.rno(RESUME)  totop-1px->DIV.resume(RESUME)  totop-3px->DIV.resume(RESUME)  totop-6px->DIV.resume(RESUME)
+
+----- 1280px  (desktop)
+  .totop   box={'x': 1220, 'y': 814, 'right': 1264, 'bottom': 858, 'w': 44, 'h': 44}
+           css={'bottom': '42px', 'bottomPx': 42, 'right': '16px', 'rightPx': 16, 'width': '44px', 'widthPx': 44, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=True box={'x': 0, 'y': 874, 'right': 1280, 'bottom': 900, 'w': 1280, 'h': 26}  css={'display': 'block', 'height': '26px', 'heightPx': 26, 'bottom': '0px', 'bottomPx': 0, 'zIndex': '44'}
+  .resume  present=True css={'bottom': '38px', 'bottomPx': 38, 'right': '16px', 'rightPx': 16, 'width': '350.594px', 'widthPx': 350.594, 'left': '913.406px', 'maxWidth': '380px', 'zIndex': '45'}
+  --chrome-h='26px'  --pbar-h='26px'  scrollY=5000  overflowX=False
+  overlap=0px  clearance(bar top - button bottom)=16px
+  toast bottom=38px overlap=0px  clearance=12px
+  toast vs button: overlap 44x44px (area 1936), gap 0px; button owns 0/9 of its own samples; toast controls resume 3/3, dismiss 3/3
+  hits, toast dismissed: bare-10px->BUTTON.totop on(TOTOP)  bare-1px->BUTTON.totop on(TOTOP)  bare-3px->BUTTON.totop on(TOTOP)  bare-6px->BUTTON.totop on(TOTOP)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->BUTTON.rno(RESUME)  totop-1px->DIV.resume(RESUME)  totop-3px->DIV.resume(RESUME)  totop-6px->DIV.resume(RESUME)
+
+----- 1440px  (desktop)
+  .totop   box={'x': 1380, 'y': 814, 'right': 1424, 'bottom': 858, 'w': 44, 'h': 44}
+           css={'bottom': '42px', 'bottomPx': 42, 'right': '16px', 'rightPx': 16, 'width': '44px', 'widthPx': 44, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=True box={'x': 0, 'y': 874, 'right': 1440, 'bottom': 900, 'w': 1440, 'h': 26}  css={'display': 'block', 'height': '26px', 'heightPx': 26, 'bottom': '0px', 'bottomPx': 0, 'zIndex': '44'}
+  .resume  present=True css={'bottom': '38px', 'bottomPx': 38, 'right': '16px', 'rightPx': 16, 'width': '350.594px', 'widthPx': 350.594, 'left': '1073.41px', 'maxWidth': '380px', 'zIndex': '45'}
+  --chrome-h='26px'  --pbar-h='26px'  scrollY=5000  overflowX=False
+  overlap=0px  clearance(bar top - button bottom)=16px
+  toast bottom=38px overlap=0px  clearance=12px
+  toast vs button: overlap 44x44px (area 1936), gap 0px; button owns 0/9 of its own samples; toast controls resume 3/3, dismiss 3/3
+  hits, toast dismissed: bare-10px->BUTTON.totop on(TOTOP)  bare-1px->BUTTON.totop on(TOTOP)  bare-3px->BUTTON.totop on(TOTOP)  bare-6px->BUTTON.totop on(TOTOP)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->BUTTON.rno(RESUME)  totop-1px->DIV.resume(RESUME)  totop-3px->DIV.resume(RESUME)  totop-6px->DIV.resume(RESUME)
+
+----- 1920px  (desktop)
+  .totop   box={'x': 1860, 'y': 814, 'right': 1904, 'bottom': 858, 'w': 44, 'h': 44}
+           css={'bottom': '42px', 'bottomPx': 42, 'right': '16px', 'rightPx': 16, 'width': '44px', 'widthPx': 44, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=True box={'x': 0, 'y': 874, 'right': 1920, 'bottom': 900, 'w': 1920, 'h': 26}  css={'display': 'block', 'height': '26px', 'heightPx': 26, 'bottom': '0px', 'bottomPx': 0, 'zIndex': '44'}
+  .resume  present=True css={'bottom': '38px', 'bottomPx': 38, 'right': '16px', 'rightPx': 16, 'width': '350.594px', 'widthPx': 350.594, 'left': '1553.41px', 'maxWidth': '380px', 'zIndex': '45'}
+  --chrome-h='26px'  --pbar-h='26px'  scrollY=5000  overflowX=False
+  overlap=0px  clearance(bar top - button bottom)=16px
+  toast bottom=38px overlap=0px  clearance=12px
+  toast vs button: overlap 44x44px (area 1936), gap 0px; button owns 0/9 of its own samples; toast controls resume 3/3, dismiss 3/3
+  hits, toast dismissed: bare-10px->BUTTON.totop on(TOTOP)  bare-1px->BUTTON.totop on(TOTOP)  bare-3px->BUTTON.totop on(TOTOP)  bare-6px->BUTTON.totop on(TOTOP)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->BUTTON.rno(RESUME)  totop-1px->DIV.resume(RESUME)  totop-3px->DIV.resume(RESUME)  totop-6px->DIV.resume(RESUME)
+
+==============================================================================
+D13/D14 CHECK: 8 width(s) measured, 30 FAILURE(S)
+==============================================================================
+  FAIL 390px: phone toast right is 16px, expected 66.0px (button inset 14.0 + width 44 + gap 8.0)
+  FAIL 390px: the phone toast is back at its old 16.0px inset, which is where the button is -- this is the regression card t_91ef2ced fixed
+  FAIL 390px: the resume toast covers the button by 42x44px (1848px^2) -- the toast is z45, the button z40, so the button is unreachable while the toast is up
+  FAIL 390px: the toast is only 0px from the button, expected at least 8.0px
+  FAIL 390px: with the toast up, 9 of 9 samples INSIDE the button resolve to the toast, not the button ({'toast-dismiss': 4, 'toast': 5})
+  FAIL 759px: phone toast right is 16px, expected 66.0px (button inset 14.0 + width 44 + gap 8.0)
+  FAIL 759px: the phone toast is back at its old 16.0px inset, which is where the button is -- this is the regression card t_91ef2ced fixed
+  FAIL 759px: the resume toast covers the button by 42x44px (1848px^2) -- the toast is z45, the button z40, so the button is unreachable while the toast is up
+  FAIL 759px: the toast is only 0px from the button, expected at least 8.0px
+  FAIL 759px: with the toast up, 9 of 9 samples INSIDE the button resolve to the toast, not the button ({'toast-dismiss': 4, 'toast': 5})
+  FAIL 760px: phone toast right is 16px, expected 66.0px (button inset 14.0 + width 44 + gap 8.0)
+  FAIL 760px: the phone toast is back at its old 16.0px inset, which is where the button is -- this is the regression card t_91ef2ced fixed
+  FAIL 760px: the resume toast covers the button by 42x44px (1848px^2) -- the toast is z45, the button z40, so the button is unreachable while the toast is up
+  FAIL 760px: the toast is only 0px from the button, expected at least 8.0px
+  FAIL 760px: with the toast up, 9 of 9 samples INSIDE the button resolve to the toast, not the button ({'toast-dismiss': 4, 'toast': 5})
+  FAIL 761px: the resume toast covers the button by 44x44px (1936px^2) -- the toast is z45, the button z40, so the button is unreachable while the toast is up
+  FAIL 761px: the toast is only 0px from the button, expected at least 8.0px
+  FAIL 761px: with the toast up, 9 of 9 samples INSIDE the button resolve to the toast, not the button ({'toast-dismiss': 4, 'toast': 5})
+  FAIL 1024px: the resume toast covers the button by 44x44px (1936px^2) -- the toast is z45, the button z40, so the button is unreachable while the toast is up
+  FAIL 1024px: the toast is only 0px from the button, expected at least 8.0px
+  FAIL 1024px: with the toast up, 9 of 9 samples INSIDE the button resolve to the toast, not the button ({'toast-dismiss': 4, 'toast': 5})
+  FAIL 1280px: the resume toast covers the button by 44x44px (1936px^2) -- the toast is z45, the button z40, so the button is unreachable while the toast is up
+  FAIL 1280px: the toast is only 0px from the button, expected at least 8.0px
+  FAIL 1280px: with the toast up, 9 of 9 samples INSIDE the button resolve to the toast, not the button ({'toast-dismiss': 4, 'toast': 5})
+  FAIL 1440px: the resume toast covers the button by 44x44px (1936px^2) -- the toast is z45, the button z40, so the button is unreachable while the toast is up
+  FAIL 1440px: the toast is only 0px from the button, expected at least 8.0px
+  FAIL 1440px: with the toast up, 9 of 9 samples INSIDE the button resolve to the toast, not the button ({'toast-dismiss': 4, 'toast': 5})
+  FAIL 1920px: the resume toast covers the button by 44x44px (1936px^2) -- the toast is z45, the button z40, so the button is unreachable while the toast is up
+  FAIL 1920px: the toast is only 0px from the button, expected at least 8.0px
+  FAIL 1920px: with the toast up, 9 of 9 samples INSIDE the button resolve to the toast, not the button ({'toast-dismiss': 4, 'toast': 5})
+EXIT=1

@@ -1,0 +1,13 @@
+761px: 12502 elements; 12501 differ ONLY by --chrome-h/--pbar-h; 1 moved as expected; 0 differ in anything else
+     expected move: BUTTON.totop  701,814,44,44 -> 701,840,44,44
+1024px: 12502 elements; 12501 differ ONLY by --chrome-h/--pbar-h; 1 moved as expected; 0 differ in anything else
+     expected move: BUTTON.totop  964,814,44,44 -> 964,840,44,44
+1280px: 12502 elements; 12501 differ ONLY by --chrome-h/--pbar-h; 1 moved as expected; 0 differ in anything else
+     expected move: BUTTON.totop  1220,814,44,44 -> 1220,840,44,44
+1440px: 12502 elements; 12501 differ ONLY by --chrome-h/--pbar-h; 1 moved as expected; 0 differ in anything else
+     expected move: BUTTON.totop  1380,814,44,44 -> 1380,840,44,44
+1920px: 12502 elements; 12501 differ ONLY by --chrome-h/--pbar-h; 1 moved as expected; 0 differ in anything else
+     expected move: BUTTON.totop  1860,814,44,44 -> 1860,840,44,44
+
+RESULT: 0 differences beyond the new token(s) and the expected move(s) -- every
+        other element's computed styles and every other rect are identical.

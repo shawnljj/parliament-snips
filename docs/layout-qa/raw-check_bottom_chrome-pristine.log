@@ -1,0 +1,156 @@
+==============================================================================
+BOTTOM CHROME: back-to-top button + resume toast vs the desktop progress bar
+page: /sittings/2026-08-04.html   widths: [390, 759, 760, 761, 1024, 1280, 1440, 1920]   chrome: Google Chrome
+==============================================================================
+
+----- 390px  (phone)
+  .totop   box={'x': 332, 'y': 840, 'right': 376, 'bottom': 884, 'w': 44, 'h': 44}
+           css={'bottom': '16px', 'bottomPx': 16, 'right': '14px', 'rightPx': 14, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=False box=None  css={'display': 'none', 'height': 'auto', 'heightPx': None, 'bottom': 'auto', 'bottomPx': None, 'zIndex': 'auto'}
+  .resume  present=True css={'bottom': '16px', 'bottomPx': 16, 'zIndex': '45'}
+  --chrome-h=''  --pbar-h=''  scrollY=5000  overflowX=False
+  phone: bar hidden; button bottom 16px, toast bottom 16px -- original insets
+  PRE-EXISTING (not D13): the resume toast covers the button by 42x44px (z45 over z40) -- same on the pre-change build
+  hits, toast dismissed: bare-10px->BUTTON.totop on(TOTOP)  bare-1px->BUTTON.totop on(TOTOP)  bare-3px->BUTTON.totop on(TOTOP)  bare-6px->BUTTON.totop on(TOTOP)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->DIV.resume(RESUME)  totop-1px->DIV.resume(RESUME)  totop-3px->DIV.resume(RESUME)  totop-6px->DIV.resume(RESUME)
+
+----- 759px  (phone)
+  .totop   box={'x': 701, 'y': 840, 'right': 745, 'bottom': 884, 'w': 44, 'h': 44}
+           css={'bottom': '16px', 'bottomPx': 16, 'right': '14px', 'rightPx': 14, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=False box=None  css={'display': 'none', 'height': 'auto', 'heightPx': None, 'bottom': 'auto', 'bottomPx': None, 'zIndex': 'auto'}
+  .resume  present=True css={'bottom': '16px', 'bottomPx': 16, 'zIndex': '45'}
+  --chrome-h=''  --pbar-h=''  scrollY=5000  overflowX=False
+  phone: bar hidden; button bottom 16px, toast bottom 16px -- original insets
+  PRE-EXISTING (not D13): the resume toast covers the button by 42x44px (z45 over z40) -- same on the pre-change build
+  hits, toast dismissed: bare-10px->BUTTON.totop on(TOTOP)  bare-1px->BUTTON.totop on(TOTOP)  bare-3px->BUTTON.totop on(TOTOP)  bare-6px->BUTTON.totop on(TOTOP)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->DIV.resume(RESUME)  totop-1px->DIV.resume(RESUME)  totop-3px->DIV.resume(RESUME)  totop-6px->DIV.resume(RESUME)
+
+----- 760px  (phone)
+  .totop   box={'x': 702, 'y': 840, 'right': 746, 'bottom': 884, 'w': 44, 'h': 44}
+           css={'bottom': '16px', 'bottomPx': 16, 'right': '14px', 'rightPx': 14, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=False box=None  css={'display': 'none', 'height': 'auto', 'heightPx': None, 'bottom': 'auto', 'bottomPx': None, 'zIndex': 'auto'}
+  .resume  present=True css={'bottom': '16px', 'bottomPx': 16, 'zIndex': '45'}
+  --chrome-h=''  --pbar-h=''  scrollY=5000  overflowX=False
+  phone: bar hidden; button bottom 16px, toast bottom 16px -- original insets
+  PRE-EXISTING (not D13): the resume toast covers the button by 42x44px (z45 over z40) -- same on the pre-change build
+  hits, toast dismissed: bare-10px->BUTTON.totop on(TOTOP)  bare-1px->BUTTON.totop on(TOTOP)  bare-3px->BUTTON.totop on(TOTOP)  bare-6px->BUTTON.totop on(TOTOP)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->DIV.resume(RESUME)  totop-1px->DIV.resume(RESUME)  totop-3px->DIV.resume(RESUME)  totop-6px->DIV.resume(RESUME)
+
+----- 761px  (desktop)
+  .totop   box={'x': 701, 'y': 840, 'right': 745, 'bottom': 884, 'w': 44, 'h': 44}
+           css={'bottom': '16px', 'bottomPx': 16, 'right': '16px', 'rightPx': 16, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=True box={'x': 0, 'y': 874, 'right': 761, 'bottom': 900, 'w': 761, 'h': 26}  css={'display': 'block', 'height': '26px', 'heightPx': 26, 'bottom': '0px', 'bottomPx': 0, 'zIndex': '44'}
+  .resume  present=True css={'bottom': '38px', 'bottomPx': 38, 'zIndex': '45'}
+  --chrome-h=''  --pbar-h=''  scrollY=5000  overflowX=False
+  overlap=10px  clearance(bar top - button bottom)=-10px
+  toast bottom=38px overlap=0px  clearance=12px
+  PRE-EXISTING (not D13): the resume toast covers the button by 44x22px (z45 over z40) -- same on the pre-change build
+  hits, toast dismissed: bare-10px->SPAN.pbar-txt(PBAR)  bare-1px->SPAN.pbar-txt(PBAR)  bare-3px->SPAN.pbar-txt(PBAR)  bare-6px->SPAN.pbar-txt(PBAR)  bare-overlap-middle->SPAN.pbar-txt(PBAR)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->SPAN.pbar-txt(PBAR)  totop-1px->SPAN.pbar-txt(PBAR)  totop-3px->SPAN.pbar-txt(PBAR)  totop-6px->SPAN.pbar-txt(PBAR)  totop-overlap-middle->SPAN.pbar-txt(PBAR)
+
+----- 1024px  (desktop)
+  .totop   box={'x': 964, 'y': 840, 'right': 1008, 'bottom': 884, 'w': 44, 'h': 44}
+           css={'bottom': '16px', 'bottomPx': 16, 'right': '16px', 'rightPx': 16, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=True box={'x': 0, 'y': 874, 'right': 1024, 'bottom': 900, 'w': 1024, 'h': 26}  css={'display': 'block', 'height': '26px', 'heightPx': 26, 'bottom': '0px', 'bottomPx': 0, 'zIndex': '44'}
+  .resume  present=True css={'bottom': '38px', 'bottomPx': 38, 'zIndex': '45'}
+  --chrome-h=''  --pbar-h=''  scrollY=5000  overflowX=False
+  overlap=10px  clearance(bar top - button bottom)=-10px
+  toast bottom=38px overlap=0px  clearance=12px
+  PRE-EXISTING (not D13): the resume toast covers the button by 44x22px (z45 over z40) -- same on the pre-change build
+  hits, toast dismissed: bare-10px->SPAN.pbar-txt(PBAR)  bare-1px->SPAN.pbar-txt(PBAR)  bare-3px->SPAN.pbar-txt(PBAR)  bare-6px->SPAN.pbar-txt(PBAR)  bare-overlap-middle->SPAN.pbar-txt(PBAR)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->SPAN.pbar-txt(PBAR)  totop-1px->SPAN.pbar-txt(PBAR)  totop-3px->SPAN.pbar-txt(PBAR)  totop-6px->SPAN.pbar-txt(PBAR)  totop-overlap-middle->SPAN.pbar-txt(PBAR)
+
+----- 1280px  (desktop)
+  .totop   box={'x': 1220, 'y': 840, 'right': 1264, 'bottom': 884, 'w': 44, 'h': 44}
+           css={'bottom': '16px', 'bottomPx': 16, 'right': '16px', 'rightPx': 16, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=True box={'x': 0, 'y': 874, 'right': 1280, 'bottom': 900, 'w': 1280, 'h': 26}  css={'display': 'block', 'height': '26px', 'heightPx': 26, 'bottom': '0px', 'bottomPx': 0, 'zIndex': '44'}
+  .resume  present=True css={'bottom': '38px', 'bottomPx': 38, 'zIndex': '45'}
+  --chrome-h=''  --pbar-h=''  scrollY=5000  overflowX=False
+  overlap=10px  clearance(bar top - button bottom)=-10px
+  toast bottom=38px overlap=0px  clearance=12px
+  PRE-EXISTING (not D13): the resume toast covers the button by 44x22px (z45 over z40) -- same on the pre-change build
+  hits, toast dismissed: bare-10px->SPAN.pbar-txt(PBAR)  bare-1px->SPAN.pbar-txt(PBAR)  bare-3px->SPAN.pbar-txt(PBAR)  bare-6px->SPAN.pbar-txt(PBAR)  bare-overlap-middle->SPAN.pbar-txt(PBAR)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->SPAN.pbar-txt(PBAR)  totop-1px->SPAN.pbar-txt(PBAR)  totop-3px->SPAN.pbar-txt(PBAR)  totop-6px->SPAN.pbar-txt(PBAR)  totop-overlap-middle->SPAN.pbar-txt(PBAR)
+
+----- 1440px  (desktop)
+  .totop   box={'x': 1380, 'y': 840, 'right': 1424, 'bottom': 884, 'w': 44, 'h': 44}
+           css={'bottom': '16px', 'bottomPx': 16, 'right': '16px', 'rightPx': 16, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=True box={'x': 0, 'y': 874, 'right': 1440, 'bottom': 900, 'w': 1440, 'h': 26}  css={'display': 'block', 'height': '26px', 'heightPx': 26, 'bottom': '0px', 'bottomPx': 0, 'zIndex': '44'}
+  .resume  present=True css={'bottom': '38px', 'bottomPx': 38, 'zIndex': '45'}
+  --chrome-h=''  --pbar-h=''  scrollY=5000  overflowX=False
+  overlap=10px  clearance(bar top - button bottom)=-10px
+  toast bottom=38px overlap=0px  clearance=12px
+  PRE-EXISTING (not D13): the resume toast covers the button by 44x22px (z45 over z40) -- same on the pre-change build
+  hits, toast dismissed: bare-10px->SPAN.pbar-txt(PBAR)  bare-1px->SPAN.pbar-txt(PBAR)  bare-3px->SPAN.pbar-txt(PBAR)  bare-6px->SPAN.pbar-txt(PBAR)  bare-overlap-middle->SPAN.pbar-txt(PBAR)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->SPAN.pbar-txt(PBAR)  totop-1px->SPAN.pbar-txt(PBAR)  totop-3px->SPAN.pbar-txt(PBAR)  totop-6px->SPAN.pbar-txt(PBAR)  totop-overlap-middle->SPAN.pbar-txt(PBAR)
+
+----- 1920px  (desktop)
+  .totop   box={'x': 1860, 'y': 840, 'right': 1904, 'bottom': 884, 'w': 44, 'h': 44}
+           css={'bottom': '16px', 'bottomPx': 16, 'right': '16px', 'rightPx': 16, 'zIndex': '40', 'display': 'block', 'visibility': 'visible', 'opacity': '1'}
+  .pbar    live=True box={'x': 0, 'y': 874, 'right': 1920, 'bottom': 900, 'w': 1920, 'h': 26}  css={'display': 'block', 'height': '26px', 'heightPx': 26, 'bottom': '0px', 'bottomPx': 0, 'zIndex': '44'}
+  .resume  present=True css={'bottom': '38px', 'bottomPx': 38, 'zIndex': '45'}
+  --chrome-h=''  --pbar-h=''  scrollY=5000  overflowX=False
+  overlap=10px  clearance(bar top - button bottom)=-10px
+  toast bottom=38px overlap=0px  clearance=12px
+  PRE-EXISTING (not D13): the resume toast covers the button by 44x22px (z45 over z40) -- same on the pre-change build
+  hits, toast dismissed: bare-10px->SPAN.pbar-txt(PBAR)  bare-1px->SPAN.pbar-txt(PBAR)  bare-3px->SPAN.pbar-txt(PBAR)  bare-6px->SPAN.pbar-txt(PBAR)  bare-overlap-middle->SPAN.pbar-txt(PBAR)
+  hits, toast present:   resume-bottom->DIV.resume(RESUME)  totop-10px->SPAN.pbar-txt(PBAR)  totop-1px->SPAN.pbar-txt(PBAR)  totop-3px->SPAN.pbar-txt(PBAR)  totop-6px->SPAN.pbar-txt(PBAR)  totop-overlap-middle->SPAN.pbar-txt(PBAR)
+
+==============================================================================
+D13/D14 CHECK: 8 width(s) measured, 55 FAILURE(S)
+==============================================================================
+  FAIL 761px: button/bar overlap is 10px, expected 0
+  FAIL 761px: the button's bottom edge is 10px BELOW the bar's top edge
+  FAIL 761px: at the button's bottom edge -1px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 761px: at the button's bottom edge -3px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 761px: at the button's bottom edge -6px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 761px: at the button's bottom edge -10px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 761px: the middle of the button/bar overlap still hits SPAN.pbar-txt
+  FAIL 761px: with the toast up, the bar covers the button at -1px
+  FAIL 761px: with the toast up, the bar covers the button at -3px
+  FAIL 761px: with the toast up, the bar covers the button at -6px
+  FAIL 761px: with the toast up, the bar covers the button at -10px
+  FAIL 1024px: button/bar overlap is 10px, expected 0
+  FAIL 1024px: the button's bottom edge is 10px BELOW the bar's top edge
+  FAIL 1024px: at the button's bottom edge -1px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1024px: at the button's bottom edge -3px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1024px: at the button's bottom edge -6px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1024px: at the button's bottom edge -10px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1024px: the middle of the button/bar overlap still hits SPAN.pbar-txt
+  FAIL 1024px: with the toast up, the bar covers the button at -1px
+  FAIL 1024px: with the toast up, the bar covers the button at -3px
+  FAIL 1024px: with the toast up, the bar covers the button at -6px
+  FAIL 1024px: with the toast up, the bar covers the button at -10px
+  FAIL 1280px: button/bar overlap is 10px, expected 0
+  FAIL 1280px: the button's bottom edge is 10px BELOW the bar's top edge
+  FAIL 1280px: at the button's bottom edge -1px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1280px: at the button's bottom edge -3px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1280px: at the button's bottom edge -6px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1280px: at the button's bottom edge -10px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1280px: the middle of the button/bar overlap still hits SPAN.pbar-txt
+  FAIL 1280px: with the toast up, the bar covers the button at -1px
+  FAIL 1280px: with the toast up, the bar covers the button at -3px
+  FAIL 1280px: with the toast up, the bar covers the button at -6px
+  FAIL 1280px: with the toast up, the bar covers the button at -10px
+  FAIL 1440px: button/bar overlap is 10px, expected 0
+  FAIL 1440px: the button's bottom edge is 10px BELOW the bar's top edge
+  FAIL 1440px: at the button's bottom edge -1px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1440px: at the button's bottom edge -3px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1440px: at the button's bottom edge -6px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1440px: at the button's bottom edge -10px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1440px: the middle of the button/bar overlap still hits SPAN.pbar-txt
+  FAIL 1440px: with the toast up, the bar covers the button at -1px
+  FAIL 1440px: with the toast up, the bar covers the button at -3px
+  FAIL 1440px: with the toast up, the bar covers the button at -6px
+  FAIL 1440px: with the toast up, the bar covers the button at -10px
+  FAIL 1920px: button/bar overlap is 10px, expected 0
+  FAIL 1920px: the button's bottom edge is 10px BELOW the bar's top edge
+  FAIL 1920px: at the button's bottom edge -1px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1920px: at the button's bottom edge -3px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1920px: at the button's bottom edge -6px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1920px: at the button's bottom edge -10px the hit is SPAN.pbar-txt (bar=True), not .totop
+  FAIL 1920px: the middle of the button/bar overlap still hits SPAN.pbar-txt
+  FAIL 1920px: with the toast up, the bar covers the button at -1px
+  FAIL 1920px: with the toast up, the bar covers the button at -3px
+  FAIL 1920px: with the toast up, the bar covers the button at -6px
+  FAIL 1920px: with the toast up, the bar covers the button at -10px

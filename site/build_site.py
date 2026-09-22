@@ -3441,19 +3441,84 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   .section-rail-bubble{transition:none}
 }
 
+/* ============================================================
+   BOTTOM-PINNED CHROME, in one place.
+   Three fixed elements share the foot of the viewport: the back-to-top button
+   (.totop, z 40), the resume toast (.resume, z 45) and the desktop progress bar
+   (.pbar, z 44). --chrome-h is the height of whatever is PINNED TO THE FLOOR, and
+   the button clears it with bottom:calc(var(--chrome-h) + 16px).
+   It is 0 here because the base layer is the phone and the bar is display:none
+   there; the min-width:761px block sets it to the bar's height. That is what makes
+   the calc() self-consistent: on a phone it resolves to the plain 16px the phone
+   layout always had, and on desktop it resolves to the bar's top edge plus the
+   same 16px of air. Before this, .totop sat at a hard 16px while the bar occupied
+   the bottom 26px, so the bar's z-index 44 swallowed the lower 10px of the button
+   (audit D13). Re-measured on the pre-change build at 761/1024/1280/1440/1920:
+   overlap 10px and elementFromPoint() at the button's bottom edge returning
+   SPAN.pbar-txt at every one of them.
+   It is deliberately NOT applied to .resume, which the audit's D14 also named: at
+   761px+ the toast was already at 38px = --pbar-h + 12px and cleared the bar, and
+   at 760px and below the bar is display:none so its 16px is already correct. The
+   toast's desktop bottom is now written as that same arithmetic, so it is coupled
+   to the bar without moving a pixel.
+   Derived from --pbar-h so the height is still stated exactly once, and defined on
+   the phone (as 0) so it is never an undefined custom property: an unset var() in
+   calc() invalidates the whole declaration, which would drop `bottom` and pin the
+   button to its static position.
+
+   --totop-h and --chrome-gap are the button's SIZE and the air kept around it. They
+   exist because the toast has to be kept clear of the button horizontally (see the
+   .resume rules below) and that clearance is the button's width plus the inset plus
+   this gap. Same reason as --chrome-h: one number, stated once, so the clearance
+   cannot drift away from the thing it clears.
+   ============================================================ */
+:root{--chrome-h:0px;--totop-h:44px;--chrome-gap:8px}
+
 /* Back to top: a long page needs one, and it doubles as "you are deep in". */
-.totop{position:fixed;right:16px;bottom:16px;z-index:var(--z-totop);width:44px;height:44px;
+.totop{position:fixed;right:16px;bottom:calc(var(--chrome-h) + 16px);z-index:var(--z-totop);
+  width:var(--totop-h);height:var(--totop-h);
   border-radius:50%;border:1px solid var(--line);background:var(--card);
   color:var(--accent);font-size:17px;line-height:1;cursor:pointer;
   box-shadow:0 2px 10px rgba(20,24,29,.12);opacity:0;visibility:hidden;
   transition:opacity .2s,visibility .2s}
 .totop.on{opacity:1;visibility:visible}
 @media (prefers-reduced-motion:reduce){.totop{transition:none}}
-/* keep the rail and the back-to-top button from crowding each other */
-@media (max-width:760px){.totop{bottom:16px;right:14px}}
+/* keep the rail and the back-to-top button from crowding each other. On a phone
+   --chrome-h is 0 (the bar is display:none there, see below), so the calc above already
+   lands on this button's phone position; the rule is kept rather than deleted so the 14px
+   inset does not depend on reading the token. */
+@media (max-width:760px){.totop{bottom:calc(var(--chrome-h) + 16px);right:14px}}
 
-/* "Resume where you left off" -- offered, never forced. Auto-dismisses. */
-.resume{position:fixed;left:16px;right:16px;bottom:16px;z-index:var(--z-resume);
+/* "Resume where you left off" -- offered, never forced. Auto-dismisses.
+   THE TOAST YIELDS THE BUTTON'S CORNER. The toast is z 45 and the button z 40, so
+   wherever they meet the toast wins and the button is simply not clickable. They used
+   to meet at exactly the same corner: on a phone the toast was left:16px;right:16px,
+   so its right edge landed on the button at right:14px; on desktop it was
+   right:16px, the button's own inset exactly. Measured, the toast covered the button
+   by 42x44px on the phone and 44x44px on desktop, and every elementFromPoint() sample
+   down the button's middle resolved to the toast (or to the toast's own dismiss
+   control) -- the button was not partly covered, it was entirely gone for the 12s the
+   toast is up.
+
+   The alternative was to raise the button above the toast (z 50). Measured, that is
+   worse, not smaller: at 761 and 1024 the button then lands on the toast's own dismiss
+   control and all 3 of 3 samples on that control resolve to the button, so the toast
+   can no longer be dismissed except by waiting it out.
+
+   So the toast keeps its height, its text, its buttons and its vertical position, and
+   stops short of the button's column instead -- right = the button's inset (14px at
+   base, 16px from 761px) + the button's width + the gap. The clearance below is
+   written per breakpoint because the button's INSET is per breakpoint, but the width
+   and the gap come from the tokens above, so a bigger button makes the toast step
+   further aside instead of covering it.
+   The vertical band is left alone because moving the toast UP makes things worse, not
+   better: the section rail (z 70, above both) lives in the same right-hand band, and
+   measured at a 600px-tall viewport, lifting the toast pushes its dismiss control into
+   the rail (3 of 3 samples resolve to the rail). Staying low keeps the toast below the
+   rail, and insetting it removes the band where the two boxes met altogether -- at
+   390px the toast/rail overlap goes from 30x18.5px to 0. */
+.resume{position:fixed;left:16px;right:calc(14px + var(--totop-h) + var(--chrome-gap));
+  bottom:16px;z-index:var(--z-resume);
   display:flex;align-items:center;gap:10px;padding:12px 14px;
   background:var(--ink);color:#fff;border-radius:12px;font-size:13.5px;
   box-shadow:0 8px 26px rgba(20,24,29,.28)}
@@ -3462,7 +3527,11 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
   min-height:44px;padding:0 14px}
 .resume .rgo{background:var(--accent);color:#fff;border:0}
 .resume .rno{background:none;border:0;color:#aeb8c2;font-size:18px;padding:0 6px}
-@media (min-width:761px){.resume{left:auto;right:16px;max-width:380px}}
+/* The right INSET differs by breakpoint (the button sits at 14px on a phone and 16px on
+   desktop), so desktop restates only that part; the width and gap still come from the
+   same two tokens, so a bigger button moves the toast further aside either way. */
+@media (min-width:761px){.resume{left:auto;right:calc(16px + var(--totop-h) + var(--chrome-gap));
+  max-width:380px}}
 
 /* The section rail, on desktop: anchored to the CONTENT's right edge, not the viewport's.
    The rail used to sit at right:10px of the viewport while the content is a centred
@@ -3580,6 +3649,10 @@ footer{margin-top:40px;padding:26px 0 60px;border-top:1px solid var(--line);
    vertical space that a phone cannot spare. */
 .pbar{display:none}
 @media (min-width:761px){
+  /* The bar is the only element pinned to the floor here. --pbar-h is its height, and it is
+     stated ONCE: the bar's own box, the clearance the button computes against --chrome-h,
+     and the toast's own bottom all resolve to it, so the three cannot drift apart. */
+  :root{--pbar-h:26px;--chrome-h:var(--pbar-h)}
   .pbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:var(--z-pbar);
     height:var(--pbar-h);background:var(--ink);color:#fff;font-size:11px;
     line-height:var(--pbar-h);letter-spacing:.06em;text-transform:uppercase}

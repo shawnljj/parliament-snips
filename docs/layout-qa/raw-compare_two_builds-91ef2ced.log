@@ -1,0 +1,44 @@
+390px: 5462 elements; 5458 differ ONLY by --chrome-gap/--chrome-h/--pbar-h/--totop-h; 4 moved as expected; 0 differ in anything else
+     expected move: DIV.resume  16,816,308,68 -> 16,816,358,68
+     expected move: SPAN.  30,831.78,159.84,36.44 -> 30,840.89,209.84,18.22
+     expected move: BUTTON.rgo  199.84,828,77.64,44 -> 249.84,828,77.64,44
+     expected move: BUTTON.rno  287.48,828,22.52,44 -> 337.48,828,22.52,44
+759px: 5462 elements; 5458 differ ONLY by --chrome-gap/--chrome-h/--pbar-h/--totop-h; 4 moved as expected; 0 differ in anything else
+     expected move: DIV.resume  16,816,677,68 -> 16,816,727,68
+     expected move: SPAN.  30,840.89,528.84,18.22 -> 30,840.89,578.84,18.22
+     expected move: BUTTON.rgo  568.84,828,77.64,44 -> 618.84,828,77.64,44
+     expected move: BUTTON.rno  656.48,828,22.52,44 -> 706.48,828,22.52,44
+760px: 12506 elements; 12502 differ ONLY by --chrome-gap/--chrome-h/--pbar-h/--totop-h; 4 moved as expected; 0 differ in anything else
+     expected move: DIV.resume  16,816,678,68 -> 16,816,728,68
+     expected move: SPAN.  30,840.89,529.84,18.22 -> 30,840.89,579.84,18.22
+     expected move: BUTTON.rgo  569.84,828,77.64,44 -> 619.84,828,77.64,44
+     expected move: BUTTON.rno  657.48,828,22.52,44 -> 707.48,828,22.52,44
+761px: 12506 elements; 12502 differ ONLY by --chrome-gap/--chrome-h/--pbar-h/--totop-h; 4 moved as expected; 0 differ in anything else
+     expected move: DIV.resume  341.75,794,351.25,68 -> 393.75,794,351.25,68
+     expected move: SPAN.  355.75,818.89,203.09,18.22 -> 407.75,818.89,203.09,18.22
+     expected move: BUTTON.rgo  568.84,806,77.64,44 -> 620.84,806,77.64,44
+     expected move: BUTTON.rno  656.48,806,22.52,44 -> 708.48,806,22.52,44
+1024px: 12506 elements; 12502 differ ONLY by --chrome-gap/--chrome-h/--pbar-h/--totop-h; 4 moved as expected; 0 differ in anything else
+     expected move: DIV.resume  605.41,794,350.59,68 -> 657.41,794,350.59,68
+     expected move: SPAN.  619.41,818.89,202.44,18.22 -> 671.41,818.89,202.44,18.22
+     expected move: BUTTON.rgo  831.84,806,77.64,44 -> 883.84,806,77.64,44
+     expected move: BUTTON.rno  919.48,806,22.52,44 -> 971.48,806,22.52,44
+1280px: 12506 elements; 12502 differ ONLY by --chrome-gap/--chrome-h/--pbar-h/--totop-h; 4 moved as expected; 0 differ in anything else
+     expected move: DIV.resume  861.41,794,350.59,68 -> 913.41,794,350.59,68
+     expected move: SPAN.  875.41,818.89,202.44,18.22 -> 927.41,818.89,202.44,18.22
+     expected move: BUTTON.rgo  1087.84,806,77.64,44 -> 1139.84,806,77.64,44
+     expected move: BUTTON.rno  1175.48,806,22.52,44 -> 1227.48,806,22.52,44
+1440px: 12506 elements; 12502 differ ONLY by --chrome-gap/--chrome-h/--pbar-h/--totop-h; 4 moved as expected; 0 differ in anything else
+     expected move: DIV.resume  1021.41,794,350.59,68 -> 1073.41,794,350.59,68
+     expected move: SPAN.  1035.41,818.89,202.44,18.22 -> 1087.41,818.89,202.44,18.22
+     expected move: BUTTON.rgo  1247.84,806,77.64,44 -> 1299.84,806,77.64,44
+     expected move: BUTTON.rno  1335.48,806,22.52,44 -> 1387.48,806,22.52,44
+1920px: 12506 elements; 12502 differ ONLY by --chrome-gap/--chrome-h/--pbar-h/--totop-h; 4 moved as expected; 0 differ in anything else
+     expected move: DIV.resume  1501.41,794,350.59,68 -> 1553.41,794,350.59,68
+     expected move: SPAN.  1515.41,818.89,202.44,18.22 -> 1567.41,818.89,202.44,18.22
+     expected move: BUTTON.rgo  1727.84,806,77.64,44 -> 1779.84,806,77.64,44
+     expected move: BUTTON.rno  1815.48,806,22.52,44 -> 1867.48,806,22.52,44
+
+RESULT: 0 differences beyond the new token(s) and the expected move(s) -- every
+        other element's computed styles and every other rect are identical.
+EXIT=0

@@ -1,0 +1,6 @@
+390px: 5458 elements; 5458 differ ONLY by --chrome-h/--pbar-h; 0 moved as expected; 0 differ in anything else
+759px: 5458 elements; 5458 differ ONLY by --chrome-h/--pbar-h; 0 moved as expected; 0 differ in anything else
+760px: 12502 elements; 12502 differ ONLY by --chrome-h/--pbar-h; 0 moved as expected; 0 differ in anything else
+
+RESULT: 0 differences beyond the new token(s) and the expected move(s) -- every
+        other element's computed styles and every other rect are identical.
