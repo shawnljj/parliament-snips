@@ -1,0 +1,66 @@
+{
+ "roster_source": "cache",
+ "roster_current": 107,
+ "roster_former": 462,
+ "roster_duplicate_names": 5,
+ "roster_normalized_collisions": 0,
+ "sittings_scanned": 331,
+ "documents": 500,
+ "members": 569,
+ "doc_types": {
+  "bill": 309,
+  "motion": 191
+ },
+ "sections": {
+  "bill": 309,
+  "motion": 191
+ },
+ "division_raw_matches": {
+  "legislation": 17,
+  "debates": 1
+ },
+ "divisions_total": 4,
+ "division_documents": 4,
+ "division_outcomes_distinct": 4,
+ "division_unparsed": [],
+ "sponsors_resolved": 335,
+ "sponsors_unresolved": 4,
+ "documents_without_sponsor": 161,
+ "members_with_aliases": 198,
+ "selection": {
+  "skipped_budget": 652,
+  "skipped_tribute": 8,
+  "skipped_other": 695,
+  "section_motion": 793,
+  "section_bill": 1002,
+  "skipped_oral": 2823,
+  "skipped_written": 14578,
+  "skipped_adjournment": 130,
+  "skipped_statement": 100,
+  "skipped_petition": 5,
+  "skipped_correction": 98
+ },
+ "outputs": {
+  "reports": {
+   "path": "data/normalized/legislation.jsonl",
+   "rows": 500
+  },
+  "members": {
+   "path": "data/normalized/members.jsonl",
+   "rows": 569
+  },
+  "raw_cache": "data/raw/legislation"
+ },
+ "args": {
+  "limit": 500,
+  "since": null,
+  "out": "/Users/shawnlin/parsnips/.worktrees/t_672ece8f/data/normalized/legislation.jsonl",
+  "members_out": "/Users/shawnlin/parsnips/.worktrees/t_672ece8f/data/normalized/members.jsonl",
+  "refresh_roster": false,
+  "offline": false,
+  "outside_divisions": false,
+  "report": false,
+  "check": true,
+  "schema_check_only": false
+ }
+}
