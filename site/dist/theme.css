@@ -259,6 +259,23 @@
   .dsec::after{grid-column:2;grid-row:1;
     box-shadow:inset var(--col-rule-w) 0 0 0 var(--col-rule),
       inset calc(-1 * var(--col-rule-w)) 0 0 0 var(--col-rule)}
+  /* The clearance itself, on the items that sit ON a rule -- see --col-pad-in. Padding, not
+     margin: the sentences' 1px top hairlines run the full track width by design (.vs has
+     padding:11px 0 12px), so the rules stay the column's full measure while the TEXT and the
+     sentence id clear the vertical guide. `box-sizing:border-box` is set globally (*{...}), so
+     padding cannot push an item past its track. */
+  .vslist li.vs{padding-left:var(--col-pad-in);padding-right:var(--col-pad-in)}
+  /* The context rows, same clearance as the sentence rows above them: the two are the same
+     column, so they get the same left edge. Padding on the grid container, so its `3.6rem`
+     id track shifts with the text and the id/text gutter is unchanged. */
+  .runfull .ctx{padding-left:var(--col-pad-in);padding-right:var(--col-pad-in)}
+  /* The summary card's clearance is its own, not --col-pad-in: it is a bordered card whose
+     left edge is the accent rule, so its 3px border + 15px padding is the measure that was
+     already there (18px measured). The RIGHT side is the one that sits on a guide and had no
+     air: the card is flush with the summary column's right edge, so its text ran to the rule.
+     The card has the space for its own inset; the token is for the column, this is for the
+     box. */
+  .sumcard{padding-right:calc(15px + var(--col-pad-in))}
 }
 
 :root{
@@ -292,6 +309,31 @@
      introduced. There is one theme in this stylesheet (see the audit's note); this is the
      only token set it would have to be redefined in. */
   --col-rule:var(--line); --col-rule-w:1px;
+  /* CLEARANCE BETWEEN A GUIDE AND THE TEXT IT BOUNDS. Both columns' content used to sit
+     exactly ON the rule: measured at 1280px, `ol.vslist` resolved to x=134 right=696 and the
+     text column's guides are at 134 and 696, so every sentence row, sentence id and context
+     row was flush with the hairline -- clearance 0 on both sides. The summary card was the
+     only element with air, and it got that from its own border-left + padding (measured 18px),
+     not from anything this stylesheet stated.
+
+     Applied on the ITEMS rather than on the track. Insets are inherited, so `--col-pad-in` set
+     on .dsec would apply to `.sumcol` TOO (custom properties inherit through the DOM, not
+     through the grid), and the summary card would move a second time on top of the 18px it
+     already has -- 18 -> 33px, with no token saying so. Set on the two things that actually
+     sit on a rule, each column gets exactly one clearance and the card keeps the one it has.
+
+     What does NOT move, deliberately: `.brief-hd`, which spans the whole row, so insetting it
+     would pull the brief title off the guide while every full-bleed element between briefs --
+     `.sec-head`, `.railhead`, `.sub` -- stayed on it. The rule is: the text that is bounded by
+     a guide clears it; the headings that bound the page keep the page's left edge.
+
+     `.ctx` IS bounded by a guide and now clears it too. It used to be listed here as a
+     deliberate exception, and it was the wrong call: the faded context rows sit INSIDE the
+     same column as the sentence rows above them, so leaving them flush made one column read
+     as two different left edges -- every sentence row indented, every context row not. It is
+     a grid (`3.6rem minmax(0,1fr)`) rather than a plain block, so the clearance goes on its
+     padding and the `3.6rem` id column moves with it, keeping the id/text pairing intact. */
+  --col-pad-in:20px;
   --content-max:var(--col-wrap); --content-pad:var(--col-pad);
   /* BOTTOM-PINNED CHROME. The rail centres itself in the band between the top bar and the
      progress bar, so it needs both heights to place itself rather than a guess. */
