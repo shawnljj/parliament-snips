@@ -49,3 +49,10 @@ pipeline/para_cache/
 
 # OS
 .DS_Store
+
+# Watcher runtime state. The state file is per-machine bookkeeping (what has been
+# announced, what is in flight) and the lock is a live flock handle, so neither is
+# source. Committing them makes every run dirty the tree and, worse, made a stale
+# lock file look like a real artifact in the diff.
+tools/.watch-state.json
+tools/.watch.lock
