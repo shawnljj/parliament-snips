@@ -497,7 +497,49 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(246,247,245,.86);
 .brand span{color:var(--dim);font-weight:600}
 .crumb{font-size:12px;color:var(--dim);font-weight:600;background:var(--panel);
   border:1px solid var(--line);border-radius:999px;padding:5px 11px;white-space:nowrap;
-  max-width:46vw;overflow:hidden;text-overflow:ellipsis}
+  max-width:46vw;overflow:hidden;text-overflow:ellipsis;text-decoration:none;
+  display:inline-flex;align-items:center;min-height:32px}
+a.crumb:hover{border-color:#c9d2d8;color:var(--ink)}
+/* --- the years menu --- */
+.nav{display:flex;align-items:center;gap:8px;min-width:0}
+.ymenu{position:relative;flex:none}
+.ymenu>summary{list-style:none;cursor:pointer;font-size:12px;font-weight:650;color:var(--ink-2);
+  background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:5px 11px;display:inline-flex;align-items:center;gap:5px;min-height:32px;
+  user-select:none}
+.ymenu>summary::-webkit-details-marker{display:none}
+.ymenu>summary .chev{font-size:9px;color:var(--dim);transition:transform .18s}
+.ymenu[open]>summary{border-color:#c9d2d8}
+.ymenu[open]>summary .chev{transform:rotate(180deg)}
+/* Capped and internally scrollable: 12 anchors at 44px is 528px, which is taller than a phone
+   viewport minus the sticky bar, and a menu whose last row cannot be reached is worse than no
+   menu. 44px is the standard comfortable tap target on touch (Apple's HIG minimum); this repo
+   has no layout gate of its own that checks it, so it is a choice, stated as one. */
+.ymenu-body{position:absolute;right:0;top:calc(100% + 6px);z-index:30;min-width:186px;
+  max-height:min(60vh,420px);overflow-y:auto;-webkit-overflow-scrolling:touch;
+  background:var(--panel);border:1px solid var(--line);border-radius:14px;
+  box-shadow:0 18px 42px -22px rgba(15,20,24,.4);padding:6px}
+.ymenu-body a{display:flex;justify-content:space-between;align-items:center;gap:12px;
+  min-height:44px;padding:0 11px;border-radius:10px;font-size:14px;font-weight:620;
+  color:var(--ink);text-decoration:none}
+.ymenu-body a:hover,.ymenu-body a:focus-visible{background:var(--accent-soft)}
+.ymenu-body a .yn{font-size:11.5px;color:var(--dim);font-weight:600}
+.ymenu-body .call{border-bottom:1px solid var(--line-2);border-radius:10px 10px 0 0;
+  color:var(--accent);font-weight:680}
+/* --- the index, grouped by year --- */
+.yearhead{position:sticky;top:52px;z-index:5;display:flex;align-items:baseline;gap:9px;
+  margin:20px 0 4px;padding:7px 2px;background:rgba(246,247,245,.94);
+  backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.yearhead:first-of-type{margin-top:6px}
+.yearhead .y{font-weight:750;font-size:15px;letter-spacing:-.02em}
+.yearhead .yc{font-size:11.5px;color:var(--dim);font-weight:600}
+.yearhead .gotop{margin-left:auto;font-size:11.5px;font-weight:650;color:var(--dim);
+  text-decoration:none;display:inline-flex;align-items:center;min-height:44px;padding:0 2px}
+.yearhead .gotop:hover{color:var(--accent)}
+/* Smooth scrolling stays: arriving at a cited passage from a citation is a short hop inside a
+   sitting and easing it reads better. Year jumps are the exception and are made instant in
+   year_jump_js() -- 38,000px of animated travel is a blur, not a transition. */
+[id]{scroll-margin-top:104px}
 /* --- type scale --- */
 h1{font-size:26px;line-height:1.2;margin:20px 0 6px;letter-spacing:-.03em;font-weight:750}
 h2{font-size:17px;margin:0;letter-spacing:-.015em}
@@ -722,11 +764,8 @@ def page(title, body, crumb=''):
     return f"""<!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>{esc(title)}</title><style>{CSS}</style></head><body>
-<header class="top"><div class="wrap">
-  <a class="brand" href="/">PARSNIPS <span>reading mode</span></a>
-  <div class="crumb">{esc(crumb)}</div>
-</div></header>
+<title>{esc(title)}</title><style>{CSS}</style></head><body id="top">
+{index_header([crumb] if crumb else None)}
 <div class="wrap">{body}</div>
 <footer>Served from <code>hansard.db</code> — transcript, summaries and highlight offsets all in
 SQLite. {esc('')}</footer>
@@ -806,6 +845,68 @@ invented answer.""")
     return page(f'Ask — {q[:60]}', ''.join(body), 'Ask')
 
 
+def index_header(crumb_bits=None):
+    """The header for the reading view, with a working way to navigate the years.
+
+    WHAT WAS WRONG. There was no navigable control in the bar at all. The only element that
+    looked like one was the breadcrumb -- a plain <div> pill reading 'Index' on the index and
+    'Reading · 2026-08-05' on a sitting. Neither went anywhere, and on a sitting page the only
+    route back to the index was the wordmark, which is not where anyone looks for one. Worse,
+    the pill reads as a button, so a reader taps it and nothing happens.
+
+    THE FIX. The crumb becomes a real link back to the index, and the years become a menu. The
+    menu is a <details> element, for three reasons that are properties rather than preferences:
+    it works with JavaScript off (the published copy is static and must not depend on script
+    for its navigation), it closes on a second tap for free, and it is keyboard-operable by
+    default because the browser already implements the disclosure. A custom popover would have
+    needed script for all three.
+
+    The year list is built from the sittings themselves, never hardcoded, so a sitting that
+    arrives later appears without anyone remembering to add it.
+    """
+    return f"""<header class="top"><div class="wrap">
+  <a class="brand" href="index.html">PARSNIPS <span>reading mode</span></a>
+  <nav class="nav" aria-label="Sittings">
+    <a class="crumb" href="index.html">{esc(_crumb_text(crumb_bits))}</a>
+    {year_menu()}
+  </nav>
+</div></header>"""
+
+
+def _crumb_text(bits):
+    return ' · '.join(str(b) for b in bits if b) if bits else 'Index'
+
+
+def year_menu():
+    """The years menu. Counts come from the sittings so the menu doubles as a summary of the
+    archive's shape, and an anchor with no target year is never emitted."""
+    years = _SITTING_YEARS_CACHE.get('years')
+    if not years:
+        return ''
+    items = ''.join(
+        f'<a href="index.html#{y}" data-year="{y}">{y}<span class="yn">{n}</span></a>'
+        for y, n in years)
+    total = sum(n for _y, n in years)
+    return f"""<details class="ymenu">
+<summary aria-label="Jump to a year">Years <span class="chev">▾</span></summary>
+<div class="ymenu-body">
+  <a class="call" href="index.html">All {total} sittings</a>
+  {items}
+</div></details>"""
+
+
+_SITTING_YEARS_CACHE = {}
+
+
+def _sitting_years(db):
+    """(year, count) newest first, from the sittings themselves."""
+    if not _SITTING_YEARS_CACHE.get('years'):
+        _SITTING_YEARS_CACHE['years'] = [
+            (r['y'], r['n']) for r in db.execute(
+                "SELECT substr(date,1,4) y, COUNT(*) n FROM sitting GROUP BY 1 ORDER BY 1 DESC")]
+    return _SITTING_YEARS_CACHE['years']
+
+
 def ask_form(q='', disabled=False):
     """The ask box. `disabled=True` renders it inert, for the static export.
 
@@ -838,9 +939,30 @@ document.querySelectorAll('form.ask input').forEach(i => i.addEventListener('key
 </script>"""
 
 
+def year_jump_style():
+    """The one rule the index needs for year navigation, shared by the server renderer and the
+    static export so the two cannot disagree.
+
+    WHY A STYLE AND NOT A SCRIPT. Year jumps are the only in-page links the index has, and every
+    one of them is long: the page is ~40,000px of HTML and a jump from 2026 to 2016 crosses all
+    of it. The global scroll-behavior:smooth -- which earns its keep inside a sitting, where a
+    citation opens a passage a few screens down -- turns that jump into a 4.7-second blur through
+    the whole archive (sampled: 0, 14,606, 30,421, 35,963px before settling). So the index turns
+    smoothing off for itself.
+
+    A first attempt did this in JavaScript on click, which was wrong twice over: it only fixed
+    clicks made while already on the index, and it left the commonest route -- picking a year
+    from a sitting page, which loads index.html#2016 fresh -- still animating. A style rule
+    covers the fragment scroll on load as well as the same-page click, needs no script, and
+    therefore still works on the published copy with JavaScript disabled.
+    """
+    return '<style>html{scroll-behavior:auto}</style>'
+
+
 def render_index(db):
     rows = sitting_index(db)
     names = _sitting_names(db)
+    _sitting_years(db)          # populates the cache the header's year menu reads from
     n_sit = len(rows)
     tot_items = db.execute("SELECT COUNT(*) FROM summary_item").fetchone()[0]
     tot_sent = db.execute("SELECT COUNT(*) FROM summary_sentence").fetchone()[0]
@@ -850,6 +972,8 @@ def render_index(db):
     # sitting has highlights. Scaled against the busiest sitting so the rows rank visually, and
     # the raw sentence count stays printed -- the bar is a comparison, not a measurement.
     peak = max([(r['n_sent'] or 0) for r in rows] or [1]) or 1
+    year_counts = dict(_sitting_years(db))
+    cur_year = None
     body = [f"""<h1>Read the sittings</h1>
 <p class="sub">{tot_items:,} briefs across {n_sit} sittings, {tot_sent:,} summarised sentences —
 <b>{100*anch/tot_sent:.1f}%</b> anchored to their exact place in the transcript.</p>
@@ -860,12 +984,22 @@ def render_index(db):
     for r in rows:
         pct = 100 * (r['n_anch'] or 0) / max(1, r['n_sent'] or 1)
         fill = 100 * (r['n_sent'] or 0) / peak
+        y = r['date'][:4]
+        if y != cur_year:
+            cur_year = y
+            # A heading per year, with its own count and a way back to the top. The list is 331
+            # rows long, so the year is the unit a reader navigates by, and the menu in the
+            # header anchors straight to these.
+            body.append(f"""<h2 class="yearhead" id="{esc(y)}"><span class="y">{esc(y)}</span>
+<span class="yc">{year_counts.get(y, 0)} sittings</span>
+<a class="gotop" href="#top">All years &uarr;</a></h2>""")
         body.append(f"""<a class="row" href="/read/{esc(r['date'])}">
   <span><b class="t">{esc(names.get(r['date']) or r['date'])}</b><br><span class="n">{esc(r['date'])} ·
   {r['n_items']} briefs · {r['n_reports']} reports · {r['n_turns']} turns</span>
   <span class="bar"><i style="width:{fill:.1f}%"></i></span></span>
   <span class="n">{r['n_sent'] or 0} sent<br>{pct:.0f}% anchored</span></a>""")
     body.append("</div>")
+    body.append(year_jump_style())
     return page('PARSNIPS — read the sittings', ''.join(body), 'Index')
 
 

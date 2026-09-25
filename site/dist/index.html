@@ -44,7 +44,49 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(246,247,245,.86);
 .brand span{color:var(--dim);font-weight:600}
 .crumb{font-size:12px;color:var(--dim);font-weight:600;background:var(--panel);
   border:1px solid var(--line);border-radius:999px;padding:5px 11px;white-space:nowrap;
-  max-width:46vw;overflow:hidden;text-overflow:ellipsis}
+  max-width:46vw;overflow:hidden;text-overflow:ellipsis;text-decoration:none;
+  display:inline-flex;align-items:center;min-height:32px}
+a.crumb:hover{border-color:#c9d2d8;color:var(--ink)}
+/* --- the years menu --- */
+.nav{display:flex;align-items:center;gap:8px;min-width:0}
+.ymenu{position:relative;flex:none}
+.ymenu>summary{list-style:none;cursor:pointer;font-size:12px;font-weight:650;color:var(--ink-2);
+  background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:5px 11px;display:inline-flex;align-items:center;gap:5px;min-height:32px;
+  user-select:none}
+.ymenu>summary::-webkit-details-marker{display:none}
+.ymenu>summary .chev{font-size:9px;color:var(--dim);transition:transform .18s}
+.ymenu[open]>summary{border-color:#c9d2d8}
+.ymenu[open]>summary .chev{transform:rotate(180deg)}
+/* Capped and internally scrollable: 12 anchors at 44px is 528px, which is taller than a phone
+   viewport minus the sticky bar, and a menu whose last row cannot be reached is worse than no
+   menu. 44px is the standard comfortable tap target on touch (Apple's HIG minimum); this repo
+   has no layout gate of its own that checks it, so it is a choice, stated as one. */
+.ymenu-body{position:absolute;right:0;top:calc(100% + 6px);z-index:30;min-width:186px;
+  max-height:min(60vh,420px);overflow-y:auto;-webkit-overflow-scrolling:touch;
+  background:var(--panel);border:1px solid var(--line);border-radius:14px;
+  box-shadow:0 18px 42px -22px rgba(15,20,24,.4);padding:6px}
+.ymenu-body a{display:flex;justify-content:space-between;align-items:center;gap:12px;
+  min-height:44px;padding:0 11px;border-radius:10px;font-size:14px;font-weight:620;
+  color:var(--ink);text-decoration:none}
+.ymenu-body a:hover,.ymenu-body a:focus-visible{background:var(--accent-soft)}
+.ymenu-body a .yn{font-size:11.5px;color:var(--dim);font-weight:600}
+.ymenu-body .call{border-bottom:1px solid var(--line-2);border-radius:10px 10px 0 0;
+  color:var(--accent);font-weight:680}
+/* --- the index, grouped by year --- */
+.yearhead{position:sticky;top:52px;z-index:5;display:flex;align-items:baseline;gap:9px;
+  margin:20px 0 4px;padding:7px 2px;background:rgba(246,247,245,.94);
+  backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.yearhead:first-of-type{margin-top:6px}
+.yearhead .y{font-weight:750;font-size:15px;letter-spacing:-.02em}
+.yearhead .yc{font-size:11.5px;color:var(--dim);font-weight:600}
+.yearhead .gotop{margin-left:auto;font-size:11.5px;font-weight:650;color:var(--dim);
+  text-decoration:none;display:inline-flex;align-items:center;min-height:44px;padding:0 2px}
+.yearhead .gotop:hover{color:var(--accent)}
+/* Smooth scrolling stays: arriving at a cited passage from a citation is a short hop inside a
+   sitting and easing it reads better. Year jumps are the exception and are made instant in
+   year_jump_js() -- 38,000px of animated travel is a blur, not a transition. */
+[id]{scroll-margin-top:104px}
 /* --- type scale --- */
 h1{font-size:26px;line-height:1.2;margin:20px 0 6px;letter-spacing:-.03em;font-weight:750}
 h2{font-size:17px;margin:0;letter-spacing:-.015em}
@@ -258,10 +300,18 @@ footer code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11
   *{transition:none!important;animation:none!important}
   html{scroll-behavior:auto}
 }
-</style></head><body>
+</style></head><body id="top">
 <header class="top"><div class="wrap">
   <a class="brand" href="index.html">PARSNIPS <span>reading mode</span></a>
-  <div class="crumb">Index</div>
+  <nav class="nav" aria-label="Sittings">
+    <a class="crumb" href="index.html">Index</a>
+    <details class="ymenu">
+<summary aria-label="Jump to a year">Years <span class="chev">▾</span></summary>
+<div class="ymenu-body">
+  <a class="call" href="index.html">All 331 sittings</a>
+  <a href="index.html#2026" data-year="2026">2026<span class="yn">23</span></a><a href="index.html#2025" data-year="2025">2025<span class="yn">26</span></a><a href="index.html#2024" data-year="2024">2024<span class="yn">30</span></a><a href="index.html#2023" data-year="2023">2023<span class="yn">39</span></a><a href="index.html#2022" data-year="2022">2022<span class="yn">35</span></a><a href="index.html#2021" data-year="2021">2021<span class="yn">30</span></a><a href="index.html#2020" data-year="2020">2020<span class="yn">34</span></a><a href="index.html#2019" data-year="2019">2019<span class="yn">28</span></a><a href="index.html#2018" data-year="2018">2018<span class="yn">32</span></a><a href="index.html#2017" data-year="2017">2017<span class="yn">25</span></a><a href="index.html#2016" data-year="2016">2016<span class="yn">29</span></a>
+</div></details>
+  </nav>
 </div></header>
 <div class="wrap"><h1>Read the sittings</h1>
 <p class="sub">Every sitting of the Singapore Parliament, <b>331</b> of them, each named
@@ -271,7 +321,9 @@ rest is the record itself.</p>
 <input name="q" value="" placeholder="Ask the Hansard a question…"
   aria-label="Ask a question" autocomplete="off" disabled aria-disabled="true" tabindex="-1">
 <button type="submit" disabled aria-disabled="true" tabindex="-1">Ask</button><span class="askoff" role="note">Ask-mode runs locally: answering needs the full Hansard database and a model behind it, which a published static copy cannot run.</span></form>
-<div class="grid"><a class="row" href="2026-08-05.html">
+<div class="grid"><h2 class="yearhead" id="2026"><span class="y">2026</span>
+<span class="yc">23 sittings</span>
+<a class="gotop" href="#top">All years &uarr;</a></h2><a class="row" href="2026-08-05.html">
   <span><b class="t">An Economy of the Future that Works for All</b><br><span class="n">2026-08-05 ·
   558 turns · 759,977 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-08-04.html">
@@ -340,7 +392,9 @@ rest is the record itself.</p>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-01-12.html">
   <span><b class="t">Health Information Bill</b><br><span class="n">2026-01-12 ·
   421 turns · 572,183 characters</span></span>
-  <span class="n">read &rsaquo;</span></a><a class="row" href="2025-11-06.html">
+  <span class="n">read &rsaquo;</span></a><h2 class="yearhead" id="2025"><span class="y">2025</span>
+<span class="yc">26 sittings</span>
+<a class="gotop" href="#top">All years &uarr;</a></h2><a class="row" href="2025-11-06.html">
   <span><b class="t">Finance (Income Taxes) Bill</b><br><span class="n">2025-11-06 ·
   369 turns · 343,445 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-11-05.html">
@@ -418,7 +472,9 @@ rest is the record itself.</p>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-01-07.html">
   <span><b class="t">Workplace Fairness Bill</b><br><span class="n">2025-01-07 ·
   478 turns · 734,142 characters</span></span>
-  <span class="n">read &rsaquo;</span></a><a class="row" href="2024-11-13.html">
+  <span class="n">read &rsaquo;</span></a><h2 class="yearhead" id="2024"><span class="y">2024</span>
+<span class="yc">30 sittings</span>
+<a class="gotop" href="#top">All years &uarr;</a></h2><a class="row" href="2024-11-13.html">
   <span><b class="t">Hawker Culture</b><br><span class="n">2024-11-13 ·
   319 turns · 617,659 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-11-12.html">
@@ -508,7 +564,9 @@ rest is the record itself.</p>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-01-09.html">
   <span><b class="t">Significant Investments Review Bill</b><br><span class="n">2024-01-09 ·
   384 turns · 413,685 characters</span></span>
-  <span class="n">read &rsaquo;</span></a><a class="row" href="2023-11-22.html">
+  <span class="n">read &rsaquo;</span></a><h2 class="yearhead" id="2023"><span class="y">2023</span>
+<span class="yc">39 sittings</span>
+<a class="gotop" href="#top">All years &uarr;</a></h2><a class="row" href="2023-11-22.html">
   <span><b class="t">Constitution of the Republic of Singapore (Amendment No 3) Bill</b><br><span class="n">2023-11-22 ·
   320 turns · 335,150 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-11-07.html">
@@ -625,7 +683,9 @@ rest is the record itself.</p>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-01-09.html">
   <span><b class="t">Insolvency, Restructuring and Dissolution (Amendment) Bill</b><br><span class="n">2023-01-09 ·
   396 turns · 435,279 characters</span></span>
-  <span class="n">read &rsaquo;</span></a><a class="row" href="2022-11-30.html">
+  <span class="n">read &rsaquo;</span></a><h2 class="yearhead" id="2022"><span class="y">2022</span>
+<span class="yc">35 sittings</span>
+<a class="gotop" href="#top">All years &uarr;</a></h2><a class="row" href="2022-11-30.html">
   <span><b class="t">Electric Vehicles Charging Bill</b><br><span class="n">2022-11-30 ·
   234 turns · 294,763 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-11-29.html">
@@ -730,7 +790,9 @@ rest is the record itself.</p>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-01-10.html">
   <span><b class="t">Women&#x27;s Charter (Amendment) Bill</b><br><span class="n">2022-01-10 ·
   423 turns · 562,185 characters</span></span>
-  <span class="n">read &rsaquo;</span></a><a class="row" href="2021-11-03.html">
+  <span class="n">read &rsaquo;</span></a><h2 class="yearhead" id="2021"><span class="y">2021</span>
+<span class="yc">30 sittings</span>
+<a class="gotop" href="#top">All years &uarr;</a></h2><a class="row" href="2021-11-03.html">
   <span><b class="t">Constitution of the Republic of Singapore (Amendment) Bill</b><br><span class="n">2021-11-03 ·
   237 turns · 294,682 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-11-02.html">
@@ -820,7 +882,9 @@ rest is the record itself.</p>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-01-04.html">
   <span><b class="t">Payment Services (Amendment) Bill</b><br><span class="n">2021-01-04 ·
   393 turns · 480,394 characters</span></span>
-  <span class="n">read &rsaquo;</span></a><a class="row" href="2020-11-04.html">
+  <span class="n">read &rsaquo;</span></a><h2 class="yearhead" id="2020"><span class="y">2020</span>
+<span class="yc">34 sittings</span>
+<a class="gotop" href="#top">All years &uarr;</a></h2><a class="row" href="2020-11-04.html">
   <span><b class="t">Singapore&#x27;s Justice System</b><br><span class="n">2020-11-04 ·
   317 turns · 553,639 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-11-03.html">
@@ -922,7 +986,9 @@ rest is the record itself.</p>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-01-06.html">
   <span><b class="t">Healthcare Services Bill</b><br><span class="n">2020-01-06 ·
   321 turns · 467,735 characters</span></span>
-  <span class="n">read &rsaquo;</span></a><a class="row" href="2019-11-05.html">
+  <span class="n">read &rsaquo;</span></a><h2 class="yearhead" id="2019"><span class="y">2019</span>
+<span class="yc">28 sittings</span>
+<a class="gotop" href="#top">All years &uarr;</a></h2><a class="row" href="2019-11-05.html">
   <span><b class="t">Governance of Aljunied-Hougang Town Council</b><br><span class="n">2019-11-05 ·
   323 turns · 412,744 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-11-04.html">
@@ -1006,7 +1072,9 @@ rest is the record itself.</p>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-01-14.html">
   <span><b class="t">Payment Services Bill</b><br><span class="n">2019-01-14 ·
   349 turns · 492,934 characters</span></span>
-  <span class="n">read &rsaquo;</span></a><a class="row" href="2018-11-20.html">
+  <span class="n">read &rsaquo;</span></a><h2 class="yearhead" id="2018"><span class="y">2018</span>
+<span class="yc">32 sittings</span>
+<a class="gotop" href="#top">All years &uarr;</a></h2><a class="row" href="2018-11-20.html">
   <span><b class="t">Employment (Amendment) Bill</b><br><span class="n">2018-11-20 ·
   244 turns · 424,032 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-11-19.html">
@@ -1102,7 +1170,9 @@ rest is the record itself.</p>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-01-08.html">
   <span><b class="t">Public Sector (Governance) Bill</b><br><span class="n">2018-01-08 ·
   346 turns · 499,052 characters</span></span>
-  <span class="n">read &rsaquo;</span></a><a class="row" href="2017-11-07.html">
+  <span class="n">read &rsaquo;</span></a><h2 class="yearhead" id="2017"><span class="y">2017</span>
+<span class="yc">25 sittings</span>
+<a class="gotop" href="#top">All years &uarr;</a></h2><a class="row" href="2017-11-07.html">
   <span><b class="t">Tobacco (Control of Advertisements and Sale) (Amendment) Bill</b><br><span class="n">2017-11-07 ·
   207 turns · 419,542 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-11-06.html">
@@ -1177,7 +1247,9 @@ rest is the record itself.</p>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-01-09.html">
   <span><b class="t">Retirement and Re-employment (Amendment) Bill</b><br><span class="n">2017-01-09 ·
   270 turns · 439,303 characters</span></span>
-  <span class="n">read &rsaquo;</span></a><a class="row" href="2016-11-10.html">
+  <span class="n">read &rsaquo;</span></a><h2 class="yearhead" id="2016"><span class="y">2016</span>
+<span class="yc">29 sittings</span>
+<a class="gotop" href="#top">All years &uarr;</a></h2><a class="row" href="2016-11-10.html">
   <span><b class="t">Child Development Co-Savings (Amendment No 2) Bill</b><br><span class="n">2016-11-10 ·
   101 turns · 265,467 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-11-09.html">
@@ -1264,7 +1336,7 @@ rest is the record itself.</p>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-01-15.html">
   <span><b class="t">President&#x27;s Address</b><br><span class="n">2016-01-15 ·
   33 turns · 158,613 characters</span></span>
-  <span class="n">read &rsaquo;</span></a></div></div>
+  <span class="n">read &rsaquo;</span></a></div><style>html{scroll-behavior:auto}</style></div>
 <footer>Served from <code>hansard.db</code> — transcript, summaries and highlight offsets all in
 SQLite. </footer>
 </body></html>

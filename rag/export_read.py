@@ -61,10 +61,10 @@ def export_page(html):
     # and the drift would be invisible, since the box looks the same either way.
     n = len(ASK_FORM_RE.findall(html))
     html = ASK_FORM_RE.sub(lambda _m: RS.ask_form(disabled=True), html)
-    # The brand is <a href="/">, which on a static host resolves against the DOMAIN root, not the
-    # export -- the same root-absolute class of bug that made the previous deploy 404 its own pages.
-    # Pages sit beside the index, so the index is 'index.html'.
-    html = html.replace('<a class="brand" href="/">', '<a class="brand" href="index.html">')
+    # Nothing here rewrites the brand or the crumb any more: page() now builds them with
+    # relative targets ('index.html'), so the export has no absolute link to fix. Kept as a
+    # comment rather than a no-op line, because the absence is the point -- the export only
+    # touches what genuinely cannot survive static hosting.
     # one shared stylesheet instead of 331 copies of the same 15KB
     html = html.replace('<style>' + RS.CSS + '</style>', '<link rel="stylesheet" href="read.css">')
     return html, n
@@ -87,6 +87,15 @@ def main():
     if args.limit:
         dates = dates[:args.limit]
     print(f"exporting {len(dates)} sittings to {out}")
+
+    # The year menu is in EVERY page's header, the index included, so the cache has to be filled
+    # before the first sitting is rendered -- an empty menu on 331 pages would be a navigation
+    # control that goes nowhere, which is the defect this change exists to remove.
+    RS._SITTING_YEARS_CACHE['years'] = [
+        (r['y'], r['n']) for r in db.execute(
+            "SELECT substr(date,1,4) y, COUNT(*) n FROM sitting GROUP BY 1 ORDER BY 1 DESC")]
+    print(f"  years menu: {len(RS._SITTING_YEARS_CACHE['years'])} years "
+          f"{RS._SITTING_YEARS_CACHE['years'][0][0]}..{RS._SITTING_YEARS_CACHE['years'][-1][0]}")
 
     # shared assets, written once
     open(os.path.join(out, 'read.css'), 'w').write(RS.CSS)
@@ -120,7 +129,15 @@ def main():
     # It does use render's own sitting_names(), so the name on the index and the name in the
     # page header can never disagree -- a second naming rule here would drift exactly the way a
     # second renderer would.
+    # The header now carries a working crumb and a years menu, and the menu anchors to year
+    # headings on the index. Both are relative ('index.html#2016'), so export_page() already
+    # leaves them alone -- unlike the old root-absolute brand link, which was rewritten here.
     names = RS.sitting_names(db)
+    years = [(r['y'], r['n']) for r in db.execute(
+        "SELECT substr(date,1,4) y, COUNT(*) n FROM sitting GROUP BY 1 ORDER BY 1 DESC")]
+    RS._SITTING_YEARS_CACHE['years'] = years
+    year_counts = dict(years)
+    cur_year = None
     rows = []
     for r in db.execute("""
             SELECT g.date, COUNT(t.key) AS n_turns, COALESCE(SUM(LENGTH(t.text)), 0) AS n_chars
@@ -138,11 +155,20 @@ rest is the record itself.</p>
 {RS.ask_form(disabled=True)}
 <div class="grid">"""]
     for r in rows:
+        y = r['date'][:4]
+        if y != cur_year:
+            cur_year = y
+            body.append(f"""<h2 class="yearhead" id="{y}"><span class="y">{y}</span>
+<span class="yc">{year_counts.get(y, 0)} sittings</span>
+<a class="gotop" href="#top">All years &uarr;</a></h2>""")
         body.append(f"""<a class="row" href="{r['date']}.html">
   <span><b class="t">{RS.esc(names.get(r['date']) or r['date'])}</b><br><span class="n">{r['date']} ·
   {r['n_turns']:,} turns · {r['n_chars']:,} characters</span></span>
   <span class="n">read &rsaquo;</span></a>""")
     body.append('</div>')
+    # The instant year jump, from the same function the server renderer uses. A separate <style>
+    # tag is safe: export_page() replaces only the main stylesheet, matched exactly.
+    body.append(RS.year_jump_style())
     if len(rows) != len(dates):
         print(f"  !! index lists {len(rows)} sittings but {len(dates)} were exported")
     idx = RS.page('PARSNIPS — read the sittings', ''.join(body), 'Index')
@@ -206,6 +232,10 @@ rest is the record itself.</p>
         problems.append(f"{len(abs_bad)} root-absolute links")
 
     # 3. EVERY INTERNAL LINK RESOLVES ON DISK. Relative or it is wrong.
+    #    The fragment is stripped before resolving, and that is not a detail: 'index.html#2026'
+    #    is a file that exists plus an anchor, and testing the whole string against the
+    #    filesystem reports a working link as broken. Measured when the years menu landed: 3,652
+    #    "broken" links, every one of them a year anchor, and the menu was fine.
     missing = []
     for f in os.listdir(out):
         if not f.endswith('.html'):
@@ -215,12 +245,49 @@ rest is the record itself.</p>
             u = m.group(1)
             if u.startswith(('http', '//', 'mailto:', 'data:')):
                 continue
-            target = os.path.normpath(os.path.join(out, u))
+            target = os.path.normpath(os.path.join(out, u.split('#', 1)[0]))
             if not os.path.exists(target):
                 missing.append((f, u))
     print(f"  broken internal links  : {len(missing)}" + (f" {missing[:3]}" if missing else "  ok"))
     if missing:
         problems.append(f"{len(missing)} broken internal links")
+
+    # 3b. THE NAVIGATION WORKS. A control in the header that goes nowhere is the defect this
+    #     change was made for, and it was invisible from the source: the crumb looked like a
+    #     button and was a <div>. So assert the three properties that make it a navigation
+    #     control rather than asserting the markup is present: every page carries the menu,
+    #     every year anchor in the menu has a matching target on the index, and the crumb is a
+    #     LINK that resolves.
+    idx = open(os.path.join(out, 'index.html'), encoding='utf-8').read()
+    targets = set(re.findall(r'<h2 class="yearhead" id="(\d{4})"', idx))
+    menu_years = set(re.findall(r'data-year="(\d{4})"', idx))
+    no_menu = [f for f in pages
+               if '<details class="ymenu">' not in open(os.path.join(out, f), encoding='utf-8').read()]
+    dead = sorted(menu_years - targets)
+    no_crumb_link = [f for f in pages
+                     if 'class="crumb" href=' not in open(os.path.join(out, f), encoding='utf-8').read()]
+    print(f"  year headings on index : {len(targets)} {sorted(targets)}")
+    print(f"  year menu entries      : {len(menu_years)}, dead anchors: {len(dead)}"
+          + (f" {dead}" if dead else "  ok"))
+    print(f"  pages with the menu    : {len(pages) - len(no_menu):,}/{len(pages):,}"
+          + (f"  MISSING {no_menu[:3]}" if no_menu else "  ok"))
+    print(f"  crumb is a link        : {len(pages) - len(no_crumb_link):,}/{len(pages):,}"
+          + (f"  MISSING {no_crumb_link[:3]}" if no_crumb_link else "  ok"))
+    # 3c. the index must turn off smooth scrolling for its year jumps. Without it every jump
+    #     animates the full height of the archive (~4.7s measured) and the menu feels broken even
+    #     though every anchor resolves.
+    has_jump = 'scroll-behavior:auto' in idx
+    print(f"  instant year jump      : {'ok' if has_jump else 'MISSING'}")
+    if not has_jump:
+        problems.append("index is missing the instant year-jump rule")
+    if dead:
+        problems.append(f"{len(dead)} year menu anchor(s) with no target: {dead}")
+    if no_menu:
+        problems.append(f"{len(no_menu)} page(s) missing the years menu")
+    if no_crumb_link:
+        problems.append(f"{len(no_crumb_link)} page(s) whose crumb is not a link")
+    if menu_years != set(y for y, _n in years):
+        problems.append("year menu entries do not match the years in the corpus")
 
     # 4. THE FOLD IS INTACT -- the same promise the render gate makes, asserted on the EXPORTED
     #    bytes rather than on a freshly rendered string.
