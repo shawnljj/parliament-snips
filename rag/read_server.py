@@ -67,6 +67,55 @@ def plain_run(text):
     return {'kind': 'plain', 'text': text, 'sentences': n, 'collapsible': n > 0}
 
 
+def sitting_names(db):
+    """The name of each sitting: the title of its main topic.
+
+    A sitting is identified by its date, and a date tells a reader nothing about what
+    happened that day. The name is the day's own title as the record carries it, chosen
+    rather than invented: the topic that drew the most words, measured by airtime the same
+    way every other airtime figure in this product is.
+
+    WHY AIRTIME AND NOT TURN COUNT. The two disagree on 87 of the 331 sittings, and airtime
+    is the one that reads correctly on the days a reader is most likely to look for: ranked
+    by turns, Budget days come out as whichever short Bill happened to be debated, and
+    ranked by words they come out as 'Debate on Annual Budget Statement'. Same for the
+    ceremonial sittings, which are 'President's Address'.
+
+    Written answers and 'other' are excluded from the choice: 141 of 2026-08-05's 165
+    records are written answers, none of them the day's main topic, and on some days they
+    would otherwise win on volume alone.
+
+    The title is used exactly as Hansard records it. It is not truncated, because cutting a
+    title at a character count severs compound nouns ('Singapore's Semi-conductor').
+    """
+    words = dict(db.execute("SELECT report_id, SUM(words) FROM turn GROUP BY report_id"))
+    agg = {}
+    for r in db.execute("SELECT date, title, report_id, group_name FROM report"):
+        d, title = r['date'], (r['title'] or '').strip()
+        if not title:
+            continue
+        bucket = agg.setdefault(d, {'main': {}, 'all': {}})
+        hits = words.get(r['report_id'], 0)
+        bucket['all'][title] = bucket['all'].get(title, 0) + hits
+        # written answers and 'other' are held in reserve rather than dropped, so a sitting
+        # whose only records are written answers still gets a name instead of None.
+        if r['group_name'] not in ('written', 'other'):
+            bucket['main'][title] = bucket['main'].get(title, 0) + hits
+    return {d: max((b['main'] or b['all']).items(), key=lambda kv: (kv[1], kv[0]))[0]
+            for d, b in agg.items()}
+
+
+_SITTING_NAMES_CACHE = {}
+
+
+def _sitting_names(db):
+    """Process-level cache around sitting_names(). A build renders 331 pages against one
+    process, and the name lookup is a full pass over `report`."""
+    if not _SITTING_NAMES_CACHE:
+        _SITTING_NAMES_CACHE.update(sitting_names(db))
+    return _SITTING_NAMES_CACHE
+
+
 def sitting_index(db):
     """Index of sittings with per-sitting counts.
 
@@ -596,6 +645,15 @@ h3{letter-spacing:-.015em}
 .row:active{transform:translateY(1px)}
 .row .n{font-size:12px;color:var(--dim);text-align:right;white-space:nowrap;line-height:1.45}
 .row b{font-weight:680;font-size:15.5px;letter-spacing:-.015em}
+/* The sitting's name is the row's headline: a reader scanning the index is looking for a
+   topic, and the date below is how they confirm they found the right one. */
+.row .t{display:block}
+/* The sitting's name, set as a subtitle under the date heading. A name is longer than a date
+   and some are long titles, so it is set as text rather than as a heading: normal weight,
+   its own colour, and allowed to run to a comfortable measure and wrap. Truncating it was
+   rejected -- a title cut at a character count severs compound nouns. */
+.sithead .sitname{margin-top:1px;font-weight:650;font-size:15.5px;color:var(--ink-2);
+  letter-spacing:-.011em;line-height:1.4;max-width:64ch}
 .row.rel{text-decoration:none}
 .empty{color:var(--dim);font-size:14px;padding:14px 0}
 /* --- ask / answer view --- */
@@ -749,6 +807,7 @@ document.querySelectorAll('form.ask input').forEach(i => i.addEventListener('key
 
 def render_index(db):
     rows = sitting_index(db)
+    names = _sitting_names(db)
     n_sit = len(rows)
     tot_items = db.execute("SELECT COUNT(*) FROM summary_item").fetchone()[0]
     tot_sent = db.execute("SELECT COUNT(*) FROM summary_sentence").fetchone()[0]
@@ -769,8 +828,8 @@ def render_index(db):
         pct = 100 * (r['n_anch'] or 0) / max(1, r['n_sent'] or 1)
         fill = 100 * (r['n_sent'] or 0) / peak
         body.append(f"""<a class="row" href="/read/{esc(r['date'])}">
-  <span><b>{esc(r['date'])}</b><br><span class="n">{r['n_items']} briefs ·
-  {r['n_reports']} reports · {r['n_turns']} turns</span>
+  <span><b class="t">{esc(names.get(r['date']) or r['date'])}</b><br><span class="n">{esc(r['date'])} ·
+  {r['n_items']} briefs · {r['n_reports']} reports · {r['n_turns']} turns</span>
   <span class="bar"><i style="width:{fill:.1f}%"></i></span></span>
   <span class="n">{r['n_sent'] or 0} sent<br>{pct:.0f}% anchored</span></a>""")
     body.append("</div>")
@@ -794,6 +853,9 @@ def render_read(db, date, focus_turn=None, focus_span=None):
     passage the reader came for.
     """
     turns, items, reports = full_transcript(db, date)
+    # The sitting's name: the title of its main topic. Cached at process level -- the 331
+    # names are one pass over `report` and every sitting page asks for exactly one of them.
+    name = _sitting_names(db).get(date) or date
     if not turns:
         return None
     focus_key = None
@@ -931,6 +993,7 @@ def render_read(db, date, focus_turn=None, focus_span=None):
     # and the counts used to be four loose paragraphs separated by hairlines, so the eye had no
     # place to land and the ask box looked like a fifth paragraph. One panel, then the topics.
     body = [f"""<div class="sithead"><h1>{esc(date)}</h1>
+<p class="sub sitname">{esc(name)}</p>
 <p class="sub">Full transcript, {n_chars:,} characters — every turn. Summarised passages are
 <mark>highlighted</mark>: {n_marks:,} passages across {n_marked_turns} turns, covering
 {100*n_marked_chars/max(1,n_chars):.1f}% of what was said. The rest is the record itself.</p>
@@ -1014,7 +1077,7 @@ document.querySelectorAll('article.turn.flash').forEach(a => {
   a.scrollIntoView({block: 'center'});
 });
 </script>""")
-    return page(f'{date} — PARSNIPS reading', ''.join(body), f'Reading · {date}')
+    return page(f'{name} — {date} — PARSNIPS reading', ''.join(body), f'Reading · {date}')
 
 
 # ---------------------------------------------------------------- server

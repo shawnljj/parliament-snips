@@ -111,6 +111,10 @@ def main():
 
     # the index: one row per sitting, newest first. Built here rather than reused from
     # render_index() because that one lists briefs/turns for the SQL views, not sittings to read.
+    # It does use render's own sitting_names(), so the name on the index and the name in the
+    # page header can never disagree -- a second naming rule here would drift exactly the way a
+    # second renderer would.
+    names = RS.sitting_names(db)
     rows = []
     for r in db.execute("""
             SELECT g.date, COUNT(t.key) AS n_turns, COALESCE(SUM(LENGTH(t.text)), 0) AS n_chars
@@ -118,16 +122,20 @@ def main():
             LEFT JOIN turn t ON t.date = g.date
             GROUP BY g.date ORDER BY g.date DESC"""):
         rows.append(r)
+    unnamed = [r['date'] for r in rows if not names.get(r['date'])]
+    if unnamed:
+        print(f"  !! {len(unnamed)} sitting(s) have no name: {unnamed[:3]}")
     body = [f"""<h1>Read the sittings</h1>
-<p class="sub">Every sitting of the Singapore Parliament, <b>{len(rows)}</b> of them, with the
-summarised passages highlighted in place. The rest is the record itself.</p>
+<p class="sub">Every sitting of the Singapore Parliament, <b>{len(rows)}</b> of them, each named
+by the topic it spent the most words on, with the summarised passages highlighted in place. The
+rest is the record itself.</p>
 <p class="sub staticnote"><b>Reading only.</b> The ask box needs the full Hansard database and a
 model behind it, so it runs locally rather than here.</p>
 <div class="grid">"""]
     for r in rows:
         body.append(f"""<a class="row" href="{r['date']}.html">
-  <span><b>{r['date']}</b><br><span class="n">{r['n_turns']:,} turns ·
-  {r['n_chars']:,} characters</span></span>
+  <span><b class="t">{RS.esc(names.get(r['date']) or r['date'])}</b><br><span class="n">{r['date']} ·
+  {r['n_turns']:,} turns · {r['n_chars']:,} characters</span></span>
   <span class="n">read &rsaquo;</span></a>""")
     body.append('</div>')
     if len(rows) != len(dates):

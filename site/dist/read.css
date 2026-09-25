@@ -189,6 +189,15 @@ h3{letter-spacing:-.015em}
 .row:active{transform:translateY(1px)}
 .row .n{font-size:12px;color:var(--dim);text-align:right;white-space:nowrap;line-height:1.45}
 .row b{font-weight:680;font-size:15.5px;letter-spacing:-.015em}
+/* The sitting's name is the row's headline: a reader scanning the index is looking for a
+   topic, and the date below is how they confirm they found the right one. */
+.row .t{display:block}
+/* The sitting's name, set as a subtitle under the date heading. A name is longer than a date
+   and some are long titles, so it is set as text rather than as a heading: normal weight,
+   its own colour, and allowed to run to a comfortable measure and wrap. Truncating it was
+   rejected -- a title cut at a character count severs compound nouns. */
+.sithead .sitname{margin-top:1px;font-weight:650;font-size:15.5px;color:var(--ink-2);
+  letter-spacing:-.011em;line-height:1.4;max-width:64ch}
 .row.rel{text-decoration:none}
 .empty{color:var(--dim);font-size:14px;padding:14px 0}
 /* --- ask / answer view --- */

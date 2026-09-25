@@ -192,6 +192,15 @@ h3{letter-spacing:-.015em}
 .row:active{transform:translateY(1px)}
 .row .n{font-size:12px;color:var(--dim);text-align:right;white-space:nowrap;line-height:1.45}
 .row b{font-weight:680;font-size:15.5px;letter-spacing:-.015em}
+/* The sitting's name is the row's headline: a reader scanning the index is looking for a
+   topic, and the date below is how they confirm they found the right one. */
+.row .t{display:block}
+/* The sitting's name, set as a subtitle under the date heading. A name is longer than a date
+   and some are long titles, so it is set as text rather than as a heading: normal weight,
+   its own colour, and allowed to run to a comfortable measure and wrap. Truncating it was
+   rejected -- a title cut at a character count severs compound nouns. */
+.sithead .sitname{margin-top:1px;font-weight:650;font-size:15.5px;color:var(--ink-2);
+  letter-spacing:-.011em;line-height:1.4;max-width:64ch}
 .row.rel{text-decoration:none}
 .empty{color:var(--dim);font-size:14px;padding:14px 0}
 /* --- ask / answer view --- */
@@ -239,1003 +248,1004 @@ footer code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11
   <div class="crumb">Index</div>
 </div></header>
 <div class="wrap"><h1>Read the sittings</h1>
-<p class="sub">Every sitting of the Singapore Parliament, <b>331</b> of them, with the
-summarised passages highlighted in place. The rest is the record itself.</p>
+<p class="sub">Every sitting of the Singapore Parliament, <b>331</b> of them, each named
+by the topic it spent the most words on, with the summarised passages highlighted in place. The
+rest is the record itself.</p>
 <p class="sub staticnote"><b>Reading only.</b> The ask box needs the full Hansard database and a
 model behind it, so it runs locally rather than here.</p>
 <div class="grid"><a class="row" href="2026-08-05.html">
-  <span><b>2026-08-05</b><br><span class="n">558 turns ·
-  759,977 characters</span></span>
+  <span><b class="t">An Economy of the Future that Works for All</b><br><span class="n">2026-08-05 ·
+  558 turns · 759,977 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-08-04.html">
-  <span><b>2026-08-04</b><br><span class="n">562 turns ·
-  642,164 characters</span></span>
+  <span><b class="t">Road Traffic (Miscellaneous Amendments) Bill</b><br><span class="n">2026-08-04 ·
+  562 turns · 642,164 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-07-07.html">
-  <span><b>2026-07-07</b><br><span class="n">502 turns ·
-  659,954 characters</span></span>
+  <span><b class="t">Reinforcing Singapore&#x27;s Position as a Global Transport Hub</b><br><span class="n">2026-07-07 ·
+  502 turns · 659,954 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-05-07.html">
-  <span><b>2026-05-07</b><br><span class="n">431 turns ·
-  548,156 characters</span></span>
+  <span><b class="t">Securities and Futures (Amendment) Bill</b><br><span class="n">2026-05-07 ·
+  431 turns · 548,156 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-05-06.html">
-  <span><b>2026-05-06</b><br><span class="n">465 turns ·
-  679,035 characters</span></span>
+  <span><b class="t">An Artificial Intelligence (AI) Transition with No Jobless Growth</b><br><span class="n">2026-05-06 ·
+  465 turns · 679,035 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-05-05.html">
-  <span><b>2026-05-05</b><br><span class="n">506 turns ·
-  710,798 characters</span></span>
+  <span><b class="t">Skills and Workforce Development Agency Bill</b><br><span class="n">2026-05-05 ·
+  506 turns · 710,798 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-04-08.html">
-  <span><b>2026-04-08</b><br><span class="n">469 turns ·
-  450,995 characters</span></span>
+  <span><b class="t">Veterinary Practice Bill</b><br><span class="n">2026-04-08 ·
+  469 turns · 450,995 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-04-07.html">
-  <span><b>2026-04-07</b><br><span class="n">653 turns ·
-  523,934 characters</span></span>
+  <span><b class="t">Impact of the Middle East Situation on Singapore</b><br><span class="n">2026-04-07 ·
+  653 turns · 523,934 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-03-06.html">
-  <span><b>2026-03-06</b><br><span class="n">230 turns ·
-  367,460 characters</span></span>
+  <span><b class="t">Coastal Protection and Other Amendments Bill</b><br><span class="n">2026-03-06 ·
+  230 turns · 367,460 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-03-05.html">
-  <span><b>2026-03-05</b><br><span class="n">324 turns ·
-  529,165 characters</span></span>
+  <span><b class="t">Committee of Supply – Head X (Ministry of Culture, Community and Youth)</b><br><span class="n">2026-03-05 ·
+  324 turns · 529,165 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-03-04.html">
-  <span><b>2026-03-04</b><br><span class="n">399 turns ·
-  597,037 characters</span></span>
+  <span><b class="t">Committee of Supply – Head T (Ministry of National Development)</b><br><span class="n">2026-03-04 ·
+  399 turns · 597,037 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-03-03.html">
-  <span><b>2026-03-03</b><br><span class="n">334 turns ·
-  625,043 characters</span></span>
+  <span><b class="t">Committee of Supply – Head S (Ministry of Manpower)</b><br><span class="n">2026-03-03 ·
+  334 turns · 625,043 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-03-02.html">
-  <span><b>2026-03-02</b><br><span class="n">350 turns ·
-  577,610 characters</span></span>
+  <span><b class="t">Committee of Supply – Head V (Ministry of Trade and Industry)</b><br><span class="n">2026-03-02 ·
+  350 turns · 577,610 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-02-27.html">
-  <span><b>2026-02-27</b><br><span class="n">356 turns ·
-  583,494 characters</span></span>
+  <span><b class="t">Committee of Supply – Head N (Ministry of Foreign Affairs)</b><br><span class="n">2026-02-27 ·
+  356 turns · 583,494 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-02-26.html">
-  <span><b>2026-02-26</b><br><span class="n">358 turns ·
-  564,847 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2026-02-26 ·
+  358 turns · 564,847 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-02-25.html">
-  <span><b>2026-02-25</b><br><span class="n">239 turns ·
-  472,497 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2026-02-25 ·
+  239 turns · 472,497 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-02-24.html">
-  <span><b>2026-02-24</b><br><span class="n">242 turns ·
-  454,725 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2026-02-24 ·
+  242 turns · 454,725 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-02-12.html">
-  <span><b>2026-02-12</b><br><span class="n">250 turns ·
-  263,314 characters</span></span>
+  <span><b class="t">Annual Budget Statement</b><br><span class="n">2026-02-12 ·
+  250 turns · 263,314 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-02-04.html">
-  <span><b>2026-02-04</b><br><span class="n">397 turns ·
-  391,291 characters</span></span>
+  <span><b class="t">Land Transport and Related Matters Bill</b><br><span class="n">2026-02-04 ·
+  397 turns · 391,291 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-02-03.html">
-  <span><b>2026-02-03</b><br><span class="n">505 turns ·
-  521,119 characters</span></span>
+  <span><b class="t">Land Transport and Related Matters Bill</b><br><span class="n">2026-02-03 ·
+  505 turns · 521,119 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-01-14.html">
-  <span><b>2026-01-14</b><br><span class="n">438 turns ·
-  412,412 characters</span></span>
+  <span><b class="t">Expression of Regret at the Conduct of Mr Pritam Singh and Consideration of His Suitability to Continue as the Leader of The Opposition</b><br><span class="n">2026-01-14 ·
+  438 turns · 412,412 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-01-13.html">
-  <span><b>2026-01-13</b><br><span class="n">393 turns ·
-  478,928 characters</span></span>
+  <span><b class="t">National Council of Social Service (Amendment) Bill</b><br><span class="n">2026-01-13 ·
+  393 turns · 478,928 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2026-01-12.html">
-  <span><b>2026-01-12</b><br><span class="n">421 turns ·
-  572,183 characters</span></span>
+  <span><b class="t">Health Information Bill</b><br><span class="n">2026-01-12 ·
+  421 turns · 572,183 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-11-06.html">
-  <span><b>2025-11-06</b><br><span class="n">369 turns ·
-  343,445 characters</span></span>
+  <span><b class="t">Finance (Income Taxes) Bill</b><br><span class="n">2025-11-06 ·
+  369 turns · 343,445 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-11-05.html">
-  <span><b>2025-11-05</b><br><span class="n">541 turns ·
-  678,697 characters</span></span>
+  <span><b class="t">Online Safety (Relief and Accountability) Bill</b><br><span class="n">2025-11-05 ·
+  541 turns · 678,697 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-11-04.html">
-  <span><b>2025-11-04</b><br><span class="n">533 turns ·
-  633,540 characters</span></span>
+  <span><b class="t">Workplace Fairness (Dispute Resolution) Bill</b><br><span class="n">2025-11-04 ·
+  533 turns · 633,540 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-10-15.html">
-  <span><b>2025-10-15</b><br><span class="n">448 turns ·
-  497,564 characters</span></span>
+  <span><b class="t">CareShield Life and Long-Term Care (Amendment) Bill</b><br><span class="n">2025-10-15 ·
+  448 turns · 497,564 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-10-14.html">
-  <span><b>2025-10-14</b><br><span class="n">519 turns ·
-  518,018 characters</span></span>
+  <span><b class="t">Race and Religion</b><br><span class="n">2025-10-14 ·
+  519 turns · 518,018 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-09-26.html">
-  <span><b>2025-09-26</b><br><span class="n">346 turns ·
-  434,532 characters</span></span>
+  <span><b class="t">President&#x27;s Speech</b><br><span class="n">2025-09-26 ·
+  346 turns · 434,532 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-09-25.html">
-  <span><b>2025-09-25</b><br><span class="n">409 turns ·
-  537,580 characters</span></span>
+  <span><b class="t">President&#x27;s Speech</b><br><span class="n">2025-09-25 ·
+  409 turns · 537,580 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-09-24.html">
-  <span><b>2025-09-24</b><br><span class="n">413 turns ·
-  499,328 characters</span></span>
+  <span><b class="t">President&#x27;s Speech</b><br><span class="n">2025-09-24 ·
+  413 turns · 499,328 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-09-23.html">
-  <span><b>2025-09-23</b><br><span class="n">409 turns ·
-  558,537 characters</span></span>
+  <span><b class="t">President&#x27;s Speech</b><br><span class="n">2025-09-23 ·
+  409 turns · 558,537 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-09-22.html">
-  <span><b>2025-09-22</b><br><span class="n">495 turns ·
-  556,739 characters</span></span>
+  <span><b class="t">President&#x27;s Speech</b><br><span class="n">2025-09-22 ·
+  495 turns · 556,739 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-09-05.html">
-  <span><b>2025-09-05</b><br><span class="n">36 turns ·
-  124,766 characters</span></span>
+  <span><b class="t">Election of Speaker</b><br><span class="n">2025-09-05 ·
+  36 turns · 124,766 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-04-08.html">
-  <span><b>2025-04-08</b><br><span class="n">432 turns ·
-  484,243 characters</span></span>
+  <span><b class="t">Social Residential Homes Bill</b><br><span class="n">2025-04-08 ·
+  432 turns · 484,243 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-03-10.html">
-  <span><b>2025-03-10</b><br><span class="n">240 turns ·
-  395,298 characters</span></span>
+  <span><b class="t">Committee of Supply – Head X (Ministry of Culture, Community and Youth)</b><br><span class="n">2025-03-10 ·
+  240 turns · 395,298 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-03-07.html">
-  <span><b>2025-03-07</b><br><span class="n">294 turns ·
-  495,765 characters</span></span>
+  <span><b class="t">Committee of Supply – Head O (Ministry of Health)</b><br><span class="n">2025-03-07 ·
+  294 turns · 495,765 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-03-06.html">
-  <span><b>2025-03-06</b><br><span class="n">264 turns ·
-  485,032 characters</span></span>
+  <span><b class="t">Committee of Supply – Head K (Ministry of Education)</b><br><span class="n">2025-03-06 ·
+  264 turns · 485,032 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-03-05.html">
-  <span><b>2025-03-05</b><br><span class="n">255 turns ·
-  378,630 characters</span></span>
+  <span><b class="t">Committee of Supply – Head W (Ministry of Transport)</b><br><span class="n">2025-03-05 ·
+  255 turns · 378,630 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-03-04.html">
-  <span><b>2025-03-04</b><br><span class="n">270 turns ·
-  396,287 characters</span></span>
+  <span><b class="t">Committee of Supply – Head L (Ministry of Sustainability and the Environment)</b><br><span class="n">2025-03-04 ·
+  270 turns · 396,287 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-03-03.html">
-  <span><b>2025-03-03</b><br><span class="n">293 turns ·
-  407,146 characters</span></span>
+  <span><b class="t">Committee of Supply – Head N (Ministry of Foreign Affairs)</b><br><span class="n">2025-03-03 ·
+  293 turns · 407,146 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-02-28.html">
-  <span><b>2025-02-28</b><br><span class="n">278 turns ·
-  426,775 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2025-02-28 ·
+  278 turns · 426,775 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-02-27.html">
-  <span><b>2025-02-27</b><br><span class="n">155 turns ·
-  386,083 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2025-02-27 ·
+  155 turns · 386,083 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-02-26.html">
-  <span><b>2025-02-26</b><br><span class="n">183 turns ·
-  439,241 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2025-02-26 ·
+  183 turns · 439,241 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-02-18.html">
-  <span><b>2025-02-18</b><br><span class="n">221 turns ·
-  223,301 characters</span></span>
+  <span><b class="t">Annual Budget Statement</b><br><span class="n">2025-02-18 ·
+  221 turns · 223,301 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-02-05.html">
-  <span><b>2025-02-05</b><br><span class="n">383 turns ·
-  537,131 characters</span></span>
+  <span><b class="t">Supporting Singaporeans in Starting and Raising Families</b><br><span class="n">2025-02-05 ·
+  383 turns · 537,131 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-02-04.html">
-  <span><b>2025-02-04</b><br><span class="n">388 turns ·
-  503,205 characters</span></span>
+  <span><b class="t">Maintenance of Racial Harmony Bill</b><br><span class="n">2025-02-04 ·
+  388 turns · 503,205 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-01-08.html">
-  <span><b>2025-01-08</b><br><span class="n">482 turns ·
-  631,227 characters</span></span>
+  <span><b class="t">Workplace Fairness Bill</b><br><span class="n">2025-01-08 ·
+  482 turns · 631,227 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2025-01-07.html">
-  <span><b>2025-01-07</b><br><span class="n">478 turns ·
-  734,142 characters</span></span>
+  <span><b class="t">Workplace Fairness Bill</b><br><span class="n">2025-01-07 ·
+  478 turns · 734,142 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-11-13.html">
-  <span><b>2024-11-13</b><br><span class="n">319 turns ·
-  617,659 characters</span></span>
+  <span><b class="t">Hawker Culture</b><br><span class="n">2024-11-13 ·
+  319 turns · 617,659 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-11-12.html">
-  <span><b>2024-11-12</b><br><span class="n">294 turns ·
-  517,256 characters</span></span>
+  <span><b class="t">Community Disputes Resolution (Amendment) Bill</b><br><span class="n">2024-11-12 ·
+  294 turns · 517,256 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-11-11.html">
-  <span><b>2024-11-11</b><br><span class="n">343 turns ·
-  499,709 characters</span></span>
+  <span><b class="t">MediShield Life Scheme (Amendment) Bill</b><br><span class="n">2024-11-11 ·
+  343 turns · 499,709 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-10-16.html">
-  <span><b>2024-10-16</b><br><span class="n">364 turns ·
-  497,786 characters</span></span>
+  <span><b class="t">Insurance (Amendment) Bill</b><br><span class="n">2024-10-16 ·
+  364 turns · 497,786 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-10-15.html">
-  <span><b>2024-10-15</b><br><span class="n">351 turns ·
-  434,378 characters</span></span>
+  <span><b class="t">Elections (Integrity of Online Advertising) (Amendment) Bill</b><br><span class="n">2024-10-15 ·
+  351 turns · 434,378 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-10-14.html">
-  <span><b>2024-10-14</b><br><span class="n">441 turns ·
-  447,860 characters</span></span>
+  <span><b class="t">Pre-conditional Voluntary General Offer by Allianz for Income Insurance</b><br><span class="n">2024-10-14 ·
+  441 turns · 447,860 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-09-10.html">
-  <span><b>2024-09-10</b><br><span class="n">379 turns ·
-  562,559 characters</span></span>
+  <span><b class="t">Platform Workers Bill</b><br><span class="n">2024-09-10 ·
+  379 turns · 562,559 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-09-09.html">
-  <span><b>2024-09-09</b><br><span class="n">412 turns ·
-  582,074 characters</span></span>
+  <span><b class="t">Platform Workers Bill</b><br><span class="n">2024-09-09 ·
+  412 turns · 582,074 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-08-07.html">
-  <span><b>2024-08-07</b><br><span class="n">369 turns ·
-  424,713 characters</span></span>
+  <span><b class="t">Good Samaritan Food Donation Bill</b><br><span class="n">2024-08-07 ·
+  369 turns · 424,713 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-08-06.html">
-  <span><b>2024-08-06</b><br><span class="n">380 turns ·
-  504,700 characters</span></span>
+  <span><b class="t">Anti-Money Laundering and Other Matters Bill</b><br><span class="n">2024-08-06 ·
+  380 turns · 504,700 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-07-02.html">
-  <span><b>2024-07-02</b><br><span class="n">506 turns ·
-  528,794 characters</span></span>
+  <span><b class="t">Corporate Service Providers Bill</b><br><span class="n">2024-07-02 ·
+  506 turns · 528,794 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-05-08.html">
-  <span><b>2024-05-08</b><br><span class="n">340 turns ·
-  354,973 characters</span></span>
+  <span><b class="t">Transport Sector (Critical Firms) Bill</b><br><span class="n">2024-05-08 ·
+  340 turns · 354,973 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-05-07.html">
-  <span><b>2024-05-07</b><br><span class="n">413 turns ·
-  421,480 characters</span></span>
+  <span><b class="t">Cybersecurity (Amendment) Bill</b><br><span class="n">2024-05-07 ·
+  413 turns · 421,480 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-04-03.html">
-  <span><b>2024-04-03</b><br><span class="n">253 turns ·
-  263,048 characters</span></span>
+  <span><b class="t">Criminal Law (Temporary Provisions) (Amendment) Bill</b><br><span class="n">2024-04-03 ·
+  253 turns · 263,048 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-04-02.html">
-  <span><b>2024-04-02</b><br><span class="n">322 turns ·
-  393,157 characters</span></span>
+  <span><b class="t">Law Enforcement and Other Matters Bill</b><br><span class="n">2024-04-02 ·
+  322 turns · 393,157 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-03-07.html">
-  <span><b>2024-03-07</b><br><span class="n">219 turns ·
-  318,613 characters</span></span>
+  <span><b class="t">Committee of Supply – Head X (Ministry of Culture, Community and Youth)</b><br><span class="n">2024-03-07 ·
+  219 turns · 318,613 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-03-06.html">
-  <span><b>2024-03-06</b><br><span class="n">268 turns ·
-  447,515 characters</span></span>
+  <span><b class="t">Committee of Supply – Head I (Ministry of Social and Family Development)</b><br><span class="n">2024-03-06 ·
+  268 turns · 447,515 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-03-05.html">
-  <span><b>2024-03-05</b><br><span class="n">285 turns ·
-  463,046 characters</span></span>
+  <span><b class="t">Committee of Supply – Head T (Ministry of National Development)</b><br><span class="n">2024-03-05 ·
+  285 turns · 463,046 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-03-04.html">
-  <span><b>2024-03-04</b><br><span class="n">316 turns ·
-  523,632 characters</span></span>
+  <span><b class="t">Committee of Supply – Head S (Ministry of Manpower)</b><br><span class="n">2024-03-04 ·
+  316 turns · 523,632 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-03-01.html">
-  <span><b>2024-03-01</b><br><span class="n">294 turns ·
-  494,435 characters</span></span>
+  <span><b class="t">Committee of Supply – Head V (Ministry of Trade and Industry)</b><br><span class="n">2024-03-01 ·
+  294 turns · 494,435 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-02-29.html">
-  <span><b>2024-02-29</b><br><span class="n">309 turns ·
-  425,640 characters</span></span>
+  <span><b class="t">Committee of Supply – Head N (Ministry of Foreign Affairs)</b><br><span class="n">2024-02-29 ·
+  309 turns · 425,640 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-02-28.html">
-  <span><b>2024-02-28</b><br><span class="n">355 turns ·
-  490,858 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2024-02-28 ·
+  355 turns · 490,858 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-02-27.html">
-  <span><b>2024-02-27</b><br><span class="n">200 turns ·
-  435,657 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2024-02-27 ·
+  200 turns · 435,657 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-02-26.html">
-  <span><b>2024-02-26</b><br><span class="n">195 turns ·
-  438,750 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2024-02-26 ·
+  195 turns · 438,750 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-02-16.html">
-  <span><b>2024-02-16</b><br><span class="n">149 turns ·
-  221,220 characters</span></span>
+  <span><b class="t">Annual Budget Statement</b><br><span class="n">2024-02-16 ·
+  149 turns · 221,220 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-02-07.html">
-  <span><b>2024-02-07</b><br><span class="n">387 turns ·
-  544,862 characters</span></span>
+  <span><b class="t">Public Finances</b><br><span class="n">2024-02-07 ·
+  387 turns · 544,862 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-02-06.html">
-  <span><b>2024-02-06</b><br><span class="n">351 turns ·
-  547,357 characters</span></span>
+  <span><b class="t">Advancing Mental Health</b><br><span class="n">2024-02-06 ·
+  351 turns · 547,357 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-02-05.html">
-  <span><b>2024-02-05</b><br><span class="n">380 turns ·
-  529,627 characters</span></span>
+  <span><b class="t">Criminal Procedure (Miscellaneous Amendments) Bill</b><br><span class="n">2024-02-05 ·
+  380 turns · 529,627 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-01-10.html">
-  <span><b>2024-01-10</b><br><span class="n">327 turns ·
-  498,903 characters</span></span>
+  <span><b class="t">Building an Inclusive and Safe Digital Society</b><br><span class="n">2024-01-10 ·
+  327 turns · 498,903 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2024-01-09.html">
-  <span><b>2024-01-09</b><br><span class="n">384 turns ·
-  413,685 characters</span></span>
+  <span><b class="t">Significant Investments Review Bill</b><br><span class="n">2024-01-09 ·
+  384 turns · 413,685 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-11-22.html">
-  <span><b>2023-11-22</b><br><span class="n">320 turns ·
-  335,150 characters</span></span>
+  <span><b class="t">Constitution of the Republic of Singapore (Amendment No 3) Bill</b><br><span class="n">2023-11-22 ·
+  320 turns · 335,150 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-11-07.html">
-  <span><b>2023-11-07</b><br><span class="n">445 turns ·
-  690,210 characters</span></span>
+  <span><b class="t">Cost of Living Crisis</b><br><span class="n">2023-11-07 ·
+  445 turns · 690,210 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-11-06.html">
-  <span><b>2023-11-06</b><br><span class="n">438 turns ·
-  564,599 characters</span></span>
+  <span><b class="t">Solidarity, Security and Peace – The Israel-Hamas Conflict</b><br><span class="n">2023-11-06 ·
+  438 turns · 564,599 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-10-04.html">
-  <span><b>2023-10-04</b><br><span class="n">241 turns ·
-  307,939 characters</span></span>
+  <span><b class="t">Societies (Amendment) Bill</b><br><span class="n">2023-10-04 ·
+  241 turns · 307,939 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-10-03.html">
-  <span><b>2023-10-03</b><br><span class="n">419 turns ·
-  498,092 characters</span></span>
+  <span><b class="t">Singapore&#x27;s Anti-Money Laundering Regime</b><br><span class="n">2023-10-03 ·
+  419 turns · 498,092 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-09-19.html">
-  <span><b>2023-09-19</b><br><span class="n">337 turns ·
-  307,176 characters</span></span>
+  <span><b class="t">Consideration of Matters regarding Member of Parliament, and Suspension of Member</b><br><span class="n">2023-09-19 ·
+  337 turns · 307,176 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-09-18.html">
-  <span><b>2023-09-18</b><br><span class="n">453 turns ·
-  526,717 characters</span></span>
+  <span><b class="t">Child Development Co-Savings (Amendment) Bill</b><br><span class="n">2023-09-18 ·
+  453 turns · 526,717 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-08-03.html">
-  <span><b>2023-08-03</b><br><span class="n">313 turns ·
-  392,101 characters</span></span>
+  <span><b class="t">Lease Agreements for Retail Premises Bill</b><br><span class="n">2023-08-03 ·
+  313 turns · 392,101 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-08-02.html">
-  <span><b>2023-08-02</b><br><span class="n">522 turns ·
-  455,135 characters</span></span>
+  <span><b class="t">CPIB Investigation Involving Minister S Iswaran and the Resignations of Former Speaker and a PAP MP</b><br><span class="n">2023-08-02 ·
+  522 turns · 455,135 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-07-06.html">
-  <span><b>2023-07-06</b><br><span class="n">260 turns ·
-  387,086 characters</span></span>
+  <span><b class="t">Sporting Success</b><br><span class="n">2023-07-06 ·
+  260 turns · 387,086 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-07-05.html">
-  <span><b>2023-07-05</b><br><span class="n">303 turns ·
-  429,763 characters</span></span>
+  <span><b class="t">Group Representation Constituencies</b><br><span class="n">2023-07-05 ·
+  303 turns · 429,763 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-07-04.html">
-  <span><b>2023-07-04</b><br><span class="n">336 turns ·
-  467,334 characters</span></span>
+  <span><b class="t">Maintenance of Parents (Amendment) Bill</b><br><span class="n">2023-07-04 ·
+  336 turns · 467,334 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-07-03.html">
-  <span><b>2023-07-03</b><br><span class="n">520 turns ·
-  519,670 characters</span></span>
+  <span><b class="t">Rental of 26 Ridout Road</b><br><span class="n">2023-07-03 ·
+  520 turns · 519,670 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-05-10.html">
-  <span><b>2023-05-10</b><br><span class="n">215 turns ·
-  287,663 characters</span></span>
+  <span><b class="t">Supporting Healthcare</b><br><span class="n">2023-05-10 ·
+  215 turns · 287,663 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-05-09.html">
-  <span><b>2023-05-09</b><br><span class="n">277 turns ·
-  405,480 characters</span></span>
+  <span><b class="t">Supporting Healthcare</b><br><span class="n">2023-05-09 ·
+  277 turns · 405,480 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-05-08.html">
-  <span><b>2023-05-08</b><br><span class="n">437 turns ·
-  496,442 characters</span></span>
+  <span><b class="t">Family Justice Reform Bill</b><br><span class="n">2023-05-08 ·
+  437 turns · 496,442 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-04-21.html">
-  <span><b>2023-04-21</b><br><span class="n">291 turns ·
-  320,471 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2023-04-21 ·
+  291 turns · 320,471 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-04-20.html">
-  <span><b>2023-04-20</b><br><span class="n">53 turns ·
-  186,177 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2023-04-20 ·
+  53 turns · 186,177 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-04-19.html">
-  <span><b>2023-04-19</b><br><span class="n">57 turns ·
-  210,166 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2023-04-19 ·
+  57 turns · 210,166 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-04-18.html">
-  <span><b>2023-04-18</b><br><span class="n">72 turns ·
-  231,163 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2023-04-18 ·
+  72 turns · 231,163 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-04-17.html">
-  <span><b>2023-04-17</b><br><span class="n">55 turns ·
-  217,652 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2023-04-17 ·
+  55 turns · 217,652 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-04-10.html">
-  <span><b>2023-04-10</b><br><span class="n">23 turns ·
-  138,480 characters</span></span>
+  <span><b class="t">President&#x27;s Address</b><br><span class="n">2023-04-10 ·
+  23 turns · 138,480 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-03-22.html">
-  <span><b>2023-03-22</b><br><span class="n">255 turns ·
-  125,506 characters</span></span>
+  <span><b class="t">Ministerial Statement on Police Disclosure</b><br><span class="n">2023-03-22 ·
+  255 turns · 125,506 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-03-21.html">
-  <span><b>2023-03-21</b><br><span class="n">273 turns ·
-  459,449 characters</span></span>
+  <span><b class="t">Singapore&#x27;s COVID-19 Response</b><br><span class="n">2023-03-21 ·
+  273 turns · 459,449 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-03-20.html">
-  <span><b>2023-03-20</b><br><span class="n">324 turns ·
-  490,132 characters</span></span>
+  <span><b class="t">Singapore&#x27;s COVID-19 Response</b><br><span class="n">2023-03-20 ·
+  324 turns · 490,132 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-03-06.html">
-  <span><b>2023-03-06</b><br><span class="n">291 turns ·
-  441,953 characters</span></span>
+  <span><b class="t">Committee of Supply – Head X (Ministry of Culture, Community and Youth)</b><br><span class="n">2023-03-06 ·
+  291 turns · 441,953 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-03-03.html">
-  <span><b>2023-03-03</b><br><span class="n">287 turns ·
-  495,813 characters</span></span>
+  <span><b class="t">Committee of Supply – Head O (Ministry of Health)</b><br><span class="n">2023-03-03 ·
+  287 turns · 495,813 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-03-02.html">
-  <span><b>2023-03-02</b><br><span class="n">307 turns ·
-  476,210 characters</span></span>
+  <span><b class="t">Committee of Supply – Head T (Ministry of National Development)</b><br><span class="n">2023-03-02 ·
+  307 turns · 476,210 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-03-01.html">
-  <span><b>2023-03-01</b><br><span class="n">259 turns ·
-  437,914 characters</span></span>
+  <span><b class="t">Committee of Supply – Head S (Ministry of Manpower)</b><br><span class="n">2023-03-01 ·
+  259 turns · 437,914 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-02-28.html">
-  <span><b>2023-02-28</b><br><span class="n">261 turns ·
-  462,981 characters</span></span>
+  <span><b class="t">Committee of Supply – Head V (Ministry of Trade and Industry)</b><br><span class="n">2023-02-28 ·
+  261 turns · 462,981 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-02-27.html">
-  <span><b>2023-02-27</b><br><span class="n">306 turns ·
-  447,030 characters</span></span>
+  <span><b class="t">Committee of Supply – Head N (Ministry of Foreign Affairs)</b><br><span class="n">2023-02-27 ·
+  306 turns · 447,030 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-02-24.html">
-  <span><b>2023-02-24</b><br><span class="n">288 turns ·
-  435,455 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2023-02-24 ·
+  288 turns · 435,455 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-02-23.html">
-  <span><b>2023-02-23</b><br><span class="n">155 turns ·
-  400,105 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2023-02-23 ·
+  155 turns · 400,105 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-02-22.html">
-  <span><b>2023-02-22</b><br><span class="n">175 turns ·
-  460,109 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2023-02-22 ·
+  175 turns · 460,109 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-02-14.html">
-  <span><b>2023-02-14</b><br><span class="n">123 turns ·
-  161,220 characters</span></span>
+  <span><b class="t">Annual Budget Statement</b><br><span class="n">2023-02-14 ·
+  123 turns · 161,220 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-02-07.html">
-  <span><b>2023-02-07</b><br><span class="n">419 turns ·
-  529,507 characters</span></span>
+  <span><b class="t">Affordable and Accessible Public Housing, and Public Housing Policies</b><br><span class="n">2023-02-07 ·
+  419 turns · 529,507 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-02-06.html">
-  <span><b>2023-02-06</b><br><span class="n">419 turns ·
-  576,113 characters</span></span>
+  <span><b class="t">Environmental Public Health (Amendment) Bill</b><br><span class="n">2023-02-06 ·
+  419 turns · 576,113 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-01-10.html">
-  <span><b>2023-01-10</b><br><span class="n">250 turns ·
-  264,712 characters</span></span>
+  <span><b class="t">Housing and Development (Amendment) Bill</b><br><span class="n">2023-01-10 ·
+  250 turns · 264,712 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2023-01-09.html">
-  <span><b>2023-01-09</b><br><span class="n">396 turns ·
-  435,279 characters</span></span>
+  <span><b class="t">Insolvency, Restructuring and Dissolution (Amendment) Bill</b><br><span class="n">2023-01-09 ·
+  396 turns · 435,279 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-11-30.html">
-  <span><b>2022-11-30</b><br><span class="n">234 turns ·
-  294,763 characters</span></span>
+  <span><b class="t">Electric Vehicles Charging Bill</b><br><span class="n">2022-11-30 ·
+  234 turns · 294,763 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-11-29.html">
-  <span><b>2022-11-29</b><br><span class="n">321 turns ·
-  375,473 characters</span></span>
+  <span><b class="t">Constitution of the Republic of Singapore (Amendment No 3) Bill</b><br><span class="n">2022-11-29 ·
+  321 turns · 375,473 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-11-28.html">
-  <span><b>2022-11-28</b><br><span class="n">372 turns ·
-  494,187 characters</span></span>
+  <span><b class="t">Constitution of the Republic of Singapore (Amendment No 3) Bill</b><br><span class="n">2022-11-28 ·
+  372 turns · 494,187 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-11-09.html">
-  <span><b>2022-11-09</b><br><span class="n">208 turns ·
-  282,399 characters</span></span>
+  <span><b class="t">Online Safety (Miscellaneous Amendments) Bill</b><br><span class="n">2022-11-09 ·
+  208 turns · 282,399 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-11-08.html">
-  <span><b>2022-11-08</b><br><span class="n">320 turns ·
-  427,211 characters</span></span>
+  <span><b class="t">Carbon Pricing (Amendment) Bill</b><br><span class="n">2022-11-08 ·
+  320 turns · 427,211 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-11-07.html">
-  <span><b>2022-11-07</b><br><span class="n">384 turns ·
-  470,887 characters</span></span>
+  <span><b class="t">Goods and Services Tax (Amendment) Bill</b><br><span class="n">2022-11-07 ·
+  384 turns · 470,887 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-10-20.html">
-  <span><b>2022-10-20</b><br><span class="n">311 turns ·
-  243,680 characters</span></span>
+  <span><b class="t">Preparing Singapore for Dementia</b><br><span class="n">2022-10-20 ·
+  311 turns · 243,680 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-10-05.html">
-  <span><b>2022-10-05</b><br><span class="n">276 turns ·
-  375,932 characters</span></span>
+  <span><b class="t">Building a Healthier SG</b><br><span class="n">2022-10-05 ·
+  276 turns · 375,932 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-10-04.html">
-  <span><b>2022-10-04</b><br><span class="n">291 turns ·
-  444,525 characters</span></span>
+  <span><b class="t">Building a Healthier SG</b><br><span class="n">2022-10-04 ·
+  291 turns · 444,525 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-10-03.html">
-  <span><b>2022-10-03</b><br><span class="n">346 turns ·
-  428,746 characters</span></span>
+  <span><b class="t">Income Tax (Amendment) Bill</b><br><span class="n">2022-10-03 ·
+  346 turns · 428,746 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-09-13.html">
-  <span><b>2022-09-13</b><br><span class="n">253 turns ·
-  348,223 characters</span></span>
+  <span><b class="t">Debt Collection Bill</b><br><span class="n">2022-09-13 ·
+  253 turns · 348,223 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-09-12.html">
-  <span><b>2022-09-12</b><br><span class="n">434 turns ·
-  486,086 characters</span></span>
+  <span><b class="t">Registration of Criminals (Amendment) Bill</b><br><span class="n">2022-09-12 ·
+  434 turns · 486,086 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-08-02.html">
-  <span><b>2022-08-02</b><br><span class="n">283 turns ·
-  346,732 characters</span></span>
+  <span><b class="t">Singapore Armed Forces and Other Matters Bill</b><br><span class="n">2022-08-02 ·
+  283 turns · 346,732 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-08-01.html">
-  <span><b>2022-08-01</b><br><span class="n">441 turns ·
-  495,072 characters</span></span>
+  <span><b class="t">Public Defenders Bill</b><br><span class="n">2022-08-01 ·
+  441 turns · 495,072 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-07-05.html">
-  <span><b>2022-07-05</b><br><span class="n">301 turns ·
-  280,431 characters</span></span>
+  <span><b class="t">Stamp Duties (Amendment) Bill</b><br><span class="n">2022-07-05 ·
+  301 turns · 280,431 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-07-04.html">
-  <span><b>2022-07-04</b><br><span class="n">387 turns ·
-  449,783 characters</span></span>
+  <span><b class="t">Endangered Species (Import and Export) (Amendment) Bill</b><br><span class="n">2022-07-04 ·
+  387 turns · 449,783 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-05-09.html">
-  <span><b>2022-05-09</b><br><span class="n">346 turns ·
-  454,186 characters</span></span>
+  <span><b class="t">Adoption of Children Bill</b><br><span class="n">2022-05-09 ·
+  346 turns · 454,186 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-04-05.html">
-  <span><b>2022-04-05</b><br><span class="n">316 turns ·
-  667,818 characters</span></span>
+  <span><b class="t">Singapore Women&#x27;s Development</b><br><span class="n">2022-04-05 ·
+  316 turns · 667,818 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-04-04.html">
-  <span><b>2022-04-04</b><br><span class="n">416 turns ·
-  465,273 characters</span></span>
+  <span><b class="t">Inflation and Business Costs</b><br><span class="n">2022-04-04 ·
+  416 turns · 465,273 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-03-11.html">
-  <span><b>2022-03-11</b><br><span class="n">60 turns ·
-  139,830 characters</span></span>
+  <span><b class="t">Gambling Control Bill</b><br><span class="n">2022-03-11 ·
+  60 turns · 139,830 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-03-10.html">
-  <span><b>2022-03-10</b><br><span class="n">219 turns ·
-  417,856 characters</span></span>
+  <span><b class="t">Committee of Supply – Head X (Ministry of Culture, Community and Youth)</b><br><span class="n">2022-03-10 ·
+  219 turns · 417,856 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-03-09.html">
-  <span><b>2022-03-09</b><br><span class="n">228 turns ·
-  409,725 characters</span></span>
+  <span><b class="t">Committee of Supply – Head O (Ministry of Health)</b><br><span class="n">2022-03-09 ·
+  228 turns · 409,725 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-03-08.html">
-  <span><b>2022-03-08</b><br><span class="n">268 turns ·
-  434,686 characters</span></span>
+  <span><b class="t">Committee of Supply – Head T (Ministry of National Development)</b><br><span class="n">2022-03-08 ·
+  268 turns · 434,686 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-03-07.html">
-  <span><b>2022-03-07</b><br><span class="n">287 turns ·
-  446,309 characters</span></span>
+  <span><b class="t">Committee of Supply – Head K (Ministry of Education)</b><br><span class="n">2022-03-07 ·
+  287 turns · 446,309 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-03-04.html">
-  <span><b>2022-03-04</b><br><span class="n">233 turns ·
-  445,267 characters</span></span>
+  <span><b class="t">Committee of Supply – Head S (Ministry of Manpower)</b><br><span class="n">2022-03-04 ·
+  233 turns · 445,267 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-03-03.html">
-  <span><b>2022-03-03</b><br><span class="n">289 turns ·
-  443,088 characters</span></span>
+  <span><b class="t">Committee of Supply – Head P (Ministry of Home Affairs)</b><br><span class="n">2022-03-03 ·
+  289 turns · 443,088 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-03-02.html">
-  <span><b>2022-03-02</b><br><span class="n">226 turns ·
-  423,593 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2022-03-02 ·
+  226 turns · 423,593 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-03-01.html">
-  <span><b>2022-03-01</b><br><span class="n">168 turns ·
-  460,140 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2022-03-01 ·
+  168 turns · 460,140 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-02-28.html">
-  <span><b>2022-02-28</b><br><span class="n">157 turns ·
-  402,172 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2022-02-28 ·
+  157 turns · 402,172 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-02-18.html">
-  <span><b>2022-02-18</b><br><span class="n">149 turns ·
-  202,831 characters</span></span>
+  <span><b class="t">Annual Budget Statement</b><br><span class="n">2022-02-18 ·
+  149 turns · 202,831 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-02-15.html">
-  <span><b>2022-02-15</b><br><span class="n">360 turns ·
-  468,426 characters</span></span>
+  <span><b class="t">Committee of Privileges Report (Recommendations in respect of Ms Raeesah Khan) and Committee of Privileges Report (Recommendations in respect of Mr Pritam Singh, Mr Faisal Manap and Ms Sylvia Lim)</b><br><span class="n">2022-02-15 ·
+  360 turns · 468,426 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-02-14.html">
-  <span><b>2022-02-14</b><br><span class="n">347 turns ·
-  418,405 characters</span></span>
+  <span><b class="t">Administration of Muslim Law (Amendment) Bill</b><br><span class="n">2022-02-14 ·
+  347 turns · 418,405 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-01-12.html">
-  <span><b>2022-01-12</b><br><span class="n">267 turns ·
-  548,288 characters</span></span>
+  <span><b class="t">Towards a Low-carbon Society</b><br><span class="n">2022-01-12 ·
+  267 turns · 548,288 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-01-11.html">
-  <span><b>2022-01-11</b><br><span class="n">390 turns ·
-  503,761 characters</span></span>
+  <span><b class="t">Prisons (Amendment) Bill</b><br><span class="n">2022-01-11 ·
+  390 turns · 503,761 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2022-01-10.html">
-  <span><b>2022-01-10</b><br><span class="n">423 turns ·
-  562,185 characters</span></span>
+  <span><b class="t">Women&#x27;s Charter (Amendment) Bill</b><br><span class="n">2022-01-10 ·
+  423 turns · 562,185 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-11-03.html">
-  <span><b>2021-11-03</b><br><span class="n">237 turns ·
-  294,682 characters</span></span>
+  <span><b class="t">Constitution of the Republic of Singapore (Amendment) Bill</b><br><span class="n">2021-11-03 ·
+  237 turns · 294,682 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-11-02.html">
-  <span><b>2021-11-02</b><br><span class="n">314 turns ·
-  552,780 characters</span></span>
+  <span><b class="t">Energy (Resilience Measures and Miscellaneous Amendments) Bill</b><br><span class="n">2021-11-02 ·
+  314 turns · 552,780 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-11-01.html">
-  <span><b>2021-11-01</b><br><span class="n">449 turns ·
-  599,771 characters</span></span>
+  <span><b class="t">Retirement and Re-employment (Amendment) Bill</b><br><span class="n">2021-11-01 ·
+  449 turns · 599,771 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-10-05.html">
-  <span><b>2021-10-05</b><br><span class="n">335 turns ·
-  549,065 characters</span></span>
+  <span><b class="t">Private Security Industry (Amendment) Bill</b><br><span class="n">2021-10-05 ·
+  335 turns · 549,065 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-10-04.html">
-  <span><b>2021-10-04</b><br><span class="n">552 turns ·
-  725,742 characters</span></span>
+  <span><b class="t">Foreign Interference (Countermeasures) Bill</b><br><span class="n">2021-10-04 ·
+  552 turns · 725,742 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-09-14.html">
-  <span><b>2021-09-14</b><br><span class="n">687 turns ·
-  786,290 characters</span></span>
+  <span><b class="t">Securing Singaporeans&#x27; Jobs and Livelihoods, and Foreign Talent Policy</b><br><span class="n">2021-09-14 ·
+  687 turns · 786,290 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-09-13.html">
-  <span><b>2021-09-13</b><br><span class="n">438 turns ·
-  696,739 characters</span></span>
+  <span><b class="t">Copyright Bill</b><br><span class="n">2021-09-13 ·
+  438 turns · 696,739 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-08-03.html">
-  <span><b>2021-08-03</b><br><span class="n">258 turns ·
-  511,141 characters</span></span>
+  <span><b class="t">Empowering Women</b><br><span class="n">2021-08-03 ·
+  258 turns · 511,141 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-08-02.html">
-  <span><b>2021-08-02</b><br><span class="n">235 turns ·
-  357,278 characters</span></span>
+  <span><b class="t">Child Development Co-Savings (Amendment) Bill</b><br><span class="n">2021-08-02 ·
+  235 turns · 357,278 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-07-27.html">
-  <span><b>2021-07-27</b><br><span class="n">286 turns ·
-  509,245 characters</span></span>
+  <span><b class="t">Support Measures for Phase Two (Heightened Alert) and Phase Three (Heightened Alert), and Support Measures for Phase Two (Heightened Alert)</b><br><span class="n">2021-07-27 ·
+  286 turns · 509,245 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-07-26.html">
-  <span><b>2021-07-26</b><br><span class="n">361 turns ·
-  410,778 characters</span></span>
+  <span><b class="t">Fifth Update on Whole-of-Government Responses to COVID-19</b><br><span class="n">2021-07-26 ·
+  361 turns · 410,778 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-07-06.html">
-  <span><b>2021-07-06</b><br><span class="n">344 turns ·
-  562,618 characters</span></span>
+  <span><b class="t">Free Trade Agreements and Foreign Manpower</b><br><span class="n">2021-07-06 ·
+  344 turns · 562,618 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-07-05.html">
-  <span><b>2021-07-05</b><br><span class="n">409 turns ·
-  511,216 characters</span></span>
+  <span><b class="t">Mental Capacity (Amendment) Bill</b><br><span class="n">2021-07-05 ·
+  409 turns · 511,216 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-05-11.html">
-  <span><b>2021-05-11</b><br><span class="n">435 turns ·
-  723,404 characters</span></span>
+  <span><b class="t">Road Traffic (Amendment) Bill</b><br><span class="n">2021-05-11 ·
+  435 turns · 723,404 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-05-10.html">
-  <span><b>2021-05-10</b><br><span class="n">513 turns ·
-  695,335 characters</span></span>
+  <span><b class="t">Significant Infrastructure Government Loan Bill</b><br><span class="n">2021-05-10 ·
+  513 turns · 695,335 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-04-05.html">
-  <span><b>2021-04-05</b><br><span class="n">388 turns ·
-  464,377 characters</span></span>
+  <span><b class="t">Postal Services (Amendment) Bill</b><br><span class="n">2021-04-05 ·
+  388 turns · 464,377 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-03-08.html">
-  <span><b>2021-03-08</b><br><span class="n">156 turns ·
-  319,967 characters</span></span>
+  <span><b class="t">Committee of Supply – Head X (Ministry of Culture, Community and Youth)</b><br><span class="n">2021-03-08 ·
+  156 turns · 319,967 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-03-05.html">
-  <span><b>2021-03-05</b><br><span class="n">278 turns ·
-  495,797 characters</span></span>
+  <span><b class="t">Committee of Supply – Head O (Ministry of Health)</b><br><span class="n">2021-03-05 ·
+  278 turns · 495,797 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-03-04.html">
-  <span><b>2021-03-04</b><br><span class="n">273 turns ·
-  480,987 characters</span></span>
+  <span><b class="t">Committee of Supply –  Head L (Ministry of Sustainability and the Environment)</b><br><span class="n">2021-03-04 ·
+  273 turns · 480,987 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-03-03.html">
-  <span><b>2021-03-03</b><br><span class="n">201 turns ·
-  433,781 characters</span></span>
+  <span><b class="t">Committee of Supply – Head K (Ministry of Education)</b><br><span class="n">2021-03-03 ·
+  201 turns · 433,781 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-03-02.html">
-  <span><b>2021-03-02</b><br><span class="n">247 turns ·
-  464,894 characters</span></span>
+  <span><b class="t">Committee of Supply – Head V (Ministry of Trade and Industry)</b><br><span class="n">2021-03-02 ·
+  247 turns · 464,894 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-03-01.html">
-  <span><b>2021-03-01</b><br><span class="n">277 turns ·
-  450,452 characters</span></span>
+  <span><b class="t">Committee of Supply – Head N (Ministry of Foreign Affairs)</b><br><span class="n">2021-03-01 ·
+  277 turns · 450,452 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-02-26.html">
-  <span><b>2021-02-26</b><br><span class="n">244 turns ·
-  464,922 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2021-02-26 ·
+  244 turns · 464,922 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-02-25.html">
-  <span><b>2021-02-25</b><br><span class="n">175 turns ·
-  412,021 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2021-02-25 ·
+  175 turns · 412,021 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-02-24.html">
-  <span><b>2021-02-24</b><br><span class="n">192 turns ·
-  451,397 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2021-02-24 ·
+  192 turns · 451,397 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-02-16.html">
-  <span><b>2021-02-16</b><br><span class="n">164 turns ·
-  274,113 characters</span></span>
+  <span><b class="t">Annual Budget Statement</b><br><span class="n">2021-02-16 ·
+  164 turns · 274,113 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-02-02.html">
-  <span><b>2021-02-02</b><br><span class="n">288 turns ·
-  414,786 characters</span></span>
+  <span><b class="t">COVID-19 (Temporary Measures) (Amendment) Bill</b><br><span class="n">2021-02-02 ·
+  288 turns · 414,786 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-02-01.html">
-  <span><b>2021-02-01</b><br><span class="n">408 turns ·
-  654,051 characters</span></span>
+  <span><b class="t">Accelerate and Deepen Efforts Against Climate Change</b><br><span class="n">2021-02-01 ·
+  408 turns · 654,051 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-01-05.html">
-  <span><b>2021-01-05</b><br><span class="n">242 turns ·
-  338,916 characters</span></span>
+  <span><b class="t">Guns, Explosives and Weapons Control Bill</b><br><span class="n">2021-01-05 ·
+  242 turns · 338,916 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2021-01-04.html">
-  <span><b>2021-01-04</b><br><span class="n">393 turns ·
-  480,394 characters</span></span>
+  <span><b class="t">Payment Services (Amendment) Bill</b><br><span class="n">2021-01-04 ·
+  393 turns · 480,394 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-11-04.html">
-  <span><b>2020-11-04</b><br><span class="n">317 turns ·
-  553,639 characters</span></span>
+  <span><b class="t">Singapore&#x27;s Justice System</b><br><span class="n">2020-11-04 ·
+  317 turns · 553,639 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-11-03.html">
-  <span><b>2020-11-03</b><br><span class="n">218 turns ·
-  383,087 characters</span></span>
+  <span><b class="t">COVID-19 (Temporary Measures) (Amendment No 3) Bill</b><br><span class="n">2020-11-03 ·
+  218 turns · 383,087 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-11-02.html">
-  <span><b>2020-11-02</b><br><span class="n">309 turns ·
-  421,223 characters</span></span>
+  <span><b class="t">Personal Data Protection (Amendment) Bill</b><br><span class="n">2020-11-02 ·
+  309 turns · 421,223 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-10-15.html">
-  <span><b>2020-10-15</b><br><span class="n">219 turns ·
-  383,933 characters</span></span>
+  <span><b class="t">Overview of Government’s Strategy to Emerge Stronger from the COVID-19 Pandemic</b><br><span class="n">2020-10-15 ·
+  219 turns · 383,933 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-10-14.html">
-  <span><b>2020-10-14</b><br><span class="n">189 turns ·
-  338,175 characters</span></span>
+  <span><b class="t">Overview of Government&#x27;s Strategy to Emerge Stronger from the COVID-19 Pandemic</b><br><span class="n">2020-10-14 ·
+  189 turns · 338,175 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-10-06.html">
-  <span><b>2020-10-06</b><br><span class="n">298 turns ·
-  501,529 characters</span></span>
+  <span><b class="t">Civil Law (Amendment) Bill</b><br><span class="n">2020-10-06 ·
+  298 turns · 501,529 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-10-05.html">
-  <span><b>2020-10-05</b><br><span class="n">397 turns ·
-  546,326 characters</span></span>
+  <span><b class="t">Environmental Public Health (Amendment) Bill</b><br><span class="n">2020-10-05 ·
+  397 turns · 546,326 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-09-04.html">
-  <span><b>2020-09-04</b><br><span class="n">303 turns ·
-  416,556 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2020-09-04 ·
+  303 turns · 416,556 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-09-03.html">
-  <span><b>2020-09-03</b><br><span class="n">119 turns ·
-  289,927 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2020-09-03 ·
+  119 turns · 289,927 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-09-02.html">
-  <span><b>2020-09-02</b><br><span class="n">58 turns ·
-  291,390 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2020-09-02 ·
+  58 turns · 291,390 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-09-01.html">
-  <span><b>2020-09-01</b><br><span class="n">83 turns ·
-  273,500 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2020-09-01 ·
+  83 turns · 273,500 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-08-31.html">
-  <span><b>2020-08-31</b><br><span class="n">59 turns ·
-  299,355 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2020-08-31 ·
+  59 turns · 299,355 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-08-24.html">
-  <span><b>2020-08-24</b><br><span class="n">38 turns ·
-  192,428 characters</span></span>
+  <span><b class="t">Election of Speaker</b><br><span class="n">2020-08-24 ·
+  38 turns · 192,428 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-06-05.html">
-  <span><b>2020-06-05</b><br><span class="n">258 turns ·
-  503,352 characters</span></span>
+  <span><b class="t">Government&#x27;s Plans in Our Continuing Fight Against COVID-19 Pandemic</b><br><span class="n">2020-06-05 ·
+  258 turns · 503,352 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-06-04.html">
-  <span><b>2020-06-04</b><br><span class="n">197 turns ·
-  426,564 characters</span></span>
+  <span><b class="t">Government&#x27;s Plans In Our Continuing Fight Against COVID-19 Pandemic</b><br><span class="n">2020-06-04 ·
+  197 turns · 426,564 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-05-26.html">
-  <span><b>2020-05-26</b><br><span class="n">114 turns ·
-  256,862 characters</span></span>
+  <span><b class="t">Small Motorised Vehicles (Safety) Bill</b><br><span class="n">2020-05-26 ·
+  114 turns · 256,862 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-05-05.html">
-  <span><b>2020-05-05</b><br><span class="n">85 turns ·
-  173,086 characters</span></span>
+  <span><b class="t">Constitution of the Republic of Singapore (Amendment) Bill</b><br><span class="n">2020-05-05 ·
+  85 turns · 173,086 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-05-04.html">
-  <span><b>2020-05-04</b><br><span class="n">269 turns ·
-  367,366 characters</span></span>
+  <span><b class="t">Second Update on Whole-of-Government Response to COVID-19</b><br><span class="n">2020-05-04 ·
+  269 turns · 367,366 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-04-07.html">
-  <span><b>2020-04-07</b><br><span class="n">156 turns ·
-  453,566 characters</span></span>
+  <span><b class="t">Additional Support Measures in Response to COVID-19 Pandemic</b><br><span class="n">2020-04-07 ·
+  156 turns · 453,566 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-04-06.html">
-  <span><b>2020-04-06</b><br><span class="n">124 turns ·
-  373,203 characters</span></span>
+  <span><b class="t">Additional Support Measures in Response to COVID-19 Pandemic</b><br><span class="n">2020-04-06 ·
+  124 turns · 373,203 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-03-26.html">
-  <span><b>2020-03-26</b><br><span class="n">50 turns ·
-  136,175 characters</span></span>
+  <span><b class="t">Additional Support Measures in Response to COVID-19 Pandemic</b><br><span class="n">2020-03-26 ·
+  50 turns · 136,175 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-03-25.html">
-  <span><b>2020-03-25</b><br><span class="n">123 turns ·
-  280,090 characters</span></span>
+  <span><b class="t">Update on Whole-of-Government Response to COVID-19</b><br><span class="n">2020-03-25 ·
+  123 turns · 280,090 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-03-06.html">
-  <span><b>2020-03-06</b><br><span class="n">169 turns ·
-  312,204 characters</span></span>
+  <span><b class="t">Committee of Supply – Head X (Ministry of Culture, Community and Youth)</b><br><span class="n">2020-03-06 ·
+  169 turns · 312,204 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-03-05.html">
-  <span><b>2020-03-05</b><br><span class="n">235 turns ·
-  504,781 characters</span></span>
+  <span><b class="t">Committee of Supply – Head O (Ministry of Health)</b><br><span class="n">2020-03-05 ·
+  235 turns · 504,781 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-03-04.html">
-  <span><b>2020-03-04</b><br><span class="n">252 turns ·
-  492,571 characters</span></span>
+  <span><b class="t">Committee of Supply – Head T (Ministry of National Development)</b><br><span class="n">2020-03-04 ·
+  252 turns · 492,571 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-03-03.html">
-  <span><b>2020-03-03</b><br><span class="n">237 turns ·
-  497,004 characters</span></span>
+  <span><b class="t">Committee of Supply – Head S (Ministry of Manpower)</b><br><span class="n">2020-03-03 ·
+  237 turns · 497,004 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-03-02.html">
-  <span><b>2020-03-02</b><br><span class="n">212 turns ·
-  405,122 characters</span></span>
+  <span><b class="t">Committee of Supply – Head J (Ministry of Defence)</b><br><span class="n">2020-03-02 ·
+  212 turns · 405,122 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-02-28.html">
-  <span><b>2020-02-28</b><br><span class="n">174 turns ·
-  409,769 characters</span></span>
+  <span><b class="t">Committee of Supply – Head U (Prime Minister&#x27;s Office)</b><br><span class="n">2020-02-28 ·
+  174 turns · 409,769 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-02-27.html">
-  <span><b>2020-02-27</b><br><span class="n">84 turns ·
-  276,697 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2020-02-27 ·
+  84 turns · 276,697 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-02-26.html">
-  <span><b>2020-02-26</b><br><span class="n">137 turns ·
-  377,462 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2020-02-26 ·
+  137 turns · 377,462 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-02-18.html">
-  <span><b>2020-02-18</b><br><span class="n">163 turns ·
-  215,920 characters</span></span>
+  <span><b class="t">Annual Budget Statement</b><br><span class="n">2020-02-18 ·
+  163 turns · 215,920 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-02-04.html">
-  <span><b>2020-02-04</b><br><span class="n">161 turns ·
-  261,554 characters</span></span>
+  <span><b class="t">Active Mobility (Amendment) Bill</b><br><span class="n">2020-02-04 ·
+  161 turns · 261,554 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-02-03.html">
-  <span><b>2020-02-03</b><br><span class="n">389 turns ·
-  436,309 characters</span></span>
+  <span><b class="t">Whole-of-Government Response to the 2019 Novel Coronavirus (2019-nCoV)</b><br><span class="n">2020-02-03 ·
+  389 turns · 436,309 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2020-01-06.html">
-  <span><b>2020-01-06</b><br><span class="n">321 turns ·
-  467,735 characters</span></span>
+  <span><b class="t">Healthcare Services Bill</b><br><span class="n">2020-01-06 ·
+  321 turns · 467,735 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-11-05.html">
-  <span><b>2019-11-05</b><br><span class="n">323 turns ·
-  412,744 characters</span></span>
+  <span><b class="t">Governance of Aljunied-Hougang Town Council</b><br><span class="n">2019-11-05 ·
+  323 turns · 412,744 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-11-04.html">
-  <span><b>2019-11-04</b><br><span class="n">350 turns ·
-  483,117 characters</span></span>
+  <span><b class="t">Women&#x27;s Charter (Amendment) Bill</b><br><span class="n">2019-11-04 ·
+  350 turns · 483,117 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-10-07.html">
-  <span><b>2019-10-07</b><br><span class="n">432 turns ·
-  586,917 characters</span></span>
+  <span><b class="t">Maintenance of Religious Harmony (Amendment) Bill</b><br><span class="n">2019-10-07 ·
+  432 turns · 586,917 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-09-04.html">
-  <span><b>2019-09-04</b><br><span class="n">127 turns ·
-  324,231 characters</span></span>
+  <span><b class="t">Resource Sustainability Bill</b><br><span class="n">2019-09-04 ·
+  127 turns · 324,231 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-09-03.html">
-  <span><b>2019-09-03</b><br><span class="n">229 turns ·
-  382,406 characters</span></span>
+  <span><b class="t">Work Injury Compensation Bill</b><br><span class="n">2019-09-03 ·
+  229 turns · 382,406 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-09-02.html">
-  <span><b>2019-09-02</b><br><span class="n">305 turns ·
-  472,685 characters</span></span>
+  <span><b class="t">CareShield Life and Long-Term Care Bill</b><br><span class="n">2019-09-02 ·
+  305 turns · 472,685 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-08-06.html">
-  <span><b>2019-08-06</b><br><span class="n">211 turns ·
-  321,187 characters</span></span>
+  <span><b class="t">Point-to-Point Passenger Transport Industry Bill</b><br><span class="n">2019-08-06 ·
+  211 turns · 321,187 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-08-05.html">
-  <span><b>2019-08-05</b><br><span class="n">359 turns ·
-  466,492 characters</span></span>
+  <span><b class="t">Fire Safety (Amendment) Bill</b><br><span class="n">2019-08-05 ·
+  359 turns · 466,492 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-07-08.html">
-  <span><b>2019-07-08</b><br><span class="n">325 turns ·
-  421,479 characters</span></span>
+  <span><b class="t">Road Traffic (Amendment) Bill</b><br><span class="n">2019-07-08 ·
+  325 turns · 421,479 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-05-08.html">
-  <span><b>2019-05-08</b><br><span class="n">387 turns ·
-  575,086 characters</span></span>
+  <span><b class="t">Protection from Online Falsehoods and Manipulation Bill</b><br><span class="n">2019-05-08 ·
+  387 turns · 575,086 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-05-07.html">
-  <span><b>2019-05-07</b><br><span class="n">224 turns ·
-  473,268 characters</span></span>
+  <span><b class="t">Protection from Online Falsehoods and Manipulation Bill</b><br><span class="n">2019-05-07 ·
+  224 turns · 473,268 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-05-06.html">
-  <span><b>2019-05-06</b><br><span class="n">347 turns ·
-  441,332 characters</span></span>
+  <span><b class="t">Criminal Law Reform Bill</b><br><span class="n">2019-05-06 ·
+  347 turns · 441,332 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-04-01.html">
-  <span><b>2019-04-01</b><br><span class="n">275 turns ·
-  419,923 characters</span></span>
+  <span><b class="t">Restricting Hate Speech to Maintain Racial and Religious Harmony in Singapore</b><br><span class="n">2019-04-01 ·
+  275 turns · 419,923 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-03-08.html">
-  <span><b>2019-03-08</b><br><span class="n">139 turns ·
-  270,843 characters</span></span>
+  <span><b class="t">Committee of Supply – Head X (Ministry of Culture, Community and Youth)</b><br><span class="n">2019-03-08 ·
+  139 turns · 270,843 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-03-07.html">
-  <span><b>2019-03-07</b><br><span class="n">229 turns ·
-  390,731 characters</span></span>
+  <span><b class="t">Committee of Supply – Head W (Ministry of Transport)</b><br><span class="n">2019-03-07 ·
+  229 turns · 390,731 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-03-06.html">
-  <span><b>2019-03-06</b><br><span class="n">251 turns ·
-  422,983 characters</span></span>
+  <span><b class="t">Committee Of Supply – Head O (Ministry of Health)</b><br><span class="n">2019-03-06 ·
+  251 turns · 422,983 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-03-05.html">
-  <span><b>2019-03-05</b><br><span class="n">180 turns ·
-  379,182 characters</span></span>
+  <span><b class="t">Committee of Supply – Head S (Ministry of Manpower)</b><br><span class="n">2019-03-05 ·
+  180 turns · 379,182 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-03-04.html">
-  <span><b>2019-03-04</b><br><span class="n">225 turns ·
-  413,781 characters</span></span>
+  <span><b class="t">Committee of Supply – Head K (Ministry of Education)</b><br><span class="n">2019-03-04 ·
+  225 turns · 413,781 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-03-01.html">
-  <span><b>2019-03-01</b><br><span class="n">192 turns ·
-  355,773 characters</span></span>
+  <span><b class="t">Committee of Supply – Head N (Ministry of Foreign Affairs)</b><br><span class="n">2019-03-01 ·
+  192 turns · 355,773 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-02-28.html">
-  <span><b>2019-02-28</b><br><span class="n">171 turns ·
-  364,241 characters</span></span>
+  <span><b class="t">Committee of Supply − Head U (Prime Minister&#x27;s Office)</b><br><span class="n">2019-02-28 ·
+  171 turns · 364,241 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-02-27.html">
-  <span><b>2019-02-27</b><br><span class="n">68 turns ·
-  256,728 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2019-02-27 ·
+  68 turns · 256,728 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-02-26.html">
-  <span><b>2019-02-26</b><br><span class="n">110 turns ·
-  330,318 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2019-02-26 ·
+  110 turns · 330,318 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-02-18.html">
-  <span><b>2019-02-18</b><br><span class="n">94 turns ·
-  175,060 characters</span></span>
+  <span><b class="t">Annual Budget Statement</b><br><span class="n">2019-02-18 ·
+  94 turns · 175,060 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-02-13.html">
-  <span><b>2019-02-13</b><br><span class="n">127 turns ·
-  399,900 characters</span></span>
+  <span><b class="t">Ageing with Purpose; Support for Caregivers</b><br><span class="n">2019-02-13 ·
+  127 turns · 399,900 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-02-12.html">
-  <span><b>2019-02-12</b><br><span class="n">222 turns ·
-  309,215 characters</span></span>
+  <span><b class="t">Singapore Food Agency Bill</b><br><span class="n">2019-02-12 ·
+  222 turns · 309,215 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-02-11.html">
-  <span><b>2019-02-11</b><br><span class="n">315 turns ·
-  435,249 characters</span></span>
+  <span><b class="t">Tobacco (Control of Advertisements and Sale) (Amendment) Bill</b><br><span class="n">2019-02-11 ·
+  315 turns · 435,249 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-01-15.html">
-  <span><b>2019-01-15</b><br><span class="n">242 turns ·
-  381,938 characters</span></span>
+  <span><b class="t">Misuse of Drugs (Amendment) Bill</b><br><span class="n">2019-01-15 ·
+  242 turns · 381,938 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2019-01-14.html">
-  <span><b>2019-01-14</b><br><span class="n">349 turns ·
-  492,934 characters</span></span>
+  <span><b class="t">Payment Services Bill</b><br><span class="n">2019-01-14 ·
+  349 turns · 492,934 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-11-20.html">
-  <span><b>2018-11-20</b><br><span class="n">244 turns ·
-  424,032 characters</span></span>
+  <span><b class="t">Employment (Amendment) Bill</b><br><span class="n">2018-11-20 ·
+  244 turns · 424,032 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-11-19.html">
-  <span><b>2018-11-19</b><br><span class="n">324 turns ·
-  473,066 characters</span></span>
+  <span><b class="t">Legal Aid and Advice (Amendment) Bill</b><br><span class="n">2018-11-19 ·
+  324 turns · 473,066 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-10-02.html">
-  <span><b>2018-10-02</b><br><span class="n">228 turns ·
-  335,149 characters</span></span>
+  <span><b class="t">Environmental Public Health (Amendment) Bill</b><br><span class="n">2018-10-02 ·
+  228 turns · 335,149 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-10-01.html">
-  <span><b>2018-10-01</b><br><span class="n">300 turns ·
-  442,472 characters</span></span>
+  <span><b class="t">Insolvency, Restructuring and Dissolution Bill</b><br><span class="n">2018-10-01 ·
+  300 turns · 442,472 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-09-10.html">
-  <span><b>2018-09-10</b><br><span class="n">379 turns ·
-  424,967 characters</span></span>
+  <span><b class="t">Land Transport (Enforcement Measures) Bill</b><br><span class="n">2018-09-10 ·
+  379 turns · 424,967 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-08-06.html">
-  <span><b>2018-08-06</b><br><span class="n">365 turns ·
-  396,890 characters</span></span>
+  <span><b class="t">Cyberattack on SingHealth&#x27;s IT System</b><br><span class="n">2018-08-06 ·
+  365 turns · 396,890 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-07-11.html">
-  <span><b>2018-07-11</b><br><span class="n">131 turns ·
-  352,048 characters</span></span>
+  <span><b class="t">Education for Our Future</b><br><span class="n">2018-07-11 ·
+  131 turns · 352,048 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-07-10.html">
-  <span><b>2018-07-10</b><br><span class="n">239 turns ·
-  398,851 characters</span></span>
+  <span><b class="t">CareShield Life</b><br><span class="n">2018-07-10 ·
+  239 turns · 398,851 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-07-09.html">
-  <span><b>2018-07-09</b><br><span class="n">334 turns ·
-  474,314 characters</span></span>
+  <span><b class="t">Small Claims Tribunals (Amendment) Bill</b><br><span class="n">2018-07-09 ·
+  334 turns · 474,314 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-05-18.html">
-  <span><b>2018-05-18</b><br><span class="n">188 turns ·
-  365,931 characters</span></span>
+  <span><b class="t">Vulnerable Adults Bill</b><br><span class="n">2018-05-18 ·
+  188 turns · 365,931 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-05-17.html">
-  <span><b>2018-05-17</b><br><span class="n">76 turns ·
-  261,674 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2018-05-17 ·
+  76 turns · 261,674 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-05-16.html">
-  <span><b>2018-05-16</b><br><span class="n">22 turns ·
-  160,639 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2018-05-16 ·
+  22 turns · 160,639 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-05-15.html">
-  <span><b>2018-05-15</b><br><span class="n">53 turns ·
-  257,269 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2018-05-15 ·
+  53 turns · 257,269 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-05-14.html">
-  <span><b>2018-05-14</b><br><span class="n">26 turns ·
-  239,494 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2018-05-14 ·
+  26 turns · 239,494 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-05-07.html">
-  <span><b>2018-05-07</b><br><span class="n">22 turns ·
-  145,651 characters</span></span>
+  <span><b class="t">President&#x27;s Address</b><br><span class="n">2018-05-07 ·
+  22 turns · 145,651 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-03-21.html">
-  <span><b>2018-03-21</b><br><span class="n">127 turns ·
-  295,884 characters</span></span>
+  <span><b class="t">Public Order and Safety (Special Powers) Bill</b><br><span class="n">2018-03-21 ·
+  127 turns · 295,884 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-03-20.html">
-  <span><b>2018-03-20</b><br><span class="n">116 turns ·
-  209,612 characters</span></span>
+  <span><b class="t">Carbon Pricing Bill</b><br><span class="n">2018-03-20 ·
+  116 turns · 209,612 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-03-19.html">
-  <span><b>2018-03-19</b><br><span class="n">165 turns ·
-  383,566 characters</span></span>
+  <span><b class="t">Criminal Justice Reform Bill</b><br><span class="n">2018-03-19 ·
+  165 turns · 383,566 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-03-08.html">
-  <span><b>2018-03-08</b><br><span class="n">168 turns ·
-  254,902 characters</span></span>
+  <span><b class="t">Committee of Supply – Head X (Ministry of Culture, Community and Youth)</b><br><span class="n">2018-03-08 ·
+  168 turns · 254,902 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-03-07.html">
-  <span><b>2018-03-07</b><br><span class="n">225 turns ·
-  455,959 characters</span></span>
+  <span><b class="t">Committee of Supply – Head I (Ministry of Social and Family Development)</b><br><span class="n">2018-03-07 ·
+  225 turns · 455,959 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-03-06.html">
-  <span><b>2018-03-06</b><br><span class="n">228 turns ·
-  507,586 characters</span></span>
+  <span><b class="t">Committee of Supply – Head T (Ministry of National Development)</b><br><span class="n">2018-03-06 ·
+  228 turns · 507,586 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-03-05.html">
-  <span><b>2018-03-05</b><br><span class="n">217 turns ·
-  466,094 characters</span></span>
+  <span><b class="t">Committee of Supply – Head S (Ministry of Manpower)</b><br><span class="n">2018-03-05 ·
+  217 turns · 466,094 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-03-02.html">
-  <span><b>2018-03-02</b><br><span class="n">210 turns ·
-  483,712 characters</span></span>
+  <span><b class="t">Committee of Supply – Head V (Ministry of Trade and Industry)</b><br><span class="n">2018-03-02 ·
+  210 turns · 483,712 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-03-01.html">
-  <span><b>2018-03-01</b><br><span class="n">239 turns ·
-  471,196 characters</span></span>
+  <span><b class="t">Committee of Supply – Head U (Prime Minister&#x27;s Office)</b><br><span class="n">2018-03-01 ·
+  239 turns · 471,196 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-02-28.html">
-  <span><b>2018-02-28</b><br><span class="n">144 turns ·
-  317,442 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2018-02-28 ·
+  144 turns · 317,442 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-02-27.html">
-  <span><b>2018-02-27</b><br><span class="n">109 turns ·
-  358,264 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2018-02-27 ·
+  109 turns · 358,264 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-02-19.html">
-  <span><b>2018-02-19</b><br><span class="n">152 turns ·
-  166,242 characters</span></span>
+  <span><b class="t">Annual Budget Statement</b><br><span class="n">2018-02-19 ·
+  152 turns · 166,242 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-02-06.html">
-  <span><b>2018-02-06</b><br><span class="n">341 turns ·
-  520,257 characters</span></span>
+  <span><b class="t">Support for Senior Citizens</b><br><span class="n">2018-02-06 ·
+  341 turns · 520,257 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-02-05.html">
-  <span><b>2018-02-05</b><br><span class="n">374 turns ·
-  513,062 characters</span></span>
+  <span><b class="t">Cybersecurity Bill</b><br><span class="n">2018-02-05 ·
+  374 turns · 513,062 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-01-10.html">
-  <span><b>2018-01-10</b><br><span class="n">176 turns ·
-  223,293 characters</span></span>
+  <span><b class="t">Select Committee on Deliberate Online Falsehoods – Causes, Consequences and Countermeasures</b><br><span class="n">2018-01-10 ·
+  176 turns · 223,293 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-01-09.html">
-  <span><b>2018-01-09</b><br><span class="n">171 turns ·
-  296,155 characters</span></span>
+  <span><b class="t">Charities (Amendment) Bill</b><br><span class="n">2018-01-09 ·
+  171 turns · 296,155 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2018-01-08.html">
-  <span><b>2018-01-08</b><br><span class="n">346 turns ·
-  499,052 characters</span></span>
+  <span><b class="t">Public Sector (Governance) Bill</b><br><span class="n">2018-01-08 ·
+  346 turns · 499,052 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-11-07.html">
-  <span><b>2017-11-07</b><br><span class="n">207 turns ·
-  419,542 characters</span></span>
+  <span><b class="t">Tobacco (Control of Advertisements and Sale) (Amendment) Bill</b><br><span class="n">2017-11-07 ·
+  207 turns · 419,542 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-11-06.html">
-  <span><b>2017-11-06</b><br><span class="n">331 turns ·
-  474,365 characters</span></span>
+  <span><b class="t">Massage Establishments Bill</b><br><span class="n">2017-11-06 ·
+  331 turns · 474,365 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-10-03.html">
-  <span><b>2017-10-03</b><br><span class="n">197 turns ·
-  352,837 characters</span></span>
+  <span><b class="t">Staying United Against the Terrorism Threat</b><br><span class="n">2017-10-03 ·
+  197 turns · 352,837 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-10-02.html">
-  <span><b>2017-10-02</b><br><span class="n">319 turns ·
-  400,321 characters</span></span>
+  <span><b class="t">Infrastructure Protection Bill</b><br><span class="n">2017-10-02 ·
+  319 turns · 400,321 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-09-11.html">
-  <span><b>2017-09-11</b><br><span class="n">375 turns ·
-  489,159 characters</span></span>
+  <span><b class="t">Building Maintenance and Strata Management (Amendment) Bill</b><br><span class="n">2017-09-11 ·
+  375 turns · 489,159 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-08-01.html">
-  <span><b>2017-08-01</b><br><span class="n">232 turns ·
-  321,175 characters</span></span>
+  <span><b class="t">Administration of Muslim Law (Amendment) Bill</b><br><span class="n">2017-08-01 ·
+  232 turns · 321,175 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-07-04.html">
-  <span><b>2017-07-04</b><br><span class="n">241 turns ·
-  350,106 characters</span></span>
+  <span><b class="t">38 Oxley Road</b><br><span class="n">2017-07-04 ·
+  241 turns · 350,106 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-07-03.html">
-  <span><b>2017-07-03</b><br><span class="n">339 turns ·
-  536,827 characters</span></span>
+  <span><b class="t">38 Oxley Road</b><br><span class="n">2017-07-03 ·
+  339 turns · 536,827 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-05-08.html">
-  <span><b>2017-05-08</b><br><span class="n">335 turns ·
-  479,232 characters</span></span>
+  <span><b class="t">Singapore University of Social Sciences Bill</b><br><span class="n">2017-05-08 ·
+  335 turns · 479,232 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-04-04.html">
-  <span><b>2017-04-04</b><br><span class="n">152 turns ·
-  417,306 characters</span></span>
+  <span><b class="t">Strengthening Singapore&#x27;s Fight Against Drugs</b><br><span class="n">2017-04-04 ·
+  152 turns · 417,306 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-04-03.html">
-  <span><b>2017-04-03</b><br><span class="n">315 turns ·
-  445,812 characters</span></span>
+  <span><b class="t">Aspirations of Singapore Women</b><br><span class="n">2017-04-03 ·
+  315 turns · 445,812 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-03-10.html">
-  <span><b>2017-03-10</b><br><span class="n">178 turns ·
-  320,357 characters</span></span>
+  <span><b class="t">Town Councils (Amendment) Bill</b><br><span class="n">2017-03-10 ·
+  178 turns · 320,357 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-03-09.html">
-  <span><b>2017-03-09</b><br><span class="n">212 turns ·
-  371,312 characters</span></span>
+  <span><b class="t">Committee of Supply − Head O (Ministry of Health)</b><br><span class="n">2017-03-09 ·
+  212 turns · 371,312 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-03-08.html">
-  <span><b>2017-03-08</b><br><span class="n">217 turns ·
-  439,084 characters</span></span>
+  <span><b class="t">Committee of Supply − Head I (Ministry of Social and Family Development)</b><br><span class="n">2017-03-08 ·
+  217 turns · 439,084 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-03-07.html">
-  <span><b>2017-03-07</b><br><span class="n">223 turns ·
-  462,591 characters</span></span>
+  <span><b class="t">Committee of Supply − Head T (Ministry of National Development)</b><br><span class="n">2017-03-07 ·
+  223 turns · 462,591 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-03-06.html">
-  <span><b>2017-03-06</b><br><span class="n">201 turns ·
-  448,468 characters</span></span>
+  <span><b class="t">Committee of Supply − Head S (Ministry of Manpower)</b><br><span class="n">2017-03-06 ·
+  201 turns · 448,468 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-03-03.html">
-  <span><b>2017-03-03</b><br><span class="n">265 turns ·
-  453,848 characters</span></span>
+  <span><b class="t">Committee of Supply ‒ Head V (Ministry of Trade and Industry)</b><br><span class="n">2017-03-03 ·
+  265 turns · 453,848 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-03-02.html">
-  <span><b>2017-03-02</b><br><span class="n">188 turns ·
-  390,190 characters</span></span>
+  <span><b class="t">Committee of Supply − Head U (Prime Minister&#x27;s Office)</b><br><span class="n">2017-03-02 ·
+  188 turns · 390,190 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-03-01.html">
-  <span><b>2017-03-01</b><br><span class="n">128 turns ·
-  411,310 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2017-03-01 ·
+  128 turns · 411,310 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-02-28.html">
-  <span><b>2017-02-28</b><br><span class="n">183 turns ·
-  429,020 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2017-02-28 ·
+  183 turns · 429,020 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-02-20.html">
-  <span><b>2017-02-20</b><br><span class="n">167 turns ·
-  178,046 characters</span></span>
+  <span><b class="t">Annual Budget Statement</b><br><span class="n">2017-02-20 ·
+  167 turns · 178,046 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-02-07.html">
-  <span><b>2017-02-07</b><br><span class="n">188 turns ·
-  283,158 characters</span></span>
+  <span><b class="t">Parks and Trees (Amendment) Bill</b><br><span class="n">2017-02-07 ·
+  188 turns · 283,158 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-02-06.html">
-  <span><b>2017-02-06</b><br><span class="n">399 turns ·
-  417,889 characters</span></span>
+  <span><b class="t">Presidential Elections (Amendment) Bill</b><br><span class="n">2017-02-06 ·
+  399 turns · 417,889 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-01-10.html">
-  <span><b>2017-01-10</b><br><span class="n">217 turns ·
-  343,739 characters</span></span>
+  <span><b class="t">Active Mobility Bill</b><br><span class="n">2017-01-10 ·
+  217 turns · 343,739 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2017-01-09.html">
-  <span><b>2017-01-09</b><br><span class="n">270 turns ·
-  439,303 characters</span></span>
+  <span><b class="t">Retirement and Re-employment (Amendment) Bill</b><br><span class="n">2017-01-09 ·
+  270 turns · 439,303 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-11-10.html">
-  <span><b>2016-11-10</b><br><span class="n">101 turns ·
-  265,467 characters</span></span>
+  <span><b class="t">Child Development Co-Savings (Amendment No 2) Bill</b><br><span class="n">2016-11-10 ·
+  101 turns · 265,467 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-11-09.html">
-  <span><b>2016-11-09</b><br><span class="n">299 turns ·
-  394,555 characters</span></span>
+  <span><b class="t">Constitution of the Republic of Singapore (Amendment) Bill</b><br><span class="n">2016-11-09 ·
+  299 turns · 394,555 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-11-08.html">
-  <span><b>2016-11-08</b><br><span class="n">373 turns ·
-  430,225 characters</span></span>
+  <span><b class="t">Constitution of the Republic of Singapore (Amendment) Bill</b><br><span class="n">2016-11-08 ·
+  373 turns · 430,225 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-11-07.html">
-  <span><b>2016-11-07</b><br><span class="n">321 turns ·
-  379,627 characters</span></span>
+  <span><b class="t">Constitution of the Republic of Singapore (Amendment) Bill</b><br><span class="n">2016-11-07 ·
+  321 turns · 379,627 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-10-10.html">
-  <span><b>2016-10-10</b><br><span class="n">273 turns ·
-  327,672 characters</span></span>
+  <span><b class="t">Central Provident Fund (Amendment No 2) Bill</b><br><span class="n">2016-10-10 ·
+  273 turns · 327,672 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-09-13.html">
-  <span><b>2016-09-13</b><br><span class="n">386 turns ·
-  463,717 characters</span></span>
+  <span><b class="t">Consumer Protection (Fair Trading) (Amendment) Bill</b><br><span class="n">2016-09-13 ·
+  386 turns · 463,717 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-08-16.html">
-  <span><b>2016-08-16</b><br><span class="n">299 turns ·
-  544,857 characters</span></span>
+  <span><b class="t">SkillsFuture Singapore Agency Bill</b><br><span class="n">2016-08-16 ·
+  299 turns · 544,857 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-08-15.html">
-  <span><b>2016-08-15</b><br><span class="n">398 turns ·
-  574,349 characters</span></span>
+  <span><b class="t">Administration of Justice (Protection) Bill</b><br><span class="n">2016-08-15 ·
+  398 turns · 574,349 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-07-11.html">
-  <span><b>2016-07-11</b><br><span class="n">306 turns ·
-  308,882 characters</span></span>
+  <span><b class="t">Bretton Woods Agreements (Amendment) Bill</b><br><span class="n">2016-07-11 ·
+  306 turns · 308,882 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-05-09.html">
-  <span><b>2016-05-09</b><br><span class="n">225 turns ·
-  204,951 characters</span></span>
+  <span><b class="t">Statutes (Miscellaneous Amendments) Bill</b><br><span class="n">2016-05-09 ·
+  225 turns · 204,951 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-04-14.html">
-  <span><b>2016-04-14</b><br><span class="n">82 turns ·
-  206,891 characters</span></span>
+  <span><b class="t">Committee of Supply – Head X (Ministry of Culture, Community and Youth)</b><br><span class="n">2016-04-14 ·
+  82 turns · 206,891 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-04-13.html">
-  <span><b>2016-04-13</b><br><span class="n">214 turns ·
-  417,296 characters</span></span>
+  <span><b class="t">Committee of Supply – Head O (Ministry of Health)</b><br><span class="n">2016-04-13 ·
+  214 turns · 417,296 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-04-12.html">
-  <span><b>2016-04-12</b><br><span class="n">180 turns ·
-  403,693 characters</span></span>
+  <span><b class="t">Committee of Supply – Head I (Ministry of Social and Family Development)</b><br><span class="n">2016-04-12 ·
+  180 turns · 403,693 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-04-11.html">
-  <span><b>2016-04-11</b><br><span class="n">203 turns ·
-  423,293 characters</span></span>
+  <span><b class="t">Committee of Supply – Head T (Ministry of National Development)</b><br><span class="n">2016-04-11 ·
+  203 turns · 423,293 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-04-08.html">
-  <span><b>2016-04-08</b><br><span class="n">168 turns ·
-  405,057 characters</span></span>
+  <span><b class="t">Committee of Supply – Head K (Ministry of Education)</b><br><span class="n">2016-04-08 ·
+  168 turns · 405,057 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-04-07.html">
-  <span><b>2016-04-07</b><br><span class="n">145 turns ·
-  368,927 characters</span></span>
+  <span><b class="t">Committee of Supply – Head V (Ministry of Trade and Industry)</b><br><span class="n">2016-04-07 ·
+  145 turns · 368,927 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-04-06.html">
-  <span><b>2016-04-06</b><br><span class="n">171 turns ·
-  348,711 characters</span></span>
+  <span><b class="t">Committee of Supply – Head P (Ministry of Home Affairs)</b><br><span class="n">2016-04-06 ·
+  171 turns · 348,711 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-04-05.html">
-  <span><b>2016-04-05</b><br><span class="n">88 turns ·
-  338,261 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2016-04-05 ·
+  88 turns · 338,261 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-04-04.html">
-  <span><b>2016-04-04</b><br><span class="n">122 turns ·
-  344,615 characters</span></span>
+  <span><b class="t">Debate on Annual Budget Statement</b><br><span class="n">2016-04-04 ·
+  122 turns · 344,615 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-03-24.html">
-  <span><b>2016-03-24</b><br><span class="n">139 turns ·
-  182,124 characters</span></span>
+  <span><b class="t">Annual Budget Statement</b><br><span class="n">2016-03-24 ·
+  139 turns · 182,124 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-03-14.html">
-  <span><b>2016-03-14</b><br><span class="n">205 turns ·
-  327,151 characters</span></span>
+  <span><b class="t">Mental Capacity (Amendment) Bill</b><br><span class="n">2016-03-14 ·
+  205 turns · 327,151 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-03-01.html">
-  <span><b>2016-03-01</b><br><span class="n">217 turns ·
-  261,253 characters</span></span>
+  <span><b class="t">National Environment Agency (Miscellaneous Amendments) Bill</b><br><span class="n">2016-03-01 ·
+  217 turns · 261,253 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-02-29.html">
-  <span><b>2016-02-29</b><br><span class="n">333 turns ·
-  442,075 characters</span></span>
+  <span><b class="t">Women&#x27;s Charter (Amendment) Bill</b><br><span class="n">2016-02-29 ·
+  333 turns · 442,075 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-01-29.html">
-  <span><b>2016-01-29</b><br><span class="n">162 turns ·
-  251,358 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2016-01-29 ·
+  162 turns · 251,358 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-01-28.html">
-  <span><b>2016-01-28</b><br><span class="n">131 turns ·
-  285,267 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2016-01-28 ·
+  131 turns · 285,267 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-01-27.html">
-  <span><b>2016-01-27</b><br><span class="n">90 turns ·
-  238,431 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2016-01-27 ·
+  90 turns · 238,431 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-01-26.html">
-  <span><b>2016-01-26</b><br><span class="n">40 turns ·
-  214,316 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2016-01-26 ·
+  40 turns · 214,316 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-01-25.html">
-  <span><b>2016-01-25</b><br><span class="n">30 turns ·
-  200,614 characters</span></span>
+  <span><b class="t">Debate on President&#x27;s Address</b><br><span class="n">2016-01-25 ·
+  30 turns · 200,614 characters</span></span>
   <span class="n">read &rsaquo;</span></a><a class="row" href="2016-01-15.html">
-  <span><b>2016-01-15</b><br><span class="n">33 turns ·
-  158,613 characters</span></span>
+  <span><b class="t">President&#x27;s Address</b><br><span class="n">2016-01-15 ·
+  33 turns · 158,613 characters</span></span>
   <span class="n">read &rsaquo;</span></a></div></div>
 <footer>Served from <code>hansard.db</code> — transcript, summaries and highlight offsets all in
 SQLite. </footer>
