@@ -1,0 +1,170 @@
+{
+ "generated": "2026-09-22T13:52:39",
+ "source": "sittings",
+ "since": null,
+ "limit": null,
+ "elapsed_secs": 11.5,
+ "out": "data/normalized/debates.jsonl",
+ "out_bytes": 223319439,
+ "members_out": "data/normalized/members.jsonl",
+ "sittings_read": 331,
+ "reports_read": 20884,
+ "rows": 19089,
+ "invalid_rows": 0,
+ "skipped_legislation_partition": 1795,
+ "map_errors": {},
+ "error_examples": [],
+ "turns": {
+  "MEMBER": 61943,
+  "OFFICER": 12944,
+  "UNRESOLVED": 31,
+  "NON_PERSON": 57
+ },
+ "principal_speaker": {
+  "MEMBER": 18045,
+  "OFFICER": 426,
+  "UNRESOLVED": 617,
+  "NON_PERSON": 1
+ },
+ "by_section": {
+  "budget": 652,
+  "tribute": 8,
+  "other": 695,
+  "oral": 2823,
+  "written": 14578,
+  "adjournment": 130,
+  "statement": 100,
+  "petition": 5,
+  "correction": 98
+ },
+ "by_doc_type": {
+  "debate": 19089
+ },
+ "turns_dropped_blank": 430,
+ "questions_extracted": 17004,
+ "division_rows": [
+  {
+   "doc_id": "budget-855",
+   "section": "budget",
+   "ayes": 89,
+   "noes": 8,
+   "abstentions": 0
+  }
+ ],
+ "division_overflow": [],
+ "title_fallbacks": 0,
+ "title_fallback_ids": [],
+ "word_count_mismatch": [],
+ "unresolved_speaker_strings": {
+  "Mr Alex Yam Ziming": 17,
+  "The Clerk of Parliament": 2,
+  "Mr Sppeaker": 1,
+  "President's Speech": 1,
+  "13": 1,
+  "Mr Edwin Tong": 1,
+  "14": 1,
+  "To ask": 1,
+  "4": 1,
+  "Mr Pritam": 1,
+  "The Deputy Leader of the House": 1,
+  "Mr Speake": 1,
+  "(Debate on Address of Thanks": 1,
+  "The Senior Parliamentary Secretary to the Minister for National Development (Dr Syed Harun Alhabsyi": 1
+ },
+ "low_coverage_sittings": [
+  {
+   "date": "2016-07-11",
+   "ratio": 0.922
+  },
+  {
+   "date": "2016-11-07",
+   "ratio": 0.929
+  },
+  {
+   "date": "2017-01-09",
+   "ratio": 0.936
+  },
+  {
+   "date": "2017-05-08",
+   "ratio": 0.929
+  },
+  {
+   "date": "2018-11-19",
+   "ratio": 0.949
+  },
+  {
+   "date": "2020-11-03",
+   "ratio": 0.913
+  },
+  {
+   "date": "2021-07-05",
+   "ratio": 0.941
+  },
+  {
+   "date": "2021-07-06",
+   "ratio": 0.892
+  },
+  {
+   "date": "2022-01-10",
+   "ratio": 0.946
+  },
+  {
+   "date": "2022-04-05",
+   "ratio": 0.932
+  },
+  {
+   "date": "2022-07-04",
+   "ratio": 0.937
+  },
+  {
+   "date": "2022-08-02",
+   "ratio": 0.938
+  },
+  {
+   "date": "2022-09-12",
+   "ratio": 0.934
+  },
+  {
+   "date": "2022-11-07",
+   "ratio": 0.926
+  },
+  {
+   "date": "2022-11-08",
+   "ratio": 0.929
+  },
+  {
+   "date": "2023-02-06",
+   "ratio": 0.927
+  },
+  {
+   "date": "2023-08-03",
+   "ratio": 0.897
+  },
+  {
+   "date": "2024-05-07",
+   "ratio": 0.942
+  },
+  {
+   "date": "2024-08-06",
+   "ratio": 0.895
+  },
+  {
+   "date": "2026-02-04",
+   "ratio": 0.933
+  },
+  {
+   "date": "2026-03-04",
+   "ratio": 0.886
+  },
+  {
+   "date": "2026-05-07",
+   "ratio": 0.922
+  }
+ ],
+ "fetch_failures": [],
+ "members": 569,
+ "members_with_aliases": 199,
+ "roster_name_entries": 570,
+ "roster_members": 569,
+ "resolution_counts_scope": "partition: sections other than bill/motion. Corpus-wide totals (both partitions) are reproduced by docs/probes/ingest_resolution_ledger.py. NOTE that spec 3.3's quoted table is now 4 turns stale: it reads MEMBER 1,148/69,829, OFFICER 17/19,946, NON_PERSON 11/209, UNRESOLVED 31/52, and the measured figures are OFFICER 19/19,948, NON_PERSON 13/211, UNRESOLVED 27/48, MEMBER unchanged. The spec's numbers predate the invisible-mark fix (a BOM glued to a speaker string made a chamber officer uncountable, see clean_speaker); every share is unchanged at 77.6/22.2/0.2/0.1%"
+}

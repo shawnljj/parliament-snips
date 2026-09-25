@@ -1,12 +1,11 @@
 {
  "project": "parsnips",
- "written_at": "2026-09-21T11:07:12+08:00",
+ "written_at": "2026-09-25T14:43:26+08:00",
  "by": "tools/write_status.py",
  "status": "failed",
  "changed_since_last": [
   "3863 briefs live across 11 year(s)",
-  "1 year(s) FAIL their gates: 2016",
-  "5 unpushed commit(s)"
+  "1 year(s) FAIL their gates: 2016"
  ],
  "corpus": {
   "2016": {
@@ -127,8 +126,8 @@
  "needs_decision": "1 year(s) fail check_selection (2016). Fix before shipping, or accept the defects.",
  "severity": "high",
  "git": {
-  "unpushed_commits": 5,
-  "dirty_files": 3,
-  "last_commit": "038c52e Card: test 1, sentence completeness against a fresh Hansard pull"
+  "unpushed_commits": 0,
+  "dirty_files": 2,
+  "last_commit": "fe6ffcb6 Add the RAG README, prune the finished layout-QA work, restore the verification chain"
  }
 }

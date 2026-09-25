@@ -120,6 +120,61 @@ list` shows only the main checkout). A stray from a removed worktree, referenced
 
 ---
 
+## 8. Correction, 2026-09-25 (late): the cleanup was not on `origin/main`
+
+The commit that carried out this triage was **reset away** (`git reflog`: `fe6ffcb6` → `reset: moving
+to origin/main` → committed again). On re-check, the tree held four paths still dirty, all pointing
+the *wrong* way:
+
+| path | state found | what it was |
+|---|---|---|
+| `site/build_site.py` | 3,420 lines vs HEAD's 4,022 | the **pre-`94737f6e` generator**, recovered from a reset. Not a candidate for re-commit: its output is for the `data/` layout (`no sittings in data/`). |
+| `tools/check_artifacts.py` | 265 lines vs HEAD's 409 | same class — a pre-reset copy. |
+| `docs/completeness-check.md`, `docs/site-dist.md` | deleted from disk, never committed | this doc's §3 called them removable; both are referenced by `tools/verify_sitting.py:780` and `tools/test_deterministic.py:513` as the explanation for a "not lost text" finding. **Kept.** |
+| `docs/kanban/t_393dfbc8/` | untracked, 8 files, ~200 KB | the debates/legislation ingest card from 22 Sep. Committed below. |
+
+All four were resolved toward HEAD rather than against it: the two scripts restored, the two docs
+restored, the card committed. Nothing here is a judgement that §1–§7 got wrong — it is that the tree
+they were applied to was rebuilt underneath them, and the re-check read the files' *contents* rather
+than their timestamps.
+
+## 9. What the re-check turned up (open, not fixed here)
+
+**The 42 `site/dist/skipped/*.json` payloads for 2016 are not reproducible from this tree's data.**
+`docs/site-dist.md` §"skipped" holds these back from a commit because the fresh build and the
+committed bytes disagree. Measured on HEAD's builder, building 331 pages in 18s:
+
+| payload | committed rows | fresh build | relation of the two sets |
+|---|---|---|---|
+| `bill-223+224+225+226+227+228+229+230.json` | 3,814 | 3,928 | disjoint (`0` shared rows) |
+| `bill-236.json` | 464 | 465 | `2` shared; 462 vs 463 differ |
+| `oral-answer-1392.json` | 5 | 4 | 4 shared; 1 committed-only row |
+
+The payload is `pipeline/dataset/<year>/<brief>.json` minus the summary's own sentences. The dataset
+items are **gitignored derived artifacts** (`summariser/build_dataset.py`), and the committed payloads
+predate the current dataset: every 2016 dataset file is dated **20 Sep**, the deployed payloads
+**13:24 on 25 Sep**. So the two sides were built from different dataset generations, and the
+divergence is inherited staleness rather than a defect in the generator. Reproducing the deployed
+bytes would need the 20 Sep dataset, which no longer exists on this machine.
+
+Consequence: the deployed payload for `bill-236` omits the sentence containing "Page: 71", which
+today's dataset item carries. That is a reader-visible content difference on 42 of 3,863 briefs.
+Closing it needs the owner's call — re-summarise and redeploy the 42, or accept them. It is **not**
+fixed by committing a rebuild: that would change deployed content for briefs whose summaries were not
+re-generated, which is the failure §1 exists to prevent.
+
+**The `t_393dfbc8` card is committed but cannot be run in-tree.** Its suite imports `rag_schema` and
+reads `ingest/test_debates.py`; neither exists in this tree (`ingest/` is absent, `tools/` holds no
+`rag_schema.py`). The card was written against a layout that was not landed, and its `ingest_gates.py`
+also calls four `docs/probes/ingest_*.py` probes that were removed with the layout-QA tree. Committed
+because 200 KB of corpus-derived fixtures cannot be regenerated, and labelled here because "it is in
+the repo" must not be read as "it runs". The live ingest path is `rag/build_db.py` (91,263 turns).
+
+**`status.json` was four days stale** and reported `blocked_on: 10 unpushed commits` against what is
+in fact a clean, fully-pushed tree. Refreshed — `tools/write_status.py` takes 2.3s including all 11
+gate runs. Its `dirty_files` count is measured *before* the write that refreshes it, so it reads `2`
+on a tree that the same commit leaves clean.
+
 ## Recover anything
 
 Everything removed is at HEAD (`bd161d3e`) or earlier:
