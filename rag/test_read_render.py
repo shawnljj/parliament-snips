@@ -30,6 +30,32 @@ DATES = sys.argv[1:] or ['2024-02-07', '2016-01-15', '2026-08-05', '2017-03-09']
 ok = True
 
 
+def _derive_hidden(db, date):
+    """Per-sentence reasons for one sitting, using the loader's turn-scoped pass.
+
+    Mirrors build_summaries.stamp_reasons: group each (turn, speaker) in spoken order by char_start,
+    then ask the rules with the turn's own words (a retraction is usually NOT itself selected, so the
+    turn text is what reveals a correction happened).
+    """
+    sys.path.insert(0, '/Users/shawnlin/parsnips/summariser')
+    import significance as SG
+    ttext = {r[0]: r[1] for r in db.execute("SELECT key, text FROM turn")}
+    rows = db.execute("""SELECT s.speaker, s.text, s.turn_key, s.char_start FROM summary_sentence s
+        JOIN summary_section c ON c.section_id = s.section_id
+        JOIN summary_item    i ON i.item_id = c.item_id
+        JOIN summary_item_sitting g ON g.item_id = i.item_id
+        WHERE g.date = ? AND s.turn_key IS NOT NULL""", (date,)).fetchall()
+    groups = {}
+    for r in rows:
+        groups.setdefault(r[2], []).append(r)
+    out = []
+    for tk, mem in groups.items():
+        mem.sort(key=lambda r: r[3] if r[3] is not None else 0)
+        sp = [m[0] for m in mem]
+        out += SG.classify_turn_text([m[1] for m in mem], sp, ttext.get(tk, ''))
+    return out
+
+
 def check(label, cond, detail=''):
     global ok
     print(f"  [{'PASS' if cond else 'FAIL'}] {label}  {detail}")
@@ -120,17 +146,13 @@ for date in DATES:
     check('no turn carries two summaries', max(per_turn_calls, default=0) <= 1,
           f'max {max(per_turn_calls, default=0)} per turn')
 
-    # exactly the sentences the significance rules name are the ones held back -- no more, no fewer
-    # The speaker must be passed: `classify` asks "is the SPEAKER the chair AND is this
-    # housekeeping", and judging the phrasing alone catches chair-like wording in a member's speech
-    # -- which is how this gate first disagreed with the render (32 named vs 6 rendered).
-    exp_hidden = [r[0] for r in db.execute("""
-        SELECT s.text, s.speaker FROM summary_sentence s
-        JOIN summary_section c ON c.section_id = s.section_id
-        JOIN summary_item    i ON i.item_id = c.item_id
-        JOIN summary_item_sitting g ON g.item_id = i.item_id
-        WHERE g.date = ? AND s.turn_key IS NOT NULL""", (date,)).fetchall()
-        if SG.classify(r[0], r[1])]
+    # Exactly the sentences the significance rules name are the ones held back -- no more, no fewer.
+    #
+    # Derived through the SAME turn-scoped pass the loader uses, not per sentence. Two earlier
+    # versions of this check disagreed with the render for instructive reasons: `classify` without
+    # the speaker judged phrasing alone (32 named vs 6 rendered), and per-sentence derivation cannot
+    # see a correction PAIR (3 named vs 4 rendered). The rules are turn-scoped, so this must be too.
+    exp_hidden = [d for d in _derive_hidden(db, date) if d]
     got_hidden = len(re.findall(r'<mark class="hl dim">', html))
     check('held-back highlights are exactly the ones the rules name',
           got_hidden == len(exp_hidden), f'rendered {got_hidden}, rules name {len(exp_hidden)}')

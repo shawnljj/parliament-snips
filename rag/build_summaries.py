@@ -195,6 +195,55 @@ def anchor(probe, turns, own_report_ids):
     return (key, o_start, o_end, method)
 
 
+def turn_texts(db, keys):
+    """The full words of each turn, keyed by turn.key.
+
+    The selected sentences are not enough to see a correction: the retraction is usually NOT selected
+    (the owner's case is a turn where only the corrected claim was chosen), so the turn's own text is
+    what tells us a correction happened here at all.
+    """
+    keys = [k for k in keys if k]
+    out = {}
+    for i in range(0, len(keys), 400):
+        chunk = keys[i:i + 400]
+        qs = ','.join('?' * len(chunk))
+        for r in db.execute(f"SELECT key, text FROM turn WHERE key IN ({qs})", chunk):
+            out[r['key']] = r['text']
+    return out
+
+
+def stamp_reasons(rows_sent, db=None):
+    """Fill hidden_reason on anchored rows, using the turn-scoped significance pass.
+
+    `rows_sent` tuples are (sec_id, ord, sid, speaker, attributed, context, text, turn_key,
+    char_start, char_end, method, hidden_reason). Returns a new list; never drops a row.
+
+    Why this cannot be folded into the per-sentence classify(): the correction rule fires on a PAIR
+    of adjacent sentences, and adjacency means the order the sentences were SPOKEN in. Sections
+    regroup them by topic, so the order has to be rebuilt from char_start within each
+    (turn, speaker) group -- exactly the reader's view of the transcript.
+    """
+    groups = {}
+    for i, r in enumerate(rows_sent):
+        if r[7] and r[8] is not None:          # anchored rows only: an unanchored row has no position
+            groups.setdefault((r[7], r[3]), []).append((r[8], i, r[6]))
+    reasons = [None] * len(rows_sent)
+    ttext = turn_texts(db, {tk for (tk, _sp) in groups}) if db is not None else {}
+    for (tk, _sp), members in groups.items():
+        members.sort()
+        idxs = [m[1] for m in members]
+        texts = [m[2] for m in members]
+        for k, why in zip(idxs, SIG.classify_turn_text(texts, [_sp] * len(texts),
+                                                       ttext.get(tk, ''))):
+            reasons[k] = why
+    # Unanchored rows still get a reason from the single-sentence rules: their reason is recorded on
+    # the row like any other, so an exclusion can always be explained -- never silently applied.
+    for i, r in enumerate(rows_sent):
+        if reasons[i] is None and not r[7]:
+            reasons[i] = SIG.classify(r[6], r[3])
+    return [r[:11] + (reasons[i],) for i, r in enumerate(rows_sent)]
+
+
 def build(db, dry_run=False, verbose=True):
     files = sorted(glob.glob(os.path.join(SUM_DIR, '*', '*.json')))
     if verbose:
@@ -257,10 +306,19 @@ def build(db, dry_run=False, verbose=True):
                                   1 if x.get('attributed') else 0,
                                   1 if x.get('added_for_context') else 0,
                                   x.get('text') or '', tk, cs, ce, meth,
-                                  SIG.classify(x.get('text') or '', x.get('speaker'))))
+                                  None))   # reasons stamped in the pass below
             rows_sec.append((sec_id, item, si, s.get('label'), s.get('summary') or ''))
             if not dry_run:
                 stats['sections'] += 1
+
+        # Stamp the significance reason AFTER anchoring, from a turn-scoped pass.
+        #
+        # The correction rule needs the sentences around a retraction, and their order IN THE TURN --
+        # which the section listing does not give (sections regroup sentences by topic). char_start is
+        # the in-turn position, so sorting by it inside each (turn, speaker) group reproduces the turn.
+        # Grouping by speaker too, so one Member retracting cannot sweep away the next Member's
+        # sentences in a written answer that carries several speakers.
+        rows_sent = stamp_reasons(rows_sent, db)
 
         if not dry_run:
             n_anch = sum(1 for r in rows_sent if r[7])

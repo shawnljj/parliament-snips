@@ -103,6 +103,27 @@ def checks_for(date, page, turns):
     else:
         add('page states how much it folded', False, 'no fold note found')
 
+    # --- 4b. the held-back highlights are collapsed AND counted --------------------------------
+    # The page says "N further highlights held back as procedure or repetition ... collapsed, not
+    # removed". Two things can go wrong and neither is visible by reading the page: a held-back mark
+    # rendered as ordinary policy (the page then shows procedure as if it were a policy move -- the
+    # owner's complaint), or the note counting something other than the marks rendered.
+    n_dim = len(re.findall(r'<mark class="hl dim">', page))
+    m = re.search(r'<b>([\d,]+)</b> further highlight', page)
+    # No note means nothing was held back: the sentence is only emitted when the count is non-zero,
+    # so an absent note is a claim of 0, not a missing claim.
+    claimed_hidden = int(m.group(1).replace(',', '')) if m else 0
+    add('held-back highlights are exactly the ones the rules name',
+        claimed_hidden == n_dim,
+        f'note claims {claimed_hidden}, page renders {n_dim} collapsed'
+        + ('' if m else ' (no note: nothing held back)'))
+    add('a held-back mark is never rendered as ordinary policy',
+        # every dim mark must be inside a collapsed toggle: an open dim mark would read as prose
+        all('<details class="gap hidden"' in page[:mm.start()].rsplit('<details', 1)[-1]
+            or 'hidden' in page[:mm.start()].rsplit('<details', 1)[-1][:40]
+            for mm in re.finditer(r'<mark class="hl dim">', page)) if n_dim else True,
+        f'{n_dim} held-back marks all collapsed')
+
     add('page still states its highlight coverage', COV_RE.search(page) is not None)
 
     # --- 7. ONE summary per turn ------------------------------------------------

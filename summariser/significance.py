@@ -140,6 +140,43 @@ COMMITMENT_RE = re.compile(
     r"|implement(?:ing)?|extend(?:ing)?|increas(?:e|ing)|reduc(?:e|ing)|from \d{4}\b|by \d{4}\b"
     r"|effective\b|later this year|next year|in the coming)\b", re.I)
 
+# Substance that is neither a modal nor a policy verb, but still the reader's reason to be here: the
+# figure that was named, the horizon it was named against, or the Government as the actor.
+#
+# This was added after probing four real sentences the narrower test would have hidden:
+#   "I said that the resale grant is up to $180,000."
+#   "I said in my Budget Statement that we expect to fund the expenditure for the remainder of this
+#    term of Government."
+#   "I said yesterday that we are looking at the option of pushing up for vocational PWM..."
+#   "I said earlier that payouts would grow from $731 monthly in 2026."
+# Every one is a specific number or a stated horizon -- the most usable thing a citizen can take from
+# a sitting. A restatement rule that eats the figures is worse than the nitpicking it replaces.
+SUBSTANCE_EXTRA_RE = re.compile(
+    r"[$£]\d"
+    r"|\b\d[\d,.]*\s*(?:million|billion|per cent|percent|%|gigawatts?|days?|months?|years?"
+    r"|monthly|daily|a month|a year|per year)\b"
+    r"|\b(?:last|this|next) (?:year|month|week|term)\b|\byesterday\b|\bBudget Statement\b"
+    r"|\bthe (?:Government|Ministry|Board|House) (?:will|expects|plans|intends)\b", re.I)
+
+# A speaker correcting their OWN words, with nothing but the retraction in the sentence.
+#
+# The owner's judgement (2026-09-25): these are not policy moves, and highlighting them makes the
+# tool sound nitpicking. Measured: 7 highlights in the whole corpus open this way. The narrow test is
+# deliberate -- "What I meant to say was that several Members have asked if the Government will
+# consider reducing fuel duty" KEEPS its place, because the correction is the frame and the policy is
+# the content. What is held back is the sentence that only says "I misspoke" or restates a figure
+# already on the page.
+SELF_CORRECTION_RE = re.compile(
+    r"^\s*(?:yes,?\s+(?:speaker|mr speaker|mdm speaker)\.?\s*)?"
+    r"(?:i (?:misspoke|mis-spoke)\b"
+    r"|i (?:meant|mean) to say\b"
+    r"|what i (?:meant|mean)(?: to say)?\b"
+    r"|i should have said\b"
+    r"|i (?:was|am) wrong\b"
+    r"|my mistake\b"
+    r"|i correct myself\b"
+    r"|to correct myself\b)", re.I)
+
 
 def opener_remainder(text):
     """The sentence with its restatement opener removed."""
@@ -171,16 +208,129 @@ def is_housekeeping(text, speaker=None):
                 or CONSENT_RE.search(tx))
 
 
-def is_restatement(text):
-    """A sentence that points back at what was already said AND adds no commitment.
+def carries_substance(remainder):
+    """Does the part after an opener give the reader anything new to act on?
 
-    The opener alone does not decide it: see COMMITMENT_RE for the measured case this guards
-    ("As I said, the GST rate will not rise in 2026" must stay).
+    Two tests, because a commitment needs a verb and substance often does not: a figure, a horizon,
+    or the Government as the actor is enough. See SUBSTANCE_EXTRA_RE for the four measured sentences
+    that forced the second test.
+    """
+    return bool(COMMITMENT_RE.search(remainder) or SUBSTANCE_EXTRA_RE.search(remainder))
+
+
+def is_restatement(text):
+    """A sentence that points back at what was already said AND adds nothing the reader can use.
+
+    The opener alone does not decide it: see COMMITMENT_RE / SUBSTANCE_EXTRA_RE for the measured
+    cases this guards ("As I said, the GST rate will not rise in 2026" must stay).
     """
     tx = (text or "").strip()
     if not RESTATEMENT_RE.match(tx):
         return False
-    return not COMMITMENT_RE.search(opener_remainder(tx))
+    return not carries_substance(opener_remainder(tx))
+
+
+def split_sentences(text):
+    """Minimal sentence split, used only to ask whether a turn contains a retraction.
+
+    Deliberately not the pipeline's splitter: this needs to find a phrase, not to reproduce the
+    selection, and importing the selection code here would create a cycle (extractive imports this).
+    """
+    return [p for p in re.split(r'(?<=[.!?])\s+', (text or '').strip()) if p]
+
+
+def is_self_correction(text):
+    """A speaker retracting their own words, with nothing but the retraction in the sentence.
+
+    Owner's judgement: not significant, and surfacing it reads as nitpicking. The correction is
+    PROCEDURE about the speaker, not a move by the House -- unless the sentence goes on to say
+    something the reader needs, which `carries_substance` decides.
+    """
+    tx = (text or "").strip()
+    if not SELF_CORRECTION_RE.match(tx):
+        return False
+    return not carries_substance(opener_remainder(tx))
+
+
+def correction_span(sentences, speakers=None):
+    """Indices of the sentences that are a speaker correcting their own words.
+
+    A correction comes in a PAIR, and neither half is significant alone:
+
+        "I said that the statutory minimum annual leave ... goes up to a cap of 14 years."
+        "I meant to say 14 days."
+
+    The first half looks exactly like the figure-bearing restatements we deliberately keep ("I said
+    that the resale grant is up to $180,000"), so no single-sentence test can separate them -- the
+    only durable signal is that a retraction sits next to it. Hence a turn-scoped rule.
+
+    Measured: 7 retractions corpus-wide, and the owner's annual-leave sentence was one half of one.
+    Both halves go; the reader keeps the corrected figure that follows, which is the useful one.
+
+    Speakers are compared when given, so one Member retracting does not sweep away the next Member's
+    sentences -- a turn can carry several speakers in a written answer.
+    """
+    n = len(sentences)
+    anchors = {i for i, t in enumerate(sentences) if is_self_correction(t)}
+    if not anchors:
+        return set()
+    span = set(anchors)
+    for i in sorted(anchors):
+        # The retracted claim sits on either side: a Member may restate then correct, or retract then
+        # restate. Only a restatement-SHAPED neighbour is drawn in, so the correction cannot reach out
+        # and swallow the surrounding policy text.
+        for j in (i - 1, i + 1):
+            if 0 <= j < n and j not in anchors:
+                if speakers and speakers[j] != speakers[i]:
+                    continue
+                if RESTATEMENT_RE.match(sentences[j].strip()):
+                    span.add(j)
+    return span
+
+
+def classify_turn(sentences, speakers=None):
+    """Per-sentence reasons for a whole turn, so the correction rule can see adjacent sentences.
+
+    Returns a list aligned with `sentences`; None means the sentence is surfaced. Callers that hold
+    whole turns must use this rather than classify(), or the pair rule cannot fire.
+    """
+    span = correction_span(sentences, speakers)
+    out = []
+    for i, t in enumerate(sentences):
+        sp = speakers[i] if speakers else None
+        out.append("self_correction" if i in span else classify(t, sp))
+    return out
+
+
+def classify_turn_text(selected, speakers, turn_text):
+    """Reasons for the SELECTED sentences of a turn, given the turn's own words.
+
+    Needed because the retraction is usually NOT itself selected -- the selector picks the claim, not
+    the correction. The owner's case is the pure form: the whole turn reads
+
+        "Yes, Speaker. I misspoke earlier. I said that the statutory minimum annual leave under the
+         Employment Act goes up to a cap of 14 years. I meant to say 14 days."
+
+    and the only sentence the selector chose was the middle one. A rule that pairs SELECTED sentences
+    therefore finds no pair and holds nothing back, while the page still shows a correction as if it
+    were a policy statement.
+
+    So the turn's full text decides, and the selected restatement inside it goes. Measured: this is
+    what separates the owner's annual-leave line from the 300 figure-bearing restatements we keep --
+    those sit in turns that contain no retraction at all.
+
+    `selected` and `speakers` are aligned, in spoken order.
+    """
+    out = classify_turn(selected, speakers)
+    if not turn_text:
+        return out
+    if not any(is_self_correction(x) for x in split_sentences(turn_text)):
+        return out
+    # The turn corrects something, so a bare restatement in it is the thing being corrected.
+    for i, t in enumerate(selected):
+        if out[i] is None and RESTATEMENT_RE.match(t.strip()):
+            out[i] = "self_correction"
+    return out
 
 
 def classify(text, speaker=None):
@@ -192,6 +342,8 @@ def classify(text, speaker=None):
     """
     if is_housekeeping(text, speaker):
         return "chair_housekeeping"
+    if is_self_correction(text):
+        return "self_correction"
     if is_restatement(text):
         return "restatement"
     return None

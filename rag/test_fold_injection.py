@@ -15,6 +15,10 @@ The mutations, and the defect each stands for:
   M5  strip every toggle, leaving the text loose     -> the fold is gone (nothing collapsed)
   M6  drop the coverage sentence                     -> the page stops stating its coverage
   M7  clone a turn's callout twice                   -> two summaries over one turn's highlights
+  M8  unhide a held-back highlight (mark dim -> mark) -> procedure reads as policy on the page
+
+The gate's own labels are asserted by string, so each expect_fail must match a check() label in
+`test_read_fold.py` exactly -- a typo here would silently probe nothing.
 
 Run: python3 test_fold_injection.py
 """
@@ -99,6 +103,17 @@ assert m is not None, "no callout to clone"
 m7 = base.replace(m.group(0), m.group(0) + m.group(0), 1)
 probes.append(("M7 a turn carries two summary callouts", m7,
                'at most one summary callout per turn', m7 != base))
+
+# ---- M8: a held-back highlight is shown as if it were policy
+# This is the owner's complaint, as a mutation: the page claims to hold procedure back and then shows
+# it. Catches a render that ignores hidden_reason while the note above still counts it.
+m = re.search(r'<mark class="hl dim">', base)
+if m is not None:
+    m8 = base.replace('<mark class="hl dim">', '<mark class="hl">', 1)
+else:
+    m8 = base
+probes.append(("M8 a held-back highlight is unhidden", m8,
+               'held-back highlights are exactly the ones the rules name', m8 != base))
 
 ok = True
 print()
