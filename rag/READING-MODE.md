@@ -144,7 +144,41 @@ the browser would need the loader's normalisation (unicode dashes, curly quotes,
 re-implemented in JS, and any drift puts the highlight under the wrong words. Measured contrast of
 the amber highlight on its own background: **16.4:1**.
 
-Verified at 360/390/414px: 0 horizontal overflow, minimum tap target 44px.
+## The fold (added 2026-09-25) — collapsed by default, complete by construction
+
+The sitting opens folded, twice over:
+
+| level | unit | default | measured (2024-02-07) |
+|---|---|---|---|
+| **topic** | one per REPORT — a debate, or a question and its answers | all closed | **57** topics |
+| **stretch** | a run of unsummarised text inside a turn | collapsed, inline | **906** toggles |
+
+**A report, not a brief, is the topic.** 57 reports on that sitting against 23 briefs: the 34
+reports no brief summarises (mostly written answers) would otherwise sit outside every fold — a part
+of the record the reader could not open at all. It also means a topic carries a real name
+("Advancing Mental Health"), because a report's title is the subject.
+
+**The fold hides text; it may not drop it.** Every turn is still rendered, and the concatenation of
+its runs still equals `turn.text` byte for byte — the same assertion `test_read_span.py` makes for
+one turn, now made for all of them by `test_read_fold.py`. Collapsed stretches carry their exact
+sentence count (`[+15 sentences]`, counted with `sentences.sentence_spans`, the same splitter the
+chunker uses) and are revealed **in place** by an inline `<details>`: verified that a `details` with
+no block box flows at the highlight's baseline, so the reveal rejoins the paragraph instead of
+escaping into a block of its own.
+
+**Where it lands:** 835,491 characters → 142,684 open (17.1%) on 2024-02-07, 14.7% on 2026-08-05,
+23.0% on 2016-01-15. The page still states both numbers — the highlight coverage it always stated,
+and what it folded — because a page that hides most of the record owes the reader an account of how
+much.
+
+**Arriving from a citation opens its way in.** The server opens the topic holding the cited turn,
+and the page opens the collapsed stretch the citation lands in — the topic fold alone can hide the
+passage, which would undo the bridge.
+
+Verified at 360/390/414px by the design mockup pass: 0 horizontal overflow, minimum tap target
+44px. **The topic summaries and the inline chips are the one thing here a headless pass could not
+re-measure** — headless Chrome wedged on this machine, so the chips were sized by construction
+(padding + line box) and confirmed visually; re-check the chip's hit area on a real phone.
 
 ## Still open
 

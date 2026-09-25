@@ -55,7 +55,7 @@ for date in DATES:
         continue
 
     got = html.count('<mark class="hl">')
-    turns = RS.full_transcript(db, date)[0]
+    turns = RS.full_transcript(db, date)[0]   # (turns, items, reports)
     check('every anchored span is rendered', got == exp, f"emitted {got}, expected {exp}")
 
     # no mark text may be empty, and no mark may contain a raw '<'

@@ -36,6 +36,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
+# The project's one sentence splitter, shared with the chunker, the gate and the eval.
+from sentences import sentence_spans  # noqa: E402
+
 DB = '/Users/shawnlin/parsnips/pipeline/hansard.db'
 PORT = 8444
 
@@ -47,6 +50,21 @@ def connect():
     db.row_factory = sqlite3.Row
     db.execute("PRAGMA foreign_keys = ON")
     return db
+
+
+def plain_run(text):
+    """A stretch of unsummarised text, as a collapsed run carrying its sentence count.
+
+    The count is what the reader taps to open it ("[+9 sentences]"), so it has to be the number of
+    SENTENCES in this stretch -- not lines, not paragraphs. Sentences are counted with the same
+    splitter the chunker, the gate and the eval use (`sentences.sentence_spans`), so the number on
+    the button and the number of sentences revealed are the same number by construction.
+
+    A stretch with no whitespace at all (a stray mark, punctuation between two adjacent highlights)
+    is not offered as a fold: there is nothing to read behind it, and an empty toggle is a dead tap.
+    """
+    n = len(sentence_spans(text)) if text.strip() else 0
+    return {'kind': 'plain', 'text': text, 'sentences': n, 'collapsible': n > 0}
 
 
 def sitting_index(db):
@@ -143,7 +161,14 @@ def full_transcript(db, date):
 
     This is the other half of the reading mode: the summary layer covers only ~16% of the
     transcript, so a reader who wants the record itself must see every turn -- including the
-    ones no summary selected -- with the summarised spans marked where they occur.
+    the ones no summary selected -- with the summarised spans marked where they occur.
+
+    The reader opens a sitting and gets it COLLAPSED: one fold per report (a report == a topic --
+    one debate, or one question and its answers), and inside a report only the highlighted sentences
+    are visible, with the unhighlighted stretches replaced by an inline "[+N sentences]" toggle that
+    reveals them in place. Measured on the sitting pages: 835,491 chars -> 142,684 (17.1%) on
+    2024-02-07, 14.7% on 2026-08-05, 23.0% on 2016-01-15. Every unsummarised stretch is a toggle,
+    never an omission -- the record is still whole, it is just not all open at once.
 
     IMPORTANT: the turn set is the UNION of two sets, and using only the first is wrong in both
     directions (both measured):
@@ -195,14 +220,14 @@ def full_transcript(db, date):
             if cs is None or ce is None or cs < pos or ce > len(text):
                 continue
             if cs > pos:
-                runs.append({'kind': 'plain', 'text': text[pos:cs]})
+                runs.append(plain_run(text[pos:cs]))
             runs.append({'kind': 'marked', 'text': text[cs:ce],
                          'summary': s['summary'], 'label': s['label'],
                          'item': s['item_id'], 'title': s['title'],
                          'sid': s['sid'], 'spk': s['speaker']})
             pos = ce
         if pos < len(text):
-            runs.append({'kind': 'plain', 'text': text[pos:]})
+            runs.append(plain_run(text[pos:]))
         out.append({
             'key': t['key'], 'n': t['turn'], 'speaker': t['speaker'],
             'report_id': t['report_id'], 'report_title': t['report_title'],
@@ -212,12 +237,31 @@ def full_transcript(db, date):
             'runs': runs, 'n_marks': sum(1 for r in runs if r['kind'] == 'marked'),
         })
 
+    # A report == a topic. One fold per report, not per brief: 57 reports on 2024-02-07 against
+    # 23 briefs, and the 34 reports no brief summarises (mostly written answers) would otherwise
+    # fall outside every fold -- a topic the reader cannot open at all.
+    group, order = {}, []
+    for t in out:
+        if t['report_id'] not in group:
+            group[t['report_id']] = {
+                'report_id': t['report_id'], 'title': t['report_title'],
+                'type': t['report_type'], 'rdate': t['rdate'],
+                'n_turns': 0, 'words': 0, 'n_marks': 0, 'turns': [],
+            }
+            order.append(t['report_id'])
+        g = group[t['report_id']]
+        g['turns'].append(t)
+        g['n_turns'] += 1
+        g['words'] += t['words'] or 0
+        g['n_marks'] += t['n_marks']
+    reports = [group[r] for r in order]
+
     # summaries for the sitting, in item order, for the inline callouts / top index
     items = db.execute("""
         SELECT i.item_id, i.title, i.n_sections, i.n_sentences, i.n_anchored
         FROM summary_item_sitting g JOIN summary_item i ON i.item_id = g.item_id
         WHERE g.date = ? ORDER BY i.n_sentences DESC""", (date,)).fetchall()
-    return out, [dict(i) for i in items]
+    return out, [dict(i) for i in items], reports
 
 
 # ---------------------------------------------------------------- the answer
@@ -400,6 +444,33 @@ h2{font-size:17px;margin:0;letter-spacing:-.01em}
 .bar{height:4px;background:var(--line);border-radius:2px;margin-top:9px;overflow:hidden}
 .bar i{display:block;height:100%;background:var(--accent)}
 /* --- full-transcript reading view --- */
+/* --- the topic fold (a report == a topic) --- */
+.topic{background:#fff;border:1px solid var(--line);border-radius:12px;margin:0 0 10px;overflow:hidden}
+.topic>summary{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px;padding:14px 13px;
+  cursor:pointer;min-height:44px;list-style:none}
+.topic>summary::-webkit-details-marker{display:none}
+.topic>summary:active{background:#f6f7f5}
+.topic>summary .rtype{margin-bottom:0;font-size:10.5px}
+.topic>summary .ttl{font-size:15.5px;font-weight:650;line-height:1.32;flex:1 1 100%;
+  letter-spacing:-.01em}
+.topic>summary .tmeta2{font-size:11.5px;color:var(--dim);flex:1 1 auto}
+.topic>summary .chev{color:var(--accent);font-size:18px;line-height:1;transition:transform .15s}
+.topic[open]>summary .chev{transform:rotate(90deg)}
+.topicbody{padding:0 13px 14px}
+.topic .rhead{margin:0 0 10px;padding-top:0;border-top:0}
+/* --- the inline fold for unsummarised text --- */
+.gap{display:inline}
+.gap>summary{display:inline;font-family:var(--sans);font-size:12px;font-weight:650;
+  color:var(--accent);cursor:pointer;list-style:none;white-space:nowrap;
+  background:var(--accent-soft);border:1px solid #cfe0d6;border-radius:6px;
+  padding:3px 6px;margin:0 2px}
+.gap>summary::-webkit-details-marker{display:none}
+.gap>summary:active{background:#dcebe2}
+.gap[open]>summary{color:var(--dim);background:#f3f4f2;border-color:var(--line);font-weight:400}
+.gapdemo{font-size:11.5px;font-weight:650;color:var(--accent);background:var(--accent-soft);
+  border:1px solid #cfe0d6;border-radius:6px;padding:2px 6px;white-space:nowrap}
+.foldnote{font-size:13px;color:var(--ink)}
+.foldnote b{font-weight:650}
 .rhead{margin:26px 0 10px;padding-top:14px;border-top:2px solid var(--ink)}
 .rhead:first-of-type{border-top:0;padding-top:0}
 .rtype{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.07em;
@@ -615,19 +686,22 @@ def render_index(db):
 
 
 def render_read(db, date, focus_turn=None, focus_span=None):
-    """The Fold reading view: the FULL transcript, with summarised sentences highlighted.
+    """The Fold reading view: topics folded, highlights in place, the rest one tap away.
 
-    Structure per turn: the speaker and the whole turn text, with the summarised spans marked
-    inline. A summary callout is attached to the first marked span of each section, so the
-    reader gets the Government's summary AND the verbatim record it was drawn from, in place.
-    Turns no summary selected are still rendered -- they are the majority of the record.
+    Structure: a fold per report (topic) -> its turns -> only the highlighted sentences open, each
+    unsummarised stretch collapsed behind an inline "[+N sentences]" toggle. A summary callout is
+    attached to the first marked span of each section, so the reader gets the Government's summary
+    AND the verbatim record it was drawn from, in place.
+
+    Every turn no summary selected is still IN the page -- it is inside a collapsed stretch, not
+    omitted. That distinction is the whole design: the record is complete and the page is short.
 
     focus_turn / focus_span: when arriving from an answer's citation, the turn to highlight and
-    scroll to, and the character span within it that the answer actually quoted. Without them the
-    reader lands at the top and has to find the passage themselves -- the gap between an answer
-    and the record it cites.
+    scroll to, and the character span within it that the answer actually quoted. The citation also
+    FORCES its topic open and its stretch visible -- landing on a closed fold would hide the very
+    passage the reader came for.
     """
-    turns, items = full_transcript(db, date)
+    turns, items, reports = full_transcript(db, date)
     if not turns:
         return None
     focus_key = None
@@ -638,6 +712,7 @@ def render_read(db, date, focus_turn=None, focus_span=None):
             if t['key'] == cand or t['key'] == focus_turn:
                 focus_key = t['key']
                 break
+    focus_report = next((t['report_id'] for t in turns if t['key'] == focus_key), None)
     # A cited span is applied per CHARACTER over the focused turn, then regrouped into runs.
     # The earlier run-splitting version could not mark a span that overlapped a summary
     # highlight, and emitted the cited text as several marks whose concatenation no longer
@@ -681,7 +756,8 @@ def render_read(db, date, focus_turn=None, focus_span=None):
                     elif k == 'cited':
                         new.append({'kind': 'cited', 'text': seg})
                     else:
-                        new.append({'kind': 'plain', 'text': seg})
+                        # rebuilt from the split characters, so it is re-measured, not inherited
+                        new.append(plain_run(seg))
                     i = j
                 t['runs'] = new
                 t['n_cited'] = sum(1 for r in new if r['kind'] == 'cited')
@@ -692,54 +768,83 @@ def render_read(db, date, focus_turn=None, focus_span=None):
     n_chars = sum(sum(len(r['text']) for r in t['runs']) for t in turns)
     n_marked_chars = sum(len(r['text']) for t in turns for r in t['runs']
                          if r['kind'] == 'marked')
+    n_shown_chars = n_marked_chars + sum(len(r['text']) for t in turns for r in t['runs']
+                                         if r['kind'] == 'cited')
+    # Collapsed stretches the reader is NOT being shown: the fold's own measure of itself.
+    foldable = [r for t in turns for r in t['runs']
+                if r['kind'] == 'plain' and r.get('collapsible')]
+    n_folded_sent = sum(r['sentences'] for r in foldable)
+    n_open_sent = sum(len(sentence_spans(r['text'])) for t in turns for r in t['runs']
+                      if r['kind'] in ('marked', 'cited'))
     body = [f"""<h1>{esc(date)}</h1>
 <p class="sub">Full transcript, {n_chars:,} characters — every turn. Summarised passages are
 <mark>highlighted</mark>: {n_marks:,} passages across {n_marked_turns} turns, covering
 {100*n_marked_chars/max(1,n_chars):.1f}% of what was said. The rest is the record itself.</p>
+<p class="sub foldnote">Open on <b>{n_open_sent:,} sentences</b> ({100*n_shown_chars/max(1,n_chars):.1f}%
+of the characters). <b>{n_folded_sent:,} sentences</b> in {len(foldable):,} stretches are folded
+inline — tap a <span class="gapdemo">[+N sentences]</span> to read them where they sit. Every topic
+below is closed until you open it.</p>
 {ask_form()}
-<div class="stat"><span>{len(turns):,} turns</span><span>{len(items)} briefs summarised</span>
-<span>{n_marks:,} highlighted passages</span></div>"""]
-    prev_report = None
+<div class="stat"><span>{len(reports)} topics</span><span>{len(turns):,} turns</span>
+<span>{len(items)} briefs summarised</span><span>{n_marks:,} highlighted passages</span></div>"""]
     seen = set()          # a section's callout belongs to its FIRST sentence, once for the page
-    for t in turns:
-        if t['report_id'] != prev_report:
-            prev_report = t['report_id']
-            # an item can span sittings, so show the date when it is not the page's date
-            other = (f'<span class="otherdate">recorded {esc(t["rdate"])}</span>'
-                     if t['rdate'] != date else '')
-            body.append(f"""<div class="rhead"><span class="rtype">{esc(t['report_type'])}</span>
-<h3>{esc(t['report_title'])}</h3><span class="rid">{esc(t['report_id'])}</span>{other}</div>""")
-        cls = ' class="turn proc"' if t['procedural'] else ' class="turn"'
-        if focus_key and t['key'] == focus_key:
-            cls = (' class="turn proc flash"' if t['procedural'] else ' class="turn flash"')
-        who = esc(t['speaker']) if t['speaker'] else 'Speaker not recorded'
-        anchor = f' id="turn-{esc(t["key"])}"'
-        body.append(f"<article{cls}{anchor}><div class=\"tmeta\">{who}"
-                    f"<span class=\"tw\">{t['words'] or 0} words</span></div><div class=\"tbody\">")
-        for r in t['runs']:
-            if r['kind'] == 'marked':
-                body.append(f"<mark class=\"hl\">{esc(r['text'])}</mark>")
-            elif r['kind'] == 'cited':
-                body.append(f"<mark class=\"hl cited\">{esc(r['text'])}</mark>")
-            else:
-                body.append(esc(r['text']))
-        body.append("</div>")
-        # attach each section summary once, under the turn holding its first sentence
-        for r in t['runs']:
-            if r['kind'] != 'marked' or r['summary'] is None:
-                continue
-            key = (r['item'], r['label'])
-            if key in seen:
-                continue
-            seen.add(key)
-            body.append(f"""<aside class="callout">
+    for g in reports:
+        o = ' open' if (focus_report and g['report_id'] == focus_report) else ''
+        other = (f'<span class="otherdate">recorded {esc(g["rdate"])}</span>'
+                 if g['rdate'] != date else '')
+        body.append(f"""<details class="topic"{o}>
+<summary><span class="rtype">{esc(g['type'])}</span><span class="ttl">{esc(g['title'])}</span>
+<span class="tmeta2">{g['n_turns']} turns · {g['words']:,}w
+· {g['n_marks']} highlighted</span><span class="chev">›</span></summary>
+<div class="topicbody">
+<div class="rhead"><span class="rid">{esc(g['report_id'])}</span>{other}</div>""")
+        for t in g['turns']:
+            cls = ' class="turn proc"' if t['procedural'] else ' class="turn"'
+            if focus_key and t['key'] == focus_key:
+                cls = (' class="turn proc flash"' if t['procedural'] else ' class="turn flash"')
+            who = esc(t['speaker']) if t['speaker'] else 'Speaker not recorded'
+            anchor = f' id="turn-{esc(t["key"])}"'
+            body.append(f"<article{cls}{anchor}><div class=\"tmeta\">{who}"
+                        f"<span class=\"tw\">{t['words'] or 0} words</span></div><div class=\"tbody\">")
+            for r in t['runs']:
+                if r['kind'] == 'marked':
+                    body.append(f"<mark class=\"hl\">{esc(r['text'])}</mark>")
+                elif r['kind'] == 'cited':
+                    body.append(f"<mark class=\"hl cited\">{esc(r['text'])}</mark>")
+                elif r.get('collapsible'):
+                    # An inline fold. The marker sits at the highlight's baseline and its text
+                    # rejoins the paragraph flow when opened, so the reveal stays IN the sentence
+                    # rather than escaping into a block of its own.
+                    # The count in the label is the number of SENTENCES inside, so opening it shows
+                    # exactly as many sentences as the button promised.
+                    body.append(f"<details class=\"gap\"><summary>[+{r['sentences']} "
+                                f"sentence{'' if r['sentences'] == 1 else 's'}]</summary>"
+                                f"<span>{esc(r['text'])}</span></details>")
+                else:
+                    body.append(esc(r['text']))
+            body.append("</div>")
+            # attach each section summary once, under the turn holding its first sentence
+            for r in t['runs']:
+                if r['kind'] != 'marked' or r['summary'] is None:
+                    continue
+                key = (r['item'], r['label'])
+                if key in seen:
+                    continue
+                seen.add(key)
+                body.append(f"""<aside class="callout">
   <div class="slabel">{esc(r['label'] or 'Section')}</div>
   <p class="summary">{esc(r['summary'])}</p>
   <div class="cite">summary of <b>{esc(r['title'])}</b>
     · sid {esc(r['sid'] or '')}</div></aside>""")
-        body.append("</article>")
+            body.append("</article>")
+        body.append("</div></details>")
     body.append("""<script>
-// Arriving from a citation: the target turn is already highlighted by the server; scroll to it.
+// Arriving from a citation: the server opened the cited topic, but a citation can point at a
+// passage inside a COLLAPSED stretch. Open only that stretch -- not the whole page, which would
+// undo the fold -- then scroll to the passage.
+document.querySelectorAll('article.turn.flash .gap').forEach(d => {
+  if (d.querySelector('mark.hl.cited')) d.open = true;
+});
 document.querySelectorAll('article.turn.flash').forEach(a => {
   a.scrollIntoView({block: 'center'});
 });

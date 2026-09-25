@@ -65,7 +65,7 @@ for r in rows:
     cited = re.findall(r'<mark class="hl cited">(.*?)</mark>', html, re.S)
 
     # every run of the focused turn, in order, must reconstruct the turn exactly
-    turns, _ = RS.full_transcript(db, anchor['date'])
+    turns, _, _reports = RS.full_transcript(db, anchor['date'])
     ft = next((t for t in turns if t['key'] == anchor['turn_key']), None)
     if ft is None:
         print(f"  [FAIL] {r['chunk_id']}: focused turn not in the rendered set")
