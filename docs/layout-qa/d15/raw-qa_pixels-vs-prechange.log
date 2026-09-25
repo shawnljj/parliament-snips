@@ -1,7 +1,0 @@
-preflight  after : guides=True rule-w='1px' dsec=172 tracks=526px 416px h=217634
-preflight  before: guides=True rule-w='1px' dsec=172 tracks=526px 416px h=217634
-
-  - the BEFORE side (http://127.0.0.1:8483) ALSO draws the guides -- so there is no difference above 760 for this test to find, and every desktop width will report 0 changed px. Pass a build with the guides off.
-
-Refusing to compare: fix the pairing above. Nothing was captured.
-exit=2

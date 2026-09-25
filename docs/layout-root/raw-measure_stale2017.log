@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/shawnlin/parsnips/.worktrees/t_a1329966/tools/measure_layout.py", line 391, in <module>
-    sys.exit(main())
-  File "/Users/shawnlin/parsnips/.worktrees/t_a1329966/tools/measure_layout.py", line 378, in main
-    f"  dsec-cols={top['columns']['dsec']['gridTemplateColumns']}"
-TypeError: 'NoneType' object is not subscriptable

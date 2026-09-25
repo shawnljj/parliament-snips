@@ -1,0 +1,753 @@
+{
+ "reports": 1036,
+ "ok": 1036,
+ "error": 0,
+ "index_aligned": 913,
+ "index_mismatch": 123,
+ "content_fully_aligned": 935,
+ "content_partial": 100,
+ "content_bad": 1,
+ "paragraphs": 266570,
+ "over_budget_turns": 3050,
+ "failures": [],
+ "mismatches": [
+  {
+   "report_id": "bill-203",
+   "stored": 9,
+   "fetched": 15,
+   "index_aligned": 2
+  },
+  {
+   "report_id": "bill-204",
+   "stored": 14,
+   "fetched": 24,
+   "index_aligned": 4
+  },
+  {
+   "report_id": "bill-670",
+   "stored": 47,
+   "fetched": 46,
+   "index_aligned": 30
+  },
+  {
+   "report_id": "bill-671",
+   "stored": 6,
+   "fetched": 5,
+   "index_aligned": 2
+  },
+  {
+   "report_id": "bill-672",
+   "stored": 5,
+   "fetched": 5,
+   "index_aligned": 4
+  },
+  {
+   "report_id": "bill-673",
+   "stored": 16,
+   "fetched": 16,
+   "index_aligned": 15
+  },
+  {
+   "report_id": "bill-675",
+   "stored": 7,
+   "fetched": 8,
+   "index_aligned": 3
+  },
+  {
+   "report_id": "bill-680",
+   "stored": 14,
+   "fetched": 13,
+   "index_aligned": 13
+  },
+  {
+   "report_id": "bill-683",
+   "stored": 16,
+   "fetched": 15,
+   "index_aligned": 15
+  },
+  {
+   "report_id": "bill-684",
+   "stored": 11,
+   "fetched": 10,
+   "index_aligned": 7
+  },
+  {
+   "report_id": "bill-687",
+   "stored": 33,
+   "fetched": 33,
+   "index_aligned": 9
+  },
+  {
+   "report_id": "bill-689",
+   "stored": 4,
+   "fetched": 3,
+   "index_aligned": 2
+  },
+  {
+   "report_id": "bill-691",
+   "stored": 33,
+   "fetched": 29,
+   "index_aligned": 9
+  },
+  {
+   "report_id": "bill-692",
+   "stored": 45,
+   "fetched": 41,
+   "index_aligned": 19
+  },
+  {
+   "report_id": "bill-693",
+   "stored": 41,
+   "fetched": 36,
+   "index_aligned": 2
+  },
+  {
+   "report_id": "bill-694",
+   "stored": 19,
+   "fetched": 19,
+   "index_aligned": 12
+  },
+  {
+   "report_id": "bill-695",
+   "stored": 30,
+   "fetched": 29,
+   "index_aligned": 16
+  },
+  {
+   "report_id": "bill-698",
+   "stored": 52,
+   "fetched": 46,
+   "index_aligned": 17
+  },
+  {
+   "report_id": "bill-699",
+   "stored": 28,
+   "fetched": 27,
+   "index_aligned": 12
+  },
+  {
+   "report_id": "bill-700",
+   "stored": 32,
+   "fetched": 31,
+   "index_aligned": 26
+  },
+  {
+   "report_id": "bill-701",
+   "stored": 27,
+   "fetched": 26,
+   "index_aligned": 26
+  },
+  {
+   "report_id": "bill-702",
+   "stored": 18,
+   "fetched": 17,
+   "index_aligned": 11
+  },
+  {
+   "report_id": "bill-703",
+   "stored": 66,
+   "fetched": 67,
+   "index_aligned": 54
+  },
+  {
+   "report_id": "bill-704",
+   "stored": 85,
+   "fetched": 82,
+   "index_aligned": 34
+  },
+  {
+   "report_id": "bill-705",
+   "stored": 20,
+   "fetched": 19,
+   "index_aligned": 14
+  },
+  {
+   "report_id": "bill-709",
+   "stored": 19,
+   "fetched": 18,
+   "index_aligned": 5
+  },
+  {
+   "report_id": "bill-711",
+   "stored": 22,
+   "fetched": 21,
+   "index_aligned": 10
+  },
+  {
+   "report_id": "bill-713",
+   "stored": 20,
+   "fetched": 19,
+   "index_aligned": 2
+  },
+  {
+   "report_id": "bill-716",
+   "stored": 62,
+   "fetched": 60,
+   "index_aligned": 5
+  },
+  {
+   "report_id": "bill-723",
+   "stored": 19,
+   "fetched": 18,
+   "index_aligned": 16
+  },
+  {
+   "report_id": "bill-724",
+   "stored": 11,
+   "fetched": 10,
+   "index_aligned": 10
+  },
+  {
+   "report_id": "bill-725",
+   "stored": 23,
+   "fetched": 22,
+   "index_aligned": 16
+  },
+  {
+   "report_id": "bill-730",
+   "stored": 48,
+   "fetched": 46,
+   "index_aligned": 19
+  },
+  {
+   "report_id": "bill-732",
+   "stored": 34,
+   "fetched": 34,
+   "index_aligned": 33
+  },
+  {
+   "report_id": "bill-733",
+   "stored": 18,
+   "fetched": 16,
+   "index_aligned": 6
+  },
+  {
+   "report_id": "bill-734",
+   "stored": 16,
+   "fetched": 15,
+   "index_aligned": 14
+  },
+  {
+   "report_id": "bill-735",
+   "stored": 39,
+   "fetched": 38,
+   "index_aligned": 33
+  },
+  {
+   "report_id": "bill-737",
+   "stored": 26,
+   "fetched": 25,
+   "index_aligned": 20
+  },
+  {
+   "report_id": "bill-738",
+   "stored": 14,
+   "fetched": 12,
+   "index_aligned": 2
+  },
+  {
+   "report_id": "bill-741",
+   "stored": 37,
+   "fetched": 37,
+   "index_aligned": 36
+  },
+  {
+   "report_id": "bill-742",
+   "stored": 41,
+   "fetched": 39,
+   "index_aligned": 25
+  },
+  {
+   "report_id": "bill-743",
+   "stored": 22,
+   "fetched": 21,
+   "index_aligned": 3
+  },
+  {
+   "report_id": "bill-746",
+   "stored": 8,
+   "fetched": 7,
+   "index_aligned": 6
+  },
+  {
+   "report_id": "bill-748",
+   "stored": 48,
+   "fetched": 47,
+   "index_aligned": 18
+  },
+  {
+   "report_id": "bill-753",
+   "stored": 17,
+   "fetched": 16,
+   "index_aligned": 16
+  },
+  {
+   "report_id": "bill-758",
+   "stored": 26,
+   "fetched": 26,
+   "index_aligned": 16
+  },
+  {
+   "report_id": "bill-760",
+   "stored": 32,
+   "fetched": 29,
+   "index_aligned": 21
+  },
+  {
+   "report_id": "bill-761",
+   "stored": 57,
+   "fetched": 56,
+   "index_aligned": 17
+  },
+  {
+   "report_id": "bill-764",
+   "stored": 34,
+   "fetched": 33,
+   "index_aligned": 33
+  },
+  {
+   "report_id": "bill-766",
+   "stored": 35,
+   "fetched": 34,
+   "index_aligned": 29
+  },
+  {
+   "report_id": "bill-768",
+   "stored": 103,
+   "fetched": 102,
+   "index_aligned": 31
+  },
+  {
+   "report_id": "bill-769",
+   "stored": 71,
+   "fetched": 71,
+   "index_aligned": 22
+  },
+  {
+   "report_id": "bill-770",
+   "stored": 19,
+   "fetched": 18,
+   "index_aligned": 4
+  },
+  {
+   "report_id": "budget-1594",
+   "stored": 58,
+   "fetched": 57,
+   "index_aligned": 0
+  },
+  {
+   "report_id": "budget-1595",
+   "stored": 54,
+   "fetched": 53,
+   "index_aligned": 0
+  },
+  {
+   "report_id": "budget-2328",
+   "stored": 87,
+   "fetched": 85,
+   "index_aligned": 33
+  },
+  {
+   "report_id": "budget-2338",
+   "stored": 72,
+   "fetched": 70,
+   "index_aligned": 38
+  },
+  {
+   "report_id": "budget-2341",
+   "stored": 113,
+   "fetched": 110,
+   "index_aligned": 57
+  },
+  {
+   "report_id": "budget-2344",
+   "stored": 69,
+   "fetched": 67,
+   "index_aligned": 41
+  },
+  {
+   "report_id": "budget-2345",
+   "stored": 44,
+   "fetched": 43,
+   "index_aligned": 1
+  },
+  {
+   "report_id": "budget-2346",
+   "stored": 29,
+   "fetched": 20,
+   "index_aligned": 5
+  },
+  {
+   "report_id": "budget-2354",
+   "stored": 81,
+   "fetched": 80,
+   "index_aligned": 80
+  },
+  {
+   "report_id": "budget-2355",
+   "stored": 64,
+   "fetched": 63,
+   "index_aligned": 40
+  },
+  {
+   "report_id": "budget-2361",
+   "stored": 86,
+   "fetched": 83,
+   "index_aligned": 35
+  },
+  {
+   "report_id": "budget-2369",
+   "stored": 103,
+   "fetched": 102,
+   "index_aligned": 62
+  },
+  {
+   "report_id": "budget-2376",
+   "stored": 91,
+   "fetched": 90,
+   "index_aligned": 66
+  },
+  {
+   "report_id": "budget-2377",
+   "stored": 71,
+   "fetched": 70,
+   "index_aligned": 45
+  },
+  {
+   "report_id": "budget-2390",
+   "stored": 73,
+   "fetched": 73,
+   "index_aligned": 40
+  },
+  {
+   "report_id": "budget-2391",
+   "stored": 73,
+   "fetched": 73,
+   "index_aligned": 62
+  },
+  {
+   "report_id": "budget-2407",
+   "stored": 20,
+   "fetched": 19,
+   "index_aligned": 19
+  },
+  {
+   "report_id": "budget-2563",
+   "stored": 74,
+   "fetched": 73,
+   "index_aligned": 35
+  },
+  {
+   "report_id": "budget-2570",
+   "stored": 64,
+   "fetched": 62,
+   "index_aligned": 27
+  },
+  {
+   "report_id": "budget-2576",
+   "stored": 75,
+   "fetched": 80,
+   "index_aligned": 35
+  },
+  {
+   "report_id": "budget-2577",
+   "stored": 42,
+   "fetched": 43,
+   "index_aligned": 18
+  },
+  {
+   "report_id": "budget-2584",
+   "stored": 92,
+   "fetched": 90,
+   "index_aligned": 19
+  },
+  {
+   "report_id": "budget-2595",
+   "stored": 73,
+   "fetched": 71,
+   "index_aligned": 17
+  },
+  {
+   "report_id": "budget-2604",
+   "stored": 100,
+   "fetched": 97,
+   "index_aligned": 44
+  },
+  {
+   "report_id": "budget-2610",
+   "stored": 35,
+   "fetched": 35,
+   "index_aligned": 14
+  },
+  {
+   "report_id": "budget-2611",
+   "stored": 45,
+   "fetched": 45,
+   "index_aligned": 29
+  },
+  {
+   "report_id": "budget-2619",
+   "stored": 56,
+   "fetched": 57,
+   "index_aligned": 5
+  },
+  {
+   "report_id": "budget-2620",
+   "stored": 59,
+   "fetched": 59,
+   "index_aligned": 4
+  },
+  {
+   "report_id": "budget-2621",
+   "stored": 73,
+   "fetched": 74,
+   "index_aligned": 37
+  },
+  {
+   "report_id": "budget-2638",
+   "stored": 30,
+   "fetched": 31,
+   "index_aligned": 27
+  },
+  {
+   "report_id": "budget-2639",
+   "stored": 136,
+   "fetched": 132,
+   "index_aligned": 9
+  },
+  {
+   "report_id": "budget-848",
+   "stored": 50,
+   "fetched": 50,
+   "index_aligned": 49
+  },
+  {
+   "report_id": "budget-864",
+   "stored": 85,
+   "fetched": 85,
+   "index_aligned": 84
+  },
+  {
+   "report_id": "matter-adj-2463",
+   "stored": 5,
+   "fetched": 6,
+   "index_aligned": 0
+  },
+  {
+   "report_id": "matter-adj-2515",
+   "stored": 9,
+   "fetched": 8,
+   "index_aligned": 2
+  },
+  {
+   "report_id": "matter-adj-2529",
+   "stored": 7,
+   "fetched": 7,
+   "index_aligned": 6
+  },
+  {
+   "report_id": "matter-adj-2535",
+   "stored": 8,
+   "fetched": 7,
+   "index_aligned": 2
+  },
+  {
+   "report_id": "matter-adj-2548",
+   "stored": 7,
+   "fetched": 6,
+   "index_aligned": 2
+  },
+  {
+   "report_id": "matter-adj-2702",
+   "stored": 5,
+   "fetched": 6,
+   "index_aligned": 0
+  },
+  {
+   "report_id": "matter-adj-2761",
+   "stored": 1,
+   "fetched": 7,
+   "index_aligned": 0
+  },
+  {
+   "report_id": "matter-adj-684",
+   "stored": 5,
+   "fetched": 5,
+   "index_aligned": 4
+  },
+  {
+   "report_id": "ministerial-statement-2285",
+   "stored": 10,
+   "fetched": 9,
+   "index_aligned": 0
+  },
+  {
+   "report_id": "ministerial-statement-2308",
+   "stored": 35,
+   "fetched": 35,
+   "index_aligned": 34
+  },
+  {
+   "report_id": "ministerial-statement-2483",
+   "stored": 59,
+   "fetched": 58,
+   "index_aligned": 44
+  },
+  {
+   "report_id": "ministerial-statement-2490",
+   "stored": 53,
+   "fetched": 56,
+   "index_aligned": 28
+  },
+  {
+   "report_id": "ministerial-statement-2609",
+   "stored": 69,
+   "fetched": 67,
+   "index_aligned": 54
+  },
+  {
+   "report_id": "ministerial-statement-2652",
+   "stored": 54,
+   "fetched": 49,
+   "index_aligned": 7
+  },
+  {
+   "report_id": "ministerial-statement-2745",
+   "stored": 65,
+   "fetched": 64,
+   "index_aligned": 63
+  },
+  {
+   "report_id": "motion-2294",
+   "stored": 42,
+   "fetched": 41,
+   "index_aligned": 22
+  },
+  {
+   "report_id": "motion-2310",
+   "stored": 37,
+   "fetched": 36,
+   "index_aligned": 17
+  },
+  {
+   "report_id": "motion-2312",
+   "stored": 15,
+   "fetched": 16,
+   "index_aligned": 3
+  },
+  {
+   "report_id": "motion-2316",
+   "stored": 82,
+   "fetched": 81,
+   "index_aligned": 76
+  },
+  {
+   "report_id": "motion-2318",
+   "stored": 82,
+   "fetched": 84,
+   "index_aligned": 43
+  },
+  {
+   "report_id": "motion-2464",
+   "stored": 63,
+   "fetched": 59,
+   "index_aligned": 39
+  },
+  {
+   "report_id": "motion-2493",
+   "stored": 41,
+   "fetched": 40,
+   "index_aligned": 40
+  },
+  {
+   "report_id": "motion-2549",
+   "stored": 57,
+   "fetched": 56,
+   "index_aligned": 29
+  },
+  {
+   "report_id": "oral-answer-3033",
+   "stored": 64,
+   "fetched": 64,
+   "index_aligned": 63
+  },
+  {
+   "report_id": "oral-answer-3872",
+   "stored": 62,
+   "fetched": 60,
+   "index_aligned": 26
+  },
+  {
+   "report_id": "oral-answer-3905",
+   "stored": 8,
+   "fetched": 7,
+   "index_aligned": 7
+  },
+  {
+   "report_id": "oral-answer-3933",
+   "stored": 29,
+   "fetched": 28,
+   "index_aligned": 28
+  },
+  {
+   "report_id": "oral-answer-48",
+   "stored": 26,
+   "fetched": 25,
+   "index_aligned": 0
+  },
+  {
+   "report_id": "president-address-2698",
+   "stored": 27,
+   "fetched": 23,
+   "index_aligned": 5
+  },
+  {
+   "report_id": "president-address-2700",
+   "stored": 18,
+   "fetched": 17,
+   "index_aligned": 3
+  },
+  {
+   "report_id": "president-address-2703",
+   "stored": 34,
+   "fetched": 32,
+   "index_aligned": 20
+  },
+  {
+   "report_id": "president-address-2705",
+   "stored": 27,
+   "fetched": 27,
+   "index_aligned": 25
+  },
+  {
+   "report_id": "president-address-2713",
+   "stored": 27,
+   "fetched": 25,
+   "index_aligned": 23
+  },
+  {
+   "report_id": "president-address-2715",
+   "stored": 17,
+   "fetched": 15,
+   "index_aligned": 4
+  },
+  {
+   "report_id": "president-address-2717",
+   "stored": 11,
+   "fetched": 10,
+   "index_aligned": 5
+  },
+  {
+   "report_id": "president-address-2720",
+   "stored": 53,
+   "fetched": 51,
+   "index_aligned": 22
+  },
+  {
+   "report_id": "president-address-2731",
+   "stored": 34,
+   "fetched": 31,
+   "index_aligned": 21
+  }
+ ]
+}

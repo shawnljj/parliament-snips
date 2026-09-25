@@ -41,7 +41,7 @@ pipeline/turns.jsonl
 # `python3 rag/embed_chunks.py`. The RECIPE is versioned; the array is not.
 pipeline/vectors/
 # Re-fetched paragraph structure, 184 MB across 1,036 report files (~200s to
-# rebuild, resumable -- see rag/README or the skill). Cache, not source.
+# rebuild, resumable -- see rag/README.md). Cache, not source.
 pipeline/para_cache/
 
 # --- Agent scratch: belongs to the Hermes profile, not this repo ---
