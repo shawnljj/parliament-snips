@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Parsnips — fold</title>
+<style>
+
+/* FOLD — progressive disclosure. One column, everything opens where you tap.
+   Type: a sturdy grotesque, large enough to read one-handed. Structure comes from disclosure
+   state and a heavy top rule per brief, never from decoration. */
+:root{
+  --ink:#12161b; --dim:#59636f; --faint:#8c96a2;
+  --bg:#f7f7f5; --card:#fff; --line:#e2e5e9;
+  --accent:#14532d; --chip:#eef2ea; --hot:#b45309; --hl:#fff4cc;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+  --pad:15px;
+}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--sans);
+  -webkit-text-size-adjust:100%}
+.top{position:sticky;top:0;z-index:20;background:#f7f7f5;border-bottom:1px solid var(--line);
+  padding:9px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:8px}
+.brand{display:flex;align-items:center;gap:6px;font-weight:700;font-size:15px;letter-spacing:-.02em}
+.screens{display:flex;gap:3px}
+.screens button{font:inherit;font-size:12.5px;font-weight:650;padding:7px 12px;border-radius:9px;
+  border:1px solid var(--line);background:#fff;color:var(--dim);cursor:pointer;min-height:44px;
+  display:inline-flex;align-items:center}
+.screens button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+main{padding:0 var(--pad) 40px}
+.ask{display:flex;gap:7px;margin:13px 0 6px}
+.ask input{flex:1;font:inherit;font-size:16px;padding:14px 14px;border-radius:13px;
+  border:1px solid var(--line);background:var(--card)}
+.ask button{font:inherit;font-weight:700;font-size:14.5px;padding:0 17px;border-radius:13px;border:0;
+  background:var(--accent);color:#fff;cursor:pointer}
+.askhint{font-size:12px;color:var(--faint);margin:0 0 14px}
+.sithead{margin:0 0 10px}
+.sithead .d{font:700 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--hot)}
+.sithead h1{font:700 22px/1.22 var(--sans);letter-spacing:-.03em;margin:8px 0 7px}
+.sithead .m{font-size:12.5px;color:var(--dim);font-variant-numeric:tabular-nums}
+.sithead .m b{color:var(--ink)}
+.items{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:0;
+  overflow:hidden;text-align:left;font:inherit;color:inherit;width:100%;cursor:pointer;display:block}
+.item .hd{display:flex;align-items:center;gap:11px;padding:13px 14px}
+.item .t{flex:1;font-weight:650;font-size:15.5px;line-height:1.3;letter-spacing:-.015em}
+.item .w{font:11.5px var(--mono);color:var(--faint);font-variant-numeric:tabular-nums;white-space:nowrap}
+.item .chev{color:var(--faint);font-size:17px;line-height:1}
+.item .peek{padding:0 14px 13px;font-size:13.5px;color:var(--dim);margin:0;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.item.open{border-color:#c9d5c9;box-shadow:0 2px 14px rgba(18,22,27,.06)}
+.item.big .t:after{content:" ●";color:var(--hot);font-size:9px;vertical-align:3px}
+.tail{margin-top:16px;font-size:12px;color:var(--faint);line-height:1.6}
+.back{font:inherit;font-weight:650;font-size:13.5px;color:var(--accent);background:none;border:0;
+  padding:12px 0;cursor:pointer;min-height:44px}
+.rh h2{font:700 21px/1.25 var(--sans);letter-spacing:-.028em;margin:6px 0 6px}
+.rh .g{font:700 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--hot)}
+.rh .m{font-size:12.5px;color:var(--dim);font-variant-numeric:tabular-nums;margin-bottom:12px}
+.sec{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 9px;
+  overflow:hidden}
+.sec summary{list-style:none;cursor:pointer;padding:13px 14px;display:flex;gap:10px;align-items:flex-start}
+.sec summary::-webkit-details-marker{display:none}
+.sec summary .lab{flex:1;font-weight:650;font-size:14.5px;letter-spacing:-.01em;line-height:1.3}
+.sec summary .chev{color:var(--faint);font-size:16px;transition:transform .18s}
+.sec[open] summary .chev{transform:rotate(90deg)}
+.sec .sum{padding:0 14px 4px;font-size:14.5px;line-height:1.5;color:#242c34}
+.sec .sum mark{background:#fff4cc;padding:0 2px}
+.sec .tr{padding:4px 14px 13px}
+.sec .tr .sp{font:700 10.5px var(--mono);color:var(--faint);margin:12px 0 4px;text-transform:uppercase;
+  letter-spacing:.04em}
+.sec .tr .s{font-size:14.5px;line-height:1.58;margin:0 0 8px;color:#2b333c}
+.sec .tr .s.sel{background:#fff4cc;box-shadow:0 0 0 4px #fff4cc}
+.sec .tr .sid{font:600 9px var(--mono);color:var(--faint);margin-left:5px;vertical-align:2px}
+.trmore{width:100%;font:inherit;font-weight:650;font-size:13px;color:var(--accent);background:#fff;
+  border:1px dashed var(--line);border-radius:14px;padding:14px;cursor:pointer;margin-bottom:9px}
+.anscard{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  margin-bottom:10px}
+.anscard .q{background:var(--chip);padding:9px 14px;font:700 10.5px var(--mono);letter-spacing:.06em;
+  text-transform:uppercase;color:var(--accent)}
+.anscard .a{padding:13px 14px;font-weight:650;font-size:16px;letter-spacing:-.018em;line-height:1.4}
+.qcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;
+  margin-bottom:10px}
+.qcard .tx{font-size:15.5px;line-height:1.56}
+.qcard .ci{font:11.5px/1.6 var(--mono);color:var(--dim);margin-top:9px}
+.qcard .ci b{font-family:var(--sans);font-size:12.5px}
+.jump{display:block;margin-top:12px;font:inherit;font-weight:700;font-size:13.5px;color:#fff;
+  background:var(--accent);border:0;border-radius:11px;padding:13px;text-align:center;width:100%;
+  text-decoration:none;cursor:pointer}
+.refuse{background:#fffbeb;border:1px solid #f2ddb6;border-radius:14px;padding:14px;margin-bottom:10px}
+.refuse .h{font-weight:700;color:#92400e;font-size:15.5px}
+.refuse p{margin:7px 0 0;font-size:13.5px;color:#7c4a08}
+.rel{background:#fff;border-top:1px solid #f2ddb6;margin:10px -14px -14px;padding:11px 14px;
+  font-size:13.5px}
+.rel .d{font:11px var(--mono);color:#a16207}
+@media (min-width:1000px){
+  main{padding:0 26px 60px;max-width:820px}
+  .sithead h1{font-size:28px}
+  .ask{max-width:600px}
+  .items{gap:10px}
+  .sec .sum,.sec .tr .s{font-size:15px}
+}
+
+</style>
+</head>
+<body data-dir="fold">
+
+<header class="top" id="top">
+  <div class="brand">
+    <span class="leaf" aria-hidden="true">🌱</span>
+    <b>Parsnips</b>
+  </div>
+  <nav class="screens" id="screens">
+    <button data-s="home" aria-pressed="true">Home</button>
+    <button data-s="read">Read</button>
+    <button data-s="answer">Answer</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ HOME ============ -->
+  <section class="sc" id="sc-home">
+    <form class="ask" onsubmit="return false">
+      <input id="q" type="search" autocomplete="off" enterkeyhint="search"
+             placeholder="Ask the record — e.g. what was said about mental health?">
+      <button type="submit" aria-label="Ask">Ask</button>
+    </form>
+    <div class="askhint" id="askhint"></div>
+
+    <div class="sithead" id="sithead"></div>
+    <div class="items" id="items"></div>
+    <div class="tail" id="tail"></div>
+  </section>
+
+  <!-- ============ READ ============ -->
+  <section class="sc" id="sc-read" hidden>
+    <button class="back" id="back">‹ All items</button>
+    <div id="readhead"></div>
+    <div id="readbody"></div>
+  </section>
+
+  <!-- ============ ANSWER ============ -->
+  <section class="sc" id="sc-answer" hidden>
+    <div id="anshead"></div>
+    <div id="ansbody"></div>
+  </section>
+</main>
+
+<script src="reading-data.js"></script>
+<script>
+
+const D = window.__DATA__;
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const nf = n => n==null?'—':Number(n).toLocaleString('en-GB');
+
+function show(w){
+  for (const s of ['home','read','answer']) $('#sc-'+s).hidden = (s!==w);
+  $('#screens').querySelectorAll('button').forEach(b =>
+    b.setAttribute('aria-pressed', String(b.dataset.s===w)));
+  window.scrollTo(0,0);
+}
+$('#screens').addEventListener('click', e => {
+  const b = e.target.closest('button'); if(b) show(b.dataset.s); });
+$('#back').addEventListener('click', () => show('home'));
+
+const S = D.sitting, MAXW = Math.max(...D.catalog.map(i => i.sel_words));
+$('#sithead').innerHTML = `
+  <div class="d">${esc(D.date)}</div>
+  <h1>Read the sitting</h1>
+  <div class="m"><b>${nf(S.total_words)}</b> words · <b>${nf(S.turns)}</b> turns ·
+    <b>${D.catalog.length}</b> briefs</div>`;
+$('#items').innerHTML = D.catalog.map(i => `
+  <button class="item ${i.sel_words===MAXW?'big':''}" data-id="${esc(i.id)}">
+    <span class="hd"><span class="t">${esc(i.title)}</span>
+      <span class="w">${nf(i.sel_words)}w</span><span class="chev">›</span></span>
+    <span class="peek">${i.sections} sections · ${esc((i.what_it_is||'').slice(0,120))}</span>
+  </button>`).join('');
+$('#items').addEventListener('click', e => {
+  const b = e.target.closest('.item'); if(b) open_item(b.dataset.id); });
+$('#tail').innerHTML = `${nf(S.n_reports)} reports, all covered · tap a brief to open its
+  sections · each section opens onto the sentences behind it`;
+$('#askhint').innerHTML = 'ask, and the answer links straight into the sitting';
+
+function open_item(id){
+  const c = D.catalog.find(x => x.id===id) || {};
+  const secs = D.detail[id];
+  $('#readhead').innerHTML = `<div class="rh">
+      <div class="g">${esc(D.date)}</div>
+      <h2>${esc(c.title||id)}</h2>
+      <div class="m">${nf(c.sel_words)} words kept · ${c.sections} sections</div></div>`;
+  $('#readbody').innerHTML = (secs||[]).map((s,i) => `
+    <details class="sec" ${i<2?'open':''}>
+      <summary><span class="lab">${esc(s.label)}</span><span class="chev">›</span></summary>
+      <div class="sum">${esc(s.summary)}</div>
+      <div class="tr">` + s.sentences.map(x => `
+        <div class="sp">${esc(x.speaker||'unknown')}</div>
+        <p class="s sel">${esc(x.text)}<span class="sid">${esc(x.sid)}</span></p>`).join('') + `
+      </div></details>`).join('') +
+    (secs && secs.length>=26
+      ? `<button class="trmore">${c.sections-26} more sections — open the full transcript</button>`
+      : '');
+  show('read');
+}
+
+const SECS = D.detail['motion-2310+2312+2315'] || [];
+const COST = SECS.find(s => /cost/i.test(s.label)) || SECS[0] || {sentences:[]};
+const q0 = COST.sentences[0] || {text:'',speaker:'',sid:''};
+$('#anshead').innerHTML = `<div class="anscard"><div class="q">verbatim quotes only</div>
+  <div class="a">How much did Parliament say mental health costs Singapore, and who said it?</div></div>`;
+$('#ansbody').innerHTML = `
+  <div class="qcard"><div class="tx">“${esc(q0.text)}”</div>
+    <div class="ci"><b>${esc(q0.speaker)}</b><br>${esc(D.date)} · ${esc(q0.sid)}</div>
+    <button class="jump" id="jump">Read this in the sitting ›</button></div>`;
+$('#jump').addEventListener('click', () => open_item('motion-2310+2312+2315'));
+
+</script>
+</body>
+</html>

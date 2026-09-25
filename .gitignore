@@ -30,5 +30,22 @@ pipeline/dataset/*/*.json
 # NOTE: site/dist/ IS tracked on purpose -- it is the built site that Vercel
 # deploys. Do not add it here.
 
+# --- Pipeline data: derived, large, and regenerable. NOT source. ---
+# These were untracked but NOT ignored, which is a footgun: a `git add -A` would
+# try to stage ~1.4 GB. Ignore them so a careless add cannot.
+pipeline/hansard.db
+pipeline/hansard.db-*
+pipeline/chunks.jsonl
+pipeline/turns.jsonl
+# The vectors are 157 MB of float16 array plus a 6.6 MB id list, rebuilt by
+# `python3 rag/embed_chunks.py`. The RECIPE is versioned; the array is not.
+pipeline/vectors/
+# Re-fetched paragraph structure, 184 MB across 1,036 report files (~200s to
+# rebuild, resumable -- see rag/README or the skill). Cache, not source.
+pipeline/para_cache/
+
+# --- Agent scratch: belongs to the Hermes profile, not this repo ---
+.hermes/
+
 # OS
 .DS_Store

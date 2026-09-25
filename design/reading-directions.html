@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Parsnips — reading-mode directions</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:#0e1013;color:#e9ecf1;font:15px/1.5 ui-sans-serif,-apple-system,system-ui,sans-serif;
+  -webkit-text-size-adjust:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:24px 18px 70px}
+h1{font-size:23px;margin:0 0 8px;letter-spacing:-.02em}
+.lede{color:#98a2b3;font-size:13.5px;max-width:78ch;margin:0 0 7px}
+.lede b{color:#e9ecf1;font-weight:600}
+.dirs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin:20px 0 8px}
+.dir{background:#151920;border:1px solid #232932;border-radius:14px;padding:15px 16px}
+.dir h2{font-size:16px;margin:0 0 5px;letter-spacing:-.01em}
+.dir .t{font-size:12.5px;color:#8b95a1;margin:0 0 9px}
+.dir p{font-size:13px;color:#c2cad6;margin:0 0 11px}
+.dir a{display:inline-block;font-weight:650;font-size:13px;background:#e9ecf1;color:#0e1013;
+  border-radius:9px;padding:9px 13px;text-decoration:none}
+.sw{display:flex;gap:4px;margin:10px 0 0}
+.sw i{width:20px;height:20px;border-radius:5px;border:1px solid rgba(255,255,255,.18)}
+.specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:18px 0 0}
+.spec{background:#151920;border:1px solid #232932;border-radius:12px;padding:12px 13px}
+.spec h4{margin:0 0 7px;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:#8b95a1}
+.spec ul{margin:0;padding-left:16px;font-size:12.8px;color:#c2cad6}
+.spec li{margin:0 0 4px}
+table{width:100%;border-collapse:collapse;margin:16px 0 0;font-size:13px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid #232932;vertical-align:top}
+th{color:#8b95a1;font-weight:600;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase}
+td b{color:#e9ecf1}
+.note{margin:18px 0 0;padding:13px 15px;background:#151920;border:1px solid #232932;
+  border-left:3px solid #6aa9ff;border-radius:10px;font-size:13px;color:#c2cad6}
+.note b{color:#e9ecf1}
+.ask{margin:20px 0 0;padding:14px 16px;background:#101f18;border:1px solid #1e4d33;border-radius:12px;
+  font-size:13.5px;color:#b9d4c4}
+.ask b{color:#e9ecf1}
+.ask ol{margin:9px 0 0;padding-left:18px}
+.ask li{margin:0 0 5px}
+@media (max-width:600px){ .wrap{padding:18px 13px 60px} h1{font-size:20px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Reading mode — three directions</h1>
+  <p class="lede">Every direction uses the <b>same real content</b>: the sitting of
+  <b>7 February 2024</b> — 23 briefs, <b>91,757 words</b>, 387 turns, 55 reports. Including the
+  motion with <b>202 sections</b> and a written answer of <b>54 words</b>. Nothing invented.</p>
+  <p class="lede">Each is a complete design system — type, colour, density, motion posture,
+  interaction model — with the same three screens: <b>home</b> (search above the sitting),
+  <b>read</b> (summary into transcript), <b>answer</b> (a cited answer that lands in the passage).</p>
+
+  <div class="dirs">
+    <div class="dir">
+      <h2>1 · Margin</h2>
+      <div class="t">Editorial serif · the transcript is the page</div>
+      <p>The sitting as a printed document you annotate. The summary is a marginal note; the
+      transcript is the body. Most reading comfort, most honest about what the record says —
+      and the slowest.</p>
+      <div class="sw" id="sw-margin"></div>
+      <p style="margin:11px 0 0"><a href="reading-margin.html">Open direction 1 ›</a></p>
+    </div>
+    <div class="dir">
+      <h2>2 · Index</h2>
+      <div class="t">Dense sans · the sitting as a catalogue</div>
+      <p>The sitting as a dataset you navigate: numbered items, word counts as a column, sections
+      as a scannable index. Fastest to find something; coldest to read.</p>
+      <div class="sw" id="sw-index"></div>
+      <p style="margin:11px 0 0"><a href="reading-index.html">Open direction 2 ›</a></p>
+    </div>
+    <div class="dir">
+      <h2>3 · Fold</h2>
+      <div class="t">Progressive disclosure · one column, opens where you tap</div>
+      <p>The sitting as a stack of closed briefs. Big tap targets, nothing hidden behind a second
+      page, sections open in place. The most phone-native.</p>
+      <div class="sw" id="sw-fold"></div>
+      <p style="margin:11px 0 0"><a href="reading-fold.html">Open direction 3 ›</a></p>
+    </div>
+  </div>
+
+  <table>
+    <thead><tr><th>Design decision</th><th>Margin</th><th>Index</th><th>Fold</th></tr></thead>
+    <tbody>
+      <tr><td><b>Reading type</b></td><td>Georgia serif 16px/1.62</td><td>System sans 13.5px/1.55</td><td>System sans 14.5px/1.58</td></tr>
+      <tr><td><b>Summary's role</b></td><td>Marginal note above the body (two-column at ≥1000px)</td><td>Numbered section head, body beneath</td><td>The closed state of a foldable section</td></tr>
+      <tr><td><b>How the transcript appears</b></td><td>Always visible, sentence-highlighted</td><td>Always visible, in a bordered rail</td><td>Behind a tap, two sections open by default</td></tr>
+      <tr><td><b>The 202-section problem</b></td><td>Shows 26, honest "showing 26 of 202" button</td><td>Shows 26, "202−26 more sections" button</td><td>Shows 26, same button — but folded, so the wall never forms</td></tr>
+      <tr><td><b>Accent</b></td><td><code>#1c6b4a</code> (shipped green)</td><td><code>#0b5c8a</code> blue + <code>#c2410c</code> for the heaviest item</td><td><code>#14532d</code> deep green</td></tr>
+      <tr><td><b>Weight signal</b></td><td>Word count line, ◆ marks the long motion</td><td>A bar per item, tabular word column</td><td>Word count chip on the closed card</td></tr>
+      <tr><td><b>Home composition</b></td><td>Search, then a ruled list</td><td>Search, stat block, then a numbered table</td><td>Search, then cards with a 2-line peek</td></tr>
+      <tr><td><b>Read view (the 202-section motion)</b></td><td id="h-margin">…</td><td id="h-index">…</td><td id="h-fold">…</td></tr>
+    </tbody>
+  </table>
+
+  <div class="specs">
+    <div class="spec"><h4>Shared with all three</h4><ul>
+      <li>Search above the sitting (your call)</li>
+      <li>Refusal shown as a result, not an error</li>
+      <li>Answer → "read this in the sitting" → lands in the passage</li>
+      <li>Sentence highlight uses the same yellow as the shipped site</li>
+      <li>0 horizontal overflow at 360/390px</li>
+    </ul></div>
+    <div class="spec"><h4>Deliberately not done</h4><ul>
+      <li>No hero image, no centred stack</li>
+      <li>No feature tiles or icon toppers</li>
+      <li>No gradient, no glassmorphism</li>
+      <li>No invented numbers or placeholder copy</li>
+      <li>No party colours anywhere</li>
+    </ul></div>
+    <div class="spec"><h4>Measurements to check</h4><ul>
+      <li>Screens tall at 390px for the home view</li>
+      <li>Minimum tap target ≥44px</li>
+      <li>Text contrast on the amber highlight</li>
+      <li>Whether 26 sections is the right cap</li>
+    </ul></div>
+  </div>
+
+  <div class="note">
+    <b>The one structural finding:</b> brief length is wildly bimodal. On this sitting, two
+    motions carry <b>202</b> and <b>152</b> sections while twenty written answers carry
+    <b>1–6</b>. A flat list of briefs hides that; a design that treats all 23 the same will
+    either drown the reader in the two big ones or undersell them. Every direction signals weight
+    — differently. That's the main thing to judge.
+  </div>
+
+  <div class="ask">
+    <b>What I need from you:</b>
+    <ol>
+      <li>Which direction to build (or which parts to take from more than one).</li>
+      <li>Whether the summary should sit <em>above</em> its transcript or be folded behind it —
+      this is the biggest reading difference between Margin and Fold.</li>
+      <li>Whether 26 sections is the right visible cap before "open the full transcript".</li>
+    </ol>
+  </div>
+</div>
+<script>
+const SW = {
+  margin: ['#1c6b4a','#b4622a','#fbfbf9','#fdf3d4','#1a1f26'],
+  index:  ['#0b5c8a','#c2410c','#ffffff','#f6f7f9','#0f1317'],
+  fold:   ['#14532d','#b45309','#f7f7f5','#fff4cc','#12161b']
+};
+for (const k in SW){
+  document.getElementById('sw-'+k).innerHTML =
+    SW[k].map(c => `<i style="background:${c}"></i>`).join('');
+}
+
+/* Measured in-browser at 390x844 on the real pages, not estimated. */
+const MEASURED = {
+  margin: {home: 2569, read: 10970},
+  index:  {home: 2984, read: 8097},
+  fold:   {home: 3383, read: 2349}
+};
+const SCREEN = 844;
+for (const k in MEASURED){
+  const m = MEASURED[k];
+  document.getElementById('h-'+k).innerHTML =
+    `<b>${(m.read/SCREEN).toFixed(1)} screens</b> tall` +
+    `<br><span style="color:#8b95a1">home ${(m.home/SCREEN).toFixed(1)} screens</span>`;
+}
+</script>
+</body>
+</html>

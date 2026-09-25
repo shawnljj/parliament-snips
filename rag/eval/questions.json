@@ -1,0 +1,216 @@
+{
+  "schema": 1,
+  "name": "rag-parsnips-eval-v1",
+  "created": "2026-09-23",
+  "corpus": "~/parsnips/data — 331 sittings, 2016-2026",
+  "note": "Written BEFORE the RAG pipeline exists. Every question was checked to be answerable from the corpus, and every gold passage resolves to real stored text. Purpose: confirm v0 FAILS, then build until it passes. Do not edit an expectation after seeing a result -- with TWO recorded exceptions, each annotated per-question and never a silent edit: (1) a gold fact the corpus itself RETRACTS (Hansard corrects itself: 163 clarification and 12 correction reports), and (2) a fact the corpus supplies more than one correct answer for, which is recorded as `accept_any` rather than narrowed to one arbitrary choice. A1 was corrected under (1); B3 under (2). Both annotations live next to the question so a later reader cannot mistake a past defect for current behaviour.",
+
+  "categories": {
+    "A": "single figure, one turn answers it",
+    "B": "speaker attribution",
+    "C": "time-bounded — the same phrase means different things in different years",
+    "D": "needs two turns combined (the class where extractive search alone is weak)",
+    "E": "NOT answerable — must refuse. The most important class.",
+    "F": "the abbreviation trap — short token, two unrelated meanings"
+  },
+
+  "questions": [
+    {
+      "id": "A1",
+      "cat": "A",
+      "q": "How much of the Jobs Support Scheme payouts went to SMEs, and what share of local workers did that cover?",
+      "gold_facts": ["$10.5 billion", "73%"],
+      "gold": [
+        {"report_id": "oral-answer-2271", "turn": 1},
+        {"report_id": "written-statement-1481", "turn": 2}
+      ],
+      "corrected": {
+        "date": "2026-09-24",
+        "was": ["$15.5 billion", "73%"],
+        "why": "CORPUS SELF-CORRECTION. The original reply (oral-answer-2271#t1) said '$15.5 billion of the JSS payouts went to SMEs'. A clarification report the SAME DAY (written-statement-1481) states: 'I wish to make the following factual correction to the reply given during Question Time ... My reply should read as follows:' and gives '$10.5 billion'. $15.5 billion was retracted as a factual error. The eval originally asserted the retracted figure, so a system quoting the corrected number scored as a FAILURE. Found because the answer stage gave $10.5 billion, the citation gate PASSED, and the corpus confirmed the system was right. Checked all 19 gold facts for a superseding statement: this is the only one affected.",
+        "rule": "A gold fact taken from the first utterance of a figure is not authoritative in a corpus that corrects itself. 163 'Clarification' and 12 'Correction' reports exist, plus sittings whose reports are entirely clarifications. Prefer the corrected value and record both turns as gold."
+      },
+      "verified": true
+    },
+    {
+      "id": "A2",
+      "cat": "A",
+      "q": "How many employers received Jobs Support Scheme payouts?",
+      "gold_facts": ["150,000 employers"],
+      "gold": [{"report_id": "oral-answer-2271", "turn": 1}],
+      "verified": true
+    },
+    {
+      "id": "A3",
+      "cat": "A",
+      "q": "What were the Jobs Support Scheme payouts by revenue band?",
+      "gold_facts": ["5.8", "4.0", "1.6", "4.9"],
+      "gold": [{"report_id": "oral-answer-2271", "turn": 1}],
+      "verified": true
+    },
+    {
+      "id": "A4",
+      "cat": "A",
+      "q": "How many BTO flats was HDB launching per year between 2011 and 2013?",
+      "gold_facts": ["26,000 flats"],
+      "gold": [{"report_id": "oral-answer-1176", "turn": 1}],
+      "verified": true
+    },
+    {
+      "id": "A5",
+      "cat": "A",
+      "q": "How many divorcees applied for an HDB flat between 2011 and May 2015?",
+      "gold_facts": ["13,300"],
+      "gold": [{"report_id": "written-answer-na-2707", "turn": 1}],
+      "verified": true
+    },
+    {
+      "id": "A6",
+      "cat": "A",
+      "q": "How many applications were there under the ASSIST scheme for divorced or widowed parents?",
+      "gold_facts": ["230 applications"],
+      "gold": [{"report_id": "oral-answer-1243", "turn": 1}],
+      "verified": true
+    },
+    {
+      "id": "B1",
+      "cat": "B",
+      "q": "Who announced the Jobs Support Scheme payout figures to Parliament?",
+      "gold_facts": ["Heng Swee Keat"],
+      "gold": [{"report_id": "oral-answer-2271", "turn": 1}],
+      "verified": true
+    },
+    {
+      "id": "B2",
+      "cat": "B",
+      "q": "Which Minister gave the figures on Joint Singles Scheme rental applications?",
+      "gold_facts": ["Koh Poh Koon"],
+      "gold": [{"report_id": "oral-answer-1206", "turn": 4}],
+      "verified": true
+    },
+    {
+      "id": "B3",
+      "cat": "B",
+      "q": "Who spoke about the Progressive Wage Model for cleaners?",
+      "gold_facts": [],
+      "accept_any": [["Zaqy Mohamad", "Zainal Sapari", "Josephine Teo", "Grace Fu",
+                      "Masagos Zulkifli", "Amy Khor", "Louis Ng", "Poh Li San",
+                      "Raj Joshua Thomas", "Yip Hon Weng", "Mohd Fahmi Aliman",
+                      "Koh Poh Koon", "Heng Swee Keat", "Lawrence Wong", "Tan See Leng"]],
+      "gold": [{"report_id": "written-answer-na-2689", "turn": 1}],
+      "known_ambiguity": {
+        "date": "2026-09-24",
+        "issue": "AT LEAST FIFTEEN speakers answer this question honestly -- every distinct speaker of a turn mentioning both the Progressive Wage Model and cleaners. The gold designates Masagos Zulkifli, but a system citing any of the others is answering the question as written.",
+        "consequence": "Scored via accept_any, so ANY valid speaker passes and only a speaker who said none of this fails. Before this, the one-speaker expectation made the question flip across seeded runs and the flip was misread as model instability; it was eval noise.",
+        "attempted_fix_and_why_reverted": "Naming the report would make exactly one speaker correct, but the gold report's title is actually 'Including National Wage Council's Recommendations as Requirements in Cleaning Contracts' -- not a PWM-titled document -- and its gold turn contains no instance of the phrase 'Progressive Wage Model', so a title filter cannot reach it. Asserting a title that does not exist produced a FALSE REFUSAL: the model correctly reported that no such titled passage was offered.",
+        "residual_weakness": "accept_any makes this question EASY -- it now only tests that the attribution mechanism reports a real speaker rather than an invented name. The harder version (identify THE speaker of a specific reply) needs a report whose title AND text both locate it, and belongs in the class-B revision."
+      },
+      "verified": true
+    },
+    {
+      "id": "C1",
+      "cat": "C",
+      "q": "What did Dr Koh Poh Koon say about the Joint Singles Scheme in 2016?",
+      "gold_facts": ["2,184", "398"],
+      "gold": [{"report_id": "oral-answer-1206", "turn": 4}],
+      "verified": true
+    },
+    {
+      "id": "F1",
+      "cat": "F",
+      "q": "How many people were supported under the JSS?",
+      "gold_facts": ["two million"],
+      "gold": [{"report_id": "oral-answer-2271", "turn": 1}],
+      "verified": true,
+      "trap": "Bare 'JSS' matches 238 turns across two unrelated schemes. A keyword search returns the HDB housing scheme (398 people, 2016) instead of the wage scheme (two million workers, 2020). This is the recall failure the whole project is built around."
+    },
+    {
+      "id": "F2",
+      "cat": "F",
+      "q": "What is the Joint Singles Scheme and how does it work?",
+      "gold_facts": ["rental flat", "single"],
+      "gold": [{"report_id": "oral-answer-1206", "turn": 4}],
+      "verified": true,
+      "trap": "Same abbreviation, opposite meaning. 'JSS' alone cannot answer this."
+    },
+    {
+      "id": "E1",
+      "cat": "E",
+      "q": "What did the Minister say about the price of chicken rice in Parliament?",
+      "gold_facts": [],
+      "gold": [],
+      "verified": true,
+      "expect": "refuse",
+      "why": "Not in the record. Tests whether the system invents a plausible answer."
+    },
+    {
+      "id": "E2",
+      "cat": "E",
+      "q": "What is the Jobs Support Scheme payout figure for 2026?",
+      "gold_facts": [],
+      "gold": [],
+      "verified": true,
+      "expect": "refuse",
+      "why": "The scheme ended. Only one 2026 turn mentions it. Must not invent a figure."
+    },
+    {
+      "id": "E3",
+      "cat": "E",
+      "q": "What did Parliament decide about the 2027 GST rate?",
+      "gold_facts": [],
+      "gold": [],
+      "verified": true,
+      "expect": "refuse",
+      "why": "Future date outside the corpus. A plausible-sounding but invented answer is the failure mode."
+    },
+    {
+      "id": "E4",
+      "cat": "E",
+      "q": "How many people attended the National Day Parade in 2020?",
+      "gold_facts": [],
+      "gold": [],
+      "verified": true,
+      "expect": "refuse",
+      "why": "Not a parliamentary matter. Tests scope discipline, not knowledge."
+    },
+    {
+      "id": "D1",
+      "cat": "D",
+      "q": "How many Singapore households own cars, and by when will about half of the public bus fleet be electric?",
+      "gold_facts": [],
+      "gold": [
+        {"report_id": "ministerial-statement-2181", "turn": 6},
+        {"report_id": "ministerial-statement-2181", "turn": 9}
+      ],
+      "one_per_turn": [
+        ["470,000 households"],
+        ["electric by 2030"]
+      ],
+      "verified": true,
+      "why_class_d": "Verified corpus-wide, not merely within these two turns: NO turn in the 91,263 contains a member of both groups, so the question cannot be answered from one passage. Group 1 (470,000 car-owning households) is carried by exactly 1 turn; group 2 by 7. This is the defining test for class D, and it runs as a command (rag/eval/verify_class_d.py).",
+      "provenance": "Report ministerial-statement-2181, sitting 2023-05-08, 'Meeting the Transport Needs of Singaporeans'. Turn 6 is Mr S Iswaran's statement on car ownership; turn 9 is his statement on the public bus fleet.",
+      "measured_behaviour": "FAILS: retrieval returns a passage for group 2 but none for group 1 (see the run notes). Both facts sit in the corpus, none in the top-10 window, so the model refuses correctly. This is the multi-hop gap class D exists to expose, and it is the justification for a decomposition or multi-hop step -- not a prompt problem.",
+      "known_looseness": "Group 2 ('electric by 2030') is carried by 7 turns, and some concern the TAXI fleet rather than buses ('at least half of our taxis will be electric by 2030'), so a taxi passage would also satisfy the group. Tightening it to a bus-specific phrase would exclude the gold turn itself, which reads 'about half of these will be electric by 2030' with 'these' referring to the 6,000 buses. Recorded rather than narrowed, because narrowing breaks the gold.",
+      "near_miss_avoided": "The first draft asked about 'the vehicle fleet'. The record says the PUBLIC BUS FLEET (6,000 buses). Read in context before writing -- the check that would have caught the B3 defect."
+    }
+  ],
+
+  "withdrawn": [
+    {
+      "id": "D2",
+      "cat": "D",
+      "q": "What did the 2019 housing paper say about the supply of private units completing up to 2022, and what did it say about the stream of BTO units in the last few years?",
+      "withdrawn_date": "2026-09-24",
+      "reason": "NOT CLASS D. It was written on the strength of a check that tested fact uniqueness only WITHIN the two designated gold turns. Measured corpus-wide, the turn motion-2029#t30 contains both facts, so a single passage answers it and no combination is required.",
+      "how_found": "rag/eval/verify_class_d.py, the corpus-wide form of the check: 'turns containing a member of EVERY group = 1'.",
+      "lesson": "The defining property of class D is a property of the QUESTION against the CORPUS, not against one chosen pair of turns. A uniqueness check scoped to the gold will admit non-D questions and silently measure nothing new.",
+      "note": "The two facts are both real and verified -- the question is simply class A. If retained later it belongs in class A, not D."
+    }
+  ],
+
+  "pending": {
+    "note": "Class D is at 1 question (D1), verified genuine and currently failing for a real multi-hop reason. Class C is thin at 1 and class B is weakened by accept_any. Before this set is treated as a finished instrument, add: at least 2 more class C, one harder class B naming a report whose title AND text both locate it, and more class D. Class-D candidate search is recorded in scratch/find_comparable_d.py -- genuine D pairs are RARE in this corpus, because distinctive facts either co-occur in one turn (making the question class A) or belong to unrelated domains (making the question artificial). The most reliable generator found is a comparison-across-time question ('what was the figure in year X and in year Y?'), which is two-passage by construction since a turn belongs to one sitting.",
+    "target_count": 26,
+    "current_count": 17
+  }
+}

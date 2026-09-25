@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Parsnips — margin</title>
+<style>
+
+/* MARGIN — editorial. The transcript is the page; the summary sits in the margin.
+   Type: a serif body for reading comfort, sans for chrome. Measure held to ~62ch at wide
+   widths, full-bleed on a phone. Colour is the shipped palette, warmed slightly. */
+:root{
+  --ink:#1a1f26; --dim:#5c6773; --faint:#8b95a1;
+  --bg:#fbfbf9; --card:#fff; --line:#e5e8ec;
+  --accent:#1c6b4a; --warm:#b4622a; --hl:#fdf3d4; --hl2:#e8f2ec;
+  --serif:Georgia,'Iowan Old Style',Charter,serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+  --pad:20px;
+}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);
+  -webkit-text-size-adjust:100%}
+.top{position:sticky;top:0;z-index:20;background:rgba(251,251,249,.92);
+  backdrop-filter:blur(9px);border-bottom:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:11px var(--pad)}
+.brand{display:flex;align-items:center;gap:7px;font-size:15.5px}
+.leaf{font-size:16px}
+.screens{display:flex;gap:4px}
+.screens button{font:inherit;font-size:13px;padding:7px 13px;border-radius:999px;border:1px solid transparent;
+  background:transparent;color:var(--dim);cursor:pointer;min-height:44px;display:inline-flex;
+  align-items:center}
+.screens button[aria-pressed=true]{background:var(--ink);color:#fff}
+main{padding:0 var(--pad) 40px}
+.sc{animation:none}
+.ask{display:flex;gap:8px;margin:16px 0 8px}
+.ask input{flex:1;font:inherit;font-size:16px;padding:13px 14px;border-radius:12px;
+  border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.ask button{font:inherit;font-weight:600;font-size:14px;padding:0 16px;border-radius:12px;
+  border:0;background:var(--accent);color:#fff;cursor:pointer}
+.askhint{font-size:12.5px;color:var(--faint);margin-bottom:18px}
+.sithead{border-top:2px solid var(--ink);padding-top:12px;margin-bottom:4px}
+.sithead .d{font:600 11.5px/1 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--warm)}
+.sithead h1{font:400 25px/1.2 var(--serif);margin:8px 0 6px;letter-spacing:-.01em}
+.sithead .m{font-size:13px;color:var(--dim)}
+.sithead .m b{color:var(--ink);font-weight:600}
+.items{margin-top:16px}
+.item{border-bottom:1px solid var(--line);padding:14px 0;cursor:pointer;background:none;border-left:0;
+  border-right:0;border-top:0;width:100%;text-align:left;font:inherit;color:inherit;display:block}
+.item:active{background:#f4f4f1}
+.item .t{font:600 16.5px/1.35 var(--serif);letter-spacing:-.005em}
+.item .w{font-size:12.5px;color:var(--faint);margin-top:4px;font-variant-numeric:tabular-nums}
+.item .w b{color:var(--dim);font-weight:500}
+.item.big .t:after{content:" ◆";color:var(--warm);font-size:11px;vertical-align:2px}
+.tail{margin-top:18px;font-size:12.5px;color:var(--faint);border-top:1px solid var(--line);padding-top:12px}
+.back{font:inherit;font-size:13.5px;color:var(--dim);background:none;border:0;padding:12px 0;cursor:pointer;
+  min-height:44px}
+.rh{border-top:2px solid var(--ink);padding-top:12px}
+.rh .g{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--warm);font-weight:600}
+.rh h2{font:400 23px/1.22 var(--serif);margin:8px 0 6px}
+.rh .m{font-size:13px;color:var(--dim);font-variant-numeric:tabular-nums}
+/* the margin note: at phone width it stacks ABOVE its body, which is the whole idea */
+.sec{margin:22px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.sec .lab{font:600 12px/1.4 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.sec .sum{font:400 17.5px/1.5 var(--serif);margin:8px 0 12px;color:#12171d}
+.sec .sum mark{background:var(--hl);padding:0 2px;border-radius:3px}
+.tr{margin:0}
+.tr .sp{font:600 12.5px/1 var(--sans);color:var(--faint);margin:16px 0 5px;letter-spacing:.02em}
+.tr .s{font:400 16px/1.62 var(--serif);margin:0 0 11px;color:#232a33}
+.tr .s.sel{background:var(--hl);box-shadow:0 0 0 3px var(--hl);border-radius:2px}
+.tr .s .sid{font:600 9.5px/1 var(--mono);color:var(--faint);vertical-align:3px;margin-left:4px}
+.trmore{font-size:13px;color:var(--dim);background:none;border:1px dashed var(--line);
+  border-radius:10px;padding:10px 12px;width:100%;text-align:center;margin-top:6px;cursor:pointer;font-family:var(--sans)}
+.wide{display:none}
+.ctxs{font-size:11.5px;color:var(--faint);font-family:var(--mono)}
+.anscard{border:1px solid var(--line);background:var(--card);border-radius:14px;padding:15px;margin:14px 0 0}
+.anscard .q{font:600 12px/1.3 var(--sans);letter-spacing:.05em;text-transform:uppercase;color:var(--faint)}
+.anscard .a{font:400 18px/1.5 var(--serif);margin:9px 0 0}
+.qcard{border-left:3px solid var(--accent);padding:2px 0 2px 13px;margin:16px 0 0}
+.qcard .tx{font:400 16.5px/1.55 var(--serif)}
+.qcard .ci{font-size:12px;color:var(--dim);margin-top:7px;font-family:var(--mono);line-height:1.45}
+.qcard .ci b{font-family:var(--sans);font-weight:600;color:var(--ink)}
+.jump{display:inline-block;margin-top:9px;font:600 12.5px/1 var(--sans);color:var(--accent);
+  text-decoration:none;border-bottom:1px solid rgba(28,107,74,.35);padding-bottom:2px}
+.refuse{border:1px solid #e5d9bf;background:#fdf8ec;border-radius:14px;padding:15px;margin:14px 0 0}
+.refuse .h{font-weight:650;color:#8a5a12;font-size:15px}
+.refuse p{margin:7px 0 0;font-size:14px;color:#5c4a2a}
+.rel{margin:10px 0 0;padding:10px 0;border-top:1px solid #ece0c8;font-size:13.5px}
+.rel .d{color:#8a7a5a;font-size:11.5px;font-family:var(--mono)}
+@media (min-width:1000px){
+  .wide{display:block}
+  main{padding:0 32px 60px}
+  .items{display:block;max-width:none}
+  .item{display:grid;grid-template-columns:1fr 128px;align-items:baseline;gap:20px}
+  .item .w{text-align:right;margin:0}
+  .sec{display:grid;grid-template-columns:230px 1fr;gap:34px;align-items:start}
+  .sec .lab{grid-column:1}
+  .sec .sum{grid-column:1;margin:4px 0 0;font-size:16px}
+  .sec .tr{grid-column:2;margin-top:0}
+  .rh{max-width:74ch}
+  .ask{max-width:560px}
+  .sithead h1{font-size:31px}
+}
+
+</style>
+</head>
+<body data-dir="margin">
+
+<header class="top" id="top">
+  <div class="brand">
+    <span class="leaf" aria-hidden="true">🌱</span>
+    <b>Parsnips</b>
+  </div>
+  <nav class="screens" id="screens">
+    <button data-s="home" aria-pressed="true">Home</button>
+    <button data-s="read">Read</button>
+    <button data-s="answer">Answer</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ HOME ============ -->
+  <section class="sc" id="sc-home">
+    <form class="ask" onsubmit="return false">
+      <input id="q" type="search" autocomplete="off" enterkeyhint="search"
+             placeholder="Ask the record — e.g. what was said about mental health?">
+      <button type="submit" aria-label="Ask">Ask</button>
+    </form>
+    <div class="askhint" id="askhint"></div>
+
+    <div class="sithead" id="sithead"></div>
+    <div class="items" id="items"></div>
+    <div class="tail" id="tail"></div>
+  </section>
+
+  <!-- ============ READ ============ -->
+  <section class="sc" id="sc-read" hidden>
+    <button class="back" id="back">‹ All items</button>
+    <div id="readhead"></div>
+    <div id="readbody"></div>
+  </section>
+
+  <!-- ============ ANSWER ============ -->
+  <section class="sc" id="sc-answer" hidden>
+    <div id="anshead"></div>
+    <div id="ansbody"></div>
+  </section>
+</main>
+
+<script src="reading-data.js"></script>
+<script>
+
+const D = window.__DATA__;
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const nf = n => n==null?'—':Number(n).toLocaleString('en-GB');
+let OPEN = null;
+
+function show(which){
+  for (const s of ['home','read','answer']) $('#sc-'+s).hidden = (s!==which);
+  $('#screens').querySelectorAll('button').forEach(b =>
+    b.setAttribute('aria-pressed', String(b.dataset.s===which)));
+  window.scrollTo(0,0);
+}
+$('#screens').addEventListener('click', e => {
+  const b = e.target.closest('button'); if(!b) return; show(b.dataset.s);
+});
+$('#back').addEventListener('click', () => show('home'));
+
+/* ---- home ---- */
+function home(){
+  const S = D.sitting;
+  $('#sithead').innerHTML =
+    `<div class="d">${esc(D.date)}</div>
+     <h1>What Parliament did on ${esc(D.date)}</h1>
+     <div class="m"><b>${nf(S.total_words)}</b> words spoken ·
+      <b>${nf(S.turns)}</b> turns · <b>${nf(S.reports)}</b> items ·
+      <b>${nf(D.catalog.length)}</b> briefs to read</div>`;
+  const big = Math.max(...D.catalog.map(i => i.sel_words));
+  $('#items').innerHTML = D.catalog.map(i => `
+    <button class="item ${i.sel_words===big?'big':''}" data-id="${esc(i.id)}">
+      <span class="t">${esc(i.title)}</span>
+      <span class="w"><b>${nf(i.sel_words)}</b> w · ${i.sections} sec</span>
+    </button>`).join('');
+  $('#items').addEventListener('click', e => {
+    const b = e.target.closest('.item'); if(!b) return; open_item(b.dataset.id);
+  });
+  $('#tail').innerHTML =
+    `Sitting ${esc(String(S.n_reports))} reports, all covered. ` +
+    `Every brief links to the sentences it was built from.`;
+  $('#askhint').innerHTML = 'Ask answers with <b>verbatim quotes</b> and links into the sitting';
+}
+home();
+
+/* ---- read ---- */
+function open_item(id){
+  OPEN = id;
+  const c = D.catalog.find(x => x.id===id) || {};
+  const secs = D.detail[id];
+  $('#readhead').innerHTML =
+    `<div class="rh">
+      <div class="g">${esc(D.date)}</div>
+      <h2>${esc(c.title || id)}</h2>
+      <div class="m">${nf(c.sel_words)} words kept of ${nf((c.sentences_total||0)*8)} ·
+        ${c.sections} sections · ${(c.report_ids||[]).length} report(s)</div>
+    </div>`;
+  if (!secs){
+    $('#readbody').innerHTML = `<div class="sec"><div class="lab">Full text</div>
+      <div class="sum">The whole item, unsummarised.</div>
+      <div class="tr">` + (D.turns||[]).map(t => `
+        <div class="sp">${esc(t.speaker||'Unknown')}</div>
+        <p class="s">${esc(t.text)}</p>`).join('') + `</div></div>`;
+    show('read'); return;
+  }
+  $('#readbody').innerHTML = secs.map(s => `
+    <div class="sec">
+      <div class="lab">${esc(s.label)}</div>
+      <div class="sum">${esc(s.summary)}</div>
+      <div class="tr">` +
+      s.sentences.map(x => `
+        <div class="sp">${esc(x.speaker||'Unknown')}</div>
+        <p class="s sel">${esc(x.text)}<span class="sid">${esc(x.sid)}</span></p>`).join('') +
+      `</div>
+    </div>`).join('') +
+    (secs.length >= 26 ?
+      `<button class="trmore" id="more">This item has ${c.sections} sections —
+        showing 26. Open the full transcript ›</button>` : '');
+  show('read');
+}
+
+/* ---- answer ---- */
+function answer(){
+  $('#anshead').innerHTML = `<div class="anscard">
+    <div class="q">asked — verbatim quotes only</div>
+    <div class="a">How much did Parliament say mental health costs Singapore, and who said it?</div>
+  </div>`;
+  const sec = (D.detail['motion-2310+2312+2315']||[]).find(s =>
+    /cost/i.test(s.label)) || (D.detail['motion-2310+2312+2315']||[])[0];
+  const s = sec && sec.sentences[0];
+  $('#ansbody').innerHTML = `
+    <div class="qcard">
+      <div class="tx">“${esc(s?s.text:'')}”</div>
+      <div class="ci"><b>${esc(s?s.speaker:'')}</b><br>${esc(D.date)} · ${esc(s?s.sid:'')}
+        · ${esc('motion-2310+2312+2315')}</div>
+      <a class="jump" href="#" id="jump">Read this in the sitting ›</a>
+    </div>`;
+  $('#jump').addEventListener('click', e => { e.preventDefault(); open_item('motion-2310+2312+2315'); });
+  $('#sc-answer').addEventListener('click', e => {
+    if (e.target.id==='refusejump'){ e.preventDefault(); open_item('motion-2316+2318'); }
+  });
+}
+answer();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>PARSNIPS UAT — RAG answer stage</title>
+<style>
+/* Mobile-first: this IS the 390px layout. One column, no width overrides, >=44px tap targets. */
+:root{
+  --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --line:#2a2f3a;
+  --tx:#e8eaf0; --dim:#9aa3b2; --accent:#6aa9ff; --ok:#39c07a; --bad:#ff6b6b;
+  --warn:#ffb454; --quote:#0d1b2a;
+  --r:10px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--tx);
+  font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  padding:14px 14px calc(28px + env(safe-area-inset-bottom));
+  -webkit-text-size-adjust:100%;
+}
+h1{font-size:20px;margin:0 0 2px}
+.sub{color:var(--dim);font-size:13px;margin:0 0 16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px;margin:0 0 12px}
+label{display:block;font-size:13px;color:var(--dim);margin:0 0 6px}
+textarea,input,select,button{font:inherit;color:inherit}
+textarea,input{
+  width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:var(--r);
+  padding:12px;min-height:52px;resize:vertical
+}
+textarea{min-height:76px}
+button{
+  background:var(--accent);color:#08101c;border:0;border-radius:var(--r);
+  padding:13px 16px;font-weight:650;min-height:46px;cursor:pointer
+}
+button.ghost{background:transparent;color:var(--tx);border:1px solid var(--line);font-weight:500}
+button:disabled{opacity:.5}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.row.grow>*{flex:1 1 46%}
+.hint{color:var(--dim);font-size:12.5px;margin:8px 0 0}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 0}
+.chip{
+  background:var(--panel2);border:1px solid var(--line);border-radius:999px;
+  padding:8px 12px;font-size:13px;color:var(--tx);cursor:pointer
+}
+.chip:active{background:var(--line)}
+.hide{display:none}
+
+/* verdict banner */
+.verdict{border-radius:var(--r);padding:12px 14px;font-weight:650;margin:0 0 12px;border:1px solid}
+.v-refused{background:#2a2010;border-color:#5a4415;color:var(--warn)}
+.v-answered{background:#10251a;border-color:#1e4d33;color:var(--ok)}
+.v-error{background:#2a1414;border-color:#5a1f1f;color:var(--bad)}
+.meta{font-size:12.5px;color:var(--dim);font-weight:400;margin-top:4px;display:block}
+
+/* quotes */
+.q{background:var(--quote);border:1px solid #1d3550;border-left:4px solid var(--accent);
+   border-radius:8px;padding:12px;margin:0 0 10px}
+.q .txt{font-size:15.5px;line-height:1.5}
+.q .cite{font-size:12.5px;color:var(--dim);margin-top:8px;word-break:break-word}
+.bad-cite{border-left-color:var(--bad);background:#241416}
+.tag{display:inline-block;font-size:11.5px;padding:2px 7px;border-radius:999px;
+     border:1px solid var(--line);color:var(--dim);margin:6px 6px 0 0}
+.tag.warn{color:var(--warn);border-color:#5a4415}
+.tag.bad{color:var(--bad);border-color:#5a1f1f}
+
+/* related topics */
+.rel{border-top:1px solid var(--line);padding:10px 0}
+.rel:last-child{border-bottom:1px solid var(--line)}
+.rel .t{font-size:14.5px}
+.rel .d{font-size:12.5px;color:var(--dim)}
+
+/* diagnostics */
+details{background:var(--panel2);border:1px solid var(--line);border-radius:var(--r);padding:10px 12px;margin:0 0 12px}
+summary{cursor:pointer;font-size:14px;font-weight:600}
+details p{font-size:13px;color:var(--dim);margin:8px 0}
+.kv{font-size:13px;margin:6px 0;word-break:break-word}
+.kv b{color:var(--dim);font-weight:500}
+.ptext{background:#0b0e13;border:1px solid var(--line);border-radius:8px;padding:9px;
+       font-size:12.5px;color:#c8ceda;margin:6px 0;white-space:pre-wrap}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
+.sticky{position:sticky;bottom:0;background:linear-gradient(transparent,var(--bg) 30%);padding-top:12px}
+</style>
+</head>
+<body>
+
+<h1>PARSNIPS UAT</h1>
+<p class="sub">RAG answer stage — ask it anything about Singapore Hansard 2016–2026.<br>
+Quotes are verbatim from the record. Refusal is a real answer, not a failure.</p>
+
+<div class="card">
+  <label for="q">Your question</label>
+  <textarea id="q" placeholder="e.g. How much of the Jobs Support Scheme payouts went to SMEs?"></textarea>
+  <div class="row" style="margin-top:10px">
+    <button id="ask" style="flex:1">Ask</button>
+    <button class="ghost" id="clear">Clear</button>
+  </div>
+  <p class="hint">Try one of these, or type your own:</p>
+  <div class="chips" id="chips"></div>
+</div>
+
+<div id="out"></div>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s == null ? "" : s)
+  .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+
+// Questions chosen to exercise the classes the eval covers, so a UAT pass has something concrete
+// to judge. Kept short enough to read on a phone.
+const SUGGEST = [
+  "How much of the Jobs Support Scheme payouts went to SMEs, and what share of local workers did that cover?",
+  "Who spoke about the Progressive Wage Model for cleaners?",
+  "What did Dr Koh Poh Koon say about the Joint Singles Scheme in 2016?",
+  "How many people were supported under the JSS?",
+  "How many Singapore households own cars, and by when will about half of the public bus fleet be electric?",
+  "What did Parliament decide about the 2027 GST rate?",
+  "What is the Jobs Support Scheme payout figure for 2026?",
+  "How many people attended the National Day Parade in 2020?"
+];
+$("#chips").innerHTML = SUGGEST.map((s,i) =>
+  `<button class="chip" data-i="${i}">${esc(s.length>54 ? s.slice(0,52)+"…" : s)}</button>`).join("");
+$("#chips").addEventListener("click", (e) => {
+  const b = e.target.closest(".chip"); if (!b) return;
+  $("#q").value = SUGGEST[+b.dataset.i];
+  $("#q").scrollIntoView({behavior:"smooth", block:"center"});
+});
+$("#clear").addEventListener("click", () => { $("#q").value=""; $("#out").innerHTML=""; });
+
+let LAST = null;
+
+function diag(d){
+  const r = d.retrieval || {};
+  const con = r.constraints ? JSON.stringify(r.constraints) : "none";
+  const p = (d.passages||[]).map((x,i) =>
+    `<div class="kv"><b>${i+1}. ${esc(x.id)}</b>${x.excerpt ?
+      `<div class="ptext">${esc(x.excerpt)}</div>` : ""}</div>`).join("");
+  return `<details>
+    <summary>What the system actually did (diagnostics)</summary>
+    <div class="kv"><b>pool after SQL filtering:</b> ${esc(r.candidate_turns ?? "?")} turns
+      &nbsp;·&nbsp; <b>constraints parsed:</b> <span class="mono">${esc(con)}</span></div>
+    <div class="kv"><b>passages sent to the model:</b> ${esc(d.n_chunks ?? "?")}
+      &nbsp;·&nbsp; <b>context tokens:</b> ${esc(d.context_tokens ?? "?")}</div>
+    <div class="kv"><b>answer came from:</b> ${esc(d.source || "?")}
+      ${d.reason ? `&nbsp;·&nbsp; <b>reason:</b> ${esc(d.reason)}` : ""}</div>
+    ${p ? `<p>Each passage below was in the context. If the answer you wanted is missing from ALL
+      of them, this is a RETRIEVAL problem. If it IS here but the answer didn't use it, that's a
+      GENERATION problem — and those need different fixes.</p>${p}` : ""}
+  </details>`;
+}
+
+function verdictBar(id){
+  return `<div class="card" id="vb">
+    <label>Your verdict — how was this answer?</label>
+    <div class="row grow">
+      <button data-v="correct">Correct</button>
+      <button data-v="partial" class="ghost">Partly right</button>
+      <button data-v="wrong" class="ghost">Wrong</button>
+      <button data-v="should_refuse" class="ghost">Should have refused</button>
+      <button data-v="should_answer" class="ghost">Should have answered</button>
+      <button data-v="not_in_record" class="ghost">Not in the record</button>
+    </div>
+    <input id="note" placeholder="Optional note (what's wrong with it?)" style="margin-top:10px">
+    <p class="hint">Saved to pipeline/uat_verdicts.jsonl as you tap. No wrong answers here —
+      every verdict is data.</p>
+  </div>`;
+}
+
+function render(d){
+  const out = $("#out");
+  let h = "";
+  if (d.error){
+    h += `<div class="verdict v-error">Error<div class="meta">${esc(d.error)}</div></div>`;
+    out.innerHTML = h; return;
+  }
+  const refused = !!d.refused;
+  h += refused
+    ? `<div class="verdict v-refused">REFUSED — not found in the record
+         <span class="meta">${esc(d.reason || "no passage supported an answer")}</span></div>`
+    : `<div class="verdict v-answered">Answered — ${(d.quotes||[]).length}
+         verbatim quote${(d.quotes||[]).length===1?"":"s"}
+         <span class="meta">${esc(d.elapsed_s||"?")}s · ${esc(d.n_chunks||"?")} passages ·
+         pool ${esc((d.retrieval||{}).candidate_turns ?? "?")}</span></div>`;
+
+  for (const q of (d.quotes||[])){
+    h += `<div class="q ${q.cited_ok?"":"bad-cite"}">
+      <div class="txt">“${esc(q.quote)}”</div>
+      <div class="cite">${esc(q.citation || q.chunk_id)}</div>
+      ${q.cited_ok ? "" : `<span class="tag bad">citation not found in corpus</span>`}
+      ${q.speaker ? `<span class="tag">${esc(q.speaker)}</span>` : ""}
+    </div>`;
+  }
+
+  if (refused){
+    const rel = (d.related||[]);
+    h += `<div class="card">
+      <label>Related topics in the record (${rel.length}) — for context, NOT an answer</label>
+      ${rel.length ? rel.map(s => `<div class="rel">
+          <div class="t">${esc(s.real_title || s.title)}</div>
+          <div class="d">${esc(s.date||"")} · ${esc(s.report_id||"")}
+            ${s.grounded ? "" : ` <span class="tag warn">title not matched</span>`}</div>
+        </div>`).join("")
+      : `<p class="hint">Nothing related found either.</p>`}
+    </div>`;
+  }
+
+  h += diag(d);
+  h += verdictBar();
+  out.innerHTML = h;
+
+  $("#vb").addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-v]"); if (!b) return;
+    const body = {verdict: b.dataset.v, question: d.question, note: $("#note").value,
+                  refused: d.refused, n_quotes: (d.quotes||[]).length,
+                  quote_ids: (d.quotes||[]).map(q => q.chunk_id),
+                  pool: (d.retrieval||{}).candidate_turns, elapsed_s: d.elapsed_s};
+    fetch("/verdict", {method:"POST", headers:{"Content-Type":"application/json"},
+                       body: JSON.stringify(body)})
+      .then(r => r.json())
+      .then(() => {
+        $("#vb").innerHTML = `<label>Recorded: ${esc(b.textContent)}</label>
+          <p class="hint">Saved. Ask the next one.</p>`;
+      })
+      .catch(err => { $("#vb").innerHTML = `<label>Could not save: ${esc(err)}</label>`; });
+  });
+}
+
+$("#ask").addEventListener("click", async () => {
+  const q = $("#q").value.trim();
+  if (!q) return;
+  $("#ask").disabled = true; $("#ask").textContent = "Thinking…";
+  $("#out").innerHTML = `<div class="card"><p class="hint">Retrieving and reading passages…
+    first run loads the vector index, so this one can take ~20s.</p></div>`;
+  try{
+    const r = await fetch("/ask?k=10&q=" + encodeURIComponent(q));
+    const d = await r.json();
+    LAST = d; render(d);
+  }catch(err){
+    render({error: String(err)});
+  }finally{
+    $("#ask").disabled = false; $("#ask").textContent = "Ask";
+  }
+});
+$("#q").addEventListener("keydown", (e) => {
+  if ((e.metaKey||e.ctrlKey) && e.key === "Enter") $("#ask").click();
+});
+</script>
+</body>
+</html>

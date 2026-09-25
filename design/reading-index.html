@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Parsnips — index</title>
+<style>
+
+/* INDEX — dense, numbered, scannable. The sitting as a navigable catalogue.
+   Type: one precise sans with strong tabular numerals; mono for identifiers. Density is the
+   point, so borders and numbers do the work and nothing floats. */
+:root{
+  --ink:#0f1317; --dim:#5a6572; --faint:#8a95a1;
+  --bg:#fff; --band:#f6f7f9; --line:#e1e5ea;
+  --accent:#0b5c8a; --hot:#c2410c; --ok:#15803d;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+  --pad:14px;
+}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--sans);
+  -webkit-text-size-adjust:100%}
+.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);
+  padding:9px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:8px}
+.brand{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:650;letter-spacing:-.01em}
+.screens{display:flex;gap:3px}
+.screens button{font:inherit;font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:8px;
+  border:1px solid var(--line);background:#fff;color:var(--dim);cursor:pointer;min-height:44px;
+  display:inline-flex;align-items:center}
+.screens button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+main{padding:0 var(--pad) 40px}
+.ask{display:flex;gap:6px;margin:12px 0 6px}
+.ask input{flex:1;font:inherit;font-size:15px;padding:11px 12px;border-radius:9px;
+  border:1px solid var(--line);background:var(--band)}
+.ask button{font:inherit;font-weight:650;font-size:13.5px;padding:0 14px;border-radius:9px;border:0;
+  background:var(--accent);color:#fff;cursor:pointer}
+.askhint{font-size:11.5px;color:var(--faint);margin:0 0 12px}
+.sithead{border:1px solid var(--line);border-radius:11px;overflow:hidden;margin:0 0 12px}
+.sithead .bar{background:var(--ink);color:#fff;padding:9px 11px;display:flex;
+  align-items:baseline;justify-content:space-between;gap:8px}
+.sithead .bar b{font-size:14px}
+.sithead .bar span{font-size:11.5px;color:#b9c2cc;font-variant-numeric:tabular-nums}
+.sithead .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:0}
+.sithead .stats div{padding:9px 8px;border-right:1px solid var(--line);text-align:center}
+.sithead .stats div:last-child{border-right:0}
+.sithead .stats b{display:block;font-size:15px;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.sithead .stats span{font-size:10px;color:var(--faint);text-transform:uppercase;letter-spacing:.06em}
+.legend{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--faint);margin:0 0 8px}
+.legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:4px}
+.items{border-top:1px solid var(--line)}
+.item{display:grid;grid-template-columns:34px 1fr 62px;gap:9px;align-items:baseline;
+  padding:11px 0;border-bottom:1px solid var(--line);cursor:pointer;background:none;border-left:0;
+  border-right:0;border-top:0;font:inherit;color:inherit;text-align:left;width:100%}
+.item:active{background:var(--band)}
+.item .n{font:600 11.5px/1.5 var(--mono);color:var(--faint);text-align:right;padding-top:1px}
+.item .t{font-size:14.5px;font-weight:600;line-height:1.32;letter-spacing:-.005em}
+.item .sub{font-size:11px;color:var(--faint);font-weight:400;margin-top:3px;font-variant-numeric:tabular-nums}
+.item .v{font-size:12.5px;font-variant-numeric:tabular-nums;text-align:right;color:var(--dim);font-weight:600}
+.item .bar{grid-column:2/4;height:3px;background:var(--band);border-radius:2px;margin-top:6px;overflow:hidden}
+.item .bar i{display:block;height:100%;background:var(--accent)}
+.item.hi .v{color:var(--hot)}
+.item.hi .bar i{background:var(--hot)}
+.tail{margin-top:14px;font-size:11.5px;color:var(--faint);font-family:var(--mono);line-height:1.6}
+.back{font:600 12.5px var(--sans);color:var(--accent);background:none;border:0;padding:10px 0;cursor:pointer;
+  min-height:44px}
+.rh{border-bottom:2px solid var(--ink);padding-bottom:11px}
+.rh .g{font:600 10.5px/1 var(--mono);color:var(--warm,var(--hot));letter-spacing:.05em}
+.rh h2{font-size:19px;margin:7px 0 5px;letter-spacing:-.015em;line-height:1.28}
+.rh .m{font-size:11.5px;color:var(--faint);font-variant-numeric:tabular-nums;font-family:var(--mono)}
+.sec{border-bottom:1px solid var(--line);padding:12px 0}
+.sec .lab{display:flex;gap:7px;align-items:baseline}
+.sec .lab .k{font:600 10px/1.6 var(--mono);color:var(--faint)}
+.sec .lab .t{font-size:13px;font-weight:650;letter-spacing:-.005em}
+.sec .sum{font-size:14px;line-height:1.5;color:#252d36;margin:7px 0 0}
+.sec .sum mark{background:#fef3c7;padding:0 2px}
+.tr{border-left:2px solid var(--line);margin:8px 0 0;padding-left:10px}
+.tr .sp{font:600 10.5px/1 var(--mono);color:var(--faint);margin:9px 0 3px}
+.tr .s{font-size:13.5px;line-height:1.55;margin:0 0 6px;color:#333b45}
+.tr .s.sel{background:#eef6fb;box-shadow:0 0 0 3px #eef6fb}
+.tr .sid{font:600 9px/1 var(--mono);color:var(--faint);margin-left:4px;vertical-align:2px}
+.trmore{width:100%;font:600 12px var(--sans);color:var(--accent);background:var(--band);
+  border:1px solid var(--line);border-radius:9px;padding:10px;margin-top:10px;cursor:pointer}
+.anscard{border:1px solid var(--line);border-radius:11px;overflow:hidden;margin:12px 0 0}
+.anscard .q{background:var(--band);padding:8px 11px;font:600 10.5px/1 var(--mono);
+  letter-spacing:.05em;color:var(--dim);text-transform:uppercase}
+.anscard .a{padding:11px 12px;font-size:14.5px;font-weight:600;letter-spacing:-.01em}
+.qcard{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;
+  padding:11px 12px;margin:12px 0 0}
+.qcard .tx{font-size:14.5px;line-height:1.55}
+.qcard .ci{font:11px/1.6 var(--mono);color:var(--dim);margin-top:8px}
+.qcard .ci b{font-family:var(--sans)}
+.jump{display:inline-block;margin-top:9px;font:650 12px var(--sans);color:#fff;background:var(--accent);
+  border-radius:8px;padding:8px 12px;text-decoration:none}
+.refuse{border:1px solid #f0d9b5;background:#fffbeb;border-radius:11px;padding:12px;margin:12px 0 0}
+.refuse .h{font-weight:700;color:#92400e;font-size:13.5px}
+.refuse p{margin:6px 0 0;font-size:13px;color:#78350f}
+.rel{border-top:1px solid #f0d9b5;margin-top:9px;padding-top:9px;font-size:13px}
+.rel .d{font:10.5px var(--mono);color:#a16207}
+@media (min-width:1000px){
+  main{padding:0 26px 60px;max-width:900px}
+  .item{grid-template-columns:44px 1fr 90px}
+  .sithead .stats{grid-template-columns:repeat(4,1fr)}
+  .rh h2{font-size:24px}
+  .ask{max-width:620px}
+}
+
+</style>
+</head>
+<body data-dir="index">
+
+<header class="top" id="top">
+  <div class="brand">
+    <span class="leaf" aria-hidden="true">🌱</span>
+    <b>Parsnips</b>
+  </div>
+  <nav class="screens" id="screens">
+    <button data-s="home" aria-pressed="true">Home</button>
+    <button data-s="read">Read</button>
+    <button data-s="answer">Answer</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ HOME ============ -->
+  <section class="sc" id="sc-home">
+    <form class="ask" onsubmit="return false">
+      <input id="q" type="search" autocomplete="off" enterkeyhint="search"
+             placeholder="Ask the record — e.g. what was said about mental health?">
+      <button type="submit" aria-label="Ask">Ask</button>
+    </form>
+    <div class="askhint" id="askhint"></div>
+
+    <div class="sithead" id="sithead"></div>
+    <div class="items" id="items"></div>
+    <div class="tail" id="tail"></div>
+  </section>
+
+  <!-- ============ READ ============ -->
+  <section class="sc" id="sc-read" hidden>
+    <button class="back" id="back">‹ All items</button>
+    <div id="readhead"></div>
+    <div id="readbody"></div>
+  </section>
+
+  <!-- ============ ANSWER ============ -->
+  <section class="sc" id="sc-answer" hidden>
+    <div id="anshead"></div>
+    <div id="ansbody"></div>
+  </section>
+</main>
+
+<script src="reading-data.js"></script>
+<script>
+
+const D = window.__DATA__;
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const nf = n => n==null?'—':Number(n).toLocaleString('en-GB');
+
+function show(w){
+  for (const s of ['home','read','answer']) $('#sc-'+s).hidden = (s!==w);
+  $('#screens').querySelectorAll('button').forEach(b =>
+    b.setAttribute('aria-pressed', String(b.dataset.s===w)));
+  window.scrollTo(0,0);
+}
+$('#screens').addEventListener('click', e => {
+  const b = e.target.closest('button'); if(b) show(b.dataset.s); });
+$('#back').addEventListener('click', () => show('home'));
+
+const S = D.sitting;
+const MAXW = Math.max(...D.catalog.map(i => i.sel_words));
+$('#sithead').innerHTML = `
+  <div class="bar"><b>Sitting ${esc(String(S.sitting_no||''))}</b>
+    <span>${esc(D.date)}</span></div>
+  <div class="stats">
+    <div><b>${nf(S.turns)}</b><span>turns</span></div>
+    <div><b>${nf(S.n_reports)}</b><span>reports</span></div>
+    <div><b>${D.catalog.length}</b><span>briefs</span></div>
+    <div><b>${nf(S.total_words)}</b><span>words</span></div>
+  </div>`;
+$('#items').innerHTML = D.catalog.map((i,n) => `
+  <button class="item ${i.sel_words===MAXW?'hi':''}" data-id="${esc(i.id)}">
+    <span class="n">${n+1}</span>
+    <span><span class="t">${esc(i.title)}</span>
+      <span class="sub">${i.sections} sections · ${nf(i.sentences_total)} sentences in report</span></span>
+    <span class="v">${nf(i.sel_words)}w</span>
+    <span class="bar"><i style="width:${Math.max(3,Math.round(i.sel_words/MAXW*100))}%"></i></span>
+  </button>`).join('');
+$('#items').addEventListener('click', e => {
+  const b = e.target.closest('.item'); if(b) open_item(b.dataset.id); });
+$('#tail').innerHTML = `all ${S.n_reports} reports covered · brief word count vs
+  ${nf(S.total_words)} spoken · every section links to its sentences`;
+$('#askhint').innerHTML = 'quotes only · citations checked against the corpus';
+
+function open_item(id){
+  const c = D.catalog.find(x => x.id===id) || {};
+  const secs = D.detail[id];
+  $('#readhead').innerHTML = `<div class="rh">
+      <div class="g">${esc(D.date)}</div>
+      <h2>${esc(c.title||id)}</h2>
+      <div class="m">${nf(c.sel_words)}w kept · ${c.sections} sec ·
+        ${(c.report_ids||[]).join(' ')}</div></div>`;
+  $('#readbody').innerHTML = (secs||[]).map((s,i) => `
+    <div class="sec">
+      <div class="lab"><span class="k">${String(i+1).padStart(2,'0')}</span>
+        <span class="t">${esc(s.label)}</span></div>
+      <div class="sum">${esc(s.summary)}</div>
+      <div class="tr">` + s.sentences.map(x => `
+        <div class="sp">${esc(x.speaker||'unknown')}</div>
+        <p class="s sel">${esc(x.text)}<span class="sid">${esc(x.sid)}</span></p>`).join('') + `
+      </div></div>`).join('') +
+    (secs && secs.length>=26 ? `<button class="trmore">${c.sections - 26} more sections —
+      open the full transcript</button>` : '');
+  show('read');
+}
+
+const SECS = D.detail['motion-2310+2312+2315'] || [];
+const COST = SECS.find(s => /cost/i.test(s.label)) || SECS[0] || {sentences:[]};
+const q0 = COST.sentences[0] || {text:'', speaker:'', sid:''};
+$('#anshead').innerHTML = `<div class="anscard">
+    <div class="q">verbatim quotes only</div>
+    <div class="a">How much did Parliament say mental health costs Singapore, and who said it?</div>
+  </div>`;
+$('#ansbody').innerHTML = `
+  <div class="qcard">
+    <div class="tx">“${esc(q0.text)}”</div>
+    <div class="ci"><b>${esc(q0.speaker)}</b><br>${esc(D.date)} · ${esc(q0.sid)} ·
+      motion-2310+2312+2315</div>
+    <a class="jump" href="#" id="jump">Read in the sitting ›</a>
+  </div>`;
+$('#jump').addEventListener('click', e => { e.preventDefault(); open_item('motion-2310+2312+2315'); });
+
+</script>
+</body>
+</html>
