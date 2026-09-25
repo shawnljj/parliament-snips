@@ -171,7 +171,7 @@ rest is the record itself.</p>
     body.append(RS.year_jump_style())
     if len(rows) != len(dates):
         print(f"  !! index lists {len(rows)} sittings but {len(dates)} were exported")
-    idx = RS.page('PARSNIPS — read the sittings', ''.join(body), 'Index')
+    idx = RS.page('PARSNIPS — read the sittings', ''.join(body))
     # the index gets the same brand-link fix as the sitting pages -- it is built by RS.page()
     # directly, so it never passes through export_page()
     idx = idx.replace('<a class="brand" href="/">', '<a class="brand" href="index.html">')
@@ -253,26 +253,31 @@ rest is the record itself.</p>
         problems.append(f"{len(missing)} broken internal links")
 
     # 3b. THE NAVIGATION WORKS. A control in the header that goes nowhere is the defect this
-    #     change was made for, and it was invisible from the source: the crumb looked like a
-    #     button and was a <div>. So assert the three properties that make it a navigation
-    #     control rather than asserting the markup is present: every page carries the menu,
-    #     every year anchor in the menu has a matching target on the index, and the crumb is a
-    #     LINK that resolves.
+    #     change was made for, and it was invisible from the source: the header used to carry a
+    #     pill that read like a button and was a <div>. So assert the properties that make a
+    #     navigation control rather than asserting the markup is present: every page carries the
+    #     menu, and every year anchor in the menu has a matching target on the index.
+    #     The old crumb pill is asserted ABSENT -- 'Index' as a nav button restated the site the
+    #     reader was already on, so it was removed, and a gate still requiring one would fail.
     idx = open(os.path.join(out, 'index.html'), encoding='utf-8').read()
     targets = set(re.findall(r'<h2 class="yearhead" id="(\d{4})"', idx))
     menu_years = set(re.findall(r'data-year="(\d{4})"', idx))
     no_menu = [f for f in pages
                if '<details class="ymenu">' not in open(os.path.join(out, f), encoding='utf-8').read()]
     dead = sorted(menu_years - targets)
-    no_crumb_link = [f for f in pages
-                     if 'class="crumb" href=' not in open(os.path.join(out, f), encoding='utf-8').read()]
+    has_crumb = [f for f in pages
+                 if 'class="crumb"' in open(os.path.join(out, f), encoding='utf-8').read()]
     print(f"  year headings on index : {len(targets)} {sorted(targets)}")
     print(f"  year menu entries      : {len(menu_years)}, dead anchors: {len(dead)}"
           + (f" {dead}" if dead else "  ok"))
     print(f"  pages with the menu    : {len(pages) - len(no_menu):,}/{len(pages):,}"
           + (f"  MISSING {no_menu[:3]}" if no_menu else "  ok"))
-    print(f"  crumb is a link        : {len(pages) - len(no_crumb_link):,}/{len(pages):,}"
-          + (f"  MISSING {no_crumb_link[:3]}" if no_crumb_link else "  ok"))
+    print(f"  crumb pill gone        : {'ok' if not has_crumb else 'STILL PRESENT ' + str(has_crumb[:3])}")
+    # the wordmark must still be the way home, since the pill is no longer one
+    no_home = [f for f in pages
+               if '<a class="brand" href="index.html">' not in open(os.path.join(out, f), encoding='utf-8').read()]
+    print(f"  wordmark links home    : {len(pages) - len(no_home):,}/{len(pages):,}"
+          + (f"  MISSING {no_home[:3]}" if no_home else "  ok"))
     # 3c. the index must turn off smooth scrolling for its year jumps. Without it every jump
     #     animates the full height of the archive (~4.7s measured) and the menu feels broken even
     #     though every anchor resolves.
@@ -284,8 +289,10 @@ rest is the record itself.</p>
         problems.append(f"{len(dead)} year menu anchor(s) with no target: {dead}")
     if no_menu:
         problems.append(f"{len(no_menu)} page(s) missing the years menu")
-    if no_crumb_link:
-        problems.append(f"{len(no_crumb_link)} page(s) whose crumb is not a link")
+    if has_crumb:
+        problems.append(f"{len(has_crumb)} page(s) still carry the removed crumb pill")
+    if no_home:
+        problems.append(f"{len(no_home)} page(s) whose wordmark does not link home")
     if menu_years != set(y for y, _n in years):
         problems.append("year menu entries do not match the years in the corpus")
 

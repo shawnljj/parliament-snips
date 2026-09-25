@@ -471,6 +471,9 @@ CSS = """
   --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
   --sh:0 1px 2px rgba(15,20,24,.04),0 10px 30px -22px rgba(15,20,24,.35);
   --sh-hi:0 2px 4px rgba(15,20,24,.05),0 18px 42px -26px rgba(15,20,24,.45);
+  /* The sticky header's height, stated once because two other rules have to agree with it:
+     .yearhead sticks below it, and a year jump lands clear of it. */
+  --hdr:58px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -495,11 +498,8 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(246,247,245,.86);
 .brand::before{content:'';width:9px;height:9px;border-radius:3px;background:var(--accent);
   box-shadow:0 0 0 4px var(--accent-soft);flex:none}
 .brand span{color:var(--dim);font-weight:600}
-.crumb{font-size:12px;color:var(--dim);font-weight:600;background:var(--panel);
-  border:1px solid var(--line);border-radius:999px;padding:5px 11px;white-space:nowrap;
-  max-width:46vw;overflow:hidden;text-overflow:ellipsis;text-decoration:none;
-  display:inline-flex;align-items:center;min-height:32px}
-a.crumb:hover{border-color:#c9d2d8;color:var(--ink)}
+/* No crumb pill in the header. 'Index' as a nav button restates the site the reader is already
+   on, beside a wordmark that already links home, so it was removed rather than relabelled. */
 /* --- the years menu --- */
 .nav{display:flex;align-items:center;gap:8px;min-width:0}
 .ymenu{position:relative;flex:none}
@@ -526,8 +526,9 @@ a.crumb:hover{border-color:#c9d2d8;color:var(--ink)}
 .ymenu-body a .yn{font-size:11.5px;color:var(--dim);font-weight:600}
 .ymenu-body .call{border-bottom:1px solid var(--line-2);border-radius:10px 10px 0 0;
   color:var(--accent);font-weight:680}
+.ymenu>summary{min-height:44px;padding-top:7px;padding-bottom:7px}
 /* --- the index, grouped by year --- */
-.yearhead{position:sticky;top:52px;z-index:5;display:flex;align-items:baseline;gap:9px;
+.yearhead{position:sticky;top:var(--hdr);z-index:5;display:flex;align-items:baseline;gap:9px;
   margin:20px 0 4px;padding:7px 2px;background:rgba(246,247,245,.94);
   backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
 .yearhead:first-of-type{margin-top:6px}
@@ -538,8 +539,12 @@ a.crumb:hover{border-color:#c9d2d8;color:var(--ink)}
 .yearhead .gotop:hover{color:var(--accent)}
 /* Smooth scrolling stays: arriving at a cited passage from a citation is a short hop inside a
    sitting and easing it reads better. Year jumps are the exception and are made instant in
-   year_jump_js() -- 38,000px of animated travel is a blur, not a transition. */
-[id]{scroll-margin-top:104px}
+   year_jump_style() -- 38,000px of animated travel is a blur, not a transition. */
+/* Two things must line up with the height of the sticky header: the year heading sticks just
+   below it, and a year jump has to land clear of it. Both were hardcoded (52px and 104px) and
+   both would have silently rotted the moment the header grew -- which it did, as soon as the
+   Years control was given a full-size tap target. So the height is stated once. */
+[id]{scroll-margin-top:calc(var(--hdr) + 52px)}
 /* --- type scale --- */
 h1{font-size:26px;line-height:1.2;margin:20px 0 6px;letter-spacing:-.03em;font-weight:750}
 h2{font-size:17px;margin:0;letter-spacing:-.015em}
@@ -760,12 +765,12 @@ def esc(s):
     return html.escape(s or '')
 
 
-def page(title, body, crumb=''):
+def page(title, body):
     return f"""<!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{esc(title)}</title><style>{CSS}</style></head><body id="top">
-{index_header([crumb] if crumb else None)}
+{index_header()}
 <div class="wrap">{body}</div>
 <footer>Served from <code>hansard.db</code> — transcript, summaries and highlight offsets all in
 SQLite. {esc('')}</footer>
@@ -783,7 +788,7 @@ def render_ask_page(db, q, k=10):
         return page('Ask — PARSNIPS', f"""<h1>Ask the Hansard</h1>
 <p class="sub">Questions are answered only from the record, with citations. If the record does not
 answer it, the system says so and lists what it does have on the subject.</p>
-{ask_form()}""", 'Ask')
+{ask_form()}""")
 
     try:
         res = answer_question(db, q, k=k)
@@ -791,7 +796,7 @@ answer it, the system says so and lists what it does have on the subject.</p>
         traceback.print_exc()
         return page('Ask — PARSNIPS', f"""<h1>Ask the Hansard</h1>
 {ask_form(q)}<div class="fail"><b>Could not answer</b><br>{esc(type(e).__name__)}:
-{esc(str(e))}</div>""", 'Ask')
+{esc(str(e))}</div>""")
 
     body = [f"<h1>Ask the Hansard</h1>{ask_form(q)}",
             f'<div class="qecho">{esc(q)}</div>']
@@ -842,11 +847,11 @@ invented answer.""")
                     f'<span>{res.get("n_chunks") or 0} considered</span></div>')
 
     body.append(ASK_JS)
-    return page(f'Ask — {q[:60]}', ''.join(body), 'Ask')
+    return page(f'Ask — {q[:60]}', ''.join(body))
 
 
-def index_header(crumb_bits=None):
-    """The header for the reading view, with a working way to navigate the years.
+def index_header():
+    """The header for the reading view: the wordmark, and a working way to navigate the years.
 
     WHAT WAS WRONG. There was no navigable control in the bar at all. The only element that
     looked like one was the breadcrumb -- a plain <div> pill reading 'Index' on the index and
@@ -854,27 +859,23 @@ def index_header(crumb_bits=None):
     route back to the index was the wordmark, which is not where anyone looks for one. Worse,
     the pill reads as a button, so a reader taps it and nothing happens.
 
-    THE FIX. The crumb becomes a real link back to the index, and the years become a menu. The
-    menu is a <details> element, for three reasons that are properties rather than preferences:
-    it works with JavaScript off (the published copy is static and must not depend on script
-    for its navigation), it closes on a second tap for free, and it is keyboard-operable by
-    default because the browser already implements the disclosure. A custom popover would have
-    needed script for all three.
+    THE PILL IS GONE, by Shawn's call: 'Index' as a nav button is not a meaningful label -- it
+    restates the site the reader is already on, and it sat beside the wordmark that already does
+    that job. The wordmark goes back to the index (relative, so it survives static hosting), and
+    the pill's one job that was not duplicated -- showing which sitting you are reading -- the
+    page's own <h1> already does. Two things were deleted rather than relabelled because the pill
+    was the only consumer of each: the crumb parameter threaded through page(), and _crumb_text()
+    which joined breadcrumb bits that nothing else used.
 
-    The year list is built from the sittings themselves, never hardcoded, so a sitting that
-    arrives later appears without anyone remembering to add it.
+    What remains in the bar is the years menu, built from the sittings themselves, never
+    hardcoded, so a sitting that arrives later appears without anyone remembering to add it.
     """
     return f"""<header class="top"><div class="wrap">
   <a class="brand" href="index.html">PARSNIPS <span>reading mode</span></a>
   <nav class="nav" aria-label="Sittings">
-    <a class="crumb" href="index.html">{esc(_crumb_text(crumb_bits))}</a>
     {year_menu()}
   </nav>
 </div></header>"""
-
-
-def _crumb_text(bits):
-    return ' · '.join(str(b) for b in bits if b) if bits else 'Index'
 
 
 def year_menu():
@@ -1000,7 +1001,7 @@ def render_index(db):
   <span class="n">{r['n_sent'] or 0} sent<br>{pct:.0f}% anchored</span></a>""")
     body.append("</div>")
     body.append(year_jump_style())
-    return page('PARSNIPS — read the sittings', ''.join(body), 'Index')
+    return page('PARSNIPS — read the sittings', ''.join(body))
 
 
 def render_read(db, date, focus_turn=None, focus_span=None):
@@ -1244,7 +1245,7 @@ document.querySelectorAll('article.turn.flash').forEach(a => {
   a.scrollIntoView({block: 'center'});
 });
 </script>""")
-    return page(f'{name} — {date} — PARSNIPS reading', ''.join(body), f'Reading · {date}')
+    return page(f'{name} — {date} — PARSNIPS reading', ''.join(body))
 
 
 # ---------------------------------------------------------------- server
