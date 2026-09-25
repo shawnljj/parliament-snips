@@ -105,6 +105,24 @@ def checks_for(date, page, turns):
 
     add('page still states its highlight coverage', COV_RE.search(page) is not None)
 
+    # --- 7. ONE summary per turn ------------------------------------------------
+    # The reader is looking at a turn, so a turn gets one summary line. Emitting a callout per
+    # (item, section) stacked up to 18 of them under a single debate turn, each paraphrasing
+    # sentences already highlighted above it. Measured before the change: 61 of 130 marked turns on
+    # 2024-02-07, 8 of 98 on 2026-08-05, 1 of 87 on 2017-03-09.
+    per_turn = [len(re.findall(r'class="callout"', m))
+                for m in re.findall(r'<article class="turn.*?(?=<article class="turn|\Z)',
+                                    page, re.S)]
+    over = [n for n in per_turn if n > 1]
+    add('at most one summary callout per turn', not over,
+        f'{len(over)} turns with 2+' if over else f'{len(per_turn)} turns, max 1')
+    marked = [n for n, t in zip(per_turn, turns) if t['n_marks']]
+    add('every marked turn gets exactly one callout', all(n == 1 for n in marked),
+        f'{sum(1 for n in marked if n != 1)} of {len(marked)} wrong')
+    add('no callout on an unmarked turn',
+        all(n == 0 for n, t in zip(per_turn, turns) if not t['n_marks']),
+        f'{sum(n for n, t in zip(per_turn, turns) if not t["n_marks"])} stray')
+
     # --- 5. collapsed is a strict minority --------------------------------------
     shown = sum(len(r['text']) for t in turns for r in t['runs']
                 if r['kind'] in ('marked', 'cited'))

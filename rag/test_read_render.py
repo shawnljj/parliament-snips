@@ -91,17 +91,28 @@ for date in DATES:
           day_only <= got_keys,
           f'{len(day_only - got_keys)} of {len(day_only)} day-turns missing')
 
-    # callouts: one per (item, label) that has a sentence in view
+    # callouts: ONE per turn that carries a highlight (owner's rule, 2026-09-25). The old rule was
+    # one per (item, section) in view, which stacked up to 18 callouts under a single debate turn --
+    # each paraphrasing sentences already highlighted above it. The reach this check exists for is
+    # unchanged: a callout must exist for every marked turn, so a render that silently drops them
+    # still fails.
     exp_calls = db.execute("""
-        SELECT COUNT(DISTINCT i.item_id || '|' || COALESCE(c.label,''))
+        SELECT COUNT(DISTINCT s.turn_key)
         FROM summary_sentence s
         JOIN summary_section c ON c.section_id = s.section_id
         JOIN summary_item    i ON i.item_id = c.item_id
         JOIN summary_item_sitting g ON g.item_id = i.item_id
         WHERE g.date = ? AND s.turn_key IS NOT NULL""", (date,)).fetchone()[0]
     got_calls = html.count('class="callout"')
-    check('one callout per summarised section in view', got_calls == exp_calls,
+    check('one callout per turn carrying highlights', got_calls == exp_calls,
           f'emitted {got_calls}, expected {exp_calls}')
+
+    # and no turn may carry more than one -- the rule the change was made for
+    per_turn_calls = [len(re.findall(r'class="callout"', m))
+                      for m in re.findall(r'<article class="turn.*?(?=<article class="turn|\\Z)',
+                                          html, re.S)]
+    check('no turn carries two summaries', max(per_turn_calls, default=0) <= 1,
+          f'max {max(per_turn_calls, default=0)} per turn')
 
     # the page's own coverage claim must match what it rendered
     m = re.search(r'covering\s*([\d.]+)%\s*of what was said', html)

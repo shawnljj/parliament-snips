@@ -175,6 +175,27 @@ much.
 and the page opens the collapsed stretch the citation lands in — the topic fold alone can hide the
 passage, which would undo the bridge.
 
+### One summary per turn (owner's rule, later the same day)
+
+The callout used to be emitted per `(item, section)`, so a long debate turn collected a stack of
+them under the same highlighted text, each paraphrasing sentences the reader had just read.
+Measured before the change: **61 of 130** marked turns on 2024-02-07 carried 2+ sections, up to
+**18** on one turn (motion-2318#t45, 30,743 chars) — while every marked turn belongs to exactly
+**one** item, so the stack was one brief's sections, not several briefs disagreeing.
+
+Now: one line per turn, placed **above** the turn's words (the summary leads, the record follows).
+The line shown is the section that summarises the most of that turn's highlighted words, which is
+where the measurement beats the document order — on motion-2318#t45 it is *IPS survey on trust in
+PAP* (797 of 2,635 marked chars), not section 1. When sections were folded into the line, the note
+under it says so and names them: *"covers 34 highlighted sentences in 18 sections · also: 2001 NII
+50% rule debate, 50-50 reserves split, …"*.
+
+Gate impact: `test_read_render.py`'s callout rule became "one per turn carrying highlights" (the
+reach it existed for — a callout for every marked turn — is unchanged, so a render that drops them
+still fails), and `test_read_fold.py` gained "at most one callout per turn", "every marked turn gets
+exactly one", "no callout on an unmarked turn". `test_fold_injection.py` gained probe M7 (clone a
+turn's callout) and catches all 7.
+
 Verified at 360/390/414px by the design mockup pass: 0 horizontal overflow, minimum tap target
 44px. **The topic summaries and the inline chips are the one thing here a headless pass could not
 re-measure** — headless Chrome wedged on this machine, so the chips were sized by construction

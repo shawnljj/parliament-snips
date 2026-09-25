@@ -765,6 +765,39 @@ def render_read(db, date, focus_turn=None, focus_span=None):
                 break
     n_marks = sum(t['n_marks'] for t in turns)
     n_marked_turns = sum(1 for t in turns if t['n_marks'])
+
+    # ONE summary line per turn, not one per section.
+    #
+    # The callouts used to be emitted per (item, section), so a long debate turn collected a stack of
+    # them under the same highlighted text -- each one paraphrasing sentences the reader had just
+    # read. Measured: 61 of 130 marked turns on 2024-02-07 carry 2+ sections (up to 18) while every
+    # marked turn belongs to exactly ONE item; the 18-section turn (motion-2318#t45, 30,743 chars)
+    # got 18 stacked callouts. The turn is the unit the reader is looking at, so the turn gets one
+    # line, and the line is the section that actually summarises MOST of the turn's words -- which on
+    # that turn is 'IPS survey on trust in PAP' (797 chars of 2,635 marked), not section 1.
+    for t in turns:
+        marks = [r for r in t['runs'] if r['kind'] == 'marked' and r.get('summary')]
+        if not marks:
+            t['lead'] = None
+            continue
+        by_sec = {}
+        for r in marks:
+            k = (r['item'], r['label'])
+            s = by_sec.setdefault(k, {'label': r['label'], 'summary': r['summary'],
+                                      'title': r['title'], 'item': r['item'],
+                                      'chars': 0, 'sids': set()})
+            s['chars'] += len(r['text'])
+            # a section's sentences are not one run each -- a sentence can be split around a
+            # citation -- so count distinct sids, not runs, or the count overstates the section
+            if r.get('sid'):
+                s['sids'].add(r['sid'])
+        lead = max(by_sec.values(), key=lambda s: s['chars'])
+        lead['n_sections'] = len(by_sec)
+        lead['n_sentences'] = sum(len(s['sids']) for s in by_sec.values())
+        lead['others'] = sorted((s['label'] for k, s in by_sec.items()
+                                 if k != (lead['item'], lead['label'])))
+        t['lead'] = lead
+
     n_chars = sum(sum(len(r['text']) for r in t['runs']) for t in turns)
     n_marked_chars = sum(len(r['text']) for t in turns for r in t['runs']
                          if r['kind'] == 'marked')
@@ -787,7 +820,6 @@ below is closed until you open it.</p>
 {ask_form()}
 <div class="stat"><span>{len(reports)} topics</span><span>{len(turns):,} turns</span>
 <span>{len(items)} briefs summarised</span><span>{n_marks:,} highlighted passages</span></div>"""]
-    seen = set()          # a section's callout belongs to its FIRST sentence, once for the page
     for g in reports:
         o = ' open' if (focus_report and g['report_id'] == focus_report) else ''
         other = (f'<span class="otherdate">recorded {esc(g["rdate"])}</span>'
@@ -805,7 +837,23 @@ below is closed until you open it.</p>
             who = esc(t['speaker']) if t['speaker'] else 'Speaker not recorded'
             anchor = f' id="turn-{esc(t["key"])}"'
             body.append(f"<article{cls}{anchor}><div class=\"tmeta\">{who}"
-                        f"<span class=\"tw\">{t['words'] or 0} words</span></div><div class=\"tbody\">")
+                        f"<span class=\"tw\">{t['words'] or 0} words</span></div>")
+            lead = t.get('lead')
+            if lead:
+                # the summary FIRST, then the words it summarises -- one line per turn
+                also = ''
+                if lead['n_sections'] > 1:
+                    also = (f"<div class=\"cite\">covers {lead['n_sentences']} highlighted "
+                            f"sentences in {lead['n_sections']} sections"
+                            + (f" · also: {esc(', '.join(lead['others'][:3]))}"
+                               if lead['others'] else '') + "</div>")
+                else:
+                    also = (f"<div class=\"cite\">covers this turn's highlighted sentences · "
+                            f"summary of <b>{esc(lead['title'])}</b></div>")
+                body.append(f"<aside class=\"callout\">"
+                            f"<div class=\"slabel\">{esc(lead['label'] or 'Summary')}</div>"
+                            f"<p class=\"summary\">{esc(lead['summary'])}</p>{also}</aside>")
+            body.append('<div class="tbody">')
             for r in t['runs']:
                 if r['kind'] == 'marked':
                     body.append(f"<mark class=\"hl\">{esc(r['text'])}</mark>")
@@ -822,21 +870,7 @@ below is closed until you open it.</p>
                                 f"<span>{esc(r['text'])}</span></details>")
                 else:
                     body.append(esc(r['text']))
-            body.append("</div>")
-            # attach each section summary once, under the turn holding its first sentence
-            for r in t['runs']:
-                if r['kind'] != 'marked' or r['summary'] is None:
-                    continue
-                key = (r['item'], r['label'])
-                if key in seen:
-                    continue
-                seen.add(key)
-                body.append(f"""<aside class="callout">
-  <div class="slabel">{esc(r['label'] or 'Section')}</div>
-  <p class="summary">{esc(r['summary'])}</p>
-  <div class="cite">summary of <b>{esc(r['title'])}</b>
-    · sid {esc(r['sid'] or '')}</div></aside>""")
-            body.append("</article>")
+            body.append("</div></article>")
         body.append("</div></details>")
     body.append("""<script>
 // Arriving from a citation: the server opened the cited topic, but a citation can point at a

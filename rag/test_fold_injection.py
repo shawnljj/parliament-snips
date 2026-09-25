@@ -14,6 +14,7 @@ The mutations, and the defect each stands for:
   M4  change the fold note's sentence count          -> the page's claim about itself is false
   M5  strip every toggle, leaving the text loose     -> the fold is gone (nothing collapsed)
   M6  drop the coverage sentence                     -> the page stops stating its coverage
+  M7  clone a turn's callout twice                   -> two summaries over one turn's highlights
 
 Run: python3 test_fold_injection.py
 """
@@ -91,6 +92,13 @@ probes.append(("M5 every toggle stripped, text left loose", m5,
 m6 = re.sub(r'covering\s*[\d.]+%\s*of what was said', 'summarised', base, count=1)
 probes.append(("M6 the coverage claim is dropped", m6,
                'page still states its highlight coverage', m6 != base))
+
+# ---- M7: two summaries over the same turn's highlights
+m = re.search(r'class="callout">.*?</aside>', base, re.S)
+assert m is not None, "no callout to clone"
+m7 = base.replace(m.group(0), m.group(0) + m.group(0), 1)
+probes.append(("M7 a turn carries two summary callouts", m7,
+               'at most one summary callout per turn', m7 != base))
 
 ok = True
 print()
