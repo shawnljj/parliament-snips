@@ -40,6 +40,12 @@ import sqlite3
 import sys
 import time
 
+HERE = os.path.dirname(os.path.abspath(__file__))
+# The significance rules live beside the summariser that selects sentences, so the loader and the
+# selector cannot answer "what is worth surfacing" differently.
+sys.path.insert(0, os.path.join(os.path.dirname(HERE), 'summariser'))
+import significance as SIG  # noqa: E402
+
 DB = '/Users/shawnlin/parsnips/pipeline/hansard.db'
 SUM_DIR = '/Users/shawnlin/parsnips/summaries'
 
@@ -100,6 +106,12 @@ CREATE TABLE summary_sentence (
   char_start        INTEGER,
   char_end          INTEGER,
   anchor_method     TEXT,
+  -- NULL when this sentence is SURFACED. A reason -- 'chair_housekeeping', 'restatement',
+  -- 'near_duplicate' -- when significance.classify() says it is procedure or a repeat, so the page
+  -- renders it collapsed and says how much it hid. The row is never deleted: an exclusion that is
+  -- not recorded on the row is indistinguishable from a data-loss bug, which is how an unanchored
+  -- pattern once emptied 44 items while every check passed.
+  hidden_reason     TEXT,
   PRIMARY KEY (section_id, ord)
 );
 
@@ -244,7 +256,8 @@ def build(db, dry_run=False, verbose=True):
                 rows_sent.append((sec_id, oi, x.get('sid'), x.get('speaker'),
                                   1 if x.get('attributed') else 0,
                                   1 if x.get('added_for_context') else 0,
-                                  x.get('text') or '', tk, cs, ce, meth))
+                                  x.get('text') or '', tk, cs, ce, meth,
+                                  SIG.classify(x.get('text') or '', x.get('speaker'))))
             rows_sec.append((sec_id, item, si, s.get('label'), s.get('summary') or ''))
             if not dry_run:
                 stats['sections'] += 1
@@ -274,8 +287,8 @@ def build(db, dry_run=False, verbose=True):
                 "VALUES (?,?,?,?,?)", rows_sec)
             db.executemany(
                 "INSERT INTO summary_sentence(section_id,ord,sid,speaker,attributed,"
-                "added_for_context,text,turn_key,char_start,char_end,anchor_method) "
-                "VALUES (?,?,?,?,?,?,?,?,?,?,?)", rows_sent)
+                "added_for_context,text,turn_key,char_start,char_end,anchor_method,"
+                "hidden_reason) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)", rows_sent)
 
         stats['items'] += 1
         stats['sentences'] += len(rows_sent)

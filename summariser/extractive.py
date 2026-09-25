@@ -30,7 +30,8 @@ from collections import Counter, defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "summariser"))
-import summarise as S  # noqa: E402
+import summarise as S      # noqa: E402
+import significance as SG  # noqa: E402
 
 DATA = os.path.join(ROOT, "data")
 
@@ -144,12 +145,20 @@ def re_split_sentences(text):
     return [p.strip() for p in re.split(r"(?<=[.!?])\s+(?=[A-Z\[(])", text or "") if p.strip()]
 
 
-def sentences(text, min_words=MIN_WORDS, max_words=MAX_WORDS, allow_long=False):
-    """Split into sentences, dropping fragments and overlong runs.
+def sentences(text, min_words=MIN_WORDS, max_words=MAX_WORDS, allow_long=False, speaker=None):
+    """Split into sentences, dropping fragments, overlong runs, and what is not significant.
 
     max_words guards against clause-heavy formalities, but a long sentence can still
     carry real substance (a Minister listing measures in one breath). Rather than
     discard it, callers that need coverage pass allow_long=True and keep it.
+
+    `speaker` is passed to the shared significance rules, because the chair's housekeeping is only
+    housekeeping when the CHAIR says it: "Order. Order." in a Minister's speech is not procedure.
+    Callers that have the speaker must pass it; omitting it makes the chair test weaker, which errs
+    toward dropping a member's sentence.
+
+    The rules live in significance.py rather than here so that the page and the pipeline answer
+    "what is worth surfacing" with one voice. See that module for the measured reasoning.
     """
     out = []
     for p in re_split_sentences(text):
@@ -157,6 +166,8 @@ def sentences(text, min_words=MIN_WORDS, max_words=MAX_WORDS, allow_long=False):
         if n < min_words or (n > max_words and not allow_long):
             continue
         if NOISE_RE.match(p) or is_procedural(p):
+            continue
+        if SG.classify(p, speaker):
             continue
         out.append(p)
     return out
@@ -223,7 +234,9 @@ def select_turns(item, max_sentences=24):
             # measured sitting), so also screen the whole turn with the pattern.
             if t.get("is_procedural") or is_procedural(txt):
                 continue
-            ss = sentences(txt, allow_long=True)
+            # pass the speaker (carried forward if this turn lacks one) so the shared rules can ask
+            # "is the CHAIR saying housekeeping?" rather than judging the phrasing alone
+            ss = sentences(txt, allow_long=True, speaker=spk or last_speaker)
             if ss:
                 turns.append((spk or last_speaker, ss, bool(spk)))
 

@@ -199,6 +199,7 @@ def full_transcript(db, date):
     marks = {}
     for r in db.execute("""
             SELECT s.turn_key, s.char_start, s.char_end, s.text, s.speaker, s.sid,
+                   s.hidden_reason,
                    c.section_id, c.label, c.summary, c.ordinal, i.item_id, i.title
             FROM summary_sentence s
             JOIN summary_section c ON c.section_id = s.section_id
@@ -221,10 +222,14 @@ def full_transcript(db, date):
                 continue
             if cs > pos:
                 runs.append(plain_run(text[pos:cs]))
+            # A summary sentence the significance rules call procedure or a repeat is rendered as a
+            # COLLAPSED mark, not dropped -- the owner's standing rule is that information is never
+            # lost, and the reader can still see what the tool judged not worth surfacing.
             runs.append({'kind': 'marked', 'text': text[cs:ce],
                          'summary': s['summary'], 'label': s['label'],
                          'item': s['item_id'], 'title': s['title'],
-                         'sid': s['sid'], 'spk': s['speaker']})
+                         'sid': s['sid'], 'spk': s['speaker'],
+                         'hidden': s['hidden_reason']})
             pos = ce
         if pos < len(text):
             runs.append(plain_run(text[pos:]))
@@ -467,6 +472,10 @@ h2{font-size:17px;margin:0;letter-spacing:-.01em}
 .gap>summary::-webkit-details-marker{display:none}
 .gap>summary:active{background:#dcebe2}
 .gap[open]>summary{color:var(--dim);background:#f3f4f2;border-color:var(--line);font-weight:400}
+/* A highlight held back as procedure or repetition. Deliberately quieter than a live highlight --
+   it is still the record, and still one tap away, but it is not what the page is asking to be read. */
+.gap.hidden>summary{background:#f1f2f0;border-color:var(--line);color:var(--dim);font-weight:400}
+.tbody mark.hl.dim{background:#f4f2ec;box-shadow:none;color:#414a54}
 .gapdemo{font-size:11.5px;font-weight:650;color:var(--accent);background:var(--accent-soft);
   border:1px solid #cfe0d6;border-radius:6px;padding:2px 6px;white-space:nowrap}
 .foldnote{font-size:13px;color:var(--ink)}
@@ -765,6 +774,13 @@ def render_read(db, date, focus_turn=None, focus_span=None):
                 break
     n_marks = sum(t['n_marks'] for t in turns)
     n_marked_turns = sum(1 for t in turns if t['n_marks'])
+    # highlights the significance rules held back, by reason -- reported on the page, never silent
+    hidden_by_reason = {}
+    for t in turns:
+        for r in t['runs']:
+            if r['kind'] == 'marked' and r.get('hidden'):
+                hidden_by_reason[r['hidden']] = hidden_by_reason.get(r['hidden'], 0) + 1
+    n_hidden = sum(hidden_by_reason.values())
 
     # ONE summary line per turn, not one per section.
     #
@@ -776,6 +792,8 @@ def render_read(db, date, focus_turn=None, focus_span=None):
     # line, and the line is the section that actually summarises MOST of the turn's words -- which on
     # that turn is 'IPS survey on trust in PAP' (797 chars of 2,635 marked), not section 1.
     for t in turns:
+        # a held-back highlight still summarises its turn: the summary line stays even when the sentence
+        # it came from is folded, because the summary is the reader's entry point to the turn.
         marks = [r for r in t['runs'] if r['kind'] == 'marked' and r.get('summary')]
         if not marks:
             t['lead'] = None
@@ -809,14 +827,24 @@ def render_read(db, date, focus_turn=None, focus_span=None):
     n_folded_sent = sum(r['sentences'] for r in foldable)
     n_open_sent = sum(len(sentence_spans(r['text'])) for t in turns for r in t['runs']
                       if r['kind'] in ('marked', 'cited'))
+    # Say what was held back and why. A page that quietly judges some of the record less worth
+    # surfacing owes the reader that judgement in the open -- and the reasons are the owner's own
+    # distinction between procedure and policy.
+    hidden_note = ''
+    if n_hidden:
+        bits = ', '.join(f'{v:,} {k.replace("_", " ")}' for k, v in
+                         sorted(hidden_by_reason.items(), key=lambda kv: -kv[1]))
+        hidden_note = (f'<b>{n_hidden:,}</b> further highlight'
+                       f'{"" if n_hidden == 1 else "s"} held back as procedure or repetition'
+                       f' ({bits}) — collapsed, not removed. ')
     body = [f"""<h1>{esc(date)}</h1>
 <p class="sub">Full transcript, {n_chars:,} characters — every turn. Summarised passages are
 <mark>highlighted</mark>: {n_marks:,} passages across {n_marked_turns} turns, covering
 {100*n_marked_chars/max(1,n_chars):.1f}% of what was said. The rest is the record itself.</p>
 <p class="sub foldnote">Open on <b>{n_open_sent:,} sentences</b> ({100*n_shown_chars/max(1,n_chars):.1f}%
 of the characters). <b>{n_folded_sent:,} sentences</b> in {len(foldable):,} stretches are folded
-inline — tap a <span class="gapdemo">[+N sentences]</span> to read them where they sit. Every topic
-below is closed until you open it.</p>
+inline — tap a <span class="gapdemo">[+N sentences]</span> to read them where they sit.
+{hidden_note}Every topic below is closed until you open it.</p>
 {ask_form()}
 <div class="stat"><span>{len(reports)} topics</span><span>{len(turns):,} turns</span>
 <span>{len(items)} briefs summarised</span><span>{n_marks:,} highlighted passages</span></div>"""]
@@ -855,7 +883,17 @@ below is closed until you open it.</p>
                             f"<p class=\"summary\">{esc(lead['summary'])}</p>{also}</aside>")
             body.append('<div class="tbody">')
             for r in t['runs']:
-                if r['kind'] == 'marked':
+                if r['kind'] == 'marked' and r.get('hidden'):
+                    # Held back as procedure or a repeat: collapsed, labelled, one tap from view.
+                    # The sentence is still in the record and still marked -- only its DEFAULT is
+                    # changed. Same shape as the plain-text gap, because it is the same promise.
+                    why = {'chair_housekeeping': 'chair housekeeping',
+                           'restatement': 'restates an earlier point',
+                           'near_duplicate': 'says the same as an earlier line'}.get(
+                               r['hidden'], r['hidden'].replace('_', ' '))
+                    body.append(f"<details class=\"gap hidden\"><summary>[{esc(why)}]</summary>"
+                                f"<mark class=\"hl dim\">{esc(r['text'])}</mark></details>")
+                elif r['kind'] == 'marked':
                     body.append(f"<mark class=\"hl\">{esc(r['text'])}</mark>")
                 elif r['kind'] == 'cited':
                     body.append(f"<mark class=\"hl cited\">{esc(r['text'])}</mark>")
@@ -876,8 +914,8 @@ below is closed until you open it.</p>
 // Arriving from a citation: the server opened the cited topic, but a citation can point at a
 // passage inside a COLLAPSED stretch. Open only that stretch -- not the whole page, which would
 // undo the fold -- then scroll to the passage.
-document.querySelectorAll('article.turn.flash .gap').forEach(d => {
-  if (d.querySelector('mark.hl.cited')) d.open = true;
+document.querySelectorAll('article.turn.flash .gap, article.turn.flash .gap.hidden').forEach(d => {
+  if (d.querySelector('mark.hl.cited') || d.querySelector('mark.hl')) d.open = true;
 });
 document.querySelectorAll('article.turn.flash').forEach(a => {
   a.scrollIntoView({block: 'center'});

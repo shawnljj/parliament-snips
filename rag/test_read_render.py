@@ -19,7 +19,9 @@ import sqlite3
 import sys
 
 sys.path.insert(0, '/Users/shawnlin/parsnips/rag')
+sys.path.insert(0, '/Users/shawnlin/parsnips/summariser')
 import read_server as RS
+import significance as SG
 
 db = RS.connect()
 db.execute("PRAGMA foreign_keys = ON")
@@ -54,7 +56,11 @@ for date in DATES:
         print(f"  no page for {date}, skipping")
         continue
 
-    got = html.count('<mark class="hl">')
+    # A highlight is rendered either live (`hl`) or held back (`hl dim`). Both are MARKS: the
+    # question this gate asks is "is every anchored span rendered", so counting only live ones would
+    # report a drop every time the significance rules hold something back -- and counting both
+    # without checking which is which would let a rule change silently hide half the record.
+    got = html.count('<mark class="hl">') + html.count('<mark class="hl dim">')
     turns = RS.full_transcript(db, date)[0]   # (turns, items, reports)
     check('every anchored span is rendered', got == exp, f"emitted {got}, expected {exp}")
 
@@ -113,6 +119,21 @@ for date in DATES:
                                           html, re.S)]
     check('no turn carries two summaries', max(per_turn_calls, default=0) <= 1,
           f'max {max(per_turn_calls, default=0)} per turn')
+
+    # exactly the sentences the significance rules name are the ones held back -- no more, no fewer
+    # The speaker must be passed: `classify` asks "is the SPEAKER the chair AND is this
+    # housekeeping", and judging the phrasing alone catches chair-like wording in a member's speech
+    # -- which is how this gate first disagreed with the render (32 named vs 6 rendered).
+    exp_hidden = [r[0] for r in db.execute("""
+        SELECT s.text, s.speaker FROM summary_sentence s
+        JOIN summary_section c ON c.section_id = s.section_id
+        JOIN summary_item    i ON i.item_id = c.item_id
+        JOIN summary_item_sitting g ON g.item_id = i.item_id
+        WHERE g.date = ? AND s.turn_key IS NOT NULL""", (date,)).fetchall()
+        if SG.classify(r[0], r[1])]
+    got_hidden = len(re.findall(r'<mark class="hl dim">', html))
+    check('held-back highlights are exactly the ones the rules name',
+          got_hidden == len(exp_hidden), f'rendered {got_hidden}, rules name {len(exp_hidden)}')
 
     # the page's own coverage claim must match what it rendered
     m = re.search(r'covering\s*([\d.]+)%\s*of what was said', html)
