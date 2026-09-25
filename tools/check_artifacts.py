@@ -39,8 +39,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #   (path, label, the paths whose newest mtime it must be at least as new as)
 ARTIFACTS = [
     ("status.json", "corpus status", ["summaries", "pipeline/dataset"]),
-    ("sdlc/1-objectives.md", "objectives", []),
-    ("sdlc/3-backlog.md", "backlog", []),
+    ("sprints/sdlc/1-objectives.md", "objectives", []),
+    ("sprints/sdlc/3-backlog.md", "backlog", []),
 ]
 
 
@@ -369,12 +369,12 @@ def main():
         ids = re.findall(r"\|\s*(O-\d+)\s*\|", text)
         dupes = {i for i in ids if ids.count(i) > 1}
         if dupes:
-            problems.append(("DUPLICATE", "sdlc/1-objectives.md",
+            problems.append(("DUPLICATE", "sprints/sdlc/1-objectives.md",
                              f"repeated objective ids: {sorted(dupes)}"))
         notes.append(f"objectives: {len(ids)} declared")
 
         # A stated count must match the files.
-        _flag_stated_brief_counts(problems, "sdlc/1-objectives.md", text)
+        _flag_stated_brief_counts(problems, "sprints/sdlc/1-objectives.md", text)
 
     # ---------------------------------------------------------------- stale docs
     for doc in ("PLAN.md", "README.md"):

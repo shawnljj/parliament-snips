@@ -23,6 +23,7 @@ Exit code is 0 only when every check passes, so this can gate a publish.
 import glob
 import json
 import os
+import shutil
 import statistics
 import subprocess
 import sys
@@ -196,16 +197,39 @@ def main():
     try:
         # Build to a THROWAWAY directory: this is a check, and it must never overwrite
         # the live site with a half-summarised year.
+        #
+        # This used to run `site/build_site.py`, the old site v1 generator. That generator is
+        # archived and its output is 404 on the live deploy, so the check passed while testing a
+        # product nobody serves. It now runs `rag/export_read.py`, which is what actually builds
+        # the deployed site (outputDirectory: site/dist), so "RENDERABLE" means renderable by the
+        # thing that ships. `--depth 0` matters: the export writes relative links for a given
+        # nesting, and 0 is the deployed root.
         scratch = os.path.join(os.environ.get("TMPDIR", "/tmp"), "parsnips_check_site")
-        r = subprocess.run([sys.executable, os.path.join(ROOT, "site", "build_site.py"),
-                            scratch], capture_output=True, text=True, timeout=1800,
-                           cwd=ROOT)
+        # Clear it first. The export writes 332 pages and leaves them there, so a second run
+        # counts the previous run's output too and reports a page count roughly double the
+        # truth (measured: 665 against an expected 332). The count is then meaningless as
+        # evidence, which is the whole point of printing it.
+        shutil.rmtree(scratch, ignore_errors=True)
+        r = subprocess.run([sys.executable, os.path.join(ROOT, "rag", "export_read.py"),
+                            "--out", scratch, "--depth", "0"],
+                           capture_output=True, text=True, timeout=1800, cwd=ROOT)
         ok = r.returncode == 0
         n_pages = len(glob.glob(os.path.join(scratch, "**", "*.html"), recursive=True))
+        # Three independent conditions, because any one of them can pass while the others fail:
+        # a zero exit (it did not crash), real output (it did not silently write nothing), and
+        # the export's own verification verdict (it did not write pages it knows are wrong --
+        # the same verdict the deploy is held to).
+        out = r.stdout or ""
+        verified = "RESULT: EXPORT VERIFIED" in out
         print(f"      site build : {'OK' if ok else 'FAILED'}  ({n_pages} page(s))")
-        if not ok:
-            print("        " + (r.stderr or r.stdout or "")[-500:])
-            failures.append("site build failed")
+        print(f"      export gate: {'VERIFIED' if verified else 'not verified'}")
+        if not ok or not verified or n_pages < 300:
+            if n_pages < 300:
+                print(f"        !! only {n_pages} page(s) written; expected the full corpus")
+            if not verified:
+                print("        " + (out.split("EXPORT VERIFICATION")[-1] or "")[-400:])
+            failures.append(f"site build failed (exit {r.returncode}, {n_pages} pages, "
+                            f"gate {'pass' if verified else 'fail'})")
     except subprocess.TimeoutExpired:
         print("      site build : TIMED OUT")
         warnings.append("site build timed out")

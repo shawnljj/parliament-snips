@@ -1,5 +1,20 @@
 # site/dist: what is committed, why, and what the gate enforces
 
+> **ARCHIVED 2026-09-25 — this describes old site v1, not the deployed site.**
+>
+> It was written when `site/build_site.py` generated `site/dist` (index + archive +
+> `sittings/<date>.html`). That generator is retired: the deployed site is now built by
+> `rag/export_read.py` (331 sitting pages at the root) and the old routes 404 on the live
+> host. This doc is still the best account of *why* `dist` being tracked is dangerous, which
+> carried over unchanged — but every page count, path and command below is a measurement of
+> the old site. See `site/README.md` for what deploys today.
+>
+> **Also stale below:** `tools/check_dist.py` and `tools/check_fresh_clone.sh` no longer
+> exist in the tree (removed in `fe6ffcb6`; `check_dist.py` was already absent from `main`,
+> as the text itself notes). The surviving gates are `tools/check_artifacts.py`,
+> `tools/check_selection.py`, `tools/check_year.py` (whose RENDERABLE step now runs
+> `rag/export_read.py`), and the export's own verification block.
+
 `site/dist` is tracked **on purpose** — it is the built site Vercel deploys (see
 `.gitignore`). That makes it the one directory where *"I built it"* and *"I committed
 it"* can silently disagree, and for weeks they did.

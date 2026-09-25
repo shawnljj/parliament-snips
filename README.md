@@ -35,7 +35,7 @@ Coverage, speaker-attribution rate and method are printed on every page.
 | Scraper | ✅ `scraper/parsnips_fetch.py`, stdlib only, no `pip install` |
 | Backfill | ✅ `scraper/backfill.py`, year-batched, resumable, ~90s per sitting |
 | Storage | ✅ year-sharded + manifest — see **Storage** below |
-| Site | ✅ `site/build_site.py` → index + archive + one page per sitting |
+| Site | ✅ **live** — 331 sitting pages deployed from `site/dist/`, built by `rag/export_read.py` |
 | 2026 backfill | ✅ first year, 23 sittings, 287 briefs |
 | Corpus | ✅ **2016–2026 complete: 3,863 briefs across 11 years, 331 sittings** |
 | Gates | ✅ 10 of 11 years PASS — 0 defects. **2016 FAILs 672** (24 stale briefs) |
@@ -66,18 +66,21 @@ python3 scraper/backfill.py --status
 # 4. Summarise (separate pass, resumable)
 python3 summariser/summarise.py --all --workers 3
 
-# 5. Build the whole site
-python3 site/build_site.py            # -> site/dist/
+# 5. Build the site that deploys (331 pages, ~30s)
+python3 rag/export_read.py --out site/dist
+
+# 5b. ...or run the reading view locally, with a working ask box
+python3 rag/read_server.py            # -> http://127.0.0.1:8444/
 ```
 
-Then open `site/dist/index.html`.
+Then open `site/dist/index.html`. The deployed site is `site/dist/`; see `site/README.md`.
 
 Handy while iterating:
 
 ```bash
 python3 scraper/parsnips_fetch.py 2026-08-05 data/x.json             # one sitting
 python3 scraper/digest.py data/2026/sitting_2026-08-05.json oral 700 4  # read it as text
-python3 site/build_site.py /tmp/out                                  # build elsewhere
+python3 rag/export_read.py --out /tmp/out                            # build elsewhere
 ```
 
 ---
@@ -178,28 +181,46 @@ documented in the module docstring of `scraper/parsnips_fetch.py`:
 
 ```
 parsnips/
-├── PLAN.md                        design, phases, decisions, API gotchas
 ├── README.md
-├── scraper/
+├── PLAN.md                        design, phases, decisions, API gotchas
+├── data/                          THE ARCHIVE — one sitting per file, this is the database
+│   ├── manifest.json              what exists, what is summarised, what is stale
+│   ├── sittings.json              flat site-facing index
+│   └── <year>/sitting_<date>.json
+├── summaries/                     one brief per policy item
+│   ├── index.json
+│   └── <year>/<stable-key>.json
+├── scraper/                       fetch + parse
 │   ├── storage.py                 paths, stable keys, manifest (single source of truth)
 │   ├── parsnips_fetch.py          API client + HTML -> speaker-turns parser
 │   ├── backfill.py                year-batched resumable fetch (--year / --status)
 │   ├── normalise.py               raw parse -> canonical schema
 │   ├── migrate_storage.py         flat layout -> year shards (re-runnable)
 │   └── digest.py                  print a sitting for editorial review
-├── summariser/
-│   └── summarise.py               sitting JSON -> verified briefs (LLM, resumable)
-├── site/
-│   ├── build_site.py              sitting JSON -> whole static site
-│   └── dist/                      generated output (index, archive, per-sitting)
-├── data/
-│   ├── manifest.json              what exists, what is summarised, what is stale
-│   ├── sittings.json              flat site-facing index
-│   └── <year>/sitting_<date>.json the archive (this is the database)
-└── summaries/
-    ├── index.json                 flat index for the site
-    └── <year>/<stable-key>.json   one brief per policy item
+├── summariser/                    sitting JSON -> verified briefs (LLM, resumable)
+├── pipeline/                      derived bulk: hansard.db, vectors, caches (gitignored)
+├── rag/                           THE LIVE PRODUCT'S ENGINE
+│   ├── export_read.py             builds the deployed site  ->  site/dist
+│   ├── read_server.py             the reading view, locally (port 8444)
+│   ├── answer.py, sql_retrieve.py the ask pipeline
+│   ├── eval/                      the answer eval
+│   └── test_*.py                  the reading-mode gates
+├── site/                          THE DEPLOYED SITE
+│   ├── README.md                  what dist is and how to rebuild it
+│   ├── dist/                      the 331 pages Vercel serves (tracked on purpose)
+│   └── archive/                   -> see archive/site-v1
+├── tools/                         gates and checkers
+├── sprints/                       sprint records: SPRINT-01/02, sdlc/, kanban/
+└── archive/                       retired work, kept: old site v1, design mockups, spikes
+    └── README.md                  what is in there and why
 ```
+
+**Two directories answer "where is the site?":** `site/dist/` is what is served, and
+`rag/export_read.py` is what writes it. Nothing else produces deployable output.
+
+**Where old things live:** the previous site generation, the design mockups that were not
+chosen, and the pre-pipeline feasibility spikes are all under `archive/`, each with a
+README explaining what it is and why it was kept.
 
 ---
 

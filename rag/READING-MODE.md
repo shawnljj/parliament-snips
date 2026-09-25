@@ -206,8 +206,10 @@ re-measure** — headless Chrome wedged on this machine, so the chips were sized
 - No per-sentence deep link yet — the read page anchors by scroll, not by URL fragment.
 - `read_sitting()` / `/api/read/` still returns the per-item view from before the full-transcript
   work; the HTML page uses `full_transcript()`. Consolidate when the JSON shape is next needed.
-- The RAG search box is on the read index and the read page. The **old static site** (port 8442)
-  was built by `site/build_site.py` before reading mode existed and has not been re-pointed at it.
+- The RAG search box is on the read index and the read page. The **old static site** predates
+  reading mode: its builder is retired and archived at `archive/site-v1/build_site.py`, and its
+  routes 404 on the live deploy. Nothing needs re-pointing -- the deployed site is
+  `rag/export_read.py`'s output.
 
 ## What the bridge teaches (worth keeping)
 

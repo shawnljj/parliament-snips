@@ -21,7 +21,7 @@ separately reviewable.
 
 | # | Stage | LLM? | Input | Output | Where |
 |---|---|---|---|---|---|
-| 0 | Structured facts | no | sitting JSON | counts, speakers, figures, Q→A maps, coverage | `site/build_site.py::compute_panels()` — exists |
+| 0 | Structured facts | no | sitting JSON | counts, speakers, figures, Q→A maps, coverage | `archive/site-v1/build_site.py::compute_panels()` — exists (retired builder, kept for reference) |
 | 1 | **Dataset** | no | sitting JSON | per-item prompt payloads + verbatim sentence index | `summariser/build_dataset.py` — **CURRENT STAGE** |
 | 2 | Extract | LLM | Stage 1 payload | points + sentence ids, item fields | not built |
 | 3 | Assemble | no | Stage 2 output | summary JSON in the existing schema | not built |
@@ -221,7 +221,8 @@ attaching the right quote to the wrong claim.
 ## The algorithm
 
 ### Stage 0 — deterministic, no LLM: structured facts
-Already implemented in `site/build_site.py::compute_panels()`:
+Already implemented in `archive/site-v1/build_site.py::compute_panels()` (the retired site v1
+builder; the deployed site is now built by `rag/export_read.py`):
 word/turn counts by section, speaker airtime, extracted figures with their
 sentence context, question→response mappings, coverage ratios. **Keep and
 extend. Never send these to a model to re-derive.**
@@ -361,7 +362,7 @@ tail — where small models broke — becomes the *easiest* case, not the hardes
   a rewrite at all).
 - **The 60-char cap bug is not in the current code.** The handoff mentioned "the
   60-char cap bug", to be fixed through Stage 1 rather than a separate patch. No
-  60-char truncation exists in `site/build_site.py` or `summariser/summarise.py`
+  60-char truncation exists in `archive/site-v1/build_site.py` or `summariser/summarise.py`
   (grep for `[:60]`, `[0:60]`, `, 60)` finds nothing). The likely referent is
   `sentences(max_words=60)`, which **is** real and is now fixed by `allow_long=True`.
   If a different 60-char cap was meant, it needs to be identified before it can be

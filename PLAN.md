@@ -492,9 +492,9 @@ python3 scraper/digest.py data/2026/sitting_2026-08-05.json oral 700 4
 python3 scraper/backfill.py --year 2016 --discover
 python3 scraper/backfill.py --status
 
-# summarise, then build the site
+# summarise, then build the site (the 331 pages Vercel serves)
 python3 summariser/summarise.py --all --workers 3
-python3 site/build_site.py
+python3 rag/export_read.py --out site/dist
 ```
 All stdlib Python 3.9+. No `pip install` required — the system Python here has a broken
 `requests`/OpenSSL pairing, which is why the scraper uses `urllib`.
