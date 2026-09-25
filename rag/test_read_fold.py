@@ -117,6 +117,21 @@ def checks_for(date, page, turns):
         claimed_hidden == n_dim,
         f'note claims {claimed_hidden}, page renders {n_dim} collapsed'
         + ('' if m else ' (no note: nothing held back)'))
+    # A summary line must never summarise a sentence the rules held back. The owner found this: the
+    # turn's only highlight was held back as procedure, and the callout above it still announced that
+    # sentence -- so the page's entry point to the turn was the very text it had just judged
+    # insignificant. The rule: every callout over a turn must cover at least one SURFACED highlight.
+    bad_lead = []
+    for tm in re.finditer(r'<article class="turn.*?(?=<article class="turn|\\Z)', page, re.S):
+        blk = tm.group(0)
+        if 'class="callout"' not in blk:
+            continue
+        if 'class="hl"' not in blk:          # no surfaced highlight in this turn
+            bad_lead.append(re.search(r'id="turn-([^"]+)"', blk).group(1))
+    add('a summary line always covers a surfaced highlight', not bad_lead,
+        f'{len(bad_lead)} turns summarise only held-back text: {bad_lead[:3]}' if bad_lead
+        else 'every callout covers surfaced text')
+
     add('a held-back mark is never rendered as ordinary policy',
         # every dim mark must be inside a collapsed toggle: an open dim mark would read as prose
         all('<details class="gap hidden"' in page[:mm.start()].rsplit('<details', 1)[-1]
@@ -137,9 +152,18 @@ def checks_for(date, page, turns):
     over = [n for n in per_turn if n > 1]
     add('at most one summary callout per turn', not over,
         f'{len(over)} turns with 2+' if over else f'{len(per_turn)} turns, max 1')
-    marked = [n for n, t in zip(per_turn, turns) if t['n_marks']]
-    add('every marked turn gets exactly one callout', all(n == 1 for n in marked),
-        f'{sum(1 for n in marked if n != 1)} of {len(marked)} wrong')
+    # A marked turn gets a callout WHEN it has a surfaced highlight to introduce. A turn whose every
+    # highlight is held back as procedure gets none: there is no policy in it to summarise, and
+    # announcing the held-back sentence would make the held-back text the reader's entry point. The
+    # reach is unchanged for the defect this check exists for -- a render that quietly drops callouts
+    # from turns that DO have surfaced highlights still fails, on those turns.
+    marked = [(n, t) for n, t in zip(per_turn, turns) if t['n_marks']]
+    need = [(n, t) for n, t in marked
+            if any('hidden' not in r for r in t['runs'] if r['kind'] == 'marked')]
+    add('every marked turn with surfaced highlights gets exactly one callout',
+        all(n == 1 for n, _t in need),
+        f'{sum(1 for n, _t in need if n != 1)} of {len(need)} wrong'
+        f' ({len(marked) - len(need)} marked turns have only held-back highlights)')
     add('no callout on an unmarked turn',
         all(n == 0 for n, t in zip(per_turn, turns) if not t['n_marks']),
         f'{sum(n for n, t in zip(per_turn, turns) if not t["n_marks"])} stray')

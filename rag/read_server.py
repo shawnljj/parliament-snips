@@ -792,9 +792,16 @@ def render_read(db, date, focus_turn=None, focus_span=None):
     # line, and the line is the section that actually summarises MOST of the turn's words -- which on
     # that turn is 'IPS survey on trust in PAP' (797 chars of 2,635 marked), not section 1.
     for t in turns:
-        # a held-back highlight still summarises its turn: the summary line stays even when the sentence
-        # it came from is folded, because the summary is the reader's entry point to the turn.
-        marks = [r for r in t['runs'] if r['kind'] == 'marked' and r.get('summary')]
+        # The summary line is chosen from the highlights the reader is actually being SHOWN.
+        #
+        # It must not be chosen from a held-back one. On 2026-08-05 the owner's turn is exactly that
+        # case: every highlight in it is held back as procedure, so a lead drawn from any mark made
+        # the page announce "Statutory minimum annual leave cap -- The statutory minimum annual leave
+        # under the Employment Act goes up to a cap of 14 years" as the reader's entry point to the
+        # turn -- i.e. it summarised the one sentence the rules had just judged not worth surfacing.
+        # The summary is the reader's entry point to a turn's POLICY, so it comes from policy.
+        marks = [r for r in t['runs']
+                 if r['kind'] == 'marked' and r.get('summary') and not r.get('hidden')]
         if not marks:
             t['lead'] = None
             continue

@@ -128,15 +128,21 @@ for date in DATES:
     # each paraphrasing sentences already highlighted above it. The reach this check exists for is
     # unchanged: a callout must exist for every marked turn, so a render that silently drops them
     # still fails.
+    # A callout belongs to a turn that has a SURFACED highlight to introduce. Turns whose every
+    # highlight is held back as procedure carry none: there is no policy in them to summarise, and
+    # announcing the held-back sentence would make it the reader's entry point to the turn -- the
+    # defect the owner found on 2026-08-05, where the callout said "Statutory minimum annual leave
+    # cap" over a turn whose only highlight had just been held back as procedure.
     exp_calls = db.execute("""
         SELECT COUNT(DISTINCT s.turn_key)
         FROM summary_sentence s
         JOIN summary_section c ON c.section_id = s.section_id
         JOIN summary_item    i ON i.item_id = c.item_id
         JOIN summary_item_sitting g ON g.item_id = i.item_id
-        WHERE g.date = ? AND s.turn_key IS NOT NULL""", (date,)).fetchone()[0]
+        WHERE g.date = ? AND s.turn_key IS NOT NULL
+          AND (s.hidden_reason IS NULL OR s.hidden_reason = '')""", (date,)).fetchone()[0]
     got_calls = html.count('class="callout"')
-    check('one callout per turn carrying highlights', got_calls == exp_calls,
+    check('one callout per turn carrying surfaced highlights', got_calls == exp_calls,
           f'emitted {got_calls}, expected {exp_calls}')
 
     # and no turn may carry more than one -- the rule the change was made for
