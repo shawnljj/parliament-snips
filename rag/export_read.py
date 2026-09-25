@@ -10,13 +10,15 @@ WHAT MAKES THIS SAFE
 The pages are produced by calling `read_server.render_read()` itself, not by reimplementing it.
 A second renderer would drift from the one the owner reviews, and the drift would be invisible --
 the page would look right and disagree with the tool. So this script imports the server, renders
-each sitting, and rewrites only the two things that cannot survive static hosting:
+each sitting, and rewrites only the things that cannot survive static hosting:
 
-  1. The ask box (`<form class="ask">`) -> removed, replaced by a line saying asking is not
-     available on the published copy. Leaving a form that posts nowhere is the worse option.
-  2. Inline `<style>` -> an external `../read.css`, written once. 331 pages each carrying 15KB of
+  1. The ask box stays on the page but DISABLED, with the reason printed on it. It used to be
+     removed entirely; Shawn's call is that removing it hid a whole capability of the product
+     from the published copy. Nothing about the box is patched here -- export calls the server's
+     own `ask_form(disabled=True)`, so "off" has ONE definition.
+  2. Inline `<style>` -> an external `read.css`, written once. 331 pages each carrying 15KB of
      CSS is ~5MB of duplicated bytes and makes a stylesheet change a 331-file rewrite.
-  3. The citation JS -> a shared `../read.js`.
+  3. The citation JS -> a shared `read.js`.
 
 EVERY LINK IS REWRITTEN RELATIVE. The exported tree is served from a subdirectory, and a
 root-absolute href ('/read/2026-08-05') would resolve against the domain root, not the export
@@ -40,21 +42,25 @@ import read_server as RS  # noqa: E402
 
 DB = os.path.join(HERE, '..', 'pipeline', 'hansard.db')
 
-# The ask box is the ONLY thing removed. Matched on the rendered form, not on class names, so a
-# change to the form's markup fails loudly here (the count assertion below) rather than silently
-# shipping a dead form.
+# The ask box stays on the page, DISABLED. It used to be stripped and replaced with a line of
+# prose, on the reasoning that a form that posts nowhere is worse than no form. Shawn's call is
+# the other way: stripping it hid an entire capability of the product from the published copy, so
+# a reader could not tell there was an ask mode at all. The box now stays, visibly switched off,
+# with the same disclaimer it always carried.
+#
+# Matched on the rendered form rather than on class names, so a change to the form's markup fails
+# loudly here (the count assertion below) rather than silently shipping a live box.
 ASK_FORM_RE = re.compile(r'<form class="ask".*?</form>', re.S)
-ASK_NOTE = (
-    '<p class="sub staticnote"><b>Reading only.</b> This published copy has no ask box: '
-    'answering needs the full Hansard database and a model behind it, which a static host cannot '
-    'run. Ask-mode runs locally from the same data.</p>'
-)
 
 
 def export_page(html):
-    """Rewrite a rendered server page for static hosting. Returns (html, n_forms_removed)."""
+    """Rewrite a rendered server page for static hosting. Returns (html, n_forms_disabled)."""
+    # The form is switched off rather than removed: the served page's own ask_form(disabled=True)
+    # is the single definition of what "off" looks like, so the export calls it rather than
+    # patching attributes into rendered markup -- a hand-patched copy would drift from the server's
+    # and the drift would be invisible, since the box looks the same either way.
     n = len(ASK_FORM_RE.findall(html))
-    html = ASK_FORM_RE.sub(ASK_NOTE, html)
+    html = ASK_FORM_RE.sub(lambda _m: RS.ask_form(disabled=True), html)
     # The brand is <a href="/">, which on a static host resolves against the DOMAIN root, not the
     # export -- the same root-absolute class of bug that made the previous deploy 404 its own pages.
     # Pages sit beside the index, so the index is 'index.html'.
@@ -86,7 +92,7 @@ def main():
     open(os.path.join(out, 'read.css'), 'w').write(RS.CSS)
 
     t0 = time.time()
-    forms_removed = 0
+    forms_disabled = 0
     written = 0
     for i, date in enumerate(dates, 1):
         try:
@@ -98,7 +104,7 @@ def main():
             print(f"  !! {date}: no page")
             continue
         html, n = export_page(html)
-        forms_removed += n
+        forms_disabled += n
         # every exported page sits at <out>/<date>.html, so a link back to the index is README-style
         open(os.path.join(out, f'{date}.html'), 'w').write(html)
         written += 1
@@ -129,8 +135,7 @@ def main():
 <p class="sub">Every sitting of the Singapore Parliament, <b>{len(rows)}</b> of them, each named
 by the topic it spent the most words on, with the summarised passages highlighted in place. The
 rest is the record itself.</p>
-<p class="sub staticnote"><b>Reading only.</b> The ask box needs the full Hansard database and a
-model behind it, so it runs locally rather than here.</p>
+{RS.ask_form(disabled=True)}
 <div class="grid">"""]
     for r in rows:
         body.append(f"""<a class="row" href="{r['date']}.html">
@@ -156,14 +161,36 @@ model behind it, so it runs locally rather than here.</p>
     if n_disk != written + 1:
         problems.append(f"page count {n_disk} != {written}+1")
 
-    # 1. NO ASK FORM ANYWHERE. A dead form on a published page is the defect this export exists to
-    #    avoid, so assert zero rather than trusting the substitution.
-    leftover = [f for f in os.listdir(out) if f.endswith('.html')
-                and 'class="ask"' in open(os.path.join(out, f), encoding='utf-8').read()[:200000]]
-    print(f"  ask forms left on disk : {len(leftover)}" + (f" {leftover[:3]}" if leftover else "  ok"))
-    if leftover:
-        problems.append(f"{len(leftover)} pages still carry an ask form")
-    print(f"  ask forms replaced     : {forms_removed:,} across the export")
+    # 1. EVERY ASK BOX ON DISK IS DISABLED. The export ships the box switched off rather than
+    #    absent, so the thing worth asserting is inertness, not absence: a live form on a static
+    #    host posts nowhere, which is the defect this export exists to avoid. Asserted on the
+    #    exported bytes -- the disabled attribute on BOTH controls, and no input left live.
+    pages = [f for f in os.listdir(out) if f.endswith('.html')]
+    with_form = live_ctrl = 0
+    for f in pages:
+        h = open(os.path.join(out, f), encoding='utf-8').read()
+        for form in re.findall(r'<form class="ask.*?</form>', h, re.S):
+            with_form += 1
+            if '<input' in form and 'disabled' not in form.split('<input')[1].split('>')[0]:
+                live_ctrl += 1
+            if '<button' in form and 'disabled' not in form.split('<button')[1].split('>')[0]:
+                live_ctrl += 1
+    print(f"  ask forms on disk      : {with_form:,} (want {written + 1:,}: one per page)")
+    print(f"  live ask controls      : {live_ctrl}  " + ("ok" if not live_ctrl else "!! post nowhere"))
+    if with_form != written + 1:
+        problems.append(f"{with_form} ask forms on disk, expected {written + 1}")
+    if live_ctrl:
+        problems.append(f"{live_ctrl} ask control(s) left enabled on a static host")
+    print(f"  ask forms disabled     : {forms_disabled:,} across the export")
+    if forms_disabled != written:
+        problems.append(f"{forms_disabled} forms disabled by export_page, expected {written}")
+    # the disclaimer has to be ON the box: the point of shipping it is that the reason travels
+    # with it, rather than the box looking broken.
+    no_note = [f for f in pages
+               if 'class="askoff"' not in open(os.path.join(out, f), encoding='utf-8').read()]
+    print(f"  forms missing the note : {len(no_note)}" + (f" {no_note[:3]}" if no_note else "  ok"))
+    if no_note:
+        problems.append(f"{len(no_note)} page(s) carry a disabled box with no reason given")
 
     # 2. NO ROOT-ABSOLUTE INTERNAL LINKS. They would resolve against the domain root, not the
     #    export root -- the bug that made the previous deploy 404 its own pages.

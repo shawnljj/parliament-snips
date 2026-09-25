@@ -523,6 +523,22 @@ h3{letter-spacing:-.015em}
   box-shadow:0 8px 18px -12px rgba(23,105,74,.9);transition:background .18s,transform .12s}
 .ask button:hover,form.ask button:hover{background:var(--accent-deep)}
 .ask button:active,form.ask button:active{transform:translateY(1px)}
+/* The published copy: the same box, switched off, with the reason printed beside it.
+   It has to READ as disabled or a reader will try it and think the site is broken, so the
+   controls drop their accent, the button loses its lift, and the note is set at the size of
+   the caption text around it rather than shouting.
+   SELECTORS ARE PREFIXED WITH `form` ON PURPOSE. The rules above are written as `form.ask
+   input`, which is specificity (0,1,2); a bare `.ask--off input` is (0,1,1) and loses whatever
+   it touches -- measured: the button kept the live accent green and only the properties the
+   higher rule did not set (cursor, border-style) actually applied. */
+form.ask--off{align-items:center}
+form.ask--off input{background:#f1f3f2;color:var(--dim);border-style:dashed;cursor:not-allowed}
+form.ask--off input::placeholder{color:#9aa5ae}
+form.ask--off button{background:#c3ccd2;box-shadow:none;cursor:not-allowed}
+form.ask--off button:hover{background:#c3ccd2}
+form.ask--off .askoff{font-size:12.5px;line-height:1.45;color:var(--dim);max-width:34ch}
+@media (max-width:600px){form.ask--off{flex-wrap:wrap;gap:6px}
+  form.ask--off input{flex:1 1 100%}form.ask--off .askoff{flex:1 1 100%;max-width:none}}
 /* --- the sitting index --- */
 .item{background:var(--panel);border:1px solid var(--line);border-radius:16px;margin:12px 0;
   overflow:hidden;box-shadow:var(--sh)}
@@ -790,11 +806,28 @@ invented answer.""")
     return page(f'Ask — {q[:60]}', ''.join(body), 'Ask')
 
 
-def ask_form(q=''):
-    return f"""<form class="ask" method="get" action="/ask">
+def ask_form(q='', disabled=False):
+    """The ask box. `disabled=True` renders it inert, for the static export.
+
+    WHY NOT REMOVE IT. The export used to strip the form entirely, because a form that posts
+    nowhere is worse than no form. Shawn's call is that the opposite is true here: removing it
+    hid a whole capability of the product from the published copy, so a visitor could not tell
+    the reader had an ask mode at all. The honest object is a visible, inert box with the
+    reason next to it -- the same form the local build serves, switched off, so what the page
+    is missing is legible instead of absent.
+
+    `disabled` on the input and the button is what actually makes it inert: a disabled control
+    cannot be focused, clicked or submitted, and the browser drops the form from the tab
+    order, so nothing depends on the reader noticing a disclaimer.
+    """
+    off = ' disabled aria-disabled="true" tabindex="-1"' if disabled else ''
+    note = ('<span class="askoff" role="note">Ask-mode runs locally: answering needs the full '
+            'Hansard database and a model behind it, which a published static copy cannot run.'
+            '</span>') if disabled else ''
+    return f"""<form class="ask{' ask--off' if disabled else ''}" method="get" action="/ask"{' aria-disabled="true"' if disabled else ''}>
 <input name="q" value="{esc(q)}" placeholder="Ask the Hansard a question…"
-  aria-label="Ask a question" autocomplete="off">
-<button type="submit">Ask</button></form>"""
+  aria-label="Ask a question" autocomplete="off"{off}>
+<button type="submit"{off}>Ask</button>{note}</form>"""
 
 
 ASK_JS = """<script>

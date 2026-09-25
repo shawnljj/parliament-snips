@@ -67,6 +67,22 @@ h3{letter-spacing:-.015em}
   box-shadow:0 8px 18px -12px rgba(23,105,74,.9);transition:background .18s,transform .12s}
 .ask button:hover,form.ask button:hover{background:var(--accent-deep)}
 .ask button:active,form.ask button:active{transform:translateY(1px)}
+/* The published copy: the same box, switched off, with the reason printed beside it.
+   It has to READ as disabled or a reader will try it and think the site is broken, so the
+   controls drop their accent, the button loses its lift, and the note is set at the size of
+   the caption text around it rather than shouting.
+   SELECTORS ARE PREFIXED WITH `form` ON PURPOSE. The rules above are written as `form.ask
+   input`, which is specificity (0,1,2); a bare `.ask--off input` is (0,1,1) and loses whatever
+   it touches -- measured: the button kept the live accent green and only the properties the
+   higher rule did not set (cursor, border-style) actually applied. */
+form.ask--off{align-items:center}
+form.ask--off input{background:#f1f3f2;color:var(--dim);border-style:dashed;cursor:not-allowed}
+form.ask--off input::placeholder{color:#9aa5ae}
+form.ask--off button{background:#c3ccd2;box-shadow:none;cursor:not-allowed}
+form.ask--off button:hover{background:#c3ccd2}
+form.ask--off .askoff{font-size:12.5px;line-height:1.45;color:var(--dim);max-width:34ch}
+@media (max-width:600px){form.ask--off{flex-wrap:wrap;gap:6px}
+  form.ask--off input{flex:1 1 100%}form.ask--off .askoff{flex:1 1 100%;max-width:none}}
 /* --- the sitting index --- */
 .item{background:var(--panel);border:1px solid var(--line);border-radius:16px;margin:12px 0;
   overflow:hidden;box-shadow:var(--sh)}
