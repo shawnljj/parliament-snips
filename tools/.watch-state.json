@@ -1,0 +1,105 @@
+{
+ "last_announcement": ".png\" alt=\"Announcement\" width=\"55\" height=\"37\" loading=\"lazy\"/> ANNOUNCEMENT Parliament will be sitting on 6 October 2026. It will commence at 12.00 noon. On sitting days, the livestream of Parliament proceedings can be viewed on MDDI&#x27;s Youtube channel at this link . The list of MPs speaking w",
+ "last_checked": "2026-09-26",
+ "runs": [
+  {
+   "announced": [
+    "2026-10-06"
+   ],
+   "at": "2026-09-26T06:32:18",
+   "failures": [],
+   "published": [],
+   "ready": []
+  },
+  {
+   "announced": [
+    "2026-10-06"
+   ],
+   "at": "2026-09-26T06:32:20",
+   "failures": [],
+   "published": [],
+   "ready": []
+  },
+  {
+   "announced": [
+    "2026-10-06"
+   ],
+   "at": "2026-09-26T06:32:34",
+   "failures": [],
+   "published": [],
+   "ready": []
+  },
+  {
+   "announced": [
+    "2026-10-06"
+   ],
+   "at": "2026-09-26T06:34:12",
+   "failures": [
+    "fetched but not on the site: 2026-09-08, 2026-09-09, 2026-09-10 (the chain stopped after the fetch; re-run with --force-date to finish)"
+   ],
+   "published": [],
+   "ready": []
+  },
+  {
+   "announced": [
+    "2026-10-06"
+   ],
+   "at": "2026-09-26T06:43:16",
+   "failures": [
+    "the pipeline failed; nothing was published"
+   ],
+   "published": [],
+   "ready": [
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10"
+   ]
+  },
+  {
+   "announced": [
+    "2026-10-06"
+   ],
+   "at": "2026-09-26T06:54:23",
+   "failures": [
+    "the pipeline failed; nothing was published"
+   ],
+   "published": [],
+   "ready": [
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10"
+   ]
+  },
+  {
+   "announced": [
+    "2026-10-06"
+   ],
+   "at": "2026-09-26T06:56:18",
+   "failures": [
+    "the pipeline failed; nothing was published"
+   ],
+   "published": [],
+   "ready": [
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10"
+   ]
+  }
+ ],
+ "sittings": {
+  "2026-09-08": {
+   "status": "incomplete"
+  },
+  "2026-09-09": {
+   "status": "incomplete"
+  },
+  "2026-09-10": {
+   "status": "incomplete"
+  },
+  "2026-10-06": {
+   "announced": true,
+   "first_seen": "2026-09-26",
+   "status": "announced"
+  }
+ }
+}

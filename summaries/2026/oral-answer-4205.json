@@ -1,0 +1,72 @@
+{
+ "title": "Singaporean Children Exempted from Attending National Schools",
+ "what_it_is": "Singaporean Children Exempted from Attending National Schools",
+ "sections": [
+  {
+   "label": "Placement of children in schools",
+   "summary": "About 85% were placed in non-mainstream schools, under 15% were homeschooled, and the rest were exempted for disability.",
+   "sentences": [
+    {
+     "sid": "s00002",
+     "speaker": "The Senior Minister of State for Education (Dr Janil Puthucheary) (for the Minister for Education)",
+     "attributed": true,
+     "text": "Of these, around 85% were placed in non-mainstream schools based on their educational and well being needs.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Senior Minister of State for Education (Dr Janil Puthucheary) (for the Minister for Education)",
+     "attributed": true,
+     "text": "Less than 15% were homeschooled, and the rest were exempted on the grounds of physical, intellectual or developmental disability.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-4205",
+  "group": "oral",
+  "year": "2026",
+  "sitting_dates": [
+   "2026-09-09"
+  ],
+  "report_ids": [
+   "oral-answer-4205"
+  ],
+  "sentences_total": 6,
+  "sentences_selected": 2,
+  "sentences_in_sections": 2,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 0,
+  "sections_total": 1,
+  "selection_share": 0.3333,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 1,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 2,
+   "sentences_selected": 2,
+   "turns_cited": 1,
+   "turns_total": 3,
+   "coverage": 0.3333,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-26T06:40:07"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 770,
+   "completion_tokens": 72,
+   "estimated": false,
+   "cost_usd": 0.000128
+  }
+ }
+}

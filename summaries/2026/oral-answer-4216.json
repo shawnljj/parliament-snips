@@ -1,0 +1,134 @@
+{
+ "title": "Ensuring Fair and Accessible Dispute Resolution Processes for Unauthorised Banking Transactions for Consumers Without Legal or Financial Expertise",
+ "what_it_is": "Ensuring Fair and Accessible Dispute Resolution Processes for Unauthorised Banking Transactions for Consumers Without Legal or Financial Expertise",
+ "sections": [
+  {
+   "label": "Unauthorised banking transaction dispute resolution",
+   "summary": "MAS is asked how it ensures dispute processes for unauthorised banking transactions are accessible and fair, and whether banks should bear more proof burden.",
+   "sentences": [
+    {
+     "sid": "s00001",
+     "speaker": "Ms Denise Phua Lay Peng",
+     "attributed": true,
+     "text": "asked the Prime Minister and Minister for Finance (a) how does MAS ensure that the dispute resolution processes for unauthorised banking transactions are accessible and fair to consumers without legal or financial expertise; (b) whether clearer guidance and assistance can be provided to this group of consumers; and (c) whether banks should bear a greater burden of proving adequate fraud-prevention safeguards before liability is assigned to such consumers.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00002",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "This includes promptly commencing investigations and pending the outcome, not requiring customers to pay for the disputed transaction and its related charges.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00003",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "Banks are expected to clearly explain to customers how liability has been assessed.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00005",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "Customers who promptly raise disputes with their card issuers will generally not be liable for unauthorised transactions with merchants that do not enable the 3-D Secure (3DS) protocol.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00006",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "Instead, the merchant involved will be liable for the loss.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00007",
+     "speaker": "The Minister for National Development (Mr Chee Hong Tat)",
+     "attributed": true,
+     "text": "If customers were assessed to be responsible for the loss following investigations, banks may offer goodwill payments to customers taking into account the circumstances of each case, including the customer's financial situation and whether they come from vulnerable backgrounds.",
+     "added_for_context": false
+    }
+   ]
+  },
+  {
+   "label": "Financial Industry Disputes Resolution Centre",
+   "summary": "The Financial Industry Disputes Resolution Centre offers an independent, affordable dispute resolution avenue without requiring individuals to get legal representation.",
+   "sentences": [
+    {
+     "sid": "s00023",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "That is the first point I want to make about the rigour of the process.",
+     "added_for_context": true
+    },
+    {
+     "sid": "s00024",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "But the second one is I want to assure Ms Phua is this, and I mentioned it in my main reply, that we do not design a system whereby the individual would need to receive legal assistance on a pro bono basis to be able to help represent himself or herself, because this is where the Financial Industry Disputes Resolution Centre comes in.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00025",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "Through this centre, it will offer an independent and affordable avenue for dispute resolution without the individual involved having to get legal representation.",
+     "added_for_context": false
+    },
+    {
+     "sid": "s00026",
+     "speaker": "Mr Chee Hong Tat",
+     "attributed": true,
+     "text": "So, this is one way in which we can provide some assurance to individuals who are caught and have a genuine case for dispute resolution.",
+     "added_for_context": false
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "schema": 4,
+  "id": "oral-answer-4216",
+  "group": "oral",
+  "year": "2026",
+  "sitting_dates": [
+   "2026-09-10"
+  ],
+  "report_ids": [
+   "oral-answer-4216"
+  ],
+  "sentences_total": 26,
+  "sentences_selected": 10,
+  "sentences_in_sections": 10,
+  "sentences_skipped_within_selection": 0,
+  "sentences_added_for_context": 2,
+  "sections_total": 2,
+  "selection_share": 0.3846,
+  "generated_by": "stage2b_select + stage2c_sections",
+  "gate": {
+   "passed": true,
+   "verbatim_invariant": true,
+   "text_failures": [],
+   "text_failures_count": 0,
+   "schema_complete": true,
+   "missing_fields": [],
+   "sections_total": 2,
+   "sections_without_summary": [],
+   "sections_without_sentences": [],
+   "sentences_published": 10,
+   "sentences_selected": 10,
+   "turns_cited": 3,
+   "turns_total": 4,
+   "coverage": 0.75,
+   "min_coverage_required": 0.15,
+   "min_turns_required": 1,
+   "checked_at": "2026-09-26T06:37:34"
+  },
+  "usage": {
+   "calls": 2,
+   "prompt_tokens": 1832,
+   "completion_tokens": 149,
+   "estimated": false,
+   "cost_usd": 0.000298
+  }
+ }
+}

@@ -1,10 +1,10 @@
 {
  "project": "parsnips",
- "written_at": "2026-09-25T14:43:26+08:00",
+ "written_at": "2026-09-26T07:04:42+08:00",
  "by": "tools/write_status.py",
  "status": "failed",
  "changed_since_last": [
-  "3863 briefs live across 11 year(s)",
+  "3912 briefs live across 11 year(s)",
   "1 year(s) FAIL their gates: 2016"
  ],
  "corpus": {
@@ -49,8 +49,8 @@
    "dataset_items": 301
   },
   "2026": {
-   "briefs": 287,
-   "dataset_items": 291
+   "briefs": 336,
+   "dataset_items": 341
   }
  },
  "gates": [
@@ -127,7 +127,7 @@
  "severity": "high",
  "git": {
   "unpushed_commits": 0,
-  "dirty_files": 2,
-  "last_commit": "fe6ffcb6 Add the RAG README, prune the finished layout-QA work, restore the verification chain"
+  "dirty_files": 62,
+  "last_commit": "1944b97c Organise the repo: archive the old site, name the sprint records"
  }
 }
