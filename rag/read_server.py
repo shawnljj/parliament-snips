@@ -773,7 +773,7 @@ def page(title, body):
 {index_header()}
 <div class="wrap">{body}</div>
 <footer>Served from <code>hansard.db</code> — transcript, summaries and highlight offsets all in
-SQLite. {esc('')}</footer>
+SQLite. {esc('')}Built by <a href="https://www.shawnljj.com/contact.html" target="_blank" rel="noopener">Shawn Lin</a>. Questions, corrections or a similar build: <a href="https://www.shawnljj.com/contact.html" target="_blank" rel="noopener">get in touch</a>.</footer>
 </body></html>"""
 
 
