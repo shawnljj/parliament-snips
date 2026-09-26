@@ -115,6 +115,28 @@ else:
 probes.append(("M8 a held-back highlight is unhidden", m8,
                'held-back highlights are exactly the ones the rules name', m8 != base))
 
+# ---- M9: the header's notes are dropped instead of folded --------------------------------
+# The whole point of the disclosure is that nothing is lost, so the mutation REMOVES the body and
+# leaves the summary: the page then still looks like it has an "About this sitting", and the
+# coverage claim it exists to carry is gone. Asserting only "a disclosure exists" would pass.
+m9 = re.sub(r'<details class="about">.*?</details>',
+            '<details class="about"><summary>About this sitting</summary></details>',
+            base, count=1, flags=re.S)
+probes.append(("M9 the folded notes are deleted, disclosure left empty", m9,
+               'folding the notes did not lose them', m9 != base))
+
+# ---- M10: the disclosure is left open, so the notes are back in front of the record ------
+m10 = base.replace('<details class="about">', '<details class="about" open>', 1)
+probes.append(("M10 the notes disclosure is left open", m10,
+               "the sitting's notes are folded, not left open", m10 != base))
+
+# ---- M11: the ask box is pulled out of the disclosure and left loose in the header -------
+m = re.search(r'<form class="ask.*?</form>', base, re.S)
+assert m is not None, "no ask form to move"
+m11 = base.replace(m.group(0), '', 1) + m.group(0)
+probes.append(("M11 the ask box is left outside the disclosure", m11,
+               'the ask box travels with the notes', m11 != base))
+
 ok = True
 print()
 for name, page, expect_fail, mutation_applied in probes:

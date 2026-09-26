@@ -102,6 +102,20 @@ h3{letter-spacing:-.015em}
 .sithead h1{margin:0 0 6px}
 .sithead .sub:last-of-type{margin-bottom:0}
 .sithead .foldnote{margin-bottom:14px}
+/* The header's notes and the ask box, folded (owner decision, 2026-09-26). Measured at 390x844 on
+   2026-09-10: the open card was 612px, the two notes 168px of it and the disabled ask box another
+   163px, which put the first topic at y=695 -- a reader arrived at a sitting and saw no record. The
+   summary is a control like the others on this page: full-width, 44px tall, a chevron that turns.
+   The label is "About this sitting" in preference to naming the fold, because the reader's question
+   is what this page is, not its furniture. */
+.about{margin:12px 0 2px;border-top:1px solid var(--line)}
+.about>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;gap:8px;min-height:44px;font-size:13px;font-weight:650;color:var(--ink-2)}
+.about>summary::-webkit-details-marker{display:none}
+.about>summary:active{color:var(--ink)}
+.about>summary .chev{color:var(--dim);font-size:20px;line-height:.9;transition:transform .18s}
+.about[open]>summary .chev{transform:rotate(90deg);color:var(--accent)}
+.aboutbody{padding:2px 0 2px}
 /* --- ask box --- */
 .ask,form.ask{display:flex;gap:8px;margin:14px 0 8px}
 .ask input,form.ask input{flex:1;min-width:0;font:inherit;font-size:15px;padding:13px 14px;

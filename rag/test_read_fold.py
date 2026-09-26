@@ -103,6 +103,28 @@ def checks_for(date, page, turns):
     else:
         add('page states how much it folded', False, 'no fold note found')
 
+    # --- 4c. the header's notes are FOLDED, and still present ---------------------
+    # The reader arrives at a sitting and must land on content, not on a wall of notes: measured on
+    # 2026-09-10 at 390x844 the open card stood 612px tall (72% of the phone) and the first topic's
+    # title sat at y=695, below the fold. The two notes and the disabled ask box moved into one
+    # CLOSED disclosure. Two failures are possible and neither is visible by reading the page: the
+    # disclosure is dropped (the notes are gone -- including the coverage claim the whole product is
+    # premised on), or it is left open (the wall of text is back). Both directions are asserted, plus
+    # that the ask box travelled with the notes rather than being left loose in the header.
+    about = re.search(r'<details class="about">(.*?)</details>', page, re.S)
+    body_about = about.group(1) if about else ''
+    add('the sitting\'s notes are folded, not left open',
+        bool(about) and '<details class="about" open>' not in page,
+        'one closed disclosure' if about else 'NO About disclosure emitted')
+    add('folding the notes did not lose them',
+        COV_RE.search(body_about) is not None and CLAIM_RE.search(body_about) is not None,
+        'coverage claim and fold claim both inside the disclosure'
+        if about else 'no disclosure to hold them')
+    add('the ask box travels with the notes',
+        'class="ask' in body_about,
+        'ask box inside the disclosure' if 'class="ask' in body_about
+        else 'ask box left outside the About disclosure')
+
     # --- 4b. the held-back highlights are collapsed AND counted --------------------------------
     # The page says "N further highlights held back as procedure or repetition ... collapsed, not
     # removed". Two things can go wrong and neither is visible by reading the page: a held-back mark

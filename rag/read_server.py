@@ -558,6 +558,20 @@ h3{letter-spacing:-.015em}
 .sithead h1{margin:0 0 6px}
 .sithead .sub:last-of-type{margin-bottom:0}
 .sithead .foldnote{margin-bottom:14px}
+/* The header's notes and the ask box, folded (owner decision, 2026-09-26). Measured at 390x844 on
+   2026-09-10: the open card was 612px, the two notes 168px of it and the disabled ask box another
+   163px, which put the first topic at y=695 -- a reader arrived at a sitting and saw no record. The
+   summary is a control like the others on this page: full-width, 44px tall, a chevron that turns.
+   The label is "About this sitting" in preference to naming the fold, because the reader's question
+   is what this page is, not its furniture. */
+.about{margin:12px 0 2px;border-top:1px solid var(--line)}
+.about>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;gap:8px;min-height:44px;font-size:13px;font-weight:650;color:var(--ink-2)}
+.about>summary::-webkit-details-marker{display:none}
+.about>summary:active{color:var(--ink)}
+.about>summary .chev{color:var(--dim);font-size:20px;line-height:.9;transition:transform .18s}
+.about[open]>summary .chev{transform:rotate(90deg);color:var(--accent)}
+.aboutbody{padding:2px 0 2px}
 /* --- ask box --- */
 .ask,form.ask{display:flex;gap:8px;margin:14px 0 8px}
 .ask input,form.ask input{flex:1;min-width:0;font:inherit;font-size:15px;padding:13px 14px;
@@ -1173,11 +1187,18 @@ def render_read(db, date, focus_turn=None, focus_span=None):
         hidden_note = (f'<b>{n_hidden:,}</b> further highlight'
                        f'{"" if n_hidden == 1 else "s"} held back as procedure or repetition'
                        f' ({bits}) — collapsed, not removed. ')
-    # The sitting's own header, lifted into a card: the date, what is highlighted, what is folded
-    # and the counts used to be four loose paragraphs separated by hairlines, so the eye had no
-    # place to land and the ask box looked like a fifth paragraph. One panel, then the topics.
-    body = [f"""<div class="sithead"><h1>{esc(date)}</h1>
-<p class="sub sitname">{esc(name)}</p>
+    # The sitting's own header: the date, what is highlighted, what is folded and the counts.
+    # THE NOTES AND THE ASK BOX ARE FOLDED (owner decision, 2026-09-26). Measured on 2026-09-10 at
+    # 390x844: the card stood 612px tall -- 72% of a phone screen -- and the first topic's title
+    # landed at y=695, below the fold, so a reader arrived at a sitting and saw no content. The two
+    # notes are 168px and the disabled ask box with its reason is 163px of that. What stays on
+    # screen is the date, the sitting's name and the counts; the prose is one tap away.
+    # A `<details>` for the same reason the years menu is one: the published copy is static and must
+    # not depend on script to read. Nothing is deleted -- every figure is still in the page, inside
+    # the disclosure, because the point is to move the notes, not to lose them.
+    notes = f"""<details class="about">
+<summary><span>About this sitting</span><span class="chev">&rsaquo;</span></summary>
+<div class="aboutbody">
 <p class="sub">Full transcript, {n_chars:,} characters — every turn. Summarised passages are
 <mark>highlighted</mark>: {n_marks:,} passages across {n_marked_turns} turns, covering
 {100*n_marked_chars/max(1,n_chars):.1f}% of what was said. The rest is the record itself.</p>
@@ -1186,6 +1207,10 @@ of the characters). <b>{n_folded_sent:,} sentences</b> in {len(foldable):,} stre
 inline — tap a <span class="gapdemo">[+N sentences]</span> to read them where they sit.
 {hidden_note}Every topic below is closed until you open it.</p>
 {ask_form()}
+</div></details>"""
+    body = [f"""<div class="sithead"><h1>{esc(date)}</h1>
+<p class="sub sitname">{esc(name)}</p>
+{notes}
 <div class="stat"><span>{len(reports)} topics</span><span>{len(turns):,} turns</span>
 <span>{len(items)} briefs summarised</span><span>{n_marks:,} highlighted passages</span></div></div>"""]
     for g in reports:
