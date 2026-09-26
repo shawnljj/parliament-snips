@@ -572,6 +572,9 @@ h3{letter-spacing:-.015em}
 .about>summary .chev{color:var(--dim);font-size:20px;line-height:.9;transition:transform .18s}
 .about[open]>summary .chev{transform:rotate(90deg);color:var(--accent)}
 .aboutbody{padding:2px 0 2px}
+/* The count chips live inside the disclosure now, so they need an offset from the fold note
+   above them rather than the block margin they carried in the header. */
+.aboutbody .stat{margin:12px 0 4px}
 /* --- ask box --- */
 .ask,form.ask{display:flex;gap:8px;margin:14px 0 8px}
 .ask input,form.ask input{flex:1;min-width:0;font:inherit;font-size:15px;padding:13px 14px;
@@ -1187,15 +1190,23 @@ def render_read(db, date, focus_turn=None, focus_span=None):
         hidden_note = (f'<b>{n_hidden:,}</b> further highlight'
                        f'{"" if n_hidden == 1 else "s"} held back as procedure or repetition'
                        f' ({bits}) — collapsed, not removed. ')
-    # The sitting's own header: the date, what is highlighted, what is folded and the counts.
-    # THE NOTES AND THE ASK BOX ARE FOLDED (owner decision, 2026-09-26). Measured on 2026-09-10 at
-    # 390x844: the card stood 612px tall -- 72% of a phone screen -- and the first topic's title
-    # landed at y=695, below the fold, so a reader arrived at a sitting and saw no content. The two
-    # notes are 168px and the disabled ask box with its reason is 163px of that. What stays on
-    # screen is the date, the sitting's name and the counts; the prose is one tap away.
+    # The sitting's own header: the date, the sitting's name, then everything else folded.
+    # THE NOTES, THE ASK BOX AND THE COUNT CHIPS ARE FOLDED (owner decisions, 2026-09-26). Measured on
+    # 2026-09-10 at 390x844: the card stood 612px tall -- 72% of a phone screen -- and the first
+    # topic's title landed at y=695, below the fold, so a reader arrived at a sitting and saw no
+    # content. The two notes are 168px, the disabled ask box with its reason 163px, and the four
+    # chips 98px more; folding all three leaves a card of ~120px, so the record starts around a
+    # third of the way down the screen instead of a full one. What stays is what identifies the
+    # page: the date and the sitting's name.
     # A `<details>` for the same reason the years menu is one: the published copy is static and must
     # not depend on script to read. Nothing is deleted -- every figure is still in the page, inside
-    # the disclosure, because the point is to move the notes, not to lose them.
+    # the disclosure; the chips are a SECOND rendering of four numbers the notes already give in
+    # words, so folding them costs the reader nothing but a tap, and their count is asserted by
+    # test_read_fold against what the notes claim.
+    stats_chips = (f'<div class="stat"><span>{len(reports)} topics</span>'
+                   f'<span>{len(turns):,} turns</span>'
+                   f'<span>{len(items)} briefs summarised</span>'
+                   f'<span>{n_marks:,} highlighted passages</span></div>')
     notes = f"""<details class="about">
 <summary><span>About this sitting</span><span class="chev">&rsaquo;</span></summary>
 <div class="aboutbody">
@@ -1206,13 +1217,12 @@ def render_read(db, date, focus_turn=None, focus_span=None):
 of the characters). <b>{n_folded_sent:,} sentences</b> in {len(foldable):,} stretches are folded
 inline — tap a <span class="gapdemo">[+N sentences]</span> to read them where they sit.
 {hidden_note}Every topic below is closed until you open it.</p>
+{stats_chips}
 {ask_form()}
 </div></details>"""
     body = [f"""<div class="sithead"><h1>{esc(date)}</h1>
 <p class="sub sitname">{esc(name)}</p>
-{notes}
-<div class="stat"><span>{len(reports)} topics</span><span>{len(turns):,} turns</span>
-<span>{len(items)} briefs summarised</span><span>{n_marks:,} highlighted passages</span></div></div>"""]
+{notes}</div>"""]
     for g in reports:
         o = ' open' if (focus_report and g['report_id'] == focus_report) else ''
         other = (f'<span class="otherdate">recorded {esc(g["rdate"])}</span>'

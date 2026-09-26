@@ -119,6 +119,9 @@ h3{letter-spacing:-.015em}
 .about>summary .chev{color:var(--dim);font-size:20px;line-height:.9;transition:transform .18s}
 .about[open]>summary .chev{transform:rotate(90deg);color:var(--accent)}
 .aboutbody{padding:2px 0 2px}
+/* The count chips live inside the disclosure now, so they need an offset from the fold note
+   above them rather than the block margin they carried in the header. */
+.aboutbody .stat{margin:12px 0 4px}
 /* --- ask box --- */
 .ask,form.ask{display:flex;gap:8px;margin:14px 0 8px}
 .ask input,form.ask input{flex:1;min-width:0;font:inherit;font-size:15px;padding:13px 14px;

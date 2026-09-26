@@ -137,6 +137,20 @@ m11 = base.replace(m.group(0), '', 1) + m.group(0)
 probes.append(("M11 the ask box is left outside the disclosure", m11,
                'the ask box travels with the notes', m11 != base))
 
+# ---- M12: the count chips come back out of the disclosure -------------------------------
+# The chips are the header's second rendering of the notes' numbers. Moving them back out is what
+# the owner asked to stop, so the mutation is the revert, not a corruption.
+m = re.search(r'<div class="stat">.*?</div>', base, re.S)
+assert m is not None, "no chip row to move"
+m12 = base.replace(m.group(0), '', 1).replace('</details>', '</details>' + m.group(0), 1)
+probes.append(("M12 the count chips are left outside the disclosure", m12,
+               'the count chips are folded with the notes', m12 != base))
+
+# ---- M13: a chip contradicts the page it summarises --------------------------------------
+m13 = re.sub(r'(<span>\d+ topics</span>)', '<span>9,999 topics</span>', base, count=1)
+probes.append(("M13 the chips disagree with the page", m13,
+               'the chips agree with the page they summarise', m13 != base))
+
 ok = True
 print()
 for name, page, expect_fail, mutation_applied in probes:

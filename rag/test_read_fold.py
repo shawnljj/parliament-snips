@@ -120,6 +120,30 @@ def checks_for(date, page, turns):
         COV_RE.search(body_about) is not None and CLAIM_RE.search(body_about) is not None,
         'coverage claim and fold claim both inside the disclosure'
         if about else 'no disclosure to hold them')
+    # The count chips restate figures the page itself embodies, so assert them against the PAGE
+    # rather than against each other: topics must equal the topics rendered, turns must equal the
+    # turns emitted, and the passage count must equal the one in the coverage note above. A chip row
+    # is a claim about the document it sits in, and this is the only version of the check that
+    # catches a stale or hand-typed number -- an earlier attempt compared the chips to the two bolded
+    # figures in the notes, which are different quantities (highlighted sentences, folded sentences)
+    # and never match, so it failed on a correct page.
+    chips = re.search(r'<div class="stat">(.*?)</div>', body_about, re.S)
+    chip_spans = re.findall(r'<span>([^<]+)</span>', chips.group(1)) if chips else []
+    def _n(label):
+        m = re.search(r'([\d,]+)\s+' + label, ' '.join(chip_spans))
+        return int(m.group(1).replace(',', '')) if m else None
+    n_topics_rendered = len(re.findall(r'<details class="topic"', page))
+    cov_numbers = re.search(r'([\d,]+) passages across ([\d,]+) turns', body_about)
+    add('the count chips are folded with the notes', len(chip_spans) == 4,
+        f'{len(chip_spans)} chips inside the disclosure' if chips
+        else 'no chip row inside the About disclosure')
+    add('the chips agree with the page they summarise',
+        _n('topics') == n_topics_rendered
+        and _n('turns') == emitted
+        and cov_numbers is not None
+        and _n('highlighted passages') == int(cov_numbers.group(1).replace(',', '')),
+        f'chips {chip_spans} vs page: topics {n_topics_rendered}, turns {emitted}, '
+        f'note passages {cov_numbers.group(1) if cov_numbers else "?"}')
     add('the ask box travels with the notes',
         'class="ask' in body_about,
         'ask box inside the disclosure' if 'class="ask' in body_about
