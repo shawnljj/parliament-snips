@@ -6,9 +6,9 @@
   "framework": null,
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "parliament-snips.vercel.app" }],
-      "destination": "https://parliamentsnips.com/:path*",
+      "destination": "https://parliamentsnips.com/$1",
       "permanent": true
     }
   ],
