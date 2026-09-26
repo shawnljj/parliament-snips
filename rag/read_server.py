@@ -575,6 +575,12 @@ h3{letter-spacing:-.015em}
 /* The count chips live inside the disclosure now, so they need an offset from the fold note
    above them rather than the block margin they carried in the header. */
 .aboutbody .stat{margin:12px 0 4px}
+/* On the index there are no notes above the ask box, so the disclosure is the box's wrapper and
+   nothing else -- the top hairline that separates notes from chips inside a sitting would read as a
+   stray rule under the subtitle. The label differs too ("About this site", not "this sitting"),
+   because the index is the whole archive rather than one day of it. */
+.about--index{margin-top:10px}
+.about--index>summary{border-top:0}
 /* --- ask box --- */
 .ask,form.ask{display:flex;gap:8px;margin:14px 0 8px}
 .ask input,form.ask input{flex:1;min-width:0;font:inherit;font-size:15px;padding:13px 14px;
@@ -1011,7 +1017,11 @@ def render_index(db):
     body = [f"""<h1>Read the sittings</h1>
 <p class="sub">{tot_items:,} briefs across {n_sit} sittings, {tot_sent:,} summarised sentences —
 <b>{100*anch/tot_sent:.1f}%</b> anchored to their exact place in the transcript.</p>
+<details class="about about--index">
+<summary><span>About this site</span><span class="chev">&rsaquo;</span></summary>
+<div class="aboutbody">
 {ask_form()}
+</div></details>
 <div class="stat"><span>Newest first</span><span>{n_sit} sittings</span>
 <span>answers cite the record</span></div>
 <div class="grid">"""]

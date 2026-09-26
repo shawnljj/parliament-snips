@@ -214,5 +214,33 @@ check('gate exercised a multi-sitting item', len(hit) > 0,
       f"the rest have no such item, which is a property of those sittings, not a gate gap")
 
 print()
+print("=" * 78)
+print("INDEX: the ask box is offered, and folded (owner decision 2026-09-26)")
+print("=" * 78)
+# The hero card's ask box is the only route into ask mode from the landing page, so folding it is
+# the one place where folding could cost a capability rather than screen space. Assert BOTH: it is
+# inside a closed disclosure, and it still exists there -- a fold that removes the entry point is
+# invisible to a reader who never opens it, which is exactly the failure this check is for.
+idx = RS.render_index(db)
+det = re.search(r'<details class="about about--index">(.*?)</details>', idx, re.S)
+body_idx = det.group(1) if det else ''
+check('the index offers the ask box inside a closed disclosure',
+      bool(det) and 'class="about about--index" open' not in idx and 'form class="ask' in body_idx,
+      'one closed disclosure holding the box' if det else 'NO About disclosure on the index')
+check('the index labels the fold for what the page is',
+      'About this site' in body_idx and 'About this sitting' not in body_idx,
+      # Scoped to the disclosure body, NOT the whole page: the stylesheet carries a comment naming
+      # the sitting label, and a page-wide check reads that comment as a wrong label on the index.
+      'says "About this site"' if 'About this site' in body_idx
+      else 'wrong label, or sitting wording, in the index disclosure')
+m_input = re.search(r'<input[^>]*>', body_idx)
+check('folding the index box kept it usable',
+      m_input is not None and 'disabled' not in m_input.group(0),
+      'live input inside the fold' if m_input and 'disabled' not in m_input.group(0)
+      else 'no usable input inside the fold')
+check('the rows still follow the hero', idx.index('class="grid"') > idx.index('</details>'),
+      'grid after the disclosure')
+
+print()
 print("RESULT:", "READ RENDER GATE PASSES" if ok else "GATE FAILED")
 sys.exit(0 if ok else 1)

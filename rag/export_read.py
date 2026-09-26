@@ -152,7 +152,11 @@ def main():
 <p class="sub">Every sitting of the Singapore Parliament, <b>{len(rows)}</b> of them, each named
 by the topic it spent the most words on, with the summarised passages highlighted in place. The
 rest is the record itself.</p>
+<details class="about about--index">
+<summary><span>About this site</span><span class="chev">&rsaquo;</span></summary>
+<div class="aboutbody">
 {RS.ask_form(disabled=True)}
+</div></details>
 <div class="grid">"""]
     for r in rows:
         y = r['date'][:4]

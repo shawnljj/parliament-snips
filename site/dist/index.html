@@ -122,6 +122,12 @@ h3{letter-spacing:-.015em}
 /* The count chips live inside the disclosure now, so they need an offset from the fold note
    above them rather than the block margin they carried in the header. */
 .aboutbody .stat{margin:12px 0 4px}
+/* On the index there are no notes above the ask box, so the disclosure is the box's wrapper and
+   nothing else -- the top hairline that separates notes from chips inside a sitting would read as a
+   stray rule under the subtitle. The label differs too ("About this site", not "this sitting"),
+   because the index is the whole archive rather than one day of it. */
+.about--index{margin-top:10px}
+.about--index>summary{border-top:0}
 /* --- ask box --- */
 .ask,form.ask{display:flex;gap:8px;margin:14px 0 8px}
 .ask input,form.ask input{flex:1;min-width:0;font:inherit;font-size:15px;padding:13px 14px;
@@ -338,10 +344,14 @@ footer code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11
 <p class="sub">Every sitting of the Singapore Parliament, <b>334</b> of them, each named
 by the topic it spent the most words on, with the summarised passages highlighted in place. The
 rest is the record itself.</p>
+<details class="about about--index">
+<summary><span>About this site</span><span class="chev">&rsaquo;</span></summary>
+<div class="aboutbody">
 <form class="ask ask--off" method="get" action="/ask" aria-disabled="true">
 <input name="q" value="" placeholder="Ask the Hansard a question…"
   aria-label="Ask a question" autocomplete="off" disabled aria-disabled="true" tabindex="-1">
 <button type="submit" disabled aria-disabled="true" tabindex="-1">Ask</button><span class="askoff" role="note">Ask-mode runs locally: answering needs the full Hansard database and a model behind it, which a published static copy cannot run.</span></form>
+</div></details>
 <div class="grid"><h2 class="yearhead" id="2026"><span class="y">2026</span>
 <span class="yc">26 sittings</span>
 <a class="gotop" href="#top">All years &uarr;</a></h2><a class="row" href="2026-09-10.html">
