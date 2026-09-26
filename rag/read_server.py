@@ -765,7 +765,7 @@ def esc(s):
     return html.escape(s or '')
 
 
-SITE_ORIGIN = os.environ.get('PARSNIPS_ORIGIN', 'https://parliamentsnips.com').rstrip('/')
+SITE_ORIGIN = os.environ.get('PARSNIPS_ORIGIN', 'https://www.parliamentsnips.com').rstrip('/')
 
 
 def canonical(path):
