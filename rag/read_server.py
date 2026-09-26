@@ -765,11 +765,27 @@ def esc(s):
     return html.escape(s or '')
 
 
-def page(title, body):
+SITE_ORIGIN = os.environ.get('PARSNIPS_ORIGIN', 'https://parliamentsnips.com').rstrip('/')
+
+
+def canonical(path):
+    """The one place a page's canonical URL is written.
+
+    Every page carries its own <link rel="canonical"> so the vercel.app hostname and the custom
+    domain cannot both be indexed as the same content. Relative page targets are kept for links
+    (they must work from any host); only this one absolute URL is emitted.
+    """
+    return f'{SITE_ORIGIN}/{path.lstrip("/")}'
+
+
+def page(title, body, path=None, robots=None):
+    head = [f'<link rel="canonical" href="{esc(canonical(path or ""))}">'] if path is not None else []
+    if robots:
+        head.append(f'<meta name="robots" content="{esc(robots)}">')
     return f"""<!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>{esc(title)}</title><style>{CSS}</style></head><body id="top">
+<title>{esc(title)}</title>{''.join(head)}<style>{CSS}</style></head><body id="top">
 {index_header()}
 <div class="wrap">{body}</div>
 <footer>Served from <code>hansard.db</code> — transcript, summaries and highlight offsets all in
@@ -1245,7 +1261,7 @@ document.querySelectorAll('article.turn.flash').forEach(a => {
   a.scrollIntoView({block: 'center'});
 });
 </script>""")
-    return page(f'{name} — {date} — PARSNIPS reading', ''.join(body))
+    return page(f'{name} — {date} — PARSNIPS reading', ''.join(body), path=f'{date}.html')
 
 
 # ---------------------------------------------------------------- server

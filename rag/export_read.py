@@ -171,11 +171,27 @@ rest is the record itself.</p>
     body.append(RS.year_jump_style())
     if len(rows) != len(dates):
         print(f"  !! index lists {len(rows)} sittings but {len(dates)} were exported")
-    idx = RS.page('PARSNIPS — read the sittings', ''.join(body))
+    idx = RS.page('PARSNIPS — read the sittings', ''.join(body), path='')
     # the index gets the same brand-link fix as the sitting pages -- it is built by RS.page()
     # directly, so it never passes through export_page()
     idx = idx.replace('<a class="brand" href="/">', '<a class="brand" href="index.html">')
     open(os.path.join(out, 'index.html'), 'w').write(idx)
+
+    # ---- robots.txt and sitemap.xml, generated so they can never go stale -------------------
+    # The watcher publishes sittings unattended; a hand-maintained sitemap would silently stop
+    # listing new ones, which is the one failure mode worth designing out. Both are derived from
+    # the same `dates` list the pages were written from.
+    with open(os.path.join(out, 'robots.txt'), 'w') as f:
+        f.write(f"User-agent: *\nAllow: /\n\nSitemap: {RS.canonical('sitemap.xml')}\n")
+    urls = [RS.SITE_ORIGIN + '/'] + [RS.canonical(f'{d}.html') for d in dates]
+    with open(os.path.join(out, 'sitemap.xml'), 'w') as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+        for u in urls:
+            f.write(f'  <url><loc>{u}</loc></url>\n')
+        f.write('</urlset>\n')
+    print(f"  sitemap.xml            : {len(urls):,} urls")
+    print(f"  robots.txt             : sitemap declared")
 
     # ---- verify the export, because a static copy fails differently from a served page ----
     print("\n" + "=" * 74)
@@ -317,6 +333,35 @@ rest is the record itself.</p>
     print(f"  export size            : {total/1e6:.1f} MB")
     if total > 100e6:
         print(f"    NOTE: over Vercel Hobby's 100MB static-upload limit -- see the deploy note")
+
+    # 6. CANONICAL COVERAGE. Every page must declare its own canonical on the real domain, or the
+    #    vercel.app hostname and the custom domain become competing copies of the same content.
+    missing = [f for f in pages
+               if f'<link rel="canonical" href="{RS.SITE_ORIGIN}/' not in
+               open(os.path.join(out, f), encoding='utf-8').read()]
+    n_canon = len(pages) - len(missing)
+    print(f"  canonical tags         : {n_canon:,}/{len(pages):,} pages")
+    if missing:
+        problems.append(f"{len(missing)} page(s) have no canonical: {missing[:3]}")
+
+    # 7. SITEMAP AGREES WITH DISK. A sitemap listing URLs that were never written is worse than
+    #    none: it asks a crawler to fetch 404s. Every <loc> must exist as a file, and vice versa.
+    #    The origin root and index.html are the SAME page, which is why the index canonicalises to
+    #    '/' -- so both are normalised to index.html before comparing, not treated as two URLs.
+    sm = open(os.path.join(out, 'sitemap.xml'), encoding='utf-8').read()
+    locs = re.findall(r'<loc>(.*?)</loc>', sm)
+    norm = lambda u: 'index.html' if u in (RS.SITE_ORIGIN, RS.SITE_ORIGIN + '/') else u[len(RS.SITE_ORIGIN) + 1:]
+    on_disk = {f for f in pages}
+    listed = {norm(u) for u in locs if u.startswith(RS.SITE_ORIGIN)}
+    print(f"  sitemap urls           : {len(locs):,}")
+    ghost = sorted(listed - on_disk)
+    unlisted = sorted(on_disk - listed)
+    if ghost:
+        problems.append(f"sitemap lists {len(ghost)} page(s) not on disk: {ghost[:3]}")
+    if unlisted:
+        problems.append(f"{len(unlisted)} page(s) missing from sitemap: {unlisted[:3]}")
+    if 'Sitemap:' not in open(os.path.join(out, 'robots.txt'), encoding='utf-8').read():
+        problems.append("robots.txt does not declare the sitemap")
 
     print()
     if problems:
