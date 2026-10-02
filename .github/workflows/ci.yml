@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gates:
+    name: Shared gates (fast)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Pinned so lint and audit results are the same locally and here.
+      - name: Install development dependencies
+        run: python3 -m pip install --disable-pip-version-check -r requirements-dev.txt
+
+      # CI calls the SAME script the pre-commit hook calls. If these ever
+      # diverge, a green local run stops predicting a green pipeline.
+      - name: Run the shared checks
+        run: bash scripts/check.sh
+
+  full:
+    name: Shared gates (full)
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    needs: gates
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install development dependencies
+        run: python3 -m pip install --disable-pip-version-check -r requirements-dev.txt
+
+      # The slow gates run on PR, not on every push, so the fast loop stays fast.
+      - name: Run the full checks
+        run: bash scripts/check.sh --full

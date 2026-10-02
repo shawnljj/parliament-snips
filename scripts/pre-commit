@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# The pre-commit hook. Installed as a SYMLINK into .git/hooks by
+# install-hooks.sh, so this file is the only copy and editing it takes effect
+# everywhere at once. Keeps the fast gates; --full is for CI.
+exec "$(git rev-parse --show-toplevel)/scripts/check.sh" "$@"

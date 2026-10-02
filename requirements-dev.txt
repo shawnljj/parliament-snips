@@ -1,0 +1,6 @@
+# Pinned deliberately. An unpinned linter changes its default rule set between
+# releases, and the failures land on a commit that did not cause them.
+# Revisit these pins when you upgrade by hand, and say so in the commit body.
+ruff==0.16.9
+pip-audit==2.9.0
+pytest==8.4.2
