@@ -18,8 +18,8 @@ import re
 import sqlite3
 import sys
 
-sys.path.insert(0, '/Users/shawnlin/parsnips/rag')
-sys.path.insert(0, '/Users/shawnlin/parsnips/summariser')
+sys.path.insert(0, '/Users/shawnlin/Documents/GitHub/parsnips/rag')
+sys.path.insert(0, '/Users/shawnlin/Documents/GitHub/parsnips/summariser')
 import read_server as RS
 import significance as SG
 
@@ -37,7 +37,7 @@ def _derive_hidden(db, date):
     then ask the rules with the turn's own words (a retraction is usually NOT itself selected, so the
     turn text is what reveals a correction happened).
     """
-    sys.path.insert(0, '/Users/shawnlin/parsnips/summariser')
+    sys.path.insert(0, '/Users/shawnlin/Documents/GitHub/parsnips/summariser')
     import significance as SG
     ttext = {r[0]: r[1] for r in db.execute("SELECT key, text FROM turn")}
     rows = db.execute("""SELECT s.speaker, s.text, s.turn_key, s.char_start FROM summary_sentence s

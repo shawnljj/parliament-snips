@@ -39,7 +39,7 @@ if HERE not in sys.path:
 # The project's one sentence splitter, shared with the chunker, the gate and the eval.
 from sentences import sentence_spans  # noqa: E402
 
-DB = '/Users/shawnlin/parsnips/pipeline/hansard.db'
+DB = '/Users/shawnlin/Documents/GitHub/parsnips/pipeline/hansard.db'
 PORT = 8444
 
 # ---------------------------------------------------------------- data layer

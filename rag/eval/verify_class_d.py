@@ -21,8 +21,8 @@ import json
 import sqlite3
 import sys
 
-DB = '/Users/shawnlin/parsnips/pipeline/hansard.db'
-EVAL = '/Users/shawnlin/parsnips/rag/eval/questions.json'
+DB = '/Users/shawnlin/Documents/GitHub/parsnips/pipeline/hansard.db'
+EVAL = '/Users/shawnlin/Documents/GitHub/parsnips/rag/eval/questions.json'
 
 db = sqlite3.connect(DB)
 db.row_factory = sqlite3.Row

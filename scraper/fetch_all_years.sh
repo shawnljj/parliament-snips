@@ -15,7 +15,7 @@
 # sequential across years and modest within them (ENUM_WORKERS=4, WORKERS=5).
 
 set -u
-cd /Users/shawnlin/parsnips || exit 1
+cd /Users/shawnlin/Documents/GitHub/parsnips || exit 1
 HIST=backfill_history.log
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$HIST"; }

@@ -46,8 +46,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(os.path.dirname(HERE), 'summariser'))
 import significance as SIG  # noqa: E402
 
-DB = '/Users/shawnlin/parsnips/pipeline/hansard.db'
-SUM_DIR = '/Users/shawnlin/parsnips/summaries'
+DB = '/Users/shawnlin/Documents/GitHub/parsnips/pipeline/hansard.db'
+SUM_DIR = '/Users/shawnlin/Documents/GitHub/parsnips/summaries'
 
 # Characters that differ between the summary layer and the stored transcript.
 # Normalisation must preserve an index map so offsets can be handed back in ORIGINAL coordinates.

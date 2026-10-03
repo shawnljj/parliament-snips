@@ -7,7 +7,7 @@
 The server must be running. If the page does not load:
 
 ```bash
-cd ~/parsnips && /Users/shawnlin/.hermes/hermes-agent/venv/bin/python \
+cd ~/Documents/GitHub/parsnips && /Users/shawnlin/.hermes/hermes-agent/venv/bin/python \
   rag/uat_server.py --port 8441 --warm
 ```
 

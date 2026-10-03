@@ -12,7 +12,7 @@ They are connected: every quote carries a link into the transcript at the exact 
 came from.
 
 ```bash
-cd ~/parsnips/rag
+cd ~/Documents/GitHub/parsnips/rag
 python3 read_server.py --port 8444 --warm     # -> http://localhost:8444/
 ```
 
@@ -213,7 +213,7 @@ python3 eval/spread_report.py
 ## Rebuilding from scratch
 
 ```bash
-cd ~/parsnips/rag
+cd ~/Documents/GitHub/parsnips/rag
 python3 build_para_store.py     # cached re-fetch of paragraph structure (~200s, resumable)
 python3 build_chunks.py         # turns -> chunks  (writes ../pipeline/chunks.jsonl)
 python3 build_db.py             # load SQLite    (writes ../pipeline/hansard.db)

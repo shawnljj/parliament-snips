@@ -13,7 +13,7 @@ import threading
 import urllib.error
 import urllib.request
 
-sys.path.insert(0, '/Users/shawnlin/parsnips/rag')
+sys.path.insert(0, '/Users/shawnlin/Documents/GitHub/parsnips/rag')
 import read_server as RS
 from http.server import ThreadingHTTPServer
 

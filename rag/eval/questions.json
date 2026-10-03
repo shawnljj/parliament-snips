@@ -2,7 +2,7 @@
   "schema": 1,
   "name": "rag-parsnips-eval-v1",
   "created": "2026-09-23",
-  "corpus": "~/parsnips/data — 331 sittings, 2016-2026",
+  "corpus": "~/Documents/GitHub/parsnips/data — 331 sittings, 2016-2026",
   "note": "Written BEFORE the RAG pipeline exists. Every question was checked to be answerable from the corpus, and every gold passage resolves to real stored text. Purpose: confirm v0 FAILS, then build until it passes. Do not edit an expectation after seeing a result -- with TWO recorded exceptions, each annotated per-question and never a silent edit: (1) a gold fact the corpus itself RETRACTS (Hansard corrects itself: 163 clarification and 12 correction reports), and (2) a fact the corpus supplies more than one correct answer for, which is recorded as `accept_any` rather than narrowed to one arbitrary choice. A1 was corrected under (1); B3 under (2). Both annotations live next to the question so a later reader cannot mistake a past defect for current behaviour.",
 
   "categories": {

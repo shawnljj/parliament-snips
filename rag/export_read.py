@@ -26,7 +26,7 @@ root -- the exact class of bug that made the previous deploy 404. All internal l
 and checked after writing.
 
 Usage:
-    python3 export_read.py --out ~/parsnips/site/dist/read
+    python3 export_read.py --out ~/Documents/GitHub/parsnips/site/dist/read
     python3 export_read.py --out ... --limit 5      # smoke test
 """
 import argparse

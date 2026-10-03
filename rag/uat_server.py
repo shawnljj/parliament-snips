@@ -10,7 +10,7 @@ thing that serves the real pipeline to a phone: stdlib HTTP only, no framework, 
   POST /verdict         -> record the owner's judgement for a question (JSONL append)
 
 Run:
-  cd ~/parsnips && <python-with-numpy> rag/uat_server.py --port 8441
+  cd ~/Documents/GitHub/parsnips && <python-with-numpy> rag/uat_server.py --port 8441
 Requires ollama running with nomic-embed-text (ranker) and the answer model.
 """
 import argparse

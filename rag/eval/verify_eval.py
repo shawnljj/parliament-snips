@@ -5,8 +5,8 @@ thing and reports success. This checks each claim against the real corpus.
 """
 import json, glob, sys
 
-EVAL = "/Users/shawnlin/parsnips/rag/eval/questions.json"
-files = sorted(glob.glob('/Users/shawnlin/parsnips/data/*/sitting_*.json'))
+EVAL = "/Users/shawnlin/Documents/GitHub/parsnips/rag/eval/questions.json"
+files = sorted(glob.glob('/Users/shawnlin/Documents/GitHub/parsnips/data/*/sitting_*.json'))
 
 # index every turn by report_id for exact lookup
 index = {}

@@ -8,7 +8,7 @@ be rounded up to correct.
 Run:  python test_expect_logic.py
 """
 import sys
-sys.path.insert(0, '/Users/shawnlin/parsnips/rag/eval')
+sys.path.insert(0, '/Users/shawnlin/Documents/GitHub/parsnips/rag/eval')
 
 CASES = []
 

@@ -15,7 +15,7 @@ Asserts, on real rows:
 import sqlite3
 import sys
 
-DB = '/Users/shawnlin/parsnips/pipeline/hansard.db'
+DB = '/Users/shawnlin/Documents/GitHub/parsnips/pipeline/hansard.db'
 db = sqlite3.connect(DB)
 db.row_factory = sqlite3.Row
 db.execute("PRAGMA foreign_keys = ON")
@@ -122,7 +122,7 @@ import glob
 import json
 import os
 n_json_sec = n_json_sent = 0
-for f in glob.glob('/Users/shawnlin/parsnips/summaries/*/*.json'):
+for f in glob.glob('/Users/shawnlin/Documents/GitHub/parsnips/summaries/*/*.json'):
     j = json.load(open(f))
     for s in (j.get('sections') or []):
         n_json_sec += 1

@@ -14,7 +14,7 @@ Run:  python3 test_summary_fk.py
 import sqlite3
 import sys
 
-DB = '/Users/shawnlin/parsnips/pipeline/hansard.db'
+DB = '/Users/shawnlin/Documents/GitHub/parsnips/pipeline/hansard.db'
 probes = []
 
 

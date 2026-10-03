@@ -64,7 +64,7 @@ def main():
     if not CHROME:
         sys.exit("no Chromium browser found")
     target = sys.argv[1] if len(sys.argv) > 1 else \
-        "/Users/shawnlin/parsnips/site/dist/spike-panels.html"
+        "/Users/shawnlin/Documents/GitHub/parsnips/site/dist/spike-panels.html"
     steps = int(sys.argv[2]) if len(sys.argv) > 2 else 12
     if not target.startswith("http"):
         target = "file://" + os.path.abspath(target)
